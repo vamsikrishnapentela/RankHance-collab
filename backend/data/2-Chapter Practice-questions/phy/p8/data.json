@@ -1,0 +1,327 @@
+[
+  {
+    "id": "p8_item1",
+    "text": "A pure number which determines the type of flow of a liquid through a pipe is known as",
+    "options": [
+      "Reynold's number",
+      "Bernoulli's number",
+      "Pascal's number",
+      "Torricelli's number"
+    ],
+    "correctIndex": 0,
+    "explanation": "Reynold's number \\(R = \\frac{\\rho v d}{\\eta}\\) is a dimensionless quantity that predicts the nature of fluid flow. For \\(R < 2100\\), flow is laminar; for \\(2100 < R < 4000\\), it is transitional; and for \\(R > 4000\\), it is turbulent. The other options do not determine flow type.",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "p8_item2",
+    "text": "If a vessel containing a fluid of density \\(\\rho\\) upto height \\(h\\) is accelerated vertically downwards with acceleration \\(a_0\\). Then, the pressure by fluid at the bottom of vessel is given by the equation ...... (\\(p_0\\) denotes the atmospheric pressure and \\(g\\) denotes the acceleration due to gravity).",
+    "options": [
+      "\\(p = p_0 + \\rho g h + \\rho h a_0\\)",
+      "\\(p = p_0 + \\rho g h\\)",
+      "\\(p = p_0 + \\rho h (g - a_0)\\)",
+      "\\(p = p_0 - \\rho g h\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Effective gravity becomes \\(g' = g - a_0\\) when the vessel accelerates downward. Pressure at depth \\(h\\) is \\(p = p_0 + \\rho g' h = p_0 + \\rho h (g - a_0)\\). This follows from the modified hydrostatic pressure equation under accelerated frames.",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "p8_item3",
+    "text": "A fully loaded Boeing aircraft has a mass of \\(3.3 \\times 10^5\\) kg. Its total wing area is \\(500\\) m². It is in level flight with a speed of \\(960\\) km/h. Estimate the pressure difference between the lower and upper surfaces of the wings.",
+    "options": [
+      "\\(4.5 \\times 10^3\\) Nm^{-2}",
+      "\\(5.5 \\times 10^3\\) Nm^{-2}",
+      "\\(6.5 \\times 10^3\\) Nm^{-2}",
+      "\\(7.5 \\times 10^3\\) Nm^{-2}"
+    ],
+    "correctIndex": 2,
+    "explanation": "The weight of the aircraft is balanced by the lift force due to pressure difference: \\(\\Delta p \\times A = mg\\). Convert speed to m/s: \\(960 \\times \\frac{5}{18} = 266.67\\) m/s is not needed here as lift depends on weight. \\(\\Delta p = \\frac{3.3 \\times 10^5 \\times 9.8}{500} \\approx 6.47 \\times 10^3\\) Nm^{-2} \\approx 6.5 \\times 10^3\\) Nm^{-2}.",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "p8_item4",
+    "text": "A weightless bag is filled with 5 kg of water and is weighed in water using a spring balance. The reading of spring balance is",
+    "options": [
+      "5 kg",
+      "2.5 kg",
+      "1.25 kg",
+      "0"
+    ],
+    "correctIndex": 3,
+    "explanation": "When the bag filled with water is immersed in water, the buoyant force equals the weight of the water inside (Archimedes' principle). Thus, apparent weight = actual weight - buoyant force = 0. The spring balance reads zero.",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "p8_item5",
+    "text": "The radius of the bore of a capillary tube is \\(r\\) and the angle of contact of the liquid is \\(\\theta\\). When the tube is dipped in the liquid, the radius of curvature of the meniscus of liquid rising in the tube is",
+    "options": [
+      "\\(r \\sin \\theta\\)",
+      "\\(\\frac{r}{\\sin \\theta}\\)",
+      "\\(r \\cos \\theta\\)",
+      "\\(\\frac{r}{\\cos \\theta}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "In the capillary, the meniscus forms a spherical cap. From geometry, \\(\\cos \\theta = \\frac{r}{R}\\), where \\(R\\) is the radius of curvature. Thus, \\(R = \\frac{r}{\\cos \\theta}\\).",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "p8_item6",
+    "text": "The coefficient of viscosity of an ideal fluid is",
+    "options": [
+      "equal to 1",
+      "zero",
+      "infinite",
+      "greater than 1"
+    ],
+    "correctIndex": 1,
+    "explanation": "An ideal fluid is defined as one with zero viscosity (no internal friction between layers). Hence, coefficient of viscosity \\(\\eta = 0\\). Real fluids have non-zero viscosity.",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "p8_item7",
+    "text": "Two water pipes of diameter 2 cm and 4 cm are separately connected to a main supply line. The velocity of flow of water in the pipe of 2 cm diameter is",
+    "options": [
+      "4 times that in the other pipe",
+      "\\(\\frac{1}{4}\\) times that in the other pipe",
+      "2 times that in the other pipe",
+      "\\(\\frac{1}{2}\\) times that in the other pipe"
+    ],
+    "correctIndex": 0,
+    "explanation": "By continuity equation \\(A_1 v_1 = A_2 v_2\\). Areas \\(A \\propto d^2\\), so \\(v_1 / v_2 = (d_2 / d_1)^2 = (4/2)^2 = 4\\). Velocity in narrower pipe (2 cm) is 4 times that in wider pipe.",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "p8_item8",
+    "text": "Water is flowing through a horizontal pipe in streamline flow. At the narrowest part of the pipe",
+    "options": [
+      "velocity is max and pressure is min",
+      "pressure is max and velocity is min",
+      "Both pressure and velocity are max",
+      "Both velocity and pressure are min"
+    ],
+    "correctIndex": 0,
+    "explanation": "By continuity, velocity is maximum at narrowest section (smaller area). By Bernoulli's principle \\(p + \\frac{1}{2}\\rho v^2 = \\text{constant}\\), pressure is minimum where velocity is maximum.",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "p8_item9",
+    "text": "A 0.5 kg block of brass (density = \\(8 \\times 10^3\\) kg m^{-3}) is suspended from a string. What is the tension in the string if the block is completely immersed in water? (\\(g = 10\\) ms^{-2})",
+    "options": [
+      "5 N",
+      "\\(\\frac{0.5}{8 \\times 10^3}\\) N",
+      "\\(\\frac{5}{8}\\) N",
+      "\\(\\frac{35}{8}\\) N"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of block \\(V = \\frac{m}{\\rho} = \\frac{0.5}{8 \\times 10^3} = 6.25 \\times 10^{-5}\\) m³. Buoyant force \\(F_b = \\rho_w V g = 1000 \\times 6.25 \\times 10^{-5} \\times 10 = 0.625\\) N. Tension \\(T = mg - F_b = 5 - 0.625 = 4.375 = \\frac{35}{8}\\) N.",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "p8_item10",
+    "text": "Water flows through a hose pipe whose internal diameter is 4 cm at a speed of 1 ms^{-1}. If water has to emerge at a speed of 4 ms^{-1}, then the diameter of the nozzle should be",
+    "options": [
+      "1 cm",
+      "2 cm",
+      "4 cm",
+      "0.5 cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Continuity: \\(A_1 v_1 = A_2 v_2\\). \\(\\pi (2 \\times 10^{-2})^2 \\times 1 = \\pi r_2^2 \\times 4\\). Solving gives \\(r_2 = 0.01\\) m, diameter = 2 cm.",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "p8_item11",
+    "text": "The terminal velocity \\(v\\) of a spherical ball of lead of radius \\(R\\) falling through a viscous liquid varies with \\(R\\) such that",
+    "options": [
+      "\\(\\frac{v}{R} = \\text{constant}\\)",
+      "\\(v R = \\text{constant}\\)",
+      "\\(v = \\text{constant}\\)",
+      "\\(\\frac{v}{R^2} = \\text{constant}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Stokes' law: terminal velocity \\(v = \\frac{2 R^2 (\\rho - \\sigma) g}{9 \\eta}\\). Thus \\(v \\propto R^2\\), so \\(\\frac{v}{R^2} = \\text{constant}\\).",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "p8_item12",
+    "text": "A pressure of 1 mm of mercury is equivalent to",
+    "options": [
+      "1 mPa",
+      "13.33 Pa",
+      "133.3 Pa",
+      "1.08 Pa"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(p = \\rho g h = 13.6 \\times 10^3 \\times 9.8 \\times 10^{-3} \\approx 133.3\\) Pa.",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "p8_item13",
+    "text": "Find the apparent weight of a metallic block of density \\(5\\) g cm^{-3} and dimensions \\(5\\) cm \\(\\times 5\\) cm \\(\\times 5\\) cm, in water.",
+    "options": [
+      "\\(5 \\times 5 \\times 5 \\times 5\\) gf",
+      "\\(4 \\times 4 \\times 4 \\times 4\\) gf",
+      "\\(5 \\times 4 \\times 4 \\times 4\\) gf",
+      "\\(4 \\times 5 \\times 5 \\times 5\\) gf"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume = 125 cm³. Weight = 5 × 125 = 625 gf. Buoyant force = 1 × 125 = 125 gf. Apparent weight = 625 - 125 = 500 gf = 4 × 5 × 5 × 5 gf.",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "p8_item14",
+    "text": "Bottom of a cylindrical vessel has a hole of area \\(A\\). If water is filled up to a height \\(h\\), it flows out in \\(t\\) seconds. If water is filled to a height \\(4h\\), it will flow out in time",
+    "options": [
+      "\\(t\\)",
+      "\\(4t\\)",
+      "\\(2t\\)",
+      "\\(\\frac{t}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Time to empty \\(t = \\sqrt{\\frac{2h}{g}}\\) (Torricelli). For height \\(4h\\), \\(t' = \\sqrt{\\frac{8h}{g}} = 2 \\sqrt{\\frac{2h}{g}} = 2t\\).",
+    "name": "Questions Item 14"
+  },
+  {
+    "id": "p8_item15",
+    "text": "Two thin circular discs A and B of radii 2 cm and 4 cm are in a liquid at the same depth. \\(T_A\\) is the thrust on A and \\(T_B\\) thrust on B. Then, \\(T_A : T_B\\)",
+    "options": [
+      "2 : 1",
+      "1 : 2",
+      "4 : 1",
+      "1 : 4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Thrust \\(T = p \\times \\text{area}\\). Same pressure \\(p\\) at same depth. \\(T_A : T_B = \\pi (2)^2 : \\pi (4)^2 = 1 : 4\\).",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "p8_item16",
+    "text": "A long cylindrical glass vessel has a pinhole of diameter 0.2 mm at its bottom. The depth to which the vessel can be lowered vertically in a deep water bath without the water entering into the vessel is (surface tension of water, \\(T = 0.07\\) Nm^{-1}, acceleration due to gravity, \\(g = 10\\) ms^{-2})",
+    "options": [
+      "14 cm",
+      "7 cm",
+      "21 cm",
+      "28 cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Excess pressure due to surface tension \\(\\frac{2T}{r} = \\rho g h\\). \\(h = \\frac{2T}{\\rho g r} = \\frac{2 \\times 0.07}{1000 \\times 10 \\times 0.1 \\times 10^{-3}} = 0.14\\) m = 14 cm.",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "p8_item17",
+    "text": "A cylindrical tank has a hole of area \\(2\\) cm² at its bottom. If water is poured into the tank from a tube above it at the rate of \\(100\\) cm³ s^{-1}, then the maximum height upto which water can rise in the tank is (Acceleration due to gravity, \\(g = 10\\) ms^{-2})",
+    "options": [
+      "2.5 cm",
+      "1.25 cm",
+      "5.5 cm",
+      "3.5 cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "At steady state, inflow rate = outflow rate \\(A v = 100\\) cm³/s. \\(v = \\sqrt{2gh}\\). \\(2 \\times 10^{-4} \\times \\sqrt{2gh} = 10^{-4}\\). Solving gives \\(h = 1.25\\) cm.",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "p8_item18",
+    "text": "A liquid drop of density \\(\\rho\\) is floating half immersed in a liquid of surface tension \\(S\\) and density \\(\\frac{\\rho}{2}\\). If the surface tension \\(S\\) of the liquid is numerically equal to 10 times of acceleration due to gravity, then the diameter of the drop is",
+    "options": [
+      "\\(\\sqrt{\\frac{20}{\\rho}}\\)",
+      "\\(\\sqrt{\\frac{80}{\\rho}}\\)",
+      "\\(\\sqrt{\\frac{60}{\\rho}}\\)",
+      "\\(\\sqrt{\\frac{40}{\\rho}}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Balancing weight, buoyancy, and surface tension: \\(10 g \\pi D = \\frac{3}{4} \\rho g \\frac{\\pi D^3}{6}\\). Solving gives diameter \\(D = \\sqrt{\\frac{80}{\\rho}}\\).",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "p8_item19",
+    "text": "Two capillary tubes of same length each of 50 cm but of different radii 4 mm and 2 mm are connected in series. When water flows, the pressure difference between the ends of the first tube is",
+    "options": [
+      "\\(\\frac{p}{2}\\)",
+      "\\(\\frac{p}{17}\\)",
+      "\\(\\frac{p}{4}\\)",
+      "\\(\\frac{p}{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Resistance \\(R \\propto 1/r^4\\). \\(R_2 = 16 R_1\\). Total resistance \\(17 R_1\\). Pressure drop across first tube = \\(p/17\\).",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "p8_item20",
+    "text": "A rain drop of radius \\(r\\) is falling through air, starting from rest. The work done by all the forces on the drop, when it attains terminal velocity, is proportional to",
+    "options": [
+      "\\(r^3\\)",
+      "\\(r^7\\)",
+      "\\(r^5\\)",
+      "\\(r^4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Terminal velocity \\(v \\propto r^2\\). Work = change in KE = \\(\\frac{1}{2} m v^2 \\propto r^3 \\times r^4 = r^7\\).",
+    "name": "Questions Item 20"
+  },
+  {
+    "id": "p8_item21",
+    "text": "A sphere of radius \\(R\\) has a concentric spherical cavity of radius \\(r\\). The relative density of the material of the sphere is \\(\\sigma\\). It just floats when placed in tank full of water. The value of \\(\\frac{R}{r}\\) is",
+    "options": [
+      "\\(\\left( \\frac{\\sigma}{\\sigma - 1} \right)^{1/3}\\)",
+      "\\(\\left( \\frac{\\sigma - 1}{\\sigma} \right)^{1/3}\\)",
+      "\\(\\left( \\frac{\\sigma}{\\sigma - 1} \right)^{1/2}\\)",
+      "\\(\\left( \\frac{\\sigma - 1}{\\sigma} \right)^{1/2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Buoyancy = weight: \\(\\rho_w \\frac{4}{3} \\pi R^3 = \\sigma \\rho_w \\frac{4}{3} \\pi (R^3 - r^3)\\). Simplifies to \\(\\frac{R}{r} = \\left( \\frac{\\sigma}{\\sigma - 1} \right)^{1/3}\\).",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "p8_item22",
+    "text": "Two tubes of same length and diameters 4 mm and 8 mm are joined together to form a U-shaped tube open at both the ends. If the U-tube contains water, then the difference between the levels of water in the two limbs of the tube is (Surface tension of water at the temperature of experiment is \\(7.3 \\times 10^{-2}\\) Nm^{-1}, angle of contact = 0°, density of water = \\(1.0 \\times 10^3\\) kg m^{-3} and acceleration due to gravity = \\(10\\) ms^{-2})",
+    "options": [
+      "3.65 mm",
+      "36.5 mm",
+      "0.365 mm",
+      "365 mm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pressure difference due to capillary rise: \\(\\Delta h = \\frac{2T}{\\rho g} \\left( \\frac{1}{r_1} - \\frac{1}{r_2} \right) = 3.65\\) mm.",
+    "name": "Questions Item 22"
+  },
+  {
+    "id": "p8_item23",
+    "text": "A body is suspended by a light string. The tensions in the string when the body is in air, when the body is totally immersed in water and when the body is totally immersed in a liquid are respectively 40.2 N, 28.4 N and 16.6 N. The density of the liquid is",
+    "options": [
+      "1200 kg m^{-3}",
+      "1600 kg m^{-3}",
+      "2000 kg m^{-3}",
+      "2400 kg m^{-3}"
+    ],
+    "correctIndex": 2,
+    "explanation": "Loss in weight in water = 40.2 - 28.4 = 11.8 N. Volume = 11.8 / (1000 × 10). Loss in liquid = 40.2 - 16.6 = 23.6 N. Density = 23.6 / (V × 10) = 2000 kg m^{-3}.",
+    "name": "Questions Item 23"
+  },
+  {
+    "id": "p8_item24",
+    "text": "A spherical body of density \\(\\rho\\) is floating half immersed in a liquid of density \\(d\\). If \\(\\sigma\\) is the surface tension of the liquid, then the diameter of the body is",
+    "options": [
+      "\\(\\sqrt{\\frac{3\\sigma}{g(2\\rho - d)}}\\)",
+      "\\(\\sqrt{\\frac{6\\sigma}{g(2\\rho - d)}}\\)",
+      "\\(\\sqrt{\\frac{4\\sigma}{g(2\\rho - d)}}\\)",
+      "\\(\\sqrt{\\frac{12\\sigma}{g(2\\rho - d)}}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Balancing: buoyant force + surface tension = weight. Leads to diameter \\(\\sqrt{\\frac{3\\sigma}{g(2\\rho - d)}}\\).",
+    "name": "Questions Item 24"
+  },
+  {
+    "id": "p8_item25",
+    "text": "Water stands upto height \\(h\\) behind the dam as shown in the figure. The front view of the dam gate is also shown in the adjoining figure. Density of water is \\(\\rho\\) and acceleration due to gravity is \\(g\\). If atmospheric pressure force is also considered, then the point of application of total force acting on the dam due to water above \\(O\\) is",
+    "options": [
+      "\\(\\frac{h}{4}\\)",
+      "\\(\\frac{h}{3}\\)",
+      "\\(h\\)",
+      "\\(\\frac{h}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Total force acts at the centre of pressure, which for a rectangular gate from the free surface is at \\(\\frac{2h}{3}\\) from top, or \\(\\frac{h}{3}\\) from bottom (above O).",
+    "name": "Questions Item 25"
+  }
+]

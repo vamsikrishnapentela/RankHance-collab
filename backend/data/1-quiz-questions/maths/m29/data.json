@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m29_item1",
+    "text": "The AM-GM inequality states: for positive reals \\(a\\) and \\(b\\):",
+    "options": ["\\( \\frac{a+b}{2} \\leq \\sqrt{ab} \\)", "\\( \\frac{a+b}{2} \\geq \\sqrt{ab} \\)", "\\( \\frac{a+b}{2} = \\sqrt{ab} \\)", "\\( a+b \\geq ab \\)"],
+    "correctIndex": 1,
+    "explanation": "AM ≥ GM: \\( \\frac{a+b}{2} \\geq \\sqrt{ab} \\). Equality holds iff \\(a = b\\).",
+    "name": "AM-GM Inequality"
+  },
+  {
+    "id": "m29_item2",
+    "text": "The Cauchy-Schwarz inequality states: \\( (a_1^2+a_2^2)(b_1^2+b_2^2) \\geq \\)",
+    "options": ["\\( (a_1b_1-a_2b_2)^2 \\)", "\\( (a_1b_1+a_2b_2)^2 \\)", "\\( a_1^2b_1^2+a_2^2b_2^2 \\)", "\\( (a_1+a_2)^2(b_1+b_2)^2 \\)"],
+    "correctIndex": 1,
+    "explanation": "Cauchy-Schwarz: \\( (a_1^2+a_2^2)(b_1^2+b_2^2) \\geq (a_1b_1+a_2b_2)^2 \\)",
+    "name": "Cauchy-Schwarz"
+  },
+  {
+    "id": "m29_item3",
+    "text": "The number of terms in the expansion of \\( (a+b+c)^n \\) is:",
+    "options": ["\\( n+1 \\)", "\\( n+2 \\)", "\\( \\frac{(n+1)(n+2)}{2} \\)", "\\( 3^n \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( (a+b+c)^n \\) has \\( \\binom{n+2}{2} = \\frac{(n+1)(n+2)}{2} \\) terms.",
+    "name": "Trinomial Expansion Terms"
+  },
+  {
+    "id": "m29_item4",
+    "text": "If \\( \\log_a b = x \\), then \\( \\log_b a = \\)",
+    "options": ["\\( x \\)", "\\( -x \\)", "\\( \\frac{1}{x} \\)", "\\( x^2 \\)"],
+    "correctIndex": 2,
+    "explanation": "Reciprocal property: \\( \\log_a b = \\frac{1}{\\log_b a} \\Rightarrow \\log_b a = \\frac{1}{x} \\)",
+    "name": "Log Reciprocal"
+  },
+  {
+    "id": "m29_item5",
+    "text": "The change of base formula: \\( \\log_a b = \\)",
+    "options": ["\\( \\frac{\\log a}{\\log b} \\)", "\\( \\log a \\cdot \\log b \\)", "\\( \\frac{\\log b}{\\log a} \\)", "\\( \\log(b-a) \\)"],
+    "correctIndex": 2,
+    "explanation": "Change of base: \\( \\log_a b = \\frac{\\log b}{\\log a} = \\frac{\\ln b}{\\ln a} \\)",
+    "name": "Change of Base"
+  },
+  {
+    "id": "m29_item6",
+    "text": "\\( \\log(mn) = \\)",
+    "options": ["\\( \\log m \\cdot \\log n \\)", "\\( \\log m + \\log n \\)", "\\( \\log m - \\log n \\)", "\\( n\\log m \\)"],
+    "correctIndex": 1,
+    "explanation": "Logarithm product rule: \\( \\log(mn) = \\log m + \\log n \\)",
+    "name": "Log Product Rule"
+  },
+  {
+    "id": "m29_item7",
+    "text": "The harmonic mean of \\(a\\) and \\(b\\) is:",
+    "options": ["\\( \\frac{a+b}{2} \\)", "\\( \\sqrt{ab} \\)", "\\( \\frac{2ab}{a+b} \\)", "\\( \\frac{a+b}{ab} \\)"],
+    "correctIndex": 2,
+    "explanation": "HM of \\(a,b\\) = \\( \\frac{2ab}{a+b} \\). Relation: \\( HM \\leq GM \\leq AM \\)",
+    "name": "Harmonic Mean"
+  },
+  {
+    "id": "m29_item8",
+    "text": "If \\(a, b, c\\) are in GP, then \\( b^2 = \\)",
+    "options": ["\\( a+c \\)", "\\( ac \\)", "\\( a^2+c^2 \\)", "\\( a^2c^2 \\)"],
+    "correctIndex": 1,
+    "explanation": "In a GP: middle term² = product of adjacent terms. \\( b^2 = ac \\)",
+    "name": "GP Middle Term"
+  },
+  {
+    "id": "m29_item9",
+    "text": "The sum of infinite GP \\( a + ar + ar^2 + \\cdots \\) (\\( |r|<1 \\)) is:",
+    "options": ["\\( \\frac{a}{1+r} \\)", "\\( \\frac{a}{r-1} \\)", "\\( \\frac{a}{1-r} \\)", "\\( ar \\)"],
+    "correctIndex": 2,
+    "explanation": "Sum of infinite GP: \\( S_\\infty = \\frac{a}{1-r} \\) when \\( |r| < 1 \\).",
+    "name": "Infinite GP Sum"
+  },
+  {
+    "id": "m29_item10",
+    "text": "The number of ways to solve \\( x_1+x_2+\\cdots+x_r = n \\) in non-negative integers is:",
+    "options": ["\\( \\binom{n}{r} \\)", "\\( \\binom{n+r-1}{r-1} \\)", "\\( \\binom{n+r}{r} \\)", "\\( r^n \\)"],
+    "correctIndex": 1,
+    "explanation": "Stars and bars: \\( \\binom{n+r-1}{r-1} \\) solutions in non-negative integers.",
+    "name": "Stars and Bars"
+  },
+  {
+    "id": "m29_item11",
+    "text": "The sum \\( \\sum_{k=1}^{n}(2k-1) = n^2 \\). So \\( 1+3+5+\\cdots+19 = \\)",
+    "options": ["\\( 81 \\)", "\\( 90 \\)", "\\( 100 \\)", "\\( 64 \\)"],
+    "correctIndex": 2,
+    "explanation": "19th odd number: \\(n=10\\) (since \\(2(10)-1=19\\)). Sum \\( = 10^2 = 100 \\)",
+    "name": "Sum of Odd Numbers"
+  },
+  {
+    "id": "m29_item12",
+    "text": "The value of \\( \\binom{2n}{n} \\) grows approximately as:",
+    "options": ["\\( n^2 \\)", "\\( \\frac{4^n}{\\sqrt{\\pi n}} \\)", "\\( 2^n \\)", "\\( n! \\)"],
+    "correctIndex": 1,
+    "explanation": "By Stirling's approximation: \\( \\binom{2n}{n} \\sim \\frac{4^n}{\\sqrt{\\pi n}} \\) for large \\(n\\).",
+    "name": "Central Binomial Coefficient"
+  },
+  {
+    "id": "m29_item13",
+    "text": "Pigeon-hole principle: if \\(n+1\\) objects are placed in \\(n\\) boxes, then at least one box has:",
+    "options": ["Exactly one object", "At least 2 objects", "At most 2 objects", "Exactly 2 objects"],
+    "correctIndex": 1,
+    "explanation": "Pigeonhole Principle: if more objects than boxes, at least one box must contain ≥ 2 objects.",
+    "name": "Pigeonhole Principle"
+  },
+  {
+    "id": "m29_item14",
+    "text": "The number of onto (surjective) functions from a 3-element set to a 2-element set is:",
+    "options": ["\\( 8 \\)", "\\( 6 \\)", "\\( 4 \\)", "\\( 2 \\)"],
+    "correctIndex": 1,
+    "explanation": "Total functions: \\(2^3=8\\). Non-surjective (all to one element): \\(2\\). Surjective: \\(8-2=6\\).",
+    "name": "Surjective Functions Count"
+  },
+  {
+    "id": "m29_item15",
+    "text": "The value of \\( \\log_2 8 + \\log_3 9 + \\log_5 25 = \\)",
+    "options": ["\\( 6 \\)", "\\( 7 \\)", "\\( 8 \\)", "\\( 9 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\log_2 8 = 3 \\), \\( \\log_3 9 = 2 \\), \\( \\log_5 25 = 2 \\). Sum \\( = 3+2+2 = 7 \\)",
+    "name": "Log Evaluation"
+  }
+]

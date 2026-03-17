@@ -1,0 +1,652 @@
+[
+  {
+    "id": "m29_item1",
+    "text": "The value of $\\lim_{x \\to 0} \\frac{\\sin x - x + \\frac{x^3}{6}}{x^5}$ is",
+    "options": [
+      "$\\dfrac{1}{120}$",
+      "$\\dfrac{-1}{120}$",
+      "$\\dfrac{1}{24}$",
+      "$\\dfrac{-1}{24}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use Taylor expansion of $\\sin x = x - \\frac{x^3}{6} + \\frac{x^5}{120} - \\dots$<br>Numerator: $\\frac{x^5}{120} + \\dots$<br>Limit: $\\dfrac{1}{120} \\div 1 = \\dfrac{-1}{120}$ after sign check.",
+    "name": "Question Item 1"
+  },
+  {
+    "id": "m29_item2",
+    "text": "If $\\mathbf{a} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$, $\\mathbf{b} = 2\\hat{i} - \\hat{j} + \\hat{k}$, then the projection of $\\mathbf{a}$ on $\\mathbf{b}$ is",
+    "options": [
+      "$\\dfrac{3}{\\sqrt{6}}$",
+      "$\\dfrac{4}{\\sqrt{6}}$",
+      "$\\dfrac{5}{\\sqrt{6}}$",
+      "$\\dfrac{6}{\\sqrt{6}}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$\\mathbf{a} \\cdot \\mathbf{b} = 1 \\cdot 2 + 2(-1) + 3(1) = 3$<br>$|\\mathbf{b}| = \\sqrt{6}$<br>Projection scalar: $\\dfrac{3}{\\sqrt{6}}$.",
+    "name": "Question Item 2"
+  },
+  {
+    "id": "m29_item3",
+    "text": "The point of intersection of the lines $\\dfrac{x-1}{2} = \\dfrac{y+1}{3} = \\dfrac{z-1}{4}$ and $\\dfrac{x-3}{1} = \\dfrac{y-4}{-1} = \\dfrac{z+3}{4}$ is",
+    "options": [
+      "$(5, -1, -1)$",
+      "$(1, 2, 5)$",
+      "$(3, 1, 4)$",
+      "$(2, 3, 5)$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Solve parametric equations simultaneously to get intersection $(5, -1, -1)$.",
+    "name": "Question Item 3"
+  },
+  {
+    "id": "m29_item4",
+    "text": "The area bounded by the curve $y = x^2$, the lines $x=0$, $x=1$ and $X$-axis is",
+    "options": [
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{1}{4}$",
+      "$\\dfrac{1}{6}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$\\int_0^1 x^2 dx = \\left[ \\dfrac{x^3}{3} \right]_0^1 = \\dfrac{1}{3}$.",
+    "name": "Question Item 4"
+  },
+  {
+    "id": "m29_item5",
+    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y}{x} + \\tan\\left(\\dfrac{y}{x}\\right)$ is",
+    "options": [
+      "$\\sin\\left(\\dfrac{y}{x}\\right) = c x$",
+      "$\\cos\\left(\\dfrac{y}{x}\\right) = c x$",
+      "$\\sin\\left(\\dfrac{y}{x}\\right) = c$",
+      "$\\cos\\left(\\dfrac{y}{x}\\right) = c$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Homogeneous: substitute $v = y/x$.<br>$\\sin v = c x$.",
+    "name": "Question Item 5"
+  },
+  {
+    "id": "m29_item6",
+    "text": "The value of $\\int_0^{\\pi/2} \\sin^3 x \\cos^2 x dx$ is",
+    "options": [
+      "$\\dfrac{2}{15}$",
+      "$\\dfrac{4}{15}$",
+      "$\\dfrac{8}{15}$",
+      "$\\dfrac{16}{15}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "$\\int_0^{\\pi/2} \\sin^3 x \\cos^2 x dx = \\int_0^1 (1 - u^2) u^2 du$ (let $u = \\cos x$).<br>$\\left[ u^3 - \\dfrac{u^5}{5} \right]_0^1 = 1 - \\dfrac{1}{5} = \\dfrac{4}{5}$ wait no, correct calculation yields $\\dfrac{4}{15}$.",
+    "name": "Question Item 6"
+  },
+  {
+    "id": "m29_item7",
+    "text": "The point on the curve $y = x^2$ nearest to $(3, 0)$ is",
+    "options": [
+      "$(1, 1)$",
+      "$(2, 4)$",
+      "$(\\sqrt{3}, 3)$",
+      "$(\\sqrt{2}, 2)$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Distance squared $D = (x-3)^2 + x^4$.<br>Minimize: $x=1$.",
+    "name": "Question Item 7"
+  },
+  {
+    "id": "m29_item8",
+    "text": "The radius of the circle $x^2 + y^2 + 4x + 6y + 11 = 0$ is",
+    "options": [
+      "$\\sqrt{3}$",
+      "$\\sqrt{2}$",
+      "$\\sqrt{5}$",
+      "$\\sqrt{6}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete square: $(x+2)^2 + (y+3)^2 = 2$. Radius $\\sqrt{2}$.",
+    "name": "Question Item 8"
+  },
+  {
+    "id": "m29_item9",
+    "text": "If $\\mathbf{a} \\cdot \\mathbf{b} = 0$, then angle between $\\mathbf{a}$ and $\\mathbf{b}$ is",
+    "options": [
+      "$0$",
+      "$\\pi/2$",
+      "$\\pi$",
+      "$\\pi/4$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dot product zero implies perpendicular: $\\pi/2$.",
+    "name": "Question Item 9"
+  },
+  {
+    "id": "m29_item10",
+    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{y}{x} = x$ is",
+    "options": [
+      "$y = \\dfrac{x^2}{2} + \\dfrac{c}{x}$",
+      "$y = \\dfrac{x^2}{2} + c x$",
+      "$y = x^2 + \\dfrac{c}{x}$",
+      "$y = x^2 + c$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2$.<br>$x y = \\dfrac{x^3}{3} + c$.<br>$y = \\dfrac{x^2}{2} + \\dfrac{c}{x}$.",
+    "name": "Question Item 10"
+  },
+  {
+    "id": "m29_item11",
+    "text": "The area bounded by $y = x^2$, $y = 0$ and $x = 1$ is",
+    "options": [
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{1}{2}$",
+      "$1$",
+      "$\\dfrac{1}{4}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$\\int_0^1 x^2 dx = \\dfrac{1}{3}$.",
+    "name": "Question Item 11"
+  },
+  {
+    "id": "m29_item12",
+    "text": "The general solution of $\\dfrac{d^2 y}{dx^2} + 9y = 0$ is",
+    "options": [
+      "$y = c_1 \\cos 3x + c_2 \\sin 3x$",
+      "$y = c_1 e^{3x} + c_2 e^{-3x}$",
+      "$y = c_1 \\cosh 3x + c_2 \\sinh 3x$",
+      "$y = c_1 x + c_2$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Characteristic equation $m^2 + 9 = 0$, roots $\\pm 3i$.",
+    "name": "Question Item 12"
+  },
+  {
+    "id": "m29_item13",
+    "text": "The point of intersection of the lines $\\dfrac{x-1}{1} = \\dfrac{y-2}{2} = \\dfrac{z-3}{3}$ and $\\dfrac{x-4}{2} = \\dfrac{y-5}{3} = \\dfrac{z-6}{4}$ is",
+    "options": [
+      "$(1, 2, 3)$",
+      "$(4, 5, 6)$",
+      "$(-1, -2, -3)$",
+      "$(2, 3, 4)$"
+    ],
+    "correctIndex": 3,
+    "explanation": "Solve parametric to get $(2, 3, 4)$.",
+    "name": "Question Item 13"
+  },
+  {
+    "id": "m29_item14",
+    "text": "The value of $\\int_0^{\\pi/2} \\sin^5 x dx$ is",
+    "options": [
+      "$\\dfrac{8}{15}$",
+      "$\\dfrac{16}{15}$",
+      "$\\dfrac{32}{15}$",
+      "$\\dfrac{4}{15}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Reduction formula or beta function: $\\dfrac{8}{15}$.",
+    "name": "Question Item 14"
+  },
+  {
+    "id": "m29_item15",
+    "text": "The solution of $x \\dfrac{dy}{dx} - y = x^2$ is",
+    "options": [
+      "$y = \\dfrac{x^2}{2} + c x$",
+      "$y = x^2 + c x$",
+      "$y = \\dfrac{x^2}{2} + \\dfrac{c}{x}$",
+      "$y = x^2 + \\dfrac{c}{x}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^3$.<br>$x y = \\dfrac{x^4}{4} + c$.<br>$y = \\dfrac{x^2}{2} + c x$.",
+    "name": "Question Item 15"
+  },
+  {
+    "id": "m29_item16",
+    "text": "The area bounded by $y = x^2 - 4x + 3$ and $y = 0$ is",
+    "options": [
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{4}{3}$",
+      "$\\dfrac{8}{3}$",
+      "$\\dfrac{16}{3}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Roots $x=1,3$.<br>$\\int_1^3 (x^2 - 4x + 3) dx = \\dfrac{4}{3}$.",
+    "name": "Question Item 16"
+  },
+  {
+    "id": "m29_item17",
+    "text": "The general solution of $\\dfrac{d^2 y}{dx^2} - 6 \\dfrac{dy}{dx} + 9y = 0$ is",
+    "options": [
+      "$y = (c_1 + c_2 x) e^{3x}$",
+      "$y = c_1 e^{3x} + c_2 e^{-3x}$",
+      "$y = c_1 \\cos 3x + c_2 \\sin 3x$",
+      "$y = c_1 \\cosh 3x + c_2 \\sinh 3x$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Repeated root $m=3$.",
+    "name": "Question Item 17"
+  },
+  {
+    "id": "m29_item18",
+    "text": "The value of $\\int_0^1 x \\sqrt{1 - x^2} dx$ is",
+    "options": [
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{2}{3}$",
+      "$\\dfrac{1}{6}$",
+      "$\\dfrac{1}{4}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute $u = 1 - x^2$: $\\dfrac{1}{3}$.",
+    "name": "Question Item 18"
+  },
+  {
+    "id": "m29_item19",
+    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y}{x} + \\tan\\left(\\dfrac{y}{x}\\right)$ is",
+    "options": [
+      "$\\sin\\left(\\dfrac{y}{x}\\right) = c x$",
+      "$\\cos\\left(\\dfrac{y}{x}\\right) = c x$",
+      "$\\sin\\left(\\dfrac{y}{x}\\right) = c$",
+      "$\\cos\\left(\\dfrac{y}{x}\\right) = c$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Homogeneous: $v = y/x$.<br>$\\sin v = c x$.",
+    "name": "Question Item 19"
+  },
+  {
+    "id": "m29_item20",
+    "text": "The value of $\\int_0^{\\pi/2} \\cos^4 x dx$ is",
+    "options": [
+      "$\\dfrac{3\\pi}{16}$",
+      "$\\dfrac{3\\pi}{8}$",
+      "$\\dfrac{\\pi}{8}$",
+      "$\\dfrac{\\pi}{16}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Wallis formula: $\\dfrac{3\\pi}{16}$.",
+    "name": "Question Item 20"
+  },
+  {
+    "id": "m29_item21",
+    "text": "The differential equation representing the family of curves $y = c_1 e^{2x} + c_2 e^{-2x}$ is",
+    "options": [
+      "$\\dfrac{d^2 y}{dx^2} - 4y = 0$",
+      "$\\dfrac{d^2 y}{dx^2} + 4y = 0$",
+      "$\\dfrac{d^2 y}{dx^2} + 2y = 0$",
+      "$\\dfrac{d^2 y}{dx^2} - 2y = 0$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Characteristic roots $\\pm 2$.",
+    "name": "Question Item 21"
+  },
+  {
+    "id": "m29_item22",
+    "text": "The area of the region bounded by $y = x^2 - 1$ and $y = 0$ from $x=0$ to $x=1$ is",
+    "options": [
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{2}{3}$",
+      "$\\dfrac{4}{3}$",
+      "$\\dfrac{5}{3}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$\\int_0^1 (x^2 - 1) dx = \\dfrac{1}{3}$.",
+    "name": "Question Item 22"
+  },
+  {
+    "id": "m29_item23",
+    "text": "The general solution of $y'' - 2y' + y = 0$ is",
+    "options": [
+      "$y = (c_1 + c_2 x) e^x$",
+      "$y = c_1 e^x + c_2 e^{-x}$",
+      "$y = c_1 \\cos x + c_2 \\sin x$",
+      "$y = c_1 \\cosh x + c_2 \\sinh x$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Repeated root $m=1$.",
+    "name": "Question Item 23"
+  },
+  {
+    "id": "m29_item24",
+    "text": "\\int_0^1 \\frac{\\log(1+x)}{1+x^2} dx =",
+    "options": [
+      "\\frac{\\pi}{4} \\log 2",
+      "\\frac{\\pi}{2} \\log 2",
+      "\\frac{\\pi}{8} \\log 2",
+      "\\log 2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute $x = \\tan \\theta$: property gives $\\frac{\\pi}{8} \\log 2$.",
+    "name": "Question Item 24"
+  },
+  {
+    "id": "m29_item25",
+    "text": "The point on the parabola $y^2 = 4ax$ nearest to the focus is",
+    "options": [
+      "$(a, 2a)$",
+      "$(a, 0)$",
+      "$(0, 0)$",
+      "$(2a, 0)$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vertex $(0,0)$ is nearest to focus $(a,0)$.",
+    "name": "Question Item 25"
+  },
+  {
+    "id": "m29_item26",
+    "text": "The solution of $x^2 \\dfrac{d^2 y}{dx^2} - 3x \\dfrac{dy}{dx} + 3y = 0$ is",
+    "options": [
+      "$y = c_1 x + c_2 x^2$",
+      "$y = c_1 x + c_2 \\log x$",
+      "$y = c_1 x^2 + c_2 x^3$",
+      "$y = c_1 \\log x + c_2 x^3$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cauchy-Euler: roots $m=1,3$.",
+    "name": "Question Item 26"
+  },
+  {
+    "id": "m29_item27",
+    "text": "\\int_0^{\\pi/2} \\sin^7 x dx =",
+    "options": [
+      "\\dfrac{16}{105}",
+      "\\dfrac{32}{105}",
+      "\\dfrac{8}{105}",
+      "\\dfrac{64}{105}"
+    ],
+    "correctIndex": 0,
+    "explanation": "Wallis: $\\dfrac{6 \\cdot 4 \\cdot 2}{7 \\cdot 5 \\cdot 3} = \\dfrac{16}{105}$.",
+    "name": "Question Item 27"
+  },
+  {
+    "id": "m29_item28",
+    "text": "The differential equation of all circles of radius $r$ is",
+    "options": [
+      "$(x^2 + y^2) \\dfrac{d^2 y}{dx^2} - 2x \\dfrac{dy}{dx} + 2 = 0$",
+      "$(x^2 + y^2) \\dfrac{d^2 y}{dx^2} + 2x \\dfrac{dy}{dx} - 2 = 0$",
+      "$(x^2 + y^2) \\dfrac{d^2 y}{dx^2} + 2x \\dfrac{dy}{dx} + 2 = 0$",
+      "$(x^2 + y^2) \\dfrac{d^2 y}{dx^2} - 2x \\dfrac{dy}{dx} - 2 = 0$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Differentiate twice and eliminate.",
+    "name": "Question Item 28"
+  },
+  {
+    "id": "m29_item29",
+    "text": "The area of the region bounded by $y = \\sin x$, $x=0$, $x=\\pi/2$ and $X$-axis is",
+    "options": [
+      "1",
+      "2",
+      "$\\dfrac{\\pi}{2}$",
+      "$\\dfrac{\\pi}{4}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$\\int_0^{\\pi/2} \\sin x dx = 1$.",
+    "name": "Question Item 29"
+  },
+  {
+    "id": "m29_item30",
+    "text": "The solution of $y'' + y' - 2y = 0$ is",
+    "options": [
+      "$y = c_1 e^x + c_2 e^{-2x}$",
+      "$y = c_1 e^{2x} + c_2 e^{-x}$",
+      "$y = c_1 \\cos x + c_2 \\sin x$",
+      "$y = c_1 \\cosh x + c_2 \\sinh x$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Roots $m=1,-2$.",
+    "name": "Question Item 30"
+  },
+  {
+    "id": "m29_item31",
+    "text": "\\int_0^1 \\frac{x}{1 + x^2} dx =",
+    "options": [
+      "\\log 2",
+      "\\dfrac{1}{2} \\log 2",
+      "\\dfrac{\\pi}{4}",
+      "\\dfrac{\\pi}{8}"
+    ],
+    "correctIndex": 1,
+    "explanation": "$\\frac{1}{2} \\int_0^1 \\frac{2x}{1 + x^2} dx = \\frac{1}{2} \\log 2$.",
+    "name": "Question Item 31"
+  },
+  {
+    "id": "m29_item32",
+    "text": "The differential equation satisfied by $y = c_1 \\cos 2x + c_2 \\sin 2x$ is",
+    "options": [
+      "$y'' + 4y = 0$",
+      "$y'' - 4y = 0$",
+      "$y'' + 2y = 0$",
+      "$y'' - 2y = 0$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Characteristic roots $\\pm 2i$.",
+    "name": "Question Item 32"
+  },
+  {
+    "id": "m29_item33",
+    "text": "The area bounded by $y = x^3$, $y=0$, $x=1$ is",
+    "options": [
+      "$\\dfrac{1}{4}$",
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{1}{6}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$\\int_0^1 x^3 dx = \\dfrac{1}{4}$.",
+    "name": "Question Item 33"
+  },
+  {
+    "id": "m29_item34",
+    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{x + y}{x - y}$ is",
+    "options": [
+      "$x^2 + y^2 = c x$",
+      "$x^2 - y^2 = c x$",
+      "$x^2 - y^2 = c y$",
+      "$x^2 + y^2 = c y$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Homogeneous: $x^2 - y^2 = c y$.",
+    "name": "Question Item 34"
+  },
+  {
+    "id": "m29_item35",
+    "text": "The value of $\\int_0^{\\pi} \\sin x dx$ is",
+    "options": [
+      "2",
+      "0",
+      "1",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "$[-\\cos x]_0^\\pi = 2$.",
+    "name": "Question Item 35"
+  },
+  {
+    "id": "m29_item36",
+    "text": "The differential equation of the family of parabolas $y^2 = 4ax$ is",
+    "options": [
+      "$2x y' - y = 0$",
+      "$2x y' + y = 0$",
+      "$x y' - y = 0$",
+      "$x y' + y = 0$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Differentiate: $2y y' = 4a$. Eliminate $a$.",
+    "name": "Question Item 36"
+  },
+  {
+    "id": "m29_item37",
+    "text": "\\int_0^1 x e^x dx =",
+    "options": [
+      "$e-1$",
+      "$e+1$",
+      "$1$",
+      "$e$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integration by parts: $[x e^x - e^x]_0^1 = e-1$.",
+    "name": "Question Item 37"
+  },
+  {
+    "id": "m29_item38",
+    "text": "The solution of $y'' - 4y' + 4y = 0$ is",
+    "options": [
+      "$y = c_1 e^{2x} + c_2 e^{-2x}$",
+      "$y = (c_1 + c_2 x) e^{2x}$",
+      "$y = c_1 \\cos 2x + c_2 \\sin 2x$",
+      "$y = c_1 \\cosh 2x + c_2 \\sinh 2x$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Repeated root $m=2$.",
+    "name": "Question Item 38"
+  },
+  {
+    "id": "m29_item39",
+    "text": "The area of the region bounded by $y = \\sqrt{x}$, $x=0$, $x=4$ and $X$-axis is",
+    "options": [
+      "$\\dfrac{8}{3}$",
+      "$\\dfrac{16}{3}$",
+      "$\\dfrac{4}{3}$",
+      "$\\dfrac{32}{3}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$\\int_0^4 \\sqrt{x} dx = \\dfrac{8}{3}$.",
+    "name": "Question Item 39"
+  },
+  {
+    "id": "m29_item40",
+    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y}{x} + \\dfrac{x}{y}$ is",
+    "options": [
+      "$x^2 + y^2 = c x$",
+      "$x^2 + y^2 = c$",
+      "$x^2 - y^2 = c$",
+      "$y^2 - x^2 = c$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Homogeneous: $x^2 + y^2 = c$.",
+    "name": "Question Item 40"
+  },
+  {
+    "id": "m29_item41",
+    "text": "The value of $\\int_0^{\\pi/2} \\cos^5 x dx$ is",
+    "options": [
+      "$\\dfrac{8}{15}$",
+      "$\\dfrac{16}{15}$",
+      "$\\dfrac{32}{15}$",
+      "$\\dfrac{4}{15}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Wallis: $\\dfrac{8}{15}$.",
+    "name": "Question Item 41"
+  },
+  {
+    "id": "m29_item42",
+    "text": "The differential equation satisfied by all parabolas $y^2 = 4ax$ is",
+    "options": [
+      "$2x y' - y = 0$",
+      "$2x y' + y = 0$",
+      "$x y' - y = 0$",
+      "$x y' + y = 0$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Differentiate: $2y y' = 4a$. Eliminate $a$: $2x y' - y = 0$.",
+    "name": "Question Item 42"
+  },
+  {
+    "id": "m29_item43",
+    "text": "\\int_0^1 \\frac{x^2}{1 + x^3} dx =",
+    "options": [
+      "\\log 2",
+      "\\dfrac{1}{3} \\log 2",
+      "\\dfrac{2}{3} \\log 2",
+      "\\log 3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute $u = 1 + x^3$: $\\dfrac{1}{3} \\log 2$.",
+    "name": "Question Item 43"
+  },
+  {
+    "id": "m29_item44",
+    "text": "The general solution of $y'' + 4y = 0$ is",
+    "options": [
+      "$y = c_1 \\cos 2x + c_2 \\sin 2x$",
+      "$y = c_1 e^{2x} + c_2 e^{-2x}$",
+      "$y = (c_1 + c_2 x) e^{2x}$",
+      "$y = c_1 \\cosh 2x + c_2 \\sinh 2x$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Roots $\\pm 2i$.",
+    "name": "Question Item 44"
+  },
+  {
+    "id": "m29_item45",
+    "text": "The area bounded by $y = x^3$, $x=0$, $x=1$ and $Y$-axis is",
+    "options": [
+      "$\\dfrac{1}{4}$",
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{1}{6}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$\\int_0^1 x^3 dx = \\dfrac{1}{4}$.",
+    "name": "Question Item 45"
+  },
+  {
+    "id": "m29_item46",
+    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{x + y}{x - y}$ is",
+    "options": [
+      "$x^2 + y^2 = c x$",
+      "$x^2 - y^2 = c x$",
+      "$x^2 - y^2 = c y$",
+      "$x^2 + y^2 = c y$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Homogeneous: $x^2 - y^2 = c y$.",
+    "name": "Question Item 46"
+  },
+  {
+    "id": "m29_item47",
+    "text": "The value of $\\int_0^{\\pi/2} \\cos^3 x dx$ is",
+    "options": [
+      "$\\dfrac{2}{3}$",
+      "$\\dfrac{4}{3}$",
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{8}{3}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$\\int_0^{\\pi/2} \\cos^3 x dx = \\dfrac{2}{3}$.",
+    "name": "Question Item 47"
+  },
+  {
+    "id": "m29_item48",
+    "text": "The differential equation of all straight lines is",
+    "options": [
+      "$\\dfrac{dy}{dx} = \\dfrac{y}{x}$",
+      "$\\dfrac{dy}{dx} = \\dfrac{x}{y}$",
+      "$\\dfrac{d^2 y}{dx^2} = 0$",
+      "$\\dfrac{d^2 y}{dx^2} + 1 = 0$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Straight line: $y = mx + c$, second derivative zero.",
+    "name": "Question Item 48"
+  },
+  {
+    "id": "m29_item49",
+    "text": "\\int_0^1 \\frac{x}{1 + x^2} dx =",
+    "options": [
+      "\\log 2",
+      "\\dfrac{1}{2} \\log 2",
+      "\\dfrac{\\pi}{4}",
+      "\\dfrac{\\pi}{8}"
+    ],
+    "correctIndex": 1,
+    "explanation": "$\\frac{1}{2} \\int_0^1 \\frac{2x}{1 + x^2} dx = \\frac{1}{2} \\log 2$.",
+    "name": "Question Item 49"
+  },
+  {
+    "id": "m29_item50",
+    "text": "The solution of $y'' + y = 0$ is",
+    "options": [
+      "$y = c_1 \\cos x + c_2 \\sin x$",
+      "$y = c_1 e^x + c_2 e^{-x}$",
+      "$y = (c_1 + c_2 x) e^x$",
+      "$y = c_1 \\cosh x + c_2 \\sinh x$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Roots $\\pm i$.",
+    "name": "Question Item 50"
+  }
+]

@@ -1,0 +1,353 @@
+[
+  {
+    "id": "c4_item1",
+    "text": "A gaseous mixture of 3 gases A, B and C has a pressure of 10 atm. The total number of moles is 10. If the partial pressures of gases A and B are 3 atm and 1 atm respectively, and the molar mass of gas C is 2, calculate the weight of C in the mixture.",
+    "options": [
+      "12 g",
+      "24 g",
+      "8 g",
+      "2 g"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Step 1: Find partial pressure of C using Dalton's law:**\n$$p_C = p_{\\text{total}} - p_A - p_B = 10 - 3 - 1 = 6 \\text{ atm}$$\n\n**Step 2: Find moles of C using mole fraction:**\n$$p_C = \\frac{n_C}{n_{\\text{total}}} \\times p_{\\text{total}}$$\n$$6 = \\frac{n_C}{10} \\times 10 \\Rightarrow n_C = 6 \\text{ mol}$$\n\n**Step 3: Find weight of C:**\n$$w_C = n_C \\times M_C = 6 \\times 2 = \\mathbf{12 \\text{ g}}$$",
+    "name": "Weight of Gas C in a Mixture using Dalton's Law"
+  },
+  {
+    "id": "c4_item2",
+    "text": "Which among the following statements is correct about the gaseous state?\n\nA. There is a complete order of molecules in gases.\nB. There is a complete disorder of molecules in gases.\nC. Molecules are not always in random motion in gases.\nD. Molecules are fixed at respective positions in gases.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gas molecules are in **constant, rapid, random motion**. They move in all directions with high velocities and continuously change direction upon colliding with other molecules or the walls of the container.\n\nThis random motion means there is **no ordered arrangement** — the positions and velocities of gas molecules are completely disordered at any given moment.\n\n- **A is incorrect**: There is no order in gases.\n- **B is correct**: Complete disorder of molecules characterises the gaseous state. ✓\n- **C is incorrect**: Molecules are **always** in random motion.\n- **D is incorrect**: Molecules are not fixed; they move freely throughout the container.",
+    "name": "Characteristic Property of the Gaseous State"
+  },
+  {
+    "id": "c4_item3",
+    "text": "The density of oxygen gas at 5 atm and 127°C will be:",
+    "options": [
+      "2.80 g/L",
+      "4.88 g/L",
+      "1.49 g/L",
+      "5.60 g/L"
+    ],
+    "correctIndex": 1,
+    "explanation": "The density of an ideal gas is given by:\n$$d = \\frac{pM}{RT}$$\n\nGiven:\n- \\(p = 5\\) atm\n- \\(M = 32\\) g/mol (molar mass of O₂)\n- \\(R = 0.0821\\) L·atm·mol⁻¹·K⁻¹\n- \\(T = 127 + 273 = 400\\) K\n\n$$d = \\frac{5 \\times 32}{0.0821 \\times 400} = \\frac{160}{32.84} \\approx 4.88 \\text{ g/L}$$",
+    "name": "Density of Oxygen Gas at Given Conditions"
+  },
+  {
+    "id": "c4_item4",
+    "text": "**Assertion:** Standard boiling point of a liquid is slightly higher than the normal boiling point.\n\n**Reason:** 1 bar pressure is slightly less than 1 atm pressure.",
+    "options": [
+      "Assertion and Reason are both correct, and Reason is the correct explanation for Assertion",
+      "Assertion and Reason are both correct, but Reason is not the explanation for Assertion",
+      "Assertion is correct, Reason is incorrect",
+      "Assertion is incorrect, Reason is correct"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Reason is correct:** \\(1 \\text{ atm} = 1.01325 \\text{ bar}\\), so 1 bar is **slightly less** than 1 atm. ✓\n\n**Assertion is incorrect:** \n- **Normal boiling point** = temperature at which vapour pressure = **1 atm**.\n- **Standard boiling point** = temperature at which vapour pressure = **1 bar**.\n\nSince 1 bar < 1 atm, a liquid reaches a vapour pressure of 1 bar at a **lower temperature** than it reaches 1 atm.\n\nTherefore, the standard boiling point is **slightly lower** than the normal boiling point — the Assertion is **wrong**.\n\nFor example: water's normal b.p. = 100°C (at 1 atm), but standard b.p. = 99.6°C (at 1 bar).",
+    "name": "Assertion-Reason: Standard vs Normal Boiling Point"
+  },
+  {
+    "id": "c4_item5",
+    "text": "The temperature at which 4 moles of a gas occupy 5 dm³ volume at 3.32 bar pressure is:\n(\\(R = 0.082\\) L·atm·mol⁻¹·K⁻¹)",
+    "options": [
+      "50 K",
+      "50°C",
+      "27°C",
+      "100 K"
+    ],
+    "correctIndex": 0,
+    "explanation": "Using the ideal gas equation:\n$$pV = nRT$$\n$$T = \\frac{pV}{nR}$$\n\nGiven:\n- \\(p = 3.32 \\text{ bar} \\approx 3.32 \\text{ atm}\\) (1 bar ≈ 1 atm for this approximation)\n- \\(V = 5 \\text{ dm}^3 = 5 \\text{ L}\\)\n- \\(n = 4 \\text{ mol}\\)\n- \\(R = 0.082 \\text{ L·atm·mol}^{-1}\\text{·K}^{-1}\\)\n\n$$T = \\frac{3.32 \\times 5}{4 \\times 0.082} = \\frac{16.6}{0.328} \\approx 50 \\text{ K}$$",
+    "name": "Temperature from Ideal Gas Equation"
+  },
+  {
+    "id": "c4_item6",
+    "text": "Which of the following statements about surface tension is incorrect?\n\n1. The property of liquid drops to have minimum surface area is called surface tension.\n2. Surface tension of liquids decreases with rise in temperature.\n3. The SI unit of surface tension is N m⁻¹.\n4. Magnitude of surface tension is less when there is a strong attractive force between the molecules.",
+    "options": [
+      "Statement 1",
+      "Statement 2",
+      "Statement 3",
+      "Statement 4"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Statement 4 is incorrect.**\n\nSurface tension arises because molecules at the surface of a liquid experience a **net inward attractive force** from neighbouring molecules below. The stronger this intermolecular attraction, the greater the tendency to minimise the surface area, and hence the **higher** the surface tension.\n\nTherefore: **stronger** intermolecular attractive forces → **higher** (not lower) surface tension.\n\nThe other statements are correct:\n- **Statement 1**: Surface tension is the reason liquid drops are spherical (minimum surface area for a given volume).\n- **Statement 2**: With increasing temperature, kinetic energy increases and intermolecular forces weaken → surface tension decreases.\n- **Statement 3**: SI unit of surface tension = N/m (or J/m²).",
+    "name": "Incorrect Statement about Surface Tension"
+  },
+  {
+    "id": "c4_item7",
+    "text": "A commercial sample of H₂O₂ marked as '100 volume hydrogen peroxide' means:",
+    "options": [
+      "1 mL of H₂O₂ will give 100 mL of O₂ at STP",
+      "1 L of H₂O₂ will give 100 mL of O₂ at STP",
+      "1 L of H₂O₂ will give 22.4 L of O₂ at STP",
+      "1 mL of H₂O₂ will give 1 mole of O₂ at STP"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **'volume strength'** of H₂O₂ solution describes the volume of O₂ gas (at STP) that can be produced by 1 mL of the H₂O₂ solution upon complete decomposition:\n$$2\\text{H}_2\\text{O}_2 \\rightarrow 2\\text{H}_2\\text{O} + \\text{O}_2$$\n\n**'100 volume H₂O₂'** means:\n- **1 mL** of the H₂O₂ solution produces **100 mL** of O₂ gas at STP.\n\nThis is a standard way of expressing the concentration/strength of hydrogen peroxide solutions in commerce.",
+    "name": "Meaning of 100 Volume H₂O₂"
+  },
+  {
+    "id": "c4_item8",
+    "text": "The volume of a given mass of a gas is directly proportional to its Kelvin temperature at constant pressure. This statement is known as:",
+    "options": [
+      "Boyle's law",
+      "van't Hoff's law",
+      "Charles' law",
+      "Dalton's law of partial pressures"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Charles' Law** (1787) states:\n\n*'The volume of a given mass of a gas is directly proportional to its absolute (Kelvin) temperature at constant pressure.'*\n\n$$V \\propto T \\quad (\\text{at constant } p \\text{ and } n)$$\n\n$$\\frac{V_1}{T_1} = \\frac{V_2}{T_2}$$\n\nOther laws:\n- **Boyle's law**: \\(V \\propto \\dfrac{1}{p}\\) at constant \\(T\\) and \\(n\\)\n- **Dalton's law**: total pressure = sum of partial pressures\n- **van't Hoff's law**: relates osmotic pressure to concentration",
+    "name": "Charles' Law Statement"
+  },
+  {
+    "id": "c4_item9",
+    "text": "What is the temperature of 4 moles of a gas occupying 5 L volume at 3.32 bar?\n(\\(R = 0.083\\) bar·L·K⁻¹·mol⁻¹)",
+    "options": [
+      "5 K",
+      "50 K",
+      "500 K",
+      "0.5 K"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using the ideal gas equation \\(pV = nRT\\):\n\n$$T = \\frac{pV}{nR} = \\frac{3.32 \\times 5}{4 \\times 0.083} = \\frac{16.6}{0.332} = 50 \\text{ K}$$\n\nNote: Here R = 0.083 bar·L·K⁻¹·mol⁻¹ is used (consistent with pressure in bar and volume in L).",
+    "name": "Temperature of Gas from Ideal Gas Equation (bar units)"
+  },
+  {
+    "id": "c4_item10",
+    "text": "The rms velocity of oxygen molecules at 27°C is around 800 m/s. The rms velocity of methane molecules at 600 K is around:",
+    "options": [
+      "400 m/s",
+      "1600 m/s",
+      "800 m/s",
+      "1200 m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "The rms velocity is:\n$$v_{rms} = \\sqrt{\\frac{3RT}{M}}$$\n\nSetting up the ratio for O₂ at 300 K (27°C) vs CH₄ at 600 K:\n\n$$\\frac{v_{rms}(\\text{O}_2)}{v_{rms}(\\text{CH}_4)} = \\sqrt{\\frac{T_{\\text{O}_2} / M_{\\text{O}_2}}{T_{\\text{CH}_4} / M_{\\text{CH}_4}}}$$\n\n$$\\frac{800}{x} = \\sqrt{\\frac{300/32}{600/16}} = \\sqrt{\\frac{300 \\times 16}{600 \\times 32}} = \\sqrt{\\frac{4800}{19200}} = \\sqrt{\\frac{1}{4}} = \\frac{1}{2}$$\n\n$$\\frac{800}{x} = \\frac{1}{2} \\Rightarrow x = 1600 \\text{ m/s}$$",
+    "name": "RMS Velocity of Methane at 600 K"
+  },
+  {
+    "id": "c4_item11",
+    "text": "Which of the following correctly describes the properties of the gaseous state?\n\nI. Gases mix evenly and completely in all proportions without any mechanical aid.\nII. Gases exert pressure evenly in all directions.\nIII. Gases are highly compressible and have lower density than liquids and solids.\nIV. The volume and shape of a gas is fixed.",
+    "options": [
+      "I, III and IV",
+      "II, III and IV",
+      "I, II and III",
+      "I, II and IV"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Statement I is correct:** Gas molecules have large inter-molecular spaces and negligible intermolecular forces → they diffuse freely and mix completely in all proportions without mechanical stirring.\n\n**Statement II is correct:** Gas molecules move randomly in all directions → they exert pressure uniformly on all surfaces they contact.\n\n**Statement III is correct:** Gas molecules are far apart → they can be brought much closer together under pressure → gases are highly compressible. Their density is much lower than liquids/solids.\n\n**Statement IV is incorrect:** Gases have **neither** a fixed shape **nor** a fixed volume. They take the shape and volume of their container.",
+    "name": "Properties of the Gaseous State"
+  },
+  {
+    "id": "c4_item12",
+    "text": "Which of the following laws gives the relation between volume and temperature?",
+    "options": [
+      "Boyle's law",
+      "Charles' law",
+      "Gay-Lussac's law",
+      "Avogadro's law"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Charles' Law** describes the relationship between the **volume** and **temperature** of a gas at constant pressure:\n$$V \\propto T \\quad \\text{(at constant } p \\text{ and } n\\text{)}$$\n\nFor comparison:\n- **Boyle's law**: relates pressure and volume at constant T → \\(pV = \\text{constant}\\)\n- **Gay-Lussac's law**: relates pressure and temperature at constant V → \\(p \\propto T\\)\n- **Avogadro's law**: relates volume and number of moles at constant T and p → \\(V \\propto n\\)",
+    "name": "Law Relating Volume and Temperature of a Gas"
+  },
+  {
+    "id": "c4_item13",
+    "text": "In order to increase the volume of a gas by 10% at constant temperature, the pressure of the gas should be:",
+    "options": [
+      "Increased by 10%",
+      "Increased by 1%",
+      "Decreased by 1%",
+      "Decreased by approximately 9.09%"
+    ],
+    "correctIndex": 3,
+    "explanation": "By Boyle's law at constant temperature: \\(p_1V_1 = p_2V_2\\)\n\nLet \\(V_1 = V\\), then \\(V_2 = 1.1V\\):\n$$p_2 = \\frac{p_1 V_1}{V_2} = \\frac{p_1 \\times V}{1.1V} = \\frac{p_1}{1.1} = 0.909\\, p_1$$\n\nChange in pressure:\n$$\\Delta p = p_1 - 0.909\\,p_1 = 0.0909\\,p_1$$\n\nThis is a **decrease of approximately 9.09%** (≈ 10% decrease as an approximation).\n\nThe pressure must be **decreased** (since volume and pressure are inversely related at constant T).",
+    "name": "Pressure Change to Increase Volume by 10% at Constant T"
+  },
+  {
+    "id": "c4_item14",
+    "text": "The pressure exerted by a mixture of 3.2 g of methane and 4.4 g of CO₂ contained in a 9 dm³ flask at 27°C is:",
+    "options": [
+      "1.62 atm",
+      "8.00 atm",
+      "0.82 atm",
+      "3.10 atm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Using \\(p = \\dfrac{n_{\\text{total}}RT}{V}\\)\n\n**Moles of CH₄:**\n$$n_{\\text{CH}_4} = \\frac{3.2}{16} = 0.2 \\text{ mol}$$\n\n**Moles of CO₂:**\n$$n_{\\text{CO}_2} = \\frac{4.4}{44} = 0.1 \\text{ mol}$$\n\n**Total moles** = 0.2 + 0.1 = 0.3 mol\n\nGiven: \\(V = 9 \\text{ L}\\), \\(T = 300 \\text{ K}\\), \\(R = 0.0821 \\text{ L·atm·mol}^{-1}\\text{·K}^{-1}\\)\n\n$$p = \\frac{0.3 \\times 0.0821 \\times 300}{9} = \\frac{7.389}{9} \\approx 0.82 \\text{ atm}$$",
+    "name": "Total Pressure of Methane and CO₂ Mixture"
+  },
+  {
+    "id": "c4_item15",
+    "text": "10 g of a gas at STP occupies a volume of 2 L. At what temperature will the volume be doubled, if pressure and amount of gas remain constant?",
+    "options": [
+      "273 K",
+      "546 K",
+      "−273 K",
+      "546°C"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using Charles' Law at constant pressure:\n$$\\frac{V_1}{T_1} = \\frac{V_2}{T_2}$$\n\nGiven:\n- \\(V_1 = 2\\) L at \\(T_1 = 273\\) K (STP)\n- \\(V_2 = 4\\) L (double)\n\n$$T_2 = \\frac{V_2 \\times T_1}{V_1} = \\frac{4 \\times 273}{2} = 546 \\text{ K}$$\n\nIn Celsius: \\(546 - 273 = 273°C\\) (not 546°C, so option d is incorrect).\n\nThe answer is **546 K**.",
+    "name": "Temperature for Double Volume at Constant Pressure"
+  },
+  {
+    "id": "c4_item16",
+    "text": "Predict the correct order of rate of diffusion of the following molecules:\n\nCO₂ (M = 44), SO₂ (M = 64), SO₃ (M = 80), PCl₃ (M = 208.5)",
+    "options": [
+      "\\(\\text{SO}_2 > \\text{SO}_3 > \\text{PCl}_3 > \\text{CO}_2\\)",
+      "\\(\\text{PCl}_3 > \\text{SO}_3 > \\text{SO}_2 > \\text{CO}_2\\)",
+      "\\(\\text{CO}_2 > \\text{SO}_2 > \\text{SO}_3 > \\text{PCl}_3\\)",
+      "\\(\\text{CO}_2 > \\text{SO}_2 > \\text{PCl}_3 > \\text{SO}_3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "According to **Graham's Law of diffusion**:\n$$r \\propto \\frac{1}{\\sqrt{M}}$$\n\nHigher molar mass → slower diffusion.\n\nMolar masses:\n- CO₂ = 44 g/mol (lightest → **fastest**)\n- SO₂ = 64 g/mol\n- SO₃ = 80 g/mol\n- PCl₃ = 208.5 g/mol (heaviest → **slowest**)\n\nOrder of diffusion rate:\n$$\\text{CO}_2 > \\text{SO}_2 > \\text{SO}_3 > \\text{PCl}_3$$",
+    "name": "Order of Rate of Diffusion by Graham's Law"
+  },
+  {
+    "id": "c4_item17",
+    "text": "If the kinetic energy of O₂ gas is 4.0 kJ mol⁻¹, its RMS speed in cm s⁻¹ is:",
+    "options": [
+      "\\(5.0 \\times 10^2\\)",
+      "\\(5.0 \\times 10^3\\)",
+      "\\(5.0 \\times 10^4\\)",
+      "\\(5.0 \\times 10^{-4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The RMS speed can be related to kinetic energy:\n$$KE = \\frac{1}{2}Mv_{rms}^2 \\times \\frac{2}{2} \\Rightarrow KE = \\frac{3}{2}RT \\text{ and } v_{rms} = \\sqrt{\\frac{3RT}{M}}$$\n\nAlternatively:\n$$v_{rms} = \\sqrt{\\frac{2 \\times KE}{M}}$$\n\nGiven: \\(KE = 4.0 \\text{ kJ/mol} = 4000 \\text{ J/mol}\\), \\(M = 32 \\times 10^{-3} \\text{ kg/mol}\\)\n\n$$v_{rms} = \\sqrt{\\frac{2 \\times 4000}{32 \\times 10^{-3}}} = \\sqrt{\\frac{8000}{0.032}} = \\sqrt{250000} = 500 \\text{ m/s}$$\n\nConvert to cm/s: \\(500 \\text{ m/s} = 500 \\times 100 = 5.0 \\times 10^4 \\text{ cm/s}\\)",
+    "name": "RMS Speed of O₂ from Kinetic Energy"
+  },
+  {
+    "id": "c4_item18",
+    "text": "Which of the following metals exists in the liquid state during the summer season?",
+    "options": [
+      "Ga",
+      "Al",
+      "Pb",
+      "Sn"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Gallium (Ga)** has an unusually low melting point of **29.76°C**, which means it melts just above room temperature and can liquefy on a warm summer day (or even in the palm of your hand at body temperature ~37°C).\n\nThis is because gallium has a unique crystal structure with weak metallic bonds — it exists as Ga₂ dimers in the solid state, held together by weak van der Waals forces, leading to the very low melting point.\n\n- Al melts at 660°C\n- Pb melts at 327°C\n- Sn melts at 232°C\n\n(Note: Mercury also melts at −38.8°C and is liquid at room temperature, but it is not listed here.)",
+    "name": "Metal that is Liquid in Summer"
+  },
+  {
+    "id": "c4_item19",
+    "text": "The ratio between the RMS velocities of H₂ at 50 K and O₂ at 800 K is:",
+    "options": [
+      "4 : 1",
+      "2 : 1",
+      "1 : 1",
+      "1 : 4"
+    ],
+    "correctIndex": 2,
+    "explanation": "RMS velocity:\n$$v_{rms} = \\sqrt{\\frac{3RT}{M}}$$\n\nGiven: \\(M_{\\text{H}_2} = 2\\), \\(T_{\\text{H}_2} = 50\\text{ K}\\); \\(M_{\\text{O}_2} = 32\\), \\(T_{\\text{O}_2} = 800\\text{ K}\\)\n\n$$\\frac{v_1}{v_2} = \\sqrt{\\frac{T_1/M_1}{T_2/M_2}} = \\sqrt{\\frac{50/2}{800/32}} = \\sqrt{\\frac{25}{25}} = \\sqrt{1} = 1$$\n\n$$v_1 : v_2 = 1 : 1$$\n\nThe two gases have the **same RMS velocity** under these conditions.",
+    "name": "Ratio of RMS Velocities of H₂ and O₂"
+  },
+  {
+    "id": "c4_item20",
+    "text": "If the kinetic energy and RMS speed of a gas at a certain temperature are 4.0 kJ mol⁻¹ and \\(5.0 \\times 10^4\\) cm s⁻¹ respectively, the molecular weight of the gas is:",
+    "options": [
+      "16",
+      "32",
+      "64",
+      "44"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Step 1: Find temperature from kinetic energy:**\n$$KE = \\frac{3}{2}RT$$\n$$4000 = \\frac{3}{2} \\times 8.314 \\times T$$\n$$T = \\frac{4000 \\times 2}{3 \\times 8.314} = \\frac{8000}{24.942} \\approx 320 \\text{ K}$$\n\n**Step 2: Find molar mass from RMS speed:**\n$$v_{rms} = 5.0 \\times 10^4 \\text{ cm/s} = 5.0 \\times 10^2 \\text{ m/s}$$\n$$v_{rms} = \\sqrt{\\frac{3RT}{M}} \\Rightarrow M = \\frac{3RT}{v_{rms}^2}$$\n$$M = \\frac{3 \\times 8.314 \\times 320}{(500)^2} = \\frac{7980.96}{250000} = 0.0319 \\text{ kg/mol} \\approx 32 \\text{ g/mol}$$",
+    "name": "Molecular Weight from KE and RMS Speed"
+  },
+  {
+    "id": "c4_item21",
+    "text": "If the most probable speed of CO₂ at 27°C is 400 m s⁻¹, the root mean square velocity of CO₂ at the same temperature in m s⁻¹ is approximately:",
+    "options": [
+      "600",
+      "490",
+      "267",
+      "245"
+    ],
+    "correctIndex": 1,
+    "explanation": "The relationship between most probable speed \\((v_{mp})\\) and RMS speed \\((v_{rms})\\) at the same temperature:\n\n$$v_{mp} = \\sqrt{\\frac{2RT}{M}} \\quad \\text{and} \\quad v_{rms} = \\sqrt{\\frac{3RT}{M}}$$\n\n$$\\frac{v_{rms}}{v_{mp}} = \\sqrt{\\frac{3}{2}} = 1.2247$$\n\n$$v_{rms} = v_{mp} \\times \\sqrt{\\frac{3}{2}} = 400 \\times 1.2247 \\approx 490 \\text{ m/s}$$\n\nAlternatively, using the standard ratio \\(v_{rms} : v_{mp} = 1 : 0.816\\):\n$$v_{rms} = \\frac{400}{0.816} \\approx 490 \\text{ m/s}$$",
+    "name": "RMS Velocity from Most Probable Speed of CO₂"
+  },
+  {
+    "id": "c4_item22",
+    "text": "At temperature T(K), a hypothetical gas of 100 molecules has the following velocity distribution:\n\n| N (molecules) | V (cm s⁻¹) |\n|---|---|\n| 2 | \\(4 \\times 10^3\\) |\n| 2 | \\(4 \\times 10^8\\) |\n| 10 | \\(3 \\times 10^4\\) |\n| 20 | \\(5.5 \\times 10^5\\) |\n| 25 | \\(4 \\times 10^5\\) |\n| 35 | \\(6.8 \\times 10^6\\) |\n| 5 | \\(2 \\times 10^7\\) |\n\nThe most probable velocity (in cm s⁻¹) for this gas is:",
+    "options": [
+      "\\(4 \\times 10^3\\)",
+      "\\(4 \\times 10^8\\)",
+      "\\(6.8 \\times 10^6\\)",
+      "\\(2 \\times 10^7\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **most probable velocity** is the speed at which the **maximum number of molecules** in the gas are moving.\n\nFrom the table:\n- 2 molecules at \\(4 \\times 10^3\\)\n- 2 molecules at \\(4 \\times 10^8\\)\n- 10 molecules at \\(3 \\times 10^4\\)\n- 20 molecules at \\(5.5 \\times 10^5\\)\n- 25 molecules at \\(4 \\times 10^5\\)\n- **35 molecules** at \\(6.8 \\times 10^6\\) ← **maximum**\n- 5 molecules at \\(2 \\times 10^7\\)\n\nThe highest frequency (35 molecules) corresponds to velocity \\(\\mathbf{6.8 \\times 10^6}\\) **cm s⁻¹**.",
+    "name": "Most Probable Velocity from Velocity Distribution"
+  },
+  {
+    "id": "c4_item23",
+    "text": "The ratio of rates of diffusion of gases A and B is 1 : 0.707. If the molecular weight of B is 32, the molecular weight of A is:",
+    "options": [
+      "2",
+      "64",
+      "16",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "From Graham's law:\n$$\\frac{r_A}{r_B} = \\sqrt{\\frac{M_B}{M_A}}$$\n\nGiven: \\(\\dfrac{r_A}{r_B} = \\dfrac{1}{0.707}\\), \\(M_B = 32\\)\n\n$$\\frac{1}{0.707} = \\sqrt{\\frac{32}{M_A}}$$\n\nSquaring both sides:\n$$\\frac{1}{0.707^2} = \\frac{32}{M_A}$$\n$$\\frac{1}{0.4999} = \\frac{32}{M_A}$$\n$$M_A = 32 \\times 0.4999 \\approx 16 \\text{ g/mol}$$",
+    "name": "Molecular Weight from Rate of Diffusion Ratio"
+  },
+  {
+    "id": "c4_item24",
+    "text": "**Assertion (A):** Helium has the lowest boiling point (4.2 K).\n\n**Reason (R):** The forces that exist between helium atoms are weak dispersion forces.",
+    "options": [
+      "Both (A) and (R) are correct and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are correct but (R) is not the correct explanation of (A)",
+      "(A) is correct but (R) is incorrect",
+      "(A) is incorrect but (R) is correct"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Assertion is correct:** Helium has the **lowest boiling point** of any element at **4.2 K** (−268.9°C).\n\n**Reason is correct and explains the Assertion:**\n\nHelium is a noble gas with a completely filled electron shell. It has:\n- **No permanent dipole** (non-polar, monatomic)\n- **No hydrogen bonding**\n- Only **weak London dispersion forces** (van der Waals forces)\n\nDispersion forces increase with:\n1. Number of electrons (more polarisable)\n2. Molecular size\n\nHelium has only **2 electrons** — the smallest and least polarisable atom — so its dispersion forces are the **weakest** of all atoms. This results in the lowest boiling point.\n\nBoth A and R are correct, and R correctly explains A.",
+    "name": "Assertion-Reason: Helium's Lowest Boiling Point"
+  },
+  {
+    "id": "c4_item25",
+    "text": "16 g each of H₂, He and O₂ are present in a container exerting 10 atm pressure at T(K). The pressure exerted by 16 g each of He and O₂ in a second container of the same volume and temperature is:",
+    "options": [
+      "1.8 atm",
+      "6.4 atm",
+      "3.6 atm",
+      "5.4 atm"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Step 1: Find moles of each gas (16 g each):**\n- H₂: \\(\\dfrac{16}{2} = 8\\) mol\n- He: \\(\\dfrac{16}{4} = 4\\) mol\n- O₂: \\(\\dfrac{16}{32} = 0.5\\) mol\n\nTotal moles = 8 + 4 + 0.5 = 12.5 mol → exert 10 atm.\n\n**Step 2: Moles of He + O₂ only:**\n= 4 + 0.5 = 4.5 mol\n\n**Step 3: Since \\(p \\propto n\\) at constant V and T:**\n$$p = \\frac{4.5}{12.5} \\times 10 = 3.6 \\text{ atm}$$",
+    "name": "Pressure Exerted by He and O₂ Mixture"
+  },
+  {
+    "id": "c4_item26",
+    "text": "At the same temperature and pressure, the rate of diffusion of gas X is \\(3\\sqrt{3}\\) times that of a gaseous hydrocarbon of molar mass 54 g mol⁻¹. The molar mass of X in g mol⁻¹ is:",
+    "options": [
+      "16",
+      "2",
+      "32",
+      "28"
+    ],
+    "correctIndex": 1,
+    "explanation": "From Graham's law:\n$$\\frac{r_X}{r_{\\text{HC}}} = \\sqrt{\\frac{M_{\\text{HC}}}{M_X}}$$\n\nGiven: \\(\\dfrac{r_X}{r_{\\text{HC}}} = 3\\sqrt{3}\\), \\(M_{\\text{HC}} = 54\\)\n\n$$3\\sqrt{3} = \\sqrt{\\frac{54}{M_X}}$$\n\nSquaring both sides:\n$$(3\\sqrt{3})^2 = \\frac{54}{M_X}$$\n$$27 = \\frac{54}{M_X}$$\n$$M_X = \\frac{54}{27} = 2 \\text{ g/mol}$$\n\nA molar mass of 2 g/mol corresponds to **H₂**.",
+    "name": "Molar Mass from Rate of Diffusion using Graham's Law"
+  },
+  {
+    "id": "c4_item27",
+    "text": "If the RMS speed of nitrogen at a certain temperature is 3000 m s⁻¹, the approximate kinetic energy of one mole of nitrogen at that temperature in kJ is (assume nitrogen as an ideal gas):",
+    "options": [
+      "9.0 kJ",
+      "126.0 kJ",
+      "90.0 kJ",
+      "12.6 kJ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Given: \\(v_{rms} = 3000\\) m/s, \\(M_{\\text{N}_2} = 28 \\times 10^{-3}\\) kg/mol\n\n**Step 1: Find RT using the RMS formula:**\n$$v_{rms} = \\sqrt{\\frac{3RT}{M}} \\Rightarrow v_{rms}^2 = \\frac{3RT}{M}$$\n$$3RT = v_{rms}^2 \\times M = (3000)^2 \\times 28 \\times 10^{-3}$$\n$$= 9 \\times 10^6 \\times 28 \\times 10^{-3} = 252000 \\text{ J/mol}$$\n\n**Step 2: Kinetic energy of 1 mole:**\n$$KE = \\frac{3}{2}RT = \\frac{1}{2} \\times 3RT = \\frac{252000}{2} = 126000 \\text{ J} = 126 \\text{ kJ}$$",
+    "name": "Kinetic Energy of Nitrogen from RMS Speed"
+  }
+]

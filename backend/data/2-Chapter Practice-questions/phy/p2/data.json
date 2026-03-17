@@ -1,0 +1,549 @@
+
+[
+  {
+    "id": "p2_item1",
+    "text": "A particle is projected at an angle of 60° with the horizontal from the ground with a velocity 10√3 ms⁻¹. The angle between velocity vector after 2 s and initial velocity vector is (g = 10 ms⁻²)",
+    "options": [
+      "0°",
+      "30°",
+      "60°",
+      "90°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Initial velocity: \\(u_x = 10\\sqrt{3} \\cos 60^\\circ = 5\\sqrt{3}\\) ms⁻¹, \\(u_y = 10\\sqrt{3} \\sin 60^\\circ = 15\\) ms⁻¹. After 2 s: \\(v_x = 5\\sqrt{3}\\) ms⁻¹ (constant), \\(v_y = 15 - 10 \\times 2 = -5\\) ms⁻¹. Dot product \\(\\mathbf{v}_i \\cdot \\mathbf{v}_f = (5\\sqrt{3})(5\\sqrt{3}) + (15)(-5) = 75 - 75 = 0\\), so angle is 90°.",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "p2_item2",
+    "text": "The velocity of an object moving in a straight line path is given as a function of time by v = 6t - 3t², where v is in ms⁻¹, t is in s. The average velocity of the object between t = 0 and t = 2 s is",
+    "options": [
+      "0",
+      "3 ms⁻¹",
+      "2 ms⁻¹",
+      "4 ms⁻¹"
+    ],
+    "correctIndex": 2,
+    "explanation": "Displacement \\(x = \\int_0^2 (6t - 3t^2) dt = [3t^2 - t^3]_0^2 = 12 - 8 = 4\\) m. Average velocity = total displacement / time = 4 / 2 = 2 ms⁻¹.",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "p2_item3",
+    "text": "A body is projected horizontally from the top of a tall tower with a velocity of 30 ms⁻¹. At time t₁, its horizontal and vertical components of the velocity are equal and at time t₂, its horizontal and vertical displacements are equal. Then t₂ - t₁ is (g = 10 ms⁻²)",
+    "options": [
+      "1 s",
+      "1.5 s",
+      "2 s",
+      "3 s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Horizontal velocity constant = 30 ms⁻¹. At t₁, vertical velocity = gt₁ = 30 ⇒ t₁ = 3 s. At t₂, horizontal displacement = 30t₂, vertical = (1/2)gt₂². Set equal: 30t₂ = (1/2)(10)t₂² ⇒ t₂ = 6 s. Thus t₂ - t₁ = 3 s.",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "p2_item4",
+    "text": "The displacement of a body when it covers a distance of C/4 (where C is circumference) along the circumference of the circle of radius r with a uniform speed u is",
+    "options": [
+      "r",
+      "r√2",
+      "2r",
+      "r/2"
+    ],
+    "correctIndex": 1,
+    "explanation": "After covering quarter circumference, the body moves from point A to B on the circle. Straight-line distance AB is the chord length for 90° central angle: AB = √(r² + r²) = r√2.",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "p2_item5",
+    "text": "A swimmer can swim in still water with speed v and the river flowing with velocity v/2. To cross the river in shortest time, he should swim making angle θ with the upstream. What is the ratio of the time taken to swim across in the shortest time to that in swimming across over shortest distance?",
+    "options": [
+      "cos θ",
+      "cot θ",
+      "sin θ",
+      "tan θ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Shortest time: swims perpendicular, effective speed = v, time t = d/v. Shortest distance (straight across): resultant perpendicular component = v sin(90° - θ) = v sin θ, time t' = d/(v sin θ). Ratio t/t' = sin θ.",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "p2_item6",
+    "text": "A train of 150 m length is going towards north direction at a speed of 10 ms⁻¹. A parrot flies at the speed of 5 ms⁻¹ towards south direction parallel to the railway track. The time for which the parrot flies alongside the train is",
+    "options": [
+      "12 s",
+      "30 s",
+      "10 s",
+      "5 s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity of parrot w.r.t. train = 10 - (-5) = 15 ms⁻¹ (towards north). Time to cover train length = distance / relative speed = 150 / 15 = 10 s.",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "p2_item7",
+    "text": "A stone falls freely such that the distance covered by it in the last second of its motion is equal to the distance covered by it in the first 5 s. It is in air for ……… s.",
+    "options": [
+      "12",
+      "13",
+      "25",
+      "26"
+    ],
+    "correctIndex": 1,
+    "explanation": "Distance in first 5 s: h₁ = (1/2)gt² = (1/2)(9.8)(25) = 122.5 m. Distance in nth second: u + (1/2)g(2n-1) = 0 + (1/2)(9.8)(2n-1) = 122.5. Solving: 2n - 1 = 25 ⇒ n = 13 s (total time).",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "p2_item8",
+    "text": "A ball is dropped from a spacecraft revolving around the earth at a height of 120 km. What will happen to the ball?",
+    "options": [
+      "It will continue to move with same speed along the original orbit of spacecraft",
+      "It will move with the same speed tangentially to the original orbit",
+      "It will fall down to the earth gradually",
+      "It will go very far in space"
+    ],
+    "correctIndex": 0,
+    "explanation": "The ball inherits the same orbital velocity as the spacecraft. Since it is released with the same tangential speed at the same height, it continues in the same circular orbit.",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "p2_item9",
+    "text": "Which of the following remains constant for a projectile fired from the earth?",
+    "options": [
+      "Momentum",
+      "Vertical component of velocity",
+      "Kinetic energy",
+      "Horizontal component of velocity"
+    ],
+    "correctIndex": 3,
+    "explanation": "In projectile motion, no horizontal acceleration (aₓ = 0). Hence horizontal velocity component vₓ = u cos θ remains constant throughout the flight.",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "p2_item10",
+    "text": "The graph between two quantities P and Q is a straight line when",
+    "options": [
+      "PQ = constant",
+      "P/Q = constant",
+      "PQ² = constant",
+      "P/Q² = constant"
+    ],
+    "correctIndex": 1,
+    "explanation": "A straight-line graph through origin in P vs Q plot implies P ∝ Q, i.e., P/Q = constant (slope is constant).",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "p2_item11",
+    "text": "The displacement of a particle moving with uniform acceleration in time t is given by s = 30t + 5t², its initial velocity is",
+    "options": [
+      "35 ms⁻¹",
+      "30 ms⁻¹",
+      "40 ms⁻¹",
+      "45 ms⁻¹"
+    ],
+    "correctIndex": 1,
+    "explanation": "Velocity v = ds/dt = 30 + 10t. At t = 0, initial velocity u = 30 ms⁻¹.",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "p2_item12",
+    "text": "The acceleration at the end of 2 s, of a particle whose motion is represented by the equation s = 4t³ - 8t² + 5t + 4 is",
+    "options": [
+      "32 ms⁻²",
+      "40 ms⁻²",
+      "37 ms⁻²",
+      "35 ms⁻²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity v = ds/dt = 12t² - 16t + 5. Acceleration a = dv/dt = 24t - 16. At t = 2 s, a = 48 - 16 = 32 ms⁻².",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "p2_item13",
+    "text": "Four projectiles are fixed with the same velocities at angles 25°, 40°, 55° and 70° with the horizontal. The range of projectile will be largest for the one projected at angle",
+    "options": [
+      "25°",
+      "40°",
+      "55°",
+      "70°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range R ∝ sin 2θ (for same u). sin 2θ is maximum when 2θ = 90° (θ = 45°). Among options, θ = 40° gives highest sin 80°.",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "p2_item14",
+    "text": "A train is moving towards north. At one place, it turns towards north-east. Here, we observe that",
+    "options": [
+      "the radius of curvature of outer rail will be greater than that of the inner rail",
+      "the radius of curvature of inner rail will be greater than that of the outer rail",
+      "the radius of curvature of the outer and inner rails will be the same",
+      "the radius of curvature of inner rail will be infinite"
+    ],
+    "correctIndex": 0,
+    "explanation": "Outer rail covers larger arc length in same time, hence larger radius of curvature than inner rail.",
+    "name": "Questions Item 14"
+  },
+  {
+    "id": "p2_item15",
+    "text": "A gun and a target are at the same horizontal level separated by a distance of 600 m. The bullet is fired from the gun with a velocity of 500 ms⁻¹. In order to hit the target, the gun should be aimed to a height h above the target. The value of h is (g = 10 ms⁻²)",
+    "options": [
+      "2.4 m",
+      "3.6 m",
+      "7.2 m",
+      "10.8 m"
+    ],
+    "correctIndex": 2,
+    "explanation": "Time of flight t = 600 / 500 = 1.2 s. Vertical drop h = (1/2)gt² = (1/2)(10)(1.44) = 7.2 m (aim above to compensate).",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "p2_item16",
+    "text": "A projectile is thrown in the upward direction making an angle of 60° with the horizontal with a velocity of 140 ms⁻¹. Then the time after which its velocity makes an angle 45° with the horizontal is (g = 10 ms⁻²)",
+    "options": [
+      "0.5124 s",
+      "51.24 s",
+      "5.124 s",
+      "512.4 s"
+    ],
+    "correctIndex": 2,
+    "explanation": "uₓ = 140 cos 60° = 70 ms⁻¹, uᵧ = 140 sin 60° = 70√3 ms⁻¹. When direction is 45°, vᵧ = vₓ = 70. 70√3 - 10t = 70 ⇒ t = 7(√3 - 1) ≈ 5.124 s.",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "p2_item17",
+    "text": "A body starting from rest at t = 0 moves along a straight line with a constant acceleration. At t = 2 s, the body reverses its direction keeping the acceleration same. The body returns to the initial position at t = t₀, then t₀ is",
+    "options": [
+      "4 s",
+      "(4 + 2√2) s",
+      "(2 + 2√2) s",
+      "(4 + 4√2) s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Distance to reversal point s₁ = (1/2)a(2)² = 2a. Return distance same, time for return = 2√2 s (from s = (1/2)at²). Total t₀ = 4 + 2√2 s.",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "p2_item18",
+    "text": "Two boys conducted experiments on the projectile motion with stopwatches and noted some readings. As one boy throws a stone in air at the same angle with the horizontal, the other boy observes that after 4 s, the stone is moving at an angle 30° to the horizontal and after another 2 s it is travelling horizontally. The magnitude of the initial velocity of the stone is (g = 10 ms⁻²)",
+    "options": [
+      "40√3 ms⁻¹",
+      "20√3 ms⁻¹",
+      "10√3 ms⁻¹",
+      "50√3 ms⁻¹"
+    ],
+    "correctIndex": 0,
+    "explanation": "At t = 6 s (horizontal), vᵧ = 0 ⇒ u sin θ = g(6) = 60. At t = 4 s (30°), tan 30° = (60 - 40)/(u cos θ) ⇒ u cos θ = 20√3. u = √(60² + (20√3)²) = 40√3 ms⁻¹.",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "p2_item19",
+    "text": "The speed of a particle changes from √5 ms⁻¹ to 2√5 ms⁻¹ in a time t. If the magnitude of change in its velocity is 5 ms⁻¹, the angle between the initial and final velocities of the particle is",
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Δv² = v₁² + v₂² - 2 v₁ v₂ cos θ. 25 = 5 + 20 - 2(√5)(2√5) cos θ ⇒ cos θ = 0 ⇒ θ = 90°.",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "p2_item20",
+    "text": "If the maximum height and range of a projectile are 3 m and 4 m respectively, then the velocity of the projectile is (g = 10 ms⁻²)",
+    "options": [
+      "20√6 ms⁻¹",
+      "10√3 ms⁻¹",
+      "10√2 ms⁻¹",
+      "20√6 ms⁻¹"
+    ],
+    "correctIndex": 2,
+    "explanation": "H = u² sin²θ / (2g) = 3, R = u² sin 2θ / g = 4. Ratio H/R = tan θ / 2 = 3/4 ⇒ tan θ = 3/2. Solving gives u = 10√2 ms⁻¹.",
+    "name": "Questions Item 20"
+  },
+  {
+    "id": "p2_item21",
+    "text": "A body is projected at an angle other than 90° with the horizontal with same velocity. If the time of ascent of the body is 1 s, then the maximum height it can reach is (g = 10 ms⁻²)",
+    "options": [
+      "5 m",
+      "10 m",
+      "2.5 m",
+      "75 m"
+    ],
+    "correctIndex": 0,
+    "explanation": "Time of ascent t = u sin θ / g = 1 s ⇒ u sin θ = 10. Max height H = (u sin θ)² / (2g) = 100 / 20 = 5 m.",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "p2_item22",
+    "text": "Ship A is moving Westwards with a speed of 20 km h⁻¹ and another ship B which is at 200 km South of A is moving Northwards with a speed of 10 km h⁻¹. The time after which the distance between them is shortest and the shortest distance between them respectively",
+    "options": [
+      "4 h, 80√5 km",
+      "50√2 h, √10 km",
+      "100√2 h, 2√10 km",
+      "80√5 h, 4 km"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity components lead to minimum distance when x_B = 40 km. Shortest distance AB = 80√5 km, time = 4 h.",
+    "name": "Questions Item 22"
+  },
+  {
+    "id": "p2_item23",
+    "text": "A body is projected at an angle of 60° with the horizontal such that the vertical component of its initial velocity is 40 ms⁻¹. The magnitude of velocity of the projectile at one quarter of its time of flight is nearly (g = 10 ms⁻²)",
+    "options": [
+      "3.54 ms⁻¹",
+      "35.40 ms⁻¹",
+      "30.54 ms⁻¹",
+      "34.5 ms⁻¹"
+    ],
+    "correctIndex": 2,
+    "explanation": "u = 80/√3 ms⁻¹, T = 8 s. At t = 2 s, vₓ = 40/√3, vᵧ = 20. Magnitude v = √[(40/√3)² + 20²] ≈ 30.54 ms⁻¹.",
+    "name": "Questions Item 23"
+  },
+  {
+    "id": "p2_item24",
+    "text": "A body travelling along a straight line path travels first half of the distance with a velocity 7 ms⁻¹. During the travel time of the second half of the distance, first half time is travelled with a velocity 14 ms⁻¹ and the second half time is travelled with a velocity 21 ms⁻¹. Then the average velocity of the body during the journey is",
+    "options": [
+      "14 ms⁻¹",
+      "10 ms⁻¹",
+      "9 ms⁻¹",
+      "12 ms⁻¹"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let half distance = d. Time for first half t = d/7. For second half, average speed = (14+21)/2 = 17.5, time t' = d/17.5 = (2/5)t. Total distance 2d, total time (7t/5), v_avg = 2d / (7t/5) = 10 ms⁻¹.",
+    "name": "Questions Item 24"
+  },
+  {
+    "id": "p2_item25",
+    "text": "Assertion (A) The range of a projectile is maximum when the angle of projection is 45°. Reason (R) The range of a projectile depends only on the angle of projection.",
+    "options": [
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "(A) is true but (R) is false",
+      "(A) is false but (R) is true"
+    ],
+    "correctIndex": 2,
+    "explanation": "R_max occurs at 45° (A true). But R also depends on initial speed u (R false).",
+    "name": "Questions Item 25"
+  },
+  {
+    "id": "p2_item26",
+    "text": "A car moving with a certain velocity, jumps from an inclined plane placed at one bank of a river and reaches the other bank by attaining a maximum height of 80 m. If the same car, moving with the same velocity jumps from another inclined plane having different angle of inclination and reaches the same point on the other bank by attaining maximum height of 45 m, then the width of the river is",
+    "options": [
+      "80 m",
+      "60 m",
+      "125 m",
+      "240 m"
+    ],
+    "correctIndex": 3,
+    "explanation": "H₁ = u² sin²θ₁/(2g) = 80, H₂ = u² sin²θ₂/(2g) = 45. Ratio gives sin θ₁/sin θ₂ = 4/3. Solving yields u²/g = 250. Width d = (u²/g) sin 2θ₁ = 240 m.",
+    "name": "Questions Item 26"
+  },
+  {
+    "id": "p2_item27",
+    "text": "Two food packets are thrown with the same velocity in the same direction with different angles of projection simultaneously. The angle of projection of one packet is 15°. At the same moment one boy starts running from rest from the point of projection with an acceleration of 10 ms⁻² to catch them. If he caught one packet at a distance of 20 m and other packet in ½ s later the first packet, then the angle of projection of the second packet is (g = 10 ms⁻²)",
+    "options": [
+      "(1/2) sin⁻¹(25/32)",
+      "(1/2) sin⁻¹(8/9)",
+      "(1/2) sin⁻¹(7/8)",
+      "(1/2) sin⁻¹(5/6)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Boy catches first at t = 2 s (s = (1/2)at² = 20). u = 20 ms⁻¹ from range of 15°. Second packet range 31.25 m at t = 2.5 s gives sin 2θ_B = 25/32.",
+    "name": "Questions Item 27"
+  },
+  {
+    "id": "p2_item28",
+    "text": "A car moving with a velocity 6.25 ms⁻¹ is decelerated with 2.5 √v ms⁻² (v is instantaneous velocity). Time taken by the car to come to rest is",
+    "options": [
+      "2 s",
+      "3 s",
+      "2.5 s",
+      "4 s"
+    ],
+    "correctIndex": 0,
+    "explanation": "a = dv/dt = -2.5 √v. Separate variables: ∫ dv/√v = -2.5 ∫ dt from 6.25 to 0. Solution: 2√v from 6.25 to 0 gives t = 2 s.",
+    "name": "Questions Item 28"
+  },
+  {
+    "id": "p2_item29",
+    "text": "A bullet fired from a gun falls at a distance half of its maximum range. The angle of projection of the bullet is",
+    "options": [
+      "45°",
+      "60°",
+      "30°",
+      "15°"
+    ],
+    "correctIndex": 3,
+    "explanation": "R = (u² sin 2θ)/g = R_max / 2 = (u² / 2g). Thus sin 2θ = 1/2 ⇒ 2θ = 30° ⇒ θ = 15°.",
+    "name": "Questions Item 29"
+  },
+  {
+    "id": "p2_item30",
+    "text": "A body is projected at an angle of 45° from a point on the ground at a distance of 30 m from the foot of a vertical pole of height 20 m. The body just crosses the top of the pole and strikes the ground at a distance s from the foot of the pole on the other side of the pole. Then, s",
+    "options": [
+      "20 m",
+      "30 m",
+      "50 m",
+      "60 m"
+    ],
+    "correctIndex": 3,
+    "explanation": "Time to cross pole t = 30 / (u cos 45°) = 30√2 / u. Height equation: 20 = (u sin 45°)t - 5t². Solving gives u = 30 ms⁻¹, total range R = 90 m. Thus s = 90 - 30 = 60 m.",
+    "name": "Questions Item 30"
+  },
+  {
+    "id": "p2_item31",
+    "text": "A body is projected from the ground at an angle of tan⁻¹(8/7) with the horizontal. The ratio of the maximum height attained by it to its range is",
+    "options": [
+      "8:7",
+      "4:7",
+      "2:7",
+      "1:7"
+    ],
+    "correctIndex": 2,
+    "explanation": "tan θ = 8/7. H/R = (tan θ)/4 = (8/7)/4 = 2/7.",
+    "name": "Questions Item 31"
+  },
+  {
+    "id": "p2_item32",
+    "text": "A body is projected with a speed u at an angle θ with the horizontal. The radius of curvature of the trajectory, when it makes an angle (θ/2) with the horizontal is (g = acceleration due to gravity)",
+    "options": [
+      "u² cos² θ sec³(θ/2) / (√3 g)",
+      "u² cos² θ sec³(θ/2) / (2 g)",
+      "2 u² cos³ θ sec²(θ/2) / g",
+      "u² cos² θ sec³(θ/2) / g"
+    ],
+    "correctIndex": 3,
+    "explanation": "At angle φ = θ/2, v = u cos θ / cos( θ/2 ). Centripetal acceleration: mv²/r = mg cos φ ⇒ r = v² / (g cos(θ/2)) = u² cos² θ sec³(θ/2) / g.",
+    "name": "Questions Item 32"
+  },
+  {
+    "id": "p2_item33",
+    "text": "The velocity-displacement (v-s) graph shows the motion of particle moving in a straight line. Velocity-displacement graph is a circle of radius 2 m and centre is at (2, 0) m. The value of acceleration for this particle at a point (2 - √2, √2) m will be ……… ms⁻²",
+    "options": [
+      "√2",
+      "4",
+      "2",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Equation (s-2)² + v² = 4. Differentiate: 2(s-2)v + 2v a = 0 ⇒ a = -(s-2). At s = 2-√2, a = √2 ms⁻².",
+    "name": "Questions Item 33"
+  },
+  {
+    "id": "p2_item34",
+    "text": "A body is projected horizontally from the top of a tall tower with a velocity of 30 ms⁻¹. At time t₁, its horizontal and vertical components of the velocity are equal and at time t₂, its horizontal and vertical displacements are equal. Then t₂ - t₁ is (g = 10 ms⁻²)",
+    "options": [
+      "1 s",
+      "1.5 s",
+      "2 s",
+      "3 s"
+    ],
+    "correctIndex": 3,
+    "explanation": "vₓ = 30 constant. At t₁, g t₁ = 30 ⇒ t₁ = 3 s. At t₂, 30 t₂ = (1/2) g t₂² ⇒ t₂ = 6 s. Difference = 3 s.",
+    "name": "Questions Item 34"
+  },
+  {
+    "id": "p2_item35",
+    "text": "The motion of a particle along a straight line is described by the function x = (2t - 3)² where x is in metres and t is in seconds. The acceleration of the particle at t = 2 s is",
+    "options": [
+      "1 ms⁻²",
+      "4 ms⁻²",
+      "8 ms⁻²",
+      "7 ms⁻²"
+    ],
+    "correctIndex": 2,
+    "explanation": "x = 4t² - 12t + 9. v = 8t - 12. a = 8 ms⁻² (constant).",
+    "name": "Questions Item 35"
+  },
+  {
+    "id": "p2_item36",
+    "text": "A particle moves in the xy-plane with velocity v = x î + y ĵ. At t = x√3 / y, the magnitudes of tangential and normal accelerations, respectively are",
+    "options": [
+      "√3 y / 2 , y / 2",
+      "√2 y / 3 , √3 y / 2",
+      "√3 y / 2 , 5 y / 2",
+      "2√3 y , 11 y / √3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Speed v = √(x² + y² t²). Tangential a_t = dv/dt. Normal a_n = v² / ρ. At given t, a_t = √3 y / 2, a_n = y / 2.",
+    "name": "Questions Item 36"
+  },
+  {
+    "id": "p2_item37",
+    "text": "A body is projected horizontally from the top of a tower of height 180 m with a velocity of 20 ms⁻¹. If acceleration due to gravity is 10 ms⁻², then match the following",
+    "options": [
+      "Velocity of the body after 1 second (in ms⁻¹) → (I) 5",
+      "Horizontal displacement of the body after 1 second (in metres) → (II) 20",
+      "Vertical displacement of the body after 1 second (in metres) → (III) 10",
+      "Vertical velocity of the body after 1 second (in ms⁻¹) → (IV) 22.4"
+    ],
+    "correctIndex": 2,
+    "explanation": "v_x = 20, v_y = 10, v = 22.4 ms⁻¹. s_x = 20 m, s_y = 5 m (vertical displacement 5 m). Matching: A-IV, B-II, C-I, D-III.",
+    "name": "Questions Item 37"
+  },
+  {
+    "id": "p2_item38",
+    "text": "Two towers A and B, each of height 20 m are situated a distance 200 m apart. A body thrown horizontally from the top of the tower A with a velocity 20 ms⁻¹ towards the tower B hits the ground at point P and another body thrown horizontally from the top of tower B with a velocity 30 ms⁻¹ towards the tower A hits the ground at point Q. If a car starting from rest from P reaches Q in 10 seconds, then the acceleration of the car is (g = 10 ms⁻²)",
+    "options": [
+      "1 ms⁻²",
+      "2 ms⁻²",
+      "3 ms⁻²",
+      "4 ms⁻²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Time of flight same t = 2 s. Distance A to P = 40 m, B to Q = 60 m. P to Q = 100 m. Car: s = (1/2) a t² ⇒ 100 = (1/2) a (100) ⇒ a = 2 ms⁻².",
+    "name": "Questions Item 38"
+  },
+  {
+    "id": "p2_item39",
+    "text": "The velocity-displacement (v-s) graph shows the motion of particle moving in a straight line. Velocity-displacement graph is a circle of radius 2 m and centre is at (2, 0) m. The value of acceleration for this particle at a point (2 - √2, √2) m will be ……… ms⁻²",
+    "options": [
+      "√2",
+      "4",
+      "2",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Circle equation (s-2)² + v² = 4. Differentiate: (s-2) v + v a = 0. At s = 2-√2, v = √2: a = √2 ms⁻².",
+    "name": "Questions Item 39"
+  },
+  {
+    "id": "p2_item40",
+    "text": "A body is projected horizontally from the top of a tall tower with a velocity of 30 ms⁻¹. At time t₁, its horizontal and vertical components of the velocity are equal and at time t₂, its horizontal and vertical displacements are equal. Then t₂ - t₁ is (g = 10 ms⁻²)",
+    "options": [
+      "1 s",
+      "1.5 s",
+      "2 s",
+      "3 s"
+    ],
+    "correctIndex": 3,
+    "explanation": "vₓ = 30 constant. Vertical velocity = g t₁ = 30 ⇒ t₁ = 3 s. Horizontal = vertical displacement: 30 t₂ = (1/2) g t₂² ⇒ t₂ = 6 s. Difference 3 s.",
+    "name": "Questions Item 40"
+  },
+  {
+    "id": "p2_item41",
+    "text": "The motion of a particle along a straight line is described by the function x = (2t - 3)² where x is in metres and t is in seconds. The acceleration of the particle at t = 2 s is",
+    "options": [
+      "1 ms⁻²",
+      "4 ms⁻²",
+      "8 ms⁻²",
+      "7 ms⁻²"
+    ],
+    "correctIndex": 2,
+    "explanation": "x = (2t-3)² = 4t² - 12t + 9. v = 8t - 12. a = dv/dt = 8 ms⁻².",
+    "name": "Questions Item 41"
+  },
+  {
+    "id": "p2_item42",
+    "text": "A particle moves in the xy-plane with velocity v = x î + y ĵ. At t = x√3 / y, the magnitudes of tangential and normal accelerations, respectively are",
+    "options": [
+      "√3 y / 2 , y / 2",
+      "√2 y / 3 , √3 y / 2",
+      "√3 y / 2 , 5 y / 2",
+      "2√3 y , 11 y / √3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Speed v = √(x² + y² t²). At given t, tangential acceleration a_t = √3 y / 2, normal a_n = y / 2.",
+    "name": "Questions Item 42"
+  }
+]

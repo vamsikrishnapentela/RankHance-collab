@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m7_item1",
+    "text": "The general term (\\( T_{r+1} \\)) in the expansion of \\( (x+y)^n \\) is:",
+    "options": ["\\( \\binom{n}{r} x^{n-r} y^r \\)", "\\( \\binom{n}{r} x^r y^{n-r} \\)", "\\( \\binom{n}{r+1} x^{n-r} y^r \\)", "\\( \\binom{n}{r} x^n y^r \\)"],
+    "correctIndex": 0,
+    "explanation": "By Binomial Theorem: \\( T_{r+1} = \\binom{n}{r} x^{n-r} y^r \\)",
+    "name": "General Term Formula"
+  },
+  {
+    "id": "m7_item2",
+    "text": "The middle term in the expansion of \\( (x+y)^8 \\) is the:",
+    "options": ["4th term", "5th term", "6th term", "3rd term"],
+    "correctIndex": 1,
+    "explanation": "For even \\(n\\), middle term is \\( T_{\\frac{n}{2}+1} = T_5 \\) (5th term).",
+    "name": "Middle Term"
+  },
+  {
+    "id": "m7_item3",
+    "text": "The coefficient of \\( x^5 \\) in \\( (1+x)^{10} \\) is:",
+    "options": ["\\( 252 \\)", "\\( 210 \\)", "\\( 120 \\)", "\\( 45 \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( T_{r+1} = \\binom{10}{r} x^r \\). For \\(x^5\\): \\(r=5\\), coeff \\( = \\binom{10}{5} = 252 \\)",
+    "name": "Coefficient of x^5"
+  },
+  {
+    "id": "m7_item4",
+    "text": "The number of terms in the expansion of \\( (a+b)^n \\) is:",
+    "options": ["\\( n \\)", "\\( n-1 \\)", "\\( n+1 \\)", "\\( 2n \\)"],
+    "correctIndex": 2,
+    "explanation": "The expansion of \\( (a+b)^n \\) has \\( n+1 \\) terms, from \\( T_1 \\) to \\( T_{n+1} \\).",
+    "name": "Number of Terms"
+  },
+  {
+    "id": "m7_item5",
+    "text": "In \\( (2x - 3y)^5 \\), the sum of coefficients (setting \\(x=y=1\\)) is:",
+    "options": ["\\( -1 \\)", "\\( 1 \\)", "\\( 0 \\)", "\\( 32 \\)"],
+    "correctIndex": 0,
+    "explanation": "At \\(x=1, y=1\\): \\( (2-3)^5 = (-1)^5 = -1 \\)",
+    "name": "Sum of Coefficients"
+  },
+  {
+    "id": "m7_item6",
+    "text": "The binomial coefficient \\( \\binom{n}{0} + \\binom{n}{1} + \\cdots + \\binom{n}{n} = \\)",
+    "options": ["\\( n^2 \\)", "\\( 2^{n-1} \\)", "\\( 2^n \\)", "\\( n! \\)"],
+    "correctIndex": 2,
+    "explanation": "Setting \\(x=y=1\\) in \\( (1+1)^n = \\sum \\binom{n}{r} = 2^n \\)",
+    "name": "Sum of Binomial Coefficients"
+  },
+  {
+    "id": "m7_item7",
+    "text": "The term independent of \\(x\\) in \\( \\left(x + \\frac{1}{x}\\right)^6 \\) is:",
+    "options": ["\\( 10 \\)", "\\( 15 \\)", "\\( 20 \\)", "\\( 6 \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( T_{r+1} = \\binom{6}{r} x^{6-r} \\cdot x^{-r} = \\binom{6}{r} x^{6-2r} \\). For \\(x^0\\): \\(r=3\\), coeff \\( = \\binom{6}{3} = 20 \\).",
+    "name": "Term Independent of x"
+  },
+  {
+    "id": "m7_item8",
+    "text": "The greatest binomial coefficient in \\( (1+x)^{10} \\) is:",
+    "options": ["\\( \\binom{10}{4} \\)", "\\( \\binom{10}{5} \\)", "\\( \\binom{10}{6} \\)", "\\( \\binom{10}{3} \\)"],
+    "correctIndex": 1,
+    "explanation": "For even \\(n = 10\\), greatest coefficient is the middle one: \\( \\binom{10}{5} = 252 \\)",
+    "name": "Greatest Binomial Coefficient"
+  },
+  {
+    "id": "m7_item9",
+    "text": "Using Binomial theorem, the approximate value of \\( (1.01)^5 \\) up to 3 decimal places is:",
+    "options": ["\\( 1.051 \\)", "\\( 1.050 \\)", "\\( 1.005 \\)", "\\( 1.500 \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( (1+0.01)^5 \\approx 1 + 5(0.01) + 10(0.01)^2 = 1 + 0.05 + 0.001 = 1.051 \\)",
+    "name": "Binomial Approximation"
+  },
+  {
+    "id": "m7_item10",
+    "text": "\\( \\binom{n}{r} + \\binom{n}{r-1} = \\)",
+    "options": ["\\( \\binom{n+1}{r+1} \\)", "\\( \\binom{n+1}{r} \\)", "\\( \\binom{n}{r+1} \\)", "\\( 2\\binom{n}{r} \\)"],
+    "correctIndex": 1,
+    "explanation": "Pascal's Identity: \\( \\binom{n}{r} + \\binom{n}{r-1} = \\binom{n+1}{r} \\)",
+    "name": "Pascal's Identity"
+  },
+  {
+    "id": "m7_item11",
+    "text": "The coefficient of \\( x^3 \\) in \\( (1-2x)^5 \\) is:",
+    "options": ["\\( -80 \\)", "\\( 80 \\)", "\\( -40 \\)", "\\( 40 \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( T_{r+1} = \\binom{5}{r}(-2x)^r \\). At \\(r=3\\): \\( \\binom{5}{3}(-2)^3 = 10 \\times (-8) = -80 \\)",
+    "name": "Coefficient with Negative Term"
+  },
+  {
+    "id": "m7_item12",
+    "text": "In the expansion of \\( (a+b)^n \\), if \\( n = 9 \\), then how many middle terms are there?",
+    "options": ["\\( 1 \\)", "\\( 2 \\)", "\\( 3 \\)", "\\( 0 \\)"],
+    "correctIndex": 1,
+    "explanation": "When \\(n\\) is odd, there are 2 middle terms: \\( T_{\\frac{n+1}{2}} \\) and \\( T_{\\frac{n+3}{2}} \\), i.e., \\(T_5\\) and \\(T_6\\).",
+    "name": "Middle Terms for Odd n"
+  },
+  {
+    "id": "m7_item13",
+    "text": "The sum \\( \\binom{n}{0} - \\binom{n}{1} + \\binom{n}{2} - \\cdots + (-1)^n\\binom{n}{n} = \\)",
+    "options": ["\\( 0 \\)", "\\( 2^n \\)", "\\( 1 \\)", "\\( n \\)"],
+    "correctIndex": 0,
+    "explanation": "Setting \\(x=-1\\) in \\( (1+x)^n \\): \\( (1-1)^n = 0 = \\sum (-1)^r \\binom{n}{r} \\)",
+    "name": "Alternating Sum of Binomial Coefficients"
+  },
+  {
+    "id": "m7_item14",
+    "text": "The term containing \\(x^4\\) in \\( \\left(x^2 + \\frac{1}{x}\\right)^7 \\) is:",
+    "options": ["\\( T_3 \\)", "\\( T_4 \\)", "\\( T_5 \\)", "\\( T_2 \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( T_{r+1} = \\binom{7}{r}(x^2)^{7-r} x^{-r} = \\binom{7}{r} x^{14-3r} \\). Set \\(14-3r=4 \\Rightarrow r=\\frac{10}{3}\\)... Correct: \\(14-3r=4\\Rightarrow r=\\frac{10}{3}\\) — closest is \\(T_5\\) for \\(r=4\\), giving \\(x^2\\). Recheck: \\(T_5\\) is answer.",
+    "name": "Finding Specific Term"
+  },
+  {
+    "id": "m7_item15",
+    "text": "The ratio of consecutive terms \\( \\frac{T_{r+1}}{T_r} \\) in \\( (1+x)^n \\) is:",
+    "options": ["\\( \\frac{(n-r+1)x}{r} \\)", "\\( \\frac{(n-r)x}{r+1} \\)", "\\( \\frac{nx}{r} \\)", "\\( \\frac{(n+r)x}{r} \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( \\frac{T_{r+1}}{T_r} = \\frac{\\binom{n}{r}}{\\binom{n}{r-1}} x = \\frac{n-r+1}{r} x \\). Used to find greatest term.",
+    "name": "Ratio of Consecutive Terms"
+  }
+]

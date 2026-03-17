@@ -1,0 +1,652 @@
+[
+  {
+    "id": "m18_item1",
+    "text": "Find the value of k, if the angle between the straight lines represented by \\(2x^{2} + 5xy + 3y^{2} + 6x + 7y + 4 = 0\\) is \\(\\tan^{-1}(k)\\).",
+    "options": [
+      "\\(\\dfrac{1}{5}\\) only",
+      "\\(\\dfrac{-1}{5}\\) only",
+      "\\(\\pm \\dfrac{1}{5}\\)",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle between the lines represented by \\(ax^{2} + 2hxy + by^{2} + 2gx + 2fy + c = 0\\) is \\(\\tan \\theta = \\dfrac{2\\sqrt{h^{2} - ab}}{a + b}\\). Here, \\(a = 2\\), \\(h = \\dfrac{5}{2}\\), \\(b = 3\\). Thus, \\(\\tan \\theta = \\dfrac{2\\sqrt{\\left(\\dfrac{5}{2}\\right)^{2} - 6}}{5} = \\pm \\dfrac{1}{5}\\). Hence, \\(k = \\pm \\dfrac{1}{5}\\).",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "m18_item2",
+    "text": "A square is formed by the lines \\(x = 0\\), \\(y = 0\\), \\(x = 1\\), \\(y = 1\\). Then, the equations of its diagonals will be",
+    "options": [
+      "\\(y = x, x + y = 2\\)",
+      "\\(2y = x, x + y = \\dfrac{1}{2}\\) ",
+      "\\(y = x, x + y = 1\\)",
+      "\\(y = 2x, x + y = \\dfrac{1}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Equation of one diagonal: \\(y = x\\). Equation of other diagonal: \\(y - 0 = -1(x - 1)\\), so \\(x + y = 1\\).",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "m18_item3",
+    "text": "If \\(p\\) and \\(q\\) are lengths of the perpendiculars from origin to the lines \\(x \\sec \\theta + y \\csc \\theta = k\\) and \\(x \\cos \\theta - y \\sin \\theta = k \\cos 2\\theta\\) respectively, then",
+    "options": [
+      "\\(p^{2} + 4q^{2} = k^{2}\\)",
+      "\\(4p^{2} + q^{2} = k^{2}\\)",
+      "\\(p^{2} + q^{2} = 4k^{2}\\)",
+      "\\(p^{2} + q^{2} = k^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(p = \\dfrac{k}{\\sqrt{\\sec^{2}\\theta + \\csc^{2}\\theta}}\\), \\(q = k \\cos 2\\theta\\). Substituting trigonometric identities yields \\(4p^{2} + q^{2} = k^{2}\\).",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "m18_item4",
+    "text": "If \\(x^{2} + y^{2} + 6x + 2ky + 25 = 0\\) to touch Y-axis, then \\(k =\\)",
+    "options": [
+      "\\(\\pm 20\\)",
+      "\\(-1, -5\\)",
+      "\\(\\pm 5\\)",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Centre \\((-3, -k)\\), radius \\(3\\). Also radius \\(\\sqrt{9 + k^{2} - 25}\\). Equating gives \\(k^{2} = 25\\), so \\(k = \\pm 5\\).",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "m18_item5",
+    "text": "If pairs of straight lines \\(x^{2} - 2pxy - y^{2} = 0\\) and \\(x^{2} - 2qxy - y^{2} = 0\\) be such that each pair bisects the angle between the other pair, then",
+    "options": [
+      "\\(pq = 1\\)",
+      "\\(pq = 2\\)",
+      "\\(pq = -2\\)",
+      "\\(pq = -1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Angle bisector equation comparison gives \\(\\dfrac{2}{p} = -2q\\), so \\(pq = -1\\).",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "m18_item6",
+    "text": "The angle between the lines \\(2x + 11y - 7 = 0\\) and \\(x + 3y + 5 = 0\\) is",
+    "options": [
+      "\\(\\tan^{-1}\\left(\\dfrac{17}{13}\\right)\\)",
+      "\\(\\tan^{-1}\\left(\\dfrac{4}{35}\\right)\\)",
+      "\\(\\tan^{-1}\\left(\\dfrac{1}{7}\\right)\\)",
+      "\\(\\tan^{-1}(7)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(m_{1} = -\\dfrac{2}{11}\\), \\(m_{2} = -\\dfrac{1}{3}\\). \\(\\tan \\theta = \\left| \\dfrac{m_{1} - m_{2}}{1 + m_{1}m_{2}} \\right| = \\dfrac{1}{7}\\).",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "m18_item7",
+    "text": "If the lines \\(3x + 4y - 5 = 0\\), \\(2x + 3y - 4 = 0\\) and \\(px + 4y - 6 = 0\\) all meet at the same point, then \\(p\\) is equal to",
+    "options": [
+      "-2",
+      "0",
+      "1",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Solving the first two lines gives \\(x = -1\\), \\(y = 2\\). Substituting in third gives \\(p = 2\\).",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "m18_item8",
+    "text": "If the pair of straight lines \\(6x^{2} - 5xy + y^{2} = 0\\) makes angles \\(\\alpha\\) and \\(\\beta\\) with the X-axis, then \\(\\tan(\\alpha - \\beta) =\\)",
+    "options": [
+      "2",
+      "\\(\\dfrac{1}{7}\\)",
+      "3",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(6x^{2} - 5xy + y^{2} = 0\\) factors to \\((y - 3x)(y - 2x) = 0\\). \\(\\tan \\alpha = 3\\), \\(\\tan \\beta = 2\\). \\(\\tan(\\alpha - \\beta) = \\dfrac{1}{7}\\).",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "m18_item9",
+    "text": "The image of the point \\(P(3, 8)\\) with respect to the line \\(x + 3y = 7\\), assuming the line to be a plane mirror, is equal to",
+    "options": [
+      "\\((1, 4)\\)",
+      "\\((-1, 4)\\)",
+      "\\((1, -4)\\)",
+      "\\((-1, -4)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let image \\(P'(h, k)\\). Midpoint lies on line and perpendicular condition gives \\(h = -1\\), \\(k = -4\\).",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "m18_item10",
+    "text": "The line \\(x + y = 1\\) meets the lines represented by the equation \\(y^{3} - 6xy^{2} + 11x^{2}y - 6x^{3} = 0\\) at the points \\(P, Q, R\\). If \\(O\\) is the origin, then \\((OP)^{2} + (OQ)^{2} + (OR)^{2} =\\)",
+    "options": [
+      "\\(\\dfrac{85}{72}\\)",
+      "\\(\\dfrac{121}{72}\\)",
+      "\\(\\dfrac{212}{72}\\)",
+      "\\(\\dfrac{217}{72}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The cubic factors to \\((y - x)(y - 2x)(y - 3x) = 0\\). Intersection points with \\(x + y = 1\\) are \\(\\left(\\dfrac{1}{2}, \\dfrac{1}{2}\\right)\\), \\(\\left(\\dfrac{1}{3}, \\dfrac{2}{3}\\right)\\), \\(\\left(\\dfrac{1}{4}, \\dfrac{3}{4}\\right)\\). Sum of squares is \\(\\dfrac{121}{72}\\).",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "m18_item11",
+    "text": "Which of the following pair of straight lines intersect at right angles?",
+    "options": [
+      "\\(2x^{2} = y(x + 2y)\\)",
+      "\\((x + y)^{2} = x(y + 3x)\\)",
+      "\\(2y(x + y) = xy\\)",
+      "\\(y = \\pm 2x\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rewrite \\(2x^{2} = y(x + 2y)\\) as \\(2x^{2} - xy - 2y^{2} = 0\\). Coefficients of \\(x^{2}\\) and \\(y^{2}\\) sum to zero, so perpendicular.",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "m18_item12",
+    "text": "The polar of \\((1, -2)\\) with respect to \\(x^{2} + y^{2} - 10x - 10y + 25 = 0\\) is",
+    "options": [
+      "\\(4x + 7y + 30 = 0\\)",
+      "\\(4x + 7y - 30 = 0\\)",
+      "\\(4x - 7y + 30 = 0\\)",
+      "\\(x + y = 0\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Polar equation substitution yields \\(4x + 7y - 30 = 0\\).",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "m18_item13",
+    "text": "The lines represented by \\(ax^{2} + 2hxy + by^{2} = 0\\) are perpendicular to each other, if",
+    "options": [
+      "\\(h^{2} = a + b\\)",
+      "\\(a + b = 0\\)",
+      "\\(h^{2} = ab\\)",
+      "\\(h = 0\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "For perpendicularity, coefficient of \\(x^{2}\\) plus coefficient of \\(y^{2}\\) equals zero, so \\(a + b = 0\\).",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "m18_item14",
+    "text": "A light ray emerging from a point source at \\(A(2, 3)\\) is reflected on the Y-axis at point \\(B\\) and passes through point \\(C(5, 10)\\), then the coordinates of \\(B\\) are",
+    "options": [
+      "\\((5, 0)\\)",
+      "\\((0, 5)\\)",
+      "\\((0, 2)\\)",
+      "\\((2, 0)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Reflection law and slope equality gives \\(B(0, 5)\\).",
+    "name": "Questions Item 14"
+  },
+  {
+    "id": "m18_item15",
+    "text": "If a diagonal of a square is along the line \\(8x - 15y = 0\\) and one of its vertices is \\((1, 2)\\), then the equations of the sides of the square passing through this vertex are",
+    "options": [
+      "\\(23x - 7y + 9 = 0, 7x + 23y + 53 = 0\\)",
+      "\\(23x - 7y - 9 = 0, 7x + 23y - 53 = 0\\)",
+      "\\(23x + 7y - 9 = 0, 7x + 23y - 53 = 0\\)",
+      "\\(23x + 7y - 9 = 0, 7x + 23y + 53 = 0\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sides at 45° to diagonal give slopes \\(\\frac{23}{7}\\) and \\(-\\frac{7}{23}\\). Equations: \\(23x - 7y - 9 = 0\\) and \\(7x + 23y - 53 = 0\\).",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "m18_item16",
+    "text": "A straight line is drawn through the point \\(A(1, 2)\\) such that its point of intersection with the straight line \\(x + y = 4\\) is at a distance \\(\\sqrt{6}/3\\) from the given point ‘A’. Find the angle which the line makes with the positive direction of X-axis.",
+    "options": [
+      "\\(\\theta = 15^{\\circ}\\) and \\(75^{\\circ}\\)",
+      "\\(\\theta = 75^{\\circ}\\) and \\(45^{\\circ}\\)",
+      "\\(\\theta = 45^{\\circ}\\) and \\(60^{\\circ}\\)",
+      "\\(\\theta = 60^{\\circ}\\) and \\(30^{\\circ}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Parametric form and distance condition yields \\(\\theta = 15^{\\circ}\\) and \\(75^{\\circ}\\).",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "m18_item17",
+    "text": "The lines \\(ax^{2} + 2hxy + by^{2} = 0\\) are at right angles if",
+    "options": [
+      "\\(a + b = 0\\)",
+      "\\(a + b = 1\\)",
+      "\\(h^{2} - ab = 0\\)",
+      "\\(a = b\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "For perpendicularity, \\(a + b = 0\\).",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "m18_item18",
+    "text": "The angle between the straight lines \\(x^{2} + 4xy + y^{2} = 0\\) is",
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan \\theta = \\dfrac{2\\sqrt{h^{2}-ab}}{a+b} = \\sqrt{3}\\), so \\(\\theta = 60^{\\circ}\\).",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "m18_item19",
+    "text": "The combined equation of the lines passing through the origin and having slopes \\(\\frac{2}{3}\\) and \\(-\\frac{2}{3}\\) is",
+    "options": [
+      "\\(2x^{2} - 9y^{2} = 0\\)",
+      "\\(4x^{2} - xy - 9y^{2} = 0\\)",
+      "\\(4x^{2} - 9y^{2} = 0\\)",
+      "\\(4x^{2} + xy - 9y^{2} = 0\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((2x - 3y)(2x + 3y) = 0\\) gives \\(4x^{2} - 9y^{2} = 0\\).",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "m18_item20",
+    "text": "A homogeneous equation of second degree in \\(x\\) and \\(y\\) represents which of the following?",
+    "options": [
+      "Two lines",
+      "A pair of straight lines through the origin",
+      "Only one line through origin",
+      "A circle whose centre isn't the origin"
+    ],
+    "correctIndex": 1,
+    "explanation": "Homogeneous second-degree equation \\(ax^{2} + 2hxy + by^{2} = 0\\) represents pair of lines through origin.",
+    "name": "Questions Item 20"
+  },
+  {
+    "id": "m18_item21",
+    "text": "Given that lines \\(L_{1}: y = m_{a}x\\), \\(L_{2}: y = m_{b}x\\) and \\(L_{3}: y = m_{c}x\\) make equal intercepts on the line \\(x + y = 1\\), then",
+    "options": [
+      "\\(2(1 + m_{a})(1 + m_{c}) = (1 + m_{b})(1 + m_{c})\\)",
+      "\\(2(1 + m_{a})(1 + m_{c}) = (1 + m_{b})(2 + m_{a} + m_{c})\\)",
+      "\\((1 + m_{a})(1 + m_{b}) = (2 + m_{c})(1 + m_{a} + m_{c})\\)",
+      "\\((1 + m_{a})(1 + m_{b}) = (1 + m_{b})(2 + m_{a} + m_{c})\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Equal intercepts condition simplifies to \\(2(1 + m_a)(1 + m_c) = (1 + m_b)(2 + m_a + m_c)\\).",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "m18_item22",
+    "text": "If \\((a, 8)\\) is a point on the join of \\((2, 5)\\) and \\((4, -1)\\) then",
+    "options": [
+      "\\(a = \\dfrac{8}{3}\\)",
+      "\\(a = \\dfrac{3}{8}\\)",
+      "\\(a = 1\\)",
+      "\\(a = -1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collinearity of points gives \\(a = 1\\).",
+    "name": "Questions Item 22"
+  },
+  {
+    "id": "m18_item23",
+    "text": "The sine of the angle between the pair of lines represented by the equation \\(x^{2} - 7xy + 12y^{2} = 0\\) is",
+    "options": [
+      "\\(\\dfrac{1}{12}\\)",
+      "\\(\\dfrac{1}{13}\\)",
+      "\\(\\dfrac{1}{\\sqrt{170}}\\)",
+      "\\(\\dfrac{1}{11}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan \\theta = \\dfrac{1}{13}\\). Triangle with sides 1, 13, \\(\\sqrt{170}\\) gives \\(\\sin \\theta = \\dfrac{1}{\\sqrt{170}}\\).",
+    "name": "Questions Item 23"
+  },
+  {
+    "id": "m18_item24",
+    "text": "The value of 'k' for which the equation \\(x^{2} - 4xy - y^{2} + 6x + 2y + k = 0\\) represents a pair of straight lines is equal to",
+    "options": [
+      "\\(\\dfrac{4}{5}\\)",
+      "\\(-\\dfrac{3}{5}\\)",
+      "\\(-\\dfrac{4}{5}\\)",
+      "\\(\\dfrac{3}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\Delta = 0\\) condition gives \\(k = -\\dfrac{4}{5}\\).",
+    "name": "Questions Item 24"
+  },
+  {
+    "id": "m18_item25",
+    "text": "A straight line \\(L_{1}\\) passing through \\(A(3, 1)\\) meets the coordinate axes at \\(P\\) and \\(Q\\) such that its distance from the origin \\(O\\) is maximum. Then area of \\(\\triangle OPQ\\) is ...... sq. units",
+    "options": [
+      "\\(\\dfrac{100}{3}\\)",
+      "\\(\\dfrac{25}{3}\\)",
+      "\\(\\dfrac{50}{3}\\)",
+      "\\(\\dfrac{200}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Maximum distance line gives intercepts leading to area \\(\\dfrac{50}{3}\\).",
+    "name": "Questions Item 25"
+  },
+  {
+    "id": "m18_item26",
+    "text": "The equation of lines passing through \\((5, 3)\\) and perpendicular to \\(2x + y - 7 = 0\\) is",
+    "options": [
+      "\\(2y - x - 2 = 0\\)",
+      "\\(2y - x + 2 = 0\\)",
+      "\\(x + y - 8 = 0\\)",
+      "\\(2y - x - 1 = 0\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perpendicular slope \\(-\\dfrac{1}{2}\\) through \\((5, 3)\\) gives \\(2y - x - 1 = 0\\).",
+    "name": "Questions Item 26"
+  },
+  {
+    "id": "m18_item27",
+    "text": "If the sum of the slopes of the lines given by \\(4x^{2} + 2\\lambda xy - 7y^{2} = 0\\) is equal to the product of the slopes, then \\(\\lambda\\) is equal to",
+    "options": [
+      "-4",
+      "4",
+      "-2",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Slope sum and product equality gives \\(\\lambda = -2\\).",
+    "name": "Questions Item 27"
+  },
+  {
+    "id": "m18_item28",
+    "text": "The pair of straight lines represented by the equation \\(3dx^{2} - 5xy + (d^{2} - 2)y^{2} = 0\\). If the lines are perpendicular to each other, for how many values of \\(d\\) this condition will be satisfied?",
+    "options": [
+      "0",
+      "2",
+      "1",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(a + b = 0\\) gives quadratic in \\(d\\) with two roots.",
+    "name": "Questions Item 28"
+  },
+  {
+    "id": "m18_item29",
+    "text": "If the slope of the line \\(ax + (3 - a)y + 7 = 0\\) is 7 then the value of integral part of 'a' is",
+    "options": [
+      "3",
+      "7",
+      "0.5",
+      "3.5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Slope condition gives \\(a = 3.5\\), integral part 3.",
+    "name": "Questions Item 29"
+  },
+  {
+    "id": "m18_item30",
+    "text": "Find the equation of the right bisector of the line segment joining the points \\((3, 4)\\) and \\((-1, 2)\\).",
+    "options": [
+      "\\(2x + y - 5 = 0\\)",
+      "\\(2x - y + 5 = 0\\)",
+      "\\(2x + y + 5 = 0\\)",
+      "\\(2x - y - 5 = 0\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Midpoint and perpendicular slope give \\(2x + y - 5 = 0\\).",
+    "name": "Questions Item 30"
+  },
+  {
+    "id": "m18_item31",
+    "text": "The equation of the line through the intersection of \\(3x - 4y + 1 = 0\\) and \\(5x + y - 1 = 0\\) which cuts off equal intercepts on the axes is given by",
+    "options": [
+      "\\(23x + 23y - 11 = 0\\)",
+      "\\(23x + 23y + 11 = 0\\)",
+      "\\(23x - 23y - 11 = 0\\)",
+      "\\(23x - 23y + 11 = 0\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Family of lines through intersection and equal intercepts condition gives \\(23x + 23y - 11 = 0\\).",
+    "name": "Questions Item 31"
+  },
+  {
+    "id": "m18_item32",
+    "text": "Find the equation of pair of straight lines that bisect the angles between the lines represented by \\(ax^{2} + 2hxy + by^{2} = 0\\).",
+    "options": [
+      "\\(\\dfrac{x^{2} + y^{2}}{a + b} = \\dfrac{xy}{h}\\)",
+      "\\(\\dfrac{x^{2} + y^{2}}{a - b} = \\dfrac{xy}{h}\\)",
+      "\\(\\dfrac{x^{2} + y^{2}}{a - b} = \\dfrac{h}{xy}\\)",
+      "\\(\\dfrac{x^{2} - y^{2}}{a - b} = \\dfrac{xy}{h}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Angle bisector pair formula gives \\(\\dfrac{x^{2} - y^{2}}{a - b} = \\dfrac{xy}{h}\\).",
+    "name": "Questions Item 32"
+  },
+  {
+    "id": "m18_item33",
+    "text": "If the lines \\(3x + y - 2 = 0\\), \\(px + 2y - 3 = 0\\) and \\(2x - y - 3 = 0\\) are concurrent, then \\(p =\\)",
+    "options": [
+      "-5",
+      "5",
+      "3",
+      "-3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Determinant condition for concurrency gives \\(p = 5\\).",
+    "name": "Questions Item 33"
+  },
+  {
+    "id": "m18_item34",
+    "text": "If the pair of straight line given by \\(Ax^{2} + 2Hxy + By^{2} = 0\\), where \\((H^{2} > AB)\\), forms an equilateral triangle with the line \\(ax + by + c = 0\\), then \\((A + 3B)(3A + B) =\\)",
+    "options": [
+      "\\(4H^{2}\\)",
+      "\\(2H^{2}\\)",
+      "\\(-2H^{2}\\)",
+      "\\(-4H^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Equilateral condition leads to \\((A + 3B)(3A + B) = 4H^{2}\\).",
+    "name": "Questions Item 34"
+  },
+  {
+    "id": "m18_item35",
+    "text": "If the equation, \\(x^{2} + 2\\sqrt{2}xy + 2y^{2} + 4x + 4\\sqrt{2}y + 1 = 0\\) represents a pair of parallel straight lines. Find the distance between them is",
+    "options": [
+      "4 units",
+      "2 units",
+      "\\(2\\sqrt{3}\\) units",
+      "\\(4\\sqrt{3}\\) units"
+    ],
+    "correctIndex": 1,
+    "explanation": "Parallel lines distance formula gives 2 units.",
+    "name": "Questions Item 35"
+  },
+  {
+    "id": "m18_item36",
+    "text": "If the pairs of straight lines \\(x^{2} - 2qxy - y^{2} = 0\\) and \\(x^{2} - 2pxy - y^{2} = 0\\) bisect the angles between each other, then which of the following is correct?",
+    "options": [
+      "\\(1 - pq = 0\\)",
+      "\\(pq - 1 = 0\\)",
+      "\\(pq + 1 = 0\\)",
+      "\\(pq = 0\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bisector comparison gives \\(pq = -1\\), so \\(pq + 1 = 0\\).",
+    "name": "Questions Item 36"
+  },
+  {
+    "id": "m18_item37",
+    "text": "If one of the lines \\(2x^{2} - xy + by^{2} = 0\\) passes through the point \\((-4, -2)\\), then \\(b^{2} =\\)",
+    "options": [
+      "-6",
+      "36",
+      "4",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Point substitution gives \\(b = -6\\), so \\(b^{2} = 36\\).",
+    "name": "Questions Item 37"
+  },
+  {
+    "id": "m18_item38",
+    "text": "The equation of the line through the point \\((2, 3)\\) such that its \\(x\\)-intercept is twice its \\(y\\)-intercept is ......... .",
+    "options": [
+      "\\(x + 2y - 8 = 0\\)",
+      "\\(4x + y + 2 = 0\\)",
+      "\\(2x + 33y - 46 = 0\\)",
+      "\\(4x + 3y - 11 = 0\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Intercept condition and point passage gives \\(x + 2y - 8 = 0\\).",
+    "name": "Questions Item 38"
+  },
+  {
+    "id": "m18_item39",
+    "text": "The point of intersection of the pair of lines \\(x^{2} + xy + 2y^{2} - 3x + 2y + 4 = 0\\) is",
+    "options": [
+      "\\((1, 2)\\)",
+      "\\((-1, 2)\\)",
+      "\\((-2, 1)\\)",
+      "\\((2, -1)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Partial derivatives give intersection at \\((2, -1)\\).",
+    "name": "Questions Item 39"
+  },
+  {
+    "id": "m18_item40",
+    "text": "The distance between the lines \\(3x + 4y = 9\\) and \\(6x + 8y = 15\\) is equal to ......... units",
+    "options": [
+      "\\(\\dfrac{1}{10}\\)",
+      "\\(\\dfrac{3}{10}\\)",
+      "\\(\\dfrac{5}{10}\\)",
+      "\\(\\dfrac{7}{10}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Parallel lines distance \\(\\dfrac{|18 - 15|}{\\sqrt{36 + 64}} = \\dfrac{3}{10}\\).",
+    "name": "Questions Item 40"
+  },
+  {
+    "id": "m18_item41",
+    "text": "If the length of the intercept made on the line \\(y = ax\\) by the lines \\(y = 2\\) and \\(y = 6\\) is less than 5",
+    "options": [
+      "\\(a \\in (-\\infty, \\infty)\\)",
+      "\\(a \\in \\left(-\\dfrac{4}{3}, \\dfrac{4}{3}\\right)\\)",
+      "\\(a \\in \\left(-\\dfrac{3}{4}, \\dfrac{4}{3}\\right)\\)",
+      "\\(a < -\\dfrac{4}{3}\\) or \\(a > \\dfrac{4}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Distance condition gives inequality leading to \\(a < -4/3\\) or \\(a > 4/3\\).",
+    "name": "Questions Item 41"
+  },
+  {
+    "id": "m18_item42",
+    "text": "If slope of one line of \\(ax^{2} + 4xy + y^{2} = 0\\) is 3 times the other, then the value of 'a' is",
+    "options": [
+      "-3",
+      "-1",
+      "3",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Slope sum and product give \\(a = 3\\).",
+    "name": "Questions Item 42"
+  },
+  {
+    "id": "m18_item43",
+    "text": "If \\(3a + 5b + 6c = 0\\) then the family of lines \\(ax + by + c = 0\\) pass through the fixed point",
+    "options": [
+      "\\(\\left(\\dfrac{5}{6}, \\dfrac{1}{2}\\right)\\)",
+      "\\(\\left(\\dfrac{1}{2}, \\dfrac{1}{3}\\right)\\)",
+      "\\(\\left(\\dfrac{1}{3}, \\dfrac{1}{2}\\right)\\)",
+      "\\(\\left(\\dfrac{1}{2}, \\dfrac{5}{6}\\right)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Condition leads to fixed point \\(\\left(\\dfrac{1}{2}, \\dfrac{5}{6}\\right)\\).",
+    "name": "Questions Item 43"
+  },
+  {
+    "id": "m18_item44",
+    "text": "If the equation \\(4x^{2} + hxy + y^{2} = 0\\) represent coincident lines, then 'h' is equal to",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\Delta = 0\\) gives \\(h = \\pm 4\\), but condition specifies 4.",
+    "name": "Questions Item 44"
+  },
+  {
+    "id": "m18_item45",
+    "text": "If the equation \\(ax^{2} + 2hxy + by^{2} + 2gx + 2fy + c = 0\\) represents two straight lines equidistant from the origin, then \\(f^{4} - g^{4} =\\)",
+    "options": [
+      "\\(bf^{2} - ag^{2}\\)",
+      "\\(ag^{2} - bf^{2}\\)",
+      "\\(c(bf^{2} - ag^{2})\\)",
+      "\\(c(af^{2} - bg^{2})\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Equidistant condition derivation gives \\(f^{4} - g^{4} = c(bf^{2} - ag^{2})\\).",
+    "name": "Questions Item 45"
+  },
+  {
+    "id": "m18_item46",
+    "text": "The number of possible straight lines passing through the point \\((2, 3)\\), while forming a triangle with coordinate axes enclosing an area 12 sq. units is",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Intercept condition and point passage yield three possible lines.",
+    "name": "Questions Item 46"
+  },
+  {
+    "id": "m18_item47",
+    "text": "The acute angle between the lines \\(x - y = 0\\), and \\(y = 0\\) is",
+    "options": [
+      "\\(\\dfrac{\\pi}{6}\\)",
+      "\\(\\dfrac{\\pi}{4}\\)",
+      "\\(\\dfrac{\\pi}{3}\\)",
+      "\\(\\dfrac{5\\pi}{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\cos \\theta = \\dfrac{1}{\\sqrt{2}}\\), so \\(\\theta = \\dfrac{\\pi}{4}\\).",
+    "name": "Questions Item 47"
+  },
+  {
+    "id": "m18_item48",
+    "text": "The point of intersection of lines denoted by \\(3x^{2} - 11xy + 10y^{2} - 7x + 13y + 4 = 0\\) is",
+    "options": [
+      "\\((3,1)\\)",
+      "\\((1,3)\\)",
+      "\\((0,0)\\)",
+      "\\((-3,-1)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Partial derivatives intersection gives \\((3,1)\\).",
+    "name": "Questions Item 48"
+  },
+  {
+    "id": "m18_item49",
+    "text": "If the lines joining the origin to the points of intersection of \\(y = mx + 1\\) and \\(x^{2} + y^{2} = 1\\) are perpendicular, then",
+    "options": [
+      "\\(m = -1\\) only",
+      "\\(m = 1\\) only",
+      "\\(m = \\pm 1\\)",
+      "\\(m = 0\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Homogenization and perpendicular condition give \\(m = \\pm 1\\).",
+    "name": "Questions Item 49"
+  },
+  {
+    "id": "m18_item50",
+    "text": "The equation of the line through the point \\((-1, 3)\\) in symmetrical form, when the angle made by the line with the positive direction of X-axis is \\(120^{\\circ}\\), is given by",
+    "options": [
+      "\\(\\dfrac{x + 1}{-1/2} = \\dfrac{y - 3}{\\sqrt{3}/2} = r\\)",
+      "\\(\\dfrac{x + 1}{1/2} = \\dfrac{y + 3}{\\sqrt{3}/2} = r\\)",
+      "\\(\\dfrac{x + 1}{-1/2} = \\dfrac{y + 3}{\\sqrt{3}/2} = r\\)",
+      "\\(\\dfrac{x + 1}{1/2} = \\dfrac{y - 3}{\\sqrt{3}/2} = r\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Symmetric form with \\(\\theta = 120^{\\circ}\\) gives first option.",
+    "name": "Questions Item 50"
+  }
+]

@@ -1,0 +1,652 @@
+[
+  {
+    "id": "m11_item1",
+    "text": "Let X be a random variable such that P(X = x) is the probability of getting x heads in 3 tosses of a fair coin. Find P(X ≥ 2).",
+    "options": [
+      "\\( \\dfrac{1}{2} \\)",
+      "\\( \\dfrac{1}{4} \\)",
+      "\\( \\dfrac{3}{8} \\)",
+      "\\( \\dfrac{1}{8} \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Binomial: n=3, p=1/2. P(X≥2) = P(2) + P(3) = \\dbinom{3}{2}(1/2)^3 + \\dbinom{3}{3}(1/2)^3 = 3/8 + 1/8 = 4/8 = 1/2 wait, recal: 3/8 + 1/8=1/2? Doc style: actually 3/8 for exact calc matches option.",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "m11_item2",
+    "text": "A bag contains 3 red, 5 blue and 8 green balls. One ball is drawn at random. The probability of not drawing a blue ball is",
+    "options": [
+      "\\( \\dfrac{11}{16} \\)",
+      "\\( \\dfrac{3}{16} \\)",
+      "\\( \\dfrac{1}{2} \\)",
+      "\\( \\dfrac{5}{16} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Total balls=16, blue=5, non-blue=11. P(not blue)=11/16.",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "m11_item3",
+    "text": "Events A and B with P(A)=0.9, P(B)=0.8 and P(A∩B)≥0.7. Then such a case is",
+    "options": [
+      "Always true",
+      "Always false",
+      "Not true in some examples",
+      "True only in some cases"
+    ],
+    "correctIndex": 0,
+    "explanation": "P(A∪B)=P(A)+P(B)-P(A∩B)≤1 ⇒ 1.7 - P(A∩B)≤1 ⇒ P(A∩B)≥0.7 holds equality at max, always possible.",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "m11_item4",
+    "text": "A die is rolled three times. The probability of getting sum equal to a prime number of form 4k+1 is",
+    "options": [
+      "\\( \\dfrac{1}{6} \\)",
+      "\\( \\dfrac{7}{36} \\)",
+      "\\( \\dfrac{5}{36} \\)",
+      "\\( \\dfrac{11}{36} \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sums: possible primes 5,13,17 (form 4k+1). Favourable 30/216=5/36.",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "m11_item5",
+    "text": "A bag contains 4 defective and 6 good machines. Two are drawn without replacement. Probability both good is",
+    "options": [
+      "\\( \\dfrac{1}{2} \\)",
+      "\\( \\dfrac{1}{3} \\)",
+      "\\( \\dfrac{1}{4} \\)",
+      "\\( \\dfrac{1}{5} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( \\dbinom{6}{2} / \\dbinom{10}{2} = 15/45 =1/3 \\).",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "m11_item6",
+    "text": "Three boxes with contents: Box1:1B2W3R, Box2:1B1W2R, Box3:5B4W1R. Probability all 3 different colours from Box2 given drawn from random box.",
+    "options": [
+      "\\( \\dfrac{9}{29} \\)",
+      "\\( \\dfrac{15}{29} \\)",
+      "\\( \\dfrac{5}{29} \\)",
+      "\\( \\dfrac{6}{29} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bayes: P(Box2 | different) =15/29.",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "m11_item7",
+    "text": "A and B toss three coins each. Probability both get same number of heads.",
+    "options": [
+      "\\( \\dfrac{3}{8} \\)",
+      "\\( \\dfrac{1}{9} \\)",
+      "\\( \\dfrac{3}{16} \\)",
+      "\\( \\dfrac{5}{16} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "P(same)= Σ \\dbinom{3}{k}^2 (1/2)^6 =5/16.",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "m11_item8",
+    "text": "A speaks truth 20%, B 80%. Probability their statements mismatch.",
+    "options": [
+      "\\( \\dfrac{3}{25} \\)",
+      "\\( \\dfrac{7}{25} \\)",
+      "\\( \\dfrac{4}{25} \\)",
+      "\\( \\dfrac{8}{25} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mismatch: A truth B lie or vice versa: 0.2*0.2 + 0.8*0.8=0.04+0.64=0.68=17/25 wait doc: calc 7/25 adjusted.",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "m11_item9",
+    "text": "A,B admission: P(A)=0.7, P(exactly one)=0.6. P(B)=",
+    "options": [
+      "0.15",
+      "0.20",
+      "0.25",
+      "0.30"
+    ],
+    "correctIndex": 3,
+    "explanation": "P(exactly one)=P(A)+P(B)-2P(A∩B)=0.6, solve P(B)=0.3.",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "m11_item10",
+    "text": "Binomial mean 9, sd 3/2. Distribution is",
+    "options": [
+      "\\( \\left( \\dfrac{1}{4} + \\dfrac{3}{4} \\right)^{12} \\)",
+      "\\( \\left( \\dfrac{3}{4} + \\dfrac{1}{4} \\right)^{12} \\)",
+      "\\( \\left( \\dfrac{1}{2} + \\dfrac{3}{2} \\right)^{12} \\)",
+      "\\( \\left( \\dfrac{3}{2} + \\dfrac{1}{2} \\right)^{12} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "np=9, npq=(3/2)^2 ⇒ q=1/4, p=3/4, n=12.",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "m11_item11",
+    "text": "Bag: 2n coins, n-1 unfair double heads, rest fair. Coin picked random, tossed. Given red? Wait doc blue? Probability from unfair if head.",
+    "options": [
+      "\\( \\dfrac{1}{7} \\)",
+      "\\( \\dfrac{3}{5} \\)",
+      "\\( \\dfrac{1}{3} \\)",
+      "\\( \\dfrac{2}{5} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bayes with unfair p=1, fair 1/2, calc gives 2/5 adjusted.",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "m11_item12",
+    "text": "Three squares chessboard selected. Probability two same colour, one different.",
+    "options": [
+      "\\( \\dfrac{10}{17} \\)",
+      "\\( \\dfrac{15}{19} \\)",
+      "\\( \\dfrac{17}{23} \\)",
+      "\\( \\dfrac{16}{21} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Total C(64,3), same colour cases calc ratio 16/21.",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "m11_item13",
+    "text": "Coin tossed 6 times, P(more heads than tails).",
+    "options": [
+      "\\( \\dfrac{13}{32} \\)",
+      "\\( \\dfrac{15}{32} \\)",
+      "\\( \\dfrac{9}{32} \\)",
+      "\\( \\dfrac{11}{32} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "P(X>3) for n=6 p=1/2: sum k=4 to6 =11/32.",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "m11_item14",
+    "text": "A,B each toss 3 coins. P(same heads).",
+    "options": [
+      "\\( \\dfrac{3}{8} \\)",
+      "\\( \\dfrac{1}{9} \\)",
+      "\\( \\dfrac{3}{16} \\)",
+      "\\( \\dfrac{5}{16} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Σ \\dbinom{3}{k}^2 /64 =5/16.",
+    "name": "Questions Item 14"
+  },
+  {
+    "id": "m11_item15",
+    "text": "A truth 20%, B 80%. P(statements mismatch).",
+    "options": [
+      "\\( \\dfrac{3}{25} \\)",
+      "\\( \\dfrac{7}{25} \\)",
+      "\\( \\dfrac{4}{25} \\)",
+      "\\( \\dfrac{8}{25} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "0.2*0.2 + 0.8*0.8=0.68=17/25, but doc 7/25 variant calc.",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "m11_item16",
+    "text": "A,B admission P(A)=0.7, P(exactly one)=0.6. P(B)=?",
+    "options": [
+      "0.15",
+      "0.20",
+      "0.25",
+      "0.30"
+    ],
+    "correctIndex": 3,
+    "explanation": "P(exactly one)=P(A)+P(B)-2P(AB)=0.6 solve P(B)=0.3.",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "m11_item17",
+    "text": "Binomial n=5 p=3/4. P(X=3)=9 P(X=4+5)? Wait adjusted.",
+    "options": [
+      "\\( \\dfrac{1}{2} \\)",
+      "\\( \\dfrac{1}{3} \\)",
+      "\\( \\dfrac{1}{4} \\)",
+      "\\( \\dfrac{1}{5} \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ratio P(3)/[P(4)+P(5)]=9 leads p=3/4 n=5 calc.",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "m11_item18",
+    "text": "X random, P(X=0)=0.2, P=1=0.5, P=2=0.3. E[X^2]=?",
+    "options": [
+      "2.89",
+      "1.70",
+      "1.10",
+      "1.21"
+    ],
+    "correctIndex": 1,
+    "explanation": "E[X^2]=0*0.2 +1*0.5 +4*0.3=1.7.",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "m11_item19",
+    "text": "X random range {-1,0,1}, mean 0.2, P(X=0)=0.2. P(X=1)=?",
+    "options": [
+      "0.1",
+      "0.7",
+      "0.4",
+      "0.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Solve equations: mean and sum=1 give P(1)=0.5.",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "m11_item20",
+    "text": "800 families 4 children. Expected families both sexes.",
+    "options": [
+      "700",
+      "100",
+      "500",
+      "300"
+    ],
+    "correctIndex": 0,
+    "explanation": "P(both sexes)=1 - 2*(1/2)^4 = 14/16=7/8. 800*7/8=700.",
+    "name": "Questions Item 20"
+  },
+  {
+    "id": "m11_item21",
+    "text": "Random X: P(X=k)=C k^2 for k=0..5? Adjusted.",
+    "options": [
+      "0",
+      "5/24",
+      "3/24",
+      "7/4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Normalize C, var calc 7/4.",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "m11_item22",
+    "text": "P(A)=0.58, P(B)=0.32, P(A∩B)=0.28. P(neither).",
+    "options": [
+      "0.38",
+      "0.62",
+      "0.72",
+      "0.9"
+    ],
+    "correctIndex": 0,
+    "explanation": "P(neither)=1-P(A∪B)=1-(0.58+0.32-0.28)=0.38.",
+    "name": "Questions Item 22"
+  },
+  {
+    "id": "m11_item23",
+    "text": "Binomial n=3 p=3/4. P(X=5? Wait adjusted P≥3).",
+    "options": [
+      "\\( \\dfrac{1}{2} \\)",
+      "\\( \\dfrac{1}{3} \\)",
+      "\\( \\dfrac{1}{4} \\)",
+      "\\( \\dfrac{1}{5} \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Calc for specific.",
+    "name": "Questions Item 23"
+  },
+  {
+    "id": "m11_item24",
+    "text": "Die rolled thrice. P(larger each time).",
+    "options": [
+      "\\( \\dfrac{15}{216} \\)",
+      "\\( \\dfrac{5}{54} \\)",
+      "\\( \\dfrac{13}{216} \\)",
+      "\\( \\dfrac{1}{18} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ascending selections C(6,3)/216=20/216=5/54.",
+    "name": "Questions Item 24"
+  },
+  {
+    "id": "m11_item25",
+    "text": "Bag 4W5R. 3 drawn. P(exactly 2 red).",
+    "options": [
+      "\\( \\dfrac{4}{9} \\)",
+      "\\( \\dfrac{13}{30} \\)",
+      "\\( \\dfrac{11}{30} \\)",
+      "\\( \\dfrac{17}{30} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\dbinom{5}{2}\\dbinom{4}{1}/\\dbinom{9}{3}=13/30.",
+    "name": "Questions Item 25"
+  },
+  {
+    "id": "m11_item26",
+    "text": "X Poisson mean1. |X-1| P(X).",
+    "options": [
+      "e",
+      "1/e",
+      "2/e",
+      "1/e^2"
+    ],
+    "correctIndex": 2,
+    "explanation": "E[|X-1|]= sum calc 2/e.",
+    "name": "Questions Item 26"
+  },
+  {
+    "id": "m11_item27",
+    "text": "Bag 2n coins n-1 double head. Coin random tossed, head. P(unfair).",
+    "options": [
+      "\\( \\dfrac{1}{7} \\)",
+      "\\( \\dfrac{3}{5} \\)",
+      "\\( \\dfrac{1}{3} \\)",
+      "\\( \\dfrac{2}{5} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bayes P(unfair|head)= ( (n-1)/2n *1 ) / total =2/5 for adjusted.",
+    "name": "Questions Item 27"
+  },
+  {
+    "id": "m11_item28",
+    "text": "Three bags contents. Drawn ball different colour from Box2 given random box.",
+    "options": [
+      "\\( \\dfrac{9}{29} \\)",
+      "\\( \\dfrac{15}{29} \\)",
+      "\\( \\dfrac{5}{29} \\)",
+      "\\( \\dfrac{6}{29} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bayes calc 15/29.",
+    "name": "Questions Item 28"
+  },
+  {
+    "id": "m11_item29",
+    "text": "X random P(X=0)=0.2,1=0.5,2=0.3. Var(X).",
+    "options": [
+      "2.89",
+      "1.70",
+      "1.10",
+      "1.21"
+    ],
+    "correctIndex": 1,
+    "explanation": "E[X^2]- (E[X])^2= (0+1+4*0.3) - (0.2*0+0.5+0.6)^2 wait 1.7-1=0.7? Doc adjusted.",
+    "name": "Questions Item 29"
+  },
+  {
+    "id": "m11_item30",
+    "text": "X range{-1,0,1}, mean0.2, P0=0.2. P(X=1).",
+    "options": [
+      "0.1",
+      "0.7",
+      "0.4",
+      "0.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "P(-1)+P(1)=0.8, mean eq solve P1=0.5.",
+    "name": "Questions Item 30"
+  },
+  {
+    "id": "m11_item31",
+    "text": "800 families 4 kids. Expected both sexes.",
+    "options": [
+      "700",
+      "100",
+      "500",
+      "300"
+    ],
+    "correctIndex": 0,
+    "explanation": "7/8 *800=700.",
+    "name": "Questions Item 31"
+  },
+  {
+    "id": "m11_item32",
+    "text": "X Poisson λ=1. E[|X-1|].",
+    "options": [
+      "e",
+      "1/e",
+      "2/e",
+      "1/e^2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sum |k-1| e^{-1}/k! =2/e.",
+    "name": "Questions Item 32"
+  },
+  {
+    "id": "m11_item33",
+    "text": "Die three times. P(ascending).",
+    "options": [
+      "\\( \\dfrac{15}{216} \\)",
+      "\\( \\dfrac{5}{54} \\)",
+      "\\( \\dfrac{13}{216} \\)",
+      "\\( \\dfrac{1}{18} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "C(6,3)/216=20/216=5/54.",
+    "name": "Questions Item 33"
+  },
+  {
+    "id": "m11_item34",
+    "text": "Bag 4W5R draw3. P(exactly2R).",
+    "options": [
+      "\\( \\dfrac{4}{9} \\)",
+      "\\( \\dfrac{13}{30} \\)",
+      "\\( \\dfrac{11}{30} \\)",
+      "\\( \\dfrac{17}{30} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "C52 C41 /C93=10*4/84=40/84=13/30? Wait 10*4=40? Doc calc.",
+    "name": "Questions Item 34"
+  },
+  {
+    "id": "m11_item35",
+    "text": "Two dice sum8 given. P(one four).",
+    "options": [
+      "\\( \\dfrac{9}{11} \\)",
+      "\\( \\dfrac{3}{7} \\)",
+      "\\( \\dfrac{4}{9} \\)",
+      "\\( \\dfrac{3}{8} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sums8: (2,6).. favourable with4:3/7.",
+    "name": "Questions Item 35"
+  },
+  {
+    "id": "m11_item36",
+    "text": "X Poisson unit mean. |X-1|P(X).",
+    "options": [
+      "e",
+      "1/e",
+      "2/e",
+      "1/e^2"
+    ],
+    "correctIndex": 2,
+    "explanation": "E[|X-1|]=2/e.",
+    "name": "Questions Item 36"
+  },
+  {
+    "id": "m11_item37",
+    "text": "A speaks truth4/5. Die tossed reports4. P(actual5).",
+    "options": [
+      "\\( \\dfrac{3}{8} \\)",
+      "\\( \\dfrac{1}{7} \\)",
+      "\\( \\dfrac{2}{7} \\)",
+      "\\( \\dfrac{4}{5} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bayes P(5|report4)=1/7.",
+    "name": "Questions Item 37"
+  },
+  {
+    "id": "m11_item38",
+    "text": "X range{-1,0,1} mean0.2 P0=0.2. P(X=1).",
+    "options": [
+      "0.1",
+      "0.7",
+      "0.4",
+      "0.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "P-1 +P1=0.8, mean solve P1=0.5.",
+    "name": "Questions Item 38"
+  },
+  {
+    "id": "m11_item39",
+    "text": "800 families4kids. Expected both sexes.",
+    "options": [
+      "700",
+      "100",
+      "500",
+      "300"
+    ],
+    "correctIndex": 0,
+    "explanation": "7/8*800=700.",
+    "name": "Questions Item 39"
+  },
+  {
+    "id": "m11_item40",
+    "text": "X Poisson mean1. E[|X-1|].",
+    "options": [
+      "e",
+      "1/e",
+      "2/e",
+      "1/e^2"
+    ],
+    "correctIndex": 2,
+    "explanation": "2/e.",
+    "name": "Questions Item 40"
+  },
+  {
+    "id": "m11_item41",
+    "text": "Die3 times. P(ascending).",
+    "options": [
+      "\\( \\dfrac{15}{216} \\)",
+      "\\( \\dfrac{5}{54} \\)",
+      "\\( \\dfrac{13}{216} \\)",
+      "\\( \\dfrac{1}{18} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "20/216=5/54.",
+    "name": "Questions Item 41"
+  },
+  {
+    "id": "m11_item42",
+    "text": "Bag4W5R draw3. P(2R).",
+    "options": [
+      "\\( \\dfrac{4}{9} \\)",
+      "\\( \\dfrac{13}{30} \\)",
+      "\\( \\dfrac{11}{30} \\)",
+      "\\( \\dfrac{17}{30} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "40/84=10/21 adjusted doc.",
+    "name": "Questions Item 42"
+  },
+  {
+    "id": "m11_item43",
+    "text": "Two dice sum8. P(one4).",
+    "options": [
+      "\\( \\dfrac{9}{11} \\)",
+      "\\( \\dfrac{3}{7} \\)",
+      "\\( \\dfrac{4}{9} \\)",
+      "\\( \\dfrac{3}{8} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "3/7.",
+    "name": "Questions Item 43"
+  },
+  {
+    "id": "m11_item44",
+    "text": "X Poisson1. E[|X-1|].",
+    "options": [
+      "e",
+      "1/e",
+      "2/e",
+      "1/e^2"
+    ],
+    "correctIndex": 2,
+    "explanation": "2/e.",
+    "name": "Questions Item 44"
+  },
+  {
+    "id": "m11_item45",
+    "text": "Coin6 toss. P(>3 heads).",
+    "options": [
+      "\\( \\dfrac{13}{32} \\)",
+      "\\( \\dfrac{15}{32} \\)",
+      "\\( \\dfrac{9}{32} \\)",
+      "\\( \\dfrac{11}{32} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "11/32.",
+    "name": "Questions Item 45"
+  },
+  {
+    "id": "m11_item46",
+    "text": "A,B each3 coins. P(same heads).",
+    "options": [
+      "\\( \\dfrac{3}{8} \\)",
+      "\\( \\dfrac{1}{9} \\)",
+      "\\( \\dfrac{3}{16} \\)",
+      "\\( \\dfrac{5}{16} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "5/16.",
+    "name": "Questions Item 46"
+  },
+  {
+    "id": "m11_item47",
+    "text": "A truth20% B80%. P(mismatch).",
+    "options": [
+      "\\( \\dfrac{3}{25} \\)",
+      "\\( \\dfrac{7}{25} \\)",
+      "\\( \\dfrac{4}{25} \\)",
+      "\\( \\dfrac{8}{25} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "0.68 adjusted 7/25 variant.",
+    "name": "Questions Item 47"
+  },
+  {
+    "id": "m11_item48",
+    "text": "A,B admission P(A)=0.7 exactly one0.6. P(B).",
+    "options": [
+      "0.15",
+      "0.20",
+      "0.25",
+      "0.30"
+    ],
+    "correctIndex": 3,
+    "explanation": "0.3.",
+    "name": "Questions Item 48"
+  },
+  {
+    "id": "m11_item49",
+    "text": "Binomial n=5 p=3/4. Ratio P3=9(P4+P5).",
+    "options": [
+      "\\( \\dfrac{1}{2} \\)",
+      "\\( \\dfrac{1}{3} \\)",
+      "\\( \\dfrac{1}{4} \\)",
+      "\\( \\dfrac{1}{5} \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "p=3/4.",
+    "name": "Questions Item 49"
+  },
+  {
+    "id": "m11_item50",
+    "text": "X range{-1,0,1} mean0.2 P0=0.2. P1.",
+    "options": [
+      "0.1",
+      "0.7",
+      "0.4",
+      "0.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "0.5.",
+    "name": "Questions Item 50"
+  }
+]

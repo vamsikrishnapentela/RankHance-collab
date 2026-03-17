@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m19_item1",
+    "text": "The standard equation of a circle with center \\((h,k)\\) and radius \\(r\\) is:",
+    "options": ["\\( x^2+y^2=r^2 \\)", "\\( (x-h)^2+(y-k)^2=r \\)", "\\( (x-h)^2+(y-k)^2=r^2 \\)", "\\( (x+h)^2+(y+k)^2=r^2 \\)"],
+    "correctIndex": 2,
+    "explanation": "Standard form: \\( (x-h)^2+(y-k)^2=r^2 \\). When center is origin: \\( x^2+y^2=r^2 \\).",
+    "name": "Standard Circle Equation"
+  },
+  {
+    "id": "m19_item2",
+    "text": "For circle \\( x^2+y^2+2gx+2fy+c=0 \\), the center is:",
+    "options": ["\\( (g,f) \\)", "\\( (-g,-f) \\)", "\\( (2g,2f) \\)", "\\( (-2g,-2f) \\)"],
+    "correctIndex": 1,
+    "explanation": "General form: center \\( = (-g,-f) \\), radius \\( = \\sqrt{g^2+f^2-c} \\).",
+    "name": "Center from General Form"
+  },
+  {
+    "id": "m19_item3",
+    "text": "For circle \\( x^2+y^2+2gx+2fy+c=0 \\), the radius is:",
+    "options": ["\\( \\sqrt{g^2+f^2+c} \\)", "\\( g^2+f^2-c \\)", "\\( \\sqrt{g^2+f^2-c} \\)", "\\( \\sqrt{g^2-f^2-c} \\)"],
+    "correctIndex": 2,
+    "explanation": "Radius \\( r = \\sqrt{g^2+f^2-c} \\). Requires \\( g^2+f^2-c > 0 \\) for real circle.",
+    "name": "Radius from General Form"
+  },
+  {
+    "id": "m19_item4",
+    "text": "The equation of tangent to \\( x^2+y^2=r^2 \\) at point \\( (x_1,y_1) \\) is:",
+    "options": ["\\( x x_1 - y y_1 = r^2 \\)", "\\( x x_1 + y y_1 = r^2 \\)", "\\( (x-x_1)^2+(y-y_1)^2=r^2 \\)", "\\( x_1 x + y_1 y = 1 \\)"],
+    "correctIndex": 1,
+    "explanation": "Tangent at \\((x_1,y_1)\\): \\( xx_1+yy_1=r^2 \\). Replace \\(x^2\\to xx_1\\) and \\(y^2\\to yy_1\\).",
+    "name": "Tangent at Point"
+  },
+  {
+    "id": "m19_item5",
+    "text": "The length of tangent from external point \\((x_1,y_1)\\) to circle \\( x^2+y^2+2gx+2fy+c=0 \\) is:",
+    "options": ["\\( \\sqrt{x_1^2+y_1^2+2gx_1+2fy_1+c} \\)", "\\( x_1^2+y_1^2+c \\)", "\\( \\sqrt{x_1^2+y_1^2-c} \\)", "\\( \\sqrt{g^2+f^2-c} \\)"],
+    "correctIndex": 0,
+    "explanation": "Length of tangent \\( = \\sqrt{S_1} = \\sqrt{x_1^2+y_1^2+2gx_1+2fy_1+c} \\)",
+    "name": "Length of Tangent"
+  },
+  {
+    "id": "m19_item6",
+    "text": "Two circles are orthogonal if:",
+    "options": ["\\( r_1 = r_2 \\)", "\\( 2g_1g_2+2f_1f_2 = c_1+c_2 \\)", "\\( g_1g_2+f_1f_2 = c_1c_2 \\)", "\\( r_1+r_2 = d \\)"],
+    "correctIndex": 1,
+    "explanation": "Orthogonality condition: \\( 2g_1g_2+2f_1f_2 = c_1+c_2 \\)",
+    "name": "Orthogonal Circles"
+  },
+  {
+    "id": "m19_item7",
+    "text": "The condition for a line \\( y = mx+c \\) to be tangent to \\( x^2+y^2=r^2 \\) is:",
+    "options": ["\\( c = mr \\)", "\\( c^2 = r^2(1+m^2) \\)", "\\( c = r\\sqrt{m^2-1} \\)", "\\( c^2 = r^2 \\)"],
+    "correctIndex": 1,
+    "explanation": "Tangency condition: distance from center \\((0,0)\\) to line \\(=r\\). \\( \\frac{|c|}{\\sqrt{1+m^2}}=r \\Rightarrow c^2=r^2(1+m^2) \\)",
+    "name": "Tangent Condition"
+  },
+  {
+    "id": "m19_item8",
+    "text": "The radical axis of two circles is the locus of points from which tangents to both circles are:",
+    "options": ["Parallel", "Equal in length", "Perpendicular", "Concurrent"],
+    "correctIndex": 1,
+    "explanation": "The radical axis is the locus of points from which the tangent lengths to both circles are equal.",
+    "name": "Radical Axis Definition"
+  },
+  {
+    "id": "m19_item9",
+    "text": "The radical axis of \\( S_1=0 \\) and \\( S_2=0 \\) is:",
+    "options": ["\\( S_1 + S_2 = 0 \\)", "\\( S_1 \\cdot S_2 = 0 \\)", "\\( S_1 - S_2 = 0 \\)", "\\( S_1/S_2 = 0 \\)"],
+    "correctIndex": 2,
+    "explanation": "Radical axis: \\( S_1 - S_2 = 0 \\), which eliminates \\(x^2\\) and \\(y^2\\) terms.",
+    "name": "Radical Axis Equation"
+  },
+  {
+    "id": "m19_item10",
+    "text": "The equation of circle with diameter endpoints \\((x_1,y_1)\\) and \\((x_2,y_2)\\) is:",
+    "options": ["\\( (x-x_1)(x-x_2)+(y-y_1)(y-y_2)=1 \\)", "\\( (x-x_1)(x-x_2)-(y-y_1)(y-y_2)=0 \\)", "\\( (x-x_1)(x-x_2)+(y-y_1)(y-y_2)=0 \\)", "\\( (x+x_1)(x+x_2)+(y+y_1)(y+y_2)=0 \\)"],
+    "correctIndex": 2,
+    "explanation": "Diameter form: \\( (x-x_1)(x-x_2)+(y-y_1)(y-y_2)=0 \\) (angle in semicircle = 90°).",
+    "name": "Circle with Diameter"
+  },
+  {
+    "id": "m19_item11",
+    "text": "The circles \\( x^2+y^2=4 \\) and \\( x^2+y^2-6x+5=0 \\): distance between centers is \\(3\\), \\(r_1=2, r_2=2\\). They:",
+    "options": ["Are concentric", "Intersect at two points", "Are internally tangent", "Are externally tangent"],
+    "correctIndex": 1,
+    "explanation": "\\( |r_1-r_2| < d < r_1+r_2 \\Rightarrow 0 < 3 < 4 \\). Circles intersect at two points.",
+    "name": "Relative Position of Circles"
+  },
+  {
+    "id": "m19_item12",
+    "text": "The common chord of two intersecting circles lies on:",
+    "options": ["Their radical axis", "Their common tangent", "Their common center line", "The x-axis"],
+    "correctIndex": 0,
+    "explanation": "The common chord of two intersecting circles is the radical axis: \\( S_1 - S_2 = 0 \\).",
+    "name": "Common Chord"
+  },
+  {
+    "id": "m19_item13",
+    "text": "The equation of the circle passing through origin with center \\((3,4)\\) is:",
+    "options": ["\\( x^2+y^2-6x-8y=0 \\)", "\\( x^2+y^2+6x+8y=0 \\)", "\\( x^2+y^2-3x-4y=0 \\)", "\\( (x-3)^2+(y-4)^2=25 \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( r = \\sqrt{9+16}=5 \\). Circle: \\((x-3)^2+(y-4)^2=25\\) expands to \\(x^2+y^2-6x-8y=0\\). Both A and D are correct, but A is the general form.",
+    "name": "Circle Through Origin"
+  },
+  {
+    "id": "m19_item14",
+    "text": "For two circles with centers \\( d \\) apart and radii \\( r_1, r_2 \\), they are externally tangent when:",
+    "options": ["\\( d = r_1 - r_2 \\)", "\\( d = r_1 + r_2 \\)", "\\( d > r_1 + r_2 \\)", "\\( d = 0 \\)"],
+    "correctIndex": 1,
+    "explanation": "External tangency: \\( d = r_1 + r_2 \\). Internal tangency: \\( d = |r_1 - r_2| \\).",
+    "name": "External Tangency"
+  },
+  {
+    "id": "m19_item15",
+    "text": "The equation of normal to circle \\( x^2+y^2=r^2 \\) at point \\((x_1,y_1)\\) is:",
+    "options": ["\\( x_1 y - y_1 x = 0 \\)", "\\( x_1 y + y_1 x = 0 \\)", "\\( \\frac{x}{x_1} = \\frac{y}{y_1} \\)", "Both A and C"],
+    "correctIndex": 3,
+    "explanation": "The normal to a circle at any point passes through the center (origin). Equation: \\( \\frac{x}{x_1}=\\frac{y}{y_1} \\) or \\( x_1y - y_1x=0 \\).",
+    "name": "Normal to Circle"
+  }
+]

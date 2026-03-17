@@ -1,0 +1,652 @@
+[
+  {
+    "id": "m23_item1",
+    "text": "If $a > 0$, $n \\in \\mathbb{R}$, then $\\lim_{x \\to a} x^n =$",
+    "options": [
+      "$n a^{n-1}$",
+      "$(n-1) a^n$",
+      "$n a^n$",
+      "$a^n$"
+    ],
+    "correctIndex": 3,
+    "explanation": "For $a > 0$ and $n \\in \\mathbb{R}$, the limit $\\lim_{x \\to a} x^n = a^n$.",
+    "name": "Question Item 1"
+  },
+  {
+    "id": "m23_item2",
+    "text": "$\\lim_{x \\to 0} \\dfrac{8}{\\sin^8 x} \\left\\{1 - \\cos\\left(\\dfrac{x^2}{2}\\right) - \\cos\\left(\\dfrac{x^2}{4}\\right) + \\cos\\left(\\dfrac{x^2}{2}\\right)\\cos\\left(\\dfrac{x^2}{4}\\right)\\right\\} =$",
+    "options": [
+      "$\\dfrac{1}{16}$",
+      "$\\dfrac{1}{32}$",
+      "$\\dfrac{1}{64}$",
+      "$\\dfrac{1}{8}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rewrite as<br>\\[ \\lim_{x \\to 0} \\dfrac{8}{\\sin^8 x} \\left[1 - \\cos\\left(\\dfrac{x^2}{2}\\right)\\right]\\left[1 - \\cos\\left(\\dfrac{x^2}{4}\\right)\\right]. \\]<br>Use $1 - \\cos \\theta = 2\\sin^2(\\theta/2)$ and simplify to get $\\dfrac{1}{32}$.",
+    "name": "Question Item 2"
+  },
+  {
+    "id": "m23_item3",
+    "text": "If $\\lim_{x \\to \\infty} \\left(1 + \\dfrac{p}{x}\\right)^{qx} = e^9$ where $p, q \\in \\mathbb{N}$, then $p + q =$",
+    "options": [
+      "6",
+      "9",
+      "81",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let $y = 1/x$, then as $x \\to \\infty$, $y \\to 0$.<br>The limit becomes $(e^p)^q = e^9 \\implies p q = 9$.<br>Possible $p=3$, $q=3$ gives $p+q=6$.",
+    "name": "Question Item 3"
+  },
+  {
+    "id": "m23_item4",
+    "text": "$\\lim_{x \\to \\pi} \\dfrac{1 - \\sin(x/2)}{(\\cos(x/2))(\\cos(x/4) - \\sin(x/4))} =$",
+    "options": [
+      "$\\dfrac{3}{\\sqrt{2}}$",
+      "$\\dfrac{-1}{\\sqrt{2}}$",
+      "$\\dfrac{1}{\\sqrt{2}}$",
+      "$\\dfrac{5}{\\sqrt{2}}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute $x = \\pi + h$, $h \\to 0$.<br>Use trigonometric identities and L'Hospital or series to simplify to $\\dfrac{1}{\\sqrt{2}}$.",
+    "name": "Question Item 4"
+  },
+  {
+    "id": "m23_item5",
+    "text": "$\\lim_{n \\to \\infty} \\dfrac{n!}{(n+1)! - n!} =$",
+    "options": [
+      "1",
+      "-1",
+      "2",
+      "0"
+    ],
+    "correctIndex": 3,
+    "explanation": "$\\lim_{n \\to \\infty} \\dfrac{n!}{(n+1)n! - n!} = \\lim_{n \\to \\infty} \\dfrac{1}{n} = 0$.",
+    "name": "Question Item 5"
+  },
+  {
+    "id": "m23_item6",
+    "text": "$\\lim_{x \\to 0} (1 + 3x)^{2/x} =$",
+    "options": [
+      "6",
+      "$e^6$",
+      "$e^{-6}$",
+      "$e^{1/6}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "$(1 + 3x)^{2/x} = \\left[(1 + 3x)^{1/(3x)}\\right]^6 \\to e^6$.",
+    "name": "Question Item 6"
+  },
+  {
+    "id": "m23_item7",
+    "text": "The function $f(x) = |x| + |x|/x$ is",
+    "options": [
+      "continuous at the origin",
+      "discontinuous at the origin because $|x|$ is discontinuous there",
+      "discontinuous at the origin because $|x|/x$ is discontinuous there",
+      "discontinuous at the origin because both $|x|$ and $|x|/x$ are discontinuous"
+    ],
+    "correctIndex": 2,
+    "explanation": "$|x|$ is continuous everywhere.<br>$|x|/x$ is discontinuous at $x=0$ (left limit $-1$, right limit $1$).<br>Thus $f$ is discontinuous at origin due to $|x|/x$.",
+    "name": "Question Item 7"
+  },
+  {
+    "id": "m23_item8",
+    "text": "A point in the domain that cannot be filled in so that the resulting function is continuous is called",
+    "options": [
+      "Removable Discontinuity",
+      "Non-Removable Discontinuity",
+      "Impossible Discontinuity",
+      "Irrelevant Discontinuity"
+    ],
+    "correctIndex": 1,
+    "explanation": "Non-removable discontinuity cannot be removed by redefining the function at that point.",
+    "name": "Question Item 8"
+  },
+  {
+    "id": "m23_item9",
+    "text": "$f(x) = \\begin{cases} \\dfrac{x-4}{|x-4|} + a, & x < 4 \\\\ a + b, & x = 4 \\\\ \\dfrac{x-4}{|x-4|} + b, & x > 4 \\end{cases}$<br>If $f(x)$ is continuous at $x=4$, then find the values of $a$ and $b$.",
+    "options": [
+      "$a=1, b=-1$",
+      "$a=-1, b=1$",
+      "$a=1, b=1$",
+      "$a=-1, b=-1$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Left limit: $-1 + a$<br>Right limit: $1 + b$<br>At $x=4$: $a+b$<br>Set equal: $a=1$, $b=-1$.",
+    "name": "Question Item 9"
+  },
+  {
+    "id": "m23_item10",
+    "text": "$\\lim_{x \\to 0} \\dfrac{a^x - 1}{\\sin x} =$",
+    "options": [
+      "$\\log(a)$",
+      "$\\dfrac{1}{2}\\log(a)$",
+      "0",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "$\\lim_{x \\to 0} \\dfrac{a^x - 1}{x} \\cdot \\dfrac{x}{\\sin x} = \\log a \\cdot 1 = \\log a$.",
+    "name": "Question Item 10"
+  },
+  {
+    "id": "m23_item11",
+    "text": "$\\lim_{n \\to \\infty} \\dfrac{2^2 + 4^2 + 6^2 + \\dots + (2n)^2}{n^3} =$",
+    "options": [
+      "$\\dfrac{2}{3}$",
+      "$\\dfrac{4}{3}$",
+      "$\\dfrac{3}{2}$",
+      "$\\dfrac{8}{7}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "$=4 \\lim_{n \\to \\infty} \\dfrac{1^2 + \\dots + n^2}{n^3} = 4 \\cdot \\dfrac{1}{3} = \\dfrac{4}{3}$.",
+    "name": "Question Item 11"
+  },
+  {
+    "id": "m23_item12",
+    "text": "Find the degree of the differential equation $y''' + 2 + 3y'' + y' = 0$.",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rewrite as $(y''')^2 = (-2 - 3y'' - y')^2$. Highest power of derivative is 2.",
+    "name": "Question Item 12"
+  },
+  {
+    "id": "m23_item13",
+    "text": "$\\lim_{x \\to 1} \\left[(1-x) \\tan \\left(\\dfrac{\\pi x}{2}\\right)\\right] =$",
+    "options": [
+      "$\\dfrac{1}{\\pi}$",
+      "$\\dfrac{3}{\\pi}$",
+      "$\\dfrac{4}{\\pi}$",
+      "$\\dfrac{2}{\\pi}$"
+    ],
+    "correctIndex": 3,
+    "explanation": "L'Hospital or substitution gives $\\dfrac{2}{\\pi}$.",
+    "name": "Question Item 13"
+  },
+  {
+    "id": "m23_item14",
+    "text": "$\\lim_{x \\to 0} \\dfrac{\\sin(x^m)}{(\\sin x)^n}$, given that $n < m$",
+    "options": [
+      "2",
+      "1",
+      "0",
+      "$\\infty$"
+    ],
+    "correctIndex": 2,
+    "explanation": "$= \\lim_{x \\to 0} \\dfrac{x^m}{x^n} \\cdot \\dfrac{x^n}{(\\sin x)^n} = \\lim x^{m-n} \\cdot 1 = 0$ (since $m > n$).",
+    "name": "Question Item 14"
+  },
+  {
+    "id": "m23_item15",
+    "text": "$f(x) = |\\log_a x|$ is differentiable at",
+    "options": [
+      "$x=0$ only",
+      "$x=1$ only",
+      "$x=-1$ only",
+      "$\\mathbb{R} - \\{0, \\pm 1\\}$"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sharp corners at $x=1$ and $x=-1$, discontinuous at $x=0$. Differentiable elsewhere.",
+    "name": "Question Item 15"
+  },
+  {
+    "id": "m23_item16",
+    "text": "Let $f: \\mathbb{R} \\to \\mathbb{R}$ be a continuous function such that for any two real numbers $x$ and $y$, $|f(x) - f(y)| \\leq 10|x - y|^{201}$, then",
+    "options": [
+      "$f(2019) = f(2020) + 1$",
+      "$f(2019) + f(2022) = 2f(2021)$",
+      "$f(2019) = f(2020) + 8$",
+      "$f(2019) = f(2020) + 2$"
+    ],
+    "correctIndex": 1,
+    "explanation": "The inequality forces $f'(x)=0$, so $f$ is constant. Thus $f(2019) + f(2022) = 2f(2021)$.",
+    "name": "Question Item 16"
+  },
+  {
+    "id": "m23_item17",
+    "text": "Express $\\dfrac{dt}{dx} = \\dfrac{t}{(x + t e^{-2x/t})}$ in the form of $\\dfrac{dx}{dt} = \\phi\\left(\\dfrac{x}{t}\\right)$",
+    "options": [
+      "$\\dfrac{x}{t} + e^{-2(x/t)}$",
+      "$\\dfrac{x}{t} - e^{-2(x/t)}$",
+      "$\\dfrac{x}{t} + e^{2(x/t)}$",
+      "$\\dfrac{x}{t} - e^{2(x/t)}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Invert: $\\dfrac{dx}{dt} = \\dfrac{x}{t} + e^{-2(x/t)}$.",
+    "name": "Question Item 17"
+  },
+  {
+    "id": "m23_item18",
+    "text": "If $\\lim_{x \\to \\infty} \\left( \\dfrac{x^n - 3^n}{x-3} \\right) = 108$ and $n \\in \\mathbb{N}$, then the value of $n'$ is",
+    "options": [
+      "3",
+      "6",
+      "5",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "L'Hospital: $n \\cdot 3^{n-1} = 108 \\implies n=4$.",
+    "name": "Question Item 18"
+  },
+  {
+    "id": "m23_item19",
+    "text": "$\\lim_{x \\to 0} \\left[ (1 + \\dfrac{x}{2})^{5/7} - 1 \\right] / x =$",
+    "options": [
+      "$\\dfrac{5}{7}$",
+      "$\\dfrac{10}{7}$",
+      "$\\dfrac{5}{14}$",
+      "$\\dfrac{5}{17}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'Hospital: $\\dfrac{5}{7} \\cdot (1)^{...} \\cdot \\dfrac{1}{2} = \\dfrac{5}{14}$.",
+    "name": "Question Item 19"
+  },
+  {
+    "id": "m23_item20",
+    "text": "If $f(x) = \\begin{cases} 4x-5, & x \\le 2 \\\\ x-k, & x>2 \\end{cases}$, then the value of $k$ if $\\lim_{x \\to 2^+} f(x)$ may exist is equal to",
+    "options": [
+      "-1",
+      "-2",
+      "1",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Left limit $3$, right $2-k$, set equal: $k=-1$.",
+    "name": "Question Item 20"
+  },
+  {
+    "id": "m23_item21",
+    "text": "$\\lim_{x \\to \\infty} (1 + \\dfrac{2}{x})^{3x} =$",
+    "options": [
+      "6",
+      "$e^6$",
+      "$e^{-6}$",
+      "$e^{1/6}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "$(1 + 2/x)^{3x} = [(1 + 2/x)^{x/2}]^6 \\to e^6$.",
+    "name": "Question Item 21"
+  },
+  {
+    "id": "m23_item22",
+    "text": "$\\lim_{n \\to \\infty} \\dfrac{2^2 + 4^2 + \\dots + (2n)^2}{n^3} =$",
+    "options": [
+      "$\\dfrac{2}{3}$",
+      "$\\dfrac{4}{3}$",
+      "$\\dfrac{3}{2}$",
+      "$\\dfrac{8}{7}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "$4 \\times \\dfrac{1}{3} = \\dfrac{4}{3}$.",
+    "name": "Question Item 22"
+  },
+  {
+    "id": "m23_item23",
+    "text": "The degree of the differential equation $y''' + 2 + 3y'' + y' = 0$ is",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rewrite as $(y''')^2 = (-2-3y''-y')^2$, degree 2.",
+    "name": "Question Item 23"
+  },
+  {
+    "id": "m23_item24",
+    "text": "$\\lim_{x \\to 1} (1-x)\\tan(\\pi x /2) =$",
+    "options": [
+      "$\\dfrac{1}{\\pi}$",
+      "$\\dfrac{3}{\\pi}$",
+      "$\\dfrac{4}{\\pi}$",
+      "$\\dfrac{2}{\\pi}$"
+    ],
+    "correctIndex": 3,
+    "explanation": "L'Hospital gives $\\dfrac{2}{\\pi}$.",
+    "name": "Question Item 24"
+  },
+  {
+    "id": "m23_item25",
+    "text": "$\\lim_{x \\to 0} \\dfrac{\\sin(x^m)}{(\\sin x)^n}$, given $n < m$",
+    "options": [
+      "2",
+      "1",
+      "0",
+      "$\\infty$"
+    ],
+    "correctIndex": 2,
+    "explanation": "$x^{m-n} \\to 0$ since $m > n$.",
+    "name": "Question Item 25"
+  },
+  {
+    "id": "m23_item26",
+    "text": "$f(x) = |\\log_a x|$ is differentiable at",
+    "options": [
+      "$x=0$ only",
+      "$x=1$ only",
+      "$x=-1$ only",
+      "$\\mathbb{R} \\setminus \\{0, \\pm 1\\}$"
+    ],
+    "correctIndex": 3,
+    "explanation": "Discontinuous at $0$, corners at $\\pm 1$.",
+    "name": "Question Item 26"
+  },
+  {
+    "id": "m23_item27",
+    "text": "Let $f: \\mathbb{R} \\to \\mathbb{R}$ be continuous with $|f(x)-f(y)| \\leq 10 |x-y|^{201}$, then",
+    "options": [
+      "$f(2019) = f(2020) + 1$",
+      "$f(2019) + f(2022) = 2f(2021)$",
+      "$f(2019) = f(2020) + 8$",
+      "$f(2019) = f(2020) + 2$"
+    ],
+    "correctIndex": 1,
+    "explanation": "$f'$ zero implies constant function.",
+    "name": "Question Item 27"
+  },
+  {
+    "id": "m23_item28",
+    "text": "Express $\\dfrac{dt}{dx} = \\dfrac{t}{x + t e^{-2x/t}}$ in the form $\\dfrac{dx}{dt} = \\phi(x/t)$",
+    "options": [
+      "$\\dfrac{x}{t} + e^{-2(x/t)}$",
+      "$\\dfrac{x}{t} - e^{-2(x/t)}$",
+      "$\\dfrac{x}{t} + e^{2(x/t)}$",
+      "$\\dfrac{x}{t} - e^{2(x/t)}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Reciprocal gives the form.",
+    "name": "Question Item 28"
+  },
+  {
+    "id": "m23_item29",
+    "text": "If $\\lim_{x \\to \\infty} \\left( \\dfrac{x^n - 3^n}{x-3} \\right) = 108$, $n \\in \\mathbb{N}$, then $n =$",
+    "options": [
+      "3",
+      "6",
+      "5",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "$n \\cdot 3^{n-1} = 108 \\implies n=4$.",
+    "name": "Question Item 29"
+  },
+  {
+    "id": "m23_item30",
+    "text": "$\\lim_{x \\to 0} \\left[ (1 + x/2)^{5/7} - 1 \\right]/x =$",
+    "options": [
+      "$\\dfrac{5}{7}$",
+      "$\\dfrac{10}{7}$",
+      "$\\dfrac{5}{14}$",
+      "$\\dfrac{5}{17}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'Hospital yields $\\dfrac{5}{14}$.",
+    "name": "Question Item 30"
+  },
+  {
+    "id": "m23_item31",
+    "text": "If $f(x) = \\begin{cases} 4x-5, & x \\le 2 \\\\ x-k, & x > 2 \\end{cases}$, value of $k$ for $\\lim_{x \\to 2^+} f(x)$ to exist",
+    "options": [
+      "-1",
+      "-2",
+      "1",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Limits equal: $k=-1$.",
+    "name": "Question Item 31"
+  },
+  {
+    "id": "m23_item32",
+    "text": "$\\lim_{x \\to \\infty} (1 + 2/x)^{3x} =$",
+    "options": [
+      "6",
+      "$e^6$",
+      "$e^{-6}$",
+      "$e^{1/6}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rewrite as $[(1+2/x)^{x/2}]^6 \\to e^6$.",
+    "name": "Question Item 32"
+  },
+  {
+    "id": "m23_item33",
+    "text": "Degree of $y''' + 2 + 3y'' + y' = 0$",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Squared highest derivative: degree 2.",
+    "name": "Question Item 33"
+  },
+  {
+    "id": "m23_item34",
+    "text": "$\\lim_{x \\to 1} (1-x) \\tan(\\pi x /2) =$",
+    "options": [
+      "$1/\\pi$",
+      "$3/\\pi$",
+      "$4/\\pi$",
+      "$2/\\pi$"
+    ],
+    "correctIndex": 3,
+    "explanation": "L'Hospital: $2/\\pi$.",
+    "name": "Question Item 34"
+  },
+  {
+    "id": "m23_item35",
+    "text": "$\\lim_{x \\to 0} \\sin(x^m)/(\\sin x)^n$ ($n<m$)",
+    "options": [
+      "2",
+      "1",
+      "0",
+      "$\\infty$"
+    ],
+    "correctIndex": 2,
+    "explanation": "$x^{m-n} \\to 0$.",
+    "name": "Question Item 35"
+  },
+  {
+    "id": "m23_item36",
+    "text": "$f(x)=|\\log_a x|$ differentiable at",
+    "options": [
+      "$x=0$ only",
+      "$x=1$ only",
+      "$x=-1$ only",
+      "$\\mathbb{R} \\setminus \\{0,\\pm1\\}$"
+    ],
+    "correctIndex": 3,
+    "explanation": "Corners at $\\pm1$, discontinuous at $0$.",
+    "name": "Question Item 36"
+  },
+  {
+    "id": "m23_item37",
+    "text": "$f:\\mathbb{R}\\to\\mathbb{R}$ continuous, $|f(x)-f(y)|\\le 10|x-y|^{201}$ then",
+    "options": [
+      "$f(2019)=f(2020)+1$",
+      "$f(2019)+f(2022)=2f(2021)$",
+      "$f(2019)=f(2020)+8$",
+      "$f(2019)=f(2020)+2$"
+    ],
+    "correctIndex": 1,
+    "explanation": "$f'$ zero $\\implies$ constant.",
+    "name": "Question Item 37"
+  },
+  {
+    "id": "m23_item38",
+    "text": "Express $dt/dx = t/(x + t e^{-2x/t})$ as $dx/dt = \\phi(x/t)$",
+    "options": [
+      "$x/t + e^{-2(x/t)}$",
+      "$x/t - e^{-2(x/t)}$",
+      "$x/t + e^{2(x/t)}$",
+      "$x/t - e^{2(x/t)}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Invert the equation.",
+    "name": "Question Item 38"
+  },
+  {
+    "id": "m23_item39",
+    "text": "If $\\lim_{x\\to\\infty} (x^n - 3^n)/(x-3) = 108$, $n\\in\\mathbb{N}$, $n=$",
+    "options": [
+      "3",
+      "6",
+      "5",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "$n \\cdot 3^{n-1}=108 \\implies n=4$.",
+    "name": "Question Item 39"
+  },
+  {
+    "id": "m23_item40",
+    "text": "$\\lim_{x\\to0} [(1+x/2)^{5/7}-1]/x =$",
+    "options": [
+      "$5/7$",
+      "$10/7$",
+      "$5/14$",
+      "$5/17$"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'Hospital: $5/14$.",
+    "name": "Question Item 40"
+  },
+  {
+    "id": "m23_item41",
+    "text": "If $f(x)=\\begin{cases}4x-5, x\\le2\\\\ x-k, x>2\\end{cases}$, $k$ for limit at $2^+$ exist",
+    "options": [
+      "-1",
+      "-2",
+      "1",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "$3=2-k \\implies k=-1$.",
+    "name": "Question Item 41"
+  },
+  {
+    "id": "m23_item42",
+    "text": "$\\lim_{x\\to\\infty}(1+2/x)^{3x}=$",
+    "options": [
+      "6",
+      "$e^6$",
+      "$e^{-6}$",
+      "$e^{1/6}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "$[(1+2/x)^{x/2}]^6 \\to e^6$.",
+    "name": "Question Item 42"
+  },
+  {
+    "id": "m23_item43",
+    "text": "Degree of $y'''+2+3y''+y'=0$",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Squared $y'''$, degree 2.",
+    "name": "Question Item 43"
+  },
+  {
+    "id": "m23_item44",
+    "text": "$\\lim_{x\\to1}(1-x)\\tan(\\pi x/2)=$",
+    "options": [
+      "$1/\\pi$",
+      "$3/\\pi$",
+      "$4/\\pi$",
+      "$2/\\pi$"
+    ],
+    "correctIndex": 3,
+    "explanation": "L'Hospital: $2/\\pi$.",
+    "name": "Question Item 44"
+  },
+  {
+    "id": "m23_item45",
+    "text": "$\\lim_{x\\to0}\\sin(x^m)/(\\sin x)^n$ ($n<m$)",
+    "options": [
+      "2",
+      "1",
+      "0",
+      "$\\infty$"
+    ],
+    "correctIndex": 2,
+    "explanation": "$x^{m-n}\\to0$.",
+    "name": "Question Item 45"
+  },
+  {
+    "id": "m23_item46",
+    "text": "$f(x)=|\\log_a x|$ differentiable at",
+    "options": [
+      "$x=0$ only",
+      "$x=1$ only",
+      "$x=-1$ only",
+      "$\\mathbb{R}\\setminus\\{0,\\pm1\\}$"
+    ],
+    "correctIndex": 3,
+    "explanation": "Corners/discontinuity at $\\pm1,0$.",
+    "name": "Question Item 46"
+  },
+  {
+    "id": "m23_item47",
+    "text": "$f:\\mathbb{R}\\to\\mathbb{R}$ continuous $|f(x)-f(y)|\\le10|x-y|^{201}$ then",
+    "options": [
+      "$f(2019)=f(2020)+1$",
+      "$f(2019)+f(2022)=2f(2021)$",
+      "$f(2019)=f(2020)+8$",
+      "$f(2019)=f(2020)+2$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Constant function.",
+    "name": "Question Item 47"
+  },
+  {
+    "id": "m23_item48",
+    "text": "Express $dt/dx=t/(x+te^{-2x/t})$ as $dx/dt=\\phi(x/t)$",
+    "options": [
+      "$x/t+e^{-2(x/t)}$",
+      "$x/t-e^{-2(x/t)}$",
+      "$x/t+e^{2(x/t)}$",
+      "$x/t-e^{2(x/t)}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Reciprocal.",
+    "name": "Question Item 48"
+  },
+  {
+    "id": "m23_item49",
+    "text": "If $\\lim_{x\\to\\infty}(x^n-3^n)/(x-3)=108$, $n\\in\\mathbb{N}$, $n=$",
+    "options": [
+      "3",
+      "6",
+      "5",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "$n\\cdot3^{n-1}=108\\implies n=4$.",
+    "name": "Question Item 49"
+  },
+  {
+    "id": "m23_item50",
+    "text": "$\\lim_{x\\to0}[(1+x/2)^{5/7}-1]/x=$",
+    "options": [
+      "$5/7$",
+      "$10/7$",
+      "$5/14$",
+      "$5/17$"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'Hospital: $5/14$.",
+    "name": "Question Item 50"
+  }
+]

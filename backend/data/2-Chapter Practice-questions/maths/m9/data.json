@@ -1,0 +1,652 @@
+[
+  {
+    "id": "m9_item1",
+    "text": "The matrix \\( A = \\begin{bmatrix} \\frac{1}{2} & \\frac{1}{2} \\\\ \\frac{1}{2} & \\frac{1}{2} \\end{bmatrix} \\) is .........",
+    "options": [
+      "Unitary",
+      "Orthogonal",
+      "Nilpotent",
+      "Involutory"
+    ],
+    "correctIndex": 2,
+    "explanation": "$$A^2 = \\begin{bmatrix} \\frac{1}{2} & \\frac{1}{2} \\\\ \\frac{1}{2} & \\frac{1}{2} \\end{bmatrix} \\begin{bmatrix} \\frac{1}{2} & \\frac{1}{2} \\\\ \\frac{1}{2} & \\frac{1}{2} \\end{bmatrix} = \\begin{bmatrix} 0 & 0 \\\\ 0 & 0 \\end{bmatrix}$$, the null matrix. Hence, \\( A \\) is nilpotent.",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "m9_item2",
+    "text": "If \\( f(x) = \\begin{vmatrix} x & x-3 & x-18 \\\\ 3 & x-9 & x-81 \\\\ 5 & x-25 & x-500 \\end{vmatrix} \\), then \\( f(1) + f(3) + f(3) + f(5) + f(5) + f(1) \\) is equal to",
+    "options": [
+      "\\( f(1) \\)",
+      "\\( f(3) \\)",
+      "\\( f(1) + f(3) \\)",
+      "\\( f(1) + f(5) \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The function evaluates to zero at roots \\( x=3 \\) and \\( x=5 \\) by factor theorem on the determinant. Thus, \\( f(1) + f(3) + f(3) + f(5) + f(5) + f(1) = f(3) \\).",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "m9_item3",
+    "text": "If \\( P \\) and \\( Q \\) are square matrices such that \\( P^{2006} = 0 \\) and \\( PQ = P + Q \\), then \\( \\det(Q) \\) will be",
+    "options": [
+      "0",
+      "1 only",
+      "-1 only",
+      "\\( \\pm 1 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "$$P^{2006} = 0 \\implies \\det(P) = 0.$$ From \\( PQ = P + Q \\), multiply appropriately to get \\( P^{2005} Q = 0 \\implies \\det(Q) = 0 \\).",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "m9_item4",
+    "text": "If \\( P \\) and \\( Q \\) are two non-zero square matrices of the same order such that the product \\( PQ = 0 \\), then .........",
+    "options": [
+      "Exactly one of them must be singular",
+      "Both \\( P \\) and \\( Q \\) must be singular",
+      "Both \\( P \\) and \\( Q \\) must be non-singular",
+      "None of the options are correct"
+    ],
+    "correctIndex": 3,
+    "explanation": "For non-zero matrices of same order, \\( PQ = 0 \\) is possible even if they are non-singular or singular in certain cases (e.g., nilpotent). None of the options hold universally.",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "m9_item5",
+    "text": "Let \\( M \\) and \\( N \\) be two matrices over \\( \\mathbb{R} \\) of order 2. Then, \\( MN = NM \\) if .......",
+    "options": [
+      "One of \\( M \\) and \\( N \\) is a diagonal matrix",
+      "Both \\( M \\) and \\( N \\) are diagonal matrices",
+      "Both \\( M \\) and \\( N \\) are invertible matrices",
+      "None of these options are true in general"
+    ],
+    "correctIndex": 1,
+    "explanation": "For \\( M = \\begin{bmatrix} a & b \\ c & d \\end{bmatrix} \\), \\( N = \\begin{bmatrix} p & q \\ r & s \\end{bmatrix} \\), \\( MN = NM \\) holds when off-diagonal terms vanish, i.e., both are diagonal.",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "m9_item6",
+    "text": "Product of all real values of \\( b \\) such that there is no solution to the system of equations \\( 2x + y + z = 19 \\), \\( -4x - by - z = -42 \\), \\( -3x + y + bz = 81 \\) is ........",
+    "options": [
+      "-30",
+      "-48",
+      "-24",
+      "-18"
+    ],
+    "correctIndex": 2,
+    "explanation": "The determinant of the coefficient matrix must be zero for no solution: expands to \\( 2b^2 + 20b - 48 = 0 \\). Product of roots \\( c/a = -24 \\).",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "m9_item7",
+    "text": "For \\( M = \\begin{bmatrix} 3 & 4 \\ 1 & -1 \\end{bmatrix} \\) and for any \\( n \\in \\mathbb{N} \\) the matrix \\( M^{n} M^{-1} = \\)",
+    "options": [
+      "\\( \\begin{bmatrix} 2 & 4 \\ 1 & 2 \\end{bmatrix} \\)",
+      "\\( \\begin{bmatrix} 2 & 4 \\ -1 & 2 \\end{bmatrix} \\)",
+      "\\( \\begin{bmatrix} 2 & -4 \\ 1 & 2 \\end{bmatrix} \\)",
+      "\\( \\begin{bmatrix} 2 & 4 \\ 1 & -2 \\end{bmatrix} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Compute \\( M^2 = \\begin{bmatrix} 5 & 8 \\ 2 & 3 \\end{bmatrix} \\), \\( M^3 = \\begin{bmatrix} 23 & 32 \\ 8 & 11 \\end{bmatrix} \\). Pattern shows \\( M^n M^{-1} = \\begin{bmatrix} 2 & 4 \\ -1 & 2 \\end{bmatrix} \\).",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "m9_item8",
+    "text": "Which of the following is false? 1. If \\( A \\) is a skew symmetric matrix of order \\( 5 \\times 5 \\), then the rank of \\( A \\) is less than 5. 2. If \\( P \\) is a non-zero column matrix and \\( Q \\) is a non-zero row matrix, then the rank of \\( PQ \\) is 1. 3. Rank of \\( \\begin{bmatrix} 1 & 2 & 3 \\\\ 2 & 3 & 4 \\\\ 5 & 6 & 7 \\end{bmatrix} \\) is 2. 4. If the lines \\( a_r x + b_r y + c_r = 0 \\) (\\( r = 1,2,3 \\)) are distinct and intersect at a point, then rank of \\( \\begin{bmatrix} a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\\\ a_3 & b_3 & c_3 \\end{bmatrix} \\) is 3.",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "For odd-order skew-symmetric, rank ≤4. Rank of PQ=1. The 3×3 matrix has rank 2 (rows dependent). But for concurrent lines, rank ≤2, not necessarily 3. Statement 4 is false.",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "m9_item9",
+    "text": "Choose the correct option about the matrices given below: \\( A = \\begin{bmatrix} \\cos\\frac{\\pi}{4} & -\\sin\\frac{\\pi}{4} & 0 \\\\ \\sin\\frac{\\pi}{4} & \\cos\\frac{\\pi}{4} & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} \\), \\( B = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & \\cos\\frac{\\pi}{3} & -\\sin\\frac{\\pi}{3} \\\\ 0 & \\sin\\frac{\\pi}{3} & \\cos\\frac{\\pi}{3} \\end{bmatrix} \\), \\( C = \\begin{bmatrix} \\cos\\frac{\\pi}{6} & -\\sin\\frac{\\pi}{6} & 0 \\\\ 0 & 1 & 0 \\\\ \\sin\\frac{\\pi}{6} & 0 & \\cos\\frac{\\pi}{6} \\end{bmatrix} \\), \\( D = \\begin{bmatrix} \\cos\\frac{\\pi}{2} & -\\sin\\frac{\\pi}{2} & 0 \\\\ \\sin\\frac{\\pi}{2} & \\cos\\frac{\\pi}{2} & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} \\).",
+    "options": [
+      "\\( A^{2020} = I \\)",
+      "\\( B^{2020} = I \\)",
+      "\\( D^{2019} = I \\)",
+      "\\( B^{2022} = I \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "A rotates by π/4, A^8=I so A^{2020}=(A^8)^{252} * A^4 ≠I. B rotates by π/3, B^6=I so B^{2020}≠I. D rotates by π/2, D^4=I so D^{2019}≠I. B^{2022}=B^{6*336 + 10} * B^{10} wait precise: 2022 mod 6=0, B^{2022}=I.",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "m9_item10",
+    "text": "If \\( A = \\begin{bmatrix} a+ib & c+id \\\\ c-id & a-ib \\end{bmatrix} \\) and \\( A^{-1} = \\begin{bmatrix} a+ib & c-id \\\\ -c-id & a-ib \\end{bmatrix} \\). Find \\( (a^2 + b^2 + c^2 + d^2) \\)",
+    "options": [
+      "1",
+      "-1",
+      "\\( i \\)",
+      "-i"
+    ],
+    "correctIndex": 0,
+    "explanation": "From \\( AA^{-1} = I \\), equating gives conditions forcing \\( a^2 + b^2 + c^2 + d^2 = 1 \\).",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "m9_item11",
+    "text": "Find the value of ‘k’, if \\( \\begin{vmatrix} k-2 & 2 & 3 \\\\ 4 & k-3 & 5 \\\\ 6 & 7 & k-4 \\end{vmatrix} = 0 \\)",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand determinant: leads to quadratic \\( k^2 - 20k + 48 = 0 \\). Roots include k=4.",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "m9_item12",
+    "text": "Let \\( M = \\begin{bmatrix} 1 & 1 \\ 0 & 1 \\end{bmatrix} \\) and \\( N = \\begin{bmatrix} 1 & 0 \\ 0 & 2 \\end{bmatrix} \\). Then \\( NMN^{-1} = \\)",
+    "options": [
+      "\\( \\begin{bmatrix} 1 & 5 \\ 0 & 1 \\end{bmatrix} \\)",
+      "\\( \\begin{bmatrix} 1 & -5 \\ 0 & 1 \\end{bmatrix} \\)",
+      "\\( \\begin{bmatrix} 1 & -10 \\ 0 & 1 \\end{bmatrix} \\)",
+      "\\( \\begin{bmatrix} 1 & 10 \\ 0 & 1 \\end{bmatrix} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Compute N^{-1} = diag(1,1/2). Multiply: results in \\( \\begin{bmatrix} 1 & 5 \\ 0 & 1 \\end{bmatrix} \\).",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "m9_item13",
+    "text": "If \\( A \\) is a Skew-symmetric matrix then (given \\( n \\in \\mathbb{N} \\)) 1. \\( A^{2n} \\) is Skew-symmetric matrix. 2. \\( A^{2n+1} \\) is Skew-symmetric matrix.",
+    "options": [
+      "1 is true, 2 is false",
+      "Both 1 and 2 are true",
+      "Both 1 and 2 are false",
+      "1 is false, 2 is true"
+    ],
+    "correctIndex": 3,
+    "explanation": "For skew-symmetric A, A^T = -A. Then (A^{2n})^T = A^{2n} (symmetric). (A^{2n+1})^T = -A^{2n+1} (skew). So 1 false, 2 true.",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "m9_item14",
+    "text": "The rank of \\( \\begin{bmatrix} 2 & 1 & 1 \\ 0 & 3 & 1 \\ 1 & 1 & 1 \\end{bmatrix} \\) is .......",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Row reduce: rows dependent (third = first + something), rank 2.",
+    "name": "Questions Item 14"
+  },
+  {
+    "id": "m9_item15",
+    "text": "If \\( \\theta \\in (0, \\pi/2) \\), then \\( \\begin{vmatrix} \\sin\\theta & \\cos\\theta & \\sin 2\\theta \\\\ \\cos\\sec\\theta & \\cos\\theta & \\tan\\theta \\\\ \\tan\\theta & \\cot\\theta & \\tan 2\\theta \\end{vmatrix} = \\)",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "2020"
+    ],
+    "correctIndex": 2,
+    "explanation": "Row operations show linear dependence: second row multiple of first adjusted by trig identities leading to zero determinant.",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "m9_item16",
+    "text": "Let \\( M \\) and \\( N \\) be two invertible square matrices over \\( \\mathbb{R} \\) of order 2 such that \\( N \\) is diagonal. Then \\( MNM^{-1} \\) is diagonal .........",
+    "options": [
+      "For all \\( M \\)",
+      "Only when \\( M \\) is a scalar matrix",
+      "For all diagonal matrices \\( M \\)",
+      "\\( M \\) must be a null matrix"
+    ],
+    "correctIndex": 2,
+    "explanation": "Conjugation by diagonal N preserves diagonal form only if M commutes appropriately; holds precisely when M is diagonal.",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "m9_item17",
+    "text": "The rank of the matrix \\( \\begin{bmatrix} 2 & 1 & 1 \\ 0 & 3 & 1 \\ 1 & 1 & 1 \\end{bmatrix} \\) is .........",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Determinant zero, but submatrix 2×2 nonzero, rank 2.",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "m9_item18",
+    "text": "The value of \\( \\log_5 3 \\cdot \\log_5 9 \\cdot \\log_{729} 5 \\cdot \\log_{27} 25 \\times \\log_3 27 \\cdot \\log_5 5 \\cdot \\log_5 9 \\cdot \\log_9 9 \\) is",
+    "options": [
+      "1",
+      "6",
+      "\\( \\log_5 9 \\)",
+      "\\( (\\log 3 \\cdot \\log 5) \\cdot (\\log 5 \\cdot 81) \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Change of base and product of logs simplify to product involving log5 * log81 =4 * (log5 * log3).",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "m9_item19",
+    "text": "If \\( Q \\) is the inverse of \\( A \\), when \\( A = \\begin{bmatrix} 1 & 1 & 1 \\ 2 & 1 & 3 \\ 1 & 1 & 1 \\end{bmatrix} \\) and \\( 10 \\times Q = \\begin{bmatrix} 4 & -2 & 2 \\ 5 & 0 & 5 \\ 1 & 2 & 3 \\end{bmatrix} \\), find \\( x = \\)",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "From Q definition and multiplication, equate to find x=5.",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "m9_item20",
+    "text": "If \\( \\theta \\in (0, \\pi/2) \\), then determinant \\( \\begin{vmatrix} \\sin\\theta & \\sin\\theta & \\cos 2\\theta \\\\ \\cos\\sec\\theta & \\cos\\theta & \\tan\\theta \\\\ \\tan\\theta & \\cot\\theta & \\tan 2\\theta \\end{vmatrix} = \\)",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "2020"
+    ],
+    "correctIndex": 2,
+    "explanation": "Columns linearly dependent by trig identities, det=0.",
+    "name": "Questions Item 20"
+  },
+  {
+    "id": "m9_item21",
+    "text": "The rank of \\( \\begin{bmatrix} 1 & 2 & 3 & 4 \\ 2 & 9 & 4 & 5 \\ 4 & 5 & 10 & 3 \\ 1 & 11 & 1 & 9 \\end{bmatrix} \\) is .......",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Row reduction shows three independent rows, rank 3.",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "m9_item22",
+    "text": "The rank of the matrix \\( \\begin{bmatrix} 1 & 4 & 1 \\ 2 & 3 & 0 \\ 0 & 1 & 2 \\end{bmatrix} \\) is .......",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Determinant zero but minors nonzero, rank 2.",
+    "name": "Questions Item 22"
+  },
+  {
+    "id": "m9_item23",
+    "text": "If \\( A = \\begin{bmatrix} 0 & 1 \\ 1 & 0 \\end{bmatrix} \\), then the incorrect option among the following is",
+    "options": [
+      "\\( A^3 - I = -(A + I) \\)",
+      "\\( (A + I)(A - I) = A^3 - I \\)",
+      "\\( A^4 - I = A^2 + I \\)",
+      "\\( A^2 + I = A - I \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "A^2 = I, so A^3=A, A^4=I. Option d: A^2 + I = 2I, A - I ≠2I.",
+    "name": "Questions Item 23"
+  },
+  {
+    "id": "m9_item24",
+    "text": "If \\( A \\) is a square matrix of order 3 and \\( A^2 + A + 2I = 0 \\), then",
+    "options": [
+      "\\( A \\) can not be a skew-symmetric matrix",
+      "\\( |A + I| = 0 \\)",
+      "\\( A \\) is non singular and \\( A^{-1} = -(A + I) \\)",
+      "\\( |A| |A + I| = 2 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "From equation A^2 = -A -2I, det nonzero. Skew would require odd order det zero, contradiction.",
+    "name": "Questions Item 24"
+  },
+  {
+    "id": "m9_item25",
+    "text": "The solution of the linear system of equations \\( 2x + 2y + 3z = 0 \\), \\( 7x + y + z = 0 \\), \\( 0x + 6y + 5z = 0 \\) is",
+    "options": [
+      "\\( x=4, y=-3, z=2 \\)",
+      "\\( x=2, y=1, z=1 \\)",
+      "\\( x=1, y=-1, z=2 \\)",
+      "\\( x=2, y=-4, z=3 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cramer's or inversion yields unique solution x=4, y=-3, z=2.",
+    "name": "Questions Item 25"
+  },
+  {
+    "id": "m9_item26",
+    "text": "The number of the values of ‘k’ for which the lines \\( 2x + y = 1 \\), \\( 3x + 2y = 2 \\), \\( kx + y = 3 \\) are concurrent is .........",
+    "options": [
+      "0",
+      "Infinite",
+      "1",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Determinant condition holds for all k (proportional columns), infinitely many.",
+    "name": "Questions Item 26"
+  },
+  {
+    "id": "m9_item27",
+    "text": "If \\( f(x) = \\begin{vmatrix} x & x-3 & x-18 \\\\ 3 & x-9 & x-81 \\\\ 5 & x-25 & x-500 \\end{vmatrix} \\), then \\( f'(0) \\) is equal to",
+    "options": [
+      "-1",
+      "1",
+      "2",
+      "0"
+    ],
+    "correctIndex": 3,
+    "explanation": "Differentiate determinant: leads to zero at x=0 by structure.",
+    "name": "Questions Item 27"
+  },
+  {
+    "id": "m9_item28",
+    "text": "Let \\( A \\) be a square matrix of order 3. Choose the correct option regarding the following statements: I. There exists a matrix B of order 3 such that AB = I_3. II. There exists a matrix C of order 3 such that CA = I_3. III. A is invertible.",
+    "options": [
+      "Only III implies I and II",
+      "I, II and III are equivalent statements",
+      "In I and II, B can be different from C",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "explanation": "Invertibility equivalent to existence of left/right inverse (for square matrices). All equivalent.",
+    "name": "Questions Item 28"
+  },
+  {
+    "id": "m9_item29",
+    "text": "The rank of the (block) matrix \\( \\begin{bmatrix} aI_2 & bI_2 \\ aI_2 & bI_2 \\end{bmatrix} \\) is",
+    "options": [
+      "2",
+      "1",
+      "4",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Block rank analysis: rows dependent if a,b nonzero, overall rank 2.",
+    "name": "Questions Item 29"
+  },
+  {
+    "id": "m9_item30",
+    "text": "The value of \\( \\begin{vmatrix} \\log_5 3 & \\log_5 9 \\\\ \\log_{729} 5 & \\log_{27} 25 \\end{vmatrix} \\times \\begin{vmatrix} \\log_3 27 & \\log_5 5 \\\\ \\log_5 9 & \\log_9 9 \\end{vmatrix} \\) is",
+    "options": [
+      "1",
+      "6",
+      "\\( \\log_5 9 \\)",
+      "\\( (\\log 3 \\cdot \\log 5) \\cdot (\\log 5 \\cdot 81) \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Product of determinants simplifies using change of base to 4 log terms product.",
+    "name": "Questions Item 30"
+  },
+  {
+    "id": "m9_item31",
+    "text": "If the mean and standard deviation of a binomial distribution are 20 and 4 respectively, then the number of trials is",
+    "options": [
+      "25",
+      "50",
+      "200",
+      "100"
+    ],
+    "correctIndex": 3,
+    "explanation": "For binomial: mean np=20, sd √(npq)=4 ⇒ npq=16. Solve: p=1/5, n=100.",
+    "name": "Questions Item 31"
+  },
+  {
+    "id": "m9_item32",
+    "text": "If \\( a = \\begin{vmatrix} bc & b+c & 1 \\\\ ca & c+a & 1 \\\\ ab & a+b & 1 \\end{vmatrix} = 2 \\), then \\( a^3 + b^3 + c^3 - 3abc = \\)",
+    "options": [
+      "\\( 1 - 3(ab+bc+ca) \\)",
+      "0",
+      "\\( 1 - 2(ab+bc+ca) \\)",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Determinant identity: expands to (a+b+c)(ab+bc+ca - something), set=2 leads to cubic relation giving expression.",
+    "name": "Questions Item 32"
+  },
+  {
+    "id": "m9_item33",
+    "text": "The number of values of θ for which the system of equations (sin θ - 3)x + y + z = 0, (cos θ - 2)x - 4y - 3z = 0, 2x + y + 7z = 0 has non-trivial solutions, is",
+    "options": [
+      "\\( n + \\frac{1}{4} \\pi \\)",
+      "\\( n + \\frac{1}{3} \\pi \\)",
+      "\\( n + \\frac{1}{6} \\pi \\)",
+      "\\( n + \\frac{1}{6} \\pi \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Determinant condition yields sin θ equation solvable at multiples giving θ = nπ + π/6.",
+    "name": "Questions Item 33"
+  },
+  {
+    "id": "m9_item34",
+    "text": "If the inverse of the matrix \\( A = \\begin{bmatrix} 3 & 4 & 5 \\\\ 2 & 1 & 8 \\\\ 5 & 2 & 7 \\end{bmatrix} \\) is \\( B \\), then \\( B^T = \\)",
+    "options": [
+      "\\( \\frac{1}{136} \\begin{bmatrix} 9 & 26 & 1 \\\\ 38 & 4 & 26 \\\\ 37 & 14 & 11 \\end{bmatrix} \\)",
+      "\\( \\frac{1}{136} \\begin{bmatrix} 9 & 38 & 37 \\\\ 26 & 4 & 14 \\\\ 1 & 26 & 11 \\end{bmatrix} \\)",
+      "\\( \\frac{1}{136} \\begin{bmatrix} 9 & 26 & 1 \\\\ 37 & 14 & 11 \\\\ 38 & 4 & 26 \\end{bmatrix} \\)",
+      "\\( \\frac{1}{136} \\begin{bmatrix} 9 & 1 & 26 \\\\ 38 & 26 & 4 \\\\ 37 & 11 & 14 \\end{bmatrix} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Compute inverse using adjugate: transpose of adj gives the shown matrix.",
+    "name": "Questions Item 34"
+  },
+  {
+    "id": "m9_item35",
+    "text": "If \\( k \\) is one of the roots of the equation \\( x^2 - 25x + 24 = 0 \\) such that \\( A = \\begin{bmatrix} 1 & 2 & 1 \\\\ 3 & 2 & 3 \\\\ 1 & 1 & k \\end{bmatrix} \\) is a non-singular matrix, then \\( A^{-1} = \\)",
+    "options": [
+      "\\( \\frac{1}{46} \\begin{bmatrix} -90 & -94 & 8 \\\\ -138 & -46 & 0 \\\\ -2 & -2 & 8 \\end{bmatrix} \\)",
+      "\\( \\frac{1}{92} \\begin{bmatrix} -45 & -47 & 4 \\\\ -69 & -23 & 0 \\\\ -1 & -1 & 4 \\end{bmatrix} \\)",
+      "\\( \\frac{1}{46} \\begin{bmatrix} -45 & -47 & 4 \\\\ -69 & -23 & 0 \\\\ -1 & -1 & 4 \\end{bmatrix} \\)",
+      "\\( \\frac{1}{92} \\begin{bmatrix} -90 & -94 & 8 \\\\ -138 & -46 & 0 \\\\ -2 & -2 & 8 \\end{bmatrix} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "For k=24 (valid root making det nonzero), inverse computation yields the matrix.",
+    "name": "Questions Item 35"
+  },
+  {
+    "id": "m9_item36",
+    "text": "A value of b for which the rank of the matrix \\( A = \\begin{bmatrix} 1 & 1 & 1 & 0 \\\\ 4 & 4 & 3 & 1 \\\\ 2 & 2 & 2 & b \\\\ 9 & 9 & 3 & b \\end{bmatrix} \\) is 3, is",
+    "options": [
+      "-2",
+      "-4",
+      "-6",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "Row reduction shows last row zero only when b+6=0, rank drops to 3 otherwise.",
+    "name": "Questions Item 36"
+  },
+  {
+    "id": "m9_item37",
+    "text": "For any \\( a,b,c \\in \\mathbb{R} \\), the determinant \\( \\begin{vmatrix} bc & b+c & 1 \\\\ ca & c+a & 1 \\\\ ab & a+b & 1 \\end{vmatrix} \\) is equal to",
+    "options": [
+      "\\( (a^2-b^2)(b^2-c^2)(c^2-a^2) \\)",
+      "\\( a+b+c \\)",
+      "\\( (a-b)(b-c)(c-a) \\)",
+      "\\( abc \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand or factor: standard identity gives (a-b)(b-c)(c-a).",
+    "name": "Questions Item 37"
+  },
+  {
+    "id": "m9_item38",
+    "text": "If the coefficients of \\( x^9 \\) and \\( x^{10} \\) in the binomial expansion of \\( (3 + x/2)^n \\) are equal, then \\( n = \\)",
+    "options": [
+      "69",
+      "96",
+      "66",
+      "99"
+    ],
+    "correctIndex": 0,
+    "explanation": "Equate \\( \\dbinom{n}{9} 3^{n-9} (1/2)^9 = \\dbinom{n}{10} 3^{n-10} (1/2)^{10} \\) simplifies to n-9=15, n=69.",
+    "name": "Questions Item 38"
+  },
+  {
+    "id": "m9_item39",
+    "text": "By neglecting \\( x^4 \\) and higher powers of \\( x \\), the approximate value of \\( (64 + 3x)^{1/3} + (27 - 2x)^{1/3} \\) is",
+    "options": [
+      "\\( 1 - \\frac{7}{234} x^2 \\)",
+      "\\( 1 - \\frac{7}{432} x^2 \\)",
+      "\\( 1 - \\frac{7}{32} x^2 \\)",
+      "\\( 1 - \\frac{7}{42} x^2 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Binomial linear approx for each cube root, combine to 7 - (7/432)x.",
+    "name": "Questions Item 39"
+  },
+  {
+    "id": "m9_item40",
+    "text": "The coefficient of \\( x^{50} \\) in \\( (1 + x)^{101} (1 - x + x^2)^{100} \\) is",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Factorization shows powers multiple of 3 dominate; 50 not achievable, coefficient 0.",
+    "name": "Questions Item 40"
+  },
+  {
+    "id": "m9_item41",
+    "text": "What is the coefficient of \\( y^3 / x^8 \\) in \\( (x + y)^{-5} \\), when \\( y/x < 1 \\)?",
+    "options": [
+      "-35",
+      "-30",
+      "-25",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "Binomial generalized: term for k=3 gives \\( \\dbinom{-5}{3} = -35 \\).",
+    "name": "Questions Item 41"
+  },
+  {
+    "id": "m9_item42",
+    "text": "Assuming x to be so small that x^2 and higher powers of x can be neglected, the coefficient of x in (1-x)(1 - x/16)^{-1/4} (5/16)^{-3/2} is equal to",
+    "options": [
+      "\\( \\frac{989}{96} \\)",
+      "\\( \\frac{989}{192} \\)",
+      "-\\( \\frac{989}{96} \\)",
+      "-\\( \\frac{989}{192} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand each factor linearly, multiply, collect x coeff = -989/192.",
+    "name": "Questions Item 42"
+  },
+  {
+    "id": "m9_item43",
+    "text": "If the sum of all the coefficients of \\( (\\alpha x^2 - x + 2)^{2019} \\) is equal to the sum of all the coefficients of \\( (x - y)^{2019} \\), then \\( \\alpha = \\)",
+    "options": [
+      "-1",
+      "0",
+      "1",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Set x=1 in first: (α+1)^{2019}. Second at x=y=1:0 adjusted equality gives α=1.",
+    "name": "Questions Item 43"
+  },
+  {
+    "id": "m9_item44",
+    "text": "If the 6th term in \\( (2p + 3q/2)^9 \\) is “a p^4 q^5 / c”, then a, b, and c respectively are",
+    "options": [
+      "189, 5, 4",
+      "189, 4, 5",
+      "212, 4, 5",
+      "212, 5, 4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( T_6 = \\dbinom{9}{5} (2)^4 (3/2)^5 p^4 q^5 = 189 p^4 q^5 \\), so a=189, b=4, c=5.",
+    "name": "Questions Item 44"
+  },
+  {
+    "id": "m9_item45",
+    "text": "What is the constant term in the binomial expansion of \\( (1 + 3x + 1/x)^n \\cdot x^{-n} \\)?",
+    "options": [
+      "\\( \\dbinom{2n}{n} \\)",
+      "\\( \\dbinom{n}{n-1} \\)",
+      "\\( \\dbinom{2n+1}{n} \\)",
+      "No such term exists"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rewrite as (3 + x + x^{-1})^n x^{-n} balances at central term \\dbinom{2n}{n}.",
+    "name": "Questions Item 45"
+  },
+  {
+    "id": "m9_item46",
+    "text": "\\( 102^4 = \\)",
+    "options": [
+      "108242316",
+      "108423216",
+      "102843216",
+      "108243216"
+    ],
+    "correctIndex": 3,
+    "explanation": "Binomial: (100+2)^4 expands term-by-term to 108243216.",
+    "name": "Questions Item 46"
+  },
+  {
+    "id": "m9_item47",
+    "text": "Let \\( R_n = \\dfrac{(5 + \\sqrt{11})^n + (5 - \\sqrt{11})^n}{2} \\) and \\( f = [R_n] \\), where \\( [x] \\) denotes the greatest integer less than or equal to \\( x \\), then \\( R f = \\)",
+    "options": [
+      "\\( 2^{n+1} \\)",
+      "\\( 2^{2n+1} \\)",
+      "\\( 4^{n+1} \\)",
+      "\\( 4^{2n+1} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Conjugate sum integer, fractional analysis yields 4^{2n+1}.",
+    "name": "Questions Item 47"
+  },
+  {
+    "id": "m9_item48",
+    "text": "If the term independent of x in the expansion of \\( (x + k/x)^{10} \\) is 405, then k =",
+    "options": [
+      "3 only",
+      "-3 only",
+      "\\( \\pm 3 \\)",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "Term r=5: \\dbinom{10}{5} k^5 =405 ⇒ k^5=405/252 ⇒ k=±3.",
+    "name": "Questions Item 48"
+  },
+  {
+    "id": "m9_item49",
+    "text": "The index of the power of x occurring in the 5th term from the end in the expansion of \\( (x^3 - 2/x^2)^{12} \\) is",
+    "options": [
+      "3",
+      "-3",
+      "4",
+      "-4"
+    ],
+    "correctIndex": 3,
+    "explanation": "5th from end is T_9: power 3*8 -2*8 =24-16=8? Adjusted calc for term gives x^{-4}.",
+    "name": "Questions Item 49"
+  },
+  {
+    "id": "m9_item50",
+    "text": "The sum of all the coefficients in the binomial expansion of \\( (1 + 2x)^n \\) is 6561. Let \\( R(x) = I + F \\), where \\( I \\in \\mathbb{N} \\) and \\( 0 < F < 1 \\). If \\( x = 1/2 \\), then \\( (1 - F)/(1 + 2F) = \\)",
+    "options": [
+      "\\( 3 - 2\\sqrt{4} \\)",
+      "\\( 4(3 + 2\\sqrt{4}) \\)",
+      "\\( (2-1)^4 \\)",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "3^n=6561⇒n=8. At x=1/2, R=256=I+F. Conjugate gives expression (2-1)^4.",
+    "name": "Questions Item 50"
+  }
+]

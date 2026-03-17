@@ -1,0 +1,652 @@
+[
+  {
+    "id": "m27_item1",
+    "text": "\\int_{1}^{e^{2}} \\frac{dx}{x(1 + \\log x)^{2}} =",
+    "options": [
+      "\\frac{2}{3}",
+      "\\frac{1}{3}",
+      "\\frac{3}{2}",
+      "\\log 2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let $1 + \\log x = t$, then $\\frac{dx}{x} = dt$.<br>Limits: $x=1 \\to t=1$; $x=e^2 \\to t=3$.<br>$I = \\int_{1}^{3} \\frac{dt}{t^2} = \\left[ -\\frac{1}{t} \right]_{1}^{3} = -\\frac{1}{3} + 1 = \\frac{2}{3}$.",
+    "name": "Question Item 1"
+  },
+  {
+    "id": "m27_item2",
+    "text": "The value of $x$ that satisfies the equation $\\int_{\\sqrt{2}}^{x} \\frac{dt}{|t|\\sqrt{t^{2} - 1}} = \\frac{\\pi}{12}$ is",
+    "options": [
+      "1",
+      "0",
+      "-\\sqrt{2}",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "$\\int \\frac{dt}{|t|\\sqrt{t^{2}-1}} = \\sec^{-1}t$.<br>$\\sec^{-1}x - \\sec^{-1}\\sqrt{2} = \\frac{\\pi}{12}$.<br>$\\sec^{-1}x = \\frac{\\pi}{3} \\implies x=2$.",
+    "name": "Question Item 2"
+  },
+  {
+    "id": "m27_item3",
+    "text": "\\int_{-\\pi}^{\\pi} x^{2} (\\sin x) dx =",
+    "options": [
+      "\\pi^{2}",
+      "\\frac{\\pi^{2}}{2}",
+      "0",
+      "2\\pi^{2}"
+    ],
+    "correctIndex": 2,
+    "explanation": "$x^{2} \\sin x$ is odd. Integral over symmetric interval $[-\\pi,\\pi]$ is $0$.",
+    "name": "Question Item 3"
+  },
+  {
+    "id": "m27_item4",
+    "text": "\\int_{0}^{1} \\sin^{-1}\\left(\\frac{2x}{1 + x^{2}}\\right) dx =",
+    "options": [
+      "\\pi - \\log 2",
+      "\\pi + \\log 2",
+      "\\frac{\\pi}{2} - \\log 2",
+      "\\frac{\\pi}{2} + \\log 2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute $x=\\tan\\theta$: limits $0$ to $\\pi/4$.<br>$\\int 2\\theta \\sec^{2}\\theta \\, d\\theta$. Integration by parts: $\\frac{\\pi}{2} - \\log 2$.",
+    "name": "Question Item 4"
+  },
+  {
+    "id": "m27_item5",
+    "text": "\\int_{0}^{1} \\frac{8 \\log(1 + x)}{1 + x^{2}} dx =",
+    "options": [
+      "\\pi \\log 2",
+      "\\frac{\\pi}{2} \\log 2",
+      "\\frac{\\pi}{4} \\log 2",
+      "\\log 2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute $x=\\tan\\theta$: $\\int_{0}^{\\pi/4} 8 \\log(1+\\tan\\theta) \\, d\\theta$.<br>Use property to get $8 \\times \\frac{\\pi}{8} \\log 2 = \\pi \\log 2$.",
+    "name": "Question Item 5"
+  },
+  {
+    "id": "m27_item6",
+    "text": "\\int_{-\\pi/4}^{\\pi/4} x^{3} \\sin^{4}(x) dx =",
+    "options": [
+      "0",
+      "\\pi",
+      "1",
+      "2\\pi"
+    ],
+    "correctIndex": 0,
+    "explanation": "$x^3 \\sin^4 x$ is odd. Integral over symmetric interval is $0$.",
+    "name": "Question Item 6"
+  },
+  {
+    "id": "m27_item7",
+    "text": "\\int_{0}^{\\pi/4} \\frac{dx}{\\cos^{3}(x) \\cdot \\sqrt{2} \\sin(2x)} =",
+    "options": [
+      "\\frac{6}{5}",
+      "\\frac{3}{5}",
+      "\\frac{4}{5}",
+      "\\frac{8}{5}"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rewrite and substitute $\\tan x = t^2$: limits $0$ to $1$.<br>$\\int_{0}^{1} (1 + t^4) \\, dt = \\frac{6}{5}$.",
+    "name": "Question Item 7"
+  },
+  {
+    "id": "m27_item8",
+    "text": "\\int_{-1}^{2} |x| dx =",
+    "options": [
+      "1",
+      "2",
+      "\\frac{5}{2}",
+      "\\frac{3}{2}"
+    ],
+    "correctIndex": 2,
+    "explanation": "$\\int_{-1}^{0} (-x) dx + \\int_{0}^{2} x dx = \\frac{1}{2} + 2 = \\frac{5}{2}$.",
+    "name": "Question Item 8"
+  },
+  {
+    "id": "m27_item9",
+    "text": "If it is given that $\\int_{0}^{b-c} f(x+c) dx = k \\int_{c}^{b} f(x) dx$, then $k =$",
+    "options": [
+      "1",
+      "2",
+      "0",
+      "-2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute $t = x + c$: limits from $c$ to $b$.<br>$k=1$.",
+    "name": "Question Item 9"
+  },
+  {
+    "id": "m27_item10",
+    "text": "\\int_{0}^{\\pi/2} e^{\\sin x} \\cdot \\cos x dx =",
+    "options": [
+      "1 - e",
+      "1 + e",
+      "e - 1",
+      "e"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute $\\sin x = t$: limits $0$ to $1$.<br>$\\int e^t dt = e - 1$.",
+    "name": "Question Item 10"
+  },
+  {
+    "id": "m27_item11",
+    "text": "If $I_n = \\int_{0}^{\\pi/2} \\sin^n(x) dx$ and $I_n = (k)I_{n-2}$, then what will be the value of $k$?",
+    "options": [
+      "\\frac{n}{n-1}",
+      "\\frac{n-1}{n}",
+      "\\frac{n+1}{n}",
+      "\\frac{n}{n+1}"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integration by parts and reduction: $I_n = \\frac{n-1}{n} I_{n-2}$.",
+    "name": "Question Item 11"
+  },
+  {
+    "id": "m27_item12",
+    "text": "\\int_{0}^{\\pi/4} (\\tan^2 x - \\tan^4 x) dx =",
+    "options": [
+      "3",
+      "2",
+      "\\frac{1}{3}",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "$\\int (\\sec^2 x - 1 - \\tan^4 x) dx$.<br>Substitute $\\tan x = t$: $\\int_0^1 t^2 dt = 1/3$.",
+    "name": "Question Item 12"
+  },
+  {
+    "id": "m27_item13",
+    "text": "If $f$ is integrable on $[0,a]$, then the function $h$ defined on $[0,a]$ as $h(x) = \\dots \\forall x \\in [0,a]$ is integrable on $[0,a]$",
+    "options": [
+      "f(a-x)",
+      "f(x-a)",
+      "f(x)",
+      "f(a)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Property of definite integral: $h(x) = \\int_0^a f(a-x) dx$.",
+    "name": "Question Item 13"
+  },
+  {
+    "id": "m27_item14",
+    "text": "\\int_0^k (\\sqrt{k} - \\sqrt{t})^2 dt =",
+    "options": [
+      "\\frac{k^2}{2}",
+      "\\frac{k^2}{4}",
+      "\\frac{k^2}{6}",
+      "\\frac{k^2}{8}"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand: $\\int_0^k (k + t - 2\\sqrt{kt}) dt = \\frac{k^2}{6}$.",
+    "name": "Question Item 14"
+  },
+  {
+    "id": "m27_item15",
+    "text": "\\int_0^{\\pi/4} \\tan^2(x) dx =",
+    "options": [
+      "\\frac{\\pi}{4}",
+      "\\frac{\\pi}{4} - 1",
+      "1 - \\frac{\\pi}{4}",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "$\\int_0^{\\pi/4} (\\sec^2 x - 1) dx = [\\tan x - x]_0^{\\pi/4} = 1 - \\frac{\\pi}{4}$.",
+    "name": "Question Item 15"
+  },
+  {
+    "id": "m27_item16",
+    "text": "\\int_0^{\\pi/2} |\\sin t - \\cos t| dt =",
+    "options": [
+      "2(\\sqrt{2} + 1)",
+      "2(\\sqrt{2} - 1)",
+      "\\sqrt{2} + 1",
+      "\\sqrt{2} - 1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Split at $\\pi/4$: $2\\int_0^{\\pi/4} (\\cos t - \\sin t) dt = 2(\\sqrt{2}-1)$.",
+    "name": "Question Item 16"
+  },
+  {
+    "id": "m27_item17",
+    "text": "\\int_0^{\\pi/4} \\frac{1}{1 + \\tan^{2020}(x)} dx =",
+    "options": [
+      "\\pi",
+      "\\frac{\\pi}{2}",
+      "\\frac{\\pi}{4}",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use property: $I = \\int_0^{\\pi/4} \\frac{\\tan^{2020}x}{1 + \\tan^{2020}x} dx$.<br>$2I = \\frac{\\pi}{4} \\implies I = \\frac{\\pi}{4}$.",
+    "name": "Question Item 17"
+  },
+  {
+    "id": "m27_item18",
+    "text": "\\int_{-\\pi/2}^{\\pi/2} (2\\sin|x| + \\cos|x|) dx =",
+    "options": [
+      "3",
+      "6",
+      "8",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Even function: $2\\int_0^{\\pi/2} (2\\sin x + \\cos x) dx = 6$.",
+    "name": "Question Item 18"
+  },
+  {
+    "id": "m27_item19",
+    "text": "\\int_0^{2\\pi} \\frac{x \\cos(x)}{1 + \\cos(x)} dx =",
+    "options": [
+      "\\frac{\\pi}{6}",
+      "\\pi^2",
+      "\\frac{\\pi}{4}",
+      "2\\pi^2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use property: $I = \\int_0^{2\\pi} \\frac{(2\\pi - x) \\cos x}{1 + \\cos x} dx$.<br>$2I = 2\\pi \\int_0^{2\\pi} 1 - \\frac{1}{1+\\cos x} dx = 2\\pi^2$.",
+    "name": "Question Item 19"
+  },
+  {
+    "id": "m27_item20",
+    "text": "\\int_0^1 (1+x) \\log(1+x) dx =",
+    "options": [
+      "\\frac{-3}{4} + \\log 2",
+      "\\frac{3}{4} + 2\\log 2",
+      "2\\log 2",
+      "\\frac{-3}{4} + 2\\log 2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integration by parts: $\\frac{3}{2}\\log 2 - \\frac{1}{2}\\int_0^1 (x+1) - \\frac{1}{1+x} dx = \\frac{3}{4} + 2\\log 2$.",
+    "name": "Question Item 20"
+  },
+  {
+    "id": "m27_item21",
+    "text": "Choose the correct option regarding the following definite integrals<br>(i) $\\int_0^{\\pi/2} \\sin^m(x) \\cos(x) dx = \\frac{1}{m+1}$<br>(ii) $\\int_0^{\\pi/2} \\sin(x) \\cos^n(x) dx = \\frac{1}{n+1}$",
+    "options": [
+      "(i) is true, (ii) is false",
+      "(i) is false, (ii) is true",
+      "Both (i) and (ii) are false",
+      "Both (i) and (ii) are true"
+    ],
+    "correctIndex": 3,
+    "explanation": "Both follow from substitution $t = \\sin x$ or $\\cos x$.",
+    "name": "Question Item 21"
+  },
+  {
+    "id": "m27_item22",
+    "text": "\\int_0^{\\pi/2} \\frac{1}{1 + \\tan^{2020}(x)} dx =",
+    "options": [
+      "\\pi",
+      "\\frac{\\pi}{2}",
+      "\\frac{\\pi}{4}",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use property: $I = \\frac{\\pi}{4}$.",
+    "name": "Question Item 22"
+  },
+  {
+    "id": "m27_item23",
+    "text": "The value of $f(1)$, given the equation $\\int_0^{x^2} x f'(t) dt = x^5 - x^3$ is",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Differentiate: $x^2 f'(x^2) \\cdot 2x = 5x^4 - 3x^2$. At $x=1$: $f(1)=1$.",
+    "name": "Question Item 23"
+  },
+  {
+    "id": "m27_item24",
+    "text": "If $I_1 = \\int_0^{\\pi/2} \\frac{x}{\\sin x} dx$, and $I_2 = \\int_0^1 \\frac{\\tan^{-1} x}{x} dx$, then $I_1 : I_2$ is",
+    "options": [
+      "1 : 1",
+      "2 : 1",
+      "3 : 1",
+      "4 : 1"
+    ],
+    "correctIndex": 1,
+    "explanation": "$I_2 = 2 I_1$.",
+    "name": "Question Item 24"
+  },
+  {
+    "id": "m27_item25",
+    "text": "\\int_0^{\\pi/2} \\frac{x + \\sin x}{1 + \\cos x} dx =",
+    "options": [
+      "\\frac{\\pi}{4}",
+      "\\frac{\\pi}{3}",
+      "\\frac{\\pi}{2}",
+      "\\frac{\\pi}{6}"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rewrite as $\\frac{x}{2} \\sec^2 \\frac{x}{2} + \\tan \\frac{x}{2}$.<br>Integrate: $\\frac{\\pi}{2}$.",
+    "name": "Question Item 25"
+  },
+  {
+    "id": "m27_item26",
+    "text": "Calculate the area enclosed by the curves $x^2 = 2 - y, x^2 = y$",
+    "options": [
+      "\\frac{2}{3}",
+      "\\frac{4}{3}",
+      "\\frac{8}{3}",
+      "\\frac{11}{3}"
+    ],
+    "correctIndex": 2,
+    "explanation": "Intersection at $y=1$, $x=\\pm1$.<br>Area $= 2 \\int_0^1 (\\sqrt{2-y} - \\sqrt{y}) dy = \\frac{8}{3}$.",
+    "name": "Question Item 26"
+  },
+  {
+    "id": "m27_item27",
+    "text": "If the value of $\\int_0^{\\pi/2} \\sin^4(x) \\cdot \\cos^2(x) dx = \\frac{\\pi}{32}$, then the value of $\\int_0^{\\pi/2} \\cos^4(x) \\cdot \\sin^2(x) dx =$",
+    "options": [
+      "\\frac{\\pi}{32}",
+      "\\frac{\\pi}{64}",
+      "\\frac{\\pi}{4}",
+      "\\frac{\\pi}{8}"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use property: same value $\\frac{\\pi}{32}$.",
+    "name": "Question Item 27"
+  },
+  {
+    "id": "m27_item28",
+    "text": "\\int_{-a}^{a} \\sqrt{\\frac{a-x}{a+x}} dx =",
+    "options": [
+      "\\frac{a\\pi}{2}",
+      "1",
+      "2a\\pi",
+      "a\\pi"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use property: $2I = 2a \\int_{-a}^a \\frac{dx}{\\sqrt{a^2 - x^2}} = 2a \\cdot \\pi$.<br>$I = a\\pi$.",
+    "name": "Question Item 28"
+  },
+  {
+    "id": "m27_item29",
+    "text": "\\int_{\\log_e 2}^{x} \\frac{dt}{\\sqrt{e^t - 1}} = \\frac{\\pi}{6} \\Rightarrow x =",
+    "options": [
+      "2 \\log_e 2",
+      "3 \\log_e 2",
+      "4 \\log_e 2",
+      "8 \\log_e 2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute $e^{-t/2} = u$: limits $\\frac{1}{\\sqrt{2}}$ to $e^{-x/2}$.<br>$\\sin^{-1}(e^{-x/2}) = \\frac{\\pi}{6} \\implies x = 2\\log_e 2$.",
+    "name": "Question Item 29"
+  },
+  {
+    "id": "m27_item30",
+    "text": "\\int_0^1 \\frac{\\log_e(1+x)}{1+x^2} dx =",
+    "options": [
+      "\\frac{\\pi}{4} \\log_e 2",
+      "\\frac{\\pi}{6} \\log_e 6",
+      "\\frac{\\pi}{2} \\log_e 8",
+      "\\frac{\\pi}{8} \\log_e 2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute $x=\\tan\\theta$: $\\int_0^{\\pi/4} \\log_e(1+\\tan\\theta) d\\theta$.<br>Property: $\\frac{\\pi}{8} \\log_e 2$.",
+    "name": "Question Item 30"
+  },
+  {
+    "id": "m27_item31",
+    "text": "The area (in sq units) enclosed by the circle $x^2 + y^2 = 2$ is divided into two parts by the parabola $y = x^2$, then the area (in sq units) of the larger part is",
+    "options": [
+      "\\frac{3\\pi}{2} - \\frac{1}{3}",
+      "6\\pi - \\frac{4}{3}",
+      "\\frac{4\\pi}{3} - \\frac{2}{3}",
+      "4\\pi - \\frac{1}{4}"
+    ],
+    "correctIndex": 0,
+    "explanation": "Intersection at $y=1$, $x=\\pm1$.<br>Area $= \\pi + 2\\int_0^1 (\\sqrt{2-y^2} - \\sqrt{y}) dy = \\frac{3\\pi}{2} - \\frac{1}{3}$.",
+    "name": "Question Item 31"
+  },
+  {
+    "id": "m27_item32",
+    "text": "\\lim_{n \\to \\infty} \\frac{1 + 32 + 243 + \\ldots + n^5}{n^6} =",
+    "options": [
+      "\\frac{1}{5}",
+      "\\frac{1}{11}",
+      "\\frac{1}{6}",
+      "\\frac{1}{2}"
+    ],
+    "correctIndex": 2,
+    "explanation": "$\\frac{1}{n} \\sum_{r=1}^n \\left(\\frac{r}{n}\right)^5 = \\int_0^1 x^5 dx = \\frac{1}{6}$.",
+    "name": "Question Item 32"
+  },
+  {
+    "id": "m27_item33",
+    "text": "\\int_{e^{-1}}^{e^{2}} \\left| \\frac{\\log x}{x} \\right| dx =",
+    "options": [
+      "\\frac{2}{5}",
+      "2",
+      "5",
+      "\\frac{5}{2}"
+    ],
+    "correctIndex": 3,
+    "explanation": "Split at $1$: $-\\int_{e^{-1}}^1 \\frac{\\log x}{x} dx + \\int_1^{e^2} \\frac{\\log x}{x} dx = \\frac{5}{2}$.",
+    "name": "Question Item 33"
+  },
+  {
+    "id": "m27_item34",
+    "text": "The area (in square units) of the region lying in the first quadrant and enclosed by the X-axis, the straight line $x - \\sqrt{3}y = 0$ and the circle $x^2 + y^2 = 4$, is",
+    "options": [
+      "\\frac{\\pi}{3}",
+      "\\frac{2\\pi}{3}",
+      "\\frac{\\pi}{2\\sqrt{3}}",
+      "\\frac{2\\pi}{3\\sqrt{2}}"
+    ],
+    "correctIndex": 0,
+    "explanation": "Intersection at $(\\sqrt{3},1)$.<br>Area $= \\int_0^{\\sqrt{3}} \\frac{x}{\\sqrt{3}} dx + \\int_{\\sqrt{3}}^2 \\sqrt{4-x^2} dx = \\frac{\\pi}{3}$.",
+    "name": "Question Item 34"
+  },
+  {
+    "id": "m27_item35",
+    "text": "\\int_0^{\\pi/2} \\frac{x + \\sin x}{1 + \\cos x} dx =",
+    "options": [
+      "\\frac{\\pi}{4}",
+      "\\frac{\\pi}{3}",
+      "\\frac{\\pi}{2}",
+      "\\frac{\\pi}{6}"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rewrite as $\\frac{x}{2} \\sec^2 \\frac{x}{2} + \\tan \\frac{x}{2}$.<br>Integrate: $\\frac{\\pi}{2}$.",
+    "name": "Question Item 35"
+  },
+  {
+    "id": "m27_item36",
+    "text": "Calculate the area enclosed by the curves $x^2 = 2 - y, x^2 = y$",
+    "options": [
+      "\\frac{2}{3}",
+      "\\frac{4}{3}",
+      "\\frac{8}{3}",
+      "\\frac{11}{3}"
+    ],
+    "correctIndex": 2,
+    "explanation": "Intersection at $y=1$, $x=\\pm1$.<br>Area $= 2 \\int_0^1 (\\sqrt{2-y} - \\sqrt{y}) dy = \\frac{8}{3}$.",
+    "name": "Question Item 36"
+  },
+  {
+    "id": "m27_item37",
+    "text": "If the value of $\\int_0^{\\pi/2} \\sin^4(x) \\cdot \\cos^2(x) dx = \\frac{\\pi}{32}$, then the value of $\\int_0^{\\pi/2} \\cos^4(x) \\cdot \\sin^2(x) dx =$",
+    "options": [
+      "\\frac{\\pi}{32}",
+      "\\frac{\\pi}{64}",
+      "\\frac{\\pi}{4}",
+      "\\frac{\\pi}{8}"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use property: same value $\\frac{\\pi}{32}$.",
+    "name": "Question Item 37"
+  },
+  {
+    "id": "m27_item38",
+    "text": "\\int_{-a}^{a} \\sqrt{\\frac{a-x}{a+x}} dx =",
+    "options": [
+      "\\frac{a\\pi}{2}",
+      "1",
+      "2a\\pi",
+      "a\\pi"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use property: $2I = 2a \\int_{-a}^a \\frac{dx}{\\sqrt{a^2 - x^2}} = 2a \\cdot \\pi$.<br>$I = a\\pi$.",
+    "name": "Question Item 38"
+  },
+  {
+    "id": "m27_item39",
+    "text": "\\int_{\\log_e 2}^{x} \\frac{dt}{\\sqrt{e^t - 1}} = \\frac{\\pi}{6} \\Rightarrow x =",
+    "options": [
+      "2 \\log_e 2",
+      "3 \\log_e 2",
+      "4 \\log_e 2",
+      "8 \\log_e 2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute $e^{-t/2} = u$: limits $\\frac{1}{\\sqrt{2}}$ to $e^{-x/2}$.<br>$\\sin^{-1}(e^{-x/2}) = \\frac{\\pi}{6} \\implies x = 2\\log_e 2$.",
+    "name": "Question Item 39"
+  },
+  {
+    "id": "m27_item40",
+    "text": "\\int_0^1 \\frac{\\log_e(1+x)}{1+x^2} dx =",
+    "options": [
+      "\\frac{\\pi}{4} \\log_e 2",
+      "\\frac{\\pi}{6} \\log_e 6",
+      "\\frac{\\pi}{2} \\log_e 8",
+      "\\frac{\\pi}{8} \\log_e 2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute $x=\\tan\\theta$: $\\int_0^{\\pi/4} \\log_e(1+\\tan\\theta) d\\theta$.<br>Property: $\\frac{\\pi}{8} \\log_e 2$.",
+    "name": "Question Item 40"
+  },
+  {
+    "id": "m27_item41",
+    "text": "The area (in sq units) enclosed by the circle $x^2 + y^2 = 2$ is divided into two parts by the parabola $y = x^2$, then the area (in sq units) of the larger part is",
+    "options": [
+      "\\frac{3\\pi}{2} - \\frac{1}{3}",
+      "6\\pi - \\frac{4}{3}",
+      "\\frac{4\\pi}{3} - \\frac{2}{3}",
+      "4\\pi - \\frac{1}{4}"
+    ],
+    "correctIndex": 0,
+    "explanation": "Intersection at $y=1$, $x=\\pm1$.<br>Area $= \\pi + 2\\int_0^1 (\\sqrt{2-y^2} - \\sqrt{y}) dy = \\frac{3\\pi}{2} - \\frac{1}{3}$.",
+    "name": "Question Item 41"
+  },
+  {
+    "id": "m27_item42",
+    "text": "\\lim_{n \\to \\infty} \\frac{1 + 32 + 243 + \\ldots + n^5}{n^6} =",
+    "options": [
+      "\\frac{1}{5}",
+      "\\frac{1}{11}",
+      "\\frac{1}{6}",
+      "\\frac{1}{2}"
+    ],
+    "correctIndex": 2,
+    "explanation": "$\\frac{1}{n} \\sum_{r=1}^n \\left(\\frac{r}{n}\right)^5 = \\int_0^1 x^5 dx = \\frac{1}{6}$.",
+    "name": "Question Item 42"
+  },
+  {
+    "id": "m27_item43",
+    "text": "\\int_{e^{-1}}^{e^{2}} \\left| \\frac{\\log x}{x} \\right| dx =",
+    "options": [
+      "\\frac{2}{5}",
+      "2",
+      "5",
+      "\\frac{5}{2}"
+    ],
+    "correctIndex": 3,
+    "explanation": "Split at $1$: $-\\int_{e^{-1}}^1 \\frac{\\log x}{x} dx + \\int_1^{e^2} \\frac{\\log x}{x} dx = \\frac{5}{2}$.",
+    "name": "Question Item 43"
+  },
+  {
+    "id": "m27_item44",
+    "text": "The area (in square units) of the region lying in the first quadrant and enclosed by the X-axis, the straight line $x - \\sqrt{3}y = 0$ and the circle $x^2 + y^2 = 4$, is",
+    "options": [
+      "\\frac{\\pi}{3}",
+      "\\frac{2\\pi}{3}",
+      "\\frac{\\pi}{2\\sqrt{3}}",
+      "\\frac{2\\pi}{3\\sqrt{2}}"
+    ],
+    "correctIndex": 0,
+    "explanation": "Intersection at $(\\sqrt{3},1)$.<br>Area $= \\int_0^{\\sqrt{3}} \\frac{x}{\\sqrt{3}} dx + \\int_{\\sqrt{3}}^2 \\sqrt{4-x^2} dx = \\frac{\\pi}{3}$.",
+    "name": "Question Item 44"
+  },
+  {
+    "id": "m27_item45",
+    "text": "\\int_0^{\\pi/2} \\frac{x + \\sin x}{1 + \\cos x} dx =",
+    "options": [
+      "\\frac{\\pi}{4}",
+      "\\frac{\\pi}{3}",
+      "\\frac{\\pi}{2}",
+      "\\frac{\\pi}{6}"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rewrite as $\\frac{x}{2} \\sec^2 \\frac{x}{2} + \\tan \\frac{x}{2}$.<br>Integrate: $\\frac{\\pi}{2}$.",
+    "name": "Question Item 45"
+  },
+  {
+    "id": "m27_item46",
+    "text": "Calculate the area enclosed by the curves $x^2 = 2 - y, x^2 = y$",
+    "options": [
+      "\\frac{2}{3}",
+      "\\frac{4}{3}",
+      "\\frac{8}{3}",
+      "\\frac{11}{3}"
+    ],
+    "correctIndex": 2,
+    "explanation": "Intersection at $y=1$, $x=\\pm1$.<br>Area $= 2 \\int_0^1 (\\sqrt{2-y} - \\sqrt{y}) dy = \\frac{8}{3}$.",
+    "name": "Question Item 46"
+  },
+  {
+    "id": "m27_item47",
+    "text": "If the value of $\\int_0^{\\pi/2} \\sin^4(x) \\cdot \\cos^2(x) dx = \\frac{\\pi}{32}$, then the value of $\\int_0^{\\pi/2} \\cos^4(x) \\cdot \\sin^2(x) dx =$",
+    "options": [
+      "\\frac{\\pi}{32}",
+      "\\frac{\\pi}{64}",
+      "\\frac{\\pi}{4}",
+      "\\frac{\\pi}{8}"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use property: same value $\\frac{\\pi}{32}$.",
+    "name": "Question Item 47"
+  },
+  {
+    "id": "m27_item48",
+    "text": "\\int_{-a}^{a} \\sqrt{\\frac{a-x}{a+x}} dx =",
+    "options": [
+      "\\frac{a\\pi}{2}",
+      "1",
+      "2a\\pi",
+      "a\\pi"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use property: $2I = 2a \\int_{-a}^a \\frac{dx}{\\sqrt{a^2 - x^2}} = 2a \\cdot \\pi$.<br>$I = a\\pi$.",
+    "name": "Question Item 48"
+  },
+  {
+    "id": "m27_item49",
+    "text": "\\int_{\\log_e 2}^{x} \\frac{dt}{\\sqrt{e^t - 1}} = \\frac{\\pi}{6} \\Rightarrow x =",
+    "options": [
+      "2 \\log_e 2",
+      "3 \\log_e 2",
+      "4 \\log_e 2",
+      "8 \\log_e 2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute $e^{-t/2} = u$: limits $\\frac{1}{\\sqrt{2}}$ to $e^{-x/2}$.<br>$\\sin^{-1}(e^{-x/2}) = \\frac{\\pi}{6} \\implies x = 2\\log_e 2$.",
+    "name": "Question Item 49"
+  },
+  {
+    "id": "m27_item50",
+    "text": "\\int_0^1 \\frac{\\log_e(1+x)}{1+x^2} dx =",
+    "options": [
+      "\\frac{\\pi}{4} \\log_e 2",
+      "\\frac{\\pi}{6} \\log_e 6",
+      "\\frac{\\pi}{2} \\log_e 8",
+      "\\frac{\\pi}{8} \\log_e 2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute $x=\\tan\\theta$: $\\int_0^{\\pi/4} \\log_e(1+\\tan\\theta) d\\theta$.<br>Property: $\\frac{\\pi}{8} \\log_e 2$.",
+    "name": "Question Item 50"
+  }
+]

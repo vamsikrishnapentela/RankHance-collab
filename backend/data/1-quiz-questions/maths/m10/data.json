@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m10_item1",
+    "text": "The range of the data set \\( \\{3, 7, 2, 9, 5\\} \\) is:",
+    "options": ["\\( 5 \\)", "\\( 6 \\)", "\\( 7 \\)", "\\( 9 \\)"],
+    "correctIndex": 2,
+    "explanation": "Range \\( = \\max - \\min = 9 - 2 = 7 \\)",
+    "name": "Range"
+  },
+  {
+    "id": "m10_item2",
+    "text": "The mean deviation about mean for \\( \\{2, 4, 6, 8, 10\\} \\) is:",
+    "options": ["\\( 2.4 \\)", "\\( 2 \\)", "\\( 3 \\)", "\\( 1.6 \\)"],
+    "correctIndex": 0,
+    "explanation": "Mean \\( = 6 \\). Deviations: \\(|2-6|+|4-6|+|6-6|+|8-6|+|10-6| = 4+2+0+2+4=12\\). MD \\( = 12/5 = 2.4 \\)",
+    "name": "Mean Deviation"
+  },
+  {
+    "id": "m10_item3",
+    "text": "The variance of \\( \\{2, 4, 4, 4, 5, 5, 7, 9\\} \\) is:",
+    "options": ["\\( 4 \\)", "\\( 2 \\)", "\\( 16 \\)", "\\( 6 \\)"],
+    "correctIndex": 0,
+    "explanation": "Mean \\( = 5 \\). \\( \\sigma^2 = \\frac{9+1+1+1+0+0+4+16}{8} = \\frac{32}{8} = 4 \\)",
+    "name": "Variance"
+  },
+  {
+    "id": "m10_item4",
+    "text": "Standard deviation is the _____ of variance:",
+    "options": ["Square", "Square root", "Double", "Reciprocal"],
+    "correctIndex": 1,
+    "explanation": "\\( \\sigma = \\sqrt{\\text{Variance}} \\). SD is positive square root of variance.",
+    "name": "SD and Variance Relation"
+  },
+  {
+    "id": "m10_item5",
+    "text": "The coefficient of variation (CV) is calculated as:",
+    "options": ["\\( \\frac{\\sigma}{\\bar{x}} \\times 100 \\)", "\\( \\frac{\\bar{x}}{\\sigma} \\times 100 \\)", "\\( \\sigma \\times \\bar{x} \\)", "\\( \\frac{\\sigma^2}{\\bar{x}} \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( CV = \\frac{\\sigma}{\\bar{x}} \\times 100 \\). Used to compare relative variability.",
+    "name": "Coefficient of Variation"
+  },
+  {
+    "id": "m10_item6",
+    "text": "If each observation is multiplied by \\(k\\), the standard deviation:",
+    "options": ["Increases by \\(k\\)", "Becomes \\(k\\sigma\\)", "Remains same", "Becomes \\(k^2\\sigma\\)"],
+    "correctIndex": 1,
+    "explanation": "If \\( X' = kX \\), then \\( \\sigma' = |k|\\sigma \\). SD scales with the factor.",
+    "name": "SD under Multiplication"
+  },
+  {
+    "id": "m10_item7",
+    "text": "If a constant \\(c\\) is added to each observation, the variance:",
+    "options": ["Increases by \\(c\\)", "Increases by \\(c^2\\)", "Remains unchanged", "Becomes \\(c \\cdot \\sigma^2\\)"],
+    "correctIndex": 2,
+    "explanation": "Adding a constant shifts all values equally; deviations from mean remain unchanged. Variance is unaffected.",
+    "name": "Variance under Addition of Constant"
+  },
+  {
+    "id": "m10_item8",
+    "text": "Which measure of dispersion is least affected by extreme values?",
+    "options": ["Range", "Standard Deviation", "Quartile Deviation", "Mean Deviation"],
+    "correctIndex": 2,
+    "explanation": "Quartile deviation uses only middle 50% of data (Q1 and Q3), so it's least affected by extreme values.",
+    "name": "Robust Measure"
+  },
+  {
+    "id": "m10_item9",
+    "text": "For the data \\( \\{1, 1, 1, 1, 1\\} \\), the standard deviation is:",
+    "options": ["\\( 1 \\)", "\\( 5 \\)", "\\( 0 \\)", "\\( 0.5 \\)"],
+    "correctIndex": 2,
+    "explanation": "All values are equal to 1, so every deviation from mean is 0. Variance = 0, SD = 0.",
+    "name": "SD of Constant Data"
+  },
+  {
+    "id": "m10_item10",
+    "text": "The formula for population variance is:",
+    "options": ["\\( \\frac{\\sum(x_i - \\bar{x})}{n} \\)", "\\( \\frac{\\sum(x_i - \\bar{x})^2}{n} \\)", "\\( \\frac{\\sum(x_i - \\bar{x})^2}{n-1} \\)", "\\( \\sqrt{\\frac{\\sum x_i^2}{n}} \\)"],
+    "correctIndex": 1,
+    "explanation": "Population variance: \\( \\sigma^2 = \\frac{\\sum(x_i - \\bar{x})^2}{n} \\)",
+    "name": "Variance Formula"
+  },
+  {
+    "id": "m10_item11",
+    "text": "The mean and variance of a data set are 5 and 4. The coefficient of variation is:",
+    "options": ["\\( 20\\% \\)", "\\( 40\\% \\)", "\\( 80\\% \\)", "\\( 25\\% \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( SD = \\sqrt{4} = 2 \\). \\( CV = \\frac{2}{5} \\times 100 = 40\\% \\)",
+    "name": "CV Calculation"
+  },
+  {
+    "id": "m10_item12",
+    "text": "The quartile deviation is defined as:",
+    "options": ["\\( Q_3 - Q_1 \\)", "\\( \\frac{Q_3 - Q_1}{2} \\)", "\\( \\frac{Q_3 + Q_1}{2} \\)", "\\( Q_3 \\times Q_1 \\)"],
+    "correctIndex": 1,
+    "explanation": "Quartile Deviation (semi-interquartile range) \\( = \\frac{Q_3 - Q_1}{2} \\)",
+    "name": "Quartile Deviation"
+  },
+  {
+    "id": "m10_item13",
+    "text": "If variance of \\(x\\) is \\( \\sigma^2 \\), then variance of \\( 2x + 3 \\) is:",
+    "options": ["\\( 2\\sigma^2 + 3 \\)", "\\( 4\\sigma^2 \\)", "\\( 4\\sigma^2 + 9 \\)", "\\( 2\\sigma^2 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\text{Var}(aX+b) = a^2 \\text{Var}(X) \\). So \\( \\text{Var}(2x+3) = 4\\sigma^2 \\).",
+    "name": "Variance of Linear Transform"
+  },
+  {
+    "id": "m10_item14",
+    "text": "The mean of squared deviations from mean is called:",
+    "options": ["Standard deviation", "Variance", "Mean deviation", "Range"],
+    "correctIndex": 1,
+    "explanation": "Variance = mean of squared deviations from mean. SD is its square root.",
+    "name": "Variance Definition"
+  },
+  {
+    "id": "m10_item15",
+    "text": "For two groups with means \\( \\bar{x}_1, \\bar{x}_2 \\) and sizes \\( n_1, n_2 \\), the combined mean is:",
+    "options": ["\\( \\frac{\\bar{x}_1 + \\bar{x}_2}{2} \\)", "\\( \\frac{n_1\\bar{x}_1 + n_2\\bar{x}_2}{n_1+n_2} \\)", "\\( \\frac{n_1\\bar{x}_1 + n_2\\bar{x}_2}{2} \\)", "\\( \\bar{x}_1 + \\bar{x}_2 \\)"],
+    "correctIndex": 1,
+    "explanation": "Combined mean \\( = \\frac{n_1\\bar{x}_1 + n_2\\bar{x}_2}{n_1+n_2} \\) (weighted average).",
+    "name": "Combined Mean"
+  }
+]

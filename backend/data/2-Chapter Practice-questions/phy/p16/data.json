@@ -1,0 +1,327 @@
+[
+  {
+    "id": "p16_item1",
+    "text": "A resistor of resistance \\( R \\) is connected between the terminals of a cell of emf \\( E \\) and internal resistance \\( r \\). If \\( I \\) is the current through the circuit, the terminal potential difference of the cell is given by",
+    "options": [
+      "\\( IR \\)",
+      "\\( E - Ir \\)",
+      "\\( \\frac{ER}{R + r} \\)",
+      "\\( \\frac{E - R}{r} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When the cell is discharging, the terminal potential difference across the cell is given by\n\n\\( V = E - Ir \\)\nwhere \\( I \\) is the current drawn by the cell.",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "p16_item2",
+    "text": "In a potentiometer experiment the balancing length with a cell is 560 cm. When an external resistance of 10 Ω is connected in parallel to the cell, then the balancing length changes by 60 cm. Find the internal resistance of the cell.",
+    "options": [
+      "1 Ω",
+      "2 Ω",
+      "1.2 Ω",
+      "2.1 Ω"
+    ],
+    "correctIndex": 2,
+    "explanation": "Given \\( l_1 = 560 \\) cm and \\( l_2 = 500 \\) cm.\n\nInternal resistance of cell is given by\n\n\\( r = \\left( \\frac{l_1 - l_2}{l_2} \\right) R = \\left( \\frac{560 - 500}{500} \\right) \\times 10 = 1.2 \\) Ω.",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "p16_item3",
+    "text": "In a balanced meter bridge, the segment of wire opposite to a known resistance of 70 Ω is 70 cm. The unknown resistance is",
+    "options": [
+      "30 Ω",
+      "60 Ω",
+      "90 Ω",
+      "15 Ω"
+    ],
+    "correctIndex": 0,
+    "explanation": "In balanced meter bridge known resistance \\( S = 70 \\) Ω and \\( l = 70 \\) cm.\n\nUnknown resistance,\n\n\\( R = S \\left( \\frac{100 - l}{l} \\right) = 70 \\left( \\frac{100 - 70}{70} \\right) = 30 \\) Ω.",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "p16_item4",
+    "text": "Resistance of a tungsten wire at 150°C is 133 Ω. Its temperature coefficient of resistance is 0.0045 °C⁻¹. The resistance of this wire at 500°C is",
+    "options": [
+      "180 Ω",
+      "225 Ω",
+      "258 Ω",
+      "317 Ω"
+    ],
+    "correctIndex": 2,
+    "explanation": "Resistance at 150°C,\n\n\\( R_{150} = R_0 (1 + 150 \\alpha) = 133 \\)\n\nResistance at 500°C,\n\n\\( R_{500} = R_0 (1 + 500 \\alpha) = \\frac{133(1 + 500 \\times 0.0045)}{1 + 150 \\times 0.0045} = 258 \\) Ω.",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "p16_item5",
+    "text": "The V-I graph for a conductor at temperature \\( T_1 \\) and \\( T_2 \\) are as shown. \\( T_2 - T_1 \\) is proportional to",
+    "options": [
+      "\\( \\cos 2\\theta \\)",
+      "\\( \\sin 2\\theta \\)",
+      "\\( \\cot 2\\theta \\)",
+      "\\( \\tan 2\\theta \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Resistance \\( R_1 \\propto T_1 \\Rightarrow \\tan \\theta = KT_1 \\)\n\n\\( R_2 \\propto T_2 \\Rightarrow \\cot \\theta = KT_2 \\)\n\n\\( T_2 - T_1 = \\frac{\\cos 2\\theta}{K \\sin 2\\theta} \\Rightarrow T_2 - T_1 \\propto \\cot 2\\theta \\).",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "p16_item6",
+    "text": "A copper wire of radius 0.1 mm and resistance 2 kΩ is connected across a power supply of 40 V. The number of electrons transferred per second between the supply and the wire at one end is",
+    "options": [
+      "\\( 2.00 \\times 10^{16} \\)",
+      "\\( 1.25 \\times 10^{17} \\)",
+      "\\( 2.85 \\times 10^{17} \\)",
+      "\\( 3.25 \\times 10^{16} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Current \\( I = \\frac{40}{2 \\times 10^3} = 2 \\times 10^{-2} \\) A.\n\nCharge per second \\( q = 2 \\times 10^{-2} \\) C.\n\nNumber of electrons \\( n = \\frac{q}{e} = \\frac{2 \\times 10^{-2}}{1.6 \\times 10^{-19}} = 1.25 \\times 10^{17} \\).",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "p16_item7",
+    "text": "The wire of potentiometer has resistance 4 Ω and length 1 m. It is connected to a cell of emf 2 V and internal resistance 1 Ω. The current flowing through the potentiometer wire is",
+    "options": [
+      "0.1 A",
+      "0.2 A",
+      "0.4 A",
+      "0.8 A"
+    ],
+    "correctIndex": 2,
+    "explanation": "Current \\( I = \\frac{E}{R + r} = \\frac{2}{4 + 1} = 0.4 \\) A.",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "p16_item8",
+    "text": "In given figure, an ammeter reads 5 A and voltmeter reads 40 V. The actual value of resistance \\( R \\) is",
+    "options": [
+      "8 Ω",
+      "greater than 8 Ω",
+      "less than 8 Ω",
+      "200 Ω"
+    ],
+    "correctIndex": 1,
+    "explanation": "Voltmeter has very high resistance, so current through it is nearly zero.\n\n\\( I_1 \\approx 5 \\) A\n\n\\( \\frac{40}{R} < 5 \\Rightarrow R > 8 \\) Ω.",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "p16_item9",
+    "text": "The external diameter of 5 m long hollow tube is 0.1 m and thickness of its wall is 0.005 m. If \\( \\rho = 1.7 \\times 10^{-8} \\) Ω-m, then its resistance will be",
+    "options": [
+      "\\( 5.7 \\times 10^{-5} \\) Ω",
+      "\\( 2.7 \\times 10^{-5} \\) Ω",
+      "\\( 2 \\times 10^{-5} \\) Ω",
+      "\\( 5 \\times 10^{-5} \\) Ω"
+    ],
+    "correctIndex": 0,
+    "explanation": "Internal radius \\( r_2 = 0.045 \\) m.\n\nArea \\( A = \\pi (0.05^2 - 0.045^2) = 1.49 \\times 10^{-3} \\) m².\n\n\\( R = \\rho \\frac{l}{A} = 5.7 \\times 10^{-5} \\) Ω.",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "p16_item10",
+    "text": "Potential difference between the points P and Q in the circuit shown is",
+    "options": [
+      "4.5 V",
+      "1.2 V",
+      "2.4 V",
+      "2.88 V"
+    ],
+    "correctIndex": 3,
+    "explanation": "Equivalent resistance \\( R_{PQ} = \\frac{48}{25} \\) Ω.\n\n\\( V_{PQ} = I \\cdot R_{PQ} = 1.5 \\times \\frac{48}{25} = 2.88 \\) V.",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "p16_item11",
+    "text": "Two wires of equal diameters, lengths \\( l_1, l_2 \\) and having resistivities \\( S_1, S_2 \\) respectively are joined in series. The equivalent resistivity of the combination is",
+    "options": [
+      "\\( \\frac{S_1 l_1 + S_2 l_2}{l_1 + l_2} \\)",
+      "\\( \\frac{S_1 l_2 + S_2 l_1}{l_1 - l_2} \\)",
+      "\\( \\frac{S_1 l_2 + S_2 l_1}{l_1 + l_2} \\)",
+      "\\( \\frac{S_1 l_1 - S_2 l_2}{l_1 - l_2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "In series, \\( R_{eq} = R_1 + R_2 \\).\n\n\\( \\frac{S(l_1 + l_2)}{A} = \\frac{S_1 l_1}{A} + \\frac{S_2 l_2}{A} \\)\n\n\\( S = \\frac{S_1 l_1 + S_2 l_2}{l_1 + l_2} \\).",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "p16_item12",
+    "text": "The colour code for a resistance of 22 Ω ± 5% is",
+    "options": [
+      "brown-brown-black-gold",
+      "red-red-brown-silver",
+      "red-red-black-gold",
+      "red-red-orange-silver"
+    ],
+    "correctIndex": 2,
+    "explanation": "22 × 10⁰ ± 5% → red (2), red (2), black (×1), gold (±5%).",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "p16_item13",
+    "text": "Four resistors A, B, C and D form a Wheatstone bridge. The bridge is balanced when C = 100 Ω. If A and B are interchanged, the bridge balances for C = 121 Ω. The value of D is",
+    "options": [
+      "10 Ω",
+      "100 Ω",
+      "110 Ω",
+      "120 Ω"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\( \\frac{R_A}{R_B} = \\frac{100}{R} \\) and \\( \\frac{R_B}{R_A} = \\frac{121}{R} \\).\n\n\\( R = \\sqrt{100 \\times 121} = 110 \\) Ω.",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "p16_item14",
+    "text": "In the circuit shown, if the current through the resistor R is 1/5 A, the value of R is",
+    "options": [
+      "2 Ω",
+      "3 Ω",
+      "5 Ω",
+      "1 Ω"
+    ],
+    "correctIndex": 3,
+    "explanation": "Equivalent emf \\( e = \\frac{1}{3} \\) V and internal resistance \\( r = \\frac{2}{3} \\) Ω.\n\n\\( \\frac{1}{5} = \\frac{1/3}{2/3 + R} \\Rightarrow R = 1 \\) Ω.",
+    "name": "Questions Item 14"
+  },
+  {
+    "id": "p16_item15",
+    "text": "Assertion (A): When a wire of aluminium and another wire of silicon are heated from room temperature to 80°C, the conductivity of aluminium increases and that of silicon decreases.\nReason (R): Aluminium has positive temperature coefficient of resistivity and silicon has negative temperature coefficient of resistivity.",
+    "options": [
+      "Both (A) and (R) are correct and (R) is the correct explanation of (A).",
+      "Both (A) and (R) are correct but (R) is not the correct explanation of (A).",
+      "(A) is correct but (R) is not correct.",
+      "(A) is not correct but (R) is correct."
+    ],
+    "correctIndex": 3,
+    "explanation": "Aluminium is metal (positive temperature coefficient), conductivity decreases. Silicon is semiconductor (negative temperature coefficient), conductivity increases. Hence (A) is incorrect but (R) is correct.",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "p16_item16",
+    "text": "The walls of a closed cubical box of edge 60 cm are made of material of thickness 1 mm and thermal conductivity 4 × 10^{-4} cal s^{-1} cm^{-1} °C^{-1}. The interior of the box is maintained 1000°C above the outside temperature by a heater placed inside the box and connected across 400 V DC supply. The resistance of the heater is",
+    "options": [
+      "4.41 Ω",
+      "44.1 Ω",
+      "0.441 Ω",
+      "441 Ω"
+    ],
+    "correctIndex": 2,
+    "explanation": "Heat transfer rate \\( P = 361.49 \\) W.\n\n\\( R = \\frac{V^2}{P} = \\frac{400^2}{361.49} \\approx 0.4426 \\) Ω.",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "p16_item17",
+    "text": "In the given circuit, the electric currents through 15 Ω and 6 Ω respectively are",
+    "options": [
+      "0 A, 0.5 A",
+      "0 A, 1 A",
+      "0.5 A, 1 A",
+      "1 A, 0 A"
+    ],
+    "correctIndex": 0,
+    "explanation": "Applying KVL, \\( I_1 = 0.5 \\) A and \\( I_2 = 0 \\) A.",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "p16_item18",
+    "text": "In the given circuit, the current through 2 Ω resistor is",
+    "options": [
+      "9 A",
+      "0.9 A",
+      "1 A",
+      "\\( \\frac{1}{9} \\) A"
+    ],
+    "correctIndex": 1,
+    "explanation": "At steady state, capacitor acts as open circuit.\n\nApplying KVL, \\( I_2 = 0.9 \\) A.",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "p16_item19",
+    "text": "The length of a potentiometer wire is \\( l \\). A cell of emf \\( E \\) is balanced at a length \\( \\frac{l}{3} \\) from positive end of the wire. If the length of the wire is increased by \\( \\frac{l}{2} \\), the distance at which the same cell gives the balancing point is",
+    "options": [
+      "\\( \\frac{2l}{3} \\)",
+      "\\( \\frac{l}{2} \\)",
+      "\\( \\frac{l}{6} \\)",
+      "\\( \\frac{4l}{3} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "New balancing length \\( l' = \\frac{l}{2} \\).",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "p16_item20",
+    "text": "\\( n \\) identical resistances are taken in which \\( \\frac{n}{2} \\) resistors are joined in series in the left gap and the remaining \\( \\frac{n}{2} \\) resistances are joined in parallel in the right gap of a metre bridge. Balancing length in cm is",
+    "options": [
+      "\\( 100 \\cdot \\frac{n^2}{n^2 + 4} \\)",
+      "\\( 100 \\cdot \\frac{n^2}{n^2 + 1} \\)",
+      "\\( 400 \\cdot \\frac{1}{n^2 + 4} \\)",
+      "\\( 400 \\cdot \\frac{1}{n^2 + 1} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Balancing length \\( l = \\frac{100 n^2}{n^2 + 4} \\) cm.",
+    "name": "Questions Item 20"
+  },
+  {
+    "id": "p16_item21",
+    "text": "Electrical energy costs 25 paisa per kilowatt hour. Assuming that no energy is wasted, the cost of heating 4.6 kg of water from 25°C to the boiling point is",
+    "options": [
+      "25 paisa",
+      "50 paisa",
+      "20 paisa",
+      "10 paisa"
+    ],
+    "correctIndex": 3,
+    "explanation": "Heat required \\( Q = 1449 \\times 10^3 \\) J.\n\nUnits \\( N = 0.40 \\).\n\nCost = 10 paisa.",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "p16_item22",
+    "text": "A 500 W heater is designed to operate at 200 V potential difference. If it is connected across 160 V line, the heat it will produce in 20 minutes is",
+    "options": [
+      "384 kJ",
+      "483 kJ",
+      "843 kJ",
+      "348 kJ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Resistance \\( R = 80 \\) Ω.\n\nNew power \\( P_2 = 320 \\) W.\n\nHeat \\( = 384 \\) kJ.",
+    "name": "Questions Item 22"
+  },
+  {
+    "id": "p16_item23",
+    "text": "A cell of emf \\( e \\) and internal resistance \\( r \\) is connected across a variable load resistance \\( R \\). The graph drawn between its terminal voltage and resistance \\( R \\) is",
+    "options": [
+      "increasing curve starting from origin",
+      "decreasing curve",
+      "straight line passing through origin",
+      "straight line with positive intercept"
+    ],
+    "correctIndex": 0,
+    "explanation": "Terminal voltage \\( V = \\frac{E R}{R + r} \\). Graph starts from origin and increases.",
+    "name": "Questions Item 23"
+  },
+  {
+    "id": "p16_item24",
+    "text": "In a meter-bridge if the left and right gaps are connected with 2 Ω and 3 Ω resistances, respectively then the bridge is balanced. The resistance to be connected with 3 Ω resistance to get the balancing point at midpoint of the bridge wire is",
+    "options": [
+      "3 Ω in series",
+      "3 Ω in parallel",
+      "6 Ω in series",
+      "6 Ω in parallel"
+    ],
+    "correctIndex": 3,
+    "explanation": "For midpoint balance, \\( \\frac{2}{3 \\parallel x} = 1 \\Rightarrow x = 6 \\) Ω in parallel.",
+    "name": "Questions Item 24"
+  },
+  {
+    "id": "p16_item25",
+    "text": "The equivalent resistance between A and B is 6 Ω. The value of \\( R_1 \\) is",
+    "options": [
+      "20 Ω",
+      "10 Ω",
+      "5 Ω",
+      "25 Ω"
+    ],
+    "correctIndex": 1,
+    "explanation": "After short-circuiting 2 Ω and 3 Ω,\n\n\\( \\frac{15 R_1}{15 + R_1} = 6 \\Rightarrow R_1 = 10 \\) Ω.",
+    "name": "Questions Item 25"
+  }
+]

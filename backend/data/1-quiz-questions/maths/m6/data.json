@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m6_item1",
+    "text": "The partial fraction form of \\( \\frac{px+q}{(x-a)(x-b)} \\) is:",
+    "options": ["\\( \\frac{A}{x-a} + \\frac{B}{x-b} \\)", "\\( \\frac{Ax+B}{x-a} + \\frac{C}{x-b} \\)", "\\( \\frac{A}{(x-a)^2} + \\frac{B}{x-b} \\)", "\\( \\frac{A}{x-a} - \\frac{B}{x-b} \\)"],
+    "correctIndex": 0,
+    "explanation": "For distinct linear factors, partial fractions take the form \\( \\frac{A}{x-a} + \\frac{B}{x-b} \\).",
+    "name": "Partial Fraction Form - Linear Factors"
+  },
+  {
+    "id": "m6_item2",
+    "text": "The partial fraction form of \\( \\frac{f(x)}{(x-a)^2(x-b)} \\) is:",
+    "options": ["\\( \\frac{A}{x-a} + \\frac{B}{(x-a)^2} + \\frac{C}{x-b} \\)", "\\( \\frac{Ax+B}{(x-a)^2} + \\frac{C}{x-b} \\)", "\\( \\frac{A}{x-a} + \\frac{B}{x-b} \\)", "\\( \\frac{A}{(x-a)^2} + \\frac{B}{x-b} \\)"],
+    "correctIndex": 0,
+    "explanation": "For repeated linear factor \\((x-a)^2\\), decompose as \\( \\frac{A}{x-a} + \\frac{B}{(x-a)^2} \\), plus \\( \\frac{C}{x-b} \\).",
+    "name": "Repeated Linear Factors"
+  },
+  {
+    "id": "m6_item3",
+    "text": "In \\( \\frac{3x+5}{(x-1)(x+2)} = \\frac{A}{x-1} + \\frac{B}{x+2} \\), the value of \\( A \\) is:",
+    "options": ["\\( \\frac{8}{3} \\)", "\\( \\frac{1}{3} \\)", "\\( \\frac{5}{3} \\)", "\\( 3 \\)"],
+    "correctIndex": 0,
+    "explanation": "Set \\(x=1\\): \\( 3+5 = A(3) \\Rightarrow A = \\frac{8}{3} \\)",
+    "name": "Finding Constant A"
+  },
+  {
+    "id": "m6_item4",
+    "text": "The partial fraction form of \\( \\frac{2x+3}{(x^2+1)(x-2)} \\) contains:",
+    "options": ["\\( \\frac{Ax+B}{x^2+1} + \\frac{C}{x-2} \\)", "\\( \\frac{A}{x^2+1} + \\frac{B}{x-2} \\)", "\\( \\frac{A}{x+i} + \\frac{B}{x-i} + \\frac{C}{x-2} \\)", "\\( \\frac{Ax^2+Bx+C}{x^2+1} \\)"],
+    "correctIndex": 0,
+    "explanation": "For an irreducible quadratic factor \\(x^2+1\\), the numerator in the partial fraction is linear: \\(Ax+B\\).",
+    "name": "Irreducible Quadratic Factor"
+  },
+  {
+    "id": "m6_item5",
+    "text": "\\( \\frac{1}{x(x+1)} = \\frac{A}{x} + \\frac{B}{x+1} \\). What are \\(A\\) and \\(B\\)?",
+    "options": ["\\( A=1, B=-1 \\)", "\\( A=-1, B=1 \\)", "\\( A=1, B=1 \\)", "\\( A=\\frac{1}{2}, B=\\frac{1}{2} \\)"],
+    "correctIndex": 0,
+    "explanation": "At \\(x=0\\): \\(1 = A(1) \\Rightarrow A=1\\). At \\(x=-1\\): \\(1 = B(-1) \\Rightarrow B=-1\\).",
+    "name": "Basic Partial Fraction"
+  },
+  {
+    "id": "m6_item6",
+    "text": "For partial fractions to be applicable, the degree of numerator must be:",
+    "options": ["Greater than denominator", "Equal to denominator", "Less than denominator", "Any degree"],
+    "correctIndex": 2,
+    "explanation": "The fraction must be proper (degree of numerator < degree of denominator). Otherwise, perform polynomial division first.",
+    "name": "Proper Fraction Condition"
+  },
+  {
+    "id": "m6_item7",
+    "text": "If \\( \\frac{x^2+1}{x(x-1)^2} = \\frac{A}{x} + \\frac{B}{x-1} + \\frac{C}{(x-1)^2} \\), then \\( C = \\)",
+    "options": ["\\( 1 \\)", "\\( 2 \\)", "\\( -1 \\)", "\\( 3 \\)"],
+    "correctIndex": 1,
+    "explanation": "Set \\( x=1 \\): \\( \\frac{1+1}{1 \\cdot 0+...} \\to 2 = C \\cdot \\frac{1}{1} \\Rightarrow C = 2 \\)",
+    "name": "Repeated Factor Constant"
+  },
+  {
+    "id": "m6_item8",
+    "text": "The number of unknown constants in the partial fraction of \\( \\frac{f(x)}{(x-1)^2(x^2+4)} \\) is:",
+    "options": ["\\( 3 \\)", "\\( 4 \\)", "\\( 2 \\)", "\\( 5 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\frac{A}{x-1} + \\frac{B}{(x-1)^2} + \\frac{Cx+D}{x^2+4} \\) — 4 unknowns: \\(A, B, C, D\\).",
+    "name": "Counting Constants"
+  },
+  {
+    "id": "m6_item9",
+    "text": "The value of \\( A \\) in \\( \\frac{1}{(x-1)(x+3)} = \\frac{A}{x-1} + \\frac{B}{x+3} \\) is:",
+    "options": ["\\( \\frac{1}{4} \\)", "\\( \\frac{1}{2} \\)", "\\( \\frac{-1}{4} \\)", "\\( 1 \\)"],
+    "correctIndex": 0,
+    "explanation": "At \\(x=1\\): \\( 1 = A(4) \\Rightarrow A = \\frac{1}{4} \\)",
+    "name": "Coefficient by Cover-up"
+  },
+  {
+    "id": "m6_item10",
+    "text": "\\( \\frac{x^3}{x-1} \\) requires partial fractions after:",
+    "options": ["Direct decomposition", "Polynomial long division first", "Factoring numerator first", "Multiplying by conjugate"],
+    "correctIndex": 1,
+    "explanation": "Since degree of numerator (3) > degree of denominator (1), perform long division first to get a proper fraction.",
+    "name": "Improper Fraction - Long Division"
+  },
+  {
+    "id": "m6_item11",
+    "text": "If \\( \\frac{2x-1}{(x+1)(x-3)} = \\frac{A}{x+1} + \\frac{B}{x-3} \\), then \\( B = \\)",
+    "options": ["\\( \\frac{5}{4} \\)", "\\( \\frac{3}{4} \\)", "\\( \\frac{-3}{4} \\)", "\\( \\frac{1}{2} \\)"],
+    "correctIndex": 0,
+    "explanation": "At \\(x=3\\): \\( 6-1 = B(4) \\Rightarrow B = \\frac{5}{4} \\)",
+    "name": "Coefficient B"
+  },
+  {
+    "id": "m6_item12",
+    "text": "Partial fractions are primarily used for:",
+    "options": ["Factoring polynomials", "Integration of rational functions", "Differentiation", "Finding roots"],
+    "correctIndex": 1,
+    "explanation": "Partial fractions decompose rational functions into simpler fractions, making integration straightforward.",
+    "name": "Application of Partial Fractions"
+  },
+  {
+    "id": "m6_item13",
+    "text": "In \\( \\frac{1}{x^2-1} = \\frac{A}{x-1} + \\frac{B}{x+1} \\), then \\( A + B = \\)",
+    "options": ["\\( 1 \\)", "\\( 0 \\)", "\\( \\frac{1}{2} \\)", "\\( -1 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( A = \\frac{1}{2} \\) (at \\(x=1\\)), \\( B = -\\frac{1}{2} \\) (at \\(x=-1\\)). So \\( A+B = 0 \\).",
+    "name": "Sum of Constants"
+  },
+  {
+    "id": "m6_item14",
+    "text": "The denominator \\( x^3 - x = x(x-1)(x+1) \\). The partial fraction of \\( \\frac{1}{x^3-x} \\) has how many terms?",
+    "options": ["\\( 2 \\)", "\\( 3 \\)", "\\( 4 \\)", "\\( 1 \\)"],
+    "correctIndex": 1,
+    "explanation": "Three distinct linear factors \\(x, (x-1), (x+1)\\) give three partial fraction terms.",
+    "name": "Number of Terms"
+  },
+  {
+    "id": "m6_item15",
+    "text": "\\( \\frac{A}{x-2} = 3 \\) for all \\( x \\) means \\( A = \\)",
+    "options": ["\\( \\frac{3}{x-2} \\)", "\\( 3(x-2) \\)", "\\( 3 \\)", "Can't determine"],
+    "correctIndex": 1,
+    "explanation": "\\( \\frac{A}{x-2} = 3 \\Rightarrow A = 3(x-2) \\). This illustrates that \\(A\\) must be found by comparing coefficients or using specific \\(x\\) values.",
+    "name": "Constant Determination"
+  }
+]

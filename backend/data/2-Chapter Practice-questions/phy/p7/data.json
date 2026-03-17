@@ -1,0 +1,288 @@
+[
+  {
+    "id": "p7_item1",
+    "text": "A 3 m long steel wire is stretched to increase its length by 0.3 cm. Poisson's ratio for steel is 0.26. The lateral strain produced in the wire is",
+    "options": [
+      "\\(0.26 \\times 10^{-4}\\)",
+      "\\(0.26 \\times 10^{-2}\\)",
+      "\\(0.26 \\times 10^{-3}\\)",
+      "\\(0.26 \\times 10^{-1}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Longitudinal strain = \\(\\frac{\\Delta l}{l} = \\frac{0.3 \\times 10^{-2}}{3} = 10^{-3}\\). Poisson's ratio \\(\\sigma = \\frac{\\text{lateral strain}}{\\text{longitudinal strain}} = 0.26\\). Therefore, lateral strain = \\(0.26 \\times 10^{-3}\\).",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "p7_item2",
+    "text": "When a weight of 10 kg is suspended from a copper wire of length 3 m and diameter 0.4 mm, its length increases by 2.4 cm. If the diameter of the wire is doubled, then the extension in its length will be",
+    "options": [
+      "9.6 cm",
+      "4.8 cm",
+      "1.2 cm",
+      "0.6 cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Young's modulus \\(Y = \\frac{mg l}{\\pi r^2 \\Delta l}\\). For first case, \\(Y = 10^{11}\\) Nm^{-2}. When diameter is doubled, new radius is twice, so area becomes 4 times. New \\(\\Delta l = \\frac{400 \\times 3}{\\pi (4 \\times 10^{-4})^2 \\times 10^{11}} = 0.6\\) cm.",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "p7_item3",
+    "text": "The diagram shows stress versus strain curve for the materials A and B. From the curves, we can infer that",
+    "options": [
+      "A is brittle but B is ductile",
+      "A is ductile but B is brittle",
+      "Both A and B are ductile",
+      "Both A and B are brittle"
+    ],
+    "correctIndex": 1,
+    "explanation": "Material A has a yield point followed by plastic deformation, indicating ductility. Material B shows linear behaviour till fracture without yielding, indicating brittleness.",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "p7_item4",
+    "text": "A force F is needed to break a copper wire having radius R. The force needed to break a copper wire of radius 2R will be",
+    "options": [
+      "\\(\\frac{F}{2}\\)",
+      "\\(2F\\)",
+      "\\(4F\\)",
+      "\\(\\frac{F}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Breaking force \\(F \\propto\\) cross-sectional area \\(A = \\pi r^2\\). For radius 2R, new area is 4 times. Hence, new force = 4F.",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "p7_item5",
+    "text": "If a pressure of \\(8 \\times 10^8\\) N m^{-2} is applied to a lead block, so that its volume reduces by 20%. The Bulk modulus of lead block is",
+    "options": [
+      "\\(4 \\times 10^7\\) Nm^{-2}",
+      "\\(4 \\times 10^8\\) Nm^{-2}",
+      "\\(4 \\times 10^9\\) Nm^{-2}",
+      "\\(4 \\times 10^{10}\\) Nm^{-2}"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bulk modulus \\(B = \\frac{p}{\\Delta V / V}\\). \\(\\Delta V / V = 0.20\\). Therefore, \\(B = \\frac{8 \\times 10^8}{0.20} = 4 \\times 10^9\\) Nm^{-2}.",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "p7_item6",
+    "text": "What should be the diameter of a copper wire (Y = 12 × 10^{10} Nm^{-2}) of length 5 m to produce the same elongation produced by a 5 m long aluminium wire (Y = 7 × 10^{10} Nm^{-2}) of diameter 3 mm with the same 40 kg mass?",
+    "options": [
+      "1.5 mm",
+      "5 mm",
+      "2.3 mm",
+      "10 mm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Elongation \\(\\Delta l = \\frac{FL}{AY}\\). Set equal: \\(r_{cu}^2 = \\frac{Y_{cu}}{Y_{Al}} r_{Al}^2\\). Solving gives diameter 2.3 mm.",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "p7_item7",
+    "text": "The energy stored in a strained wire is given by",
+    "options": [
+      "\\(\\frac{1}{2} \\times \\text{load} \\times \\text{extension}\\)",
+      "\\(\\frac{1}{2} \\times \\text{extension} \\times \\text{stress}\\)",
+      "\\(\\frac{1}{2} \\times \\text{stress} \\times \\text{strain}\\)",
+      "\\(\\frac{1}{2} \\times \\text{strain} \\times \\text{load}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy stored = work done by load = average force × extension = \\(\\frac{F}{2} \\times \\Delta l = \\frac{1}{2} \\times \\text{load} \\times \\text{extension}\\).",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "p7_item8",
+    "text": "A material has Poisson's ratio 0.50. If a uniform rod made of this material suffers a longitudinal strain of \\(2 \\times 10^{-3}\\), then the percentage change in volume is",
+    "options": [
+      "0.6",
+      "0.4",
+      "0.2",
+      "0"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volumetric strain = (1 - 2σ) × longitudinal strain = (1 - 2 × 0.5) × 2 × 10^{-3} = 0. Hence, percentage change = 0.",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "p7_item9",
+    "text": "Young's modulus for perfectly rigid body is",
+    "options": [
+      "zero",
+      "infinite",
+      "\\(1 \\times 10^{10}\\) Nm^{-2}",
+      "\\(10 \\times 10^{10}\\) Nm^{-2}"
+    ],
+    "correctIndex": 1,
+    "explanation": "For perfectly rigid body, strain = 0 for any stress. Young's modulus \\(Y = \\frac{\\text{stress}}{\\text{strain}} = \\infty\\).",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "p7_item10",
+    "text": "According to the Hooke's law the force required to change the length of a wire by l is proportional to",
+    "options": [
+      "\\(l^{-2}\\)",
+      "\\(l^{-1}\\)",
+      "\\(l\\)",
+      "\\(l^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "From \\(F = \\frac{Y A}{l} \\Delta l\\), F ∝ Δl. Hence, force is proportional to extension l.",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "p7_item11",
+    "text": "A wire of length 1 m and radius 2 mm is vertically clamped. The lower end is twisted through an angle of 45°. The angle of shear is",
+    "options": [
+      "\\(0.09^\\circ\\)",
+      "\\(0.9^\\circ\\)",
+      "\\(9^\\circ\\)",
+      "\\(90^\\circ\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Angle of shear \\(\\phi = \\frac{r \\theta}{l} = \\frac{2 \\times 10^{-3} \\times 45^\\circ}{1} = 0.09^\\circ\\).",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "p7_item12",
+    "text": "What is the pressure required to reduce the given volume of water by 1%? (Bulk modulus (K) = 2 × 10^8 Nm^{-2})",
+    "options": [
+      "\\(2 \\times 10^{5}\\) Nm^{-2}",
+      "\\(2 \\times 10^{6}\\) Nm^{-2}",
+      "\\(2 \\times 10^{7}\\) Nm^{-2}",
+      "\\(2 \\times 10^{8}\\) Nm^{-2}"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bulk modulus \\(B = \\frac{p}{\\Delta V / V}\\). \\(\\Delta V / V = 0.01\\). Hence, \\(p = 2 \\times 10^8 \\times 0.01 = 2 \\times 10^6\\) Nm^{-2}.",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "p7_item13",
+    "text": "A solid copper cube of 7 cm edge is subjected to a hydraulic pressure of 8000 kPa. The volume contraction of the copper cube is (Bulk modulus of copper = 140 GPa)",
+    "options": [
+      "\\(196 \\times 10^{-3}\\) cm³",
+      "\\(19.6 \\times 10^{-6}\\) cm³",
+      "\\(19.6 \\times 10^{-3}\\) cm³",
+      "\\(196 \\times 10^{3}\\) cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(B = \\frac{pV}{\\Delta V}\\). \\(V = (7)^3 = 343\\) cm³. \\(\\Delta V = \\frac{8000 \\times 10^3 \\times 343}{140 \\times 10^9} = 19.6 \\times 10^{-3}\\) cm³.",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "p7_item14",
+    "text": "A one metre steel wire of negligible mass and area of cross-section 0.01 cm² is kept on a smooth horizontal table with one end fixed. A ball of mass 1 kg is attached to the other end. The ball and the wire are rotating with an angular velocity of ω. If the elongation of the wire is 2 mm, then ω is (Young's modulus of steel = 2 × 10^{11} Nm^{-2})",
+    "options": [
+      "5 rad s^{-1}",
+      "10 rad s^{-1}",
+      "15 rad s^{-1}",
+      "20 rad s^{-1}"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(Y = \\frac{T l}{A \\Delta l}\\). Tension T = m ω² l. Solving gives ω = 20 rad s^{-1}.",
+    "name": "Questions Item 14"
+  },
+  {
+    "id": "p7_item15",
+    "text": "The following four wires are made of the same material. If same tension is applied to each, the wire having largest extension is",
+    "options": [
+      "length 0.5 m, diameter 0.5 mm",
+      "length 1 m, diameter 1 mm",
+      "length 2 m, diameter 2 mm",
+      "length 3 m, diameter 3 mm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Extension \\(\\Delta l \\propto \\frac{l}{d^2}\\). For first wire, \\(\\frac{0.5}{(0.5)^2} = 2\\) (maximum).",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "p7_item16",
+    "text": "Two metal plates P and Q of same material are arranged as shown in the figure. If both the plates are uniformly heated through the same range of temperature, then",
+    "options": [
+      "both x and y increase",
+      "both x and y decrease",
+      "x decreases and y increase",
+      "x increases and y decrease"
+    ],
+    "correctIndex": 1,
+    "explanation": "Heating causes uniform expansion in all directions. Both gaps x and y decrease.",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "p7_item17",
+    "text": "Two wires of equal length and equal cross sectional areas are suspended as shown in the figure. Their Young’s moduli are Y₁ and Y₂, respectively. The equivalent Young’s modulus is",
+    "options": [
+      "Y₁ + Y₂",
+      "\\(\\frac{Y_1 + Y_2}{2}\\)",
+      "\\(\\frac{Y_1 Y_2}{Y_1 + Y_2}\\)",
+      "\\(\\sqrt{Y_1 Y_2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Effective Y for parallel combination: \\(Y = \\frac{Y_1 + Y_2}{2}\\).",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "p7_item18",
+    "text": "The area of cross-section of steel wire is 0.1 cm² and Young’s modulus of steel is 2 × 10^{11} N m^{-2}. The force required to stretched by 0.1% of its length is",
+    "options": [
+      "1000 N",
+      "2000 N",
+      "5000 N",
+      "4000 N"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = Y A (Δl/l) = 2×10^{11} × 10^{-5} × 0.001 = 2000 N.",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "p7_item19",
+    "text": "A uniform wire of length 10 m and diameter 0.6 mm is stretched by 6 mm with certain force. If the Poisson’s ratio of the material of the wire is 0.3, then the change in diameter of the wire is",
+    "options": [
+      "\\(108 \\times 10^{-8}\\) m",
+      "\\(108 \\times 10^{-6}\\) m",
+      "\\(10.8 \\times 10^{-8}\\) m",
+      "\\(1.08 \\times 10^{-8}\\) m"
+    ],
+    "correctIndex": 2,
+    "explanation": "ΔD = σ D (Δl/l) = 0.3 × 0.6×10^{-3} × (6×10^{-3}/10) = 10.8 × 10^{-8} m.",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "p7_item20",
+    "text": "Two equal and opposite forces each F act on a rod of uniform cross-sectional area a as shown in the figure. Shearing stress on the section AB will be",
+    "options": [
+      "\\(\\frac{F \\sin \\theta \\cos \\theta}{a}\\)",
+      "\\(\\frac{F \\sin \\theta}{a}\\)",
+      "\\(\\frac{F \\cos \\theta}{a}\\)",
+      "\\(\\frac{F \\sin^2 \\theta}{a}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Shear stress = \\(\\frac{F \\sin \\theta}{a} \\cos \\theta\\).",
+    "name": "Questions Item 20"
+  },
+  {
+    "id": "p7_item21",
+    "text": "A sphere of mass 2 kg and diameter 4.5 cm is attached to the lower end of a steel wire of 2 m length and area of cross-section 0.24 × 10^{-6} m². The wire is suspended from 205 cm high ceiling of a room. When the system is made to oscillate as a simple pendulum, the sphere just grazes the floor at its lowest position. The velocity of the sphere at the lowest position is (Young's modulus of steel = 2 × 10^{11} Nm^{-2})",
+    "options": [
+      "10 ms^{-1}",
+      "12 ms^{-1}",
+      "15 ms^{-1}",
+      "18 ms^{-1}"
+    ],
+    "correctIndex": 0,
+    "explanation": "Extension Δl = 0.5 cm. Using Y = (Mg + M v²/R) L / (A Δl) gives v = 10 ms^{-1}.",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "p7_item22",
+    "text": "A rubber cube of side 5 cm has one face fixed, while a tangential force 1800 N is applied on its opposite face. If modulus of rigidity of rubber is 2.4 × 10^6 Nm^{-2}, then the lateral displacement of the strained face is",
+    "options": [
+      "3 mm",
+      "5 mm",
+      "15 mm",
+      "1.5 mm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Shear strain = F/(A η) = 1800 / (0.05² × 2.4×10^6) = 0.3. Lateral displacement = strain × side = 0.3 × 5 cm = 15 mm.",
+    "name": "Questions Item 22"
+  }
+]

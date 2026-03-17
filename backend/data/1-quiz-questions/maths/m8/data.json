@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m8_item1",
+    "text": "The value of \\( ^{10}P_3 \\) is:",
+    "options": ["\\( 720 \\)", "\\( 120 \\)", "\\( 360 \\)", "\\( 240 \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( ^nP_r = \\frac{n!}{(n-r)!} \\Rightarrow ^{10}P_3 = \\frac{10!}{7!} = 10 \\times 9 \\times 8 = 720 \\)",
+    "name": "Permutation Formula"
+  },
+  {
+    "id": "m8_item2",
+    "text": "The value of \\( ^{10}C_3 \\) is:",
+    "options": ["\\( 720 \\)", "\\( 120 \\)", "\\( 210 \\)", "\\( 45 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( ^{10}C_3 = \\frac{10!}{3! \\cdot 7!} = \\frac{720}{6} = 120 \\)",
+    "name": "Combination Formula"
+  },
+  {
+    "id": "m8_item3",
+    "text": "Number of ways to arrange 5 books on a shelf is:",
+    "options": ["\\( 25 \\)", "\\( 60 \\)", "\\( 120 \\)", "\\( 20 \\)"],
+    "correctIndex": 2,
+    "explanation": "Arrangements of 5 distinct items \\( = 5! = 120 \\)",
+    "name": "Arrangements"
+  },
+  {
+    "id": "m8_item4",
+    "text": "Number of ways to choose 3 students from a group of 8 is:",
+    "options": ["\\( 336 \\)", "\\( 56 \\)", "\\( 24 \\)", "\\( 168 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( ^8C_3 = \\frac{8 \\times 7 \\times 6}{3!} = \\frac{336}{6} = 56 \\)",
+    "name": "Selection"
+  },
+  {
+    "id": "m8_item5",
+    "text": "The number of diagonals of a polygon with \\(n\\) sides is:",
+    "options": ["\\( \\frac{n(n-1)}{2} \\)", "\\( \\frac{n(n-3)}{2} \\)", "\\( ^nC_2 \\)", "\\( n(n-2) \\)"],
+    "correctIndex": 1,
+    "explanation": "Total lines \\( = \\binom{n}{2} \\), minus \\(n\\) sides: diagonals \\( = \\frac{n(n-1)}{2} - n = \\frac{n(n-3)}{2} \\)",
+    "name": "Diagonals of Polygon"
+  },
+  {
+    "id": "m8_item6",
+    "text": "The number of ways to arrange the letters of MISSISSIPPI is:",
+    "options": ["\\( \\frac{11!}{4!4!2!} \\)", "\\( 11! \\)", "\\( \\frac{11!}{4!} \\)", "\\( \\frac{11!}{4!2!} \\)"],
+    "correctIndex": 0,
+    "explanation": "MISSISSIPPI has M:1, I:4, S:4, P:2. Arrangements \\( = \\frac{11!}{4!4!2!} \\)",
+    "name": "Repeated Letters Arrangement"
+  },
+  {
+    "id": "m8_item7",
+    "text": "The number of ways \\(n\\) people can sit around a circular table is:",
+    "options": ["\\( n! \\)", "\\( (n-1)! \\)", "\\( \\frac{n!}{2} \\)", "\\( n^2 \\)"],
+    "correctIndex": 1,
+    "explanation": "For circular arrangements, one position is fixed: \\( (n-1)! \\) ways.",
+    "name": "Circular Permutation"
+  },
+  {
+    "id": "m8_item8",
+    "text": "\\( ^nC_r = \\binom{n}{r} \\) satisfies \\( ^nC_r = \\)",
+    "options": ["\\( ^nC_{n+r} \\)", "\\( ^nC_{n-r} \\)", "\\( ^{n-1}C_r \\)", "\\( ^{n+1}C_r \\)"],
+    "correctIndex": 1,
+    "explanation": "Symmetry property: \\( \\binom{n}{r} = \\binom{n}{n-r} \\)",
+    "name": "Symmetry of Combinations"
+  },
+  {
+    "id": "m8_item9",
+    "text": "Number of 3-digit numbers formed from digits 1,2,3,4,5 (no repetition) is:",
+    "options": ["\\( 60 \\)", "\\( 125 \\)", "\\( 120 \\)", "\\( 20 \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( ^5P_3 = 5 \\times 4 \\times 3 = 60 \\)",
+    "name": "Digits without Repetition"
+  },
+  {
+    "id": "m8_item10",
+    "text": "From 6 men and 4 women, a committee of 3 men and 2 women can be formed in:",
+    "options": ["\\( 60 \\)", "\\( 120 \\)", "\\( 90 \\)", "\\( 240 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( ^6C_3 \\times ^4C_2 = 20 \\times 6 = 120 \\)",
+    "name": "Committee Formation"
+  },
+  {
+    "id": "m8_item11",
+    "text": "The number of ways to distribute 5 distinct balls into 3 distinct boxes is:",
+    "options": ["\\( 15 \\)", "\\( 125 \\)", "\\( 243 \\)", "\\( 60 \\)"],
+    "correctIndex": 2,
+    "explanation": "Each of 5 balls has 3 choices. Total \\( = 3^5 = 243 \\)",
+    "name": "Distribution in Boxes"
+  },
+  {
+    "id": "m8_item12",
+    "text": "Number of ways to form a word using all letters of EXAM is:",
+    "options": ["\\( 12 \\)", "\\( 24 \\)", "\\( 48 \\)", "\\( 6 \\)"],
+    "correctIndex": 1,
+    "explanation": "EXAM has 4 distinct letters. Arrangements \\( = 4! = 24 \\)",
+    "name": "Word Formation"
+  },
+  {
+    "id": "m8_item13",
+    "text": "If \\( ^nC_{12} = ^nC_8 \\), then \\( n = \\)",
+    "options": ["\\( 18 \\)", "\\( 20 \\)", "\\( 4 \\)", "\\( 16 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( ^nC_r = ^nC_s \\Rightarrow r+s=n \\) (when \\(r \\neq s\\)). So \\( 12+8=n=20 \\)",
+    "name": "Equal Combinations Condition"
+  },
+  {
+    "id": "m8_item14",
+    "text": "The number of handshakes when 10 people each shake hands with every other is:",
+    "options": ["\\( 45 \\)", "\\( 90 \\)", "\\( 10 \\)", "\\( 100 \\)"],
+    "correctIndex": 0,
+    "explanation": "Each handshake involves 2 people: \\( ^{10}C_2 = 45 \\)",
+    "name": "Handshakes Problem"
+  },
+  {
+    "id": "m8_item15",
+    "text": "The number of ways of selecting at least one from 3 items is:",
+    "options": ["\\( 3 \\)", "\\( 6 \\)", "\\( 7 \\)", "\\( 8 \\)"],
+    "correctIndex": 2,
+    "explanation": "Total subsets \\( = 2^3 = 8 \\). Excluding empty set: \\( 2^3 - 1 = 7 \\)",
+    "name": "Select At Least One"
+  }
+]

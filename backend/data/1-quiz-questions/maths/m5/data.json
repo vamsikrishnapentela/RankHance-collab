@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m5_item1",
+    "text": "The principle of mathematical induction proves statements for:",
+    "options": ["All real numbers", "All positive integers", "All rational numbers", "Finite sets only"],
+    "correctIndex": 1,
+    "explanation": "Mathematical induction is used to prove propositions that are true for all positive integers \\( n \\in \\mathbb{N} \\).",
+    "name": "Scope of Induction"
+  },
+  {
+    "id": "m5_item2",
+    "text": "The sum \\( 1 + 2 + 3 + \\cdots + n = \\)",
+    "options": ["\\( \\frac{n(n+1)}{2} \\)", "\\( \\frac{n(n-1)}{2} \\)", "\\( n^2 \\)", "\\( \\frac{n^2+1}{2} \\)"],
+    "correctIndex": 0,
+    "explanation": "This is Gauss's formula: \\( \\sum_{k=1}^n k = \\frac{n(n+1)}{2} \\), provable by induction.",
+    "name": "Sum of Natural Numbers"
+  },
+  {
+    "id": "m5_item3",
+    "text": "The sum \\( 1^2 + 2^2 + \\cdots + n^2 = \\)",
+    "options": ["\\( \\frac{n(n+1)(2n+1)}{6} \\)", "\\( \\frac{n^2(n+1)^2}{4} \\)", "\\( \\frac{n(n+1)}{2} \\)", "\\( \\frac{n(2n+1)}{3} \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( \\sum_{k=1}^n k^2 = \\frac{n(n+1)(2n+1)}{6} \\). Standard formula verified by induction.",
+    "name": "Sum of Squares"
+  },
+  {
+    "id": "m5_item4",
+    "text": "The sum \\( 1^3 + 2^3 + \\cdots + n^3 = \\)",
+    "options": ["\\( \\frac{n(n+1)(2n+1)}{6} \\)", "\\( \\left[\\frac{n(n+1)}{2}\\right]^2 \\)", "\\( \\frac{n^2(n+1)}{2} \\)", "\\( \\frac{n(n+1)(n+2)}{6} \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\sum_{k=1}^n k^3 = \\left[\\frac{n(n+1)}{2}\\right]^2 \\). The square of the sum of first \\(n\\) naturals.",
+    "name": "Sum of Cubes"
+  },
+  {
+    "id": "m5_item5",
+    "text": "In the induction step, we assume the statement is true for \\( n = k \\) and prove for:",
+    "options": ["\\( n = k - 1 \\)", "\\( n = 2k \\)", "\\( n = k + 1 \\)", "\\( n = k^2 \\)"],
+    "correctIndex": 2,
+    "explanation": "In the inductive step, after assuming \\(P(k)\\) is true, we must prove \\(P(k+1)\\) is true.",
+    "name": "Inductive Step"
+  },
+  {
+    "id": "m5_item6",
+    "text": "Using induction, \\( 4^n - 1 \\) is divisible by:",
+    "options": ["\\( 2 \\)", "\\( 3 \\)", "\\( 5 \\)", "\\( 4 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( 4^n - 1 = (4-1)(4^{n-1}+\\cdots+1) = 3 \\times (\\text{integer}) \\). Always divisible by 3.",
+    "name": "Divisibility by Induction"
+  },
+  {
+    "id": "m5_item7",
+    "text": "\\( n(n+1)(n+2) \\) is always divisible by:",
+    "options": ["\\( 4 \\)", "\\( 5 \\)", "\\( 6 \\)", "\\( 7 \\)"],
+    "correctIndex": 2,
+    "explanation": "Product of 3 consecutive integers is always divisible by \\( 3! = 6 \\).",
+    "name": "Consecutive Integers Product"
+  },
+  {
+    "id": "m5_item8",
+    "text": "The sum \\( \\sum_{k=1}^{n} (2k-1) = \\)",
+    "options": ["\\( n^2 \\)", "\\( n(n+1) \\)", "\\( n^2 - 1 \\)", "\\( 2n^2 \\)"],
+    "correctIndex": 0,
+    "explanation": "Sum of first \\(n\\) odd numbers \\( = n^2 \\). Verify by induction.",
+    "name": "Sum of Odd Numbers"
+  },
+  {
+    "id": "m5_item9",
+    "text": "For proving \\( P(n): 2^n > n \\) for all \\( n \\geq 1 \\), the base case is verified at \\( n = \\)",
+    "options": ["\\( 0 \\)", "\\( 1 \\)", "\\( 2 \\)", "\\( 3 \\)"],
+    "correctIndex": 1,
+    "explanation": "At \\( n=1 \\): \\( 2^1 = 2 > 1 \\). Base case holds.",
+    "name": "Base Case Verification"
+  },
+  {
+    "id": "m5_item10",
+    "text": "If \\( P(k) \\) is assumed true and we need to show \\( P(k+1) \\): \\( 1+2+\\cdots+k+(k+1) \\), the left side equals:",
+    "options": ["\\( \\frac{k(k+1)}{2} + (k+1) \\)", "\\( \\frac{k(k+1)}{2} + k \\)", "\\( \\frac{k(k-1)}{2} + (k+1) \\)", "\\( k^2 + (k+1) \\)"],
+    "correctIndex": 0,
+    "explanation": "Using \\( P(k) \\): sum up to \\(k\\) is \\( \\frac{k(k+1)}{2} \\). Adding \\((k+1)\\) gives \\( \\frac{k(k+1)}{2} + (k+1) \\).",
+    "name": "Inductive Step Calculation"
+  },
+  {
+    "id": "m5_item11",
+    "text": "\\( 2^n \\geq n^2 \\) holds for all \\( n \\geq \\)",
+    "options": ["\\( 1 \\)", "\\( 2 \\)", "\\( 4 \\)", "\\( 5 \\)"],
+    "correctIndex": 2,
+    "explanation": "Check: \\(n=3\\): \\(8 < 9\\) (fails), \\(n=4\\): \\(16 = 16\\) (holds), \\(n \\geq 4\\): true by induction.",
+    "name": "Exponential vs Polynomial"
+  },
+  {
+    "id": "m5_item12",
+    "text": "The formula for \\( \\sum_{k=1}^n k(k+1) \\) is:",
+    "options": ["\\( \\frac{n(n+1)(n+2)}{3} \\)", "\\( \\frac{n(n+1)(2n+1)}{6} \\)", "\\( \\frac{n(n+1)^2}{2} \\)", "\\( \\frac{n^2(n+1)}{2} \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( \\sum k(k+1) = \\sum k^2 + \\sum k = \\frac{n(n+1)(2n+1)}{6} + \\frac{n(n+1)}{2} = \\frac{n(n+1)(n+2)}{3} \\)",
+    "name": "Sum of k(k+1)"
+  },
+  {
+    "id": "m5_item13",
+    "text": "By induction, \\( n^3 + 2n \\) is divisible by:",
+    "options": ["\\( 2 \\)", "\\( 3 \\)", "\\( 5 \\)", "\\( 6 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( n^3+2n = n(n^2+2) \\). Among 3 consecutive integers, one is divisible by 3; this expression factors to always be divisible by 3.",
+    "name": "Divisibility of n³+2n"
+  },
+  {
+    "id": "m5_item14",
+    "text": "The value of \\( 1 \\cdot 1! + 2 \\cdot 2! + 3 \\cdot 3! + \\cdots + n \\cdot n! \\) is:",
+    "options": ["\\( (n+1)! \\)", "\\( (n+1)! - 1 \\)", "\\( n! + 1 \\)", "\\( (n+1)! + 1 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\sum_{k=1}^n k \\cdot k! = \\sum[(k+1)!-k!] = (n+1)!-1! = (n+1)!-1 \\) (telescoping).",
+    "name": "Factorial Sum"
+  },
+  {
+    "id": "m5_item15",
+    "text": "If \\( P(n) \\): \\( 7^n - 3^n \\) is divisible by 4, then at \\( n=2 \\): \\( 7^2 - 3^2 = \\)",
+    "options": ["\\( 36 \\)", "\\( 40 \\)", "\\( 44 \\)", "\\( 48 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( 49 - 9 = 40 = 4 \\times 10 \\). Divisible by 4. ✓",
+    "name": "Divisibility Verification"
+  }
+]

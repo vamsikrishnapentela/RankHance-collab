@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m21_item1",
+    "text": "The magnitude of vector \\( \\vec{a} = 3\\hat{i}+4\\hat{j} \\) is:",
+    "options": ["\\( 7 \\)", "\\( \\sqrt{7} \\)", "\\( 5 \\)", "\\( 25 \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( |\\vec{a}| = \\sqrt{3^2+4^2} = \\sqrt{9+16} = \\sqrt{25} = 5 \\)",
+    "name": "Magnitude of Vector"
+  },
+  {
+    "id": "m21_item2",
+    "text": "The dot product \\( \\vec{a} \\cdot \\vec{b} = \\)",
+    "options": ["\\( |\\vec{a}||\\vec{b}|\\sin\\theta \\)", "\\( |\\vec{a}||\\vec{b}|\\cos\\theta \\)", "\\( |\\vec{a}+\\vec{b}| \\)", "\\( |\\vec{a}|\\cdot|\\vec{b}| \\)"],
+    "correctIndex": 1,
+    "explanation": "Dot product: \\( \\vec{a}\\cdot\\vec{b} = |\\vec{a}||\\vec{b}|\\cos\\theta \\), where \\(\\theta\\) is angle between them.",
+    "name": "Dot Product Definition"
+  },
+  {
+    "id": "m21_item3",
+    "text": "If \\( \\vec{a} \\perp \\vec{b} \\), then \\( \\vec{a}\\cdot\\vec{b} = \\)",
+    "options": ["\\( |\\vec{a}||\\vec{b}| \\)", "\\( 1 \\)", "\\( 0 \\)", "\\( -1 \\)"],
+    "correctIndex": 2,
+    "explanation": "When \\( \\theta=90° \\): \\( \\vec{a}\\cdot\\vec{b} = |\\vec{a}||\\vec{b}|\\cos90° = 0 \\)",
+    "name": "Perpendicular Vectors"
+  },
+  {
+    "id": "m21_item4",
+    "text": "The cross product \\( \\vec{a} \\times \\vec{b} \\) gives a vector:",
+    "options": ["Parallel to both \\(\\vec{a}\\) and \\(\\vec{b}\\)", "Perpendicular to both \\(\\vec{a}\\) and \\(\\vec{b}\\)", "In the plane of \\(\\vec{a}\\) and \\(\\vec{b}\\)", "Of zero magnitude always"],
+    "correctIndex": 1,
+    "explanation": "\\( \\vec{a}\\times\\vec{b} \\) is perpendicular to both \\(\\vec{a}\\) and \\(\\vec{b}\\) (normal to their plane).",
+    "name": "Cross Product Direction"
+  },
+  {
+    "id": "m21_item5",
+    "text": "\\( |\\vec{a}\\times\\vec{b}| = \\)",
+    "options": ["\\( |\\vec{a}||\\vec{b}|\\cos\\theta \\)", "\\( |\\vec{a}||\\vec{b}|\\tan\\theta \\)", "\\( |\\vec{a}||\\vec{b}|\\sin\\theta \\)", "\\( |\\vec{a}|+|\\vec{b}| \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( |\\vec{a}\\times\\vec{b}| = |\\vec{a}||\\vec{b}|\\sin\\theta \\). Area of parallelogram = \\( |\\vec{a}\\times\\vec{b}| \\).",
+    "name": "Magnitude of Cross Product"
+  },
+  {
+    "id": "m21_item6",
+    "text": "The scalar triple product \\( [\\vec{a}\\,\\vec{b}\\,\\vec{c}] = \\vec{a}\\cdot(\\vec{b}\\times\\vec{c}) \\) gives:",
+    "options": ["Area of triangle", "Volume of parallelepiped", "Magnitude of \\(\\vec{a}\\)", "Angle between vectors"],
+    "correctIndex": 1,
+    "explanation": "\\( |[\\vec{a}\\,\\vec{b}\\,\\vec{c}]| \\) = volume of parallelepiped formed by \\(\\vec{a}, \\vec{b}, \\vec{c}\\).",
+    "name": "Scalar Triple Product"
+  },
+  {
+    "id": "m21_item7",
+    "text": "\\( \\hat{i}\\times\\hat{j} = \\)",
+    "options": ["\\( \\hat{i} \\)", "\\( -\\hat{k} \\)", "\\( \\hat{k} \\)", "\\( \\hat{j} \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\hat{i}\\times\\hat{j}=\\hat{k},\\ \\hat{j}\\times\\hat{k}=\\hat{i},\\ \\hat{k}\\times\\hat{i}=\\hat{j} \\). Cyclic order.",
+    "name": "Unit Vector Cross Products"
+  },
+  {
+    "id": "m21_item8",
+    "text": "If \\( \\vec{a} = 2\\hat{i}+3\\hat{j}+\\hat{k} \\) and \\( \\vec{b} = \\hat{i}-\\hat{j}+2\\hat{k} \\), then \\( \\vec{a}\\cdot\\vec{b} = \\)",
+    "options": ["\\( 1 \\)", "\\( -1 \\)", "\\( 3 \\)", "\\( 5 \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( \\vec{a}\\cdot\\vec{b} = 2(1)+3(-1)+1(2) = 2-3+2 = 1 \\)",
+    "name": "Dot Product Calculation"
+  },
+  {
+    "id": "m21_item9",
+    "text": "The unit vector in direction of \\( \\vec{a} = 3\\hat{i}-4\\hat{k} \\) is:",
+    "options": ["\\( \\frac{3\\hat{i}-4\\hat{k}}{5} \\)", "\\( \\frac{3\\hat{i}-4\\hat{k}}{7} \\)", "\\( 3\\hat{i}-4\\hat{k} \\)", "\\( \\frac{\\hat{i}-\\hat{k}}{5} \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( |\\vec{a}| = \\sqrt{9+16}=5 \\). Unit vector \\( \\hat{a} = \\frac{\\vec{a}}{|\\vec{a}|} = \\frac{3\\hat{i}-4\\hat{k}}{5} \\)",
+    "name": "Unit Vector"
+  },
+  {
+    "id": "m21_item10",
+    "text": "If \\( [\\vec{a}\\,\\vec{b}\\,\\vec{c}] = 0 \\), the vectors are:",
+    "options": ["Mutually perpendicular", "Coplanar", "Parallel", "Of equal magnitude"],
+    "correctIndex": 1,
+    "explanation": "Zero scalar triple product means the three vectors are coplanar (lie in the same plane).",
+    "name": "Coplanar Vectors"
+  },
+  {
+    "id": "m21_item11",
+    "text": "The projection of \\( \\vec{a} \\) on \\( \\vec{b} \\) is:",
+    "options": ["\\( \\frac{\\vec{a}\\times\\vec{b}}{|\\vec{b}|} \\)", "\\( \\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{b}|} \\)", "\\( \\vec{a}\\cdot\\hat{b} \\)", "Both B and C"],
+    "correctIndex": 3,
+    "explanation": "Projection of \\(\\vec{a}\\) on \\(\\vec{b}\\): \\( \\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{b}|} = \\vec{a}\\cdot\\hat{b} \\). Both forms are equivalent.",
+    "name": "Projection of Vector"
+  },
+  {
+    "id": "m21_item12",
+    "text": "The area of parallelogram with adjacent sides \\( \\vec{a} \\) and \\( \\vec{b} \\) is:",
+    "options": ["\\( \\vec{a}\\cdot\\vec{b} \\)", "\\( |\\vec{a}\\times\\vec{b}| \\)", "\\( \\frac{1}{2}|\\vec{a}\\times\\vec{b}| \\)", "\\( |\\vec{a}|+|\\vec{b}| \\)"],
+    "correctIndex": 1,
+    "explanation": "Area of parallelogram \\( = |\\vec{a}\\times\\vec{b}| \\). Area of triangle \\( = \\frac{1}{2}|\\vec{a}\\times\\vec{b}| \\).",
+    "name": "Area Using Cross Product"
+  },
+  {
+    "id": "m21_item13",
+    "text": "The vector \\( \\vec{a}\\times\\vec{a} = \\)",
+    "options": ["\\( |\\vec{a}|^2 \\)", "\\( \\vec{a} \\)", "\\( \\vec{0} \\)", "\\( 1 \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\vec{a}\\times\\vec{a} = |\\vec{a}|^2\\sin 0° = \\vec{0} \\). A vector crossed with itself is the zero vector.",
+    "name": "Self Cross Product"
+  },
+  {
+    "id": "m21_item14",
+    "text": "The angle between \\( \\vec{a}=\\hat{i}+\\hat{j} \\) and \\( \\vec{b}=\\hat{j}+\\hat{k} \\) is:",
+    "options": ["\\( 30° \\)", "\\( 45° \\)", "\\( 60° \\)", "\\( 90° \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\vec{a}\\cdot\\vec{b} = 0+1+0=1 \\). \\( |\\vec{a}|=\\sqrt{2}, |\\vec{b}|=\\sqrt{2} \\). \\( \\cos\\theta = \\frac{1}{2} \\Rightarrow \\theta=60° \\)",
+    "name": "Angle Between Vectors"
+  },
+  {
+    "id": "m21_item15",
+    "text": "The vector equation of line through point \\(\\vec{a}\\) in direction \\(\\vec{b}\\) is:",
+    "options": ["\\( \\vec{r} = \\vec{a}\\times\\vec{b} \\)", "\\( \\vec{r} = \\vec{a} + \\lambda\\vec{b} \\)", "\\( \\vec{r} = \\lambda\\vec{a} + \\vec{b} \\)", "\\( \\vec{r}\\cdot\\vec{b} = 0 \\)"],
+    "correctIndex": 1,
+    "explanation": "Vector equation of line: \\( \\vec{r} = \\vec{a} + \\lambda\\vec{b} \\), where \\(\\lambda \\in \\mathbb{R}\\).",
+    "name": "Vector Equation of Line"
+  }
+]

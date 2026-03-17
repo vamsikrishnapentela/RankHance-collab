@@ -1,0 +1,301 @@
+[
+  {
+    "id": "p6_item1",
+    "text": "Acceleration due to gravity",
+    "options": [
+      "increases with altitude",
+      "decreases with altitude",
+      "is independent of altitude",
+      "first decreases and then increases with altitude"
+    ],
+    "correctIndex": 1,
+    "explanation": "Acceleration due to gravity at a height \\(h\\) above the surface of the Earth is given by \\(g' = g \\left(1 + \\frac{h}{R_e}\\right)^{-2}\\). Using binomial expansion for small \\(h/R_e\\), this simplifies to \\(g' \\approx g \\left(1 - \\frac{2h}{R_e}\\right)\\). Clearly, as \\(h\\) increases, \\(g'\\) decreases. Hence, acceleration due to gravity decreases with altitude.",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "p6_item2",
+    "text": "Kepler’s second law (law of areas) is nothing but a statement of",
+    "options": [
+      "work-energy theory",
+      "conservation of linear momentum",
+      "conservation of angular momentum",
+      "conservation of energy"
+    ],
+    "correctIndex": 2,
+    "explanation": "Kepler’s second law states that the radius vector from the Sun to a planet sweeps out equal areas in equal intervals of time. This implies \\(\\frac{dA}{dt} = \\text{constant}\\). For a planet under central gravitational force, torque \\(\\tau = \\mathbf{r} \\times \\mathbf{F} = 0\\) (since \\(\\mathbf{r}\\) and \\(\\mathbf{F}\\) are collinear). Since \\(\\tau = \\frac{d\\mathbf{L}}{dt}\\), it follows that angular momentum \\(\\mathbf{L}\\) is constant. Thus, Kepler’s second law is a direct consequence of the conservation of angular momentum.",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "p6_item3",
+    "text": "Using the data given below, find the height at which a communication satellite can reside. (G = 6.67 × 10^{-11} N·m² kg^{-2}, M = 5.98 × 10^{24} kg, R = 6.4 × 10^6 m)",
+    "options": [
+      "35850 km",
+      "3585 km",
+      "358.5 km",
+      "35.85 km"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a geostationary satellite, time period \\(T = 24\\) h = 86400 s. The formula is \\(T = 2\\pi \\sqrt{\\frac{(R_e + h)^3}{GM}}\\). Rearranging gives \\(R_e + h = \\left( \\frac{T^2 GM}{4\\pi^2} \\right)^{1/3}\\). Substituting the values yields \\(h = 35850\\) km.",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "p6_item4",
+    "text": "The escape velocity for a planet whose radius is 1.7 × 10^6 m and acceleration due to gravity is 1.7 ms^{-2} is",
+    "options": [
+      "1.7 kms^{-1}",
+      "2.89 kms^{-1}",
+      "1.7√2 kms^{-1}",
+      "3.4 kms^{-1}"
+    ],
+    "correctIndex": 2,
+    "explanation": "Escape velocity \\(v_e = \\sqrt{2gR}\\). Substituting \\(g = 1.7\\) ms^{-2} and \\(R = 1.7 \\times 10^6\\) m gives \\(v_e = \\sqrt{2 \\times 1.7 \\times 1.7 \\times 10^6} = 1.7\\sqrt{2} \\times 10^3\\) ms^{-1} = 1.7√2 kms^{-1}.",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "p6_item5",
+    "text": "At what height from surface of earth the value of acceleration due to gravity will fall to half that on the surface of the earth?",
+    "options": [
+      "2625 m",
+      "2625 km",
+      "2526 m",
+      "2526 km"
+    ],
+    "correctIndex": 1,
+    "explanation": "At height \\(h\\), \\(g_h = \\frac{g}{(1 + h/R_e)^2}\\). Set \\(g_h = g/2\\): \\((1 + h/R_e)^2 = 2\\). Taking positive root, \\(1 + h/R_e = \\sqrt{2}\\). Thus \\(h = (\\sqrt{2} - 1)R_e \\approx 2625\\) km.",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "p6_item6",
+    "text": "A body is projected vertically upwards from the surface of a planet of radius R with a velocity equal to half the escape velocity of that planet. Then, the maximum height attained by the body is",
+    "options": [
+      "R/3",
+      "R/2",
+      "R/4",
+      "R/5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Escape velocity \\(v_e = \\sqrt{2gR}\\), so projection velocity \\(v = v_e/2\\). Using conservation of energy: \\(\\frac{1}{2}mv^2 - \\frac{GMm}{R} = -\\frac{GMm}{R+h}\\). Substituting \\(v^2 = gR/2\\) simplifies to \\(h = R/3\\).",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "p6_item7",
+    "text": "A point mass of 10 kg is placed at the centre of earth. The weight of the point mass is",
+    "options": [
+      "zero",
+      "98 N",
+      "49 N",
+      "10 N"
+    ],
+    "correctIndex": 0,
+    "explanation": "At the centre of the Earth, the gravitational acceleration \\(g = 0\\) (by symmetry, net force from all directions cancels). Hence weight \\(W = mg = 10 \\times 0 = 0\\).",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "p6_item8",
+    "text": "A body is projected with a velocity greater than orbital velocity but less than escape velocity. Its path is",
+    "options": [
+      "circular",
+      "elliptical",
+      "parabolic",
+      "hyperbolic"
+    ],
+    "correctIndex": 1,
+    "explanation": "For a satellite, total energy \\(E = -\\frac{GMm}{2r}\\) (negative) when velocity is between orbital and escape values. Negative total energy corresponds to bound elliptical orbits.",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "p6_item9",
+    "text": "The distance between the centre of moon and earth is D and mass of earth is 81 times the mass of moon. At what distance from the centre of the earth, the gravitational force will be zero?",
+    "options": [
+      "D/2",
+      "2D/3",
+      "4D/3",
+      "9D/10"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the neutral point be at distance \\(x\\) from Earth centre. Then \\(\\frac{GM_e m}{x^2} = \\frac{GM_m m}{(D - x)^2}\\). Given \\(M_e = 81 M_m\\), solving yields \\(x = 9D/10\\).",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "p6_item10",
+    "text": "Acceleration due to gravity at a height h is equal to that at a depth d below the surface of the earth, then",
+    "options": [
+      "d = h",
+      "2d = h",
+      "d = 2h",
+      "3d = h"
+    ],
+    "correctIndex": 1,
+    "explanation": "At height \\(h\\): \\(g_h = g(1 + h/R)^{-2} \\approx g(1 - 2h/R)\\). At depth \\(d\\): \\(g_d = g(1 - d/R)\\). Setting equal: \\(1 - 2h/R = 1 - d/R\\) ⇒ \\(d = 2h\\).",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "p6_item11",
+    "text": "The value of acceleration due to gravity g is maximum at",
+    "options": [
+      "poles",
+      "equator",
+      "centre",
+      "surface of earth"
+    ],
+    "correctIndex": 0,
+    "explanation": "Due to Earth’s rotation, effective \\(g' = g - R_e \\omega^2 \\cos^2 \\lambda\\). At poles (\\(\\lambda = 90^\\circ\\)), \\(\\cos \\lambda = 0\\), so \\(g' = g\\) (maximum). At equator, it is minimum.",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "p6_item12",
+    "text": "A body of mass m is placed on the earth’s surface at a height h = 3R/8 (R is radius of earth). The change in gravitational potential energy of the body is",
+    "options": [
+      "3/8 mgR",
+      "3/4 mgR",
+      "1/2 mgR",
+      "1/4 mgR"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gravitational potential energy at surface: \\(U_i = -GMm/R\\). At height \\(h = 3R/8\\): \\(U_f = -GMm/(R + 3R/8) = -GMm/(11R/8) = -8GMm/(11R)\\). Change \\(\\Delta U = U_f - U_i = (3/4) mgR\\).",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "p6_item13",
+    "text": "Two bodies of masses m1 and m2, initially at rest at infinite distance apart, move towards each other under gravitational force of attraction. Their relative velocity of approach when they are separated by a distance r is",
+    "options": [
+      "√[2G(m1 + m2)/r]",
+      "√[2G(m1 m2)/(m1 + m2)r]",
+      "√[2G(m1 + m2)r]",
+      "√[2G(m1 m2)r]"
+    ],
+    "correctIndex": 1,
+    "explanation": "Conservation of energy: initial PE = 0, final KE + PE = 0. Reduced mass \\(\\mu = m1 m2/(m1 + m2)\\). Relative velocity \\(v_{rel} = \\sqrt{2G(m1 + m2)/r}\\).",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "p6_item14",
+    "text": "A planet is revolving around the Sun. The radius vectors joining the Sun and the planet at points A and B are 90 × 10^6 km and 60 × 10^6 km respectively. The ratio of velocities of the planet at the points A and B when its velocities make angle 30° and 60° with major-axis of the orbit is",
+    "options": [
+      "3/(2√3)",
+      "2/√3",
+      "1/√3",
+      "√3/2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Conservation of angular momentum: \\(m v_A r_A \\sin 30^\\circ = m v_B r_B \\sin 60^\\circ\\). Ratio \\(v_A / v_B = (r_B / r_A) (\\sin 60^\\circ / \\sin 30^\\circ) = 2/√3\\).",
+    "name": "Questions Item 14"
+  },
+  {
+    "id": "p6_item15",
+    "text": "Two bodies each of mass m are hung from a balance whose scale pans differ in a vertical height by h. If the mean density of the earth is ρ, the error in weighing is",
+    "options": [
+      "4πρGmh/3",
+      "3πρGmh/4",
+      "8πρGmh/3",
+      "3πρGmh/8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Difference in g due to height: effective g difference leads to weight error = (8/3)πρGmh.",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "p6_item16",
+    "text": "Two masses 90 kg and 160 kg are separated by a distance of 5 m. The magnitude of intensity of the gravitational field at a point which is at a distance 3 m from the 90 kg mass and 4 m from the 160 kg mass is (G = 6.67 × 10^{-11} N·m² kg^{-2})",
+    "options": [
+      "94.3 × 10^{-10} N kg^{-1}",
+      "9.43 × 10^{-10} N kg^{-1}",
+      "9.43 × 10^{-12} N kg^{-1}",
+      "94.3 × 10^{-12} N kg^{-1}"
+    ],
+    "correctIndex": 1,
+    "explanation": "The point forms a right triangle. Field due to 90 kg: 10G, due to 160 kg: 10G. Resultant E = 10G√2 = 9.43 × 10^{-10} N kg^{-1}.",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "p6_item17",
+    "text": "A rocket is launched straight up from the surface of the earth. When its altitude is 1/3 of the radius of the earth, its fuel runs out and therefore it coasts. If the rocket has to escape from the gravitational pull of the earth, the minimum velocity with which it should coast is (Escape velocity on the surface of the earth is 11.2 kms^{-1})",
+    "options": [
+      "11.2 kms^{-1}",
+      "10.7 kms^{-1}",
+      "9.7 kms^{-1}",
+      "8.7 kms^{-1}"
+    ],
+    "correctIndex": 2,
+    "explanation": "At height h = R/3, escape velocity from there is (√3/2) × 11.2 ≈ 9.7 kms^{-1}.",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "p6_item18",
+    "text": "The gravitational potential difference between the surface of a planet and a point 20 m above it is 16 J kg^{-1}. The work done in moving a 4 kg body by 8 m on a slope of 60° from the horizontal is",
+    "options": [
+      "22.17 J",
+      "2.217 J",
+      "221.7 J",
+      "0.2217 J"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gravitational field E = 16/20 = 0.8 N kg^{-1}. Vertical height gain on slope = 8 sin 60° = 4√3 m. Work = m E h = 4 × 0.8 × 4√3 ≈ 22.17 J.",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "p6_item19",
+    "text": "The gravitational field in a region is given by E = (5î + 12ĵ) Nkg^{-1}. If a particle of mass 2 kg is moved from the origin to the point (12 m, 15 m) in this region, the change in gravitational potential energy is",
+    "options": [
+      "-450 J",
+      "-480 J",
+      "-240 J",
+      "-500 J"
+    ],
+    "correctIndex": 1,
+    "explanation": "Potential V = -∫E·dr = - (5×12 + 12×15) = -240 J kg^{-1}. For m = 2 kg, ΔU = m ΔV = -480 J.",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "p6_item20",
+    "text": "Three masses m, 2m and 3m are arranged in two triangular configurations as shown in figure 1 and figure 2. Work done by an external agent in changing the configuration from figure 1 to figure 2 is",
+    "options": [
+      "6Gm²/a [2 - 6/√2]",
+      "0",
+      "Gm²/a [6 + 6/√2]",
+      "-Gm²/a [6 - 6/√2]"
+    ],
+    "correctIndex": 3,
+    "explanation": "Change in potential energy ΔU = U_final - U_initial. Work by external agent = -ΔU = -Gm²/a (6 - 6/√2).",
+    "name": "Questions Item 20"
+  },
+  {
+    "id": "p6_item21",
+    "text": "An object is thrown vertically upwards from the surface of the earth with a velocity x times the escape velocity on the earth (x < 1), then the maximum height to which it rises from the centre of the earth is (radius of earth is R)",
+    "options": [
+      "R(1-x)^2",
+      "R/(1-x^2)",
+      "(1-x^2)/R",
+      "x^2/(1-R)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using energy conservation: (1/2)m(x v_e)^2 - GMm/R = -GMm/(R + h). Substituting v_e² = 2GM/R gives h = R x² / (1 - x²).",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "p6_item22",
+    "text": "An artificial satellite of mass m is moving along an elliptical path around the earth. The areal velocity of the satellite is proportional to",
+    "options": [
+      "m",
+      "m^{-1}",
+      "m^0",
+      "m^{1/2}"
+    ],
+    "correctIndex": 2,
+    "explanation": "Areal velocity dA/dt = L/(2m), where L is angular momentum. Since L is independent of mass in the derivation for central force, areal velocity ∝ m^0.",
+    "name": "Questions Item 22"
+  },
+  {
+    "id": "p6_item23",
+    "text": "Two bodies of equal masses are some distance apart. If 20% of mass is transferred from the first body to the second body, then the gravitational force between them",
+    "options": [
+      "increases by 4%",
+      "increases by 14%",
+      "decreases by 4%",
+      "decreases by 14%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Initial F = Gm²/r². After transfer: masses become 0.8m and 1.2m. New F = G(0.8m)(1.2m)/r² = 0.96 Gm²/r². Decrease = 4%.",
+    "name": "Questions Item 23"
+  }
+]

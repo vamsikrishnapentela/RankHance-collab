@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m24_item1",
+    "text": "\\( \\frac{d}{dx}(x^n) = \\)",
+    "options": ["\\( x^{n-1} \\)", "\\( (n-1)x^n \\)", "\\( nx^{n-1} \\)", "\\( nx^{n+1} \\)"],
+    "correctIndex": 2,
+    "explanation": "Power Rule: \\( \\frac{d}{dx}(x^n) = nx^{n-1} \\)",
+    "name": "Power Rule"
+  },
+  {
+    "id": "m24_item2",
+    "text": "\\( \\frac{d}{dx}(\\sin x) = \\)",
+    "options": ["\\( -\\sin x \\)", "\\( \\cos x \\)", "\\( -\\cos x \\)", "\\( \\tan x \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\frac{d}{dx}(\\sin x) = \\cos x \\)",
+    "name": "Derivative of sin"
+  },
+  {
+    "id": "m24_item3",
+    "text": "\\( \\frac{d}{dx}(e^x) = \\)",
+    "options": ["\\( e^{x-1} \\)", "\\( xe^{x-1} \\)", "\\( e^x \\)", "\\( \\frac{e^x}{x} \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\frac{d}{dx}(e^x) = e^x \\). The exponential function is its own derivative.",
+    "name": "Derivative of eˣ"
+  },
+  {
+    "id": "m24_item4",
+    "text": "\\( \\frac{d}{dx}(\\ln x) = \\)",
+    "options": ["\\( \\ln x \\)", "\\( \\frac{1}{x} \\)", "\\( x \\)", "\\( e^x \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\frac{d}{dx}(\\ln x) = \\frac{1}{x} \\) for \\( x > 0 \\).",
+    "name": "Derivative of ln x"
+  },
+  {
+    "id": "m24_item5",
+    "text": "The Product Rule: \\( \\frac{d}{dx}(uv) = \\)",
+    "options": ["\\( u'v' \\)", "\\( u'v + uv' \\)", "\\( u'v - uv' \\)", "\\( \\frac{u'v - uv'}{v^2} \\)"],
+    "correctIndex": 1,
+    "explanation": "Product Rule: \\( (uv)' = u'v + uv' \\)",
+    "name": "Product Rule"
+  },
+  {
+    "id": "m24_item6",
+    "text": "The Quotient Rule: \\( \\frac{d}{dx}\\left(\\frac{u}{v}\\right) = \\)",
+    "options": ["\\( \\frac{u'v + uv'}{v^2} \\)", "\\( \\frac{u'v - uv'}{v^2} \\)", "\\( \\frac{u'v - uv'}{v} \\)", "\\( \\frac{u'}{v'} \\)"],
+    "correctIndex": 1,
+    "explanation": "Quotient Rule: \\( \\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2} \\)",
+    "name": "Quotient Rule"
+  },
+  {
+    "id": "m24_item7",
+    "text": "The Chain Rule: if \\( y = f(g(x)) \\), then \\( \\frac{dy}{dx} = \\)",
+    "options": ["\\( f'(x) \\cdot g'(x) \\)", "\\( f'(g(x)) \\cdot g'(x) \\)", "\\( f(g'(x)) \\)", "\\( \\frac{f'(x)}{g'(x)} \\)"],
+    "correctIndex": 1,
+    "explanation": "Chain Rule: \\( \\frac{dy}{dx} = f'(g(x))\\cdot g'(x) \\)",
+    "name": "Chain Rule"
+  },
+  {
+    "id": "m24_item8",
+    "text": "\\( \\frac{d}{dx}(\\tan x) = \\)",
+    "options": ["\\( \\sin^2 x \\)", "\\( \\cot x \\)", "\\( \\sec^2 x \\)", "\\( -\\csc^2 x \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\frac{d}{dx}(\\tan x) = \\sec^2 x \\)",
+    "name": "Derivative of tan"
+  },
+  {
+    "id": "m24_item9",
+    "text": "\\( \\frac{d}{dx}(\\sin^{-1} x) = \\)",
+    "options": ["\\( \\frac{1}{1+x^2} \\)", "\\( \\frac{-1}{\\sqrt{1-x^2}} \\)", "\\( \\frac{1}{\\sqrt{1-x^2}} \\)", "\\( \\frac{1}{1-x^2} \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\frac{d}{dx}(\\sin^{-1}x) = \\frac{1}{\\sqrt{1-x^2}} \\) for \\( |x|<1 \\).",
+    "name": "Derivative of sin⁻¹"
+  },
+  {
+    "id": "m24_item10",
+    "text": "\\( \\frac{d}{dx}(\\tan^{-1}x) = \\)",
+    "options": ["\\( \\frac{1}{\\sqrt{1-x^2}} \\)", "\\( \\frac{1}{1+x^2} \\)", "\\( \\frac{-1}{1+x^2} \\)", "\\( \\frac{1}{x^2-1} \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\frac{d}{dx}(\\tan^{-1}x) = \\frac{1}{1+x^2} \\)",
+    "name": "Derivative of tan⁻¹"
+  },
+  {
+    "id": "m24_item11",
+    "text": "If \\( y = x^x \\), then \\( \\frac{dy}{dx} = \\)",
+    "options": ["\\( x^x \\)", "\\( x^x(1+\\ln x) \\)", "\\( x^{x-1} \\)", "\\( x^x\\ln x \\)"],
+    "correctIndex": 1,
+    "explanation": "Take \\(\\ln\\): \\( \\ln y = x\\ln x \\). Differentiate: \\( \\frac{y'}{y} = \\ln x+1 \\Rightarrow y' = x^x(1+\\ln x) \\).",
+    "name": "Logarithmic Differentiation"
+  },
+  {
+    "id": "m24_item12",
+    "text": "The second derivative of \\( f(x) = x^3 \\) is:",
+    "options": ["\\( 3x^2 \\)", "\\( 6x \\)", "\\( 6 \\)", "\\( x^2 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( f'(x) = 3x^2 \\), \\( f''(x) = 6x \\)",
+    "name": "Second Derivative"
+  },
+  {
+    "id": "m24_item13",
+    "text": "For parametric equations \\( x=f(t), y=g(t) \\), \\( \\frac{dy}{dx} = \\)",
+    "options": ["\\( \\frac{f'(t)}{g'(t)} \\)", "\\( f'(t)\\cdot g'(t) \\)", "\\( \\frac{g'(t)}{f'(t)} \\)", "\\( g'(t)-f'(t) \\)"],
+    "correctIndex": 2,
+    "explanation": "Parametric differentiation: \\( \\frac{dy}{dx} = \\frac{dy/dt}{dx/dt} = \\frac{g'(t)}{f'(t)} \\)",
+    "name": "Parametric Differentiation"
+  },
+  {
+    "id": "m24_item14",
+    "text": "\\( \\frac{d}{dx}(a^x) = \\)",
+    "options": ["\\( xa^{x-1} \\)", "\\( a^x \\)", "\\( a^x\\ln a \\)", "\\( \\frac{a^x}{\\ln a} \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\frac{d}{dx}(a^x) = a^x\\ln a \\). When \\(a=e\\): reduces to \\(e^x\\).",
+    "name": "Derivative of aˣ"
+  },
+  {
+    "id": "m24_item15",
+    "text": "If \\( f(x) = \\cos(x^2) \\), then \\( f'(x) = \\)",
+    "options": ["\\( -\\sin(x^2) \\)", "\\( -2x\\sin(x^2) \\)", "\\( 2x\\cos(x^2) \\)", "\\( -\\sin(2x) \\)"],
+    "correctIndex": 1,
+    "explanation": "Chain rule: \\( \\frac{d}{dx}\\cos(x^2) = -\\sin(x^2)\\cdot 2x = -2x\\sin(x^2) \\)",
+    "name": "Chain Rule Application"
+  }
+]

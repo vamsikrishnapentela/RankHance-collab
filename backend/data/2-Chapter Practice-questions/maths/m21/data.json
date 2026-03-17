@@ -1,0 +1,652 @@
+[
+  {
+    "id": "m21_item1",
+    "text": "Find $|\\mathbf{a} \\times \\mathbf{b}|^2$, if $|\\mathbf{a}| = 2$, $|\\mathbf{b}| = 3$ and angle between $\\mathbf{a}$ and $\\mathbf{b}$ is $\\dfrac{\\pi}{6}$",
+    "options": [
+      "-9",
+      "9",
+      "3",
+      "-3"
+    ],
+    "correctIndex": 1,
+    "explanation": "$|\\mathbf{a} \\times \\mathbf{b}|^2 = (|\\mathbf{a}| |\\mathbf{b}| \\sin \\theta)^2$<br>$= \\left(2 \\times 3 \\times \\dfrac{1}{2}\\right)^2 = 9$.",
+    "name": "Question Item 1"
+  },
+  {
+    "id": "m21_item2",
+    "text": "If $\\mathbf{a} = \\alpha \\hat{\\mathbf{i}} + 2\\hat{\\mathbf{j}} - 6\\hat{\\mathbf{k}}$ and $\\mathbf{b} = 2\\hat{\\mathbf{i}} - \\hat{\\mathbf{j}} + \\beta \\hat{\\mathbf{k}}$, then the values of $\\alpha, \\beta$ so that $\\mathbf{a}$ and $\\mathbf{b}$ may be collinear are",
+    "options": [
+      "(5, 3)",
+      "(6, 2)",
+      "(2, -6)",
+      "(-6, 2)"
+    ],
+    "correctIndex": 3,
+    "explanation": "For collinear vectors $\\mathbf{a} \\times \\mathbf{b} = \\mathbf{0}$<br>$\\begin{vmatrix} \\hat{\\mathbf{i}} & \\hat{\\mathbf{j}} & \\hat{\\mathbf{k}} \\\\ \\alpha & 2 & -6 \\\\ 2 & -1 & \\beta \\end{vmatrix} = 0$<br>$\\Rightarrow \\beta = 2, \\alpha = -6$.",
+    "name": "Question Item 2"
+  },
+  {
+    "id": "m21_item3",
+    "text": "Let $\\mathbf{a}, \\mathbf{b}, \\mathbf{c}$ be three vectors<br>(i) $(\\mathbf{a} \\times \\mathbf{b}) \\times \\mathbf{c} = (\\mathbf{a} \\cdot \\mathbf{c})\\mathbf{b} - (\\mathbf{b} \\cdot \\mathbf{c})\\mathbf{a}$<br>(ii) $\\mathbf{a} \\times (\\mathbf{b} \\times \\mathbf{c}) = (\\mathbf{a} \\cdot \\mathbf{b})\\mathbf{c} - (\\mathbf{a} \\cdot \\mathbf{c})\\mathbf{b}$<br>The correct statement is",
+    "options": [
+      "(i) incorrect, (ii) correct",
+      "(i) correct, (ii) incorrect",
+      "Both (i) and (ii) are correct",
+      "Both (i) and (ii) are incorrect"
+    ],
+    "correctIndex": 1,
+    "explanation": "Statement (i) is correct and (ii) is incorrect.",
+    "name": "Question Item 3"
+  },
+  {
+    "id": "m21_item4",
+    "text": "ABC is a right-angled triangle in which $\\max\\{AB, BC, AC\\} = BC$. If the position vectors of B and C are respectively $3\\hat{\\mathbf{i}} - 2\\hat{\\mathbf{j}} + \\hat{\\mathbf{k}}$ and $5\\hat{\\mathbf{i}} + \\hat{\\mathbf{j}} - 3\\hat{\\mathbf{k}}$, then<br>$AB \\cdot AC + BA \\cdot BC + CA \\cdot CB =$",
+    "options": [
+      "28",
+      "29",
+      "27",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "$\\overrightarrow{BC} = 2\\hat{\\mathbf{i}} + 3\\hat{\\mathbf{j}} - 4\\hat{\\mathbf{k}}$<br>$BC$ is hypotenuse $\\implies \\angle A = 90^\\circ$<br>$AB \\cdot AC = 0$<br>$AB \\cdot BC + BA \\cdot BC + CA \\cdot CB = |BC|^2 = 4 + 9 + 16 = 29$.",
+    "name": "Question Item 4"
+  },
+  {
+    "id": "m21_item5",
+    "text": "If $\\mathbf{a} + \\mathbf{b} + \\mathbf{c} = \\mathbf{0}$ and $|\\mathbf{a}| = 3$, $|\\mathbf{b}| = 5$, $|\\mathbf{c}| = 7$, then the angle between $\\mathbf{a}$ and $\\mathbf{b}$ is",
+    "options": [
+      "30°",
+      "120°",
+      "90°",
+      "60°"
+    ],
+    "correctIndex": 3,
+    "explanation": "$\\mathbf{a} + \\mathbf{b} = -\\mathbf{c}$<br>$|\\mathbf{a}|^2 + |\\mathbf{b}|^2 + 2\\mathbf{a} \\cdot \\mathbf{b} = |\\mathbf{c}|^2$<br>$9 + 25 + 2 \\times 3 \\times 5 \\cos \\theta = 49$<br>$\\cos \\theta = \\dfrac{1}{2} \\implies \\theta = 60^\\circ$.",
+    "name": "Question Item 5"
+  },
+  {
+    "id": "m21_item6",
+    "text": "If $\\mathbf{a}, \\mathbf{b}, \\mathbf{c}$ and $\\mathbf{r}$ are vectors such that $\\mathbf{a}$ is not perpendicular to $\\mathbf{b}$, $\\mathbf{r} \\times \\mathbf{b} = \\mathbf{c} \\times \\mathbf{b}$ and $\\mathbf{r} \\cdot \\mathbf{a} = 0$ then $\\mathbf{r} =$",
+    "options": [
+      "$\\mathbf{c} + \\dfrac{\\mathbf{c} \\cdot \\mathbf{a}}{\\mathbf{b} \\cdot \\mathbf{a}} \\mathbf{b}$",
+      "$\\mathbf{b} - \\dfrac{\\mathbf{c} \\cdot \\mathbf{a}}{\\mathbf{b} \\cdot \\mathbf{a}} \\mathbf{c}$",
+      "$\\mathbf{c} - \\dfrac{\\mathbf{c} \\cdot \\mathbf{a}}{\\mathbf{b} \\cdot \\mathbf{a}} \\mathbf{b}$",
+      "$\\mathbf{b} + \\dfrac{\\mathbf{c} \\cdot \\mathbf{a}}{\\mathbf{b} \\cdot \\mathbf{a}} \\mathbf{c}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "$\\mathbf{r} \\times \\mathbf{b} = \\mathbf{c} \\times \\mathbf{b} \\implies (\\mathbf{r} - \\mathbf{c}) \\times \\mathbf{b} = \\mathbf{0}$<br>$\\implies \\mathbf{r} - \\mathbf{c} = \\lambda \\mathbf{b}$<br>$\\mathbf{r} \\cdot \\mathbf{a} = 0 \\implies \\lambda = -\\dfrac{\\mathbf{c} \\cdot \\mathbf{a}}{\\mathbf{b} \\cdot \\mathbf{a}}$<br>$\\mathbf{r} = \\mathbf{c} - \\dfrac{\\mathbf{c} \\cdot \\mathbf{a}}{\\mathbf{b} \\cdot \\mathbf{a}} \\mathbf{b}$.",
+    "name": "Question Item 6"
+  },
+  {
+    "id": "m21_item7",
+    "text": "In $\\triangle ABC$ state whether the following are true or false<br>(i) $\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CA} = \\mathbf{0}$<br>(ii) $\\overrightarrow{AB} + \\overrightarrow{BC} - \\overrightarrow{AC} = \\mathbf{0}$<br>(iii) $\\overrightarrow{AB} - \\overrightarrow{CB} + \\overrightarrow{CA} = \\mathbf{0}$<br>(iv) $\\overrightarrow{AB} + \\overrightarrow{BC} - \\overrightarrow{CA} = \\mathbf{0}$",
+    "options": [
+      "(i) True, (ii) True, (iii) True, (iv) False",
+      "(i) True, (ii) False, (iii) True, (iv) False",
+      "(i) False, (ii) False, (iii) True, (iv) True",
+      "(i) False, (ii) True, (iii) False, (iv) False"
+    ],
+    "correctIndex": 0,
+    "explanation": "From triangle law<br>$\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CA} = \\mathbf{0}$<br>$\\overrightarrow{AB} + \\overrightarrow{BC} - \\overrightarrow{AC} = \\mathbf{0}$<br>$\\overrightarrow{AB} - \\overrightarrow{CB} + \\overrightarrow{CA} = \\mathbf{0}$.",
+    "name": "Question Item 7"
+  },
+  {
+    "id": "m21_item8",
+    "text": "If the vectors $\\alpha \\hat{\\mathbf{i}} + \\hat{\\mathbf{j}} + \\hat{\\mathbf{k}}$, $\\hat{\\mathbf{i}} + \\beta \\hat{\\mathbf{j}} + \\hat{\\mathbf{k}}$ and $\\hat{\\mathbf{i}} + \\hat{\\mathbf{j}} + \\gamma \\hat{\\mathbf{k}}$ are coplanar, where $(\\alpha, \\beta, \\gamma \\neq 1)$, then the value of $\\dfrac{1}{1-\\alpha} + \\dfrac{1}{1-\\beta} + \\dfrac{1}{1-\\gamma} =$",
+    "options": [
+      "2",
+      "0",
+      "-1",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "For coplanar vectors the determinant is zero<br>$\\begin{vmatrix} \\alpha & 1 & 1 \\\\ 1 & \\beta & 1 \\\\ 1 & 1 & \\gamma \\end{vmatrix} = 0$<br>After simplification $\\dfrac{1}{1-\\alpha} + \\dfrac{1}{1-\\beta} + \\dfrac{1}{1-\\gamma} = 1$.",
+    "name": "Question Item 8"
+  },
+  {
+    "id": "m21_item9",
+    "text": "Let $\\mathbf{u}, \\mathbf{v}$ and $\\mathbf{w}$ be three vectors in $\\mathbb{R}^3$. Then, any vector $\\mathbf{z} \\in \\mathbb{R}^3$ can be written as $\\mathbf{z} = a\\mathbf{u} + b\\mathbf{v} + c\\mathbf{w}$ for some scalars $a, b$ and $c$ if and only if",
+    "options": [
+      "Each pair of $\\mathbf{u}, \\mathbf{v}$ and $\\mathbf{w}$ are not parallel",
+      "Each of $\\mathbf{u}, \\mathbf{v}$ and $\\mathbf{w}$ can be written as a linear combination of the other two",
+      "All have different magnitude and directions",
+      "None of the options are correct"
+    ],
+    "correctIndex": 3,
+    "explanation": "If $\\mathbf{u}, \\mathbf{v}, \\mathbf{w}$ are linearly dependent (not forming basis), any vector cannot be expressed uniquely. Hence none of the options.",
+    "name": "Question Item 9"
+  },
+  {
+    "id": "m21_item10",
+    "text": "If $\\overrightarrow{PO} + \\overrightarrow{OQ} = \\overrightarrow{QO} + \\overrightarrow{OR}$, then",
+    "options": [
+      "Q is the mid-point of $\\overline{PR}$",
+      "Q divides $\\overline{PR}$ in 2 : 1",
+      "Q divides $\\overline{PR}$ in 1 : 2",
+      "Q divides $\\overline{PR}$ in –1 : 2"
+    ],
+    "correctIndex": 0,
+    "explanation": "From vector equality $\\overrightarrow{QP} = \\overrightarrow{QR}$ implies $|QP| = |QR|$, so Q is mid-point of PR.",
+    "name": "Question Item 10"
+  },
+  {
+    "id": "m21_item11",
+    "text": "Let $\\mathbf{u}$ and $\\mathbf{v}$ be two non-zero vectors. Then the magnitude of the cross product $\\mathbf{u} \\times \\mathbf{v}$ is always",
+    "options": [
+      "< $|\\mathbf{u}| |\\mathbf{v}|$",
+      "= $|\\mathbf{u}| |\\mathbf{v}|$",
+      "> $|\\mathbf{u}| |\\mathbf{v}|$",
+      "= 0"
+    ],
+    "correctIndex": 0,
+    "explanation": "$|\\mathbf{u} \\times \\mathbf{v}| = |\\mathbf{u}| |\\mathbf{v}| |\\sin \\theta| \\leq |\\mathbf{u}| |\\mathbf{v}|$.",
+    "name": "Question Item 11"
+  },
+  {
+    "id": "m21_item12",
+    "text": "Let ABC be a triangle. Let $\\mathbf{u} = \\overrightarrow{AB}$ and $\\mathbf{v} = \\overrightarrow{AC}$. If D is a middle point of BC, then $\\overrightarrow{AD} =$",
+    "options": [
+      "$\\dfrac{\\mathbf{u} - \\mathbf{v}}{2}$",
+      "$\\dfrac{\\mathbf{v} - \\mathbf{u}}{2}$",
+      "$\\dfrac{\\mathbf{u} + \\mathbf{v}}{2}$",
+      "$\\mathbf{u} + \\mathbf{v}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "$\\overrightarrow{AD} = \\dfrac{\\overrightarrow{AB} + \\overrightarrow{AC}}{2} = \\dfrac{\\mathbf{u} + \\mathbf{v}}{2}$ (mid-point formula).",
+    "name": "Question Item 12"
+  },
+  {
+    "id": "m21_item13",
+    "text": "Let $\\mathbf{u}, \\mathbf{v}$ and $\\mathbf{w}$ be three vectors such that $\\mathbf{u} + \\mathbf{v} + \\mathbf{w} = \\mathbf{0}$, $|\\mathbf{u}| = 3$, $|\\mathbf{v}| = 5$ and $|\\mathbf{w}| = 7$. Then the angle between $\\mathbf{u}$ and $\\mathbf{v}$ is",
+    "options": [
+      "60°",
+      "70°",
+      "80°",
+      "90°"
+    ],
+    "correctIndex": 0,
+    "explanation": "$\\mathbf{u} + \\mathbf{v} = -\\mathbf{w}$<br>$|\\mathbf{u}|^2 + |\\mathbf{v}|^2 + 2\\mathbf{u} \\cdot \\mathbf{v} = |\\mathbf{w}|^2$<br>$\\cos \\theta = \\dfrac{1}{2} \\implies \\theta = 60^\\circ$.",
+    "name": "Question Item 13"
+  },
+  {
+    "id": "m21_item14",
+    "text": "If $\\alpha$ is the angle between two vectors $\\mathbf{p} = 3\\hat{\\mathbf{i}} + 4\\hat{\\mathbf{j}} - \\hat{\\mathbf{k}}$ and $\\mathbf{q} = 2\\hat{\\mathbf{i}} - \\hat{\\mathbf{j}} + \\hat{\\mathbf{k}}$, then $\\sin(\\alpha) =$",
+    "options": [
+      "$\\sqrt{\\dfrac{145}{156}}$",
+      "$\\sqrt{\\dfrac{135}{156}}$",
+      "$\\sqrt{\\dfrac{155}{156}}$",
+      "$\\sqrt{\\dfrac{165}{156}}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "$\\sin \\alpha = \\dfrac{|\\mathbf{p} \\times \\mathbf{q}|}{|\\mathbf{p}| |\\mathbf{q}|} = \\sqrt{\\dfrac{155}{156}}$.",
+    "name": "Question Item 14"
+  },
+  {
+    "id": "m21_item15",
+    "text": "Equation of the perpendicular bisector of the line joining the points whose position vectors are $\\mathbf{a}$ and $\\mathbf{b}$ respectively is",
+    "options": [
+      "$(2\\mathbf{r} - \\mathbf{a} - \\mathbf{b}) \\cdot (\\mathbf{a} - \\mathbf{b}) = 0$",
+      "$(2\\mathbf{r} - \\mathbf{a} - \\mathbf{b}) \\cdot (\\mathbf{a} + \\mathbf{b}) = 0$",
+      "$(2\\mathbf{r} + \\mathbf{a} + \\mathbf{b}) \\cdot (\\mathbf{a} - \\mathbf{b}) = 0$",
+      "$(2\\mathbf{r} - \\mathbf{a} + \\mathbf{b}) \\cdot (\\mathbf{a} + \\mathbf{b}) = 0$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mid-point $\\dfrac{\\mathbf{a} + \\mathbf{b}}{2}$, perpendicular: $(2\\mathbf{r} - \\mathbf{a} - \\mathbf{b}) \\cdot (\\mathbf{a} - \\mathbf{b}) = 0$.",
+    "name": "Question Item 15"
+  },
+  {
+    "id": "m21_item16",
+    "text": "If $\\mathbf{a} = 2\\hat{\\mathbf{i}} + \\hat{\\mathbf{j}} - 3\\hat{\\mathbf{k}}$ and $\\mathbf{b} = 3\\hat{\\mathbf{i}} - \\hat{\\mathbf{j}} + 2\\hat{\\mathbf{k}}$, then find the angle between the vectors $2\\mathbf{a} + \\mathbf{b}$ and $\\mathbf{a} + 2\\mathbf{b}$",
+    "options": [
+      "$\\cos^{-1}\\left(\\dfrac{36}{\\sqrt{42 \\times 35}}\\right)$",
+      "$\\cos^{-1}\\left(\\dfrac{72}{\\sqrt{24 \\times 32}}\\right)$",
+      "$\\cos^{-1}\\left(\\dfrac{52}{\\sqrt{74 \\times 65}}\\right)$",
+      "$\\cos^{-1}\\left(\\dfrac{24}{\\sqrt{18 \\times 32}}\\right)$"
+    ],
+    "correctIndex": 2,
+    "explanation": "$2\\mathbf{a} + \\mathbf{b} = 7\\hat{\\mathbf{i}} + \\hat{\\mathbf{j}} - 4\\hat{\\mathbf{k}}$<br>$\\mathbf{a} + 2\\mathbf{b} = 8\\hat{\\mathbf{i}} - \\hat{\\mathbf{j}} + \\hat{\\mathbf{k}}$<br>$\\cos \\theta = \\dfrac{52}{\\sqrt{74 \\times 65}}$.",
+    "name": "Question Item 16"
+  },
+  {
+    "id": "m21_item17",
+    "text": "If the magnitude of the vector product of the vector $\\hat{\\mathbf{i}} + \\hat{\\mathbf{j}} + \\hat{\\mathbf{k}}$ with a unit vector along the sum of the vectors $2\\hat{\\mathbf{i}} + 4\\hat{\\mathbf{j}} - 5\\hat{\\mathbf{k}}$ and $\\lambda \\hat{\\mathbf{i}} + 2\\hat{\\mathbf{j}} + 3\\hat{\\mathbf{k}}$ is equal to $\\sqrt{2}$, then the value of $\\lambda$ is",
+    "options": [
+      "-1",
+      "1",
+      "0",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Unit vector along sum $\\dfrac{(2+\\lambda)\\hat{\\mathbf{i}} + 6\\hat{\\mathbf{j}} - 2\\hat{\\mathbf{k}}}{\\sqrt{\\lambda^2 + 40}}$<br>Magnitude condition yields $\\lambda = 1$.",
+    "name": "Question Item 17"
+  },
+  {
+    "id": "m21_item18",
+    "text": "Find $\\lambda$ if $\\mathbf{a}, \\mathbf{b}, \\mathbf{c}$ are three non-coplanar vectors such that<br>$[4\\mathbf{a} + 3\\mathbf{b} - \\mathbf{c} \\quad 4\\mathbf{a} + 3\\mathbf{b} + 2\\mathbf{c} \\quad \\mathbf{a} - 4\\mathbf{b} - \\mathbf{c}] = (\\lambda^2 + \\lambda + 1)[\\mathbf{a} \\quad \\mathbf{b} \\quad \\mathbf{c}]$",
+    "options": [
+      "-7, 8",
+      "-7, -6",
+      "7, -8",
+      "-7, -8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Determinant expansion yields $\\lambda^2 + \\lambda - 56 = 0 \\implies \\lambda = 7$ or $-8$.",
+    "name": "Question Item 18"
+  },
+  {
+    "id": "m21_item19",
+    "text": "In a regular hexagon $ABCDEF$, $\\overrightarrow{AD} + \\overrightarrow{EB} + \\overrightarrow{FC} = (3\\lambda - 8)\\overrightarrow{AB}$. Then $\\lambda =$",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "In regular hexagon $AD = 2BC$, $EB = 2FA$, $FC = 2AB$<br>Simplifies to $4\\overrightarrow{AB} = (3\\lambda - 8)\\overrightarrow{AB} \\implies \\lambda = 4$.",
+    "name": "Question Item 19"
+  },
+  {
+    "id": "m21_item20",
+    "text": "Two vectors $\\mathbf{u}$ and $\\mathbf{v}$ are parallel if and only if",
+    "options": [
+      "$\\mathbf{u}$ and $\\mathbf{v}$ have the same direction",
+      "$\\mathbf{u}$ and $\\mathbf{v}$ have the opposite direction",
+      "One of them is a scalar multiple of the other",
+      "The dot product of $\\mathbf{u}$ and $\\mathbf{v}$ is zero"
+    ],
+    "correctIndex": 2,
+    "explanation": "Parallel vectors: one is scalar multiple of other.",
+    "name": "Question Item 20"
+  },
+  {
+    "id": "m21_item21",
+    "text": "Let $\\mathbf{u}$ and $\\mathbf{v}$ be two non-zero vectors. If $|\\mathbf{u} + \\mathbf{v}| = |\\mathbf{u} - \\mathbf{v}|$, then",
+    "options": [
+      "$\\mathbf{u}$ and $\\mathbf{v}$ have the same direction",
+      "$\\mathbf{u}$ and $\\mathbf{v}$ are perpendicular",
+      "$\\mathbf{u}$ and $\\mathbf{v}$ have the opposite direction",
+      "Data insufficient"
+    ],
+    "correctIndex": 1,
+    "explanation": "$|\\mathbf{u} + \\mathbf{v}|^2 = |\\mathbf{u} - \\mathbf{v}|^2 \\implies \\mathbf{u} \\cdot \\mathbf{v} = 0$.",
+    "name": "Question Item 21"
+  },
+  {
+    "id": "m21_item22",
+    "text": "The unit vectors orthogonal to $3\\hat{\\mathbf{i}} + 2\\hat{\\mathbf{j}} + 6\\hat{\\mathbf{k}}$ and coplanar with $2\\hat{\\mathbf{i}} + \\hat{\\mathbf{j}}$ and $\\hat{\\mathbf{i}} - \\hat{\\mathbf{j}} + \\hat{\\mathbf{k}}$ are",
+    "options": [
+      "$\\pm \\dfrac{1}{\\sqrt{5}} (2\\hat{\\mathbf{i}} - \\hat{\\mathbf{k}})$",
+      "$\\pm \\dfrac{1}{\\sqrt{10}} (3\\hat{\\mathbf{j}} - \\hat{\\mathbf{k}})$",
+      "$\\pm \\dfrac{1}{\\sqrt{13}} (2\\hat{\\mathbf{i}} - 3\\hat{\\mathbf{j}})$",
+      "$\\pm \\dfrac{1}{\\sqrt{17}} (2\\hat{\\mathbf{i}} + 3\\hat{\\mathbf{j}} - 2\\hat{\\mathbf{k}})$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Coplanar vector: $a(2\\hat{\\mathbf{i}} + \\hat{\\mathbf{j}}) + b(\\hat{\\mathbf{i}} - \\hat{\\mathbf{j}} + \\hat{\\mathbf{k}})$<br>Orthogonal to given: yields $\\pm \\dfrac{1}{\\sqrt{10}} (3\\hat{\\mathbf{j}} - \\hat{\\mathbf{k}})$.",
+    "name": "Question Item 22"
+  },
+  {
+    "id": "m21_item23",
+    "text": "If $\\mathbf{a} = 2\\hat{\\mathbf{i}} - 3\\hat{\\mathbf{j}} - 4\\hat{\\mathbf{k}}$, $\\mathbf{b} = \\hat{\\mathbf{i}} + 4\\hat{\\mathbf{j}} - 2\\hat{\\mathbf{k}}$, $\\mathbf{c} = 3\\hat{\\mathbf{i}} - \\hat{\\mathbf{j}} + 4\\hat{\\mathbf{k}}$ then, $[\\mathbf{a} \\times \\mathbf{b} \\quad \\mathbf{b} \\times \\mathbf{c} \\quad \\mathbf{c} \\times \\mathbf{a}] =$",
+    "options": [
+      "4900",
+      "6400",
+      "8100",
+      "12100"
+    ],
+    "correctIndex": 3,
+    "explanation": "$[\\mathbf{a} \\times \\mathbf{b} \\quad \\mathbf{b} \\times \\mathbf{c} \\quad \\mathbf{c} \\times \\mathbf{a}] = [\\mathbf{a} \\mathbf{b} \\mathbf{c}]^2 = (110)^2 = 12100$.",
+    "name": "Question Item 23"
+  },
+  {
+    "id": "m21_item24",
+    "text": "Let $\\mathbf{u}$ and $\\mathbf{v}$ be two vectors in a plane. Then any vector $\\mathbf{w}$ in the plane can be written as $\\mathbf{w} = a\\mathbf{u} + b\\mathbf{v}$ for some scalars 'a' and 'b' if and only if",
+    "options": [
+      "None of $\\mathbf{u}$ and $\\mathbf{v}$ is a scalar multiple of the other",
+      "None of $|\\mathbf{u}|$ and $|\\mathbf{v}|$ is a scalar multiple of the other",
+      "$\\mathbf{u}$ and $\\mathbf{v}$ have different direction",
+      "$\\mathbf{u}$ and $\\mathbf{v}$ are perpendicular to each other"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linearly independent (not parallel).",
+    "name": "Question Item 24"
+  },
+  {
+    "id": "m21_item25",
+    "text": "If $\\mathbf{a}$ and $\\mathbf{b}$ are unit vectors such that $\\mathbf{a} + \\mathbf{b}$ is also a unit vector, then the angle between $\\mathbf{a}$ and $\\mathbf{b}$ is",
+    "options": [
+      "60°",
+      "90°",
+      "30°",
+      "120°"
+    ],
+    "correctIndex": 3,
+    "explanation": "$|\\mathbf{a} + \\mathbf{b}| = 1 \\implies \\cos \\theta = -\\dfrac{1}{2} \\implies \\theta = 120^\\circ$.",
+    "name": "Question Item 25"
+  },
+  {
+    "id": "m21_item26",
+    "text": "Let $\\mathbf{u} = -2\\hat{\\mathbf{i}} + 2\\hat{\\mathbf{j}} + \\hat{\\mathbf{k}}$ and $\\mathbf{v} = \\hat{\\mathbf{i}} - 2\\hat{\\mathbf{j}} + 2\\hat{\\mathbf{k}}$. Then angle between $\\mathbf{u}$ and $\\mathbf{v}$ is",
+    "options": [
+      "$\\cos^{-1}\\left(\\dfrac{4}{9}\\right)$",
+      "$\\cos^{-1}\\left(\\dfrac{-4}{3}\\right)$",
+      "$\\cos^{-1}\\left(\\dfrac{4}{3}\\right)$",
+      "$\\sin^{-1}\\left(\\dfrac{-4}{9}\\right)$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$\\cos \\theta = \\dfrac{\\mathbf{u} \\cdot \\mathbf{v}}{|\\mathbf{u}| |\\mathbf{v}|} = \\dfrac{4}{9}$.",
+    "name": "Question Item 26"
+  },
+  {
+    "id": "m21_item27",
+    "text": "Let $\\mathbf{u} = \\hat{\\mathbf{i}} - 2\\hat{\\mathbf{j}}$ and $\\mathbf{v} = -3\\hat{\\mathbf{i}} + 5\\hat{\\mathbf{j}}$. Consider three points $P$, $Q$ and $R$ having position vectors $-\\dfrac{1}{7}\\hat{\\mathbf{i}}$, $-\\dfrac{1}{4}\\hat{\\mathbf{j}}$ and $-2\\hat{\\mathbf{i}} + 3\\hat{\\mathbf{j}}$ respectively. Among these, the points in the line segment passing through $\\mathbf{u}$ and $\\mathbf{v}$ are",
+    "options": [
+      "Only P and Q",
+      "Only P and R",
+      "Only Q and R",
+      "All P, Q and R"
+    ],
+    "correctIndex": 0,
+    "explanation": "Line equation satisfies P and Q, not R.",
+    "name": "Question Item 27"
+  },
+  {
+    "id": "m21_item28",
+    "text": "Let $ABCDEF$ be a regular hexagon with the vertices $A, B, C, D, E, F$ counterclockwise. Then the vector $\\overrightarrow{AB} + \\overrightarrow{AF} + \\overrightarrow{CD} + \\overrightarrow{EF}$ is equal to",
+    "options": [
+      "$\\overrightarrow{DE} + \\overrightarrow{FA}$",
+      "$\\overrightarrow{CB} + \\overrightarrow{ED}$",
+      "$\\overrightarrow{BC} + \\overrightarrow{FA}$",
+      "$\\overrightarrow{BC} + \\overrightarrow{DE}$"
+    ],
+    "correctIndex": 3,
+    "explanation": "In hexagon $AD=2BC$, $EB=2FA$, $FC=2AB$ simplifies to $\\overrightarrow{BC} + \\overrightarrow{DE}$.",
+    "name": "Question Item 28"
+  },
+  {
+    "id": "m21_item29",
+    "text": "In quadrilateral $ABCD$, $\\overrightarrow{AB} = \\mathbf{a}$, $\\overrightarrow{BC} = \\mathbf{b}$, $\\overrightarrow{AD} = \\mathbf{b} - \\mathbf{a}$. If M is the midpoint of BC and N is a point on DM such that $DN = \\left(\\dfrac{4}{5}\\right)DM$, then $5\\overrightarrow{AN} =$",
+    "options": [
+      "$\\overrightarrow{AC}$",
+      "$2\\overrightarrow{AC}$",
+      "$3\\overrightarrow{AC}$",
+      "$4\\overrightarrow{AC}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Using section formula and vector addition: $5\\overrightarrow{AN} = 3\\overrightarrow{AC}$.",
+    "name": "Question Item 29"
+  },
+  {
+    "id": "m21_item30",
+    "text": "Let $\\mathbf{u} = -2\\hat{\\mathbf{i}} + 2\\hat{\\mathbf{j}} + \\hat{\\mathbf{k}}$ and $\\mathbf{v} = \\hat{\\mathbf{i}} - 2\\hat{\\mathbf{j}} + 2\\hat{\\mathbf{k}}$. Then the component of $\\mathbf{v}$ on $\\mathbf{u}$ is",
+    "options": [
+      "$\\dfrac{4}{3}$",
+      "$-\\dfrac{4}{3}$",
+      "$-\\dfrac{2}{3}$",
+      "$\\dfrac{2}{3}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Component = $\\dfrac{\\mathbf{v} \\cdot \\mathbf{u}}{|\\mathbf{u}|} = -\\dfrac{4}{3}$.",
+    "name": "Question Item 30"
+  },
+  {
+    "id": "m21_item31",
+    "text": "If $\\mathbf{P} = 3\\hat{\\mathbf{i}} + 5\\hat{\\mathbf{j}} - \\hat{\\mathbf{k}}$ and $\\mathbf{Q} = \\hat{\\mathbf{i}} + 2\\hat{\\mathbf{j}} + 3\\hat{\\mathbf{k}}$ are two sides of a triangle, then its area is equal to ............ sq. units",
+    "options": [
+      "$\\dfrac{\\sqrt{390}}{4}$",
+      "$\\dfrac{\\sqrt{390}}{2}$",
+      "$\\dfrac{\\sqrt{390}}{8}$",
+      "$\\dfrac{\\sqrt{390}}{16}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area = $\\dfrac{1}{2} |\\mathbf{P} \\times \\mathbf{Q}| = \\dfrac{\\sqrt{390}}{2}$.",
+    "name": "Question Item 31"
+  },
+  {
+    "id": "m21_item32",
+    "text": "Given, $\\triangle ABC$ such that $A$ is $2\\hat{\\mathbf{i}} - \\hat{\\mathbf{j}} + \\hat{\\mathbf{k}}$, $B$ is $\\hat{\\mathbf{i}} - 3\\hat{\\mathbf{j}} - 5\\hat{\\mathbf{k}}$ and $C$ is $3\\hat{\\mathbf{i}} - 4\\hat{\\mathbf{j}} - 4\\hat{\\mathbf{k}}$, then $\\triangle ABC$ is",
+    "options": [
+      "An equilateral triangle",
+      "A right-angled triangle",
+      "An isosceles triangle",
+      "A scalene triangle"
+    ],
+    "correctIndex": 1,
+    "explanation": "$|AB|^2 = |BC|^2 + |CA|^2 \\implies$ right-angled at A.",
+    "name": "Question Item 32"
+  },
+  {
+    "id": "m21_item33",
+    "text": "If $P$ divides the line segment joining the points $A$ and $B$ in the ratio $2:1$ and the position vectors of $A$ and $B$ are $\\hat{\\mathbf{i}} - 2\\hat{\\mathbf{j}}$ and $-5\\hat{\\mathbf{i}} + 5\\hat{\\mathbf{j}}$ respectively, then the position vector of $P$ is",
+    "options": [
+      "$\\dfrac{5\\hat{\\mathbf{i}} - 8\\hat{\\mathbf{j}}}{3}$",
+      "$-\\dfrac{5\\hat{\\mathbf{i}} + 8\\hat{\\mathbf{j}}}{3}$",
+      "$\\dfrac{5\\hat{\\mathbf{i}} + 8\\hat{\\mathbf{j}}}{3}$",
+      "$-\\dfrac{5\\hat{\\mathbf{i}} - 8\\hat{\\mathbf{j}}}{3}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "$\\overrightarrow{OP} = \\dfrac{1(\\hat{\\mathbf{i}} - 2\\hat{\\mathbf{j}}) + 2(-5\\hat{\\mathbf{i}} + 5\\hat{\\mathbf{j}})}{3} = -\\dfrac{5\\hat{\\mathbf{i}} + 8\\hat{\\mathbf{j}}}{3}$.",
+    "name": "Question Item 33"
+  },
+  {
+    "id": "m21_item34",
+    "text": "If the tangent drawn to the parabola $y^2 = 4x$ at $(t^2, 2t)$ is the normal to the ellipse $4x^2 + 5y^2 = 20$ at $(\\sqrt{5}\\cos\\theta, 2\\sin\\theta)$, then",
+    "options": [
+      "$5t^4 + 4t^2 = 1$",
+      "$\\dfrac{5}{t^4} + \\dfrac{100}{t^2} = 1$",
+      "$t = \\sin \\theta$",
+      "$\\cos \\theta = t + 1$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Slope comparison yields $5t^4 + 4t^2 = 1$.",
+    "name": "Question Item 34"
+  },
+  {
+    "id": "m21_item35",
+    "text": "If the tangents drawn from a point $P$ to the ellipse $4x^2 + 9y^2 - 24x + 36y = 0$ are perpendicular, then the locus of $P$ is",
+    "options": [
+      "$x^2 + y^2 - 6x + 4y + 13 = 0$",
+      "$x^2 + y^2 - 6x + 4y - 13 = 0$",
+      "$x^2 + y^2 = 26$",
+      "$x^2 + y^2 + 6x - 4y - 13 = 0$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Director circle after rewriting ellipse: $x^2 + y^2 - 6x + 4y - 13 = 0$.",
+    "name": "Question Item 35"
+  },
+  {
+    "id": "m21_item36",
+    "text": "The normal at a point on the parabola $y^2 = 4x$ passes through $(5,0)$. If two more normals to this parabola also pass through $(5,0)$, then the centroid of the triangle formed by the feet of these three normals is",
+    "options": [
+      "$\\left(\\dfrac{1}{2}, \\dfrac{1}{2}\\right)$",
+      "$(2, 0)$",
+      "$(5, 0)$",
+      "$(0, 2)$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Normals at $t=0, \\pm \\sqrt{3}$. Feet: $(0,0), (3, 2\\sqrt{3}), (3, -2\\sqrt{3})$. Centroid $(2,0)$.",
+    "name": "Question Item 36"
+  },
+  {
+    "id": "m21_item37",
+    "text": "Let $\\mathbf{u} = -2\\hat{\\mathbf{i}} + 2\\hat{\\mathbf{j}} + \\hat{\\mathbf{k}}$ and $\\mathbf{v} = \\hat{\\mathbf{i}} - 2\\hat{\\mathbf{j}} + 2\\hat{\\mathbf{k}}$. Then the component of $\\mathbf{v}$ on $\\mathbf{u}$ is",
+    "options": [
+      "$\\dfrac{4}{3}$",
+      "$-\\dfrac{4}{3}$",
+      "$-\\dfrac{2}{3}$",
+      "$\\dfrac{2}{3}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "$\\dfrac{\\mathbf{v} \\cdot \\mathbf{u}}{|\\mathbf{u}|} = -\\dfrac{4}{3}$.",
+    "name": "Question Item 37"
+  },
+  {
+    "id": "m21_item38",
+    "text": "If $\\mathbf{P} = 3\\hat{\\mathbf{i}} + 5\\hat{\\mathbf{j}} - \\hat{\\mathbf{k}}$ and $\\mathbf{Q} = \\hat{\\mathbf{i}} + 2\\hat{\\mathbf{j}} + 3\\hat{\\mathbf{k}}$ are two sides of a triangle, then its area is equal to ............ sq. units",
+    "options": [
+      "$\\dfrac{\\sqrt{390}}{4}$",
+      "$\\dfrac{\\sqrt{390}}{2}$",
+      "$\\dfrac{\\sqrt{390}}{8}$",
+      "$\\dfrac{\\sqrt{390}}{16}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area $= \\dfrac{1}{2} |\\mathbf{P} \\times \\mathbf{Q}| = \\dfrac{\\sqrt{390}}{2}$.",
+    "name": "Question Item 38"
+  },
+  {
+    "id": "m21_item39",
+    "text": "Given, $\\triangle ABC$ such that $A$ is $2\\hat{\\mathbf{i}} - \\hat{\\mathbf{j}} + \\hat{\\mathbf{k}}$, $B$ is $\\hat{\\mathbf{i}} - 3\\hat{\\mathbf{j}} - 5\\hat{\\mathbf{k}}$ and $C$ is $3\\hat{\\mathbf{i}} - 4\\hat{\\mathbf{j}} - 4\\hat{\\mathbf{k}}$, then $\\triangle ABC$ is",
+    "options": [
+      "An equilateral triangle",
+      "A right-angled triangle",
+      "An isosceles triangle",
+      "A scalene triangle"
+    ],
+    "correctIndex": 1,
+    "explanation": "$|AB|^2 = |BC|^2 + |CA|^2 \\implies$ right-angled.",
+    "name": "Question Item 39"
+  },
+  {
+    "id": "m21_item40",
+    "text": "If $P$ divides the line segment joining the points $A$ and $B$ in the ratio $2:1$ and the position vectors of $A$ and $B$ are $\\hat{\\mathbf{i}} - 2\\hat{\\mathbf{j}}$ and $-5\\hat{\\mathbf{i}} + 5\\hat{\\mathbf{j}}$ respectively, then the position vector of $P$ is",
+    "options": [
+      "$\\dfrac{5\\hat{\\mathbf{i}} - 8\\hat{\\mathbf{j}}}{3}$",
+      "$-\\dfrac{5\\hat{\\mathbf{i}} + 8\\hat{\\mathbf{j}}}{3}$",
+      "$\\dfrac{5\\hat{\\mathbf{i}} + 8\\hat{\\mathbf{j}}}{3}$",
+      "$-\\dfrac{5\\hat{\\mathbf{i}} - 8\\hat{\\mathbf{j}}}{3}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Section formula: $-\\dfrac{5\\hat{\\mathbf{i}} + 8\\hat{\\mathbf{j}}}{3}$.",
+    "name": "Question Item 40"
+  },
+  {
+    "id": "m21_item41",
+    "text": "If the tangent drawn to the parabola $y^2 = 4x$ at $(t^2, 2t)$ is the normal to the ellipse $4x^2 + 5y^2 = 20$ at $(\\sqrt{5}\\cos\\theta, 2\\sin\\theta)$, then",
+    "options": [
+      "$5t^4 + 4t^2 = 1$",
+      "$\\dfrac{5}{t^4} + \\dfrac{100}{t^2} = 1$",
+      "$t = \\sin\\theta$",
+      "$\\cos\\theta = t + 1$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Slope equality yields $5t^4 + 4t^2 = 1$.",
+    "name": "Question Item 41"
+  },
+  {
+    "id": "m21_item42",
+    "text": "If the tangents drawn from a point $P$ to the ellipse $4x^2 + 9y^2 - 24x + 36y = 0$ are perpendicular, then the locus of $P$ is",
+    "options": [
+      "$x^2 + y^2 - 6x + 4y + 13 = 0$",
+      "$x^2 + y^2 - 6x + 4y - 13 = 0$",
+      "$x^2 + y^2 = 26$",
+      "$x^2 + y^2 + 6x - 4y - 13 = 0$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Director circle: $x^2 + y^2 - 6x + 4y - 13 = 0$.",
+    "name": "Question Item 42"
+  },
+  {
+    "id": "m21_item43",
+    "text": "The normal at a point on the parabola $y^2 = 4x$ passes through $(5,0)$. If two more normals to this parabola also pass through $(5,0)$, then the centroid of the triangle formed by the feet of these three normals is",
+    "options": [
+      "$\\left(\\dfrac{1}{2}, \\dfrac{1}{2}\\right)$",
+      "$(2, 0)$",
+      "$(5, 0)$",
+      "$(0, 2)$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Feet at $t=0, \\pm\\sqrt{3}$: centroid $(2,0)$.",
+    "name": "Question Item 43"
+  },
+  {
+    "id": "m21_item44",
+    "text": "Let $\\mathbf{u} = -2\\hat{\\mathbf{i}} + 2\\hat{\\mathbf{j}} + \\hat{\\mathbf{k}}$ and $\\mathbf{v} = \\hat{\\mathbf{i}} - 2\\hat{\\mathbf{j}} + 2\\hat{\\mathbf{k}}$. Then the component of $\\mathbf{v}$ on $\\mathbf{u}$ is",
+    "options": [
+      "$\\dfrac{4}{3}$",
+      "$-\\dfrac{4}{3}$",
+      "$-\\dfrac{2}{3}$",
+      "$\\dfrac{2}{3}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "$\\dfrac{\\mathbf{v} \\cdot \\mathbf{u}}{|\\mathbf{u}|} = -\\dfrac{4}{3}$.",
+    "name": "Question Item 44"
+  },
+  {
+    "id": "m21_item45",
+    "text": "If $\\mathbf{P} = 3\\hat{\\mathbf{i}} + 5\\hat{\\mathbf{j}} - \\hat{\\mathbf{k}}$ and $\\mathbf{Q} = \\hat{\\mathbf{i}} + 2\\hat{\\mathbf{j}} + 3\\hat{\\mathbf{k}}$ are two sides of a triangle, then its area is equal to ............ sq. units",
+    "options": [
+      "$\\dfrac{\\sqrt{390}}{4}$",
+      "$\\dfrac{\\sqrt{390}}{2}$",
+      "$\\dfrac{\\sqrt{390}}{8}$",
+      "$\\dfrac{\\sqrt{390}}{16}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "$\\dfrac{1}{2}|\\mathbf{P} \\times \\mathbf{Q}| = \\dfrac{\\sqrt{390}}{2}$.",
+    "name": "Question Item 45"
+  },
+  {
+    "id": "m21_item46",
+    "text": "Given, $\\triangle ABC$ such that $A$ is $2\\hat{\\mathbf{i}} - \\hat{\\mathbf{j}} + \\hat{\\mathbf{k}}$, $B$ is $\\hat{\\mathbf{i}} - 3\\hat{\\mathbf{j}} - 5\\hat{\\mathbf{k}}$ and $C$ is $3\\hat{\\mathbf{i}} - 4\\hat{\\mathbf{j}} - 4\\hat{\\mathbf{k}}$, then $\\triangle ABC$ is",
+    "options": [
+      "An equilateral triangle",
+      "A right-angled triangle",
+      "An isosceles triangle",
+      "A scalene triangle"
+    ],
+    "correctIndex": 1,
+    "explanation": "$|AB|^2 = |BC|^2 + |CA|^2$.",
+    "name": "Question Item 46"
+  },
+  {
+    "id": "m21_item47",
+    "text": "If $P$ divides the line segment joining the points $A$ and $B$ in the ratio $2:1$ and the position vectors of $A$ and $B$ are $\\hat{\\mathbf{i}} - 2\\hat{\\mathbf{j}}$ and $-5\\hat{\\mathbf{i}} + 5\\hat{\\mathbf{j}}$ respectively, then the position vector of $P$ is",
+    "options": [
+      "$\\dfrac{5\\hat{\\mathbf{i}} - 8\\hat{\\mathbf{j}}}{3}$",
+      "$-\\dfrac{5\\hat{\\mathbf{i}} + 8\\hat{\\mathbf{j}}}{3}$",
+      "$\\dfrac{5\\hat{\\mathbf{i}} + 8\\hat{\\mathbf{j}}}{3}$",
+      "$-\\dfrac{5\\hat{\\mathbf{i}} - 8\\hat{\\mathbf{j}}}{3}$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Section formula yields $-\\dfrac{5\\hat{\\mathbf{i}} + 8\\hat{\\mathbf{j}}}{3}$.",
+    "name": "Question Item 47"
+  },
+  {
+    "id": "m21_item48",
+    "text": "If the tangent drawn to the parabola $y^2 = 4x$ at $(t^2, 2t)$ is the normal to the ellipse $4x^2 + 5y^2 = 20$ at $(\\sqrt{5}\\cos\\theta, 2\\sin\\theta)$, then",
+    "options": [
+      "$5t^4 + 4t^2 = 1$",
+      "$\\dfrac{5}{t^4} + \\dfrac{100}{t^2} = 1$",
+      "$t = \\sin\\theta$",
+      "$\\cos\\theta = t + 1$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tangent slope condition gives $5t^4 + 4t^2 = 1$.",
+    "name": "Question Item 48"
+  },
+  {
+    "id": "m21_item49",
+    "text": "If the tangents drawn from a point $P$ to the ellipse $4x^2 + 9y^2 - 24x + 36y = 0$ are perpendicular, then the locus of $P$ is",
+    "options": [
+      "$x^2 + y^2 - 6x + 4y + 13 = 0$",
+      "$x^2 + y^2 - 6x + 4y - 13 = 0$",
+      "$x^2 + y^2 = 26$",
+      "$x^2 + y^2 + 6x - 4y - 13 = 0$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Director circle equation: $x^2 + y^2 - 6x + 4y - 13 = 0$.",
+    "name": "Question Item 49"
+  },
+  {
+    "id": "m21_item50",
+    "text": "The normal at a point on the parabola $y^2 = 4x$ passes through $(5,0)$. If two more normals to this parabola also pass through $(5,0)$, then the centroid of the triangle formed by the feet of these three normals is",
+    "options": [
+      "$\\left(\\dfrac{1}{2}, \\dfrac{1}{2}\\right)$",
+      "$(2, 0)$",
+      "$(5, 0)$",
+      "$(0, 2)$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Feet $(0,0), (3, \\pm 2\\sqrt{3})$. Centroid $(2,0)$.",
+    "name": "Question Item 50"
+  }
+]

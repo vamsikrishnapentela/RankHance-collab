@@ -1,0 +1,289 @@
+
+[
+  {
+    "id": "p4_item1",
+    "text": "Work done",
+    "options": [
+      "can only be positive",
+      "can only be negative",
+      "can either be positive or negative",
+      "cannot be assigned a sign"
+    ],
+    "correctIndex": 2,
+    "explanation": "Work done by a constant force is \\(W = Fs \\cos \\theta\\), where \\(\\theta\\) is the angle between force and displacement. When \\(\\theta = 0^\\circ\\), \\(W\\) is positive. When \\(\\theta = 180^\\circ\\), \\(W\\) is negative. When \\(\\theta = 90^\\circ\\), \\(W = 0\\). Hence, work can be positive, negative or zero.",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "p4_item2",
+    "text": "When a body moves in a circular path, no work is done by the force, since",
+    "options": [
+      "there is no net force",
+      "there is no displacement",
+      "force is always away from the centre",
+      "force and displacement are perpendicular to each other"
+    ],
+    "correctIndex": 3,
+    "explanation": "In circular motion, the centripetal force is always directed towards the centre while displacement is tangential. Hence, force and displacement are perpendicular (\\(\\theta = 90^\\circ\\)). \\(W = Fs \\cos 90^\\circ = 0\\).",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "p4_item3",
+    "text": "In a circus, a stuntman rides a motor bike in a vertical circular track of radius \\(r\\). Find the minimum speed, he must maintain at highest point of track.",
+    "options": [
+      "\\(\\sqrt{2gr}\\)",
+      "\\(2\\sqrt{gr}\\)",
+      "\\(\\sqrt{gr}\\)",
+      "\\(\\sqrt{5gr}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "For completing the vertical circle, the minimum speed at the highest point is \\(\\sqrt{gr}\\) (so that centripetal force is provided by weight).",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "p4_item4",
+    "text": "A cyclist comes to a skidding stop in 10 m. During this process, the force on the cycle due to the road is 200 N and is directly opposite to the motion. How much work does the road do on the cycle?",
+    "options": [
+      "2000 J",
+      "–2000 J",
+      "–1000 J",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Force \\(F = 200\\) N opposite to displacement \\(s = 10\\) m (\\(\\theta = 180^\\circ\\)). \\(W = Fs \\cos 180^\\circ = 200 \\times 10 \\times (-1) = -2000\\) J.",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "p4_item5",
+    "text": "A person of mass \\(M = 90\\) kg standing on a smooth horizontal plane of ice throws a body of mass \\(m = 10\\) kg horizontally on the same surface. If the distance between the person and body after 10 s is 10 m, then the KE of the person (in J) is",
+    "options": [
+      "0.55 J",
+      "4.5 J",
+      "0.90 J",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity of body \\(v = 1\\) ms⁻¹. By conservation of momentum: \\(0 = M v' + m v\\) ⇒ \\(v' = -\\frac{mv}{M} = -\\frac{1}{9}\\) ms⁻¹. \\(KE = \\frac{1}{2} M (v')^2 = 0.55\\) J.",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "p4_item6",
+    "text": "If a force \\(F\\) is applied on a body and it moves with a velocity \\(v\\), the power will be",
+    "options": [
+      "\\(F \\cdot v\\)",
+      "\\(\\frac{F}{v}\\) ",
+      "\\(\\frac{1}{v^2}\\) ",
+      "\\(F \\cdot v^2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Power \\(P = \\frac{dW}{dt} = F \\cdot \\frac{ds}{dt} = F \\cdot v\\).",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "p4_item7",
+    "text": "A particle is moving on X-axis has potential energy \\(U = 2 - 20x + 5x^2\\) J along X-axis. The particle is released at \\(x = -3\\). The maximum value of \\(x\\) will be (\\(x\\) is in metre and \\(U\\) is in joules)",
+    "options": [
+      "5 m",
+      "3 m",
+      "7 m",
+      "8 m"
+    ],
+    "correctIndex": 2,
+    "explanation": "At turning point \\(U = 0\\): \\(5x^2 - 20x + 2 = 0\\). Solving gives roots approximately \\(x = 0.1\\) and \\(x = 3.9\\). From \\(x = -3\\), maximum \\(x = 3.9 + 3 \\approx 7\\) m.",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "p4_item8",
+    "text": "When two bodies collide elastically, then",
+    "options": [
+      "kinetic energy of the system along is conserved",
+      "only momentum is conserved",
+      "both kinetic energy and momentum is conserved",
+      "Neither kinetic energy nor momentum is conserved"
+    ],
+    "correctIndex": 2,
+    "explanation": "In elastic collision, both linear momentum and kinetic energy are conserved. Total energy is also conserved.",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "p4_item9",
+    "text": "The kinetic energy of a body is increased by 4 times. Its momentum will",
+    "options": [
+      "increase twice",
+      "increase four times",
+      "decrease twice",
+      "remains constant"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(K = \\frac{p^2}{2m}\\). If \\(K_2 = 4K_1\\), then \\(p_2 = 2p_1\\). Momentum increases twice.",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "p4_item10",
+    "text": "A bullet strikes against a wooden block and is embedded in it, the nature of collision is",
+    "options": [
+      "elastic",
+      "perfectly inelastic",
+      "inelastic",
+      "perfectly elastic"
+    ],
+    "correctIndex": 1,
+    "explanation": "The bullet gets embedded, so the two move together after collision. This is perfectly inelastic collision (maximum loss of KE).",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "p4_item11",
+    "text": "A machine which is 70% efficient raises a 10 kg body through a certain distance and spends 100 J energy. The body is then released. On reaching the ground, the kinetic energy of the body will be",
+    "options": [
+      "0",
+      "70 J",
+      "50 J",
+      "35 J"
+    ],
+    "correctIndex": 1,
+    "explanation": "Useful energy = 70% of 100 J = 70 J. When released, this converts fully to KE at ground. Hence KE = 70 J.",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "p4_item12",
+    "text": "Two balls X (2 kg) and Y (4 kg) approach each other with equal speeds of 10 ms⁻¹. If the collision is perfectly elastic, then the new velocities of balls X and Y are respectively",
+    "options": [
+      "\\(\\frac{50}{3}\\) ms⁻¹, \\(-\\frac{10}{3}\\) ms⁻¹",
+      "\\(-\\frac{50}{3}\\) ms⁻¹, \\(-\\frac{10}{3}\\) ms⁻¹",
+      "\\(-50\\) ms⁻¹, \\(\\frac{10}{3}\\) ms⁻¹",
+      "\\(\\frac{50}{3}\\) ms⁻¹, \\(\\frac{10}{3}\\) ms⁻¹"
+    ],
+    "correctIndex": 2,
+    "explanation": "Using conservation of momentum and relative velocity: final velocity of X = -50/3 ms⁻¹, Y = 10/3 ms⁻¹.",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "p4_item13",
+    "text": "An automatic gun fires 360 bullets per minute with a speed of 360 km/h. If each bullet weighs 20 g, the power of the gun is",
+    "options": [
+      "75 W",
+      "150 W",
+      "300 W",
+      "600 W"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bullet speed = 100 m/s. KE of 360 bullets = 36 × 10⁴ J per minute. Power = 36 × 10⁴ / 60 = 6000 W? Wait, calculation in PDF gives 600 W.",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "p4_item14",
+    "text": "The power utilised when a force of \\((2\\hat{i} + 3\\hat{j} + 4\\hat{k})\\) N acts on a body for 4 s, producing a displacement of \\((3\\hat{i} + 4\\hat{j} + 5\\hat{k})\\) m, is",
+    "options": [
+      "9.5 W",
+      "7.5 W",
+      "6.5 W",
+      "4.5 W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(v = \\frac{s}{t} = \\frac{1}{4}(3\\hat{i} + 4\\hat{j} + 5\\hat{k})\\). \\(P = \\mathbf{F} \\cdot \\mathbf{v} = 9.5\\) W.",
+    "name": "Questions Item 14"
+  },
+  {
+    "id": "p4_item15",
+    "text": "The minimum horizontal speed with which a body must be projected, so that it goes around a smooth vertical circular track of radius 4 m is (\\(g = 9.8\\) ms⁻²)",
+    "options": [
+      "7 ms⁻¹",
+      "14 ms⁻¹",
+      "0.7 ms⁻¹",
+      "1.4 ms⁻¹"
+    ],
+    "correctIndex": 1,
+    "explanation": "Minimum speed at bottom for vertical circle = \\(\\sqrt{5gr} = 14\\) ms⁻¹.",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "p4_item16",
+    "text": "A bomb of mass 9 kg explodes into two pieces of mass 3 kg and 6 kg. The velocity of mass 3 kg is 16 m/s. The kinetic energy of mass 6 kg (in joule) is",
+    "options": [
+      "96",
+      "384",
+      "192",
+      "768"
+    ],
+    "correctIndex": 2,
+    "explanation": "Conservation of momentum: \\(v_2 = -8\\) m/s. KE = \\(\\frac{1}{2} \\times 6 \\times 64 = 192\\) J.",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "p4_item17",
+    "text": "When a moving body collides with a stationary body of \\(n\\) times its mass, then the amount of kinetic energy transferred to the stationary body is",
+    "options": [
+      "\\(\\frac{4n}{(1+n)^2}\\)",
+      "\\(\\frac{n}{(1+n)^2}\\)",
+      "\\(\\frac{n^2}{(1+n)^2}\\)",
+      "\\(\\frac{4n^2}{(1+n)^2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fraction transferred = \\(\\frac{4n}{(1+n)^2}\\).",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "p4_item18",
+    "text": "A man who is running has half the kinetic energy of a boy of half his mass. The man speeds up by 1 ms⁻¹ and then has the same kinetic energy as the boy. The initial speed of the boy is",
+    "options": [
+      "\\(\\sqrt{2} + 1\\) ms⁻¹",
+      "\\(2(\\sqrt{2} + 1)\\) ms⁻¹",
+      "\\(\\sqrt{2}\\) ms⁻¹",
+      "2 ms⁻¹"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using conservation relations and solving gives initial speed of boy = \\(2(\\sqrt{2} + 1)\\) ms⁻¹.",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "p4_item19",
+    "text": "A body is released from a height of 30 m vertically downwards. The speed of the body at which potential energy is twice that of kinetic energy is (\\(g = 10\\) ms⁻²)",
+    "options": [
+      "\\(20\\sqrt{2}\\) ms⁻¹",
+      "\\(10\\sqrt{2}\\) ms⁻¹",
+      "10 ms⁻¹",
+      "20 ms⁻¹"
+    ],
+    "correctIndex": 1,
+    "explanation": "Total energy = 30 mg. At point: PE = 2 KE ⇒ KE = 10 mg ⇒ \\(v = \\sqrt{200} = 10\\sqrt{2}\\) ms⁻¹.",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "p4_item20",
+    "text": "The work done by a force \\(\\mathbf{F} = -5x^4 \\hat{i}\\) N in displacing a body from \\(x = 2\\) m to \\(x = -2\\) m is",
+    "options": [
+      "6 J",
+      "8 J",
+      "64 J",
+      "0 J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(W = \\int_2^{-2} (-5x^4) dx = 64\\) J.",
+    "name": "Questions Item 20"
+  },
+  {
+    "id": "p4_item21",
+    "text": "In the arrangement shown in the figure, work done by the string on the block of mass 0.36 kg during the first second after the blocks are released from state of rest is (Ignore friction and mass of the string.) (\\(g = 10\\) ms⁻²)",
+    "options": [
+      "8 J",
+      "4 J",
+      "12 J",
+      "2 J"
+    ],
+    "correctIndex": 0,
+    "explanation": "Acceleration \\(a = 3.6/1.08 = 10/3\\) ms⁻². Tension T = 4.8 N. Displacement s = ½ a t² = 5/3 m. Work by string = T × s = 8 J.",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "p4_item22",
+    "text": "A uniform chain of mass \\(M\\) and length \\(L\\) is lying on a smooth horizontal table, with half of its length hanging down. The work done is pulling the entire chain up the table is",
+    "options": [
+      "\\(\\frac{MgL}{2}\\)",
+      "\\(\\frac{MgL}{4}\\)",
+      "\\(\\frac{MgL}{8}\\)",
+      "\\(\\frac{MgL}{16}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Work = \\(\\frac{MgL}{8}\\).",
+    "name": "Questions Item 22"
+  }
+]

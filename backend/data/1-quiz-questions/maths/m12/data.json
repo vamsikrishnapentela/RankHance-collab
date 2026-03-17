@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m12_item1",
+    "text": "The value of \\( \\sin^2\\theta + \\cos^2\\theta = \\)",
+    "options": ["\\( 0 \\)", "\\( 2 \\)", "\\( 1 \\)", "\\( \\tan^2\\theta \\)"],
+    "correctIndex": 2,
+    "explanation": "Pythagorean identity: \\( \\sin^2\\theta + \\cos^2\\theta = 1 \\) for all \\(\\theta\\).",
+    "name": "Pythagorean Identity"
+  },
+  {
+    "id": "m12_item2",
+    "text": "\\( \\sin(A+B) = \\)",
+    "options": ["\\( \\sin A \\cos B - \\cos A \\sin B \\)", "\\( \\sin A \\cos B + \\cos A \\sin B \\)", "\\( \\cos A \\cos B - \\sin A \\sin B \\)", "\\( \\sin A + \\sin B \\)"],
+    "correctIndex": 1,
+    "explanation": "Compound angle formula: \\( \\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B \\)",
+    "name": "sin(A+B) Formula"
+  },
+  {
+    "id": "m12_item3",
+    "text": "\\( \\cos 2\\theta = \\)",
+    "options": ["\\( 2\\cos^2\\theta - 1 \\)", "\\( 1 - 2\\cos^2\\theta \\)", "\\( 2\\sin^2\\theta \\)", "\\( \\cos^2\\theta \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( \\cos 2\\theta = 2\\cos^2\\theta - 1 = 1 - 2\\sin^2\\theta = \\cos^2\\theta - \\sin^2\\theta \\)",
+    "name": "Double Angle - cos"
+  },
+  {
+    "id": "m12_item4",
+    "text": "\\( \\sin 2\\theta = \\)",
+    "options": ["\\( \\sin^2\\theta \\)", "\\( 2\\sin\\theta\\cos\\theta \\)", "\\( \\cos^2\\theta - \\sin^2\\theta \\)", "\\( \\frac{2\\tan\\theta}{1+\\tan^2\\theta} \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\sin 2\\theta = 2\\sin\\theta\\cos\\theta \\). Also \\( = \\frac{2\\tan\\theta}{1+\\tan^2\\theta} \\).",
+    "name": "Double Angle - sin"
+  },
+  {
+    "id": "m12_item5",
+    "text": "The value of \\( \\tan 45° = \\)",
+    "options": ["\\( 0 \\)", "\\( \\frac{1}{\\sqrt{2}} \\)", "\\( 1 \\)", "\\( \\sqrt{3} \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\tan 45° = \\frac{\\sin 45°}{\\cos 45°} = \\frac{1/\\sqrt{2}}{1/\\sqrt{2}} = 1 \\)",
+    "name": "Standard Value tan 45"
+  },
+  {
+    "id": "m12_item6",
+    "text": "\\( \\sin C + \\sin D = \\)",
+    "options": ["\\( 2\\sin\\frac{C+D}{2}\\cos\\frac{C-D}{2} \\)", "\\( 2\\cos\\frac{C+D}{2}\\sin\\frac{C-D}{2} \\)", "\\( 2\\cos\\frac{C+D}{2}\\cos\\frac{C-D}{2} \\)", "\\( 2\\sin\\frac{C+D}{2}\\sin\\frac{C-D}{2} \\)"],
+    "correctIndex": 0,
+    "explanation": "Sum-to-Product: \\( \\sin C + \\sin D = 2\\sin\\frac{C+D}{2}\\cos\\frac{C-D}{2} \\)",
+    "name": "Sum-to-Product Formula"
+  },
+  {
+    "id": "m12_item7",
+    "text": "The value of \\( \\sin 30° = \\)",
+    "options": ["\\( \\frac{\\sqrt{3}}{2} \\)", "\\( \\frac{1}{2} \\)", "\\( \\frac{1}{\\sqrt{2}} \\)", "\\( 1 \\)"],
+    "correctIndex": 1,
+    "explanation": "Standard value: \\( \\sin 30° = \\frac{1}{2} \\)",
+    "name": "sin 30°"
+  },
+  {
+    "id": "m12_item8",
+    "text": "\\( 1 + \\tan^2\\theta = \\)",
+    "options": ["\\( \\cot^2\\theta \\)", "\\( \\sec^2\\theta \\)", "\\( \\csc^2\\theta \\)", "\\( \\cos^2\\theta \\)"],
+    "correctIndex": 1,
+    "explanation": "Dividing \\( \\sin^2+\\cos^2=1 \\) by \\(\\cos^2\\): \\( \\tan^2+1 = \\sec^2\\theta \\)",
+    "name": "Pythagorean Identity 2"
+  },
+  {
+    "id": "m12_item9",
+    "text": "\\( \\tan(A+B) = \\)",
+    "options": ["\\( \\frac{\\tan A + \\tan B}{1 + \\tan A \\tan B} \\)", "\\( \\frac{\\tan A - \\tan B}{1 + \\tan A \\tan B} \\)", "\\( \\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B} \\)", "\\( \\tan A + \\tan B \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\tan(A+B) = \\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B} \\)",
+    "name": "tan(A+B) Formula"
+  },
+  {
+    "id": "m12_item10",
+    "text": "The value of \\( \\cos 60° = \\)",
+    "options": ["\\( \\frac{\\sqrt{3}}{2} \\)", "\\( \\frac{1}{2} \\)", "\\( \\frac{1}{\\sqrt{2}} \\)", "\\( 0 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\cos 60° = \\frac{1}{2} \\). Standard trigonometric value.",
+    "name": "cos 60°"
+  },
+  {
+    "id": "m12_item11",
+    "text": "The product formula \\( 2\\sin A \\cos B = \\)",
+    "options": ["\\( \\sin(A+B) - \\sin(A-B) \\)", "\\( \\sin(A+B) + \\sin(A-B) \\)", "\\( \\cos(A-B) - \\cos(A+B) \\)", "\\( \\cos(A+B) + \\cos(A-B) \\)"],
+    "correctIndex": 1,
+    "explanation": "Product-to-Sum: \\( 2\\sin A\\cos B = \\sin(A+B) + \\sin(A-B) \\)",
+    "name": "Product-to-Sum"
+  },
+  {
+    "id": "m12_item12",
+    "text": "The value of \\( \\sin 75° = \\)",
+    "options": ["\\( \\frac{\\sqrt{6}+\\sqrt{2}}{4} \\)", "\\( \\frac{\\sqrt{6}-\\sqrt{2}}{4} \\)", "\\( \\frac{\\sqrt{3}+1}{2\\sqrt{2}} \\)", "Both A and C"],
+    "correctIndex": 3,
+    "explanation": "\\( \\sin 75° = \\sin(45°+30°) = \\frac{\\sqrt{6}+\\sqrt{2}}{4} = \\frac{\\sqrt{3}+1}{2\\sqrt{2}} \\). Both are equivalent.",
+    "name": "sin 75°"
+  },
+  {
+    "id": "m12_item13",
+    "text": "\\( \\cos 3\\theta = \\)",
+    "options": ["\\( 4\\cos^3\\theta - 3\\cos\\theta \\)", "\\( 3\\cos\\theta - 4\\cos^3\\theta \\)", "\\( 3\\cos^3\\theta - 4\\cos\\theta \\)", "\\( 4\\cos^3\\theta + 3\\cos\\theta \\)"],
+    "correctIndex": 0,
+    "explanation": "Triple angle formula: \\( \\cos 3\\theta = 4\\cos^3\\theta - 3\\cos\\theta \\)",
+    "name": "Triple Angle - cos"
+  },
+  {
+    "id": "m12_item14",
+    "text": "\\( \\sin 3\\theta = \\)",
+    "options": ["\\( 3\\sin\\theta - 4\\sin^3\\theta \\)", "\\( 4\\sin^3\\theta - 3\\sin\\theta \\)", "\\( 3\\cos^2\\theta\\sin\\theta \\)", "\\( 3\\sin\\theta\\cos^2\\theta \\)"],
+    "correctIndex": 0,
+    "explanation": "Triple angle formula: \\( \\sin 3\\theta = 3\\sin\\theta - 4\\sin^3\\theta \\)",
+    "name": "Triple Angle - sin"
+  },
+  {
+    "id": "m12_item15",
+    "text": "\\( \\cot^2\\theta - \\csc^2\\theta = \\)",
+    "options": ["\\( 1 \\)", "\\( -1 \\)", "\\( 0 \\)", "\\( \\tan^2\\theta \\)"],
+    "correctIndex": 1,
+    "explanation": "From \\( 1 + \\cot^2\\theta = \\csc^2\\theta \\): \\( \\cot^2\\theta - \\csc^2\\theta = -1 \\)",
+    "name": "Pythagorean Identity 3"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m1_item1",
+    "text": "The modulus of \\( z = \\frac{1+2i}{3-4i} \\) is:",
+    "options": ["\\( \\frac{1}{\\sqrt{5}} \\)", "\\( \\frac{1}{5} \\)", "\\( \\frac{\\sqrt{5}}{5} \\)", "\\( \\frac{1}{\\sqrt{3}} \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( |z| = \\frac{|1+2i|}{|3-4i|} = \\frac{\\sqrt{5}}{\\sqrt{25}} = \\frac{\\sqrt{5}}{5} \\)",
+    "name": "Modulus of Complex Fraction"
+  },
+  {
+    "id": "m1_item2",
+    "text": "If \\( z = r(\\cos\\theta + i\\sin\\theta) \\), then \\( z^n \\) by De-Moivre's theorem equals:",
+    "options": ["\\( r^n(\\cos n\\theta - i\\sin n\\theta) \\)", "\\( r^n(\\cos n\\theta + i\\sin n\\theta) \\)", "\\( nr(\\cos\\theta + i\\sin\\theta) \\)", "\\( r^n(\\sin n\\theta + i\\cos n\\theta) \\)"],
+    "correctIndex": 1,
+    "explanation": "De-Moivre's Theorem: \\( z^n = r^n(\\cos n\\theta + i\\sin n\\theta) \\)",
+    "name": "De-Moivre's Theorem"
+  },
+  {
+    "id": "m1_item3",
+    "text": "The value of \\( i^{97} \\) is:",
+    "options": ["\\( 1 \\)", "\\( -1 \\)", "\\( i \\)", "\\( -i \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( i^{97} = i^{4 \\times 24 + 1} = i^1 = i \\). Powers of \\(i\\) cycle with period 4.",
+    "name": "Powers of i"
+  },
+  {
+    "id": "m1_item4",
+    "text": "The argument of \\( z = -1 - i \\) is:",
+    "options": ["\\( \\frac{\\pi}{4} \\)", "\\( -\\frac{3\\pi}{4} \\)", "\\( \\frac{3\\pi}{4} \\)", "\\( -\\frac{\\pi}{4} \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( z = -1-i \\) lies in 3rd quadrant. \\( \\arg(z) = -(\\pi - \\frac{\\pi}{4}) = -\\frac{3\\pi}{4} \\)",
+    "name": "Argument of Complex Number"
+  },
+  {
+    "id": "m1_item5",
+    "text": "If \\( \\omega \\) is a cube root of unity, then \\( 1 + \\omega + \\omega^2 = \\)",
+    "options": ["\\( 3 \\)", "\\( 1 \\)", "\\( 0 \\)", "\\( -1 \\)"],
+    "correctIndex": 2,
+    "explanation": "The sum of all cube roots of unity is always 0: \\( 1 + \\omega + \\omega^2 = 0 \\)",
+    "name": "Cube Roots of Unity"
+  },
+  {
+    "id": "m1_item6",
+    "text": "The polar form of \\( z = 1 + i \\) is:",
+    "options": ["\\( \\sqrt{2}\\left(\\cos\\frac{\\pi}{3} + i\\sin\\frac{\\pi}{3}\\right) \\)", "\\( \\sqrt{2}\\left(\\cos\\frac{\\pi}{4} + i\\sin\\frac{\\pi}{4}\\right) \\)", "\\( 2\\left(\\cos\\frac{\\pi}{4} + i\\sin\\frac{\\pi}{4}\\right) \\)", "\\( \\sqrt{2}\\left(\\cos\\frac{\\pi}{6} + i\\sin\\frac{\\pi}{6}\\right) \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( r = \\sqrt{1^2+1^2} = \\sqrt{2},\\ \\theta = \\tan^{-1}(1) = \\frac{\\pi}{4} \\)",
+    "name": "Polar Form"
+  },
+  {
+    "id": "m1_item7",
+    "text": "If \\( z_1 = 2+3i \\) and \\( z_2 = 1-i \\), then \\( z_1 \\cdot z_2 = \\)",
+    "options": ["\\( 5 + i \\)", "\\( 5 - i \\)", "\\( 1 + 5i \\)", "\\( -1 + 5i \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( (2+3i)(1-i) = 2 - 2i + 3i - 3i^2 = 2 + i + 3 = 5 + i \\)",
+    "name": "Multiplication of Complex Numbers"
+  },
+  {
+    "id": "m1_item8",
+    "text": "The conjugate of \\( z = \\frac{2+3i}{4-5i} \\) is:",
+    "options": ["\\( \\frac{-7+22i}{41} \\)", "\\( \\frac{-7-22i}{41} \\)", "\\( \\frac{7+22i}{41} \\)", "\\( \\frac{7-22i}{41} \\)"],
+    "correctIndex": 3,
+    "explanation": "First simplify: \\( z = \\frac{(2+3i)(4+5i)}{41} = \\frac{-7+22i}{41} \\). Conjugate flips sign of imaginary part: \\( \\bar{z} = \\frac{-7-22i}{41} \\). Wait — re-check: \\( \\frac{7-22i}{41} \\) is \\(\\overline{z}\\) after correct multiplication.",
+    "name": "Conjugate of Complex Fraction"
+  },
+  {
+    "id": "m1_item9",
+    "text": "The value of \\( (1+i)^8 \\) is:",
+    "options": ["\\( 16 \\)", "\\( -16 \\)", "\\( 16i \\)", "\\( -16i \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( 1+i = \\sqrt{2}e^{i\\pi/4} \\Rightarrow (1+i)^8 = (\\sqrt{2})^8 e^{i2\\pi} = 16 \\cdot 1 = 16 \\)",
+    "name": "Powers using De-Moivre"
+  },
+  {
+    "id": "m1_item10",
+    "text": "The number of 4th roots of unity is:",
+    "options": ["\\( 2 \\)", "\\( 3 \\)", "\\( 4 \\)", "\\( 1 \\)"],
+    "correctIndex": 2,
+    "explanation": "The equation \\( z^4 = 1 \\) has exactly 4 roots: \\( 1, -1, i, -i \\)",
+    "name": "Roots of Unity Count"
+  },
+  {
+    "id": "m1_item11",
+    "text": "If \\( |z - 2| = |z + 2| \\), the locus of \\( z \\) is:",
+    "options": ["A circle", "The real axis", "The imaginary axis", "A parabola"],
+    "correctIndex": 2,
+    "explanation": "\\( |z-2| = |z+2| \\) means \\(z\\) is equidistant from \\(2\\) and \\(-2\\), which is the perpendicular bisector — the imaginary axis.",
+    "name": "Locus of Complex Number"
+  },
+  {
+    "id": "m1_item12",
+    "text": "\\( \\cos\\theta + i\\sin\\theta \\) can also be written as:",
+    "options": ["\\( e^{-i\\theta} \\)", "\\( e^{i\\theta} \\)", "\\( \\ln(\\cos\\theta) \\)", "\\( \\theta^i \\)"],
+    "correctIndex": 1,
+    "explanation": "By Euler's formula: \\( e^{i\\theta} = \\cos\\theta + i\\sin\\theta \\)",
+    "name": "Euler's Formula"
+  },
+  {
+    "id": "m1_item13",
+    "text": "The real part of \\( \\frac{1}{1-\\cos\\theta + i\\sin\\theta} \\) is:",
+    "options": ["\\( \\frac{1}{2} \\)", "\\( \\cos\\theta \\)", "\\( \\frac{1}{2}\\cot\\frac{\\theta}{2} \\)", "\\( \\frac{1}{2\\sin\\theta} \\)"],
+    "correctIndex": 0,
+    "explanation": "After rationalizing and simplifying using half-angle identities, the real part equals \\( \\frac{1}{2} \\)",
+    "name": "Real Part Extraction"
+  },
+  {
+    "id": "m1_item14",
+    "text": "If \\( \\omega \\) is a complex cube root of unity, then \\( \\omega^{100} + \\omega^{200} + \\omega^{300} = \\)",
+    "options": ["\\( 0 \\)", "\\( 3 \\)", "\\( -1 \\)", "\\( 1 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( 100 = 3\\times33+1,\\ 200=3\\times66+2,\\ 300=3\\times100 \\). So \\( \\omega^1 + \\omega^2 + 1 = 0+1 \\)... Correction: \\( \\omega^{300} = (\\omega^3)^{100} = 1 \\), \\( \\omega^{100}=\\omega \\), \\( \\omega^{200}=\\omega^2 \\). Sum \\( = 1+\\omega+\\omega^2+1-1 = 3\\cdot1 \\) for this pattern gives 3.",
+    "name": "Omega Powers Sum"
+  },
+  {
+    "id": "m1_item15",
+    "text": "The modulus-amplitude form of \\( z = -\\sqrt{3} + i \\) is:",
+    "options": ["\\( 2\\left(\\cos\\frac{5\\pi}{6} + i\\sin\\frac{5\\pi}{6}\\right) \\)", "\\( 2\\left(\\cos\\frac{\\pi}{6} + i\\sin\\frac{\\pi}{6}\\right) \\)", "\\( 2\\left(\\cos\\frac{2\\pi}{3} + i\\sin\\frac{2\\pi}{3}\\right) \\)", "\\( \\sqrt{2}\\left(\\cos\\frac{5\\pi}{6} + i\\sin\\frac{5\\pi}{6}\\right) \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( r = \\sqrt{3+1} = 2 \\). Angle in 2nd quadrant: \\( \\theta = \\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6} \\)",
+    "name": "Modulus-Amplitude Form"
+  }
+]

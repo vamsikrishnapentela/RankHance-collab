@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m25_item1",
+    "text": "A function \\(f\\) is increasing on an interval if:",
+    "options": ["\\( f'(x) < 0 \\)", "\\( f''(x) > 0 \\)", "\\( f'(x) > 0 \\)", "\\( f'(x) = 0 \\)"],
+    "correctIndex": 2,
+    "explanation": "\\(f\\) is increasing where \\( f'(x) > 0 \\) and decreasing where \\( f'(x) < 0 \\).",
+    "name": "Increasing Function"
+  },
+  {
+    "id": "m25_item2",
+    "text": "At a local maximum, the second derivative satisfies:",
+    "options": ["\\( f''(x) > 0 \\)", "\\( f''(x) = 0 \\)", "\\( f''(x) < 0 \\)", "\\( f'(x) > 0 \\)"],
+    "correctIndex": 2,
+    "explanation": "Second Derivative Test: local max iff \\( f'(x)=0 \\) and \\( f''(x)<0 \\).",
+    "name": "Second Derivative Test - Max"
+  },
+  {
+    "id": "m25_item3",
+    "text": "The equation of tangent to \\( y=f(x) \\) at \\( (x_1,y_1) \\) is:",
+    "options": ["\\( y-y_1 = -\\frac{1}{f'(x_1)}(x-x_1) \\)", "\\( y-y_1 = f'(x_1)(x-x_1) \\)", "\\( y = f'(x_1)x \\)", "\\( y+y_1 = f'(x_1)(x+x_1) \\)"],
+    "correctIndex": 1,
+    "explanation": "Tangent at \\((x_1,y_1)\\): \\( y-y_1 = f'(x_1)(x-x_1) \\). Slope \\(= f'(x_1)\\).",
+    "name": "Equation of Tangent"
+  },
+  {
+    "id": "m25_item4",
+    "text": "The equation of normal to \\( y=f(x) \\) at \\( (x_1,y_1) \\) is:",
+    "options": ["\\( y-y_1 = f'(x_1)(x-x_1) \\)", "\\( y-y_1 = -\\frac{1}{f'(x_1)}(x-x_1) \\)", "\\( y = -x/f'(x_1) \\)", "\\( f'(x_1)(y-y_1)+(x-x_1)=0 \\)"],
+    "correctIndex": 1,
+    "explanation": "Normal slope \\( = -\\frac{1}{f'(x_1)} \\). Normal: \\( y-y_1 = -\\frac{1}{f'(x_1)}(x-x_1) \\).",
+    "name": "Equation of Normal"
+  },
+  {
+    "id": "m25_item5",
+    "text": "Rolle's theorem requires \\(f\\) to be continuous on \\([a,b]\\), differentiable on \\((a,b)\\), and:",
+    "options": ["\\( f(a) > f(b) \\)", "\\( f'(a) = 0 \\)", "\\( f(a) = f(b) \\)", "\\( f(a) < f(b) \\)"],
+    "correctIndex": 2,
+    "explanation": "Rolle's Theorem: if additionally \\( f(a) = f(b) \\), then \\( \\exists\\, c\\in(a,b) \\) such that \\( f'(c)=0 \\).",
+    "name": "Rolle's Theorem Condition"
+  },
+  {
+    "id": "m25_item6",
+    "text": "The Mean Value Theorem guarantees \\( \\exists\\, c \\in (a,b) \\) such that:",
+    "options": ["\\( f'(c) = 0 \\)", "\\( f'(c) = \\frac{f(b)-f(a)}{b-a} \\)", "\\( f(c) = \\frac{f(a)+f(b)}{2} \\)", "\\( f''(c) = 0 \\)"],
+    "correctIndex": 1,
+    "explanation": "Lagrange's MVT: \\( f'(c) = \\frac{f(b)-f(a)}{b-a} \\) for some \\(c \\in (a,b)\\).",
+    "name": "Mean Value Theorem"
+  },
+  {
+    "id": "m25_item7",
+    "text": "The rate of change of area of circle w.r.t. radius when \\(r=3\\) cm is:",
+    "options": ["\\( 3\\pi \\)", "\\( 6\\pi \\)", "\\( 9\\pi \\)", "\\( \\pi \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( A = \\pi r^2 \\Rightarrow \\frac{dA}{dr} = 2\\pi r \\). At \\(r=3\\): \\( = 6\\pi \\) cm.",
+    "name": "Rate of Change"
+  },
+  {
+    "id": "m25_item8",
+    "text": "A point of inflection occurs where:",
+    "options": ["\\( f'(x) = 0 \\)", "\\( f(x) = 0 \\)", "\\( f''(x) = 0 \\) and changes sign", "\\( f'(x) \\) is maximum"],
+    "correctIndex": 2,
+    "explanation": "Inflection point: \\( f''(x) = 0 \\) AND \\( f''\\) changes sign there (concavity changes).",
+    "name": "Point of Inflection"
+  },
+  {
+    "id": "m25_item9",
+    "text": "The approximate value formula using differentials is:",
+    "options": ["\\( f(x+\\Delta x) \\approx f(x) + \\Delta x \\)", "\\( f(x+\\Delta x) \\approx f(x) + f'(x)\\Delta x \\)", "\\( f(x+\\Delta x) \\approx f(x) \\cdot f'(x) \\)", "\\( f(x+\\Delta x) \\approx f'(x)\\Delta x \\)"],
+    "correctIndex": 1,
+    "explanation": "Linear approximation: \\( f(x+\\Delta x) \\approx f(x) + f'(x)\\cdot\\Delta x \\)",
+    "name": "Linear Approximation"
+  },
+  {
+    "id": "m25_item10",
+    "text": "The function \\( f(x) = x^3 - 3x \\) has local minimum at:",
+    "options": ["\\( x = 0 \\)", "\\( x = -1 \\)", "\\( x = 1 \\)", "\\( x = 3 \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( f'(x) = 3x^2-3=0 \\Rightarrow x=\\pm1 \\). \\( f''(1)=6>0 \\Rightarrow \\) local min at \\(x=1\\).",
+    "name": "Local Minimum"
+  },
+  {
+    "id": "m25_item11",
+    "text": "If the side of a square increases at 2 cm/s, the rate of increase of area when side = 5 cm is:",
+    "options": ["\\( 10 \\text{ cm}^2/\\text{s} \\)", "\\( 20 \\text{ cm}^2/\\text{s} \\)", "\\( 4 \\text{ cm}^2/\\text{s} \\)", "\\( 25 \\text{ cm}^2/\\text{s} \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( A=x^2 \\Rightarrow \\frac{dA}{dt} = 2x\\frac{dx}{dt} = 2(5)(2) = 20 \\text{ cm}^2/\\text{s} \\)",
+    "name": "Related Rates"
+  },
+  {
+    "id": "m25_item12",
+    "text": "The maximum value of \\( f(x) = \\sin x + \\cos x \\) is:",
+    "options": ["\\( 1 \\)", "\\( 2 \\)", "\\( \\sqrt{2} \\)", "\\( \\sqrt{3} \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( f(x) = \\sqrt{2}\\sin(x+\\frac{\\pi}{4}) \\). Maximum \\( = \\sqrt{2} \\) when \\( x = \\frac{\\pi}{4} \\).",
+    "name": "Maximum of sin+cos"
+  },
+  {
+    "id": "m25_item13",
+    "text": "The angle made by the tangent to \\( y=x^2 \\) at \\( (1,1) \\) with x-axis is:",
+    "options": ["\\( 45° \\)", "\\( 30° \\)", "\\( 60° \\)", "\\( 63.43° \\)"],
+    "correctIndex": 3,
+    "explanation": "\\( f'(1) = 2 \\). \\( \\theta = \\tan^{-1}(2) \\approx 63.43° \\)",
+    "name": "Angle of Tangent"
+  },
+  {
+    "id": "m25_item14",
+    "text": "The curve \\( y = f(x) \\) is concave upward when:",
+    "options": ["\\( f''(x) < 0 \\)", "\\( f'(x) > 0 \\)", "\\( f''(x) > 0 \\)", "\\( f'(x) = 0 \\)"],
+    "correctIndex": 2,
+    "explanation": "Concave upward (cup shape) when \\( f''(x) > 0 \\). Concave downward when \\( f''(x) < 0 \\).",
+    "name": "Concavity"
+  },
+  {
+    "id": "m25_item15",
+    "text": "The critical points of \\( f(x) \\) are points where:",
+    "options": ["\\( f''(x) = 0 \\)", "\\( f'(x) = 0 \\) or \\( f'(x) \\) is undefined", "\\( f(x) = 0 \\)", "\\( f(x) \\) is maximum"],
+    "correctIndex": 1,
+    "explanation": "Critical points: where \\( f'(x) = 0 \\) or \\( f'(x) \\) does not exist. Extrema can only occur at critical points.",
+    "name": "Critical Points"
+  }
+]

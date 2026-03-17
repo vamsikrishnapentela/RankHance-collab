@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m17_item1",
+    "text": "The distance between points \\( (x_1,y_1) \\) and \\( (x_2,y_2) \\) is:",
+    "options": ["\\( (x_2-x_1) + (y_2-y_1) \\)", "\\( \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2} \\)", "\\( (x_2-x_1)^2 + (y_2-y_1)^2 \\)", "\\( |x_2-x_1| + |y_2-y_1| \\)"],
+    "correctIndex": 1,
+    "explanation": "Distance Formula: \\( d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2} \\)",
+    "name": "Distance Formula"
+  },
+  {
+    "id": "m17_item2",
+    "text": "The midpoint of segment joining \\( (x_1,y_1) \\) and \\( (x_2,y_2) \\) is:",
+    "options": ["\\( (x_1+x_2, y_1+y_2) \\)", "\\( \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right) \\)", "\\( \\left(\\frac{x_2-x_1}{2}, \\frac{y_2-y_1}{2}\\right) \\)", "\\( (2x_1, 2y_1) \\)"],
+    "correctIndex": 1,
+    "explanation": "Midpoint Formula: \\( M = \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right) \\)",
+    "name": "Midpoint Formula"
+  },
+  {
+    "id": "m17_item3",
+    "text": "The point dividing \\( P(x_1,y_1) \\) and \\( Q(x_2,y_2) \\) in ratio \\( m:n \\) internally is:",
+    "options": ["\\( \\left(\\frac{mx_2+nx_1}{m+n}, \\frac{my_2+ny_1}{m+n}\\right) \\)", "\\( \\left(\\frac{mx_1+nx_2}{m+n}, \\frac{my_1+ny_2}{m+n}\\right) \\)", "\\( \\left(\\frac{mx_2-nx_1}{m-n}, \\frac{my_2-ny_1}{m-n}\\right) \\)", "\\( \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right) \\)"],
+    "correctIndex": 0,
+    "explanation": "Section Formula (internal): \\( \\left(\\frac{mx_2+nx_1}{m+n}, \\frac{my_2+ny_1}{m+n}\\right) \\)",
+    "name": "Section Formula"
+  },
+  {
+    "id": "m17_item4",
+    "text": "The area of triangle with vertices \\( (x_1,y_1), (x_2,y_2), (x_3,y_3) \\) is:",
+    "options": ["\\( \\frac{1}{2}|x_1(y_2-y_3) + x_2(y_3-y_1) + x_3(y_1-y_2)| \\)", "\\( |x_1(y_2+y_3) + x_2(y_3+y_1) + x_3(y_1+y_2)| \\)", "\\( \\frac{1}{2}|(x_1+x_2+x_3)(y_1+y_2+y_3)| \\)", "\\( x_1y_2 - x_2y_1 \\)"],
+    "correctIndex": 0,
+    "explanation": "Area \\( = \\frac{1}{2}|x_1(y_2-y_3)+x_2(y_3-y_1)+x_3(y_1-y_2)| \\)",
+    "name": "Area of Triangle"
+  },
+  {
+    "id": "m17_item5",
+    "text": "The centroid of triangle with vertices \\( (x_1,y_1), (x_2,y_2), (x_3,y_3) \\) is:",
+    "options": ["\\( (x_1+x_2+x_3, y_1+y_2+y_3) \\)", "\\( \\left(\\frac{x_1+x_2+x_3}{3}, \\frac{y_1+y_2+y_3}{3}\\right) \\)", "\\( \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right) \\)", "\\( \\left(\\frac{x_1+x_2+x_3}{2}, \\frac{y_1+y_2+y_3}{2}\\right) \\)"],
+    "correctIndex": 1,
+    "explanation": "Centroid \\( G = \\left(\\frac{x_1+x_2+x_3}{3}, \\frac{y_1+y_2+y_3}{3}\\right) \\)",
+    "name": "Centroid"
+  },
+  {
+    "id": "m17_item6",
+    "text": "The slope of line joining \\( (2,3) \\) and \\( (5,9) \\) is:",
+    "options": ["\\( 1 \\)", "\\( 2 \\)", "\\( 3 \\)", "\\( \\frac{1}{2} \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( m = \\frac{9-3}{5-2} = \\frac{6}{3} = 2 \\)",
+    "name": "Slope of Line"
+  },
+  {
+    "id": "m17_item7",
+    "text": "Two lines with slopes \\( m_1 \\) and \\( m_2 \\) are perpendicular if:",
+    "options": ["\\( m_1 = m_2 \\)", "\\( m_1 + m_2 = 0 \\)", "\\( m_1 \\cdot m_2 = -1 \\)", "\\( m_1 \\cdot m_2 = 1 \\)"],
+    "correctIndex": 2,
+    "explanation": "Lines are perpendicular when \\( m_1 \\cdot m_2 = -1 \\).",
+    "name": "Perpendicular Lines"
+  },
+  {
+    "id": "m17_item8",
+    "text": "The distance from point \\( (x_1,y_1) \\) to line \\( ax+by+c=0 \\) is:",
+    "options": ["\\( \\frac{|ax_1+by_1+c|}{\\sqrt{a+b}} \\)", "\\( \\frac{|ax_1+by_1+c|}{\\sqrt{a^2+b^2}} \\)", "\\( \\frac{ax_1+by_1+c}{a^2+b^2} \\)", "\\( \\sqrt{(ax_1+by_1+c)^2} \\)"],
+    "correctIndex": 1,
+    "explanation": "Distance from point to line: \\( d = \\frac{|ax_1+by_1+c|}{\\sqrt{a^2+b^2}} \\)",
+    "name": "Point-Line Distance"
+  },
+  {
+    "id": "m17_item9",
+    "text": "If \\( A=(1,2), B=(4,6) \\), then \\( AB = \\)",
+    "options": ["\\( 5 \\)", "\\( \\sqrt{7} \\)", "\\( \\sqrt{25} \\)", "\\( 7 \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( AB = \\sqrt{(4-1)^2+(6-2)^2} = \\sqrt{9+16} = \\sqrt{25} = 5 \\)",
+    "name": "Distance Calculation"
+  },
+  {
+    "id": "m17_item10",
+    "text": "If three points \\( A, B, C \\) are collinear, then area of \\( \\triangle ABC = \\)",
+    "options": ["\\( 1 \\)", "\\( -1 \\)", "\\( 0 \\)", "Any positive value"],
+    "correctIndex": 2,
+    "explanation": "Collinear points don't form a triangle; the area formula gives 0.",
+    "name": "Collinear Points"
+  },
+  {
+    "id": "m17_item11",
+    "text": "The coordinates of a point in the third quadrant satisfy:",
+    "options": ["\\( x>0, y>0 \\)", "\\( x<0, y>0 \\)", "\\( x<0, y<0 \\)", "\\( x>0, y<0 \\)"],
+    "correctIndex": 2,
+    "explanation": "Third quadrant: both \\(x\\) and \\(y\\) are negative (\\(x<0, y<0\\)).",
+    "name": "Quadrant Sign Convention"
+  },
+  {
+    "id": "m17_item12",
+    "text": "The locus of points equidistant from \\( (2,0) \\) and \\( (-2,0) \\) is:",
+    "options": ["\\( y = 0 \\)", "\\( x = 0 \\)", "\\( x = 2 \\)", "\\( x^2+y^2=4 \\)"],
+    "correctIndex": 1,
+    "explanation": "Perpendicular bisector of segment from \\((-2,0)\\) to \\((2,0)\\) is the \\(y\\)-axis: \\(x=0\\).",
+    "name": "Locus Equidistant"
+  },
+  {
+    "id": "m17_item13",
+    "text": "The angle between lines with slopes \\( m_1 \\) and \\( m_2 \\) is \\( \\tan\\theta = \\)",
+    "options": ["\\( \\frac{m_1+m_2}{1-m_1m_2} \\)", "\\( m_1-m_2 \\)", "\\( \\left|\\frac{m_1-m_2}{1+m_1m_2}\\right| \\)", "\\( m_1 m_2 \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\tan\\theta = \\left|\\frac{m_1-m_2}{1+m_1m_2}\\right| \\)",
+    "name": "Angle Between Lines"
+  },
+  {
+    "id": "m17_item14",
+    "text": "The slope of the \\(x\\)-axis is:",
+    "options": ["\\( 1 \\)", "\\( \\infty \\)", "\\( -1 \\)", "\\( 0 \\)"],
+    "correctIndex": 3,
+    "explanation": "The \\(x\\)-axis is horizontal: slope \\( = 0 \\). The \\(y\\)-axis is vertical: slope undefined (\\(\\infty\\)).",
+    "name": "Slope of Axes"
+  },
+  {
+    "id": "m17_item15",
+    "text": "The incenter of triangle with vertices \\( A, B, C \\) and opposite sides \\( a, b, c \\) is:",
+    "options": ["\\( \\left(\\frac{ax_A+bx_B+cx_C}{a+b+c}, \\frac{ay_A+by_B+cy_C}{a+b+c}\\right) \\)", "\\( \\left(\\frac{x_A+x_B+x_C}{3}, \\frac{y_A+y_B+y_C}{3}\\right) \\)", "Midpoint of hypotenuse", "Point where altitudes meet"],
+    "correctIndex": 0,
+    "explanation": "Incenter \\( = \\left(\\frac{ax_A+bx_B+cx_C}{a+b+c}, \\frac{ay_A+by_B+cy_C}{a+b+c}\\right) \\) (weighted by opposite side lengths).",
+    "name": "Incenter Formula"
+  }
+]

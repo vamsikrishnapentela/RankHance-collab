@@ -1,0 +1,652 @@
+[
+  {
+    "id": "m25_item1",
+    "text": "The values of x at the stationary points of f(x) = x³ + 3x² - 2 are",
+    "options": [
+      "0, 2",
+      "1, 2",
+      "0, -2",
+      "1, 1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let y = f(x) = x³ + 3x² - 2<br>\\(\\frac{dy}{dx} = 3x^2 + 6x\\)<br>\\(\\frac{d^2y}{dx^2} = 6x + 6\\)<br>For stationary points \\(\\frac{dy}{dx} = 0\\)<br>\\(\\Rightarrow 3x(x + 2) = 0 \\Rightarrow x = 0, -2\\).",
+    "name": "Question Item 1"
+  },
+  {
+    "id": "m25_item2",
+    "text": "The function f(x) = (1/2)^x on R is",
+    "options": [
+      "Strictly decreasing",
+      "Strictly increasing",
+      "Decreasing",
+      "Neither increasing nor decreasing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let y = (1/2)^x on R<br>\\(\\frac{dy}{dx} = \\left(\\frac{1}{2}\\right)^x \\log \\frac{1}{2} = -\\left(\\frac{1}{2}\\right)^x \\log 2\\)<br>(\\(\\frac{dy}{dx} < 0\\)) so strictly decreasing.",
+    "name": "Question Item 2"
+  },
+  {
+    "id": "m25_item3",
+    "text": "The slope of the tangent of the curve \\(\\left(\\frac{x}{31}\\right)^n + \\left(\\frac{y}{1209}\\right)^n = 2\\) at (31, 1209) ............",
+    "options": [
+      "-39",
+      "39",
+      "\\(\\frac{1}{39}\\)",
+      "-1/39"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\left(\\frac{x}{31}\\right)^n + \\left(\\frac{y}{1209}\\right)^n = 2\\)<br>On differentiating<br>\\(\\Rightarrow \\frac{nx^{n-1}}{31^n} + \\frac{ny^{n-1}}{1209^n} \\frac{dy}{dx} = 0\\)<br>\\(\\Rightarrow \\frac{dy}{dx} = -\\left(\\frac{x}{y}\right)^{n-1} \\times (39)^n\\)<br>Slope of tangent at (31, 1209)<br>\\(= -\\left(\\frac{1}{39}\right)^{n-1} \\times (39)^n = -39\\).",
+    "name": "Question Item 3"
+  },
+  {
+    "id": "m25_item4",
+    "text": "If y = 5x² + 6x + 6, x = 2, Δx = 0.001, then value of dy is",
+    "options": [
+      "0.026",
+      "0.0026",
+      "0.062",
+      "0.0062"
+    ],
+    "correctIndex": 0,
+    "explanation": "y = 5x² + 6x + 6, x = 2<br>Δx = 0.001<br>dy = (10x + 6)dx<br>dy = (10 × 2 + 6) × 0.001<br>dy = 0.026.",
+    "name": "Question Item 4"
+  },
+  {
+    "id": "m25_item5",
+    "text": "A man 2 m tall, walks at the rate of 1/3 m/s towards a street light which is 5/3 m above the ground. The rate at which the length of his shadow is changing when he is 3/3 m away from the base of the light is ......",
+    "options": [
+      "-1 m/s⁻¹",
+      "2 m/s",
+      "-2 m/s",
+      "1 m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "From ΔABE and ΔDCE,<br>\\(\\frac{AB}{CD} = \\frac{AE}{CE} = \\frac{AC + CE}{CE}\\)<br>\\(\\Rightarrow \\frac{AB}{CD} = \\frac{AC}{CE} + 1 \\Rightarrow \\frac{AC}{CE} = \\frac{AB}{CD} - 1\\)<br>\\(\\Rightarrow \\frac{AC}{CE} = \\frac{5}{3} - 1 = \\frac{2}{3} \\Rightarrow CE = \\frac{3}{5}AC\\)<br>Differentiating with respect to time we get,<br>\\(\\frac{d}{dt}CE = \\frac{3}{5}\\left(\\frac{d}{dt}AC\\right)\\)<br>\\(\\frac{d}{dt}AC = -1\\frac{2}{3} \\text{ ms}^{-1} \\Rightarrow \\frac{d}{dt}AC = -\\frac{5}{3} \\text{ ms}^{-1}\\)<br>Rate of change of shadow length<br>\\(= \\frac{3}{5}\\left(-\\frac{5}{3}\\right) = -1 \\text{ ms}^{-1}\\).",
+    "name": "Question Item 5"
+  },
+  {
+    "id": "m25_item6",
+    "text": "The equation of tangent to the curve y = 5x² - 3x + 7 at the point (-1, 4) is .......",
+    "options": [
+      "13x - y - 9 = 0",
+      "13x + y - 9 = 0",
+      "13x + y + 9 = 0",
+      "13x + 2y + 5 = 0"
+    ],
+    "correctIndex": 2,
+    "explanation": "Curve is, y = 5x² - 3x + 7<br>Slope of tangent to curve at (-1, 4) is,<br>\\(m_T = \\left.\\frac{dy}{dx}\\right|_{(-1, 4)} = (10x - 3)\\big|_{x = -1} = -13\\)<br>Equation of tangent is,<br>\\(y - 4 = -13(x + 1)\\)<br>\\(\\Rightarrow 13x + y + 9 = 0\\).",
+    "name": "Question Item 6"
+  },
+  {
+    "id": "m25_item7",
+    "text": "A kind of bacteria grows by t³ in t s. Time taken for the rate of growth of the bacteria to become 1200 per s is ......",
+    "options": [
+      "10 s",
+      "20 s",
+      "40 s",
+      "400 s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Given,<br>\\(\\frac{dN}{dt} = t^3,\\)<br>When, rate of growth is 1200 we have,<br>\\(\\frac{d}{dt}\\left(\\frac{dN}{dt}\\right) = 1200 \\Rightarrow \\frac{d}{dt}t^3 = 1200\\)<br>\\(\\Rightarrow 3t^2 = 1200 \\Rightarrow t^2 = 400\\)<br>\\(\\Rightarrow t = 20 \\text{ sec}\\).",
+    "name": "Question Item 7"
+  },
+  {
+    "id": "m25_item8",
+    "text": "The sides of an equilateral triangle are increasing at the rate of 2 cm s⁻¹. How fast does its area increase when its side is 10 cm?",
+    "options": [
+      "$10\\sqrt{3}$ cm², s⁻¹",
+      "$5\\sqrt{3}$ cm², s⁻¹",
+      "$\\sqrt{3}$ cm², s⁻¹",
+      "$2\\sqrt{3}$ cm², s⁻¹"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of equilateral triangle \\(A = \\frac{\\sqrt{3}}{4} a^2\\).<br>\\(\\frac{dA}{dt} = \\frac{\\sqrt{3}}{2} a \\frac{da}{dt}\\).<br>When a=10 cm and da/dt=2 cm/s,<br>\\(\\frac{dA}{dt} = \\frac{\\sqrt{3}}{2} \\times 10 \\times 2 = 10\\sqrt{3}\\) cm²/s.",
+    "name": "Question Item 8"
+  },
+  {
+    "id": "m25_item9",
+    "text": "The curve 3y² = 2ax² + 6b passes through the point P(3, -1) and the gradient of the curve at P is “-1”, then the values of a and b are",
+    "options": [
+      "$a = \\frac{1}{2}, b = -1$",
+      "$a = -\\frac{1}{2}, b = 1$",
+      "$a = \\frac{1}{2}, b = 1$",
+      "$a = -\\frac{1}{2}, b = -1$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Equation of given curve is<br>\\(3y^2 = 2ax^2 + 6b \\quad \\ldots(i)\\)<br>∵ Curve (i) passes through point P(3, -1), so<br>\\(3 = 18a + 6b\\)<br>\\(\\Rightarrow 6a + 2b = 1 \\quad \\ldots(ii)\\)<br>On differentiating the Eq. (i), we get<br>\\(6y\\frac{dy}{dx} = 4ax\\)<br>\\(\\Rightarrow \\quad 6 \\times (-1) \\times (-1) = 4a(3) \\Rightarrow a = 1/2\\)<br>\\(\\therefore b = -1\\).",
+    "name": "Question Item 9"
+  },
+  {
+    "id": "m25_item10",
+    "text": "The value of 'k' for which the function f(x) = k(x + sin x) + k is increasing, is equal to",
+    "options": [
+      "k < 0",
+      "k > 0",
+      "k = 0",
+      "Data Insufficient"
+    ],
+    "correctIndex": 1,
+    "explanation": "Given function f(x) = k(x + sin x) + k<br>So, f'(x) = k(1 + cos x)<br>∵ f(x) is an increasing function, so<br>f'(x) ≥ 0<br>\\(\\Rightarrow \\quad k(1 + \\cos x) \\geq 0\\)<br>\\(\\Rightarrow \\quad k > 0 \\quad \\{\\because 1 + \\cos x \\geq 0\\}\\).",
+    "name": "Question Item 10"
+  },
+  {
+    "id": "m25_item11",
+    "text": "Find the equation of the normal to the curve y = (x - 7)/((x - 2)(x - 3)) at the point where it cuts the X-axis.",
+    "options": [
+      "20x + y + 140 = 0",
+      "x - 20y - 140 = 0",
+      "x + 20y + 140 = 0",
+      "20x + y - 140 = 0"
+    ],
+    "correctIndex": 3,
+    "explanation": "Given curve, y = (x - 7)/((x - 2)(x - 3)), cuts the X-axis at point P(7,0).<br>Now, dy/dx = [(x - 2)(x - 3) - (x - 7)[(x - 2) + (x - 3)]] / [(x - 2)²(x - 3)²]<br>∴ dy/dx|_{x=7} = 1/20<br>So, the slope of normal to given curve at point P is -20.<br>Therefore equation of required normal is<br>y - 0 = -20(x - 7) ⇒ 20x + y - 140 = 0.",
+    "name": "Question Item 11"
+  },
+  {
+    "id": "m25_item12",
+    "text": "The curves y = 4x² + 2x - 8 and y = x³ - x + 13 touch each other at the point",
+    "options": [
+      "(34, 3)",
+      "(3, 34)",
+      "(-3, 34)",
+      "(-34, 3)"
+    ],
+    "correctIndex": 1,
+    "explanation": "y = 4x² + 2x - 8<br>differentiate w.r.t. 'x' on both sides,<br>dy/dx = 8x + 2<br>y = x³ - x + 13<br>differentiate w.r.t. 'x' on both sides,<br>dy/dx = 3x² - 1<br>Since, curves are touch each other<br>⇒ 8x + 2 = 3x² - 1<br>⇒ 3x² - 8x - 3 = 0<br>⇒ (x - 3)(3x + 1) = 0<br>⇒ x = 3 (or) -1/3<br>Put, x = 3 in y = x³ - x + 13<br>y = 37<br>∴ Point of contact P = (3, 37).",
+    "name": "Question Item 12"
+  },
+  {
+    "id": "m25_item13",
+    "text": "If the subnormal at any point on the curve yⁿ = ax is constant then the value of n is",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Equation of given curve yⁿ = ax, so<br>ny^{n-1} dy/dx = a ⇒ dy/dx = (a/n) y^{1-n}<br>∴ The length of subnormal = |y dy/dx| = |y (a/n) y^{1-n}|<br>= |(a/n) y^{2-n}|<br>It is given that length of subnormal is constant, means it must be independent of x and y terms, so n = 2.",
+    "name": "Question Item 13"
+  },
+  {
+    "id": "m25_item14",
+    "text": "If the radius of a sphere is mentioned as 7 m with an error of 0.02 m, then the approximate error in calculating its volume is",
+    "options": [
+      "1.83π m³",
+      "2.25π m³",
+      "4.39π m³",
+      "3.92π m³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Radius (r) = 7m<br>Error in radius (dr) = 0.02m<br>Volume of sphere (v) = (4/3)π r³<br>differentiate w.r.t. 'r' on both sides,<br>dv/dr = 4π r²<br>dv = 4π r² dr = 4π(49) · (0.02) = 3.92π m³.",
+    "name": "Question Item 14"
+  },
+  {
+    "id": "m25_item15",
+    "text": "The tangent at the point (1, 2) to the curve y² = 4x makes an angle θ with the positive direction of X-axis. Then θ =",
+    "options": [
+      "60°",
+      "30°",
+      "90°",
+      "45°"
+    ],
+    "correctIndex": 3,
+    "explanation": "y² = 4x; P = (1, 2)<br>differentiate w.r. to 'x'<br>2y · y' = 4 · 1 ⇒ y' = 4/(2y)<br>y' = 2/y<br>Slope of tangent = y'|_{P(1,2)} = 2/|y|_{P(1,2)}<br>tan θ = 1 ⇒ θ = 45°.",
+    "name": "Question Item 15"
+  },
+  {
+    "id": "m25_item16",
+    "text": "The interval in which y = ln(ln(x)), x > 1 is decreasing is",
+    "options": [
+      "(-∞, 0) ∪ (2, ∞)",
+      "(0, 2)",
+      "(0, 1)",
+      "(-1, 0)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Given function y = ln(ln(x)), x > 1<br>dy/dx = 1/(x ln x), x > 1<br>∵ y is a decreasing, then<br>dy/dx < 0 ⇒ 1/(x ln x) < 0<br>∴ x > 1 ⇒ ln x < 0 ⇒ x < 1, which is not possible as x > 1<br>∴ x ∈ ∅ for decreasing.",
+    "name": "Question Item 16"
+  },
+  {
+    "id": "m25_item17",
+    "text": "Maximum area of the rectangle that can be formed with the fixed perimeter 'p' cm ............",
+    "options": [
+      "p²/8 cm²",
+      "p²/16 cm²",
+      "p²/64 cm²",
+      "p²/32 cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let length of adjacent sides of rectangle is x cm and y cm so perimeter of rectangle is p = 2(x + y) cm and the area A = xy cm²<br>⇒ A = x (p/2 - x)<br>for maxima dA/dx = 0 ⇒ p/2 - 2x = 0 ⇒ x = p/4 cm and y = p/4 cm<br>∴ For given perimeter of rectangle p, the maximum possible area A = (p/4) × (p/4) = p²/16 cm².",
+    "name": "Question Item 17"
+  },
+  {
+    "id": "m25_item18",
+    "text": "Find the value of 'p' and 'q' if the function f(t) = t³ - 6t² + pt + q defined on [1, 3] satisfies the Rolle's theorem for c = (2√3 + 1)/√3",
+    "options": [
+      "p ∈ ℝ, q = 11",
+      "p = 11, q ∈ ℝ",
+      "p ∈ ℝ, q ∈ ℝ",
+      "p = 11, q = 11"
+    ],
+    "correctIndex": 1,
+    "explanation": "It is given that, function f(t) = t³ - 6t² + pt + q defined on [1, 3] satisfied the Rolle's theorem, so<br>f(1) = f(3)<br>⇒ 1 - 6 + p + q = 27 - 54 + 3p + q<br>⇒ 2p = 22 ⇒ p = 11 and q ∈ ℝ.",
+    "name": "Question Item 18"
+  },
+  {
+    "id": "m25_item19",
+    "text": "The equation of the normal to the curve y = sin x at the point (0, 0) is",
+    "options": [
+      "x = 0",
+      "y = 0",
+      "x + y = 0",
+      "x - y = 0"
+    ],
+    "correctIndex": 2,
+    "explanation": "Given curve y = sin x<br>∴ Slope of normal to the curve at point (0, 0)<br>= - (dx/dy)|_{(0,0)} = - (1/cos x)|_{(0,0)} = -1<br>∴ Equation of normal to the curve at point (0, 0) is<br>y - 0 = -1(x - 0) ⇒ x + y = 0.",
+    "name": "Question Item 19"
+  },
+  {
+    "id": "m25_item20",
+    "text": "Displacement 's' of a particle, in meters, at any time 't' s is expressed as s = t³/3 - 6t. Find the acceleration at a time when the velocity vanishes",
+    "options": [
+      "6 m s⁻²",
+      "2√6 m s⁻²",
+      "12 m s⁻²",
+      "6√6 m s⁻²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Given, displacement of a particle at time t as<br>s = t³/3 - 6t<br>∴ Velocity = ds/dt = t² - 6 = v<br>(let)<br>and as velocity vanishes, so v = 0 ⇒ t = √6 sec<br>Now, the acceleration a = dv/dt = 2t<br>∴ Acceleration a at t = √6 sec is 2√6 m/sec².",
+    "name": "Question Item 20"
+  },
+  {
+    "id": "m25_item21",
+    "text": "The radius of a circle is increasing at a rate of 0.1 cm s⁻¹. Then the rate of change of area, when its radius is 5 cm, is",
+    "options": [
+      "π² cm² s⁻¹",
+      "π cm² s⁻¹",
+      "2π cm² s⁻¹",
+      "π/2 cm² s⁻¹"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the circle have radius r cm and area A cm² and it is given that dr/dt = 0.1 cm s⁻¹ and as we know area A = π r² ⇒ dA/dt = 2π r dr/dt<br>∴ Rate of change of area, when radius is 5 cm is<br>(dA/dt)|_{r = 5 cm} = 2π(5)(0.1) = π cm² · s⁻¹.",
+    "name": "Question Item 21"
+  },
+  {
+    "id": "m25_item22",
+    "text": "What is an approximate value of √199 corrected to 4 decimal places?",
+    "options": [
+      "14.1608",
+      "14.0168",
+      "14.1086",
+      "14.1068"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let a function f(x) = √x<br>and x = 196 and Δx = 3<br>∴ Δy = (dy/dx)|_{x = 196} × Δx<br>= (1/(2√x))|_{x = 196} × 3 = 3/28 = 0.1071<br>∴ √199 = 14 + 0.1071 = 14.1071.",
+    "name": "Question Item 22"
+  },
+  {
+    "id": "m25_item23",
+    "text": "A point on the curve x = 3 cos θ, y = 2 sin θ at which the tangent is perpendicular to X-axis is",
+    "options": [
+      "(3, 0)",
+      "(0, 3)",
+      "(0, -3)",
+      "(-3, 3)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Given curve is x = 3 cos θ, y = 2 sin θ is represent ellipse, x²/9 + y²/4 = 1 and the tangent perpendicular to X-axis can be drawn at end points of the major axis means either at (3, 0) or (-3, 0).",
+    "name": "Question Item 23"
+  },
+  {
+    "id": "m25_item24",
+    "text": "If displacement s = 5 sin(2t), then the velocity at the end of π/3 s is",
+    "options": [
+      "5",
+      "-5√3",
+      "5√3",
+      "-5"
+    ],
+    "correctIndex": 3,
+    "explanation": "s = 5 sin(2t)<br>differentiate w.r.t. t<br>ds/dt = 5 · d/dt sin(2t)<br>ds/dt = 5 cos(2t) · 2 = 10 cos 2t<br>Velocity when t = π/3 sec = (ds/dt)|_{t = π/3} = 10 cos 2(π/3)<br>= 10 × -1/2 = -5.",
+    "name": "Question Item 24"
+  },
+  {
+    "id": "m25_item25",
+    "text": "What is the value of ∛26 corrected up to three decimal places?",
+    "options": [
+      "2.998",
+      "2.844",
+      "2.962",
+      "2.823"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let y = f(x) = x^{1/3}<br>and x = 27 and Δx = -1<br>∴ Δy = (dy/dx)|_{x = 27} × Δx<br>= (1/(3x^{2/3}))|_{x = 27} × (-1) = -1/(3×9) = -1/27 ≈ -0.037<br>∴ ∛26 = y + Δy = 3 + (-0.037) = 2.962.",
+    "name": "Question Item 25"
+  },
+  {
+    "id": "m25_item26",
+    "text": "Find the equation of normal to the curve y = x³ - 3x, which is parallel to the line 2x + 18y = 9?",
+    "options": [
+      "x + 9y = 20 only",
+      "x + 9y = 40 only",
+      "x + 9y = ±20",
+      "x + 9y = ±40"
+    ],
+    "correctIndex": 2,
+    "explanation": "Given, line is 2x + 18y = 9<br>slope (m) = -a/b<br>m = -2/18 = -1/9<br>Given equation of curve is<br>y = x³ - 3x ...(i)<br>Differentiate w.r.t. 'x', we get<br>dy/dx = 3x² - 3<br>∴ Slope of normal = -1/(dy/dx) = -1/(3x² - 3)<br>Since, normal is parallel to given line<br>∴ Slope of line = slope of normal<br>-1/9 = -1/(3(x² - 1))<br>⇒ x² - 1 = 3 ⇒ x = ±2<br>Case (i) if x = 2<br>from Eq. (i)<br>y = (2)³ - 3(2)<br>y = 2<br>∴ Equation of normal is y - 2 = -1/9(x - 2)<br>x + 9y = 20<br>Case (ii) if x = -2<br>y = (-2)³ - 3(-2) = -2<br>∴ Q = (-2, -2)<br>Equation of Normal is y - y₁ = m(x - x₁)<br>y + 2 = -1/9(x + 2)<br>x + 9y = -20<br>Required Equation of normal is x + 9y = ±20.",
+    "name": "Question Item 26"
+  },
+  {
+    "id": "m25_item27",
+    "text": "If the increase in the side of square is 6%, then the approximate percentage increase in its area ......",
+    "options": [
+      "36%",
+      "12%",
+      "3%",
+      "4%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let side of square = x<br>Given, percentage change in side = 6%<br>dx/x × 100 = 6% ...(i)<br>We have, A = x²<br>Differentiate w.r.to 'x'<br>dA/dx = 2x ⇒ dA = 2x dx<br>Dividing by x² on both sides<br>dA/x² = 2 · (x dx)/x²<br>dA/A = 2 dx/x [∴ A = x²]<br>Now, multiply by 100<br>dA/A × 100 = 2 × (dx/x × 100)<br>Percentage change in Area = 2 × 6% [from Eq. (i)]<br>= 12%.",
+    "name": "Question Item 27"
+  },
+  {
+    "id": "m25_item28",
+    "text": "Tangent at any point θ on the curve x = 35 sec θ, y = 35 tan θ is",
+    "options": [
+      "y sin θ = x + 35 cos θ",
+      "y sin θ = x - 35 cos θ",
+      "y cos θ = x - 35 sin θ",
+      "y cos θ = x + 35 sin θ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Given, x = 35 sec θ ...(i)<br>y = 35 tan θ ...(ii)<br>∴ Point P = (35 sec θ, 35 tan θ)<br>Differentiate Eq. (i) w.r.t to θ'<br>dx/dθ = 35 (sec θ · tan θ) ...(iii)<br>Differentiate Eq. (ii) w.r.t to θ'<br>dy/dθ = 35 (sec² θ) ...(iv)<br>⇒ Eq. (iv)/Eq. (iii) ⇒ dy/dx = [35 (sec² θ)] / [35 (sec θ · tan θ)]<br>dy/dx = sec θ / tan θ = 1/sin θ<br>∴ m = 1/sin θ<br>Equation of tangent is<br>y - 35 tan θ = m (x - 35 sec θ)<br>y - 35 sin θ / cos θ = 1/sin θ (x - 35 / cos θ)<br>y sin θ - 35 sin² θ / cos θ = x - 35 / cos θ<br>y sin θ = x + 35 (sin² θ - 1)/cos θ<br>y sin θ = x + 35 (-cos² θ)/cos θ<br>y sin θ = x - 35 cos θ.",
+    "name": "Question Item 28"
+  },
+  {
+    "id": "m25_item29",
+    "text": "If y = (ax - b)/((x - 1)(x - 4)) has a turning point P(2, -1), then the values of a and b are",
+    "options": [
+      "a = 0, b = 1",
+      "a = 1, b = 0",
+      "a = -1, b = 0",
+      "a = 0, b = -1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Given, curve is y = (ax - b)/((x - 1)(x - 4)); P = (2, -1)<br>Since, P(2, -1) lies on the above curve.<br>-1 = [a(2) - b]/[(2 - 1)(2 - 4)]<br>-1 = (2a - b)/(-2)<br>⇒ 2a - b = 2 ...(i)<br>y = (ax - b)/(x² - 5x + 4)<br>differentiate w.r.t. x' on both sides,<br>y' = [a(1)(x² - 5x + 4) - (ax - b)(2x - 5)] / (x² - 5x + 4)²<br>Since, P(2, -1) is a turning point then y'|_{P(2,-1)} = 0<br>a[2² - 5(2) + 4] - (2a - b)(2(2) - 5) = 0<br>-2a - (2a - b)(-1) = 0<br>b = 0<br>Substitute b = 0 in Eq. (i)<br>2a - 0 = 2<br>a = 1.",
+    "name": "Question Item 29"
+  },
+  {
+    "id": "m25_item30",
+    "text": "If the curved surface area of right circular cylinder inscribed in a sphere of radius 22 cm is maximum then height of the cylinder will be",
+    "options": [
+      "11/√2 cm",
+      "11√2 cm",
+      "(0.22)√2 m",
+      "(0.11)√2 m"
+    ],
+    "correctIndex": 2,
+    "explanation": "We have,<br>The C.S.A of a right circular cylinder inscribed in a sphere of radius R is maximum when height is √2 R<br>Height = √2 R = √2(22 cm)<br>= √2 (22/100 m) = 0.22√2 m.",
+    "name": "Question Item 30"
+  },
+  {
+    "id": "m25_item31",
+    "text": "The radius of a sphere increases at the rate of 0.04 cm/sec. The rate of increase in the volume of that sphere with respect to its surface area, when its radius is 10 cm is",
+    "options": [
+      "16π",
+      "25",
+      "20",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let r be the radius of the sphere.<br>Given, rate of change in radius dr/dt = 0.04 cm/sec<br>Volume of sphere (V) = (4/3)π r³<br>Differentiating w.r.t. t, we get<br>dV/dt = 4π r² dr/dt ...(i)<br>Surface area of sphere (S) = 4π r²<br>ds/dt = 8π r dr/dt ...(ii)<br>Eq. (i) divided by Eq. (ii), we get<br>dV/ds = r/2 = 10/2 [∵ r = 10 cm]<br>dV/ds = 5 cm.",
+    "name": "Question Item 31"
+  },
+  {
+    "id": "m25_item32",
+    "text": "If f(x) = (2k+1)x - 3 - k e^{-x} + 2 e^x is monotonically increasing for all x ∈ ℝ, then the least value of k is",
+    "options": [
+      "1",
+      "0",
+      "-1/2",
+      "-1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Given,<br>f(x) = (2k+1)x - 3 - k e^{-x} + 2 e^x<br>Since, f(x) is monotonically increasing for all x ∈ ℝ.<br>So,<br>f'(x) ≥ 0<br>(2k+1) + k e^{-x} + 2 e^x ≥ 0<br>⇒ e^{-x}((2k+1)e^x + k + 2e^{2x}) ≥ 0<br>or<br>(2k+1)e^x + k + 2e^{2x} ≥ 0<br>⇒ 2e^x(e^x + k) + 1(e^x + k) ≥ 0<br>⇒ (2e^x + 1)(e^x + k) ≥ 0<br>⇒ e^x + k ≥ 0 or k ≥ 0<br>Hence, least value of k is zero.",
+    "name": "Question Item 32"
+  },
+  {
+    "id": "m25_item33",
+    "text": "If f(x) = ax³ + bx² + 11x - 6 satisfies the conditions of Rolle's theorem in [1, 3] and f'(2 + 1/√3) = 0, then",
+    "options": [
+      "-5",
+      "-3",
+      "4",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "Given, f(x) = ax³ + bx² + 11x - 6 satisfies the Rolle's theorem in [1, 3]. So,<br>f(1) = f(3)<br>⇒ a + b + 5 = 0 ...(i)<br>and<br>27a + 9b + 27 = 0<br>⇒ 9a + 3b + 9 = 0<br>⇒ 3a + b + 3 = 0 ...(ii)<br>From Eq. (i), we get a + b = -5.",
+    "name": "Question Item 33"
+  },
+  {
+    "id": "m25_item34",
+    "text": "If 2y = 3x - 1 is a tangent drawn to the curve y² = a x³ + b at (1, 1) where a, b are constants, then (a, b) =",
+    "options": [
+      "(1, 0)",
+      "(0, 1)",
+      "(-1, -1)",
+      "(-1, 1)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Given that 2y = 3x - 1 is tangent to y² = a x³ + b at point (1, 1) with slope 3/2.<br>Differentiate y² = a x³ + b w.r.t. x, we get<br>2y dy/dx = 3a x² ⇒ dy/dx = 3a x²/(2y)<br>⇒ (dy/dx)|_{(1,1)} = 3a(1)²/(2(1)) = 3a/2<br>Since, slope (dy/dx) = 3/2<br>∴ 3a/2 = 3/2 ⇒ a = 1<br>∴ Point (1, 1) lies on y² = a x³ + b<br>∴ (1)² = (1)(1)³ + b<br>⇒ 1 = 1 + b ⇒ b = 0.",
+    "name": "Question Item 34"
+  },
+  {
+    "id": "m25_item35",
+    "text": "A ladder of 5 meters long rests against a vertical wall with the lower end on the horizontal ground. The lower end of the ladder is pulled along the ground away from the wall at the rate 3 m/sec. The height of the upper end (in meters) while it is descending at the rate of 4 m/sec, is",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "In ΔOAP,<br>x² + y² = 5² ...(i)<br>and dx/dt = 3 m/sec, dy/dt = -4 m/s (since y is decreasing)<br>Differentiating Eq. (i) w.r.t. x, we get<br>2x dx/dt + 2y dy/dt = 0<br>⇒ x dx/dt + y dy/dt = 0<br>⇒ 3x - 4y = 0 [by Eq. (ii)]<br>⇒ 3x/4 = y<br>⇒ 3√(25 - y²) = 4y<br>By squaring both sides, we get<br>9(25 - y²) = 16y²<br>⇒ 225 - 9y² = 16y²<br>⇒ 25y² = 225 ⇒ y² = 9<br>⇒ y = 3 (∵ y ≥ 0).",
+    "name": "Question Item 35"
+  },
+  {
+    "id": "m25_item36",
+    "text": "Suppose f''(x) exists for all real x. If f(2) = 2, f(3) = 5 and f(4) = 10, then which one among the following statements is definitely true?",
+    "options": [
+      "f''(x) < 1 for some x ∈ (2, 4)",
+      "f''(x) > 1 for some x ∈ (2, 4)",
+      "f''(x) = 1 for some x ∈ (2, 4)",
+      "f''(x) = 0 for some x ∈ (2, 4)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let f(x) = a x² + b x + c<br>∴ f(2) ⇒ 4a + 2b + c = 2 ...(i)<br>f(3) ⇒ 9a + 3b + c = 5 ...(ii)<br>and f(4) ⇒ 16a + 4b + c = 10 ...(iii)<br>Subtracting Eq. (i) from Eq. (ii), we get<br>5a + b = 3 ...(iv)<br>Subtracting Eq. (ii) from Eq. (iii), we get<br>7a + b = 5 ...(v)<br>Subtracting Eq. (iv) from Eq. (v), we get<br>2a = 2 ⇒ a = 1<br>Put a = 1 in Eq. (iv), we get<br>5 × 1 + b = 3<br>⇒ b = 3 - 5 = -2<br>Put the value of a and b in Eq. (i),<br>4 - 4 + c = 2<br>⇒ c = 2<br>∴ f(x) = x² - 2x + 2<br>Now, f'(x) = 2x - 2<br>Again, f''(x) = 2<br>Since, f''(x) > 1 for some x ∈ (2, 4).",
+    "name": "Question Item 36"
+  },
+  {
+    "id": "m25_item37",
+    "text": "If p and q are respectively the global maximum and global minimum of the function f(x) = x² e^{2x} on the interval [-2, 2], then p e^{-4} + q e^4 =",
+    "options": [
+      "0",
+      "4 e^8",
+      "4",
+      "4 e^8 + 1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Given, f(x) = x² e^{2x}<br>Differentiating w.r.t. x, we get<br>f'(x) = 2 e^{2x} x² + 2 x e^{2x} = 2 e^{2x} (x² + x)<br>⇒ f'(x) = 0 ⇒ 2 e^{2x} (x² + x) = 0<br>⇒ e^{2x} = 0 or x² + x = 0 ⇒ x = 0, -1<br>So, maxima and minima can be attained at either of -2, -1, 0, 2 as the function bound.<br>∴ f(-2) = (-2)² e^{-4} = 4 e^{-4}<br>f(-1) = (-1)² e^{-2}<br>f(0) = 0<br>f(2) = (2)² e^4 = 4 e^4<br>∴ p = 4 e^4 and q = 0<br>Therefore, p e^{-4} + q e^4 = 4 e^4 (e^{-4}) + 0 = 4 e^0<br>= 4 × 1 = 4.",
+    "name": "Question Item 37"
+  },
+  {
+    "id": "m25_item38",
+    "text": "Tangents are drawn to the curve y = sin x from the origin. The locus of the points of contact is",
+    "options": [
+      "xy = x + y",
+      "x² y² = x² - y²",
+      "xy = x - y",
+      "x² y² = x² + y²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Given, y = sin x<br>Differentiating w.r.t x, we get<br>dy/dx = cos x<br>If tangent to y = sin x meet at (h, k)<br>(dy/dx)|_{(h,k)} = cos h<br>∴ Equation of tangent is cos h (x - h) = y - k<br>Since, tangent is passing through (origin).<br>∴ h cos h = k<br>But given curve is passing through (h, k)<br>k = sin h ⇒ cos h = √(1 - k²)<br>⇒ cos² h = 1 - k² = k²/h² ⇒ 1 - k²/h² = k²<br>⇒ h² - k² = h² k²<br>Hence, locus of point of contact is x² - y² = x² y².",
+    "name": "Question Item 38"
+  },
+  {
+    "id": "m25_item39",
+    "text": "A man of height 2 m walks at a uniform speed of 7 m/min away from a lamp post of height 9 m. The rate (m/min) at which the length of his shadow increases is",
+    "options": [
+      "2",
+      "5/2",
+      "3",
+      "7/2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let AB be the lamp-post and PQ the man, CP be his shadow at time t.<br>Let AP = x, PC = y, Also AB = 9 m, PQ = 2 m<br>Now, ΔCAB and ΔCPQ are equiangular and hence similar.<br>∴ PC/AC = PQ/AB<br>⇒ y/(x + y) = 2/9<br>⇒ 9y = 2x + 2y<br>⇒ 7y = 2x<br>⇒ x = (7/2)y<br>⇒ dx/dt = (7/2) dy/dt [differentiating w.r.t t]<br>But<br>dx/dt = 7 m/min<br>∴ 7 = (7/2) dy/dt<br>⇒ dy/dt = 2 m/min<br>∴ Length of shadow is increases at 2 m/min.",
+    "name": "Question Item 39"
+  },
+  {
+    "id": "m25_item40",
+    "text": "The maximum volume (in cubic units) of the cylinder which can be inscribed in a sphere of diameter 6 units is",
+    "options": [
+      "12 √3 π",
+      "4 √3 π",
+      "3 √3 π",
+      "8 √3 π"
+    ],
+    "correctIndex": 0,
+    "explanation": "If h is the height and V be the volume, required cylinder then from the given figure.<br>In ΔOAM,<br>r² + (h/2)² = (3)²<br>⇒ r² + h²/4 = 9 ⇒ r² = 9 - h²/4<br>Now, volume = π r² h = π (9 - h²/4) h<br>V = π (9h - h³/4) ⇒ dV/dh = (9 - 3h²/4) π<br>For maximum or minimum, dV/dh = 0<br>⇒ 9 - 3h²/4 = 0 ⇒ 3h²/4 = 9<br>⇒ h² = 12 ⇒ h = ± 2√3<br>∴ r² = 9 - 3 ⇒ r² = 6<br>The maximum value, [∵ d²V/dh² = -3h/2 < 0]<br>= π(6)(2√3) = 12√3 π sq units.",
+    "name": "Question Item 40"
+  },
+  {
+    "id": "m25_item41",
+    "text": "The angle between the curves y² = 8(x + 4) and y² = 24(4 - x) is",
+    "options": [
+      "tan⁻¹(1/6)",
+      "tan⁻¹(3)",
+      "π/2",
+      "π/4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Given, curves are<br>y² = 8(x + 4) ...(i)<br>and y² = 24(4 - x) ...(ii)<br>By Eqs. (i) and (ii), we get<br>8(x + 4) = 24(4 - x)<br>x + 4 = 12 - 3x<br>4x = 8 ⇒ x = 2<br>∴ y² = 8(6) ⇒ y = ± 4√3<br>For Eq. (i), 2y dy/dx = 8 ⇒ 2y m₁ = 8<br>m₁ = 8/(2y) ⇒ m₁ = 4/y = 4/(4√3) = 1/√3<br>For Eq. (ii), 2y dy/dx = -24 ⇒ y m₂ = -12<br>m₂ = -12/(4√3) = -√3<br>Here, m₁ m₂ = 1/√3 × -√3 = -1<br>So, angle between the curves tanθ = (m₁ - m₂)/(1 + m₁ m₂)<br>⇒ tanθ = (1/√3 - (-√3))/(1 + (-1)) ⇒ tanθ = ∞<br>⇒ tanθ = tan(π/2) ⇒ θ = π/2.",
+    "name": "Question Item 41"
+  },
+  {
+    "id": "m25_item42",
+    "text": "The function f(x) = x^{1/x} for x > 0, is",
+    "options": [
+      "increasing in (1, ∞)",
+      "decreasing in (1, ∞)",
+      "increasing in (1, e) and decreasing in (e, ∞)",
+      "decreasing in (1, e) and increasing in (e, ∞)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Given, f(x) = y = x^{1/x} ⇒ log y = (1/x) log x<br>Differentiate w.r.t. x, we get<br>(1/y) dy/dx = 1/x² - (log x)/x² ⇒ dy/dx = y [(1 - log x)/x²]<br>⇒ d/dx (x^{1/x}) = x^{1/x} [(1 - log x)/x²]<br>It is clear that, it is increasing in (1, e) and decreasing in (e, ∞).",
+    "name": "Question Item 42"
+  },
+  {
+    "id": "m25_item43",
+    "text": "Let f be a polynomial function defined on [2, 7]. If f(2) = 3 and f'(x) ≤ 5 for all x in (2, 7), then the maximum possible value attained by f at x = 7 is",
+    "options": [
+      "7",
+      "14",
+      "18",
+      "28"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since, the polynomial function are continuous and differentiable in interval R.<br>So, according to Lagrange's mean value theorem<br>(f(7) - f(2))/(7 - 2) = f'(x) ≤ 5 (given)<br>⇒ f(7) - f(2) ≤ 25 ⇒ f(7) ≤ 28.",
+    "name": "Question Item 43"
+  },
+  {
+    "id": "m25_item44",
+    "text": "In the interval [-2, 4], the absolute maximum of f(x) = 2x³ - 3x² - 12x + 5 occurs x =",
+    "options": [
+      "4",
+      "-2",
+      "-1",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Given, function f(x) = 2x³ - 3x² - 12x + 5<br>So, f'(x) = 6x² - 6x - 12 = 0<br>[for maxima and minima f'(x) = 0]<br>⇒ x² - x - 2 = 0 ⇒ (x+1)(x-2) = 0<br>⇒ x = -1, 2 ∈ [-2, 4]<br>∴ f(-2) = -16 - 12 + 24 + 5 = 1<br>f(-1) = -2 - 3 + 12 + 5 = 12<br>f(2) = 16 - 12 - 24 + 5 = -15<br>and f(4) = 128 - 48 - 48 + 5 = 37<br>The absolute maximum of f(x) occurs at x = 4.",
+    "name": "Question Item 44"
+  },
+  {
+    "id": "m25_item45",
+    "text": "If the radius of a sphere is mentioned as 7 m with an error of 0.02 m, then the approximate error in calculating its volume is",
+    "options": [
+      "1.83π m³",
+      "2.25π m³",
+      "4.39π m³",
+      "3.92π m³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Radius (r) = 7m<br>Error in radius (dr) = 0.02m<br>Volume of sphere (v) = (4/3)π r³<br>differentiate w.r.t. 'r' on both sides,<br>dv/dr = 4π r²<br>dv = 4π r² dr = 4π(49) · (0.02) = 3.92π m³.",
+    "name": "Question Item 45"
+  },
+  {
+    "id": "m25_item46",
+    "text": "The tangent at the point (1, 2) to the curve y² = 4x makes an angle θ with the positive direction of X-axis. Then θ =",
+    "options": [
+      "60°",
+      "30°",
+      "90°",
+      "45°"
+    ],
+    "correctIndex": 3,
+    "explanation": "y² = 4x; P = (1, 2)<br>differentiate w.r. to 'x'<br>2y · y' = 4 · 1 ⇒ y' = 4/(2y)<br>y' = 2/y<br>Slope of tangent = y'|_{P(1,2)} = 2/|y|_{P(1,2)}<br>tan θ = 1 ⇒ θ = 45°.",
+    "name": "Question Item 46"
+  },
+  {
+    "id": "m25_item47",
+    "text": "A kind of bacteria grows by t³ in t s. Time taken for the rate of growth of the bacteria to become 1200 per s is ......",
+    "options": [
+      "10 s",
+      "20 s",
+      "40 s",
+      "400 s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Given,<br>dN/dt = t³,<br>When, rate of growth is 1200 we have,<br>d/dt (dN/dt) = 1200 ⇒ d/dt t³ = 1200<br>⇒ 3t² = 1200 ⇒ t² = 400<br>⇒ t = 20 sec.",
+    "name": "Question Item 47"
+  },
+  {
+    "id": "m25_item48",
+    "text": "The sides of an equilateral triangle are increasing at the rate of 2 cm s⁻¹. How fast does its area increase when its side is 10 cm?",
+    "options": [
+      "10√3 cm² s⁻¹",
+      "5√3 cm² s⁻¹",
+      "√3 cm² s⁻¹",
+      "2√3 cm² s⁻¹"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of equilateral triangle A = (√3/4) a²<br>Differentiating with respect to time we get,<br>⇒ dA/dt = (√3/4) × 2a · da/dt<br>Here, da/dt = 2 cm⁻¹ when a = 10 cm<br>So, (dA/dt)|_{a=10 cm} = (√3/4) × 2 × 10 × 2 = 10√3 cm² · s⁻¹.",
+    "name": "Question Item 48"
+  },
+  {
+    "id": "m25_item49",
+    "text": "The curve 3y² = 2a x² + 6b passes through the point P(3, -1) and the gradient of the curve at P is “-1”, then the values of a and b are",
+    "options": [
+      "a = 1/2, b = -1",
+      "a = -1/2, b = 1",
+      "a = 1/2, b = 1",
+      "a = -1/2, b = -1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Equation of given curve is<br>3y² = 2a x² + 6b ...(i)<br>∵ Curve (i) passes through point P(3, -1), so<br>3 = 18a + 6b<br>⇒ 6a + 2b = 1 ...(ii)<br>On differentiating the Eq. (i), we get<br>6y dy/dx = 4a x<br>⇒ 6 × (-1) × (-1) = 4a(3) ⇒ a = 1/2<br>∴ b = -1.",
+    "name": "Question Item 49"
+  },
+  {
+    "id": "m25_item50",
+    "text": "The value of 'k' for which the function f(x) = k(x + sin x) + k is increasing, is equal to",
+    "options": [
+      "k < 0",
+      "k > 0",
+      "k = 0",
+      "Data Insufficient"
+    ],
+    "correctIndex": 1,
+    "explanation": "Given function f(x) = k(x + sin x) + k<br>So, f'(x) = k(1 + cos x)<br>∵ f(x) is an increasing function, so<br>f'(x) ≥ 0<br>⇒ k(1 + cos x) ≥ 0<br>⇒ k > 0 {∵ 1 + cos x ≥ 0}.",
+    "name": "Question Item 50"
+  }
+]

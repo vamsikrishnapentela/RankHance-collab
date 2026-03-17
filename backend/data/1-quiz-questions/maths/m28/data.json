@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m28_item1",
+    "text": "The order of \\( \\frac{d^2y}{dx^2} + 3\\frac{dy}{dx} + 2y = 0 \\) is:",
+    "options": ["\\( 1 \\)", "\\( 2 \\)", "\\( 3 \\)", "\\( 0 \\)"],
+    "correctIndex": 1,
+    "explanation": "Order = highest derivative present. Here \\( \\frac{d^2y}{dx^2} \\) is the highest → order = 2.",
+    "name": "Order of DE"
+  },
+  {
+    "id": "m28_item2",
+    "text": "The degree of \\( \\left(\\frac{dy}{dx}\\right)^3 + 2\\frac{dy}{dx} + y = 0 \\) is:",
+    "options": ["\\( 1 \\)", "\\( 3 \\)", "\\( 2 \\)", "\\( 0 \\)"],
+    "correctIndex": 1,
+    "explanation": "Degree = power of highest-order derivative (after making it polynomial). Here \\( (y')^3 \\) → degree = 3.",
+    "name": "Degree of DE"
+  },
+  {
+    "id": "m28_item3",
+    "text": "The general solution of \\( \\frac{dy}{dx} = ky \\) is:",
+    "options": ["\\( y = ke^x \\)", "\\( y = Ce^{kx} \\)", "\\( y = kx+C \\)", "\\( y = Ce^x + k \\)"],
+    "correctIndex": 1,
+    "explanation": "Separating: \\( \\frac{dy}{y}=k\\,dx \\Rightarrow \\ln|y|=kx+c \\Rightarrow y=Ce^{kx} \\)",
+    "name": "Exponential Growth DE"
+  },
+  {
+    "id": "m28_item4",
+    "text": "A differential equation \\( M\\,dx + N\\,dy = 0 \\) is exact if:",
+    "options": ["\\( \\frac{\\partial M}{\\partial x} = \\frac{\\partial N}{\\partial y} \\)", "\\( \\frac{\\partial M}{\\partial y} = \\frac{\\partial N}{\\partial x} \\)", "\\( M = N \\)", "\\( MN = 1 \\)"],
+    "correctIndex": 1,
+    "explanation": "Exact condition: \\( \\frac{\\partial M}{\\partial y} = \\frac{\\partial N}{\\partial x} \\)",
+    "name": "Exact Differential Equation"
+  },
+  {
+    "id": "m28_item5",
+    "text": "The integrating factor for \\( \\frac{dy}{dx} + Py = Q \\) is:",
+    "options": ["\\( e^{\\int Q\\,dx} \\)", "\\( e^{Px} \\)", "\\( e^{\\int P\\,dx} \\)", "\\( \\frac{1}{P} \\)"],
+    "correctIndex": 2,
+    "explanation": "For linear DE \\( y'+Py=Q \\), integrating factor (IF) \\( = e^{\\int P\\,dx} \\).",
+    "name": "Integrating Factor"
+  },
+  {
+    "id": "m28_item6",
+    "text": "A homogeneous DE \\( f(x,y)\\,dx + g(x,y)\\,dy = 0 \\) is solved by substituting:",
+    "options": ["\\( x = vy \\)", "\\( y = vx \\)", "\\( y = v+x \\)", "\\( x = v+y \\)"],
+    "correctIndex": 1,
+    "explanation": "For homogeneous DE, substitute \\( y = vx \\) (where \\(v\\) is a function of \\(x\\)) to separate variables.",
+    "name": "Homogeneous DE Substitution"
+  },
+  {
+    "id": "m28_item7",
+    "text": "The general solution of \\( \\frac{dy}{dx} = \\frac{x}{y} \\) is:",
+    "options": ["\\( y = x+C \\)", "\\( y^2 = x^2+C \\)", "\\( y^2 - x^2 = C \\)", "\\( x^2+y^2=C \\)"],
+    "correctIndex": 1,
+    "explanation": "Separate: \\( y\\,dy = x\\,dx \\Rightarrow \\frac{y^2}{2}=\\frac{x^2}{2}+C_1 \\Rightarrow y^2=x^2+C \\)",
+    "name": "Separable Variables"
+  },
+  {
+    "id": "m28_item8",
+    "text": "The order of the DE representing family of circles \\( x^2+y^2=r^2 \\) (r arbitrary) is:",
+    "options": ["\\( 1 \\)", "\\( 2 \\)", "\\( 0 \\)", "\\( 3 \\)"],
+    "correctIndex": 0,
+    "explanation": "One arbitrary constant \\(r\\) → eliminate by differentiating once → order 1.",
+    "name": "Order from Family of Curves"
+  },
+  {
+    "id": "m28_item9",
+    "text": "The solution of linear first-order DE \\( \\frac{dy}{dx}+Py=Q \\) is:",
+    "options": ["\\( y\\cdot\\text{IF} = \\int Q\\cdot\\text{IF}\\,dx+C \\)", "\\( y = \\int Q\\,dx+C \\)", "\\( y\\cdot P = \\int Q\\,dx \\)", "\\( y = Q/P+C \\)"],
+    "correctIndex": 0,
+    "explanation": "After multiplying by IF: \\( \\frac{d}{dx}(y\\cdot\\text{IF}) = Q\\cdot\\text{IF} \\Rightarrow y\\cdot\\text{IF} = \\int Q\\cdot\\text{IF}\\,dx+C \\)",
+    "name": "Linear DE Solution"
+  },
+  {
+    "id": "m28_item10",
+    "text": "The DE \\( \\frac{dy}{dx} = \\frac{y}{x} \\) has solution:",
+    "options": ["\\( y = Cx^2 \\)", "\\( y = Ce^x \\)", "\\( y = Cx \\)", "\\( y = C\\ln x \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\frac{dy}{y}=\\frac{dx}{x} \\Rightarrow \\ln|y|=\\ln|x|+c \\Rightarrow y=Cx \\)",
+    "name": "Simple Separable DE"
+  },
+  {
+    "id": "m28_item11",
+    "text": "The DE whose solution is \\( y = Ae^{2x}+Be^{-2x} \\) is:",
+    "options": ["\\( y''-4y=0 \\)", "\\( y''+4y=0 \\)", "\\( y''-2y=0 \\)", "\\( y''+2y'=0 \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( y'' = 4Ae^{2x}+4Be^{-2x} = 4y \\Rightarrow y''-4y=0 \\)",
+    "name": "DE from Solution"
+  },
+  {
+    "id": "m28_item12",
+    "text": "The number of arbitrary constants in a general solution equals:",
+    "options": ["The degree of the DE", "The order of the DE", "Always 1", "Always 2"],
+    "correctIndex": 1,
+    "explanation": "General solution of an nth-order DE contains exactly \\(n\\) arbitrary constants.",
+    "name": "Constants in General Solution"
+  },
+  {
+    "id": "m28_item13",
+    "text": "The DE \\( \\frac{dy}{dx}+y\\tan x = \\sec x \\) has integrating factor:",
+    "options": ["\\( \\cos x \\)", "\\( \\sec x \\)", "\\( e^{\\sin x} \\)", "\\( \\tan x \\)"],
+    "correctIndex": 1,
+    "explanation": "IF \\( = e^{\\int\\tan x\\,dx} = e^{\\ln|\\sec x|} = \\sec x \\)",
+    "name": "IF Calculation"
+  },
+  {
+    "id": "m28_item14",
+    "text": "A Bernoulli DE has the form:",
+    "options": ["\\( \\frac{dy}{dx}+P(x)y=Q(x) \\)", "\\( \\frac{dy}{dx}+P(x)y=Q(x)y^n \\)", "\\( y''+ Py'+Qy=0 \\)", "\\( M\\,dx+N\\,dy=0 \\)"],
+    "correctIndex": 1,
+    "explanation": "Bernoulli's equation: \\( \\frac{dy}{dx}+P(x)y=Q(x)y^n \\). Reduce by substituting \\(v=y^{1-n}\\).",
+    "name": "Bernoulli's Equation"
+  },
+  {
+    "id": "m28_item15",
+    "text": "The DE representing all parabolas with axis parallel to y-axis is of order:",
+    "options": ["\\( 1 \\)", "\\( 2 \\)", "\\( 3 \\)", "\\( 4 \\)"],
+    "correctIndex": 2,
+    "explanation": "General parabola \\( y=ax^2+bx+c \\) has 3 arbitrary constants. Differentiating 3 times gives order 3.",
+    "name": "Order from Parabola Family"
+  }
+]

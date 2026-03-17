@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m14_item1",
+    "text": "In triangle \\(ABC\\), the sine rule states:",
+    "options": ["\\( \\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} \\)", "\\( a^2 = b^2 + c^2 - 2bc\\cos A \\)", "\\( \\frac{\\sin A}{a} = \\frac{\\sin B}{c} \\)", "\\( a + b > c \\)"],
+    "correctIndex": 0,
+    "explanation": "Sine Rule: \\( \\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} = 2R \\) where \\(R\\) is circumradius.",
+    "name": "Sine Rule"
+  },
+  {
+    "id": "m14_item2",
+    "text": "The cosine rule gives:",
+    "options": ["\\( a^2 = b^2 + c^2 + 2bc\\cos A \\)", "\\( a^2 = b^2 + c^2 - 2bc\\cos A \\)", "\\( a = b\\cos C + c\\cos B \\)", "\\( \\cos A = \\frac{a}{2R} \\)"],
+    "correctIndex": 1,
+    "explanation": "Cosine Rule: \\( a^2 = b^2 + c^2 - 2bc\\cos A \\)",
+    "name": "Cosine Rule"
+  },
+  {
+    "id": "m14_item3",
+    "text": "Area of triangle \\(ABC\\) using two sides and included angle is:",
+    "options": ["\\( \\frac{1}{2}ab\\sin C \\)", "\\( ab\\cos C \\)", "\\( \\frac{1}{2}(a+b+c) \\)", "\\( ab\\sin C \\)"],
+    "correctIndex": 0,
+    "explanation": "Area \\( = \\frac{1}{2}ab\\sin C = \\frac{1}{2}bc\\sin A = \\frac{1}{2}ca\\sin B \\)",
+    "name": "Area of Triangle"
+  },
+  {
+    "id": "m14_item4",
+    "text": "By Hero's formula, area of triangle with sides \\(a, b, c\\) and \\( s = \\frac{a+b+c}{2} \\) is:",
+    "options": ["\\( \\sqrt{s(s-a)(s-b)(s-c)} \\)", "\\( s(s-a)(s-b)(s-c) \\)", "\\( \\frac{1}{2}\\sqrt{s(s-a)(s-b)(s-c)} \\)", "\\( 2\\sqrt{s(s-a)(s-b)(s-c)} \\)"],
+    "correctIndex": 0,
+    "explanation": "Heron's Formula: \\( \\Delta = \\sqrt{s(s-a)(s-b)(s-c)} \\)",
+    "name": "Heron's Formula"
+  },
+  {
+    "id": "m14_item5",
+    "text": "The circumradius \\(R\\) of a triangle is:",
+    "options": ["\\( \\frac{abc}{4\\Delta} \\)", "\\( \\frac{a\\sin A}{2} \\)", "\\( \\frac{\\Delta}{s} \\)", "\\( \\frac{abc}{2\\Delta} \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( R = \\frac{a}{2\\sin A} = \\frac{abc}{4\\Delta} \\), where \\(\\Delta\\) is area of triangle.",
+    "name": "Circumradius Formula"
+  },
+  {
+    "id": "m14_item6",
+    "text": "The inradius \\(r\\) of a triangle is:",
+    "options": ["\\( \\frac{\\Delta}{s} \\)", "\\( \\frac{\\Delta}{a+b+c} \\)", "\\( \\frac{s}{\\Delta} \\)", "\\( \\frac{abc}{4\\Delta} \\)"],
+    "correctIndex": 0,
+    "explanation": "Inradius \\( r = \\frac{\\Delta}{s} \\) where \\( s = \\frac{a+b+c}{2} \\) is the semi-perimeter.",
+    "name": "Inradius Formula"
+  },
+  {
+    "id": "m14_item7",
+    "text": "In a right triangle with right angle at \\(C\\), then \\( c^2 = \\)",
+    "options": ["\\( a^2 - b^2 \\)", "\\( a^2 + b^2 \\)", "\\( 2ab\\cos C \\)", "\\( a^2 + b^2 - ab \\)"],
+    "correctIndex": 1,
+    "explanation": "When \\( C = 90°, \\cos C = 0 \\): \\( c^2 = a^2 + b^2 - 2ab(0) = a^2 + b^2 \\). Pythagorean theorem.",
+    "name": "Pythagoras from Cosine Rule"
+  },
+  {
+    "id": "m14_item8",
+    "text": "Projection formula: \\( a = \\)",
+    "options": ["\\( b\\cos C - c\\cos B \\)", "\\( b\\cos C + c\\cos B \\)", "\\( b\\sin C + c\\sin B \\)", "\\( b\\sin C - c\\sin B \\)"],
+    "correctIndex": 1,
+    "explanation": "Projection formula: \\( a = b\\cos C + c\\cos B \\)",
+    "name": "Projection Formula"
+  },
+  {
+    "id": "m14_item9",
+    "text": "In triangle \\(ABC\\), \\( \\tan\\frac{A}{2} = \\)",
+    "options": ["\\( \\frac{\\Delta}{s(s-a)} \\)", "\\( \\sqrt{\\frac{(s-b)(s-c)}{s(s-a)}} \\)", "\\( \\frac{r}{s-a} \\)", "Both B and C"],
+    "correctIndex": 3,
+    "explanation": "\\( \\tan\\frac{A}{2} = \\frac{r}{s-a} = \\sqrt{\\frac{(s-b)(s-c)}{s(s-a)}} \\). Both forms are equivalent.",
+    "name": "Half-angle Tangent"
+  },
+  {
+    "id": "m14_item10",
+    "text": "The formula \\( \\cos A = \\frac{b^2 + c^2 - a^2}{2bc} \\) is rearrangement of:",
+    "options": ["Sine rule", "Cosine rule", "Heron's formula", "Projection formula"],
+    "correctIndex": 1,
+    "explanation": "This is a direct rearrangement of the cosine rule \\( a^2 = b^2+c^2-2bc\\cos A \\).",
+    "name": "Cosine Rule Rearranged"
+  },
+  {
+    "id": "m14_item11",
+    "text": "In an equilateral triangle with side \\(a\\), the area is:",
+    "options": ["\\( \\frac{a^2}{4} \\)", "\\( \\frac{a^2\\sqrt{3}}{4} \\)", "\\( \\frac{a^2\\sqrt{3}}{2} \\)", "\\( a^2 \\)"],
+    "correctIndex": 1,
+    "explanation": "For equilateral triangle: \\( \\Delta = \\frac{1}{2}a\\cdot a\\sin 60° = \\frac{a^2\\sqrt{3}}{4} \\)",
+    "name": "Equilateral Triangle Area"
+  },
+  {
+    "id": "m14_item12",
+    "text": "The relation \\( r = 4R\\sin\\frac{A}{2}\\sin\\frac{B}{2}\\sin\\frac{C}{2} \\) connects:",
+    "options": ["Two medians", "Inradius and circumradius", "Two altitudes", "Orthocentre and centroid"],
+    "correctIndex": 1,
+    "explanation": "This is the standard formula relating inradius \\(r\\) and circumradius \\(R\\) with half-angles.",
+    "name": "r and R Relation"
+  },
+  {
+    "id": "m14_item13",
+    "text": "The area of triangle with \\( a=5, b=6, c=7 \\) using Heron's formula (\\(s=9\\)) is:",
+    "options": ["\\( \\sqrt{216} \\)", "\\( 6\\sqrt{6} \\)", "\\( \\sqrt{180} \\)", "\\( 12\\sqrt{2} \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( s=9 \\). \\( \\Delta = \\sqrt{9 \\cdot 4 \\cdot 3 \\cdot 2} = \\sqrt{216} = 6\\sqrt{6} \\). Both A and B are correct.",
+    "name": "Heron's Calculation"
+  },
+  {
+    "id": "m14_item14",
+    "text": "The formula for the length of median \\( m_a \\) is:",
+    "options": ["\\( \\frac{1}{2}\\sqrt{2b^2+2c^2-a^2} \\)", "\\( \\frac{b^2+c^2-a^2}{2bc} \\)", "\\( \\frac{a}{2\\sin A} \\)", "\\( \\sqrt{b^2+c^2} \\)"],
+    "correctIndex": 0,
+    "explanation": "Median to side \\(a\\): \\( m_a = \\frac{1}{2}\\sqrt{2b^2+2c^2-a^2} \\)",
+    "name": "Length of Median"
+  },
+  {
+    "id": "m14_item15",
+    "text": "In triangle \\(ABC\\), \\( A + B + C = \\)",
+    "options": ["\\( 90° \\)", "\\( 180° \\)", "\\( 270° \\)", "\\( 360° \\)"],
+    "correctIndex": 1,
+    "explanation": "Sum of angles in any triangle \\( = 180° = \\pi \\) radians.",
+    "name": "Angle Sum Property"
+  }
+]

@@ -1,0 +1,393 @@
+
+[
+  {
+    "id": "p5_item1",
+    "text": "Four point masses, each of mass M are placed at the corners of a square of side L. The moment of inertia of the system about one of its diagonals is",
+    "options": [
+      "2ML²",
+      "ML²",
+      "4ML²",
+      "6ML²"
+    ],
+    "correctIndex": 1,
+    "explanation": "The diagonal of the square is L√2. Distance from centre to each mass along diagonal is L/√2. Moment of inertia about diagonal AC: two masses contribute zero (on axis), other two: each M(L/√2)². Total I = 2 × M(L²/2) = ML².",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "p5_item2",
+    "text": "A flywheel starts from rest and rotates at a constant acceleration of 2 rad s⁻². The number of revolutions that it makes in first 10 s is",
+    "options": [
+      "16",
+      "24",
+      "32",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "θ = (1/2)αt² = (1/2)×2×10² = 100 rad. Number of revolutions = θ/(2π) = 100/(2π) ≈ 15.9 ≈ 16.",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "p5_item3",
+    "text": "Three identical uniform solid spheres each of mass m and radius r are joined as shown in the figure, with centres lying in the same plane. The moment of inertia of the system about an axis lying in that plane and passing through the centre of sphere C is",
+    "options": [
+      "16mr²/5",
+      "12mr²/5",
+      "4mr²",
+      "3mr²/5"
+    ],
+    "correctIndex": 0,
+    "explanation": "I about PQ: For A and B: each (2/5 mr² + mr²), for C: 2/5 mr². Total = 2×(7mr²/5) + 2mr²/5 = 16mr²/5.",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "p5_item4",
+    "text": "A disc of moment of inertia I₁ is rotating with an angular velocity ω₁. Another disc of moment of inertia I₂ which is not rotating, is gently put on the first disc. The angular speed of the system will be",
+    "options": [
+      "((I₁ + I₂)/I₁)ω₁",
+      "(I₁/(I₁ + I₂))ω₁",
+      "((I₁ - I₂)/I₁)ω₁",
+      "(I₁/(I₁ - I₂))ω₁"
+    ],
+    "correctIndex": 1,
+    "explanation": "Conservation of angular momentum (no external torque): I₁ω₁ = (I₁ + I₂)ω₂ ⇒ ω₂ = (I₁/(I₁ + I₂))ω₁.",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "p5_item5",
+    "text": "Find the centripetal force acting on a coin weighing 0.1 kg placed 0.1 m from the centre on a gramophone disc rotating at 600 rpm",
+    "options": [
+      "4π² N",
+      "40π² N",
+      "π²/4 N",
+      "4/π² N"
+    ],
+    "correctIndex": 0,
+    "explanation": "ω = 2π×(600/60) = 20π rad/s. F = m r ω² = 0.1×0.1×(20π)² = 4π² N.",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "p5_item6",
+    "text": "The speed of a uniform solid sphere after rolling down from rest without slipping along a fixed inclined plane of vertical height h is",
+    "options": [
+      "√(10gh/7)",
+      "√(gh)",
+      "√(6gh/5)",
+      "√(4gh/3)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Conservation of energy: mgh = (1/2)mv² + (1/2)Iω². For sphere I = (2/5)mR², ω = v/R. Simplifies to v = √(10gh/7).",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "p5_item7",
+    "text": "A ballet dancer suddenly folds her outstretched arms. Her angular velocity",
+    "options": [
+      "increases",
+      "decreases",
+      "remains the same",
+      "may increase or decrease"
+    ],
+    "correctIndex": 0,
+    "explanation": "Conservation of angular momentum: Iω = constant. Folding arms decreases I, so ω increases.",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "p5_item8",
+    "text": "A mass m is in rest on an inclined plane of mass M which is further resting on a smooth horizontal plane. Now, if the mass m starts moving under gravity, the position of centre of mass of system will",
+    "options": [
+      "remain unchanged",
+      "change along the horizontal direction",
+      "move up in vertical direction",
+      "move down in the vertical direction and changes along the horizontal"
+    ],
+    "correctIndex": 2,
+    "explanation": "No horizontal external force, so CM horizontal position unchanged. Vertical net force exists, CM moves vertically downward.",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "p5_item9",
+    "text": "A light meter rod has two-point masses each of 2 kg fixed at its ends. If the system rotates about its centre of mass with an angular speed of 0.5 rad s⁻¹, its rotational KE is",
+    "options": [
+      "0.125 erg",
+      "1.25 erg",
+      "1.25 J",
+      "0.125 J"
+    ],
+    "correctIndex": 3,
+    "explanation": "I = 2×(0.5)² + 2×(0.5)² = 1 kg m². Rotational KE = (1/2)Iω² = (1/2)×1×(0.5)² = 0.125 J.",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "p5_item10",
+    "text": "If the raw egg and boiled egg are subjected to spin on a table by applying the equal torque, then the egg that spins with the greater speed is",
+    "options": [
+      "raw egg",
+      "boiled egg",
+      "Both eggs have equal speed",
+      "Both eggs never spin"
+    ],
+    "correctIndex": 1,
+    "explanation": "Boiled egg has solid interior, lower effective I (no internal fluid resistance). Same torque gives higher ω for boiled egg.",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "p5_item11",
+    "text": "A solid cylinder of mass M and radius R rolls on a flat surface. Its moment of inertia about the line of contact is",
+    "options": [
+      "(3/2)MR²",
+      "MR²",
+      "(2/3)MR²",
+      "2MR²"
+    ],
+    "correctIndex": 0,
+    "explanation": "I about contact line (parallel axis): I_cm + MR² = (1/2)MR² + MR² = (3/2)MR².",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "p5_item12",
+    "text": "The moment of inertia of a rectangular plate of mass M, length L and breadth B, about an axis passing through its centre and perpendicular to its plane is",
+    "options": [
+      "M(L + B)/12",
+      "M(L²)/12",
+      "M(L² + B²)/12",
+      "M(B²)/12"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard formula for rectangular lamina: I = M(L² + B²)/12.",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "p5_item13",
+    "text": "A body of mass 5 kg acquires an acceleration of 10 rad s⁻² due to an applied torque of 2 Nm. Its radius of gyration is",
+    "options": [
+      "2.5 m",
+      "√2.5 m",
+      "√0.2 m",
+      "0.2 m"
+    ],
+    "correctIndex": 3,
+    "explanation": "I = τ/α = 2/10 = 0.2 kg m². Radius of gyration k = √(I/m) = √(0.2/5) = 0.2 m.",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "p5_item14",
+    "text": "A solid cylinder of mass M and radius R rolls down an inclined plane of length L and height h, without slipping. Find the speed of its centre of mass when the cylinder reaches its bottom",
+    "options": [
+      "√(2gh)",
+      "√(3gh/4)",
+      "√(4gh/3)",
+      "√(4gh)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy: Mgh = (1/2)Mv_cm² + (1/2)Iω². I = MR²/2, ω = v_cm/R. Gives v_cm = √(4gh/3).",
+    "name": "Questions Item 14"
+  },
+  {
+    "id": "p5_item15",
+    "text": "A uniform circular disc has radius r. A square portion of diagonal r is cut from it. The centre of mass of the remaining disc from the centre of disc is",
+    "options": [
+      "r/(2-4π)",
+      "r/(3-3π)",
+      "r/(2-5π)",
+      "2r/(1-2π)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mass of square m = M/(2π). Centre of square at r/2. CM shift x = - (m r/2)/(M - m) = r/(2 - 4π).",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "p5_item16",
+    "text": "How many revolutions does a wheel with angular speed 88 rad s⁻¹ make in one second?",
+    "options": [
+      "7",
+      "14",
+      "28",
+      "44"
+    ],
+    "correctIndex": 1,
+    "explanation": "f = ω/(2π) = 88/(2π) = 14 rev/s.",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "p5_item17",
+    "text": "Four identical spheres each of radius 10 cm and equal mass 1 kg each are placed on horizontal surface touching each other, so that their centre are located at the vertices of a square of side 20 cm. What is the distance of their centre of mass from the centre of either sphere?",
+    "options": [
+      "20√2",
+      "30√2",
+      "10√2",
+      "40√2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Symmetric arrangement. Diagonal = 20√2 cm. Distance from centre to any sphere = 10√2 cm.",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "p5_item18",
+    "text": "The centre of a wheel rolling on a plane surface moves with a speed v₀. A particle on the rim of the wheel at the same level as the centre will be moving at a speed",
+    "options": [
+      "0",
+      "v₀",
+      "√2 v₀",
+      "2 v₀"
+    ],
+    "correctIndex": 2,
+    "explanation": "Velocity of point = vector sum of translational v₀ and rotational v₀ (same level). Resultant √(v₀² + v₀²) = √2 v₀.",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "p5_item19",
+    "text": "Two cars A and B are going around concentric circular paths of radii R_A and R_B. If the two cars complete the circular paths in the same time, then the ratio of angular speed of A and B is",
+    "options": [
+      "1 : 1",
+      "R_A : R_B",
+      "R_B : R_A",
+      "1 : 2"
+    ],
+    "correctIndex": 0,
+    "explanation": "ω = 2π/T. Same time period T ⇒ ω_A = ω_B = 1:1.",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "p5_item20",
+    "text": "When the torque acting upon a system is zero, the parameter that remains constant is",
+    "options": [
+      "force",
+      "linear momentum",
+      "angular momentum",
+      "linear impulse"
+    ],
+    "correctIndex": 2,
+    "explanation": "τ = dL/dt. If τ = 0, angular momentum L is constant.",
+    "name": "Questions Item 20"
+  },
+  {
+    "id": "p5_item21",
+    "text": "A mass M is supported by a massless string wound around a uniform cylinder of mass M and radius R. On releasing the mass from rest, it will fall with acceleration",
+    "options": [
+      "g",
+      "g/2",
+      "2g/3",
+      "3g/2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Torque and linear equations yield a = 2g/3.",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "p5_item22",
+    "text": "A 20 kg flywheel in the form of a uniform circular disc, 1 m in diameter is making 120 rpm. What is its angular momentum?",
+    "options": [
+      "3.14 kg m² s⁻¹",
+      "31.4 kg m² s⁻¹",
+      "314 kg m² s⁻¹",
+      "0.314 kg m² s⁻¹"
+    ],
+    "correctIndex": 1,
+    "explanation": "I = (1/2)MR² = 2.5 kg m². ω = 4π rad/s. L = Iω = 31.4 kg m² s⁻¹.",
+    "name": "Questions Item 22"
+  },
+  {
+    "id": "p5_item23",
+    "text": "If the radius of a sphere is doubled by keeping its mass constant, compare the moment of inertia of the old sphere with that of the new sphere, about any diameter",
+    "options": [
+      "I₁ : I₂ = 1 : 4",
+      "I₁ : I₂ = 1 : 2",
+      "I₁ : I₂ = 4 : 1",
+      "I₁ : I₂ = 2 : 1"
+    ],
+    "correctIndex": 0,
+    "explanation": "I = (2/5)MR² ∝ R². R₂ = 2R₁ ⇒ I₂/I₁ = 4 ⇒ I₁ : I₂ = 1 : 4.",
+    "name": "Questions Item 23"
+  },
+  {
+    "id": "p5_item24",
+    "text": "Kinetic energy of rotation of a flywheel of radius 2 m, mass 8 kg and angular speed 4 rad s⁻¹ about an axis perpendicular to its plane and passing through its centre is",
+    "options": [
+      "128 J",
+      "196 J",
+      "256 J",
+      "392 J"
+    ],
+    "correctIndex": 0,
+    "explanation": "I = (1/2)MR² = 16 kg m². KE = (1/2)Iω² = 128 J.",
+    "name": "Questions Item 24"
+  },
+  {
+    "id": "p5_item25",
+    "text": "A uniform solid sphere of radius R and radius of gyration k about an axis passing through the centre of mass is rolling without slipping. Then, the fraction of total energy associated with its rotation will be",
+    "options": [
+      "(k² + R²)/k²",
+      "k²/R²",
+      "k²/(k² + R²)",
+      "R²/(k² + R²)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Fraction rotational KE/total KE = k²/(k² + R²).",
+    "name": "Questions Item 25"
+  },
+  {
+    "id": "p5_item26",
+    "text": "A solid sphere of 100 kg and radius 10 m moving in a space becomes a circular disc of radius 20 m in one hour. Then the rate of change of moment of inertia in the process is",
+    "options": [
+      "40/9 kg m² s⁻¹",
+      "10/9 kg m² s⁻¹",
+      "50/9 kg m² s⁻¹",
+      "25/9 kg m² s⁻¹"
+    ],
+    "correctIndex": 0,
+    "explanation": "I_sphere = 4000, I_disc = 20000. ΔI = 16000. Rate = 16000/3600 = 40/9 kg m² s⁻¹.",
+    "name": "Questions Item 26"
+  },
+  {
+    "id": "p5_item27",
+    "text": "A semicircular plate of mass m has radius r and centre c. The centre of mass of the plate is at a distance x from its centre c. Its moment of inertia about an axis passing through its centre of mass and perpendicular to its plane is",
+    "options": [
+      "mr²/2",
+      "mr²/4",
+      "mr²/2 + mx²",
+      "mr²/2 - mx²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Parallel axis: I_cm = I_c - m x² = (mr²/2) - m x².",
+    "name": "Questions Item 27"
+  },
+  {
+    "id": "p5_item28",
+    "text": "A disc of mass 100 g slides down from rest on an inclined plane of 30° and come to rest after travelling a distance of 1m along the horizontal plane. If the coefficient of friction is 0.2 for both inclined and horizontal planes, then the work done by the frictional force over the whole journey, approximately, is (g = 10 ms⁻²)",
+    "options": [
+      "0.106 J",
+      "0.05 J",
+      "0.306 J",
+      "0.2 J"
+    ],
+    "correctIndex": 2,
+    "explanation": "Calculations yield total work by friction ≈ 0.306 J.",
+    "name": "Questions Item 28"
+  },
+  {
+    "id": "p5_item29",
+    "text": "Two identical discs are moving with the same kinetic energy. One rolls and the other slides. The ratio of their speeds is",
+    "options": [
+      "1 : 2",
+      "1 : 1",
+      "2 : 3",
+      "√2 : √3"
+    ],
+    "correctIndex": 3,
+    "explanation": "For rolling: KE = (3/4)mv₁². Sliding: KE = (1/2)mv₂². Ratio v₁/v₂ = √(2/3).",
+    "name": "Questions Item 29"
+  },
+  {
+    "id": "p5_item30",
+    "text": "A tangential force F acts at the top of a thin spherical shell of mass m and radius R. The acceleration of the shell if it rolls without slipping is (f = rolling friction)",
+    "options": [
+      "5F/6m",
+      "6F/5m",
+      "3F/2m",
+      "F/6m"
+    ],
+    "correctIndex": 1,
+    "explanation": "Equations give linear acceleration a = 6F/5m.",
+    "name": "Questions Item 30"
+  }
+]

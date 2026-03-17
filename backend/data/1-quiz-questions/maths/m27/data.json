@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m27_item1",
+    "text": "The Fundamental Theorem of Calculus: \\( \\int_a^b f(x)\\,dx = \\)",
+    "options": ["\\( f(b)+f(a) \\)", "\\( f(b)-f(a) \\)", "\\( F(b)+F(a) \\)", "\\( F(b)-F(a) \\)"],
+    "correctIndex": 3,
+    "explanation": "FTC: \\( \\int_a^b f(x)dx = F(b)-F(a) \\), where \\(F'(x)=f(x)\\).",
+    "name": "Fundamental Theorem"
+  },
+  {
+    "id": "m27_item2",
+    "text": "\\( \\int_0^\\pi \\sin x\\,dx = \\)",
+    "options": ["\\( 0 \\)", "\\( -2 \\)", "\\( 2 \\)", "\\( 1 \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( [-\\cos x]_0^\\pi = -\\cos\\pi+\\cos 0 = 1+1 = 2 \\)",
+    "name": "Definite Integral of sin"
+  },
+  {
+    "id": "m27_item3",
+    "text": "The property \\( \\int_a^b f(x)\\,dx = -\\int_b^a f(x)\\,dx \\) is called:",
+    "options": ["Linearity property", "Reversal of limits property", "Splitting property", "Symmetry property"],
+    "correctIndex": 1,
+    "explanation": "Swapping limits changes sign: \\( \\int_a^b f\\,dx = -\\int_b^a f\\,dx \\)",
+    "name": "Reversal of Limits"
+  },
+  {
+    "id": "m27_item4",
+    "text": "If \\( f(x) \\) is an even function, then \\( \\int_{-a}^{a} f(x)\\,dx = \\)",
+    "options": ["\\( 0 \\)", "\\( \\int_0^a f(x)\\,dx \\)", "\\( 2\\int_0^a f(x)\\,dx \\)", "\\( \\int_{-a}^0 f(x)\\,dx \\)"],
+    "correctIndex": 2,
+    "explanation": "Even function property: \\( \\int_{-a}^{a}f(x)dx = 2\\int_0^a f(x)dx \\)",
+    "name": "Even Function Integral"
+  },
+  {
+    "id": "m27_item5",
+    "text": "If \\( f(x) \\) is an odd function, then \\( \\int_{-a}^{a} f(x)\\,dx = \\)",
+    "options": ["\\( 2\\int_0^a f(x)\\,dx \\)", "\\( \\int_0^a f(x)\\,dx \\)", "\\( 0 \\)", "\\( -\\int_0^a f(x)\\,dx \\)"],
+    "correctIndex": 2,
+    "explanation": "Odd function property: \\( \\int_{-a}^{a}f(x)dx = 0 \\) (symmetry about origin cancels)",
+    "name": "Odd Function Integral"
+  },
+  {
+    "id": "m27_item6",
+    "text": "\\( \\int_0^{2a}f(x)\\,dx = 2\\int_0^a f(x)\\,dx \\) when:",
+    "options": ["\\( f(2a-x) = -f(x) \\)", "\\( f(a-x) = f(x) \\)", "\\( f(2a-x) = f(x) \\)", "\\( f \\) is even"],
+    "correctIndex": 2,
+    "explanation": "When \\( f(2a-x) = f(x) \\), then \\( \\int_0^{2a}f(x)dx = 2\\int_0^af(x)dx \\).",
+    "name": "2a Integration Property"
+  },
+  {
+    "id": "m27_item7",
+    "text": "The area between curve \\( y=f(x) \\) and x-axis from \\(a\\) to \\(b\\) is:",
+    "options": ["\\( \\int_a^b f(x)\\,dx \\)", "\\( \\left|\\int_a^b f(x)\\,dx\\right| \\)", "\\( \\int_a^b |f(x)|\\,dx \\)", "\\( [f(b)-f(a)] \\)"],
+    "correctIndex": 2,
+    "explanation": "Area \\( = \\int_a^b |f(x)|\\,dx \\). Use \\( |f(x)| \\) to handle regions below x-axis.",
+    "name": "Area Under Curve"
+  },
+  {
+    "id": "m27_item8",
+    "text": "Area enclosed between curves \\( y=f(x) \\) and \\( y=g(x) \\) where \\(f(x)\\geq g(x)\\) is:",
+    "options": ["\\( \\int_a^b f(x)\\,dx \\)", "\\( \\int_a^b [f(x)-g(x)]\\,dx \\)", "\\( \\int_a^b [f(x)+g(x)]\\,dx \\)", "\\( \\int_a^b f(x)\\,dx - \\int_a^b g(x)\\,dx \\)"],
+    "correctIndex": 1,
+    "explanation": "Area between two curves: \\( \\int_a^b [f(x)-g(x)]\\,dx \\) when \\(f \\geq g\\) on \\([a,b]\\).",
+    "name": "Area Between Curves"
+  },
+  {
+    "id": "m27_item9",
+    "text": "\\( \\int_0^{\\pi/2}\\sin^n x\\,dx = \\int_0^{\\pi/2}\\cos^n x\\,dx \\). This follows from:",
+    "options": ["Power rule", "Property: \\( \\int_0^a f(x)dx = \\int_0^a f(a-x)dx \\)", "Even function property", "Odd function property"],
+    "correctIndex": 1,
+    "explanation": "Applying \\( x \\to \\frac{\\pi}{2}-x \\): \\( \\sin x \\to \\cos x \\), so both integrals are equal.",
+    "name": "sin-cos Symmetry"
+  },
+  {
+    "id": "m27_item10",
+    "text": "\\( \\int_0^1 x^2\\,dx = \\)",
+    "options": ["\\( \\frac{1}{2} \\)", "\\( 1 \\)", "\\( \\frac{1}{3} \\)", "\\( \\frac{2}{3} \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\left[\\frac{x^3}{3}\\right]_0^1 = \\frac{1}{3}-0 = \\frac{1}{3} \\)",
+    "name": "Simple Definite Integral"
+  },
+  {
+    "id": "m27_item11",
+    "text": "The property \\( \\int_a^b f(x)\\,dx = \\int_a^b f(a+b-x)\\,dx \\) is used to evaluate:",
+    "options": ["Only odd integrals", "Integrals with symmetric limits", "Integrals that are difficult to solve directly", "Only even functions"],
+    "correctIndex": 2,
+    "explanation": "This \\(x \\to a+b-x\\) substitution simplifies integrals like \\( \\int_0^{\\pi} \\frac{x\\sin x}{1+\\cos^2 x}dx \\).",
+    "name": "King's Property"
+  },
+  {
+    "id": "m27_item12",
+    "text": "Area of circle \\( x^2+y^2=r^2 \\) using integration is:",
+    "options": ["\\( \\pi r \\)", "\\( 2\\pi r \\)", "\\( \\pi r^2 \\)", "\\( 4\\pi r^2 \\)"],
+    "correctIndex": 2,
+    "explanation": "Area \\( = 4\\int_0^r \\sqrt{r^2-x^2}\\,dx = \\pi r^2 \\). Verified by standard integration.",
+    "name": "Area of Circle"
+  },
+  {
+    "id": "m27_item13",
+    "text": "Walli's formula: \\( \\int_0^{\\pi/2}\\sin^m x\\cos^n x\\,dx \\) involves the pattern of multiplying down by \\(2\\) at the end when both \\(m\\) and \\(n\\) are:",
+    "options": ["Odd", "Prime", "Even", "Negative"],
+    "correctIndex": 2,
+    "explanation": "When both \\(m\\) and \\(n\\) are even, Walli's formula requires an additional factor of \\(\\frac{\\pi}{2}\\).",
+    "name": "Walli's Formula"
+  },
+  {
+    "id": "m27_item14",
+    "text": "\\( \\frac{d}{dx}\\int_a^{g(x)}f(t)\\,dt = \\)",
+    "options": ["\\( f(g(x)) \\)", "\\( g'(x)\\cdot f(g(x)) \\)", "\\( f(x)\\cdot g(x) \\)", "\\( f'(g(x)) \\)"],
+    "correctIndex": 1,
+    "explanation": "Leibniz rule: \\( \\frac{d}{dx}\\int_a^{g(x)}f(t)dt = f(g(x))\\cdot g'(x) \\) (chain rule applied).",
+    "name": "Leibniz Rule"
+  },
+  {
+    "id": "m27_item15",
+    "text": "\\( \\int_0^{\\pi/2}\\frac{\\sqrt{\\sin x}}{\\sqrt{\\sin x}+\\sqrt{\\cos x}}\\,dx = \\)",
+    "options": ["\\( 0 \\)", "\\( \\frac{\\pi}{4} \\)", "\\( \\frac{\\pi}{2} \\)", "\\( 1 \\)"],
+    "correctIndex": 1,
+    "explanation": "Using \\( I = \\int_0^{\\pi/2}\\frac{\\sqrt{\\cos x}}{\\sqrt{\\sin x}+\\sqrt{\\cos x}}dx \\) by King's property, \\(2I = \\frac{\\pi}{2} \\Rightarrow I = \\frac{\\pi}{4}\\).",
+    "name": "Classic Definite Integral"
+  }
+]

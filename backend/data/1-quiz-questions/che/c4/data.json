@@ -1,0 +1,122 @@
+[
+  {
+    "id": "c4_item1",
+    "text": "The ideal gas equation is:",
+    "options": ["\\( PV = nRT \\)", "\\( PV = RT \\)", "\\( P = nRT/V^2 \\)", "\\( PV = nR/T \\)"],
+    "correctIndex": 0,
+    "explanation": "Ideal Gas Law: \\( PV = nRT \\), where \\(R = 8.314\\) J/mol·K (or 0.0821 L·atm/mol·K).",
+    "name": "Ideal Gas Equation"
+  },
+  {
+    "id": "c4_item2",
+    "text": "Boyle's Law states that at constant temperature:",
+    "options": ["\\( V \\propto T \\)", "\\( P \\propto T \\)", "\\( PV = \\text{constant} \\)", "\\( V/T = \\text{constant} \\)"],
+    "correctIndex": 2,
+    "explanation": "Boyle's Law: \\( P \\propto \\frac{1}{V} \\) at constant \\(T\\), i.e., \\( P_1V_1 = P_2V_2 \\).",
+    "name": "Boyle's Law"
+  },
+  {
+    "id": "c4_item3",
+    "text": "Charles' Law states that at constant pressure:",
+    "options": ["\\( V \\propto P \\)", "\\( V \\propto T \\)", "\\( PV = \\text{const} \\)", "\\( V \\propto 1/T \\)"],
+    "correctIndex": 1,
+    "explanation": "Charles' Law: \\( V \\propto T \\) at constant \\(P\\), i.e., \\( \\frac{V_1}{T_1} = \\frac{V_2}{T_2} \\). T must be in Kelvin.",
+    "name": "Charles' Law"
+  },
+  {
+    "id": "c4_item4",
+    "text": "The van der Waals equation for real gases is:",
+    "options": ["\\( PV = nRT \\)", "\\( \\left(P + \\frac{an^2}{V^2}\\right)(V - nb) = nRT \\)", "\\( PV = nRT + aPV \\)", "\\( P(V+nb) = nRT \\)"],
+    "correctIndex": 1,
+    "explanation": "Van der Waals: \\( \\left(P+\\frac{an^2}{V^2}\\right)(V-nb)=nRT \\). '\\(a\\)' corrects for intermolecular forces, '\\(b\\)' for volume.",
+    "name": "Van der Waals Equation"
+  },
+  {
+    "id": "c4_item5",
+    "text": "Graham's law of diffusion states that rate of diffusion is:",
+    "options": ["Directly proportional to molar mass", "Inversely proportional to \\(\\sqrt{M}\\)", "Independent of molar mass", "Proportional to \\(M^2\\)"],
+    "correctIndex": 1,
+    "explanation": "Graham's Law: \\( r \\propto \\frac{1}{\\sqrt{M}} \\), so \\( \\frac{r_1}{r_2} = \\sqrt{\\frac{M_2}{M_1}} \\).",
+    "name": "Graham's Law of Diffusion"
+  },
+  {
+    "id": "c4_item6",
+    "text": "The kinetic theory expression for pressure of gas is:",
+    "options": ["\\( P = \\frac{1}{3}\\rho c^2 \\)", "\\( P = \\rho c^2 \\)", "\\( P = \\frac{2}{3}\\rho c^2 \\)", "\\( P = \\frac{1}{2}\\rho c^2 \\)"],
+    "correctIndex": 0,
+    "explanation": "Kinetic theory: \\( P = \\frac{1}{3}\\rho\\overline{c^2} = \\frac{1}{3}\\frac{mN}{V}\\overline{c^2} \\)",
+    "name": "Kinetic Theory Pressure"
+  },
+  {
+    "id": "c4_item7",
+    "text": "The average kinetic energy of gas molecules is:",
+    "options": ["\\( \\frac{1}{2}RT \\)", "\\( \\frac{3}{2}RT \\)", "\\( \\frac{3}{2}kT \\)", "\\( RT \\)"],
+    "correctIndex": 2,
+    "explanation": "Average KE per molecule \\( = \\frac{3}{2}kT \\). Per mole: \\( \\frac{3}{2}RT \\). (k = Boltzmann constant)",
+    "name": "Average KE of Gas"
+  },
+  {
+    "id": "c4_item8",
+    "text": "The root mean square speed of gas molecules is:",
+    "options": ["\\( u_{rms} = \\sqrt{\\frac{3RT}{M}} \\)", "\\( u_{rms} = \\sqrt{\\frac{2RT}{M}} \\)", "\\( u_{rms} = \\sqrt{\\frac{RT}{M}} \\)", "\\( u_{rms} = \\frac{3RT}{M} \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( u_{rms} = \\sqrt{\\frac{3RT}{M}} \\). Order: \\( u_{mp} < u_{avg} < u_{rms} \\).",
+    "name": "RMS Speed"
+  },
+  {
+    "id": "c4_item9",
+    "text": "Dalton's law of partial pressures states:",
+    "options": ["\\( P_{total} = P_1 \\times P_2 \\times \\cdots \\)", "\\( P_{total} = P_1 + P_2 + \\cdots \\)", "\\( P_{total} = P_1 - P_2 \\)", "Each gas exerts no pressure"],
+    "correctIndex": 1,
+    "explanation": "Dalton's Law: \\( P_{total} = P_1 + P_2 + \\cdots + P_n \\). Partial pressure \\( P_i = x_i \\cdot P_{total} \\).",
+    "name": "Dalton's Law"
+  },
+  {
+    "id": "c4_item10",
+    "text": "The compressibility factor \\(Z\\) for an ideal gas is:",
+    "options": ["\\( Z = 0 \\)", "\\( Z > 1 \\)", "\\( Z = 1 \\)", "\\( Z < 1 \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( Z = \\frac{PV}{nRT} = 1 \\) for ideal gas. \\(Z > 1\\): repulsive forces dominate; \\(Z < 1\\): attractive forces dominate.",
+    "name": "Compressibility Factor"
+  },
+  {
+    "id": "c4_item11",
+    "text": "Surface tension is defined as force per unit length. It:",
+    "options": ["Increases with temperature", "Decreases with temperature", "Is independent of temperature", "Becomes zero at 0°C"],
+    "correctIndex": 1,
+    "explanation": "Surface tension decreases with increasing temperature because intermolecular forces weaken as KE increases.",
+    "name": "Surface Tension vs Temperature"
+  },
+  {
+    "id": "c4_item12",
+    "text": "Viscosity of a liquid:",
+    "options": ["Increases with temperature", "Is independent of temperature", "Decreases with temperature", "Increases then decreases"],
+    "correctIndex": 2,
+    "explanation": "Viscosity of liquids decreases with temperature (molecules gain energy to overcome intermolecular forces). Opposite for gases.",
+    "name": "Viscosity vs Temperature"
+  },
+  {
+    "id": "c4_item13",
+    "text": "The critical temperature \\(T_c\\) is the temperature:",
+    "options": ["At which gas liquefies at any pressure", "Above which gas cannot be liquefied", "At which gas has maximum volume", "At which viscosity is minimum"],
+    "correctIndex": 1,
+    "explanation": "Critical temperature: above \\(T_c\\), a gas cannot be liquefied regardless of how much pressure is applied.",
+    "name": "Critical Temperature"
+  },
+  {
+    "id": "c4_item14",
+    "text": "Avogadro's law states that equal volumes of all gases at same T and P contain:",
+    "options": ["Equal masses", "Equal number of moles", "Equal number of molecules", "Both B and C"],
+    "correctIndex": 3,
+    "explanation": "Avogadro's Law: equal volumes at same T, P → equal number of molecules (and moles). Both B and C are correct.",
+    "name": "Avogadro's Law"
+  },
+  {
+    "id": "c4_item15",
+    "text": "The most probable speed of gas molecules is:",
+    "options": ["\\( \\sqrt{\\frac{3RT}{M}} \\)", "\\( \\sqrt{\\frac{8RT}{\\pi M}} \\)", "\\( \\sqrt{\\frac{2RT}{M}} \\)", "\\( \\sqrt{\\frac{RT}{M}} \\)"],
+    "correctIndex": 2,
+    "explanation": "Most probable speed: \\( u_{mp} = \\sqrt{\\frac{2RT}{M}} \\). Average: \\( \\sqrt{\\frac{8RT}{\\pi M}} \\). RMS: \\( \\sqrt{\\frac{3RT}{M}} \\).",
+    "name": "Most Probable Speed"
+  }
+]

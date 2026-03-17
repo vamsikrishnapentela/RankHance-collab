@@ -1,0 +1,327 @@
+[
+  {
+    "id": "c10_item1",
+    "text": "For the cell reaction, $$3Sn^{4+} + 2Cr \\rightarrow 3Sn^{2+} + 2Cr^{3+}$$, $$E^\\circ_{cell}$$ is 0.89 V. Then $$\\Delta G^\\circ$$ for the reaction is:",
+    "options": [
+      "$$-515.31 \\ \\text{kJ/mol}$$",
+      "$$-125.41 \\ \\text{kJ/mol}$$",
+      "$$-457.41 \\ \\text{kJ/mol}$$",
+      "$$-347.40 \\ \\text{kJ/mol}$$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$$\\Delta G^\\circ = -nFE^\\circ_{cell}$$\n\nHere, $$n = 6$$ (6 electrons transferred), $$F = 96500 \\ \\text{C/mol}$$, $$E^\\circ = 0.89 \\ \\text{V}$$\n\n$$\\Delta G^\\circ = -6 \\times 96500 \\times 0.89 \\times 10^{-3} \\ \\text{kJ/mol}$$\n\n$$\\Delta G^\\circ = -515.31 \\ \\text{kJ/mol}$$",
+    "name": "Electrochemistry Item 1"
+  },
+  {
+    "id": "c10_item2",
+    "text": "Which transition metal oxide has electrical conductivity similar to that of copper?",
+    "options": [
+      "$$\\text{MnO}$$",
+      "$$\\text{FeO}$$",
+      "$$\\text{ReO}_3$$",
+      "$$\\text{TiO}_2$$"
+    ],
+    "correctIndex": 2,
+    "explanation": "The electrical conductivity of copper is approximately $$1 \\times 10^7 \\ \\text{S/m}$$. Among the given transition metal oxides, $$\\text{ReO}_3$$ has electrical conductivity similar to that of copper. This is because $$\\text{ReO}_3$$ has a metallic band structure that allows free electron movement similar to metals.",
+    "name": "Electrochemistry Item 2"
+  },
+  {
+    "id": "c10_item3",
+    "text": "A 200 W, 100 V bulb is connected in series with an electrolytic cell. If an aqueous solution of a Sn-salt is electrolysed for 5 hours and 11.1 g of Sn gets deposited, what is the chemical formula of the compound? (Atomic weight of Sn = 118.7 g/mol)",
+    "options": [
+      "$$\\text{SnO}$$",
+      "$$\\text{SnCl}_2$$",
+      "$$\\text{SnCl}_4$$",
+      "$$\\text{SnO}_2$$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Current $$i = \\dfrac{P}{V} = \\dfrac{200}{100} = 2 \\ \\text{A}$$\n\nUsing Faraday's law:\n$$n = \\dfrac{A \\times i \\times t}{w \\times F} = \\dfrac{118.7 \\times 2 \\times (5 \\times 3600)}{11.1 \\times 96500} \\approx 4$$\n\nSo the valency of Sn is 4, meaning Sn is in the +4 oxidation state. Since $$\\text{SnO}$$ and $$\\text{SnO}_2$$ are non-electrolytes in aqueous solution, the compound must be $$\\text{SnCl}_4$$ ($$\\text{Sn}^{4+} + 4\\text{Cl}^-$$).",
+    "name": "Electrochemistry Item 3"
+  },
+  {
+    "id": "c10_item4",
+    "text": "When a current of 0.5 A is passed for 2 hours through a molten metal salt, 3.88 g of the metal is deposited. If the atomic mass of the metal is 208 units, what is the oxidation state of the metal in the salt?",
+    "options": [
+      "$$+1$$",
+      "$$+2$$",
+      "$$+3$$",
+      "$$+4$$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using Faraday's law:\n$$n = \\dfrac{A \\times i \\times t}{w \\times F} = \\dfrac{208 \\times 0.5 \\times (2 \\times 3600)}{3.88 \\times 96500}$$\n\n$$n = \\dfrac{208 \\times 0.5 \\times 7200}{3.88 \\times 96500} \\approx 2$$\n\nTherefore, the oxidation state of the metal in the salt is $$+2$$.",
+    "name": "Electrochemistry Item 4"
+  },
+  {
+    "id": "c10_item5",
+    "text": "Match the following:\n\n| Column I | Column II |\n|---|---|\n| A. Leclanche cell | 1. Converts combustion energy to electrical energy |\n| B. Fuel cell | 2. Rechargeable cell |\n| C. Ni-Cd cell | 3. At anode: $$\\text{Zn} \\rightarrow \\text{Zn}^{2+} + 2e^-$$ |",
+    "options": [
+      "A-3, B-2, C-1",
+      "A-1, B-2, C-3",
+      "A-3, B-1, C-2",
+      "A-2, B-1, C-3"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Leclanche cell:** The anode reaction is $$\\text{Zn} \\rightarrow \\text{Zn}^{2+} + 2e^-$$, so it matches with 3.\n\n**Fuel cell:** Converts the energy of combustion (e.g., $$2\\text{H}_2 + \\text{O}_2 \\rightarrow 2\\text{H}_2\\text{O}$$) into electrical energy, so it matches with 1.\n\n**Ni-Cd cell:** It is a rechargeable (secondary) cell, so it matches with 2.\n\nCorrect match: A-3, B-1, C-2.",
+    "name": "Electrochemistry Item 5"
+  },
+  {
+    "id": "c10_item6",
+    "text": "In the Daniell cell $$\\text{Zn} | \\text{Zn}^{2+} || \\text{Cu}^{2+} | \\text{Cu}$$, when an external voltage is applied such that $$E_{\\text{external}} > E_{\\text{cell}}$$, current flows from:",
+    "options": [
+      "Zn to Cu",
+      "Cu to Zn",
+      "No current flows",
+      "Data insufficient"
+    ],
+    "correctIndex": 0,
+    "explanation": "When an external voltage greater than the cell EMF is applied to the Daniell cell, electrolysis occurs (reverse of normal cell operation). In this case, current flows in the reverse direction — from Zn to Cu (i.e., from anode to cathode in the external circuit). Simultaneously, electrons flow from Cu to Zn internally. Zn gets deposited at the Zn electrode and Cu dissolves at the Cu electrode.",
+    "name": "Electrochemistry Item 6"
+  },
+  {
+    "id": "c10_item7",
+    "text": "How much current is required to produce $$\\text{H}_2$$ gas at the rate of 1 cc/sec under STP?",
+    "options": [
+      "2.33 A",
+      "6.0 A",
+      "7.9 A",
+      "8.61 A"
+    ],
+    "correctIndex": 3,
+    "explanation": "The half-reaction is: $$2\\text{H}^+ + 2e^- \\rightarrow \\text{H}_2$$\n\n1 mole of $$\\text{H}_2$$ = 22400 cc at STP and requires 2 moles of electrons = $$2 \\times 96500$$ C\n\nFor 1 cc/sec of $$\\text{H}_2$$:\n$$Q = \\dfrac{2 \\times 96500}{22400} = 8.616 \\ \\text{C/sec}$$\n\nSince $$I = \\dfrac{Q}{t} = \\dfrac{8.616}{1} = 8.616 \\ \\text{A} \\approx 8.61 \\ \\text{A}$$",
+    "name": "Electrochemistry Item 7"
+  },
+  {
+    "id": "c10_item8",
+    "text": "Which of the following statements is correct for the cell $$\\text{Zn} | \\text{Zn}^{2+} || \\text{Cu}^{2+} | \\text{Cu}$$?",
+    "options": [
+      "Zn is a reducing agent",
+      "Cu is the anode",
+      "Cu is an oxidising agent",
+      "The cell reaction is $$\\text{Zn} + \\text{Cu}^{2+} \\rightarrow \\text{Zn}^{2+} + \\text{Cu}$$"
+    ],
+    "correctIndex": 3,
+    "explanation": "In the Daniell cell:\n- At the **anode (negative electrode):** $$\\text{Zn}(s) \\rightarrow \\text{Zn}^{2+}(aq) + 2e^-$$ (oxidation)\n- At the **cathode (positive electrode):** $$\\text{Cu}^{2+}(aq) + 2e^- \\rightarrow \\text{Cu}(s)$$ (reduction)\n\nOverall cell reaction: $$\\text{Zn}(s) + \\text{Cu}^{2+}(aq) \\rightarrow \\text{Zn}^{2+}(aq) + \\text{Cu}(s)$$\n\nNote: While Zn is indeed a reducing agent and Cu²⁺ is an oxidising agent, the most complete and precise statement among the options is (d), which correctly states the overall cell reaction.",
+    "name": "Electrochemistry Item 8"
+  },
+  {
+    "id": "c10_item9",
+    "text": "A solution containing 4.5 mM of $$\\text{MnO}_4^-$$ and 15 mM of $$\\text{Mn}^{2+}$$ shows a pH of 2. The potential of the half-cell reaction is:\n\n(Given: $$\\log 15 = 1.76$$, $$\\log 45 = 1.653$$, $$E^\\circ_{\\text{MnO}_4^-/\\text{Mn}^{2+}} = 1.51 \\ \\text{V}$$)",
+    "options": [
+      "1.51 V",
+      "1.31 V",
+      "1.71 V",
+      "1.04 V"
+    ],
+    "correctIndex": 1,
+    "explanation": "The half-reaction is:\n$$\\text{MnO}_4^- + 8\\text{H}^+ + 5e^- \\rightarrow \\text{Mn}^{2+} + 4\\text{H}_2\\text{O}$$\n\nApplying the Nernst equation:\n$$E = E^\\circ + \\dfrac{0.059}{5} \\log \\dfrac{[\\text{MnO}_4^-][\\text{H}^+]^8}{[\\text{Mn}^{2+}]}$$\n\n$$[\\text{MnO}_4^-] = 4.5 \\times 10^{-3} \\ \\text{M}, \\ [\\text{Mn}^{2+}] = 15 \\times 10^{-3} \\ \\text{M}, \\ [\\text{H}^+] = 10^{-2} \\ \\text{M}$$\n\n$$E = 1.51 + \\dfrac{0.059}{5} \\log \\dfrac{4.5 \\times 10^{-3} \\times (10^{-2})^8}{15 \\times 10^{-3}}$$\n\nAfter calculation: $$E \\approx 1.31 \\ \\text{V}$$",
+    "name": "Electrochemistry Item 9"
+  },
+  {
+    "id": "c10_item10",
+    "text": "For the cell reaction $$\\text{Zn}(s) + \\text{Cu}^{2+}(aq) \\rightarrow \\text{Cu}(s) + \\text{Zn}^{2+}(aq)$$, under which condition is the EMF maximum?\n\n$$\\left(\\dfrac{2.303RT}{F} = 0.059 \\ \\text{V at 298 K},\\ E^\\circ_{\\text{Zn}^{2+}/\\text{Zn}} = -0.76 \\ \\text{V},\\ E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}} = +0.34 \\ \\text{V}\\right)$$\n\nHere $$C_1 = [\\text{Zn}^{2+}]$$ and $$C_2 = [\\text{Cu}^{2+}]$$",
+    "options": [
+      "$$C_1 = 0.1 \\ \\text{M},\\ C_2 = 0.01 \\ \\text{M}$$",
+      "$$C_1 = 0.01 \\ \\text{M},\\ C_2 = 0.1 \\ \\text{M}$$",
+      "$$C_1 = 0.1 \\ \\text{M},\\ C_2 = 0.2 \\ \\text{M}$$",
+      "$$C_1 = 0.2 \\ \\text{M},\\ C_2 = 0.1 \\ \\text{M}$$"
+    ],
+    "correctIndex": 0,
+    "explanation": "From the Nernst equation:\n$$E = E^\\circ_{\\text{cell}} - \\dfrac{0.059}{2} \\log \\dfrac{[\\text{Zn}^{2+}]}{[\\text{Cu}^{2+}]} = 1.1 - \\dfrac{0.059}{2} \\log \\dfrac{C_1}{C_2}$$\n\nFor E to be **maximum**, the log term must be **minimum** (most negative).\n\nThis happens when $$\\dfrac{C_1}{C_2}$$ is smallest, i.e., $$\\log \\dfrac{0.01}{0.1} = \\log(0.1) = -1$$ (minimum value).\n\nSo option (a) gives the maximum EMF.",
+    "name": "Electrochemistry Item 10"
+  },
+  {
+    "id": "c10_item11",
+    "text": "Compound A is prepared by the electrolysis of aqueous solution of B using a Castner-Kellner cell with mercury as cathode and carbon as anode. A and B respectively are:",
+    "options": [
+      "NaOH, NaCl",
+      "NaCl, NaOH",
+      "$$\\text{NaHCO}_3$$, NaOH",
+      "$$\\text{Na}_2\\text{CO}_3$$, $$\\text{NH}_3$$"
+    ],
+    "correctIndex": 0,
+    "explanation": "In the **Castner-Kellner cell**, an aqueous solution of **NaCl (B)** is electrolysed.\n\n- **Anode reaction:** $$\\text{Cl}^- \\rightarrow \\dfrac{1}{2}\\text{Cl}_2 + e^-$$\n- **Cathode reaction (at mercury):** $$\\text{Na}^+ + e^- \\rightarrow \\text{Na}$$\n- The sodium amalgam reacts with water: $$2\\text{Na} + 2\\text{H}_2\\text{O} \\rightarrow 2\\text{NaOH} + \\text{H}_2\\uparrow$$\n\nTherefore, **NaOH (A)** is produced from **NaCl (B)**.",
+    "name": "Electrochemistry Item 11"
+  },
+  {
+    "id": "c10_item12",
+    "text": "The EMF of the cell $$\\text{Mg} | \\text{Mg}^{2+}(0.01 \\ \\text{M}) || \\text{Sn}^{2+}(0.1 \\ \\text{M}) | \\text{Sn}$$ at 298 K is:\n\n$$\\left(E^\\circ_{\\text{Mg}^{2+}/\\text{Mg}} = -2.34 \\ \\text{V},\\ E^\\circ_{\\text{Sn}^{2+}/\\text{Sn}} = -0.14 \\ \\text{V}\\right)$$",
+    "options": [
+      "2.17 V",
+      "2.23 V",
+      "2.51 V",
+      "2.45 V"
+    ],
+    "correctIndex": 1,
+    "explanation": "$$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}} = -0.14 - (-2.34) = 2.20 \\ \\text{V}$$\n\nApplying the Nernst equation (n = 2):\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\dfrac{0.0591}{2} \\log \\dfrac{[\\text{Mg}^{2+}]}{[\\text{Sn}^{2+}]}$$\n\n$$E_{\\text{cell}} = 2.20 - \\dfrac{0.0591}{2} \\log \\dfrac{0.01}{0.1}$$\n\n$$= 2.20 - \\dfrac{0.0591}{2} \\times (-1)$$\n\n$$= 2.20 + 0.02955 \\approx 2.23 \\ \\text{V}$$",
+    "name": "Electrochemistry Item 12"
+  },
+  {
+    "id": "c10_item13",
+    "text": "The electrode potentials for the following reactions are given:\n$$\\text{M}^{2+}(aq) + e^- \\rightarrow \\text{M}^+(aq), \\ E^\\circ_1 = +0.15 \\ \\text{V}$$\n$$\\text{M}^+(aq) + e^- \\rightarrow \\text{M}(s), \\ E^\\circ_2 = +0.50 \\ \\text{V}$$\n\nThe value of $$E^\\circ_{\\text{M}^{2+}/\\text{M}}$$ will be:",
+    "options": [
+      "0.150 V",
+      "0.300 V",
+      "0.325 V",
+      "0.650 V"
+    ],
+    "correctIndex": 2,
+    "explanation": "Using the relationship $$\\Delta G^\\circ = -nFE^\\circ$$:\n\n- Reaction 1: $$-\\Delta G^\\circ_1 = -1 \\times F \\times E^\\circ_1$$\n- Reaction 2: $$-\\Delta G^\\circ_2 = -1 \\times F \\times E^\\circ_2$$\n- Net reaction ($$\\text{M}^{2+} + 2e^- \\rightarrow \\text{M}$$): $$-\\Delta G^\\circ_3 = -2 \\times F \\times E^\\circ_3$$\n\nSince $$\\Delta G^\\circ_3 = \\Delta G^\\circ_1 + \\Delta G^\\circ_2$$:\n$$2E^\\circ_3 = E^\\circ_1 + E^\\circ_2 = 0.15 + 0.50 = 0.65 \\ \\text{V}$$\n\n$$E^\\circ_3 = \\dfrac{0.65}{2} = 0.325 \\ \\text{V}$$",
+    "name": "Electrochemistry Item 13"
+  },
+  {
+    "id": "c10_item14",
+    "text": "CuSO₄ solution is electrolysed for 15 minutes to deposit 0.4725 g of copper at the cathode. The current in amperes required is:\n\n(Faraday = 96500 C/mol, atomic weight of Cu = 63)",
+    "options": [
+      "0.804 A",
+      "1.608 A",
+      "1.206 A",
+      "0.402 A"
+    ],
+    "correctIndex": 1,
+    "explanation": "Given: $$t = 15 \\ \\text{min} = 900 \\ \\text{s}$$, $$w = 0.4725 \\ \\text{g}$$, equivalent weight of Cu $$= \\dfrac{63}{2}$$\n\nUsing Faraday's first law:\n$$w = \\dfrac{E \\times i \\times t}{F}$$\n\n$$i = \\dfrac{w \\times F}{E \\times t} = \\dfrac{0.4725 \\times 2 \\times 96500}{63 \\times 900}$$\n\n$$i = \\dfrac{91226.25}{56700} \\approx 1.608 \\ \\text{A}$$",
+    "name": "Electrochemistry Item 14"
+  },
+  {
+    "id": "c10_item15",
+    "text": "If the $$E^\\circ_{\\text{cell}}$$ of the equilibrium reaction $$A(s) + B^{2+}(aq) \\rightleftharpoons A^{2+}(aq) + B(s)$$ at 298 K is 0.59 V, the equilibrium constant $$K_c$$ is:",
+    "options": [
+      "$$1.0 \\times 10^{10}$$",
+      "$$1.0 \\times 10^{2}$$",
+      "$$1.0 \\times 10^{-20}$$",
+      "$$1.0 \\times 10^{20}$$"
+    ],
+    "correctIndex": 3,
+    "explanation": "Using the relationship between $$E^\\circ_{\\text{cell}}$$ and $$K_c$$ at 298 K:\n\n$$\\log K_c = \\dfrac{nE^\\circ_{\\text{cell}}}{0.059} = \\dfrac{2 \\times 0.59}{0.059} = \\dfrac{1.18}{0.059} = 20$$\n\n$$K_c = 10^{20} = 1.0 \\times 10^{20}$$",
+    "name": "Electrochemistry Item 15"
+  },
+  {
+    "id": "c10_item16",
+    "text": "If $$E^\\circ_{\\text{cell}} = 1.05 \\ \\text{V}$$, the EMF of the cell for the following cell reaction at 298 K is:\n\n$$\\text{Ni}(s) + 2\\text{Ag}^+(0.004 \\ \\text{M}) \\rightarrow \\text{Ni}^{2+}(0.16 \\ \\text{M}) + 2\\text{Ag}(s)$$",
+    "options": [
+      "0.932 V",
+      "1.227 V",
+      "0.732 V",
+      "1.397 V"
+    ],
+    "correctIndex": 0,
+    "explanation": "Applying the Nernst equation with $$n = 2$$:\n\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\dfrac{0.0591}{2} \\log \\dfrac{[\\text{Ni}^{2+}]}{[\\text{Ag}^+]^2}$$\n\n$$= 1.05 - \\dfrac{0.0591}{2} \\log \\dfrac{0.16}{(0.004)^2}$$\n\n$$= 1.05 - \\dfrac{0.0591}{2} \\log \\dfrac{0.16}{0.000016}$$\n\n$$= 1.05 - \\dfrac{0.0591}{2} \\log (10^4)$$\n\n$$= 1.05 - \\dfrac{0.0591}{2} \\times 4$$\n\n$$= 1.05 - 0.1182 \\approx 0.932 \\ \\text{V}$$",
+    "name": "Electrochemistry Item 16"
+  },
+  {
+    "id": "c10_item17",
+    "text": "In which of the following cells is the space between cathode and anode filled by a moist mixture of ammonium chloride and zinc chloride?",
+    "options": [
+      "Mercury cell",
+      "Leclanche cell",
+      "Nickel-cadmium cell",
+      "Fuel cell"
+    ],
+    "correctIndex": 1,
+    "explanation": "In the **Leclanche cell (dry cell)**:\n- The **anode** is a zinc container.\n- The **cathode** is a carbon (graphite) rod surrounded by powdered MnO₂ and carbon.\n- The **electrolyte** filling the space between cathode and anode is a moist mixture of **ammonium chloride (NH₄Cl) and zinc chloride (ZnCl₂)**.",
+    "name": "Electrochemistry Item 17"
+  },
+  {
+    "id": "c10_item18",
+    "text": "When an aqueous solution of $$\\text{CuCl}_2$$ is electrolysed using Pt inert electrodes, the reactions at cathode and anode respectively are:",
+    "options": [
+      "$$4\\text{H}_2\\text{O}(l) \\rightarrow 2\\text{H}_2(g) + 4\\text{OH}^-(aq) + 4e^-$$; $$2\\text{H}_2\\text{O}(l) \\rightarrow \\text{O}_2(g) + 4\\text{H}^+(aq) + 4e^-$$",
+      "$$2\\text{Cu}^{2+}(aq) + 4e^- \\rightarrow 2\\text{Cu}(s)$$; $$2\\text{H}_2\\text{O}(l) \\rightarrow \\text{O}_2(g) + 4\\text{H}^+(aq) + 4e^-$$",
+      "$$\\text{Cu}^{2+}(aq) + 2e^- \\rightarrow \\text{Cu}(s)$$; $$2\\text{Cl}^-(aq) \\rightarrow \\text{Cl}_2(g) + 2e^-$$",
+      "$$2\\text{H}_2\\text{O}(l) + 2e^- \\rightarrow \\text{H}_2(g) + 2\\text{OH}^-(aq)$$; $$2\\text{Cl}^-(aq) \\rightarrow \\text{Cl}_2(g) + 2e^-$$"
+    ],
+    "correctIndex": 2,
+    "explanation": "In the electrolysis of aqueous $$\\text{CuCl}_2$$:\n\n$$\\text{CuCl}_2 \\rightarrow \\text{Cu}^{2+}(aq) + 2\\text{Cl}^-(aq)$$\n\n- **At cathode (reduction):** $$\\text{Cu}^{2+}$$ is preferentially reduced over $$\\text{H}^+$$ (due to lower reactivity of Cu):\n$$\\text{Cu}^{2+}(aq) + 2e^- \\rightarrow \\text{Cu}(s)$$\n\n- **At anode (oxidation):** $$\\text{Cl}^-$$ is preferentially oxidised over $$\\text{OH}^-$$ (due to its higher concentration and overvoltage effect):\n$$2\\text{Cl}^-(aq) \\rightarrow \\text{Cl}_2(g) + 2e^-$$",
+    "name": "Electrochemistry Item 18"
+  },
+  {
+    "id": "c10_item19",
+    "text": "Using the standard electrode potentials given below, identify the correct statements:\n\n$$\\text{Fe}^{2+} + 2e^- \\rightarrow \\text{Fe}; \\ E^\\circ = -0.44 \\ \\text{V}$$\n$$\\text{Cu}^{2+} + 2e^- \\rightarrow \\text{Cu}; \\ E^\\circ = +0.34 \\ \\text{V}$$\n$$\\text{Ag}^+ + e^- \\rightarrow \\text{Ag}; \\ E^\\circ = +0.80 \\ \\text{V}$$\n\n(i) Copper can displace iron from FeSO₄ solution.\n(ii) Iron can displace copper from CuSO₄ solution.\n(iii) Silver can displace copper from CuSO₄ solution.\n(iv) Iron can displace silver from AgNO₃ solution.",
+    "options": [
+      "(i) and (ii)",
+      "(ii) and (iii)",
+      "(ii) and (iv)",
+      "(i) and (iv)"
+    ],
+    "correctIndex": 2,
+    "explanation": "A metal can displace another metal from its salt solution only if it has a **more negative (lower) standard electrode potential**.\n\n- $$E^\\circ(\\text{Fe}) = -0.44 \\ \\text{V}$$ is more negative than both $$E^\\circ(\\text{Cu}) = +0.34 \\ \\text{V}$$ and $$E^\\circ(\\text{Ag}) = +0.80 \\ \\text{V}$$.\n\nTherefore:\n- **(ii)** Fe can displace Cu from CuSO₄ ✓\n- **(iv)** Fe can displace Ag from AgNO₃ ✓\n- Cu cannot displace Fe (Cu has higher $$E^\\circ$$) ✗\n- Ag cannot displace Cu (Ag has higher $$E^\\circ$$) ✗",
+    "name": "Electrochemistry Item 19"
+  },
+  {
+    "id": "c10_item20",
+    "text": "For which one of the following elements is the $$M^{3+}/M^{2+}$$ standard electrode potential most positive?",
+    "options": [
+      "V",
+      "Cr",
+      "Mn",
+      "Fe"
+    ],
+    "correctIndex": 2,
+    "explanation": "The $$\\text{Mn}^{3+}/\\text{Mn}^{2+}$$ standard reduction potential is the most positive among the given elements. This is because $$\\text{Mn}^{2+}$$ has a half-filled d-subshell ($$d^5$$ configuration), which is exceptionally stable. Removing one more electron (converting $$\\text{Mn}^{2+}$$ to $$\\text{Mn}^{3+}$$) disrupts this stability, so $$\\text{Mn}^{3+}$$ is a strong oxidising agent and the $$\\text{Mn}^{3+}/\\text{Mn}^{2+}$$ potential is highly positive.",
+    "name": "Electrochemistry Item 20"
+  },
+  {
+    "id": "c10_item21",
+    "text": "The conductivity of 0.01 M aqueous acetic acid, measured with a conductivity cell of cell constant 0.5 cm⁻¹ at 298 K, is $$3.12 \\times 10^{-4} \\ \\text{S}$$. If the limiting molar conductivities of $$\\text{H}^+$$ and $$\\text{CH}_3\\text{COO}^-$$ are 349 and 41 S cm² mol⁻¹ respectively, the dissociation constant of acetic acid is:",
+    "options": [
+      "$$1.67 \\times 10^{-4}$$",
+      "$$1.67 \\times 10^{-5}$$",
+      "$$1.67 \\times 10^{-3}$$",
+      "$$1.67 \\times 10^{-6}$$"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Step 1:** Conductivity = $$3.12 \\times 10^{-4} \\times 0.5 = 1.56 \\times 10^{-4} \\ \\text{S cm}^{-1}$$\n\n**Step 2:** Molar conductivity $$\\Lambda_m = \\dfrac{1.56 \\times 10^{-4}}{0.01 \\times 10^{-3}} = 15.6 \\ \\text{S cm}^2 \\text{mol}^{-1}$$\n\n**Step 3:** $$\\Lambda^\\circ_m = 349 + 41 = 390 \\ \\text{S cm}^2 \\text{mol}^{-1}$$\n\n**Step 4:** Degree of dissociation $$\\alpha = \\dfrac{\\Lambda_m}{\\Lambda^\\circ_m} = \\dfrac{15.6}{390} = 0.04$$\n\n**Step 5:** $$K_a = \\dfrac{c\\alpha^2}{1-\\alpha} = \\dfrac{0.01 \\times (0.04)^2}{1 - 0.04} = \\dfrac{0.01 \\times 0.0016}{0.96} \\approx 1.67 \\times 10^{-5}$$",
+    "name": "Electrochemistry Item 21"
+  },
+  {
+    "id": "c10_item22",
+    "text": "Consider the following statements about $$\\text{CuI}_2$$:\n\n**Assertion (A):** $$\\text{CuI}_2$$ cannot be prepared by the reaction of $$\\text{Cu}^{2+}(aq)$$ with $$\\text{I}^-(aq)$$.\n\n**Reason (R):** Aqueous $$\\text{Cu}^{2+}$$ solution is blue in colour.\n\nThe correct answer is:",
+    "options": [
+      "Both (A) and (R) are correct and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are correct but (R) is not the correct explanation of (A)",
+      "(A) is correct but (R) is not correct",
+      "(A) is not correct but (R) is correct"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Assertion (A) is correct:** The reaction of $$\\text{Cu}^{2+}$$ with $$\\text{I}^-$$ has a negative cell potential, making it non-spontaneous. This can be verified:\n- Reduction: $$2\\text{Cu}^{2+} + 2e^- \\rightarrow 2\\text{Cu}^+$$; $$E^\\circ = +0.159 \\ \\text{V}$$\n- Oxidation: $$2\\text{I}^- \\rightarrow \\text{I}_2 + 2e^-$$; $$E^\\circ = -0.535 \\ \\text{V}$$\n- $$E^\\circ_{\\text{cell}} = 0.159 - 0.535 = -0.376 \\ \\text{V}$$ (negative, so non-spontaneous)\n\n**Reason (R) is also correct:** Aqueous $$\\text{Cu}^{2+}$$ is indeed blue. However, the blue colour has nothing to do with why $$\\text{CuI}_2$$ cannot be prepared. So (R) does **not** explain (A).",
+    "name": "Electrochemistry Item 22"
+  },
+  {
+    "id": "c10_item23",
+    "text": "**Assertion (A):** The charge on one mole of electrons is one Faraday.\n\n**Reason (R):** The quantity of current required to deposit one mole of Mg from $$\\text{Mg}^{2+}$$ electrolyte solution is two Faradays.\n\nThe correct answer is:",
+    "options": [
+      "Both (A) and (R) are correct and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are correct but (R) is not the correct explanation of (A)",
+      "(A) is correct but (R) is not correct",
+      "(A) is not correct but (R) is correct"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Assertion (A) is correct:** 1 Faraday = charge on 1 mole of electrons = $$96500 \\ \\text{C/mol}$$.\n\n**Reason (R) is correct:** For depositing Mg:\n$$\\text{Mg}^{2+} + 2e^- \\rightarrow \\text{Mg}$$\n\n2 moles of electrons are needed to deposit 1 mole of Mg, so 2 Faradays of charge are required.\n\n**(R) correctly explains (A):** Since 1 mole of electrons = 1 Faraday, 2 moles of electrons (2 Faradays) are needed for the 2-electron reduction of Mg²⁺. This directly demonstrates the definition of a Faraday.",
+    "name": "Electrochemistry Item 23"
+  },
+  {
+    "id": "c10_item24",
+    "text": "Which one of the following reactions does NOT take place?",
+    "options": [
+      "$$\\text{F}_2 + 2\\text{Br}^- \\rightarrow 2\\text{F}^- + \\text{Br}_2$$",
+      "$$\\text{Br}_2 + 2\\text{I}^- \\rightarrow 2\\text{Br}^- + \\text{I}_2$$",
+      "$$\\text{Cl}_2 + 2\\text{Br}^- \\rightarrow 2\\text{Cl}^- + \\text{Br}_2$$",
+      "$$\\text{Br}_2 + 2\\text{Cl}^- \\rightarrow 2\\text{Br}^- + \\text{Cl}_2$$"
+    ],
+    "correctIndex": 3,
+    "explanation": "For the reaction $$\\text{Br}_2 + 2\\text{Cl}^- \\rightarrow 2\\text{Br}^- + \\text{Cl}_2$$:\n\n- **At cathode:** $$\\text{Br}_2 + 2e^- \\rightarrow 2\\text{Br}^-$$; $$E^\\circ = +1.09 \\ \\text{V}$$\n- **At anode:** $$2\\text{Cl}^- \\rightarrow \\text{Cl}_2 + 2e^-$$; $$E^\\circ = -1.36 \\ \\text{V}$$\n\n$$E^\\circ_{\\text{cell}} = 1.09 - 1.36 = -0.27 \\ \\text{V}$$\n\nSince $$E^\\circ_{\\text{cell}}$$ is **negative**, the reaction is **non-spontaneous** and does not take place. All other reactions have positive $$E^\\circ_{\\text{cell}}$$ values, so they are spontaneous.",
+    "name": "Electrochemistry Item 24"
+  },
+  {
+    "id": "c10_item25",
+    "text": "Find the observed EMF of the cell $$\\text{Cd} | \\text{Cd}^{2+}(0.01 \\ \\text{M}) || \\text{Cu}^{2+}(0.01 \\ \\text{M}) | \\text{Cu}$$, given that the internal resistance is 4 Ω and the current produced is 0.15 A.\n\n$$\\left(E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}} = +0.35 \\ \\text{V},\\ E^\\circ_{\\text{Cd}^{2+}/\\text{Cd}} = -0.40 \\ \\text{V}\\right)$$",
+    "options": [
+      "0.75 V",
+      "0.15 V",
+      "0.6 V",
+      "0.9 V"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Step 1:** Calculate $$E^\\circ_{\\text{cell}}$$:\n$$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}} = 0.35 - (-0.40) = 0.75 \\ \\text{V}$$\n\n**Step 2:** Since $$[\\text{Cd}^{2+}] = [\\text{Cu}^{2+}] = 0.01 \\ \\text{M}$$, the reaction quotient $$Q = \\dfrac{[\\text{Cd}^{2+}]}{[\\text{Cu}^{2+}]} = 1$$, so $$\\log Q = 0$$.\n\nTherefore, $$E_{\\text{cell}} = E^\\circ_{\\text{cell}} = 0.75 \\ \\text{V}$$\n\n**Step 3:** Calculate the voltage drop due to internal resistance:\n$$V_{\\text{internal}} = I \\times r = 0.15 \\times 4 = 0.60 \\ \\text{V}$$\n\n**Step 4:** Observed EMF:\n$$E_{\\text{observed}} = E_{\\text{cell}} - V_{\\text{internal}} = 0.75 - 0.60 = 0.15 \\ \\text{V}$$",
+    "name": "Electrochemistry Item 25"
+  }
+]

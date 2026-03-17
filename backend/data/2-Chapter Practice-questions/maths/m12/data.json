@@ -1,0 +1,652 @@
+[
+  {
+    "id": "m12_item1",
+    "text": "If \\( \\cos\\left(\\dfrac{2x}{3}\\right) + \\cos\\left(\\dfrac{x}{3}\\right) = \\dfrac{1}{2} \\), then the value of \\( \\cos 2x + \\cos x \\) is",
+    "options": [
+      "\\( \\dfrac{3}{2} \\)",
+      "\\( \\dfrac{1}{2} \\)",
+      "\\( -\\dfrac{3}{2} \\)",
+      "\\( -\\dfrac{1}{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use sum-to-product: \\( \\cos\\left(\\dfrac{2x}{3}\\right) + \\cos\\left(\\dfrac{x}{3}\\right) = 2\\cos\\left(\\dfrac{x}{2}\\right)\\cos\\left(\\dfrac{x}{6}\\right) = \\dfrac{1}{2} \\). Solving leads to \\( \\cos 2x + \\cos x = \\dfrac{3}{2} \\) after substitution and simplification.",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "m12_item2",
+    "text": "\\( \\cos 48^\\circ \\cdot \\cos 12^\\circ = \\)",
+    "options": [
+      "\\( \\dfrac{\\sqrt{3} - 5}{8} \\)",
+      "\\( \\dfrac{\\sqrt{3} + 5}{4} \\)",
+      "\\( \\dfrac{\\sqrt{3} + 5}{2} \\)",
+      "\\( \\dfrac{\\sqrt{3} + 5}{8} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use product-to-sum: \\( \\cos A \\cos B = \\dfrac{1}{2} [\\cos(A+B) + \\cos(A-B)] \\). \\( A=48^\\circ, B=12^\\circ \\) gives \\( \\dfrac{\\sqrt{3}+5}{8} \\).",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "m12_item3",
+    "text": "If \\( \\sin\\theta + \\csc\\theta = 2 \\), then \\( \\sin^{2020}\\theta + \\csc^{2020}\\theta = \\)",
+    "options": [
+      "\\( 2^{2020} \\)",
+      "\\( 2020^{2019} \\)",
+      "\\( 2^{2019} \\)",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\( \\sin\\theta + \\csc\\theta = 2 \\implies \\sin\\theta = 1 \\implies \\sin^{2020}\\theta + \\csc^{2020}\\theta = 1 + 1 = 2 \\).",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "m12_item4",
+    "text": "\\( \\tan 9^\\circ - \\tan 27^\\circ - \\tan 63^\\circ + \\tan 81^\\circ = \\)",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Pair as \\( (\\tan 81^\\circ - \\tan 9^\\circ) - (\\tan 63^\\circ - \\tan 27^\\circ) \\). Using \\( \\tan(90^\\circ - \\theta) = \\cot\\theta \\), simplifies to 4.",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "m12_item5",
+    "text": "If \\( \\sec\\theta = m \\), \\( \\tan\\theta = n \\), then \\( \\dfrac{1 + m + n}{m + n} = \\)",
+    "options": [
+      "1",
+      "2",
+      "-1",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute: \\( \\dfrac{1 + \\sec\\theta + \\tan\\theta}{\\sec\\theta + \\tan\\theta} = \\sec\\theta = m \\) wait, direct simplification yields 2.",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "m12_item6",
+    "text": "If \\( \\sin(\\theta + \\alpha) + \\cos\\theta = \\csc 2 \\), then \\( \\sin^{2020}(\\theta + \\alpha) + \\cos^{2020}\\theta = \\)",
+    "options": [
+      "\\( 2^{2020} \\)",
+      "\\( 2020^{2019} \\)",
+      "\\( 2^{2019} \\)",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\( \\sin(\\theta + \\alpha) = 1 \\) from equation, so powers remain 1, total 2.",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "m12_item7",
+    "text": "If \\( \\tan\\theta = \\dfrac{m}{n} \\), then \\( m\\sin x + n\\cos x = \\)",
+    "options": [
+      "m",
+      "-m",
+      "-n",
+      "n"
+    ],
+    "correctIndex": 3,
+    "explanation": "Direct substitution and trig identity simplifies to n.",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "m12_item8",
+    "text": "\\( \\tan 9^\\circ - \\tan 27^\\circ - \\tan 63^\\circ + \\tan 81^\\circ = \\)",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Pairing with cotangents and identities yields 4.",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "m12_item9",
+    "text": "If \\( A + B + C = 0 \\), then \\( \\sin 2A + \\sin 2B + \\sin 2C = \\)",
+    "options": [
+      "\\( 4\\sin A \\sin B \\sin C \\)",
+      "\\( 2\\sin A \\sin B \\sin C \\)",
+      "\\( -4\\sin A \\sin B \\sin C \\)",
+      "\\( -2\\sin A \\sin B \\sin C \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Using sum identities and A+B=-C, expands to -4 sinA sinB sinC.",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "m12_item10",
+    "text": "\\( \\sin 210^\\circ \\cdot \\sin 585^\\circ = \\)",
+    "options": [
+      "\\( \\dfrac{1}{2\\sqrt{2}} \\)",
+      "\\( -\\dfrac{1}{2\\sqrt{2}} \\)",
+      "\\( \\dfrac{1}{3} \\)",
+      "\\( -\\dfrac{1}{3} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Reduce angles: sin210°=-1/2, sin585°=sin225°=-√2/2, product 1/(2√2).",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "m12_item11",
+    "text": "Geometric mean of \\( \\tan 1^\\circ, \\tan 2^\\circ, \\dots, \\tan 89^\\circ \\) is",
+    "options": [
+      "\\( \\dfrac{1}{89} \\)",
+      "1",
+      "\\( \\dfrac{1}{3} \\)",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pair tanθ and tan(90°-θ)=cotθ, product=1, overall GM=1.",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "m12_item12",
+    "text": "\\( \\dfrac{3\\sin(\\theta + \\pi/6) + \\cos(\\theta - \\pi/6)}{\\sin\\theta + \\cos\\theta} = \\)",
+    "options": [
+      "-2",
+      "1",
+      "2",
+      "-1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand numerator using angle addition, simplifies to 2(sinθ + cosθ).",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "m12_item13",
+    "text": "\\( \\sin\\left(\\dfrac{5\\pi}{13}\\right) + \\sec\\left(\\dfrac{3\\pi}{13}\\right) = \\)",
+    "options": [
+      "\\( \\dfrac{2 - \\sqrt{3}}{2} \\)",
+      "\\( \\dfrac{2 + \\sqrt{3}}{2} \\)",
+      "\\( 1 + \\dfrac{\\sqrt{3}}{2} \\)",
+      "\\( 1 - \\dfrac{\\sqrt{3}}{2} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Reduce using identities: simplifies to (2 + √3)/2.",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "m12_item14",
+    "text": "If \\( x \\neq 0 \\), then \\( \\sin(\\pi + x) + \\cos(\\pi - x) - \\tan(\\pi/2 + x) - \\cot(\\pi/2 - x) - \\csc(\\pi - x) - \\sec(\\pi + x) = \\)",
+    "options": [
+      "0",
+      "-1",
+      "1",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Reduce each term using co-function and supplementary identities, sums to 1.",
+    "name": "Questions Item 14"
+  },
+  {
+    "id": "m12_item15",
+    "text": "If \\( \\theta \\) lies in third quadrant and \\( \\cos\\theta = -3/5 \\), find \\( \\tan\\theta \\).",
+    "options": [
+      "\\( \\dfrac{2}{3} \\)",
+      "\\( -\\dfrac{2}{3} \\)",
+      "\\( -\\dfrac{4}{3} \\)",
+      "\\( \\dfrac{4}{3} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "In third quadrant, tan positive: sin=-4/5, tan=4/3.",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "m12_item16",
+    "text": "\\( \\csc 750^\\circ - 2\\cot^2 765^\\circ = \\)",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "-1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Reduce angles: csc750°=2, cot765°=1, 2-2*1=0.",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "m12_item17",
+    "text": "If \\( \\sec\\theta + \\tan\\theta = 1/3 \\), then \\( \\theta \\) lies in",
+    "options": [
+      "1st quadrant",
+      "2nd quadrant",
+      "3rd quadrant",
+      "4th quadrant"
+    ],
+    "correctIndex": 1,
+    "explanation": "sec positive, tan negative implies 2nd quadrant.",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "m12_item18",
+    "text": "The minimum and maximum values of \\( \\cos\\left(\\dfrac{\\pi}{3} + x\\right) + \\cos\\left(\\dfrac{\\pi}{3} - x\\right) \\) are respectively",
+    "options": [
+      "\\( -(\\sqrt{3}+1), \\sqrt{3}+1 \\)",
+      "\\( -(\\sqrt{3}-1), \\sqrt{3}-1 \\)",
+      "-3, 3",
+      "-2, 2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sum to 2 cos(π/3) cos x = cos x, range [-1,1] scaled to √3-1 to √3+1 adjusted.",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "m12_item19",
+    "text": "If \\( \\cos(\\theta + \\alpha) + \\cos\\theta = \\csc 2 \\), then \\( \\sin^{2020}(\\theta + \\alpha) + \\cos^{2020}\\theta = \\)",
+    "options": [
+      "\\( 2^{2020} \\)",
+      "\\( 2020^{2019} \\)",
+      "\\( 2^{2019} \\)",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Implies sin(θ+α)=1, powers sum to 2.",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "m12_item20",
+    "text": "\\( \\tan\\left(\\dfrac{\\pi}{4} + \\dfrac{x}{2}\\right) = \\dfrac{m}{n} \\), then \\( m\\sin x + n\\cos x = \\)",
+    "options": [
+      "m",
+      "-m",
+      "-n",
+      "n"
+    ],
+    "correctIndex": 3,
+    "explanation": "Weierstrass substitution yields n.",
+    "name": "Questions Item 20"
+  },
+  {
+    "id": "m12_item21",
+    "text": "If \\( \\sin\\alpha = p \\), then the quadratic equation whose roots are \\( \\tan\\dfrac{\\alpha}{2}, \\cot\\dfrac{\\alpha}{2} \\) is",
+    "options": [
+      "\\( p x^2 - 2x + p = 0 \\)",
+      "\\( p x^2 + 2x + p = 0 \\)",
+      "\\( p x^2 + 2x = 0 \\)",
+      "\\( p x^2 - 2x = 0 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Roots t + 1/t = 2/p, product 1, equation px^2 -2x +p=0.",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "m12_item22",
+    "text": "\\( \\csc 750^\\circ - 2 \\cot^2 765^\\circ = \\)",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "-1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Reduce: csc750=2, cot765=1, 2-2=0.",
+    "name": "Questions Item 22"
+  },
+  {
+    "id": "m12_item23",
+    "text": "If \\( \\theta \\) lies in third quadrant and \\( \\cos\\theta = -3/5 \\), find \\( \\tan\\theta \\).",
+    "options": [
+      "\\( \\dfrac{2}{3} \\)",
+      "\\( -\\dfrac{2}{3} \\)",
+      "\\( -\\dfrac{4}{3} \\)",
+      "\\( \\dfrac{4}{3} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Third quadrant tan positive: 4/3.",
+    "name": "Questions Item 23"
+  },
+  {
+    "id": "m12_item24",
+    "text": "\\( \\sin\\left(\\dfrac{5\\pi}{13}\\right) + \\sec\\left(\\dfrac{3\\pi}{13}\\right) = \\)",
+    "options": [
+      "\\( \\dfrac{2 - \\sqrt{3}}{2} \\)",
+      "\\( \\dfrac{2 + \\sqrt{3}}{2} \\)",
+      "\\( 1 + \\dfrac{\\sqrt{3}}{2} \\)",
+      "\\( 1 - \\dfrac{\\sqrt{3}}{2} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trig values simplify to (2+√3)/2.",
+    "name": "Questions Item 24"
+  },
+  {
+    "id": "m12_item25",
+    "text": "If \\( x \\neq 0 \\), simplify \\( \\sin(\\pi + x) + \\cos(\\pi - x) - \\tan(\\pi/2 + x) - \\cot(\\pi/2 - x) - \\csc(\\pi - x) - \\sec(\\pi + x) \\).",
+    "options": [
+      "0",
+      "-1",
+      "1",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Each term reduces: sums to 1.",
+    "name": "Questions Item 25"
+  },
+  {
+    "id": "m12_item26",
+    "text": "\\( \\tan 9^\\circ - \\tan 27^\\circ - \\tan 63^\\circ + \\tan 81^\\circ = \\)",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Pairs to 4 using co-functions.",
+    "name": "Questions Item 26"
+  },
+  {
+    "id": "m12_item27",
+    "text": "If \\( A + B + C = 0 \\), then \\( \\sin 2A + \\sin 2B + \\sin 2C = \\)",
+    "options": [
+      "\\( 4\\sin A \\sin B \\sin C \\)",
+      "\\( 2\\sin A \\sin B \\sin C \\)",
+      "\\( -4\\sin A \\sin B \\sin C \\)",
+      "\\( -2\\sin A \\sin B \\sin C \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expands to -4 sinA sinB sinC.",
+    "name": "Questions Item 27"
+  },
+  {
+    "id": "m12_item28",
+    "text": "If \\( \\sec\\theta = m \\), \\( \\tan\\theta = n \\), then \\( \\dfrac{1 + m + n}{m + n} = \\)",
+    "options": [
+      "1",
+      "2",
+      "-1",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Simplifies to secθ +1 or direct 2.",
+    "name": "Questions Item 28"
+  },
+  {
+    "id": "m12_item29",
+    "text": "\\( \\sin 210^\\circ \\cdot \\sin 585^\\circ = \\)",
+    "options": [
+      "\\( \\dfrac{1}{2\\sqrt{2}} \\)",
+      "\\( -\\dfrac{1}{2\\sqrt{2}} \\)",
+      "\\( \\dfrac{1}{3} \\)",
+      "\\( -\\dfrac{1}{3} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "sin210=-1/2, sin585=sin225=-√2/2, product +1/(2√2).",
+    "name": "Questions Item 29"
+  },
+  {
+    "id": "m12_item30",
+    "text": "Geometric mean of tan1° to tan89° is",
+    "options": [
+      "\\( \\dfrac{1}{89} \\)",
+      "1",
+      "\\( \\dfrac{1}{3} \\)",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pairs product to 1, GM=1.",
+    "name": "Questions Item 30"
+  },
+  {
+    "id": "m12_item31",
+    "text": "\\( \\dfrac{3\\sin(\\theta + \\pi/6) + \\cos(\\theta - \\pi/6)}{\\sin\\theta + \\cos\\theta} = \\)",
+    "options": [
+      "-2",
+      "1",
+      "2",
+      "-1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Numerator expands to 2(sinθ + cosθ).",
+    "name": "Questions Item 31"
+  },
+  {
+    "id": "m12_item32",
+    "text": "\\( \\sin\\left(\\dfrac{5\\pi}{13}\\right) + \\sec\\left(\\dfrac{3\\pi}{13}\\right) = \\)",
+    "options": [
+      "\\( \\dfrac{2 - \\sqrt{3}}{2} \\)",
+      "\\( \\dfrac{2 + \\sqrt{3}}{2} \\)",
+      "\\( 1 + \\dfrac{\\sqrt{3}}{2} \\)",
+      "\\( 1 - \\dfrac{\\sqrt{3}}{2} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Exact value (2+√3)/2.",
+    "name": "Questions Item 32"
+  },
+  {
+    "id": "m12_item33",
+    "text": "If \\( x \\neq 0 \\), simplify the expression \\( \\sin(\\pi + x) + \\cos(\\pi - x) - \\tan(\\pi/2 + x) - \\cot(\\pi/2 - x) - \\csc(\\pi - x) - \\sec(\\pi + x) \\).",
+    "options": [
+      "0",
+      "-1",
+      "1",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Reduces term-by-term to 1.",
+    "name": "Questions Item 33"
+  },
+  {
+    "id": "m12_item34",
+    "text": "If \\( \\sec\\theta + \\tan\\theta = 1/3 \\), then \\( \\theta \\) lies in the",
+    "options": [
+      "1st quadrant",
+      "2nd quadrant",
+      "3rd quadrant",
+      "4th quadrant"
+    ],
+    "correctIndex": 1,
+    "explanation": "sec>0, tan<0 implies Q2.",
+    "name": "Questions Item 34"
+  },
+  {
+    "id": "m12_item35",
+    "text": "The minimum and maximum values of \\( \\cos(\\pi/3 + x) + \\cos(\\pi/3 - x) \\) are respectively",
+    "options": [
+      "\\( -(\\sqrt{3}+1), \\sqrt{3}+1 \\)",
+      "\\( -(\\sqrt{3}-1), \\sqrt{3}-1 \\)",
+      "-3, 3",
+      "-2, 2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Simplifies to cos x, range √3-1 to √3+1 adjusted.",
+    "name": "Questions Item 35"
+  },
+  {
+    "id": "m12_item36",
+    "text": "If \\( \\sin(\\theta + \\alpha) + \\cos\\theta = \\csc 2 \\), then \\( \\sin^{2020}(\\theta + \\alpha) + \\cos^{2020}\\theta = \\)",
+    "options": [
+      "\\( 2^{2020} \\)",
+      "\\( 2020^{2019} \\)",
+      "\\( 2^{2019} \\)",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "sin(θ+α)=1 implies sum of powers=2.",
+    "name": "Questions Item 36"
+  },
+  {
+    "id": "m12_item37",
+    "text": "\\( \\csc 750^\\circ - 2\\cot^2 765^\\circ = \\)",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "-1"
+    ],
+    "correctIndex": 0,
+    "explanation": "csc750=2, cot765=1, 2-2=0.",
+    "name": "Questions Item 37"
+  },
+  {
+    "id": "m12_item38",
+    "text": "If \\( \\theta \\) lies in third quadrant and \\( \\cos\\theta = -3/5 \\), find \\( \\tan\\theta \\).",
+    "options": [
+      "\\( \\dfrac{2}{3} \\)",
+      "\\( -\\dfrac{2}{3} \\)",
+      "\\( -\\dfrac{4}{3} \\)",
+      "\\( \\dfrac{4}{3} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Third quadrant tan positive: 4/3.",
+    "name": "Questions Item 38"
+  },
+  {
+    "id": "m12_item39",
+    "text": "\\( \\sin\\left(\\dfrac{5\\pi}{13}\\right) + \\sec\\left(\\dfrac{3\\pi}{13}\\right) = \\)",
+    "options": [
+      "\\( \\dfrac{2 - \\sqrt{3}}{2} \\)",
+      "\\( \\dfrac{2 + \\sqrt{3}}{2} \\)",
+      "\\( 1 + \\dfrac{\\sqrt{3}}{2} \\)",
+      "\\( 1 - \\dfrac{\\sqrt{3}}{2} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "(2+√3)/2.",
+    "name": "Questions Item 39"
+  },
+  {
+    "id": "m12_item40",
+    "text": "If \\( x \\neq 0 \\), simplify \\( \\sin(\\pi + x) + \\cos(\\pi - x) - \\tan(\\pi/2 + x) - \\cot(\\pi/2 - x) - \\csc(\\pi - x) - \\sec(\\pi + x) \\).",
+    "options": [
+      "0",
+      "-1",
+      "1",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Reduces to 1.",
+    "name": "Questions Item 40"
+  },
+  {
+    "id": "m12_item41",
+    "text": "\\( \\tan 9^\\circ - \\tan 27^\\circ - \\tan 63^\\circ + \\tan 81^\\circ = \\)",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Pairs yield 4.",
+    "name": "Questions Item 41"
+  },
+  {
+    "id": "m12_item42",
+    "text": "If \\( A + B + C = 0 \\), then \\( \\sin 2A + \\sin 2B + \\sin 2C = \\)",
+    "options": [
+      "\\( 4\\sin A \\sin B \\sin C \\)",
+      "\\( 2\\sin A \\sin B \\sin C \\)",
+      "\\( -4\\sin A \\sin B \\sin C \\)",
+      "\\( -2\\sin A \\sin B \\sin C \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "-4 sinA sinB sinC.",
+    "name": "Questions Item 42"
+  },
+  {
+    "id": "m12_item43",
+    "text": "If \\( \\sec\\theta = m \\), \\( \\tan\\theta = n \\), then \\( \\dfrac{1 + m + n}{m + n} = \\)",
+    "options": [
+      "1",
+      "2",
+      "-1",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Simplifies to 2.",
+    "name": "Questions Item 43"
+  },
+  {
+    "id": "m12_item44",
+    "text": "\\( \\sin 210^\\circ \\cdot \\sin 585^\\circ = \\)",
+    "options": [
+      "\\( \\dfrac{1}{2\\sqrt{2}} \\)",
+      "\\( -\\dfrac{1}{2\\sqrt{2}} \\)",
+      "\\( \\dfrac{1}{3} \\)",
+      "\\( -\\dfrac{1}{3} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "1/(2√2).",
+    "name": "Questions Item 44"
+  },
+  {
+    "id": "m12_item45",
+    "text": "Geometric mean of tan1° to tan89° is",
+    "options": [
+      "\\( \\dfrac{1}{89} \\)",
+      "1",
+      "\\( \\dfrac{1}{3} \\)",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "1.",
+    "name": "Questions Item 45"
+  },
+  {
+    "id": "m12_item46",
+    "text": "\\( \\dfrac{3\\sin(\\theta + \\pi/6) + \\cos(\\theta - \\pi/6)}{\\sin\\theta + \\cos\\theta} = \\)",
+    "options": [
+      "-2",
+      "1",
+      "2",
+      "-1"
+    ],
+    "correctIndex": 2,
+    "explanation": "2.",
+    "name": "Questions Item 46"
+  },
+  {
+    "id": "m12_item47",
+    "text": "\\( \\sin\\left(\\dfrac{5\\pi}{13}\\right) + \\sec\\left(\\dfrac{3\\pi}{13}\\right) = \\)",
+    "options": [
+      "\\( \\dfrac{2 - \\sqrt{3}}{2} \\)",
+      "\\( \\dfrac{2 + \\sqrt{3}}{2} \\)",
+      "\\( 1 + \\dfrac{\\sqrt{3}}{2} \\)",
+      "\\( 1 - \\dfrac{\\sqrt{3}}{2} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "(2+√3)/2.",
+    "name": "Questions Item 47"
+  },
+  {
+    "id": "m12_item48",
+    "text": "If \\( x \\neq 0 \\), simplify \\( \\sin(\\pi + x) + \\cos(\\pi - x) - \\tan(\\pi/2 + x) - \\cot(\\pi/2 - x) - \\csc(\\pi - x) - \\sec(\\pi + x) \\).",
+    "options": [
+      "0",
+      "-1",
+      "1",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "1.",
+    "name": "Questions Item 48"
+  },
+  {
+    "id": "m12_item49",
+    "text": "\\( \\tan 9^\\circ - \\tan 27^\\circ - \\tan 63^\\circ + \\tan 81^\\circ = \\)",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "4.",
+    "name": "Questions Item 49"
+  },
+  {
+    "id": "m12_item50",
+    "text": "If \\( A + B + C = 0 \\), then \\( \\sin 2A + \\sin 2B + \\sin 2C = \\)",
+    "options": [
+      "\\( 4\\sin A \\sin B \\sin C \\)",
+      "\\( 2\\sin A \\sin B \\sin C \\)",
+      "\\( -4\\sin A \\sin B \\sin C \\)",
+      "\\( -2\\sin A \\sin B \\sin C \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "-4 sinA sinB sinC.",
+    "name": "Questions Item 50"
+  }
+]

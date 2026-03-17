@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m20_item1",
+    "text": "The standard equation of a parabola with axis along x-axis is:",
+    "options": ["\\( y^2 = -4ax \\)", "\\( x^2 = 4ay \\)", "\\( y^2 = 4ax \\)", "\\( x^2 + y^2 = a^2 \\)"],
+    "correctIndex": 2,
+    "explanation": "Standard parabola (opens right): \\( y^2 = 4ax \\), focus at \\((a,0)\\), directrix \\( x = -a \\).",
+    "name": "Parabola Standard Form"
+  },
+  {
+    "id": "m20_item2",
+    "text": "The focus of parabola \\( y^2 = 4ax \\) is:",
+    "options": ["\\( (-a,0) \\)", "\\( (0,a) \\)", "\\( (a,0) \\)", "\\( (0,-a) \\)"],
+    "correctIndex": 2,
+    "explanation": "For \\( y^2 = 4ax \\): vertex at origin, focus at \\((a,0)\\), directrix \\(x=-a\\).",
+    "name": "Focus of Parabola"
+  },
+  {
+    "id": "m20_item3",
+    "text": "The standard equation of an ellipse with semi-major axis \\(a\\) along x-axis is:",
+    "options": ["\\( \\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1 \\)", "\\( \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1,\\ a>b \\)", "\\( \\frac{x^2}{b^2} + \\frac{y^2}{a^2} = 1 \\)", "\\( x^2+y^2=a^2 \\)"],
+    "correctIndex": 1,
+    "explanation": "Ellipse: \\( \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1 \\) with \\(a>b>0\\). Foci at \\( (\\pm c,0) \\) where \\( c^2=a^2-b^2 \\).",
+    "name": "Ellipse Standard Form"
+  },
+  {
+    "id": "m20_item4",
+    "text": "For ellipse \\( \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1 \\), eccentricity \\( e = \\)",
+    "options": ["\\( \\frac{b}{a} \\)", "\\( \\frac{c}{a} \\) where \\( c^2=a^2-b^2 \\)", "\\( \\frac{a}{c} \\)", "\\( \\sqrt{1+\\frac{b^2}{a^2}} \\)"],
+    "correctIndex": 1,
+    "explanation": "Eccentricity of ellipse: \\( e = \\frac{c}{a} \\) where \\( c = \\sqrt{a^2-b^2} \\). Always \\( 0 < e < 1 \\).",
+    "name": "Eccentricity of Ellipse"
+  },
+  {
+    "id": "m20_item5",
+    "text": "The standard equation of a hyperbola with transverse axis along x-axis is:",
+    "options": ["\\( \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1 \\)", "\\( \\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1 \\)", "\\( \\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1 \\)", "\\( x^2-y^2=1 \\)"],
+    "correctIndex": 2,
+    "explanation": "Hyperbola (transverse axis along x): \\( \\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1 \\). Eccentricity \\(e > 1\\).",
+    "name": "Hyperbola Standard Form"
+  },
+  {
+    "id": "m20_item6",
+    "text": "The eccentricity of a parabola is:",
+    "options": ["\\( 0 \\)", "\\( < 1 \\)", "\\( 1 \\)", "\\( > 1 \\)"],
+    "correctIndex": 2,
+    "explanation": "Eccentricity: circle \\(=0\\), ellipse \\(0<e<1\\), parabola \\(e=1\\), hyperbola \\(e>1\\).",
+    "name": "Parabola Eccentricity"
+  },
+  {
+    "id": "m20_item7",
+    "text": "For hyperbola \\( \\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1 \\), the asymptotes are:",
+    "options": ["\\( y = \\pm\\frac{a}{b}x \\)", "\\( y = \\pm\\frac{b}{a}x \\)", "\\( x = \\pm a \\)", "\\( y = \\pm b \\)"],
+    "correctIndex": 1,
+    "explanation": "Asymptotes of hyperbola: \\( y = \\pm\\frac{b}{a}x \\) (pass through center).",
+    "name": "Asymptotes of Hyperbola"
+  },
+  {
+    "id": "m20_item8",
+    "text": "The latus rectum of parabola \\( y^2=4ax \\) has length:",
+    "options": ["\\( 2a \\)", "\\( a \\)", "\\( 4a \\)", "\\( 8a \\)"],
+    "correctIndex": 2,
+    "explanation": "Length of latus rectum of \\( y^2=4ax \\) is \\( 4a \\) (chord through focus perpendicular to axis).",
+    "name": "Latus Rectum of Parabola"
+  },
+  {
+    "id": "m20_item9",
+    "text": "The tangent to parabola \\( y^2=4ax \\) at point \\((at^2, 2at)\\) is:",
+    "options": ["\\( ty = x + at^2 \\)", "\\( ty = x - at^2 \\)", "\\( y = tx + at^2 \\)", "\\( ty = x \\)"],
+    "correctIndex": 0,
+    "explanation": "Tangent at parametric point \\((at^2,2at)\\) on \\(y^2=4ax\\): \\( ty = x + at^2 \\)",
+    "name": "Parametric Tangent to Parabola"
+  },
+  {
+    "id": "m20_item10",
+    "text": "The equation \\( \\frac{x^2}{16}+\\frac{y^2}{9}=1 \\). Here \\( a=4, b=3 \\), so \\( c = \\)",
+    "options": ["\\( 5 \\)", "\\( \\sqrt{7} \\)", "\\( 7 \\)", "\\( \\sqrt{5} \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( c^2 = a^2-b^2 = 16-9 = 7 \\Rightarrow c = \\sqrt{7} \\)",
+    "name": "Foci of Ellipse"
+  },
+  {
+    "id": "m20_item11",
+    "text": "The sum of focal distances from any point on ellipse \\( \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1 \\) is:",
+    "options": ["\\( 2b \\)", "\\( 2c \\)", "\\( 2a \\)", "\\( a+b \\)"],
+    "correctIndex": 2,
+    "explanation": "For any point \\(P\\) on ellipse: \\( PF_1+PF_2 = 2a \\) (constant). This defines the ellipse.",
+    "name": "Focal Distance Sum"
+  },
+  {
+    "id": "m20_item12",
+    "text": "The directrix of parabola \\( y^2=4ax \\) is:",
+    "options": ["\\( x = a \\)", "\\( x = -a \\)", "\\( y = a \\)", "\\( y = -a \\)"],
+    "correctIndex": 1,
+    "explanation": "For \\( y^2=4ax \\): directrix is the vertical line \\( x = -a \\).",
+    "name": "Directrix of Parabola"
+  },
+  {
+    "id": "m20_item13",
+    "text": "The condition for \\( lx+my+n=0 \\) to be tangent to ellipse \\( \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1 \\) is:",
+    "options": ["\\( a^2l^2+b^2m^2=n^2 \\)", "\\( a^2m^2+b^2l^2=n^2 \\)", "\\( l^2+m^2=n^2 \\)", "\\( a^2l^2-b^2m^2=n^2 \\)"],
+    "correctIndex": 0,
+    "explanation": "Tangent condition to ellipse: \\( a^2l^2+b^2m^2=n^2 \\)",
+    "name": "Tangent Condition to Ellipse"
+  },
+  {
+    "id": "m20_item14",
+    "text": "The difference of focal distances from any point on hyperbola \\( \\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1 \\) is:",
+    "options": ["\\( 2b \\)", "\\( 2c \\)", "\\( 2a \\)", "\\( a-b \\)"],
+    "correctIndex": 2,
+    "explanation": "For any point on hyperbola: \\( |PF_1 - PF_2| = 2a \\) (constant). This defines the hyperbola.",
+    "name": "Focal Distance Difference"
+  },
+  {
+    "id": "m20_item15",
+    "text": "The rectangular hyperbola has eccentricity:",
+    "options": ["\\( 1 \\)", "\\( \\sqrt{2} \\)", "\\( 2 \\)", "\\( \\sqrt{3} \\)"],
+    "correctIndex": 1,
+    "explanation": "Rectangular hyperbola: \\( a=b \\Rightarrow c=\\sqrt{a^2+a^2}=a\\sqrt{2} \\Rightarrow e = c/a = \\sqrt{2} \\).",
+    "name": "Rectangular Hyperbola"
+  }
+]

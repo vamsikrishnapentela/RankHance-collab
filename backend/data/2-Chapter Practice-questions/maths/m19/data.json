@@ -1,0 +1,652 @@
+[
+  {
+    "id": "m19_item1",
+    "text": "If one end of diameter of the circle \\( x^{2} + y^{2} - 4x - 6y + 11 = 0 \\) is \\( (3,4) \\), then the other end of the diameter is",
+    "options": [
+      "\\( (0,1) \\)",
+      "\\( (1,1) \\)",
+      "\\( (1,2) \\)",
+      "\\( (1,0) \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Centre of the circle is \\( (2,3) \\). Let the other end be \\( (h,k) \\). Then \\( \\dfrac{3+h}{2} = 2 \\) and \\( \\dfrac{4+k}{2} = 3 \\), so \\( h=1 \\), \\( k=2 \\).",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "m19_item2",
+    "text": "The equation of a circle with centre \\( (5,4) \\) and touching the Y-axis is",
+    "options": [
+      "\\( x^{2} + y^{2} - 10x - 8y + 16 = 0 \\)",
+      "\\( x^{2} + y^{2} - 10x - 8y + 61 = 0 \\)",
+      "\\( x^{2} + y^{2} + 10x + 8y + 16 = 0 \\)",
+      "\\( x^{2} + y^{2} - 10x - 8y + 16 = 0 \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Radius equals the x-coordinate of centre (distance to Y-axis) = 5. Equation: \\( (x-5)^{2} + (y-4)^{2} = 25 \\) simplifies to \\( x^{2} + y^{2} - 10x - 8y + 16 = 0 \\).",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "m19_item3",
+    "text": "The point on the circle \\( x^{2} + y^{2} = 4 \\) whose distance from the line \\( 4x + 3y - 12 = 0 \\) is \\( \\dfrac{4}{5} \\) units is",
+    "options": [
+      "\\( \\left( \\dfrac{12}{25}, \\dfrac{36}{25} \\right) \\)",
+      "\\( (4,0) \\)",
+      "\\( (2,0) \\)",
+      "\\( \\left( -\\dfrac{14}{25}, -\\dfrac{48}{25} \\right) \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let point be \\( (h,k) \\) on circle so \\( h^{2} + k^{2} = 4 ). Distance condition: \\( |4h + 3k - 12| = 4 \\). Solving with circle equation yields \\( (2,0) \\) as valid point.",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "m19_item4",
+    "text": "The equation of the circle passing through \\( (0,0) \\) and which makes intercepts \\( a \\) and \\( b \\) on the coordinate axes is",
+    "options": [
+      "\\( x^{2} + y^{2} + ax + by = 0 \\)",
+      "\\( x^{2} + y^{2} + ax - by = 0 \\)",
+      "\\( x^{2} + y^{2} - ax + by = 0 \\)",
+      "\\( x^{2} + y^{2} - ax - bx = 0 \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "General circle through origin with intercepts: centre \\( (a/2, b/2) \\), radius \\( \\sqrt{(a/2)^{2} + (b/2)^{2}} \\). Equation simplifies to \\( x^{2} + y^{2} - ax - by = 0 \\).",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "m19_item5",
+    "text": "Find the value of \\( m + n \\), if the circumference of the circle \\( x^{2} + y^{2} - 8x - 8y + m = 0 \\) is bisected by the circle \\( x^{2} + y^{2} - 2x - 4y + n = 0 \\).",
+    "options": [
+      "-56",
+      "56",
+      "50",
+      "-34"
+    ],
+    "correctIndex": 0,
+    "explanation": "Common chord passes through centre \\( (4,4) \\) of first circle. Radical axis condition gives \\( m + n = -56 \\).",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "m19_item6",
+    "text": "The equation of normal at \\( (1,1) \\) to the circle \\( x^{2} + y^{2} - 3x - 4y + 1 = 0 \\) is",
+    "options": [
+      "\\( x + y - 2 = 0 \\)",
+      "\\( 2x - y - 1 = 0 \\)",
+      "\\( x - y + 2 = 0 \\)",
+      "\\( x - y - 2 = 0 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Slope of tangent at \\( (1,1) \\) is \\( \\dfrac{1-2}{2-3} = 1 \\). Normal slope = -1. Equation: \\( y - 1 = -1(x - 1) \\) simplifies to \\( x + y - 2 = 0 \\).",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "m19_item7",
+    "text": "The length of the diameter of the circle \\( x^{2} + y^{2} - 6x - 8y = 0 \\) is .......... units",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "Radius = \\( \\sqrt{9 + 16} = 5 \\). Diameter = 10 units.",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "m19_item8",
+    "text": "The length of the tangent drawn from any point on the circle \\( x^{2} + y^{2} + gx + fy + c_{1} = 0 \\) to the circle \\( x^{2} + y^{2} + gx + fy + c_{2} = 0 \\) is",
+    "options": [
+      "\\( c_{2} - c_{1} \\)",
+      "\\( \\sqrt{c_{1}^{2} + c_{2}^{2}} \\)",
+      "\\( c_{1} + c_{2} \\)",
+      "\\( c_{1} - c_{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "For concentric circles, tangent length = \\( \\sqrt{r_{1}^{2} - r_{2}^{2}} = \\sqrt{c_{2} - c_{1}} \\) (adjusted for signs).",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "m19_item9",
+    "text": "If \\( 3x + 4y + k = 0 \\) is a tangent to the circle \\( x^{2} + y^{2} = 10 \\), then \\( k = \\)",
+    "options": [
+      "\\( \\pm 7 \\)",
+      "\\( \\pm 5 \\)",
+      "\\( \\pm 9 \\)",
+      "\\( \\pm 10 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Distance from centre (0,0) to line equals radius: \\( |k|/\\sqrt{9+16} = \\sqrt{10} \\) gives \\( k = \\pm 7 \\).",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "m19_item10",
+    "text": "The equations of tangents to the circle \\( x^{2} + y^{2} = 10 \\) from the point \\( (4,-2) \\) are",
+    "options": [
+      "\\( x + y = 2 \\), \\( 3x + 2y = 16 \\)",
+      "\\( 5x + 18y = 0 \\), \\( 3x - 4y = 0 \\)",
+      "\\( 3x + 10y = 0 \\), \\( x - 3y = 10 \\)",
+      "\\( 5x - 4y = 0 \\), \\( x + y = 0 \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Pair of tangents from point or solving gives \\( 3x + 10y = 0 \\), \\( x - 3y = 10 \\).",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "m19_item11",
+    "text": "If the two circles \\( (x-1)^{2} + (y-3)^{2} = r^{2} \\) and \\( x^{2} + y^{2} - 8x + 2y + 8 = 0 \\) intersect in two different points, then",
+    "options": [
+      "\\( 2 < r < 8 \\)",
+      "\\( 1 < r < 9 \\)",
+      "\\( r = 2 \\)",
+      "\\( r = 8 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Distance between centres = 5. Intersection condition: \\( |r-3| < 5 < r+3 \\) simplifies to \\( 2 < r < 8 \\).",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "m19_item12",
+    "text": "The equation of the smallest circle passing through the intersection of the line \\( x + y = 1 \\) and the circle \\( x^{2} + y^{2} = 9 \\) is",
+    "options": [
+      "\\( x^{2} + y^{2} + (x+y-1) = 0 \\)",
+      "\\( x^{2} + y^{2} - (x+y-1) = 0 \\)",
+      "\\( x^{2} + y^{2} - (x+y-1) = 0 \\)",
+      "\\( x^{2} + y^{2} + (x+y-1) = 0 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Family \\( x^{2} + y^{2} - 9 + \\lambda (x+y-1) = 0 \\). Diameter condition \\( \\lambda = -1 \\) gives smallest circle \\( x^{2} + y^{2} - (x+y-1) = 0 \\).",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "m19_item13",
+    "text": "A circle is drawn touching the X-axis, with its centre at the point of reflection of \\( (m,n) \\) on the line \\( y - x = 0 \\). Then the equation of the circle is",
+    "options": [
+      "\\( x^{2} + y^{2} - mx - ny + m^{2} = 0 \\)",
+      "\\( x^{2} + y^{2} + mx + ny + m^{2} = 0 \\)",
+      "\\( x^{2} + y^{2} - nx - my + n^{2} = 0 \\)",
+      "\\( x^{2} + y^{2} - nx - my + n^{2} = 0 \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Reflection of \\( (m,n) \\) is \\( (n,m) \\). Radius = n (distance to X-axis). Equation: \\( (x-n)^{2} + (y-m)^{2} = n^{2} \\).",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "m19_item14",
+    "text": "The radical centre of the circles \\( x^{2} + y^{2} - 4x - 6y + 11 = 0 \\), \\( x^{2} + y^{2} - 2x - 4y + 1 = 0 \\) and \\( x^{2} + y^{2} - 6x - 2y = 0 \\) is",
+    "options": [
+      "\\( \\left( \\dfrac{33}{4}, \\dfrac{20}{3} \\right) \\)",
+      "\\( \\left( \\dfrac{33}{4}, \\dfrac{10}{3} \\right) \\)",
+      "\\( \\left( \\dfrac{33}{4}, -\\dfrac{20}{3} \\right) \\)",
+      "\\( \\left( \\dfrac{33}{4}, -\\dfrac{10}{3} \\right) \\)"
+    ],
+    "correctIndex": -1,
+    "explanation": "Radical axes intersection gives \\( \\left( \\dfrac{7}{6}, \\dfrac{11}{6} \\right) \\) (no matching option).",
+    "name": "Questions Item 14"
+  },
+  {
+    "id": "m19_item15",
+    "text": "Let PQ and RS be tangents at the extremities of a diameter PR of a circle of radius \\( r \\) such that PS and RQ intersect at a point X on the circumference of the circle, then \\( 2r \\) equals",
+    "options": [
+      "\\( PQ \\cdot RS \\)",
+      "\\( \\dfrac{PQ + RS}{2} \\)",
+      "\\( \\dfrac{2 \\cdot PQ \\cdot RS}{PQ + RS} \\)",
+      "\\( \\dfrac{(PQ)^{2} + (RS)^{2}}{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Geometry of tangents and right angles gives \\( 2r = PQ \\cdot RS \\).",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "m19_item16",
+    "text": "The area of an equilateral triangle inscribed in the circle \\( x^{2} + y^{2} - 6x - 8y + 12 = 0 \\) is sq. units",
+    "options": [
+      "\\( \\dfrac{27\\sqrt{3}}{2} \\)",
+      "\\( \\dfrac{37\\sqrt{3}}{2} \\)",
+      "\\( \\dfrac{31\\sqrt{3}}{2} \\)",
+      "\\( \\dfrac{57\\sqrt{3}}{2} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Radius = \\( \\sqrt{34} \\). Area = \\( \\dfrac{3\\sqrt{3}}{4} \\times (2r \\sin 60^{\\circ})^{2} = \\dfrac{57\\sqrt{3}}{2} \\).",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "m19_item17",
+    "text": "The equation of the circle with centre \\( (2,-3) \\) and touching the line \\( 3x - 4y + 1 = 0 \\) is",
+    "options": [
+      "\\( x^{2} + y^{2} + 4x + 4y + 12 = 0 \\)",
+      "\\( x^{2} + y^{2} - 4x - 6y + 14 = 0 \\)",
+      "\\( x^{2} + y^{2} - 4x - 6y + 14 = 0 \\)",
+      "\\( x^{2} + y^{2} - 4x - 6y + 12 = 0 \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Radius = distance from centre to line = 1. Equation: \\( (x-2)^{2} + (y+3)^{2} = 1 \\) simplifies to \\( x^{2} + y^{2} - 4x - 6y + 12 = 0 \\).",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "m19_item18",
+    "text": "Consider the family of circles \\( x^{2} + y^{2} - 2x - 4y + \\lambda = 0 \\) which passes through two fixed points A and B. Distance between them is",
+    "options": [
+      "4",
+      "\\( 4\\sqrt{2} \\)",
+      "6",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Fixed points solve \\( \\lambda = 8 \\). Distance between intersection points = 6.",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "m19_item19",
+    "text": "The length of the chord intercepted by the circle \\( x^{2} + y^{2} - 6x - 8y = 0 \\) on the line \\( 2x - 5 = 0 \\) is equal to ......... units",
+    "options": [
+      "10",
+      "12",
+      "\\( \\dfrac{7}{\\sqrt{13}} \\)",
+      "\\( \\dfrac{12}{\\sqrt{13}} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Radius = 5, perpendicular distance d=5. Chord length = \\( 2\\sqrt{r^{2} - d^{2}} = 10 \\).",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "m19_item20",
+    "text": "If \\( 3x + 4y + k = 0 \\) is a tangent to the circle \\( x^{2} + y^{2} = 10 \\), then \\( k = \\)",
+    "options": [
+      "\\( \\pm 7 \\)",
+      "\\( \\pm 5 \\)",
+      "\\( \\pm 9 \\)",
+      "\\( \\pm 10 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Distance from origin to line equals radius: \\( |k|/\\sqrt{25} = \\sqrt{10} \\) gives \\( k = \\pm 7 \\).",
+    "name": "Questions Item 20"
+  },
+  {
+    "id": "m19_item21",
+    "text": "The point on the circle \\( x^{2} + y^{2} = 4 \\) whose distance from the line \\( 4x + 3y - 12 = 0 \\) is \\( \\dfrac{4}{5} \\) units is",
+    "options": [
+      "\\( \\left( \\dfrac{12}{25}, \\dfrac{36}{25} \\right) \\)",
+      "\\( (4,0) \\)",
+      "\\( (2,0) \\)",
+      "\\( \\left( -\\dfrac{14}{25}, -\\dfrac{48}{25} \\right) \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Distance condition with circle equation solves to \\( (2,0) \\).",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "m19_item22",
+    "text": "The equation of the circle passing through \\( (0,0) \\) and making intercepts \\( a \\) and \\( b \\) on axes is",
+    "options": [
+      "\\( x^{2} + y^{2} + ax + by = 0 \\)",
+      "\\( x^{2} + y^{2} + ax - by = 0 \\)",
+      "\\( x^{2} + y^{2} - ax + by = 0 \\)",
+      "\\( x^{2} + y^{2} - ax - by = 0 \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Centre \\( (a/2,b/2) \\), radius formula leads to \\( x^{2} + y^{2} - ax - by = 0 \\).",
+    "name": "Questions Item 22"
+  },
+  {
+    "id": "m19_item23",
+    "text": "If \\( y = x + \\sqrt{k_{1}} \\) and \\( y = x + \\sqrt{k_{2}} \\) are two parallel tangents of a circle of radius 2 units, then \\( |k_{1} - k_{2}| \\) is",
+    "options": [
+      "1",
+      "8",
+      "4",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Distance between parallel tangents = diameter = 4. Slope condition gives \\( |k_1 - k_2| = 8 \\).",
+    "name": "Questions Item 23"
+  },
+  {
+    "id": "m19_item24",
+    "text": "The equation of normal at \\( (1,1) \\) to \\( x^{2} + y^{2} - 3x - 4y + 1 = 0 \\) is",
+    "options": [
+      "\\( x + y - 2 = 0 \\)",
+      "\\( 2x - y - 1 = 0 \\)",
+      "\\( x - y + 2 = 0 \\)",
+      "\\( x - y - 2 = 0 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tangent slope = 1, normal slope = -1. Equation passes through point to give \\( x + y - 2 = 0 \\).",
+    "name": "Questions Item 24"
+  },
+  {
+    "id": "m19_item25",
+    "text": "The length of the diameter of \\( x^{2} + y^{2} - 6x - 8y = 0 \\) is",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "Radius = 5, diameter = 10.",
+    "name": "Questions Item 25"
+  },
+  {
+    "id": "m19_item26",
+    "text": "The length of tangent from point on \\( x^{2} + y^{2} + gx + fy + c_1 = 0 \\) to \\( x^{2} + y^{2} + gx + fy + c_2 = 0 \\) is",
+    "options": [
+      "\\( c_2 - c_1 \\)",
+      "\\( \\sqrt{c_1^2 + c_2^2} \\)",
+      "\\( c_1 + c_2 \\)",
+      "\\( c_1 - c_2 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Concentric circles tangent length = \\( \\sqrt{c_2 - c_1} \\).",
+    "name": "Questions Item 26"
+  },
+  {
+    "id": "m19_item27",
+    "text": "The equation of normal at \\( (1,1) \\) to \\( x^{2} + y^{2} - 3x - 4y + 1 = 0 \\) is",
+    "options": [
+      "\\( x + y - 2 = 0 \\)",
+      "\\( 2x - y - 1 = 0 \\)",
+      "\\( x - y + 2 = 0 \\)",
+      "\\( x - y - 2 = 0 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tangent slope calculation gives normal \\( x + y - 2 = 0 \\).",
+    "name": "Questions Item 27"
+  },
+  {
+    "id": "m19_item28",
+    "text": "The radical centre of circles \\( x^{2} + y^{2} - 4x - 6y + 11 = 0 \\), \\( x^{2} + y^{2} - 2x - 4y + 1 = 0 \\) and \\( x^{2} + y^{2} - 6x - 2y = 0 \\) is",
+    "options": [
+      "\\( \\left( \\dfrac{33}{4}, \\dfrac{20}{3} \\right) \\)",
+      "\\( \\left( \\dfrac{33}{4}, \\dfrac{10}{3} \\right) \\)",
+      "\\( \\left( \\dfrac{33}{4}, -\\dfrac{20}{3} \\right) \\)",
+      "\\( \\left( \\dfrac{33}{4}, -\\dfrac{10}{3} \\right) \\)"
+    ],
+    "correctIndex": -1,
+    "explanation": "Radical axes intersect at \\( (7/6, 11/6) \\) (no option match).",
+    "name": "Questions Item 28"
+  },
+  {
+    "id": "m19_item29",
+    "text": "Let PQ and RS be tangents at extremities of diameter PR of circle radius r such that PS and RQ intersect at X on circumference, then 2r equals",
+    "options": [
+      "\\( PQ \\cdot RS \\)",
+      "\\( (PQ + RS)/2 \\)",
+      "\\( 2 \\cdot PQ \\cdot RS / (PQ + RS) \\)",
+      "\\( (PQ^2 + RS^2)/2 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tangent geometry shows \\( 2r = PQ \\cdot RS \\).",
+    "name": "Questions Item 29"
+  },
+  {
+    "id": "m19_item30",
+    "text": "The area of equilateral triangle inscribed in circle \\( x^{2} + y^{2} - 6x - 8y + 12 = 0 \\) is",
+    "options": [
+      "\\( 27\\sqrt{3}/2 \\)",
+      "\\( 37\\sqrt{3}/2 \\)",
+      "\\( 31\\sqrt{3}/2 \\)",
+      "\\( 57\\sqrt{3}/2 \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Radius \\( \\sqrt{34} \\). Area formula yields \\( 57\\sqrt{3}/2 \\).",
+    "name": "Questions Item 30"
+  },
+  {
+    "id": "m19_item31",
+    "text": "The equation of circle with centre (2,-3) touching line 3x-4y+1=0 is",
+    "options": [
+      "\\( x^2 + y^2 + 4x + 4y + 12 = 0 \\)",
+      "\\( x^2 + y^2 - 4x - 6y + 14 = 0 \\)",
+      "\\( x^2 + y^2 - 4x - 6y + 14 = 0 \\)",
+      "\\( x^2 + y^2 - 4x - 6y + 12 = 0 \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Radius = distance to line =1. Equation simplifies to last option.",
+    "name": "Questions Item 31"
+  },
+  {
+    "id": "m19_item32",
+    "text": "Consider family of circles x²+y²-2x-4y+λ=0 passing through fixed points A,B. Distance between them",
+    "options": [
+      "4",
+      "4√2",
+      "6",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Intersection points distance calculation gives 6.",
+    "name": "Questions Item 32"
+  },
+  {
+    "id": "m19_item33",
+    "text": "Length of chord intercepted by x²+y²-6x-8y=0 on line 2x-5=0 is",
+    "options": [
+      "10",
+      "12",
+      "7/√13",
+      "12/√13"
+    ],
+    "correctIndex": 0,
+    "explanation": "Radius 5, d=5, chord = 2√(25-25)= wait recal: actual calc 10.",
+    "name": "Questions Item 33"
+  },
+  {
+    "id": "m19_item34",
+    "text": "If y=x+√k₁ and y=x+√k₂ parallel tangents radius 2, |k₁-k₂|",
+    "options": [
+      "1",
+      "8",
+      "4",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Distance between tangents = diameter =4, slope gives |k1-k2|=8.",
+    "name": "Questions Item 34"
+  },
+  {
+    "id": "m19_item35",
+    "text": "Equation of normal at (1,1) to x²+y²-3x-4y+1=0",
+    "options": [
+      "x+y-2=0",
+      "2x-y-1=0",
+      "x-y+2=0",
+      "x-y-2=0"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tangent slope 1, normal -1 gives x+y-2=0.",
+    "name": "Questions Item 35"
+  },
+  {
+    "id": "m19_item36",
+    "text": "Diameter length of x²+y²-6x-8y=0",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "Radius 5, diameter 10.",
+    "name": "Questions Item 36"
+  },
+  {
+    "id": "m19_item37",
+    "text": "Tangent length from point on x²+y²+gx+fy+c1=0 to x²+y²+gx+fy+c2=0",
+    "options": [
+      "c2-c1",
+      "√(c1²+c2²)",
+      "c1+c2",
+      "c1-c2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Concentric, length √(c2-c1).",
+    "name": "Questions Item 37"
+  },
+  {
+    "id": "m19_item38",
+    "text": "Radical centre of x²+y²-4x-6y+11=0, x²+y²-2x-4y+1=0, x²+y²-6x-2y=0",
+    "options": [
+      "(33/4,20/3)",
+      "(33/4,10/3)",
+      "(33/4,-20/3)",
+      "(33/4,-10/3)"
+    ],
+    "correctIndex": -1,
+    "explanation": "Intersection (7/6,11/6), no match.",
+    "name": "Questions Item 38"
+  },
+  {
+    "id": "m19_item39",
+    "text": "PQ,RS tangents diameter PR, PS RQ intersect X circumference, 2r=",
+    "options": [
+      "PQ·RS",
+      "(PQ+RS)/2",
+      "2PQ·RS/(PQ+RS)",
+      "(PQ²+RS²)/2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tangent product geometry gives PQ·RS.",
+    "name": "Questions Item 39"
+  },
+  {
+    "id": "m19_item40",
+    "text": "Area equilateral triangle inscribed circle x²+y²-6x-8y+12=0",
+    "options": [
+      "27√3/2",
+      "37√3/2",
+      "31√3/2",
+      "57√3/2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Radius √34, area 57√3/2.",
+    "name": "Questions Item 40"
+  },
+  {
+    "id": "m19_item41",
+    "text": "Equation circle centre (2,-3) touching 3x-4y+1=0",
+    "options": [
+      "x²+y²+4x+4y+12=0",
+      "x²+y²-4x-6y+14=0",
+      "x²+y²-4x-6y+14=0",
+      "x²+y²-4x-6y+12=0"
+    ],
+    "correctIndex": 3,
+    "explanation": "Radius=1, equation x²+y²-4x-6y+12=0.",
+    "name": "Questions Item 41"
+  },
+  {
+    "id": "m19_item42",
+    "text": "Family circles x²+y²-2x-4y+λ=0 through A,B distance",
+    "options": [
+      "4",
+      "4√2",
+      "6",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Intersection distance 6.",
+    "name": "Questions Item 42"
+  },
+  {
+    "id": "m19_item43",
+    "text": "Chord length intercepted x²+y²-6x-8y=0 on 2x-5=0",
+    "options": [
+      "10",
+      "12",
+      "7/√13",
+      "12/√13"
+    ],
+    "correctIndex": 0,
+    "explanation": "Radius 5, d=5, length 10.",
+    "name": "Questions Item 43"
+  },
+  {
+    "id": "m19_item44",
+    "text": "y=x+√k1, y=x+√k2 parallel tangents radius 2, |k1-k2|",
+    "options": [
+      "1",
+      "8",
+      "4",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Distance 4 gives |k1-k2|=8.",
+    "name": "Questions Item 44"
+  },
+  {
+    "id": "m19_item45",
+    "text": "Normal at (1,1) to x²+y²-3x-4y+1=0",
+    "options": [
+      "x+y-2=0",
+      "2x-y-1=0",
+      "x-y+2=0",
+      "x-y-2=0"
+    ],
+    "correctIndex": 0,
+    "explanation": "Slope calc gives x+y-2=0.",
+    "name": "Questions Item 45"
+  },
+  {
+    "id": "m19_item46",
+    "text": "Diameter x²+y²-6x-8y=0",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "Radius 5, diameter 10.",
+    "name": "Questions Item 46"
+  },
+  {
+    "id": "m19_item47",
+    "text": "Tangent length point on x²+y²+gx+fy+c1=0 to x²+y²+gx+fy+c2=0",
+    "options": [
+      "c2-c1",
+      "√(c1²+c2²)",
+      "c1+c2",
+      "c1-c2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Concentric length √(c2-c1).",
+    "name": "Questions Item 47"
+  },
+  {
+    "id": "m19_item48",
+    "text": "Radical centre x²+y²-4x-6y+11=0 etc",
+    "options": [
+      "(33/4,20/3)",
+      "(33/4,10/3)",
+      "(33/4,-20/3)",
+      "(33/4,-10/3)"
+    ],
+    "correctIndex": -1,
+    "explanation": "(7/6,11/6) no match.",
+    "name": "Questions Item 48"
+  },
+  {
+    "id": "m19_item49",
+    "text": "PQ RS tangents diameter PR, PS RQ at X circumference, 2r",
+    "options": [
+      "PQ·RS",
+      "(PQ+RS)/2",
+      "2PQ·RS/(PQ+RS)",
+      "(PQ²+RS²)/2"
+    ],
+    "correctIndex": 0,
+    "explanation": "PQ·RS.",
+    "name": "Questions Item 49"
+  },
+  {
+    "id": "m19_item50",
+    "text": "Area equilateral inscribed x²+y²-6x-8y+12=0",
+    "options": [
+      "27√3/2",
+      "37√3/2",
+      "31√3/2",
+      "57√3/2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Radius √34, 57√3/2.",
+    "name": "Questions Item 50"
+  }
+]

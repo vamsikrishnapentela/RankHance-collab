@@ -1,0 +1,122 @@
+[
+  {
+    "id": "c7_item1",
+    "text": "The first law of thermodynamics is expressed as:",
+    "options": ["\\( \\Delta U = q - w \\)", "\\( \\Delta U = q + w \\)", "\\( q = \\Delta U \\times w \\)", "\\( w = q + \\Delta U \\)"],
+    "correctIndex": 0,
+    "explanation": "First Law: \\( \\Delta U = q - w \\) (IUPAC convention: \\(q\\) = heat absorbed, \\(w\\) = work done BY system). Some texts use \\( \\Delta U = q + w \\) (w = work done ON system).",
+    "name": "First Law of Thermodynamics"
+  },
+  {
+    "id": "c7_item2",
+    "text": "At constant pressure, the heat change equals:",
+    "options": ["\\( \\Delta U \\)", "\\( \\Delta H \\)", "\\( \\Delta G \\)", "\\( \\Delta S \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( q_p = \\Delta H \\) (enthalpy change). At constant volume: \\( q_v = \\Delta U \\).",
+    "name": "Heat at Constant Pressure"
+  },
+  {
+    "id": "c7_item3",
+    "text": "The relation between \\( \\Delta H \\) and \\( \\Delta U \\) is:",
+    "options": ["\\( \\Delta H = \\Delta U + \\Delta nRT \\)", "\\( \\Delta H = \\Delta U - \\Delta nRT \\)", "\\( \\Delta H = \\Delta U + PV \\)", "\\( \\Delta H = \\Delta U \\times R \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( \\Delta H = \\Delta U + \\Delta n_g RT \\), where \\(\\Delta n_g\\) = change in moles of gaseous species.",
+    "name": "ΔH and ΔU Relation"
+  },
+  {
+    "id": "c7_item4",
+    "text": "Hess's law states that the enthalpy change of a reaction:",
+    "options": ["Depends on the path taken", "Is independent of the path and depends only on initial and final states", "Is always negative", "Cannot be calculated from bond energies"],
+    "correctIndex": 1,
+    "explanation": "Hess's Law: \\( \\Delta H \\) is a state function — path-independent. Enthalpy changes can be added algebraically.",
+    "name": "Hess's Law"
+  },
+  {
+    "id": "c7_item5",
+    "text": "The Gibbs free energy change is given by:",
+    "options": ["\\( \\Delta G = \\Delta H + T\\Delta S \\)", "\\( \\Delta G = \\Delta H - T\\Delta S \\)", "\\( \\Delta G = \\Delta U + T\\Delta S \\)", "\\( \\Delta G = \\Delta H \\times T\\Delta S \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\Delta G = \\Delta H - T\\Delta S \\). Spontaneous process: \\(\\Delta G < 0\\).",
+    "name": "Gibbs Free Energy"
+  },
+  {
+    "id": "c7_item6",
+    "text": "The second law of thermodynamics states that in a spontaneous process:",
+    "options": ["\\( \\Delta S_{universe} < 0 \\)", "\\( \\Delta S_{universe} = 0 \\)", "\\( \\Delta S_{universe} > 0 \\)", "Entropy of system decreases"],
+    "correctIndex": 2,
+    "explanation": "Second Law: \\( \\Delta S_{universe} = \\Delta S_{system} + \\Delta S_{surroundings} > 0 \\) for spontaneous process.",
+    "name": "Second Law - Entropy"
+  },
+  {
+    "id": "c7_item7",
+    "text": "A reaction is spontaneous at all temperatures when:",
+    "options": ["\\( \\Delta H > 0, \\Delta S > 0 \\)", "\\( \\Delta H < 0, \\Delta S < 0 \\)", "\\( \\Delta H < 0, \\Delta S > 0 \\)", "\\( \\Delta H > 0, \\Delta S < 0 \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\Delta G = \\Delta H - T\\Delta S \\). When \\(\\Delta H < 0\\) and \\(\\Delta S > 0\\): \\(\\Delta G < 0\\) always (at all T).",
+    "name": "Spontaneous at All T"
+  },
+  {
+    "id": "c7_item8",
+    "text": "Bond dissociation enthalpy is used to calculate \\( \\Delta H_{rxn} \\) as:",
+    "options": ["\\( \\Delta H = \\sum BE_{\\text{products}} - \\sum BE_{\\text{reactants}} \\)", "\\( \\Delta H = \\sum BE_{\\text{reactants}} - \\sum BE_{\\text{products}} \\)", "\\( \\Delta H = \\sum BE_{\\text{reactants}} + \\sum BE_{\\text{products}} \\)", "\\( \\Delta H = \\sum BE_{\\text{reactants}} \\times \\sum BE_{\\text{products}} \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\Delta H = \\sum BE_{\\text{bonds broken}} - \\sum BE_{\\text{bonds formed}} \\). Breaking bonds absorbs energy; forming bonds releases it.",
+    "name": "ΔH from Bond Energies"
+  },
+  {
+    "id": "c7_item9",
+    "text": "The standard enthalpy of formation (\\( \\Delta H^\\circ_f \\)) of an element in its standard state is:",
+    "options": ["\\( +ve \\)", "\\( -ve \\)", "\\( 0 \\)", "Undefined"],
+    "correctIndex": 2,
+    "explanation": "By definition, \\( \\Delta H^\\circ_f = 0 \\) for any element in its standard state (e.g., O₂(g), C(graphite)).",
+    "name": "Standard Enthalpy of Element"
+  },
+  {
+    "id": "c7_item10",
+    "text": "Kirchhoff's equation relates enthalpy change with temperature as:",
+    "options": ["\\( \\Delta H_2 - \\Delta H_1 = \\Delta C_p(T_2 + T_1) \\)", "\\( \\Delta H_2 = \\Delta H_1 + \\Delta C_p(T_2 - T_1) \\)", "\\( \\Delta H = T\\Delta C_p \\)", "\\( \\Delta H_2 / \\Delta H_1 = T_2 / T_1 \\)"],
+    "correctIndex": 1,
+    "explanation": "Kirchhoff's equation: \\( \\Delta H_2 = \\Delta H_1 + \\Delta C_p(T_2 - T_1) \\).",
+    "name": "Kirchhoff's Equation"
+  },
+  {
+    "id": "c7_item11",
+    "text": "The Joule-Thomson effect describes:",
+    "options": ["Heating of gas on compression", "Cooling of gas on adiabatic expansion through a porous plug", "Expansion of gas at constant temperature", "Increase in pressure on cooling"],
+    "correctIndex": 1,
+    "explanation": "Joule-Thomson effect: real gas cools on adiabatic expansion through a porous plug (below inversion temperature).",
+    "name": "Joule-Thomson Effect"
+  },
+  {
+    "id": "c7_item12",
+    "text": "At equilibrium, \\( \\Delta G = \\)",
+    "options": ["\\( +1 \\)", "\\( -1 \\)", "\\( \\infty \\)", "\\( 0 \\)"],
+    "correctIndex": 3,
+    "explanation": "At equilibrium: \\( \\Delta G = 0 \\). Also \\( \\Delta G^\\circ = -RT\\ln K \\).",
+    "name": "ΔG at Equilibrium"
+  },
+  {
+    "id": "c7_item13",
+    "text": "The entropy change for isothermal reversible expansion of ideal gas is:",
+    "options": ["\\( \\Delta S = nR\\ln\\frac{V_2}{V_1} \\)", "\\( \\Delta S = nR\\ln\\frac{V_1}{V_2} \\)", "\\( \\Delta S = 0 \\)", "\\( \\Delta S = nRT \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( \\Delta S = nR\\ln\\frac{V_2}{V_1} = -nR\\ln\\frac{P_2}{P_1} \\) for isothermal ideal gas expansion.",
+    "name": "Entropy of Isothermal Expansion"
+  },
+  {
+    "id": "c7_item14",
+    "text": "The standard Gibbs energy and equilibrium constant are related by:",
+    "options": ["\\( \\Delta G^\\circ = RT\\ln K \\)", "\\( \\Delta G^\\circ = -RT\\ln K \\)", "\\( \\Delta G^\\circ = -RT/K \\)", "\\( \\Delta G^\\circ = K/RT \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\Delta G^\\circ = -RT\\ln K \\). If \\(K > 1\\): \\(\\Delta G^\\circ < 0\\) (products favoured).",
+    "name": "ΔG° and K Relation"
+  },
+  {
+    "id": "c7_item15",
+    "text": "Third law of thermodynamics states:",
+    "options": ["Energy cannot be created or destroyed", "Entropy of universe always increases", "Entropy of a perfect crystal at 0 K is zero", "Gibbs energy is zero at absolute zero"],
+    "correctIndex": 2,
+    "explanation": "Third Law (Nernst): The entropy of a perfectly ordered crystalline substance at absolute zero (0 K) is zero.",
+    "name": "Third Law of Thermodynamics"
+  }
+]

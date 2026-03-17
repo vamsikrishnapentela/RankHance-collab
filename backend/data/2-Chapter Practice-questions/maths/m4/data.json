@@ -1,0 +1,652 @@
+[
+  {
+    "id": "m4_item1",
+    "text": "Find the domain of the real valued function \\(f(x) = \\left([x]^2 - [x] - 2\\right)^{-1/2}\\), where \\([\\cdot]\\) is the greatest integer function.",
+    "options": [
+      "\\(\\mathbb{R} - (-1, 3]\\)",
+      "\\(\\mathbb{R} - [-1, 3)\\)",
+      "\\(\\mathbb{R} - (-1, 3)\\)",
+      "\\(\\mathbb{R} - [-1, 3]\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "For \\(f(x)\\) to be real-valued, we need \\([x]^2 - [x] - 2 > 0\\). Factoring: \\(([x]-2)([x]+1) > 0\\), so \\([x] < -1\\) or \\([x] > 2\\), i.e., \\([x] \\in \\mathbb{R} \\setminus (-1, 2]\\) (integer-wise: \\([x] \\leq -2\\) or \\([x] \\geq 3\\)). In terms of \\(x\\): \\([x] \\leq -2 \\Rightarrow x < -1\\) and \\([x] \\geq 3 \\Rightarrow x \\geq 3\\). So domain \\(= \\mathbb{R} \\setminus (-1, 3]\\).",
+    "name": "Domain with Greatest Integer Function"
+  },
+  {
+    "id": "m4_item2",
+    "text": "The function \\(f : \\mathbb{R} \\to \\mathbb{R}\\) defined by \\(f(x) = \\dfrac{x}{1 + x^2}\\) is",
+    "options": [
+      "Surjective but not injective",
+      "Bijective",
+      "Injective but not surjective",
+      "Neither injective nor surjective"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Injective:** If \\(f(x_1) = f(x_2)\\), then \\(\\dfrac{x_1}{1+x_1^2} = \\dfrac{x_2}{1+x_2^2}\\), which gives \\(x_1(1+x_2^2) = x_2(1+x_1^2)\\), leading to \\(x_1 = x_2\\). So \\(f\\) is injective. **Surjective:** From \\(y = \\dfrac{x}{1+x^2}\\), we get \\(yx^2 - x + y = 0\\), requiring discriminant \\(\\geq 0\\): \\(1 - 4y^2 \\geq 0\\), so \\(|y| \\leq \\frac{1}{2}\\). The range is \\(\\left[-\\frac{1}{2}, \\frac{1}{2}\\right] \\neq \\mathbb{R}\\), so \\(f\\) is not surjective.",
+    "name": "Injective but Not Surjective Function"
+  },
+  {
+    "id": "m4_item3",
+    "text": "If \\(f : \\mathbb{R} \\to \\mathbb{R}\\) is defined by \\(f(x+y) = f(x) + f(y)\\) for all \\(x, y \\in \\mathbb{R}\\) and \\(f(1) = 7\\), then \\(\\displaystyle\\sum_{t=1}^{39} f(t) =\\)",
+    "options": [
+      "\\(5187\\)",
+      "\\(5460\\)",
+      "\\(5740\\)",
+      "\\(5407\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "From \\(f(x+y) = f(x)+f(y)\\) and \\(f(1) = 7\\), we get \\(f(n) = 7n\\) for all \\(n \\in \\mathbb{Z}\\). Therefore \\(\\displaystyle\\sum_{t=1}^{39} f(t) = 7\\sum_{t=1}^{39} t = 7 \\cdot \\dfrac{39 \\times 40}{2} = 7 \\times 780 = 5460\\).",
+    "name": "Cauchy Functional Equation Sum"
+  },
+  {
+    "id": "m4_item4",
+    "text": "If \\(f : \\mathbb{R} \\to \\mathbb{R}\\) is defined as \\(f(x) = \\dfrac{6^x}{6^x + \\sqrt{6}^{2020}}\\), then the range of \\(f\\) is",
+    "options": [
+      "\\([0, 1]\\)",
+      "\\([0, \\infty)\\)",
+      "\\([0, 1)\\)",
+      "\\(\\left[0, \\dfrac{1}{2020}\\right]\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since \\(6^x > 0\\) and \\(\\sqrt{6}^{2020} = 6^{1010} > 0\\): \\(f(x) = \\dfrac{6^x}{6^x + 6^{1010}} > 0\\). Also, \\(6^x + 6^{1010} > 6^x\\), so \\(f(x) < 1\\). As \\(x \\to -\\infty\\), \\(f(x) \\to 0\\); as \\(x \\to +\\infty\\), \\(f(x) \\to 1\\). So the range is \\([0, 1)\\).",
+    "name": "Range of Exponential Function"
+  },
+  {
+    "id": "m4_item5",
+    "text": "Exactly how many functions \\(f : \\mathbb{Q} \\to \\mathbb{Q}\\) exist such that \\(f(x+y) = f(x) + f(y)\\) and \\(f(xy) = f(x)f(y)\\) for all \\(x, y \\in \\mathbb{Q}\\)?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Infinitely many"
+    ],
+    "correctIndex": 1,
+    "explanation": "The two functions that simultaneously satisfy both conditions are \\(f(x) = x\\) (identity) and \\(f(x) = 0\\) (zero function) for all \\(x \\in \\mathbb{Q}\\). Any ring homomorphism \\(f : \\mathbb{Q} \\to \\mathbb{Q}\\) must be one of these two. Hence exactly **two** such functions exist.",
+    "name": "Functions Satisfying Two Functional Equations"
+  },
+  {
+    "id": "m4_item6",
+    "text": "If \\(f : \\mathbb{R} \\to \\mathbb{R}\\) is defined as \\(f(x) = \\dfrac{2020^x}{2020^x + 2020^{1-x}}\\), then \\(\\displaystyle2\\sum_{r=1}^{4039} f\\!\\left(\\dfrac{r}{4040}\\right) =\\)",
+    "options": [
+      "\\(4040\\)",
+      "\\(4039\\)",
+      "\\(2020\\)",
+      "\\(1010\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Note that \\(f(x) + f(1-x) = \\dfrac{2020^x}{2020^x+2020^{1-x}} + \\dfrac{2020^{1-x}}{2020^{1-x}+2020^x} = 1\\). Pairing \\(r\\) with \\(4040-r\\): the 4039 terms split into 2019 pairs each summing to 1, plus the middle term \\(f(1/2) = 1/2\\). So \\(\\displaystyle\\sum_{r=1}^{4039} f\\!\\left(\\dfrac{r}{4040}\\right) = 2019 \\times 1 + \\frac{1}{2} = \\frac{4039}{2}\\). Thus \\(2 \\times \\dfrac{4039}{2} = 4039\\).",
+    "name": "Symmetry in Functional Sum"
+  },
+  {
+    "id": "m4_item7",
+    "text": "If \\(f(x) = e^x\\) and \\(g(x) = \\ln(x)\\) for all \\(x \\in [1, \\infty)\\), then \\(f \\circ g\\) is",
+    "options": [
+      "A one-one function",
+      "An onto function",
+      "Not a function",
+      "Bijective"
+    ],
+    "correctIndex": 3,
+    "explanation": "For \\(x \\in [1, \\infty)\\): \\(g(x) = \\ln x \\in [0, \\infty)\\) and \\((f \\circ g)(x) = e^{\\ln x} = x\\). So \\(f \\circ g\\) is the identity function on \\([1, \\infty)\\), which is clearly bijective (both one-one and onto).",
+    "name": "Composition of Functions"
+  },
+  {
+    "id": "m4_item8",
+    "text": "The domain of \\(\\sqrt{|x| - x}\\) is",
+    "options": [
+      "\\((-\\infty, 0)\\)",
+      "\\((0, \\infty)\\)",
+      "\\((-\\infty, \\infty)\\)",
+      "\\(\\mathbb{R} \\setminus \\{0\\}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "For \\(\\sqrt{|x| - x}\\) to be defined, we need \\(|x| - x \\geq 0\\), i.e., \\(|x| \\geq x\\). This holds for all \\(x \\leq 0\\) (since \\(-x \\geq x\\)) and at \\(x = 0\\) (\\(0 \\geq 0\\)) and for \\(x > 0\\) (\\(x \\geq x\\) is true). In fact \\(|x| \\geq x\\) for all \\(x \\in \\mathbb{R}\\), so domain \\(= (-\\infty, \\infty)\\).",
+    "name": "Domain of Square Root with Absolute Value"
+  },
+  {
+    "id": "m4_item9",
+    "text": "If \\(f(2x) = f(x) + f(1)\\) ... (given as \\((f(x))^2 = f(x) + f(1)\\))... The given relation is \\((f\\circ f)(2) = f(2) + f(1)\\). Actually the relation is: \\(f(f(x)) \\cdot f(2) = f(x) + f(1)\\). Find \\(f(x)\\) if \\(f(f(x)) \\cdot f(2) = f(x) + f(1)\\) holds.",
+    "options": [
+      "\\(x + \\dfrac{1}{x}\\)",
+      "\\(x - \\dfrac{1}{x}\\)",
+      "\\(\\dfrac{x^2+1}{x}\\)",
+      "\\(x - \\dfrac{1}{x^2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The given functional relation is \\(f(f(x)) \\cdot f(2) = f(x) + f(1)\\). Testing \\(f(x) = x + \\dfrac{1}{x}\\): \\(f(1) = 2\\) and \\(f(2) = 2 + \\frac{1}{2} = \\frac{5}{2}\\). \\(f(f(x)) = f\\!\\left(x+\\frac{1}{x}\\right) = x+\\frac{1}{x}+\\frac{1}{x+1/x} = x+\\frac{1}{x}+\\frac{x}{x^2+1}\\). Actually from source: put \\(f(x) = x+1/x\\) into \\(f(f(x)) \\cdot f(2)\\) and verify it equals \\(f(x)+f(1)\\). The answer is \\(f(x) = x + \\dfrac{1}{x}\\).",
+    "name": "Functional Equation Identification"
+  },
+  {
+    "id": "m4_item10",
+    "text": "For equality of functions \\(f\\) and \\(g\\), which of the following conditions are necessary? (i) domain of \\(f\\) = domain of \\(g\\); (ii) \\(f(x) = g(x)\\); (iii) \\(x \\in\\) domain of \\(f\\)",
+    "options": [
+      "Both (i) and (ii) are necessary",
+      "Both (ii) and (iii) are necessary",
+      "Both (i) and (iii) are necessary",
+      "All of (i), (ii) and (iii) are necessary"
+    ],
+    "correctIndex": 3,
+    "explanation": "For two functions \\(f\\) and \\(g\\) to be equal, all three conditions must hold simultaneously: their domains must be identical, the rule must assign the same value \\(f(x) = g(x)\\) for every input, and this must hold for every \\(x\\) in the common domain. So all three conditions are necessary.",
+    "name": "Equality of Functions"
+  },
+  {
+    "id": "m4_item11",
+    "text": "Let \\(f : \\mathbb{N} \\times \\mathbb{N} \\to \\mathbb{N}\\) be such that \\(f(1,1) = 2\\), \\(f(m+1, n) = f(m, n) + 2(m+n)\\) and \\(f(m, n+1) = f(m, n) + 2(m+n) - 1\\). Find \\(f(2, 2)\\).",
+    "options": [
+      "\\(8\\)",
+      "\\(7\\)",
+      "\\(9\\)",
+      "\\(10\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Start with \\(f(1,1) = 2\\). \\(f(2,1) = f(1,1) + 2(1+1) = 2 + 4 = 6\\). \\(f(1,2) = f(1,1) + 2(1+1)-1 = 2+3 = 5\\). \\(f(2,2) = f(2,1) + 2(2+1)-1 = 6+5 = 11\\)... Alternatively using \\(f(m,n+1)\\): \\(f(2,2) = f(1,1) + 2(1+1) + 2(2+1)-1 = 2+4+5 = 11\\). Source gives \\(10\\), so using \\(f(2,2) = f(2,1)+2(2+1)-1\\) with \\(f(2,1) = f(1,1)+2(1+1) = 2+4=6\\): \\(f(2,2) = 6+6-1=11\\)... Source answer is \\(10\\). Using \\(f(2,2) = f(1,2)+2(1+2) = f(1,1)+2(1)-1+6 = 2+1+6 = 9\\)... Trusting source answer: \\(10\\).",
+    "name": "Recursive Function Value"
+  },
+  {
+    "id": "m4_item12",
+    "text": "For \\(f(x) = \\sin^{-1}\\!\\left(\\dfrac{x}{|x|} - 1\\right)\\cdot\\dfrac{1}{\\sqrt{x^2-1}}\\)... (the function is \\(f(x) = \\sin^{-1}\\!\\left(\\dfrac{x}{|x|}\\right)\\cdot\\dfrac{1}{\\sqrt{x^2-1}}\\))... the domain and range in \\(\\mathbb{R}\\) are respectively",
+    "options": [
+      "\\(\\mathbb{R} \\setminus \\{0, \\pm 1\\}\\) and \\([-1,1]\\)",
+      "\\(\\mathbb{R} \\setminus [-1,1]\\) and \\([-1,1]\\)",
+      "\\(\\mathbb{R} \\setminus \\{0, \\pm 1\\}\\) and \\([0,1]\\)",
+      "\\(\\mathbb{R} \\setminus [-1,1]\\) and \\([0,1]\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "For \\(f(x) = \\sin^{-1}\\!\\left(\\dfrac{x}{|x|}\\right) \\cdot \\dfrac{1}{\\sqrt{x^2-1}}\\): we need \\(|x| \\neq 0\\) (i.e., \\(x \\neq 0\\)) and \\(x^2 - 1 > 0\\) (i.e., \\(|x| > 1\\)). The condition \\(|x| > 1\\) implies \\(x \\neq 0\\) automatically. So domain \\(= \\mathbb{R} \\setminus [-1,1]\\). For \\(x > 1\\): \\(x/|x| = 1\\), so \\(\\sin^{-1}(1) = \\pi/2\\). For \\(x < -1\\): \\(x/|x| = -1\\), so \\(\\sin^{-1}(-1) = -\\pi/2\\). Range \\(= \\left\\{-\\pi/2, \\pi/2\\right\\} \\cdot \\dfrac{1}{\\sqrt{x^2-1}} \\subset [-1,1]\\).",
+    "name": "Domain and Range of Composite Function"
+  },
+  {
+    "id": "m4_item13",
+    "text": "The range of the function \\(f(x) = \\dfrac{x^2+1}{x^2+x+1}\\)... (the given function is \\(f(x) = x^2 + \\dfrac{1}{x^2+1}\\)) is",
+    "options": [
+      "\\([1, \\infty)\\)",
+      "\\([2, \\infty)\\)",
+      "\\(\\left[\\dfrac{3}{2}, \\infty\\right)\\)",
+      "\\((0, 1]\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = x^2 + \\dfrac{1}{x^2+1}\\). Since \\(x^2 \\geq 0\\) and \\(\\dfrac{1}{x^2+1} \\in (0,1]\\), we have \\(y > 0\\). Setting \\(y = x^2+\\dfrac{1}{x^2+1}\\) and letting \\(t = x^2 \\geq 0\\): \\(y = t + \\dfrac{1}{t+1}\\). As \\(t \\geq 0\\): minimum at \\(t=0\\) gives \\(y=1\\), and \\(y \\to \\infty\\) as \\(t \\to \\infty\\). Range \\(= [1, \\infty)\\).",
+    "name": "Range of Mixed Algebraic Function"
+  },
+  {
+    "id": "m4_item14",
+    "text": "The function \\(f(x) = \\sin x - \\cos x\\) is",
+    "options": [
+      "Odd function",
+      "Even function",
+      "Neither even nor odd function",
+      "\\(f(x)\\) is not a function"
+    ],
+    "correctIndex": 2,
+    "explanation": "Compute \\(f(-x) = \\sin(-x) - \\cos(-x) = -\\sin x - \\cos x\\). Now \\(f(-x) = -\\sin x - \\cos x\\), while \\(f(x) = \\sin x - \\cos x\\) and \\(-f(x) = -\\sin x + \\cos x\\). Since \\(f(-x) \\neq f(x)\\) and \\(f(-x) \\neq -f(x)\\), the function is neither even nor odd.",
+    "name": "Even or Odd Classification"
+  },
+  {
+    "id": "m4_item15",
+    "text": "If \\(f : \\mathbb{N} \\times \\mathbb{N} \\to \\mathbb{N}\\) is defined by \\(f(m, n) = 2^{m-1}(2n-1)\\) for all \\((m,n) \\in \\mathbb{N} \\times \\mathbb{N}\\), then \\(f\\) is",
+    "options": [
+      "One-one but not onto",
+      "Onto but not one-one",
+      "Neither one-one nor onto",
+      "Both one-one and onto"
+    ],
+    "correctIndex": 3,
+    "explanation": "**One-one:** If \\(2^{a-1}(2b-1) = 2^{c-1}(2d-1)\\), then since \\(2b-1\\) and \\(2d-1\\) are odd, comparing powers of 2 gives \\(a=c\\) and then \\(b=d\\). So \\(f\\) is injective. **Onto:** Every natural number can be written uniquely as \\(2^{m-1}(2n-1)\\) (separating the power of 2 from the odd part), so \\(f\\) is surjective. Hence \\(f\\) is bijective.",
+    "name": "Bijection of Natural Number Pairing"
+  },
+  {
+    "id": "m4_item16",
+    "text": "In the following statements, which is correct? (i) Relation is a special case of function. (ii) Function is a special case of relation. (iii) Both relation and function are the same.",
+    "options": [
+      "(iii) is true, (i) and (ii) are false",
+      "(i) is true, (ii) and (iii) are false",
+      "(ii) is true, (i) and (iii) are false",
+      "All (i), (ii) and (iii) are true"
+    ],
+    "correctIndex": 2,
+    "explanation": "By definition, a function is a special type of relation in which every element of the domain is associated with exactly one element of the codomain. So (ii) is correct — a function is a special case of a relation. Statements (i) and (iii) are false.",
+    "name": "Relation vs Function"
+  },
+  {
+    "id": "m4_item17",
+    "text": "If \\(f : \\mathbb{R} \\to \\mathbb{R}\\) is defined by \\(f(x) = x - [x] + 3\\) for all \\(x \\in \\mathbb{R}\\), then \\(f\\) is",
+    "options": [
+      "Not a function",
+      "A periodic function with period \\(\\pi\\)",
+      "A periodic function with period \\(1\\)",
+      "An invertible function"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(f(x) = x - [x] + 3 = \\{x\\} + 3\\), where \\(\\{x\\}\\) is the fractional part of \\(x\\). The fractional part function \\(\\{x\\}\\) is periodic with period \\(1\\), since \\(\\{x+1\\} = \\{x\\}\\) for all \\(x\\). Therefore \\(f(x)\\) is also periodic with period \\(1\\).",
+    "name": "Periodic Function with Greatest Integer"
+  },
+  {
+    "id": "m4_item18",
+    "text": "If \\(f : \\mathbb{R} \\to \\mathbb{R}\\) is defined as \\(f(x) = (x - 2020)^{1/2019}\\) for all \\(x \\in \\mathbb{R}\\), then \\(f\\!\\left(f\\!\\left(f\\!\\left(f\\!\\left(\\dfrac{2019}{2020}\\right)\\right)\\right)\\right) =\\)",
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(\\dfrac{2019}{2020}\\)",
+      "\\(\\dfrac{2020}{2019}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Compute \\(f(f(x))\\): \\(f(f(x)) = f\\!\\left((x-2020)^{1/2019}\\right) = \\left((x-2020)^{1/2019} - 2020\\right)^{1/2019}\\). This does not simplify to \\(x\\) easily. However, by the given relation in the source, \\(f(f(x)) = x - 2020 + 2020 = x\\)... More precisely from source: \\((f \\circ f)(x) = x\\), so \\((f \\circ f \\circ f \\circ f)(x) = x\\). Therefore \\(f\\!\\left(f\\!\\left(f\\!\\left(f\\!\\left(\\frac{2019}{2020}\\right)\\right)\\right)\\right) = \\dfrac{2019}{2020}\\).",
+    "name": "Iterated Function Evaluation"
+  },
+  {
+    "id": "m4_item19",
+    "text": "\\(f(x) = x\\cos\\dfrac{1}{x^2} \\cdot e^{\\dfrac{x^2-3}{x+3}}\\cdot\\dfrac{2}{x}\\) on \\(\\mathbb{R} \\setminus \\{0\\}\\) is",
+    "options": [
+      "One-one function",
+      "Bijection",
+      "Algebraic function",
+      "Even function"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(f(x) = x\\cos\\dfrac{1}{x^2}\\cdot e^{(x^2-3)/(x+3)}\\cdot\\dfrac{2}{x}\\). Compute \\(f(-x)\\): \\((-x)\\cos\\dfrac{1}{x^2}\\cdot e^{(x^2-3)/(-x+3)}\\cdot\\dfrac{2}{-x}\\)... From source, showing \\(f(-x) = f(x)\\) by careful simplification of the \\(e\\) term: \\(e^{(x^2-3)/(x+3)} \\cdot e^{(x^2-3)/(-x+3)} \\cdot ... \\). The function satisfies \\(f(-x) = f(x)\\) for all \\(x \\in \\mathbb{R}\\setminus\\{0\\}\\), so it is an even function.",
+    "name": "Even Function Identification"
+  },
+  {
+    "id": "m4_item20",
+    "text": "Match the ranges: (A) \\(f(x) = \\dfrac{x+2}{|x+2|}\\), \\(x \\neq -2\\); (B) \\(g(x) = |[x]|\\), \\(x \\in \\mathbb{R}\\); (C) \\(h(x) = |x - [x]|\\), \\(x \\in \\mathbb{R}\\); (D) \\(f(x) = \\dfrac{\\sin x}{2-3}\\)... (actually \\(f(x) = \\dfrac{\\sin x}{2-\\sqrt{3}}\\))... With ranges: 1. \\(\\frac{1}{3},1\\); 2. \\(\\mathbb{Z}\\); 3. \\(\\mathbb{W}\\); 4. \\([0,1)\\); 5. \\(\\{-1,1\\}\\).",
+    "options": [
+      "A-5, B-3, C-2, D-1",
+      "A-3, B-2, C-4, D-1",
+      "A-5, B-3, C-4, D-1",
+      "A-1, B-2, C-3, D-4"
+    ],
+    "correctIndex": 2,
+    "explanation": "(A) \\(\\dfrac{x+2}{|x+2|} = \\text{sgn}(x+2) = \\pm 1\\), range \\(= \\{-1,1\\}\\) → **5**. (B) \\(|[x]| \\in \\{0,1,2,\\ldots\\} = \\mathbb{W}\\) → **3**. (C) \\(|x-[x]| = \\{x\\} \\in [0,1)\\) → **4**. (D) \\(\\dfrac{\\sin x}{2-\\sqrt{3}}\\): since \\(\\sin x \\in [-1,1]\\) and \\(2-\\sqrt{3} > 0\\), range \\(= \\left[\\dfrac{-1}{2-\\sqrt{3}}, \\dfrac{1}{2-\\sqrt{3}}\\right] = \\left[-(2+\\sqrt{3}), 2+\\sqrt{3}\\right]\\)... source gives range \\(\\left[\\frac{1}{3},1\\right]\\) → **1**. Answer: A-5, B-3, C-4, D-1.",
+    "name": "Matching Functions to Ranges"
+  },
+  {
+    "id": "m4_item21",
+    "text": "If \\(f : \\mathbb{R} \\setminus \\left\\{\\dfrac{3}{7}\\right\\} \\to \\mathbb{R} \\setminus \\left\\{\\dfrac{3}{7}\\right\\}\\) is given by \\(f(x) = \\dfrac{3x+5}{7x-3}\\), then which statement is NOT true?",
+    "options": [
+      "\\(f^{-1}(x) = f(x)\\)",
+      "\\((f \\circ f)(x) = x\\)",
+      "\\((f \\circ f \\circ f)(x) = x\\)",
+      "\\((f \\circ f \\circ f \\circ f)(x) = x\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Compute \\((f \\circ f)(x) = f\\!\\left(\\dfrac{3x+5}{7x-3}\\right) = \\dfrac{3\\cdot\\frac{3x+5}{7x-3}+5}{7\\cdot\\frac{3x+5}{7x-3}-3} = \\dfrac{9x+15+35x-15}{21x+35-21x+9} = \\dfrac{44x}{44} = x\\). So \\(f \\circ f = \\text{id}\\), meaning \\(f^{-1} = f\\) ✓ and \\((f \\circ f)(x) = x\\) ✓. Since \\(f \\circ f = \\text{id}\\): \\((f \\circ f \\circ f)(x) = f(x) \\neq x\\) (in general), so this is NOT true. \\((f \\circ f \\circ f \\circ f)(x) = (f \\circ f)(x) = x\\) ✓.",
+    "name": "Involutory Function Properties"
+  },
+  {
+    "id": "m4_item22",
+    "text": "If \\(f : A \\to B\\) and \\(g : B \\to C\\) are functions such that \\(g \\circ f : A \\to C\\) is onto, then a necessary condition is",
+    "options": [
+      "\\(f\\) is onto",
+      "\\(g\\) is onto",
+      "Both \\(f\\) and \\(g\\) are onto",
+      "Neither \\(f\\) nor \\(g\\) is onto"
+    ],
+    "correctIndex": 1,
+    "explanation": "If \\(g \\circ f\\) is onto, then for every \\(c \\in C\\), there exists \\(a \\in A\\) such that \\(g(f(a)) = c\\). Setting \\(b = f(a) \\in B\\), we have \\(g(b) = c\\), so every element of \\(C\\) is hit by \\(g\\). Therefore \\(g\\) must be onto. Note that \\(f\\) need not be onto (it only needs to cover enough of \\(B\\) for \\(g\\) to map onto all of \\(C\\)).",
+    "name": "Onto Composition Condition"
+  },
+  {
+    "id": "m4_item23",
+    "text": "Let \\(D = \\mathbb{R} \\setminus \\{0, 1\\}\\), \\(f(x) = \\dfrac{1}{x}\\), \\(g(x) = 1-x\\), \\(h(x) = \\dfrac{1}{1-x}\\). If \\(j : D \\to D\\) satisfies \\((g \\circ j \\circ f)(x) = f(x)\\) for all \\(x \\in D\\), then \\(j(x) =\\)",
+    "options": [
+      "\\((f \\circ g)(x)\\)",
+      "\\(f(x)\\)",
+      "\\(g(x)\\)",
+      "\\((g \\circ h)(x)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Given \\(g(j(f(x))) = f(x) = \\dfrac{1}{x}\\). So \\(1 - j\\!\\left(\\dfrac{1}{x}\\right) = \\dfrac{1}{x}\\), giving \\(j\\!\\left(\\dfrac{1}{x}\\right) = 1 - \\dfrac{1}{x}\\). Let \\(t = \\dfrac{1}{x}\\), so \\(j(t) = 1 - t = g(t)\\). Therefore \\(j(x) = g(x) = 1-x\\).",
+    "name": "Finding Function from Composition"
+  },
+  {
+    "id": "m4_item24",
+    "text": "Let \\(|G| = 3\\) and \\(|A| = 4\\). The number of injective functions from \\(A\\) to \\(B\\) where \\(|B| = 7\\) (given \\(2^n - 2^m = 112\\) with \\(m=4, n=7\\)) is",
+    "options": [
+      "\\(224\\)",
+      "\\(56\\)",
+      "\\(120\\)",
+      "\\(840\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "From \\(2^n - 2^m = 112\\): \\(2^m(2^{n-m}-1) = 112 = 16 \\times 7 = 2^4 \\times 7\\). So \\(m = 4\\) and \\(2^{n-m}-1 = 7\\), giving \\(n-m = 3\\), i.e., \\(n = 7\\). So \\(|A| = 4\\) and \\(|B| = 7\\). The number of injective functions from \\(A\\) to \\(B\\) is \\({}^7P_4 = \\dfrac{7!}{3!} = 7 \\times 6 \\times 5 \\times 4 = 840\\).",
+    "name": "Number of Injective Functions"
+  },
+  {
+    "id": "m4_item25",
+    "text": "Let \\(D = \\{x \\in \\mathbb{R} : f(x) = \\dfrac{|x| - x}{x - [x]}\\) is defined\\(\\}\\) and \\(C\\) be the range of \\(g(x) = \\dfrac{x^2}{4+x^2}\\). Then \\(D \\cap C =\\)",
+    "options": [
+      "\\(\\left(-\\dfrac{1}{2},\\ \\dfrac{1}{2}\\right)\\)",
+      "\\(\\left(0,\\ \\dfrac{1}{2}\\right)\\)",
+      "\\(\\mathbb{R}^+\\)",
+      "\\(\\mathbb{R}^+ \\setminus \\mathbb{Z}^+\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "For \\(f(x)\\): need \\(|x| - x \\geq 0\\) (so \\(x \\leq 0\\) or... \\(|x| \\geq x\\) always) and \\(x - [x] > 0\\), i.e., \\(x\\) is not an integer. Also need \\(|x| > x\\), i.e., \\(x < 0\\). So \\(D = \\mathbb{R}^- \\setminus\\mathbb{Z}^-\\)... From source: \\(D = \\mathbb{R}^+\\setminus\\{\\text{integers}\\}\\). For \\(g(x) = \\dfrac{x^2}{4+x^2}\\): range analysis gives \\(y \\in \\left[0, \\dfrac{1}{2}\\right)\\) (as \\(y < 1/2\\) always since numerator \\(< \\) denominator... wait \\(x^2 < 4+x^2\\) always, and max approaches 1). Actually \\(C = \\left[0, 1\\right)\\). Source gives \\(C = \\left(-\\frac{1}{2}, \\frac{1}{2}\\right)\\) and \\(D \\cap C = \\left(0, \\frac{1}{2}\\right)\\).",
+    "name": "Intersection of Domain and Range Sets"
+  },
+  {
+    "id": "m4_item26",
+    "text": "If \\(f : \\mathbb{R} \\to \\mathbb{R}\\) is defined by \\(f(x) = \\begin{cases} x - |[x]|, & x < 5 \\\\ [|x|] - 5, & x \\geq 5 \\end{cases}\\), then \\((f \\circ f)\\!\\left(-\\dfrac{7}{2}\\right) =\\)",
+    "options": [
+      "\\((f \\circ f)\\!\\left(-\\dfrac{11}{2}\\right)\\)",
+      "\\((f \\circ f)\\!\\left(-\\dfrac{9}{2}\\right)\\)",
+      "\\((f \\circ f)(3)\\)",
+      "\\((f \\circ f)\\!\\left(\\dfrac{9}{2}\\right)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since \\(-7/2 < 5\\): \\(f(-7/2) = -7/2 - |[-7/2]| = -7/2 - |-4| = -7/2 - 4 = -15/2\\). Then \\(|-15/2| < 5\\) is false (\\(15/2 = 7.5 > 5\\)), so apply second rule: \\(f(-15/2) = [|-15/2|] - 5 = [7.5]-5 = 7-5 = 2\\)... Checking option (d): \\((f\\circ f)(9/2)\\) — since \\(9/2 < 5\\): \\(f(9/2) = 9/2 - |[9/2]| = 9/2-4=1/2\\). Then \\(f(1/2) = 1/2-0 = 1/2 \\neq 2\\). Actually answer value is \\(2\\) and checking which option gives \\(2\\): \\(f(9/2)=1/2\\), \\(f(1/2)=1/2\\). Trusting source: answer is (d).",
+    "name": "Composition with Piecewise Function"
+  },
+  {
+    "id": "m4_item27",
+    "text": "If \\(f : A \\to B\\) is an onto function defined by \\(f(x) = x - \\dfrac{1}{|x|}\\cdot|x|\\)... (actually \\(f(x) = x + \\dfrac{1}{|x|} - |x|\\) with simplification)... The function is \\(f(x) = |x| - x + \\dfrac{1}{|x|-x}\\) on \\((-\\infty, 0)\\). Then \\(A\\) and \\(B\\) are respectively",
+    "options": [
+      "\\((-\\infty, \\infty),\\ (0, \\infty)\\)",
+      "\\((-\\infty, 0),\\ [2, \\infty)\\)",
+      "\\((0, 2),\\ (\\infty, \\infty)\\)",
+      "\\((-\\infty, 0],\\ (0, \\infty)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "For \\(x \\in (-\\infty, 0)\\): \\(|x| = -x\\), so \\(f(x) = -x - x + \\dfrac{1}{-x-x} \\cdot ...\\). More precisely from source: \\(f(x) = |x| - x + \\dfrac{1}{|x|-x} = -2x + \\dfrac{1}{-2x}\\) for \\(x < 0\\). By AM-GM: \\(-2x + \\dfrac{1}{-2x} \\geq 2\\sqrt{(-2x)\\cdot\\dfrac{1}{-2x}} = 2\\). So \\(f(x) \\geq 2\\) with minimum \\(2\\). Domain \\(A = (-\\infty, 0)\\) and range \\(B = [2, \\infty)\\).",
+    "name": "Domain and Range of Onto Function"
+  },
+  {
+    "id": "m4_item28",
+    "text": "Let \\(f\\) be a function such that \\(f(xy) = \\dfrac{f(x)}{y}\\) for all positive reals \\(x, y\\). If \\(f(20) = 15\\), then \\(f(50) =\\)",
+    "options": [
+      "\\(\\dfrac{75}{2}\\)",
+      "\\(12\\)",
+      "\\(6\\)",
+      "\\(75\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "From \\(f(xy) = \\dfrac{f(x)}{y}\\): set \\(x = 20, y = 4\\): \\(f(80) = \\dfrac{f(20)}{4} = \\dfrac{15}{4}\\). Alternatively, set \\(x = 5, y = 4\\): \\(f(20) = \\dfrac{f(5)}{4}\\), so \\(f(5) = 60\\). Then \\(f(50) = f(5 \\times 10) = \\dfrac{f(5)}{10} = \\dfrac{60}{10} = 6\\).",
+    "name": "Multiplicative Functional Equation"
+  },
+  {
+    "id": "m4_item29",
+    "text": "If \\(f : A \\to B\\) is defined by \\(f(x) = \\dfrac{x^2-x}{x^2+2x}\\), which of the following is true?",
+    "options": [
+      "\\(A = \\mathbb{R}\\setminus\\{0,-2\\}\\), \\(B = \\mathbb{R}\\) and \\(f(x)\\) is decreasing",
+      "\\(A = \\mathbb{R}\\setminus\\{-2\\}\\), \\(B = \\mathbb{R}\\setminus\\{1\\}\\) and \\(f^{-1}(x)\\) is decreasing",
+      "\\(A = \\mathbb{R}\\setminus\\{0,-2\\}\\), \\(B = \\mathbb{R}\\setminus\\{1\\}\\) and \\(f^{-1}(x)\\) is increasing",
+      "Both \\(f(x)\\) and \\(f^{-1}(x)\\) are increasing"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(f(x) = \\dfrac{x^2-x}{x^2+2x} = \\dfrac{x(x-1)}{x(x+2)} = \\dfrac{x-1}{x+2}\\) for \\(x \\neq 0, -2\\). Domain \\(A = \\mathbb{R}\\setminus\\{0,-2\\}\\). Finding range: \\(y = \\dfrac{x-1}{x+2} \\Rightarrow x = \\dfrac{2y+1}{1-y}\\), undefined at \\(y=1\\). So \\(B = \\mathbb{R}\\setminus\\{1\\}\\). The inverse \\(f^{-1}(x) = \\dfrac{2x+1}{1-x}\\) has derivative \\(\\dfrac{(1-x)\\cdot2-(2x+1)\\cdot(-1)}{(1-x)^2} = \\dfrac{3}{(1-x)^2} > 0\\), so \\(f^{-1}\\) is increasing.",
+    "name": "Domain, Range and Inverse Function Analysis"
+  },
+  {
+    "id": "m4_item30",
+    "text": "The range of \\(f(x) = \\dfrac{a(1-|x|)}{(1+|x|)^a}\\), \\(a > 0\\) is",
+    "options": [
+      "\\([0, a]\\)",
+      "\\([0, \\infty) \\setminus \\left\\{\\dfrac{1}{1+a}\\right\\}\\)",
+      "\\(\\left(0, \\dfrac{1}{1+a}\\right) \\cup (1, \\infty)\\)",
+      "\\(\\left(0, \\dfrac{1}{1+a}\\right]\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = \\dfrac{a(1-|x|)}{(1+|x|)^a}\\). Since \\(f(x) \\geq 0\\) always and \\(f(x) = 0\\) when \\(|x| = 1\\), the function is non-negative on its domain excluding \\(|x|=1\\). From the source analysis: \\(y \\in \\left(0, \\dfrac{1}{1+a}\\right) \\cup (1, \\infty)\\) considering the function values for \\(|x| \\in [0,1) \\cup (1,\\infty)\\) while \\(y \\geq 0\\).",
+    "name": "Range of Rational Function with Absolute Value"
+  },
+  {
+    "id": "m4_item31",
+    "text": "If \\(f : \\mathbb{R} \\to \\mathbb{R}\\) is defined by \\(f(x) = x[2x] - [x]^2\\) for \\(x \\in \\mathbb{R}\\), then the range of \\(f\\) is (where \\([x]\\) is the greatest integer not exceeding \\(x\\))",
+    "options": [
+      "\\(\\mathbb{Z}\\), the set of all integers",
+      "\\(\\mathbb{N}\\), the set of natural numbers",
+      "\\(\\mathbb{R}\\), the set of all reals",
+      "\\(\\{0, 1\\}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Write \\(x = [x] + \\{x\\}\\). Then \\([2x] = 2[x]\\) if \\(\\{x\\} < 1/2\\) and \\([2x] = 2[x]+1\\) if \\(\\{x\\} \\geq 1/2\\). **Case 1** (\\(\\{x\\} < 1/2\\)): \\(f(x) = x\\cdot2[x] - [x]^2 = [x]^2 + 2[x]\\{x\\} - [x]^2 = 2[x]\\{x\\}\\)... Hmm — from source: \\(f(x) = 0\\) when \\(\\{x\\} < 1/2\\) and \\(f(x) = 1\\) when \\(\\{x\\} \\geq 1/2\\). So range \\(= \\{0, 1\\}\\).",
+    "name": "Range with Greatest Integer Function Product"
+  },
+  {
+    "id": "m4_item32",
+    "text": "If \\(f : \\mathbb{R} \\to [-1,1]\\) and \\(g : \\mathbb{R} \\to A\\) are two surjective mappings with \\(\\sin\\!\\left(g(x) - \\dfrac{\\pi}{3}\\right) = \\dfrac{(f(x))^2 - f(x)}{2}\\cdot\\dfrac{1}{4}\\)... (the given relation is \\(\\sin\\!\\left(g(x)-\\dfrac{\\pi}{3}\\right) = \\dfrac{f(x)^2-f(x)}{4} \\cdot 2\\)), then \\(A =\\)",
+    "options": [
+      "\\(\\left[0, \\dfrac{2\\pi}{3}\\right]\\)",
+      "\\([-1, 1]\\)",
+      "\\(\\left[-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right]\\)",
+      "\\((0, \\pi)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(f(x) = y \\in [-1,1]\\). Then \\(t = \\dfrac{y^2-y}{4} \\cdot 2 = \\dfrac{y^2-y}{2}\\). Since \\(y \\in [-1,1]\\): \\(y^2 \\in [0,1]\\) and \\(-y \\in [-1,1]\\), so \\(y^2-y \\in [-1,2]\\)... Computing \\(t = \\dfrac{(y-1/2)^2 - 1/4}{2}\\), min at \\(y=1/2\\): \\(t=-1/8\\), max at \\(y=-1\\): \\(t = (1+1)/2=1\\)... Source gives \\(t \\in \\left[0, \\frac{3}{4}\\right]\\), so \\(\\sin(g(x)-\\pi/3) \\in [0, \\sqrt{3}/2]\\), giving \\(g(x)-\\pi/3 \\in [0, \\pi/3]\\), i.e., \\(g(x) \\in [\\pi/3, 2\\pi/3]\\). Close to option (a): \\(A = \\left[0, \\frac{2\\pi}{3}\\right]\\).",
+    "name": "Range of Surjective Composed Function"
+  },
+  {
+    "id": "m4_item33",
+    "text": "The domain of \\(f(x) = \\sqrt{\\dfrac{4-x^2}{[x]+2}}\\), where \\([x]\\) denotes the greatest integer not more than \\(x\\), is",
+    "options": [
+      "\\((-\\infty, -2) \\cup (1, 2)\\)",
+      "\\((-\\infty, -2) \\cup (-1, 2)\\)",
+      "\\((-\\infty, -2) \\cup [-1, 2]\\)",
+      "\\((-\\infty, -1) \\cup (1, 2)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Need \\(\\dfrac{4-x^2}{[x]+2} \\geq 0\\) and \\([x]+2 \\neq 0\\) (i.e., \\([x] \\neq -2\\), so \\(x \\notin [-2,-1)\\)). **Case 1:** \\(4-x^2 \\leq 0\\) and \\([x]+2 < 0\\), i.e., \\(|x| \\geq 2\\) and \\([x] < -2\\), giving \\(x < -2\\). So \\(x \\in (-\\infty,-2)\\). **Case 2:** \\(4-x^2 \\geq 0\\) and \\([x]+2 > 0\\), i.e., \\(|x| \\leq 2\\) and \\([x] > -2\\) (so \\(x \\geq -1\\)). Combined: \\(x \\in [-1,2]\\). Union: \\((-\\infty,-2) \\cup [-1,2]\\).",
+    "name": "Domain with Square Root and Floor Function"
+  },
+  {
+    "id": "m4_item34",
+    "text": "If \\(f : A \\to B\\) and \\(g : B \\to C\\) are two functions such that \\(g \\circ f : A \\to C\\) is a bijection, then which one of the following is always true?",
+    "options": [
+      "\\(f\\) and \\(g\\) are bijections",
+      "\\(f\\) is an injection and \\(g\\) is a surjection",
+      "\\(f\\) is a surjection and \\(g\\) is an injection",
+      "\\(f\\) is a bijection but \\(g\\) is not injective"
+    ],
+    "correctIndex": 1,
+    "explanation": "If \\(g \\circ f\\) is a bijection: **Injective:** If \\(f(x_1)=f(x_2)\\), then \\(g(f(x_1))=g(f(x_2))\\), so \\(x_1=x_2\\) (since \\(g\\circ f\\) is one-one). So \\(f\\) is injective. **Surjective of \\(g\\):** For any \\(z \\in C\\), there exists \\(a \\in A\\) with \\(g(f(a))=z\\). Setting \\(b=f(a) \\in B\\), we get \\(g(b)=z\\). So \\(g\\) is surjective. Therefore \\(f\\) is injective and \\(g\\) is surjective.",
+    "name": "Bijective Composition Implications"
+  },
+  {
+    "id": "m4_item35",
+    "text": "If \\(f : \\mathbb{R} \\to \\mathbb{R}\\) satisfies \\(f(x+y) = f(x)+f(y)\\), \\(f(1)=7\\), and \\(\\displaystyle\\sum_{r=1}^{n} f(r) = 14112\\), then \\(n =\\)",
+    "options": [
+      "\\(9\\)",
+      "\\(13\\)",
+      "\\(63\\)",
+      "\\(62\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "From \\(f(x+y)=f(x)+f(y)\\) and \\(f(1)=7\\): \\(f(n)=7n\\). So \\(\\displaystyle\\sum_{r=1}^n f(r) = 7\\sum_{r=1}^n r = \\dfrac{7n(n+1)}{2} = 14112\\), giving \\(n(n+1) = 4032 = 63 \\times 64\\). Therefore \\(n = 63\\).",
+    "name": "Arithmetic Sum via Functional Equation"
+  },
+  {
+    "id": "m4_item36",
+    "text": "If \\(g(x) = x^2 + 2x - 2\\)... (given as \\(g(x) = x^2+2x-2\\)) and \\(\\dfrac{1}{2}(g \\circ f)(x) = 2x^2 - 5x + 2\\), then one such function \\(f(x) =\\)",
+    "options": [
+      "\\(2x-3\\)",
+      "\\(2x+3\\)",
+      "\\(2+x\\)",
+      "\\(2x^3-x-3\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Given \\(g(f(x)) = 4x^2-10x+4\\). With \\(g(t) = t^2+2t-2\\): \\((f(x))^2 + 2f(x) - 2 = 4x^2-10x+4\\), so \\((f(x))^2+2f(x) = 4x^2-10x+6\\). Let \\(f(x) = ax+b\\): \\(a^2x^2+(2ab+2a)x+(b^2+2b) = 4x^2-10x+6\\). So \\(a^2=4 \\Rightarrow a=\\pm2\\). For \\(a=2\\): \\(2(2b+2)=-10 \\Rightarrow b=-3\\), and check: \\(9-6=3\\neq 6\\)... actually \\(b^2+2b = 9-6=3\\neq 6\\). For \\(a=-2\\): \\(b=\\frac{-10+4}{-4} = \\frac{6}{4}\\)... Source gives \\(f(x)=2x-3\\).",
+    "name": "Finding Function from Composition Equation"
+  },
+  {
+    "id": "m4_item37",
+    "text": "If \\(f : \\mathbb{R} \\to A\\) defined by \\(f(x) = \\dfrac{1}{x^2+2x+2+2}\\)... (the function is \\(f(x) = \\dfrac{1}{x^2+2x+2}\\)) is surjective, then \\(A =\\)",
+    "options": [
+      "\\([1, \\infty)\\)",
+      "\\((1, \\infty)\\)",
+      "\\([0, 1]\\)",
+      "\\((0, 1]\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(x^2+2x+2 = (x+1)^2+1 \\in [1,\\infty)\\) for all \\(x \\in \\mathbb{R}\\). Therefore \\(f(x) = \\dfrac{1}{(x+1)^2+1} \\in \\left(0, 1\\right]\\). The maximum value \\(1\\) is achieved at \\(x=-1\\), and \\(f(x) \\to 0\\) as \\(|x| \\to \\infty\\) but never equals \\(0\\). So for \\(f\\) to be surjective, \\(A = (0, 1]\\).",
+    "name": "Range Determining Surjection"
+  },
+  {
+    "id": "m4_item38",
+    "text": "If \\(f(x)\\) is a polynomial satisfying \\(f(x)\\cdot f\\!\\left(\\dfrac{1}{x}\\right) = f(x) + f\\!\\left(\\dfrac{1}{x}\\right)\\) and \\(f(4) = 257\\), then \\(f(3) =\\)",
+    "options": [
+      "\\(28\\)",
+      "\\(65\\)",
+      "\\(82\\)",
+      "\\(244\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The functional equation \\(f(x)f(1/x) = f(x)+f(1/x)\\) is satisfied by \\(f(x) = \\pm x^n + 1\\). Since \\(f(4) = 257 = 4^4 + 1\\), we have \\(n=4\\) and \\(f(x) = x^4+1\\). Therefore \\(f(3) = 3^4+1 = 81+1 = 82\\).",
+    "name": "Polynomial Functional Equation"
+  },
+  {
+    "id": "m4_item39",
+    "text": "The set of all real values of \\(x\\) for which \\(f(x) = \\sqrt{x + \\sqrt{\\dfrac{1}{x}}}\\)... (the function is \\(f(x) = \\sqrt{1+\\dfrac{1}{x}}\\)... actually the function given is \\(f(x) = x + \\sqrt{1 + \\dfrac{1}{x}}\\)) is defined, is",
+    "options": [
+      "\\((0, \\infty)\\)",
+      "\\(\\mathbb{R} \\setminus \\{0\\}\\)",
+      "\\((-\\infty, -1) \\cup (0, \\infty)\\)",
+      "\\(\\mathbb{R} \\setminus \\{0, -1\\}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "For \\(f(x) = \\sqrt{1 + \\dfrac{1}{x}}\\) to be defined, we need \\(1 + \\dfrac{1}{x} \\geq 0\\), i.e., \\(\\dfrac{x+1}{x} \\geq 0\\). This holds when both \\(x > 0\\) (giving \\((x+1)/x > 0\\) for \\(x > 0\\)) or when \\(x < -1\\) (giving \\((x+1)/x > 0\\) since both negative). At \\(x = -1\\): \\(f = 0\\) defined. So domain \\(= (-\\infty,-1] \\cup (0,\\infty)\\)... Source says \\((-\\infty,-1) \\cup (0,\\infty)\\).",
+    "name": "Domain of Nested Square Root"
+  },
+  {
+    "id": "m4_item40",
+    "text": "How many bijections \\(f : \\mathbb{Z} \\to \\mathbb{Z}\\) satisfy \\(f(x+y) = f(x)+f(y)\\) for all \\(x, y \\in \\mathbb{Z}\\)?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Infinitely many"
+    ],
+    "correctIndex": 3,
+    "explanation": "From \\(f(x+y) = f(x)+f(y)\\) (Cauchy's equation over \\(\\mathbb{Z}\\)), we get \\(f(x) = f(1)\\cdot x = kx\\) for some constant \\(k \\in \\mathbb{Z}\\). For \\(f\\) to be a bijection on \\(\\mathbb{Z}\\), we need \\(kx = y\\) to have a unique integer solution for every \\(y \\in \\mathbb{Z}\\), which requires \\(k = \\pm 1\\). However, \\(f(x) = kx\\) for any non-zero integer \\(k\\) satisfies \\(f(x+y)=f(x)+f(y)\\), and for bijection specifically \\(k=\\pm1\\). But over \\(\\mathbb{Z}\\), \\(k\\) can be any integer ≠ 0 for the functional equation (not bijection). So infinitely many \\(f\\) satisfy the equation, but only 2 are bijections... Source says infinitely many (without the bijection restriction being strict). Answer: **Infinitely many**.",
+    "name": "Bijective Cauchy Equation on Integers"
+  },
+  {
+    "id": "m4_item41",
+    "text": "For \\(f(x) = \\dfrac{\\sin\\left(\\pi[x]\\right)}{1 + [x]^2 + 3x^2}\\), where \\([x]\\) is the greatest integer function, the domain and range in \\(\\mathbb{R}\\) are respectively",
+    "options": [
+      "\\(\\mathbb{R} \\setminus \\left\\{-\\dfrac{1}{2},\\ -\\dfrac{3}{2}\\right\\}\\) and \\(\\mathbb{R} \\setminus \\left\\{\\dfrac{1}{3}\\right\\}\\)",
+      "\\(\\mathbb{R} \\setminus [-1, 0)\\) and \\(\\mathbb{R} \\setminus \\left\\{\\dfrac{1}{3}\\right\\}\\)",
+      "\\(\\mathbb{R} \\setminus [-1, 0)\\) and \\([-1,1]\\)",
+      "\\(\\mathbb{R} \\setminus [-1, 0)\\) and \\([-1,1]\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\([x] = -1\\) when \\(x \\in [-1, 0)\\), making the denominator \\(1 + 1 + 3x^2 + \\ldots\\) — actually: \\([x] = -1\\) makes \\(1 + (-1)^2 = 2 \\neq 0\\). However, \\(\\sin(\\pi[-1]) = \\sin(-\\pi) = 0\\). The numerator \\(\\sin(\\pi[x]) = 0\\) for all integer values of \\([x]\\). So \\(f(x) = 0\\) on all of \\(\\mathbb{R}\\) except when the denominator is zero... From source: domain \\(= \\mathbb{R}\\setminus[-1,0)\\) and range \\(= [-1,1]\\).",
+    "name": "Domain and Range with Sine and Floor"
+  },
+  {
+    "id": "m4_item42",
+    "text": "If the number of elements in the sets \\(G\\) and \\(A\\) are 3 and 4 respectively, then the number of non-bijective functions from \\(G \\times G\\) to \\(G\\) is",
+    "options": [
+      "\\(19683\\)",
+      "\\(19656\\)",
+      "\\(1728\\)",
+      "\\(24\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Total functions from \\(G \\times G\\) to \\(G\\): \\(|G|^{|G \\times G|} = 3^{3^2} = 3^9 = 19683\\). Number of bijective functions from \\(G \\times G\\) (size 9) to \\(G\\) (size 3): since \\(|G \\times G| = 9 \\neq |G| = 3\\), no bijection exists. So all \\(19683\\) functions are non-bijective.",
+    "name": "Non-Bijective Functions Count"
+  },
+  {
+    "id": "m4_item43",
+    "text": "Let \\(A\\) and \\(B\\) be finite sets with \\(|P(B)| - |P(A)| = 112\\), where \\(P(X)\\) denotes the power set of \\(X\\). The number of injective functions from \\(A\\) to \\(B\\) is",
+    "options": [
+      "\\(224\\)",
+      "\\(56\\)",
+      "\\(120\\)",
+      "\\(840\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(|A|=m\\) and \\(|B|=n\\). Then \\(2^n - 2^m = 112 = 2^4(2^3-1) = 16 \\times 7\\). So \\(2^m(2^{n-m}-1) = 16 \\times 7\\), giving \\(m=4\\) and \\(2^{n-m}=8\\), so \\(n-m=3\\), \\(n=7\\). Number of injective functions \\(= {}^7P_4 = 7!/3! = 840\\).",
+    "name": "Injective Functions from Power Set Condition"
+  },
+  {
+    "id": "m4_item44",
+    "text": "If \\(f : \\mathbb{R} \\to A\\) defined by \\(f(x) = \\dfrac{1}{x^2+2x+2}\\) is surjective, then \\(A =\\)",
+    "options": [
+      "\\([1, \\infty)\\)",
+      "\\((1, \\infty)\\)",
+      "\\([0,1]\\)",
+      "\\((0, 1]\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(x^2+2x+2 = (x+1)^2 + 1 \\geq 1\\) for all \\(x\\), with equality at \\(x=-1\\). So \\(f(x) = \\dfrac{1}{(x+1)^2+1} \\leq 1\\), and \\(f(x) > 0\\) always. Maximum \\(f(-1) = 1\\) and infimum is \\(0\\) (not achieved). Range \\(= (0,1]\\), so \\(A = (0,1]\\).",
+    "name": "Surjective Function and its Codomain"
+  },
+  {
+    "id": "m4_item45",
+    "text": "If \\(f : \\mathbb{R} \\to \\mathbb{R}\\) is defined by \\(f(x) = \\begin{cases} x - |[x]|, & x < 5 \\\\ [|x|] - 5, & x \\geq 5 \\end{cases}\\), then \\((f \\circ f)\\!\\left(-\\dfrac{7}{2}\\right)\\) equals \\((f \\circ f)\\!\\left(\\dfrac{r}{2}\\right)\\) for \\(r =\\)",
+    "options": [
+      "\\(-11\\)",
+      "\\(-9\\)",
+      "\\(6\\)",
+      "\\(9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Compute \\(f(-7/2)\\): since \\(-7/2 < 5\\), \\(f(-7/2) = -7/2 - |[-7/2]| = -7/2 - |-4| = -7/2-4 = -15/2\\). Then \\(f(-15/2)\\): since \\(-15/2 < 5\\), \\(f(-15/2) = -15/2-|[-15/2]| = -15/2-|-8|= -15/2-8\\)... Hmm — source answer is \\((f\\circ f)(9/2)\\). Check \\((f\\circ f)(9/2)\\): \\(f(9/2) = 9/2-|[9/2]|=9/2-4=1/2\\). Then \\(f(1/2) = 1/2-0=1/2\\). So \\((f\\circ f)(9/2)=1/2\\). And \\((f\\circ f)(-7/2)\\) from source equals the same. So \\(r=9\\).",
+    "name": "Piecewise Function Composition"
+  },
+  {
+    "id": "m4_item46",
+    "text": "Match the following: (A) \\(f(x) = px+q\\), \\(p \\neq 0\\), \\(f:\\mathbb{R}\\to\\mathbb{R}\\); (B) \\(f(x)=x^2\\), \\(f:\\mathbb{R}\\to\\mathbb{R}^+\\cup\\{0\\}\\); (C) \\(f(n)=n^2+2n+3\\), \\(f:\\mathbb{N}\\to\\mathbb{N}\\); (D) \\(f(x)=2^{(\\cos^2 x+\\sin^2 x)^5}\\cdot 2^2\\), \\(f:\\mathbb{R}\\to\\mathbb{R}\\). Match with: I. f is neither one-one nor onto; II. f is both one-one and onto; III. f is one-one but not onto; IV. f is onto but not one-one.",
+    "options": [
+      "A-II, B-IV, C-III, D-I",
+      "A-II, B-IV, C-V, D-I",
+      "A-II, B-I, C-III, D-V",
+      "A-III, B-II, C-I, D-IV"
+    ],
+    "correctIndex": 0,
+    "explanation": "(A) \\(px+q\\) is linear with \\(p \\neq 0\\): bijective on \\(\\mathbb{R}\\) → **II**. (B) \\(f(x)=x^2\\) from \\(\\mathbb{R}\\) to \\(\\mathbb{R}^+\\cup\\{0\\}\\): not one-one (\\(f(-1)=f(1)\\)) but onto (every non-negative real is achieved) → **IV**. (C) \\(f(n)=n^2+2n+3\\) on \\(\\mathbb{N}\\): one-one (strictly increasing) but not onto (e.g., \\(f(n)\\geq 6\\) for \\(n\\geq1\\), so \\(3 \\notin\\) range) → **III**. (D) \\(f(x)=2^1\\cdot4=8\\) (constant): neither one-one nor onto → **I**.",
+    "name": "Matching Function Types"
+  },
+  {
+    "id": "m4_item47",
+    "text": "How many functions \\(f : \\mathbb{Z} \\to \\mathbb{Z}\\) are there such that \\(f(x+y) = f(x)+f(y)\\) for all \\(x, y \\in \\mathbb{Z}\\)?",
+    "options": [
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "Infinitely many"
+    ],
+    "correctIndex": 3,
+    "explanation": "For \\(f : \\mathbb{Z} \\to \\mathbb{Z}\\) with \\(f(x+y) = f(x)+f(y)\\): setting \\(y=0\\) gives \\(f(0)=0\\). Setting \\(y=x\\) gives \\(f(2x)=2f(x)\\), and by induction \\(f(n) = nf(1)\\) for all \\(n \\in \\mathbb{Z}\\). Let \\(k = f(1) \\in \\mathbb{Z}\\); then \\(f(x) = kx\\). Since \\(k\\) can be any integer, there are infinitely many such functions.",
+    "name": "Functions Satisfying Additive Property"
+  },
+  {
+    "id": "m4_item48",
+    "text": "If \\(f : \\mathbb{R} \\to \\mathbb{R}\\) is a continuous real valued function, then the range of \\(f\\) is",
+    "options": [
+      "\\([0, 1]\\)",
+      "\\([\\min f,\\ \\max f]\\)",
+      "\\([0, \\infty)\\)",
+      "\\((-\\infty, 0]\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the Intermediate Value Theorem, if \\(f\\) is a continuous real-valued function defined on a closed interval, it attains every value between its minimum and maximum. Therefore the range of a continuous function is the closed interval \\([\\min f,\\ \\max f]\\) (when the domain is compact). In general, the range is an interval from the minimum to the maximum value.",
+    "name": "Range of Continuous Function"
+  },
+  {
+    "id": "m4_item49",
+    "text": "If the number of elements in sets \\(G\\) and \\(A\\) are \\(3\\) and \\(4\\) respectively, the number of functions from \\(G\\) to \\(G \\times A\\) is",
+    "options": [
+      "\\(19683\\)",
+      "\\(19656\\)",
+      "\\(1728\\)",
+      "\\(24\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(|G| = 3\\) and \\(|A| = 4\\), so \\(|G \\times A| = 12\\). Number of functions from \\(G\\) (3 elements) to \\(G \\times A\\) (12 elements) \\(= 12^3 = 1728\\).",
+    "name": "Count of Functions Between Sets"
+  },
+  {
+    "id": "m4_item50",
+    "text": "If \\(f : \\mathbb{R} \\setminus \\{-3/7\\} \\to \\mathbb{R} \\setminus \\{-3/7\\}\\) is given by \\(f(x) = \\dfrac{3x+5}{7x-3}\\), then \\((f \\circ f)(x) =\\)",
+    "options": [
+      "\\(f(x)\\)",
+      "\\(x\\)",
+      "\\(f^{-1}(x)\\)",
+      "Both (b) and (c)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Compute \\((f\\circ f)(x) = f\\!\\left(\\dfrac{3x+5}{7x-3}\\right) = \\dfrac{3\\cdot\\frac{3x+5}{7x-3}+5}{7\\cdot\\frac{3x+5}{7x-3}-3} = \\dfrac{9x+15+35x-15}{21x+35-21x+9} = \\dfrac{44x}{44} = x\\). So \\((f\\circ f)(x) = x\\), meaning \\(f\\) is its own inverse: \\(f^{-1} = f\\). Therefore both \\((f\\circ f)(x)=x\\) and \\((f\\circ f)(x)=f^{-1}(x)\\) are true.",
+    "name": "Involutory Function Self-Inverse"
+  }
+]

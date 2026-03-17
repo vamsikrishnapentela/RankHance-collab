@@ -1,0 +1,652 @@
+[
+  {
+    "id": "m28_item1",
+    "text": "The differential equation whose solution is $y = c_1 e^{3x} + c_2 e^{-3x}$ is",
+    "options": [
+      "$\\dfrac{d^2 y}{dx^2} + 9y = 0$",
+      "$\\dfrac{d^2 y}{dx^2} - 9y = 0$",
+      "$\\dfrac{d^2 y}{dx^2} + 3y = 0$",
+      "$\\dfrac{d^2 y}{dx^2} - 3y = 0$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Given solution $y = c_1 e^{3x} + c_2 e^{-3x}$.<br>Differentiate twice: $\\dfrac{d^2 y}{dx^2} = 9 c_1 e^{3x} + 9 c_2 e^{-3x} = 9y$.<br>$\\dfrac{d^2 y}{dx^2} - 9y = 0$.",
+    "name": "Question Item 1"
+  },
+  {
+    "id": "m28_item2",
+    "text": "The degree of the differential equation $y = x \\dfrac{dy}{dx} + \\left( \\dfrac{dy}{dx} \\right)^2$ is",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rewrite as $y = x p + p^2$ where $p = \\dfrac{dy}{dx}$.<br>Highest power of highest derivative is $2$.",
+    "name": "Question Item 2"
+  },
+  {
+    "id": "m28_item3",
+    "text": "Solution of the differential equation $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "options": [
+      "$x^2 + y^2 = c x$",
+      "$x^2 - y^2 = c x$",
+      "$x^2 - y^2 = c y$",
+      "$x^2 + y^2 = c y$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Homogeneous: substitute $y = v x$.<br>$\\dfrac{dv}{dx} = \\dfrac{v + 1}{v - 1} - v$.<br>Separate and integrate: $x^2 - y^2 = c y$.",
+    "name": "Question Item 3"
+  },
+  {
+    "id": "m28_item4",
+    "text": "The solution of the differential equation $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "options": [
+      "$y = \\dfrac{\\sin x}{x} + c$",
+      "$y = x \\sin x + c$",
+      "$y = \\dfrac{\\sin x + c}{x}$",
+      "$y = \\dfrac{\\cos x + c}{x}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
+    "name": "Question Item 4"
+  },
+  {
+    "id": "m28_item5",
+    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "options": [
+      "$y = x^2 + \\dfrac{c}{x^2}$",
+      "$y = x^2 + c x$",
+      "$y = x^2 + \\dfrac{c}{x}$",
+      "$y = x^2 + c$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
+    "name": "Question Item 5"
+  },
+  {
+    "id": "m28_item6",
+    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "options": [
+      "$x \\dfrac{dy}{dx} - y = 0$",
+      "$x \\dfrac{dy}{dx} + y = 0$",
+      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
+      "$x \\dfrac{dy}{dx} + y = x^2$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
+    "name": "Question Item 6"
+  },
+  {
+    "id": "m28_item7",
+    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "options": [
+      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
+      "$y = 2x^2 + c (1 + x^2)$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
+    "name": "Question Item 7"
+  },
+  {
+    "id": "m28_item8",
+    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "options": [
+      "$x^2 + y^2 = c x$",
+      "$x^2 - y^2 = c x$",
+      "$x^2 - y^2 = c y$",
+      "$x^2 + y^2 = c y$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
+    "name": "Question Item 8"
+  },
+  {
+    "id": "m28_item9",
+    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "options": [
+      "$y = \\dfrac{\\sin x}{x} + c$",
+      "$y = x \\sin x + c$",
+      "$y = \\dfrac{\\sin x + c}{x}$",
+      "$y = \\dfrac{\\cos x + c}{x}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
+    "name": "Question Item 9"
+  },
+  {
+    "id": "m28_item10",
+    "text": "The differential equation whose solution is $y = c_1 e^{3x} + c_2 e^{-3x}$ is",
+    "options": [
+      "$\\dfrac{d^2 y}{dx^2} + 9y = 0$",
+      "$\\dfrac{d^2 y}{dx^2} - 9y = 0$",
+      "$\\dfrac{d^2 y}{dx^2} + 3y = 0$",
+      "$\\dfrac{d^2 y}{dx^2} - 3y = 0$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Given solution $y = c_1 e^{3x} + c_2 e^{-3x}$.<br>Differentiate twice: $\\dfrac{d^2 y}{dx^2} = 9 c_1 e^{3x} + 9 c_2 e^{-3x} = 9y$.<br>$\\dfrac{d^2 y}{dx^2} - 9y = 0$.",
+    "name": "Question Item 10"
+  },
+  {
+    "id": "m28_item11",
+    "text": "The solution of the differential equation $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "options": [
+      "$y = \\dfrac{\\sin x}{x} + c$",
+      "$y = x \\sin x + c$",
+      "$y = \\dfrac{\\sin x + c}{x}$",
+      "$y = \\dfrac{\\cos x + c}{x}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
+    "name": "Question Item 11"
+  },
+  {
+    "id": "m28_item12",
+    "text": "The degree of the differential equation $y = x \\dfrac{dy}{dx} + \\left( \\dfrac{dy}{dx} \\right)^2$ is",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rewrite as $y = x p + p^2$ where $p = \\dfrac{dy}{dx}$.<br>Highest power of highest derivative is $2$.",
+    "name": "Question Item 12"
+  },
+  {
+    "id": "m28_item13",
+    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "options": [
+      "$x^2 + y^2 = c x$",
+      "$x^2 - y^2 = c x$",
+      "$x^2 - y^2 = c y$",
+      "$x^2 + y^2 = c y$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
+    "name": "Question Item 13"
+  },
+  {
+    "id": "m28_item14",
+    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "options": [
+      "$y = \\dfrac{\\sin x}{x} + c$",
+      "$y = x \\sin x + c$",
+      "$y = \\dfrac{\\sin x + c}{x}$",
+      "$y = \\dfrac{\\cos x + c}{x}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
+    "name": "Question Item 14"
+  },
+  {
+    "id": "m28_item15",
+    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "options": [
+      "$y = x^2 + \\dfrac{c}{x^2}$",
+      "$y = x^2 + c x$",
+      "$y = x^2 + \\dfrac{c}{x}$",
+      "$y = x^2 + c$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
+    "name": "Question Item 15"
+  },
+  {
+    "id": "m28_item16",
+    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "options": [
+      "$x \\dfrac{dy}{dx} - y = 0$",
+      "$x \\dfrac{dy}{dx} + y = 0$",
+      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
+      "$x \\dfrac{dy}{dx} + y = x^2$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
+    "name": "Question Item 16"
+  },
+  {
+    "id": "m28_item17",
+    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "options": [
+      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
+      "$y = 2x^2 + c (1 + x^2)$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
+    "name": "Question Item 17"
+  },
+  {
+    "id": "m28_item18",
+    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "options": [
+      "$x^2 + y^2 = c x$",
+      "$x^2 - y^2 = c x$",
+      "$x^2 - y^2 = c y$",
+      "$x^2 + y^2 = c y$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
+    "name": "Question Item 18"
+  },
+  {
+    "id": "m28_item19",
+    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "options": [
+      "$y = \\dfrac{\\sin x}{x} + c$",
+      "$y = x \\sin x + c$",
+      "$y = \\dfrac{\\sin x + c}{x}$",
+      "$y = \\dfrac{\\cos x + c}{x}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
+    "name": "Question Item 19"
+  },
+  {
+    "id": "m28_item20",
+    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "options": [
+      "$y = x^2 + \\dfrac{c}{x^2}$",
+      "$y = x^2 + c x$",
+      "$y = x^2 + \\dfrac{c}{x}$",
+      "$y = x^2 + c$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
+    "name": "Question Item 20"
+  },
+  {
+    "id": "m28_item21",
+    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "options": [
+      "$x \\dfrac{dy}{dx} - y = 0$",
+      "$x \\dfrac{dy}{dx} + y = 0$",
+      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
+      "$x \\dfrac{dy}{dx} + y = x^2$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
+    "name": "Question Item 21"
+  },
+  {
+    "id": "m28_item22",
+    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "options": [
+      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
+      "$y = 2x^2 + c (1 + x^2)$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
+    "name": "Question Item 22"
+  },
+  {
+    "id": "m28_item23",
+    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "options": [
+      "$x^2 + y^2 = c x$",
+      "$x^2 - y^2 = c x$",
+      "$x^2 - y^2 = c y$",
+      "$x^2 + y^2 = c y$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
+    "name": "Question Item 23"
+  },
+  {
+    "id": "m28_item24",
+    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "options": [
+      "$y = \\dfrac{\\sin x}{x} + c$",
+      "$y = x \\sin x + c$",
+      "$y = \\dfrac{\\sin x + c}{x}$",
+      "$y = \\dfrac{\\cos x + c}{x}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
+    "name": "Question Item 24"
+  },
+  {
+    "id": "m28_item25",
+    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "options": [
+      "$y = x^2 + \\dfrac{c}{x^2}$",
+      "$y = x^2 + c x$",
+      "$y = x^2 + \\dfrac{c}{x}$",
+      "$y = x^2 + c$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
+    "name": "Question Item 25"
+  },
+  {
+    "id": "m28_item26",
+    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "options": [
+      "$x \\dfrac{dy}{dx} - y = 0$",
+      "$x \\dfrac{dy}{dx} + y = 0$",
+      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
+      "$x \\dfrac{dy}{dx} + y = x^2$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
+    "name": "Question Item 26"
+  },
+  {
+    "id": "m28_item27",
+    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "options": [
+      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
+      "$y = 2x^2 + c (1 + x^2)$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
+    "name": "Question Item 27"
+  },
+  {
+    "id": "m28_item28",
+    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "options": [
+      "$x^2 + y^2 = c x$",
+      "$x^2 - y^2 = c x$",
+      "$x^2 - y^2 = c y$",
+      "$x^2 + y^2 = c y$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
+    "name": "Question Item 28"
+  },
+  {
+    "id": "m28_item29",
+    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "options": [
+      "$y = \\dfrac{\\sin x}{x} + c$",
+      "$y = x \\sin x + c$",
+      "$y = \\dfrac{\\sin x + c}{x}$",
+      "$y = \\dfrac{\\cos x + c}{x}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
+    "name": "Question Item 29"
+  },
+  {
+    "id": "m28_item30",
+    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "options": [
+      "$y = x^2 + \\dfrac{c}{x^2}$",
+      "$y = x^2 + c x$",
+      "$y = x^2 + \\dfrac{c}{x}$",
+      "$y = x^2 + c$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
+    "name": "Question Item 30"
+  },
+  {
+    "id": "m28_item31",
+    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "options": [
+      "$x \\dfrac{dy}{dx} - y = 0$",
+      "$x \\dfrac{dy}{dx} + y = 0$",
+      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
+      "$x \\dfrac{dy}{dx} + y = x^2$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
+    "name": "Question Item 31"
+  },
+  {
+    "id": "m28_item32",
+    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "options": [
+      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
+      "$y = 2x^2 + c (1 + x^2)$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
+    "name": "Question Item 32"
+  },
+  {
+    "id": "m28_item33",
+    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "options": [
+      "$x^2 + y^2 = c x$",
+      "$x^2 - y^2 = c x$",
+      "$x^2 - y^2 = c y$",
+      "$x^2 + y^2 = c y$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
+    "name": "Question Item 33"
+  },
+  {
+    "id": "m28_item34",
+    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "options": [
+      "$y = \\dfrac{\\sin x}{x} + c$",
+      "$y = x \\sin x + c$",
+      "$y = \\dfrac{\\sin x + c}{x}$",
+      "$y = \\dfrac{\\cos x + c}{x}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
+    "name": "Question Item 34"
+  },
+  {
+    "id": "m28_item35",
+    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "options": [
+      "$y = x^2 + \\dfrac{c}{x^2}$",
+      "$y = x^2 + c x$",
+      "$y = x^2 + \\dfrac{c}{x}$",
+      "$y = x^2 + c$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
+    "name": "Question Item 35"
+  },
+  {
+    "id": "m28_item36",
+    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "options": [
+      "$x \\dfrac{dy}{dx} - y = 0$",
+      "$x \\dfrac{dy}{dx} + y = 0$",
+      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
+      "$x \\dfrac{dy}{dx} + y = x^2$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
+    "name": "Question Item 36"
+  },
+  {
+    "id": "m28_item37",
+    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "options": [
+      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
+      "$y = 2x^2 + c (1 + x^2)$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
+    "name": "Question Item 37"
+  },
+  {
+    "id": "m28_item38",
+    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "options": [
+      "$x^2 + y^2 = c x$",
+      "$x^2 - y^2 = c x$",
+      "$x^2 - y^2 = c y$",
+      "$x^2 + y^2 = c y$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
+    "name": "Question Item 38"
+  },
+  {
+    "id": "m28_item39",
+    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "options": [
+      "$y = \\dfrac{\\sin x}{x} + c$",
+      "$y = x \\sin x + c$",
+      "$y = \\dfrac{\\sin x + c}{x}$",
+      "$y = \\dfrac{\\cos x + c}{x}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
+    "name": "Question Item 39"
+  },
+  {
+    "id": "m28_item40",
+    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "options": [
+      "$y = x^2 + \\dfrac{c}{x^2}$",
+      "$y = x^2 + c x$",
+      "$y = x^2 + \\dfrac{c}{x}$",
+      "$y = x^2 + c$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
+    "name": "Question Item 40"
+  },
+  {
+    "id": "m28_item41",
+    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "options": [
+      "$x \\dfrac{dy}{dx} - y = 0$",
+      "$x \\dfrac{dy}{dx} + y = 0$",
+      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
+      "$x \\dfrac{dy}{dx} + y = x^2$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
+    "name": "Question Item 41"
+  },
+  {
+    "id": "m28_item42",
+    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "options": [
+      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
+      "$y = 2x^2 + c (1 + x^2)$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
+    "name": "Question Item 42"
+  },
+  {
+    "id": "m28_item43",
+    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "options": [
+      "$x^2 + y^2 = c x$",
+      "$x^2 - y^2 = c x$",
+      "$x^2 - y^2 = c y$",
+      "$x^2 + y^2 = c y$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
+    "name": "Question Item 43"
+  },
+  {
+    "id": "m28_item44",
+    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "options": [
+      "$y = \\dfrac{\\sin x}{x} + c$",
+      "$y = x \\sin x + c$",
+      "$y = \\dfrac{\\sin x + c}{x}$",
+      "$y = \\dfrac{\\cos x + c}{x}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
+    "name": "Question Item 44"
+  },
+  {
+    "id": "m28_item45",
+    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "options": [
+      "$y = x^2 + \\dfrac{c}{x^2}$",
+      "$y = x^2 + c x$",
+      "$y = x^2 + \\dfrac{c}{x}$",
+      "$y = x^2 + c$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
+    "name": "Question Item 45"
+  },
+  {
+    "id": "m28_item46",
+    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "options": [
+      "$x \\dfrac{dy}{dx} - y = 0$",
+      "$x \\dfrac{dy}{dx} + y = 0$",
+      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
+      "$x \\dfrac{dy}{dx} + y = x^2$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
+    "name": "Question Item 46"
+  },
+  {
+    "id": "m28_item47",
+    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "options": [
+      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
+      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
+      "$y = 2x^2 + c (1 + x^2)$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
+    "name": "Question Item 47"
+  },
+  {
+    "id": "m28_item48",
+    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "options": [
+      "$x^2 + y^2 = c x$",
+      "$x^2 - y^2 = c x$",
+      "$x^2 - y^2 = c y$",
+      "$x^2 + y^2 = c y$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
+    "name": "Question Item 48"
+  },
+  {
+    "id": "m28_item49",
+    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "options": [
+      "$y = \\dfrac{\\sin x}{x} + c$",
+      "$y = x \\sin x + c$",
+      "$y = \\dfrac{\\sin x + c}{x}$",
+      "$y = \\dfrac{\\cos x + c}{x}$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
+    "name": "Question Item 49"
+  },
+  {
+    "id": "m28_item50",
+    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "options": [
+      "$y = x^2 + \\dfrac{c}{x^2}$",
+      "$y = x^2 + c x$",
+      "$y = x^2 + \\dfrac{c}{x}$",
+      "$y = x^2 + c$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
+    "name": "Question Item 50"
+  }
+]

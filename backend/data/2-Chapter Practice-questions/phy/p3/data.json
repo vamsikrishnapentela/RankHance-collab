@@ -1,0 +1,328 @@
+
+[
+  {
+    "id": "p3_item1",
+    "text": "When a body slides down on inclined plane with coefficient of friction μ, then its acceleration will be",
+    "options": [
+      "\\(g(\\sin \\theta - \\mu \\cos \\theta)\\)",
+      "\\(g(\\sin \\theta + \\mu \\cos \\theta)\\)",
+      "\\(g(\\mu \\sin \\theta - \\cos \\theta)\\)",
+      "\\(g\\mu(\\sin \\theta - \\cos \\theta)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The component of weight down the plane is \\(mg \\sin \\theta\\). The frictional force opposing motion is \\(\\mu N = \\mu mg \\cos \\theta\\). Net force down the plane = \\(mg \\sin \\theta - \\mu mg \\cos \\theta\\). Dividing by mass \\(m\\) gives acceleration \\(a = g(\\sin \\theta - \\mu \\cos \\theta)\\).",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "p3_item2",
+    "text": "A body of mass 10 kg has constant velocity of 10 m s⁻¹. A constant force is applied for a duration of 4 s on the object and gives it a speed of 2 m s⁻¹ in opposite direction. Then, find acceleration produced in it.",
+    "options": [
+      "3 ms⁻²",
+      "–3 ms⁻²",
+      "0.3 ms⁻²",
+      "–0.3 ms⁻²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Initial velocity \\(u = +10\\) ms⁻¹ (say positive direction). Final velocity \\(v = -2\\) ms⁻¹ after 4 s. Change in velocity = \\(-2 - 10 = -12\\) ms⁻¹. Acceleration \\(a = \\frac{v - u}{t} = \\frac{-12}{4} = -3\\) ms⁻² (negative sign shows retardation and direction change).",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "p3_item3",
+    "text": "One end of a string of length l is connected to a particle of mass m and the other to a small peg on a smooth horizontal table. If the particle moves in a circle with speed v and T is the tension in the string, then net force on the particle (directed towards the centre) is",
+    "options": [
+      "T",
+      "0",
+      "\\((T + mv^2)/l\\)",
+      "\\((T - mv^2)/l\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The table is smooth, so no friction. The only horizontal force is tension T towards the centre. This T provides the entire centripetal force \\(mv^2/l\\). Hence net force towards centre is exactly T (normal reaction and weight cancel vertically).",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "p3_item4",
+    "text": "Which of the following sets of concurrent forces may be in equilibrium?",
+    "options": [
+      "\\(F_1 = 3\\) N, \\(F_2 = 5\\) N, \\(F_3 = 10\\) N",
+      "\\(F_1 = 3\\) N, \\(F_2 = 5\\) N, \\(F_3 = 9\\) N",
+      "\\(F_1 = 3\\) N, \\(F_2 = 5\\) N, \\(F_3 = 6\\) N",
+      "\\(F_1 = 3\\) N, \\(F_2 = 5\\) N, \\(F_3 = 15\\) N"
+    ],
+    "correctIndex": 2,
+    "explanation": "For three forces in equilibrium, each force must be less than or equal to sum of other two (triangle law). Only option (c) satisfies: 3 + 5 > 6, 3 + 6 > 5, 5 + 6 > 3. Other options violate this condition.",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "p3_item5",
+    "text": "Find the apparent weight of a body of mass 1.0 kg falling with an acceleration of 10 ms⁻² (g ≈ 10 ms⁻²)",
+    "options": [
+      "1 kg-wt",
+      "2 kg-wt",
+      "0",
+      "0.5 kg-wt"
+    ],
+    "correctIndex": 2,
+    "explanation": "Apparent weight = m(g - a). Here a = g = 10 ms⁻², so apparent weight = m(g - g) = 0. The body is in free fall, so it feels weightless (apparent weight zero).",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "p3_item6",
+    "text": "A balloon of mass M descends with an acceleration a (< g). What mass need to be removed from the balloon, so that it starts ascending with acceleration a?",
+    "options": [
+      "\\(\\frac{2M}{a+g}\\)",
+      "\\(\\frac{2Ma}{a+g}\\)",
+      "\\(\\frac{2Ma}{a-a}\\)",
+      "\\(\\frac{2Ma}{g-a}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Initially downward: Mg - F = Ma ⇒ F = M(g - a). After removing mass m': F - (M - m')g = (M - m')a. Substitute F and solve: m' = \\(\\frac{2Ma}{g+a}\\).",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "p3_item7",
+    "text": "A bomb at rest explodes into three parts of equal mass. If the momentum of two parts are -2p î and p ĵ, find the magnitude of momentum of the third part.",
+    "options": [
+      "p",
+      "√3p",
+      "√5p",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "Total initial momentum = 0. Let third momentum be \\(p'\\). Then \\(-2p \\hat{i} + p \\hat{j} + p' = 0\\) ⇒ \\(p' = 2p \\hat{i} - p \\hat{j}\\). Magnitude = \\(\\sqrt{(2p)^2 + (-p)^2} = \\sqrt{5}p\\).",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "p3_item8",
+    "text": "If 100 N force is applied to 10 kg block as shown in the diagram, the acceleration of 40 kg slab is (μ_s = 0.6, μ_k = 0.4)",
+    "options": [
+      "1.65 ms⁻²",
+      "0.98 ms⁻²",
+      "0.5 ms⁻²",
+      "0.25 ms⁻²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Maximum static friction between blocks = 0.6 × 10 × 10 = 58.8 N. Applied 100 N > 58.8 N, so blocks move with kinetic friction 0.4 × 10 × 10 = 39.2 N. Acceleration of 40 kg slab = 39.2 / 40 = 0.98 ms⁻².",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "p3_item9",
+    "text": "In a rocket, fuel burns at the rate of 1 kg/s. This fuel is ejected from the rocket with a velocity of 60 km/s. The force exerted on the rocket by this is",
+    "options": [
+      "60 N",
+      "600 N",
+      "6000 N",
+      "60000 N"
+    ],
+    "correctIndex": 3,
+    "explanation": "Thrust force on rocket = v (dm/dt). Here dm/dt = 1 kg/s (rate of fuel burn), v = 60 km/s = 60000 m/s. Thrust = 60000 × 1 = 60000 N.",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "p3_item10",
+    "text": "A rocket is fired vertically from the ground with a resultant vertical acceleration of 10 ms⁻². Fuel is finished in 1 min and it continues to move up. What is the maximum height reached?",
+    "options": [
+      "36.4 km",
+      "42.3 km",
+      "48.4 km",
+      "25.6 km"
+    ],
+    "correctIndex": 0,
+    "explanation": "With fuel: a = 10 ms⁻², t = 60 s. Height h₁ = (1/2) × 10 × 60² = 18000 m = 18 km. Velocity at fuel end = 600 ms⁻¹. After fuel: a = -g, height h₂ = (600)² / (2 × 9.8) ≈ 18.4 km. Total = 36.4 km.",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "p3_item11",
+    "text": "A block of mass m is placed on a smooth wedge of inclination θ. The whole system is accelerated horizontally so that the block does not slip on the wedge. The force exerted by the wedge on the block (g is acceleration due to gravity) will be",
+    "options": [
+      "mg cos θ",
+      "mg sin θ",
+      "mg",
+      "mg sec θ"
+    ],
+    "correctIndex": 3,
+    "explanation": "Pseudo force ma on block (a to right). For no slip: mg sin θ = ma cos θ ⇒ a = g tan θ. Normal force R from wedge balances mg cos θ + ma sin θ = mg cos θ + m(g tan θ) sin θ = mg / cos θ = mg sec θ.",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "p3_item12",
+    "text": "A body of mass 5 kg starts from the origin with an initial velocity u = 30 î + 40 ĵ ms⁻¹. When a constant force F = -(î + 5ĵ) N acts on the body, the time in which the y-component of the velocity becomes zero is",
+    "options": [
+      "5 s",
+      "20 s",
+      "40 s",
+      "80 s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Acceleration a_y = F_y / m = -5 / 5 = -1 ms⁻². y-velocity: v_y = 40 - 1 × t. Set v_y = 0: t = 40 s.",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "p3_item13",
+    "text": "A block P of mass M_p is in contact with another block Q of mass M_q as shown in the figure and they are placed on a smooth floor. Force on block Q is",
+    "options": [
+      "\\(M_p F / (M_p + M_q)\\)",
+      "\\(M_q F / (M_p + M_q)\\)",
+      "\\(M_p F / M_q\\)",
+      "\\(M_q F / M_p\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Both blocks accelerate together with a = F / (M_p + M_q). Force on Q (contact force) = M_q a = M_q F / (M_p + M_q).",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "p3_item14",
+    "text": "A body whose momentum is constant must have constant",
+    "options": [
+      "acceleration",
+      "force",
+      "velocity",
+      "mass"
+    ],
+    "correctIndex": 2,
+    "explanation": "Momentum p = m v. Mass m is always constant for a body. For p constant, v must be constant (no acceleration).",
+    "name": "Questions Item 14"
+  },
+  {
+    "id": "p3_item15",
+    "text": "A boy travelling in an open car moving at constant velocity throws a ball vertically up into air. The ball falls",
+    "options": [
+      "outside the car",
+      "inside the car ahead of the boy",
+      "in the car beside the boy",
+      "exactly in his hand"
+    ],
+    "correctIndex": 3,
+    "explanation": "Both boy and ball have same horizontal velocity as the car (law of inertia). Ball goes up and comes down with same horizontal speed, so lands back in his hand.",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "p3_item16",
+    "text": "The time taken by a force of 2 N to produce a change of momentum of 0.4 kg ms⁻¹ in a body is",
+    "options": [
+      "0.2 s",
+      "0.02 s",
+      "0.5 s",
+      "0.05 s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Impulse = change in momentum = F × t. So t = Δp / F = 0.4 / 2 = 0.2 s.",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "p3_item17",
+    "text": "When will a body of mass 20 kg moving at 15 ms⁻¹, subjected to a retarding force of 100 N, come to rest?",
+    "options": [
+      "3 s",
+      "6 s",
+      "1.5 s",
+      "9 s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Retardation a = F/m = 100/20 = 5 ms⁻² (negative). Using v = u + at: 0 = 15 - 5t ⇒ t = 3 s.",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "p3_item18",
+    "text": "The maximum value of the applied force F such that the block as shown in the arrangement does not move is (g = 10 ms⁻²)",
+    "options": [
+      "20 N",
+      "15 N",
+      "25 N",
+      "10 N"
+    ],
+    "correctIndex": 0,
+    "explanation": "For limiting case: F cos 60° = μ (mg + F sin 60°). Substitute μ = 1/√3, θ = 60° and solve: F = 20 N.",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "p3_item19",
+    "text": "A rough inclined plane BCE of height (25/6) m is kept on a rectangular wooden block ABCD of height 10 m. A small block is allowed to slide down from the top E of the inclined plane. The coefficient of kinetic friction between the block and the inclined plane is 1/8 and the angle of inclination of the inclined plane is sin⁻¹(0.6). If the small block finally reaches the ground at a point F, then DF will be (g = 10 ms⁻²)",
+    "options": [
+      "5/3 m",
+      "10/3 m",
+      "13/3 m",
+      "20/3 m"
+    ],
+    "correctIndex": 3,
+    "explanation": "Acceleration down incline a = 5 ms⁻². Velocity at C = 25/3 ms⁻¹. Time to fall 10 m from C to F = 1 s. Horizontal distance DF = (25/3) × 0.8 × 1 = 20/3 m.",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "p3_item20",
+    "text": "A thin uniform rod of length L is resting against a wall and the floor as shown in the figure. Its lower end A is pulled towards left with a constant velocity v. Then the downward velocity v' of the other end B when the rod makes an angle θ with the floor is",
+    "options": [
+      "v",
+      "v cos θ",
+      "v sin θ",
+      "v cot θ"
+    ],
+    "correctIndex": 3,
+    "explanation": "Differentiate x² + y² = L²: x v = -y v' (v = dx/dt downward positive for y). Thus v' = (x/y) v = v cot θ.",
+    "name": "Questions Item 20"
+  },
+  {
+    "id": "p3_item21",
+    "text": "A force of (2.6î + 1.6ĵ) N acts on a body of mass 2 kg. If the velocity of the body at time t = 0 is (3.6î - 4.8ĵ) ms⁻¹, the time at which the body will just have a velocity along x-axis only is",
+    "options": [
+      "1 s",
+      "2 s",
+      "3 s",
+      "6 s"
+    ],
+    "correctIndex": 3,
+    "explanation": "a = F/m = 1.3î + 0.8ĵ ms⁻². v_y = -4.8 + 0.8 t. Set v_y = 0: t = 6 s.",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "p3_item22",
+    "text": "The force required to move a body up a rough inclined plane is double the force required to prevent the body from sliding down the plane. If the angle of inclination of the plane is 60°, then the coefficient of friction is",
+    "options": [
+      "1/3",
+      "1/√2",
+      "1/√3",
+      "1/2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Force up = mg sinθ + μ mg cosθ. Force to prevent down = mg sinθ - μ mg cosθ. Given up = 2 × prevent down ⇒ μ = 1/√3.",
+    "name": "Questions Item 22"
+  },
+  {
+    "id": "p3_item23",
+    "text": "The position-time (x-t) graph of a moving body of mass 2 kg is shown in the figure. The impulse on the body at t = 4 s is",
+    "options": [
+      "1.5 kg ms⁻¹",
+      "-1.5 kg ms⁻¹",
+      "1 kg ms⁻¹",
+      "2 kg ms⁻¹"
+    ],
+    "correctIndex": 1,
+    "explanation": "Slope (velocity) before t=4: 3/4 ms⁻¹. After t=4: 0. Impulse = m(0 - 3/4) = 2 × (-0.75) = -1.5 kg ms⁻¹.",
+    "name": "Questions Item 23"
+  },
+  {
+    "id": "p3_item24",
+    "text": "A block of mass m is lying on a rough inclined plane having an inclination α = tan⁻¹(1/5). The inclined plane is moving horizontally with a constant acceleration of a = 2 ms⁻² as shown in the figure. The minimum value of coefficient of friction, so that the block remains stationary with respect to the inclined plane is (g = 10 ms⁻²)",
+    "options": [
+      "2/9",
+      "5/12",
+      "1/5",
+      "2/5"
+    ],
+    "correctIndex": 1,
+    "explanation": "For no slip: μ ≥ (g sinα + a cosα) / (g cosα - a sinα). α = tan⁻¹(1/5), plug values: μ_min = 5/12.",
+    "name": "Questions Item 24"
+  },
+  {
+    "id": "p3_item25",
+    "text": "A block of mass 48 kg kept on a smooth horizontal surface is pulled by a rope of length 4 m by a horizontal force of 25 N applied to the other end. If the linear density of the rope is 0.5 kg m⁻³, the force acting on the block is",
+    "options": [
+      "24 N",
+      "25 N",
+      "12 N",
+      "13 N"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rope mass = 0.5 × 4 = 2 kg. Total mass = 50 kg. Acceleration = 25/50 = 0.5 ms⁻². Force on block = 48 × 0.5 = 24 N.",
+    "name": "Questions Item 25"
+  }
+]

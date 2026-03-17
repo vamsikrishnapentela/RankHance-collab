@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m26_item1",
+    "text": "\\( \\int x^n\\,dx = \\)",
+    "options": ["\\( nx^{n-1}+C \\)", "\\( \\frac{x^{n+1}}{n}+C \\)", "\\( \\frac{x^{n+1}}{n+1}+C \\)", "\\( x^n\\ln x+C \\)"],
+    "correctIndex": 2,
+    "explanation": "Power Rule for integration: \\( \\int x^n\\,dx = \\frac{x^{n+1}}{n+1}+C,\\ n\\neq -1 \\)",
+    "name": "Power Rule Integration"
+  },
+  {
+    "id": "m26_item2",
+    "text": "\\( \\int e^x\\,dx = \\)",
+    "options": ["\\( xe^x+C \\)", "\\( \\frac{e^x}{x}+C \\)", "\\( e^{x+1}+C \\)", "\\( e^x+C \\)"],
+    "correctIndex": 3,
+    "explanation": "\\( \\int e^x\\,dx = e^x+C \\)",
+    "name": "Integral of eˣ"
+  },
+  {
+    "id": "m26_item3",
+    "text": "\\( \\int \\sin x\\,dx = \\)",
+    "options": ["\\( \\cos x+C \\)", "\\( -\\cos x+C \\)", "\\( \\sin^2 x+C \\)", "\\( -\\sin x+C \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\int \\sin x\\,dx = -\\cos x+C \\)",
+    "name": "Integral of sin"
+  },
+  {
+    "id": "m26_item4",
+    "text": "\\( \\int \\sec^2 x\\,dx = \\)",
+    "options": ["\\( \\sec x\\tan x+C \\)", "\\( 2\\sec x+C \\)", "\\( \\tan x+C \\)", "\\( -\\cot x+C \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\int \\sec^2 x\\,dx = \\tan x+C \\)",
+    "name": "Integral of sec²"
+  },
+  {
+    "id": "m26_item5",
+    "text": "\\( \\int \\frac{1}{x}\\,dx = \\)",
+    "options": ["\\( x+C \\)", "\\( \\ln|x|+C \\)", "\\( \\frac{1}{x^2}+C \\)", "\\( e^x+C \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\int \\frac{1}{x}\\,dx = \\ln|x|+C \\). Special case of power rule when \\(n=-1\\).",
+    "name": "Integral of 1/x"
+  },
+  {
+    "id": "m26_item6",
+    "text": "Integration by parts formula: \\( \\int u\\,dv = \\)",
+    "options": ["\\( uv - \\int v\\,du \\)", "\\( uv + \\int v\\,du \\)", "\\( u'v - \\int v'\\,du \\)", "\\( \\int u'v\\,dx \\)"],
+    "correctIndex": 0,
+    "explanation": "Integration by Parts (ILATE): \\( \\int u\\,dv = uv - \\int v\\,du \\)",
+    "name": "Integration by Parts"
+  },
+  {
+    "id": "m26_item7",
+    "text": "\\( \\int \\frac{1}{1+x^2}\\,dx = \\)",
+    "options": ["\\( \\ln(1+x^2)+C \\)", "\\( \\tan^{-1}x+C \\)", "\\( \\sin^{-1}x+C \\)", "\\( \\frac{1}{2}\\tan^{-1}x+C \\)"],
+    "correctIndex": 1,
+    "explanation": "Standard result: \\( \\int \\frac{1}{1+x^2}\\,dx = \\tan^{-1}x+C \\)",
+    "name": "Standard Arctan Integral"
+  },
+  {
+    "id": "m26_item8",
+    "text": "\\( \\int \\frac{1}{\\sqrt{1-x^2}}\\,dx = \\)",
+    "options": ["\\( \\cos^{-1}x+C \\)", "\\( \\ln\\sqrt{1-x^2}+C \\)", "\\( \\sin^{-1}x+C \\)", "\\( \\tan^{-1}x+C \\)"],
+    "correctIndex": 2,
+    "explanation": "Standard result: \\( \\int \\frac{1}{\\sqrt{1-x^2}}\\,dx = \\sin^{-1}x+C \\)",
+    "name": "Arcsin Integral"
+  },
+  {
+    "id": "m26_item9",
+    "text": "\\( \\int \\frac{f'(x)}{f(x)}\\,dx = \\)",
+    "options": ["\\( f(x)+C \\)", "\\( \\frac{f'(x)}{f(x)}+C \\)", "\\( \\ln|f(x)|+C \\)", "\\( e^{f(x)}+C \\)"],
+    "correctIndex": 2,
+    "explanation": "If numerator is derivative of denominator: \\( \\int \\frac{f'(x)}{f(x)}dx = \\ln|f(x)|+C \\)",
+    "name": "Log Form Integration"
+  },
+  {
+    "id": "m26_item10",
+    "text": "\\( \\int \\cos x\\,dx = \\)",
+    "options": ["\\( -\\sin x+C \\)", "\\( \\sin x+C \\)", "\\( \\tan x+C \\)", "\\( -\\cos x+C \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\int \\cos x\\,dx = \\sin x+C \\)",
+    "name": "Integral of cos"
+  },
+  {
+    "id": "m26_item11",
+    "text": "\\( \\int \\frac{1}{a^2+x^2}\\,dx = \\)",
+    "options": ["\\( \\frac{1}{a}\\tan^{-1}\\frac{x}{a}+C \\)", "\\( \\frac{1}{a^2}\\tan^{-1}x+C \\)", "\\( \\tan^{-1}\\frac{x}{a}+C \\)", "\\( \\frac{a}{x}\\tan^{-1}\\frac{x}{a}+C \\)"],
+    "correctIndex": 0,
+    "explanation": "Standard formula: \\( \\int \\frac{1}{a^2+x^2}dx = \\frac{1}{a}\\tan^{-1}\\frac{x}{a}+C \\)",
+    "name": "Standard Form Integral"
+  },
+  {
+    "id": "m26_item12",
+    "text": "The ILATE rule for integration by parts orders: I=Inverse trig, L=Log, A=Algebraic, T=Trig, E=Exponential. The function to choose as \\(u\\) is:",
+    "options": ["The one that comes later in ILATE", "The one that comes first in ILATE", "Always the exponential", "The simpler function"],
+    "correctIndex": 1,
+    "explanation": "In ILATE, choose \\(u\\) as the function that comes first: Inverse trig > Log > Algebraic > Trig > Exponential.",
+    "name": "ILATE Rule"
+  },
+  {
+    "id": "m26_item13",
+    "text": "\\( \\int e^x[f(x)+f'(x)]\\,dx = \\)",
+    "options": ["\\( e^x f'(x)+C \\)", "\\( e^x f(x)+C \\)", "\\( e^x[f(x)+f'(x)]+C \\)", "\\( e^xf(x)\\cdot f'(x)+C \\)"],
+    "correctIndex": 1,
+    "explanation": "Special formula: \\( \\int e^x[f(x)+f'(x)]dx = e^xf(x)+C \\). Very useful shortcut.",
+    "name": "eˣ[f+f'] Integration"
+  },
+  {
+    "id": "m26_item14",
+    "text": "\\( \\int \\tan x\\,dx = \\)",
+    "options": ["\\( \\sec^2 x+C \\)", "\\( \\ln|\\sec x|+C \\)", "\\( -\\ln|\\cos x|+C \\)", "Both B and C"],
+    "correctIndex": 3,
+    "explanation": "\\( \\int \\tan x\\,dx = \\int \\frac{\\sin x}{\\cos x}dx = -\\ln|\\cos x|+C = \\ln|\\sec x|+C \\). Both are equivalent.",
+    "name": "Integral of tan"
+  },
+  {
+    "id": "m26_item15",
+    "text": "\\( \\int \\frac{1}{\\sqrt{a^2-x^2}}\\,dx = \\)",
+    "options": ["\\( \\frac{1}{a}\\sin^{-1}\\frac{x}{a}+C \\)", "\\( \\sin^{-1}\\frac{x}{a}+C \\)", "\\( \\cos^{-1}\\frac{x}{a}+C \\)", "\\( \\frac{1}{a}\\cos^{-1}\\frac{x}{a}+C \\)"],
+    "correctIndex": 1,
+    "explanation": "Standard formula: \\( \\int \\frac{1}{\\sqrt{a^2-x^2}}dx = \\sin^{-1}\\frac{x}{a}+C \\)",
+    "name": "Arcsin Standard Form"
+  }
+]

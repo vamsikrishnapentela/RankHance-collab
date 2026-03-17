@@ -1,0 +1,223 @@
+[
+  {
+    "id": "c9_item1",
+    "text": "Find the correct equation for the Arrhenius equation among the following:",
+    "options": [
+      "\\(\\ln k - \\ln A = \\dfrac{E_a}{RT}\\)",
+      "\\(k = \\dfrac{AE_a}{RT}\\)",
+      "\\(\\ln k + \\ln A = \\dfrac{E_a}{RT}\\)",
+      "\\(\\dfrac{E_a}{RT} = \\ln A - \\ln k\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The Arrhenius equation is:\n$$k = A \\cdot e^{-E_a/RT}$$\n\nTaking natural logarithm on both sides:\n$$\\ln k = \\ln A - \\frac{E_a}{RT}$$\n\nRearranging:\n$$\\frac{E_a}{RT} = \\ln A - \\ln k$$\n\nThis is option **(d)**. The equation shows that a plot of \\(\\ln k\\) vs \\(\\dfrac{1}{T}\\) gives a straight line with:\n- Slope = \\(-\\dfrac{E_a}{R}\\)\n- Intercept = \\(\\ln A\\)",
+    "name": "Correct Form of Arrhenius Equation"
+  },
+  {
+    "id": "c9_item2",
+    "text": "The rate of a reaction doubles when the temperature is changed from 300 K to 310 K. The activation energy of the reaction is:\n(\\(R = 8.314\\) J K⁻¹ mol⁻¹, log 2 = 0.301)",
+    "options": [
+      "53.6 kJ mol⁻¹",
+      "48.6 kJ mol⁻¹",
+      "58.5 kJ mol⁻¹",
+      "60.5 kJ mol⁻¹"
+    ],
+    "correctIndex": 0,
+    "explanation": "Using the Arrhenius equation in the two-temperature form:\n$$\\log\\frac{k_2}{k_1} = \\frac{E_a}{2.303R} \\cdot \\frac{T_2 - T_1}{T_1 T_2}$$\n\nGiven: \\(k_2/k_1 = 2\\), \\(T_1 = 300\\) K, \\(T_2 = 310\\) K\n\n$$\\log 2 = \\frac{E_a}{2.303 \\times 8.314} \\times \\frac{310 - 300}{300 \\times 310}$$\n\n$$0.301 = \\frac{E_a}{19.147} \\times \\frac{10}{93000}$$\n\n$$E_a = \\frac{0.301 \\times 19.147 \\times 93000}{10}$$\n\n$$E_a = \\frac{0.301 \\times 1780671}{10} \\approx 53591 \\text{ J/mol} \\approx \\mathbf{53.6 \\text{ kJ/mol}}$$",
+    "name": "Activation Energy from Rate Doubling on Heating"
+  },
+  {
+    "id": "c9_item3",
+    "text": "For the reaction \\(A \\rightarrow\\) products, if the graph of [A] vs time gives a straight line, predict the order of the reaction.",
+    "options": [
+      "Pseudo first order",
+      "First order",
+      "Second order",
+      "Zero order"
+    ],
+    "correctIndex": 3,
+    "explanation": "For a **zero order reaction**, the integrated rate law is:\n$$[A] = [A]_0 - kt$$\n\nThis is the equation of a straight line where:\n- y-axis = [A]\n- x-axis = time\n- Slope = \\(-k\\) (negative)\n- Intercept = \\([A]_0\\)\n\nSo a plot of concentration **[A] vs time** gives a **straight line** for a **zero order reaction**.\n\nFor comparison:\n- **First order**: \\(\\ln[A]\\) vs time is linear\n- **Second order**: \\(\\dfrac{1}{[A]}\\) vs time is linear",
+    "name": "Order from [A] vs Time Straight Line Graph"
+  },
+  {
+    "id": "c9_item4",
+    "text": "For the reaction \\(A \\rightarrow B\\), what is the order of the reaction if the rate of reaction doubles when the concentration of A is increased four times?",
+    "options": [
+      "2",
+      "1.5",
+      "0.5",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the order of reaction be \\(n\\).\n\nRate law: \\(r = k[A]^n\\)\n\nGiven: when [A] is multiplied by 4, rate doubles (×2):\n$$\\frac{r_2}{r_1} = \\left(\\frac{[A]_2}{[A]_1}\\right)^n$$\n\n$$2 = (4)^n$$\n\nTaking log on both sides:\n$$\\log 2 = n \\log 4$$\n$$n = \\frac{\\log 2}{\\log 4} = \\frac{\\log 2}{2\\log 2} = \\frac{1}{2} = \\mathbf{0.5}$$\n\nThe reaction is **half order** with respect to A.",
+    "name": "Order of Reaction from Rate-Concentration Relationship"
+  },
+  {
+    "id": "c9_item5",
+    "text": "The rate constant is the same for 3 reactions of order I, II and III respectively. The unit of concentration is mol/L. If the concentration of the reactant is unity, the rates of reaction \\(R_1, R_2, R_3\\) will be:",
+    "options": [
+      "\\(R_1 = R_2 = R_3\\)",
+      "\\(R_1 < R_2 < R_3\\)",
+      "\\(R_1 > R_2 > R_3\\)",
+      "\\(R_1 = R_2 \\neq R_3\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let [A] = 1 mol/L and rate constant = k for all three reactions.\n\n- **First order**: \\(R_1 = k[A]^1 = k \\times 1 = k\\)\n- **Second order**: \\(R_2 = k[A]^2 = k \\times 1^2 = k\\)\n- **Third order**: \\(R_3 = k[A]^3 = k \\times 1^3 = k\\)\n\nSince \\(1^n = 1\\) for any value of n:\n$$R_1 = R_2 = R_3 = k$$\n\nAll three rates are **equal** when the concentration is unity.",
+    "name": "Rates of Reactions of Different Orders at Unit Concentration"
+  },
+  {
+    "id": "c9_item6",
+    "text": "In the first order thermal decomposition of C₂H₅I(g) → C₂H₄(g) + HI(g), the reactant initially exerts a pressure of 2 bar in a closed vessel at 600 K. If the partial pressure of the reactant is 0.1 bar after 1000 minutes at the same temperature, the rate constant in min⁻¹ is:\n(log 2 = 0.3010)",
+    "options": [
+      "\\(6.0 \\times 10^{-4}\\) min⁻¹",
+      "\\(6.0 \\times 10^{-3}\\) min⁻¹",
+      "\\(3.0 \\times 10^{-3}\\) min⁻¹",
+      "\\(3.0 \\times 10^{-4}\\) min⁻¹"
+    ],
+    "correctIndex": 2,
+    "explanation": "For a first order reaction using partial pressures:\n$$k = \\frac{2.303}{t} \\log\\frac{p_0}{p_t}$$\n\nGiven: \\(p_0 = 2\\) bar, \\(p_t = 0.1\\) bar, \\(t = 1000\\) min\n\n$$k = \\frac{2.303}{1000} \\times \\log\\frac{2}{0.1}$$\n\n$$= \\frac{2.303}{1000} \\times \\log 20$$\n\n$$= \\frac{2.303}{1000} \\times (\\log 2 + \\log 10)$$\n\n$$= \\frac{2.303}{1000} \\times (0.3010 + 1) = \\frac{2.303 \\times 1.301}{1000}$$\n\n$$= \\frac{2.996}{1000} \\approx 3.0 \\times 10^{-3} \\text{ min}^{-1}$$",
+    "name": "Rate Constant from Partial Pressure Data for First Order Reaction"
+  },
+  {
+    "id": "c9_item7",
+    "text": "The reaction \\(X \\rightarrow\\) products is a first order reaction. In 40 minutes, the concentration of X changes from 1.0 M to 0.25 M. What is the initial rate of reaction when [X] = 0.1 M?\n(log 4 = 0.60)",
+    "options": [
+      "\\(1.73 \\times 10^{-3}\\) mol L⁻¹ min⁻¹",
+      "\\(3.47 \\times 10^{-4}\\) mol L⁻¹ min⁻¹",
+      "\\(1.73 \\times 10^{-4}\\) mol L⁻¹ min⁻¹",
+      "\\(3.47 \\times 10^{-3}\\) mol L⁻¹ min⁻¹"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Step 1: Find rate constant k:**\n$$k = \\frac{2.303}{t}\\log\\frac{[X]_0}{[X]_t} = \\frac{2.303}{40}\\log\\frac{1.0}{0.25}$$\n$$= \\frac{2.303}{40}\\log 4 = \\frac{2.303 \\times 0.60}{40} = \\frac{1.382}{40} = 0.03455 \\text{ min}^{-1}$$\n\n**Step 2: Find initial rate at [X] = 0.1 M:**\n$$\\text{Rate} = k[X] = 0.03455 \\times 0.1 = 3.455 \\times 10^{-3} \\text{ mol L}^{-1}\\text{min}^{-1}$$\n$$\\approx 3.47 \\times 10^{-3} \\text{ mol L}^{-1}\\text{min}^{-1}$$",
+    "name": "Initial Rate of First Order Reaction"
+  },
+  {
+    "id": "c9_item8",
+    "text": "The half-life periods of a first order reaction at 300 K and 400 K are 50 s and 10 s respectively. The activation energy of the reaction in kJ mol⁻¹ is:\n(log 5 = 0.70)",
+    "options": [
+      "4.0 kJ mol⁻¹",
+      "8.0 kJ mol⁻¹",
+      "16.10 kJ mol⁻¹",
+      "20.10 kJ mol⁻¹"
+    ],
+    "correctIndex": 2,
+    "explanation": "For first order reaction: \\(k = \\dfrac{0.693}{t_{1/2}}\\)\n\n$$k_1 = \\frac{0.693}{50} = 0.01386 \\text{ s}^{-1} \\text{ (at 300 K)}$$\n$$k_2 = \\frac{0.693}{10} = 0.0693 \\text{ s}^{-1} \\text{ (at 400 K)}$$\n\nUsing Arrhenius equation:\n$$\\log\\frac{k_2}{k_1} = \\frac{E_a}{2.303R} \\times \\frac{T_2 - T_1}{T_1 T_2}$$\n\n$$\\log\\frac{0.0693}{0.01386} = \\frac{E_a}{2.303 \\times 8.314} \\times \\frac{400 - 300}{300 \\times 400}$$\n\n$$\\log 5 = \\frac{E_a}{19.147} \\times \\frac{100}{120000}$$\n\n$$0.70 = \\frac{E_a}{19.147 \\times 1200}$$\n\n$$E_a = 0.70 \\times 19.147 \\times 1200 = 0.70 \\times 22976.4 = 16083 \\text{ J/mol} \\approx \\mathbf{16.1 \\text{ kJ/mol}}$$",
+    "name": "Activation Energy from Half-Lives at Two Temperatures"
+  },
+  {
+    "id": "c9_item9",
+    "text": "The rate constants for a reaction at 400 K and 500 K are \\(2.60 \\times 10^{-5}\\) s⁻¹ and \\(2.60 \\times 10^{-3}\\) s⁻¹ respectively. The activation energy of the reaction in kJ mol⁻¹ is:",
+    "options": [
+      "38.3 kJ mol⁻¹",
+      "57.4 kJ mol⁻¹",
+      "114.9 kJ mol⁻¹",
+      "76.6 kJ mol⁻¹"
+    ],
+    "correctIndex": 3,
+    "explanation": "Using the Arrhenius equation:\n$$\\log\\frac{k_2}{k_1} = \\frac{E_a}{2.303R} \\times \\frac{T_2 - T_1}{T_1 T_2}$$\n\nGiven: \\(k_1 = 2.60 \\times 10^{-5}\\) s⁻¹, \\(k_2 = 2.60 \\times 10^{-3}\\) s⁻¹, \\(T_1 = 400\\) K, \\(T_2 = 500\\) K\n\n$$\\log\\frac{2.60 \\times 10^{-3}}{2.60 \\times 10^{-5}} = \\frac{E_a}{2.303 \\times 8.314} \\times \\frac{100}{400 \\times 500}$$\n\n$$\\log 100 = \\frac{E_a}{19.147} \\times \\frac{100}{200000}$$\n\n$$2 = \\frac{E_a}{19.147 \\times 2000}$$\n\n$$E_a = 2 \\times 19.147 \\times 2000 = 76588 \\text{ J/mol} \\approx \\mathbf{76.6 \\text{ kJ/mol}}$$",
+    "name": "Activation Energy from Rate Constants at Two Temperatures"
+  },
+  {
+    "id": "c9_item10",
+    "text": "Which one of the following statements is correct?",
+    "options": [
+      "In collision theory, \\(e^{-E_a/RT}\\) corresponds to the fraction of molecules that have energy equal to or greater than \\(E_a\\).",
+      "The number of collisions of reacting molecules per second per unit volume of the reaction mixture is the activated complex.",
+      "Molecularity is the number of molecules involved in a complex reaction.",
+      "A catalyst catalyses only non-spontaneous reactions."
+    ],
+    "correctIndex": 0,
+    "explanation": "**Statement (a) is correct.**\n\nIn the **collision theory** of chemical kinetics, the Boltzmann factor \\(e^{-E_a/RT}\\) represents the **fraction of colliding molecules** that have kinetic energy equal to or greater than the **activation energy** \\(E_a\\). Only these molecules can overcome the energy barrier and form products.\n\nWhy others are wrong:\n- **(b) Incorrect**: The activated complex (transition state) is the unstable intermediate at the top of the energy barrier, not a measure of collision frequency.\n- **(c) Incorrect**: Molecularity is the number of molecules/atoms/ions taking part in a single elementary step — it applies to elementary reactions, not complex reactions.\n- **(d) Incorrect**: A catalyst can increase the rate of both spontaneous and non-spontaneous reactions by lowering the activation energy.",
+    "name": "Correct Statement in Chemical Kinetics"
+  },
+  {
+    "id": "c9_item11",
+    "text": "Which one of the following is **not** the correct statement with respect to the order of a reaction?",
+    "options": [
+      "Order can be determined experimentally",
+      "Order of reaction is equal to the sum of the powers of concentration terms in the differential form of rate law",
+      "Order does not change with change of pressure or temperature",
+      "Order cannot be fractional"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Statement (d) is incorrect.** The order of a reaction **can** be fractional.\n\nFor example, the reaction \\(\\text{H}_2 + \\text{Br}_2 \\rightarrow 2\\text{HBr}\\) has a rate law:\n$$\\text{rate} = \\frac{k[\\text{H}_2][\\text{Br}_2]^{1/2}}{1 + k'[\\text{HBr}]/[\\text{Br}_2]}$$\nThis shows fractional order with respect to Br₂.\n\nWhy other statements are correct:\n- **(a)**: Order is an experimental quantity — it cannot be predicted from stoichiometry alone.\n- **(b)**: Order = sum of exponents in the rate law \\(r = k[A]^x[B]^y\\), so order = x + y.\n- **(c)**: Order does not change with temperature or pressure (these affect k, not the order).",
+    "name": "Incorrect Statement about Order of Reaction"
+  },
+  {
+    "id": "c9_item12",
+    "text": "At T(K), the rate constant for a zero order reaction is \\(2.5 \\times 10^{-3}\\) M s⁻¹. The time required for the initial concentration of reactant R to fall from 0.10 M to 0.075 M at the same temperature in seconds is:",
+    "options": [
+      "25 s",
+      "5 s",
+      "10 s",
+      "20 s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For a **zero order reaction**, the integrated rate law is:\n$$[R]_t = [R]_0 - kt$$\n$$t = \\frac{[R]_0 - [R]_t}{k}$$\n\nGiven: \\([R]_0 = 0.10\\) M, \\([R]_t = 0.075\\) M, \\(k = 2.5 \\times 10^{-3}\\) M s⁻¹\n\n$$t = \\frac{0.10 - 0.075}{2.5 \\times 10^{-3}} = \\frac{0.025}{2.5 \\times 10^{-3}} = \\frac{0.025}{0.0025} = 10 \\text{ s}$$",
+    "name": "Time for Zero Order Reaction"
+  },
+  {
+    "id": "c9_item13",
+    "text": "The rate equation for the reaction \\(2A + B \\rightarrow\\) products is: rate \\(= k[A][B]^2\\). If \\(k = 5.0 \\times 10^{-6}\\) mol⁻² L² s⁻¹, the initial rate of the reaction when [A] = 0.05 mol L⁻¹ and [B] = 0.1 mol L⁻¹ is:",
+    "options": [
+      "\\(1.25 \\times 10^{-9}\\) L mol L⁻¹ s⁻¹",
+      "\\(1.25 \\times 10^{-9}\\) mol L⁻¹ s⁻¹",
+      "\\(2.50 \\times 10^{-9}\\) mol L⁻¹ s⁻¹",
+      "\\(2.50 \\times 10^{-9}\\) L mol L⁻¹ s⁻¹"
+    ],
+    "correctIndex": 2,
+    "explanation": "$$\\text{Rate} = k[A][B]^2$$\n\n$$= 5.0 \\times 10^{-6} \\times 0.05 \\times (0.1)^2$$\n\n$$= 5.0 \\times 10^{-6} \\times 5 \\times 10^{-2} \\times 10^{-2}$$\n\n$$= 5.0 \\times 5 \\times 10^{-6-2-2}$$\n\n$$= 25 \\times 10^{-10} = 2.5 \\times 10^{-9} \\text{ mol L}^{-1}\\text{s}^{-1}$$",
+    "name": "Initial Rate from Rate Law and Concentrations"
+  },
+  {
+    "id": "c9_item14",
+    "text": "Thermal decomposition of HCOOH is a first order reaction and the rate constant at T(K) is \\(4.606 \\times 10^{-3}\\) s⁻¹. The time required to decompose 90% of the initial quantity of HCOOH at T(K) in seconds is:",
+    "options": [
+      "100 s",
+      "500 s",
+      "1000 s",
+      "50 s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For a first order reaction:\n$$t = \\frac{2.303}{k} \\log\\frac{[A]_0}{[A]_t}$$\n\nIf 90% decomposes, 10% remains:\n- \\([A]_0 = 100\\%\\), \\([A]_t = 10\\%\\)\n\n$$t = \\frac{2.303}{4.606 \\times 10^{-3}} \\times \\log\\frac{100}{10}$$\n\n$$= \\frac{2.303}{4.606 \\times 10^{-3}} \\times \\log 10$$\n\n$$= \\frac{2.303}{4.606 \\times 10^{-3}} \\times 1$$\n\n$$= \\frac{2.303}{0.004606} = 500 \\text{ s}$$",
+    "name": "Time for 90% Decomposition of HCOOH"
+  },
+  {
+    "id": "c9_item15",
+    "text": "The rate equation for a first order reaction is given by \\([R] = [R]_0 e^{-kt}\\). A straight line with **positive slope** is obtained by plotting:",
+    "options": [
+      "\\(\\log\\dfrac{[R]_0}{[R]}\\) vs time",
+      "\\([R]\\) vs time",
+      "\\(\\log[R]\\) vs time",
+      "\\(\\log\\dfrac{[R]}{[R]_0}\\) vs time"
+    ],
+    "correctIndex": 0,
+    "explanation": "Starting from \\([R] = [R]_0 e^{-kt}\\):\n\nTaking logarithm:\n$$\\ln[R] = \\ln[R]_0 - kt$$\n$$\\Rightarrow \\ln\\frac{[R]_0}{[R]} = kt$$\n$$\\Rightarrow \\log\\frac{[R]_0}{[R]} = \\frac{k}{2.303} \\times t$$\n\nA plot of \\(\\log\\dfrac{[R]_0}{[R]}\\) vs time gives:\n- A **straight line through the origin**\n- **Positive slope** = \\(\\dfrac{k}{2.303}\\)\n\nThis is option **(a)**. ✓\n\nBy contrast, \\(\\log[R]\\) vs time (option c) gives a straight line with a **negative slope** (\\(-k/2.303\\)).",
+    "name": "Plot Giving Positive Slope for First Order Reaction"
+  },
+  {
+    "id": "c9_item16",
+    "text": "At T(K), the following experimental data were obtained for the reaction \\(A + B + C \\rightarrow\\) products:\n\n| Expt. | [A] | [B] | [C] | Initial Rate |\n|---|---|---|---|---|\n| 1 | 0.02 M | 0.1 M | 0.03 M | \\(2.4 \\times 10^{-6}\\) M s⁻¹ |\n| 2 | 0.02 M | 0.2 M | 0.03 M | \\(4.8 \\times 10^{-6}\\) M s⁻¹ |\n| 3 | 0.02 M | 0.2 M | 0.06 M | \\(9.6 \\times 10^{-6}\\) M s⁻¹ |\n| 4 | 0.04 M | 0.2 M | 0.06 M | \\(9.6 \\times 10^{-6}\\) M s⁻¹ |\n\nThe rate constant for the above reaction is:",
+    "options": [
+      "\\(8.0 \\times 10^{-4}\\) s⁻¹",
+      "\\(8.0 \\times 10^{-4}\\) L mol⁻¹ s⁻¹",
+      "\\(8.0 \\times 10^4\\) L mol⁻¹ s⁻¹",
+      "\\(8.0 \\times 10^{-4}\\) L² mol⁻² s⁻¹"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Finding orders:**\n\n- **Order in B** (Expt. 1 vs 2): [B] doubles, rate doubles → **1st order in B**\n- **Order in C** (Expt. 2 vs 3): [C] doubles, rate doubles → **1st order in C**\n- **Order in A** (Expt. 3 vs 4): [A] doubles, rate unchanged → **0th order in A**\n\n**Rate law:** \\(\\text{Rate} = k[A]^0[B]^1[C]^1 = k[B][C]\\)\n\n**Overall order** = 0 + 1 + 1 = **2** (second order overall)\n\n**Finding k from Expt. 1:**\n$$2.4 \\times 10^{-6} = k \\times 0.1 \\times 0.03$$\n$$k = \\frac{2.4 \\times 10^{-6}}{3 \\times 10^{-3}} = 8.0 \\times 10^{-4} \\text{ L mol}^{-1}\\text{s}^{-1}$$",
+    "name": "Rate Constant from Experimental Kinetic Data"
+  },
+  {
+    "id": "c9_item17",
+    "text": "If the half-lives of the first order reaction at 350 K and 300 K are 2 s and 20 s respectively, the activation energy of the reaction in kJ mol⁻¹ is:",
+    "options": [
+      "40.2 kJ mol⁻¹",
+      "20.1 kJ mol⁻¹",
+      "60.3 kJ mol⁻¹",
+      "30.2 kJ mol⁻¹"
+    ],
+    "correctIndex": 0,
+    "explanation": "For first order reaction: \\(k \\propto \\dfrac{1}{t_{1/2}}\\)\n\nSo \\(\\dfrac{k_2}{k_1} = \\dfrac{t_{1/2}(1)}{t_{1/2}(2)} = \\dfrac{20}{2} = 10\\)\n\nHere: \\(T_1 = 300\\) K, \\(T_2 = 350\\) K\n\nUsing Arrhenius equation:\n$$\\log\\frac{k_2}{k_1} = \\frac{E_a}{2.303R} \\times \\frac{T_2 - T_1}{T_1 T_2}$$\n\n$$\\log 10 = \\frac{E_a}{2.303 \\times 8.314} \\times \\frac{50}{300 \\times 350}$$\n\n$$1 = \\frac{E_a}{19.147} \\times \\frac{50}{105000}$$\n\n$$E_a = \\frac{1 \\times 19.147 \\times 105000}{50} = \\frac{2010435}{50} = 40209 \\text{ J/mol} \\approx \\mathbf{40.2 \\text{ kJ/mol}}$$",
+    "name": "Activation Energy from Half-Lives at 300 K and 350 K"
+  }
+]

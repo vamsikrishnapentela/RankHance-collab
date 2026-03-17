@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m9_item1",
+    "text": "If \\( A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix} \\), then \\( |A| = \\)",
+    "options": ["\\( 2 \\)", "\\( -2 \\)", "\\( 10 \\)", "\\( 5 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( |A| = 1 \\cdot 4 - 2 \\cdot 3 = 4 - 6 = -2 \\)",
+    "name": "2x2 Determinant"
+  },
+  {
+    "id": "m9_item2",
+    "text": "A square matrix \\( A \\) is singular if:",
+    "options": ["\\( |A| \\neq 0 \\)", "\\( |A| = 0 \\)", "\\( A = I \\)", "\\( A = A^T \\)"],
+    "correctIndex": 1,
+    "explanation": "A matrix is singular if and only if its determinant is zero.",
+    "name": "Singular Matrix"
+  },
+  {
+    "id": "m9_item3",
+    "text": "If \\( A \\) is a \\( 3 \\times 3 \\) matrix, then \\( |kA| = \\)",
+    "options": ["\\( k|A| \\)", "\\( k^2|A| \\)", "\\( k^3|A| \\)", "\\( 3k|A| \\)"],
+    "correctIndex": 2,
+    "explanation": "For an \\(n \\times n\\) matrix: \\( |kA| = k^n|A| \\). Here \\(n=3\\), so \\(|kA| = k^3|A|\\).",
+    "name": "Scalar Multiple Determinant"
+  },
+  {
+    "id": "m9_item4",
+    "text": "The inverse of \\( A = \\begin{pmatrix} 2 & 1 \\\\ 5 & 3 \\end{pmatrix} \\) is:",
+    "options": ["\\( \\begin{pmatrix} 3 & -1 \\\\ -5 & 2 \\end{pmatrix} \\)", "\\( \\begin{pmatrix} 3 & 1 \\\\ 5 & 2 \\end{pmatrix} \\)", "\\( \\begin{pmatrix} -3 & 1 \\\\ 5 & -2 \\end{pmatrix} \\)", "\\( \\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix} \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( |A| = 6-5=1 \\). \\( A^{-1} = \\frac{1}{|A|}\\begin{pmatrix}d & -b \\\\ -c & a\\end{pmatrix} = \\begin{pmatrix}3 & -1 \\\\ -5 & 2\\end{pmatrix} \\)",
+    "name": "2x2 Inverse"
+  },
+  {
+    "id": "m9_item5",
+    "text": "If \\( AB = BA = I \\), then \\( B \\) is called:",
+    "options": ["Transpose of \\( A \\)", "Adjoint of \\( A \\)", "Inverse of \\( A \\)", "Cofactor matrix of \\( A \\)"],
+    "correctIndex": 2,
+    "explanation": "By definition, if \\( AB = BA = I \\), then \\( B = A^{-1} \\), the inverse of \\(A\\).",
+    "name": "Matrix Inverse Definition"
+  },
+  {
+    "id": "m9_item6",
+    "text": "The rank of a \\( 3 \\times 3 \\) identity matrix \\( I_3 \\) is:",
+    "options": ["\\( 1 \\)", "\\( 2 \\)", "\\( 3 \\)", "\\( 0 \\)"],
+    "correctIndex": 2,
+    "explanation": "The identity matrix is full rank. For \\( I_3 \\): rank \\( = 3 \\) since \\( |I_3| = 1 \\neq 0 \\).",
+    "name": "Rank of Identity Matrix"
+  },
+  {
+    "id": "m9_item7",
+    "text": "If \\( A \\) is a symmetric matrix, then \\( A^T = \\)",
+    "options": ["\\( -A \\)", "\\( A^{-1} \\)", "\\( A \\)", "\\( 0 \\)"],
+    "correctIndex": 2,
+    "explanation": "A matrix is symmetric if \\( A^T = A \\) (transpose equals itself).",
+    "name": "Symmetric Matrix"
+  },
+  {
+    "id": "m9_item8",
+    "text": "The cofactor \\( C_{11} \\) of matrix \\( \\begin{pmatrix} 1 & 2 & 3 \\\\ 0 & 4 & 5 \\\\ 1 & 0 & 6 \\end{pmatrix} \\) is:",
+    "options": ["\\( 24 \\)", "\\( -24 \\)", "\\( 22 \\)", "\\( -22 \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( C_{11} = (+1) \\begin{vmatrix}4&5\\\\0&6\\end{vmatrix} = 24 - 0 = 24 \\)",
+    "name": "Cofactor Calculation"
+  },
+  {
+    "id": "m9_item9",
+    "text": "If \\( |A| = 5 \\) and \\( A \\) is \\( 3 \\times 3 \\), then \\( |\\text{adj}(A)| = \\)",
+    "options": ["\\( 5 \\)", "\\( 25 \\)", "\\( 125 \\)", "\\( 15 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( |\\text{adj}(A)| = |A|^{n-1} = 5^{3-1} = 5^2 = 25 \\)",
+    "name": "Adjoint Determinant"
+  },
+  {
+    "id": "m9_item10",
+    "text": "For a system \\( AX = B \\), if \\( |A| \\neq 0 \\), the unique solution is:",
+    "options": ["\\( X = AB \\)", "\\( X = A^{-1}B \\)", "\\( X = BA^{-1} \\)", "\\( X = B^{-1}A \\)"],
+    "correctIndex": 1,
+    "explanation": "Multiplying \\( AX = B \\) by \\( A^{-1} \\) on left: \\( X = A^{-1}B \\)",
+    "name": "Cramer's Rule / Matrix Method"
+  },
+  {
+    "id": "m9_item11",
+    "text": "If rows of a determinant are interchanged, its value:",
+    "options": ["Doubles", "Becomes zero", "Remains same", "Changes sign"],
+    "correctIndex": 3,
+    "explanation": "Interchanging any two rows (or columns) of a determinant changes its sign.",
+    "name": "Row Interchange Property"
+  },
+  {
+    "id": "m9_item12",
+    "text": "If two rows of a determinant are identical, its value is:",
+    "options": ["\\( 1 \\)", "\\( -1 \\)", "\\( 0 \\)", "Doubled"],
+    "correctIndex": 2,
+    "explanation": "If any two rows (or columns) are identical, the determinant equals zero.",
+    "name": "Identical Rows Property"
+  },
+  {
+    "id": "m9_item13",
+    "text": "The trace of matrix \\( A = \\begin{pmatrix} 2 & 3 \\\\ 1 & 5 \\end{pmatrix} \\) is:",
+    "options": ["\\( 3 \\)", "\\( 7 \\)", "\\( 10 \\)", "\\( 4 \\)"],
+    "correctIndex": 1,
+    "explanation": "Trace = sum of diagonal elements \\( = 2 + 5 = 7 \\)",
+    "name": "Trace of Matrix"
+  },
+  {
+    "id": "m9_item14",
+    "text": "For matrices \\( A \\) and \\( B \\), \\( (AB)^T = \\)",
+    "options": ["\\( A^T B^T \\)", "\\( B^T A^T \\)", "\\( AB^T \\)", "\\( A^T B \\)"],
+    "correctIndex": 1,
+    "explanation": "Reversal law for transpose: \\( (AB)^T = B^T A^T \\)",
+    "name": "Transpose of Product"
+  },
+  {
+    "id": "m9_item15",
+    "text": "A skew-symmetric matrix satisfies:",
+    "options": ["\\( A = A^T \\)", "\\( A = -A^T \\)", "\\( A^2 = I \\)", "\\( A + A^T = 2A \\)"],
+    "correctIndex": 1,
+    "explanation": "A matrix is skew-symmetric if \\( A^T = -A \\), i.e., \\( A + A^T = 0 \\).",
+    "name": "Skew-Symmetric Matrix"
+  }
+]

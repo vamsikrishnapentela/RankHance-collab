@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m2_item1",
+    "text": "For the quadratic \\( ax^2 + bx + c = 0 \\), the discriminant is \\( D = b^2 - 4ac \\). If \\( D < 0 \\), the roots are:",
+    "options": ["Real and equal", "Real and distinct", "Complex conjugates", "Rational"],
+    "correctIndex": 2,
+    "explanation": "When \\( D < 0 \\), roots are \\( \\frac{-b \\pm \\sqrt{D}}{2a} \\), giving complex conjugate pair.",
+    "name": "Nature of Roots"
+  },
+  {
+    "id": "m2_item2",
+    "text": "If \\( \\alpha, \\beta \\) are roots of \\( 2x^2 - 5x + 3 = 0 \\), then \\( \\alpha + \\beta = \\)",
+    "options": ["\\( \\frac{3}{2} \\)", "\\( \\frac{5}{2} \\)", "\\( -\\frac{5}{2} \\)", "\\( 5 \\)"],
+    "correctIndex": 1,
+    "explanation": "Sum of roots \\( = -\\frac{b}{a} = -\\frac{-5}{2} = \\frac{5}{2} \\)",
+    "name": "Sum of Roots"
+  },
+  {
+    "id": "m2_item3",
+    "text": "If \\( \\alpha, \\beta \\) are roots of \\( 2x^2 - 5x + 3 = 0 \\), then \\( \\alpha \\cdot \\beta = \\)",
+    "options": ["\\( \\frac{5}{2} \\)", "\\( \\frac{3}{2} \\)", "\\( 3 \\)", "\\( -\\frac{3}{2} \\)"],
+    "correctIndex": 1,
+    "explanation": "Product of roots \\( = \\frac{c}{a} = \\frac{3}{2} \\)",
+    "name": "Product of Roots"
+  },
+  {
+    "id": "m2_item4",
+    "text": "The expression \\( x^2 + x + 1 \\) is positive for:",
+    "options": ["All real \\( x \\)", "\\( x > 0 \\) only", "\\( x < 0 \\) only", "No real \\( x \\)"],
+    "correctIndex": 0,
+    "explanation": "Discriminant \\( = 1 - 4 = -3 < 0 \\) and \\( a = 1 > 0 \\), so expression is positive for all real \\( x \\).",
+    "name": "Sign of Quadratic Expression"
+  },
+  {
+    "id": "m2_item5",
+    "text": "The quadratic equation whose roots are \\( 3 + \\sqrt{2} \\) and \\( 3 - \\sqrt{2} \\) is:",
+    "options": ["\\( x^2 - 6x + 7 = 0 \\)", "\\( x^2 + 6x + 7 = 0 \\)", "\\( x^2 - 6x - 7 = 0 \\)", "\\( x^2 - 6x + 11 = 0 \\)"],
+    "correctIndex": 0,
+    "explanation": "Sum \\( = 6 \\), Product \\( = 9-2 = 7 \\). Equation: \\( x^2 - 6x + 7 = 0 \\)",
+    "name": "Form Equation from Roots"
+  },
+  {
+    "id": "m2_item6",
+    "text": "The maximum value of \\( -x^2 + 4x - 3 \\) is:",
+    "options": ["\\( 1 \\)", "\\( 3 \\)", "\\( -3 \\)", "\\( 4 \\)"],
+    "correctIndex": 0,
+    "explanation": "Vertex at \\( x = -\\frac{b}{2a} = 2 \\). Max value \\( = -(4) + 8 - 3 = 1 \\)",
+    "name": "Maximum of Quadratic"
+  },
+  {
+    "id": "m2_item7",
+    "text": "If \\( \\alpha, \\beta \\) are roots of \\( x^2 - px + q = 0 \\), then \\( \\alpha^2 + \\beta^2 = \\)",
+    "options": ["\\( p^2 - q \\)", "\\( p^2 - 2q \\)", "\\( p^2 + 2q \\)", "\\( p - 2q \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\alpha^2 + \\beta^2 = (\\alpha+\\beta)^2 - 2\\alpha\\beta = p^2 - 2q \\)",
+    "name": "Sum of Squares of Roots"
+  },
+  {
+    "id": "m2_item8",
+    "text": "For what value of \\( k \\) does \\( x^2 - kx + 4 = 0 \\) have equal roots?",
+    "options": ["\\( k = \\pm 2 \\)", "\\( k = \\pm 4 \\)", "\\( k = 4 \\)", "\\( k = 2 \\)"],
+    "correctIndex": 1,
+    "explanation": "Equal roots when \\( D = 0 \\Rightarrow k^2 - 16 = 0 \\Rightarrow k = \\pm 4 \\)",
+    "name": "Equal Roots Condition"
+  },
+  {
+    "id": "m2_item9",
+    "text": "If one root of \\( x^2 - 5x + k = 0 \\) is 2, then \\( k = \\)",
+    "options": ["\\( 3 \\)", "\\( 6 \\)", "\\( -6 \\)", "\\( 10 \\)"],
+    "correctIndex": 1,
+    "explanation": "Substituting \\( x=2 \\): \\( 4 - 10 + k = 0 \\Rightarrow k = 6 \\)",
+    "name": "Finding k from Root"
+  },
+  {
+    "id": "m2_item10",
+    "text": "The condition for roots of \\( ax^2+bx+c=0 \\) to be reciprocal of each other is:",
+    "options": ["\\( a = c \\)", "\\( b = c \\)", "\\( a = b \\)", "\\( a + c = 0 \\)"],
+    "correctIndex": 0,
+    "explanation": "If roots are \\( \\alpha, \\frac{1}{\\alpha} \\), product \\( = \\frac{c}{a} = 1 \\Rightarrow a = c \\)",
+    "name": "Reciprocal Roots Condition"
+  },
+  {
+    "id": "m2_item11",
+    "text": "The number of real roots of \\( x^2 + |x| + 1 = 0 \\) is:",
+    "options": ["\\( 0 \\)", "\\( 1 \\)", "\\( 2 \\)", "\\( 4 \\)"],
+    "correctIndex": 0,
+    "explanation": "For all real \\(x\\): \\( x^2 \\geq 0,\\ |x| \\geq 0 \\), so \\( x^2+|x|+1 \\geq 1 > 0 \\). No real roots.",
+    "name": "No Real Roots"
+  },
+  {
+    "id": "m2_item12",
+    "text": "If \\( \\alpha, \\beta \\) are roots of \\( x^2 - 3x + 2 = 0 \\), then \\( \\frac{1}{\\alpha} + \\frac{1}{\\beta} = \\)",
+    "options": ["\\( \\frac{3}{2} \\)", "\\( \\frac{2}{3} \\)", "\\( 3 \\)", "\\( \\frac{1}{2} \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( \\frac{1}{\\alpha}+\\frac{1}{\\beta} = \\frac{\\alpha+\\beta}{\\alpha\\beta} = \\frac{3}{2} \\)",
+    "name": "Sum of Reciprocals"
+  },
+  {
+    "id": "m2_item13",
+    "text": "The range of \\( f(x) = x^2 - 4x + 5 \\) is:",
+    "options": ["\\( [1, \\infty) \\)", "\\( (-\\infty, 1] \\)", "\\( [5, \\infty) \\)", "\\( (-\\infty, \\infty) \\)"],
+    "correctIndex": 0,
+    "explanation": "Minimum at \\( x=2 \\): \\( f(2) = 4-8+5 = 1 \\). Since \\(a>0\\), range is \\([1, \\infty)\\)",
+    "name": "Range of Quadratic"
+  },
+  {
+    "id": "m2_item14",
+    "text": "Both roots of \\( x^2 - 6x + k = 0 \\) are positive if:",
+    "options": ["\\( k > 9 \\)", "\\( 0 < k < 9 \\)", "\\( k < 0 \\)", "\\( k = 9 \\)"],
+    "correctIndex": 1,
+    "explanation": "Need \\( D \\geq 0 \\Rightarrow k \\leq 9 \\), sum \\(=6>0\\), product \\(=k>0\\). So \\( 0 < k \\leq 9 \\). Strictly positive roots: \\( 0 < k < 9 \\).",
+    "name": "Both Roots Positive"
+  },
+  {
+    "id": "m2_item15",
+    "text": "If \\( \\alpha^2 + \\beta^2 = 5 \\) and \\( \\alpha\\beta = 2 \\), then \\( (\\alpha - \\beta)^2 = \\)",
+    "options": ["\\( 1 \\)", "\\( 9 \\)", "\\( 3 \\)", "\\( 4 \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( (\\alpha-\\beta)^2 = \\alpha^2+\\beta^2 - 2\\alpha\\beta = 5 - 4 = 1 \\)",
+    "name": "Difference of Roots Squared"
+  }
+]

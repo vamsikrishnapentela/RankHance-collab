@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m16_item1",
+    "text": "\\( \\sinh x = \\)",
+    "options": ["\\( \\frac{e^x + e^{-x}}{2} \\)", "\\( \\frac{e^x - e^{-x}}{2} \\)", "\\( \\frac{e^{2x}-1}{2} \\)", "\\( e^x - 1 \\)"],
+    "correctIndex": 1,
+    "explanation": "Definition: \\( \\sinh x = \\frac{e^x - e^{-x}}{2} \\)",
+    "name": "Definition of sinh"
+  },
+  {
+    "id": "m16_item2",
+    "text": "\\( \\cosh x = \\)",
+    "options": ["\\( \\frac{e^x - e^{-x}}{2} \\)", "\\( \\frac{e^x + e^{-x}}{2} \\)", "\\( e^x + e^{-x} \\)", "\\( \\frac{e^{2x}+1}{2} \\)"],
+    "correctIndex": 1,
+    "explanation": "Definition: \\( \\cosh x = \\frac{e^x + e^{-x}}{2} \\)",
+    "name": "Definition of cosh"
+  },
+  {
+    "id": "m16_item3",
+    "text": "The fundamental hyperbolic identity is:",
+    "options": ["\\( \\sinh^2x + \\cosh^2x = 1 \\)", "\\( \\cosh^2x - \\sinh^2x = 1 \\)", "\\( \\cosh^2x + \\sinh^2x = 2 \\)", "\\( \\tanh^2x + 1 = \\text{sech}^2x \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\cosh^2x - \\sinh^2x = 1 \\) (analogous to \\( \\cos^2 + \\sin^2 = 1 \\)).",
+    "name": "Fundamental Identity"
+  },
+  {
+    "id": "m16_item4",
+    "text": "\\( \\tanh x = \\)",
+    "options": ["\\( \\frac{\\cosh x}{\\sinh x} \\)", "\\( \\frac{\\sinh x}{\\cosh x} \\)", "\\( \\frac{e^x + e^{-x}}{e^x - e^{-x}} \\)", "\\( \\sinh x \\cdot \\cosh x \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\tanh x = \\frac{\\sinh x}{\\cosh x} = \\frac{e^x - e^{-x}}{e^x + e^{-x}} \\)",
+    "name": "Definition of tanh"
+  },
+  {
+    "id": "m16_item5",
+    "text": "\\( 1 - \\tanh^2x = \\)",
+    "options": ["\\( \\cosh^2x \\)", "\\( \\text{sech}^2x \\)", "\\( \\text{csch}^2x \\)", "\\( \\sinh^2x \\)"],
+    "correctIndex": 1,
+    "explanation": "Dividing \\( \\cosh^2x - \\sinh^2x = 1 \\) by \\( \\cosh^2x \\): \\( 1 - \\tanh^2x = \\text{sech}^2x \\)",
+    "name": "sech² Identity"
+  },
+  {
+    "id": "m16_item6",
+    "text": "The value of \\( \\sinh 0 = \\)",
+    "options": ["\\( 1 \\)", "\\( -1 \\)", "\\( 0 \\)", "\\( e \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\sinh 0 = \\frac{e^0 - e^0}{2} = \\frac{0}{2} = 0 \\)",
+    "name": "sinh(0)"
+  },
+  {
+    "id": "m16_item7",
+    "text": "The value of \\( \\cosh 0 = \\)",
+    "options": ["\\( 0 \\)", "\\( 1 \\)", "\\( e \\)", "\\( 2 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\cosh 0 = \\frac{e^0 + e^0}{2} = \\frac{2}{2} = 1 \\)",
+    "name": "cosh(0)"
+  },
+  {
+    "id": "m16_item8",
+    "text": "\\( \\sinh(x+y) = \\)",
+    "options": ["\\( \\sinh x \\cosh y + \\cosh x \\sinh y \\)", "\\( \\sinh x \\cosh y - \\cosh x \\sinh y \\)", "\\( \\cosh x \\cosh y + \\sinh x \\sinh y \\)", "\\( \\sinh x + \\sinh y \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( \\sinh(x+y) = \\sinh x \\cosh y + \\cosh x \\sinh y \\) (analogous to \\(\\sin(A+B)\\))",
+    "name": "sinh(x+y) Formula"
+  },
+  {
+    "id": "m16_item9",
+    "text": "The inverse of \\( \\sinh x \\) is:",
+    "options": ["\\( \\ln(x + \\sqrt{x^2-1}) \\)", "\\( \\ln(x + \\sqrt{x^2+1}) \\)", "\\( \\ln(x - \\sqrt{x^2+1}) \\)", "\\( e^x - 1 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\sinh^{-1}x = \\ln(x + \\sqrt{x^2+1}) \\) for all real \\(x\\).",
+    "name": "Inverse sinh"
+  },
+  {
+    "id": "m16_item10",
+    "text": "The inverse of \\( \\cosh x \\) is:",
+    "options": ["\\( \\ln(x + \\sqrt{x^2+1}) \\)", "\\( \\ln(x + \\sqrt{x^2-1}) \\)", "\\( \\ln(x - \\sqrt{x^2-1}) \\)", "\\( \\ln(x-1) \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\cosh^{-1}x = \\ln(x + \\sqrt{x^2-1}) \\) for \\( x \\geq 1 \\).",
+    "name": "Inverse cosh"
+  },
+  {
+    "id": "m16_item11",
+    "text": "\\( \\cosh 2x = \\)",
+    "options": ["\\( 2\\cosh^2 x - 1 \\)", "\\( 1 + 2\\sinh^2 x \\)", "\\( \\cosh^2x + \\sinh^2x \\)", "All of the above"],
+    "correctIndex": 3,
+    "explanation": "All three are valid: \\( \\cosh 2x = 2\\cosh^2x-1 = 1+2\\sinh^2x = \\cosh^2x+\\sinh^2x \\)",
+    "name": "cosh 2x Identities"
+  },
+  {
+    "id": "m16_item12",
+    "text": "The domain of \\( \\tanh x \\) is:",
+    "options": ["\\( [-1,1] \\)", "\\( [1, \\infty) \\)", "\\( (-\\infty, \\infty) \\)", "\\( (0, \\infty) \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\tanh x \\) is defined for all real numbers since \\( \\cosh x > 0 \\) always.",
+    "name": "Domain of tanh"
+  },
+  {
+    "id": "m16_item13",
+    "text": "The range of \\( \\tanh x \\) is:",
+    "options": ["\\( (-\\infty, \\infty) \\)", "\\( (-1, 1) \\)", "\\( [-1, 1] \\)", "\\( (0, 1) \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\tanh x \\to \\pm 1 \\) as \\( x \\to \\pm \\infty \\), but never equals \\(\\pm 1\\). Range is \\((-1,1)\\).",
+    "name": "Range of tanh"
+  },
+  {
+    "id": "m16_item14",
+    "text": "\\( \\coth^2 x - \\text{csch}^2 x = \\)",
+    "options": ["\\( 0 \\)", "\\( -1 \\)", "\\( 1 \\)", "\\( 2 \\)"],
+    "correctIndex": 2,
+    "explanation": "Dividing \\( \\cosh^2x - \\sinh^2x = 1 \\) by \\( \\sinh^2x \\): \\( \\coth^2x - \\text{csch}^2x = 1 \\)",
+    "name": "coth² - csch² Identity"
+  },
+  {
+    "id": "m16_item15",
+    "text": "Which hyperbolic function is always \\( \\geq 1 \\)?",
+    "options": ["\\( \\sinh x \\)", "\\( \\tanh x \\)", "\\( \\cosh x \\)", "\\( \\text{sech}\\,x \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\cosh x = \\frac{e^x+e^{-x}}{2} \\geq \\sqrt{e^x \\cdot e^{-x}} = 1 \\) by AM-GM. Minimum value is 1 at \\(x=0\\).",
+    "name": "Minimum of cosh"
+  }
+]

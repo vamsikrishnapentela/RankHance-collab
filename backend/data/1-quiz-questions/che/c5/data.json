@@ -1,0 +1,122 @@
+[
+  {
+    "id": "c5_item1",
+    "text": "The number of atoms per unit cell in a simple cubic (SC) structure is:",
+    "options": ["\\( 1 \\)", "\\( 2 \\)", "\\( 4 \\)", "\\( 0.5 \\)"],
+    "correctIndex": 0,
+    "explanation": "SC: 8 corner atoms × (1/8) = 1 atom per unit cell.",
+    "name": "Atoms in SC Unit Cell"
+  },
+  {
+    "id": "c5_item2",
+    "text": "The number of atoms per unit cell in a BCC structure is:",
+    "options": ["\\( 1 \\)", "\\( 2 \\)", "\\( 4 \\)", "\\( 3 \\)"],
+    "correctIndex": 1,
+    "explanation": "BCC: 8 corners × (1/8) + 1 body centre × 1 = 1 + 1 = 2 atoms per unit cell.",
+    "name": "Atoms in BCC Unit Cell"
+  },
+  {
+    "id": "c5_item3",
+    "text": "The number of atoms per unit cell in an FCC structure is:",
+    "options": ["\\( 2 \\)", "\\( 3 \\)", "\\( 4 \\)", "\\( 6 \\)"],
+    "correctIndex": 2,
+    "explanation": "FCC: 8 corners × (1/8) + 6 face centres × (1/2) = 1 + 3 = 4 atoms per unit cell.",
+    "name": "Atoms in FCC Unit Cell"
+  },
+  {
+    "id": "c5_item4",
+    "text": "The packing efficiency of FCC (cubic close packing) is:",
+    "options": ["\\( 52.4\\% \\)", "\\( 68\\% \\)", "\\( 74\\% \\)", "\\( 100\\% \\)"],
+    "correctIndex": 2,
+    "explanation": "Packing efficiency: SC = 52.4%, BCC = 68%, FCC/HCP = 74% (maximum possible for equal spheres).",
+    "name": "FCC Packing Efficiency"
+  },
+  {
+    "id": "c5_item5",
+    "text": "The coordination number in a BCC structure is:",
+    "options": ["\\( 6 \\)", "\\( 8 \\)", "\\( 12 \\)", "\\( 4 \\)"],
+    "correctIndex": 1,
+    "explanation": "BCC: each atom touches 8 nearest neighbours (body centre touches all 8 corners). CN = 8.",
+    "name": "BCC Coordination Number"
+  },
+  {
+    "id": "c5_item6",
+    "text": "The density of a crystal is given by:",
+    "options": ["\\( \\rho = \\frac{ZM}{N_A a^3} \\)", "\\( \\rho = \\frac{N_A a^3}{ZM} \\)", "\\( \\rho = ZMN_A a^3 \\)", "\\( \\rho = \\frac{ZM}{a^3} \\)"],
+    "correctIndex": 0,
+    "explanation": "Density: \\( \\rho = \\frac{Z \\times M}{N_A \\times a^3} \\), where \\(Z\\) = atoms/cell, \\(M\\) = molar mass, \\(a\\) = edge length.",
+    "name": "Density of Crystal"
+  },
+  {
+    "id": "c5_item7",
+    "text": "In an ionic crystal with NaCl structure, the coordination number of \\( \\text{Na}^+ \\) is:",
+    "options": ["\\( 4 \\)", "\\( 6 \\)", "\\( 8 \\)", "\\( 12 \\)"],
+    "correctIndex": 1,
+    "explanation": "In NaCl structure: each Na⁺ is surrounded by 6 Cl⁻ (and vice versa). CN = 6:6.",
+    "name": "NaCl Coordination Number"
+  },
+  {
+    "id": "c5_item8",
+    "text": "Schottky defect in ionic crystals involves:",
+    "options": ["Extra ions in interstitial positions", "Equal number of cation and anion vacancies", "Only cation vacancies", "Addition of impurity"],
+    "correctIndex": 1,
+    "explanation": "Schottky defect: equal number of cation and anion vacancies to maintain electrical neutrality. Decreases density.",
+    "name": "Schottky Defect"
+  },
+  {
+    "id": "c5_item9",
+    "text": "Frenkel defect in ionic crystals involves:",
+    "options": ["Only anion displacement", "A smaller ion displaced to interstitial site", "Equal cation and anion vacancies", "Addition of foreign ions"],
+    "correctIndex": 1,
+    "explanation": "Frenkel defect: smaller ion (usually cation) leaves its lattice site and occupies an interstitial position. Density unchanged.",
+    "name": "Frenkel Defect"
+  },
+  {
+    "id": "c5_item10",
+    "text": "n-type semiconductors are formed by doping with:",
+    "options": ["Group 13 elements (like B, Al)", "Group 15 elements (like P, As)", "Group 16 elements", "Transition metals"],
+    "correctIndex": 1,
+    "explanation": "n-type: doped with Group 15 element (5 valence electrons) → extra electron → electron-rich (negative carriers).",
+    "name": "n-type Semiconductor"
+  },
+  {
+    "id": "c5_item11",
+    "text": "The formula for the relationship between edge length \\(a\\) and radius \\(r\\) in FCC is:",
+    "options": ["\\( a = 2r \\)", "\\( a = 2\\sqrt{2}\\,r \\)", "\\( a = \\frac{4r}{\\sqrt{3}} \\)", "\\( a = 4r \\)"],
+    "correctIndex": 1,
+    "explanation": "FCC: atoms touch along face diagonal. \\( 4r = a\\sqrt{2} \\Rightarrow a = 2\\sqrt{2}\\,r \\).",
+    "name": "FCC Edge-Radius Relation"
+  },
+  {
+    "id": "c5_item12",
+    "text": "In CsCl structure, the coordination number is:",
+    "options": ["\\( 4:4 \\)", "\\( 6:6 \\)", "\\( 8:8 \\)", "\\( 12:12 \\)"],
+    "correctIndex": 2,
+    "explanation": "CsCl structure: Cs⁺ at body centre surrounded by 8 Cl⁻ at corners. CN = 8:8.",
+    "name": "CsCl Coordination Number"
+  },
+  {
+    "id": "c5_item13",
+    "text": "Which type of solid has the highest melting point?",
+    "options": ["Molecular solid", "Ionic solid", "Metallic solid", "Covalent network solid"],
+    "correctIndex": 3,
+    "explanation": "Covalent network solids (e.g., diamond, SiO₂) have extremely high melting points due to strong covalent bonds throughout.",
+    "name": "Highest Melting Point Solid"
+  },
+  {
+    "id": "c5_item14",
+    "text": "The number of tetrahedral voids per atom in a close-packed structure is:",
+    "options": ["\\( 1 \\)", "\\( 2 \\)", "\\( 4 \\)", "\\( 3 \\)"],
+    "correctIndex": 1,
+    "explanation": "In close packing: if number of atoms = N, octahedral voids = N, tetrahedral voids = 2N. So 2 tetrahedral voids per atom.",
+    "name": "Tetrahedral Voids"
+  },
+  {
+    "id": "c5_item15",
+    "text": "Bragg's equation for X-ray diffraction by crystals is:",
+    "options": ["\\( n\\lambda = d\\sin\\theta \\)", "\\( n\\lambda = 2d\\sin\\theta \\)", "\\( 2n\\lambda = d\\sin\\theta \\)", "\\( \\lambda = 2d\\cos\\theta \\)"],
+    "correctIndex": 1,
+    "explanation": "Bragg's Law: \\( n\\lambda = 2d\\sin\\theta \\), where \\(d\\) = interplanar spacing, \\(\\theta\\) = glancing angle.",
+    "name": "Bragg's Law"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m18_item1",
+    "text": "The equation of a line with slope \\(m\\) and y-intercept \\(c\\) is:",
+    "options": ["\\( y = mx - c \\)", "\\( y = mx + c \\)", "\\( x = my + c \\)", "\\( y - c = m \\)"],
+    "correctIndex": 1,
+    "explanation": "Slope-intercept form: \\( y = mx + c \\)",
+    "name": "Slope-Intercept Form"
+  },
+  {
+    "id": "m18_item2",
+    "text": "The equation of line through \\((x_1,y_1)\\) with slope \\(m\\) is:",
+    "options": ["\\( y + y_1 = m(x + x_1) \\)", "\\( y - y_1 = m(x - x_1) \\)", "\\( y = mx_1 + y_1 \\)", "\\( x - x_1 = m(y - y_1) \\)"],
+    "correctIndex": 1,
+    "explanation": "Point-slope form: \\( y - y_1 = m(x - x_1) \\)",
+    "name": "Point-Slope Form"
+  },
+  {
+    "id": "m18_item3",
+    "text": "The intercept form of a straight line is:",
+    "options": ["\\( \\frac{x}{a} - \\frac{y}{b} = 1 \\)", "\\( \\frac{x}{a} + \\frac{y}{b} = 1 \\)", "\\( ax + by = 0 \\)", "\\( y = ax + b \\)"],
+    "correctIndex": 1,
+    "explanation": "Intercept form: \\( \\frac{x}{a} + \\frac{y}{b} = 1 \\), where \\(a\\) = x-intercept, \\(b\\) = y-intercept.",
+    "name": "Intercept Form"
+  },
+  {
+    "id": "m18_item4",
+    "text": "The normal form of a line is \\( x\\cos\\alpha + y\\sin\\alpha = p \\). Here \\(p\\) represents:",
+    "options": ["The slope", "The perpendicular distance from origin", "The x-intercept", "The angle with x-axis"],
+    "correctIndex": 1,
+    "explanation": "In normal form, \\(p\\) is the perpendicular distance from the origin to the line, always positive.",
+    "name": "Normal Form"
+  },
+  {
+    "id": "m18_item5",
+    "text": "Two lines \\(a_1x+b_1y+c_1=0\\) and \\(a_2x+b_2y+c_2=0\\) are parallel if:",
+    "options": ["\\( a_1b_2 = a_2b_1 \\)", "\\( a_1a_2 + b_1b_2 = 0 \\)", "\\( a_1b_2 - a_2b_1 = 0 \\)", "Both A and C"],
+    "correctIndex": 3,
+    "explanation": "Parallel condition: \\( \\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2} \\), i.e., \\( a_1b_2 - a_2b_1 = 0 \\).",
+    "name": "Parallel Lines Condition"
+  },
+  {
+    "id": "m18_item6",
+    "text": "The distance between parallel lines \\( ax+by+c_1=0 \\) and \\( ax+by+c_2=0 \\) is:",
+    "options": ["\\( \\frac{|c_1-c_2|}{a+b} \\)", "\\( \\frac{|c_1+c_2|}{\\sqrt{a^2+b^2}} \\)", "\\( \\frac{|c_1-c_2|}{\\sqrt{a^2+b^2}} \\)", "\\( |c_1-c_2| \\)"],
+    "correctIndex": 2,
+    "explanation": "Distance between parallel lines: \\( d = \\frac{|c_1-c_2|}{\\sqrt{a^2+b^2}} \\)",
+    "name": "Distance Between Parallel Lines"
+  },
+  {
+    "id": "m18_item7",
+    "text": "The equation of line through intersection of \\( L_1=0 \\) and \\( L_2=0 \\) is:",
+    "options": ["\\( L_1 - L_2 = 0 \\)", "\\( L_1 + \\lambda L_2 = 0 \\)", "\\( L_1 \\cdot L_2 = 0 \\)", "\\( \\lambda L_1 = L_2 \\)"],
+    "correctIndex": 1,
+    "explanation": "Family of lines through intersection: \\( L_1 + \\lambda L_2 = 0 \\) for varying \\(\\lambda\\).",
+    "name": "Family of Lines"
+  },
+  {
+    "id": "m18_item8",
+    "text": "The combined equation \\( ax^2 + 2hxy + by^2 = 0 \\) represents a pair of lines through origin. The angle \\(\\theta\\) between them satisfies:",
+    "options": ["\\( \\tan\\theta = \\frac{2\\sqrt{h^2-ab}}{a+b} \\)", "\\( \\tan\\theta = \\frac{\\sqrt{h^2-ab}}{a+b} \\)", "\\( \\tan\\theta = \\frac{2\\sqrt{h^2+ab}}{a-b} \\)", "\\( \\tan\\theta = \\frac{h^2-ab}{a+b} \\)"],
+    "correctIndex": 0,
+    "explanation": "Angle between pair of lines: \\( \\tan\\theta = \\frac{2\\sqrt{h^2-ab}}{a+b} \\)",
+    "name": "Angle Between Pair of Lines"
+  },
+  {
+    "id": "m18_item9",
+    "text": "The pair of lines \\( ax^2+2hxy+by^2=0 \\) are perpendicular if:",
+    "options": ["\\( h = 0 \\)", "\\( a = b \\)", "\\( a + b = 0 \\)", "\\( h^2 = ab \\)"],
+    "correctIndex": 2,
+    "explanation": "The lines are perpendicular when \\( a + b = 0 \\) (sum of coefficients of \\(x^2\\) and \\(y^2\\) is zero).",
+    "name": "Perpendicular Pair"
+  },
+  {
+    "id": "m18_item10",
+    "text": "The pair of lines \\( ax^2+2hxy+by^2=0 \\) coincide when:",
+    "options": ["\\( a+b=0 \\)", "\\( h^2 > ab \\)", "\\( h^2 = ab \\)", "\\( h^2 < ab \\)"],
+    "correctIndex": 2,
+    "explanation": "Lines coincide (repeated) when \\( h^2 = ab \\) (discriminant = 0).",
+    "name": "Coincident Lines"
+  },
+  {
+    "id": "m18_item11",
+    "text": "The slope of line \\( 3x - 4y + 7 = 0 \\) is:",
+    "options": ["\\( -\\frac{3}{4} \\)", "\\( \\frac{3}{4} \\)", "\\( \\frac{4}{3} \\)", "\\( -\\frac{4}{3} \\)"],
+    "correctIndex": 1,
+    "explanation": "Rewrite: \\( y = \\frac{3}{4}x + \\frac{7}{4} \\). Slope \\( m = \\frac{3}{4} \\).",
+    "name": "Slope from General Equation"
+  },
+  {
+    "id": "m18_item12",
+    "text": "The equation of x-axis is:",
+    "options": ["\\( x = 0 \\)", "\\( y = 0 \\)", "\\( x + y = 0 \\)", "\\( x = y \\)"],
+    "correctIndex": 1,
+    "explanation": "The x-axis is the line where \\( y = 0 \\) for all values of \\(x\\).",
+    "name": "Equation of Axes"
+  },
+  {
+    "id": "m18_item13",
+    "text": "The image of point \\((a,b)\\) about the line \\( y = x \\) is:",
+    "options": ["\\( (-a,-b) \\)", "\\( (b,a) \\)", "\\( (-b,-a) \\)", "\\( (a,-b) \\)"],
+    "correctIndex": 1,
+    "explanation": "Reflection about \\( y=x \\) swaps coordinates: image of \\((a,b)\\) is \\((b,a)\\).",
+    "name": "Reflection About y=x"
+  },
+  {
+    "id": "m18_item14",
+    "text": "The sum of slopes of lines \\( ax^2+2hxy+by^2=0 \\) is:",
+    "options": ["\\( \\frac{2h}{b} \\)", "\\( -\\frac{2h}{b} \\)", "\\( \\frac{a}{b} \\)", "\\( \\frac{h}{b} \\)"],
+    "correctIndex": 1,
+    "explanation": "If \\(m_1,m_2\\) are slopes: \\( m_1+m_2 = -\\frac{2h}{b} \\) and \\( m_1m_2 = \\frac{a}{b} \\) (Vieta's).",
+    "name": "Sum of Slopes"
+  },
+  {
+    "id": "m18_item15",
+    "text": "The angle bisectors of \\( ax^2+2hxy+by^2=0 \\) are given by:",
+    "options": ["\\( \\frac{x^2-y^2}{a-b} = \\frac{xy}{h} \\)", "\\( \\frac{x^2+y^2}{a+b} = \\frac{xy}{h} \\)", "\\( \\frac{x^2-y^2}{a+b} = \\frac{xy}{h} \\)", "\\( hx^2 - (a-b)xy - hy^2 = 0 \\)"],
+    "correctIndex": 0,
+    "explanation": "Equation of angle bisectors: \\( \\frac{x^2-y^2}{a-b} = \\frac{xy}{h} \\)",
+    "name": "Angle Bisectors of Pair"
+  }
+]

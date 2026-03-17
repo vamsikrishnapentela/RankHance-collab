@@ -1,0 +1,132 @@
+[
+  {
+    "id": "p28_item1",
+    "text": "An AM wave has 1800 W of total power content. For 100% modulation the carrier should have power content equal to",
+    "options": [
+      "1000 W",
+      "1200 W",
+      "1500 W",
+      "1600 W"
+    ],
+    "correctIndex": 1,
+    "explanation": "Total power of AM wave, $P_t = 1800$ W.\nFor 100% modulation, depth of modulation, $m = 1$.\nIf $P_c$ be the carrier power, then\n$P_t = P_c \\left(1 + \\frac{m^2}{2}\\right)$\n$P_t = P_c \\left(1 + \\frac{1}{2}\\right)$\n$P_t = \\frac{3}{2} P_c$\n$P_c = \\frac{2}{3} P_t = \\frac{2}{3} \\times 1800 = 1200$ W.",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "p28_item2",
+    "text": "A speech signal of 3 kHz is used to modulate a carrier signal of frequency 1 MHz, using amplitude modulation. The frequencies of the side bands will be",
+    "options": [
+      "1.003 MHz and 0.997 MHz",
+      "3001 kHz and 2997 kHz",
+      "1003 kHz and 1000 kHz",
+      "1.0 MHz and 0.997 MHz"
+    ],
+    "correctIndex": 0,
+    "explanation": "Frequency of carrier signal, $f_c = 1$ MHz.\nFrequency of message (speech) signal, $f_m = 3$ kHz = 0.003 MHz.\nFrequency of upper side band $= f_c + f_m = 1.003$ MHz.\nFrequency of lower side band $= f_c - f_m = 0.997$ MHz.",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "p28_item3",
+    "text": "A signal of frequency 10 kHz and peak voltage 10 V is used to amplitude modulate a carrier of frequency 1 MHz and peak voltage 20 V. The side-band frequencies in kHz are",
+    "options": [
+      "1010, 990",
+      "910, 1090",
+      "10, 11",
+      "1.01, 0.99"
+    ],
+    "correctIndex": 0,
+    "explanation": "The side band frequencies are given as\n$f = f_c \\pm f_s$\n$f = 1 \\times 10^6 \\pm 10 \\times 10^3$ Hz = (1000 ± 10) × 10³ Hz.\nSo, the side band frequencies in kHz is 1010 kHz and 990 kHz.",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "p28_item4",
+    "text": "A TV tower has a height of 5 m in a region of population density $\\frac{1000}{\\pi}$ per square kilometre. Number of people that can receive the transmission is nearly (in thousands)",
+    "options": [
+      "128",
+      "64",
+      "256",
+      "32"
+    ],
+    "correctIndex": 1,
+    "explanation": "Maximum range of this transmission $d = \\sqrt{2 h R_e}$.\nPopulation covered, $P_c = n \\times \\pi d^2 = 1000 \\times 2 h R_e = 1000 \\times 2 \\times 5 \\times 10^{-3} \\times 6400 = 64000$.",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "p28_item5",
+    "text": "A transmitting antenna of height 20 m and the receiving antenna of height $h$ are separated by a distance of 40 km for satisfactory communication in line of sight (LOS) mode. Then the value of $h$ is (Radius of earth is 6400 km)",
+    "options": [
+      "40 m",
+      "45 m",
+      "30 m",
+      "25 m"
+    ],
+    "correctIndex": 1,
+    "explanation": "Maximum distance of line of sight mode\n$d_m = \\sqrt{2 R h_t} + \\sqrt{2 R h_r}$\n$40 = 16 + \\sqrt{2 \\times 6.4 \\times 10^3 \\times h_r \\times 10^{-3}}$\n$h_r = 45$ m.",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "p28_item6",
+    "text": "The frequency suitable for beyond-the-horizon communication using sky waves is",
+    "options": [
+      "$10^{12}$ Hz",
+      "$10^9$ Hz",
+      "$10^7$ Hz",
+      "$10^4$ Hz"
+    ],
+    "correctIndex": 2,
+    "explanation": "The frequency suitable for beyond-the-horizon communication using sky wave is 10 MHz ($10^7$ Hz).",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "p28_item7",
+    "text": "A TV tower has a height 160 m. Its coverage range is nearly (Earth's radius, $R_e = 6400$ km)",
+    "options": [
+      "45255 m",
+      "55265 m",
+      "452.55 km",
+      "552.65 m"
+    ],
+    "correctIndex": 2,
+    "explanation": "Coverage range of TV tower\n$d = \\sqrt{2 R h} = \\sqrt{2 \\times 6.4 \\times 10^6 \\times 160} = 45255$ m = 45.255 km.",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "p28_item8",
+    "text": "Co-axial cable, a widely used wire medium for transmission of signals offers a bandwidth of approximately",
+    "options": [
+      "600 kHz",
+      "750 MHz",
+      "850 GHz",
+      "500 Hz"
+    ],
+    "correctIndex": 1,
+    "explanation": "Co-axial cable primarily used for transmission of radio, television signals, which are in range of 3 MHz to 3 GHz. So, the bandwidth $\\Delta f \\approx 3000$ MHz.",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "p28_item9",
+    "text": "If $E_c$ and $E_m$ are peak values of carrier and modulating signals, respectively then for 100% modulation",
+    "options": [
+      "$E_c = \\frac{E_m}{2}$",
+      "$\\frac{E_c}{2} = E_m$",
+      "$E_c = E_m$",
+      "$E_c = 2 E_m$"
+    ],
+    "correctIndex": 2,
+    "explanation": "Modulation index $\\mu = \\frac{E_m}{E_c}$. For 100% modulation, $\\mu = 1 \\Rightarrow E_m = E_c$.",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "p28_item10",
+    "text": "If a message signal of frequency 10 kHz and peak voltage 12 V is used to modulate a carrier wave of frequency 1 MHz, the modulation index is 0.6. To make the modulation index 0.75, the carrier peak voltage should be",
+    "options": [
+      "decreased by 25%",
+      "increased by 25%",
+      "decreased by 20%",
+      "increased by 20%"
+    ],
+    "correctIndex": 2,
+    "explanation": "$m_1 = \\frac{12}{E_{c1}} = 0.6 \\Rightarrow E_{c1} = 20$ V.\n$m_2 = 0.75 \\Rightarrow E_{c2} = \\frac{12}{0.75} = 16$ V.\nDecreased by 4 V, i.e. 20%.",
+    "name": "Questions Item 10"
+  }
+]

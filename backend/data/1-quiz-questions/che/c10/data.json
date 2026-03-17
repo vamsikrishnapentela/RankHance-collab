@@ -1,0 +1,122 @@
+[
+  {
+    "id": "c10_item1",
+    "text": "The standard electrode potential of hydrogen electrode (SHE) is:",
+    "options": ["\\( +1.0\\text{ V} \\)", "\\( -1.0\\text{ V} \\)", "\\( 0.0\\text{ V} \\)", "\\( +0.5\\text{ V} \\)"],
+    "correctIndex": 2,
+    "explanation": "The Standard Hydrogen Electrode (SHE) is the reference electrode with E° = 0.00 V by definition.",
+    "name": "SHE Potential"
+  },
+  {
+    "id": "c10_item2",
+    "text": "The EMF of a cell is given by:",
+    "options": ["\\( E_{cell} = E_{cathode} - E_{anode} \\)", "\\( E_{cell} = E_{anode} - E_{cathode} \\)", "\\( E_{cell} = E_{cathode} + E_{anode} \\)", "\\( E_{cell} = E_{cathode} \\times E_{anode} \\)"],
+    "correctIndex": 0,
+    "explanation": "\\( E_{cell} = E_{cathode} - E_{anode} \\) (reduction potentials). For spontaneous cell: \\(E_{cell} > 0\\).",
+    "name": "EMF of Cell"
+  },
+  {
+    "id": "c10_item3",
+    "text": "The Nernst equation for electrode potential is:",
+    "options": ["\\( E = E^\\circ + \\frac{RT}{nF}\\ln Q \\)", "\\( E = E^\\circ - \\frac{RT}{nF}\\ln Q \\)", "\\( E = E^\\circ + nF\\ln Q \\)", "\\( E = E^\\circ \\times \\frac{RT}{nF} \\)"],
+    "correctIndex": 1,
+    "explanation": "Nernst equation: \\( E = E^\\circ - \\frac{RT}{nF}\\ln Q = E^\\circ - \\frac{0.0592}{n}\\log Q \\) at 25°C.",
+    "name": "Nernst Equation"
+  },
+  {
+    "id": "c10_item4",
+    "text": "Faraday's first law of electrolysis states:",
+    "options": ["Mass deposited is independent of current", "Mass deposited ∝ charge passed \\( (m = ZQ = ZIt) \\)", "Mass deposited ∝ temperature", "Mass deposited ∝ 1/current"],
+    "correctIndex": 1,
+    "explanation": "Faraday's First Law: \\( m = Z \\cdot Q = Z \\cdot I \\cdot t \\), where \\(Z\\) = electrochemical equivalent.",
+    "name": "Faraday's First Law"
+  },
+  {
+    "id": "c10_item5",
+    "text": "One Faraday equals:",
+    "options": ["\\( 96500 \\text{ C/mol} \\)", "\\( 9650 \\text{ C/mol} \\)", "\\( 6.022 \\times 10^{23} \\text{ C} \\)", "\\( 1 \\text{ A} \\)"],
+    "correctIndex": 0,
+    "explanation": "1 Faraday = 96500 C/mol = charge of 1 mole of electrons = \\( N_A \\times e \\).",
+    "name": "Faraday Constant"
+  },
+  {
+    "id": "c10_item6",
+    "text": "The relationship between \\( \\Delta G^\\circ \\) and \\( E^\\circ_{cell} \\) is:",
+    "options": ["\\( \\Delta G^\\circ = nFE^\\circ \\)", "\\( \\Delta G^\\circ = -nFE^\\circ \\)", "\\( \\Delta G^\\circ = nRT\\ln E^\\circ \\)", "\\( \\Delta G^\\circ = E^\\circ/nF \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\Delta G^\\circ = -nFE^\\circ_{cell} \\). At equilibrium: \\( \\Delta G = 0 \\), \\( E = 0 \\). Also \\( \\Delta G^\\circ = -RT\\ln K \\).",
+    "name": "ΔG° and E°cell"
+  },
+  {
+    "id": "c10_item7",
+    "text": "Kohlrausch's law of independent migration of ions states:",
+    "options": ["Molar conductivity increases with concentration", "Limiting molar conductivity = sum of ionic conductivities of cation and anion", "Conductivity is independent of temperature", "Ions migrate only at infinite dilution"],
+    "correctIndex": 1,
+    "explanation": "Kohlrausch's Law: \\( \\Lambda^\\infty_m = \\nu_+ \\lambda^\\infty_+ + \\nu_- \\lambda^\\infty_- \\). Each ion contributes independently.",
+    "name": "Kohlrausch's Law"
+  },
+  {
+    "id": "c10_item8",
+    "text": "The molar conductivity \\( \\Lambda_m \\) is related to conductivity \\( \\kappa \\) and concentration \\(C\\) by:",
+    "options": ["\\( \\Lambda_m = \\kappa \\times C \\)", "\\( \\Lambda_m = \\frac{\\kappa}{C} \\times 1000 \\)", "\\( \\Lambda_m = \\kappa + C \\)", "\\( \\Lambda_m = C / \\kappa \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\Lambda_m = \\frac{\\kappa \\times 1000}{C} \\) (when \\(C\\) in mol/L and \\(\\kappa\\) in S/cm). Units: S·cm²/mol.",
+    "name": "Molar Conductivity Formula"
+  },
+  {
+    "id": "c10_item9",
+    "text": "Debye-Hückel-Onsager equation for strong electrolytes is:",
+    "options": ["\\( \\Lambda_m = \\Lambda^\\infty_m + b\\sqrt{C} \\)", "\\( \\Lambda_m = \\Lambda^\\infty_m - b\\sqrt{C} \\)", "\\( \\Lambda_m = \\Lambda^\\infty_m \\times C \\)", "\\( \\Lambda_m = b\\sqrt{C} \\)"],
+    "correctIndex": 1,
+    "explanation": "DHO equation: \\( \\Lambda_m = \\Lambda^\\infty_m - b\\sqrt{C} \\). Plot of \\(\\Lambda_m\\) vs \\(\\sqrt{C}\\) is a straight line with negative slope.",
+    "name": "Debye-Hückel-Onsager Equation"
+  },
+  {
+    "id": "c10_item10",
+    "text": "In a galvanic cell, oxidation occurs at:",
+    "options": ["Cathode", "Both electrodes", "Anode", "The salt bridge"],
+    "correctIndex": 2,
+    "explanation": "In galvanic cell: Oxidation at anode (negative electrode), Reduction at cathode (positive electrode). Mnemonic: AnOx RedCat.",
+    "name": "Oxidation at Anode"
+  },
+  {
+    "id": "c10_item11",
+    "text": "The equilibrium constant \\(K\\) is related to \\(E^\\circ\\) by:",
+    "options": ["\\( \\log K = \\frac{nE^\\circ}{0.0592} \\)", "\\( \\log K = \\frac{0.0592}{nE^\\circ} \\)", "\\( \\log K = nE^\\circ \\times F \\)", "\\( K = e^{nE^\\circ} \\)"],
+    "correctIndex": 0,
+    "explanation": "At 25°C: \\( \\log K = \\frac{nE^\\circ}{0.0592} \\) (from \\( \\Delta G^\\circ = -nFE^\\circ = -RT\\ln K \\)).",
+    "name": "K from E°"
+  },
+  {
+    "id": "c10_item12",
+    "text": "The quantity of electricity required to deposit 1 mole of Cu (2+ ion) is:",
+    "options": ["\\( 96500 \\text{ C} \\)", "\\( 193000 \\text{ C} \\)", "\\( 48250 \\text{ C} \\)", "\\( 289500 \\text{ C} \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\text{Cu}^{2+} + 2e^- \\to \\text{Cu} \\). 2 moles of electrons needed = 2F = \\( 2 \\times 96500 = 193000 \\) C.",
+    "name": "Charge to Deposit Cu"
+  },
+  {
+    "id": "c10_item13",
+    "text": "Specific conductance (conductivity) of a solution has SI units:",
+    "options": ["\\( \\Omega^{-1} \\text{ cm}^{-1} \\)", "\\( \\text{S m}^{-1} \\)", "\\( \\Omega \\text{ m} \\)", "Both A and B"],
+    "correctIndex": 3,
+    "explanation": "SI unit of conductivity: S/m (or S m⁻¹). CGS unit: S/cm (or Ω⁻¹cm⁻¹). Both are used.",
+    "name": "Units of Conductivity"
+  },
+  {
+    "id": "c10_item14",
+    "text": "Degree of dissociation \\(\\alpha\\) of a weak electrolyte by conductivity is:",
+    "options": ["\\( \\alpha = \\frac{\\Lambda^\\infty_m}{\\Lambda_m} \\)", "\\( \\alpha = \\frac{\\Lambda_m}{\\Lambda^\\infty_m} \\)", "\\( \\alpha = \\Lambda_m \\times C \\)", "\\( \\alpha = \\Lambda^\\infty_m - \\Lambda_m \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\alpha = \\frac{\\Lambda_m}{\\Lambda^\\infty_m} \\). As dilution increases, \\(\\alpha \\to 1\\) (complete dissociation at infinite dilution).",
+    "name": "Degree of Dissociation from Conductivity"
+  },
+  {
+    "id": "c10_item15",
+    "text": "The standard cell potential \\( E^\\circ \\) for \\( \\text{Zn}|\\text{Zn}^{2+}||\\text{Cu}^{2+}|\\text{Cu} \\), given \\( E^\\circ_{\\text{Zn}^{2+}/\\text{Zn}} = -0.76\\text{ V} \\) and \\( E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}} = +0.34\\text{ V} \\), is:",
+    "options": ["\\( -0.42\\text{ V} \\)", "\\( +0.42\\text{ V} \\)", "\\( +1.10\\text{ V} \\)", "\\( -1.10\\text{ V} \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( E^\\circ_{cell} = E^\\circ_{cathode} - E^\\circ_{anode} = 0.34 - (-0.76) = 1.10 \\text{ V} \\). (Daniel cell)",
+    "name": "Daniel Cell EMF"
+  }
+]

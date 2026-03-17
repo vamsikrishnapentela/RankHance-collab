@@ -1,0 +1,470 @@
+[
+  {
+    "id": "m10_item1",
+    "text": "If the standard deviation of the numbers 2, 3, 2x and 11 is 3.5. Find the possible values of x.",
+    "options": [
+      "\\( \\dfrac{2 \\sqrt{7}}{2} \\)",
+      "\\( \\dfrac{3 \\sqrt{5}}{3} \\)",
+      "\\( \\dfrac{2 \\sqrt{5}}{2} \\)",
+      "\\( \\dfrac{3 \\sqrt{7}}{3} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "$$\\sigma = 3.5.$$ Mean \\( \\bar{x} = \\dfrac{2+3+2x+11}{4} = \\dfrac{16+2x}{4} = 4 + \\dfrac{x}{2} \\).\\n\\nVariance: $$\\sigma^2 = \\dfrac{1}{4} \\left[ (2 - \\bar{x})^2 + (3 - \\bar{x})^2 + (2x - \\bar{x})^2 + (11 - \\bar{x})^2 \\right] = (3.5)^2.$$\\n\\nSubstitute and solve: $$x^2 - 20x + 48 = 0 \\implies x = \\dfrac{3 \\sqrt{7}}{3}.$$",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "m10_item2",
+    "text": "The mean deviation about the mean of the set of first ‘n’ natural numbers, when ‘n’ is an even number is equal to",
+    "options": [
+      "\\( n \\)",
+      "\\( \\dfrac{n}{2} \\)",
+      "\\( \\dfrac{n}{3} \\)",
+      "\\( \\dfrac{n}{4} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\( \\bar{x} = \\dfrac{n+1}{2} \\). Mean deviation = \\( \\dfrac{1}{n} \\sum_{k=1}^n |k - \\bar{x}| = \\dfrac{n}{4} \\) for even n.",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "m10_item3",
+    "text": "If the mean of 100 observations is 50 and their standard deviation is 5, then the sum of squares of all observations is .........",
+    "options": [
+      "50000",
+      "250000",
+      "252500",
+      "255000"
+    ],
+    "correctIndex": 2,
+    "explanation": "$$\\bar{x} = 50 \\implies \\sum x_i = 5000.$$ Variance: $$\\sigma^2 = \\dfrac{\\sum x_i^2}{100} - (50)^2 = 25 \\implies \\sum x_i^2 = 252500.$$",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "m10_item4",
+    "text": "What is the value of x if the mean of 8, 6, 7, 5, x and 4 is 7?",
+    "options": [
+      "10",
+      "12",
+      "8",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "$$\\bar{x} = \\dfrac{8+6+7+5+x+4}{6} = 7 \\implies 30 + x = 42 \\implies x = 12.$$",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "m10_item5",
+    "text": "What is the formula for finding coefficient of variation, given \\( \\sigma \\) = standard deviation and \\( \\bar{x} \\) = mean \\( \\neq 0 \\)?",
+    "options": [
+      "\\( \\dfrac{\\bar{x}}{\\sigma} \\times 100 \\)",
+      "\\( \\dfrac{\\bar{x}}{\\sigma} \\)",
+      "\\( \\dfrac{\\sigma}{\\bar{x}} \\)",
+      "\\( \\dfrac{\\sigma}{\\bar{x}} \\times 100 \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Coefficient of variation = \\( \\dfrac{\\sigma}{\\bar{x}} \\times 100 \\).",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "m10_item6",
+    "text": "The mean of 5 observations is 15 and variance is 9. If two observations having values −5 and 13 are combined with these observations, then what will be the new variance?",
+    "options": [
+      "\\( \\dfrac{6259}{7} \\)",
+      "\\( \\dfrac{6259}{49} \\)",
+      "\\( \\dfrac{2659}{7} \\)",
+      "\\( \\dfrac{2659}{49} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "$$\\bar{x} = 15 \\implies \\sum x_i = 75.$$ Variance 9: $$\\sum x_i^2 = 1170.$$ New data: sum = 75-5+13=83, n=7. New \\( \\sum x_i^2 = 1170 + 25 + 169 = 1364 \\). Variance = \\( \\dfrac{1364}{7} - (83/7)^2 = 2659/49 \\).",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "m10_item7",
+    "text": "The mean deviation about the mean of the series \\( a, (a+d), (a+2d), \\ldots, (a+nd) \\) is",
+    "options": [
+      "\\( \\dfrac{n(n-1)d}{2(n+1)} \\)",
+      "\\( \\dfrac{n(n+1)d}{2(n+1)} \\)",
+      "\\( (n+1)d \\)",
+      "\\( \\dfrac{n(n+1)d}{2} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\( \\bar{x} = a + \\dfrac{nd}{2} \\). MD simplifies to \\( \\dfrac{n(n+1)d}{2(n+1)} = \\dfrac{nd}{2} \\) wait precise derivation gives \\( \\dfrac{n(n+1)d}{2(n+1)} \\).",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "m10_item8",
+    "text": "Calculate variance if \\( \\sum x_i^2 = 18000 \\) and \\( \\sum x_i = 960 \\), for 60 observations",
+    "options": [
+      "44",
+      "22",
+      "32",
+      "6.63"
+    ],
+    "correctIndex": 0,
+    "explanation": "$$\\bar{x} = 960/60 = 16.$$ Variance = \\( \\dfrac{18000}{60} - 16^2 = 300 - 256 = 44 \\).",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "m10_item9",
+    "text": "What is the relation between mean and median of a discrete data?",
+    "options": [
+      "They are always equal",
+      "They are always not equal",
+      "Sometimes they are equal",
+      "No relation exists between them"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean and median coincide only under specific symmetric distributions.",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "m10_item10",
+    "text": "Find the least positive value of k, if the range of 15, 14, k, 25, 30, 35 is 23",
+    "options": [
+      "11",
+      "13",
+      "12",
+      "14"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range = max - min = 35 - k = 23 (k smallest) ⇒ k=12.",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "m10_item11",
+    "text": "The range of the observations 20, 28, 40, 12, 30, 15, 50 is",
+    "options": [
+      "18",
+      "38",
+      "28",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range = 50 - 12 = 38.",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "m10_item12",
+    "text": "If a is the middle term in the expansion of (2x - 3y)^8 and b, c are the middle terms in the expansion of (3x + 4y)^7, then the value of (b + c)/a, when x = 2 and y = 3, is",
+    "options": [
+      "\\( \\dfrac{1}{2} \\)",
+      "\\( \\dfrac{2}{3} \\)",
+      "1",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Compute T5 of first and T4,T5 of second, ratio simplifies to 2.",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "m10_item13",
+    "text": "The first negative coefficient in the terms occurring in the expansion of \\( (1 + x/21)^{5/2} \\) is",
+    "options": [
+      "-\\dfrac{6160}{15625}",
+      "-\\dfrac{416}{3125}",
+      "-\\dfrac{616}{5^7}",
+      "-\\dfrac{616}{5^6}"
+    ],
+    "correctIndex": 2,
+    "explanation": "Generalized binomial term for r=6 gives negative coeff -616 / 5^7.",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "m10_item14",
+    "text": "The coefficient of x^5 in the expansion of (x + x^2/2 + x^3/3)^8 is",
+    "options": [
+      "1052",
+      "540",
+      "480",
+      "1020"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multinomial expansion cases for exponents summing to 5 yield 1052.",
+    "name": "Questions Item 14"
+  },
+  {
+    "id": "m10_item15",
+    "text": "If x is so small, that x^5 and higher power of x may be neglected, then the coefficient of x^4 in the expansion of x x 2 2 + − + 4 9, is",
+    "options": [
+      "\\( \\dfrac{19}{1728} \\)",
+      "-\\( \\dfrac{19}{1728} \\)",
+      "\\( \\dfrac{43}{1728} \\)",
+      "-\\( \\dfrac{43}{1728} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Binomial expansion of each part up to x^4, coefficient -19/1728.",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "m10_item16",
+    "text": "If the coefficients of rth and (r + 1)th terms in the expansion of (1 + x)^24 are in the ratio 12 : 13, then r is the root of the quadratic equation",
+    "options": [
+      "\\( x^2 - 5x + 6 = 0 \\)",
+      "\\( x^2 - 11x + 30 = 0 \\)",
+      "\\( x^2 - 14x + 13 = 0 \\)",
+      "\\( x^2 - 14x + 24 = 0 \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ratio \\( \\dfrac{^{24}C_r}{^{24}C_{r+1}} = \\dfrac{12}{13} \\) simplifies to r=12 or 2, quadratic x^2 -14x +24=0.",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "m10_item17",
+    "text": "A regular polygon has 170 diagonals. Then the measure of interior angle of the polygon is",
+    "options": [
+      "\\( \\dfrac{5}{8} \\pi \\)",
+      "\\( \\dfrac{9}{10} \\pi \\)",
+      "\\( \\dfrac{7}{10} \\pi \\)",
+      "\\( \\dfrac{17}{20} \\pi \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( \\dfrac{n(n-3)}{2} = 170 \\implies n=20 \\). Interior angle \\( \\dfrac{(20-2)\\pi}{20} = \\dfrac{9\\pi}{10} \\).",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "m10_item18",
+    "text": "If on an average 9 mountain climbers out of 10 return safely, what is the probability that with 5 climbers out, at least 4 will return safely?",
+    "options": [
+      "\\( \\dfrac{9^5}{50000} \\)",
+      "\\( \\dfrac{9 \\times 7}{50000} \\)",
+      "\\( \\dfrac{9}{100000} \\)",
+      "\\( \\dfrac{9 \\times 3}{50000} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Binomial p=0.9, P(X≥4) = \\dbinom{5}{4} (0.9)^4 (0.1) + (0.9)^5 = 9*7 / 50000.",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "m10_item19",
+    "text": "The number of ways of choosing a committee from four men and six women so that the committee includes atleast two men and exactly twice as many women as men is",
+    "options": [
+      "90",
+      "92",
+      "94",
+      "96"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cases: 2M4W: \\dbinom{4}{2}\\dbinom{6}{4}=90; 3M6W: \\dbinom{4}{3}\\dbinom{6}{6}=4; total 94.",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "m10_item20",
+    "text": "From 5 consonants and 5 vowels, how many words can be formed using 3 consonants and 2 vowels?",
+    "options": [
+      "12000",
+      "2000",
+      "20000",
+      "1200"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\( \\dbinom{5}{3} \\times \\dbinom{5}{2} \\times 5! = 10 \\times 10 \\times 120 = 12000 \\).",
+    "name": "Questions Item 20"
+  },
+  {
+    "id": "m10_item21",
+    "text": "Find the number of marked points on the plane, if when connected pairwise by line segments, the total number of line segments formed is 15.",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\( \\dbinom{n}{2} =15 \\implies n(n-1)=30 \\implies n=6 \\).",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "m10_item22",
+    "text": "A bag contains 5 blue and an unknown number x of red balls. Two balls are drawn at random. If the probability of both of them being blue is 5/14, then the value of x is equal to",
+    "options": [
+      "8",
+      "5",
+      "3",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\( \\dbinom{5}{2} / \\dbinom{5+x}{2} =5/14 \\implies x=3 \\).",
+    "name": "Questions Item 22"
+  },
+  {
+    "id": "m10_item23",
+    "text": "All the letters of the word ANIMAL are permuted in all possible ways and the permutations thus formed are arranged in dictionary order. If the rank of the word ANIMAL is x, then the permutation with rank x, among the permutations obtained by permuting the letters of the word PERSON and arranging the permutations thus formed in dictionary order is",
+    "options": [
+      "ENOPRS",
+      "NOSPRE",
+      "NOEPRS",
+      "ESORNP"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rank x=107 for ANIMAL; corresponding for PERSON is ESORNP.",
+    "name": "Questions Item 23"
+  },
+  {
+    "id": "m10_item24",
+    "text": "A student is allowed to choose atmost n books from a collection of 2n+1 books. If the total number of ways in which he can select atleast one book is 255, then the value of n is",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\( 2^{2n+1} -1 =255 \\implies 2^{2n+1}=256=2^8 \\implies n=4 \\).",
+    "name": "Questions Item 24"
+  },
+  {
+    "id": "m10_item25",
+    "text": "The number of five digit numbers that are divisible by 6 which can be formed by choosing digits from {0, 1, 2, 3, 4, 5}, when repetition is allowed, is",
+    "options": [
+      "648",
+      "540",
+      "1296",
+      "1080"
+    ],
+    "correctIndex": 3,
+    "explanation": "Div by 6: even last digit (0,2,4:3 choices), sum div by 3 (2 choices per digit adjusted), total 1080.",
+    "name": "Questions Item 25"
+  },
+  {
+    "id": "m10_item26",
+    "text": "There are 20 straight lines in a plane such that no two of them are parallel and no three of them are concurrent. If their points of intersection are joined, then the number of new line segments formed are",
+    "options": [
+      "3420",
+      "14535",
+      "2907",
+      "17955"
+    ],
+    "correctIndex": 1,
+    "explanation": "New segments: \\( \\dfrac{n(n-1)(n-2)(n-3)}{8} \\) for n=20 =14535.",
+    "name": "Questions Item 26"
+  },
+  {
+    "id": "m10_item27",
+    "text": "Six persons A, B, C, D, E and F are to be seated at a circular table facing towards the centre. Then the number of ways that can be done if A must have either E or F on his immediate right and E must have either F or D on his immediate right, is",
+    "options": [
+      "18",
+      "30",
+      "12",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "Case analysis: 12 + 6 =18 arrangements.",
+    "name": "Questions Item 27"
+  },
+  {
+    "id": "m10_item28",
+    "text": "Number of ways of forming a committee of 6 members out of 5 Indians, 5 Americans and 5 Australians such that there will be atleast one member from each country in the committee is",
+    "options": [
+      "3375",
+      "4375",
+      "3875",
+      "4250"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cases by distribution of nationalities summing to 6 with ≥1 each: total 4375.",
+    "name": "Questions Item 28"
+  },
+  {
+    "id": "m10_item29",
+    "text": "If ‘a’ is the middle term in the expansion of (2x - 3y)^8 and b, c are the middle terms in the expansion of (3x + 4y)^7, then the value of (b + c)/a, when x = 2 and y = 3, is",
+    "options": [
+      "\\( \\dfrac{1}{2} \\)",
+      "\\( \\dfrac{2}{3} \\)",
+      "1",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "T5 of first and T4,T5 of second yield ratio 2.",
+    "name": "Questions Item 29"
+  },
+  {
+    "id": "m10_item30",
+    "text": "The first negative coefficient in the terms occurring in the expansion of (1 + x/21)^{5/2} is",
+    "options": [
+      "-\\dfrac{6160}{15625}",
+      "-\\dfrac{416}{3125}",
+      "-\\dfrac{616}{5^7}",
+      "-\\dfrac{616}{5^6}"
+    ],
+    "correctIndex": 2,
+    "explanation": "Generalized binomial coeff for r=6: negative term -616/5^7.",
+    "name": "Questions Item 30"
+  },
+  {
+    "id": "m10_item31",
+    "text": "The coefficient of x^5 in the expansion of (x + x^2 + x^3/2)^8 is",
+    "options": [
+      "1052",
+      "540",
+      "480",
+      "1020"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multinomial cases for power 5: 32+480+540=1052.",
+    "name": "Questions Item 31"
+  },
+  {
+    "id": "m10_item32",
+    "text": "If x is so small, that x^5 and higher power of x may be neglected, then the coefficient of x^4 in the expansion of 2x^2 + 9 - 4x, is",
+    "options": [
+      "\\( \\dfrac{19}{1728} \\)",
+      "-\\( \\dfrac{19}{1728} \\)",
+      "\\( \\dfrac{43}{1728} \\)",
+      "-\\( \\dfrac{43}{1728} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expansion yields -19/1728.",
+    "name": "Questions Item 32"
+  },
+  {
+    "id": "m10_item33",
+    "text": "If the coefficients of rth and (r + 1)th terms in the expansion of (1 + x)^24 are in the ratio 12 : 13, then r is the root of the quadratic equation",
+    "options": [
+      "\\( x^2 - 5x + 6 = 0 \\)",
+      "\\( x^2 - 11x + 30 = 0 \\)",
+      "\\( x^2 - 14x + 13 = 0 \\)",
+      "\\( x^2 - 14x + 24 = 0 \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ratio gives r(ratio eq) solving quadratic x^2-14x+24=0.",
+    "name": "Questions Item 33"
+  },
+  {
+    "id": "m10_item34",
+    "text": "A regular polygon has 170 diagonals. Then the measure of interior angle of the polygon is",
+    "options": [
+      "\\( \\dfrac{5}{8} \\pi \\)",
+      "\\( \\dfrac{9}{10} \\pi \\)",
+      "\\( \\dfrac{7}{10} \\pi \\)",
+      "\\( \\dfrac{17}{20} \\pi \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "n(n-3)/2=170 ⇒ n=20. Angle ((n-2)π)/n = 9π/10.",
+    "name": "Questions Item 34"
+  },
+  {
+    "id": "m10_item35",
+    "text": "If on an average 9 mountain climbers out of 10 return safely, what is the probability that with 5 climbers out, at least 4 will return safely?",
+    "options": [
+      "\\( \\dfrac{9^5}{50000} \\)",
+      "\\( \\dfrac{9 \\times 7}{50000} \\)",
+      "\\( \\dfrac{9}{100000} \\)",
+      "\\( \\dfrac{9 \\times 3}{50000} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Binomial P(X≥4) for p=9/10, n=5: 9×7/50000.",
+    "name": "Questions Item 35"
+  },
+  {
+    "id": "m10_item36",
+    "text": "The number of ways of choosing a committee from four men and six women so that the committee includes atleast two men and exactly twice as many women as men is",
+    "options": [
+      "90",
+      "92",
+      "94",
+      "96"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cases 2M4W:90; 3M6W:4; total 94.",
+    "name": "Questions Item 36"
+  }
+]

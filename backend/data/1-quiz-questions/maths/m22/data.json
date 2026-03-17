@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m22_item1",
+    "text": "The distance between points \\( (x_1,y_1,z_1) \\) and \\( (x_2,y_2,z_2) \\) in 3D is:",
+    "options": ["\\( |x_2-x_1|+|y_2-y_1|+|z_2-z_1| \\)", "\\( \\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2} \\)", "\\( (x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2 \\)", "\\( \\sqrt{x_2^2+y_2^2+z_2^2} \\)"],
+    "correctIndex": 1,
+    "explanation": "3D Distance Formula: \\( d = \\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2} \\)",
+    "name": "3D Distance Formula"
+  },
+  {
+    "id": "m22_item2",
+    "text": "The direction cosines \\( l, m, n \\) of a line satisfy:",
+    "options": ["\\( l+m+n=1 \\)", "\\( l+m+n=0 \\)", "\\( l^2+m^2+n^2=1 \\)", "\\( lmn=1 \\)"],
+    "correctIndex": 2,
+    "explanation": "Direction cosines satisfy \\( l^2+m^2+n^2=1 \\) always.",
+    "name": "Direction Cosines Identity"
+  },
+  {
+    "id": "m22_item3",
+    "text": "The equation of a plane in normal form is:",
+    "options": ["\\( ax+by+cz=0 \\)", "\\( lx+my+nz=p \\)", "\\( \\frac{x}{a}+\\frac{y}{b}+\\frac{z}{c}=0 \\)", "\\( lx+my+nz=0 \\)"],
+    "correctIndex": 1,
+    "explanation": "Normal form of plane: \\( lx+my+nz=p \\), where \\(l,m,n\\) are direction cosines of normal and \\(p>0\\).",
+    "name": "Plane Normal Form"
+  },
+  {
+    "id": "m22_item4",
+    "text": "The angle \\(\\theta\\) between lines with direction cosines \\( (l_1,m_1,n_1) \\) and \\( (l_2,m_2,n_2) \\) is:",
+    "options": ["\\( \\sin\\theta = l_1l_2+m_1m_2+n_1n_2 \\)", "\\( \\tan\\theta = l_1l_2+m_1m_2+n_1n_2 \\)", "\\( \\cos\\theta = l_1l_2+m_1m_2+n_1n_2 \\)", "\\( \\cos\\theta = l_1m_2+m_1n_2+n_1l_2 \\)"],
+    "correctIndex": 2,
+    "explanation": "\\( \\cos\\theta = l_1l_2+m_1m_2+n_1n_2 \\). Lines are perpendicular when this equals 0.",
+    "name": "Angle Between Lines in 3D"
+  },
+  {
+    "id": "m22_item5",
+    "text": "The intercept form of a plane is:",
+    "options": ["\\( ax+by+cz=1 \\)", "\\( lx+my+nz=p \\)", "\\( \\frac{x}{a}+\\frac{y}{b}+\\frac{z}{c}=1 \\)", "\\( ax+by+cz=0 \\)"],
+    "correctIndex": 2,
+    "explanation": "Intercept form: \\( \\frac{x}{a}+\\frac{y}{b}+\\frac{z}{c}=1 \\), where \\(a,b,c\\) are x,y,z intercepts.",
+    "name": "Plane Intercept Form"
+  },
+  {
+    "id": "m22_item6",
+    "text": "The symmetric form of a line through \\((x_1,y_1,z_1)\\) with direction ratios \\((a,b,c)\\) is:",
+    "options": ["\\( \\frac{x+x_1}{a}=\\frac{y+y_1}{b}=\\frac{z+z_1}{c} \\)", "\\( \\frac{x-x_1}{a}=\\frac{y-y_1}{b}=\\frac{z-z_1}{c} \\)", "\\( a(x-x_1)=b(y-y_1)=c(z-z_1) \\)", "\\( \\frac{ax}{x_1}=\\frac{by}{y_1}=\\frac{cz}{z_1} \\)"],
+    "correctIndex": 1,
+    "explanation": "Symmetric form: \\( \\frac{x-x_1}{a}=\\frac{y-y_1}{b}=\\frac{z-z_1}{c} = \\lambda \\)",
+    "name": "Symmetric Form of Line"
+  },
+  {
+    "id": "m22_item7",
+    "text": "The distance from point \\( (x_1,y_1,z_1) \\) to plane \\( ax+by+cz+d=0 \\) is:",
+    "options": ["\\( \\frac{|ax_1+by_1+cz_1+d|}{a+b+c} \\)", "\\( \\frac{ax_1+by_1+cz_1+d}{\\sqrt{a^2+b^2+c^2}} \\)", "\\( \\frac{|ax_1+by_1+cz_1+d|}{\\sqrt{a^2+b^2+c^2}} \\)", "\\( \\sqrt{ax_1+by_1+cz_1} \\)"],
+    "correctIndex": 2,
+    "explanation": "Distance from point to plane: \\( d = \\frac{|ax_1+by_1+cz_1+d|}{\\sqrt{a^2+b^2+c^2}} \\)",
+    "name": "Point to Plane Distance"
+  },
+  {
+    "id": "m22_item8",
+    "text": "Two planes are perpendicular if their normals \\( (a_1,b_1,c_1) \\) and \\( (a_2,b_2,c_2) \\) satisfy:",
+    "options": ["\\( \\frac{a_1}{a_2}=\\frac{b_1}{b_2}=\\frac{c_1}{c_2} \\)", "\\( a_1a_2+b_1b_2+c_1c_2=0 \\)", "\\( a_1a_2+b_1b_2+c_1c_2=1 \\)", "\\( a_1+a_2=b_1+b_2=c_1+c_2 \\)"],
+    "correctIndex": 1,
+    "explanation": "Planes are perpendicular when their normals are perpendicular: \\( a_1a_2+b_1b_2+c_1c_2=0 \\)",
+    "name": "Perpendicular Planes"
+  },
+  {
+    "id": "m22_item9",
+    "text": "The centroid of tetrahedron with vertices \\( A,B,C,D \\) is:",
+    "options": ["Average of any 3 vertices", "\\( \\left(\\frac{x_1+x_2+x_3+x_4}{4}, \\frac{y_1+y_2+y_3+y_4}{4}, \\frac{z_1+z_2+z_3+z_4}{4}\\right) \\)", "Midpoint of \\(AB\\)", "Intersection of altitudes"],
+    "correctIndex": 1,
+    "explanation": "Centroid of tetrahedron = average of all 4 vertices' coordinates.",
+    "name": "Centroid of Tetrahedron"
+  },
+  {
+    "id": "m22_item10",
+    "text": "Direction cosines of the x-axis are:",
+    "options": ["\\( (0,1,0) \\)", "\\( (1,0,0) \\)", "\\( (0,0,1) \\)", "\\( (1,1,0) \\)"],
+    "correctIndex": 1,
+    "explanation": "The x-axis has direction ratios \\((1,0,0)\\), which are also direction cosines since magnitude = 1.",
+    "name": "Direction Cosines of Axes"
+  },
+  {
+    "id": "m22_item11",
+    "text": "The angle between two planes is equal to the angle between their:",
+    "options": ["Respective x-intercepts", "Normal vectors", "Centroids", "Equations"],
+    "correctIndex": 1,
+    "explanation": "Dihedral angle between planes = angle between their normal vectors.",
+    "name": "Angle Between Planes"
+  },
+  {
+    "id": "m22_item12",
+    "text": "The equation of plane through three points can be found using:",
+    "options": ["The quadratic formula", "The determinant condition equalling zero", "The distance formula", "The slope formula"],
+    "correctIndex": 1,
+    "explanation": "Plane through 3 points: \\( \\begin{vmatrix}x-x_1&y-y_1&z-z_1\\\\x_2-x_1&y_2-y_1&z_2-z_1\\\\x_3-x_1&y_3-y_1&z_3-z_1\\end{vmatrix}=0 \\)",
+    "name": "Plane Through 3 Points"
+  },
+  {
+    "id": "m22_item13",
+    "text": "The shortest distance between two skew lines \\( \\vec{r}=\\vec{a_1}+\\lambda\\vec{b_1} \\) and \\( \\vec{r}=\\vec{a_2}+\\mu\\vec{b_2} \\) is:",
+    "options": ["\\( \\frac{|(\\vec{a_2}-\\vec{a_1})\\cdot(\\vec{b_1}\\times\\vec{b_2})|}{|\\vec{b_1}\\times\\vec{b_2}|} \\)", "\\( \\frac{(\\vec{a_2}-\\vec{a_1})\\cdot\\vec{b_1}}{|\\vec{b_1}|} \\)", "\\( |\\vec{a_2}-\\vec{a_1}| \\)", "\\( \\frac{|\\vec{b_1}\\times\\vec{b_2}|}{|\\vec{a_1}-\\vec{a_2}|} \\)"],
+    "correctIndex": 0,
+    "explanation": "Shortest distance between skew lines: \\( SD = \\frac{|(\\vec{a_2}-\\vec{a_1})\\cdot(\\vec{b_1}\\times\\vec{b_2})|}{|\\vec{b_1}\\times\\vec{b_2}|} \\)",
+    "name": "Shortest Distance - Skew Lines"
+  },
+  {
+    "id": "m22_item14",
+    "text": "The coordinates of a point dividing segment \\(AB\\) (\\(A=(x_1,y_1,z_1)\\), \\(B=(x_2,y_2,z_2)\\)) in ratio \\(m:n\\) internally are:",
+    "options": ["\\( \\left(\\frac{mx_1+nx_2}{m+n}, \\frac{my_1+ny_2}{m+n}, \\frac{mz_1+nz_2}{m+n}\\right) \\)", "\\( \\left(\\frac{mx_2+nx_1}{m+n}, \\frac{my_2+ny_1}{m+n}, \\frac{mz_2+nz_1}{m+n}\\right) \\)", "\\( \\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2},\\frac{z_1+z_2}{2}\\right) \\)", "\\( \\left(\\frac{mx_2-nx_1}{m-n}, \\frac{my_2-ny_1}{m-n}, \\frac{mz_2-nz_1}{m-n}\\right) \\)"],
+    "correctIndex": 1,
+    "explanation": "Section formula in 3D (internal): \\( \\left(\\frac{mx_2+nx_1}{m+n}, \\frac{my_2+ny_1}{m+n}, \\frac{mz_2+nz_1}{m+n}\\right) \\)",
+    "name": "3D Section Formula"
+  },
+  {
+    "id": "m22_item15",
+    "text": "The sphere with center \\((a,b,c)\\) and radius \\(r\\) has equation:",
+    "options": ["\\( (x-a)^2+(y-b)^2=r^2 \\)", "\\( (x-a)^2+(y-b)^2+(z-c)^2=r^2 \\)", "\\( x^2+y^2+z^2=r^2 \\)", "\\( ax+by+cz=r \\)"],
+    "correctIndex": 1,
+    "explanation": "Sphere equation: \\( (x-a)^2+(y-b)^2+(z-c)^2=r^2 \\)",
+    "name": "Equation of Sphere"
+  }
+]

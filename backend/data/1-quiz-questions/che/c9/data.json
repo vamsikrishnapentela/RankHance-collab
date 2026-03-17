@@ -1,0 +1,122 @@
+[
+  {
+    "id": "c9_item1",
+    "text": "The rate of reaction is defined as:",
+    "options": ["Change in concentration with time", "Increase in concentration of products per unit time", "\\( -\\frac{d[\\text{reactant}]}{dt} = +\\frac{d[\\text{product}]}{dt} \\)", "Concentration divided by time"],
+    "correctIndex": 2,
+    "explanation": "Rate \\( = -\\frac{d[A]}{dt} = +\\frac{d[P]}{dt} \\). Negative sign for reactants (decreasing), positive for products.",
+    "name": "Rate of Reaction"
+  },
+  {
+    "id": "c9_item2",
+    "text": "For a first-order reaction, the integrated rate law is:",
+    "options": ["\\( [A] = [A]_0 - kt \\)", "\\( [A]^2 = [A]_0^2 - 2kt \\)", "\\( \\ln[A] = \\ln[A]_0 - kt \\)", "\\( \\frac{1}{[A]} = kt + \\frac{1}{[A]_0} \\)"],
+    "correctIndex": 2,
+    "explanation": "First-order: \\( \\ln[A] = \\ln[A]_0 - kt \\) or \\( [A] = [A]_0 e^{-kt} \\).",
+    "name": "First Order Integrated Rate Law"
+  },
+  {
+    "id": "c9_item3",
+    "text": "The half-life of a first-order reaction is:",
+    "options": ["\\( t_{1/2} = \\frac{[A]_0}{2k} \\)", "\\( t_{1/2} = \\frac{0.693}{k} \\)", "\\( t_{1/2} = \\frac{1}{k[A]_0} \\)", "\\( t_{1/2} = \\frac{2}{k} \\)"],
+    "correctIndex": 1,
+    "explanation": "First-order half-life: \\( t_{1/2} = \\frac{\\ln 2}{k} = \\frac{0.693}{k} \\). Independent of initial concentration.",
+    "name": "First Order Half-life"
+  },
+  {
+    "id": "c9_item4",
+    "text": "The Arrhenius equation relating rate constant to temperature is:",
+    "options": ["\\( k = Ae^{E_a/RT} \\)", "\\( k = Ae^{-E_a/RT} \\)", "\\( k = A + E_a/RT \\)", "\\( k = A/e^{E_a} \\)"],
+    "correctIndex": 1,
+    "explanation": "Arrhenius equation: \\( k = Ae^{-E_a/RT} \\), where \\(A\\) = frequency factor, \\(E_a\\) = activation energy.",
+    "name": "Arrhenius Equation"
+  },
+  {
+    "id": "c9_item5",
+    "text": "The activation energy \\(E_a\\) can be calculated from:",
+    "options": ["\\( \\ln\\frac{k_2}{k_1} = \\frac{E_a}{R}\\left(\\frac{1}{T_1}+\\frac{1}{T_2}\\right) \\)", "\\( \\ln\\frac{k_2}{k_1} = \\frac{E_a}{R}\\left(\\frac{1}{T_1}-\\frac{1}{T_2}\\right) \\)", "\\( \\ln\\frac{k_2}{k_1} = \\frac{E_a}{R}\\left(T_2-T_1\\right) \\)", "\\( k_2/k_1 = E_a T_2/T_1 \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\ln\\frac{k_2}{k_1} = \\frac{E_a}{R}\\left(\\frac{1}{T_1}-\\frac{1}{T_2}\\right) \\). This is the two-temperature form of Arrhenius equation.",
+    "name": "Activation Energy Calculation"
+  },
+  {
+    "id": "c9_item6",
+    "text": "For a zero-order reaction, the half-life is:",
+    "options": ["\\( t_{1/2} = \\frac{0.693}{k} \\)", "\\( t_{1/2} = \\frac{[A]_0}{k} \\)", "\\( t_{1/2} = \\frac{[A]_0}{2k} \\)", "\\( t_{1/2} = \\frac{2}{k[A]_0} \\)"],
+    "correctIndex": 2,
+    "explanation": "Zero-order: \\( [A] = [A]_0 - kt \\). At \\( t_{1/2} \\): \\( [A]_0/2 = [A]_0 - kt_{1/2} \\Rightarrow t_{1/2} = \\frac{[A]_0}{2k} \\).",
+    "name": "Zero Order Half-life"
+  },
+  {
+    "id": "c9_item7",
+    "text": "The order of reaction is determined by:",
+    "options": ["The stoichiometry of the balanced equation", "The experimentally determined rate law", "The activation energy", "The temperature"],
+    "correctIndex": 1,
+    "explanation": "Order must be determined experimentally. It may or may not match stoichiometric coefficients.",
+    "name": "Determining Reaction Order"
+  },
+  {
+    "id": "c9_item8",
+    "text": "For a second-order reaction \\( r = k[A]^2 \\), the integrated rate law is:",
+    "options": ["\\( \\ln[A] = \\ln[A]_0 - kt \\)", "\\( [A] = [A]_0 - kt \\)", "\\( \\frac{1}{[A]} = \\frac{1}{[A]_0} + kt \\)", "\\( [A]^2 = [A]_0^2 - 2kt \\)"],
+    "correctIndex": 2,
+    "explanation": "Second-order integrated law: \\( \\frac{1}{[A]} = \\frac{1}{[A]_0} + kt \\). Plot of \\(1/[A]\\) vs \\(t\\) is linear.",
+    "name": "Second Order Rate Law"
+  },
+  {
+    "id": "c9_item9",
+    "text": "The units of rate constant \\(k\\) for a second-order reaction are:",
+    "options": ["\\( \\text{s}^{-1} \\)", "\\( \\text{mol L}^{-1}\\text{s}^{-1} \\)", "\\( \\text{L mol}^{-1}\\text{s}^{-1} \\)", "\\( \\text{mol}^2\\text{L}^{-2}\\text{s}^{-1} \\)"],
+    "correctIndex": 2,
+    "explanation": "Units of \\(k\\): \\( [k] = \\frac{[\\text{rate}]}{[\\text{conc}]^n} = \\frac{\\text{mol L}^{-1}\\text{s}^{-1}}{(\\text{mol L}^{-1})^2} = \\text{L mol}^{-1}\\text{s}^{-1} \\) for 2nd order.",
+    "name": "Units of k (2nd Order)"
+  },
+  {
+    "id": "c9_item10",
+    "text": "A catalyst increases the rate of reaction by:",
+    "options": ["Increasing temperature", "Providing an alternative pathway with lower activation energy", "Increasing concentration of reactants", "Changing the equilibrium constant"],
+    "correctIndex": 1,
+    "explanation": "Catalyst provides alternate reaction pathway with lower \\(E_a\\). More molecules have enough energy to react.",
+    "name": "How Catalyst Works"
+  },
+  {
+    "id": "c9_item11",
+    "text": "The molecularity of a reaction is:",
+    "options": ["Experimentally determined", "Always equal to order", "Number of reactant molecules in elementary step", "Sum of stoichiometric coefficients"],
+    "correctIndex": 2,
+    "explanation": "Molecularity = number of molecules colliding in a single elementary step. It is always a whole number (1, 2, or 3).",
+    "name": "Molecularity"
+  },
+  {
+    "id": "c9_item12",
+    "text": "The rate law for the reaction \\( 2\\text{NO} + \\text{O}_2 \\to 2\\text{NO}_2 \\) is \\( r = k[\\text{NO}]^2[\\text{O}_2] \\). The overall order is:",
+    "options": ["\\( 1 \\)", "\\( 2 \\)", "\\( 3 \\)", "\\( 4 \\)"],
+    "correctIndex": 2,
+    "explanation": "Overall order = sum of exponents in rate law = 2 + 1 = 3 (third order).",
+    "name": "Overall Order"
+  },
+  {
+    "id": "c9_item13",
+    "text": "Radioactive decay follows \\( N = N_0 e^{-\\lambda t} \\). This is a:",
+    "options": ["Zero-order reaction", "Second-order reaction", "First-order reaction", "Pseudo-first-order reaction"],
+    "correctIndex": 2,
+    "explanation": "Radioactive decay is a first-order process. Rate ∝ number of radioactive nuclei present.",
+    "name": "Radioactive Decay Order"
+  },
+  {
+    "id": "c9_item14",
+    "text": "The temperature coefficient (Q₁₀) represents:",
+    "options": ["Activation energy divided by 10", "Ratio of rate constants at (T+10) to T", "Rate at 10°C", "Number of molecules reacting at 10°C"],
+    "correctIndex": 1,
+    "explanation": "\\( Q_{10} = \\frac{k_{T+10}}{k_T} \\). For most reactions \\(Q_{10} \\approx 2\\) (rate doubles per 10°C rise).",
+    "name": "Temperature Coefficient"
+  },
+  {
+    "id": "c9_item15",
+    "text": "In the Arrhenius plot of \\(\\ln k\\) vs \\(\\frac{1}{T}\\), the slope is:",
+    "options": ["\\( +E_a/R \\)", "\\( -E_a/R \\)", "\\( -E_a/2.303R \\)", "\\( +E_a \\)"],
+    "correctIndex": 1,
+    "explanation": "\\( \\ln k = \\ln A - \\frac{E_a}{RT} \\). Slope of \\(\\ln k\\) vs \\(1/T\\) graph \\( = -E_a/R \\).",
+    "name": "Arrhenius Plot Slope"
+  }
+]

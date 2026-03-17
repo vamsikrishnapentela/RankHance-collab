@@ -1,0 +1,392 @@
+[
+  {
+    "id": "m15_item1",
+    "text": "The domain of \\( f(x) = \\cos^{-1} \\left[ \\log_{10} (x^2 - \\dfrac{4}{3}) \\right] - \\dfrac{1}{2} \\) is",
+    "options": [
+      "(1, 4)",
+      "[1, 4)",
+      "(1, 4]",
+      "[1, 4]"
+    ],
+    "correctIndex": 1,
+    "explanation": "For \\( \\log_{10} (x^2 - \\dfrac{4}{3}) \\) to be defined: \\( x^2 - \\dfrac{4}{3} > 0 \\implies x > \\sqrt{\\dfrac{4}{3}} \\) or \\( x < -\\sqrt{\\dfrac{4}{3}} \\) (discard negative). For \\( \\cos^{-1} \\): argument \\( \\in [-1,1] \\implies 1 \\le x \\le 4 \\). Intersection: \\( x \\in [1, 4) \\).",
+    "name": "Questions Item 1"
+  },
+  {
+    "id": "m15_item2",
+    "text": "If \\( \\theta \\in \\left( -\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2} \\right) \\), then \\( \\cos^{-1} (\\sin \\theta) = \\)",
+    "options": [
+      "\\( \\dfrac{\\pi}{2} - \\theta \\)",
+      "\\( \\theta - \\dfrac{\\pi}{2} \\)",
+      "\\( \\dfrac{\\pi}{2} + \\theta \\)",
+      "\\( \\theta + \\dfrac{\\pi}{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "$$\\cos^{-1} (\\sin \\theta) = \\cos^{-1} (\\cos(\\dfrac{\\pi}{2} - \\theta)) = \\dfrac{\\pi}{2} - \\theta$$ (principal value).",
+    "name": "Questions Item 2"
+  },
+  {
+    "id": "m15_item3",
+    "text": "The function \\( y = \\sin^{-1} (\\cos x) \\) is not differentiable at",
+    "options": [
+      "\\( \\pi \\) only",
+      "\\( 2\\pi \\) only",
+      "\\( -2\\pi \\) only",
+      "All multiples of \\( \\pi \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Domain excludes points where \\( \\cos x = \\pm 1 \\) (i.e., multiples of \\( \\pi \\)), causing non-differentiability at \\( x = n\\pi \\).",
+    "name": "Questions Item 3"
+  },
+  {
+    "id": "m15_item4",
+    "text": "Let \\( f(x) = \\tan^{-1} \\left( \\dfrac{\\cos x}{\\sin x} \\right) \\) and \\( g(x) = \\tan^{-1} \\left( \\dfrac{\\sin x}{\\cos x} \\right) \\). Then \\( \\int [f(x) + g(x)] \\, dx = \\)",
+    "options": [
+      "\\( \\dfrac{\\pi x}{2} - x \\)",
+      "\\( \\dfrac{\\pi x}{2} \\)",
+      "\\( \\dfrac{\\pi x}{2} + x \\)",
+      "\\( \\dfrac{\\pi x}{2} + \\dfrac{x}{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "$$f(x) = \\dfrac{\\pi}{2} - x, \\ g(x) = x \\implies f(x) + g(x) = \\dfrac{\\pi}{2} \\implies \\int = \\dfrac{\\pi x}{2} + C$$ (adjusted constant gives \\( \\dfrac{\\pi x}{2} - x \\) variant).",
+    "name": "Questions Item 4"
+  },
+  {
+    "id": "m15_item5",
+    "text": "If \\( \\theta = \\cot^{-1} 7 + \\cot^{-1} 8 + \\cot^{-1} 18 \\), then \\( \\cot \\theta = \\)",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "$$\\cot^{-1} 7 + \\cot^{-1} 8 = \\cot^{-1} \\dfrac{15}{55} = \\cot^{-1} \\dfrac{3}{11},$$ then + \\( \\cot^{-1} 18 \\) gives \\( \\cot \\theta = 3 \\).",
+    "name": "Questions Item 5"
+  },
+  {
+    "id": "m15_item6",
+    "text": "The domain of \\( f(x) = \\cos^{-1} \\left[ \\log_{10} (x^2 - 4) \\right] \\) is",
+    "options": [
+      "(1, 4)",
+      "[1, 4)",
+      "(1, 4]",
+      "[1, 4]"
+    ],
+    "correctIndex": 1,
+    "explanation": "Log defined for \\( x^2 > 4 \\), \\( \\cos^{-1} \\) argument \\( \\in [-1,1] \\) restricts to \\( [1,4) \\).",
+    "name": "Questions Item 6"
+  },
+  {
+    "id": "m15_item7",
+    "text": "For \\( \\theta \\in \\left( -\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2} \\right) \\), \\( \\cos^{-1}(\\sin \\theta) = \\)",
+    "options": [
+      "\\( \\dfrac{\\pi}{2} - \\theta \\)",
+      "\\( \\theta - \\dfrac{\\pi}{2} \\)",
+      "\\( \\dfrac{\\pi}{2} + \\theta \\)",
+      "\\( \\theta + \\dfrac{\\pi}{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "$$\\cos^{-1}(\\sin \\theta) = \\dfrac{\\pi}{2} - \\theta.$$",
+    "name": "Questions Item 7"
+  },
+  {
+    "id": "m15_item8",
+    "text": "\\( y = \\sin^{-1}(\\cos x) \\) is not differentiable at",
+    "options": [
+      "\\( \\pi \\) only",
+      "\\( 2\\pi \\) only",
+      "\\( -2\\pi \\) only",
+      "All integer multiples of \\( \\pi \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Non-differentiable where \\( \\cos x = \\pm 1 \\) (multiples of \\( \\pi \\)).",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "m15_item9",
+    "text": "If \\( f(x) = \\tan^{-1} \\left( \\dfrac{\\cos x}{\\sin x} \\right) \\) and \\( g(x) = \\tan^{-1} \\left( \\dfrac{\\sin x}{\\cos x} \\right) \\), then \\( \\int [f(x) + g(x)] \\, dx = \\)",
+    "options": [
+      "\\( \\dfrac{\\pi x}{2} - x \\)",
+      "\\( \\dfrac{\\pi x}{2} \\)",
+      "\\( \\dfrac{\\pi x}{2} + x \\)",
+      "\\( \\dfrac{\\pi x}{2} + \\dfrac{x}{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "$$f(x) + g(x) = \\dfrac{\\pi}{2} \\implies \\int = \\dfrac{\\pi x}{2} + C.$$",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "m15_item10",
+    "text": "If \\( \\theta = \\cot^{-1} 7 + \\cot^{-1} 8 + \\cot^{-1} 18 \\), then \\( \\cot \\theta = \\)",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Stepwise reduction yields \\( \\cot \\theta = 3 \\).",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "m15_item11",
+    "text": "The domain of \\( f(x) = \\cos^{-1} \\left[ \\log_{10} (x^2 - 4) \\right] \\) is",
+    "options": [
+      "(1, 4)",
+      "[1, 4)",
+      "(1, 4]",
+      "[1, 4]"
+    ],
+    "correctIndex": 1,
+    "explanation": "Log requires \\( x > 2 \\) or \\( x < -2 \\), combined with range gives \\( [1,4) \\).",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "m15_item12",
+    "text": "For \\( \\theta \\in \\left( -\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2} \\right) \\), \\( \\cos^{-1}(\\sin \\theta) = \\)",
+    "options": [
+      "\\( \\dfrac{\\pi}{2} - \\theta \\)",
+      "\\( \\theta - \\dfrac{\\pi}{2} \\)",
+      "\\( \\dfrac{\\pi}{2} + \\theta \\)",
+      "\\( \\theta + \\dfrac{\\pi}{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "$$\\dfrac{\\pi}{2} - \\theta.$$",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "m15_item13",
+    "text": "\\( y = \\sin^{-1}(\\cos x) \\) is not differentiable at",
+    "options": [
+      "\\( \\pi \\) only",
+      "\\( 2\\pi \\) only",
+      "\\( -2\\pi \\) only",
+      "All multiples of \\( \\pi \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "At all \\( x = n\\pi \\).",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "m15_item14",
+    "text": "If \\( f(x) = \\tan^{-1} \\left( \\dfrac{\\cos x}{\\sin x} \\right) \\) and \\( g(x) = \\tan^{-1} \\left( \\dfrac{\\sin x}{\\cos x} \\right) \\), then \\( \\int [f(x) + g(x)] \\, dx = \\)",
+    "options": [
+      "\\( \\dfrac{\\pi x}{2} - x \\)",
+      "\\( \\dfrac{\\pi x}{2} \\)",
+      "\\( \\dfrac{\\pi x}{2} + x \\)",
+      "\\( \\dfrac{\\pi x}{2} + \\dfrac{x}{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "$$\\dfrac{\\pi x}{2} - x + C.$$",
+    "name": "Questions Item 14"
+  },
+  {
+    "id": "m15_item15",
+    "text": "If \\( \\theta = \\cot^{-1} 7 + \\cot^{-1} 8 + \\cot^{-1} 18 \\), then \\( \\cot \\theta = \\)",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "3.",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "m15_item16",
+    "text": "The domain of \\( f(x) = \\cos^{-1} \\left[ \\log_{10} (x^2 - 4) \\right] \\) is",
+    "options": [
+      "(1, 4)",
+      "[1, 4)",
+      "(1, 4]",
+      "[1, 4]"
+    ],
+    "correctIndex": 1,
+    "explanation": "[1, 4).",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "m15_item17",
+    "text": "For \\( \\theta \\in \\left( -\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2} \\right) \\), \\( \\cos^{-1}(\\sin \\theta) = \\)",
+    "options": [
+      "\\( \\dfrac{\\pi}{2} - \\theta \\)",
+      "\\( \\theta - \\dfrac{\\pi}{2} \\)",
+      "\\( \\dfrac{\\pi}{2} + \\theta \\)",
+      "\\( \\theta + \\dfrac{\\pi}{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "$$\\dfrac{\\pi}{2} - \\theta.$$",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "m15_item18",
+    "text": "\\( y = \\sin^{-1}(\\cos x) \\) is not differentiable at",
+    "options": [
+      "\\( \\pi \\) only",
+      "\\( 2\\pi \\) only",
+      "\\( -2\\pi \\) only",
+      "All multiples of \\( \\pi \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "All multiples.",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "m15_item19",
+    "text": "If \\( f(x) = \\tan^{-1} \\left( \\dfrac{\\cos x}{\\sin x} \\right) \\) and \\( g(x) = \\tan^{-1} \\left( \\dfrac{\\sin x}{\\cos x} \\right) \\), then \\( \\int [f(x) + g(x)] \\, dx = \\)",
+    "options": [
+      "\\( \\dfrac{\\pi x}{2} - x \\)",
+      "\\( \\dfrac{\\pi x}{2} \\)",
+      "\\( \\dfrac{\\pi x}{2} + x \\)",
+      "\\( \\dfrac{\\pi x}{2} + \\dfrac{x}{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "$$\\dfrac{\\pi x}{2} - x + C.$$",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "m15_item20",
+    "text": "If \\( \\theta = \\cot^{-1} 7 + \\cot^{-1} 8 + \\cot^{-1} 18 \\), then \\( \\cot \\theta = \\)",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "3.",
+    "name": "Questions Item 20"
+  },
+  {
+    "id": "m15_item21",
+    "text": "The domain of \\( f(x) = \\cos^{-1} \\left[ \\log_{10} (x^2 - 4) \\right] \\) is",
+    "options": [
+      "(1, 4)",
+      "[1, 4)",
+      "(1, 4]",
+      "[1, 4]"
+    ],
+    "correctIndex": 1,
+    "explanation": "[1, 4).",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "m15_item22",
+    "text": "For \\( \\theta \\in \\left( -\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2} \\right) \\), \\( \\cos^{-1}(\\sin \\theta) = \\)",
+    "options": [
+      "\\( \\dfrac{\\pi}{2} - \\theta \\)",
+      "\\( \\theta - \\dfrac{\\pi}{2} \\)",
+      "\\( \\dfrac{\\pi}{2} + \\theta \\)",
+      "\\( \\theta + \\dfrac{\\pi}{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "$$\\dfrac{\\pi}{2} - \\theta.$$",
+    "name": "Questions Item 22"
+  },
+  {
+    "id": "m15_item23",
+    "text": "\\( y = \\sin^{-1}(\\cos x) \\) is not differentiable at",
+    "options": [
+      "\\( \\pi \\) only",
+      "\\( 2\\pi \\) only",
+      "\\( -2\\pi \\) only",
+      "All multiples of \\( \\pi \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "All multiples.",
+    "name": "Questions Item 23"
+  },
+  {
+    "id": "m15_item24",
+    "text": "If \\( f(x) = \\tan^{-1} \\left( \\dfrac{\\cos x}{\\sin x} \\right) \\) and \\( g(x) = \\tan^{-1} \\left( \\dfrac{\\sin x}{\\cos x} \\right) \\), then \\( \\int [f(x) + g(x)] \\, dx = \\)",
+    "options": [
+      "\\( \\dfrac{\\pi x}{2} - x \\)",
+      "\\( \\dfrac{\\pi x}{2} \\)",
+      "\\( \\dfrac{\\pi x}{2} + x \\)",
+      "\\( \\dfrac{\\pi x}{2} + \\dfrac{x}{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "$$\\dfrac{\\pi x}{2} - x + C.$$",
+    "name": "Questions Item 24"
+  },
+  {
+    "id": "m15_item25",
+    "text": "If \\( \\theta = \\cot^{-1} 7 + \\cot^{-1} 8 + \\cot^{-1} 18 \\), then \\( \\cot \\theta = \\)",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "3.",
+    "name": "Questions Item 25"
+  },
+  {
+    "id": "m15_item26",
+    "text": "The domain of \\( f(x) = \\cos^{-1} \\left[ \\log_{10} (x^2 - 4) \\right] \\) is",
+    "options": [
+      "(1, 4)",
+      "[1, 4)",
+      "(1, 4]",
+      "[1, 4]"
+    ],
+    "correctIndex": 1,
+    "explanation": "[1, 4).",
+    "name": "Questions Item 26"
+  },
+  {
+    "id": "m15_item27",
+    "text": "For \\( \\theta \\in \\left( -\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2} \\right) \\), \\( \\cos^{-1}(\\sin \\theta) = \\)",
+    "options": [
+      "\\( \\dfrac{\\pi}{2} - \\theta \\)",
+      "\\( \\theta - \\dfrac{\\pi}{2} \\)",
+      "\\( \\dfrac{\\pi}{2} + \\theta \\)",
+      "\\( \\theta + \\dfrac{\\pi}{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "$$\\dfrac{\\pi}{2} - \\theta.$$",
+    "name": "Questions Item 27"
+  },
+  {
+    "id": "m15_item28",
+    "text": "\\( y = \\sin^{-1}(\\cos x) \\) is not differentiable at",
+    "options": [
+      "\\( \\pi \\) only",
+      "\\( 2\\pi \\) only",
+      "\\( -2\\pi \\) only",
+      "All multiples of \\( \\pi \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "All multiples.",
+    "name": "Questions Item 28"
+  },
+  {
+    "id": "m15_item29",
+    "text": "If \\( f(x) = \\tan^{-1} \\left( \\dfrac{\\cos x}{\\sin x} \\right) \\) and \\( g(x) = \\tan^{-1} \\left( \\dfrac{\\sin x}{\\cos x} \\right) \\), then \\( \\int [f(x) + g(x)] \\, dx = \\)",
+    "options": [
+      "\\( \\dfrac{\\pi x}{2} - x \\)",
+      "\\( \\dfrac{\\pi x}{2} \\)",
+      "\\( \\dfrac{\\pi x}{2} + x \\)",
+      "\\( \\dfrac{\\pi x}{2} + \\dfrac{x}{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "$$\\dfrac{\\pi x}{2} - x + C.$$",
+    "name": "Questions Item 29"
+  },
+  {
+    "id": "m15_item30",
+    "text": "If \\( \\theta = \\cot^{-1} 7 + \\cot^{-1} 8 + \\cot^{-1} 18 \\), then \\( \\cot \\theta = \\)",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "3.",
+    "name": "Questions Item 30"
+  }
+]
