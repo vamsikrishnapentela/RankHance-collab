@@ -6,28 +6,28 @@ import Card from './components/Card';
 export default function Dashboard() {
   const cards = [
     {
-      title: 'Chapter Practice',
-      description: 'Master every chapter topic by topic',
+      title: 'Foundation Practice',
+      description: 'Solve real exam questions chapter by chapter',
       icon: <BookOpen className="w-8 h-8 text-orange-500" />,
       link: '/subjects?type=practice',
       active: true,
-      color: 'bg-orange-50'
+      color: 'bg-orange-100'
     },
     {
-      title: 'Important Questions Quiz',
-      description: 'Test yourself with high-probability questions',
+      title: 'Exam Level Questions ',
+      description: 'Build strong basics chapter by chapter',
       icon: <Zap className="w-8 h-8 text-orange-500" />,
       link: '/subjects?type=quiz',
       active: true,
-      color: 'bg-orange-50'
+      color: 'bg-orange-100'
     },
     {
-      title: 'Grand Mock Tests',
-      description: 'Full length mock tests for EAMCET 2025',
+      title: 'Mock Test',
+      description: 'Attempt 160-question mock tests like EAPCET',
       icon: <Edit3 className="w-8 h-8 text-orange-500" />,
       link: '/mock-tests',
       active: true,
-      color: 'bg-orange-50'
+      color: 'bg-orange-100'
     },
 
     {
@@ -71,7 +71,7 @@ export default function Dashboard() {
           Welcome! What do you want to practice today?
         </h1>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {cards.map((card, index) => {
             if (card.active) {
               return (
@@ -79,18 +79,18 @@ export default function Dashboard() {
                   key={index} 
                   to={card.link}
                 >
-                  <Card hover className="group">
-                    <div className="flex flex-col items-start gap-4 h-full p-6">
-                      <div className={`p-4 rounded-2xl ${card.color} group-hover:scale-110 transition-transform`}>
+                  <Card hover className="group hover:scale-[1.02] transition-all duration-300 ease-in-out">
+                    <div className="flex flex-col items-start gap-6 justify-between h-full p-6">
+                      <div className={`p-4 rounded-xl ${card.color} group-hover:scale-110 transition-transform`}>
                         {card.icon}
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">{card.title}</h3>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2">{card.title}</h3>
                         <p className="text-sm font-medium text-gray-500 leading-relaxed">{card.description}</p>
                       </div>
-                      <div className="mt-auto pt-4 flex w-full justify-between items-center text-[var(--color-primary)] font-bold">
+                      <div className="mt-6 pt-4 flex w-full justify-between items-center text-[var(--color-primary)] font-bold">
                         <span>Start</span>
-                        <ChevronRight className="w-5 h-5" />
+                        <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                       </div>
                     </div>
                   </Card>

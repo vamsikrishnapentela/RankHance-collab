@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Edit3 } from 'lucide-react';
+import { Edit3, ArrowLeft } from 'lucide-react';
+import Button from './components/Button';
 import { getMockTests } from './api';
 
 export default function MockTests() {
@@ -41,6 +42,14 @@ export default function MockTests() {
   return (
     <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100vh-64px)] overflow-y-auto">
       <div className="w-full max-w-5xl mx-auto py-8">
+        <Button 
+          variant="secondary" 
+          leftIcon={<ArrowLeft className="w-5 h-5" />}
+          onClick={() => navigate('/dashboard')}
+          className="mb-6"
+        >
+          Back to Dashboard
+        </Button>
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 gap-4">
           <span className="text-sm font-bold text-gray-500 uppercase tracking-wider bg-gray-200 px-3 py-1 rounded-full">
             Mock Tests

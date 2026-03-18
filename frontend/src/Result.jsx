@@ -22,18 +22,120 @@ const Result = () => {
   });
   
   const [subjectStats, setSubjectStats] = useState({});
-  const [chapterStats, setChapterStats] = useState({});
+const [groupedChapterStats, setGroupedChapterStats] = useState({ maths: {}, phy: {}, che: {} });
+
+const chapterNameMap = {
+  maths: {
+    "m1": "Complex Numbers and De-Moivre's Theorem",
+    "m2": "Quadratic Expressions",
+    "m3": "Theory of Equations",
+    "m4": "Functions",
+    "m5": "Mathematical Induction",
+    "m6": "Partial Fractions",
+    "m7": "Binomial Theorem",
+    "m8": "Permutations and Combinations",
+    "m9": "Matrices and Determinants",
+    "m10": "Measures of Dispersion",
+    "m11": "Probability",
+    "m12": "Trigonometric Functions and Identities",
+    "m13": "Trigonometric Equations",
+    "m14": "Properties of Triangles",
+    "m15": "Inverse Trigonometric Functions",
+    "m16": "Hyperbolic Functions",
+    "m17": "Rectangular Cartesian Coordinates",
+    "m18": "Straight Line and Pair of Straight Lines",
+    "m19": "Circle and System of Circles",
+    "m20": "Conic Sections",
+    "m21": "Vector Algebra",
+    "m22": "Three Dimensional Geometry",
+    "m23": "Limits and Continuity",
+    "m24": "Differentiation",
+    "m25": "Applications of Derivatives",
+    "m26": "Indefinite Integrals",
+    "m27": "Definite Integrals and Its Applications",
+    "m28": "Differential Equations",
+    "m29": "Miscellaneous"
+  },
+  phy: {
+    "p1": "Physical World, Units and Measurements",
+    "p2": "Kinematics",
+    "p3": "Laws of Motion",
+    "p4": "Work, Energy and Power",
+    "p5": "Rotational Motion",
+    "p6": "Gravitation",
+    "p7": "Mechanical Properties of Solids",
+    "p8": "Mechanical Properties of Fluids",
+    "p9": "Thermal Properties of Matter",
+    "p10": "Thermodynamics",
+    "p11": "Kinetic Theory of Gases",
+    "p12": "Oscillations",
+    "p13": "Waves",
+    "p14": "Electric Charges and Fields",
+    "p15": "Electrostatic Potential and Capacitance",
+    "p16": "Current Electricity",
+    "p17": "Magnetic Effects of Current",
+    "p18": "Magnetism and Matter",
+    "p19": "Electromagnetic Induction",
+    "p20": "Alternating Current",
+    "p21": "Electromagnetic Waves",
+    "p22": "Ray Optics and Optical Instruments",
+    "p23": "Wave Optics",
+    "p24": "Dual Nature of Radiation and Matter",
+    "p25": "Atoms",
+    "p26": "Nuclei",
+    "p27": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+    "p28": "Communication Systems"
+  },
+  che: {
+    "c1": "Some Basic Concepts and Stoichiometry",
+    "c2": "Atomic Structure",
+    "c3": "Chemical Bonding and Molecular Structure",
+    "c4": "Gaseous and Liquid States",
+    "c5": "Solid State",
+    "c6": "Solutions",
+    "c7": "Thermodynamics",
+    "c8": "Chemical Equilibrium",
+    "c9": "Chemical Kinetics",
+    "c10": "Electrochemistry",
+    "c11": "Surface Chemistry",
+    "c12": "General Principles of Metallurgy",
+    "c13": "Classification of Elements and Periodic Properties",
+    "c14": "Hydrogen and Its Compounds",
+    "c15": "s and p-Block Elements",
+    "c16": "Transition Elements (d & f - Block Elements)",
+    "c17": "Coordination Compounds",
+    "c18": "General Organic Chemistry and Hydrocarbons",
+    "c19": "Haloalkanes and Haloarenes",
+    "c20": "Alcohols, Phenols and Ethers",
+    "c21": "Aldehydes, Ketones and Carboxylic Acids",
+    "c22": "Organic Compounds Containing Nitrogen (Diazonium Salts, Cyanides and Isocyanides)",
+    "c23": "Polymers",
+    "c24": "Biomolecules and Chemistry in Everyday Life",
+    "c25": "Environmental Chemistry"
+  }
+};
+
+
+
 
   useEffect(() => {
     if (!questions || questions.length === 0) return;
 
     const total = questions.length;
     let correct = 0, wrong = 0, unattempted = 0;
+    
+    // Keep subject stats as-is (works correctly)
     const subjStats = { maths: { correct: 0, wrong: 0, total: 0 }, physics: { correct: 0, wrong: 0, total: 0 }, chemistry: { correct: 0, wrong: 0, total: 0 } };
-    const chapStats = {};
+    
+    // NEW: Proper subjectChapters structure
+    const subjectChapters = {
+      maths: {},
+      phy: {},
+      che: {}
+    };
 
-    questions.forEach((q, idx) => {
-      const userAns = answers[idx];
+    questions.forEach((q, index) => {
+      const userAns = answers[index];
       const isCorrect = userAns === q.correctIndex;
 
       if (userAns !== undefined) {
@@ -43,32 +145,43 @@ const Result = () => {
         unattempted++;
       }
 
-      // Subject (map from q.subject or dir)
-      const subject = q.subject === 'maths' ? 'maths' : q.subject === 'phy' ? 'physics' : 'chemistry';
-      subjStats[subject].total++;
+      // Subject stats (keep existing mapping)
+      const subjectFull = q.subject === 'maths' ? 'maths' : q.subject === 'phy' ? 'physics' : 'chemistry';
+      subjStats[subjectFull].total++;
       if (userAns !== undefined) {
-        if (isCorrect) subjStats[subject].correct++;
-        else subjStats[subject].wrong++;
+        if (isCorrect) subjStats[subjectFull].correct++;
+        else subjStats[subjectFull].wrong++;
       }
 
-      // Chapter (use q.name or id)
-      const chapter = q.name || q.id || 'unknown';
-      if (!chapStats[chapter]) chapStats[chapter] = { correct: 0, wrong: 0, total: 0, accuracy: 0, level: '' };
-      chapStats[chapter].total++;
+      // NEW CHAPTER LOGIC: Use q.chapter field
+      const subjectShort = q.subject; // 'maths'|'phy'|'che'
+      const chapterId = q.chapter; // 'm1'|'p1'|'c1'
+
+      if (!subjectChapters[subjectShort][chapterId]) {
+        subjectChapters[subjectShort][chapterId] = { correct: 0, wrong: 0, total: 0, name: chapterNameMap[subjectShort][chapterId] || chapterId };
+      }
+
+      subjectChapters[subjectShort][chapterId].total++;
+
       if (userAns !== undefined) {
-        if (isCorrect) chapStats[chapter].correct++;
-        else chapStats[chapter].wrong++;
+        if (isCorrect) {
+          subjectChapters[subjectShort][chapterId].correct++;
+        } else {
+          subjectChapters[subjectShort][chapterId].wrong++;
+        }
       }
     });
 
-    Object.keys(chapStats).forEach(ch => {
-      const acc = chapStats[ch].total > 0 ? (chapStats[ch].correct / chapStats[ch].total * 100) : 0;
-      chapStats[ch].accuracy = Math.round(acc);
-      if (acc >= 70) chapStats[ch].level = 'strong';
-      else if (acc >= 40) chapStats[ch].level = 'medium';
-      else chapStats[ch].level = 'weak';
+    // Calculate accuracy and level for each chapter
+    ['maths', 'phy', 'che'].forEach(subjectShort => {
+      Object.values(subjectChapters[subjectShort]).forEach(chap => {
+        const acc = chap.total > 0 ? (chap.correct / chap.total * 100) : 0;
+        chap.accuracy = Math.round(acc);
+        chap.level = acc >= 70 ? 'strong' : acc >= 40 ? 'medium' : 'weak';
+      });
     });
 
+    // Subject stats accuracy
     Object.keys(subjStats).forEach(s => {
       const acc = subjStats[s].total > 0 ? (subjStats[s].correct / subjStats[s].total * 100) : 0;
       subjStats[s].accuracy = Math.round(acc);
@@ -80,7 +193,7 @@ const Result = () => {
 
     setStats({ total, correct, wrong, unattempted, score, accuracy, attempted });
     setSubjectStats(subjStats);
-    setChapterStats(chapStats);
+    setGroupedChapterStats(subjectChapters);
   }, [questions, answers]);
 
   if (!questions) {
@@ -97,9 +210,7 @@ const Result = () => {
     );
   }
 
-  const weakChapters = Object.entries(chapterStats).filter(([ , data]) => data.level === 'weak');
-  const mediumChapters = Object.entries(chapterStats).filter(([ , data]) => data.level === 'medium');
-  const strongChapters = Object.entries(chapterStats).filter(([ , data]) => data.level === 'strong');
+  // Remove old chapter lists - using groupedChapterStats now
 
   return (
     <div className="flex-1 w-full bg-gray-50 min-h-[calc(100vh-64px)] p-6">
@@ -163,45 +274,8 @@ const Result = () => {
           ))}
         </div>
 
-        {/* Chapter Analysis */}
-        <Card className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Chapter Performance</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {weakChapters.map(([ch, data]) => (
-              <div key={ch} className="p-4 bg-red-50 border border-red-200 rounded-xl">
-                <div className="flex items-center gap-2 mb-1">
-                  <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                  <span className="font-semibold text-red-800">Weak</span>
-                </div>
-                <h4 className="font-bold text-gray-900">{ch}</h4>
-                <div className="text-2xl font-bold text-red-600">{data.accuracy}%</div>
-              </div>
-            ))}
-            {mediumChapters.map(([ch, data]) => (
-              <div key={ch} className="p-4 bg-yellow-50 border border-yellow-200 rounded-xl">
-                <div className="flex items-center gap-2 mb-1">
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                  <span className="font-semibold text-yellow-800">Medium</span>
-                </div>
-                <h4 className="font-bold text-gray-900">{ch}</h4>
-                <div className="text-2xl font-bold text-yellow-600">{data.accuracy}%</div>
-              </div>
-            ))}
-            {strongChapters.map(([ch, data]) => (
-              <div key={ch} className="p-4 bg-green-50 border border-green-200 rounded-xl">
-                <div className="flex items-center gap-2 mb-1">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="font-semibold text-green-800">Strong</span>
-                </div>
-                <h4 className="font-bold text-gray-900">{ch}</h4>
-                <div className="text-2xl font-bold text-green-600">{data.accuracy}%</div>
-              </div>
-            ))}
-          </div>
-        </Card>
-
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col sm:flex-row gap-4 mb-8">
           <Button 
             variant="primary" 
             size="lg"
@@ -219,10 +293,116 @@ const Result = () => {
             Back to Dashboard
           </Button>
         </div>
+
+        {/* Chapter Analysis - Grouped by Subject */}
+        <Card className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">Chapter Performance</h2>
+          
+          {/* Mathematics */}
+          <Card className="mb-8 p-0">
+            <div className="p-6 border-b border-gray-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">📐 Mathematics</h3>
+            </div>
+            <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+              {Object.keys(groupedChapterStats.maths || {}).length > 0 ? (
+                Object.entries(groupedChapterStats.maths)
+                  .sort(([,a], [,b]) => b.accuracy - a.accuracy)
+                  .map(([chId, data]) => (
+                    <ChapterCard key={chId} chapter={data.name} data={data} />
+                  ))
+              ) : (
+                <div className="col-span-full text-center py-8 text-gray-500">No data available</div>
+              )}
+            </div>
+          </Card>
+
+          {/* Physics */}
+          <Card className="mb-8 p-0">
+            <div className="p-6 border-b border-gray-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">⚛️ Physics</h3>
+            </div>
+            <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+              {Object.keys(groupedChapterStats.phy || {}).length > 0 ? (
+                Object.entries(groupedChapterStats.phy)
+                  .sort(([,a], [,b]) => b.accuracy - a.accuracy)
+                  .map(([chId, data]) => (
+                    <ChapterCard key={chId} chapter={data.name} data={data} />
+                  ))
+              ) : (
+                <div className="col-span-full text-center py-8 text-gray-500">No data available</div>
+              )}
+            </div>
+          </Card>
+
+          {/* Chemistry */}
+          <Card className="mb-8 p-0">
+            <div className="p-6 border-b border-gray-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">🧪 Chemistry</h3>
+            </div>
+            <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+              {Object.keys(groupedChapterStats.che || {}).length > 0 ? (
+                Object.entries(groupedChapterStats.che)
+                  .sort(([,a], [,b]) => b.accuracy - a.accuracy)
+                  .map(([chId, data]) => (
+                    <ChapterCard key={chId} chapter={data.name} data={data} />
+                  ))
+              ) : (
+                <div className="col-span-full text-center py-8 text-gray-500">No data available</div>
+              )}
+            </div>
+          </Card>
+
+        </Card>
       </Container>
     </div>
   );
 };
+
+
+const ChapterCard = ({ chapter, data }) => {
+  const getBgColor = (level) => {
+    switch (level) {
+      case 'strong': return 'bg-green-50 border-green-200';
+      case 'medium': return 'bg-yellow-50 border-yellow-200';
+      case 'weak': return 'bg-red-50 border-red-200';
+      default: return 'bg-gray-50 border-gray-200';
+    }
+  };
+
+  const getDotColor = (level) => {
+    switch (level) {
+      case 'strong': return 'bg-green-500';
+      case 'medium': return 'bg-yellow-500';
+      case 'weak': return 'bg-red-500';
+      default: return 'bg-gray-500';
+    }
+  };
+
+  const getTextColor = (level) => {
+    switch (level) {
+      case 'strong': return 'text-green-800 text-green-600';
+      case 'medium': return 'text-yellow-800 text-yellow-600';
+      case 'weak': return 'text-red-800 text-red-600';
+      default: return 'text-gray-800 text-gray-600';
+    }
+  };
+
+  return (
+    <div className={`p-4 ${getBgColor(data?.level)} border rounded-xl`}>
+      <div className="flex items-center gap-2 mb-1">
+        <div className={`w-2 h-2 ${getDotColor(data?.level)} rounded-full`}></div>
+        <span className={`font-semibold ${getTextColor(data?.level)[0]}`}>
+          {data?.level ? data.level.charAt(0).toUpperCase() + data.level.slice(1) : 'Unknown'}
+        </span>
+      </div>
+      <h4 className="font-bold text-gray-900">{chapter}</h4>
+      <div className={`text-2xl font-bold ${getTextColor(data?.level)[1]}`}>
+        {data?.accuracy}%
+      </div>
+    </div>
+  );
+};
+
 
 export default Result;
 
