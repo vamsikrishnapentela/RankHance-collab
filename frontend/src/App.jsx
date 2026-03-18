@@ -4,9 +4,14 @@ import Dashboard from './Dashboard';
 import Practice from './Practice';
 import MockTests from './MockTests';
 import MockAttempt from './MockAttempt';
+import Result from './Result';
+import Review from './Review';
 import Subjects from './Subjects';
 import Chapters from './Chapters';
 import Questions from './Questions';
+
+
+
 
 
 
@@ -43,6 +48,8 @@ function AppLayout() {
           <Route path="/questions/:subject/:chapter" element={<Questions />} />
           <Route path="/mock-tests" element={<MockTests />} />
           <Route path="/mock/:id" element={<MockAttempt />} />
+          <Route path="/result" element={<Result />} />
+          <Route path="/review" element={<Review />} />
         </Routes>
 
 
