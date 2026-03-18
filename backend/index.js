@@ -74,7 +74,7 @@ app.get('/api/quiz/:chapterId', (req, res) => {
 });
 
 app.get('/api/mocktests', (req, res) => {
-    const data = readJsonFile('mocktests/data.json');
+    const data = readJsonFile('3-mocktests-questions/data.json');
     if (data) {
         res.json(data.map(t => ({ id: t.id, name: t.name, duration: t.duration, totalQuestions: t.totalQuestions, distribution: t.distribution })));
     } else {
@@ -84,11 +84,11 @@ app.get('/api/mocktests', (req, res) => {
 
 app.get('/api/mocktest/:testId', (req, res) => {
     const { testId } = req.params;
-    const data = readJsonFile('mocktests/data.json');
+    const data = readJsonFile('3-mocktests-questions/data.json');
     if (data) {
         const test = data.find(t => t.id === testId);
         if (test) {
-            const questions = readJsonFile(`mocktests/${testId}/data.json`);
+            const questions = readJsonFile(`3-mocktests-questions/${testId}/data.json`);
             test.questions = questions || [];
             return res.json(test);
         }

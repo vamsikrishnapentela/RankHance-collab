@@ -2,6 +2,13 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react
 import Landing from './Landing';
 import Dashboard from './Dashboard';
 import Practice from './Practice';
+import MockTests from './MockTests';
+import MockAttempt from './MockAttempt';
+import Subjects from './Subjects';
+import Chapters from './Chapters';
+import Questions from './Questions';
+
+
 
 function AppLayout() {
   const location = useLocation();
@@ -31,7 +38,14 @@ function AppLayout() {
           <Route path="/" element={<Landing />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/practice" element={<Practice />} />
+          <Route path="/subjects" element={<Subjects />} />
+          <Route path="/chapters/:subject" element={<Chapters />} />
+          <Route path="/questions/:subject/:chapter" element={<Questions />} />
+          <Route path="/mock-tests" element={<MockTests />} />
+          <Route path="/mock/:id" element={<MockAttempt />} />
         </Routes>
+
+
       </div>
     </div>
   );

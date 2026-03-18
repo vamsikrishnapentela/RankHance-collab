@@ -24,4 +24,24 @@ export const getQuiz = async (chapterId) => {
   return data;
 };
 
+// GET /api/mocktests
+export const getMockTests = async () => {
+  const { data } = await api.get('/mocktests');
+  return data;
+};
+
+// GET /api/mocktest/:testId
+export const getMockTest = async (testId) => {
+  const { data } = await api.get(`/mocktest/${testId}`);
+  return data;
+};
+
+// GET /api/subjects
+export const getSubjects = async () => {
+  const { data } = await api.get('/subjects');
+  return data;
+};
+
 export default api;
+
+

@@ -1,11 +1,10 @@
-import { useState, useEffect } from 'react';
-import { useSearchParams, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { getChapters, getQuestions, getQuiz } from './api';
 import { ChevronLeft, ChevronRight, CheckCircle, XCircle, ArrowLeft } from 'lucide-react';
 
 export default function Practice() {
   const [searchParams] = useSearchParams();
-  const navigate = useNavigate();
   const type = searchParams.get('type') || 'chapter'; // chapter or quiz
 
   const [subject, setSubject] = useState(null);
@@ -57,7 +56,7 @@ export default function Practice() {
     try {
       const data = await getChapters(subId);
       setChapters(data || []);
-    } catch (err) {
+    } catch {
       setError('Something went wrong – try again');
     } finally {
       setLoading(false);
@@ -81,7 +80,7 @@ export default function Practice() {
         data = await getQuestions(chapter.id);
       }
       setQuestions(data || []);
-    } catch (err) {
+    } catch {
       setError('Something went wrong – try again');
     } finally {
       setLoading(false);
@@ -187,46 +186,45 @@ export default function Practice() {
             </div>
 
             <div className="card p-6 sm:p-8 mb-6 relative">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-8 leading-relaxed">
-                {questions[currentIdx].text}
-              </h3>
-
-              <div className="flex flex-col gap-4">
-                {questions[currentIdx].options.map((opt, optIdx) => {
-                  const isAnswered = answers[currentIdx] !== undefined;
-                  const isSelected = answers[currentIdx] === optIdx;
-                  const isCorrectAnswer = questions[currentIdx].correctIndex === optIdx;
-                  
-                  let btnClass = "border-gray-200 hover:border-gray-300 bg-white text-gray-800";
-                  let Icon = null;
-
-                  if (isAnswered) {
-                    if (isCorrectAnswer) {
-                      btnClass = "border-green-500 bg-green-50 text-green-900 font-semibold ring-1 ring-green-500 shadow-sm";
-                      Icon = <CheckCircle className="w-5 h-5 text-green-600" />;
-                    } else if (isSelected) {
-                      btnClass = "border-red-500 bg-red-50 text-red-900 font-semibold ring-1 ring-red-500 shadow-sm";
-                      Icon = <XCircle className="w-5 h-5 text-red-600" />;
-                    } else {
-                      btnClass = "border-gray-100 bg-gray-50 text-gray-400 opacity-60";
-                    }
-                  } else {
-                    btnClass += " hover:bg-gray-50 cursor-pointer active:scale-[0.99]";
-                  }
-
-                  return (
-                    <button
-                      key={optIdx}
-                      disabled={isAnswered}
-                      onClick={() => handleSelectOption(optIdx)}
-                      className={`min-h-[56px] w-full text-left p-4 rounded-xl border-2 transition-all flex items-center justify-between text-base sm:text-lg ${btnClass}`}
-                    >
-                      <span>{opt}</span>
-                      {Icon && <span>{Icon}</span>}
-                    </button>
-                  );
-                })}
-              </div>
+  <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-8 leading-relaxed">
+    <MathRenderer content={questions[currentIdx].text} />
+  </div>
+  <div className="flex flex-col gap-4">
+    {questions[currentIdx].options.map((opt, optIdx) => {
+      const isAnswered = answers[currentIdx] !== undefined;
+      const isSelected = answers[currentIdx] === optIdx;
+      const isCorrectAnswer = questions[currentIdx].correctIndex === optIdx;
+      
+      let btnClass = "border-gray-200 hover:border-gray-300 bg-white text-gray-800";
+      let Icon = null;
+      
+      if (isAnswered) {
+        if (isCorrectAnswer) {
+          btnClass = "border-green-500 bg-green-50 text-green-900 font-semibold ring-1 ring-green-500 shadow-sm";
+          Icon = <CheckCircle className="w-5 h-5 text-green-600" />;
+        } else if (isSelected) {
+          btnClass = "border-red-500 bg-red-50 text-red-900 font-semibold ring-1 ring-red-500 shadow-sm";
+          Icon = <XCircle className="w-5 h-5 text-red-600" />;
+        } else {
+          btnClass = "border-gray-100 bg-gray-50 text-gray-400 opacity-60";
+        }
+      } else {
+        btnClass += " hover:bg-gray-50 cursor-pointer active:scale-[0.99]";
+      }
+      
+      return (
+        <button
+          key={optIdx}
+          disabled={isAnswered}
+          onClick={() => handleSelectOption(optIdx)}
+          className={`min-h-[56px] w-full text-left p-4 rounded-xl border-2 transition-all flex items-center justify-between text-base sm:text-lg ${btnClass}`}
+        >
+          <MathRenderer content={opt} />
+          {Icon && <span>{Icon}</span>}
+        </button>
+      );
+    })}
+  </div>
 
               {answers[currentIdx] !== undefined && (
                 <div className="mt-8 p-5 bg-gray-100/80 rounded-xl border border-gray-200 animate-in fade-in slide-in-from-bottom-2 duration-300">
@@ -234,7 +232,7 @@ export default function Practice() {
                     <span className="text-[var(--color-primary)]">Explanation</span>
                   </h4>
                   <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                    {questions[currentIdx].explanation}
+                    <MathRenderer content={questions[currentIdx].explanation} />
                   </p>
                 </div>
               )}
