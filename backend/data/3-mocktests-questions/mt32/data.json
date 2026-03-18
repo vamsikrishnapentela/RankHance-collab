@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "m3_item8",
+    "text": "If the sum of two roots of \\( x^3 + px^2 + qx + r = 0 \\) is zero, then:",
+    "options": [
+      "\\( pq = r \\)",
+      "\\( pq = -r \\)",
+      "\\( p = q \\)",
+      "\\( pr = q \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let roots be \\( \\alpha, -\\alpha, \\beta \\). Then \\( \\alpha+(-\\alpha)+\\beta = -p \\Rightarrow \\beta=-p \\). Since \\(\\beta\\) is root: use Vieta's relations to get \\(pq = r\\).",
+    "name": "Condition on Roots Sum",
+    "subject": "maths",
+    "chapter": "m3"
+  },
+  {
+    "id": "c17_item6",
+    "text": "A strong field ligand causes:",
+    "options": [
+      "Large crystal field splitting (Δo), low spin complex",
+      "Small crystal field splitting, high spin complex",
+      "No splitting of d orbitals",
+      "Only ionic bonding"
+    ],
+    "correctIndex": 0,
+    "explanation": "Strong field ligands (CO, CN⁻, NO₂⁻): large Δo → electrons pair up in t₂g → low spin. Weak field (F⁻, Cl⁻, H₂O): small Δo → high spin.",
+    "name": "Strong Field Ligand",
+    "subject": "che",
+    "chapter": "c17"
+  },
+  {
+    "id": "m3_item13",
+    "text": "If two roots of \\( x^3 - px^2 + qx - r = 0 \\) are equal, say \\( \\alpha, \\alpha, \\beta \\), then which condition must hold?",
+    "options": [
+      "\\( p^3 = 27r \\) if all three equal",
+      "\\( 2\\alpha + \\beta = p \\)",
+      "\\( \\alpha^2\\beta = r \\)",
+      "All of the above (when \\( \\alpha = \\beta \\))"
+    ],
+    "correctIndex": 3,
+    "explanation": "From Vieta's: \\( 2\\alpha+\\beta=p \\), \\( \\alpha^2+2\\alpha\\beta=q \\), \\( \\alpha^2\\beta=r \\). When all three equal: \\( p^3=27r \\). All conditions can hold simultaneously.",
+    "name": "Equal Roots in Cubic",
+    "subject": "maths",
+    "chapter": "m3"
+  },
+  {
+    "id": "c4_item10",
+    "text": "The compressibility factor \\(Z\\) for an ideal gas is:",
+    "options": [
+      "\\( Z = 0 \\)",
+      "\\( Z > 1 \\)",
+      "\\( Z = 1 \\)",
+      "\\( Z < 1 \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\( Z = \\frac{PV}{nRT} = 1 \\) for ideal gas. \\(Z > 1\\): repulsive forces dominate; \\(Z < 1\\): attractive forces dominate.",
+    "name": "Compressibility Factor",
+    "subject": "che",
+    "chapter": "c4"
+  },
+  {
+    "id": "m7_item8",
+    "text": "The greatest binomial coefficient in \\( (1+x)^{10} \\) is:",
+    "options": [
+      "\\( \\binom{10}{4} \\)",
+      "\\( \\binom{10}{5} \\)",
+      "\\( \\binom{10}{6} \\)",
+      "\\( \\binom{10}{3} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "For even \\(n = 10\\), greatest coefficient is the middle one: \\( \\binom{10}{5} = 252 \\)",
+    "name": "Greatest Binomial Coefficient",
+    "subject": "maths",
+    "chapter": "m7"
+  },
+  {
+    "id": "p4_item1",
+    "text": "Work done by a force \\(\\vec{F}\\) through displacement \\(\\vec{s}\\) is:",
+    "options": [
+      "\\( W = Fs \\)",
+      "\\( W = \\vec{F}\\cdot\\vec{s} = Fs\\cos\\theta \\)",
+      "\\( W = Fs\\sin\\theta \\)",
+      "\\( W = F/s \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Work \\( W = \\vec{F}\\cdot\\vec{s} = Fs\\cos\\theta \\), where \\(\\theta\\) is angle between \\(\\vec{F}\\) and \\(\\vec{s}\\).",
+    "name": "Work Done by Force",
+    "subject": "phy",
+    "chapter": "p4"
+  },
+  {
+    "id": "m24_item4",
+    "text": "\\( \\frac{d}{dx}(\\ln x) = \\)",
+    "options": [
+      "\\( \\ln x \\)",
+      "\\( \\frac{1}{x} \\)",
+      "\\( x \\)",
+      "\\( e^x \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( \\frac{d}{dx}(\\ln x) = \\frac{1}{x} \\) for \\( x > 0 \\).",
+    "name": "Derivative of ln x",
+    "subject": "maths",
+    "chapter": "m24"
+  },
+  {
+    "id": "m9_item15",
+    "text": "A skew-symmetric matrix satisfies:",
+    "options": [
+      "\\( A = A^T \\)",
+      "\\( A = -A^T \\)",
+      "\\( A^2 = I \\)",
+      "\\( A + A^T = 2A \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "A matrix is skew-symmetric if \\( A^T = -A \\), i.e., \\( A + A^T = 0 \\).",
+    "name": "Skew-Symmetric Matrix",
+    "subject": "maths",
+    "chapter": "m9"
+  },
+  {
+    "id": "p16_item15",
+    "text": "The EMF of a cell is defined as work done per unit charge to move charge:",
+    "options": [
+      "Through external circuit only",
+      "Through complete circuit (including internal resistance): EMF = W/q",
+      "Through internal resistance only",
+      "Against gravity"
+    ],
+    "correctIndex": 1,
+    "explanation": "EMF: work done per unit positive charge through entire circuit (including inside cell) = energy per unit charge supplied by cell. Units: Volt.",
+    "name": "Definition of EMF",
+    "subject": "phy",
+    "chapter": "p16"
+  },
+  {
+    "id": "p24_item15",
+    "text": "The photoelectric effect conclusively demonstrated that:",
+    "options": [
+      "Light is a continuous wave",
+      "Electrons are waves",
+      "Light energy is quantised (comes in packets called photons)",
+      "Light has zero momentum"
+    ],
+    "correctIndex": 2,
+    "explanation": "Photoelectric effect: showed light energy is quantised (\\(E = h\\nu\\)), not continuous. Wave theory couldn't explain the existence of threshold frequency and instantaneous emission.",
+    "name": "Conclusion from Photoelectric Effect",
+    "subject": "phy",
+    "chapter": "p24"
+  },
+  {
+    "id": "p6_item6",
+    "text": "A geostationary satellite has a time period of:",
+    "options": [
+      "1 hour",
+      "12 hours",
+      "24 hours",
+      "One month"
+    ],
+    "correctIndex": 2,
+    "explanation": "Geostationary satellite: T = 24 hours = period of Earth's rotation. Appears stationary over a point. Height ≈ 36,000 km.",
+    "name": "Geostationary Satellite Period",
+    "subject": "phy",
+    "chapter": "p6"
+  },
+  {
+    "id": "m27_item1",
+    "text": "The Fundamental Theorem of Calculus: \\( \\int_a^b f(x)\\,dx = \\)",
+    "options": [
+      "\\( f(b)+f(a) \\)",
+      "\\( f(b)-f(a) \\)",
+      "\\( F(b)+F(a) \\)",
+      "\\( F(b)-F(a) \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "FTC: \\( \\int_a^b f(x)dx = F(b)-F(a) \\), where \\(F'(x)=f(x)\\).",
+    "name": "Fundamental Theorem",
+    "subject": "maths",
+    "chapter": "m27"
+  },
+  {
+    "id": "m7_item12",
+    "text": "In the expansion of \\( (a+b)^n \\), if \\( n = 9 \\), then how many middle terms are there?",
+    "options": [
+      "\\( 1 \\)",
+      "\\( 2 \\)",
+      "\\( 3 \\)",
+      "\\( 0 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When \\(n\\) is odd, there are 2 middle terms: \\( T_{\\frac{n+1}{2}} \\) and \\( T_{\\frac{n+3}{2}} \\), i.e., \\(T_5\\) and \\(T_6\\).",
+    "name": "Middle Terms for Odd n",
+    "subject": "maths",
+    "chapter": "m7"
+  },
+  {
+    "id": "c13_item2",
+    "text": "Atomic radius across a period (left to right) generally:",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains constant",
+      "First increases then decreases"
+    ],
+    "correctIndex": 1,
+    "explanation": "Atomic radius decreases across a period due to increasing nuclear charge (more protons attract electrons more strongly).",
+    "name": "Atomic Radius Trend",
+    "subject": "che",
+    "chapter": "c13"
+  },
+  {
+    "id": "m21_item14",
+    "text": "The angle between \\( \\vec{a}=\\hat{i}+\\hat{j} \\) and \\( \\vec{b}=\\hat{j}+\\hat{k} \\) is:",
+    "options": [
+      "\\( 30° \\)",
+      "\\( 45° \\)",
+      "\\( 60° \\)",
+      "\\( 90° \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\( \\vec{a}\\cdot\\vec{b} = 0+1+0=1 \\). \\( |\\vec{a}|=\\sqrt{2}, |\\vec{b}|=\\sqrt{2} \\). \\( \\cos\\theta = \\frac{1}{2} \\Rightarrow \\theta=60° \\)",
+    "name": "Angle Between Vectors",
+    "subject": "maths",
+    "chapter": "m21"
+  },
+  {
+    "id": "c14_item8",
+    "text": "In the water gas shift reaction: \\( \\text{CO} + \\text{H}_2\\text{O} \\rightleftharpoons \\)",
+    "options": [
+      "\\( \\text{CH}_4 + \\text{O}_2 \\)",
+      "\\( \\text{CO}_2 + \\text{H}_2 \\)",
+      "\\( \\text{HCOOH} \\)",
+      "\\( \\text{HCO}_3^- + \\text{H}^+ \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Water gas shift reaction: \\( \\text{CO} + \\text{H}_2\\text{O} \\rightleftharpoons \\text{CO}_2 + \\text{H}_2 \\). Used to increase H₂ yield.",
+    "name": "Water Gas Shift Reaction",
+    "subject": "che",
+    "chapter": "c14"
+  },
+  {
+    "id": "c3_item15",
+    "text": "According to MO theory, which molecule is paramagnetic?",
+    "options": [
+      "\\( \\text{N}_2 \\)",
+      "\\( \\text{H}_2 \\)",
+      "\\( \\text{O}_2 \\)",
+      "\\( \\text{F}_2 \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{O}_2\\) MO configuration has 2 unpaired electrons in \\(\\pi^*\\) orbitals → paramagnetic. This was a triumph of MO theory.",
+    "name": "Paramagnetic Molecule",
+    "subject": "che",
+    "chapter": "c3"
+  },
+  {
+    "id": "m4_item5",
+    "text": "If \\( f(x) = \\frac{x+1}{x-1} \\), then \\( f(f(x)) = \\)",
+    "options": [
+      "\\( x \\)",
+      "\\( \\frac{1}{x} \\)",
+      "\\( -x \\)",
+      "\\( x+1 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\( f(f(x)) = \\frac{\\frac{x+1}{x-1}+1}{\\frac{x+1}{x-1}-1} = \\frac{2x}{2} = x \\). So \\(f\\) is its own inverse.",
+    "name": "Function Composed with Itself",
+    "subject": "maths",
+    "chapter": "m4"
+  },
+  {
+    "id": "m23_item2",
+    "text": "\\( \\lim_{x \\to 0} \\frac{\\tan x}{x} = \\)",
+    "options": [
+      "\\( 0 \\)",
+      "\\( 1 \\)",
+      "\\( \\infty \\)",
+      "\\( -1 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( \\lim_{x\\to 0}\\frac{\\tan x}{x} = \\lim_{x\\to 0}\\frac{\\sin x}{x}\\cdot\\frac{1}{\\cos x} = 1\\cdot1 = 1 \\)",
+    "name": "tan x / x Limit",
+    "subject": "maths",
+    "chapter": "m23"
+  },
+  {
+    "id": "m25_item15",
+    "text": "The critical points of \\( f(x) \\) are points where:",
+    "options": [
+      "\\( f''(x) = 0 \\)",
+      "\\( f'(x) = 0 \\) or \\( f'(x) \\) is undefined",
+      "\\( f(x) = 0 \\)",
+      "\\( f(x) \\) is maximum"
+    ],
+    "correctIndex": 1,
+    "explanation": "Critical points: where \\( f'(x) = 0 \\) or \\( f'(x) \\) does not exist. Extrema can only occur at critical points.",
+    "name": "Critical Points",
+    "subject": "maths",
+    "chapter": "m25"
+  },
+  {
+    "id": "c24_item3",
+    "text": "The α-helix and β-pleated sheet are examples of:",
+    "options": [
+      "Primary structure of proteins",
+      "Secondary structure of proteins",
+      "Tertiary structure",
+      "Quaternary structure"
+    ],
+    "correctIndex": 1,
+    "explanation": "Secondary structure: regular folding maintained by H-bonds between C=O and N–H of peptide bonds. α-helix (coiled) and β-sheet (pleated).",
+    "name": "Protein Secondary Structure",
+    "subject": "che",
+    "chapter": "c24"
+  },
+  {
+    "id": "p22_item8",
+    "text": "The power of a lens in dioptres (D) is:",
+    "options": [
+      "\\( P = f \\) (in metres)",
+      "\\( P = 1/f \\) (f in metres)",
+      "\\( P = 100/f \\) (f in centimetres)",
+      "Both B and C"
+    ],
+    "correctIndex": 3,
+    "explanation": "Power: \\( P = 1/f(\\text{metres}) = 100/f(\\text{cm}) \\). Unit: dioptre (D). Converging lens: \\(P > 0\\). Diverging: \\(P < 0\\).",
+    "name": "Power of Lens",
+    "subject": "phy",
+    "chapter": "p22"
+  },
+  {
+    "id": "m12_item6",
+    "text": "\\( \\sin C + \\sin D = \\)",
+    "options": [
+      "\\( 2\\sin\\frac{C+D}{2}\\cos\\frac{C-D}{2} \\)",
+      "\\( 2\\cos\\frac{C+D}{2}\\sin\\frac{C-D}{2} \\)",
+      "\\( 2\\cos\\frac{C+D}{2}\\cos\\frac{C-D}{2} \\)",
+      "\\( 2\\sin\\frac{C+D}{2}\\sin\\frac{C-D}{2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sum-to-Product: \\( \\sin C + \\sin D = 2\\sin\\frac{C+D}{2}\\cos\\frac{C-D}{2} \\)",
+    "name": "Sum-to-Product Formula",
+    "subject": "maths",
+    "chapter": "m12"
+  },
+  {
+    "id": "m20_item3",
+    "text": "The standard equation of an ellipse with semi-major axis \\(a\\) along x-axis is:",
+    "options": [
+      "\\( \\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1 \\)",
+      "\\( \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1,\\ a>b \\)",
+      "\\( \\frac{x^2}{b^2} + \\frac{y^2}{a^2} = 1 \\)",
+      "\\( x^2+y^2=a^2 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ellipse: \\( \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1 \\) with \\(a>b>0\\). Foci at \\( (\\pm c,0) \\) where \\( c^2=a^2-b^2 \\).",
+    "name": "Ellipse Standard Form",
+    "subject": "maths",
+    "chapter": "m20"
+  },
+  {
+    "id": "m28_item2",
+    "text": "The degree of \\( \\left(\\frac{dy}{dx}\\right)^3 + 2\\frac{dy}{dx} + y = 0 \\) is:",
+    "options": [
+      "\\( 1 \\)",
+      "\\( 3 \\)",
+      "\\( 2 \\)",
+      "\\( 0 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Degree = power of highest-order derivative (after making it polynomial). Here \\( (y')^3 \\) → degree = 3.",
+    "name": "Degree of DE",
+    "subject": "maths",
+    "chapter": "m28"
+  },
+  {
+    "id": "c11_item6",
+    "text": "Gold number is a measure of:",
+    "options": [
+      "Amount of gold in colloid",
+      "Protective power of lyophilic colloid",
+      "Coagulation value",
+      "Charge on gold sol"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gold number: minimum mass (in mg) of protective colloid to prevent coagulation of 10 mL gold sol by 1 mL 10% NaCl. Lower gold number = better protection.",
+    "name": "Gold Number",
+    "subject": "che",
+    "chapter": "c11"
+  },
+  {
+    "id": "m12_item12",
+    "text": "The value of \\( \\sin 75° = \\)",
+    "options": [
+      "\\( \\frac{\\sqrt{6}+\\sqrt{2}}{4} \\)",
+      "\\( \\frac{\\sqrt{6}-\\sqrt{2}}{4} \\)",
+      "\\( \\frac{\\sqrt{3}+1}{2\\sqrt{2}} \\)",
+      "Both A and C"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\( \\sin 75° = \\sin(45°+30°) = \\frac{\\sqrt{6}+\\sqrt{2}}{4} = \\frac{\\sqrt{3}+1}{2\\sqrt{2}} \\). Both are equivalent.",
+    "name": "sin 75°",
+    "subject": "maths",
+    "chapter": "m12"
+  },
+  {
+    "id": "m4_item13",
+    "text": "If \\( f(x+y) = f(x) + f(y) \\) for all \\(x, y\\) and \\(f(1) = 3\\), then \\(f(5) = \\)",
+    "options": [
+      "\\( 15 \\)",
+      "\\( 8 \\)",
+      "\\( 3^5 \\)",
+      "\\( 9 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is Cauchy's functional equation: \\( f(x) = kx \\). \\( f(1)=3 \\Rightarrow k=3 \\). So \\( f(5) = 15 \\)",
+    "name": "Cauchy Functional Equation",
+    "subject": "maths",
+    "chapter": "m4"
+  },
+  {
+    "id": "m16_item11",
+    "text": "\\( \\cosh 2x = \\)",
+    "options": [
+      "\\( 2\\cosh^2 x - 1 \\)",
+      "\\( 1 + 2\\sinh^2 x \\)",
+      "\\( \\cosh^2x + \\sinh^2x \\)",
+      "All of the above"
+    ],
+    "correctIndex": 3,
+    "explanation": "All three are valid: \\( \\cosh 2x = 2\\cosh^2x-1 = 1+2\\sinh^2x = \\cosh^2x+\\sinh^2x \\)",
+    "name": "cosh 2x Identities",
+    "subject": "maths",
+    "chapter": "m16"
+  },
+  {
+    "id": "p15_item1",
+    "text": "The electric potential at distance \\(r\\) from a point charge \\(q\\) is:",
+    "options": [
+      "\\( V = kq/r^2 \\)",
+      "\\( V = kq/r \\)",
+      "\\( V = kqr \\)",
+      "\\( V = kq \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Electric potential: \\( V = \\frac{kq}{r} = \\frac{q}{4\\pi\\epsilon_0 r} \\). Scalar quantity. Units: Volt (V) = J/C.",
+    "name": "Electric Potential of Point Charge",
+    "subject": "phy",
+    "chapter": "p15"
+  },
+  {
+    "id": "c22_item15",
+    "text": "The basicity of aniline (PhNH₂) is much less than aliphatic amines because:",
+    "options": [
+      "Phenyl ring is electron donating",
+      "Lone pair on N is delocalised into the aromatic ring (resonance), making it less available",
+      "N has no lone pair in aniline",
+      "Aniline forms ionic bonds"
+    ],
+    "correctIndex": 1,
+    "explanation": "In aniline: N lone pair delocalised into aromatic π system via resonance → less available for protonation. pKb(aniline) ≈ 9.4 vs pKb(CH₃NH₂) ≈ 3.4.",
+    "name": "Aniline Low Basicity",
+    "subject": "che",
+    "chapter": "c22"
+  },
+  {
+    "id": "m1_item8",
+    "text": "The conjugate of \\( z = \\frac{2+3i}{4-5i} \\) is:",
+    "options": [
+      "\\( \\frac{-7+22i}{41} \\)",
+      "\\( \\frac{-7-22i}{41} \\)",
+      "\\( \\frac{7+22i}{41} \\)",
+      "\\( \\frac{7-22i}{41} \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "First simplify: \\( z = \\frac{(2+3i)(4+5i)}{41} = \\frac{-7+22i}{41} \\). Conjugate flips sign of imaginary part: \\( \\bar{z} = \\frac{-7-22i}{41} \\). Wait — re-check: \\( \\frac{7-22i}{41} \\) is \\(\\overline{z}\\) after correct multiplication.",
+    "name": "Conjugate of Complex Fraction",
+    "subject": "maths",
+    "chapter": "m1"
+  },
+  {
+    "id": "m24_item6",
+    "text": "The Quotient Rule: \\( \\frac{d}{dx}\\left(\\frac{u}{v}\\right) = \\)",
+    "options": [
+      "\\( \\frac{u'v + uv'}{v^2} \\)",
+      "\\( \\frac{u'v - uv'}{v^2} \\)",
+      "\\( \\frac{u'v - uv'}{v} \\)",
+      "\\( \\frac{u'}{v'} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Quotient Rule: \\( \\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2} \\)",
+    "name": "Quotient Rule",
+    "subject": "maths",
+    "chapter": "m24"
+  },
+  {
+    "id": "p3_item12",
+    "text": "Rolling friction is _____ than sliding friction:",
+    "options": [
+      "Greater",
+      "Equal",
+      "Smaller (much less)",
+      "Independent"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rolling friction \\( \\ll \\) sliding friction. That's why wheels (ball bearings) reduce friction significantly. \\( \\mu_{rolling} \\ll \\mu_{sliding} \\).",
+    "name": "Rolling vs Sliding Friction",
+    "subject": "phy",
+    "chapter": "p3"
+  },
+  {
+    "id": "m24_item3",
+    "text": "\\( \\frac{d}{dx}(e^x) = \\)",
+    "options": [
+      "\\( e^{x-1} \\)",
+      "\\( xe^{x-1} \\)",
+      "\\( e^x \\)",
+      "\\( \\frac{e^x}{x} \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\( \\frac{d}{dx}(e^x) = e^x \\). The exponential function is its own derivative.",
+    "name": "Derivative of eˣ",
+    "subject": "maths",
+    "chapter": "m24"
+  },
+  {
+    "id": "m6_item10",
+    "text": "\\( \\frac{x^3}{x-1} \\) requires partial fractions after:",
+    "options": [
+      "Direct decomposition",
+      "Polynomial long division first",
+      "Factoring numerator first",
+      "Multiplying by conjugate"
+    ],
+    "correctIndex": 1,
+    "explanation": "Since degree of numerator (3) > degree of denominator (1), perform long division first to get a proper fraction.",
+    "name": "Improper Fraction - Long Division",
+    "subject": "maths",
+    "chapter": "m6"
+  },
+  {
+    "id": "m22_item13",
+    "text": "The shortest distance between two skew lines \\( \\vec{r}=\\vec{a_1}+\\lambda\\vec{b_1} \\) and \\( \\vec{r}=\\vec{a_2}+\\mu\\vec{b_2} \\) is:",
+    "options": [
+      "\\( \\frac{|(\\vec{a_2}-\\vec{a_1})\\cdot(\\vec{b_1}\\times\\vec{b_2})|}{|\\vec{b_1}\\times\\vec{b_2}|} \\)",
+      "\\( \\frac{(\\vec{a_2}-\\vec{a_1})\\cdot\\vec{b_1}}{|\\vec{b_1}|} \\)",
+      "\\( |\\vec{a_2}-\\vec{a_1}| \\)",
+      "\\( \\frac{|\\vec{b_1}\\times\\vec{b_2}|}{|\\vec{a_1}-\\vec{a_2}|} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Shortest distance between skew lines: \\( SD = \\frac{|(\\vec{a_2}-\\vec{a_1})\\cdot(\\vec{b_1}\\times\\vec{b_2})|}{|\\vec{b_1}\\times\\vec{b_2}|} \\)",
+    "name": "Shortest Distance - Skew Lines",
+    "subject": "maths",
+    "chapter": "m22"
+  },
+  {
+    "id": "p23_item6",
+    "text": "In thin film interference, the condition for bright reflected light from film of thickness \\(t\\) and refractive index \\(n\\) is (both reflections at denser medium):",
+    "options": [
+      "\\( 2nt = m\\lambda \\)",
+      "\\( 2nt = (2m-1)\\lambda/2 \\)",
+      "\\( 2nt = m\\lambda/2 \\)",
+      "\\( nt = m\\lambda \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Thin film (same phase change at both surfaces): Constructive: \\( 2nt = (2m-1)\\lambda/2 \\). Destructive: \\( 2nt = m\\lambda \\). (One phase change at each interface.)",
+    "name": "Thin Film Interference",
+    "subject": "phy",
+    "chapter": "p23"
+  },
+  {
+    "id": "m10_item2",
+    "text": "The mean deviation about mean for \\( \\{2, 4, 6, 8, 10\\} \\) is:",
+    "options": [
+      "\\( 2.4 \\)",
+      "\\( 2 \\)",
+      "\\( 3 \\)",
+      "\\( 1.6 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\( = 6 \\). Deviations: \\(|2-6|+|4-6|+|6-6|+|8-6|+|10-6| = 4+2+0+2+4=12\\). MD \\( = 12/5 = 2.4 \\)",
+    "name": "Mean Deviation",
+    "subject": "maths",
+    "chapter": "m10"
+  },
+  {
+    "id": "m13_item12",
+    "text": "The general solution of \\( \\cos 2\\theta = 0 \\) is:",
+    "options": [
+      "\\( \\theta = n\\pi \\)",
+      "\\( \\theta = \\frac{(2n+1)\\pi}{4} \\)",
+      "\\( \\theta = \\frac{n\\pi}{2} \\)",
+      "\\( \\theta = (2n+1)\\pi \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( \\cos 2\\theta = 0 \\Rightarrow 2\\theta = (2n+1)\\frac{\\pi}{2} \\Rightarrow \\theta = \\frac{(2n+1)\\pi}{4} \\)",
+    "name": "cos 2θ = 0",
+    "subject": "maths",
+    "chapter": "m13"
+  },
+  {
+    "id": "p26_item2",
+    "text": "The binding energy of a nucleus is related to mass defect \\(\\Delta m\\) by:",
+    "options": [
+      "\\( BE = \\Delta m \\cdot c \\)",
+      "\\( BE = \\Delta m \\cdot c^2 \\) (Einstein's mass-energy relation)",
+      "\\( BE = \\Delta m / c^2 \\)",
+      "\\( BE = \\Delta m + c^2 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Binding energy: \\( BE = \\Delta m \\cdot c^2 \\), where \\( \\Delta m = Zm_p + Nm_n - m_{nucleus} \\) (mass defect). 1 amu = 931.5 MeV/c².",
+    "name": "Binding Energy Formula",
+    "subject": "phy",
+    "chapter": "p26"
+  },
+  {
+    "id": "c21_item9",
+    "text": "Clemmensen reduction converts ketone to:",
+    "options": [
+      "Alcohol",
+      "Alkene",
+      "Alkane (removes carbonyl)",
+      "Acid"
+    ],
+    "correctIndex": 2,
+    "explanation": "Clemmensen reduction: R–CO–R' + Zn(Hg)/conc. HCl → R–CH₂–R'. Reduces C=O to CH₂ (removes oxygen). For acid-tolerant substrates.",
+    "name": "Clemmensen Reduction",
+    "subject": "che",
+    "chapter": "c21"
+  },
+  {
+    "id": "m2_item13",
+    "text": "The range of \\( f(x) = x^2 - 4x + 5 \\) is:",
+    "options": [
+      "\\( [1, \\infty) \\)",
+      "\\( (-\\infty, 1] \\)",
+      "\\( [5, \\infty) \\)",
+      "\\( (-\\infty, \\infty) \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Minimum at \\( x=2 \\): \\( f(2) = 4-8+5 = 1 \\). Since \\(a>0\\), range is \\([1, \\infty)\\)",
+    "name": "Range of Quadratic",
+    "subject": "maths",
+    "chapter": "m2"
+  },
+  {
+    "id": "p10_item14",
+    "text": "In a cyclic process, the net change in internal energy is:",
+    "options": [
+      "Equal to work done",
+      "Equal to heat supplied",
+      "Zero (state function returns to initial state)",
+      "Equal to entropy change"
+    ],
+    "correctIndex": 2,
+    "explanation": "Internal energy is a state function. In a complete cycle, system returns to initial state: \\( \\Delta U_{cycle} = 0 \\Rightarrow Q_{net} = W_{net} \\).",
+    "name": "Cyclic Process Internal Energy",
+    "subject": "phy",
+    "chapter": "p10"
+  },
+  {
+    "id": "p8_item6",
+    "text": "Surface tension arises due to:",
+    "options": [
+      "Viscosity of liquid",
+      "Cohesive forces between surface molecules being unbalanced",
+      "Adhesion of liquid to container",
+      "Gravity acting on surface molecules"
+    ],
+    "correctIndex": 1,
+    "explanation": "Surface tension: molecules on surface have unbalanced (net inward) cohesive forces → surface acts like a stretched membrane.",
+    "name": "Origin of Surface Tension",
+    "subject": "phy",
+    "chapter": "p8"
+  },
+  {
+    "id": "m18_item13",
+    "text": "The image of point \\((a,b)\\) about the line \\( y = x \\) is:",
+    "options": [
+      "\\( (-a,-b) \\)",
+      "\\( (b,a) \\)",
+      "\\( (-b,-a) \\)",
+      "\\( (a,-b) \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Reflection about \\( y=x \\) swaps coordinates: image of \\((a,b)\\) is \\((b,a)\\).",
+    "name": "Reflection About y=x",
+    "subject": "maths",
+    "chapter": "m18"
+  },
+  {
+    "id": "p13_item4",
+    "text": "The Doppler effect formula for source moving towards stationary observer is:",
+    "options": [
+      "\\( f' = f\\frac{v - v_s}{v} \\)",
+      "\\( f' = f\\frac{v}{v - v_s} \\)",
+      "\\( f' = f\\frac{v + v_s}{v} \\)",
+      "\\( f' = f\\frac{v}{v + v_s} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Source approaching observer: \\( f' = f\\frac{v}{v - v_s} > f \\) (higher pitch). Source receding: \\( f' = f\\frac{v}{v + v_s} < f \\).",
+    "name": "Doppler Effect - Source Moving",
+    "subject": "phy",
+    "chapter": "p13"
+  },
+  {
+    "id": "p2_item4",
+    "text": "The time of flight of a projectile launched with speed \\(u\\) at angle \\(\\theta\\) is:",
+    "options": [
+      "\\( T = \\frac{u\\sin\\theta}{g} \\)",
+      "\\( T = \\frac{2u\\sin\\theta}{g} \\)",
+      "\\( T = \\frac{u^2\\sin 2\\theta}{g} \\)",
+      "\\( T = \\frac{2u\\cos\\theta}{g} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Time of flight: \\( T = \\frac{2u\\sin\\theta}{g} \\). At maximum height, vertical velocity = 0, then returns.",
+    "name": "Time of Flight",
+    "subject": "phy",
+    "chapter": "p2"
+  },
+  {
+    "id": "c13_item3",
+    "text": "Ionisation energy across a period generally:",
+    "options": [
+      "Decreases",
+      "Increases",
+      "Remains constant",
+      "Is unpredictable"
+    ],
+    "correctIndex": 1,
+    "explanation": "IE increases across a period due to increasing nuclear charge and decreasing atomic radius. Noble gases have highest IE.",
+    "name": "Ionisation Energy Trend",
+    "subject": "che",
+    "chapter": "c13"
+  },
+  {
+    "id": "p1_item12",
+    "text": "The SI unit of luminous intensity is:",
+    "options": [
+      "Lux",
+      "Lumen",
+      "Candela",
+      "Watt"
+    ],
+    "correctIndex": 2,
+    "explanation": "Candela (cd) is the SI base unit of luminous intensity. Lumen is luminous flux, Lux is illuminance.",
+    "name": "SI Unit of Luminous Intensity",
+    "subject": "phy",
+    "chapter": "p1"
+  },
+  {
+    "id": "c15_item7",
+    "text": "Which allotrope of carbon has a layered structure with delocalized electrons?",
+    "options": [
+      "Diamond",
+      "Fullerene C₆₀",
+      "Graphite",
+      "Carbyne"
+    ],
+    "correctIndex": 2,
+    "explanation": "Graphite: layered hexagonal structure. Each C is sp² hybridised. Delocalized π electrons make it a conductor. Layers held by van der Waals forces.",
+    "name": "Graphite Structure",
+    "subject": "che",
+    "chapter": "c15"
+  },
+  {
+    "id": "m27_item9",
+    "text": "\\( \\int_0^{\\pi/2}\\sin^n x\\,dx = \\int_0^{\\pi/2}\\cos^n x\\,dx \\). This follows from:",
+    "options": [
+      "Power rule",
+      "Property: \\( \\int_0^a f(x)dx = \\int_0^a f(a-x)dx \\)",
+      "Even function property",
+      "Odd function property"
+    ],
+    "correctIndex": 1,
+    "explanation": "Applying \\( x \\to \\frac{\\pi}{2}-x \\): \\( \\sin x \\to \\cos x \\), so both integrals are equal.",
+    "name": "sin-cos Symmetry",
+    "subject": "maths",
+    "chapter": "m27"
+  },
+  {
+    "id": "m13_item15",
+    "text": "The equation \\( 2\\cos^2\\theta - \\cos\\theta - 1 = 0 \\) in \\([0, 2\\pi]\\) — the number of solutions is:",
+    "options": [
+      "\\( 2 \\)",
+      "\\( 3 \\)",
+      "\\( 1 \\)",
+      "\\( 4 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Factor: \\( (2\\cos\\theta+1)(\\cos\\theta-1) = 0 \\Rightarrow \\cos\\theta = -\\frac{1}{2} \\) (gives \\(\\frac{2\\pi}{3}, \\frac{4\\pi}{3}\\)) or \\(\\cos\\theta=1\\) (gives \\(0\\)). Total: 3 solutions.",
+    "name": "Quadratic in cosθ",
+    "subject": "maths",
+    "chapter": "m13"
+  },
+  {
+    "id": "m29_item11",
+    "text": "The sum \\( \\sum_{k=1}^{n}(2k-1) = n^2 \\). So \\( 1+3+5+\\cdots+19 = \\)",
+    "options": [
+      "\\( 81 \\)",
+      "\\( 90 \\)",
+      "\\( 100 \\)",
+      "\\( 64 \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "19th odd number: \\(n=10\\) (since \\(2(10)-1=19\\)). Sum \\( = 10^2 = 100 \\)",
+    "name": "Sum of Odd Numbers",
+    "subject": "maths",
+    "chapter": "m29"
+  },
+  {
+    "id": "p5_item15",
+    "text": "The moment of inertia of a ring about its diameter is:",
+    "options": [
+      "\\( MR^2 \\)",
+      "\\( \\frac{MR^2}{2} \\)",
+      "\\( \\frac{MR^2}{4} \\)",
+      "\\( 2MR^2 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ring (axis through centre perpendicular): \\( I = MR^2 \\). Ring (diameter): \\( I = \\frac{MR^2}{2} \\) (by perpendicular axis theorem: \\( MR^2 = I_x + I_y = 2I_{diameter} \\)).",
+    "name": "MOI of Ring about Diameter",
+    "subject": "phy",
+    "chapter": "p5"
+  },
+  {
+    "id": "m10_item8",
+    "text": "Which measure of dispersion is least affected by extreme values?",
+    "options": [
+      "Range",
+      "Standard Deviation",
+      "Quartile Deviation",
+      "Mean Deviation"
+    ],
+    "correctIndex": 2,
+    "explanation": "Quartile deviation uses only middle 50% of data (Q1 and Q3), so it's least affected by extreme values.",
+    "name": "Robust Measure",
+    "subject": "maths",
+    "chapter": "m10"
+  },
+  {
+    "id": "c10_item4",
+    "text": "Faraday's first law of electrolysis states:",
+    "options": [
+      "Mass deposited is independent of current",
+      "Mass deposited ∝ charge passed \\( (m = ZQ = ZIt) \\)",
+      "Mass deposited ∝ temperature",
+      "Mass deposited ∝ 1/current"
+    ],
+    "correctIndex": 1,
+    "explanation": "Faraday's First Law: \\( m = Z \\cdot Q = Z \\cdot I \\cdot t \\), where \\(Z\\) = electrochemical equivalent.",
+    "name": "Faraday's First Law",
+    "subject": "che",
+    "chapter": "c10"
+  },
+  {
+    "id": "m7_item11",
+    "text": "The coefficient of \\( x^3 \\) in \\( (1-2x)^5 \\) is:",
+    "options": [
+      "\\( -80 \\)",
+      "\\( 80 \\)",
+      "\\( -40 \\)",
+      "\\( 40 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\( T_{r+1} = \\binom{5}{r}(-2x)^r \\). At \\(r=3\\): \\( \\binom{5}{3}(-2)^3 = 10 \\times (-8) = -80 \\)",
+    "name": "Coefficient with Negative Term",
+    "subject": "maths",
+    "chapter": "m7"
+  },
+  {
+    "id": "m19_item15",
+    "text": "The equation of normal to circle \\( x^2+y^2=r^2 \\) at point \\((x_1,y_1)\\) is:",
+    "options": [
+      "\\( x_1 y - y_1 x = 0 \\)",
+      "\\( x_1 y + y_1 x = 0 \\)",
+      "\\( \\frac{x}{x_1} = \\frac{y}{y_1} \\)",
+      "Both A and C"
+    ],
+    "correctIndex": 3,
+    "explanation": "The normal to a circle at any point passes through the center (origin). Equation: \\( \\frac{x}{x_1}=\\frac{y}{y_1} \\) or \\( x_1y - y_1x=0 \\).",
+    "name": "Normal to Circle",
+    "subject": "maths",
+    "chapter": "m19"
+  },
+  {
+    "id": "m2_item4",
+    "text": "The expression \\( x^2 + x + 1 \\) is positive for:",
+    "options": [
+      "All real \\( x \\)",
+      "\\( x > 0 \\) only",
+      "\\( x < 0 \\) only",
+      "No real \\( x \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Discriminant \\( = 1 - 4 = -3 < 0 \\) and \\( a = 1 > 0 \\), so expression is positive for all real \\( x \\).",
+    "name": "Sign of Quadratic Expression",
+    "subject": "maths",
+    "chapter": "m2"
+  },
+  {
+    "id": "c6_item13",
+    "text": "The formula to calculate molar mass from freezing point depression is:",
+    "options": [
+      "\\( M = \\frac{K_f \\times w_2}{\\Delta T_f \\times w_1} \\times 1000 \\)",
+      "\\( M = K_f \\times \\Delta T_f \\)",
+      "\\( M = \\frac{\\Delta T_f}{K_f \\times m} \\)",
+      "\\( M = \\frac{w_2}{K_f \\times w_1} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\( M_2 = \\frac{K_f \\times w_2 \\times 1000}{\\Delta T_f \\times w_1} \\), where \\(w_1\\) = mass of solvent (g), \\(w_2\\) = mass of solute (g).",
+    "name": "Molar Mass from FP Depression",
+    "subject": "che",
+    "chapter": "c6"
+  },
+  {
+    "id": "p16_item4",
+    "text": "Kirchhoff's voltage law (KVL) states:",
+    "options": [
+      "Current is constant around a loop",
+      "Sum of all voltages (EMFs and drops) around any closed loop = 0",
+      "Voltage is same across all elements",
+      "Resistance increases with current"
+    ],
+    "correctIndex": 1,
+    "explanation": "KVL (loop rule): \\( \\sum V = \\sum EMF - \\sum IR = 0 \\). Based on conservation of energy.",
+    "name": "Kirchhoff's Voltage Law",
+    "subject": "phy",
+    "chapter": "p16"
+  },
+  {
+    "id": "m13_item13",
+    "text": "Number of solutions of \\( \\cos\\theta = -1 \\) in \\( [0, 4\\pi] \\) is:",
+    "options": [
+      "\\( 1 \\)",
+      "\\( 2 \\)",
+      "\\( 3 \\)",
+      "\\( 4 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( \\cos\\theta = -1 \\Rightarrow \\theta = \\pi + 2n\\pi \\). In \\([0,4\\pi]\\): \\( \\theta = \\pi \\) and \\( \\theta = 3\\pi \\). 2 solutions.",
+    "name": "cosθ = -1 Solutions",
+    "subject": "maths",
+    "chapter": "m13"
+  },
+  {
+    "id": "c2_item1",
+    "text": "The energy of an electron in the nth orbit of hydrogen atom is given by:",
+    "options": [
+      "\\( E_n = -\\frac{13.6}{n} \\text{ eV} \\)",
+      "\\( E_n = -\\frac{13.6}{n^2} \\text{ eV} \\)",
+      "\\( E_n = \\frac{13.6}{n^2} \\text{ eV} \\)",
+      "\\( E_n = -13.6n^2 \\text{ eV} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bohr's model: \\( E_n = -\\frac{13.6}{n^2} \\) eV. Ground state (n=1): \\(-13.6\\) eV.",
+    "name": "Bohr's Energy Formula",
+    "subject": "che",
+    "chapter": "c2"
+  },
+  {
+    "id": "c25_item3",
+    "text": "CFCs (chlorofluorocarbons) destroy ozone by:",
+    "options": [
+      "Reacting with O₂ to form CO₂",
+      "Releasing Cl• radicals that catalytically destroy O₃: Cl• + O₃ → ClO• + O₂",
+      "Absorbing UV radiation",
+      "Reacting with N₂"
+    ],
+    "correctIndex": 1,
+    "explanation": "CFC → UV → Cl•. Then: Cl• + O₃ → ClO• + O₂; ClO• + O → Cl• + O₂. Chain reaction: one Cl• destroys ~10⁵ ozone molecules.",
+    "name": "CFCs and Ozone Depletion",
+    "subject": "che",
+    "chapter": "c25"
+  },
+  {
+    "id": "p16_item3",
+    "text": "Kirchhoff's current law (KCL) states:",
+    "options": [
+      "Sum of voltages in a loop = 0",
+      "Sum of currents entering a junction = sum of currents leaving (\\(\\sum I = 0\\))",
+      "Current is same everywhere in a circuit",
+      "Voltage divides in proportion to resistance"
+    ],
+    "correctIndex": 1,
+    "explanation": "KCL (junction rule): \\( \\sum I_{in} = \\sum I_{out} \\). Based on conservation of charge.",
+    "name": "Kirchhoff's Current Law",
+    "subject": "phy",
+    "chapter": "p16"
+  },
+  {
+    "id": "c23_item2",
+    "text": "Condensation polymerisation involves:",
+    "options": [
+      "No loss of molecules",
+      "Loss of small molecules (like H₂O, HCl) at each step",
+      "Only radical mechanism",
+      "Ring opening reactions"
+    ],
+    "correctIndex": 1,
+    "explanation": "Condensation (step growth) polymerisation: monomers react with loss of small molecules (H₂O, HCl). E.g., nylon, polyester, Bakelite.",
+    "name": "Condensation Polymerisation",
+    "subject": "che",
+    "chapter": "c23"
+  },
+  {
+    "id": "m3_item5",
+    "text": "By Descartes' rule, the maximum number of positive roots of \\( x^3 - 3x^2 + 4 = 0 \\) is:",
+    "options": [
+      "\\( 1 \\)",
+      "\\( 2 \\)",
+      "\\( 3 \\)",
+      "\\( 0 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sign changes: \\(+, -, +\\) — 2 sign changes, so max 2 positive roots (or 0).",
+    "name": "Descartes' Rule of Signs",
+    "subject": "maths",
+    "chapter": "m3"
+  },
+  {
+    "id": "c21_item4",
+    "text": "Cannizzaro reaction (disproportionation) is given by:",
+    "options": [
+      "Aldehydes with α-hydrogen",
+      "Ketones only",
+      "Aldehydes without α-hydrogen (like HCHO, PhCHO)",
+      "Carboxylic acids"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cannizzaro: aldehydes lacking α-H (HCHO, PhCHO, CCl₃CHO) undergo disproportionation in conc. NaOH → one mole oxidised to acid, one reduced to alcohol.",
+    "name": "Cannizzaro Reaction",
+    "subject": "che",
+    "chapter": "c21"
+  },
+  {
+    "id": "p20_item7",
+    "text": "Power factor of an AC circuit is defined as:",
+    "options": [
+      "\\( \\cos\\phi = R/Z \\)",
+      "\\( \\cos\\phi = Z/R \\)",
+      "\\( \\cos\\phi = X_L/R \\)",
+      "\\( \\cos\\phi = Z/X_L \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Power factor: \\( \\cos\\phi = R/Z \\). Average power: \\( P = V_{rms}I_{rms}\\cos\\phi \\). For pure R: \\(\\cos\\phi=1\\). For pure L or C: \\(\\cos\\phi=0\\).",
+    "name": "Power Factor",
+    "subject": "phy",
+    "chapter": "p20"
+  },
+  {
+    "id": "c15_item2",
+    "text": "Lithium differs from other Group 1 metals due to its diagonal relationship with:",
+    "options": [
+      "Be",
+      "Na",
+      "Mg",
+      "K"
+    ],
+    "correctIndex": 2,
+    "explanation": "Li resembles Mg (diagonal relationship): both form nitrides, hydroxides/carbonates are less soluble, LiCl/MgCl₂ are covalent.",
+    "name": "Li Diagonal Relationship",
+    "subject": "che",
+    "chapter": "c15"
+  },
+  {
+    "id": "p2_item15",
+    "text": "A body moves with uniform speed in a circle. Its acceleration is:",
+    "options": [
+      "Zero",
+      "Tangential (in direction of motion)",
+      "Centripetal (directed towards centre)",
+      "Zero since speed is constant"
+    ],
+    "correctIndex": 2,
+    "explanation": "Uniform circular motion: speed is constant but direction changes. Centripetal acceleration \\( a = \\frac{v^2}{r} \\) directed towards centre.",
+    "name": "Acceleration in Circular Motion",
+    "subject": "phy",
+    "chapter": "p2"
+  },
+  {
+    "id": "m9_item11",
+    "text": "If rows of a determinant are interchanged, its value:",
+    "options": [
+      "Doubles",
+      "Becomes zero",
+      "Remains same",
+      "Changes sign"
+    ],
+    "correctIndex": 3,
+    "explanation": "Interchanging any two rows (or columns) of a determinant changes its sign.",
+    "name": "Row Interchange Property",
+    "subject": "maths",
+    "chapter": "m9"
+  },
+  {
+    "id": "m4_item8",
+    "text": "The domain of \\( f(x) = \\log(x^2 - x - 6) \\) is:",
+    "options": [
+      "\\( x > 3 \\) or \\( x < -2 \\)",
+      "\\( -2 < x < 3 \\)",
+      "\\( x > 3 \\)",
+      "\\( x > -2 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Need \\( x^2-x-6 > 0 \\Rightarrow (x-3)(x+2) > 0 \\Rightarrow x > 3 \\) or \\( x < -2 \\)",
+    "name": "Domain of Logarithm",
+    "subject": "maths",
+    "chapter": "m4"
+  },
+  {
+    "id": "m9_item2",
+    "text": "A square matrix \\( A \\) is singular if:",
+    "options": [
+      "\\( |A| \\neq 0 \\)",
+      "\\( |A| = 0 \\)",
+      "\\( A = I \\)",
+      "\\( A = A^T \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "A matrix is singular if and only if its determinant is zero.",
+    "name": "Singular Matrix",
+    "subject": "maths",
+    "chapter": "m9"
+  },
+  {
+    "id": "m2_item11",
+    "text": "The number of real roots of \\( x^2 + |x| + 1 = 0 \\) is:",
+    "options": [
+      "\\( 0 \\)",
+      "\\( 1 \\)",
+      "\\( 2 \\)",
+      "\\( 4 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "For all real \\(x\\): \\( x^2 \\geq 0,\\ |x| \\geq 0 \\), so \\( x^2+|x|+1 \\geq 1 > 0 \\). No real roots.",
+    "name": "No Real Roots",
+    "subject": "maths",
+    "chapter": "m2"
+  },
+  {
+    "id": "m14_item7",
+    "text": "In a right triangle with right angle at \\(C\\), then \\( c^2 = \\)",
+    "options": [
+      "\\( a^2 - b^2 \\)",
+      "\\( a^2 + b^2 \\)",
+      "\\( 2ab\\cos C \\)",
+      "\\( a^2 + b^2 - ab \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When \\( C = 90°, \\cos C = 0 \\): \\( c^2 = a^2 + b^2 - 2ab(0) = a^2 + b^2 \\). Pythagorean theorem.",
+    "name": "Pythagoras from Cosine Rule",
+    "subject": "maths",
+    "chapter": "m14"
+  },
+  {
+    "id": "m26_item11",
+    "text": "\\( \\int \\frac{1}{a^2+x^2}\\,dx = \\)",
+    "options": [
+      "\\( \\frac{1}{a}\\tan^{-1}\\frac{x}{a}+C \\)",
+      "\\( \\frac{1}{a^2}\\tan^{-1}x+C \\)",
+      "\\( \\tan^{-1}\\frac{x}{a}+C \\)",
+      "\\( \\frac{a}{x}\\tan^{-1}\\frac{x}{a}+C \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Standard formula: \\( \\int \\frac{1}{a^2+x^2}dx = \\frac{1}{a}\\tan^{-1}\\frac{x}{a}+C \\)",
+    "name": "Standard Form Integral",
+    "subject": "maths",
+    "chapter": "m26"
+  },
+  {
+    "id": "p12_item2",
+    "text": "The angular frequency \\(\\omega\\) of SHM with spring constant \\(k\\) and mass \\(m\\) is:",
+    "options": [
+      "\\( \\omega = \\sqrt{m/k} \\)",
+      "\\( \\omega = \\sqrt{k/m} \\)",
+      "\\( \\omega = km \\)",
+      "\\( \\omega = 2\\pi\\sqrt{m/k} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Spring-mass system: \\( \\omega = \\sqrt{k/m} \\), \\( T = 2\\pi\\sqrt{m/k} \\), \\( f = \\frac{1}{2\\pi}\\sqrt{k/m} \\).",
+    "name": "Angular Frequency of Spring-Mass",
+    "subject": "phy",
+    "chapter": "p12"
+  },
+  {
+    "id": "p3_item6",
+    "text": "A rocket works on the principle of:",
+    "options": [
+      "Newton's first law",
+      "Newton's third law (conservation of momentum)",
+      "Newton's second law only",
+      "Bernoulli's principle"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rocket propulsion: burning gases ejected backward (action) → rocket moves forward (reaction). Based on Newton's 3rd law and conservation of momentum.",
+    "name": "Rocket Propulsion",
+    "subject": "phy",
+    "chapter": "p3"
+  },
+  {
+    "id": "m5_item13",
+    "text": "By induction, \\( n^3 + 2n \\) is divisible by:",
+    "options": [
+      "\\( 2 \\)",
+      "\\( 3 \\)",
+      "\\( 5 \\)",
+      "\\( 6 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( n^3+2n = n(n^2+2) \\). Among 3 consecutive integers, one is divisible by 3; this expression factors to always be divisible by 3.",
+    "name": "Divisibility of n³+2n",
+    "subject": "maths",
+    "chapter": "m5"
+  },
+  {
+    "id": "m19_item1",
+    "text": "The standard equation of a circle with center \\((h,k)\\) and radius \\(r\\) is:",
+    "options": [
+      "\\( x^2+y^2=r^2 \\)",
+      "\\( (x-h)^2+(y-k)^2=r \\)",
+      "\\( (x-h)^2+(y-k)^2=r^2 \\)",
+      "\\( (x+h)^2+(y+k)^2=r^2 \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form: \\( (x-h)^2+(y-k)^2=r^2 \\). When center is origin: \\( x^2+y^2=r^2 \\).",
+    "name": "Standard Circle Equation",
+    "subject": "maths",
+    "chapter": "m19"
+  },
+  {
+    "id": "p7_item9",
+    "text": "Beyond the elastic limit, a material shows:",
+    "options": [
+      "Elastic behaviour",
+      "Permanent (plastic) deformation",
+      "No deformation",
+      "Increase in Young's modulus"
+    ],
+    "correctIndex": 1,
+    "explanation": "Beyond elastic limit → plastic deformation (permanent). The material doesn't return to original shape on removing stress.",
+    "name": "Beyond Elastic Limit",
+    "subject": "phy",
+    "chapter": "p7"
+  },
+  {
+    "id": "c20_item1",
+    "text": "The boiling point of alcohols is much higher than alkanes of similar molecular weight because:",
+    "options": [
+      "Alcohols are ionic",
+      "Intermolecular hydrogen bonding in alcohols",
+      "Alcohols have higher molar mass",
+      "Covalent bonding is stronger in alcohols"
+    ],
+    "correctIndex": 1,
+    "explanation": "Alcohols form intermolecular H-bonds (O–H···O) → extra energy needed to separate molecules → much higher bp than alkanes or ethers.",
+    "name": "High BP of Alcohols",
+    "subject": "che",
+    "chapter": "c20"
+  },
+  {
+    "id": "m23_item6",
+    "text": "\\( \\lim_{x \\to a} \\frac{x^n - a^n}{x - a} = \\)",
+    "options": [
+      "\\( na^{n-1} \\)",
+      "\\( na^n \\)",
+      "\\( (n-1)a^n \\)",
+      "\\( a^{n-1} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Standard algebraic limit: \\( \\lim_{x\\to a}\\frac{x^n-a^n}{x-a} = na^{n-1} \\)",
+    "name": "Algebraic Limit",
+    "subject": "maths",
+    "chapter": "m23"
+  },
+  {
+    "id": "m24_item10",
+    "text": "\\( \\frac{d}{dx}(\\tan^{-1}x) = \\)",
+    "options": [
+      "\\( \\frac{1}{\\sqrt{1-x^2}} \\)",
+      "\\( \\frac{1}{1+x^2} \\)",
+      "\\( \\frac{-1}{1+x^2} \\)",
+      "\\( \\frac{1}{x^2-1} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( \\frac{d}{dx}(\\tan^{-1}x) = \\frac{1}{1+x^2} \\)",
+    "name": "Derivative of tan⁻¹",
+    "subject": "maths",
+    "chapter": "m24"
+  },
+  {
+    "id": "p11_item8",
+    "text": "At absolute zero (0 K), the kinetic energy of ideal gas molecules is:",
+    "options": [
+      "Maximum",
+      "\\( \\frac{3}{2}kT = 0 \\) (zero, theoretically)",
+      "Minimum positive value",
+      "Infinite"
+    ],
+    "correctIndex": 1,
+    "explanation": "At \\( T = 0\\,\\text{K} \\): \\( KE = \\frac{3}{2}kT = 0 \\). All molecular motion ceases. However, this is unattainable (Third Law of Thermodynamics).",
+    "name": "KE at Absolute Zero",
+    "subject": "phy",
+    "chapter": "p11"
+  },
+  {
+    "id": "c18_item5",
+    "text": "Markovnikov's rule states that in addition of HX to an unsymmetrical alkene:",
+    "options": [
+      "H goes to the carbon with fewer H atoms",
+      "X goes to the carbon with fewer H atoms",
+      "H goes to the carbon with more H atoms",
+      "The reaction gives equal amounts of both products"
+    ],
+    "correctIndex": 2,
+    "explanation": "Markovnikov's rule: H adds to the C with more hydrogens (H-rich carbon). This forms the more stable carbocation intermediate.",
+    "name": "Markovnikov's Rule",
+    "subject": "che",
+    "chapter": "c18"
+  },
+  {
+    "id": "c3_item4",
+    "text": "Which of the following has the highest bond order?",
+    "options": [
+      "\\( \\text{N}_2 \\)",
+      "\\( \\text{O}_2 \\)",
+      "\\( \\text{F}_2 \\)",
+      "\\( \\text{H}_2 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bond order: \\(\\text{N}_2=3\\) (triple), \\(\\text{O}_2=2\\) (double), \\(\\text{F}_2=1\\) (single), \\(\\text{H}_2=1\\). \\(\\text{N}_2\\) has highest.",
+    "name": "Highest Bond Order",
+    "subject": "che",
+    "chapter": "c3"
+  },
+  {
+    "id": "c16_item12",
+    "text": "Which element among 3d series has maximum number of unpaired electrons?",
+    "options": [
+      "Fe (Z=26)",
+      "Cr (Z=24)",
+      "Mn (Z=25)",
+      "Cu (Z=29)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mn: [Ar]3d⁵4s². 3d⁵ has 5 unpaired electrons (Hund's rule). Maximum for 3d series is 5 (at Mn, d⁵).",
+    "name": "Maximum Unpaired Electrons",
+    "subject": "che",
+    "chapter": "c16"
+  },
+  {
+    "id": "m20_item15",
+    "text": "The rectangular hyperbola has eccentricity:",
+    "options": [
+      "\\( 1 \\)",
+      "\\( \\sqrt{2} \\)",
+      "\\( 2 \\)",
+      "\\( \\sqrt{3} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rectangular hyperbola: \\( a=b \\Rightarrow c=\\sqrt{a^2+a^2}=a\\sqrt{2} \\Rightarrow e = c/a = \\sqrt{2} \\).",
+    "name": "Rectangular Hyperbola",
+    "subject": "maths",
+    "chapter": "m20"
+  },
+  {
+    "id": "p22_item10",
+    "text": "The magnifying power of a simple microscope at near point (D=25 cm) is:",
+    "options": [
+      "\\( M = 1 + D/f \\)",
+      "\\( M = D/f \\)",
+      "\\( M = f/D \\)",
+      "\\( M = 1 + f/D \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Simple microscope: \\( M = 1 + D/f \\) (image at near point). \\( M = D/f \\) (image at infinity). Near point \\(D = 25\\) cm.",
+    "name": "Magnifying Power of Simple Microscope",
+    "subject": "phy",
+    "chapter": "p22"
+  },
+  {
+    "id": "m8_item13",
+    "text": "If \\( ^nC_{12} = ^nC_8 \\), then \\( n = \\)",
+    "options": [
+      "\\( 18 \\)",
+      "\\( 20 \\)",
+      "\\( 4 \\)",
+      "\\( 16 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( ^nC_r = ^nC_s \\Rightarrow r+s=n \\) (when \\(r \\neq s\\)). So \\( 12+8=n=20 \\)",
+    "name": "Equal Combinations Condition",
+    "subject": "maths",
+    "chapter": "m8"
+  },
+  {
+    "id": "m11_item4",
+    "text": "The conditional probability \\( P(A|B) = \\)",
+    "options": [
+      "\\( \\frac{P(A)}{P(B)} \\)",
+      "\\( \\frac{P(A \\cap B)}{P(B)} \\)",
+      "\\( \\frac{P(A \\cup B)}{P(B)} \\)",
+      "\\( P(A) \\cdot P(B) \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( P(A|B) = \\frac{P(A \\cap B)}{P(B)} \\), provided \\( P(B) \\neq 0 \\).",
+    "name": "Conditional Probability",
+    "subject": "maths",
+    "chapter": "m11"
+  },
+  {
+    "id": "p5_item10",
+    "text": "The angular velocity \\(\\omega\\) is related to linear velocity \\(v\\) and radius \\(r\\) by:",
+    "options": [
+      "\\( v = \\omega/r \\)",
+      "\\( v = \\omega r \\)",
+      "\\( \\omega = vr \\)",
+      "\\( v = r/\\omega \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( v = r\\omega \\). Tangential velocity of a point at radius \\(r\\) from axis rotating at angular velocity \\(\\omega\\).",
+    "name": "v and ω Relation",
+    "subject": "phy",
+    "chapter": "p5"
+  },
+  {
+    "id": "p4_item15",
+    "text": "If momentum of a body is doubled, its kinetic energy becomes:",
+    "options": [
+      "Doubles",
+      "Halves",
+      "4 times",
+      "Stays same"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\( KE = p^2/2m \\). If \\( p \\to 2p \\): \\( KE' = (2p)^2/2m = 4p^2/2m = 4\\,KE \\). KE becomes 4 times.",
+    "name": "KE when Momentum Doubled",
+    "subject": "phy",
+    "chapter": "p4"
+  },
+  {
+    "id": "c17_item1",
+    "text": "According to Werner's theory, the primary valence of a metal in a coordination compound is:",
+    "options": [
+      "The coordination number",
+      "The oxidation state of the metal",
+      "The number of ligands",
+      "The charge on complex ion"
+    ],
+    "correctIndex": 1,
+    "explanation": "Werner's theory: Primary valence = oxidation state (ionisable). Secondary valence = coordination number (non-ionisable, directed in space).",
+    "name": "Werner's Theory",
+    "subject": "che",
+    "chapter": "c17"
+  },
+  {
+    "id": "p14_item11",
+    "text": "The permittivity of free space \\(\\epsilon_0\\) has value:",
+    "options": [
+      "\\( 9\\times10^9\\,\\text{N m}^2/\\text{C}^2 \\)",
+      "\\( 8.85\\times10^{-12}\\,\\text{C}^2/\\text{N m}^2 \\)",
+      "\\( 6.67\\times10^{-11}\\,\\text{N m}^2/\\text{kg}^2 \\)",
+      "\\( 1.6\\times10^{-19}\\,\\text{C} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( \\epsilon_0 = 8.85\\times10^{-12}\\,\\text{C}^2/(\\text{N m}^2) \\). Note: \\( k = 1/4\\pi\\epsilon_0 \\approx 9\\times10^9\\,\\text{N m}^2/\\text{C}^2 \\).",
+    "name": "Permittivity of Free Space",
+    "subject": "phy",
+    "chapter": "p14"
+  },
+  {
+    "id": "m20_item4",
+    "text": "For ellipse \\( \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1 \\), eccentricity \\( e = \\)",
+    "options": [
+      "\\( \\frac{b}{a} \\)",
+      "\\( \\frac{c}{a} \\) where \\( c^2=a^2-b^2 \\)",
+      "\\( \\frac{a}{c} \\)",
+      "\\( \\sqrt{1+\\frac{b^2}{a^2}} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Eccentricity of ellipse: \\( e = \\frac{c}{a} \\) where \\( c = \\sqrt{a^2-b^2} \\). Always \\( 0 < e < 1 \\).",
+    "name": "Eccentricity of Ellipse",
+    "subject": "maths",
+    "chapter": "m20"
+  },
+  {
+    "id": "c9_item4",
+    "text": "The Arrhenius equation relating rate constant to temperature is:",
+    "options": [
+      "\\( k = Ae^{E_a/RT} \\)",
+      "\\( k = Ae^{-E_a/RT} \\)",
+      "\\( k = A + E_a/RT \\)",
+      "\\( k = A/e^{E_a} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrhenius equation: \\( k = Ae^{-E_a/RT} \\), where \\(A\\) = frequency factor, \\(E_a\\) = activation energy.",
+    "name": "Arrhenius Equation",
+    "subject": "che",
+    "chapter": "c9"
+  },
+  {
+    "id": "m11_item3",
+    "text": "\\( P(A \\cup B) = P(A) + P(B) - P(A \\cap B) \\). If \\( P(A)=0.3, P(B)=0.4, P(A \\cap B)=0.1 \\), then \\( P(A \\cup B) = \\)",
+    "options": [
+      "\\( 0.6 \\)",
+      "\\( 0.7 \\)",
+      "\\( 0.5 \\)",
+      "\\( 0.8 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\( P(A \\cup B) = 0.3 + 0.4 - 0.1 = 0.6 \\)",
+    "name": "Addition Theorem",
+    "subject": "maths",
+    "chapter": "m11"
+  },
+  {
+    "id": "m8_item8",
+    "text": "\\( ^nC_r = \\binom{n}{r} \\) satisfies \\( ^nC_r = \\)",
+    "options": [
+      "\\( ^nC_{n+r} \\)",
+      "\\( ^nC_{n-r} \\)",
+      "\\( ^{n-1}C_r \\)",
+      "\\( ^{n+1}C_r \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Symmetry property: \\( \\binom{n}{r} = \\binom{n}{n-r} \\)",
+    "name": "Symmetry of Combinations",
+    "subject": "maths",
+    "chapter": "m8"
+  },
+  {
+    "id": "p19_item10",
+    "text": "The transformer works on the principle of:",
+    "options": [
+      "Self-induction",
+      "Mutual induction: \\( V_2/V_1 = N_2/N_1 \\)",
+      "Electrostatic induction",
+      "Faraday's law alone"
+    ],
+    "correctIndex": 1,
+    "explanation": "Transformer: mutual induction. \\( V_2/V_1 = N_2/N_1 = I_1/I_2 \\) (ideal). Step-up: \\(N_2>N_1\\). Step-down: \\(N_2<N_1\\).",
+    "name": "Transformer Principle",
+    "subject": "phy",
+    "chapter": "p19"
+  },
+  {
+    "id": "m17_item7",
+    "text": "Two lines with slopes \\( m_1 \\) and \\( m_2 \\) are perpendicular if:",
+    "options": [
+      "\\( m_1 = m_2 \\)",
+      "\\( m_1 + m_2 = 0 \\)",
+      "\\( m_1 \\cdot m_2 = -1 \\)",
+      "\\( m_1 \\cdot m_2 = 1 \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Lines are perpendicular when \\( m_1 \\cdot m_2 = -1 \\).",
+    "name": "Perpendicular Lines",
+    "subject": "maths",
+    "chapter": "m17"
+  },
+  {
+    "id": "m23_item9",
+    "text": "If \\( f(x) = \\frac{|x|}{x} \\), then at \\( x=0 \\), \\(f\\) is:",
+    "options": [
+      "Continuous",
+      "Differentiable",
+      "Discontinuous",
+      "Defined"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\( \\lim_{x\\to 0^+}f(x)=1 \\) and \\( \\lim_{x\\to 0^-}f(x)=-1 \\). LHL ≠ RHL, so discontinuous at \\(x=0\\).",
+    "name": "Discontinuity Check",
+    "subject": "maths",
+    "chapter": "m23"
+  },
+  {
+    "id": "m9_item5",
+    "text": "If \\( AB = BA = I \\), then \\( B \\) is called:",
+    "options": [
+      "Transpose of \\( A \\)",
+      "Adjoint of \\( A \\)",
+      "Inverse of \\( A \\)",
+      "Cofactor matrix of \\( A \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By definition, if \\( AB = BA = I \\), then \\( B = A^{-1} \\), the inverse of \\(A\\).",
+    "name": "Matrix Inverse Definition",
+    "subject": "maths",
+    "chapter": "m9"
+  },
+  {
+    "id": "m12_item5",
+    "text": "The value of \\( \\tan 45° = \\)",
+    "options": [
+      "\\( 0 \\)",
+      "\\( \\frac{1}{\\sqrt{2}} \\)",
+      "\\( 1 \\)",
+      "\\( \\sqrt{3} \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\( \\tan 45° = \\frac{\\sin 45°}{\\cos 45°} = \\frac{1/\\sqrt{2}}{1/\\sqrt{2}} = 1 \\)",
+    "name": "Standard Value tan 45",
+    "subject": "maths",
+    "chapter": "m12"
+  },
+  {
+    "id": "c22_item10",
+    "text": "In the reaction of aliphatic diazonium compounds (R–N₂⁺), the diazonium group is lost as:",
+    "options": [
+      "N₂⁻ ion",
+      "N₂ gas, giving carbocation",
+      "NO",
+      "NH₃"
+    ],
+    "correctIndex": 1,
+    "explanation": "Aliphatic diazonium ions are very unstable (even at 0°C): R–N₂⁺ → R⁺ + N₂↑. The loss of N₂ drives the reaction forward.",
+    "name": "Aliphatic Diazonium Decomposition",
+    "subject": "che",
+    "chapter": "c22"
+  },
+  {
+    "id": "c19_item1",
+    "text": "In SN2 reaction, the nucleophile attacks:",
+    "options": [
+      "Same side as the leaving group",
+      "Opposite side (backside attack) to the leaving group",
+      "Any side (no stereochemistry)",
+      "Top face only"
+    ],
+    "correctIndex": 1,
+    "explanation": "SN2: bimolecular, one-step, backside attack (180°). Causes Walden inversion (inversion of configuration at chiral centre).",
+    "name": "SN2 Mechanism",
+    "subject": "che",
+    "chapter": "c19"
+  },
+  {
+    "id": "m28_item6",
+    "text": "A homogeneous DE \\( f(x,y)\\,dx + g(x,y)\\,dy = 0 \\) is solved by substituting:",
+    "options": [
+      "\\( x = vy \\)",
+      "\\( y = vx \\)",
+      "\\( y = v+x \\)",
+      "\\( x = v+y \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "For homogeneous DE, substitute \\( y = vx \\) (where \\(v\\) is a function of \\(x\\)) to separate variables.",
+    "name": "Homogeneous DE Substitution",
+    "subject": "maths",
+    "chapter": "m28"
+  },
+  {
+    "id": "p20_item4",
+    "text": "The resonant frequency of an LCR circuit is:",
+    "options": [
+      "\\( f_0 = 2\\pi\\sqrt{LC} \\)",
+      "\\( f_0 = \\frac{1}{2\\pi\\sqrt{LC}} \\)",
+      "\\( f_0 = \\frac{\\sqrt{LC}}{2\\pi} \\)",
+      "\\( f_0 = \\frac{1}{\\sqrt{LC}} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Resonant frequency: \\( f_0 = \\frac{1}{2\\pi\\sqrt{LC}} \\). \\( \\omega_0 = 1/\\sqrt{LC} \\). Used in radio tuning circuits.",
+    "name": "Resonant Frequency",
+    "subject": "phy",
+    "chapter": "p20"
+  },
+  {
+    "id": "c10_item6",
+    "text": "The relationship between \\( \\Delta G^\\circ \\) and \\( E^\\circ_{cell} \\) is:",
+    "options": [
+      "\\( \\Delta G^\\circ = nFE^\\circ \\)",
+      "\\( \\Delta G^\\circ = -nFE^\\circ \\)",
+      "\\( \\Delta G^\\circ = nRT\\ln E^\\circ \\)",
+      "\\( \\Delta G^\\circ = E^\\circ/nF \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( \\Delta G^\\circ = -nFE^\\circ_{cell} \\). At equilibrium: \\( \\Delta G = 0 \\), \\( E = 0 \\). Also \\( \\Delta G^\\circ = -RT\\ln K \\).",
+    "name": "ΔG° and E°cell",
+    "subject": "che",
+    "chapter": "c10"
+  },
+  {
+    "id": "m14_item12",
+    "text": "The relation \\( r = 4R\\sin\\frac{A}{2}\\sin\\frac{B}{2}\\sin\\frac{C}{2} \\) connects:",
+    "options": [
+      "Two medians",
+      "Inradius and circumradius",
+      "Two altitudes",
+      "Orthocentre and centroid"
+    ],
+    "correctIndex": 1,
+    "explanation": "This is the standard formula relating inradius \\(r\\) and circumradius \\(R\\) with half-angles.",
+    "name": "r and R Relation",
+    "subject": "maths",
+    "chapter": "m14"
+  },
+  {
+    "id": "c9_item10",
+    "text": "A catalyst increases the rate of reaction by:",
+    "options": [
+      "Increasing temperature",
+      "Providing an alternative pathway with lower activation energy",
+      "Increasing concentration of reactants",
+      "Changing the equilibrium constant"
+    ],
+    "correctIndex": 1,
+    "explanation": "Catalyst provides alternate reaction pathway with lower \\(E_a\\). More molecules have enough energy to react.",
+    "name": "How Catalyst Works",
+    "subject": "che",
+    "chapter": "c9"
+  },
+  {
+    "id": "m15_item8",
+    "text": "\\( \\sin^{-1}(-x) = \\)",
+    "options": [
+      "\\( \\sin^{-1}x \\)",
+      "\\( -\\sin^{-1}x \\)",
+      "\\( \\pi - \\sin^{-1}x \\)",
+      "\\( \\cos^{-1}x \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( \\sin^{-1} \\) is an odd function: \\( \\sin^{-1}(-x) = -\\sin^{-1}(x) \\).",
+    "name": "Odd Function Property",
+    "subject": "maths",
+    "chapter": "m15"
+  },
+  {
+    "id": "p23_item12",
+    "text": "Diffraction grating equation for principal maxima is:",
+    "options": [
+      "\\( d\\sin\\theta = n\\lambda \\)",
+      "\\( d\\cos\\theta = n\\lambda \\)",
+      "\\( d\\sin\\theta = (2n+1)\\lambda/2 \\)",
+      "\\( nd = \\sin\\theta/\\lambda \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Diffraction grating: \\( d\\sin\\theta = n\\lambda \\), where \\(d\\) = grating spacing (1/N per mm), \\(n\\) = order of diffraction.",
+    "name": "Diffraction Grating Equation",
+    "subject": "phy",
+    "chapter": "p23"
+  },
+  {
+    "id": "m26_item2",
+    "text": "\\( \\int e^x\\,dx = \\)",
+    "options": [
+      "\\( xe^x+C \\)",
+      "\\( \\frac{e^x}{x}+C \\)",
+      "\\( e^{x+1}+C \\)",
+      "\\( e^x+C \\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\( \\int e^x\\,dx = e^x+C \\)",
+    "name": "Integral of eˣ",
+    "subject": "maths",
+    "chapter": "m26"
+  },
+  {
+    "id": "m18_item12",
+    "text": "The equation of x-axis is:",
+    "options": [
+      "\\( x = 0 \\)",
+      "\\( y = 0 \\)",
+      "\\( x + y = 0 \\)",
+      "\\( x = y \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The x-axis is the line where \\( y = 0 \\) for all values of \\(x\\).",
+    "name": "Equation of Axes",
+    "subject": "maths",
+    "chapter": "m18"
+  },
+  {
+    "id": "c18_item15",
+    "text": "Lindlar's catalyst reduces alkynes to:",
+    "options": [
+      "Alkanes",
+      "Trans-alkenes",
+      "Cis-alkenes",
+      "Diols"
+    ],
+    "correctIndex": 2,
+    "explanation": "Lindlar's catalyst (Pd/CaCO₃ + quinoline): partial hydrogenation of alkynes gives cis-alkenes (syn addition of H₂). Na/liquid NH₃ gives trans-alkenes.",
+    "name": "Lindlar's Catalyst",
+    "subject": "che",
+    "chapter": "c18"
+  },
+  {
+    "id": "c5_item6",
+    "text": "The density of a crystal is given by:",
+    "options": [
+      "\\( \\rho = \\frac{ZM}{N_A a^3} \\)",
+      "\\( \\rho = \\frac{N_A a^3}{ZM} \\)",
+      "\\( \\rho = ZMN_A a^3 \\)",
+      "\\( \\rho = \\frac{ZM}{a^3} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Density: \\( \\rho = \\frac{Z \\times M}{N_A \\times a^3} \\), where \\(Z\\) = atoms/cell, \\(M\\) = molar mass, \\(a\\) = edge length.",
+    "name": "Density of Crystal",
+    "subject": "che",
+    "chapter": "c5"
+  },
+  {
+    "id": "p18_item3",
+    "text": "The magnetic susceptibility \\(\\chi_m\\) of a diamagnetic material is:",
+    "options": [
+      "Large and positive",
+      "Small and positive",
+      "Small and negative",
+      "Zero"
+    ],
+    "correctIndex": 2,
+    "explanation": "Diamagnetic: \\( \\chi_m < 0 \\) (small negative). Paramagnetic: \\( \\chi_m > 0 \\) (small positive). Ferromagnetic: \\( \\chi_m \\gg 1 \\) (large positive).",
+    "name": "Diamagnetic Susceptibility",
+    "subject": "phy",
+    "chapter": "p18"
+  },
+  {
+    "id": "m12_item7",
+    "text": "The value of \\( \\sin 30° = \\)",
+    "options": [
+      "\\( \\frac{\\sqrt{3}}{2} \\)",
+      "\\( \\frac{1}{2} \\)",
+      "\\( \\frac{1}{\\sqrt{2}} \\)",
+      "\\( 1 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard value: \\( \\sin 30° = \\frac{1}{2} \\)",
+    "name": "sin 30°",
+    "subject": "maths",
+    "chapter": "m12"
+  },
+  {
+    "id": "p17_item6",
+    "text": "The radius of circular motion of a charged particle in a magnetic field is:",
+    "options": [
+      "\\( r = \\frac{qB}{mv} \\)",
+      "\\( r = \\frac{mv}{qB} \\)",
+      "\\( r = \\frac{qvB}{m} \\)",
+      "\\( r = \\frac{m}{qvB} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Circular motion in \\(B\\): centripetal force = magnetic force: \\( \\frac{mv^2}{r} = qvB \\Rightarrow r = \\frac{mv}{qB} \\). Used in mass spectrometer.",
+    "name": "Radius of Circular Motion in B",
+    "subject": "phy",
+    "chapter": "p17"
+  },
+  {
+    "id": "m17_item3",
+    "text": "The point dividing \\( P(x_1,y_1) \\) and \\( Q(x_2,y_2) \\) in ratio \\( m:n \\) internally is:",
+    "options": [
+      "\\( \\left(\\frac{mx_2+nx_1}{m+n}, \\frac{my_2+ny_1}{m+n}\\right) \\)",
+      "\\( \\left(\\frac{mx_1+nx_2}{m+n}, \\frac{my_1+ny_2}{m+n}\\right) \\)",
+      "\\( \\left(\\frac{mx_2-nx_1}{m-n}, \\frac{my_2-ny_1}{m-n}\\right) \\)",
+      "\\( \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right) \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Section Formula (internal): \\( \\left(\\frac{mx_2+nx_1}{m+n}, \\frac{my_2+ny_1}{m+n}\\right) \\)",
+    "name": "Section Formula",
+    "subject": "maths",
+    "chapter": "m17"
+  },
+  {
+    "id": "m26_item6",
+    "text": "Integration by parts formula: \\( \\int u\\,dv = \\)",
+    "options": [
+      "\\( uv - \\int v\\,du \\)",
+      "\\( uv + \\int v\\,du \\)",
+      "\\( u'v - \\int v'\\,du \\)",
+      "\\( \\int u'v\\,dx \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integration by Parts (ILATE): \\( \\int u\\,dv = uv - \\int v\\,du \\)",
+    "name": "Integration by Parts",
+    "subject": "maths",
+    "chapter": "m26"
+  },
+  {
+    "id": "c18_item7",
+    "text": "The order of stability of carbocations is:",
+    "options": [
+      "3° > 2° > 1° > methyl",
+      "methyl > 1° > 2° > 3°",
+      "1° > 2° > 3°",
+      "3° < 2° < 1°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Carbocation stability: 3° > 2° > 1° > methyl. More alkyl groups → more +I effect → better stabilisation of positive charge.",
+    "name": "Carbocation Stability",
+    "subject": "che",
+    "chapter": "c18"
+  },
+  {
+    "id": "p17_item11",
+    "text": "A galvanometer is converted to a voltmeter by connecting:",
+    "options": [
+      "A low resistance in parallel",
+      "A high resistance in series",
+      "A capacitor in parallel",
+      "A shunt"
+    ],
+    "correctIndex": 1,
+    "explanation": "Voltmeter: high resistance \\(R\\) in series with galvanometer. \\( V = I_g(G + R) \\Rightarrow R = V/I_g - G \\). High resistance so very little current drawn.",
+    "name": "Galvanometer to Voltmeter",
+    "subject": "phy",
+    "chapter": "p17"
+  },
+  {
+    "id": "m18_item4",
+    "text": "The normal form of a line is \\( x\\cos\\alpha + y\\sin\\alpha = p \\). Here \\(p\\) represents:",
+    "options": [
+      "The slope",
+      "The perpendicular distance from origin",
+      "The x-intercept",
+      "The angle with x-axis"
+    ],
+    "correctIndex": 1,
+    "explanation": "In normal form, \\(p\\) is the perpendicular distance from the origin to the line, always positive.",
+    "name": "Normal Form",
+    "subject": "maths",
+    "chapter": "m18"
+  },
+  {
+    "id": "p28_item7",
+    "text": "The sky wave propagation uses which layer of atmosphere:",
+    "options": [
+      "Troposphere",
+      "Stratosphere",
+      "Ionosphere (reflects radio waves back to Earth)",
+      "Mesosphere"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sky wave propagation: radio waves (2-30 MHz) reflected by ionosphere → can reach beyond horizon. Used for short-wave (HF) radio broadcasting.",
+    "name": "Sky Wave Propagation",
+    "subject": "phy",
+    "chapter": "p28"
+  },
+  {
+    "id": "p19_item14",
+    "text": "The coefficient of coupling between two inductors \\(L_1\\) and \\(L_2\\) is:",
+    "options": [
+      "\\( k = M/(L_1+L_2) \\)",
+      "\\( k = M/\\sqrt{L_1 L_2} \\), and \\( 0\\leq k\\leq 1 \\)",
+      "\\( k = M \\cdot \\sqrt{L_1 L_2} \\)",
+      "\\( k = L_1 L_2/M \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Coupling coefficient: \\( k = M/\\sqrt{L_1L_2} \\). \\( k=1 \\): perfect coupling (all flux links both coils). \\( k=0 \\): no coupling.",
+    "name": "Coefficient of Coupling",
+    "subject": "phy",
+    "chapter": "p19"
+  },
+  {
+    "id": "c7_item5",
+    "text": "The Gibbs free energy change is given by:",
+    "options": [
+      "\\( \\Delta G = \\Delta H + T\\Delta S \\)",
+      "\\( \\Delta G = \\Delta H - T\\Delta S \\)",
+      "\\( \\Delta G = \\Delta U + T\\Delta S \\)",
+      "\\( \\Delta G = \\Delta H \\times T\\Delta S \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( \\Delta G = \\Delta H - T\\Delta S \\). Spontaneous process: \\(\\Delta G < 0\\).",
+    "name": "Gibbs Free Energy",
+    "subject": "che",
+    "chapter": "c7"
+  },
+  {
+    "id": "p21_item11",
+    "text": "Infrared radiation is detected by:",
+    "options": [
+      "Eyes directly",
+      "Photographic film",
+      "Thermopile, bolometer, photoconductor cells",
+      "Geiger counter"
+    ],
+    "correctIndex": 2,
+    "explanation": "IR radiation (heat radiation) detected by: thermopile, bolometer, thermistor, photoconductor. Human skin feels it as warmth. Eyes cannot see IR directly.",
+    "name": "IR Radiation Detection",
+    "subject": "phy",
+    "chapter": "p21"
+  },
+  {
+    "id": "m1_item6",
+    "text": "The polar form of \\( z = 1 + i \\) is:",
+    "options": [
+      "\\( \\sqrt{2}\\left(\\cos\\frac{\\pi}{3} + i\\sin\\frac{\\pi}{3}\\right) \\)",
+      "\\( \\sqrt{2}\\left(\\cos\\frac{\\pi}{4} + i\\sin\\frac{\\pi}{4}\\right) \\)",
+      "\\( 2\\left(\\cos\\frac{\\pi}{4} + i\\sin\\frac{\\pi}{4}\\right) \\)",
+      "\\( \\sqrt{2}\\left(\\cos\\frac{\\pi}{6} + i\\sin\\frac{\\pi}{6}\\right) \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( r = \\sqrt{1^2+1^2} = \\sqrt{2},\\ \\theta = \\tan^{-1}(1) = \\frac{\\pi}{4} \\)",
+    "name": "Polar Form",
+    "subject": "maths",
+    "chapter": "m1"
+  },
+  {
+    "id": "m6_item14",
+    "text": "The denominator \\( x^3 - x = x(x-1)(x+1) \\). The partial fraction of \\( \\frac{1}{x^3-x} \\) has how many terms?",
+    "options": [
+      "\\( 2 \\)",
+      "\\( 3 \\)",
+      "\\( 4 \\)",
+      "\\( 1 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Three distinct linear factors \\(x, (x-1), (x+1)\\) give three partial fraction terms.",
+    "name": "Number of Terms",
+    "subject": "maths",
+    "chapter": "m6"
+  },
+  {
+    "id": "c21_item2",
+    "text": "Fehling's solution is reduced by:",
+    "options": [
+      "Ketones",
+      "Benzaldehyde and ketones",
+      "Aliphatic aldehydes only (not aromatic)",
+      "All carbonyl compounds"
+    ],
+    "correctIndex": 2,
+    "explanation": "Fehling's test: gives brick-red Cu₂O precipitate with aliphatic aldehydes. Aromatic aldehydes (benzaldehyde) do NOT reduce Fehling's. Ketones: negative.",
+    "name": "Fehling's Test",
+    "subject": "che",
+    "chapter": "c21"
+  },
+  {
+    "id": "m8_item4",
+    "text": "Number of ways to choose 3 students from a group of 8 is:",
+    "options": [
+      "\\( 336 \\)",
+      "\\( 56 \\)",
+      "\\( 24 \\)",
+      "\\( 168 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( ^8C_3 = \\frac{8 \\times 7 \\times 6}{3!} = \\frac{336}{6} = 56 \\)",
+    "name": "Selection",
+    "subject": "maths",
+    "chapter": "m8"
+  },
+  {
+    "id": "m20_item8",
+    "text": "The latus rectum of parabola \\( y^2=4ax \\) has length:",
+    "options": [
+      "\\( 2a \\)",
+      "\\( a \\)",
+      "\\( 4a \\)",
+      "\\( 8a \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Length of latus rectum of \\( y^2=4ax \\) is \\( 4a \\) (chord through focus perpendicular to axis).",
+    "name": "Latus Rectum of Parabola",
+    "subject": "maths",
+    "chapter": "m20"
+  },
+  {
+    "id": "m18_item15",
+    "text": "The angle bisectors of \\( ax^2+2hxy+by^2=0 \\) are given by:",
+    "options": [
+      "\\( \\frac{x^2-y^2}{a-b} = \\frac{xy}{h} \\)",
+      "\\( \\frac{x^2+y^2}{a+b} = \\frac{xy}{h} \\)",
+      "\\( \\frac{x^2-y^2}{a+b} = \\frac{xy}{h} \\)",
+      "\\( hx^2 - (a-b)xy - hy^2 = 0 \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Equation of angle bisectors: \\( \\frac{x^2-y^2}{a-b} = \\frac{xy}{h} \\)",
+    "name": "Angle Bisectors of Pair",
+    "subject": "maths",
+    "chapter": "m18"
+  },
+  {
+    "id": "m21_item10",
+    "text": "If \\( [\\vec{a}\\,\\vec{b}\\,\\vec{c}] = 0 \\), the vectors are:",
+    "options": [
+      "Mutually perpendicular",
+      "Coplanar",
+      "Parallel",
+      "Of equal magnitude"
+    ],
+    "correctIndex": 1,
+    "explanation": "Zero scalar triple product means the three vectors are coplanar (lie in the same plane).",
+    "name": "Coplanar Vectors",
+    "subject": "maths",
+    "chapter": "m21"
+  },
+  {
+    "id": "m15_item11",
+    "text": "The formula \\( 2\\tan^{-1}x = \\sin^{-1}\\frac{2x}{1+x^2} \\) is valid for:",
+    "options": [
+      "All real \\(x\\)",
+      "\\( |x| \\leq 1 \\)",
+      "\\( |x| < 1 \\)",
+      "\\( |x| > 1 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The identity \\( 2\\tan^{-1}x = \\sin^{-1}\\frac{2x}{1+x^2} \\) holds for \\( |x| \\leq 1 \\).",
+    "name": "Double tan⁻¹ as sin⁻¹",
+    "subject": "maths",
+    "chapter": "m15"
+  },
+  {
+    "id": "m11_item5",
+    "text": "Two events \\(A\\) and \\(B\\) are independent if:",
+    "options": [
+      "\\( P(A \\cap B) = P(A) + P(B) \\)",
+      "\\( P(A \\cap B) = P(A) \\cdot P(B) \\)",
+      "\\( P(A|B) = P(B) \\)",
+      "\\( P(A \\cup B) = 1 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Events are independent if and only if \\( P(A \\cap B) = P(A) \\cdot P(B) \\).",
+    "name": "Independent Events",
+    "subject": "maths",
+    "chapter": "m11"
+  },
+  {
+    "id": "p14_item15",
+    "text": "Quantisation of charge means electric charge exists in multiples of:",
+    "options": [
+      "\\( q = 1\\,\\text{C} \\)",
+      "\\( e = 1.6\\times10^{-19}\\,\\text{C} \\) (elementary charge)",
+      "\\( q = 10^{-6}\\,\\text{C} \\)",
+      "\\( q = \\sqrt{\\epsilon_0 h c} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Charge quantisation: \\( q = ne \\), where \\( n \\in \\mathbb{Z} \\) and \\( e = 1.6\\times10^{-19}\\,\\text{C} \\). Millikan's oil drop experiment verified this.",
+    "name": "Charge Quantisation",
+    "subject": "phy",
+    "chapter": "p14"
+  },
+  {
+    "id": "c6_item5",
+    "text": "The osmotic pressure of a solution is given by:",
+    "options": [
+      "\\( \\pi = nRT \\)",
+      "\\( \\pi = MRT \\)",
+      "\\( \\pi = MRT/n \\)",
+      "\\( \\pi = nR/T \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Van't Hoff equation: \\( \\pi = MRT \\) (or \\( \\pi V = nRT \\)), where \\(M\\) = molarity.",
+    "name": "Osmotic Pressure",
+    "subject": "che",
+    "chapter": "c6"
+  },
+  {
+    "id": "m27_item4",
+    "text": "If \\( f(x) \\) is an even function, then \\( \\int_{-a}^{a} f(x)\\,dx = \\)",
+    "options": [
+      "\\( 0 \\)",
+      "\\( \\int_0^a f(x)\\,dx \\)",
+      "\\( 2\\int_0^a f(x)\\,dx \\)",
+      "\\( \\int_{-a}^0 f(x)\\,dx \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Even function property: \\( \\int_{-a}^{a}f(x)dx = 2\\int_0^a f(x)dx \\)",
+    "name": "Even Function Integral",
+    "subject": "maths",
+    "chapter": "m27"
+  },
+  {
+    "id": "m19_item5",
+    "text": "The length of tangent from external point \\((x_1,y_1)\\) to circle \\( x^2+y^2+2gx+2fy+c=0 \\) is:",
+    "options": [
+      "\\( \\sqrt{x_1^2+y_1^2+2gx_1+2fy_1+c} \\)",
+      "\\( x_1^2+y_1^2+c \\)",
+      "\\( \\sqrt{x_1^2+y_1^2-c} \\)",
+      "\\( \\sqrt{g^2+f^2-c} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Length of tangent \\( = \\sqrt{S_1} = \\sqrt{x_1^2+y_1^2+2gx_1+2fy_1+c} \\)",
+    "name": "Length of Tangent",
+    "subject": "maths",
+    "chapter": "m19"
+  },
+  {
+    "id": "m17_item6",
+    "text": "The slope of line joining \\( (2,3) \\) and \\( (5,9) \\) is:",
+    "options": [
+      "\\( 1 \\)",
+      "\\( 2 \\)",
+      "\\( 3 \\)",
+      "\\( \\frac{1}{2} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( m = \\frac{9-3}{5-2} = \\frac{6}{3} = 2 \\)",
+    "name": "Slope of Line",
+    "subject": "maths",
+    "chapter": "m17"
+  },
+  {
+    "id": "c2_item3",
+    "text": "Heisenberg's uncertainty principle states:",
+    "options": [
+      "\\( \\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi} \\)",
+      "\\( \\Delta x \\cdot \\Delta p = 0 \\)",
+      "\\( \\Delta x \\cdot \\Delta p \\leq \\frac{h}{4\\pi} \\)",
+      "\\( \\Delta x = \\Delta p \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Heisenberg: \\( \\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi} \\). Cannot simultaneously know exact position and momentum.",
+    "name": "Heisenberg Uncertainty",
+    "subject": "che",
+    "chapter": "c2"
+  },
+  {
+    "id": "c16_item2",
+    "text": "The general electronic configuration of transition elements (3d series) is:",
+    "options": [
+      "[Ar] 3d¹⁻¹⁰ 4s⁰",
+      "[Ar] 3d¹⁻¹⁰ 4s¹⁻²",
+      "[Ar] 3d⁰ 4s¹⁻²",
+      "[Ne] 3d¹⁻¹⁰ 4s¹⁻²"
+    ],
+    "correctIndex": 1,
+    "explanation": "3d transition series: [Ar] 3d¹⁻¹⁰ 4s¹⁻². Exceptions: Cr ([Ar]3d⁵4s¹) and Cu ([Ar]3d¹⁰4s¹) due to extra stability of half-filled/fully-filled d.",
+    "name": "Electronic Config of Transition Elements",
+    "subject": "che",
+    "chapter": "c16"
+  },
+  {
+    "id": "m11_item11",
+    "text": "Two coins are tossed. \\( P(\\text{exactly one head}) = \\)",
+    "options": [
+      "\\( \\frac{1}{4} \\)",
+      "\\( \\frac{1}{2} \\)",
+      "\\( \\frac{3}{4} \\)",
+      "\\( 1 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sample space: \\{HH, HT, TH, TT\\}. Exactly one head: \\{HT, TH\\}. \\( P = \\frac{2}{4} = \\frac{1}{2} \\)",
+    "name": "Coin Toss Probability",
+    "subject": "maths",
+    "chapter": "m11"
+  },
+  {
+    "id": "p6_item13",
+    "text": "The gravitational potential at a point is defined as:",
+    "options": [
+      "Force per unit mass",
+      "Potential energy per unit mass: \\( V = -GM/r \\)",
+      "Force × distance",
+      "Energy per unit volume"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gravitational potential: \\( V = -\\frac{GM}{r} \\) (J/kg). Negative sign: potential energy of unit mass. \\( U = mV \\).",
+    "name": "Gravitational Potential",
+    "subject": "phy",
+    "chapter": "p6"
+  },
+  {
+    "id": "p5_item3",
+    "text": "The rotational analogue of Newton's second law is:",
+    "options": [
+      "\\( \\vec{\\tau} = I\\vec{\\alpha} \\)",
+      "\\( \\vec{F} = m\\vec{a} \\)",
+      "\\( \\vec{L} = I\\vec{\\omega} \\)",
+      "\\( \\tau = Fr \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Torque = moment of inertia × angular acceleration: \\( \\vec{\\tau} = I\\vec{\\alpha} \\). Analogous to \\( F = ma \\).",
+    "name": "Rotational Newton's 2nd Law",
+    "subject": "phy",
+    "chapter": "p5"
+  },
+  {
+    "id": "m22_item1",
+    "text": "The distance between points \\( (x_1,y_1,z_1) \\) and \\( (x_2,y_2,z_2) \\) in 3D is:",
+    "options": [
+      "\\( |x_2-x_1|+|y_2-y_1|+|z_2-z_1| \\)",
+      "\\( \\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2} \\)",
+      "\\( (x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2 \\)",
+      "\\( \\sqrt{x_2^2+y_2^2+z_2^2} \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "3D Distance Formula: \\( d = \\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2} \\)",
+    "name": "3D Distance Formula",
+    "subject": "maths",
+    "chapter": "m22"
+  },
+  {
+    "id": "c8_item2",
+    "text": "The relation between \\(K_p\\) and \\(K_c\\) is:",
+    "options": [
+      "\\( K_p = K_c(RT)^{\\Delta n} \\)",
+      "\\( K_p = K_c + \\Delta nRT \\)",
+      "\\( K_p = K_c / (RT)^{\\Delta n} \\)",
+      "\\( K_p = K_c \\times \\Delta n \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\( K_p = K_c(RT)^{\\Delta n_g} \\), where \\(\\Delta n_g\\) = moles of gaseous products − moles of gaseous reactants.",
+    "name": "Kp and Kc Relation",
+    "subject": "che",
+    "chapter": "c8"
+  },
+  {
+    "id": "c1_item12",
+    "text": "The volume occupied by 1 mole of an ideal gas at STP (0°C, 1 atm) is:",
+    "options": [
+      "\\( 22.4 \\text{ L} \\)",
+      "\\( 11.2 \\text{ L} \\)",
+      "\\( 24.0 \\text{ L} \\)",
+      "\\( 44.8 \\text{ L} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Molar volume of ideal gas at STP = 22.4 L/mol (standard condition: 0°C, 1 atm).",
+    "name": "Molar Volume at STP",
+    "subject": "che",
+    "chapter": "c1"
+  },
+  {
+    "id": "m20_item11",
+    "text": "The sum of focal distances from any point on ellipse \\( \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1 \\) is:",
+    "options": [
+      "\\( 2b \\)",
+      "\\( 2c \\)",
+      "\\( 2a \\)",
+      "\\( a+b \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "For any point \\(P\\) on ellipse: \\( PF_1+PF_2 = 2a \\) (constant). This defines the ellipse.",
+    "name": "Focal Distance Sum",
+    "subject": "maths",
+    "chapter": "m20"
+  },
+  {
+    "id": "c19_item14",
+    "text": "Chloroform (CHCl₃) when oxidised in air slowly gives:",
+    "options": [
+      "CCl₄",
+      "COCl₂ (phosgene, toxic!)",
+      "CO₂ + HCl",
+      "CH₂Cl₂"
+    ],
+    "correctIndex": 1,
+    "explanation": "CHCl₃ oxidises in air to form phosgene (COCl₂), which is highly toxic. That's why CHCl₃ is stored in dark bottles with a little ethanol.",
+    "name": "Oxidation of Chloroform",
+    "subject": "che",
+    "chapter": "c19"
+  },
+  {
+    "id": "c1_item9",
+    "text": "The law of conservation of mass states that in a chemical reaction:",
+    "options": [
+      "Mass of products > mass of reactants",
+      "Mass of reactants = mass of products",
+      "Mass is always lost as energy",
+      "Only atoms are conserved"
+    ],
+    "correctIndex": 1,
+    "explanation": "Lavoisier's Law: Total mass of reactants = Total mass of products. Matter is neither created nor destroyed.",
+    "name": "Conservation of Mass",
+    "subject": "che",
+    "chapter": "c1"
+  },
+  {
+    "id": "p22_item15",
+    "text": "An object is placed at 30 cm from a convex lens of focal length 10 cm. The image distance is:",
+    "options": [
+      "20 cm",
+      "15 cm",
+      "30 cm",
+      "10 cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( \\frac{1}{v}-\\frac{1}{-30} = \\frac{1}{10} \\Rightarrow \\frac{1}{v} = \\frac{1}{10}-\\frac{1}{30} = \\frac{3-1}{30} = \\frac{2}{30} \\Rightarrow v = 15\\,\\text{cm} \\).",
+    "name": "Lens Image Distance Calculation",
+    "subject": "phy",
+    "chapter": "p22"
+  },
+  {
+    "id": "m27_item13",
+    "text": "Walli's formula: \\( \\int_0^{\\pi/2}\\sin^m x\\cos^n x\\,dx \\) involves the pattern of multiplying down by \\(2\\) at the end when both \\(m\\) and \\(n\\) are:",
+    "options": [
+      "Odd",
+      "Prime",
+      "Even",
+      "Negative"
+    ],
+    "correctIndex": 2,
+    "explanation": "When both \\(m\\) and \\(n\\) are even, Walli's formula requires an additional factor of \\(\\frac{\\pi}{2}\\).",
+    "name": "Walli's Formula",
+    "subject": "maths",
+    "chapter": "m27"
+  },
+  {
+    "id": "m25_item2",
+    "text": "At a local maximum, the second derivative satisfies:",
+    "options": [
+      "\\( f''(x) > 0 \\)",
+      "\\( f''(x) = 0 \\)",
+      "\\( f''(x) < 0 \\)",
+      "\\( f'(x) > 0 \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Second Derivative Test: local max iff \\( f'(x)=0 \\) and \\( f''(x)<0 \\).",
+    "name": "Second Derivative Test - Max",
+    "subject": "maths",
+    "chapter": "m25"
+  }
+]

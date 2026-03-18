@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
-import { BookOpen, Zap, Lock } from 'lucide-react';
+import { BookOpen, Zap, Lock, Edit3, ChevronRight } from 'lucide-react';
+import Card from './components/Card';
+
 
 export default function Dashboard() {
   const cards = [
@@ -7,7 +9,7 @@ export default function Dashboard() {
       title: 'Chapter Practice',
       description: 'Master every chapter topic by topic',
       icon: <BookOpen className="w-8 h-8 text-orange-500" />,
-      link: '/practice?type=chapter',
+      link: '/subjects?type=practice',
       active: true,
       color: 'bg-orange-50'
     },
@@ -15,18 +17,19 @@ export default function Dashboard() {
       title: 'Important Questions Quiz',
       description: 'Test yourself with high-probability questions',
       icon: <Zap className="w-8 h-8 text-orange-500" />,
-      link: '/practice?type=quiz',
+      link: '/subjects?type=quiz',
       active: true,
       color: 'bg-orange-50'
     },
     {
       title: 'Grand Mock Tests',
       description: 'Full length mock tests for EAMCET 2025',
-      icon: <Lock className="w-8 h-8 text-gray-400" />,
-      link: '#',
-      active: false,
-      color: 'bg-gray-100'
+      icon: <Edit3 className="w-8 h-8 text-orange-500" />,
+      link: '/mock-tests',
+      active: true,
+      color: 'bg-orange-50'
     },
+
     {
       title: 'Previous Year Papers',
       description: 'Solve past EAMCET papers with solutions',
@@ -75,19 +78,22 @@ export default function Dashboard() {
                 <Link 
                   key={index} 
                   to={card.link}
-                  className="card p-6 flex flex-col items-start gap-4 hover:-translate-y-1 transition-transform group shadow-md hover:shadow-xl w-full"
                 >
-                  <div className={`p-4 rounded-2xl ${card.color} group-hover:scale-110 transition-transform`}>
-                    {card.icon}
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">{card.title}</h3>
-                    <p className="text-sm font-medium text-gray-500 leading-relaxed">{card.description}</p>
-                  </div>
-                  <div className="mt-auto pt-4 flex w-full justify-between items-center text-[var(--color-primary)] font-bold">
-                    <span>Start</span>
-                    <span>→</span>
-                  </div>
+                  <Card hover className="group">
+                    <div className="flex flex-col items-start gap-4 h-full p-6">
+                      <div className={`p-4 rounded-2xl ${card.color} group-hover:scale-110 transition-transform`}>
+                        {card.icon}
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-xl font-bold text-gray-900 mb-2">{card.title}</h3>
+                        <p className="text-sm font-medium text-gray-500 leading-relaxed">{card.description}</p>
+                      </div>
+                      <div className="mt-auto pt-4 flex w-full justify-between items-center text-[var(--color-primary)] font-bold">
+                        <span>Start</span>
+                        <ChevronRight className="w-5 h-5" />
+                      </div>
+                    </div>
+                  </Card>
                 </Link>
               );
             } else {
