@@ -64,12 +64,21 @@ function AppLayout() {
             </div>
           </nav>
           <div className="fixed top-16 w-full z-40 bg-orange-400 text-white text-base font-semibold overflow-hidden">
-            <div className="flex whitespace-nowrap animate-marquee gap-12 py-2.5 items-center">
-              <span>🔥 1000+ EAMCET Students Already Joined</span>
-              <span>•</span>
-              <span>🚀 Crack EAMCET 2026 with Smart Practice</span>
-              <span>•</span>
-              <span>⏳ Limited Time Offer ₹99 Only</span>
+<div className="flex whitespace-nowrap animate-marquee gap-12 py-2.5 items-center">
+              <div>
+                <span>🔥 1000+ EAMCET Students Already Joined</span>
+                <span>•</span>
+                <span>🚀 Crack EAMCET 2026 with Smart Practice</span>
+                <span>•</span>
+                <span>⏳ Limited Time Offer ₹99 Only</span>
+              </div>
+              <div>
+                <span>🔥 1000+ EAMCET Students Already Joined</span>
+                <span>•</span>
+                <span>🚀 Crack EAMCET 2026 with Smart Practice</span>
+                <span>•</span>
+                <span>⏳ Limited Time Offer ₹99 Only</span>
+              </div>
             </div>
           </div>
         </>

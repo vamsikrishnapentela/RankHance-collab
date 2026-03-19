@@ -7,20 +7,21 @@ export default function Dashboard() {
   const cards = [
     {
       title: 'Foundation Practice',
-      description: 'Solve real exam questions chapter by chapter',
-      icon: <BookOpen className="w-8 h-8 text-orange-500" />,
-      link: '/subjects?type=practice',
-      active: true,
-      color: 'bg-orange-100'
-    },
-    {
-      title: 'Exam Level Questions ',
       description: 'Build strong basics chapter by chapter',
       icon: <Zap className="w-8 h-8 text-orange-500" />,
       link: '/subjects?type=quiz',
       active: true,
       color: 'bg-orange-100'
     },
+    {
+      title: 'Exam Questions Practise ',
+      description: 'Solve real exam questions chapter by chapter',
+      icon: <BookOpen className="w-8 h-8 text-orange-500" />,
+      link: '/subjects?type=practice',
+      active: true,
+      color: 'bg-orange-100'
+    },
+    
     {
       title: 'Mock Test',
       description: 'Attempt 160-question mock tests like EAPCET',
