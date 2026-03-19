@@ -17,6 +17,7 @@ export default function MockAttempt() {
   const [timeLeft, setTimeLeft] = useState(10800);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [origQuestions, setOrigQuestions] = useState([]);
 
   const sectionQuestions = groupedQuestions[activeSection] || [];
   const currentQ = sectionQuestions[sectionIdx];
@@ -29,10 +30,12 @@ export default function MockAttempt() {
         setLoading(true);
         const testData = await getMockTest(id);
         if (testData && testData.questions) {
-          setTest(testData);
-          setTimeLeft(testData.duration * 60 || 10800);
+        setTest(testData);
+        const origQ = testData.questions;
+        setOrigQuestions(origQ);
+        setTimeLeft(testData.duration * 60 || 10800);
 
-          const groups = { maths: [], physics: [], chemistry: [] };
+        const groups = { maths: [], physics: [], chemistry: [] };
           testData.questions.forEach((q, globalIdx) => {
             const sub = q.subject === 'maths' ? 'maths' : q.subject === 'phy' ? 'physics' : 'chemistry';
             groups[sub].push({ ...q, globalIdx });
@@ -90,7 +93,7 @@ export default function MockAttempt() {
 
   const handleFinish = () => {
     const allQuestions = Object.values(groupedQuestions).flat();
-    navigate('/result', { state: { test, questions: allQuestions, answers, flags: Array.from(flags) } });
+    navigate('/result', { state: { test, origQuestions, questions: allQuestions, answers, flags: Array.from(flags) } });
   };
 
   // Stats
@@ -255,9 +258,8 @@ export default function MockAttempt() {
                 <Button
                   key={optIdx}
                   variant="ghost"
-                  className={className + (isAnswered ? ' cursor-default' : '')}
-                  disabled={isAnswered}
-                  onClick={() => !isAnswered && handleSelectOption(optIdx, currentGlobalIdx)}
+                  className={className}
+                  onClick={() => handleSelectOption(optIdx, currentGlobalIdx)}
                 >
                   <MathRenderer content={opt} />
                 </Button>

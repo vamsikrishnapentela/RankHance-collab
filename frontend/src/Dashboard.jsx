@@ -6,6 +6,7 @@ import Card from './components/Card';
 export default function Dashboard() {
   const cards = [
     {
+<<<<<<< Updated upstream
       title: 'Chapter Practice',
       description: 'Master every chapter topic by topic',
       icon: <BookOpen className="w-8 h-8 text-orange-500" />,
@@ -16,14 +17,32 @@ export default function Dashboard() {
     {
       title: 'Important Questions Quiz',
       description: 'Test yourself with high-probability questions',
+=======
+      title: 'Foundation Practice ',
+      description: 'Build strong basics chapter by chapter',
+>>>>>>> Stashed changes
       icon: <Zap className="w-8 h-8 text-orange-500" />,
       link: '/subjects?type=quiz',
       active: true,
       color: 'bg-orange-50'
     },
     {
+<<<<<<< Updated upstream
       title: 'Grand Mock Tests',
       description: 'Full length mock tests for EAMCET 2025',
+=======
+      title: 'Exam Level Questions ',
+      description: 'Solve real exam questions chapter by chapter',
+      icon: <BookOpen className="w-8 h-8 text-orange-500" />,
+      link: '/subjects?type=practice',
+      active: true,
+      color: 'bg-orange-100'
+    },
+    
+    {
+      title: 'Mock Test',
+      description: 'Attempt 160-question mock tests like EAPCET',
+>>>>>>> Stashed changes
       icon: <Edit3 className="w-8 h-8 text-orange-500" />,
       link: '/mock-tests',
       active: true,
