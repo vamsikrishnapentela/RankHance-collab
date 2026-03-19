@@ -274,10 +274,12 @@ export default function Landing() {
             </div>
           )}
 
-          <div className="flex justify-center">
-            <button className="bg-orange-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:bg-orange-600 hover:scale-105 transition-all">
-              Try Full Mock Test →
-            </button>
+<div className="flex justify-center">
+            <Link to="/login" className="block">
+              <button className="bg-orange-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:bg-orange-600 hover:scale-105 transition-all">
+                Try Full Mock Test →
+              </button>
+            </Link>
           </div>
         </Container>
       </section>

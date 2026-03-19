@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
 import Landing from './Landing';
 import Dashboard from './Dashboard';
@@ -53,10 +53,10 @@ function AppLayout() {
                   <>
                     <Link to="/login" className="text-gray-600 font-bold hover:text-gray-900 transition-colors">Login</Link>
                     <Link 
-                      to="/signup" 
+                      to="/" 
                       className="px-5 py-2.5 rounded-xl bg-[var(--color-primary)] text-white font-semibold font-heading text-sm hover:bg-orange-600 transition-colors shadow-sm"
                     >
-                      Get Started
+                      Home
                     </Link>
                   </>
                 )}
