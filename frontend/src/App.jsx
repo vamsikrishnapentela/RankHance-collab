@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
 import Landing from './Landing';
 import Dashboard from './Dashboard';
 import Practice from './Practice';
@@ -15,8 +16,17 @@ import { useAuth } from './hooks/useAuth';
 
 function AppLayout() {
   const location = useLocation();
+  const navigate = useNavigate();
   const { user, logout } = useAuth();
   const isAuthPage = ['/login', '/signup'].includes(location.pathname);
+
+  // Protected routes logic
+  useEffect(() => {
+    const publicPaths = ['/', '/login', '/signup'];
+    if (!user && !publicPaths.includes(location.pathname)) {
+      navigate('/login');
+    }
+  }, [user, location.pathname, navigate]);
 
   return (
     <div className="min-h-[100dvh] font-sans flex flex-col items-center w-full">

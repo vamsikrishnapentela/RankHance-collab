@@ -1,10 +1,16 @@
 import { useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 import { getChapters, getQuestions, getQuiz } from './api';
-import { ChevronLeft, ChevronRight, CheckCircle, XCircle, ArrowLeft } from 'lucide-react';
+import { ChevronLeft, ChevronRight, CheckCircle, XCircle, ArrowLeft, Lock } from 'lucide-react';
+import { useAuth } from './hooks/useAuth';
+import PaymentModal from './components/PaymentModal';
+import MathRenderer from './components/MathRenderer';
 
 export default function Practice() {
+  const { isPaid, loading: authLoading } = useAuth();
+  const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
   const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
   const type = searchParams.get('type') || 'chapter'; // chapter or quiz
 
   const [subject, setSubject] = useState(null);
@@ -64,7 +70,13 @@ export default function Practice() {
   };
 
   // Fetch Questions
-  const handleChapterSelect = async (chapter) => {
+  const handleChapterSelect = async (chapter, idx) => {
+    const isLocked = !isPaid && idx >= 2;
+    if (isLocked) {
+      setIsPaymentModalOpen(true);
+      return;
+    }
+
     setSelectedChapter(chapter);
     setLoading(true);
     setError('');
@@ -132,18 +144,22 @@ export default function Practice() {
               {chapters.length === 0 ? (
                 <div className="text-center py-10 text-gray-500 font-medium bg-white rounded-xl border border-gray-200">No chapters found.</div>
               ) : (
-                chapters.map((ch, idx) => (
-                  <button
-                    key={ch.id}
-                    onClick={() => handleChapterSelect(ch)}
-                    className="card p-5 flex items-center justify-between hover:border-[var(--color-primary)] hover:shadow-lg transition-all text-left w-full group"
-                  >
-                    <span className="text-lg font-bold text-gray-800 group-hover:text-[var(--color-primary)] transition-colors">
-                      {idx + 1}. {ch.name}
-                    </span>
-                    <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-[var(--color-primary)]" />
-                  </button>
-                ))
+                chapters.map((ch, idx) => {
+                  const isLocked = !isPaid && idx >= 2;
+                  return (
+                    <button
+                      key={ch.id}
+                      onClick={() => handleChapterSelect(ch, idx)}
+                      className={`card p-5 flex items-center justify-between hover:border-[var(--color-primary)] hover:shadow-lg transition-all text-left w-full group ${isLocked ? 'opacity-80' : ''}`}
+                    >
+                      <span className="text-lg font-bold text-gray-800 group-hover:text-[var(--color-primary)] transition-colors flex items-center gap-3">
+                        {idx + 1}. {ch.name}
+                        {isLocked && <Lock className="w-4 h-4 text-orange-500" />}
+                      </span>
+                      <ChevronRight className={`w-5 h-5 text-gray-400 group-hover:text-[var(--color-primary)] ${isLocked ? 'text-orange-500' : ''}`} />
+                    </button>
+                  );
+                })
               )}
             </div>
           )}
@@ -269,6 +285,7 @@ export default function Practice() {
           </div>
         )}
       </div>
+      <PaymentModal isOpen={isPaymentModalOpen} onClose={() => setIsPaymentModalOpen(false)} />
     </div>
   );
 }
