@@ -1,13 +1,34 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
+const Razorpay = require('razorpay');
+const crypto = require('crypto');
+const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const { OAuth2Client } = require('google-auth-library');
+const User = require('./models/User');
+const auth = require('./middleware/auth');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const googleClient = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 app.use(cors());
 app.use(express.json());
+
+// MongoDB Connection
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/rankhance')
+    .then(() => console.log('Connected to MongoDB'))
+    .catch(err => console.error('MongoDB connection error:', err));
+
+// Initialize Razorpay
+const razorpay = new Razorpay({
+    key_id: process.env.RAZORPAY_KEY_ID || 'YOUR_KEY_ID',
+    key_secret: process.env.RAZORPAY_KEY_SECRET || 'YOUR_KEY_SECRET',
+});
 
 const readJsonFile = (filePath) => {
     try {
@@ -23,40 +44,144 @@ const readJsonFile = (filePath) => {
     }
 };
 
+// --- Auth Endpoints ---
+
+app.post('/api/auth/register', async (req, res) => {
+    const { name, email, password } = req.body;
+    try {
+        let user = await User.findOne({ email });
+        if (user) return res.status(400).json({ message: 'User already exists' });
+
+        user = new User({ name, email, password: await bcrypt.hash(password, 10) });
+        await user.save();
+
+        const token = jwt.sign({ user: { id: user.id } }, process.env.JWT_SECRET || 'YOUR_JWT_SECRET', { expiresIn: '7d' });
+        res.json({ token, user: { id: user.id, name: user.name, email: user.email, isPaid: user.isPaid } });
+    } catch (err) {
+        res.status(500).json({ message: 'Server error' });
+    }
+});
+
+app.post('/api/auth/login', async (req, res) => {
+    const { email, password } = req.body;
+    try {
+        const user = await User.findOne({ email });
+        if (!user || !user.password) return res.status(400).json({ message: 'Invalid credentials' });
+
+        const isMatch = await bcrypt.compare(password, user.password);
+        if (!isMatch) return res.status(400).json({ message: 'Invalid credentials' });
+
+        const token = jwt.sign({ user: { id: user.id } }, process.env.JWT_SECRET || 'YOUR_JWT_SECRET', { expiresIn: '7d' });
+        res.json({ token, user: { id: user.id, name: user.name, email: user.email, isPaid: user.isPaid } });
+    } catch (err) {
+        res.status(500).json({ message: 'Server error' });
+    }
+});
+
+app.post('/api/auth/google', async (req, res) => {
+    const { tokenId } = req.body;
+    try {
+        const ticket = await googleClient.verifyIdToken({
+            idToken: tokenId,
+            audience: process.env.GOOGLE_CLIENT_ID
+        });
+        const { name, email, sub: googleId } = ticket.getPayload();
+
+        let user = await User.findOne({ $or: [{ googleId }, { email }] });
+        if (user) {
+            user.googleId = googleId; // Update if email matches but googleId was missing
+            await user.save();
+        } else {
+            user = new User({ name, email, googleId });
+            await user.save();
+        }
+
+        const token = jwt.sign({ user: { id: user.id } }, process.env.JWT_SECRET || 'YOUR_JWT_SECRET', { expiresIn: '7d' });
+        res.json({ token, user: { id: user.id, name: user.name, email: user.email, isPaid: user.isPaid } });
+    } catch (err) {
+        console.error(err);
+        res.status(400).json({ message: 'Google authentication failed' });
+    }
+});
+
+app.get('/api/auth/user', auth, async (req, res) => {
+    try {
+        const user = await User.findById(req.user.id).select('-password');
+        res.json(user);
+    } catch (err) {
+        res.status(500).json({ message: 'Server error' });
+    }
+});
+
+// --- Payment Endpoints ---
+
+app.post('/api/payment/create-order', auth, async (req, res) => {
+    try {
+        const options = {
+            amount: 9900, // ₹99 in paise
+            currency: "INR",
+            receipt: "receipt_" + req.user.id,
+        };
+        const order = await razorpay.orders.create(options);
+        res.json(order);
+    } catch (err) {
+        res.status(500).json({ message: "Failed to create order" });
+    }
+});
+
+app.post('/api/payment/verify', auth, async (req, res) => {
+    const { razorpay_order_id, razorpay_payment_id, razorpay_signature } = req.body;
+
+    const generatedSignature = crypto
+        .createHmac("sha256", process.env.RAZORPAY_KEY_SECRET || "YOUR_KEY_SECRET")
+        .update(`${razorpay_order_id}|${razorpay_payment_id}`)
+        .digest("hex");
+
+    if (generatedSignature !== razorpay_signature) {
+        return res.status(400).json({ message: "Payment verification failed" });
+    }
+
+    await User.findByIdAndUpdate(req.user.id, { isPaid: true });
+    res.json({ success: true });
+});
+
+// --- Content Endpoints ---
+
 app.get('/api/subjects', (req, res) => {
     const data = readJsonFile('subjects/data.json');
     res.json(data || []);
 });
 
-app.get('/api/:chapterType/:subjectId', (req, res, next) => {
+app.get('/api/:chapterType/:subjectId', async (req, res, next) => {
     const { chapterType, subjectId } = req.params;
+    const token = req.header('x-auth-token');
+    let paid = false;
+
+    if (token) {
+        try {
+            const decoded = jwt.verify(token, process.env.JWT_SECRET || 'YOUR_JWT_SECRET');
+            const user = await User.findById(decoded.user.id);
+            if (user) paid = user.isPaid;
+        } catch(e) {}
+    }
+
     if (chapterType.startsWith('chapters')) {
         let data = readJsonFile(`${chapterType}/${subjectId}/data.json`);
         if (!data) {
             data = readJsonFile(`chapter-names/${subjectId}/data.json`) || readJsonFile(`chapters_formulas/${subjectId}/data.json`) || readJsonFile(`chapters_practice/${subjectId}/data.json`);
-            if (!data) {
-                // To prevent completely breaking the frontend, read the very first available chapters logic
-                try {
-                    const fallbackFolder = fs.readdirSync(path.join(__dirname, 'data')).find(f => f.startsWith('chapter'));
-                    if (fallbackFolder) data = readJsonFile(`${fallbackFolder}/${subjectId}/data.json`);
-                } catch(e) {}
-            }
         }
         
         if (data) {
-            return res.json(data);
+            const processedData = data.map((ch, idx) => ({
+                ...ch,
+                locked: !paid && idx >= 2
+            }));
+            return res.json(processedData);
         } else {
             return res.status(404).json({ message: "Subject not found" });
         }
     }
     next();
-});
-
-app.get('/api/formulas/:chapterId', (req, res) => {
-    const { chapterId } = req.params;
-    const subjectId = chapterId.startsWith('m') ? 'maths' : chapterId.startsWith('p') ? 'phy' : 'che';
-    const data = readJsonFile(`formulas/${subjectId}/${chapterId}/data.json`);
-    res.json(data || []);
 });
 
 app.get('/api/questions/:chapterId', (req, res) => {
@@ -73,21 +198,52 @@ app.get('/api/quiz/:chapterId', (req, res) => {
     res.json(data || []);
 });
 
-app.get('/api/mocktests', (req, res) => {
+app.get('/api/mocktests', async (req, res) => {
+    const token = req.header('x-auth-token');
+    let paid = false;
+    if (token) {
+        try {
+            const decoded = jwt.verify(token, process.env.JWT_SECRET || 'YOUR_JWT_SECRET');
+            const user = await User.findById(decoded.user.id);
+            if (user) paid = user.isPaid;
+        } catch(e) {}
+    }
+
     const data = readJsonFile('3-mocktests-questions/data.json');
     if (data) {
-        res.json(data.map(t => ({ id: t.id, name: t.name, duration: t.duration, totalQuestions: t.totalQuestions, distribution: t.distribution })));
+        res.json(data.map((t, idx) => ({ 
+            id: t.id, 
+            name: t.name, 
+            duration: t.duration, 
+            totalQuestions: t.totalQuestions, 
+            distribution: t.distribution,
+            locked: !paid && idx >= 2
+        })));
     } else {
         res.json([]);
     }
 });
 
-app.get('/api/mocktest/:testId', (req, res) => {
+app.get('/api/mocktest/:testId', async (req, res) => {
     const { testId } = req.params;
+    const token = req.header('x-auth-token');
+    let paid = false;
+    if (token) {
+        try {
+            const decoded = jwt.verify(token, process.env.JWT_SECRET || 'YOUR_JWT_SECRET');
+            const user = await User.findById(decoded.user.id);
+            if (user) paid = user.isPaid;
+        } catch(e) {}
+    }
+    
     const data = readJsonFile('3-mocktests-questions/data.json');
     if (data) {
-        const test = data.find(t => t.id === testId);
+        const testIdx = data.findIndex(t => t.id === testId);
+        const test = data[testIdx];
         if (test) {
+            if (!paid && testIdx >= 2) {
+                return res.status(403).json({ message: "Content locked. Please upgrade to premium." });
+            }
             const questions = readJsonFile(`3-mocktests-questions/${testId}/data.json`);
             test.questions = questions || [];
             return res.json(test);

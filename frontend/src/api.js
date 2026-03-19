@@ -6,6 +6,48 @@ const api = axios.create({
   baseURL: API_BASE_URL + '/api',
 });
 
+// Add a request interceptor to include the auth token
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('rankhance_token');
+  if (token) {
+    config.headers['x-auth-token'] = token;
+  }
+  return config;
+});
+
+// --- Auth API ---
+export const register = async (userData) => {
+  const { data } = await api.post('/auth/register', userData);
+  return data;
+};
+
+export const login = async (credentials) => {
+  const { data } = await api.post('/auth/login', credentials);
+  return data;
+};
+
+export const loginWithGoogle = async (tokenId) => {
+  const { data } = await api.post('/auth/google', { tokenId });
+  return data;
+};
+
+export const getCurrentUser = async () => {
+  const { data } = await api.get('/auth/user');
+  return data;
+};
+
+// --- Payment API ---
+export const createOrder = async () => {
+  const { data } = await api.post('/payment/create-order');
+  return data;
+};
+
+// POST /api/payment/verify
+export const verifyPayment = async (paymentData) => {
+  const { data } = await api.post('/payment/verify', paymentData);
+  return data;
+};
+
 // GET /api/chapters/:subject
 export const getChapters = async (subject) => {
   const { data } = await api.get(`/chapters/${subject}`);

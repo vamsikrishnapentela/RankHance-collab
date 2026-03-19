@@ -9,74 +9,66 @@ import Review from './Review';
 import Subjects from './Subjects';
 import Chapters from './Chapters';
 import Questions from './Questions';
+import Login from './Login';
+import Signup from './Signup';
+import { useAuth } from './hooks/useAuth';
 
 function AppLayout() {
   const location = useLocation();
-  const showNavButton = location.pathname === '/';
+  const { user, logout } = useAuth();
+  const isAuthPage = ['/login', '/signup'].includes(location.pathname);
 
   return (
     <div className="min-h-[100dvh] font-sans flex flex-col items-center w-full">
-      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md h-16 z-50 border-b border-gray-100 flex items-center px-6">
-        <div className="max-w-5xl mx-auto w-full flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold font-heading">
-            <span className="text-gray-900">Rank</span>
-            <span className="text-[var(--color-primary)]">Hance</span>
-          </Link>
-          {showNavButton && (
-            <Link 
-              to="/dashboard" 
-              className="px-5 py-2.5 rounded-xl bg-[var(--color-primary)] text-white font-semibold font-heading text-sm hover:bg-orange-600 transition-colors shadow-sm"
-            >
-              Start Practicing
-            </Link>
-          )}
-        </div>
-      </nav>
-      <div className="sticky top-[64px] z-40 bg-orange-400 text-white text-base font-semibold overflow-hidden">
-        <div className="flex whitespace-nowrap animate-marquee gap-12 py-2.5 items-center">
-          <span>🔥 1000+ EAMCET Students Already Joined — Don't Miss Your Chance</span>
-          <span>•</span>
-          <span>🚀 Crack EAMCET 2026 with Smart Practice, Mock Tests & Real Exam Questions</span>
-          <span>•</span>
-          <span>⏳ Limited Time Offer ₹99 Only — Price Will Increase Soon</span>
-          <span>•</span>
-          <span>📈 Improve Your Rank with Daily Practice & Chapter-wise Preparation</span>
-          <span>•</span>
-          <span>💯 Real Exam Level Questions + Full Length Mock Tests (160 Questions)</span>
-          <span>•</span>
-          <span>🎯 Complete AP & TS Syllabus Covered — No More Confusion What to Study</span>
-          <span>•</span>
-          <span>⚡ Only Few Seats Left — Join Now Before It Gets Full</span>
-          <span>•</span>
-          <span>🏆 Follow Topper Strategies & Boost Your Score Faster</span>
-          <span>•</span>
-          <span>📚 Practice Like Real Exam — Gain Confidence Before Exam Day</span>
-          <span>•</span>
-          <span>⏱️ Time is Running Out — Start Preparation Today, Not Tomorrow</span>
-          <span>🔥 1000+ EAMCET Students Already Joined — Don't Miss Your Chance</span>
-          <span>•</span>
-          <span>🚀 Crack EAMCET 2026 with Smart Practice, Mock Tests & Real Exam Questions</span>
-          <span>•</span>
-          <span>⏳ Limited Time Offer ₹99 Only — Price Will Increase Soon</span>
-          <span>•</span>
-          <span>📈 Improve Your Rank with Daily Practice & Chapter-wise Preparation</span>
-          <span>•</span>
-          <span>💯 Real Exam Level Questions + Full Length Mock Tests (160 Questions)</span>
-          <span>•</span>
-          <span>🎯 Complete AP & TS Syllabus Covered — No More Confusion What to Study</span>
-          <span>•</span>
-          <span>⚡ Only Few Seats Left — Join Now Before It Gets Full</span>
-          <span>•</span>
-          <span>🏆 Follow Topper Strategies & Boost Your Score Faster</span>
-          <span>•</span>
-          <span>📚 Practice Like Real Exam — Gain Confidence Before Exam Day</span>
-          <span>•</span>
-          <span>⏱️ Time is Running Out — Start Preparation Today, Not Tomorrow</span>
-        </div>
-      </div>
-      <div className="pt-16 w-full flex-1 flex flex-col relative">
+      {!isAuthPage && (
+        <>
+          <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md h-16 z-50 border-b border-gray-100 flex items-center px-6">
+            <div className="max-w-5xl mx-auto w-full flex justify-between items-center">
+              <Link to="/" className="text-2xl font-bold font-heading">
+                <span className="text-gray-900">Rank</span>
+                <span className="text-[var(--color-primary)]">Hance</span>
+              </Link>
+              <div className="flex items-center gap-4">
+                {user ? (
+                  <>
+                    <Link to="/dashboard" className="text-gray-600 font-bold hover:text-gray-900 transition-colors">Dashboard</Link>
+                    <button 
+                      onClick={logout}
+                      className="px-5 py-2.5 rounded-xl bg-gray-100 text-gray-700 font-semibold font-heading text-sm hover:bg-gray-200 transition-colors"
+                    >
+                      Logout
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <Link to="/login" className="text-gray-600 font-bold hover:text-gray-900 transition-colors">Login</Link>
+                    <Link 
+                      to="/signup" 
+                      className="px-5 py-2.5 rounded-xl bg-[var(--color-primary)] text-white font-semibold font-heading text-sm hover:bg-orange-600 transition-colors shadow-sm"
+                    >
+                      Get Started
+                    </Link>
+                  </>
+                )}
+              </div>
+            </div>
+          </nav>
+          <div className="fixed top-16 w-full z-40 bg-orange-400 text-white text-base font-semibold overflow-hidden">
+            <div className="flex whitespace-nowrap animate-marquee gap-12 py-2.5 items-center">
+              <span>🔥 1000+ EAMCET Students Already Joined</span>
+              <span>•</span>
+              <span>🚀 Crack EAMCET 2026 with Smart Practice</span>
+              <span>•</span>
+              <span>⏳ Limited Time Offer ₹99 Only</span>
+            </div>
+          </div>
+        </>
+      )}
+      <div className={`${!isAuthPage ? 'pt-24' : ''} w-full flex-1 flex flex-col relative`}>
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/practice" element={<Practice />} />
           <Route path="/subjects" element={<Subjects />} />
