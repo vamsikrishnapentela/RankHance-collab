@@ -28,3 +28,18 @@ h6 {
   border-radius: 16px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}

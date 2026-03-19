@@ -10,11 +10,6 @@ import Subjects from './Subjects';
 import Chapters from './Chapters';
 import Questions from './Questions';
 
-
-
-
-
-
 function AppLayout() {
   const location = useLocation();
   const showNavButton = location.pathname === '/';
@@ -37,7 +32,48 @@ function AppLayout() {
           )}
         </div>
       </nav>
-
+      <div className="sticky top-[64px] z-40 bg-orange-400 text-white text-base font-semibold overflow-hidden">
+        <div className="flex whitespace-nowrap animate-marquee gap-12 py-2.5 items-center">
+          <span>🔥 1000+ EAMCET Students Already Joined — Don't Miss Your Chance</span>
+          <span>•</span>
+          <span>🚀 Crack EAMCET 2026 with Smart Practice, Mock Tests & Real Exam Questions</span>
+          <span>•</span>
+          <span>⏳ Limited Time Offer ₹99 Only — Price Will Increase Soon</span>
+          <span>•</span>
+          <span>📈 Improve Your Rank with Daily Practice & Chapter-wise Preparation</span>
+          <span>•</span>
+          <span>💯 Real Exam Level Questions + Full Length Mock Tests (160 Questions)</span>
+          <span>•</span>
+          <span>🎯 Complete AP & TS Syllabus Covered — No More Confusion What to Study</span>
+          <span>•</span>
+          <span>⚡ Only Few Seats Left — Join Now Before It Gets Full</span>
+          <span>•</span>
+          <span>🏆 Follow Topper Strategies & Boost Your Score Faster</span>
+          <span>•</span>
+          <span>📚 Practice Like Real Exam — Gain Confidence Before Exam Day</span>
+          <span>•</span>
+          <span>⏱️ Time is Running Out — Start Preparation Today, Not Tomorrow</span>
+          <span>🔥 1000+ EAMCET Students Already Joined — Don't Miss Your Chance</span>
+          <span>•</span>
+          <span>🚀 Crack EAMCET 2026 with Smart Practice, Mock Tests & Real Exam Questions</span>
+          <span>•</span>
+          <span>⏳ Limited Time Offer ₹99 Only — Price Will Increase Soon</span>
+          <span>•</span>
+          <span>📈 Improve Your Rank with Daily Practice & Chapter-wise Preparation</span>
+          <span>•</span>
+          <span>💯 Real Exam Level Questions + Full Length Mock Tests (160 Questions)</span>
+          <span>•</span>
+          <span>🎯 Complete AP & TS Syllabus Covered — No More Confusion What to Study</span>
+          <span>•</span>
+          <span>⚡ Only Few Seats Left — Join Now Before It Gets Full</span>
+          <span>•</span>
+          <span>🏆 Follow Topper Strategies & Boost Your Score Faster</span>
+          <span>•</span>
+          <span>📚 Practice Like Real Exam — Gain Confidence Before Exam Day</span>
+          <span>•</span>
+          <span>⏱️ Time is Running Out — Start Preparation Today, Not Tomorrow</span>
+        </div>
+      </div>
       <div className="pt-16 w-full flex-1 flex flex-col relative">
         <Routes>
           <Route path="/" element={<Landing />} />
@@ -51,8 +87,6 @@ function AppLayout() {
           <Route path="/result" element={<Result />} />
           <Route path="/review" element={<Review />} />
         </Routes>
-
-
       </div>
     </div>
   );
