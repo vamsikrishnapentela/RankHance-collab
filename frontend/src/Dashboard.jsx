@@ -1,9 +1,22 @@
+import { useState, useEffect } from 'react';
+import PaymentModal from './components/PaymentModal';
 import { Link } from 'react-router-dom';
 import { BookOpen, Zap, Lock, Edit3, ChevronRight } from 'lucide-react';
 import Card from './components/Card';
 
 
 export default function Dashboard() {
+  const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
+
+useEffect(() => {
+  const shouldShowPayment = localStorage.getItem("showPayment");
+
+  if (shouldShowPayment === "true") {
+    setIsPaymentModalOpen(true);
+    localStorage.removeItem("showPayment");
+  }
+}, []);
+
   const cards = [
     {
       title: 'Foundation Practice',
@@ -64,7 +77,14 @@ export default function Dashboard() {
       color: 'bg-gray-100'
     }
   ];
-
+  if (isPaymentModalOpen) {
+    return (
+      <PaymentModal
+        isOpen={true}
+        onClose={() => setIsPaymentModalOpen(false)}
+      />
+    );
+  }
   return (
     <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100vh-64px)] overflow-y-auto">
       <div className="w-full max-w-5xl mx-auto py-8">

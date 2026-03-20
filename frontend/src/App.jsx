@@ -23,7 +23,7 @@ function AppLayout() {
 
   // Protected routes logic
   useEffect(() => {
-    const publicPaths = ['/', '/login', '/signup', '/forgot-password'];
+    const publicPaths = ['/', '/login', '/signup', '/forgot-password', '/features', '/pricing'];
     if (!user && !publicPaths.includes(location.pathname)) {
       navigate('/login');
     }
@@ -53,12 +53,22 @@ function AppLayout() {
                 ) : (
                   <>
                     <Link to="/login" className="text-gray-600 font-bold hover:text-gray-900 transition-colors">Login</Link>
-                    <Link 
-                      to="/" 
-                      className="px-5 py-2.5 rounded-xl bg-[var(--color-primary)] text-white font-semibold font-heading text-sm hover:bg-orange-600 transition-colors shadow-sm"
-                    >
-                      Home
-                    </Link>
+                    <button
+                        onClick={() => {
+                          document.getElementById("features")?.scrollIntoView({ behavior: "smooth" });
+                        }}
+                        className="text-gray-600 font-bold hover:text-gray-900 transition-colors"
+                      >
+                        Features
+                      </button>
+                      <button
+                        onClick={() => {
+                          document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
+                        }}
+                        className="text-gray-600 font-bold hover:text-gray-900 transition-colors"
+                      >
+                        Pricing
+                      </button>
                   </>
                 )}
               </div>

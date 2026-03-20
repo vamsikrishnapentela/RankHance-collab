@@ -141,7 +141,7 @@ export default function Landing() {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 md:py-20 bg-white">
+      <section id="features" className="py-16 md:py-20 bg-white scroll-mt-16">
         <Container>
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -285,34 +285,41 @@ export default function Landing() {
       </section>
 
       {/* Video Section */}
+
       <section className="py-16 md:py-20 bg-white">
         <Container className="text-center space-y-10">
-          <div className="space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              See How RankHance Works 🚀
-            </h2>
-            <p className="text-gray-600 text-lg">
-              Watch how students improve their rank step-by-step
-            </p>
-          </div>
 
-          <div className="relative rounded-3xl overflow-hidden shadow-xl border border-gray-100 group">
-            <iframe
-              className="w-full h-[220px] md:h-[420px]"
-              src="https://www.youtube.com/embed/ysz5S6PUM-U"
-              title="RankHance Demo"
-              allowFullScreen
-            ></iframe>
-            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition"></div>
-          </div>
+      ```
+      <div className="space-y-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          See How RankHance Works 🚀
+        </h2>
+        <p className="text-gray-600 text-lg">
+          Watch how students improve their rank step-by-step
+        </p>
+      </div>
 
-          <div className="text-sm text-gray-500">
-            🎯 Real students • Real results • Real improvement
-          </div>
+      <div className="relative rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+        <iframe
+          className="w-full h-[220px] md:h-[420px] rounded-3xl"
+          src="https://www.youtube.com/embed/uEAn72MgGUw"
+          title="RankHance Demo"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+
+      <div className="text-sm text-gray-500">
+        🎯 Real students • Real results • Real improvement
+      </div>
+      ```
+
         </Container>
       </section>
 
-      <section className="py-16 md:py-20 bg-gradient-to-b from-white to-orange-50">
+
+      <section id="pricing" className="py-16 md:py-20 bg-gradient-to-b from-white to-orange-50 scroll-mt-12">
         <Container className="space-y-12">
           {/* HEADING */}
           <div className="text-center space-y-4">
@@ -396,7 +403,18 @@ export default function Landing() {
                 </p>
 
                 <button
-                  onClick={() => navigate(user ? "/practice?pay=true" : "/login?redirect=/practice?pay=true")}
+                  onClick={() => {
+                    const token = localStorage.getItem("token");
+
+                    if (!token) {
+                      localStorage.setItem("showPayment", "true");
+                      navigate("/login");
+                    } else {
+                      // already logged in → go to dashboard
+                      localStorage.setItem("showPayment", "true");
+                      navigate("/dashboard");
+                    }
+                  }}
                   className="w-full bg-orange-500 text-white py-3 rounded-xl font-semibold text-lg hover:bg-orange-600 transition"
                 >
                   Unlock Premium Now →
@@ -516,6 +534,27 @@ export default function Landing() {
             <p className="text-sm text-orange-500 font-semibold">
               🚀 Start now. Improve daily. Crack your dream rank.
             </p>
+            <p className="text-sm text-gray-400">
+              📧 For any issues:{" "}
+              <a 
+                href="mailto:forw8568@gmail.com" 
+                className="text-orange-400 hover:text-orange-300 font-semibold"
+              >
+                forw8568@gmail.com
+              </a>
+            </p>
+            <p className="text-sm text-gray-400">
+              💬 WhatsApp:{" "}
+              <a 
+                href="https://wa.me/9392609600"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-400 hover:text-green-300 font-semibold"
+              >
+                Chat with us
+              </a>
+            </p>
+
           </div>
 
           {/* RIGHT SIDE */}
@@ -524,8 +563,8 @@ export default function Landing() {
             <a href="/" className="hover:text-white transition">Home</a>
             <a href="/dashboard" className="hover:text-white transition">Practice</a>
             <a href="/mock-tests" className="hover:text-white transition">Mock Tests</a>
-            <a href="/pricing" className="hover:text-white transition">Pricing</a>
-
+            <a href="#pricing" className="hover:text-white transition">Pricing</a>
+            <a href="#features" className="hover:text-white transition">Features</a>
           </div>
 
         </Container>
