@@ -133,12 +133,12 @@ export default function MockAttempt() {
   const isFlagged = flags.has(currentGlobalIdx);
 
   return (
-      <div className="flex-1 w-full bg-gray-50 min-h-[calc(100vh-64px)]">
-        <div className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 lg:hidden">
+      <div className=" flex-1 w-full bg-gray-50 min-h-[calc(100vh-64px)]">
+        <div className="sticky top-28 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 lg:hidden">
           {/* Mobile tabs hidden on desktop */}
         </div>
       {/* Top Bar */}
-      <div className="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md border-b border-gray-100">
+      <div className="sticky top-28 z-40 w-full bg-white/95 backdrop-blur-md border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <Button 
             variant="secondary" 
@@ -285,7 +285,7 @@ export default function MockAttempt() {
       </div>
 
       {/* Right Panel - Question Nav (Desktop) */}
-      <div className="hidden lg:block fixed right-6 top-1/2 -translate-y-1/2 w-16 h-fit bg-white rounded-2xl shadow-lg border p-4 space-y-3">
+      <div className=" hidden lg:block fixed right-6 top-120 -translate-y-1/2 w-16 h-fit bg-white rounded-2xl shadow-lg border p-4 space-y-3">
         <div className="text-xs font-bold text-gray-500 text-center uppercase tracking-wide">Jump</div>
         {[
           { key: 'maths', stats: mathsStats },
