@@ -118,7 +118,7 @@ app.get('/api/auth/user', auth, async (req, res) => {
 app.post('/api/payment/create-order', auth, async (req, res) => {
     try {
         const options = {
-            amount: 9900, // ₹99 in paise
+            amount: 100, // ₹1 in paise
             currency: "INR",
             receipt: "receipt_" + req.user.id,
         };
