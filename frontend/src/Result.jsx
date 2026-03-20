@@ -134,24 +134,32 @@ const chapterNameMap = {
       che: {}
     };
 
+    console.log("FIRST QUESTION:", questions[0]?.id);
+    console.log("LAST QUESTION:", questions[questions.length - 1]?.id);
+    
     questions.forEach((q, index) => {
-      const userAns = answers[index];
+      const userAns = answers[q.globalIdx];
       const isCorrect = userAns === q.correctIndex;
 
-      if (userAns !== undefined) {
-        if (isCorrect) correct++;
+
+      const mainUserAns = answers[q.globalIdx];
+      if (mainUserAns !== undefined) {
+        if (mainUserAns === q.correctIndex) correct++;
         else wrong++;
       } else {
         unattempted++;
       }
 
+
       // Subject stats (keep existing mapping)
       const subjectFull = q.subject === 'maths' ? 'maths' : q.subject === 'phy' ? 'physics' : 'chemistry';
       subjStats[subjectFull].total++;
-      if (userAns !== undefined) {
-        if (isCorrect) subjStats[subjectFull].correct++;
+      const subjUserAns = answers[q.globalIdx];
+      if (subjUserAns !== undefined) {
+        if (subjUserAns === q.correctIndex) subjStats[subjectFull].correct++;
         else subjStats[subjectFull].wrong++;
       }
+
 
       // NEW CHAPTER LOGIC: Use q.chapter field
       const subjectShort = q.subject; // 'maths'|'phy'|'che'
@@ -163,14 +171,16 @@ const chapterNameMap = {
 
       subjectChapters[subjectShort][chapterId].total++;
 
-      if (userAns !== undefined) {
-        if (isCorrect) {
+      const chapterUserAns = answers[q.globalIdx];
+      if (chapterUserAns !== undefined) {
+        if (chapterUserAns === q.correctIndex) {
           subjectChapters[subjectShort][chapterId].correct++;
         } else {
           subjectChapters[subjectShort][chapterId].wrong++;
         }
       }
     });
+
 
     // Calculate accuracy and level for each chapter
     ['maths', 'phy', 'che'].forEach(subjectShort => {

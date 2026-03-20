@@ -267,17 +267,17 @@ export default function Landing() {
                   {Object.keys(selectedAnswers).length} / {questions.length}
                 </p>
                 <p className="text-gray-600">Questions Attempted</p>
-                <button className="bg-orange-500 text-white py-3 rounded-xl font-semibold hover:bg-orange-600 transition">
-                  Start Full Mock Test →
-                </button>
+                
               </div>
             </div>
           )}
 
-          <div className="flex justify-center">
-            <button className="bg-orange-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:bg-orange-600 hover:scale-105 transition-all">
-              Try Full Mock Test →
-            </button>
+<div className="flex justify-center">
+            <Link to="/login" className="block">
+              <button className="bg-orange-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:bg-orange-600 hover:scale-105 transition-all">
+                Try Full Mock Test →
+              </button>
+            </Link>
           </div>
         </Container>
       </section>

@@ -129,8 +129,7 @@ export default function MockAttempt() {
   }
 
   const currentGlobalIdx = currentQ ? currentQ.globalIdx : 0;
-  // eslint-disable-next-line no-unused-vars
-  const isAnswered = answers[currentGlobalIdx] !== undefined;
+
   const isFlagged = flags.has(currentGlobalIdx);
 
   return (
@@ -255,9 +254,8 @@ export default function MockAttempt() {
                 <Button
                   key={optIdx}
                   variant="ghost"
-                  className={className + (isAnswered ? ' cursor-default' : '')}
-                  disabled={isAnswered}
-                  onClick={() => !isAnswered && handleSelectOption(optIdx, currentGlobalIdx)}
+                  className={className}
+                  onClick={() => handleSelectOption(optIdx, currentGlobalIdx)}
                 >
                   <MathRenderer content={opt} />
                 </Button>

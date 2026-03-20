@@ -15,7 +15,8 @@ const Review = () => {
   const [currentIdx, setCurrentIdx] = useState(0);
 
   const filteredQuestions = questions?.filter((q, idx) => {
-    const userAns = answers[idx];
+    const qGlobalIdx = questions.indexOf(q);
+    const userAns = answers[qGlobalIdx];
     const isCorrect = userAns === q.correctIndex;
     if (filter === 'correct') return userAns !== undefined && isCorrect;
     if (filter === 'wrong') return userAns !== undefined && !isCorrect;
@@ -45,17 +46,35 @@ const Review = () => {
   const goPrev = () => setCurrentIdx(prev => Math.max(0, prev - 1));
   const goNext = () => setCurrentIdx(prev => Math.min(filteredQuestions.length - 1, prev + 1));
 
-  const Option = ({ opt, optIdx, isUser, isRight }) => (
-    <div className={`p-4 border-2 rounded-xl flex items-center gap-3 text-left min-h-[56px] transition-all ${
-      isUser && isRight ? 'border-green-500 bg-green-50 ring-1 ring-green-500 shadow-sm text-green-900 font-semibold' :
-      isUser && !isRight ? 'border-red-500 bg-red-50 ring-1 ring-red-500 shadow-sm text-red-900 font-semibold' :
-      isRight ? 'border-green-300 bg-green-50 text-green-800 font-semibold' :
-      'border-gray-200 bg-white hover:border-gray-300'
-    }`}>
-      <span className="font-bold w-6 text-sm">({String.fromCharCode(65 + optIdx)})</span>
-      <MathRenderer content={opt} />
-    </div>
-  );
+  const Option = ({ opt, optIdx, isUser, isRight }) => {
+    const userAns = qGlobalIdx >= 0 ? answers[qGlobalIdx] : undefined;
+    const correctAns = currentQ.correctIndex;
+    const isUserSelected = userAns === optIdx;
+    const isCorrectOption = optIdx === correctAns;
+    
+    return (
+      <div className={`p-3 rounded-lg border
+        ${isCorrectOption ? "bg-green-100 border-green-500" : ""}
+        ${isUserSelected && !isCorrectOption ? "bg-red-100 border-red-500" : ""}
+        ${isUserSelected && isCorrectOption ? "bg-green-100 border-green-500" : ""}
+      `}>
+        <MathRenderer content={opt} />
+
+        {/* LABELS */}
+        {isUserSelected && !isCorrectOption && (
+          <div className="text-red-600 text-xs mt-1">
+            ❌ Your Answer
+          </div>
+        )}
+
+        {isCorrectOption && (
+          <div className="text-green-600 text-xs mt-1">
+            ✅ Correct Answer
+          </div>
+        )}
+      </div>
+    );
+  };
 
   return (
     <div className="flex-1 w-full bg-gray-50 min-h-[calc(100vh-64px)] p-6">

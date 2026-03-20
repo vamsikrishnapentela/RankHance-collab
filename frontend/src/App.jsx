@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
 import Landing from './Landing';
 import Dashboard from './Dashboard';
@@ -53,10 +53,10 @@ function AppLayout() {
                   <>
                     <Link to="/login" className="text-gray-600 font-bold hover:text-gray-900 transition-colors">Login</Link>
                     <Link 
-                      to="/signup" 
+                      to="/" 
                       className="px-5 py-2.5 rounded-xl bg-[var(--color-primary)] text-white font-semibold font-heading text-sm hover:bg-orange-600 transition-colors shadow-sm"
                     >
-                      Get Started
+                      Home
                     </Link>
                   </>
                 )}
@@ -64,12 +64,21 @@ function AppLayout() {
             </div>
           </nav>
           <div className="fixed top-16 w-full z-40 bg-orange-400 text-white text-base font-semibold overflow-hidden">
-            <div className="flex whitespace-nowrap animate-marquee gap-12 py-2.5 items-center">
-              <span>🔥 1000+ EAMCET Students Already Joined</span>
-              <span>•</span>
-              <span>🚀 Crack EAMCET 2026 with Smart Practice</span>
-              <span>•</span>
-              <span>⏳ Limited Time Offer ₹99 Only</span>
+<div className="flex whitespace-nowrap animate-marquee gap-12 py-2.5 items-center">
+              <div>
+                <span>🔥 1000+ EAMCET Students Already Joined</span>
+                <span>•</span>
+                <span>🚀 Crack EAMCET 2026 with Smart Practice</span>
+                <span>•</span>
+                <span>⏳ Limited Time Offer ₹99 Only</span>
+              </div>
+              <div>
+                <span>🔥 1000+ EAMCET Students Already Joined</span>
+                <span>•</span>
+                <span>🚀 Crack EAMCET 2026 with Smart Practice</span>
+                <span>•</span>
+                <span>⏳ Limited Time Offer ₹99 Only</span>
+              </div>
             </div>
           </div>
         </>
