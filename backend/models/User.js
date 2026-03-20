@@ -6,6 +6,7 @@ const userSchema = new mongoose.Schema({
   password: { type: String },
   googleId: { type: String },
   isPaid: { type: Boolean, default: false },
+  razorpayOrderId: { type: String },
   createdAt: { type: Date, default: Date.now },
 });
 

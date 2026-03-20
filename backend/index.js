@@ -123,8 +123,13 @@ app.post('/api/payment/create-order', auth, async (req, res) => {
             receipt: "receipt_" + req.user.id,
         };
         const order = await razorpay.orders.create(options);
+        
+        // Store order ID in user document
+        await User.findByIdAndUpdate(req.user.id, { razorpayOrderId: order.id });
+        
         res.json(order);
     } catch (err) {
+        console.error("Order creation error:", err);
         res.status(500).json({ message: "Failed to create order" });
     }
 });
@@ -132,17 +137,33 @@ app.post('/api/payment/create-order', auth, async (req, res) => {
 app.post('/api/payment/verify', auth, async (req, res) => {
     const { razorpay_order_id, razorpay_payment_id, razorpay_signature } = req.body;
 
-    const generatedSignature = crypto
-        .createHmac("sha256", process.env.RAZORPAY_KEY_SECRET || "YOUR_KEY_SECRET")
-        .update(`${razorpay_order_id}|${razorpay_payment_id}`)
-        .digest("hex");
+    try {
+        // Fetch user to check stored order ID
+        const user = await User.findById(req.user.id);
+        if (!user || user.razorpayOrderId !== razorpay_order_id) {
+            return res.status(400).json({ message: "Invalid order ID or session mismatch" });
+        }
 
-    if (generatedSignature !== razorpay_signature) {
-        return res.status(400).json({ message: "Payment verification failed" });
+        const generatedSignature = crypto
+            .createHmac("sha256", process.env.RAZORPAY_KEY_SECRET || "YOUR_KEY_SECRET")
+            .update(`${razorpay_order_id}|${razorpay_payment_id}`)
+            .digest("hex");
+
+        if (generatedSignature !== razorpay_signature) {
+            return res.status(400).json({ message: "Payment verification failed" });
+        }
+
+        // Successfully verified, update user status and CLEAR the order ID to prevent reuse
+        await User.findByIdAndUpdate(req.user.id, { 
+            isPaid: true,
+            $unset: { razorpayOrderId: 1 } 
+        });
+        
+        res.json({ success: true });
+    } catch (err) {
+        console.error("Verification error:", err);
+        res.status(500).json({ message: "Server error during verification" });
     }
-
-    await User.findByIdAndUpdate(req.user.id, { isPaid: true });
-    res.json({ success: true });
 });
 
 // --- Content Endpoints ---
