@@ -7,6 +7,9 @@ const userSchema = new mongoose.Schema({
   googleId: { type: String },
   isPaid: { type: Boolean, default: false },
   razorpayOrderId: { type: String },
+  resetPasswordOTP: { type: String },
+  resetPasswordOTPExpires: { type: Date },
+  lastOTPSentAt: { type: Date },
   createdAt: { type: Date, default: Date.now },
 });
 

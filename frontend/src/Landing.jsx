@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { useAuth } from './hooks/useAuth';
 import Container from './components/Container';
 import { getMockTest } from './api';
 import { BookOpen, Target, CheckCircle, Smartphone, Star, Users, TrendingUp } from 'lucide-react';
@@ -10,6 +11,8 @@ export default function Landing() {
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [popupVisible, setPopupVisible] = useState(false);
   const [popupMsg, setPopupMsg] = useState("");
+  const { user } = useAuth();
+  const navigate = useNavigate();
 
   useEffect(() => {
     getMockTest(1)
@@ -96,10 +99,10 @@ export default function Landing() {
               Chapter-wise questions + full quizzes for Maths, Physics, Chemistry
             </p>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
-            <Link 
-              to="/dashboard" 
+            <Link
+              to="/dashboard"
               className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-xl shadow-lg hover:shadow-xl transition-all font-semibold text-lg flex-1 sm:flex-none"
             >
               Start Now
@@ -232,11 +235,10 @@ export default function Landing() {
                       <div
                         key={i}
                         onClick={() => handleSelect(opt)}
-                        className={`p-3 rounded-xl border cursor-pointer transition ${
-                          selectedAnswers[currentIndex] === opt
+                        className={`p-3 rounded-xl border cursor-pointer transition ${selectedAnswers[currentIndex] === opt
                             ? "bg-orange-100 border-orange-500"
                             : "hover:bg-orange-50"
-                        }`}
+                          }`}
                       >
                         {opt}
                       </div>
@@ -267,12 +269,12 @@ export default function Landing() {
                   {Object.keys(selectedAnswers).length} / {questions.length}
                 </p>
                 <p className="text-gray-600">Questions Attempted</p>
-                
+
               </div>
             </div>
           )}
 
-<div className="flex justify-center">
+          <div className="flex justify-center">
             <Link to="/login" className="block">
               <button className="bg-orange-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:bg-orange-600 hover:scale-105 transition-all">
                 Try Full Mock Test →
@@ -393,7 +395,10 @@ export default function Landing() {
                   🎯 Improve marks faster with a proven system
                 </p>
 
-                <button className="w-full bg-orange-500 text-white py-3 rounded-xl font-semibold text-lg hover:bg-orange-600 transition">
+                <button
+                  onClick={() => navigate(user ? "/practice?pay=true" : "/login?redirect=/practice?pay=true")}
+                  className="w-full bg-orange-500 text-white py-3 rounded-xl font-semibold text-lg hover:bg-orange-600 transition"
+                >
                   Unlock Premium Now →
                 </button>
 

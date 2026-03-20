@@ -8,18 +8,17 @@ import MathRenderer from './components/MathRenderer';
 
 export default function Practice() {
   const { isPaid, loading: authLoading } = useAuth();
-  const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const type = searchParams.get('type') || 'chapter'; // chapter or quiz
-
+  const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(searchParams.get('pay') === 'true');
   const [subject, setSubject] = useState(null);
   const [chapters, setChapters] = useState([]);
   const [selectedChapter, setSelectedChapter] = useState(null);
-  
+
   const [questions, setQuestions] = useState([]);
   const [currentIdx, setCurrentIdx] = useState(0);
-  
+
   // Track selected option per question: { [questionId_or_Index]: number }
   const [answers, setAnswers] = useState({});
 
@@ -83,7 +82,7 @@ export default function Practice() {
     setQuestions([]);
     setCurrentIdx(0);
     setAnswers({});
-    
+
     try {
       let data = [];
       if (type === 'quiz') {
@@ -121,18 +120,18 @@ export default function Practice() {
     return (
       <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100vh-64px)]">
         <div className="max-w-3xl mx-auto w-full">
-          <button 
+          <button
             onClick={goBackToSubjects}
             className="flex items-center text-gray-500 hover:text-[var(--color-primary)] font-semibold mb-6 transition-colors"
           >
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Subjects
           </button>
-          
+
           <h2 className="text-3xl font-extrabold text-gray-900 mb-8 capitalize tracking-tight">
             Select a Chapter
           </h2>
-          
+
           {loading ? (
             <div className="flex justify-center py-20">
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[var(--color-primary)]"></div>
@@ -172,14 +171,14 @@ export default function Practice() {
   return (
     <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100vh-64px)]">
       <div className="max-w-3xl mx-auto w-full relative">
-        <button 
+        <button
           onClick={goBackToChapters}
           className="flex items-center text-gray-500 hover:text-[var(--color-primary)] font-semibold mb-6 transition-colors"
         >
           <ArrowLeft className="w-5 h-5 mr-2" />
           Back to Chapters
         </button>
-        
+
         {loading ? (
           <div className="flex justify-center py-20">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[var(--color-primary)]"></div>
@@ -202,45 +201,45 @@ export default function Practice() {
             </div>
 
             <div className="card p-6 sm:p-8 mb-6 relative">
-  <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-8 leading-relaxed">
-    <MathRenderer content={questions[currentIdx].text} />
-  </div>
-  <div className="flex flex-col gap-4">
-    {questions[currentIdx].options.map((opt, optIdx) => {
-      const isAnswered = answers[currentIdx] !== undefined;
-      const isSelected = answers[currentIdx] === optIdx;
-      const isCorrectAnswer = questions[currentIdx].correctIndex === optIdx;
-      
-      let btnClass = "border-gray-200 hover:border-gray-300 bg-white text-gray-800";
-      let Icon = null;
-      
-      if (isAnswered) {
-        if (isCorrectAnswer) {
-          btnClass = "border-green-500 bg-green-50 text-green-900 font-semibold ring-1 ring-green-500 shadow-sm";
-          Icon = <CheckCircle className="w-5 h-5 text-green-600" />;
-        } else if (isSelected) {
-          btnClass = "border-red-500 bg-red-50 text-red-900 font-semibold ring-1 ring-red-500 shadow-sm";
-          Icon = <XCircle className="w-5 h-5 text-red-600" />;
-        } else {
-          btnClass = "border-gray-100 bg-gray-50 text-gray-400 opacity-60";
-        }
-      } else {
-        btnClass += " hover:bg-gray-50 cursor-pointer active:scale-[0.99]";
-      }
-      
-      return (
-        <button
-          key={optIdx}
-          disabled={isAnswered}
-          onClick={() => handleSelectOption(optIdx)}
-          className={`min-h-[56px] w-full text-left p-4 rounded-xl border-2 transition-all flex items-center justify-between text-base sm:text-lg ${btnClass}`}
-        >
-          <MathRenderer content={opt} />
-          {Icon && <span>{Icon}</span>}
-        </button>
-      );
-    })}
-  </div>
+              <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-8 leading-relaxed">
+                <MathRenderer content={questions[currentIdx].text} />
+              </div>
+              <div className="flex flex-col gap-4">
+                {questions[currentIdx].options.map((opt, optIdx) => {
+                  const isAnswered = answers[currentIdx] !== undefined;
+                  const isSelected = answers[currentIdx] === optIdx;
+                  const isCorrectAnswer = questions[currentIdx].correctIndex === optIdx;
+
+                  let btnClass = "border-gray-200 hover:border-gray-300 bg-white text-gray-800";
+                  let Icon = null;
+
+                  if (isAnswered) {
+                    if (isCorrectAnswer) {
+                      btnClass = "border-green-500 bg-green-50 text-green-900 font-semibold ring-1 ring-green-500 shadow-sm";
+                      Icon = <CheckCircle className="w-5 h-5 text-green-600" />;
+                    } else if (isSelected) {
+                      btnClass = "border-red-500 bg-red-50 text-red-900 font-semibold ring-1 ring-red-500 shadow-sm";
+                      Icon = <XCircle className="w-5 h-5 text-red-600" />;
+                    } else {
+                      btnClass = "border-gray-100 bg-gray-50 text-gray-400 opacity-60";
+                    }
+                  } else {
+                    btnClass += " hover:bg-gray-50 cursor-pointer active:scale-[0.99]";
+                  }
+
+                  return (
+                    <button
+                      key={optIdx}
+                      disabled={isAnswered}
+                      onClick={() => handleSelectOption(optIdx)}
+                      className={`min-h-[56px] w-full text-left p-4 rounded-xl border-2 transition-all flex items-center justify-between text-base sm:text-lg ${btnClass}`}
+                    >
+                      <MathRenderer content={opt} />
+                      {Icon && <span>{Icon}</span>}
+                    </button>
+                  );
+                })}
+              </div>
 
               {answers[currentIdx] !== undefined && (
                 <div className="mt-8 p-5 bg-gray-100/80 rounded-xl border border-gray-200 animate-in fade-in slide-in-from-bottom-2 duration-300">
@@ -263,7 +262,7 @@ export default function Practice() {
                 <ChevronLeft className="w-5 h-5 mr-1" />
                 Previous
               </button>
-              
+
               {currentIdx < questions.length - 1 ? (
                 <button
                   onClick={() => setCurrentIdx(prev => prev + 1)}

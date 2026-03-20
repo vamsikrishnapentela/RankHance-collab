@@ -12,6 +12,7 @@ import Chapters from './Chapters';
 import Questions from './Questions';
 import Login from './Login';
 import Signup from './Signup';
+import ForgotPassword from './ForgotPassword';
 import { useAuth } from './hooks/useAuth';
 
 function AppLayout() {
@@ -22,7 +23,7 @@ function AppLayout() {
 
   // Protected routes logic
   useEffect(() => {
-    const publicPaths = ['/', '/login', '/signup'];
+    const publicPaths = ['/', '/login', '/signup', '/forgot-password'];
     if (!user && !publicPaths.includes(location.pathname)) {
       navigate('/login');
     }
@@ -88,6 +89,7 @@ function AppLayout() {
           <Route path="/" element={<Landing />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/practice" element={<Practice />} />
           <Route path="/subjects" element={<Subjects />} />

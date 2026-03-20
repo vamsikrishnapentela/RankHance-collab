@@ -19,9 +19,9 @@ const PaymentModal = ({ isOpen, onClose }) => {
 
     try {
       const order = await createOrder();
-      
+
       const options = {
-        key: import.meta.env.VITE_RAZORPAY_KEY_ID || 'YOUR_KEY_ID', 
+        key: import.meta.env.VITE_RAZORPAY_KEY_ID || 'YOUR_KEY_ID',
         amount: order.amount,
         currency: order.currency,
         name: 'RankHance Premium',
@@ -57,7 +57,7 @@ const PaymentModal = ({ isOpen, onClose }) => {
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-300">
       <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full overflow-hidden relative animate-in zoom-in-95 duration-300">
-        <button 
+        <button
           onClick={onClose}
           className="absolute top-4 right-4 p-2 hover:bg-gray-100 rounded-full transition-colors"
         >
@@ -93,7 +93,7 @@ const PaymentModal = ({ isOpen, onClose }) => {
             <Button variant="primary" className="w-full h-14" onClick={handlePayment}>
               Pay Now & Unlock
             </Button>
-            <p className="text-xs text-gray-400">One-time payment • Lifetime access</p>
+            <p className="text-xs text-gray-400">One-time payment • Access upto your college joining date</p>
           </div>
         </div>
       </div>

@@ -11,6 +11,7 @@ const jwt = require('jsonwebtoken');
 const { OAuth2Client } = require('google-auth-library');
 const User = require('./models/User');
 const auth = require('./middleware/auth');
+const nodemailer = require('nodemailer');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -108,6 +109,93 @@ app.get('/api/auth/user', auth, async (req, res) => {
     try {
         const user = await User.findById(req.user.id).select('-password');
         res.json(user);
+    } catch (err) {
+        res.status(500).json({ message: 'Server error' });
+    }
+});
+
+// --- Forgot Password / OTP Endpoints ---
+
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
+    }
+});
+
+app.post('/api/auth/forgot-password', async (req, res) => {
+    const { email } = req.body;
+    console.log("Forgot password request for:", email);
+    try {
+        const user = await User.findOne({ email });
+        if (!user) {
+            console.log("User not found:", email);
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        // Check resend limit (1 min)
+        if (user.lastOTPSentAt && (Date.now() - user.lastOTPSentAt.getTime()) < 60000) {
+            const waitTime = Math.ceil((60000 - (Date.now() - user.lastOTPSentAt.getTime())) / 1000);
+            return res.status(400).json({ message: `Please wait ${waitTime}s before resending OTP` });
+        }
+
+        const otp = Math.floor(100000 + Math.random() * 900000).toString();
+        user.resetPasswordOTP = otp;
+        user.resetPasswordOTPExpires = Date.now() + 120000; // 2 mins
+        user.lastOTPSentAt = Date.now();
+        await user.save();
+
+        console.log("Generated OTP:", otp, "for", email);
+
+        const mailOptions = {
+            from: process.env.EMAIL_USER,
+            to: user.email,
+            subject: 'Password Reset OTP - RankHance',
+            text: `Your OTP for password reset is: ${otp}. It is valid for 2 minutes.`
+        };
+
+        await transporter.sendMail(mailOptions);
+        console.log("Email sent successfully to:", email);
+        res.json({ message: 'OTP sent to email' });
+    } catch (err) {
+        console.error("Forgot password error:", err);
+        res.status(500).json({ message: 'Failed to send OTP' });
+    }
+});
+
+app.post('/api/auth/verify-otp', async (req, res) => {
+    const { email, otp } = req.body;
+    try {
+        const user = await User.findOne({ 
+            email, 
+            resetPasswordOTP: otp,
+            resetPasswordOTPExpires: { $gt: Date.now() }
+        });
+        if (!user) return res.status(400).json({ message: 'Invalid or expired OTP' });
+
+        res.json({ message: 'OTP verified' });
+    } catch (err) {
+        res.status(500).json({ message: 'Server error' });
+    }
+});
+
+app.post('/api/auth/reset-password', async (req, res) => {
+    const { email, otp, newPassword } = req.body;
+    try {
+        const user = await User.findOne({ 
+            email, 
+            resetPasswordOTP: otp,
+            resetPasswordOTPExpires: { $gt: Date.now() }
+        });
+        if (!user) return res.status(400).json({ message: 'Security session expired, please request a new OTP' });
+
+        user.password = await bcrypt.hash(newPassword, 10);
+        user.resetPasswordOTP = undefined;
+        user.resetPasswordOTPExpires = undefined;
+        await user.save();
+
+        res.json({ message: 'Password reset successful' });
     } catch (err) {
         res.status(500).json({ message: 'Server error' });
     }

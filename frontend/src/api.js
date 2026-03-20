@@ -36,6 +36,21 @@ export const getCurrentUser = async () => {
   return data;
 };
 
+export const forgotPassword = async (email) => {
+  const { data } = await api.post('/auth/forgot-password', { email });
+  return data;
+};
+
+export const verifyOtp = async (email, otp) => {
+  const { data } = await api.post('/auth/verify-otp', { email, otp });
+  return data;
+};
+
+export const resetPassword = async (email, otp, newPassword) => {
+  const { data } = await api.post('/auth/reset-password', { email, otp, newPassword });
+  return data;
+};
+
 // --- Payment API ---
 export const createOrder = async () => {
   const { data } = await api.post('/payment/create-order');
