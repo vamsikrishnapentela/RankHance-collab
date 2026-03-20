@@ -98,14 +98,27 @@ export default function Login() {
       </nav>
       {/* Fixed Announcement Bar */}
       <div className="fixed top-16 w-full z-40 bg-orange-400 text-white text-base font-semibold overflow-hidden">
-        <div className="flex whitespace-nowrap animate-marquee gap-12 py-2.5 items-center">
-          <span>🔥 1000+ EAMCET Students Already Joined</span>
-          <span>•</span>
-          <span>🚀 Crack EAMCET 2026 with Smart Practice</span>
-          <span>•</span>
-          <span>⏳ Limited Time Offer ₹99 Only</span>
+            <div className="flex whitespace-nowrap animate-marquee gap-14 py-3 items-center">
+              <div className="flex whitespace-nowrap gap-12">
+                <span>🔥 1200+ EAMCET Aspirants Already Preparing with RankHance</span>             
+                <span>🎯 Chapter-wise Practice + Real Exam Level Questions</span>              
+                <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>              
+                <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>  
+                <span>📊 Identify Weak Areas & Improve Faster</span> 
+                <span>💥 One-Time ₹99 — Lifetime Access</span>
+                <span>⏳ Limited Time Offer — Price May Increase Soon</span>
+              </div>
+              <div className="flex whitespace-nowrap gap-12">
+                <span>🔥 1200+ EAMCET Aspirants Already Preparing with RankHance</span>             
+                <span>🎯 Chapter-wise Practice + Real Exam Level Questions</span>              
+                <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>              
+                <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>  
+                <span>📊 Identify Weak Areas & Improve Faster</span> 
+                <span>💥 One-Time ₹99 — Lifetime Access</span>
+                <span>⏳ Limited Time Offer — Price May Increase Soon</span>
+              </div>
+          </div>
         </div>
-      </div>
       {/* Content with padding */}
       <div className="pt-28 flex-1 flex flex-col justify-center py-12 px-6 lg:px-8 bg-gray-50 min-h-screen">
         <Container className="max-w-md">

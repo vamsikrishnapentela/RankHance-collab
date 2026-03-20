@@ -206,7 +206,7 @@ app.post('/api/auth/reset-password', async (req, res) => {
 app.post('/api/payment/create-order', auth, async (req, res) => {
     try {
         const options = {
-            amount: 100, // ₹1 in paise
+            amount: 9900, // ₹99 in paise
             currency: "INR",
             receipt: "receipt_" + req.user.id,
         };

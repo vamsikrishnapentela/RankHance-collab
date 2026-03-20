@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
 import Landing from './Landing';
 import Dashboard from './Dashboard';
@@ -13,17 +13,38 @@ import Questions from './Questions';
 import Login from './Login';
 import Signup from './Signup';
 import ForgotPassword from './ForgotPassword';
+import PaymentModal from './components/PaymentModal';
 import { useAuth } from './hooks/useAuth';
+import Terms from './Terms';
+import Privacy from './Privacy';
+import Refund from './Refund';   
+import Contact from './Contact';
 
 function AppLayout() {
   const location = useLocation();
   const navigate = useNavigate();
-  const { user, logout } = useAuth();
+  const { user, logout, isPaid } = useAuth();
   const isAuthPage = ['/login', '/signup'].includes(location.pathname);
+
+  // Outside click handler for profile dropdown
+  const [showProfile, setShowProfile] = useState(false);
+  const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
+  const profileRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (profileRef.current && !profileRef.current.contains(e.target)) {
+        setShowProfile(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   // Protected routes logic
   useEffect(() => {
-    const publicPaths = ['/', '/login', '/signup', '/forgot-password', '/features', '/pricing'];
+    const publicPaths = ['/', '/login', '/signup', '/forgot-password', '/features', '/pricing', '/terms', '/privacy', '/contact', '/refund'];
     if (!user && !publicPaths.includes(location.pathname)) {
       navigate('/login');
     }
@@ -42,13 +63,89 @@ function AppLayout() {
               <div className="flex items-center gap-4">
                 {user ? (
                   <>
-                    <Link to="/dashboard" className="text-gray-600 font-bold hover:text-gray-900 transition-colors">Dashboard</Link>
-                    <button 
-                      onClick={logout}
-                      className="px-5 py-2.5 rounded-xl bg-gray-100 text-gray-700 font-semibold font-heading text-sm hover:bg-gray-200 transition-colors"
-                    >
-                      Logout
-                    </button>
+                    <Link to="/dashboard" className="text-gray-600 font-bold hover:text-gray-900 transition-colors">
+                      Dashboard
+                    </Link>
+                    <div className="relative" ref={profileRef}>
+                      {/* Avatar */}
+                      <button
+                        onClick={() => setShowProfile(prev => !prev)}
+                        className="w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold shadow hover:scale-105 transition font-heading"
+                      >
+                        {user.name?.charAt(0)?.toUpperCase() || "U"}
+                      </button>
+
+                      {/* Dropdown */}
+                      {showProfile && (
+                        <div className="absolute right-0 mt-3 w-80 bg-white rounded-3xl shadow-2xl border border-gray-100 p-6 z-50 animate-in fade-in zoom-in-95 duration-200">
+                          {/* HEADER */}
+                          <div className="flex items-center gap-4 mb-4">
+                            <div className="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center text-lg font-bold">
+                              {user.name?.charAt(0)?.toUpperCase() || "U"}
+                            </div>
+
+                            <div className="flex flex-col">
+                              <span className="text-base font-semibold text-gray-900">
+                                {user.name}
+                              </span>
+                              <span className="text-sm text-gray-500 break-words">
+                                {user.email}
+                              </span>
+                            </div>
+                          </div>
+
+                          <div className="border-t border-gray-100 my-3"></div>
+
+                          {/* PLAN */}
+                          <div>
+                            {isPaid ? (
+                              <span className="inline-flex items-center gap-2 text-green-600 font-medium text-sm bg-green-50 px-3 py-1 rounded-full">
+                                💎 Premium User
+                              </span>
+                            ) : (
+                              <span className="inline-flex items-center gap-2 text-orange-500 font-medium text-sm bg-orange-50 px-3 py-1 rounded-full">
+                                🔒 Free User
+                              </span>
+                            )}
+                          </div>
+
+                          {/* ACTIONS */}
+                          <div className="mt-4 space-y-3">
+                            {!isPaid && (
+                              <button
+                                onClick={() => {
+                                  setShowProfile(false);
+                                  setIsPaymentModalOpen(true);
+                                }}
+                                className="w-full bg-orange-500 text-white py-2.5 rounded-xl font-semibold hover:bg-orange-600 transition shadow-sm hover:shadow-md font-heading"
+                              >
+                                Upgrade 🚀
+                              </button>
+                            )}
+
+                            <button
+                              onClick={() => {
+                                setShowProfile(false);
+                                navigate('/forgot-password');
+                              }}
+                              className="w-full bg-gray-100 text-gray-800 py-2.5 rounded-xl font-semibold hover:bg-gray-200 transition font-heading"
+                            >
+                              Change Password
+                            </button>
+
+                            <button
+                              onClick={() => {
+                                logout();
+                                navigate('/');
+                              }}
+                              className="w-full bg-gray-900 text-white py-2.5 rounded-xl font-semibold hover:bg-black transition font-heading"
+                            >
+                              Logout
+                            </button>
+                          </div>
+                        </div>
+                      )}
+                    </div>
                   </>
                 ) : (
                   <>
@@ -75,23 +172,27 @@ function AppLayout() {
             </div>
           </nav>
           <div className="fixed top-16 w-full z-40 bg-orange-400 text-white text-base font-semibold overflow-hidden">
-<div className="flex whitespace-nowrap animate-marquee gap-12 py-2.5 items-center">
-              <div>
-                <span>🔥 1000+ EAMCET Students Already Joined</span>
-                <span>•</span>
-                <span>🚀 Crack EAMCET 2026 with Smart Practice</span>
-                <span>•</span>
-                <span>⏳ Limited Time Offer ₹99 Only</span>
+            <div className="flex whitespace-nowrap animate-marquee gap-14 py-3 items-center">
+              <div className="flex whitespace-nowrap gap-12">
+                <span>🔥 1200+ EAMCET Aspirants Already Preparing with RankHance</span>             
+                <span>🎯 Chapter-wise Practice + Real Exam Level Questions</span>              
+                <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>              
+                <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>  
+                <span>📊 Identify Weak Areas & Improve Faster</span> 
+                <span>💥 One-Time ₹99 — Lifetime Access</span>
+                <span>⏳ Limited Time Offer — Price May Increase Soon</span>
               </div>
-              <div>
-                <span>🔥 1000+ EAMCET Students Already Joined</span>
-                <span>•</span>
-                <span>🚀 Crack EAMCET 2026 with Smart Practice</span>
-                <span>•</span>
-                <span>⏳ Limited Time Offer ₹99 Only</span>
+              <div className="flex whitespace-nowrap gap-12">
+                <span>🔥 1200+ EAMCET Aspirants Already Preparing with RankHance</span>             
+                <span>🎯 Chapter-wise Practice + Real Exam Level Questions</span>              
+                <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>              
+                <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>  
+                <span>📊 Identify Weak Areas & Improve Faster</span> 
+                <span>💥 One-Time ₹99 — Lifetime Access</span>
+                <span>⏳ Limited Time Offer — Price May Increase Soon</span>
               </div>
-            </div>
           </div>
+        </div>
         </>
       )}
       <div className={`${!isAuthPage ? 'pt-24' : ''} w-full flex-1 flex flex-col relative`}>
@@ -109,7 +210,16 @@ function AppLayout() {
           <Route path="/mock/:id" element={<MockAttempt />} />
           <Route path="/result" element={<Result />} />
           <Route path="/review" element={<Review />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/refund" element={<Refund />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
+
+        <PaymentModal
+          isOpen={isPaymentModalOpen}
+          onClose={() => setIsPaymentModalOpen(false)}
+        />
       </div>
     </div>
   );

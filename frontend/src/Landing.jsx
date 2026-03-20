@@ -109,7 +109,7 @@ export default function Landing() {
             </Link>
           </div>
           <p className="text-sm font-semibold bg-orange-100 text-orange-700 px-4 py-2 rounded-full inline-block">
-            Made for AP & TS students • 100% free practice for now
+            Made for AP & TS students • practice for EAMCET 2026
           </p>
         </Container>
       </section>
@@ -568,8 +568,19 @@ export default function Landing() {
           </div>
 
         </Container>
-        <div className="text-center text-xs text-gray-500 mt-8 px-6">
-          © 2026 RankHance. All rights reserved.
+        <div className="text-center mt-10 space-y-4 px-6">
+          <div className="flex justify-center flex-wrap gap-4 text-sm sm:text-base text-gray-400 font-medium">
+            <a href="/terms" className="hover:text-white transition">Terms & Conditions</a>
+            <span>|</span>
+            <a href="/privacy" className="hover:text-white transition">Privacy Policy</a>
+            <span>|</span>
+            <a href="/refund" className="hover:text-white transition">Refund Policy</a>
+            <span>|</span>
+            <a href="/contact" className="hover:text-white transition">Contact Us</a>
+          </div>
+          <div className="text-xs text-gray-500">
+            © 2026 RankHance. All rights reserved.
+          </div>
         </div>
       </footer>
 

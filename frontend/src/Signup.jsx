@@ -59,13 +59,70 @@ export default function Signup() {
   };
 
   return (
-    <div className="flex-1 flex flex-col justify-center py-12 px-6 lg:px-8 bg-gray-50">
-      <Container className="max-w-md">
-        <div className="bg-white p-10 rounded-3xl shadow-xl border border-gray-100 space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
-          <div className="text-center space-y-2">
-            <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight">Create Account</h2>
-            <p className="text-gray-500 font-medium">Join RankHance and start practicing</p>
+    <>
+      {/* Fixed Header */}
+      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md h-16 z-50 border-b border-gray-100 flex items-center px-6">
+        <div className="max-w-5xl mx-auto w-full flex justify-between items-center">
+          <Link to="/" className="text-2xl font-bold font-heading">
+            <span className="text-gray-900">Rank</span>
+            <span className="text-[var(--color-primary)]">Hance</span>
+          </Link>
+          <div className="flex items-center gap-4">
+            {user ? (
+              <>
+                <Link to="/dashboard" className="text-gray-600 font-bold hover:text-gray-900 transition-colors">Dashboard</Link>
+                <button 
+                  onClick={logout}
+                  className="px-5 py-2.5 rounded-xl bg-gray-100 text-gray-700 font-semibold font-heading text-sm hover:bg-gray-200 transition-colors"
+                >
+                  Logout
+                </button>
+              </>
+            ) : (
+              <>
+                <Link to="/login" className="text-gray-600 font-bold hover:text-gray-900 transition-colors">Login</Link>
+                <Link 
+                  to="/" 
+                  className="px-5 py-2.5 rounded-xl bg-[var(--color-primary)] text-white font-semibold font-heading text-sm hover:bg-orange-600 transition-colors shadow-sm"
+                >
+                  Home
+                </Link>
+              </>
+            )}
           </div>
+        </div>
+      </nav>
+      {/* Fixed Announcement Bar */}
+      <div className="fixed top-16 w-full z-40 bg-orange-400 text-white text-base font-semibold overflow-hidden">
+            <div className="flex whitespace-nowrap animate-marquee gap-14 py-3 items-center">
+              <div className="flex whitespace-nowrap gap-12">
+                <span>🔥 1200+ EAMCET Aspirants Already Preparing with RankHance</span>             
+                <span>🎯 Chapter-wise Practice + Real Exam Level Questions</span>              
+                <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>              
+                <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>  
+                <span>📊 Identify Weak Areas & Improve Faster</span> 
+                <span>💥 One-Time ₹99 — Lifetime Access</span>
+                <span>⏳ Limited Time Offer — Price May Increase Soon</span>
+              </div>
+              <div className="flex whitespace-nowrap gap-12">
+                <span>🔥 1200+ EAMCET Aspirants Already Preparing with RankHance</span>             
+                <span>🎯 Chapter-wise Practice + Real Exam Level Questions</span>              
+                <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>              
+                <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>  
+                <span>📊 Identify Weak Areas & Improve Faster</span> 
+                <span>💥 One-Time ₹99 — Lifetime Access</span>
+                <span>⏳ Limited Time Offer — Price May Increase Soon</span>
+              </div>
+          </div>
+        </div>
+            
+      <div className="pt-28 flex-1 flex flex-col justify-center gap-8 py-12 px-6 lg:px-8 bg-gray-50">
+        <Container className="max-w-md">
+          <div className="bg-white p-10 rounded-3xl shadow-xl border border-gray-100 space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <div className="text-center space-y-2">
+              <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight gap">Create Account</h2>
+              <p className="text-gray-500 font-medium">Join RankHance and start practicing</p>
+            </div>
 
           {error && (
             <div className="bg-red-50 text-red-600 p-4 rounded-xl text-sm font-semibold border border-red-100 animate-in shake-1 duration-300">
@@ -155,6 +212,7 @@ export default function Signup() {
           </p>
         </div>
       </Container>
-    </div>
+      </div>
+  </>
   );
 }
