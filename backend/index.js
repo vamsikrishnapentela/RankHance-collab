@@ -45,19 +45,43 @@ const readJsonFile = (filePath) => {
     }
 };
 
+
 // --- Auth Endpoints ---
 
 app.post('/api/auth/register', async (req, res) => {
-    const { name, email, password } = req.body;
+    const { name, email, password, referredBy } = req.body;
     try {
         let user = await User.findOne({ email });
         if (user) return res.status(400).json({ message: 'User already exists' });
+        
+        // ✅ Validate referral code (if provided)
+        let validReferral = null;
 
-        user = new User({ name, email, password: await bcrypt.hash(password, 10) });
+        if (referredBy) {
+            const refUser = await User.findOne({ referralCode: referredBy });
+
+            if (refUser) {
+                validReferral = referredBy;
+            }
+        }
+
+        user = new User({ name, email, password: await bcrypt.hash(password, 10), referredBy: validReferral });
         await user.save();
+        //updating the referral count for the creator
+        if (validReferral) {
+            const creator = await User.findOne({
+                referralCode: validReferral,
+                isCreator: true
+            });
+
+            if (creator && creator.email !== email) { // Prevent self-referral
+                creator.referralCount = (creator.referralCount || 0) + 1;
+                await creator.save();
+            }
+        }
 
         const token = jwt.sign({ user: { id: user.id } }, process.env.JWT_SECRET || 'YOUR_JWT_SECRET', { expiresIn: '7d' });
-        res.json({ token, user: { id: user.id, name: user.name, email: user.email, isPaid: user.isPaid } });
+        res.json({ token, user: { id: user.id, name: user.name, email: user.email, isPaid: user.isPaid, isCreator: user.isCreator || false, isAdmin: user.isAdmin || false, referralCode: user.referralCode || null} });
     } catch (err) {
         res.status(500).json({ message: 'Server error' });
     }
@@ -73,14 +97,14 @@ app.post('/api/auth/login', async (req, res) => {
         if (!isMatch) return res.status(400).json({ message: 'Invalid credentials' });
 
         const token = jwt.sign({ user: { id: user.id } }, process.env.JWT_SECRET || 'YOUR_JWT_SECRET', { expiresIn: '7d' });
-        res.json({ token, user: { id: user.id, name: user.name, email: user.email, isPaid: user.isPaid } });
+        res.json({ token, user: { id: user.id, name: user.name, email: user.email, isPaid: user.isPaid, isCreator: user.isCreator || false, isAdmin: user.isAdmin || false, referralCode: user.referralCode || null } });
     } catch (err) {
         res.status(500).json({ message: 'Server error' });
     }
 });
 
 app.post('/api/auth/google', async (req, res) => {
-    const { tokenId } = req.body;
+    const { tokenId, referredBy } = req.body;
     try {
         const ticket = await googleClient.verifyIdToken({
             idToken: tokenId,
@@ -93,12 +117,40 @@ app.post('/api/auth/google', async (req, res) => {
             user.googleId = googleId; // Update if email matches but googleId was missing
             await user.save();
         } else {
-            user = new User({ name, email, googleId });
+            //new user referlal validation
+            let validReferral = null;
+
+            if (referredBy) {
+                const refUser = await User.findOne({ referralCode: referredBy });
+                if (refUser) {
+                    validReferral = referredBy;
+                }
+            }
+
+            user = new User({
+                name,
+                email,
+                googleId,
+                referredBy: validReferral
+            });
+
             await user.save();
+            //updating the referral count for the creator
+            if (validReferral) {
+                const creator = await User.findOne({
+                    referralCode: validReferral,
+                    isCreator: true
+                });
+
+                if (creator) {
+                    creator.referralCount = (creator.referralCount || 0) + 1;
+                    await creator.save();
+                }
+            }               
         }
 
         const token = jwt.sign({ user: { id: user.id } }, process.env.JWT_SECRET || 'YOUR_JWT_SECRET', { expiresIn: '7d' });
-        res.json({ token, user: { id: user.id, name: user.name, email: user.email, isPaid: user.isPaid } });
+        res.json({ token, user: { id: user.id, name: user.name, email: user.email, isPaid: user.isPaid, isCreator: user.isCreator || false, isAdmin: user.isAdmin || false, referralCode: user.referralCode || null } });
     } catch (err) {
         console.error(err);
         res.status(400).json({ message: 'Google authentication failed' });
@@ -231,6 +283,9 @@ app.post('/api/payment/verify', auth, async (req, res) => {
         if (!user || user.razorpayOrderId !== razorpay_order_id) {
             return res.status(400).json({ message: "Invalid order ID or session mismatch" });
         }
+        if (user.isPaid) {
+        return res.json({ success: true, message: "Already verified" });
+        }
 
         const generatedSignature = crypto
             .createHmac("sha256", process.env.RAZORPAY_KEY_SECRET || "YOUR_KEY_SECRET")
@@ -240,13 +295,28 @@ app.post('/api/payment/verify', auth, async (req, res) => {
         if (generatedSignature !== razorpay_signature) {
             return res.status(400).json({ message: "Payment verification failed" });
         }
+            // ✅ Update payment status
+            user.isPaid = true;
+            user.razorpayOrderId = undefined;
 
-        // Successfully verified, update user status and CLEAR the order ID to prevent reuse
-        await User.findByIdAndUpdate(req.user.id, { 
-            isPaid: true,
-            $unset: { razorpayOrderId: 1 } 
-        });
-        
+            // ✅ REFERRAL LOGIC (IMPORTANT)
+            if (user.referredBy) {
+                const creator = await User.findOne({ referralCode: user.referredBy, isCreator: true });
+
+                if (creator && creator.email !== user.email) { // Prevent self-referral
+                    creator.paidReferrals =(creator.paidReferrals || 0)+ 1;
+                    const commission = 0.1; // 10% commission
+                    const price = 99; // ₹99 subscription price
+                    creator.earnings = (creator.earnings || 0)+Math.floor(commission*price); // 💰 commission
+
+                    await creator.save();
+                    console.log("updated creator", creator.email);
+                }
+            }
+
+            // ✅ Save updated user
+            await user.save();
+                    
         res.json({ success: true });
     } catch (err) {
         console.error("Verification error:", err);
@@ -365,6 +435,106 @@ app.get('/api/weightage', (req, res) => {
     const data = readJsonFile('weightage/data.json');
     res.json(data || []);
 });
+
+// CREATOR DASHBOARD API
+
+app.get('/api/creator/dashboard', auth, async (req, res) => {
+    try {
+        const user = await User.findById(req.user.id);
+
+        // ❌ Not creator
+        if (!user || !user.isCreator) {
+            return res.status(403).json({ message: "Access denied" });
+        }
+
+        // ✅ Get all users referred by this creator
+        const referrals = await User.find({
+            referredBy: user.referralCode
+        }).select('name email isPaid createdAt');
+
+        res.json({
+            referralCode: user.referralCode,
+            totalReferrals: referrals.length,
+            paidReferrals: referrals.filter(u => u.isPaid).length,
+            earnings: user.earnings || 0,
+            referrals
+        });
+
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
+    //admin dashboard API
+
+app.get('/api/admin/dashboard', auth, async (req, res) => {
+  try {
+    const admin = await User.findById(req.user.id);
+
+    if (!admin || !admin.isAdmin) {
+      return res.status(403).json({ message: "Access denied" });
+    }
+
+    // USERS
+    const totalUsers = await User.countDocuments();
+    const paidUsers = await User.countDocuments({ isPaid: true });
+    const freeUsers = totalUsers - paidUsers;
+
+    const totalRevenue = paidUsers * 99;
+
+    // CREATORS
+    const creators = await User.find({ isCreator: true });
+
+    const totalCreators = creators.length;
+
+    const totalCommission = creators.reduce(
+      (sum, c) => sum + (c.earnings || 0),
+      0
+    );
+
+    const totalReferrals = creators.reduce(
+      (sum, c) => sum + (c.referralCount || 0),
+      0
+    );
+
+    const totalPaidReferrals = creators.reduce(
+      (sum, c) => sum + (c.paidReferrals || 0),
+      0
+    );
+
+    // USERS LIST
+    const users = await User.find()
+      .select('name email isPaid referredBy createdAt');
+
+    // CREATORS LIST
+    const creatorList = await User.find({ isCreator: true })
+      .select('name email referralCode earnings referralCount paidReferrals');
+
+    res.json({
+      usersStats: {
+        totalUsers,
+        paidUsers,
+        freeUsers,
+        totalRevenue
+      },
+      creatorStats: {
+        totalCreators,
+        totalCommission,
+        totalReferrals,
+        totalPaidReferrals
+      },
+      users,
+      creators: creatorList
+    });
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Server error" });
+  }
+});
+
+
 
 app.listen(PORT, () => {
     console.log(`Backend is running on http://localhost:${PORT}`);

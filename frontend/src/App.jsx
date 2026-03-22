@@ -19,6 +19,8 @@ import Terms from './Terms';
 import Privacy from './Privacy';
 import Refund from './Refund';   
 import Contact from './Contact';
+import CreatorDashboard from './CreatorDashboard';
+import AdminDashboard from "./AdminDashboard";
 
 function AppLayout() {
   const location = useLocation();
@@ -30,6 +32,15 @@ function AppLayout() {
   const [showProfile, setShowProfile] = useState(false);
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
   const profileRef = useRef(null);
+
+  useEffect(() => {
+  const ref = new URLSearchParams(window.location.search).get("ref");
+
+  if (ref) {
+    localStorage.setItem("referral", ref);
+    console.log("Referral captured globally:", ref);
+  }
+}, []);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -49,6 +60,38 @@ function AppLayout() {
       navigate('/login');
     }
   }, [user, location.pathname, navigate]);
+  //button scroll animation
+  const smoothScrollTo = (targetId, duration = 1000) => {
+    const target = document.getElementById(targetId);
+    if (!target) return;
+
+    const start = window.scrollY;
+    const end = target.offsetTop - 80; // adjust for navbar height
+    const distance = end - start;
+
+    let startTime = null;
+
+    const animation = (currentTime) => {
+      if (!startTime) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+
+      const progress = Math.min(timeElapsed / duration, 1);
+
+      window.scrollTo(0, start + distance * easeInOut(progress));
+
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animation);
+      }
+    };
+
+    const easeInOut = (t) => {
+      return t < 0.5
+        ? 2 * t * t
+        : 1 - Math.pow(-2 * t + 2, 2) / 2;
+    };
+
+    requestAnimationFrame(animation);
+  };
 
   return (
     <div className="min-h-[100dvh] font-sans flex flex-col items-center w-full">
@@ -151,17 +194,13 @@ function AppLayout() {
                   <>
                     <Link to="/login" className="text-gray-600 font-bold hover:text-gray-900 transition-colors">Login</Link>
                     <button
-                        onClick={() => {
-                          document.getElementById("features")?.scrollIntoView({ behavior: "smooth" });
-                        }}
+                        onClick={() => smoothScrollTo('features', 1800)}
                         className="text-gray-600 font-bold hover:text-gray-900 transition-colors"
                       >
                         Features
                       </button>
                       <button
-                        onClick={() => {
-                          document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
-                        }}
+                        onClick={() => smoothScrollTo('pricing', 1800)}
                         className="text-gray-600 font-bold hover:text-gray-900 transition-colors"
                       >
                         Pricing
@@ -179,7 +218,7 @@ function AppLayout() {
                 <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>              
                 <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>  
                 <span>📊 Identify Weak Areas & Improve Faster</span> 
-                <span>💥 One-Time ₹99 — Lifetime Access</span>
+                <span>💥 One-Time payment — No hidden charges</span>
                 <span>⏳ Limited Time Offer — Price May Increase Soon</span>
               </div>
               <div className="flex whitespace-nowrap gap-12">
@@ -188,7 +227,7 @@ function AppLayout() {
                 <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>              
                 <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>  
                 <span>📊 Identify Weak Areas & Improve Faster</span> 
-                <span>💥 One-Time ₹99 — Lifetime Access</span>
+                <span>💥 One-Time payment — No hidden charges</span>
                 <span>⏳ Limited Time Offer — Price May Increase Soon</span>
               </div>
           </div>
@@ -214,6 +253,8 @@ function AppLayout() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/refund" element={<Refund />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/creator" element={<CreatorDashboard />} />
+          <Route path="/admin" element={<AdminDashboard />} />
         </Routes>
 
         <PaymentModal

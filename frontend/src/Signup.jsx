@@ -13,7 +13,7 @@ export default function Signup() {
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   
-  const { register, googleLogin, user } = useAuth();
+  const { register, googleLogin, user, logout } = useAuth();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -22,7 +22,8 @@ export default function Signup() {
 
   useEffect(() => {
     /* global google */
-    if (window.google) {
+    if (window.google && !window.googleInitialized) {
+      window.googleInitialized = true;
       google.accounts.id.initialize({
         client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID',
         callback: handleGoogleCallback,
@@ -50,7 +51,15 @@ export default function Signup() {
     setError('');
     setIsSubmitting(true);
     try {
-      await register({ name, email, password });
+      const userData = await register({ name, email, password });
+
+        if(userData.isAdmin){
+        navigate('/admin');
+      } else if (userData.isCreator) {
+        navigate('/creator');
+        } else {
+          navigate('/dashboard');
+        }
     } catch (err) {
       setError(err.response?.data?.message || 'Registration failed. Please try again.');
     } finally {
@@ -101,7 +110,7 @@ export default function Signup() {
                 <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>              
                 <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>  
                 <span>📊 Identify Weak Areas & Improve Faster</span> 
-                <span>💥 One-Time ₹99 — Lifetime Access</span>
+                <span>💥 One-Time payment  — No hidden charges</span>
                 <span>⏳ Limited Time Offer — Price May Increase Soon</span>
               </div>
               <div className="flex whitespace-nowrap gap-12">
@@ -110,7 +119,7 @@ export default function Signup() {
                 <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>              
                 <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>  
                 <span>📊 Identify Weak Areas & Improve Faster</span> 
-                <span>💥 One-Time ₹99 — Lifetime Access</span>
+                <span>💥 One-Time payment — No hidden charges</span>
                 <span>⏳ Limited Time Offer — Price May Increase Soon</span>
               </div>
           </div>

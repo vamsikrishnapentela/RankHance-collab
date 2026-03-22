@@ -17,7 +17,15 @@ api.interceptors.request.use((config) => {
 
 // --- Auth API ---
 export const register = async (userData) => {
-  const { data } = await api.post('/auth/register', userData);
+  const referral = localStorage.getItem("referral");
+
+  console.log("Sending referral:", referral); // 👈 DEBUG
+
+  const { data } = await api.post('/auth/register', {
+    ...userData,
+    referredBy: referral || null
+  });
+
   return data;
 };
 
@@ -27,7 +35,13 @@ export const login = async (credentials) => {
 };
 
 export const loginWithGoogle = async (tokenId) => {
-  const { data } = await api.post('/auth/google', { tokenId });
+  const referral = localStorage.getItem("referral");
+
+  const { data } = await api.post('/auth/google', { 
+    tokenId,
+    referredBy: referral || null
+  });
+
   return data;
 };
 
@@ -96,6 +110,18 @@ export const getMockTest = async (testId) => {
 // GET /api/subjects
 export const getSubjects = async () => {
   const { data } = await api.get('/subjects');
+  return data;
+};
+
+// GET /api/creator/dashboard
+export const getCreatorDashboard = async () => {
+  const { data } = await api.get('/creator/dashboard');
+  return data;
+};
+
+//admin apis
+export const getAdminDashboard = async () => {
+  const { data } = await api.get('/admin/dashboard');
   return data;
 };
 

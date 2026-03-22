@@ -125,7 +125,7 @@ export default function Terms() {
         </p>
 
         <div className="bg-gray-50 border rounded-xl p-4 text-sm text-gray-700 space-y-1">
-          <p>📧 Email: forw8568@gmail.com</p>
+          <p>📧 Email: rankhance.in@gmail.com</p>
           <p>📱 WhatsApp: +91 9392609600</p>
         </div>
 

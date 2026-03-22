@@ -34,20 +34,34 @@ export const AuthProvider = ({ children }) => {
     const { token, user: userData } = await apiLogin(credentials);
     localStorage.setItem('rankhance_token', token);
     setUser(userData);
+    return userData;
   };
 
   const register = async (userData) => {
-    const { token, user: savedUser } = await apiRegister(userData);
+    const referral = localStorage.getItem("referral");
+    console.log("Sending referral:", referral); // 🔥 debug
+    const { token, user: savedUser } = await apiRegister({
+      ...userData,
+      referredBy: referral || null
+    });
+
     localStorage.setItem('rankhance_token', token);
     setUser(savedUser);
+    return savedUser;
   };
 
   const googleLogin = async (tokenId) => {
-    const { token, user: userData } = await apiGoogleLogin(tokenId);
+    const referral = localStorage.getItem("referral");
+
+    console.log("Sending referral (Google):", referral);
+
+    const { token, user: userData } = await apiGoogleLogin(tokenId,);
+
     localStorage.setItem('rankhance_token', token);
     setUser(userData);
-  };
 
+    return userData;
+  };
   const logout = () => {
     localStorage.removeItem('rankhance_token');
     setUser(null);

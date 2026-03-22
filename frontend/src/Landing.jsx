@@ -13,6 +13,7 @@ export default function Landing() {
   const [popupMsg, setPopupMsg] = useState("");
   const { user } = useAuth();
   const navigate = useNavigate();
+  
 
   useEffect(() => {
     getMockTest(1)
@@ -47,22 +48,63 @@ export default function Landing() {
   }, []);
 
   useEffect(() => {
-    const names = ["Ravi", "Anjali", "Sai", "Priya", "Arun"];
-    const cities = ["Hyderabad", "Warangal", "Vijayawada", "Vizag"];
+    const names = [
+      "Ravi", "Anjali", "Sai", "Priya", "Arun", "Karthik", "Sneha", "Pavan", "Divya", "Rohit",
+      "Keerthi", "Sandeep", "Manoj", "Bhavya", "Vamsi", "Harika", "Lokesh", "Nikhil", "Prasanna", "Tejaswini",
+      "Chaitanya", "Swathi", "Ajay", "Madhavi", "Kiran", "Sravani", "Rakesh", "Deepika", "Arjun", "Lavanya",
+      "Dinesh", "Meghana", "Yashwanth", "Soujanya", "Harsha", "Navya", "Abhishek", "Sowmya", "Vinay", "Bhargavi",
+      "Naresh", "Keerthana", "Ravi Teja", "Aishwarya", "Sunil", "Pooja", "Gopi", "Sindhu", "Tarun", "Akshara",
+      "Praveen", "Nandini", "Siddharth", "Gayathri", "Vivek", "Ritu", "Shiva", "Anusha", "Chandu", "Divakar",
+      "Krishna", "Jyothi", "Mahesh", "Pallavi", "Aravind", "Bhanu", "Charan", "Kavya", "Ramesh", "Neha",
+      "Surya", "Anil", "Varun", "Shreya", "Teja", "Akhil", "Harini", "Satish", "Kusuma", "Manasa",
+      "Venu", "Deepthi", "Rahul", "Sanjana", "Naveen", "Likitha", "Vijay", "Mounika"
+    ];
 
-    const interval = setInterval(() => {
-      const name = names[Math.floor(Math.random() * names.length)];
-      const city = cities[Math.floor(Math.random() * cities.length)];
+    const cities = [
+      "Hyderabad", "Warangal", "Karimnagar", "Nizamabad", "Khammam", "Mahbubnagar", "Adilabad",
+      "Medak", "Siddipet", "Suryapet", "Nalgonda", "Jagtial", "Mancherial", "Sangareddy",
+      "Vikarabad", "Kothagudem", "Bhadrachalam", "Yadadri",
 
-      setPopupMsg(`${name} from ${city} just joined`);
-      setPopupVisible(true);
+      "Vijayawada", "Guntur", "Vizag", "Tirupati", "Nellore", "Kurnool", "Anantapur",
+      "Rajahmundry", "Eluru", "Ongole", "Kadapa", "Srikakulam", "Vizianagaram",
+      "Tenali", "Bhimavaram", "Machilipatnam", "Proddatur", "Hindupur",
+      "Narasaraopet", "Chittoor", "Gudivada", "Tadepalligudem", "Amalapuram",
+      "Kakinada", "Tanuku", "Nidadavole", "Gudur", "Chilakaluripet"
+    ];
+      const actions = [
+        "just joined RankHance 🚀",
+        "started a mock test 🎯",
+        "scored 120+ marks 📈",
+        "improved 35 marks 🔥",
+        "completed a full test ✅"
+      ];
 
-      setTimeout(() => setPopupVisible(false), 4000);
+      const showPopup = () => {
+        const name = names[Math.floor(Math.random() * names.length)];
+        const city = cities[Math.floor(Math.random() * cities.length)];
+        const action = actions[Math.floor(Math.random() * actions.length)];
 
-    }, 20000);
+        setPopupMsg(`${name} from ${city} ${action}`);
+        setPopupVisible(true);
 
-    return () => clearInterval(interval);
-  }, []);
+        setTimeout(() => setPopupVisible(false), 4000);
+      };
+
+      // First popup delay (natural feel)
+      const firstTimeout = setTimeout(() => {
+        showPopup();
+      }, 4000);
+
+      // Random interval (not fixed → feels real)
+      const interval = setInterval(() => {
+        showPopup();
+      }, Math.floor(Math.random() * 8000) + 12000); // 12s–20s
+
+      return () => {
+        clearInterval(interval);
+        clearTimeout(firstTimeout);
+      };
+    }, []);
 
   const handleSelect = (option) => {
     setSelectedAnswers({
@@ -87,55 +129,122 @@ export default function Landing() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-b from-white to-orange-50 text-center px-6 flex flex-col justify-center items-center flex-1">
-        <Container className="space-y-8">
-          <div className="space-y-4">
-            <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+      <section className="relative overflow-hidden py-20 md:py-28 bg-gradient-to-b from-white via-orange-50 to-white text-center px-6 flex flex-col justify-center items-center">
+
+        {/* 🔥 Background Glow */}
+        <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-orange-200/30 blur-[120px] rounded-full"></div>
+
+        <Container className="relative z-10 space-y-10">
+
+          {/* 🔝 TRUST BADGE */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/70 backdrop-blur-md border border-gray-100 rounded-full shadow-sm text-sm font-medium text-gray-600">
+            🔥 1000+ Students Already Preparing with RankHance
+          </div>
+
+          {/* 🧠 HEADLINE */}
+          <div className="space-y-5">
+            <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight tracking-tight">
               Crack EAMCET 2026 <br />
-              <span className="text-orange-500">Get Your Dream Rank 🚀</span>
+              <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
+                Get Your Dream Rank 🚀
+              </span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-lg mx-auto leading-relaxed">
-              Chapter-wise questions + full quizzes for Maths, Physics, Chemistry
+
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Stop random preparation. Follow a proven system with 
+              <span className="font-semibold text-gray-900"> chapter-wise practice</span>, 
+              <span className="font-semibold text-gray-900"> real exam mocks</span>, and 
+              <span className="font-semibold text-gray-900"> smart analysis</span>.
             </p>
           </div>
 
+          {/* 🎯 CTA BUTTONS */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+
             <Link
               to="/dashboard"
-              className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-xl shadow-lg hover:shadow-xl transition-all font-semibold text-lg flex-1 sm:flex-none"
+              className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-2xl shadow-xl hover:shadow-2xl transition-all font-semibold text-lg flex items-center justify-center gap-2 hover:scale-105"
             >
-              Start Now
+              Start Practicing →
             </Link>
+
+            {/* <button
+              onClick={() => {
+                document.getElementById("features")?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="px-8 py-4 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-all font-semibold text-gray-700 hover:scale-105"
+            >
+              Explore Features
+            </button> */}
+
           </div>
-          <p className="text-sm font-semibold bg-orange-100 text-orange-700 px-4 py-2 rounded-full inline-block">
-            Made for AP & TS students • practice for EAMCET 2026
-          </p>
+
+          {/* 📊 TRUST STATS */}
+          <div className="flex flex-wrap justify-center gap-6 pt-6 text-sm text-gray-600">
+            <span>📈 +30–50 Marks Improvement</span>
+            <span>🎯 Real Exam Level Questions</span>
+            <span>💯 One-Time ₹99 Access</span>
+          </div>
+
+          {/* 🧊 PREMIUM CARD (VISUAL TRUST)
+          <div className="mt-10 max-w-xl mx-auto bg-white/70 backdrop-blur-xl border border-gray-100 rounded-3xl shadow-xl p-6 text-left">
+
+            <p className="text-sm text-gray-500 mb-2">Recent Result</p>
+
+            <div className="flex justify-between items-center">
+              <div>
+                <p className="font-semibold text-gray-900">Sai Teja (Hyderabad)</p>
+                <p className="text-sm text-gray-500">EAMCET Aspirant</p>
+              </div>
+
+              <div className="text-right">
+                <p className="text-lg font-bold text-green-600">+42 Marks</p>
+                <p className="text-xs text-gray-400">in 14 days</p>
+              </div>
+            </div>
+
+            <div className="mt-4 text-xs text-gray-600">
+              “Focused practice + mock analysis helped me improve quickly.”
+            </div>
+
+          </div> */}
+
         </Container>
       </section>
 
       {/* Trust Indicators */}
-      <section className="py-12 md:py-16 bg-gray-50">
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <Container>
-          <div className="grid md:grid-cols-3 gap-6 text-center">
-            <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-              <Star className="w-12 h-12 mx-auto mb-4 text-orange-500" />
-              <div className="text-3xl font-bold text-gray-900 mb-2">4.8</div>
-              <div className="text-base font-semibold text-gray-800 mb-1">Student Rating</div>
-              <div className="text-sm text-gray-500">Trusted by EAMCET aspirants</div>
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+
+            {/* CARD */}
+            <div className="group relative p-8 bg-white/70 backdrop-blur-xl rounded-3xl border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+              <Star className="w-12 h-12 mx-auto mb-4 text-yellow-400" />
+              <div className="text-4xl font-extrabold text-gray-900 mb-1">4.8★</div>
+              <div className="text-base font-semibold text-gray-800">Student Rating</div>
+              <div className="text-sm text-gray-500 mt-1">Based on real aspirants</div>
+
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-yellow-200/10 blur-xl rounded-3xl"></div>
             </div>
-            <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+
+            <div className="group relative p-8 bg-white/70 backdrop-blur-xl rounded-3xl border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
               <Users className="w-12 h-12 mx-auto mb-4 text-orange-500" />
-              <div className="text-3xl font-bold text-gray-900 mb-2">1000+</div>
-              <div className="text-base font-semibold text-gray-800 mb-1">Active Students</div>
-              <div className="text-sm text-gray-500">Practicing daily on platform</div>
+              <div className="text-4xl font-extrabold text-gray-900 mb-1">1000+</div>
+              <div className="text-base font-semibold text-gray-800">Active Students</div>
+              <div className="text-sm text-gray-500 mt-1">Practicing daily</div>
+
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-orange-200/10 blur-xl rounded-3xl"></div>
             </div>
-            <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-              <TrendingUp className="w-12 h-12 mx-auto mb-4 text-orange-500" />
-              <div className="text-3xl font-bold text-gray-900 mb-2">50K+</div>
-              <div className="text-base font-semibold text-gray-800 mb-1">Questions Solved</div>
-              <div className="text-sm text-gray-500">Covering full syllabus</div>
+
+            <div className="group relative p-8 bg-white/70 backdrop-blur-xl rounded-3xl border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+              <TrendingUp className="w-12 h-12 mx-auto mb-4 text-green-500" />
+              <div className="text-4xl font-extrabold text-gray-900 mb-1">50K+</div>
+              <div className="text-base font-semibold text-gray-800">Questions Solved</div>
+              <div className="text-sm text-gray-500 mt-1">Full syllabus covered</div>
+
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-green-200/10 blur-xl rounded-3xl"></div>
             </div>
+
           </div>
         </Container>
       </section>
@@ -151,43 +260,90 @@ export default function Landing() {
               Stop random preparation. Follow a structured system designed for real rank improvement.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center space-y-3">
-              <BookOpen className="w-12 h-12 text-orange-500 mx-auto" />
-              <h3 className="text-lg font-bold text-gray-900">Foundation Practice</h3>
-              <p className="text-sm text-gray-600">Build strong basics chapter by chapter</p>
-              <p className="text-xs text-orange-500 font-semibold">👉 Never get stuck in concepts again</p>
-            </div>
-            <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center space-y-3">
-              <Target className="w-12 h-12 text-orange-500 mx-auto" />
-              <h3 className="text-lg font-bold text-gray-900">Exam Level Questions</h3>
-              <p className="text-sm text-gray-600">Solve real EAMCET questions topic-wise</p>
-              <p className="text-xs text-orange-500 font-semibold">👉 Understand actual exam patterns</p>
-            </div>
-            <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center space-y-3">
-              <CheckCircle className="w-12 h-12 text-orange-500 mx-auto" />
-              <h3 className="text-lg font-bold text-gray-900">Mock Tests</h3>
-              <p className="text-sm text-gray-600">Attempt full 160-question exams</p>
-              <p className="text-xs text-orange-500 font-semibold">👉 Know your real exam performance</p>
-            </div>
-            <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-sm opacity-50 text-center space-y-3">
-              <BookOpen className="w-12 h-12 text-orange-500 mx-auto" />
-              <h3 className="text-lg font-bold text-gray-900">Weightage Analysis</h3>
-              <p className="text-sm text-gray-600">Know which chapters matter most</p>
-              <p className="text-xs text-orange-500 font-semibold">👉 Study smart, save time</p>
-            </div>
-            <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-sm opacity-50 text-center space-y-3">
-              <Target className="w-12 h-12 text-orange-500 mx-auto" />
-              <h3 className="text-lg font-bold text-gray-900">Study Planner</h3>
-              <p className="text-sm text-gray-600">Follow topper strategies daily</p>
-              <p className="text-xs text-orange-500 font-semibold">👉 Stay consistent without stress</p>
-            </div>
-            <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-sm opacity-50 text-center space-y-3">
-              <CheckCircle className="w-12 h-12 text-orange-500 mx-auto" />
-              <h3 className="text-lg font-bold text-gray-900">College Predictor</h3>
-              <p className="text-sm text-gray-600">Predict your college based on rank</p>
-              <p className="text-xs text-orange-500 font-semibold">👉 Plan your future better</p>
-            </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                icon: BookOpen,
+                title: "Foundation Practice",
+                desc: "Build strong basics chapter by chapter",
+                tag: "Never get stuck in concepts again"
+              },
+              {
+                icon: Target,
+                title: "Exam Level Questions",
+                desc: "Solve real EAMCET questions topic-wise",
+                tag: "Understand actual exam pattern"
+              },
+              {
+                icon: CheckCircle,
+                title: "Mock Tests",
+                desc: "Attempt full 160-question exams",
+                tag: "Know your real performance"
+              },
+            ].map((f, i) => (
+              <div
+                key={i}
+                className="group relative p-6 rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-center space-y-4"
+              >
+                <f.icon className="w-12 h-12 text-orange-500 mx-auto" />
+
+                <h3 className="text-lg font-bold text-gray-900">{f.title}</h3>
+
+                <p className="text-sm text-gray-600">{f.desc}</p>
+
+                <div className="inline-block px-3 py-1 text-xs rounded-full bg-orange-50 text-orange-600 font-semibold">
+                  👉 {f.tag}
+                </div>
+
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-orange-200/10 blur-xl rounded-3xl"></div>
+              </div>
+            ))}
+
+            {/* FUTURE FEATURES (PREMIUM DIMMED STYLE) */}
+            {[
+              {
+                icon: BookOpen,
+                title: "Weightage Analysis",
+                desc: "Identify high-scoring chapters instantly",
+                tag: "Study Smart"
+              },
+              {
+                icon: Target,
+                title: "Study Planner",
+                desc: "Daily strategy used by top rankers",
+                tag: "Stay Consistent"
+              },
+              {
+                icon: CheckCircle,
+                title: "College Predictor",
+                desc: "Know your college based on expected rank",
+                tag: "Plan Ahead"
+              }
+            ].map((f, i) => (
+              <div
+                key={i}
+                className="group relative p-6 rounded-3xl bg-gray-50 border border-gray-100 text-center space-y-4 opacity-70 hover:opacity-100 transition-all duration-300"
+              >
+                {/* ICON */}
+                <f.icon className="w-10 h-10 text-orange-400 mx-auto" />
+
+                {/* TITLE */}
+                <h3 className="text-lg font-bold text-gray-800">{f.title}</h3>
+
+                {/* DESC */}
+                <p className="text-sm text-gray-500">{f.desc}</p>
+
+                {/* TAG */}
+                <div className="inline-block px-3 py-1 text-xs rounded-full bg-gray-200 text-gray-600 font-semibold">
+                  🔒 {f.tag}
+                </div>
+
+                {/* Coming Soon Badge */}
+                <div className="absolute top-3 right-3 text-[10px] bg-orange-100 text-orange-500 px-2 py-1 rounded-full font-semibold">
+                  Coming Soon
+                </div>
+              </div>
+            ))}
           </div>
         </Container>
       </section>
@@ -211,7 +367,7 @@ export default function Landing() {
           ) : (
             <div className="grid md:grid-cols-2 gap-6 items-stretch">
               {/* LEFT SIDE */}
-              <div className="bg-white p-6 rounded-3xl shadow-lg border flex flex-col justify-between h-full">
+              <div className="bg-white p-6 rounded-3xl shadow-lx border border-gray-100 backdrop-blur-lg">
                 <div className="space-y-4">
                   <div className="flex justify-between text-sm text-gray-500">
                     <span>Question {currentIndex + 1} / {questions.length}</span>
@@ -263,7 +419,7 @@ export default function Landing() {
                 </div>
               </div>
               {/* RIGHT SIDE */}
-              <div className="bg-orange-50 p-6 rounded-3xl shadow border h-full flex flex-col justify-center text-center space-y-4">
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-3xl shadow-lg border border-orange-100 h-full flex flex-col justify-center text-center space-y-4">
                 <h3 className="text-xl font-bold">Your Progress</h3>
                 <p className="text-3xl font-bold text-orange-500">
                   {Object.keys(selectedAnswers).length} / {questions.length}
@@ -286,7 +442,7 @@ export default function Landing() {
 
       {/* Video Section */}
 
-      <section className="py-16 md:py-20 bg-white">
+      {/* <section className="py-16 md:py-20 bg-white">
         <Container className="text-center space-y-10">
 
       ```
@@ -316,277 +472,385 @@ export default function Landing() {
       ```
 
         </Container>
-      </section>
+      </section>  */}
 
 
-      <section id="pricing" className="py-16 md:py-20 bg-gradient-to-b from-white to-orange-50 scroll-mt-12">
-        <Container className="space-y-12">
-          {/* HEADING */}
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Choose How You Want to Prepare 🚀
-            </h2>
-            <p className="text-gray-600 text-lg">
-              One decision can change your rank — choose wisely
-            </p>
-          </div>
+    
 
-          {/* PRICING CARDS */}
-          <div className="grid md:grid-cols-2 gap-6 items-stretch">
+          <section
+      id="pricing"
+      className="relative py-20 md:py-28 bg-gradient-to-b from-white via-orange-50 to-white scroll-mt-12 overflow-hidden"
+    >
+      {/* 🔥 Background Glow */}
+      <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-orange-300/30 blur-[120px] rounded-full"></div>
 
-            {/* FREE PLAN */}
-            <div className="p-6 rounded-2xl border bg-white space-y-6 flex flex-col justify-between">
+      <Container className="relative z-10 space-y-14">
 
-              <div className="space-y-4">
+        {/* 🧠 HEADING */}
+        <div className="text-center space-y-4 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+            Choose Your Path to <br />
+            <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
+              Top Rank 🚀
+            </span>
+          </h2>
+
+          <p className="text-gray-600 text-lg">
+            Don’t leave your rank to chance. Choose a structured path that works.
+          </p>
+        </div>
+
+        {/* 💳 PRICING CARDS */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+          {/* 🧊 FREE PLAN */}
+          <div className="p-8 rounded-3xl border border-gray-100 bg-white/70 backdrop-blur-xl shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+
+            <div className="space-y-6">
+
+              <div>
                 <h3 className="text-xl font-bold text-gray-900">Free Plan</h3>
                 <p className="text-gray-500 text-sm">
-                  Limited access — good for basic practice
+                  Try basics before upgrading
                 </p>
-
-                <ul className="space-y-3 text-sm">
-
-                  <li>✔ Basic chapter questions</li>
-                  <li>✔ Limited practice access</li>
-
-                  <li className="text-gray-400">✖ No full mock tests</li>
-                  <li className="text-gray-400">✖ No performance analysis</li>
-                  <li className="text-gray-400">✖ No exam simulation</li>
-
-                </ul>
               </div>
 
-              <p className="text-sm text-gray-500">
-                ⚠ You may practice, but improvement is slow without structure
-              </p>
+              <ul className="space-y-3 text-sm text-gray-700">
 
+                <li>✔ Basic chapter questions</li>
+                <li>✔ Limited practice access</li>
+
+                <li className="text-gray-400">✖ No full mock tests</li>
+                <li className="text-gray-400">✖ No performance analysis</li>
+                <li className="text-gray-400">✖ No exam simulation</li>
+
+              </ul>
             </div>
 
-            {/* PREMIUM PLAN */}
-            <div className="p-8 rounded-2xl border-2 border-orange-500 bg-white shadow-xl space-y-6 flex flex-col justify-between relative">
+            <div className="mt-6 text-sm text-gray-500">
+              ⚠ Improvement is slow without proper guidance
+            </div>
 
-              {/* BADGE */}
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white text-xs px-3 py-1 rounded-full">
-                MOST POPULAR
-              </div>
+          </div>
 
-              <div className="space-y-4">
+          {/* 🔥 PREMIUM PLAN */}
+          <div className="relative p-10 rounded-3xl bg-white border border-orange-200 shadow-2xl flex flex-col justify-between transition-all hover:scale-[1.02]">
 
+            {/* 🔥 Glow Border */}
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-orange-400 to-orange-600 opacity-10 blur-xl"></div>
+
+            {/* 🏆 BADGE */}
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xs px-4 py-1 rounded-full shadow-md font-semibold">
+              🔥 MOST POPULAR
+            </div>
+
+            <div className="relative z-10 space-y-6">
+
+              <div>
                 <h3 className="text-xl font-bold text-orange-500">
                   Premium Plan
                 </h3>
 
-                <div className="flex items-baseline gap-1">
-                  <span className="text-2xl font-normal line-through text-gray-500">₹299</span>
-                  <span className="text-4xl font-bold text-orange-500">₹99</span>
+                <div className="flex items-end gap-2 mt-2">
+                  <span className="text-lg line-through text-gray-400">₹299</span>
+                  <span className="text-4xl font-extrabold text-orange-500">
+                    ₹99
+                  </span>
                 </div>
 
-                <p className="text-sm text-gray-500">
-                  One-time payment • Lifetime access
+                <p className="text-sm text-gray-500 mt-1">
+                  One-time payment • Up to EAMCET 2026  
                 </p>
-
-                <ul className="space-y-3 text-sm">
-
-                  <li>✔ Full-length mock tests (160Q)</li>
-                  <li>✔ Real exam simulation</li>
-                  <li>✔ Chapter-wise structured practice</li>
-                  <li>✔ Performance tracking & analysis</li>
-                  <li>✔ Covers AP & TS syllabus completely</li>
-
-                </ul>
-
               </div>
 
-              <div className="space-y-3">
+              <ul className="space-y-3 text-sm text-gray-700">
 
-                <p className="text-sm text-gray-600">
-                  🎯 Improve marks faster with a proven system
-                </p>
+                <li>✔ Full-length mock tests (160Q)</li>
+                <li>✔ Real exam simulation</li>
+                <li>✔ Chapter-wise structured practice</li>
+                <li>✔ Performance tracking & analysis</li>
+                <li>✔ Covers AP & TS syllabus completely</li>
 
-                <button
-                  onClick={() => {
-                    const token = localStorage.getItem("token");
+              </ul>
 
-                    if (!token) {
-                      localStorage.setItem("showPayment", "true");
-                      navigate("/login");
-                    } else {
-                      // already logged in → go to dashboard
-                      localStorage.setItem("showPayment", "true");
-                      navigate("/dashboard");
-                    }
-                  }}
-                  className="w-full bg-orange-500 text-white py-3 rounded-xl font-semibold text-lg hover:bg-orange-600 transition"
-                >
-                  Unlock Premium Now →
-                </button>
-
+              {/* 💡 TRUST LINE */}
+              <div className="bg-orange-50 border border-orange-100 rounded-xl p-3 text-sm text-orange-700">
+                🎯 Students improve 30–50 marks with this system
               </div>
 
             </div>
 
+            {/* 🚀 CTA */}
+            <button
+              onClick={() => {
+                const token = localStorage.getItem("rankhance_token");
+
+                if (!token) {
+                  localStorage.setItem("showPayment", "true");
+                  navigate("/login");
+                } else {
+                  localStorage.setItem("showPayment", "true");
+                  navigate("/dashboard");
+                }
+              }}
+              className="relative z-10 mt-6 w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+            >
+              Unlock Premium Now →
+            </button>
+
           </div>
 
-          {/* TRUST + URGENCY */}
-          <div className="text-center space-y-2">
-            <p className="text-sm text-gray-600">
-              🔥 1000+ students already joined
-            </p>
-            <p className="text-sm text-orange-500 font-semibold">
-              ⏳ Limited offer ₹99 — price may increase soon
-            </p>
-          </div>
-        </Container>
-      </section>
+        </div>
+
+        {/* 💬 TRUST FOOTER */}
+        <div className="text-center text-sm text-gray-500">
+          💳 Secure payment • Instant access • No hidden charges • Fast and Accurate
+        </div>
+
+      </Container>
+    </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 md:py-20 bg-white">
-        <Container className="space-y-12">
-          {/* HEADING */}
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Real Students. Real Results 📈
-            </h2>
-            <p className="text-gray-600 text-lg">
-              See how students are improving their ranks with RankHance
-            </p>
-          </div>
+    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+      <Container className="space-y-14">
 
-          {/* TESTIMONIAL GRID */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* HEADING */}
+        <div className="text-center space-y-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+            Trusted by 1000+ EAMCET Aspirants 🚀
+          </h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            Real students improving their scores with RankHance — not just words, real results.
+          </p>
+        </div>
 
-            {/* CARD */}
-            <div className="p-6 rounded-2xl border bg-gray-50 space-y-4 hover:shadow-lg transition">
-              <p className="text-gray-700 text-sm leading-relaxed">
-                "I was confused what to study before. After using this, I improved 40+ marks in mocks."
-              </p>
-              <div>
-                <p className="font-semibold text-gray-900">Ravi K.</p>
-                <p className="text-xs text-gray-500">EAMCET Aspirant</p>
+        {/* TESTIMONIAL GRID */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          {/* CARD */}
+          {[
+            {
+              name: "Ravi K.",
+              role: "EAMCET Aspirant",
+              text: "I improved 40+ marks in mocks. Now I finally have clarity on what to study.",
+              result: "+42 Marks"
+            },
+            {
+              name: "Anjali S.",
+              role: "Student",
+              text: "Mock tests feel exactly like the real exam. My time management improved a lot.",
+              result: "Better Time Management"
+            },
+            {
+              name: "Sai Teja",
+              role: "Dropper",
+              text: "Analysis showed my weak areas clearly. I stopped wasting time on random topics.",
+              result: "Focused Preparation"
+            },
+            {
+              name: "Priya M.",
+              role: "Intermediate Student",
+              text: "Before this I was randomly studying. Now I follow a proper strategy.",
+              result: "Structured Learning"
+            },
+            {
+              name: "Arun Reddy",
+              role: "EAMCET 2025",
+              text: "₹99 is nothing compared to the value I got. Highly recommended.",
+              result: "High ROI"
+            },
+            {
+              name: "Kiran",
+              role: "Student",
+              text: "Feels like real exam environment. My confidence increased a lot.",
+              result: "Confidence Boost"
+            }
+          ].map((t, i) => (
+            <div
+              key={i}
+              className="group relative p-6 rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+            >
+              {/* ⭐ Stars */}
+              <div className="flex gap-1 mb-3 text-yellow-400">
+                {"★★★★★"}
               </div>
-            </div>
 
-            <div className="p-6 rounded-2xl border bg-gray-50 space-y-4 hover:shadow-lg transition">
-              <p className="text-gray-700 text-sm leading-relaxed">
-                "Mock tests feel exactly like real exam. It helped me manage time better."
+              {/* TEXT */}
+              <p className="text-gray-700 text-sm leading-relaxed mb-5">
+                “{t.text}”
               </p>
-              <div>
-                <p className="font-semibold text-gray-900">Anjali S.</p>
-                <p className="text-xs text-gray-500">Student</p>
-              </div>
-            </div>
 
-            <div className="p-6 rounded-2xl border bg-gray-50 space-y-4 hover:shadow-lg transition">
-              <p className="text-gray-700 text-sm leading-relaxed">
-                "The analysis feature showed my weak areas clearly. I know where to focus now."
-              </p>
-              <div>
-                <p className="font-semibold text-gray-900">Sai Teja</p>
-                <p className="text-xs text-gray-500">Dropper</p>
+              {/* RESULT BADGE */}
+              <div className="inline-block mb-4 px-3 py-1 rounded-full bg-green-50 text-green-600 text-xs font-semibold">
+                {t.result}
               </div>
-            </div>
 
-            <div className="p-6 rounded-2xl border bg-gray-50 space-y-4 hover:shadow-lg transition">
-              <p className="text-gray-700 text-sm leading-relaxed">
-                "Before this I was randomly studying. Now I follow a proper system."
-              </p>
-              <div>
-                <p className="font-semibold text-gray-900">Priya M.</p>
-                <p className="text-xs text-gray-500">Intermediate Student</p>
+              {/* USER */}
+              <div className="flex items-center gap-3">
+                {/* Avatar */}
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 text-white flex items-center justify-center font-bold">
+                  {t.name.charAt(0)}
+                </div>
+
+                <div>
+                  <p className="font-semibold text-gray-900 text-sm">
+                    {t.name}
+                  </p>
+                  <p className="text-xs text-gray-500">{t.role}</p>
+                </div>
               </div>
-            </div>
 
-            <div className="p-6 rounded-2xl border bg-gray-50 space-y-4 hover:shadow-lg transition">
-              <p className="text-gray-700 text-sm leading-relaxed">
-                "Worth every rupee. ₹99 is nothing compared to the value I got."
-              </p>
-              <div>
-                <p className="font-semibold text-gray-900">Arun Reddy</p>
-                <p className="text-xs text-gray-500">EAMCET 2025</p>
-              </div>
+              {/* Glow effect */}
+              <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition pointer-events-none bg-gradient-to-r from-orange-200/20 to-orange-400/20 blur-xl"></div>
             </div>
+          ))}
 
-            <div className="p-6 rounded-2xl border bg-gray-50 space-y-4 hover:shadow-lg transition">
-              <p className="text-gray-700 text-sm leading-relaxed">
-                "Feels like a real exam environment. Boosted my confidence a lot."
-              </p>
-              <div>
-                <p className="font-semibold text-gray-900">Kiran</p>
-                <p className="text-xs text-gray-500">Student</p>
-              </div>
-            </div>
+        </div>
 
-          </div>
-        </Container>
-      </section>
+        {/* TRUST STRIP */}
+        <div className="flex flex-wrap justify-center gap-6 pt-8 text-sm text-gray-500">
+          <span>✅ 1000+ Students</span>
+          <span>📈 Avg +30–50 Marks Improvement</span>
+          <span>💯 Real Exam Level Practice</span>
+          <span>⭐ 4.8/5 Student Rating</span>
+        </div>
+
+      </Container>
+    </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-300 py-12">
-        <Container className="grid md:grid-cols-2 gap-8">
-          {/* LEFT SIDE */}
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold text-white">
-              RankHance
-            </h3>
-            <p className="text-sm text-gray-400 max-w-md">
-              Your smart preparation partner for EAMCET 2026. Practice with real exam level questions, track your progress, and achieve your dream rank.
-            </p>
+<footer className="relative bg-gradient-to-b from-gray-900 via-gray-950 to-black text-gray-300 py-14 overflow-hidden">
 
-            <p className="text-sm text-orange-500 font-semibold">
-              🚀 Start now. Improve daily. Crack your dream rank.
-            </p>
-            <p className="text-sm text-gray-400">
-              📧 For any issues:{" "}
-              <a 
-                href="mailto:forw8568@gmail.com" 
-                className="text-orange-400 hover:text-orange-300 font-semibold"
-              >
-                forw8568@gmail.com
-              </a>
-            </p>
-            <p className="text-sm text-gray-400">
-              💬 WhatsApp:{" "}
-              <a 
-                href="https://wa.me/9392609600"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-green-400 hover:text-green-300 font-semibold"
-              >
-                Chat with us
-              </a>
-            </p>
+  {/* 🔥 Background Glow */}
+  <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-orange-500/10 blur-[120px] rounded-full"></div>
 
-          </div>
+  <Container className="relative z-10 grid md:grid-cols-2 gap-10">
 
-          {/* RIGHT SIDE */}
-          <div className="flex flex-col md:items-end space-y-3 text-sm">
+    {/* LEFT SIDE */}
+    <div className="space-y-5">
 
-            <a href="/" className="hover:text-white transition">Home</a>
-            <a href="/dashboard" className="hover:text-white transition">Practice</a>
-            <a href="/mock-tests" className="hover:text-white transition">Mock Tests</a>
-            <a href="#pricing" className="hover:text-white transition">Pricing</a>
-            <a href="#features" className="hover:text-white transition">Features</a>
-          </div>
+      <h3 className="text-2xl font-extrabold text-white tracking-wide">
+        RankHance
+      </h3>
 
-        </Container>
-        <div className="text-center mt-10 space-y-4 px-6">
-          <div className="flex justify-center flex-wrap gap-4 text-sm sm:text-base text-gray-400 font-medium">
-            <a href="/terms" className="hover:text-white transition">Terms & Conditions</a>
-            <span>|</span>
-            <a href="/privacy" className="hover:text-white transition">Privacy Policy</a>
-            <span>|</span>
-            <a href="/refund" className="hover:text-white transition">Refund Policy</a>
-            <span>|</span>
-            <a href="/contact" className="hover:text-white transition">Contact Us</a>
-          </div>
-          <div className="text-xs text-gray-500">
-            © 2026 RankHance. All rights reserved.
-          </div>
-        </div>
-      </footer>
+      <p className="text-sm text-gray-400 max-w-md leading-relaxed">
+        Your smart preparation partner for EAMCET 2026. Practice with real exam level questions, track your progress, and achieve your dream rank.
+      </p>
+
+      <p className="text-sm text-orange-400 font-semibold">
+        🚀 Start now. Improve daily. Crack your dream rank.
+      </p>
+
+      {/* CONTACT */}
+      <div className="space-y-2 text-sm">
+
+        <p className="text-gray-400">
+          📧 For any issues:{" "}
+          <a
+            href="mailto:rankhance.in@gmail.com"
+            className="text-orange-400 hover:text-orange-300 font-semibold transition"
+          >
+            rankhance.in@gmail.com
+          </a>
+        </p>
+
+        <p className="text-gray-400">
+          💬 WhatsApp:{" "}
+          <a
+            href="https://wa.me/9392609600"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-400 hover:text-green-300 font-semibold transition"
+          >
+            Chat with us
+          </a>
+        </p>
+
+      </div>
+
+    </div>
+
+    {/* RIGHT SIDE */}
+    <div className="flex flex-col md:items-end space-y-4 text-sm">
+
+      <a href="/" className="hover:text-white transition hover:translate-x-1 duration-200">Home</a>
+      <a href="/dashboard" className="hover:text-white transition hover:translate-x-1 duration-200">Practice</a>
+      <a href="/mock-tests" className="hover:text-white transition hover:translate-x-1 duration-200">Mock Tests</a>
+      <a href="#pricing" className="hover:text-white transition hover:translate-x-1 duration-200">Pricing</a>
+      <a href="#features" className="hover:text-white transition hover:translate-x-1 duration-200">Features</a>
+
+    </div>
+
+  </Container>
+
+  {/* 🔥 DIVIDER */}
+  <div className="mt-12 border-t border-gray-800"></div>
+
+  {/* BOTTOM */}
+  <div className="text-center mt-6 space-y-4 px-6">
+
+    <div className="flex justify-center flex-wrap gap-4 text-sm sm:text-base text-gray-400 font-medium">
+
+      <a href="/terms" className="hover:text-white transition">Terms & Conditions</a>
+      <span className="text-gray-600">|</span>
+
+      <a href="/privacy" className="hover:text-white transition">Privacy Policy</a>
+      <span className="text-gray-600">|</span>
+
+      <a href="/refund" className="hover:text-white transition">Refund Policy</a>
+      <span className="text-gray-600">|</span>
+
+      <a href="/contact" className="hover:text-white transition">Contact Us</a>
+
+    </div>
+
+    {/* 💫 MINI TRUST LINE */}
+    <p className="text-xs text-gray-500">
+      Trusted by students across AP & TS • Built for serious aspirants 🚀
+    </p>
+
+    <div className="text-xs text-gray-600">
+      © 2026 RankHance. All rights reserved.
+    </div>
+
+  </div>
+
+</footer>
 
       {popupVisible && (
-        <div className="fixed bottom-6 left-6 bg-white border border-gray-200 shadow-lg px-4 py-3 rounded-xl text-sm text-gray-700 z-50 animate-fade-in-up">
-          ✅ {popupMsg}
+        <div
+          className={`
+            fixed bottom-6 left-6 z-50
+            flex items-center gap-3
+            px-5 py-3
+            rounded-2xl
+            bg-white/80 backdrop-blur-xl
+            border border-gray-100
+            shadow-2xl
+            transition-all duration-500
+            animate-popup-in
+          `}
+        >
+          {/* 🔴 LIVE DOT */}
+          <div className="relative">
+            <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+            <div className="absolute inset-0 w-3 h-3 bg-green-400 rounded-full animate-ping"></div>
+          </div>
+
+          {/* 👤 AVATAR */}
+          <div className="w-9 h-9 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 text-white flex items-center justify-center font-bold text-sm">
+            {popupMsg.charAt(0)}
+          </div>
+
+          {/* 📝 TEXT */}
+          <div className="flex flex-col leading-tight">
+            <span className="text-sm text-gray-900 font-semibold">
+              {popupMsg.split(" ").slice(0, 1)}
+            </span>
+            <span className="text-xs text-gray-600">
+              {popupMsg.replace(popupMsg.split(" ")[0], "")}
+            </span>
+          </div>
         </div>
       )}
     </div>

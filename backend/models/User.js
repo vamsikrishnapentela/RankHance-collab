@@ -6,6 +6,18 @@ const userSchema = new mongoose.Schema({
   password: { type: String },
   googleId: { type: String },
   isPaid: { type: Boolean, default: false },
+  // For referral system
+  referralCode: { type: String, unique: true, sparse: true },
+  referredBy: { type: String, default: null },
+  isCreator: { type: Boolean, default: false },
+  referralCount: { type: Number, default: 0 },    // all signups
+  earnings: { type: Number, default: 0 },
+
+  paidReferrals: { type: Number, default: 0 },    // paid users
+  earnings: { type: Number, default: 0 },
+  //admin fields
+  isAdmin: { type: Boolean, default: false },
+
   razorpayOrderId: { type: String },
   resetPasswordOTP: { type: String },
   resetPasswordOTPExpires: { type: Date },

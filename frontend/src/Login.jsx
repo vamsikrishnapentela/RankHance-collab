@@ -21,12 +21,22 @@ export default function Login() {
   const from = redirectPath || location.state?.from?.pathname || '/dashboard';
 
   useEffect(() => {
-    if (user) navigate(from, { replace: true });
-  }, [user, navigate, from]);
+    if (user) {
+      if(user.isAdmin){
+        navigate('/admin', { replace: true });
+      }
+      else if (user.isCreator) {
+        navigate('/creator', { replace: true });
+      } else {
+        navigate('/dashboard', { replace: true });
+      }
+    }
+  }, [user, navigate]);
 
   useEffect(() => {
     /* global google */
-    if (window.google) {
+    if (window.google && !window.googleInitialized) {
+      window.googleInitialized = true;
       google.accounts.id.initialize({
         client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID',
         callback: handleGoogleCallback,
@@ -41,7 +51,15 @@ export default function Login() {
   const handleGoogleCallback = async (response) => {
     try {
       setIsSubmitting(true);
-      await googleLogin(response.credential);
+       const userData = await googleLogin(response.credential);
+          if (userData.isAdmin) {
+            navigate('/admin');
+          } else if (userData.isCreator) {
+            navigate('/creator');
+          } else {
+            navigate('/dashboard');
+          }
+
     } catch (err) {
       setError('Google Sign-In failed. Please try again.');
     } finally {
@@ -54,8 +72,22 @@ export default function Login() {
     setError('');
     setIsSubmitting(true);
     try {
-      await login({ email, password });
+      const res = await login({ email, password });
+
+      console.log("LOGIN USER:", res); // 🔥 DEBUG
+      if(!res){
+        throw new Error("user data not received")
+      }
+      
+      if(res.isAdmin){
+        navigate('/admin');
+      } else if (res.isCreator) {
+        navigate('/creator');
+      } else {
+        navigate('/dashboard');
+      }
     } catch (err) {
+      console.log("LOGIN ERROR:", err.response?.data || err);
       setError(err.response?.data?.message || 'Invalid email or password');
     } finally {
       setIsSubmitting(false);
@@ -105,7 +137,7 @@ export default function Login() {
                 <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>              
                 <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>  
                 <span>📊 Identify Weak Areas & Improve Faster</span> 
-                <span>💥 One-Time ₹99 — Lifetime Access</span>
+                <span>💥 One-Time payment  — No hidden charges</span>
                 <span>⏳ Limited Time Offer — Price May Increase Soon</span>
               </div>
               <div className="flex whitespace-nowrap gap-12">
@@ -114,7 +146,7 @@ export default function Login() {
                 <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>              
                 <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>  
                 <span>📊 Identify Weak Areas & Improve Faster</span> 
-                <span>💥 One-Time ₹99 — Lifetime Access</span>
+                <span>💥 One-Time payment  — No hidden charges</span>
                 <span>⏳ Limited Time Offer — Price May Increase Soon</span>
               </div>
           </div>

@@ -28,7 +28,7 @@ export default function Contact() {
           </p>
 
           <div className="bg-gray-50 border rounded-xl p-4 text-sm text-gray-700">
-            📧 Email: <span className="font-medium">forw8568@gmail.com</span>
+            📧 Email: <span className="font-medium">rankhance.in@gmail.com</span>
           </div>
 
           <h2 className="text-lg font-semibold text-gray-900">2. WhatsApp Support</h2>
