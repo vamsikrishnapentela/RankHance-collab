@@ -4,6 +4,7 @@ import { Clock, CheckCircle, XCircle, AlertCircle, ChevronRight, FileText } from
 import Container from './components/Container';
 import Card from './components/Card';
 import Button from './components/Button';
+import { API_BASE_URL } from './api';
 
 export default function MyAttempts() {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export default function MyAttempts() {
     const load = async () => {
       try {
         const token = localStorage.getItem('rankhance_token') || localStorage.getItem('token');
-        const res = await fetch('/api/user/attempts', {
+        const res = await fetch(`${API_BASE_URL}/api/user/attempts`, {
           headers: { 'x-auth-token': token },
         });
         if (!res.ok) throw new Error('Failed to fetch attempts');

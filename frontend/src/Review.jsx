@@ -5,6 +5,7 @@ import Card from './components/Card';
 import Button from './components/Button';
 import MathRenderer from './components/MathRenderer';
 import Container from './components/Container';
+import { API_BASE_URL } from './api';
 
 // ─── Single option row ────────────────────────────────────────────────────────
 const Option = ({ opt, optIdx, userAnswer, correctIndex }) => {
@@ -60,7 +61,7 @@ const Review = () => {
 
       try {
         const token = localStorage.getItem('rankhance_token') || localStorage.getItem('token');
-        const res = await fetch(`/api/mocktest/${testIdFromState}/attempt`, {
+        const res = await fetch(`${API_BASE_URL}/api/mocktest/${testIdFromState}/attempt`, {
           headers: { 'x-auth-token': token },
         });
 
