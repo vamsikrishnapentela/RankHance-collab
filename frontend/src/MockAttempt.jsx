@@ -4,6 +4,7 @@ import { ArrowLeft, Star, Clock } from 'lucide-react';
 import Button from './components/Button';
 import { getMockTest } from './api';
 import MathRenderer from './components/MathRenderer';
+import { API_BASE_URL } from './api';
 
 export default function MockAttempt() {
   const { id } = useParams();
@@ -146,7 +147,7 @@ export default function MockAttempt() {
 
     try {
       const token = localStorage.getItem('rankhance_token') || localStorage.getItem('token');
-      const res = await fetch('/api/mocktest/submit', {
+      const res = await fetch(`${API_BASE_URL}/api/mocktest/submit`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
