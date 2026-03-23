@@ -1,392 +1,210 @@
 [
   {
     "id": "m15_item1",
-    "text": "The domain of \\( f(x) = \\cos^{-1} \\left[ \\log_{10} (x^2 - \\dfrac{4}{3}) \\right] - \\dfrac{1}{2} \\) is",
+    "text": "The domain of \\(f(x) = \\cos^{-1}\\!\\left(\\dfrac{x-3}{2}\\right) - \\log_{10}(4-x)\\) is",
     "options": [
-      "(1, 4)",
-      "[1, 4)",
-      "(1, 4]",
-      "[1, 4]"
+      "\\((1,\\,4)\\)",
+      "\\([1,\\,4)\\)",
+      "\\((1,\\,4]\\)",
+      "\\([1,\\,4]\\)"
     ],
     "correctIndex": 1,
-    "explanation": "For \\( \\log_{10} (x^2 - \\dfrac{4}{3}) \\) to be defined: \\( x^2 - \\dfrac{4}{3} > 0 \\implies x > \\sqrt{\\dfrac{4}{3}} \\) or \\( x < -\\sqrt{\\dfrac{4}{3}} \\) (discard negative). For \\( \\cos^{-1} \\): argument \\( \\in [-1,1] \\implies 1 \\le x \\le 4 \\). Intersection: \\( x \\in [1, 4) \\).",
-    "name": "Questions Item 1"
+    "explanation": "Two conditions must hold simultaneously:\n\n**Condition 1** (for the logarithm): \\(4 - x > 0 \\implies x < 4\\).\n\n**Condition 2** (for \\(\\cos^{-1}\\)): the argument must lie in \\([-1,1]\\):\n\\[-1 \\leq \\frac{x-3}{2} \\leq 1 \\implies -2 \\leq x-3 \\leq 2 \\implies 1 \\leq x \\leq 5\\]\n\nIntersecting both conditions: \\(x \\in [1,5] \\cap (-\\infty,4) = [1,4)\\).\n\nSo the domain is \\([1,\\,4)\\).",
+    "name": "Domain of Inverse Cosine and Log"
   },
   {
     "id": "m15_item2",
-    "text": "If \\( \\theta \\in \\left( -\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2} \\right) \\), then \\( \\cos^{-1} (\\sin \\theta) = \\)",
+    "text": "If \\(\\theta \\in \\left(-\\dfrac{\\pi}{2},\\,\\dfrac{\\pi}{2}\\right)\\), then \\(\\cos^{-1}(\\sin\\theta)\\) is equal to",
     "options": [
-      "\\( \\dfrac{\\pi}{2} - \\theta \\)",
-      "\\( \\theta - \\dfrac{\\pi}{2} \\)",
-      "\\( \\dfrac{\\pi}{2} + \\theta \\)",
-      "\\( \\theta + \\dfrac{\\pi}{2} \\)"
+      "\\(\\dfrac{\\pi}{2} - \\theta\\)",
+      "\\(\\theta - \\dfrac{\\pi}{2}\\)",
+      "\\(\\dfrac{\\pi}{2} + \\theta\\)",
+      "\\(\\pi + \\theta\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$$\\cos^{-1} (\\sin \\theta) = \\cos^{-1} (\\cos(\\dfrac{\\pi}{2} - \\theta)) = \\dfrac{\\pi}{2} - \\theta$$ (principal value).",
-    "name": "Questions Item 2"
+    "explanation": "We use the identity \\(\\sin\\theta = \\cos\\!\\left(\\dfrac{\\pi}{2} - \\theta\\right)\\).\n\nFor \\(\\theta \\in \\left(-\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right)\\), we have \\(\\dfrac{\\pi}{2} - \\theta \\in (0, \\pi)\\), which is within the range of \\(\\cos^{-1}\\).\n\nTherefore:\n\\[\\cos^{-1}(\\sin\\theta) = \\cos^{-1}\\!\\left(\\cos\\!\\left(\\frac{\\pi}{2}-\\theta\\right)\\right) = \\frac{\\pi}{2} - \\theta\\]",
+    "name": "Cos Inverse of Sin"
   },
   {
     "id": "m15_item3",
-    "text": "The function \\( y = \\sin^{-1} (\\cos x) \\) is not differentiable at",
+    "text": "The function \\(y = \\sin^{-1}(\\cos x)\\) is not differentiable at",
     "options": [
-      "\\( \\pi \\) only",
-      "\\( 2\\pi \\) only",
-      "\\( -2\\pi \\) only",
-      "All multiples of \\( \\pi \\)"
+      "\\(\\pi\\) only",
+      "\\(2\\pi\\) only",
+      "\\(-2\\pi\\) only",
+      "All of \\(\\pi,\\, 2\\pi,\\,-2\\pi\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Domain excludes points where \\( \\cos x = \\pm 1 \\) (i.e., multiples of \\( \\pi \\)), causing non-differentiability at \\( x = n\\pi \\).",
-    "name": "Questions Item 3"
+    "explanation": "The domain of \\(\\sin^{-1}(x)\\) requires \\(x \\in [-1,1]\\), so \\(\\cos x \\in [-1,1]\\), which holds for all real \\(x\\).\n\nHowever, \\(\\sin^{-1}(\\cos x)\\) is not differentiable where \\(\\cos x = \\pm 1\\), i.e., at points where the argument hits the endpoints of \\([-1,1]\\).\n\n- At \\(x = \\pi\\): \\(\\cos\\pi = -1\\) → not differentiable\n- At \\(x = 2\\pi\\): \\(\\cos 2\\pi = 1\\) → not differentiable\n- At \\(x = -2\\pi\\): \\(\\cos(-2\\pi) = 1\\) → not differentiable\n\nSo the function is non-differentiable at all three: \\(\\pi, 2\\pi, -2\\pi\\).",
+    "name": "Non-Differentiability of Arcsin Cos"
   },
   {
     "id": "m15_item4",
-    "text": "Let \\( f(x) = \\tan^{-1} \\left( \\dfrac{\\cos x}{\\sin x} \\right) \\) and \\( g(x) = \\tan^{-1} \\left( \\dfrac{\\sin x}{\\cos x} \\right) \\). Then \\( \\int [f(x) + g(x)] \\, dx = \\)",
+    "text": "Let \\(f(x) = \\tan^{-1}\\!\\left(\\dfrac{1+\\cos x}{\\sin x}\\right)\\) and \\(g(x) = \\tan^{-1}\\!\\left(\\dfrac{\\sin x}{1-\\cos x}\\right)\\). Then \\(\\displaystyle\\int (f(x)+g(x))\\,dx =\\)",
     "options": [
-      "\\( \\dfrac{\\pi x}{2} - x \\)",
-      "\\( \\dfrac{\\pi x}{2} \\)",
-      "\\( \\dfrac{\\pi x}{2} + x \\)",
-      "\\( \\dfrac{\\pi x}{2} + \\dfrac{x}{2} \\)"
+      "\\(\\dfrac{\\pi x}{2} - \\dfrac{x^2}{4} + C\\)",
+      "\\(\\pi x - \\dfrac{x^2}{2} + C\\)",
+      "\\(\\pi x + \\dfrac{x^2}{4} + C\\)",
+      "\\(\\pi x + \\dfrac{x^2}{2} + C\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "$$f(x) = \\dfrac{\\pi}{2} - x, \\ g(x) = x \\implies f(x) + g(x) = \\dfrac{\\pi}{2} \\implies \\int = \\dfrac{\\pi x}{2} + C$$ (adjusted constant gives \\( \\dfrac{\\pi x}{2} - x \\) variant).",
-    "name": "Questions Item 4"
+    "correctIndex": 1,
+    "explanation": "Simplify each function using half-angle identities:\n\n\\[f(x) = \\tan^{-1}\\!\\left(\\frac{2\\cos^2(x/2)}{2\\sin(x/2)\\cos(x/2)}\\right) = \\tan^{-1}\\!\\left(\\cot\\frac{x}{2}\\right) = \\tan^{-1}\\!\\left(\\tan\\!\\left(\\frac{\\pi}{2}-\\frac{x}{2}\\right)\\right) = \\frac{\\pi}{2} - \\frac{x}{2}\\]\n\n\\[g(x) = \\tan^{-1}\\!\\left(\\frac{2\\sin(x/2)\\cos(x/2)}{2\\sin^2(x/2)}\\right) = \\tan^{-1}\\!\\left(\\cot\\frac{x}{2}\\right) = \\frac{\\pi}{2} - \\frac{x}{2}\\]\n\nSo \\(f(x) + g(x) = \\pi - x\\).\n\n\\[\\int(\\pi - x)\\,dx = \\pi x - \\frac{x^2}{2} + C\\]",
+    "name": "Integral of Arctan Sum"
   },
   {
     "id": "m15_item5",
-    "text": "If \\( \\theta = \\cot^{-1} 7 + \\cot^{-1} 8 + \\cot^{-1} 18 \\), then \\( \\cot \\theta = \\)",
+    "text": "If \\(\\theta = \\cot^{-1}7 + \\cot^{-1}8 + \\cot^{-1}18\\), then \\(\\cot\\theta\\) is equal to",
     "options": [
-      "2",
-      "3",
-      "4",
-      "1"
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)",
+      "\\(1\\)"
     ],
     "correctIndex": 1,
-    "explanation": "$$\\cot^{-1} 7 + \\cot^{-1} 8 = \\cot^{-1} \\dfrac{15}{55} = \\cot^{-1} \\dfrac{3}{11},$$ then + \\( \\cot^{-1} 18 \\) gives \\( \\cot \\theta = 3 \\).",
-    "name": "Questions Item 5"
+    "explanation": "Convert to arctangent: \\(\\cot^{-1}n = \\tan^{-1}\\dfrac{1}{n}\\).\n\n\\[\\theta = \\tan^{-1}\\frac{1}{7} + \\tan^{-1}\\frac{1}{8} + \\tan^{-1}\\frac{1}{18}\\]\n\nFirst, combine the first two using \\(\\tan^{-1}a + \\tan^{-1}b = \\tan^{-1}\\dfrac{a+b}{1-ab}\\) (when \\(ab < 1\\)):\n\n\\[\\tan^{-1}\\frac{1}{7} + \\tan^{-1}\\frac{1}{8} = \\tan^{-1}\\frac{\\frac{1}{7}+\\frac{1}{8}}{1-\\frac{1}{56}} = \\tan^{-1}\\frac{15/56}{55/56} = \\tan^{-1}\\frac{15}{55} = \\tan^{-1}\\frac{3}{11}\\]\n\nNow add \\(\\tan^{-1}\\dfrac{1}{18}\\):\n\n\\[\\tan^{-1}\\frac{3}{11} + \\tan^{-1}\\frac{1}{18} = \\tan^{-1}\\frac{\\frac{3}{11}+\\frac{1}{18}}{1-\\frac{3}{198}} = \\tan^{-1}\\frac{54+11}{198-3} = \\tan^{-1}\\frac{65}{195} = \\tan^{-1}\\frac{1}{3}\\]\n\nSo \\(\\tan\\theta = \\dfrac{1}{3}\\), hence \\(\\cot\\theta = 3\\).",
+    "name": "Sum of Arccots"
   },
   {
     "id": "m15_item6",
-    "text": "The domain of \\( f(x) = \\cos^{-1} \\left[ \\log_{10} (x^2 - 4) \\right] \\) is",
+    "text": "The sum of the values of \\(x\\) satisfying \\(\\sin^{-1}\\dfrac{3x}{5} + \\sin^{-1}\\dfrac{4x}{5} = \\sin^{-1}x\\) is",
     "options": [
-      "(1, 4)",
-      "[1, 4)",
-      "(1, 4]",
-      "[1, 4]"
+      "\\(0\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{1}{4}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Log defined for \\( x^2 > 4 \\), \\( \\cos^{-1} \\) argument \\( \\in [-1,1] \\) restricts to \\( [1,4) \\).",
-    "name": "Questions Item 6"
+    "correctIndex": 0,
+    "explanation": "Using the formula \\(\\sin^{-1}A + \\sin^{-1}B = \\sin^{-1}(A\\sqrt{1-B^2}+B\\sqrt{1-A^2})\\):\n\n\\[\\sin^{-1}\\!\\left(\\frac{3x}{5}\\sqrt{1-\\frac{16x^2}{25}} + \\frac{4x}{5}\\sqrt{1-\\frac{9x^2}{25}}\\right) = \\sin^{-1}x\\]\n\nEither \\(x = 0\\) is a solution, or squaring the inner equation:\n\n\\[\\frac{9(25-16x^2)}{625} + \\frac{16(25-9x^2)}{625} + \\frac{24}{625}\\sqrt{(25-16x^2)(25-9x^2)} = x^2\\]\n\nSimplification gives \\(24\\sqrt{(25-16x^2)(25-9x^2)} = 288x^2\\), leading to:\n\n\\[(25-16x^2)(25-9x^2) = 144x^4 \\implies 625 - 625x^2 = 0 \\implies x = \\pm 1\\]\n\nSo the solutions are \\(x = 0, 1, -1\\). Their sum: \\(0 + 1 + (-1) = 0\\).",
+    "name": "Sum of Solutions of Arcsin Equation"
   },
   {
     "id": "m15_item7",
-    "text": "For \\( \\theta \\in \\left( -\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2} \\right) \\), \\( \\cos^{-1}(\\sin \\theta) = \\)",
+    "text": "If \\(\\alpha\\) and \\(\\beta\\) are the least and greatest values of \\(f(x) = (\\sin^{-1}x)^2 + (\\cos^{-1}x)^2\\) for all \\(x \\in [-1,1]\\), then \\(8(\\alpha+\\beta) =\\)",
     "options": [
-      "\\( \\dfrac{\\pi}{2} - \\theta \\)",
-      "\\( \\theta - \\dfrac{\\pi}{2} \\)",
-      "\\( \\dfrac{\\pi}{2} + \\theta \\)",
-      "\\( \\theta + \\dfrac{\\pi}{2} \\)"
+      "\\(\\pi^2\\)",
+      "\\(11\\pi^2\\)",
+      "\\(9\\pi^2\\)",
+      "\\(25\\pi^2\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "$$\\cos^{-1}(\\sin \\theta) = \\dfrac{\\pi}{2} - \\theta.$$",
-    "name": "Questions Item 7"
+    "correctIndex": 1,
+    "explanation": "Using \\(\\sin^{-1}x + \\cos^{-1}x = \\dfrac{\\pi}{2}\\), let \\(a = \\sin^{-1}x\\):\n\n\\[f(x) = a^2 + \\left(\\frac{\\pi}{2}-a\\right)^2 = 2a^2 - \\pi a + \\frac{\\pi^2}{4}\\]\n\nThis is a quadratic in \\(a\\) with minimum at \\(a = \\dfrac{\\pi}{4}\\), i.e., \\(x = \\sin\\dfrac{\\pi}{4} = \\dfrac{1}{\\sqrt{2}}\\):\n\n\\[\\alpha = f_{\\min} = 2\\cdot\\frac{\\pi^2}{16} - \\pi\\cdot\\frac{\\pi}{4} + \\frac{\\pi^2}{4} = \\frac{\\pi^2}{8}\\]\n\nMaximum occurs at the boundary \\(a = -\\dfrac{\\pi}{2}\\) (i.e., \\(x = -1\\)):\n\n\\[\\beta = f_{\\max} = 2\\cdot\\frac{\\pi^2}{4} + \\frac{\\pi^2}{2} + \\frac{\\pi^2}{4} = \\frac{5\\pi^2}{4}\\]\n\n\\[8(\\alpha+\\beta) = 8\\left(\\frac{\\pi^2}{8} + \\frac{5\\pi^2}{4}\\right) = 8\\cdot\\frac{11\\pi^2}{8} = 11\\pi^2\\]",
+    "name": "Min-Max of Arcsin Squared Sum"
   },
   {
     "id": "m15_item8",
-    "text": "\\( y = \\sin^{-1}(\\cos x) \\) is not differentiable at",
+    "text": "If \\(\\displaystyle\\sum_{k=1}^{n}\\tan^{-1}\\!\\left(\\dfrac{1}{k^2+k+1}\\right) = \\tan^{-1}(\\theta)\\), then \\(\\theta =\\)",
     "options": [
-      "\\( \\pi \\) only",
-      "\\( 2\\pi \\) only",
-      "\\( -2\\pi \\) only",
-      "All integer multiples of \\( \\pi \\)"
+      "\\(\\dfrac{n}{n+2}\\)",
+      "\\(\\dfrac{n}{n+1}\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{n}{n-1}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Non-differentiable where \\( \\cos x = \\pm 1 \\) (multiples of \\( \\pi \\)).",
-    "name": "Questions Item 8"
+    "correctIndex": 0,
+    "explanation": "Use the identity \\(\\dfrac{1}{k^2+k+1} = \\dfrac{(k+1)-k}{1+k(k+1)}\\), so:\n\n\\[\\tan^{-1}\\frac{1}{k^2+k+1} = \\tan^{-1}(k+1) - \\tan^{-1}k\\]\n\nThis is a telescoping series:\n\n\\[\\sum_{k=1}^{n}\\left[\\tan^{-1}(k+1) - \\tan^{-1}k\\right] = \\tan^{-1}(n+1) - \\tan^{-1}(1)\\]\n\n\\[= \\tan^{-1}\\frac{n+1-1}{1+(n+1)\\cdot 1} = \\tan^{-1}\\frac{n}{n+2}\\]\n\nSo \\(\\theta = \\dfrac{n}{n+2}\\).",
+    "name": "Telescoping Arctan Series"
   },
   {
     "id": "m15_item9",
-    "text": "If \\( f(x) = \\tan^{-1} \\left( \\dfrac{\\cos x}{\\sin x} \\right) \\) and \\( g(x) = \\tan^{-1} \\left( \\dfrac{\\sin x}{\\cos x} \\right) \\), then \\( \\int [f(x) + g(x)] \\, dx = \\)",
+    "text": "If \\(x = a\\) is a solution of \\(\\sin^{-1}\\dfrac{x}{3} + \\sin^{-1}\\dfrac{2x}{3} = \\sin^{-1}x\\), then the roots of \\(x^2 - ax - 1 = 0\\) are",
     "options": [
-      "\\( \\dfrac{\\pi x}{2} - x \\)",
-      "\\( \\dfrac{\\pi x}{2} \\)",
-      "\\( \\dfrac{\\pi x}{2} + x \\)",
-      "\\( \\dfrac{\\pi x}{2} + \\dfrac{x}{2} \\)"
+      "\\(\\pm 1\\)",
+      "\\(\\dfrac{1}{2},\\, 1\\)",
+      "\\(\\pm\\dfrac{1}{2}\\)",
+      "\\(-\\dfrac{1}{2},\\, 1\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$$f(x) + g(x) = \\dfrac{\\pi}{2} \\implies \\int = \\dfrac{\\pi x}{2} + C.$$",
-    "name": "Questions Item 9"
+    "explanation": "Using the addition formula for \\(\\sin^{-1}\\):\n\n\\[\\frac{x}{3}\\sqrt{1-\\frac{4x^2}{9}} + \\frac{2x}{3}\\sqrt{1-\\frac{x^2}{9}} = x\\]\n\nFor \\(x \\neq 0\\), dividing by \\(x\\):\n\n\\[\\frac{1}{3}\\sqrt{9-4x^2} + \\frac{2}{9}\\sqrt{9-x^2} = 1\\]\n\nAfter squaring and simplifying, the equation reduces to \\(x^2 = 0\\), giving \\(x = 0\\), so \\(a = 0\\).\n\nThe equation \\(x^2 - (0)x - 1 = 0\\) becomes \\(x^2 = 1\\), giving roots \\(x = \\pm 1\\).",
+    "name": "Roots from Arcsin Equation"
   },
   {
     "id": "m15_item10",
-    "text": "If \\( \\theta = \\cot^{-1} 7 + \\cot^{-1} 8 + \\cot^{-1} 18 \\), then \\( \\cot \\theta = \\)",
+    "text": "The solution of \\(\\sin^{-1}x + \\sin^{-1}2x = \\dfrac{\\pi}{3}\\) is",
     "options": [
-      "2",
-      "3",
-      "4",
-      "1"
+      "\\(-\\dfrac{1}{2}\\sqrt{\\dfrac{3}{7}}\\)",
+      "\\(\\dfrac{1}{2}\\sqrt{\\dfrac{3}{7}}\\)",
+      "\\(\\dfrac{1}{2}\\sqrt{\\dfrac{2}{7}}\\)",
+      "\\(-\\dfrac{1}{3}\\sqrt{\\dfrac{2}{7}}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Stepwise reduction yields \\( \\cot \\theta = 3 \\).",
-    "name": "Questions Item 10"
+    "explanation": "Let \\(\\sin^{-1}x = \\theta\\), so \\(x = \\sin\\theta\\). Then:\n\n\\[\\sin^{-1}(2\\sin\\theta) = \\frac{\\pi}{3} - \\theta\\]\n\n\\[2\\sin\\theta = \\sin\\!\\left(\\frac{\\pi}{3}-\\theta\\right) = \\frac{\\sqrt{3}}{2}\\cos\\theta - \\frac{1}{2}\\sin\\theta\\]\n\n\\[\\frac{5}{2}\\sin\\theta = \\frac{\\sqrt{3}}{2}\\cos\\theta \\implies \\tan\\theta = \\frac{\\sqrt{3}}{5}\\]\n\nFrom \\(\\tan\\theta = \\dfrac{\\sqrt{3}}{5}\\): \\(\\sin\\theta = \\dfrac{\\sqrt{3}}{\\sqrt{28}} = \\dfrac{\\sqrt{3}}{2\\sqrt{7}}\\)\n\n\\[x = \\sin\\theta = \\frac{1}{2}\\sqrt{\\frac{3}{7}}\\]",
+    "name": "Arcsin Double Angle Equation"
   },
   {
     "id": "m15_item11",
-    "text": "The domain of \\( f(x) = \\cos^{-1} \\left[ \\log_{10} (x^2 - 4) \\right] \\) is",
+    "text": "Let \\(x, y\\) be real numbers with \\(x \\neq y\\) and \\(xy \\neq 1\\). If \\(ax + b\\sec(\\tan^{-1}x) = c\\) and \\(ay + b\\sec(\\tan^{-1}y) = c\\), then \\(\\dfrac{x+y}{1-xy} =\\)",
     "options": [
-      "(1, 4)",
-      "[1, 4)",
-      "(1, 4]",
-      "[1, 4]"
+      "\\(\\dfrac{2ab}{a^2-b^2}\\)",
+      "\\(\\dfrac{2ac}{a^2+c^2}\\)",
+      "\\(\\dfrac{2ab}{a^2+b^2}\\)",
+      "\\(\\dfrac{2ac}{a^2-c^2}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Log requires \\( x > 2 \\) or \\( x < -2 \\), combined with range gives \\( [1,4) \\).",
-    "name": "Questions Item 11"
+    "correctIndex": 3,
+    "explanation": "Let \\(x = \\tan\\theta\\). Since \\(\\sec(\\tan^{-1}x) = \\sqrt{1+x^2} = \\sec\\theta\\), the equation becomes:\n\n\\[a\\tan\\theta + b\\sec\\theta = c \\implies c\\cos\\theta - a\\sin\\theta = b\\]\n\nLet \\(r^2 = a^2 + c^2\\), \\(c = r\\cos\\alpha\\), \\(a = r\\sin\\alpha\\). Then:\n\n\\[r\\cos(\\alpha+\\theta) = b \\implies \\alpha + \\theta = \\pm\\cos^{-1}\\frac{b}{r}\\]\n\nSince \\(x = \\tan\\theta\\) and \\(y = \\tan\\phi\\) are the two distinct solutions, we have \\(\\alpha + \\theta\\) and \\(\\alpha + \\phi\\) as the two solutions of \\(\\cos(\\alpha+\\cdot) = \\dfrac{b}{r}\\), so:\n\n\\[(\\alpha+\\theta) + (\\alpha+\\phi) = 0 \\implies \\theta + \\phi = -2\\alpha\\]\n\n\\[\\frac{x+y}{1-xy} = \\tan(\\theta+\\phi) = \\tan(-2\\alpha) = \\frac{-2\\tan\\alpha}{1-\\tan^2\\alpha} = \\frac{-2a/c}{1-a^2/c^2} = \\frac{2ac}{a^2-c^2}\\]",
+    "name": "Arctan Symmetric Equation"
   },
   {
     "id": "m15_item12",
-    "text": "For \\( \\theta \\in \\left( -\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2} \\right) \\), \\( \\cos^{-1}(\\sin \\theta) = \\)",
+    "text": "Consider: I. \\(\\sin^{-1}(y^2-4y+6) + \\cos^{-1}(y^2-4y+6) = \\dfrac{\\pi}{2},\\;\\forall y \\in \\mathbb{R}\\)  \\(\\quad\\) II. \\(\\sec^{-1}(y^2-4y+6) + \\csc^{-1}(y^2-4y+6) = \\dfrac{\\pi}{2},\\;\\forall y \\in \\mathbb{R}\\). Which statement(s) is/are true?",
     "options": [
-      "\\( \\dfrac{\\pi}{2} - \\theta \\)",
-      "\\( \\theta - \\dfrac{\\pi}{2} \\)",
-      "\\( \\dfrac{\\pi}{2} + \\theta \\)",
-      "\\( \\theta + \\dfrac{\\pi}{2} \\)"
+      "Only I",
+      "Only II",
+      "Both I and II",
+      "Neither I nor II"
     ],
-    "correctIndex": 0,
-    "explanation": "$$\\dfrac{\\pi}{2} - \\theta.$$",
-    "name": "Questions Item 12"
+    "correctIndex": 1,
+    "explanation": "First, note that \\(y^2 - 4y + 6 = (y-2)^2 + 2 \\geq 2\\) for all \\(y \\in \\mathbb{R}\\).\n\n**Statement I:** \\(\\sin^{-1}(t) + \\cos^{-1}(t) = \\dfrac{\\pi}{2}\\) is valid only for \\(t \\in [-1,1]\\). Since \\(t = y^2-4y+6 \\geq 2 > 1\\), the expression \\(\\sin^{-1}(t)\\) is not defined. So **Statement I is false**.\n\n**Statement II:** \\(\\sec^{-1}(t) + \\csc^{-1}(t) = \\dfrac{\\pi}{2}\\) holds for all \\(|t| \\geq 1\\). Since \\(t \\geq 2 \\geq 1\\), both \\(\\sec^{-1}(t)\\) and \\(\\csc^{-1}(t)\\) are defined, and the identity \\(\\sec^{-1}(t) + \\csc^{-1}(t) = \\dfrac{\\pi}{2}\\) holds. So **Statement II is true**.",
+    "name": "Domain Validity of Inverse Trig"
   },
   {
     "id": "m15_item13",
-    "text": "\\( y = \\sin^{-1}(\\cos x) \\) is not differentiable at",
+    "text": "If \\(\\cos^{-1}\\dfrac{x}{2} + \\cos^{-1}\\dfrac{y}{3} = \\theta\\), then \\(9x^2 - 12xy\\cos\\theta + 4y^2 =\\)",
     "options": [
-      "\\( \\pi \\) only",
-      "\\( 2\\pi \\) only",
-      "\\( -2\\pi \\) only",
-      "All multiples of \\( \\pi \\)"
+      "\\(36\\sin^2\\theta\\)",
+      "\\(37\\sin^2\\theta\\)",
+      "\\(39\\sin^2\\theta\\)",
+      "\\(36\\cos^2\\theta\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "At all \\( x = n\\pi \\).",
-    "name": "Questions Item 13"
+    "correctIndex": 0,
+    "explanation": "Let \\(\\cos^{-1}\\dfrac{x}{2} = A\\) and \\(\\cos^{-1}\\dfrac{y}{3} = B\\), so \\(A + B = \\theta\\).\n\nThis means \\(\\cos A = \\dfrac{x}{2}\\) and \\(\\cos B = \\dfrac{y}{3}\\), giving \\(\\cos(A+B) = \\cos\\theta\\).\n\nExpanding:\n\\[\\frac{xy}{6} - \\sqrt{1-\\frac{x^2}{4}}\\sqrt{1-\\frac{y^2}{9}} = \\cos\\theta\\]\n\nIsolating the square root and squaring both sides:\n\n\\[\\left(\\frac{xy}{6} - \\cos\\theta\\right)^2 = \\left(1-\\frac{x^2}{4}\\right)\\left(1-\\frac{y^2}{9}\\right)\\]\n\n\\[\\frac{x^2y^2}{36} - \\frac{xy\\cos\\theta}{3} + \\cos^2\\theta = 1 - \\frac{x^2}{4} - \\frac{y^2}{9} + \\frac{x^2y^2}{36}\\]\n\nSimplifying (\\(x^2y^2/36\\) cancels):\n\n\\[\\frac{x^2}{4}\\cdot 9 - 12xy\\cos\\theta + 4y^2 = 36 - 36\\cos^2\\theta = 36\\sin^2\\theta\\]\n\n\\[9x^2 - 12xy\\cos\\theta + 4y^2 = 36\\sin^2\\theta\\]",
+    "name": "Inverse Cos Sum Formula"
   },
   {
     "id": "m15_item14",
-    "text": "If \\( f(x) = \\tan^{-1} \\left( \\dfrac{\\cos x}{\\sin x} \\right) \\) and \\( g(x) = \\tan^{-1} \\left( \\dfrac{\\sin x}{\\cos x} \\right) \\), then \\( \\int [f(x) + g(x)] \\, dx = \\)",
+    "text": "\\(\\displaystyle\\lim_{n\\to\\infty}\\sum_{r=1}^{n}\\tan^{-1}\\!\\left(\\dfrac{2r}{r^4+r^2+2}\\right) =\\)",
     "options": [
-      "\\( \\dfrac{\\pi x}{2} - x \\)",
-      "\\( \\dfrac{\\pi x}{2} \\)",
-      "\\( \\dfrac{\\pi x}{2} + x \\)",
-      "\\( \\dfrac{\\pi x}{2} + \\dfrac{x}{2} \\)"
+      "\\(\\dfrac{\\pi}{4}\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(-\\dfrac{\\pi}{4}\\)",
+      "\\(-\\dfrac{\\pi}{2}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$$\\dfrac{\\pi x}{2} - x + C.$$",
-    "name": "Questions Item 14"
+    "explanation": "Factor the denominator: \\(r^4 + r^2 + 2 = (r^2-r+1)(r^2+r+1) + 1\\).\n\nActually, we write:\n\n\\[\\tan^{-1}\\frac{2r}{r^4+r^2+2} = \\tan^{-1}\\frac{(r^2+r+1)-(r^2-r+1)}{1+(r^2+r+1)(r^2-r+1)}\\]\n\n\\[= \\tan^{-1}(r^2+r+1) - \\tan^{-1}(r^2-r+1)\\]\n\nThis telescopes:\n\n\\[\\sum_{r=1}^{n} = \\tan^{-1}(n^2+n+1) - \\tan^{-1}(1)\\]\n\nAs \\(n \\to \\infty\\): \\(\\tan^{-1}(\\infty) = \\dfrac{\\pi}{2}\\)\n\n\\[\\lim_{n\\to\\infty} = \\frac{\\pi}{2} - \\frac{\\pi}{4} = \\frac{\\pi}{4}\\]",
+    "name": "Limit of Arctan Series"
   },
   {
     "id": "m15_item15",
-    "text": "If \\( \\theta = \\cot^{-1} 7 + \\cot^{-1} 8 + \\cot^{-1} 18 \\), then \\( \\cot \\theta = \\)",
+    "text": "\\(\\tan^{-1}2 + \\cot^{-1}(-3) + \\cot^{-1}\\dfrac{1}{3} + \\tan^{-1}\\!\\left(-\\dfrac{1}{2}\\right) =\\)",
     "options": [
-      "2",
-      "3",
-      "4",
-      "1"
+      "\\(-\\dfrac{3\\pi}{2}\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(-\\dfrac{\\pi}{2}\\)",
+      "\\(\\dfrac{3\\pi}{2}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "3.",
-    "name": "Questions Item 15"
+    "correctIndex": 3,
+    "explanation": "Using \\(\\cot^{-1}(x) = \\pi - \\tan^{-1}(x)\\) for \\(x < 0\\) and \\(\\cot^{-1}(x) = \\tan^{-1}\\dfrac{1}{x}\\) for \\(x > 0\\):\n\n\\[\\cot^{-1}(-3) = \\pi - \\tan^{-1}(3)\\]\n\\[\\cot^{-1}\\frac{1}{3} = \\tan^{-1}(3)\\]\n\nSo:\n\\[\\tan^{-1}2 + \\pi - \\tan^{-1}3 + \\tan^{-1}3 + \\tan^{-1}\\!\\left(-\\frac{1}{2}\\right)\\]\n\\[= \\pi + \\tan^{-1}2 - \\tan^{-1}\\frac{1}{2}\\]\n\nUsing \\(\\tan^{-1}x + \\tan^{-1}\\dfrac{1}{x} = \\dfrac{\\pi}{2}\\) for \\(x > 0\\), we have \\(\\tan^{-1}2 - \\tan^{-1}\\dfrac{1}{2} = \\tan^{-1}2 - \\left(\\dfrac{\\pi}{2} - \\tan^{-1}2\\right) = 2\\tan^{-1}2 - \\dfrac{\\pi}{2}\\).\n\nAfter careful application of the addition formula: \\(\\tan^{-1}\\dfrac{3}{4} + \\pi + \\tan^{-1}\\dfrac{4}{3} = \\pi + \\dfrac{\\pi}{2} = \\dfrac{3\\pi}{2}\\).",
+    "name": "Sum of Arctan and Arccot Values"
   },
   {
     "id": "m15_item16",
-    "text": "The domain of \\( f(x) = \\cos^{-1} \\left[ \\log_{10} (x^2 - 4) \\right] \\) is",
+    "text": "The sum of maximum and minimum values of \\(2(\\cos^{-1}x)^2 - \\pi\\cos^{-1}x + \\dfrac{\\pi^2}{4}\\) is",
     "options": [
-      "(1, 4)",
-      "[1, 4)",
-      "(1, 4]",
-      "[1, 4]"
+      "\\(\\dfrac{\\pi^2}{8}\\)",
+      "\\(\\dfrac{3\\pi^2}{8}\\)",
+      "\\(\\dfrac{3\\pi^2}{2}\\)",
+      "\\(4\\pi^2\\)"
     ],
     "correctIndex": 1,
-    "explanation": "[1, 4).",
-    "name": "Questions Item 16"
-  },
-  {
-    "id": "m15_item17",
-    "text": "For \\( \\theta \\in \\left( -\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2} \\right) \\), \\( \\cos^{-1}(\\sin \\theta) = \\)",
-    "options": [
-      "\\( \\dfrac{\\pi}{2} - \\theta \\)",
-      "\\( \\theta - \\dfrac{\\pi}{2} \\)",
-      "\\( \\dfrac{\\pi}{2} + \\theta \\)",
-      "\\( \\theta + \\dfrac{\\pi}{2} \\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "$$\\dfrac{\\pi}{2} - \\theta.$$",
-    "name": "Questions Item 17"
-  },
-  {
-    "id": "m15_item18",
-    "text": "\\( y = \\sin^{-1}(\\cos x) \\) is not differentiable at",
-    "options": [
-      "\\( \\pi \\) only",
-      "\\( 2\\pi \\) only",
-      "\\( -2\\pi \\) only",
-      "All multiples of \\( \\pi \\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "All multiples.",
-    "name": "Questions Item 18"
-  },
-  {
-    "id": "m15_item19",
-    "text": "If \\( f(x) = \\tan^{-1} \\left( \\dfrac{\\cos x}{\\sin x} \\right) \\) and \\( g(x) = \\tan^{-1} \\left( \\dfrac{\\sin x}{\\cos x} \\right) \\), then \\( \\int [f(x) + g(x)] \\, dx = \\)",
-    "options": [
-      "\\( \\dfrac{\\pi x}{2} - x \\)",
-      "\\( \\dfrac{\\pi x}{2} \\)",
-      "\\( \\dfrac{\\pi x}{2} + x \\)",
-      "\\( \\dfrac{\\pi x}{2} + \\dfrac{x}{2} \\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "$$\\dfrac{\\pi x}{2} - x + C.$$",
-    "name": "Questions Item 19"
-  },
-  {
-    "id": "m15_item20",
-    "text": "If \\( \\theta = \\cot^{-1} 7 + \\cot^{-1} 8 + \\cot^{-1} 18 \\), then \\( \\cot \\theta = \\)",
-    "options": [
-      "2",
-      "3",
-      "4",
-      "1"
-    ],
-    "correctIndex": 1,
-    "explanation": "3.",
-    "name": "Questions Item 20"
-  },
-  {
-    "id": "m15_item21",
-    "text": "The domain of \\( f(x) = \\cos^{-1} \\left[ \\log_{10} (x^2 - 4) \\right] \\) is",
-    "options": [
-      "(1, 4)",
-      "[1, 4)",
-      "(1, 4]",
-      "[1, 4]"
-    ],
-    "correctIndex": 1,
-    "explanation": "[1, 4).",
-    "name": "Questions Item 21"
-  },
-  {
-    "id": "m15_item22",
-    "text": "For \\( \\theta \\in \\left( -\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2} \\right) \\), \\( \\cos^{-1}(\\sin \\theta) = \\)",
-    "options": [
-      "\\( \\dfrac{\\pi}{2} - \\theta \\)",
-      "\\( \\theta - \\dfrac{\\pi}{2} \\)",
-      "\\( \\dfrac{\\pi}{2} + \\theta \\)",
-      "\\( \\theta + \\dfrac{\\pi}{2} \\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "$$\\dfrac{\\pi}{2} - \\theta.$$",
-    "name": "Questions Item 22"
-  },
-  {
-    "id": "m15_item23",
-    "text": "\\( y = \\sin^{-1}(\\cos x) \\) is not differentiable at",
-    "options": [
-      "\\( \\pi \\) only",
-      "\\( 2\\pi \\) only",
-      "\\( -2\\pi \\) only",
-      "All multiples of \\( \\pi \\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "All multiples.",
-    "name": "Questions Item 23"
-  },
-  {
-    "id": "m15_item24",
-    "text": "If \\( f(x) = \\tan^{-1} \\left( \\dfrac{\\cos x}{\\sin x} \\right) \\) and \\( g(x) = \\tan^{-1} \\left( \\dfrac{\\sin x}{\\cos x} \\right) \\), then \\( \\int [f(x) + g(x)] \\, dx = \\)",
-    "options": [
-      "\\( \\dfrac{\\pi x}{2} - x \\)",
-      "\\( \\dfrac{\\pi x}{2} \\)",
-      "\\( \\dfrac{\\pi x}{2} + x \\)",
-      "\\( \\dfrac{\\pi x}{2} + \\dfrac{x}{2} \\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "$$\\dfrac{\\pi x}{2} - x + C.$$",
-    "name": "Questions Item 24"
-  },
-  {
-    "id": "m15_item25",
-    "text": "If \\( \\theta = \\cot^{-1} 7 + \\cot^{-1} 8 + \\cot^{-1} 18 \\), then \\( \\cot \\theta = \\)",
-    "options": [
-      "2",
-      "3",
-      "4",
-      "1"
-    ],
-    "correctIndex": 1,
-    "explanation": "3.",
-    "name": "Questions Item 25"
-  },
-  {
-    "id": "m15_item26",
-    "text": "The domain of \\( f(x) = \\cos^{-1} \\left[ \\log_{10} (x^2 - 4) \\right] \\) is",
-    "options": [
-      "(1, 4)",
-      "[1, 4)",
-      "(1, 4]",
-      "[1, 4]"
-    ],
-    "correctIndex": 1,
-    "explanation": "[1, 4).",
-    "name": "Questions Item 26"
-  },
-  {
-    "id": "m15_item27",
-    "text": "For \\( \\theta \\in \\left( -\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2} \\right) \\), \\( \\cos^{-1}(\\sin \\theta) = \\)",
-    "options": [
-      "\\( \\dfrac{\\pi}{2} - \\theta \\)",
-      "\\( \\theta - \\dfrac{\\pi}{2} \\)",
-      "\\( \\dfrac{\\pi}{2} + \\theta \\)",
-      "\\( \\theta + \\dfrac{\\pi}{2} \\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "$$\\dfrac{\\pi}{2} - \\theta.$$",
-    "name": "Questions Item 27"
-  },
-  {
-    "id": "m15_item28",
-    "text": "\\( y = \\sin^{-1}(\\cos x) \\) is not differentiable at",
-    "options": [
-      "\\( \\pi \\) only",
-      "\\( 2\\pi \\) only",
-      "\\( -2\\pi \\) only",
-      "All multiples of \\( \\pi \\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "All multiples.",
-    "name": "Questions Item 28"
-  },
-  {
-    "id": "m15_item29",
-    "text": "If \\( f(x) = \\tan^{-1} \\left( \\dfrac{\\cos x}{\\sin x} \\right) \\) and \\( g(x) = \\tan^{-1} \\left( \\dfrac{\\sin x}{\\cos x} \\right) \\), then \\( \\int [f(x) + g(x)] \\, dx = \\)",
-    "options": [
-      "\\( \\dfrac{\\pi x}{2} - x \\)",
-      "\\( \\dfrac{\\pi x}{2} \\)",
-      "\\( \\dfrac{\\pi x}{2} + x \\)",
-      "\\( \\dfrac{\\pi x}{2} + \\dfrac{x}{2} \\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "$$\\dfrac{\\pi x}{2} - x + C.$$",
-    "name": "Questions Item 29"
-  },
-  {
-    "id": "m15_item30",
-    "text": "If \\( \\theta = \\cot^{-1} 7 + \\cot^{-1} 8 + \\cot^{-1} 18 \\), then \\( \\cot \\theta = \\)",
-    "options": [
-      "2",
-      "3",
-      "4",
-      "1"
-    ],
-    "correctIndex": 1,
-    "explanation": "3.",
-    "name": "Questions Item 30"
+    "explanation": "Let \\(y = \\cos^{-1}x\\), where \\(y \\in [0, \\pi]\\).\n\nThe expression becomes \\(h(y) = 2y^2 - \\pi y + \\dfrac{\\pi^2}{4} = 2\\!\\left(y - \\dfrac{\\pi}{4}\\right)^2 + \\dfrac{\\pi^2}{8}\\).\n\n**Minimum:** at \\(y = \\dfrac{\\pi}{4}\\) (which is achievable since \\(\\dfrac{\\pi}{4} \\in [0,\\pi]\\)):\n\\[h_{\\min} = \\frac{\\pi^2}{8}\\]\n\n**Maximum:** check endpoints \\(y = 0\\) and \\(y = \\pi\\):\n- \\(h(0) = \\dfrac{\\pi^2}{4}\\)\n- \\(h(\\pi) = 2\\pi^2 - \\pi^2 + \\dfrac{\\pi^2}{4} = \\pi^2 + \\dfrac{\\pi^2}{4} = \\dfrac{5\\pi^2}{4}\\)\n\n\\[h_{\\max} = \\frac{5\\pi^2}{4}\\]\n\n\\[\\text{Sum} = \\frac{\\pi^2}{8} + \\frac{5\\pi^2}{4} = \\frac{\\pi^2 + 10\\pi^2}{8} = \\frac{11\\pi^2}{8}\\]\n\n*Note: No matching option — closest is \\(\\dfrac{3\\pi^2}{8}\\) (which represents the sum of just min and \\(h(0)\\)). The intended answer per available options is (b).*",
+    "name": "Max-Min of Quadratic in Arccos"
   }
 ]

@@ -1,7 +1,7 @@
 [
   {
-    "id": "m4_item1",
-    "text": "\\(\\dfrac{k^5}{5} + \\dfrac{k^3}{3} + \\dfrac{7k}{15}\\) is _________ if \\(k \\in \\mathbb{N}\\)",
+    "id": "m5_item1",
+    "text": "\\(\\dfrac{k^5}{5} + \\dfrac{k^3}{3} + \\dfrac{7k}{15}\\) is ________ if \\(k \\in \\mathbb{N}\\)",
     "options": [
       "A natural number",
       "An integer",
@@ -9,12 +9,12 @@
       "Equal to zero"
     ],
     "correctIndex": 0,
-    "explanation": "Write \\(\\dfrac{k^5}{5} + \\dfrac{k^3}{3} + \\dfrac{7k}{15} = \\dfrac{3k^5 + 5k^3 + 7k}{15}\\). Factor the numerator: \\(3k^5 + 5k^3 + 7k = k(3k^4 + 5k^2 + 7)\\). One can show the numerator equals \\(3k^5 - 3k + 5k^3 - 5k + 15k = 3k(k^4-1) + 5k(k^2-1) + 15k\\). The term \\(k(k-1)(k+1)(k^2+1)\\) is divisible by 5 (product of 5 consecutive integers contains a multiple of 5) and \\(k(k-1)(k+1)\\) is divisible by 3. So the numerator is divisible by 15, making the expression a natural number for all \\(k \\in \\mathbb{N}\\).",
+    "explanation": "Combine over 15: \\(\\dfrac{3k^5 + 5k^3 + 7k}{15}\\). Factorise the numerator: \\(3k^5+5k^3+7k = k(3k^4+5k^2+7)\\). Now rewrite as \\(\\dfrac{k^5-k}{5} + \\dfrac{k^3-k}{3} + k\\). Since \\(k^5-k = k(k-1)(k+1)(k^2+1)\\) is always divisible by 5 (product of 5 consecutive-style factors), and \\(k^3-k = k(k-1)(k+1)\\) is always divisible by 3 (product of 3 consecutive integers), and \\(k\\) is a natural number, the entire expression is a natural number.",
     "name": "Divisibility of Algebraic Expression"
   },
   {
-    "id": "m4_item2",
-    "text": "Let \\(P(n): 2 + 2^2 + 2^3 + \\cdots + 2^n = 2^{n+1}\\), \\(n \\in \\mathbb{N}\\). Then which of the following is correct?",
+    "id": "m5_item2",
+    "text": "Let \\(P(n): 2 + 2^2 + 2^3 + \\cdots + 2^n = 2^{n+1}\\), \\(n \\in \\mathbb{N}\\). Then which of the following is true?",
     "options": [
       "\\(P(m)\\) is true \\(\\Rightarrow P(m+1)\\) is true",
       "\\(P(n)\\) is true for all \\(n \\in \\mathbb{N}\\)",
@@ -22,11 +22,11 @@
       "\\(P(n)\\) is true for all \\(n \\leq 10\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Assume \\(P(m)\\) is true: \\(2 + 2^2 + \\cdots + 2^m = 2^{m+1}\\). Then \\(P(m+1)\\): LHS \\(= 2 + 2^2 + \\cdots + 2^m + 2^{m+1} = 2^{m+1} + 2^{m+1} = 2 \\cdot 2^{m+1} = 2^{m+2}\\) = RHS of \\(P(m+1)\\). So \\(P(m) \\Rightarrow P(m+1)\\). However, \\(P(1)\\): LHS \\(= 2\\), RHS \\(= 2^2 = 4\\). So \\(P(1)\\) is false, meaning \\(P(n)\\) is NOT true for all \\(n \\in \\mathbb{N}\\). Only option (a) is correct.",
-    "name": "Principle of Mathematical Induction"
+    "explanation": "The statement \\(P(n)\\) as written is \\(2+2^2+\\cdots+2^n = 2^{n+1}\\), which is actually incorrect (the correct sum is \\(2^{n+1}-2\\)). So \\(P(n)\\) is NOT true for all \\(n\\). However, the inductive step — if \\(P(m)\\) is true, we can show \\(P(m+1)\\) follows — holds structurally. Assuming \\(P(m)\\) is true, \\(P(m+1) = P(m)+2^{m+1} = 2^{m+1}+2^{m+1} = 2^{m+2}\\), which matches the form of \\(P(m+1)\\). So the implication \\(P(m) \\Rightarrow P(m+1)\\) is valid.",
+    "name": "Principle of Mathematical Induction — Implication Step"
   },
   {
-    "id": "m4_item3",
+    "id": "m5_item3",
     "text": "\\(a^n + b^n\\) is divisible by __________ if \\(n\\) is any odd positive integer.",
     "options": [
       "\\(a - b\\)",
@@ -35,12 +35,12 @@
       "\\(a + b\\)"
     ],
     "correctIndex": 3,
-    "explanation": "For any odd positive integer \\(n\\), we have the factorisation \\(a^n + b^n = (a+b)(a^{n-1} - a^{n-2}b + a^{n-3}b^2 - \\cdots + b^{n-1})\\). This is valid because \\(n\\) is odd, making \\(-b\\) substituted into \\(a^n - (-b)^n = a^n + b^n\\). Therefore \\(a^n + b^n\\) is always divisible by \\((a+b)\\).",
-    "name": "Divisibility of Sum of Powers"
+    "explanation": "For any odd positive integer \\(n\\), the factorisation \\(a^n + b^n = (a+b)(a^{n-1} - a^{n-2}b + a^{n-3}b^2 - \\cdots + b^{n-1})\\) holds. Therefore \\(a^n+b^n\\) is always divisible by \\((a+b)\\) when \\(n\\) is odd.",
+    "name": "Divisibility of aⁿ + bⁿ"
   },
   {
-    "id": "m4_item4",
-    "text": "Let \\(P(n): 1^2 + 2^2 + 3^2 + \\cdots + n^2 = \\dfrac{n(n+1)(2n+1) - (n-1)(n-2)\\cdots(n-2020)}{6}\\) for all \\(n \\in \\mathbb{N}\\). Then which of the following is correct?",
+    "id": "m5_item4",
+    "text": "Let \\(P(n): 1^2+2^2+3^2+\\cdots+n^2 = \\dfrac{6(n-1)(n-2)\\cdots(n-2020)+2n^3+3n^2+n}{6}\\) for all \\(n \\in \\mathbb{N}\\). Then which of the following is correct?",
     "options": [
       "\\(P(n)\\) is true for all \\(n \\in \\mathbb{N}\\)",
       "\\(P(n)\\) is true for all \\(n > 2020\\)",
@@ -48,12 +48,12 @@
       "\\(P(n)\\) is not true for any \\(n \\in \\mathbb{N}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "The standard result is \\(1^2 + 2^2 + \\cdots + n^2 = \\dfrac{n(n+1)(2n+1)}{6}\\). The given RHS equals \\(\\dfrac{n(n+1)(2n+1)}{6}\\) only when the extra factor \\((n-1)(n-2)\\cdots(n-2020)\\) is zero, which happens when \\(n \\in \\{1, 2, 3, \\ldots, 2020\\}\\). For \\(n > 2020\\), the extra product is nonzero and the two sides differ. Hence \\(P(n)\\) is true for all \\(n \\leq 2020\\).",
-    "name": "Induction Statement with Restricted Validity"
+    "explanation": "We know \\(1^2+2^2+\\cdots+n^2 = \\dfrac{n(n+1)(2n+1)}{6}\\). The given RHS \\(= (n-1)(n-2)\\cdots(n-2020)+\\dfrac{n(n+1)(2n+1)}{6}\\). For the two sides to be equal, the product \\((n-1)(n-2)\\cdots(n-2020)\\) must equal zero, which happens when \\(n \\in \\{1,2,3,\\ldots,2020\\}\\). So \\(P(n)\\) is true for all \\(n \\leq 2020\\).",
+    "name": "Validity Range of an Induction Statement"
   },
   {
-    "id": "m4_item5",
-    "text": "The sum of the cubes of three consecutive natural numbers is divisible by",
+    "id": "m5_item5",
+    "text": "The sum of the cubes of three consecutive natural numbers is always divisible by",
     "options": [
       "\\(26\\)",
       "\\(25\\)",
@@ -61,12 +61,12 @@
       "\\(7\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Let the three consecutive natural numbers be \\(n-1, n, n+1\\) for \\(n \\geq 2\\). Their sum of cubes: \\((n-1)^3 + n^3 + (n+1)^3 = n^3 - 3n^2 + 3n - 1 + n^3 + n^3 + 3n^2 + 3n + 1 = 3n^3 + 6n = 3n(n^2+2)\\). For \\(n = 2\\): \\(3(2)(6) = 36 = 9 \\times 4\\). In general, among any two consecutive integers one is even, and \\(n^2+2 \\equiv n^2-1 \\equiv (n-1)(n+1) \\pmod{3}\\) covers divisibility by 3. One can verify \\(3n(n^2+2)\\) is always divisible by 9.",
-    "name": "Sum of Cubes of Consecutive Naturals"
+    "explanation": "Let the three consecutive natural numbers be \\(n-1, n, n+1\\) (where \\(n \\geq 2\\)). Their sum of cubes: \\((n-1)^3+n^3+(n+1)^3 = n^3-3n^2+3n-1+n^3+n^3+3n^2+3n+1 = 3n^3+6n = 3n(n^2+2)\\). Now \\(n^2+2 \\equiv 0+2,\\ 1+2,\\ 4+2 \\pmod{3} \\equiv 2,\\ 0,\\ 0 \\pmod 3\\)... checking: when \\(n\\) is a multiple of 3, \\(3n\\) gives factor of 9; when \\(n\\) is not a multiple of 3, \\(n^2+2 \\equiv 0\\pmod3\\). So \\(3n(n^2+2)\\) is always divisible by 9.",
+    "name": "Divisibility of Sum of Cubes of Consecutive Numbers"
   },
   {
-    "id": "m4_item6",
-    "text": "The tens digit in \\(1! + 4! + 7! + 10! + 12! + 13! + 15! + 16! + 17!\\) is divisible by",
+    "id": "m5_item6",
+    "text": "The ten's digit in \\(1! + 4! + 7! + 10! + 12! + 13! + 15! + 16! + 17!\\) is",
     "options": [
       "\\(4!\\)",
       "\\(3!\\)",
@@ -74,11 +74,11 @@
       "\\(7\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Since \\(10! = 3628800\\) and all factorials \\(\\geq 10!\\) end in at least two zeros, they contribute \\(0\\) to the tens digit. So the tens digit of the sum equals the tens digit of \\(1! + 4! + 7! = 1 + 24 + 5040 = 5065\\). The tens digit is \\(6\\). Since \\(3! = 6\\), the tens digit equals \\(3!\\), so it is divisible by \\(3! = 6\\).",
+    "explanation": "For \\(n \\geq 10\\), \\(n!\\) ends in at least two zeros, so it contributes 0 to the tens digit. Thus we only need the tens digit of \\(1!+4!+7! = 1+24+5040 = 5065\\). The tens digit is 6. Now \\(3! = 6\\). So the tens digit is \\(3! = 6\\).",
     "name": "Tens Digit of Sum of Factorials"
   },
   {
-    "id": "m4_item7",
+    "id": "m5_item7",
     "text": "For which value of \\(n \\in \\mathbb{N}\\) does \\(n!\\) have exactly 13 trailing zeros?",
     "options": [
       "\\(51\\)",
@@ -87,12 +87,12 @@
       "\\(60\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Trailing zeros in \\(n!\\) come from factors of 5. The number of trailing zeros is \\(\\left\\lfloor \\dfrac{n}{5} \\right\\rfloor + \\left\\lfloor \\dfrac{n}{25} \\right\\rfloor + \\left\\lfloor \\dfrac{n}{125} \\right\\rfloor + \\cdots\\). For \\(n=54\\): \\(\\lfloor54/5\\rfloor + \\lfloor54/25\\rfloor = 10 + 2 = 12\\) zeros. For \\(n=57\\): \\(\\lfloor57/5\\rfloor + \\lfloor57/25\\rfloor = 11 + 2 = 13\\) zeros. ✓ So \\(n = 57\\).",
+    "explanation": "The number of trailing zeros in \\(n!\\) equals the exponent of 5 in \\(n!\\), given by \\(\\left\\lfloor\\dfrac{n}{5}\\right\\rfloor+\\left\\lfloor\\dfrac{n}{25}\\right\\rfloor+\\left\\lfloor\\dfrac{n}{125}\\right\\rfloor+\\cdots\\). For \\(n=57\\): \\(\\lfloor57/5\\rfloor+\\lfloor57/25\\rfloor = 11+2 = 13\\). For \\(n=54\\): \\(10+2=12\\). For \\(n=59\\): \\(11+2=13\\). So \\(n=57\\) is the first value with exactly 13 trailing zeros.",
     "name": "Trailing Zeros in Factorial"
   },
   {
-    "id": "m4_item8",
-    "text": "Consider the following:\n**Assertion (A):** \\((1+1+2) + (4+4+6) + (9+9+12) + \\cdots + (81+90+100) = 1000\\)\n**Reason (R):** \\(\\displaystyle\\sum_{r=1}^{n}[r^3 - (r-1)^3] = n^3\\) for any natural number \\(n\\).\nWhich is correct?",
+    "id": "m5_item8",
+    "text": "**Assertion (A):** \\(1+(1+2+4)+(4+6+9)+(9+12+16)+\\cdots+(81+90+100) = 1000\\).\\n**Reason (R):** \\(\\displaystyle\\sum_{r=1}^{n}\\left(r^3-(r-1)^3\\right) = n^3\\) for any natural number \\(n\\).",
     "options": [
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
@@ -100,25 +100,25 @@
       "(A) is false but (R) is true"
     ],
     "correctIndex": 0,
-    "explanation": "Each group \\((r^2 + r(r+1) + (r+1)^2) = r^3 - (r-1)^3\\)... Actually each term \\((r^2 + r(r-1) + (r-1)^2)\\) equals \\(r^3 - (r-1)^3\\) by the identity \\(a^3 - b^3 = (a-b)(a^2+ab+b^2)\\). The sum telescopes: \\(\\sum_{r=1}^{10}[r^3-(r-1)^3] = 10^3 - 0^3 = 1000\\). So (A) is true. (R) states \\(\\sum[r^3-(r-1)^3] = n^3\\), which is a telescoping sum equal to \\(n^3\\) — also true and directly explains (A) with \\(n=10\\).",
+    "explanation": "The sum \\(1+(1+2+4)+(4+6+9)+\\cdots+(81+90+100)\\) can be written as \\(\\displaystyle\\sum_{r=1}^{10}\\left[(r-1)^2+(r-1)r+r^2\\right] = \\sum_{r=1}^{10}\\left[r^3-(r-1)^3\\right]\\) (since \\(a^3-b^3=(a-b)(a^2+ab+b^2)\\)). This telescopes to \\(10^3-0^3=1000\\). So (R) directly explains (A) — both are true and (R) is the correct explanation.",
     "name": "Assertion-Reason: Telescoping Sum"
   },
   {
-    "id": "m4_item9",
-    "text": "The sum of first \\(n\\) terms of the series \\(\\dfrac{3}{5} + \\dfrac{21}{25} + \\dfrac{117}{125} + \\cdots\\) is",
+    "id": "m5_item9",
+    "text": "The sum of first \\(n\\) terms of the series \\(\\dfrac{3}{5}+\\dfrac{21}{25}+\\dfrac{117}{125}+\\cdots\\) is",
     "options": [
-      "\\(n + \\dfrac{2}{3 \\times 5^n} - \\dfrac{2}{3}\\) ... actually \\(n + \\dfrac{2}{3 \\cdot 5^n} - \\dfrac{2}{3}\\)",
-      "\\(n - \\dfrac{2}{3 \\times 5^n} + \\dfrac{2}{3}\\)",
-      "\\(n + \\dfrac{2}{3 \\times 5^n} + \\dfrac{2}{3}\\)",
-      "\\(n - \\dfrac{2}{3 \\times 5^n} - \\dfrac{2}{3}\\)"
+      "\\(n + \\dfrac{2^{n+1}}{3\\times5^n} - \\dfrac{2}{3}\\)",
+      "\\(n - \\dfrac{2^{n+1}}{3\\times5^n} - \\dfrac{2}{3}\\)",
+      "\\(n + \\dfrac{2^{n+1}}{3\\times5^n} + \\dfrac{2}{3}\\)",
+      "\\(n - \\dfrac{2^{n+1}}{3\\times5^n} + \\dfrac{2}{3}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Each term: \\(\\dfrac{3}{5} = 1 - \\dfrac{2}{5}\\), \\(\\dfrac{21}{25} = 1 - \\dfrac{4}{25} = 1 - \\dfrac{2^2}{5^2}\\), \\(\\dfrac{117}{125} = 1 - \\dfrac{8}{125} = 1 - \\dfrac{2^3}{5^3}\\). So the \\(r\\)th term is \\(1 - \\left(\\dfrac{2}{5}\\right)^r\\). Sum of \\(n\\) terms \\(= n - \\sum_{r=1}^{n}\\left(\\dfrac{2}{5}\\right)^r = n - \\dfrac{\\frac{2}{5}(1-(2/5)^n)}{1-2/5} = n - \\dfrac{2}{3}\\left[1 - \\left(\\dfrac{2}{5}\\right)^n\\right] = n - \\dfrac{2}{3} + \\dfrac{2}{3 \\times 5^n} \\cdot 2^n\\)... Simplifying: \\(n + \\dfrac{2}{3 \\cdot 5^n} - \\dfrac{2}{3}\\) (matching option a).",
+    "explanation": "Each term: \\(\\dfrac{3}{5}=1-\\dfrac{2}{5}\\), \\(\\dfrac{21}{25}=1-\\dfrac{4}{25}\\), \\(\\dfrac{117}{125}=1-\\dfrac{8}{125}\\), so the general term is \\(1-\\left(\\dfrac{2}{5}\\right)^k\\). Sum of \\(n\\) terms \\(= n - \\displaystyle\\sum_{k=1}^{n}\\left(\\dfrac{2}{5}\\right)^k = n - \\dfrac{\\frac{2}{5}\\left(1-\\left(\\frac{2}{5}\\right)^n\\right)}{1-\\frac{2}{5}} = n - \\dfrac{2}{3}\\left(1-\\left(\\dfrac{2}{5}\\right)^n\\right) = n - \\dfrac{2}{3} + \\dfrac{2}{3}\\cdot\\dfrac{2^n}{5^n} = n + \\dfrac{2^{n+1}}{3\\times5^n} - \\dfrac{2}{3}\\).",
     "name": "Sum of Series using GP"
   },
   {
-    "id": "m4_item10",
-    "text": "If \\(15^k\\) divides \\(47!\\) but \\(15^{k+1}\\) does not, then \\(k =\\)",
+    "id": "m5_item10",
+    "text": "If \\(15^k\\) divides \\(47!\\) but \\(15^{k+1}\\) does not divide it, then \\(k =\\)",
     "options": [
       "\\(15\\)",
       "\\(12\\)",
@@ -126,38 +126,38 @@
       "\\(5\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Since \\(15 = 3 \\times 5\\), the exponent of 15 in \\(47!\\) is limited by the exponent of 5 (the scarcer prime). Exponent of 5 in \\(47!\\) \\(= \\lfloor47/5\\rfloor + \\lfloor47/25\\rfloor = 9 + 1 = 10\\). Exponent of 3 in \\(47!\\) \\(= \\lfloor47/3\\rfloor + \\lfloor47/9\\rfloor + \\lfloor47/27\\rfloor = 15+5+1 = 21 \\geq 10\\). So the highest power of 15 dividing \\(47!\\) is \\(15^{10}\\), giving \\(k = 10\\).",
-    "name": "Highest Power of 15 in Factorial"
+    "explanation": "Since \\(15=3\\times5\\), the exponent of 15 in \\(47!\\) equals the exponent of 5 in \\(47!\\) (the limiting prime). Exponent of 5 in \\(47!\\) \\(= \\left\\lfloor\\dfrac{47}{5}\\right\\rfloor+\\left\\lfloor\\dfrac{47}{25}\\right\\rfloor = 9+1=10\\). So \\(k=10\\).",
+    "name": "Highest Power of 15 in 47!"
   },
   {
-    "id": "m4_item11",
-    "text": "\\(1^2 + (1^2+2^2) + (1^2+2^2+3^2) + \\cdots + (1^2+2^2+\\cdots+n^2) =\\)",
+    "id": "m5_item11",
+    "text": "\\(1^2+(1^2+2^2)+(1^2+2^2+3^2)+\\cdots+(1^2+2^2+\\cdots+n^2) =\\)",
     "options": [
       "\\(\\dfrac{n(n+1)(n+2)}{12}\\)",
       "\\(\\dfrac{n(n+1)(2n+1)}{6}\\)",
-      "\\(\\dfrac{n^2(n+1)(n+2)}{12}\\)",
+      "\\(\\dfrac{n(n+1)^2(n+2)}{12}\\)",
       "\\(\\dfrac{n(n+1)(n+2)(n+3)}{12}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "The \\(i\\)th term is \\(\\displaystyle\\sum_{j=1}^{i} j^2 = \\dfrac{i(i+1)(2i+1)}{6}\\). So the full sum \\(= \\displaystyle\\sum_{i=1}^{n} \\dfrac{i(i+1)(2i+1)}{6} = \\dfrac{1}{6}\\sum_{i=1}^{n}(2i^3+3i^2+i)\\). Using \\(\\sum i^3 = \\dfrac{n^2(n+1)^2}{4}\\), \\(\\sum i^2 = \\dfrac{n(n+1)(2n+1)}{6}\\), \\(\\sum i = \\dfrac{n(n+1)}{2}\\), the result simplifies to \\(\\dfrac{n^2(n+1)(n+2)}{12}\\).",
-    "name": "Sum of Partial Sums of Squares"
+    "explanation": "The sum equals \\(\\displaystyle\\sum_{i=1}^{n}\\dfrac{i(i+1)(2i+1)}{6}\\). Expanding and summing: \\(\\dfrac{1}{6}\\sum_{i=1}^{n}(2i^3+3i^2+i) = \\dfrac{1}{6}\\left[2\\cdot\\dfrac{n^2(n+1)^2}{4}+3\\cdot\\dfrac{n(n+1)(2n+1)}{6}+\\dfrac{n(n+1)}{2}\\right]\\). After simplification, this gives \\(\\dfrac{n(n+1)^2(n+2)}{12}\\).",
+    "name": "Sum of Cumulative Squares"
   },
   {
-    "id": "m4_item12",
-    "text": "Which of the following is divisible by \\(x^2 - y^2\\) for all \\(x \\neq y\\)?",
+    "id": "m5_item12",
+    "text": "Which of the following is divisible by \\(x^2-y^2\\) for all \\(x \\neq y\\)?",
     "options": [
       "\\(x^n - y^n,\\ \\forall n \\in \\mathbb{N}\\)",
       "\\(x^n + y^n,\\ \\forall n \\in \\mathbb{N}\\)",
-      "\\((x^{2n+1} - y^{2n+1})(x^{2n+1} + y^{2n+1}),\\ \\forall n \\in \\mathbb{N}\\)",
-      "\\((x^n - y^n)(x^m + y^m),\\ \\forall m, n \\in \\mathbb{N}\\)"
+      "\\((x^n - y^n)(x^{2n+1}+y^{2n+1}),\\ \\forall n \\in \\mathbb{N}\\)",
+      "\\((x^n - y^n)(x^m + y^m),\\ \\forall m,n \\in \\mathbb{N}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "\\(x^2-y^2 = (x-y)(x+y)\\). For option (c): \\(x^{2n+1}-y^{2n+1}\\) is divisible by \\((x-y)\\) for any \\(n\\), and \\(x^{2n+1}+y^{2n+1}\\) is divisible by \\((x+y)\\) since \\(2n+1\\) is odd. Therefore their product \\((x^{2n+1}-y^{2n+1})(x^{2n+1}+y^{2n+1})\\) is divisible by \\((x-y)(x+y) = x^2-y^2\\) for all \\(n \\in \\mathbb{N}\\).",
-    "name": "Divisibility by x² - y²"
+    "explanation": "We need divisibility by \\(x^2-y^2=(x-y)(x+y)\\). \\(x^n-y^n\\) is divisible by \\((x-y)\\) for all \\(n\\), and by \\((x+y)\\) only when \\(n\\) is even. \\(x^{2n+1}+y^{2n+1}\\) is divisible by \\((x+y)\\) since \\(2n+1\\) is odd. So \\((x^n-y^n)(x^{2n+1}+y^{2n+1})\\) is divisible by \\((x-y)(x+y)=x^2-y^2\\) for all \\(n \\in \\mathbb{N}\\).",
+    "name": "Divisibility by x²-y²"
   },
   {
-    "id": "m4_item13",
-    "text": "\\(\\dfrac{1}{2 \\cdot 5} + \\dfrac{1}{5 \\cdot 8} + \\dfrac{1}{8 \\cdot 11} + \\cdots\\) up to 16 terms \\(=\\)",
+    "id": "m5_item13",
+    "text": "\\(\\dfrac{1}{2\\cdot5}+\\dfrac{1}{5\\cdot8}+\\dfrac{1}{8\\cdot11}+\\cdots\\) up to 16 terms \\(=\\)",
     "options": [
       "\\(\\dfrac{4}{25}\\)",
       "\\(\\dfrac{8}{25}\\)",
@@ -165,38 +165,38 @@
       "\\(\\dfrac{1}{25}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Each term: \\(\\dfrac{1}{(3r-1)(3r+2)} = \\dfrac{1}{3}\\left(\\dfrac{1}{3r-1} - \\dfrac{1}{3r+2}\\right)\\). The series telescopes: \\(\\dfrac{1}{3}\\left(\\dfrac{1}{2} - \\dfrac{1}{3(16)+2}\\right) = \\dfrac{1}{3}\\left(\\dfrac{1}{2} - \\dfrac{1}{50}\\right) = \\dfrac{1}{3} \\cdot \\dfrac{48}{100} = \\dfrac{1}{3} \\cdot \\dfrac{24}{50} = \\dfrac{8}{50} = \\dfrac{4}{25}\\).",
+    "explanation": "The general term is \\(\\dfrac{1}{(3k-1)(3k+2)}\\). Using partial fractions: \\(\\dfrac{1}{(3k-1)(3k+2)}=\\dfrac{1}{3}\\left(\\dfrac{1}{3k-1}-\\dfrac{1}{3k+2}\\right)\\). The series telescopes: \\(\\dfrac{1}{3}\\left(\\dfrac{1}{2}-\\dfrac{1}{50}\\right)=\\dfrac{1}{3}\\cdot\\dfrac{48}{100}=\\dfrac{48}{300}=\\dfrac{4}{25}\\). (The 16th term has \\(k=16\\): denominator \\((3\\cdot16-1)(3\\cdot16+2)=47\\cdot50\\), so last term in telescope is \\(\\dfrac{1}{50}\\).)",
     "name": "Telescoping Series Sum"
   },
   {
-    "id": "m4_item14",
-    "text": "The statement \"\\(n^5 - 5n^3 + 4n\\) is divisible by 120\" is true for",
+    "id": "m5_item14",
+    "text": "The statement \\(n^5-5n^3+4n\\) is divisible by \\(120\\) is true for",
     "options": [
-      "\\(n = 1\\) only",
-      "\\(n = 10\\) only",
-      "\\(n = 100\\) only",
+      "\\(n=1\\) only",
+      "\\(n=10\\) only",
+      "\\(n=100\\) only",
       "All positive integer values of \\(n\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Factorise: \\(n^5 - 5n^3 + 4n = n(n^4-5n^2+4) = n(n^2-1)(n^2-4) = (n-2)(n-1)n(n+1)(n+2)\\). This is the product of 5 consecutive integers centred at \\(n\\). The product of any 5 consecutive integers is divisible by \\(5! = 120\\). Therefore the expression is divisible by 120 for all positive integer \\(n\\).",
-    "name": "Divisibility by 120"
+    "explanation": "Factorise: \\(n^5-5n^3+4n = n(n^4-5n^2+4) = n(n^2-1)(n^2-4) = n(n-1)(n+1)(n-2)(n+2) = (n-2)(n-1)n(n+1)(n+2)\\). This is the product of 5 consecutive integers, which is always divisible by \\(5! = 120\\). So the statement holds for all positive integers \\(n\\).",
+    "name": "Divisibility by 5! = 120"
   },
   {
-    "id": "m4_item15",
-    "text": "If \\(2 \\cdot 4^{2k+1} + 3^{3k+1} = t\\) and \\(2 \\cdot 4^{2k+3} + 3^{3k+4} = (pt + q) \\cdot 3\\), where \\(k, t \\in \\mathbb{Z}^+\\), then \\((p, q) =\\)",
+    "id": "m5_item15",
+    "text": "If \\(2\\cdot4^{2k+1}+3^{3k+1}=11t\\) and \\(2\\cdot4^{2k+3}+3^{3k+4}=11(pt+3^q)\\), where \\(k,t\\in\\mathbb{Z}^+\\), then \\((p,q) =\\)",
     "options": [
-      "\\((16,\\ 3^{1+k})\\) ... actually \\((16,\\ 3^{k+1})\\)",
-      "\\((16,\\ 3^{k+4})\\)",
-      "\\((32,\\ 3^{k+1})\\)",
-      "\\((32,\\ 3^{k+4})\\)"
+      "\\((16,\\ 3k+1)\\)",
+      "\\((16,\\ 3k+4)\\)",
+      "\\((32,\\ 3k+1)\\)",
+      "\\((32,\\ 3k+4)\\)"
     ],
     "correctIndex": 0,
-    "explanation": "For \\(k=0\\): \\(2\\cdot4^1 + 3^1 = 8+3 = 11 = t\\). Then \\(2\\cdot4^3 + 3^4 = 128+81 = 209 = (11p+q)\\cdot3\\)... Wait: \\(209/3\\) is not integer. From source: \\(11(p)+q = 209/11 \\cdot 1 = 19\\), so \\(p+3^{k+1}q/\\text{something}\\). Using option (a) \\((p,q)=(16, 3^{k+1}) = (16,3)\\) at \\(k=0\\): check \\((16 \\times 11 + 3)\\times 3 = (176+3)\\times3 = 179\\times3 = 537 \\neq 209\\). Re-using source: \\((16t + 3^{k+1})\\) where \\(k=0, t=11\\): \\((16\\times11 + 3^1)\\times3 = (176+3)\\times3 = 537\\). Source says \\(p+3q = 19\\), \\(p = 16, q\\cdot3^0 = 3\\). Answer: \\((16, 3^{k+1})\\) at \\(k=0\\) gives \\(q=3\\). ✓",
-    "name": "Recurrence Relation in Induction"
+    "explanation": "By verification at \\(k=0\\): \\(2\\cdot4^1+3^1=8+3=11=11\\cdot1\\), so \\(t=1\\). Then \\(2\\cdot4^3+3^4=128+81=209=11(p\\cdot1+3^q)\\). So \\(11(p+3^q)=209 \\Rightarrow p+3^q=19\\). From option (a): \\(p=16\\) and \\(q=3(0)+1=1\\), giving \\(16+3=19\\) ✓. General step confirms \\((p,q)=(16,\\ 3k+1)\\).",
+    "name": "Inductive Step Verification"
   },
   {
-    "id": "m4_item16",
-    "text": "For any natural number \\(n\\), \\(15 \\times 2^{2n} + 5 \\times 2^{3n}\\) is divisible by",
+    "id": "m5_item16",
+    "text": "For any natural number \\(n\\), \\((15\\times5^{2n})+(2\\times2^{3n})\\) is divisible by",
     "options": [
       "\\(7\\)",
       "\\(11\\)",
@@ -204,12 +204,12 @@
       "\\(17\\)"
     ],
     "correctIndex": 3,
-    "explanation": "For \\(n=1\\): \\(15 \\times 4 + 5 \\times 8 = 60 + 40 = 100\\)... wait, \\(15\\times2^2 + 5\\times2^3 = 60+40=100\\), not divisible by 17. Re-reading: \\(15 \\times 2^{2n} + 5 \\times 2^{3n}\\). For \\(n=1\\): \\(15\\times4 + 5\\times8 = 60+40=100\\). Hmm. From source: \\(15\\times5^{2n} + 5\\times2^{3n}\\). For \\(n=1\\): \\(15\\times25 + 5\\times8 = 375+16=391 = 17\\times23\\). ✓ So the expression is \\(15\\times5^{2n} + 5\\times2^{3n}\\), divisible by \\(17\\).",
-    "name": "Divisibility for All Natural Numbers"
+    "explanation": "For \\(n=1\\): \\(15\\times25+2\\times8=375+16=391=17\\times23\\). Divisible by 17. For \\(n=2\\): \\(15\\times625+2\\times64=9375+128=9503=17\\times559\\). Divisible by 17. By induction: assume \\(15\\times5^{2k}+2\\times2^{3k}=17m\\). Then \\(15\\times5^{2(k+1)}+2\\times2^{3(k+1)}=25\\times15\\times5^{2k}+8\\times2\\times2^{3k}=25(17m-2\\times2^{3k})+8\\times2\\times2^{3k}=25\\times17m-50\\times2^{3k}+16\\times2^{3k}=17(25m)-34\\times2^{3k}=17(25m-2\\times2^{3k})\\). Divisible by 17.",
+    "name": "Divisibility by 17 via Induction"
   },
   {
-    "id": "m4_item17",
-    "text": "If \\(a_n = \\sqrt{7 + \\sqrt{7 + \\sqrt{7 + \\cdots}}}\\) (\\(n\\) times), then which of the following is true?",
+    "id": "m5_item17",
+    "text": "If \\(a_n = \\underbrace{\\sqrt{7+\\sqrt{7+\\sqrt{7+\\cdots}}}}_{n\\text{ times}}\\), then which of the following is true?",
     "options": [
       "\\(a_n > 7,\\ \\forall n \\geq 1\\)",
       "\\(a_n > 3,\\ \\forall n \\geq 1\\)",
@@ -217,12 +217,12 @@
       "\\(a_n < 3,\\ \\forall n \\geq 1\\)"
     ],
     "correctIndex": 2,
-    "explanation": "In the limiting case, \\(a_\\infty\\) satisfies \\(a_\\infty = \\sqrt{7 + a_\\infty}\\), giving \\(a_\\infty^2 - a_\\infty - 7 = 0\\), so \\(a_\\infty = \\dfrac{1+\\sqrt{29}}{2} \\approx \\dfrac{1+5.385}{2} \\approx 3.19\\). Since \\(a_n < a_\\infty < 4\\) for all \\(n \\geq 1\\), we have \\(a_n < 4\\) for all \\(n \\geq 1\\).",
-    "name": "Nested Radical Bound"
+    "explanation": "The limiting value \\(a_\\infty\\) satisfies \\(a_\\infty = \\sqrt{7+a_\\infty}\\), so \\(a_\\infty^2-a_\\infty-7=0 \\Rightarrow a_\\infty=\\dfrac{1+\\sqrt{29}}{2}\\approx\\dfrac{1+5.39}{2}\\approx3.19\\). Since the sequence is increasing and bounded above by \\(a_\\infty<4\\), we have \\(a_n < a_\\infty < 4\\) for all \\(n \\geq 1\\). Thus \\(a_n < 4,\\ \\forall n \\geq 1\\).",
+    "name": "Nested Radical Sequence Bound"
   },
   {
-    "id": "m4_item18",
-    "text": "If \\(\\left(1+\\dfrac{1}{3}\\right)\\left(1+\\dfrac{5}{4}\\right)\\left(1+\\dfrac{7}{9}\\right)\\cdots\\left(1+\\dfrac{2n+1}{n^2}\\right) = 121\\), then \\(n =\\)",
+    "id": "m5_item18",
+    "text": "If \\(\\left(1+\\dfrac{3}{1}\\right)\\left(1+\\dfrac{5}{4}\\right)\\left(1+\\dfrac{7}{9}\\right)\\cdots\\left(1+\\dfrac{2n+1}{n^2}\\right)=121\\), then \\(n =\\)",
     "options": [
       "\\(11\\)",
       "\\(10\\)",
@@ -230,12 +230,12 @@
       "\\(8\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Each factor: \\(1 + \\dfrac{2r+1}{r^2} = \\dfrac{r^2+2r+1}{r^2} = \\dfrac{(r+1)^2}{r^2}\\). The product telescopes: \\(\\displaystyle\\prod_{r=1}^{n}\\dfrac{(r+1)^2}{r^2} = \\dfrac{2^2}{1^2} \\cdot \\dfrac{3^2}{2^2} \\cdot \\dfrac{4^2}{3^2} \\cdots \\dfrac{(n+1)^2}{n^2} = (n+1)^2\\). Setting \\((n+1)^2 = 121\\) gives \\(n+1 = 11\\), so \\(n = 10\\).",
+    "explanation": "The general factor: \\(1+\\dfrac{2k+1}{k^2}=\\dfrac{k^2+2k+1}{k^2}=\\dfrac{(k+1)^2}{k^2}\\). So the product is \\(\\displaystyle\\prod_{k=1}^{n}\\dfrac{(k+1)^2}{k^2}=\\dfrac{(n+1)^2}{1}=(n+1)^2\\). Setting \\((n+1)^2=121 \\Rightarrow n+1=11 \\Rightarrow n=10\\).",
     "name": "Telescoping Product"
   },
   {
-    "id": "m4_item19",
-    "text": "If \\(2(4^n) + 3^{2n+1}\\) is divisible by \\(k\\) for all \\(n \\in \\mathbb{N}\\) and \\(k > 1\\), then the value of \\(k\\) is",
+    "id": "m5_item19",
+    "text": "If \\(2(4^{2n+1})+3^{3n+1}\\) is divisible by \\(k\\), \\(k>1\\) for all \\(n \\in \\mathbb{N}\\), then the value of \\(k\\) is",
     "options": [
       "\\(19\\)",
       "\\(17\\)",
@@ -243,7 +243,7 @@
       "\\(13\\)"
     ],
     "correctIndex": 2,
-    "explanation": "For \\(n=1\\): \\(2(4^1) + 3^3 = 8 + 27 = 35\\)... wait, \\(2\\cdot4^1 + 3^3 = 8+27=35\\). Not divisible by 11. Re-reading: \\(2(4^{n+1}) + 3^{2n+1}\\). For \\(n=1\\): \\(2\\times16 + 3^3 = 32+27 = 59\\). Not 11. From source: \\(8\\cdot4^n + 3\\cdot9^n\\). For \\(n=1\\): \\(32+27=59\\). Hmm. Source says \\(P(1)=128+81=209 = 11\\times19\\). So the expression is \\(2\\cdot4^{2n+1} + 3^{3n+1}\\). For \\(n=1\\): \\(2\\times4^3 + 3^4 = 128+81=209 = 11\\times19\\). For \\(n=2\\): \\(2\\times4^5+3^7 = 2048+2187=4235 = 11\\times385\\). Common factor is \\(k=11\\).",
-    "name": "Finding Common Divisor by Induction"
+    "explanation": "For \\(n=1\\): \\(2\\cdot4^3+3^4=128+81=209=11\\times19\\). For \\(n=2\\): \\(2\\cdot4^5+3^7=2048+2187=4235=11\\times385\\). Divisible by 11. By induction: assuming \\(P(n)=2\\cdot4^{2n+1}+3^{3n+1}=11m\\), then \\(P(n+1)=2\\cdot4^{2n+3}+3^{3n+4}=16\\cdot2\\cdot4^{2n+1}+27\\cdot3^{3n+1}=16(11m-3^{3n+1})+27\\cdot3^{3n+1}=176m+11\\cdot3^{3n+1}=11(16m+3^{3n+1})\\). Divisible by 11 for all \\(n\\).",
+    "name": "Divisibility by k via Induction"
   }
 ]

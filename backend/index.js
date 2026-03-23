@@ -11,6 +11,7 @@ const jwt = require('jsonwebtoken');
 const { OAuth2Client } = require('google-auth-library');
 const User = require('./models/User');
 const MockTestAttempt = require('./models/MockTestAttempt');
+const Ticket = require('./models/Ticket');
 const auth = require('./middleware/auth');
 const nodemailer = require('nodemailer');
 
@@ -47,7 +48,7 @@ const readJsonFile = (filePath) => {
 // ─── Auth ─────────────────────────────────────────────────────────────────────
 
 app.post('/api/auth/register', async (req, res) => {
-    const { name, email, password, referredBy } = req.body;
+    const { name, email, phone, password, referredBy } = req.body;
     try {
         let user = await User.findOne({ email });
         if (user) return res.status(400).json({ message: 'User already exists' });
@@ -58,7 +59,7 @@ app.post('/api/auth/register', async (req, res) => {
             if (refUser) validReferral = referredBy;
         }
 
-        user = new User({ name, email, password: await bcrypt.hash(password, 10), referredBy: validReferral });
+        user = new User({ name, email, phone, password: await bcrypt.hash(password, 10), referredBy: validReferral });
         await user.save();
 
         if (validReferral) {
@@ -271,7 +272,7 @@ app.get('/api/:chapterType/:subjectId', async (req, res, next) => {
             const decoded = jwt.verify(token, process.env.JWT_SECRET || 'YOUR_JWT_SECRET');
             const user = await User.findById(decoded.user.id);
             if (user) paid = user.isPaid;
-        } catch(e) {}
+        } catch (e) { }
     }
 
     if (chapterType.startsWith('chapters')) {
@@ -309,7 +310,7 @@ app.get('/api/mocktests', async (req, res) => {
             const decoded = jwt.verify(token, process.env.JWT_SECRET || 'YOUR_JWT_SECRET');
             const user = await User.findById(decoded.user.id);
             if (user) paid = user.isPaid;
-        } catch(e) {}
+        } catch (e) { }
     }
     const data = readJsonFile('3-mocktests-questions/data.json');
     if (data) {
@@ -338,14 +339,14 @@ app.post('/api/mocktest/submit', auth, async (req, res) => {
         const correctMap = {};
         allQuestions.forEach(q => { correctMap[q.id] = q.correctIndex; });
 
-        const flagSet    = new Set(flags || []);
+        const flagSet = new Set(flags || []);
         const answerDocs = (questions || []).map(q => ({
-            questionId:     q.questionId,
-            globalIdx:      q.globalIdx,
-            subject:        q.subject,
+            questionId: q.questionId,
+            globalIdx: q.globalIdx,
+            subject: q.subject,
             selectedOption: (answers[q.globalIdx] !== undefined && answers[q.globalIdx] !== null)
-                            ? answers[q.globalIdx] : null,
-            isFlagged:      flagSet.has(q.globalIdx),
+                ? answers[q.globalIdx] : null,
+            isFlagged: flagSet.has(q.globalIdx),
         }));
 
         let score = 0;
@@ -385,29 +386,29 @@ app.get('/api/mocktest/:testId/attempt', auth, async (req, res) => {
         if (!attempt) return res.status(404).json({ message: 'No attempt found for this test' });
 
         const allQuestions = readJsonFile(`3-mocktests-questions/${testId}/data.json`) || [];
-        const questionMap  = {};
+        const questionMap = {};
         allQuestions.forEach(q => { questionMap[q.id] = q; });
 
         const enrichedQuestions = attempt.questions.map(savedQ => {
             const full = questionMap[savedQ.questionId] || {};
-            const ans  = attempt.answers.find(a => a.globalIdx === savedQ.globalIdx);
+            const ans = attempt.answers.find(a => a.globalIdx === savedQ.globalIdx);
             return {
                 ...full,
-                globalIdx:      savedQ.globalIdx,
-                subject:        savedQ.subject,
+                globalIdx: savedQ.globalIdx,
+                subject: savedQ.subject,
                 selectedOption: (ans && ans.selectedOption !== undefined) ? ans.selectedOption : null,
-                isFlagged:      ans ? ans.isFlagged : false,
+                isFlagged: ans ? ans.isFlagged : false,
             };
         });
 
         res.json({
-            testId:           attempt.testId,
-            testName:         attempt.testName,
-            score:            attempt.score,
-            totalQuestions:   attempt.totalQuestions,
+            testId: attempt.testId,
+            testName: attempt.testName,
+            score: attempt.score,
+            totalQuestions: attempt.totalQuestions,
             timeTakenSeconds: attempt.timeTakenSeconds,
-            submittedAt:      attempt.submittedAt,
-            questions:        enrichedQuestions,
+            submittedAt: attempt.submittedAt,
+            questions: enrichedQuestions,
         });
     } catch (err) {
         console.error('Fetch attempt error:', err);
@@ -438,18 +439,18 @@ app.get('/api/mocktest/:testId', async (req, res) => {
             const decoded = jwt.verify(token, process.env.JWT_SECRET || 'YOUR_JWT_SECRET');
             const user = await User.findById(decoded.user.id);
             if (user) paid = user.isPaid;
-        } catch(e) {}
+        } catch (e) { }
     }
 
     const data = readJsonFile('3-mocktests-questions/data.json');
     if (data) {
         const testIdx = data.findIndex(t => t.id === testId);
-        const test    = data[testIdx];
+        const test = data[testIdx];
         if (test) {
             if (!paid && testIdx >= 2)
                 return res.status(403).json({ message: "Content locked. Please upgrade to premium." });
             const questions = readJsonFile(`3-mocktests-questions/${testId}/data.json`);
-            test.questions  = questions || [];
+            test.questions = questions || [];
             return res.json(test);
         }
     }
@@ -467,10 +468,10 @@ app.get('/api/creator/dashboard', auth, async (req, res) => {
             .select('name email isPaid createdAt');
 
         res.json({
-            referralCode:    user.referralCode,
-            totalReferrals:  referrals.length,
-            paidReferrals:   referrals.filter(u => u.isPaid).length,
-            earnings:        user.earnings || 0,
+            referralCode: user.referralCode,
+            totalReferrals: referrals.length,
+            paidReferrals: referrals.filter(u => u.isPaid).length,
+            earnings: user.earnings || 0,
             referrals,
         });
     } catch (err) {
@@ -486,29 +487,111 @@ app.get('/api/admin/dashboard', auth, async (req, res) => {
         const admin = await User.findById(req.user.id);
         if (!admin || !admin.isAdmin) return res.status(403).json({ message: "Access denied" });
 
-        const totalUsers   = await User.countDocuments();
-        const paidUsers    = await User.countDocuments({ isPaid: true });
-        const freeUsers    = totalUsers - paidUsers;
+        const totalUsers = await User.countDocuments();
+        const paidUsers = await User.countDocuments({ isPaid: true });
+        const freeUsers = totalUsers - paidUsers;
         const totalRevenue = paidUsers * 99;
 
-        const creators           = await User.find({ isCreator: true });
-        const totalCreators      = creators.length;
-        const totalCommission    = creators.reduce((sum, c) => sum + (c.earnings || 0), 0);
-        const totalReferrals     = creators.reduce((sum, c) => sum + (c.referralCount || 0), 0);
+        const creators = await User.find({ isCreator: true });
+        const totalCreators = creators.length;
+        const totalCommission = creators.reduce((sum, c) => sum + (c.earnings || 0), 0);
+        const totalReferrals = creators.reduce((sum, c) => sum + (c.referralCount || 0), 0);
         const totalPaidReferrals = creators.reduce((sum, c) => sum + (c.paidReferrals || 0), 0);
 
-        const users      = await User.find().select('name email isPaid referredBy createdAt');
+        const users = await User.find().select('name email isPaid referredBy createdAt');
         const creatorList = await User.find({ isCreator: true })
             .select('name email referralCode earnings referralCount paidReferrals');
 
         res.json({
-            usersStats:   { totalUsers, paidUsers, freeUsers, totalRevenue },
+            usersStats: { totalUsers, paidUsers, freeUsers, totalRevenue },
             creatorStats: { totalCreators, totalCommission, totalReferrals, totalPaidReferrals },
             users,
             creators: creatorList,
         });
     } catch (err) {
         console.error(err);
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
+// ─── Support System ──────────────────────────────────────────────────────────
+
+app.post('/api/support/ticket', auth, async (req, res) => {
+    try {
+        const { ticketId, subject, message } = req.body;
+        const user = await User.findById(req.user.id);
+
+        if (ticketId) {
+            // Reply to existing ticket
+            const ticket = await Ticket.findById(ticketId);
+            if (!ticket) return res.status(404).json({ message: "Ticket not found" });
+
+            // Only the owner can reply
+            if (ticket.userId.toString() !== req.user.id.toString()) return res.status(403).json({ message: "Unauthorized" });
+
+            ticket.messages.push({ sender: 'student', senderName: user.name, message });
+            ticket.status = 'Open'; // Re-open since student replied
+            ticket.updatedAt = Date.now();
+            await ticket.save();
+            return res.json(ticket);
+        } else {
+            // Create new ticket
+            const newTicket = new Ticket({
+                userId: req.user.id,
+                subject,
+                messages: [{ sender: 'student', senderName: user.name, message }]
+            });
+            await newTicket.save();
+            return res.json(newTicket);
+        }
+    } catch (err) {
+        console.error("Support error:", err);
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
+app.get('/api/support/user-tickets', auth, async (req, res) => {
+    try {
+        const tickets = await Ticket.find({ userId: req.user.id }).sort({ updatedAt: -1 });
+        res.json(tickets);
+    } catch (err) {
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
+app.get('/api/support/admin-tickets', auth, async (req, res) => {
+    try {
+        const admin = await User.findById(req.user.id);
+        if (!admin || !admin.isAdmin) return res.status(403).json({ message: "Access denied" });
+
+        const tickets = await Ticket.find().populate('userId', 'name email').sort({ updatedAt: -1 });
+        res.json(tickets);
+    } catch (err) {
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
+app.post('/api/support/admin-reply', auth, async (req, res) => {
+    try {
+        const admin = await User.findById(req.user.id);
+        if (!admin || !admin.isAdmin) return res.status(403).json({ message: "Access denied" });
+
+        const { ticketId, message, status } = req.body;
+        const ticket = await Ticket.findById(ticketId);
+        if (!ticket) return res.status(404).json({ message: "Ticket not found" });
+
+        if (message) {
+            ticket.messages.push({ sender: 'admin', senderName: admin.name, message });
+            ticket.status = status || 'Responded';
+        } else if (status) {
+            ticket.status = status;
+        }
+
+        ticket.updatedAt = Date.now();
+        await ticket.save();
+        res.json(ticket);
+    } catch (err) {
+        console.error("Admin reply error:", err);
         res.status(500).json({ message: "Server error" });
     }
 });

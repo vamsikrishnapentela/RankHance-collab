@@ -1,150 +1,108 @@
 [
   {
     "id": "c8_item1",
-    "text": "The solubility product of Ni(OH)₂ at 298 K is \\(2 \\times 10^{-15}\\) mol³ dm⁻⁹. The pH of its aqueous saturated solution is:",
-    "options": [
-      "5",
-      "7.5",
-      "9",
-      "13"
-    ],
+    "text": "The solubility product of \\(\\text{Ni(OH)}_2\\) at 298 K is \\(2 \\times 10^{-15}\\) mol\\(^3\\) dm\\(^{-9}\\). The pH of its aqueous saturated solution is",
+    "options": ["5", "7.5", "9", "13"],
     "correctIndex": 2,
-    "explanation": "Dissolution equilibrium:\n$$\\text{Ni(OH)}_2 \\rightleftharpoons \\text{Ni}^{2+} + 2\\text{OH}^-$$\n$$K_{sp} = [\\text{Ni}^{2+}][\\text{OH}^-]^2 = S \\cdot (2S)^2 = 4S^3$$\n\n$$4S^3 = 2 \\times 10^{-15} \\Rightarrow S^3 = 5 \\times 10^{-16} \\Rightarrow S \\approx 8 \\times 10^{-6} \\text{ mol/L}$$\n\n$$[\\text{OH}^-] = 2S = 2 \\times 8 \\times 10^{-6} = 1.6 \\times 10^{-5} \\text{ mol/L}$$\n\n$$\\text{pOH} = -\\log(1.6 \\times 10^{-5}) \\approx 5$$\n\n$$\\text{pH} = 14 - \\text{pOH} = 14 - 5 = \\mathbf{9}$$",
-    "name": "pH of Saturated Ni(OH)₂ Solution from Ksp"
+    "explanation": "For the dissolution equilibrium: \\(\\text{Ni(OH)}_2 \\rightleftharpoons \\text{Ni}^{2+} + 2\\text{OH}^-\\). If solubility \\(= S\\) mol/L, then \\([\\text{Ni}^{2+}] = S\\) and \\([\\text{OH}^-] = 2S\\).\n\n\\[K_{sp} = [\\text{Ni}^{2+}][\\text{OH}^-]^2 = S \\cdot (2S)^2 = 4S^3 = 2 \\times 10^{-15}\\]\n\n\\[S = \\left(\\frac{2 \\times 10^{-15}}{4}\\right)^{1/3} \\approx 8 \\times 10^{-6} \\text{ mol/L}\\]\n\n\\[[\\text{OH}^-] = 2S = 1.6 \\times 10^{-5} \\text{ mol/L}\\]\n\n\\[\\text{pOH} = -\\log(1.6 \\times 10^{-5}) \\approx 5\\]\n\n\\[\\text{pH} = 14 - 5 = 9\\]",
+    "name": "Questions Item 1"
   },
   {
     "id": "c8_item2",
-    "text": "Acidity of BF₃ can be explained on the basis of which of the following concepts?",
-    "options": [
-      "Arrhenius concept",
-      "Brønsted-Lowry concept",
-      "Lewis concept",
-      "Brønsted-Lowry as well as Lewis concept"
-    ],
+    "text": "Acidity of \\(\\text{BF}_3\\) can be explained on the basis of which of the following concepts?",
+    "options": ["Arrhenius concept", "Bronsted-Lowry concept", "Lewis concept", "Bronsted-Lowry as well as Lewis concept"],
     "correctIndex": 2,
-    "explanation": "**BF₃ is a Lewis acid.**\n\nIn BF₃, boron is **sp² hybridised** and has only 6 electrons in its valence shell — it is **electron deficient** (lacks an octet). BF₃ has an empty p-orbital on boron that can accept a lone pair of electrons from a Lewis base.\n\nThis is why BF₃ acts as an acid only under the **Lewis concept** (electron pair acceptor), not under:\n- **Arrhenius concept**: requires H⁺ release in water — BF₃ does not release H⁺.\n- **Brønsted-Lowry concept**: requires proton donation — BF₃ has no proton to donate.\n\nBF₃ + :NH₃ → F₃B←NH₃ (Lewis acid-base adduct)",
-    "name": "Lewis Acid Nature of BF₃"
+    "explanation": "In \\(\\text{BF}_3\\), boron is \\(sp^2\\) hybridised and has only 6 electrons in its valence shell — it is electron deficient. It can **accept a lone pair** of electrons from a Lewis base, making it a Lewis acid. Since it neither donates nor accepts a proton, it cannot be classified under the Arrhenius or Bronsted-Lowry concept. Hence, only the **Lewis concept** explains the acidity of \\(\\text{BF}_3\\).",
+    "name": "Questions Item 2"
   },
   {
     "id": "c8_item3",
     "text": "Which of the following will have the highest pH?",
-    "options": [
-      "Saturated solution of NaOH",
-      "1 M HCl solution",
-      "Human saliva",
-      "Lemon juice"
-    ],
+    "options": ["Saturated solution of NaOH", "1 M HCl solution", "Human saliva", "Lemon juice"],
     "correctIndex": 0,
-    "explanation": "pH is a measure of acidity/basicity. Higher pH = more basic.\n\n- **Saturated NaOH solution**: NaOH is a strong base → pH ≈ **13–14** (highest)\n- **1 M HCl**: strong acid → pH = **0**\n- **Human saliva**: mildly acidic → pH ≈ **6.4**\n- **Lemon juice**: acidic due to citric acid → pH ≈ **2.2**\n\nThe **saturated NaOH solution** has the highest pH among the given options.",
-    "name": "Solution with Highest pH"
+    "explanation": "pH increases with increasing basicity. Comparing the four options:\n\n- Saturated NaOH solution: \\(\\text{pH} \\approx 15\\) (strongly basic)\n- 1 M HCl: \\(\\text{pH} \\approx 0\\) (strongly acidic)\n- Human saliva: \\(\\text{pH} = 6.4\\) (slightly acidic)\n- Lemon juice: \\(\\text{pH} \\approx 2.2\\) (acidic)\n\nTherefore, the **saturated NaOH solution** has the highest pH.",
+    "name": "Questions Item 3"
   },
   {
     "id": "c8_item4",
-    "text": "When equal volumes of Ca²⁺ and F⁻ solutions are mixed, in which of the following combinations will precipitation **not** occur?\n(\\(K_{sp}\\) of CaF₂ \\(= 1.6 \\times 10^{-10}\\))",
+    "text": "When equal volumes of \\(\\text{Ca}^{2+}\\) and \\(\\text{F}^-\\) solutions are mixed, in which of the following will precipitation NOT occur? \\((K_{sp}\\text{ of }\\text{CaF}_2 = 1.6 \\times 10^{-10})\\)",
     "options": [
-      "\\(10^{-2}\\) M Ca²⁺ + \\(10^{-5}\\) M F⁻",
-      "\\(10^{-3}\\) M Ca²⁺ + \\(10^{-3}\\) M F⁻",
-      "\\(10^{-4}\\) M Ca²⁺ + \\(10^{-2}\\) M F⁻",
-      "\\(10^{-2}\\) M Ca²⁺ + \\(10^{-3}\\) M F⁻"
+      "\\(10^{-2}\\) M \\(\\text{Ca}^{2+}\\) + \\(10^{-5}\\) M \\(\\text{F}^-\\)",
+      "\\(10^{-3}\\) M \\(\\text{Ca}^{2+}\\) + \\(10^{-3}\\) M \\(\\text{F}^-\\)",
+      "\\(10^{-4}\\) M \\(\\text{Ca}^{2+}\\) + \\(10^{-2}\\) M \\(\\text{F}^-\\)",
+      "\\(10^{-2}\\) M \\(\\text{Ca}^{2+}\\) + \\(10^{-3}\\) M \\(\\text{F}^-\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Precipitation occurs when the **ionic product (IP) > K_{sp}**.\n\nWhen equal volumes are mixed, concentrations are halved:\n\n**Option (a):** After mixing:\n$$[\\text{Ca}^{2+}] = \\frac{10^{-2}}{2} = 5 \\times 10^{-3}, \\quad [\\text{F}^-] = \\frac{10^{-5}}{2} = 5 \\times 10^{-6}$$\n$$IP = [\\text{Ca}^{2+}][\\text{F}^-]^2 = 5\\times10^{-3} \\times (5\\times10^{-6})^2 = 5\\times10^{-3} \\times 25\\times10^{-12} = 1.25\\times10^{-13}$$\n$$IP = 1.25 \\times 10^{-13} < K_{sp} = 1.6 \\times 10^{-10}$$\n\nSince IP < K_{sp}, **no precipitation** occurs. ✓\n\n(For the other options, IP > K_{sp}, so precipitation does occur.)",
-    "name": "Conditions for Non-Precipitation of CaF₂"
+    "explanation": "Precipitation occurs only when the ionic product \\((K_{ip})\\) exceeds \\(K_{sp}\\). For option (a):\n\n\\[K_{ip} = [\\text{Ca}^{2+}][\\text{F}^-]^2 = (10^{-2}) \\times (10^{-5})^2 = 10^{-12}\\]\n\nSince \\(10^{-12} < 1.6 \\times 10^{-10} = K_{sp}\\), the ionic product is less than the solubility product, so **precipitation does not occur** in this mixture.",
+    "name": "Questions Item 4"
   },
   {
     "id": "c8_item5",
-    "text": "The solubility of A₂X₃ is y mol/L. Its solubility product in M⁵ is:",
-    "options": [
-      "\\(6y^4\\)",
-      "\\(64y^4\\)",
-      "\\(36y^5\\)",
-      "\\(108y^5\\)"
-    ],
+    "text": "The solubility of \\(\\text{A}_2\\text{X}_3\\) is \\(y\\) M. Its solubility product is ______ \\(\\text{M}^5\\).",
+    "options": ["\\(6y^4\\)", "\\(64y^4\\)", "\\(36y^5\\)", "\\(108y^5\\)"],
     "correctIndex": 3,
-    "explanation": "Dissolution of A₂X₃:\n$$\\text{A}_2\\text{X}_3 \\rightleftharpoons 2\\text{A}^{3+} + 3\\text{X}^{2-}$$\n\nIf solubility = y mol/L:\n$$[\\text{A}^{3+}] = 2y, \\quad [\\text{X}^{2-}] = 3y$$\n\n$$K_{sp} = [\\text{A}^{3+}]^2[\\text{X}^{2-}]^3 = (2y)^2(3y)^3$$\n$$= 4y^2 \\times 27y^3 = \\mathbf{108y^5}$$",
-    "name": "Solubility Product of A₂X₃ from Solubility"
+    "explanation": "For the dissolution: \\(\\text{A}_2\\text{X}_3 \\rightleftharpoons 2\\text{A}^{3+} + 3\\text{X}^{2-}\\)\n\nIf solubility \\(= y\\) M, then \\([\\text{A}^{3+}] = 2y\\) and \\([\\text{X}^{2-}] = 3y\\).\n\n\\[K_{sp} = [\\text{A}^{3+}]^2[\\text{X}^{2-}]^3 = (2y)^2 \\cdot (3y)^3 = 4y^2 \\times 27y^3 = 108y^5\\]",
+    "name": "Questions Item 5"
   },
   {
     "id": "c8_item6",
-    "text": "The strongest conjugate base among the following is:",
-    "options": [
-      "Cl⁻",
-      "F⁻",
-      "Br⁻",
-      "I⁻"
-    ],
+    "text": "The strongest conjugate base among the following is",
+    "options": ["\\(\\text{Cl}^-\\)", "\\(\\text{F}^-\\)", "\\(\\text{Br}^-\\)", "\\(\\text{I}^-\\)"],
     "correctIndex": 1,
-    "explanation": "The relationship between acid strength and conjugate base strength:\n$$\\text{Weaker acid} \\rightarrow \\text{Stronger conjugate base}$$\n\nAcid strength of hydrohalic acids:\n$$\\text{HF} < \\text{HCl} < \\text{HBr} < \\text{HI}$$\n(HF is the weakest halide acid)\n\nTherefore, conjugate base strength:\n$$\\text{F}^- > \\text{Cl}^- > \\text{Br}^- > \\text{I}^-$$\n\n**F⁻** is the strongest conjugate base because HF is the weakest of the hydrohalic acids (it is a weak acid, while HCl, HBr, and HI are all strong acids).",
-    "name": "Strongest Conjugate Base among Halide Ions"
+    "explanation": "A **weaker acid** produces a **stronger conjugate base**. The acid strength order of the halogen acids is:\n\n\\[\\text{HI} > \\text{HBr} > \\text{HCl} > \\text{HF}\\]\n\nSince \\(\\text{HF}\\) is the weakest acid among these, it produces the strongest conjugate base. Therefore, \\(\\text{F}^-\\) is the strongest conjugate base.",
+    "name": "Questions Item 6"
   },
   {
     "id": "c8_item7",
-    "text": "For a reversible reaction, if the concentration of the reactants is reduced to half, the equilibrium constant will be:",
-    "options": [
-      "Doubled",
-      "Halved",
-      "Reduced to one-fourth",
-      "Remains the same"
-    ],
+    "text": "For a reversible reaction, if the concentration of the reactants is reduced to half, the equilibrium constant will be ________.",
+    "options": ["doubled", "halved", "reduced to one-fourth", "remains same"],
     "correctIndex": 3,
-    "explanation": "The **equilibrium constant** (K) is a **thermodynamic quantity** that depends only on **temperature** — it is independent of the initial concentrations of reactants or products.\n\nFor a reaction at equilibrium:\n$$K = \\frac{[\\text{products}]}{[\\text{reactants}]}$$\n\nIf the concentration of reactants is changed, the system shifts (Le Chatelier's principle) until a new equilibrium is established **with the same value of K** at the same temperature.\n\nTherefore, reducing reactant concentration to half does **not** change K — it **remains the same**.",
-    "name": "Effect of Concentration Change on Equilibrium Constant"
+    "explanation": "The equilibrium constant \\(K_{eq}\\) is a function of **temperature only**. It is completely independent of the initial concentrations of reactants or products. Changing concentrations will shift the equilibrium position (Q vs K), but the **value of \\(K_{eq}\\) itself does not change**. Therefore, even if reactant concentration is halved, \\(K_{eq}\\) remains the same.",
+    "name": "Questions Item 7"
   },
   {
     "id": "c8_item8",
-    "text": "The pK_a of benzoic acid and pK_b of ammonium hydroxide are 4.25 and 4.75 respectively. The pH of 0.1 M ammonium benzoate solution will be:",
-    "options": [
-      "7.10",
-      "7.50",
-      "6.75",
-      "6.50"
-    ],
+    "text": "The \\(pK_a\\) of benzoic acid and \\(pK_b\\) of ammonium hydroxide are 4.25 and 4.75 respectively. The pH of 0.1 M solution of ammonium benzoate will be",
+    "options": ["7.10", "7.50", "6.75", "6.50"],
     "correctIndex": 2,
-    "explanation": "Ammonium benzoate (C₆H₅COONH₄) is the salt of:\n- A **weak acid** (benzoic acid, pK_a = 4.25)\n- A **weak base** (ammonium hydroxide, pK_b = 4.75)\n\nFor the salt of a weak acid and a weak base:\n$$\\text{pH} = 7 + \\frac{1}{2}(pK_a - pK_b)$$\n\n$$= 7 + \\frac{1}{2}(4.25 - 4.75) = 7 + \\frac{1}{2}(-0.50) = 7 - 0.25 = \\mathbf{6.75}$$",
-    "name": "pH of Ammonium Benzoate Solution"
+    "explanation": "Ammonium benzoate is a salt of a **weak acid** (benzoic acid, \\(pK_a = 4.25\\)) and a **weak base** (ammonium hydroxide, \\(pK_b = 4.75\\)). For such a salt, the pH is given by:\n\n\\[\\text{pH} = 7 + \\frac{1}{2}(pK_a - pK_b)\\]\n\n\\[= 7 + \\frac{1}{2}(4.25 - 4.75) = 7 + \\frac{(-0.50)}{2} = 7 - 0.25 = 6.75\\]",
+    "name": "Questions Item 8"
   },
   {
     "id": "c8_item9",
-    "text": "The pH of \\(10^{-8}\\) M HCl solution is:",
-    "options": [
-      "8",
-      "−8",
-      "Between 7 and 8",
-      "Between 6 and 7"
-    ],
-    "correctIndex": 3,
-    "explanation": "HCl is a strong acid, so its solution should be acidic (pH < 7). However, \\(10^{-8}\\) M is an extremely dilute concentration.\n\nAt this dilution, the contribution of **H⁺ from water autoionisation** (\\(10^{-7}\\) M) cannot be ignored.\n\nTotal \\([H^+] = 10^{-8} + 10^{-7} = 10^{-8} + 10 \\times 10^{-8} = 11 \\times 10^{-8} = 1.1 \\times 10^{-7}\\) M\n\n$$\\text{pH} = -\\log(1.1 \\times 10^{-7}) \\approx 7 - \\log(1.1) \\approx 7 - 0.04 \\approx 6.96$$\n\nSo pH ≈ 6.8–6.96, which is **between 6 and 7** (acidic, but very close to 7). ✓",
-    "name": "pH of Very Dilute HCl Solution"
+    "text": "For the reaction \\(\\text{NO}_2 + \\text{CO} \\rightleftharpoons \\text{NO} + \\text{CO}_2\\), one mole of \\(\\text{NO}_2\\) and 2 moles of \\(\\text{CO}\\) were kept in a 1 L vessel. If at equilibrium 25% of the initial amount of \\(\\text{CO}\\) is consumed, the equilibrium constant \\(K_p\\) is",
+    "options": ["\\(\\dfrac{1}{2}\\)", "\\(\\dfrac{1}{3}\\)", "1", "\\(\\dfrac{1}{4}\\)"],
+    "correctIndex": 1,
+    "explanation": "Assuming volume = 1 L. Setting up the ICE table:\n\n|  | \\(\\text{NO}_2\\) | \\(\\text{CO}\\) | \\(\\text{NO}\\) | \\(\\text{CO}_2\\) |\n|---|---|---|---|---|\n| Initial | 1 | 2 | 0 | 0 |\n| Change | −0.5 | −0.5 | +0.5 | +0.5 |\n| Equilibrium | 0.5 | 1.5 | 0.5 | 0.5 |\n\n(25% of 2 mol CO = 0.5 mol consumed)\n\n\\[K_C = \\frac{[\\text{NO}][\\text{CO}_2]}{[\\text{NO}_2][\\text{CO}]} = \\frac{0.5 \\times 0.5}{0.5 \\times 1.5} = \\frac{0.25}{0.75} = \\frac{1}{3}\\]\n\nSince \\(\\Delta n_g = (1+1)-(1+1) = 0\\), \\(K_p = K_C(RT)^0 = K_C = \\dfrac{1}{3}\\)",
+    "name": "Questions Item 9"
   },
   {
     "id": "c8_item10",
-    "text": "Which acid among the following has the highest pK_a value?",
-    "options": [
-      "HCl",
-      "HF",
-      "HI",
-      "HBr"
-    ],
-    "correctIndex": 1,
-    "explanation": "pK_a = −log(K_a). A **higher pK_a** means a **weaker acid** (smaller K_a).\n\nApproximate pK_a values:\n- **HF**: pK_a ≈ +3.1 (weak acid — highest pK_a) ✓\n- **HCl**: pK_a ≈ −6.0 (strong acid)\n- **HBr**: pK_a ≈ −9.0 (strong acid)\n- **HI**: pK_a ≈ −9.5 (strongest halide acid)\n\n**HF** is the only weak acid among the hydrogen halides because the H–F bond is very strong (high bond dissociation energy) and fluorine's small size makes the ion very reactive in aqueous solution.\n\nTherefore, **HF** has the highest pK_a.",
-    "name": "Acid with Highest pKa Value"
+    "text": "The pH of \\(10^{-8}\\) M HCl solution is",
+    "options": ["8", "−8", "Between 7 and 8", "Between 6 and 7"],
+    "correctIndex": 3,
+    "explanation": "HCl is a strong acid, so its solution is always **acidic (pH < 7)**. At \\(10^{-8}\\) M, the concentration is extremely low, so the \\(\\text{H}^+\\) contribution from water (\\(\\approx 10^{-7}\\) M) cannot be ignored. The total \\([\\text{H}^+] \\approx 1.005 \\times 10^{-7}\\) M, giving \\(\\text{pH} \\approx 6.98\\). This value lies **between 6 and 7**, confirming the solution remains acidic.",
+    "name": "Questions Item 10"
   },
   {
     "id": "c8_item11",
-    "text": "The ionic product of water with increase in temperature:",
-    "options": [
-      "Remains constant",
-      "Increases",
-      "Decreases",
-      "May increase or decrease"
-    ],
+    "text": "Which acid among the following has the highest \\(pK_a\\) value?",
+    "options": ["HCl", "HF", "HI", "HBr"],
     "correctIndex": 1,
-    "explanation": "The autoionisation of water:\n$$\\text{H}_2\\text{O} \\rightleftharpoons \\text{H}^+ + \\text{OH}^-$$\n\nThis is an **endothermic** process (\\(\\Delta H > 0\\)).\n\nBy **Le Chatelier's principle**, increasing temperature shifts the equilibrium to the right (forward direction), producing more H⁺ and OH⁻ ions.\n\nThis **increases** the ionic product of water (K_w):\n- At 25°C: \\(K_w = 1.0 \\times 10^{-14}\\)\n- At 60°C: \\(K_w \\approx 9.6 \\times 10^{-14}\\) (much larger)\n\nNote: Even though K_w increases with temperature, pure water remains **neutral** (not acidic) because [H⁺] = [OH⁻] still.",
-    "name": "Effect of Temperature on Ionic Product of Water"
+    "explanation": "\\(pK_a = -\\log K_a\\). A **higher \\(pK_a\\)** means a **weaker acid**. The \\(pK_a\\) values are:\n\n| Acid | \\(pK_a\\) |\n|---|---|\n| HF | 3.1 |\n| HCl | −6.0 |\n| HBr | −9.0 |\n| HI | −9.5 |\n\nSince \\(\\text{HF}\\) has the highest \\(pK_a\\) value (3.1), it is the **weakest acid** in this group.",
+    "name": "Questions Item 11"
   },
   {
     "id": "c8_item12",
-    "text": "The solubility of AgBr (\\(K_{sp} = 5.0 \\times 10^{-13}\\)) at 298 K in 0.1 M NaBr solution would be:",
+    "text": "The ionic product of water ________ with increase in temperature.",
+    "options": ["remains constant", "increases", "decreases", "may increase or decrease"],
+    "correctIndex": 1,
+    "explanation": "The auto-ionisation of water is an **endothermic** process:\n\n\\[\\text{H}_2\\text{O} \\rightleftharpoons \\text{H}^+ + \\text{OH}^-\\]\n\nBy Le Chatelier's Principle, increasing temperature shifts the equilibrium to the right, producing more \\(\\text{H}^+\\) and \\(\\text{OH}^-\\) ions. Therefore:\n\n\\[K_w = [\\text{H}^+][\\text{OH}^-]\\]\n\n**increases** with increase in temperature.",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "c8_item13",
+    "text": "The solubility of AgBr with solubility product \\(5.0 \\times 10^{-13}\\) at 298 K in 0.1 M NaBr solution would be",
     "options": [
       "\\(7 \\times 10^{-6}\\) M",
       "\\(5 \\times 10^{-12}\\) M",
@@ -152,38 +110,49 @@
       "\\(5 \\times 10^{-6}\\) M"
     ],
     "correctIndex": 1,
-    "explanation": "$$\\text{AgBr} \\rightleftharpoons \\text{Ag}^+ + \\text{Br}^-$$\n\nIn 0.1 M NaBr, the Br⁻ concentration from NaBr is already 0.1 M (common ion effect).\n\nLet solubility of AgBr = S mol/L:\n$$K_{sp} = [\\text{Ag}^+][\\text{Br}^-] = S \\times (0.1 + S) \\approx S \\times 0.1$$\n(since S << 0.1)\n\n$$S = \\frac{K_{sp}}{0.1} = \\frac{5.0 \\times 10^{-13}}{0.1} = 5.0 \\times 10^{-12} \\text{ M}$$\n\nThe common ion (Br⁻) suppresses the solubility drastically from \\(\\sqrt{5 \\times 10^{-13}} \\approx 7 \\times 10^{-7}\\) M (in pure water) to \\(5 \\times 10^{-12}\\) M.",
-    "name": "Solubility of AgBr in NaBr Solution (Common Ion Effect)"
-  },
-  {
-    "id": "c8_item13",
-    "text": "Calculate the molar ratio of weak acid HA (\\(K_a = 10^{-6}\\)) and its salt with strong base, so that the pH of the buffer solution is 6.",
-    "options": [
-      "10",
-      "1",
-      "6",
-      "0.1"
-    ],
-    "correctIndex": 3,
-    "explanation": "Using the Henderson-Hasselbalch equation for an acidic buffer:\n$$\\text{pH} = pK_a + \\log\\frac{[\\text{Salt}]}{[\\text{Acid}]}$$\n\nGiven: pH = 6, K_a = 10⁻⁶ → pK_a = 6\n\n$$6 = 6 + \\log\\frac{[\\text{Salt}]}{[\\text{Acid}]}$$\n\n$$\\log\\frac{[\\text{Salt}]}{[\\text{Acid}]} = 0 \\Rightarrow \\frac{[\\text{Salt}]}{[\\text{Acid}]} = 1$$\n\nTherefore:\n$$\\frac{[\\text{Acid}]}{[\\text{Salt}]} = 1$$\n\nWait — the question asks for the **molar ratio of acid to salt** = \\(\\dfrac{[\\text{Acid}]}{[\\text{Salt}]} = \\dfrac{1}{1}\\)... but the answer given is 0.1.\n\nRe-reading: the answer 0.1 corresponds to \\(\\dfrac{[\\text{Acid}]}{[\\text{Salt}]} = 0.1\\) means salt/acid = 10, giving pH = 6 + log(10) = 7 ≠ 6.\n\nFrom the source solution: \\(\\dfrac{[\\text{Acid}]}{[\\text{Salt}]} = 10^{-1} = 0.1\\), meaning the ratio of **acid to salt** is 0.1 (i.e., salt is 10× the acid). This is the answer as given.",
-    "name": "Acid-to-Salt Ratio for Buffer at pH = 6"
+    "explanation": "In 0.1 M NaBr, \\([\\text{Br}^-] = 0.1\\) M due to the **common ion effect**.\n\nFor \\(\\text{AgBr} \\rightleftharpoons \\text{Ag}^+ + \\text{Br}^-\\):\n\n\\[K_{sp} = [\\text{Ag}^+][\\text{Br}^-] = 5.0 \\times 10^{-13}\\]\n\n\\[[\\text{Ag}^+] = \\frac{K_{sp}}{[\\text{Br}^-]} = \\frac{5.0 \\times 10^{-13}}{0.1} = 5 \\times 10^{-12} \\text{ M}\\]\n\nThe solubility of AgBr in 0.1 M NaBr is \\(5 \\times 10^{-12}\\) M — much lower than in pure water because of the common ion effect.",
+    "name": "Questions Item 13"
   },
   {
     "id": "c8_item14",
-    "text": "The supply of oxygen to tissues by blood can be explained by:",
+    "text": "For the reaction \\(2\\text{NH}_3(s) + \\text{CO}_2(g) \\rightleftharpoons \\text{NH}_2\\text{CONH}_2(aq) + \\text{H}_2\\text{O}(l)\\), find the value of equilibrium constant at 295 K. Given: standard Gibbs energy change \\(\\Delta G^\\circ = -13.9\\) kJ mol\\(^{-1}\\).",
     "options": [
-      "Le Chatelier's principle",
-      "Boyle's law",
-      "Charles' law",
-      "Dalton's law"
+      "\\(2.88 \\times 10^2\\)",
+      "\\(2.58 \\times 10^2\\)",
+      "\\(2.40 \\times 10^2\\)",
+      "\\(2.65 \\times 10^2\\)"
     ],
     "correctIndex": 0,
-    "explanation": "The transport of O₂ by haemoglobin (Hb) in blood is an equilibrium process:\n$$\\text{Hb} + \\text{O}_2 \\rightleftharpoons \\text{HbO}_2$$\n\n**Le Chatelier's principle** explains how the equilibrium shifts depending on oxygen concentration:\n- In the **lungs** (high pO₂): equilibrium shifts right → O₂ binds to Hb (oxyhaemoglobin forms)\n- In **tissues** (low pO₂): equilibrium shifts left → O₂ is released to tissues\n\nThis is also related to the Bohr effect (CO₂ and pH influence oxygen affinity), but the overall principle governing the shift in equilibrium with changing partial pressure is **Le Chatelier's principle**.",
-    "name": "Oxygen Transport in Blood – Le Chatelier's Principle"
+    "explanation": "Using the Gibbs free energy relation:\n\n\\[\\Delta G^\\circ = -2.303\\,RT\\log K_C\\]\n\n\\[-13.9 \\times 10^3 = -2.303 \\times 8.314 \\times 295 \\times \\log K_C\\]\n\n\\[\\log K_C = \\frac{13900}{2.303 \\times 8.314 \\times 295} = \\frac{13900}{5641.5} \\approx 2.46\\]\n\n\\[K_C = 10^{2.46} \\approx 288.4 \\approx 2.88 \\times 10^2\\]",
+    "name": "Questions Item 14"
   },
   {
     "id": "c8_item15",
-    "text": "Calculate the equilibrium constant of the reaction:\n$$\\text{Cu}(s) + 2\\text{Ag}^+(aq) \\rightarrow \\text{Cu}^{2+}(aq) + 2\\text{Ag}(s)$$\nGiven that \\(E°_{\\text{cell}} = 0.46\\) V.",
+    "text": "Calculate the molar ratio \\(\\dfrac{[\\text{Acid}]}{[\\text{Salt}]}\\) of a weak acid HA \\((K_a = 10^{-6})\\) and its salt with a strong base, so that the pH of the buffer solution is 6.",
+    "options": ["10", "1", "6", "0.1"],
+    "correctIndex": 3,
+    "explanation": "Using the Henderson-Hasselbalch equation:\n\n\\[\\text{pH} = pK_a + \\log\\frac{[\\text{Salt}]}{[\\text{Acid}]}\\]\n\nHere, \\(pK_a = -\\log(10^{-6}) = 6\\) and \\(\\text{pH} = 6\\):\n\n\\[6 = 6 + \\log\\frac{[\\text{Salt}]}{[\\text{Acid}]}\\]\n\n\\[\\log\\frac{[\\text{Salt}]}{[\\text{Acid}]} = 0 \\implies \\frac{[\\text{Salt}]}{[\\text{Acid}]} = 1\\]\n\n\\[\\therefore \\frac{[\\text{Acid}]}{[\\text{Salt}]} = 10^{-1} = 0.1\\]",
+    "name": "Questions Item 15"
+  },
+  {
+    "id": "c8_item16",
+    "text": "For a reversible reaction, if the concentration of reactants is increased, the equilibrium constant of the reaction ________.",
+    "options": ["increases", "remains constant", "decreases", "depends on amount of reactant"],
+    "correctIndex": 1,
+    "explanation": "The equilibrium constant is a function of **temperature only**. It is independent of changes in concentration of reactants or products. When reactant concentration is increased, the reaction shifts in the forward direction to re-establish equilibrium, but the **numerical value of \\(K_{eq}\\) does not change**. Hence the equilibrium constant remains constant.",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "c8_item17",
+    "text": "The supply of oxygen to tissues by blood can be explained by",
+    "options": ["Le-Chatelier's principle", "Boyle's law", "Charles' law", "Dalton's law"],
+    "correctIndex": 0,
+    "explanation": "The transport of oxygen by haemoglobin involves the equilibrium:\n\n\\[\\text{Hb} + \\text{O}_2 \\rightleftharpoons \\text{HbO}_2\\]\n\nAt high \\(\\text{O}_2\\) partial pressure (lungs), equilibrium shifts right (oxygen is loaded). At low \\(\\text{O}_2\\) pressure (body tissues), it shifts left (oxygen is released). This shift of equilibrium in response to changing conditions is explained by **Le Chatelier's Principle**.",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "c8_item18",
+    "text": "Calculate the equilibrium constant of the reaction \\(\\text{Cu}(s) + 2\\text{Ag}^+(aq) \\rightarrow \\text{Cu}^{2+}(aq) + 2\\text{Ag}(s)\\), given \\(E^\\circ_{\\text{cell}} = 0.46\\) V.",
     "options": [
       "\\(4.2 \\times 10^8\\)",
       "\\(6.23 \\times 10^9\\)",
@@ -191,25 +160,20 @@
       "\\(4.54 \\times 10^{20}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Using the relationship between standard Gibbs energy and equilibrium constant:\n$$\\Delta G^\\circ = -nFE^\\circ_{\\text{cell}} = -RT\\ln K$$\n\n$$\\log K = \\frac{nFE^\\circ}{2.303RT} = \\frac{n \\times E^\\circ}{0.0592} \\text{ (at 298 K)}$$\n\nFor the reaction: n = 2 electrons transferred\n\n$$\\log K = \\frac{2 \\times 0.46}{0.0592} = \\frac{0.92}{0.0592} = 15.54$$\n\n$$K = 10^{15.54} \\approx 3.92 \\times 10^{15}$$",
-    "name": "Equilibrium Constant from Cell EMF"
+    "explanation": "Using the relationship between \\(E^\\circ_{\\text{cell}}\\) and equilibrium constant:\n\n\\[\\log K = \\frac{nFE^\\circ_{\\text{cell}}}{2.303\\,RT}\\]\n\nHere \\(n = 2\\) (2 electrons transferred):\n\n\\[\\log K = \\frac{2 \\times 96500 \\times 0.46}{2.303 \\times 8.314 \\times 298} = \\frac{88780}{5706} \\approx 15.56\\]\n\n\\[K = 10^{15.56} \\approx 3.92 \\times 10^{15}\\]",
+    "name": "Questions Item 18"
   },
   {
-    "id": "c8_item16",
-    "text": "\\(K_{sp}\\) for CaSO₄ is \\(9 \\times 10^{-6}\\). The minimum volume of water needed to dissolve 1 g of CaSO₄ at 298 K is:",
-    "options": [
-      "3.50 L",
-      "4.25 L",
-      "1.75 L",
-      "2.45 L"
-    ],
+    "id": "c8_item19",
+    "text": "\\(K_{sp}\\) for \\(\\text{CaSO}_4\\) is \\(9 \\times 10^{-6}\\). The minimum volume of water needed to dissolve 1 g of \\(\\text{CaSO}_4\\) at 298 K is",
+    "options": ["3.50 L", "4.25 L", "1.75 L", "2.45 L"],
     "correctIndex": 3,
-    "explanation": "$$\\text{CaSO}_4 \\rightleftharpoons \\text{Ca}^{2+} + \\text{SO}_4^{2-}$$\n$$K_{sp} = S^2 = 9 \\times 10^{-6} \\Rightarrow S = 3 \\times 10^{-3} \\text{ mol/L}$$\n\nMolar mass of CaSO₄ = 40 + 32 + 64 = 136 g/mol\n\nSolubility in g/L:\n$$= 3 \\times 10^{-3} \\times 136 = 0.408 \\text{ g/L}$$\n\nVolume needed to dissolve 1 g:\n$$V = \\frac{1 \\text{ g}}{0.408 \\text{ g/L}} = 2.45 \\text{ L}$$",
-    "name": "Minimum Volume to Dissolve CaSO₄"
+    "explanation": "For \\(\\text{CaSO}_4 \\rightleftharpoons \\text{Ca}^{2+} + \\text{SO}_4^{2-}\\):\n\n\\[K_{sp} = S^2 = 9 \\times 10^{-6} \\implies S = 3 \\times 10^{-3} \\text{ mol/L}\\]\n\nMolar mass of \\(\\text{CaSO}_4 = 40 + 32 + 64 = 136\\) g/mol\n\nSolubility in g/L \\(= 3 \\times 10^{-3} \\times 136 = 0.408\\) g/L\n\nVolume to dissolve 1 g \\(= \\dfrac{1}{0.408} \\approx 2.45\\) L",
+    "name": "Questions Item 19"
   },
   {
-    "id": "c8_item17",
-    "text": "For the species HSO₄⁻ and NH₃, their conjugate acids respectively are:",
+    "id": "c8_item20",
+    "text": "For the species \\(\\text{HSO}_4^-\\) and \\(\\text{NH}_3\\), their conjugate acids respectively are",
     "options": [
       "\\(\\text{SO}_4^{2-}\\) and \\(\\text{NH}_4^+\\)",
       "\\(\\text{SO}_4^{2-}\\) and \\(\\text{NH}_2^-\\)",
@@ -217,51 +181,54 @@
       "\\(\\text{H}_2\\text{SO}_4\\) and \\(\\text{NH}_2^-\\)"
     ],
     "correctIndex": 2,
-    "explanation": "In **Brønsted-Lowry theory**, a **conjugate acid** is formed when a base **gains a proton (H⁺)**:\n$$\\text{Base} + H^+ \\rightarrow \\text{Conjugate acid}$$\n\n**For HSO₄⁻:**\n$$\\text{HSO}_4^- + H^+ \\rightarrow \\text{H}_2\\text{SO}_4$$\nConjugate acid = **H₂SO₄** ✓\n\n**For NH₃:**\n$$\\text{NH}_3 + H^+ \\rightarrow \\text{NH}_4^+$$\nConjugate acid = **NH₄⁺** ✓\n\nNote: SO₄²⁻ is the **conjugate base** of HSO₄⁻ (formed by losing a proton), not the conjugate acid.",
-    "name": "Conjugate Acids of HSO₄⁻ and NH₃"
-  },
-  {
-    "id": "c8_item18",
-    "text": "Weak acids are partially ionised in aqueous solutions. The ionisation constants of some acids are given below. Their increasing order of acid strength is:\n\n1. Formic acid (HCOOH): \\(K_a = 1.8 \\times 10^{-4}\\)\n2. Hypochlorous acid (HClO): \\(K_a = 3.0 \\times 10^{-8}\\)\n3. Nitrous acid (HNO₂): \\(K_a = 4.5 \\times 10^{-4}\\)\n4. Hydrocyanic acid (HCN): \\(K_a = 4.9 \\times 10^{-10}\\)",
-    "options": [
-      "4 < 2 < 1 < 3",
-      "1 < 2 < 3 < 4",
-      "2 < 3 < 1 < 4",
-      "4 < 3 < 2 < 1"
-    ],
-    "correctIndex": 0,
-    "explanation": "Acid strength is directly proportional to the ionisation constant K_a. **Larger K_a → stronger acid**.\n\nComparing K_a values:\n- Acid 4 (HCN): \\(4.9 \\times 10^{-10}\\) → **weakest**\n- Acid 2 (HClO): \\(3.0 \\times 10^{-8}\\)\n- Acid 1 (HCOOH): \\(1.8 \\times 10^{-4}\\)\n- Acid 3 (HNO₂): \\(4.5 \\times 10^{-4}\\) → **strongest**\n\nIncreasing order of acid strength:\n$$4 < 2 < 1 < 3$$",
-    "name": "Increasing Order of Acid Strength from Ka Values"
-  },
-  {
-    "id": "c8_item19",
-    "text": "The number of species from the following that can act both as Brønsted acids and bases is:\n\nHCl, ClO₄⁻, OH⁻, H⁺, H₂O, HSO₄⁻, SO₄²⁻, H₂SO₄, Cl⁻",
-    "options": [
-      "4",
-      "3",
-      "1",
-      "2"
-    ],
-    "correctIndex": 3,
-    "explanation": "A species is **amphoteric** (acts as both Brønsted acid and base) if it can both **donate and accept a proton**.\n\nAnalysing each species:\n- **HCl**: only acid (donates H⁺) ✗\n- **ClO₄⁻**: only base (accepts H⁺) ✗\n- **OH⁻**: only base ✗\n- **H⁺**: only acid ✗\n- **H₂O**: can donate H⁺ (acid) and accept H⁺ (base) → **amphoteric** ✓\n- **HSO₄⁻**: can donate H⁺ (→ SO₄²⁻, acting as acid) AND accept H⁺ (→ H₂SO₄, acting as base) → **amphoteric** ✓\n- **SO₄²⁻**: only base ✗\n- **H₂SO₄**: strong acid only ✗\n- **Cl⁻**: only base ✗\n\n**Two species** — H₂O and HSO₄⁻ — can act as both Brønsted acids and bases.",
-    "name": "Species Acting as Both Brønsted Acid and Base"
-  },
-  {
-    "id": "c8_item20",
-    "text": "In which of the following will the solubility of AgCl be minimum?",
-    "options": [
-      "0.1 M KNO₃",
-      "0.1 M KCl",
-      "0.2 M KNO₃",
-      "Water"
-    ],
-    "correctIndex": 1,
-    "explanation": "$$\\text{AgCl} \\rightleftharpoons \\text{Ag}^+ + \\text{Cl}^-$$\n\nThe **common ion effect** reduces solubility. KCl provides a **common ion Cl⁻** which suppresses the dissolution of AgCl.\n\n- In **water**: solubility = \\(\\sqrt{K_{sp}}\\)\n- In **KNO₃**: KNO₃ has no common ion → solubility is not suppressed (similar to water, slightly increased by ionic strength)\n- In **0.1 M KCl**: the additional Cl⁻ ions from KCl force the equilibrium backward → solubility = \\(\\dfrac{K_{sp}}{[\\text{Cl}^-]} = \\dfrac{K_{sp}}{0.1}\\) which is very small\n\n**0.1 M KCl** suppresses AgCl solubility the most due to the common ion effect.",
-    "name": "Minimum Solubility of AgCl – Common Ion Effect"
+    "explanation": "A **conjugate acid** is formed when a base accepts a proton (\\(\\text{H}^+\\)):\n\n- \\(\\text{HSO}_4^-\\) (base) + \\(\\text{H}^+\\) → \\(\\text{H}_2\\text{SO}_4\\) (conjugate acid)\n- \\(\\text{NH}_3\\) (base) + \\(\\text{H}^+\\) → \\(\\text{NH}_4^+\\) (conjugate acid)\n\nTherefore, the conjugate acids are \\(\\text{H}_2\\text{SO}_4\\) and \\(\\text{NH}_4^+\\).",
+    "name": "Questions Item 20"
   },
   {
     "id": "c8_item21",
-    "text": "The equilibrium constant for the following reactions is given:\n\n$$\\text{Ag}^+ + \\text{NH}_3 \\rightleftharpoons [\\text{Ag(NH}_3)]^+,\\ K_1 = 1.6 \\times 10^3$$\n$$[\\text{Ag(NH}_3)]^+ + \\text{NH}_3 \\rightleftharpoons [\\text{Ag(NH}_3)_2]^+,\\ K_2 = 6.8 \\times 10^3$$\n\nThe equilibrium constant for the reaction \\(\\text{Ag}^+ + 2\\text{NH}_3 \\rightleftharpoons [\\text{Ag(NH}_3)_2]^+\\) is:",
+    "text": "The ionisation constants of some weak acids are given below. Their increasing order of acid strength is:\n\nFormic acid (HCOOH): \\(K_a = 1.8 \\times 10^{-4}\\)\nHypochlorous acid (HClO): \\(K_a = 3.0 \\times 10^{-8}\\)\nNitrous acid (\\(\\text{HNO}_2\\)): \\(K_a = 4.5 \\times 10^{-4}\\)\nHydrocyanic acid (HCN): \\(K_a = 4.9 \\times 10^{-10}\\)",
+    "options": [
+      "HCN < HClO < HCOOH < \\(\\text{HNO}_2\\)",
+      "HCOOH < HClO < \\(\\text{HNO}_2\\) < HCN",
+      "HClO < \\(\\text{HNO}_2\\) < HCOOH < HCN",
+      "HCN < \\(\\text{HNO}_2\\) < HClO < HCOOH"
+    ],
+    "correctIndex": 0,
+    "explanation": "A **larger \\(K_a\\)** means a **stronger acid**. Ranking by \\(K_a\\) in increasing order:\n\n\\[\\text{HCN}\\;(4.9 \\times 10^{-10}) < \\text{HClO}\\;(3.0 \\times 10^{-8}) < \\text{HCOOH}\\;(1.8 \\times 10^{-4}) < \\text{HNO}_2\\;(4.5 \\times 10^{-4})\\]\n\nSo the increasing order of acid strength is: **HCN < HClO < HCOOH < \\(\\text{HNO}_2\\)**.",
+    "name": "Questions Item 21"
+  },
+  {
+    "id": "c8_item22",
+    "text": "Calculate the mass of AgCl precipitated when 25 mL of 35% solution of \\(\\text{AgNO}_3\\) and 25 mL of 11.6% solution of NaCl are mixed.",
+    "options": ["7 g", "17 g", "20 g", "15 g"],
+    "correctIndex": 0,
+    "explanation": "In 25 mL of 35% \\(\\text{AgNO}_3\\): mass \\(= \\frac{35}{100} \\times 25 = 8.75\\) g\n\nMoles of \\(\\text{AgNO}_3 = \\frac{8.75}{170} = 0.0515\\) mol\n\nIn 25 mL of 11.6% NaCl: mass \\(= \\frac{11.6}{100} \\times 25 = 2.9\\) g\n\nMoles of \\(\\text{NaCl} = \\frac{2.9}{58.5} = 0.0496\\) mol\n\n\\(\\text{AgNO}_3 + \\text{NaCl} \\rightarrow \\text{AgCl} \\downarrow + \\text{NaNO}_3\\)\n\nNaCl is the limiting reagent (0.0496 mol).\n\nMass of \\(\\text{AgCl} = 0.049 \\times 143.5 \\approx 7\\) g",
+    "name": "Questions Item 22"
+  },
+  {
+    "id": "c8_item23",
+    "text": "The number of species from the following that can act **both** as Bronsted acids and Bronsted bases is:\n\\(\\text{HCl},\\; \\text{ClO}_4^-,\\; \\text{OH}^-,\\; \\text{H}^+,\\; \\text{H}_2\\text{O},\\; \\text{HSO}_4^-,\\; \\text{SO}_4^{2-},\\; \\text{H}_2\\text{SO}_4,\\; \\text{Cl}^-\\)",
+    "options": ["4", "3", "1", "2"],
+    "correctIndex": 3,
+    "explanation": "A species that can act as both Bronsted acid AND base is **amphoteric**. Checking each:\n\n- \\(\\text{H}_2\\text{O}\\): can donate \\(\\text{H}^+\\) (→ \\(\\text{OH}^-\\)) **or** accept \\(\\text{H}^+\\) (→ \\(\\text{H}_3\\text{O}^+\\)) ✓\n- \\(\\text{HSO}_4^-\\): can donate \\(\\text{H}^+\\) (→ \\(\\text{SO}_4^{2-}\\)) **or** accept \\(\\text{H}^+\\) (→ \\(\\text{H}_2\\text{SO}_4\\)) ✓\n- All others (HCl, \\(\\text{ClO}_4^-\\), \\(\\text{OH}^-\\), \\(\\text{H}_2\\text{SO}_4\\), \\(\\text{Cl}^-\\), \\(\\text{SO}_4^{2-}\\)) can only act as either acid or base.\n\nHence, **2 species** — \\(\\text{H}_2\\text{O}\\) and \\(\\text{HSO}_4^-\\) — are amphoteric.",
+    "name": "Questions Item 23"
+  },
+  {
+    "id": "c8_item24",
+    "text": "In which of the following will the solubility of AgCl be minimum?",
+    "options": [
+      "0.1 M \\(\\text{KNO}_3\\)",
+      "0.1 M KCl",
+      "0.2 M \\(\\text{KNO}_3\\)",
+      "Water"
+    ],
+    "correctIndex": 1,
+    "explanation": "AgCl dissolves as:\n\n\\[\\text{AgCl} \\rightleftharpoons \\text{Ag}^+ + \\text{Cl}^-\\]\n\nIn 0.1 M KCl, the \\(\\text{Cl}^-\\) ion from KCl is a **common ion**. This increases \\([\\text{Cl}^-]\\) and by Le Chatelier's Principle, the equilibrium shifts left, suppressing the dissolution of AgCl. This **common ion effect** reduces solubility to a minimum. \\(\\text{KNO}_3\\) has no common ion and actually increases solubility slightly (salt effect).",
+    "name": "Questions Item 24"
+  },
+  {
+    "id": "c8_item25",
+    "text": "Given: \\(\\text{NH}_3 + \\text{Ag}^+ \\rightleftharpoons [\\text{Ag(NH}_3)]^+\\), \\(K_1 = 1.6 \\times 10^3\\) and \\([\\text{Ag(NH}_3)]^+ + \\text{NH}_3 \\rightleftharpoons [\\text{Ag(NH}_3)_2]^+\\), \\(K_2 = 6.8 \\times 10^3\\). The equilibrium constant for \\(\\text{Ag}^+ + 2\\text{NH}_3 \\rightleftharpoons [\\text{Ag(NH}_3)_2]^+\\) is",
     "options": [
       "\\(6.008 \\times 10^3\\)",
       "\\(1.088 \\times 10^7\\)",
@@ -269,25 +236,20 @@
       "\\(1.028 \\times 10^3\\)"
     ],
     "correctIndex": 1,
-    "explanation": "The overall reaction is the **sum** of reactions (1) and (2):\n$$\\text{Ag}^+ + \\text{NH}_3 \\rightarrow [\\text{Ag(NH}_3)]^+, \\quad K_1$$\n$$[\\text{Ag(NH}_3)]^+ + \\text{NH}_3 \\rightarrow [\\text{Ag(NH}_3)_2]^+, \\quad K_2$$\n$$\\text{-----------------------------------------------------------}$$\n$$\\text{Ag}^+ + 2\\text{NH}_3 \\rightarrow [\\text{Ag(NH}_3)_2]^+, \\quad K_3$$\n\nWhen reactions are added, equilibrium constants are **multiplied**:\n$$K_3 = K_1 \\times K_2 = 1.6 \\times 10^3 \\times 6.8 \\times 10^3$$\n$$= 1.6 \\times 6.8 \\times 10^6 = 10.88 \\times 10^6 = \\mathbf{1.088 \\times 10^7}$$",
-    "name": "Overall Equilibrium Constant from Stepwise Constants"
+    "explanation": "The overall reaction is obtained by **adding** the two given equilibria. When equilibrium reactions are added, their constants are **multiplied**:\n\n\\[K_3 = K_1 \\times K_2\\]\n\n\\[= (1.6 \\times 10^3) \\times (6.8 \\times 10^3)\\]\n\n\\[= 10.88 \\times 10^6 = 1.088 \\times 10^7\\]",
+    "name": "Questions Item 25"
   },
   {
-    "id": "c8_item22",
-    "text": "A buffer solution is prepared by mixing 10 mL of 1.0 M acetic acid and 20 mL of 0.5 M sodium acetate, then diluted to 100 mL with distilled water. The pH of the buffer solution is:\n(pK_a of acetic acid = 4.76)",
-    "options": [
-      "4.84",
-      "5.21",
-      "4.34",
-      "4.76"
-    ],
+    "id": "c8_item26",
+    "text": "A buffer solution is prepared by mixing 10 mL of 1.0 M acetic acid and 20 mL of 0.5 M sodium acetate, then diluted to 100 mL. The pH of the buffer is \\((pK_a\\) of acetic acid \\(= 4.76)\\)",
+    "options": ["4.84", "5.21", "4.34", "4.76"],
     "correctIndex": 3,
-    "explanation": "**Moles (millimoles) of each component:**\n- Acetic acid: \\(10 \\times 1.0 = 10\\) mmol\n- Sodium acetate: \\(20 \\times 0.5 = 10\\) mmol\n\nUsing the **Henderson-Hasselbalch equation**:\n$$\\text{pH} = pK_a + \\log\\frac{[\\text{Salt}]}{[\\text{Acid}]}$$\n\nSince moles (and hence concentration ratio after dilution) of salt and acid are **equal** (both 10 mmol in 100 mL):\n$$\\text{pH} = 4.76 + \\log\\frac{10}{10} = 4.76 + \\log(1) = 4.76 + 0 = \\mathbf{4.76}$$",
-    "name": "pH of Acetic Acid – Sodium Acetate Buffer"
+    "explanation": "Millimoles of acetic acid \\(= 10 \\times 1.0 = 10\\) mmol\n\nMillimoles of sodium acetate \\(= 20 \\times 0.5 = 10\\) mmol\n\nUsing the Henderson-Hasselbalch equation:\n\n\\[\\text{pH} = pK_a + \\log\\frac{[\\text{Salt}]}{[\\text{Acid}]} = 4.76 + \\log\\frac{10}{10} = 4.76 + \\log 1 = 4.76 + 0 = 4.76\\]",
+    "name": "Questions Item 26"
   },
   {
-    "id": "c8_item23",
-    "text": "The equilibrium constant K_C at 850 K for the reaction \\(\\text{N}_2(g) + \\text{O}_2(g) \\rightleftharpoons 2\\text{NO}(g)\\) is 0.5625. If the equilibrium concentration of NO(g) is \\(3.0 \\times 10^{-3}\\) M and [N₂] = [O₂], the concentration of N₂(g) in M is:",
+    "id": "c8_item27",
+    "text": "The equilibrium constant at 850 K for \\(\\text{N}_2(g) + \\text{O}_2(g) \\rightleftharpoons 2\\text{NO}(g)\\) is 0.5625. The equilibrium concentration of NO is \\(3.0 \\times 10^{-3}\\) M. If the equilibrium concentrations of \\(\\text{N}_2\\) and \\(\\text{O}_2\\) are equal, the concentration of \\(\\text{N}_2\\) in M is",
     "options": [
       "\\(4.0 \\times 10^{-3}\\)",
       "\\(4.0 \\times 10^{-2}\\)",
@@ -295,12 +257,12 @@
       "\\(3.0 \\times 10^{-3}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$$K_C = \\frac{[\\text{NO}]^2}{[\\text{N}_2][\\text{O}_2]}$$\n\nSince \\([\\text{N}_2] = [\\text{O}_2]\\):\n$$K_C = \\frac{[\\text{NO}]^2}{[\\text{N}_2]^2}$$\n\n$$0.5625 = \\frac{(3.0 \\times 10^{-3})^2}{[\\text{N}_2]^2}$$\n\n$$[\\text{N}_2]^2 = \\frac{9 \\times 10^{-6}}{0.5625} = 16 \\times 10^{-6}$$\n\n$$[\\text{N}_2] = 4 \\times 10^{-3} \\text{ M}$$",
-    "name": "Equilibrium Concentration of N₂ from KC"
+    "explanation": "\\[K_C = \\frac{[\\text{NO}]^2}{[\\text{N}_2][\\text{O}_2]}\\]\n\nSince \\([\\text{N}_2] = [\\text{O}_2] = x\\):\n\n\\[0.5625 = \\frac{(3 \\times 10^{-3})^2}{x^2}\\]\n\n\\[x^2 = \\frac{9 \\times 10^{-6}}{0.5625} = 16 \\times 10^{-6}\\]\n\n\\[x = [\\text{N}_2] = 4 \\times 10^{-3} \\text{ M}\\]",
+    "name": "Questions Item 27"
   },
   {
-    "id": "c8_item24",
-    "text": "The solubility product of a sparingly soluble salt A₂B is \\(3.2 \\times 10^{-11}\\). Its solubility in mol L⁻¹ is:",
+    "id": "c8_item28",
+    "text": "The solubility product of a sparingly soluble salt \\(\\text{A}_2\\text{B}\\) is \\(3.2 \\times 10^{-11}\\). Its solubility in mol L\\(^{-1}\\) is",
     "options": [
       "\\(4 \\times 10^{-4}\\)",
       "\\(2 \\times 10^{-4}\\)",
@@ -308,12 +270,12 @@
       "\\(3 \\times 10^{-4}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "For salt A₂B:\n$$\\text{A}_2\\text{B} \\rightleftharpoons 2\\text{A}^+ + \\text{B}^{2-}$$\n\nIf solubility = S:\n$$[\\text{A}^+] = 2S, \\quad [\\text{B}^{2-}] = S$$\n\n$$K_{sp} = [\\text{A}^+]^2[\\text{B}^{2-}] = (2S)^2 \\cdot S = 4S^3$$\n\n$$4S^3 = 3.2 \\times 10^{-11}$$\n$$S^3 = 8 \\times 10^{-12}$$\n$$S = \\sqrt[3]{8 \\times 10^{-12}} = 2 \\times 10^{-4} \\text{ mol/L}$$",
-    "name": "Solubility of A₂B from Ksp"
+    "explanation": "For \\(\\text{A}_2\\text{B} \\rightleftharpoons 2\\text{A}^+ + \\text{B}^{2-}\\), let solubility \\(= S\\).\n\n\\[[\\text{A}^+] = 2S, \\quad [\\text{B}^{2-}] = S\\]\n\n\\[K_{sp} = (2S)^2 \\cdot S = 4S^3 = 3.2 \\times 10^{-11}\\]\n\n\\[S^3 = \\frac{3.2 \\times 10^{-11}}{4} = 8 \\times 10^{-12}\\]\n\n\\[S = \\sqrt[3]{8 \\times 10^{-12}} = 2 \\times 10^{-4} \\text{ mol/L}\\]",
+    "name": "Questions Item 28"
   },
   {
-    "id": "c8_item25",
-    "text": "The value of K_C for the equilibrium \\(\\text{CO}_2(g) + \\text{C}(s) \\rightleftharpoons 2\\text{CO}(g)\\) at T(K) is 0.036. If the equilibrium concentration of CO₂(g) is 0.004 M, the concentration of CO(g) in mol L⁻¹ is:",
+    "id": "c8_item29",
+    "text": "The value of \\(K_C\\) for \\(\\text{CO}_2(g) + \\text{C}(s) \\rightleftharpoons 2\\text{CO}(g)\\) at \\(T\\) K is 0.036. If the equilibrium concentration of \\(\\text{CO}_2(g)\\) is 0.004 M, the concentration of \\(\\text{CO}(g)\\) in mol L\\(^{-1}\\) is",
     "options": [
       "\\(3.6 \\times 10^{-2}\\)",
       "\\(2.0 \\times 10^{-2}\\)",
@@ -321,25 +283,20 @@
       "\\(1.2 \\times 10^{-3}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "For the equilibrium (C(s) is omitted from the expression as it is a pure solid):\n$$K_C = \\frac{[\\text{CO}]^2}{[\\text{CO}_2]}$$\n\n$$[\\text{CO}]^2 = K_C \\times [\\text{CO}_2] = 0.036 \\times 0.004 = 1.44 \\times 10^{-4}$$\n\n$$[\\text{CO}] = \\sqrt{1.44 \\times 10^{-4}} = 1.2 \\times 10^{-2} \\text{ mol/L}$$",
-    "name": "Equilibrium Concentration of CO from KC"
+    "explanation": "The activity of solid C is 1, so:\n\n\\[K_C = \\frac{[\\text{CO}]^2}{[\\text{CO}_2]}\\]\n\n\\[0.036 = \\frac{[\\text{CO}]^2}{0.004}\\]\n\n\\[[\\text{CO}]^2 = 0.036 \\times 0.004 = 1.44 \\times 10^{-4}\\]\n\n\\[[\\text{CO}] = \\sqrt{1.44 \\times 10^{-4}} = 1.2 \\times 10^{-2} \\text{ mol/L}\\]",
+    "name": "Questions Item 29"
   },
   {
-    "id": "c8_item26",
-    "text": "50 mL of 0.02 M NaOH solution is mixed with 50 mL of 0.06 M acetic acid solution. The pH of the resulting solution is:\n(pK_a of acetic acid = 4.76, log 5 = 0.70)",
-    "options": [
-      "5.06",
-      "4.06",
-      "5.46",
-      "4.46"
-    ],
+    "id": "c8_item30",
+    "text": "50 mL of 0.02 M NaOH is mixed with 50 mL of 0.06 M acetic acid. The pH of the resulting solution is \\((pK_a = 4.76,\\; \\log 5 = 0.70)\\)",
+    "options": ["5.06", "4.06", "5.46", "4.46"],
     "correctIndex": 3,
-    "explanation": "**Millimoles:**\n- NaOH: \\(50 \\times 0.02 = 1\\) mmol\n- CH₃COOH: \\(50 \\times 0.06 = 3\\) mmol\n\nNaOH + CH₃COOH → CH₃COONa + H₂O\n\nAfter reaction:\n- CH₃COONa formed = 1 mmol\n- CH₃COOH remaining = 3 − 1 = 2 mmol\n\nThis forms an **acidic buffer**:\n$$\\text{pH} = pK_a + \\log\\frac{[\\text{Salt}]}{[\\text{Acid}]} = 4.76 + \\log\\frac{1}{2}$$\n$$= 4.76 + \\log(0.5) = 4.76 - \\log 2 = 4.76 - 0.30 = 4.46$$",
-    "name": "pH of Buffer after NaOH + Acetic Acid Reaction"
+    "explanation": "Millimoles of NaOH \\(= 50 \\times 0.02 = 1\\) mmol\n\nMillimoles of \\(\\text{CH}_3\\text{COOH} = 50 \\times 0.06 = 3\\) mmol\n\n\\(\\text{CH}_3\\text{COOH} + \\text{NaOH} \\rightarrow \\text{CH}_3\\text{COONa} + \\text{H}_2\\text{O}\\)\n\nAfter reaction: Salt = 1 mmol, Acid remaining = 2 mmol → **acidic buffer**\n\n\\[\\text{pH} = pK_a + \\log\\frac{[\\text{Salt}]}{[\\text{Acid}]} = 4.76 + \\log\\frac{1}{2}\\]\n\n\\[= 4.76 + \\log(5 \\times 10^{-1}) = 4.76 + 0.70 - 1 = 4.46\\]",
+    "name": "Questions Item 30"
   },
   {
-    "id": "c8_item27",
-    "text": "At 1000 K, the partial pressures of CO₂(g) and CO(g) for the reaction \\(\\text{CO}_2(g) + \\text{C}(s) \\rightleftharpoons 2\\text{CO}(g)\\) at equilibrium are 0.15 and 0.60 bar respectively. The K_C for this reaction at 1000 K is approximately:\n(R = 0.082 L·atm·K⁻¹·mol⁻¹)",
+    "id": "c8_item31",
+    "text": "At 1000 K, the partial pressures of \\(\\text{CO}_2(g)\\) and \\(\\text{CO}(g)\\) for \\(\\text{CO}_2(g) + \\text{C}(s) \\rightleftharpoons 2\\text{CO}(g)\\) at equilibrium are 0.15 and 0.60 bar respectively. The \\(K_C\\) is approximately",
     "options": [
       "\\(2.0 \\times 10^{-4}\\)",
       "\\(2.89 \\times 10^{-2}\\)",
@@ -347,38 +304,57 @@
       "\\(5.78 \\times 10^{-3}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "$$K_p = \\frac{(p_{\\text{CO}})^2}{p_{\\text{CO}_2}} = \\frac{(0.60)^2}{0.15} = \\frac{0.36}{0.15} = 2.4 \\text{ bar}$$\n\nFor the reaction: \\(\\Delta n_g = 2 - 1 = 1\\)\n\n$$K_p = K_C(RT)^{\\Delta n}$$\n$$K_C = \\frac{K_p}{RT} = \\frac{2.4}{0.082 \\times 1000} = \\frac{2.4}{82} = 0.0293 \\approx 2.89 \\times 10^{-2}$$",
-    "name": "KC from Partial Pressures at Equilibrium"
+    "explanation": "\\[K_p = \\frac{(p_{\\text{CO}})^2}{p_{\\text{CO}_2}} = \\frac{(0.60)^2}{0.15} = \\frac{0.36}{0.15} = 2.4\\]\n\nSince \\(\\Delta n = 2 - 1 = 1\\), using \\(K_p = K_C(RT)^{\\Delta n}\\):\n\n\\[K_C = \\frac{K_p}{RT} = \\frac{2.4}{0.0821 \\times 1000} = \\frac{2.4}{82.1} \\approx 2.89 \\times 10^{-2}\\]",
+    "name": "Questions Item 31"
   },
   {
-    "id": "c8_item28",
-    "text": "20 mL of 0.2 M sodium hydroxide solution is added to 40 mL of 0.2 M acetic acid solution. What is the pH of the solution?\n(pK_a of CH₃COOH = 4.8)",
+    "id": "c8_item32",
+    "text": "At T(K), the ionisation constant of ammonia in solution is \\(2.5 \\times 10^{-5}\\). The pH of 0.01 M ammonia solution and the ionisation constant of its conjugate acid respectively are \\((\\log 2 = 0.30)\\)",
     "options": [
-      "9.2",
-      "4.8",
-      "8.4",
-      "2.9"
+      "\\(10.7,\\; 4.0 \\times 10^{-8}\\)",
+      "\\(10.7,\\; 4.0 \\times 10^{-10}\\)",
+      "\\(3.3,\\; 4.0 \\times 10^{-8}\\)",
+      "\\(3.3,\\; 4.0 \\times 10^{-10}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "**Millimoles:**\n- NaOH: \\(20 \\times 0.2 = 4\\) mmol\n- CH₃COOH: \\(40 \\times 0.2 = 8\\) mmol\n\n**Reaction:** CH₃COOH + NaOH → CH₃COONa + H₂O\n\nAfter reaction:\n- CH₃COONa formed = 4 mmol\n- CH₃COOH remaining = 8 − 4 = 4 mmol\n\n**Buffer (equal moles of salt and acid):**\n$$\\text{pH} = pK_a + \\log\\frac{[\\text{Salt}]}{[\\text{Acid}]} = 4.8 + \\log\\frac{4}{4} = 4.8 + 0 = \\mathbf{4.8}$$",
-    "name": "pH when NaOH Added to Acetic Acid – Equal Salt and Acid"
+    "explanation": "**Step 1 — Conjugate acid constant:**\n\n\\[K_a(\\text{NH}_4^+) = \\frac{K_w}{K_b} = \\frac{10^{-14}}{2.5 \\times 10^{-5}} = 4 \\times 10^{-10}\\]\n\n**Step 2 — pH of 0.01 M NH₃:**\n\n\\[\\alpha = \\sqrt{\\frac{K_b}{C}} = \\sqrt{\\frac{2.5 \\times 10^{-5}}{0.01}} = 0.05\\]\n\n\\[[\\text{OH}^-] = C\\alpha = 0.01 \\times 0.05 = 5 \\times 10^{-4} \\text{ M}\\]\n\n\\[\\text{pOH} = -\\log(5 \\times 10^{-4}) = 4 - \\log 5 = 4 - 0.70 = 3.3\\]\n\n\\[\\text{pH} = 14 - 3.3 = 10.7\\]",
+    "name": "Questions Item 32"
   },
   {
-    "id": "c8_item29",
-    "text": "If the pH of a buffer solution containing 0.1 M of a monoacidic base and 0.01 M of its salt is 10.5, the pK_a of the conjugate acid is:",
-    "options": [
-      "9.5",
-      "4.5",
-      "3.5",
-      "11.5"
-    ],
+    "id": "c8_item33",
+    "text": "The equilibrium partial pressures of \\(\\text{CO}(g)\\) and \\(\\text{CO}_2(g)\\) for \\(\\text{CO}_2(g) + \\text{C}(s) \\rightleftharpoons 2\\text{CO}(g)\\) at 1000 K are 0.66 and 0.15 bar respectively. The equilibrium constant \\(K_C\\) is approximately",
+    "options": ["0.35", "2.90", "0.035", "0.29"],
+    "correctIndex": 2,
+    "explanation": "\\[K_p = \\frac{(p_{\\text{CO}})^2}{p_{\\text{CO}_2}} = \\frac{(0.66)^2}{0.15} = \\frac{0.4356}{0.15} = 2.904\\]\n\nWith \\(\\Delta n = 1\\), \\(T = 1000\\) K, \\(R = 0.0821\\) L atm mol\\(^{-1}\\)K\\(^{-1}\\):\n\n\\[K_C = \\frac{K_p}{RT} = \\frac{2.904}{0.0821 \\times 1000} = \\frac{2.904}{82.1} \\approx 0.0353 \\approx 3.5 \\times 10^{-2}\\]",
+    "name": "Questions Item 33"
+  },
+  {
+    "id": "c8_item34",
+    "text": "20 mL of 0.2 M NaOH solution is added to 40 mL of 0.2 M acetic acid solution. The pH of the resulting solution is \\((pK_a\\text{ of }\\text{CH}_3\\text{COOH} = 4.8)\\)",
+    "options": ["9.2", "4.8", "8.4", "2.9"],
+    "correctIndex": 1,
+    "explanation": "Millimoles of NaOH \\(= 20 \\times 0.2 = 4\\) mmol\n\nMillimoles of \\(\\text{CH}_3\\text{COOH} = 40 \\times 0.2 = 8\\) mmol\n\n\\(\\text{CH}_3\\text{COOH} + \\text{NaOH} \\rightarrow \\text{CH}_3\\text{COONa} + \\text{H}_2\\text{O}\\)\n\nSalt formed = 4 mmol; remaining acid = 4 mmol → **equal moles** → buffer.\n\n\\[\\text{pH} = pK_a + \\log\\frac{[\\text{Salt}]}{[\\text{Acid}]} = 4.8 + \\log\\frac{4}{4} = 4.8 + 0 = 4.8\\]",
+    "name": "Questions Item 34"
+  },
+  {
+    "id": "c8_item35",
+    "text": "18.4 g of \\(\\text{N}_2\\text{O}_4\\) was placed in a 1 L vessel at 400 K and allowed to attain equilibrium: \\(\\text{N}_2\\text{O}_4(g) \\rightleftharpoons 2\\text{NO}_2(g)\\). If the total pressure at equilibrium is 10.64 bar, the approximate \\(K_p\\) is \\((R = 0.083\\text{ L bar K}^{-1}\\text{mol}^{-1})\\)",
+    "options": ["57.20", "24.24", "14.30", "6.64"],
+    "correctIndex": 1,
+    "explanation": "Initial pressure of \\(\\text{N}_2\\text{O}_4\\):\n\n\\[p = nRT = \\frac{18.4}{92} \\times 0.083 \\times 400 = 0.2 \\times 33.2 = 6.64 \\text{ bar}\\]\n\nLet \\(p_i\\) = pressure of \\(\\text{N}_2\\text{O}_4\\) that dissociates. Total pressure:\n\n\\[p_T = (p - p_i) + 2p_i = p + p_i = 10.64\\]\n\n\\[p_i = 10.64 - 6.64 = 4.00 \\text{ bar}\\]\n\nAt equilibrium: \\(p_{\\text{N}_2\\text{O}_4} = 6.64 - 4 = 2.64\\) bar; \\(p_{\\text{NO}_2} = 2 \\times 4 = 8\\) bar.\n\n\\[K_p = \\frac{(p_{\\text{NO}_2})^2}{p_{\\text{N}_2\\text{O}_4}} = \\frac{64}{2.64} \\approx 24.24\\]",
+    "name": "Questions Item 35"
+  },
+  {
+    "id": "c8_item36",
+    "text": "If the pH of a buffer solution containing 0.1 M of a monoacidic base and 0.01 M of its salt is 10.5, the \\(pK_a\\) of the conjugate acid is",
+    "options": ["9.5", "4.5", "3.5", "11.5"],
     "correctIndex": 3,
-    "explanation": "For a basic buffer:\n$$\\text{pOH} = pK_b + \\log\\frac{[\\text{Salt}]}{[\\text{Base}]}$$\n\n$$\\text{pOH} = 14 - 10.5 = 3.5$$\n\n$$3.5 = pK_b + \\log\\frac{0.01}{0.1} = pK_b + \\log(0.1) = pK_b - 1$$\n\n$$pK_b = 4.5$$\n\nRelationship between conjugate acid-base pair:\n$$pK_a + pK_b = 14$$\n$$pK_a = 14 - 4.5 = \\mathbf{11.5}$$",
-    "name": "pKa of Conjugate Acid from Buffer pH"
+    "explanation": "Using the Henderson-Hasselbalch equation:\n\n\\[\\text{pH} = pK_a + \\log\\frac{[\\text{Salt}]}{[\\text{Acid}]}\\]\n\n\\[10.5 = pK_a + \\log\\frac{0.01}{0.1} = pK_a + \\log(10^{-1}) = pK_a - 1\\]\n\n\\[pK_a = 10.5 + 1 = 11.5\\]",
+    "name": "Questions Item 36"
   },
   {
-    "id": "c8_item30",
-    "text": "The stepwise stability constants of a complex are:\n\n$$M + L \\rightleftharpoons ML,\\ K_1 = 1.0 \\times 10^4$$\n$$ML + L \\rightleftharpoons ML_2,\\ K_2 = 1.0 \\times 10^3$$\n$$ML_2 + L \\rightleftharpoons ML_3,\\ K_3 = 1.0 \\times 10^3$$\n$$ML_3 + L \\rightleftharpoons ML_4,\\ K_4 = 1.0 \\times 10^2$$\n\nThe overall stability constant \\(\\beta_4\\) for \\(M + 4L \\rightleftharpoons ML_4\\) is:",
+    "id": "c8_item37",
+    "text": "The stepwise stability constants for a complex are: \\(K_1 = 1.0 \\times 10^4\\), \\(K_2 = 1.0 \\times 10^3\\), \\(K_3 = 1.0 \\times 10^3\\), \\(K_4 = 1.0 \\times 10^2\\). The overall stability constant \\(\\beta_4\\) for \\(M + 4L \\rightleftharpoons ML_4\\) is",
     "options": [
       "\\(1.0 \\times 10^{12}\\)",
       "\\(12.1 \\times 10^3\\)",
@@ -386,12 +362,12 @@
       "\\(1.0 \\times 10^8\\)"
     ],
     "correctIndex": 0,
-    "explanation": "The overall stability constant is the **product** of all stepwise stability constants:\n$$\\beta_4 = K_1 \\times K_2 \\times K_3 \\times K_4$$\n$$= (1.0 \\times 10^4) \\times (1.0 \\times 10^3) \\times (1.0 \\times 10^3) \\times (1.0 \\times 10^2)$$\n$$= 1.0 \\times 10^{4+3+3+2} = 1.0 \\times 10^{12}$$",
-    "name": "Overall Stability Constant from Stepwise Constants"
+    "explanation": "The overall stability constant is the **product of all stepwise stability constants**:\n\n\\[\\beta_4 = K_1 \\times K_2 \\times K_3 \\times K_4\\]\n\n\\[= (1.0 \\times 10^4)(1.0 \\times 10^3)(1.0 \\times 10^3)(1.0 \\times 10^2)\\]\n\n\\[= 1.0 \\times 10^{4+3+3+2} = 1.0 \\times 10^{12}\\]",
+    "name": "Questions Item 37"
   },
   {
-    "id": "c8_item31",
-    "text": "At 1000 K, K_C for the reaction \\(2\\text{NOCl}(g) \\rightleftharpoons 2\\text{NO}(g) + \\text{Cl}_2(g)\\) is \\(4.0 \\times 10^{-6}\\) mol L⁻¹. The K_P (in bar) at the same temperature is:\n(R = 0.083 L·bar·K⁻¹·mol⁻¹)",
+    "id": "c8_item38",
+    "text": "At 1000 K, the equilibrium constant \\(K_C\\) for \\(2\\text{NOCl}(g) \\rightleftharpoons 2\\text{NO}(g) + \\text{Cl}_2(g)\\) is \\(4.0 \\times 10^{-6}\\) mol L\\(^{-1}\\). The \\(K_p\\) (in bar) at the same temperature is \\((R = 0.083\\text{ L bar K}^{-1}\\text{mol}^{-1})\\)",
     "options": [
       "\\(3.32 \\times 10^{-6}\\)",
       "\\(3.32 \\times 10^4\\)",
@@ -399,51 +375,41 @@
       "\\(3.32 \\times 10^{-3}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "$$K_p = K_C(RT)^{\\Delta n}$$\n\n$$\\Delta n_g = (2+1) - 2 = 1$$\n\n$$K_p = 4.0 \\times 10^{-6} \\times (0.083 \\times 1000)^1$$\n$$= 4.0 \\times 10^{-6} \\times 83$$\n$$= 332 \\times 10^{-6} = 3.32 \\times 10^{-4} \\text{ bar}$$",
-    "name": "Kp from KC for NOCl Dissociation"
+    "explanation": "\\(\\Delta n_g = \\text{moles of gaseous products} - \\text{moles of gaseous reactants} = 3 - 2 = 1\\)\n\n\\[K_p = K_C(RT)^{\\Delta n} = K_C \\times RT\\]\n\n\\[= (4.0 \\times 10^{-6}) \\times (0.083 \\times 1000)\\]\n\n\\[= 4.0 \\times 10^{-6} \\times 83 = 3.32 \\times 10^{-4} \\text{ bar}\\]",
+    "name": "Questions Item 38"
   },
   {
-    "id": "c8_item32",
-    "text": "If the pK_a of acetic acid and pK_b of dimethylamine are 4.76 and 3.26 respectively, the pH of dimethyl ammonium acetate solution is:",
-    "options": [
-      "7.75",
-      "6.75",
-      "7.0",
-      "8.5"
-    ],
+    "id": "c8_item39",
+    "text": "If the \\(pK_a\\) of acetic acid and \\(pK_b\\) of dimethylamine are 4.76 and 3.26 respectively, the pH of dimethyl ammonium acetate solution is",
+    "options": ["7.75", "6.75", "7.0", "8.5"],
     "correctIndex": 0,
-    "explanation": "Dimethyl ammonium acetate is the salt of:\n- **Weak acid**: acetic acid (pK_a = 4.76)\n- **Weak base**: dimethylamine (pK_b = 3.26)\n\nFor a salt of weak acid and weak base:\n$$\\text{pH} = 7 + \\frac{1}{2}(pK_a - pK_b)$$\n$$= 7 + \\frac{1}{2}(4.76 - 3.26)$$\n$$= 7 + \\frac{1.50}{2} = 7 + 0.75 = \\mathbf{7.75}$$",
-    "name": "pH of Dimethyl Ammonium Acetate Solution"
+    "explanation": "Dimethyl ammonium acetate is a salt of a **weak acid** (acetic acid, \\(pK_a = 4.76\\)) and a **weak base** (dimethylamine, \\(pK_b = 3.26\\)).\n\n\\[\\text{pH} = 7 + \\frac{1}{2}(pK_a - pK_b)\\]\n\n\\[= 7 + \\frac{1}{2}(4.76 - 3.26) = 7 + \\frac{1.50}{2} = 7 + 0.75 = 7.75\\]",
+    "name": "Questions Item 39"
   },
   {
-    "id": "c8_item33",
-    "text": "The pH of a buffer solution formed by mixing 30 mL of 0.1 M NH₄OH and 30 mL of 1 M NH₄Cl solutions is 8.6. The pK_b of NH₄OH is:",
-    "options": [
-      "5.4",
-      "4.4",
-      "5.6",
-      "4.2"
-    ],
+    "id": "c8_item40",
+    "text": "The pH of a buffer formed by mixing 30 mL of 0.1 M \\(\\text{NH}_4\\text{OH}\\) and 30 mL of 1 M \\(\\text{NH}_4\\text{Cl}\\) is 8.6. The \\(pK_b\\) of \\(\\text{NH}_4\\text{OH}\\) is",
+    "options": ["5.4", "4.4", "5.6", "4.2"],
     "correctIndex": 1,
-    "explanation": "$$\\text{pOH} = 14 - \\text{pH} = 14 - 8.6 = 5.4$$\n\nFor a basic buffer:\n$$\\text{pOH} = pK_b + \\log\\frac{[\\text{Salt}]}{[\\text{Base}]}$$\n\nHere: [Salt] = [NH₄Cl] = 1 M, [Base] = [NH₄OH] = 0.1 M\n\n$$5.4 = pK_b + \\log\\frac{1}{0.1} = pK_b + \\log(10) = pK_b + 1$$\n\n$$pK_b = 5.4 - 1 = \\mathbf{4.4}$$",
-    "name": "pKb of NH₄OH from Buffer pH"
+    "explanation": "\\[\\text{pOH} = 14 - \\text{pH} = 14 - 8.6 = 5.4\\]\n\nFor a basic buffer:\n\n\\[\\text{pOH} = pK_b + \\log\\frac{[\\text{Salt}]}{[\\text{Base}]}\\]\n\n\\[5.4 = pK_b + \\log\\frac{1}{0.1} = pK_b + \\log 10 = pK_b + 1\\]\n\n\\[pK_b = 5.4 - 1 = 4.4\\]",
+    "name": "Questions Item 40"
   },
   {
-    "id": "c8_item34",
-    "text": "The solubility products of three sparingly soluble salts AB, A₂B and AB₃ are \\(4.0 \\times 10^{-20}\\), \\(3.2 \\times 10^{-11}\\) and \\(2.7 \\times 10^{-31}\\) respectively. The increasing order of their solubility is:",
+    "id": "c8_item41",
+    "text": "The solubility products of AB, \\(\\text{A}_2\\text{B}\\) and \\(\\text{AB}_3\\) are \\(4.0 \\times 10^{-20}\\), \\(3.2 \\times 10^{-11}\\) and \\(2.7 \\times 10^{-31}\\) respectively. The increasing order of their solubility is",
     "options": [
       "\\(\\text{AB} < \\text{AB}_3 < \\text{A}_2\\text{B}\\)",
       "\\(\\text{AB}_3 < \\text{AB} < \\text{A}_2\\text{B}\\)",
-      "\\(\\text{A}_2\\text{B} < \\text{AB} < \\text{AB}_3\\)",
-      "\\(\\text{A}_2\\text{B} < \\text{AB}_3 < \\text{AB}\\)"
+      "\\(\\text{A}_2\\text{B} < \\text{AB}_3 < \\text{AB}\\)",
+      "\\(\\text{A}_2\\text{B} < \\text{AB} < \\text{AB}_3\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Calculate solubility S for each salt:\n\n**AB** (type 1:1): \\(K_{sp} = S^2\\)\n$$S = \\sqrt{4.0 \\times 10^{-20}} = 2 \\times 10^{-10} \\text{ mol/L}$$\n\n**A₂B** (type 2:1): \\(K_{sp} = (2S)^2 \\cdot S = 4S^3\\)\n$$S = \\left(\\frac{3.2 \\times 10^{-11}}{4}\\right)^{1/3} = (8 \\times 10^{-12})^{1/3} = 2 \\times 10^{-4} \\text{ mol/L}$$\n\n**AB₃** (type 1:3): \\(K_{sp} = S \\cdot (3S)^3 = 27S^4\\)\n$$S = \\left(\\frac{2.7 \\times 10^{-31}}{27}\\right)^{1/4} = (10^{-32})^{1/4} = 10^{-8} \\text{ mol/L}$$\n\nIncreasing order of solubility:\n$$\\text{AB} (2 \\times 10^{-10}) < \\text{AB}_3 (10^{-8}) < \\text{A}_2\\text{B} (2 \\times 10^{-4})$$",
-    "name": "Increasing Order of Solubility from Ksp Values"
+    "explanation": "Calculating solubility \\(S\\) for each salt:\n\n**AB** \\((K_{sp} = S^2)\\): \\(S = \\sqrt{4 \\times 10^{-20}} = 2 \\times 10^{-10}\\) M\n\n**AB\\(_3\\)** \\((K_{sp} = 27S^4)\\): \\(S = \\left(\\frac{2.7 \\times 10^{-31}}{27}\\right)^{1/4} = (10^{-32})^{1/4} = 10^{-8}\\) M\n\n**A\\(_2\\)B** \\((K_{sp} = 4S^3)\\): \\(S = \\left(\\frac{3.2 \\times 10^{-11}}{4}\\right)^{1/3} = (8 \\times 10^{-12})^{1/3} = 2 \\times 10^{-4}\\) M\n\nComparing: \\(2 \\times 10^{-10} < 10^{-8} < 2 \\times 10^{-4}\\)\n\nIncreasing order: **AB < AB\\(_3\\) < A\\(_2\\)B**",
+    "name": "Questions Item 41"
   },
   {
-    "id": "c8_item35",
-    "text": "Arrange the aqueous solutions of the following salts in increasing order of pH:\n\nI. CuSO₄ (salt of strong acid + weak base)\nII. NaCN (salt of strong base + weak acid)\nIII. KCl (salt of strong acid + strong base)",
+    "id": "c8_item42",
+    "text": "Arrange the aqueous solutions of \\(\\text{CuSO}_4\\) (I), NaCN (II), KCl (III) in increasing order of pH.",
     "options": [
       "I < II < III",
       "I < III < II",
@@ -451,25 +417,25 @@
       "II < III < I"
     ],
     "correctIndex": 1,
-    "explanation": "Nature of salt solutions:\n- **CuSO₄** (I): salt of strong acid (H₂SO₄) + weak base [Cu(OH)₂] → **acidic solution**, pH < 7\n- **KCl** (III): salt of strong acid (HCl) + strong base (KOH) → **neutral solution**, pH = 7\n- **NaCN** (II): salt of strong base (NaOH) + weak acid (HCN) → **basic solution**, pH > 7\n\nIncreasing pH order:\n$$\\text{CuSO}_4 < \\text{KCl} < \\text{NaCN}$$\n$$\\text{I} < \\text{III} < \\text{II}$$",
-    "name": "Increasing pH Order of Salt Solutions"
+    "explanation": "- **\\(\\text{CuSO}_4\\)**: salt of strong acid (\\(\\text{H}_2\\text{SO}_4\\)) and weak base (\\(\\text{Cu(OH)}_2\\)) → **acidic**, pH < 7\n- **KCl**: salt of strong acid (HCl) and strong base (KOH) → **neutral**, pH = 7\n- **NaCN**: salt of strong base (NaOH) and weak acid (HCN) → **basic**, pH > 7\n\nIncreasing pH order: \\(\\text{CuSO}_4 < \\text{KCl} < \\text{NaCN}\\), i.e., **I < III < II**",
+    "name": "Questions Item 42"
   },
   {
-    "id": "c8_item36",
-    "text": "For gaseous reactions (I) and (II), equilibrium constants are X and Y respectively:\n\n$$\\text{(I) } \\frac{1}{2}\\text{N}_2(g) + \\text{O}_2(g) \\rightleftharpoons \\text{NO}_2(g),\\ K = X$$\n$$\\text{(II) } 2\\text{NO}(g) \\rightleftharpoons \\text{N}_2\\text{O}_4(g),\\ K = Y$$\n\nThe equilibrium constant Z for:\n$$\\text{(III) } \\text{N}_2\\text{O}_4(g) \\rightleftharpoons \\text{N}_2(g) + 2\\text{O}_2(g)$$\nis:",
+    "id": "c8_item43",
+    "text": "For reaction I: \\(\\frac{1}{2}\\text{N}_2(g) + \\text{O}_2(g) \\rightleftharpoons \\text{NO}_2(g)\\), \\(K = X\\) and reaction II: \\(2\\text{NO}_2(g) \\rightleftharpoons \\text{N}_2\\text{O}_4(g)\\), \\(K = Y\\). The equilibrium constant \\(Z\\) for reaction III: \\(\\text{N}_2\\text{O}_4(g) \\rightleftharpoons \\text{N}_2(g) + 2\\text{O}_2(g)\\) is",
     "options": [
       "\\(Z = XY\\)",
-      "\\(Z = \\dfrac{Y}{X^2}\\)",
-      "\\(Z = \\dfrac{1}{2XY}\\)",
-      "\\(Z = \\dfrac{1}{X^2Y}\\)"
+      "\\(Z = \\dfrac{Y^2}{X}\\)",
+      "\\(Z = \\dfrac{1}{XY^2}\\)",
+      "\\(Z = \\dfrac{1}{X^2 Y}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "From the given equilibria:\n\n$$X = \\frac{[\\text{NO}_2]}{[\\text{N}_2]^{1/2}[\\text{O}_2]} \\Rightarrow [\\text{N}_2]^{1/2} = \\frac{[\\text{NO}_2]}{X[\\text{O}_2]}$$\n\n$$Y = \\frac{[\\text{N}_2\\text{O}_4]}{[\\text{NO}]^2} \\Rightarrow [\\text{N}_2\\text{O}_4] = Y[\\text{NO}]^2$$\n\nFor reaction (III):\n$$Z = \\frac{[\\text{N}_2][\\text{O}_2]^2}{[\\text{N}_2\\text{O}_4]}$$\n\nCombining reactions: Reaction III = −2×(I) − (II)\n\n$$Z = \\frac{1}{X^2 \\cdot Y}$$",
-    "name": "Equilibrium Constant for Combined Reaction"
+    "explanation": "From reaction I: \\(X = \\dfrac{[\\text{NO}_2]}{[\\text{N}_2]^{1/2}[\\text{O}_2]}\\), so \\([\\text{N}_2]^{1/2}[\\text{O}_2] = \\dfrac{[\\text{NO}_2]}{X}\\)\n\nFrom reaction II: \\(Y = \\dfrac{[\\text{N}_2\\text{O}_4]}{[\\text{NO}_2]^2}\\), so \\([\\text{N}_2\\text{O}_4] = Y[\\text{NO}_2]^2\\)\n\nFor reaction III:\n\n\\[Z = \\frac{[\\text{N}_2][\\text{O}_2]^2}{[\\text{N}_2\\text{O}_4]} = \\frac{\\left([\\text{N}_2]^{1/2}[\\text{O}_2]\\right)^2}{[\\text{N}_2\\text{O}_4]} = \\frac{\\left(\\dfrac{[\\text{NO}_2]}{X}\\right)^2}{Y[\\text{NO}_2]^2} = \\frac{[\\text{NO}_2]^2}{X^2 \\cdot Y[\\text{NO}_2]^2} = \\frac{1}{X^2 Y}\\]",
+    "name": "Questions Item 43"
   },
   {
-    "id": "c8_item37",
-    "text": "At 1000 K, if the equilibrium constant K_P for the reaction \\(2\\text{NOCl}(g) \\rightleftharpoons 2\\text{NO}(g) + \\text{Cl}_2(g)\\) is \\(4.157 \\times 10^{-4}\\) bar, the K_C (in mol L⁻¹) is:\n(R = 0.083 L·bar·K⁻¹·mol⁻¹)",
+    "id": "c8_item44",
+    "text": "At 1000 K, the equilibrium constant \\(K_p\\) for \\(2\\text{NOCl}(g) \\rightleftharpoons 2\\text{NO}(g) + \\text{Cl}_2(g)\\) is \\(4.157 \\times 10^{-4}\\) bar. The \\(K_C\\) (in mol L\\(^{-1}\\)) is \\((R = 0.083\\text{ L bar K}^{-1}\\text{mol}^{-1})\\)",
     "options": [
       "\\(4.16 \\times 10^{-7}\\)",
       "\\(4.16 \\times 10^{-4}\\)",
@@ -477,46 +443,65 @@
       "\\(5.0 \\times 10^{-6}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "$$K_p = K_C(RT)^{\\Delta n}$$\n\n$$\\Delta n_g = (2+1) - 2 = 1$$\n\n$$K_C = \\frac{K_p}{(RT)^{\\Delta n}} = \\frac{4.157 \\times 10^{-4}}{0.083 \\times 1000}$$\n$$= \\frac{4.157 \\times 10^{-4}}{83} = 5.0 \\times 10^{-6} \\text{ mol/L}$$",
-    "name": "KC from KP for NOCl Equilibrium at 1000 K"
+    "explanation": "\\(\\Delta n = 3 - 2 = 1\\)\n\nUsing \\(K_p = K_C(RT)^{\\Delta n}\\):\n\n\\[K_C = \\frac{K_p}{RT} = \\frac{4.157 \\times 10^{-4}}{0.083 \\times 1000} = \\frac{4.157 \\times 10^{-4}}{83} = 5.0 \\times 10^{-6} \\text{ mol L}^{-1}\\]",
+    "name": "Questions Item 44"
   },
   {
-    "id": "c8_item38",
-    "text": "If the ionisation constant of hypochlorous acid (HOCl) is \\(2.5 \\times 10^{-5}\\), the pH of 1.0 M of its solution is:\n(log 5 = 0.7)",
-    "options": [
-      "3.3",
-      "2.3",
-      "4.3",
-      "3.0"
-    ],
+    "id": "c8_item45",
+    "text": "If the ionisation constant of hypochlorous acid (HOCl) is \\(2.5 \\times 10^{-5}\\), the pH of its 1.0 M solution is \\((\\log 5 = 0.7)\\)",
+    "options": ["3.3", "2.3", "4.3", "3.0"],
     "correctIndex": 1,
-    "explanation": "For weak acid HOCl with concentration C = 1.0 M:\n$$\\alpha = \\sqrt{\\frac{K_a}{C}} = \\sqrt{\\frac{2.5 \\times 10^{-5}}{1.0}} = \\sqrt{2.5 \\times 10^{-5}} = 5 \\times 10^{-3}$$\n\n$$[H^+] = C\\alpha = 1.0 \\times 5 \\times 10^{-3} = 5 \\times 10^{-3} \\text{ M}$$\n\n$$\\text{pH} = -\\log(5 \\times 10^{-3}) = -(\\log 5 + \\log 10^{-3}) = -(0.7 - 3) = 3 - 0.7 = \\mathbf{2.3}$$",
-    "name": "pH of HOCl Solution from Ka"
+    "explanation": "For a weak acid with \\(\\alpha \\ll 1\\):\n\n\\[K_a = C\\alpha^2 \\implies \\alpha = \\sqrt{\\frac{K_a}{C}} = \\sqrt{\\frac{2.5 \\times 10^{-5}}{1.0}} = 5 \\times 10^{-3}\\]\n\n\\[\\text{HOCl} \\rightarrow \\text{H}^+ + \\text{OCl}^-\\]\n\n\\[[\\text{H}^+] = C\\alpha = 1 \\times 5 \\times 10^{-3} = 5 \\times 10^{-3} \\text{ M}\\]\n\n\\[\\text{pH} = -\\log(5 \\times 10^{-3}) = -\\log 5 + 3 = -0.7 + 3 = 2.3\\]",
+    "name": "Questions Item 45"
   },
   {
-    "id": "c8_item39",
-    "text": "At T(K), the equilibrium constant K_C for \\(\\text{H}_2(g) + \\text{I}_2(g) \\rightleftharpoons 2\\text{HI}(g)\\) is 49. If [H₂] = \\(2.0 \\times 10^{-2}\\) M and [I₂] = \\(8.0 \\times 10^{-2}\\) M at equilibrium, the [HI] at equilibrium in mol L⁻¹ is:",
-    "options": [
-      "2.8",
-      "0.28",
-      "0.14",
-      "1.4"
-    ],
+    "id": "c8_item46",
+    "text": "At T(K), the equilibrium constant for \\(\\text{H}_2(g) + \\text{I}_2(g) \\rightleftharpoons 2\\text{HI}(g)\\) is 49. If \\([\\text{H}_2]\\) and \\([\\text{I}_2]\\) at equilibrium are \\(2.0 \\times 10^{-2}\\) M and \\(8.0 \\times 10^{-2}\\) M respectively, \\([\\text{HI}]\\) at equilibrium in mol L\\(^{-1}\\) is",
+    "options": ["2.8", "0.28", "0.14", "1.4"],
     "correctIndex": 1,
-    "explanation": "$$K_C = \\frac{[\\text{HI}]^2}{[\\text{H}_2][\\text{I}_2]}$$\n\n$$[\\text{HI}]^2 = K_C \\times [\\text{H}_2][\\text{I}_2]$$\n$$= 49 \\times (2.0 \\times 10^{-2}) \\times (8.0 \\times 10^{-2})$$\n$$= 49 \\times 16 \\times 10^{-4}$$\n$$= 784 \\times 10^{-4} = 7.84 \\times 10^{-2}$$\n\n$$[\\text{HI}] = \\sqrt{7.84 \\times 10^{-2}} = 0.28 \\text{ mol/L}$$",
-    "name": "Equilibrium Concentration of HI"
+    "explanation": "\\[K_C = \\frac{[\\text{HI}]^2}{[\\text{H}_2][\\text{I}_2]}\\]\n\n\\[[\\text{HI}]^2 = K_C \\times [\\text{H}_2][\\text{I}_2]\\]\n\n\\[= 49 \\times (2.0 \\times 10^{-2}) \\times (8.0 \\times 10^{-2})\\]\n\n\\[= 49 \\times 16 \\times 10^{-4} = 784 \\times 10^{-4}\\]\n\n\\[[\\text{HI}] = \\sqrt{784 \\times 10^{-4}} = 28 \\times 10^{-2} = 0.28 \\text{ mol/L}\\]",
+    "name": "Questions Item 46"
   },
   {
-    "id": "c8_item40",
-    "text": "If the pH of 0.10 M monobasic acid at 298 K is 5.0, the value of pK_a at the same temperature is:",
-    "options": [
-      "5.0",
-      "8.0",
-      "9.0",
-      "6.0"
-    ],
+    "id": "c8_item47",
+    "text": "If the pH of 0.10 M monobasic acid at 298 K is 5.0, the value of \\(pK_a\\) at the same temperature is",
+    "options": ["5.0", "8.0", "9.0", "6.0"],
     "correctIndex": 2,
-    "explanation": "$$\\text{HA} \\rightleftharpoons \\text{H}^+ + \\text{A}^-$$\n\npH = 5.0 → \\([H^+] = 10^{-5}\\) M\n\nAt equilibrium:\n- \\([H^+] = [A^-] = 10^{-5}\\) M\n- \\([\\text{HA}] = 0.10 - 10^{-5} \\approx 0.10\\) M\n\n$$K_a = \\frac{[H^+][A^-]}{[\\text{HA}]} = \\frac{(10^{-5})^2}{0.10} = \\frac{10^{-10}}{0.10} = 10^{-9}$$\n\n$$pK_a = -\\log(10^{-9}) = \\mathbf{9}$$",
-    "name": "pKa of Weak Acid from pH"
+    "explanation": "\\[\\text{pH} = 5.0 \\implies [\\text{H}^+] = 10^{-5} \\text{ M} = x\\]\n\nFor dissociation \\(\\text{HA} \\rightleftharpoons \\text{H}^+ + \\text{A}^-\\):\n\n\\[K_a = \\frac{[\\text{H}^+][\\text{A}^-]}{[\\text{HA}]} = \\frac{x^2}{C - x} \\approx \\frac{(10^{-5})^2}{0.10}\\]\n\n\\[(x \\ll C, \\text{ so } C - x \\approx C)\\]\n\n\\[K_a = \\frac{10^{-10}}{0.10} = 10^{-9}\\]\n\n\\[pK_a = -\\log(10^{-9}) = 9\\]",
+    "name": "Questions Item 47"
+  },
+  {
+    "id": "c8_item48",
+    "text": "From the list: (i) \\(\\text{CaCO}_3\\), (ii) \\(\\text{MgSO}_4\\), (iii) \\(\\text{BaCl}_2\\), (iv) \\(\\text{Sr(NO}_3)_2\\), (v) \\(\\text{MgBr}_2\\), (vi) \\(\\text{MgCl}_2\\), the oxoacid salts of group II elements are",
+    "options": [
+      "i, ii, iii, iv, v, vi",
+      "i, ii, iv",
+      "iii, v, vi",
+      "ii, v, vi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Oxoacid salts are derived from **oxoacids** (acids that contain oxygen). Checking each:\n\n- \\(\\text{CaCO}_3\\): salt of \\(\\text{H}_2\\text{CO}_3\\) (oxoacid) ✓\n- \\(\\text{MgSO}_4\\): salt of \\(\\text{H}_2\\text{SO}_4\\) (oxoacid) ✓\n- \\(\\text{Sr(NO}_3)_2\\): salt of \\(\\text{HNO}_3\\) (oxoacid) ✓\n- \\(\\text{BaCl}_2\\), \\(\\text{MgBr}_2\\), \\(\\text{MgCl}_2\\): salts of HCl and HBr which are **not oxoacids** ✗\n\nTherefore the oxoacid salts are **(i), (ii), (iv)**.",
+    "name": "Questions Item 48"
+  },
+  {
+    "id": "c8_item49",
+    "text": "At 1000 K, the equilibrium partial pressures of \\(\\text{CO}(g)\\) and \\(\\text{CO}_2(g)\\) for the reaction \\(\\text{CO}_2(g) + \\text{C}(s) \\rightleftharpoons 2\\text{CO}(g)\\) are 0.66 bar and 0.15 bar respectively. The equilibrium constant \\(K_C\\) approximately is",
+    "options": ["0.35", "2.90", "0.035", "0.29"],
+    "correctIndex": 2,
+    "explanation": "\\[K_p = \\frac{(p_{\\text{CO}})^2}{p_{\\text{CO}_2}} = \\frac{(0.66)^2}{0.15} = \\frac{0.4356}{0.15} = 2.904\\]\n\nUsing \\(K_p = K_C(RT)^{\\Delta n}\\) with \\(\\Delta n = 1\\), \\(R = 0.082\\), \\(T = 1000\\) K:\n\n\\[K_C = \\frac{K_p}{RT} = \\frac{2.904}{0.082 \\times 1000} = \\frac{2.904}{82} \\approx 0.0353 \\approx 3.5 \\times 10^{-2}\\]",
+    "name": "Questions Item 49"
+  },
+  {
+    "id": "c8_item50",
+    "text": "At T(K), if the ionisation constant of ammonia is \\(2.5 \\times 10^{-5}\\), then for a 0.01 M ammonia solution the \\([\\text{OH}^-]\\) at equilibrium is",
+    "options": [
+      "\\(5 \\times 10^{-3}\\) M",
+      "\\(5 \\times 10^{-4}\\) M",
+      "\\(2.5 \\times 10^{-4}\\) M",
+      "\\(2.5 \\times 10^{-3}\\) M"
+    ],
+    "correctIndex": 1,
+    "explanation": "For \\(\\text{NH}_4\\text{OH} \\rightleftharpoons \\text{NH}_4^+ + \\text{OH}^-\\):\n\n\\[\\alpha = \\sqrt{\\frac{K_b}{C}} = \\sqrt{\\frac{2.5 \\times 10^{-5}}{0.01}} = \\sqrt{2.5 \\times 10^{-3}} = 0.05\\]\n\n\\[[\\text{OH}^-] = C \\times \\alpha = 0.01 \\times 0.05 = 5 \\times 10^{-4} \\text{ M}\\]\n\nThis gives \\(\\text{pOH} = -\\log(5 \\times 10^{-4}) = 3.3\\) and \\(\\text{pH} = 14 - 3.3 = 10.7\\).",
+    "name": "Questions Item 50"
   }
 ]

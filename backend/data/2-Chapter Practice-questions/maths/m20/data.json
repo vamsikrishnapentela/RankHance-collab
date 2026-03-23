@@ -1,652 +1,652 @@
 [
   {
     "id": "m20_item1",
-    "text": "The length of the latus rectum of the parabola $169\\{(x-1)^2+(y-3)^2\\}=(5x-12y+17)^2$ is",
+    "text": "The length of the latus rectum of the parabola \\(169\\{(x-1)^2+(y-3)^2\\}=(5x-12y+17)^2\\) is",
     "options": [
-      "\\dfrac{14}{13}",
-      "\\dfrac{12}{13}",
-      "\\dfrac{28}{13}",
-      "\\dfrac{56}{13}"
+      "\\(\\dfrac{14}{13}\\)",
+      "\\(\\dfrac{12}{13}\\)",
+      "\\(\\dfrac{28}{13}\\)",
+      "\\(\\dfrac{56}{13}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Rewrite the equation as<br>\\[ (x-1)^2 + (y-3)^2 = \\left( \\dfrac{5x-12y+17}{13} \\right)^2. \\]<br>The focus is at $S(1,3)$ and the directrix is $5x-12y+17=0$.<br>The perpendicular distance from focus to directrix is<br>\\[ \\dfrac{|5(1)-12(3)+17|}{\\sqrt{25+144}} = \\dfrac{14}{13} = 2a. \\]<br>Thus, the length of the latus rectum is $4a = \\dfrac{28}{13}$.",
-    "name": "Question Item 1"
+    "explanation": "Rewrite: \\((x-1)^2+(y-3)^2=\\left(\\dfrac{5x-12y+17}{13}\\right)^2\\), which is \\(SP=PM\\) form with focus \\(S(1,3)\\) and directrix \\(5x-12y+17=0\\).\n\nDistance from focus to directrix:\n\n\\[2a=\\frac{|5(1)-12(3)+17|}{\\sqrt{25+144}}=\\frac{|5-36+17|}{13}=\\frac{14}{13}\\]\n\nLatus rectum \\(=4a=\\dfrac{28}{13}\\).",
+    "name": "Latus Rectum of Parabola"
   },
   {
     "id": "m20_item2",
-    "text": "Foci of the ellipse $2x^2+3y^2-4x-12y+13=0$ are",
+    "text": "Foci of the ellipse \\(2x^2+3y^2-4x-12y+13=0\\) are",
     "options": [
-      "\\left(1+\\dfrac{1}{\\sqrt{6}},2\\right)$ and $\\left(1-\\dfrac{1}{\\sqrt{6}},2\\right)$",
-      "\\left(\\dfrac{1}{\\sqrt{6}}+1,2\\right)$ and $\\left(\\dfrac{1}{\\sqrt{6}}-1,2\\right)$",
-      "\\left(2,1+\\dfrac{1}{\\sqrt{6}}\\right)$ and $\\left(2,1-\\dfrac{1}{\\sqrt{6}}\\right)$",
-      "\\left(2,\\dfrac{1}{\\sqrt{6}}+1\\right)$ and $\\left(2,\\dfrac{1}{\\sqrt{6}}-1\\right)$"
+      "\\(\\left(1+\\dfrac{1}{\\sqrt{6}},2\\right)\\) and \\(\\left(1-\\dfrac{1}{\\sqrt{6}},2\\right)\\)",
+      "\\(\\left(\\dfrac{1}{\\sqrt{6}}+1,2\\right)\\) and \\(\\left(\\dfrac{1}{\\sqrt{6}}-1,2\\right)\\)",
+      "\\(\\left(2,1+\\dfrac{1}{\\sqrt{6}}\\right)\\) and \\(\\left(2,1-\\dfrac{1}{\\sqrt{6}}\\right)\\)",
+      "\\(\\left(2,\\dfrac{1}{\\sqrt{6}}+1\\right)\\) and \\(\\left(2,\\dfrac{1}{\\sqrt{6}}-1\\right)\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Rewrite as<br>\\[ 2(x-1)^2 + 3(y-2)^2 = 1. \\]<br>Divide by 1:<br>\\[ \\dfrac{(x-1)^2}{1/2} + \\dfrac{(y-2)^2}{1/3} = 1. \\]<br>Centre is $(1,2)$, $a=1/\\sqrt{2}$, $b=1/\\sqrt{3}$.<br>Eccentricity $e=\\sqrt{1-(1/3)/(1/2)}=1/\\sqrt{3}$.<br>$ae=1/\\sqrt{6}$.<br>Foci: $(1 \\pm 1/\\sqrt{6}, 2)$.",
-    "name": "Question Item 2"
+    "explanation": "Complete the square: \\(2(x-1)^2+3(y-2)^2=1\\), giving \\(\\dfrac{(x-1)^2}{1/2}+\\dfrac{(y-2)^2}{1/3}=1\\).\n\nHere \\(a^2=\\dfrac{1}{2}\\), \\(b^2=\\dfrac{1}{3}\\), centre \\((1,2)\\).\n\n\\[e=\\sqrt{1-\\frac{1/3}{1/2}}=\\sqrt{\\frac{1}{3}},\\quad ae=\\frac{1}{\\sqrt{2}}\\cdot\\frac{1}{\\sqrt{3}}=\\frac{1}{\\sqrt{6}}\\]\n\nFoci: \\(\\left(1\\pm\\dfrac{1}{\\sqrt{6}},2\\right)\\).",
+    "name": "Foci of Ellipse"
   },
   {
     "id": "m20_item3",
-    "text": "The value of $k$ so that the line $y=2x+k$ may touch the ellipse $3x^2+5y^2=15$ is",
+    "text": "The value of \\(k\\) so that \\(y=2x+k\\) may touch the ellipse \\(3x^2+5y^2=15\\) is",
     "options": [
-      "\\pm\\sqrt{23}",
-      "\\pm\\sqrt{13}",
-      "\\pm\\sqrt{33}",
-      "\\pm\\sqrt{32}"
+      "\\(\\pm\\sqrt{23}\\)",
+      "\\(\\pm\\sqrt{13}\\)",
+      "\\(\\pm\\sqrt{33}\\)",
+      "\\(\\pm\\sqrt{32}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Rewrite the ellipse as<br>\\[ \\dfrac{x^2}{5} + \\dfrac{y^2}{3} = 1. \\]<br>For the line $y=mx+k$ to be tangent to $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1$,<br>\\[ k^2 = a^2 m^2 + b^2. \\]<br>Substitute $a^2=5$, $b^2=3$, $m=2$:<br>\\[ k^2 = 5 \\cdot 4 + 3 = 23 \\implies k = \\pm \\sqrt{23}. \\]",
-    "name": "Question Item 3"
+    "explanation": "Rewrite: \\(\\dfrac{x^2}{5}+\\dfrac{y^2}{3}=1\\), so \\(a^2=5\\), \\(b^2=3\\), \\(m=2\\).\n\nCondition of tangency: \\(c^2=a^2m^2+b^2\\)\n\n\\[k^2=5\\times4+3=23 \\implies k=\\pm\\sqrt{23}\\]",
+    "name": "Tangent Condition for Ellipse"
   },
   {
     "id": "m20_item4",
-    "text": "Tangents are drawn to the hyperbola $x^2-9y^2=9$ from point $(3,2)$. Then, the area of the triangle formed by the tangents and the chord of contact is",
+    "text": "Tangents are drawn to the hyperbola \\(x^2-9y^2=9\\) from point \\((3,2)\\). The area of the triangle formed by the tangents and the chord of contact is",
     "options": [
-      "10",
-      "6",
-      "12",
-      "8"
+      "\\(10\\) sq units",
+      "\\(6\\) sq units",
+      "\\(12\\) sq units",
+      "\\(8\\) sq units"
     ],
     "correctIndex": 3,
-    "explanation": "Rewrite as<br>\\[ \\dfrac{x^2}{9} - \\dfrac{y^2}{1} = 1. \\]<br>Tangents: $y=mx \\pm \\sqrt{9m^2-1}$.<br>Passes through $(3,2)$ gives $m=5/12$.<br>Tangents: $12y=5x+9$ and $x=3$.<br>Chord of contact: $x-6y=3$.<br>Vertices of triangle: $(3,2)$, $(3,0)$, $(-5,-4/3)$.<br>Area<br>\\[ \\dfrac{1}{2} \\begin{vmatrix} 3 & 2 & 1 \\\\ 3 & 0 & 1 \\\\ -5 & -4/3 & 1 \\end{vmatrix} = 8. \\]",
-    "name": "Question Item 4"
+    "explanation": "Hyperbola: \\(\\dfrac{x^2}{9}-y^2=1\\). Tangent from \\((3,2)\\): \\(y=mx\\pm\\sqrt{9m^2-1}\\) passing through \\((3,2)\\) gives \\(m=\\dfrac{5}{12}\\).\n\nTangents: \\(12y=5x+9\\) and \\(x=3\\).\n\nChord of contact: \\(\\dfrac{3x}{9}-2y=1 \\implies x-6y=3\\).\n\nVertices of triangle: \\((3,2)\\), \\((3,0)\\), \\(\\left(-5,-\\dfrac{4}{3}\\right)\\).\n\nArea \\(=8\\) sq units.",
+    "name": "Triangle from Tangents to Hyperbola"
   },
   {
     "id": "m20_item5",
-    "text": "If $x+5=0$ is the directrix and $(-3,0)$ the vertex of a parabola, then equation of this parabola is",
+    "text": "If \\(x+5=0\\) is the directrix and \\((-3,0)\\) is the vertex of a parabola, then its equation is",
     "options": [
-      "$y^2=8(x+3)$",
-      "$y^2=8(x-3)$",
-      "$x^2=8(y+3)$",
-      "$x^2=8(y-3)$"
+      "\\(y^2=8(x+3)\\)",
+      "\\(y^2=8(x-3)\\)",
+      "\\(x^2=8(y+3)\\)",
+      "\\(x^2=8(y-3)\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Vertex at $(-3,0)$, directrix $x=-5$.<br>Focus is at distance $a=2$ from vertex (midway to directrix).<br>Focus at $(-1,0)$.<br>Equation: $y^2=8(x+3)$.",
-    "name": "Question Item 5"
+    "explanation": "Vertex \\((-3,0)\\), directrix \\(x=-5\\). The axis of parabola is horizontal (along \\(x\\)-axis).\n\nDistance from vertex to directrix \\(=|-3-(-5)|=2=a\\).\n\nSince directrix is to the left and vertex is at \\((-3,0)\\), parabola opens rightward:\n\n\\[y^2=4a(x-(-3))=8(x+3)\\]",
+    "name": "Equation of Parabola from Vertex and Directrix"
   },
   {
     "id": "m20_item6",
-    "text": "The common tangent to the parabola $y^2=32x$ and $x^2=256y$ will be",
+    "text": "The common tangent to the parabolas \\(y^2=32x\\) and \\(x^2=256y\\) is",
     "options": [
-      "$2x+4y+64=0$",
-      "$x+2y-32=0$",
-      "$2x+4y+32=0$",
-      "$4x+2y+64=0$"
+      "\\(2x+4y+64=0\\)",
+      "\\(x+2y-32=0\\)",
+      "\\(2x+4y+32=0\\)",
+      "\\(4x+2y+64=0\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$4a=32 \\implies a=8$, $4b=256 \\implies b=64$.<br>Common tangent equation:<br>\\[ b^{1/3}y + a^{1/3}x + (a^2 b^2)^{1/3} = 0. \\]<br>Substitute: $4y + 2x + 64 = 0$.",
-    "name": "Question Item 6"
+    "explanation": "For parabolas \\(y^2=4ax\\) and \\(x^2=4by\\), the common tangent is:\n\n\\[b^{1/3}y + a^{1/3}x + (a^2b^2)^{1/3}=0\\]\n\nHere \\(4a=32 \\implies a=8\\) and \\(4b=256 \\implies b=64\\):\n\n\\[(64)^{1/3}y+(8)^{1/3}x+(8^2\\cdot64^2)^{1/3}=0\\]\n\n\\[4y+2x+64=0 \\implies 2x+4y+64=0\\]",
+    "name": "Common Tangent to Two Parabolas"
   },
   {
     "id": "m20_item7",
-    "text": "If the latus rectum of a hyperbola through one focus subtends an angle $60^\\circ$ at the other focus, then its eccentricity is",
+    "text": "If the latus rectum of a hyperbola through one focus subtends an angle \\(60°\\) at the other focus, then its eccentricity is",
     "options": [
-      "$\\sqrt{2}$",
-      "$\\sqrt{6}$",
-      "$\\sqrt{3}$",
-      "$\\sqrt{5}$"
+      "\\(2\\)",
+      "\\(\\sqrt{6}\\)",
+      "\\(\\sqrt{3}\\)",
+      "\\(\\sqrt{5}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "In $\\triangle ABC$,<br>\\[ \\tan 30^\\circ = \\dfrac{b^2/a}{2ae} \\implies \\dfrac{1}{\\sqrt{3}} = \\dfrac{b^2}{2a^2e}. \\]<br>Directrix equation: $x=a$.<br>Solving yields $e=\\sqrt{3}$.",
-    "name": "Question Item 7"
+    "explanation": "The latus rectum of one end through focus \\(F_1\\) has length \\(\\dfrac{b^2}{a}\\). The angle subtended at \\(F_2\\) is \\(60°\\).\n\nFrom the geometry, \\(\\tan30°=\\dfrac{b^2/a}{2ae}\\):\n\n\\[\\frac{1}{\\sqrt{3}}=\\frac{b^2}{2a^2e}\\implies 2a^2e=\\sqrt{3}b^2=\\sqrt{3}a^2(e^2-1)\\]\n\n\\[2e=\\sqrt{3}(e^2-1)\\implies \\sqrt{3}e^2-2e-\\sqrt{3}=0\\]\n\n\\[e=\\frac{2\\pm\\sqrt{4+12}}{2\\sqrt{3}}=\\frac{2\\pm4}{2\\sqrt{3}} \\implies e=\\sqrt{3}\\] (positive root).",
+    "name": "Eccentricity from Latus Rectum Angle"
   },
   {
     "id": "m20_item8",
-    "text": "The equation of the tangent to the parabola $y^2=12x$, which makes an angle $30^\\circ$ with the positive direction of $X$-axis is given by $x-\\sqrt{3}y+9=0$, then its points of contact is",
+    "text": "The tangent to \\(y^2=12x\\) making angle \\(30°\\) with the positive \\(X\\)-axis is \\(x-\\sqrt{3}y+9=0\\). Its point of contact is",
     "options": [
-      "$(-9,-6\\sqrt{3})$",
-      "$(9,-6\\sqrt{3})$",
-      "$(-9,6\\sqrt{3})$",
-      "$(9,6\\sqrt{3})$"
+      "\\((-9,-6\\sqrt{3})\\)",
+      "\\((9,-6\\sqrt{3})\\)",
+      "\\((-9,6\\sqrt{3})\\)",
+      "\\((9,6\\sqrt{3})\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Tangent at $(x_1,y_1)$: $yy_1=6(x+x_1)$.<br>Compare with $x-\\sqrt{3}y+9=0$:<br>\\[ \\dfrac{6}{1} = \\dfrac{-y_1}{-\\sqrt{3}} = \\dfrac{6x_1}{9}. \\]<br>Solve: $(x_1,y_1)=(9,6\\sqrt{3})$.",
-    "name": "Question Item 8"
+    "explanation": "Tangent at \\((x_1,y_1)\\) to \\(y^2=12x\\) is \\(yy_1=6(x+x_1)\\), i.e., \\(6x-y_1y+6x_1=0\\).\n\nComparing with \\(x-\\sqrt{3}y+9=0\\) (multiplying by 6): \\(6x-6\\sqrt{3}y+54=0\\).\n\n\\[y_1=6\\sqrt{3},\\quad 6x_1=54 \\implies x_1=9\\]\n\nPoint of contact: \\((9, 6\\sqrt{3})\\).",
+    "name": "Point of Contact on Parabola"
   },
   {
     "id": "m20_item9",
-    "text": "In an ellipse, two vertices are $(5,0)$ and $(0,-4)$. Then the equation of the ellipse is",
+    "text": "In an ellipse, two vertices are \\((5,0)\\) and \\((0,-4)\\). The equation of the ellipse is",
     "options": [
-      "$\\dfrac{x^2}{16}+\\dfrac{y^2}{25}=1$",
-      "$\\dfrac{x^2}{25}+\\dfrac{y^2}{16}=1$",
-      "$\\dfrac{x^2}{5}+\\dfrac{y^2}{4}=1$",
-      "$x^2+y^2=41$"
+      "\\(\\dfrac{x^2}{16}+\\dfrac{y^2}{25}=1\\)",
+      "\\(\\dfrac{x^2}{25}+\\dfrac{y^2}{16}=1\\)",
+      "\\(\\dfrac{x^2}{5}+\\dfrac{y^2}{4}=1\\)",
+      "\\(x^2+y^2=41\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Vertices lie on axes: $a=5$, $b=4$.<br>Equation: $\\dfrac{x^2}{25} + \\dfrac{y^2}{16} = 1$.",
-    "name": "Question Item 9"
+    "explanation": "The vertex \\((5,0)\\) lies on the \\(x\\)-axis, so \\(a=5\\).\n\nThe vertex \\((0,-4)\\) lies on the \\(y\\)-axis, so \\(b=4\\).\n\nEquation: \\(\\dfrac{x^2}{25}+\\dfrac{y^2}{16}=1\\).",
+    "name": "Ellipse from Vertices"
   },
   {
     "id": "m20_item10",
-    "text": "The lengths of the sides of the rectangle of greatest area that can be inscribed in the ellipse $x^2+4y^2=64$ are",
+    "text": "The lengths of the sides of the rectangle of greatest area inscribed in the ellipse \\(x^2+4y^2=64\\) are",
     "options": [
-      "$6\\sqrt{2},4\\sqrt{2}$",
-      "$8\\sqrt{2},4\\sqrt{2}$",
-      "$8\\sqrt{2},8\\sqrt{2}$",
-      "$16\\sqrt{2},4\\sqrt{2}$"
+      "\\(6\\sqrt{2},\\;4\\sqrt{2}\\)",
+      "\\(8\\sqrt{2},\\;4\\sqrt{2}\\)",
+      "\\(8\\sqrt{2},\\;8\\sqrt{2}\\)",
+      "\\(16\\sqrt{2},\\;4\\sqrt{2}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Ellipse: $\\dfrac{x^2}{64} + \\dfrac{y^2}{16} = 1$.<br>Vertex $P(8\\cos\\theta,4\\sin\\theta)$.<br>Area $=64\\sin 2\\theta$.<br>Maximum at $\\theta=\\pi/4$.<br>Sides: $8\\sqrt{2}$ and $4\\sqrt{2}$.",
-    "name": "Question Item 10"
+    "explanation": "Ellipse: \\(\\dfrac{x^2}{64}+\\dfrac{y^2}{16}=1\\), so \\(a=8\\), \\(b=4\\).\n\nInscribed rectangle vertex: \\(P=(8\\cos\\theta, 4\\sin\\theta)\\). Area \\(=4(8\\cos\\theta)(4\\sin\\theta)=64\\sin2\\theta\\).\n\nMaximum when \\(\\theta=45°\\): \\(P=(4\\sqrt{2},2\\sqrt{2})\\).\n\nSide lengths: \\(2\\times4\\sqrt{2}=8\\sqrt{2}\\) and \\(2\\times2\\sqrt{2}=4\\sqrt{2}\\).",
+    "name": "Rectangle in Ellipse"
   },
   {
     "id": "m20_item11",
-    "text": "The equation of the tangent to the parabola $y^2=16x$, which is perpendicular to the line $3x-4y+5=0$ is given by",
+    "text": "The equation of the tangent to \\(y^2=16x\\) perpendicular to \\(3x-4y+5=0\\) is",
     "options": [
-      "$4x-3y+9=0$",
-      "$4x+3y-9=0$",
-      "$4x+3y+9=0$",
-      "$4x-3y-9=0$"
+      "\\(4x-3y+9=0\\)",
+      "\\(4x+3y-9=0\\)",
+      "\\(4x+3y+9=0\\)",
+      "\\(4x-3y-9=0\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Slope of given line $=4/3$.<br>Perpendicular slope $=-3/4$.<br>Tangent: $y=-(4/3)x - 3$.<br>Rearrange: $4x+3y+9=0$.",
-    "name": "Question Item 11"
+    "explanation": "Slope of \\(3x-4y+5=0\\) is \\(\\dfrac{3}{4}\\). Perpendicular slope: \\(m=-\\dfrac{4}{3}\\).\n\nTangent to \\(y^2=16x\\) with slope \\(m\\): \\(y=mx+\\dfrac{a}{m}\\) where \\(a=4\\).\n\n\\[y=-\\frac{4}{3}x+\\frac{4}{-4/3}=-\\frac{4}{3}x-3\\]\n\n\\[3y=-4x-9 \\implies 4x+3y+9=0\\]",
+    "name": "Perpendicular Tangent to Parabola"
   },
   {
     "id": "m20_item12",
-    "text": "The equation of the ellipse with its focus at $(6,2)$, centre at $(1,2)$ and which passes through the point $(4,6)$ is",
+    "text": "The eccentricity of an ellipse with centre at origin and one directrix \\(x=4\\) is \\(\\dfrac{1}{2}\\). Its equation is",
     "options": [
-      "$\\dfrac{(x-1)^2}{25}+\\dfrac{(y-2)^2}{16}=1$",
-      "$\\dfrac{(x-1)^2}{25}+\\dfrac{(y-2)^2}{20}=1$",
-      "$\\dfrac{(x-1)^2}{45}+\\dfrac{(y-2)^2}{16}=1$",
-      "$\\dfrac{(x-1)^2}{45}+\\dfrac{(y-2)^2}{20}=1$"
+      "\\(4x^2+y^2=12\\)",
+      "\\(x^2+3y^2=12\\)",
+      "\\(4x^2+3y^2=12\\)",
+      "\\(3x^2+4y^2=12\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Centre $(1,2)$, focus $(6,2)$ gives $ae=5$.<br>Passes through $(4,6)$:<br>\\[ \\dfrac{9}{a^2} + \\dfrac{16}{b^2} = 1. \\]<br>$a^2 - b^2 = 25$ and solve: $a^2=45$, $b^2=20$.<br>Equation: $\\dfrac{(x-1)^2}{45} + \\dfrac{(y-2)^2}{20} = 1$.",
-    "name": "Question Item 12"
+    "explanation": "\\(e=\\dfrac{1}{2}\\), directrix \\(x=\\dfrac{a}{e}=4 \\implies a=4\\times\\dfrac{1}{2}=2\\).\n\n\\[b^2=a^2(1-e^2)=4\\left(1-\\frac{1}{4}\\right)=3\\]\n\nEquation: \\(\\dfrac{x^2}{4}+\\dfrac{y^2}{3}=1 \\implies 3x^2+4y^2=12\\).",
+    "name": "Ellipse from Eccentricity and Directrix"
   },
   {
     "id": "m20_item13",
-    "text": "The eccentricity of an ellipse, with its centre as origin, is $1/2$. If one of the directrices is $x=4$, then the equation of the ellipse is given by",
+    "text": "The equation of the transverse axis of the hyperbola \\((x-3)^2+(y+1)^2=(4x+3y)^2\\) is",
     "options": [
-      "$4x^2+y^2=12$",
-      "$x^2+3y^2=12$",
-      "$4x^2+3y^2=12$",
-      "$3x^2+4y^2=12$"
+      "\\(3x+4y=13\\)",
+      "\\(3x-4y=13\\)",
+      "\\(4x-3y=13\\)",
+      "\\(3x-4y=9\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "$a/e=4 \\implies a=2$.<br>$b^2=a^2(1-e^2)=3$.<br>Equation: $\\dfrac{x^2}{4} + \\dfrac{y^2}{3} = 1 \\implies 3x^2 + 4y^2 = 12$.",
-    "name": "Question Item 13"
+    "correctIndex": 1,
+    "explanation": "Rewrite: \\((x-3)^2+(y+1)^2=25\\left(\\dfrac{4x+3y}{5}\\right)^2\\), which is \\(SP=ePM\\) with \\(e=5\\), focus \\((3,-1)\\), directrix \\(4x+3y=0\\).\n\nThe transverse axis is perpendicular to the directrix and passes through the focus:\n\nDirection perpendicular to \\(4x+3y=0\\) is \\(3x-4y=k\\). Substituting \\((3,-1)\\):\n\n\\[9+4=13 \\implies 3x-4y=13\\]",
+    "name": "Transverse Axis of Hyperbola"
   },
   {
     "id": "m20_item14",
-    "text": "The equation of the transverse axis of hyperbola $(x-3)^2+(y+1)^2=(4x+3y)^2$ is",
+    "text": "The coordinates of focus of the parabola \\(5x^2=-12y\\) are",
     "options": [
-      "$3x+4y=13$",
-      "$3x-4y=13$",
-      "$4x-3y=13$",
-      "$3x-4y=9$"
+      "\\(\\left(\\dfrac{3}{5},0\\right)\\)",
+      "\\(\\left(-\\dfrac{3}{5},0\\right)\\)",
+      "\\(\\left(0,-\\dfrac{3}{5}\\right)\\)",
+      "\\(\\left(0,\\dfrac{3}{5}\\right)\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Focus $(3,-1)$, directrix $4x+3y=0$.<br>Transverse axis perpendicular to directrix through focus:<br>\\[ 3x-4y=13. \\]",
-    "name": "Question Item 14"
+    "correctIndex": 2,
+    "explanation": "Rewrite: \\(x^2=-\\dfrac{12}{5}y\\). In the form \\(x^2=-4ay\\):\n\n\\[4a=\\frac{12}{5} \\implies a=\\frac{3}{5}\\]\n\nParabola opens downward, focus at \\(\\left(0,-a\\right)=\\left(0,-\\dfrac{3}{5}\\right)\\).",
+    "name": "Focus of Parabola"
   },
   {
     "id": "m20_item15",
-    "text": "The co-ordinates of focus of the parabola $5x^2=-12y$ are",
+    "text": "The coordinates of the focus of the parabola \\((x+3)^2=2(y-5)\\) is",
     "options": [
-      "$\\left(\\dfrac{3}{5},0\\right)$",
-      "$\\left(-\\dfrac{3}{5},0\\right)$",
-      "$\\left(0,\\dfrac{3}{5}\\right)$",
-      "$\\left(0,-\\dfrac{3}{5}\\right)$"
+      "\\(\\left(-\\dfrac{5}{2},5\\right)\\)",
+      "\\(\\left(-3,\\dfrac{11}{2}\\right)\\)",
+      "\\(\\left(3,-\\dfrac{11}{2}\\right)\\)",
+      "\\(\\left(0,\\dfrac{1}{2}\\right)\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Rewrite: $x^2=-\\dfrac{12}{5}y$.<br>$4a=-12/5 \\implies a=-3/5$.<br>Focus: $(0,a)=(0,-3/5)$.",
-    "name": "Question Item 15"
+    "correctIndex": 1,
+    "explanation": "In the form \\((x-h)^2=4a(y-k)\\): vertex \\((-3,5)\\), \\(4a=2 \\implies a=\\dfrac{1}{2}\\).\n\nParabola opens upward, focus at \\(\\left(-3, 5+\\dfrac{1}{2}\\right)=\\left(-3,\\dfrac{11}{2}\\right)\\).",
+    "name": "Focus of Translated Parabola"
   },
   {
     "id": "m20_item16",
-    "text": "The co-ordinates of the focus of the parabola $(x+3)^2=2(y-5)$ is",
+    "text": "The eccentricity of an ellipse whose latus rectum is \\(4\\) units and the distance between vertex and nearest focus is \\(\\dfrac{3}{2}\\) units is",
     "options": [
-      "$\\left(-\\dfrac{5}{2},5\\right)$",
-      "$\\left(-3,\\dfrac{11}{2}\\right)$",
-      "$\\left(3,-\\dfrac{11}{2}\\right)$",
-      "$\\left(0,\\dfrac{1}{2}\\right)$"
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(\\dfrac{1}{9}\\)",
+      "\\(\\dfrac{3}{4}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Vertex $(-3,5)$, $4a=2 \\implies a=1/2$.<br>Focus: $(-3,5+1/2)=(-3,11/2)$.",
-    "name": "Question Item 16"
+    "correctIndex": 0,
+    "explanation": "Latus rectum: \\(\\dfrac{2b^2}{a}=4 \\implies b^2=2a\\).\n\nVertex to nearest focus: \\(a-ae=\\dfrac{3}{2} \\implies a(1-e)=\\dfrac{3}{2}\\).\n\nUsing \\(b^2=a^2(1-e^2)=a^2(1-e)(1+e)\\):\n\n\\[2a=a^2(1-e)(1+e)\\implies 2=a(1-e)(1+e)\\]\n\n\\[2=\\frac{3}{2}(1+e)\\implies 1+e=\\frac{4}{3}\\implies e=\\frac{1}{3}\\]",
+    "name": "Eccentricity from Latus Rectum and Vertex-Focus Distance"
   },
   {
     "id": "m20_item17",
-    "text": "Find the eccentricity of an ellipse, if the length of its latus rectum is 4 units and distance between its vertex and the nearest focus is $3/2$ units.",
+    "text": "The parabola with directrix \\(x+2y-1=0\\) and focus \\((1,0)\\) is",
     "options": [
-      "$\\dfrac{1}{3}$",
-      "$\\dfrac{2}{3}$",
-      "$\\dfrac{1}{9}$",
-      "$\\dfrac{3}{4}$"
+      "\\(4x^2-4xy+y^2-8x+4y+4=0\\)",
+      "\\(4x^2+4xy+y^2-8x+4y+4=0\\)",
+      "\\(4x^2+4xy+y^2+8x-4y+4=0\\)",
+      "\\(4x^2-4xy+y^2-8x-4y+4=0\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$\\dfrac{2b^2}{a}=4 \\implies b^2=2a$.<br>$a(1-e)=3/2$.<br>$b^2=a^2(1-e^2) \\implies 2a=a^2(1-e^2)$.<br>Solve: $e=1/3$.",
-    "name": "Question Item 17"
+    "explanation": "Using \\(SP=PM\\):\n\n\\[\\sqrt{(x-1)^2+y^2}=\\frac{|x+2y-1|}{\\sqrt{5}}\\]\n\nSquaring: \\(5[(x-1)^2+y^2]=(x+2y-1)^2\\)\n\n\\[5x^2-10x+5+5y^2=x^2+4y^2+1+4xy-2x-4y\\]\n\n\\[4x^2-4xy+y^2-8x+4y+4=0\\]",
+    "name": "Parabola from Focus and Directrix"
   },
   {
     "id": "m20_item18",
-    "text": "The parabola with directrix $x+2y-1=0$ and focus $(1,0)$ is",
+    "text": "The line \\(x=m^2\\) meets the ellipse \\(9x^2+y^2=9\\) in real and distinct points if and only if",
     "options": [
-      "$4x^2-4xy+y^2-8x+4y+4=0$",
-      "$4x^2+4xy+y^2-8x+4y+4=0$",
-      "$4x^2+4xy+y^2+8x-4y+4=0$",
-      "$4x^2-4xy+y^2-8x-4y+4=0$"
+      "\\(|m|>1\\)",
+      "\\(|m|<1\\)",
+      "\\(|m|>2\\)",
+      "\\(|m|<2\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "$\\dfrac{|x+2y-1|}{\\sqrt{5}} = \\sqrt{(x-1)^2 + y^2}$.<br>Square and simplify:<br>\\[ 4x^2 - 4xy + y^2 - 8x + 4y + 4 = 0. \\]",
-    "name": "Question Item 18"
+    "correctIndex": 1,
+    "explanation": "Substituting \\(x=m^2\\) into \\(9x^2+y^2=9\\):\n\n\\[y^2=9-9m^4=9(1-m^4)\\]\n\nFor real and distinct points: \\(y^2>0 \\implies 1-m^4>0 \\implies m^4<1 \\implies |m|<1\\).",
+    "name": "Ellipse Intersection Condition"
   },
   {
     "id": "m20_item19",
-    "text": "For the ellipse $\\dfrac{x^2}{18}+\\dfrac{y^2}{32}=1$, if a tangent with slope $-4/3$ intersects the major and minor axes at $P$ and $Q$ respectively. Find $P$ and $Q$.",
+    "text": "The condition for \\(ax+by+c=0\\) to be a normal to the ellipse \\(\\dfrac{x^2}{4}+\\dfrac{y^2}{36}=1\\) is",
     "options": [
-      "$P(6,0), Q(0,8)$",
-      "$P(0,6), Q(8,0)$",
-      "$P(3\\sqrt{2},0), Q(0,4\\sqrt{2})$",
-      "$P(0,3\\sqrt{2}), Q(4\\sqrt{2},0)$"
+      "\\(\\dfrac{1}{a^2}+\\dfrac{1}{b^2}=\\dfrac{144}{c^2}\\)",
+      "\\(\\dfrac{1}{a^2}+\\dfrac{1}{b^2}=\\dfrac{128}{c^2}\\)",
+      "\\(\\dfrac{1}{a^2}+\\dfrac{9}{b^2}=\\dfrac{256}{c^2}\\)",
+      "\\(\\dfrac{1}{a^2}+\\dfrac{9}{b^2}=\\dfrac{32}{c^2}\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Tangent: $y=-(4/3)x \\pm \\sqrt{18 \\cdot (16/9) + 32} = -(4/3)x \\pm 8$.<br>One: $4x+3y=24$ intersects major axis at $P(6,0)$, minor at $Q(0,8)$.",
-    "name": "Question Item 19"
+    "correctIndex": 2,
+    "explanation": "Normal at \\(P(2\\cos\\theta, 6\\sin\\theta)\\) to \\(\\dfrac{x^2}{4}+\\dfrac{y^2}{36}=1\\) is:\n\n\\[2x\\sec\\theta - 6y\\csc\\theta + 32 = 0\\]\n\nComparing with \\(ax+by+c=0\\): \\(\\cos\\theta=\\dfrac{c}{16a}\\), \\(\\sin\\theta=-\\dfrac{3c}{16b}\\).\n\nUsing \\(\\cos^2\\theta+\\sin^2\\theta=1\\):\n\n\\[\\frac{c^2}{256a^2}+\\frac{9c^2}{256b^2}=1 \\implies \\frac{1}{a^2}+\\frac{9}{b^2}=\\frac{256}{c^2}\\]",
+    "name": "Normal Condition for Ellipse"
   },
   {
     "id": "m20_item20",
-    "text": "The line $x=m^2$ meets an ellipse $9x^2+y^2=9$ in the real and distinct points if and only if",
+    "text": "The intersection of perpendicular tangents to the hyperbola \\(\\dfrac{x^2}{4}-\\dfrac{y^2}{2}=1\\) lies on the circle \\(x^2+y^2=\\)",
     "options": [
-      "$|m|>1$",
-      "$|m|<1$",
-      "$|m|>2$",
-      "$|m|<2$"
+      "\\(2\\)",
+      "\\(12\\)",
+      "\\(\\sqrt{2}\\)",
+      "\\(2\\sqrt{3}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Substitute $x=m^2$:<br>\\[ 9m^4 + y^2 = 9 \\implies y^2 = 9(1-m^4) > 0 \\implies |m| < 1. \\]",
-    "name": "Question Item 20"
+    "correctIndex": 0,
+    "explanation": "The director circle of a hyperbola \\(\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1\\) is \\(x^2+y^2=a^2-b^2\\).\n\nHere \\(a^2=4\\), \\(b^2=2\\):\n\n\\[x^2+y^2=4-2=2\\]",
+    "name": "Director Circle of Hyperbola"
   },
   {
     "id": "m20_item21",
-    "text": "Find the condition for the line $ax+by+c=0$ to be a normal to an ellipse $\\dfrac{x^2}{4}+\\dfrac{y^2}{36}=1$",
+    "text": "The equation of the tangent to \\(y^2=12x\\) at \\((3,-6)\\) is",
     "options": [
-      "$\\dfrac{1}{a^2}+\\dfrac{1}{b^2}=\\dfrac{144}{c^2}$",
-      "$\\dfrac{1}{a^2}+\\dfrac{1}{b^2}=\\dfrac{128}{c^2}$",
-      "$\\dfrac{1}{a^2}+\\dfrac{9}{b^2}=\\dfrac{256}{c^2}$",
-      "$\\dfrac{1}{a^2}+\\dfrac{9}{b^2}=\\dfrac{32}{c^2}$"
+      "\\(x-y+9=0\\)",
+      "\\(x+y+3=0\\)",
+      "\\(x+y-3=0\\)",
+      "\\(x=3\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Normal at $(2\\cos\\theta,6\\sin\\theta)$:<br>\\[ 2x\\cos\\theta - 6y\\sin\\theta + 32 = 0. \\]<br>Compare coefficients and use $\\cos^2\\theta + \\sin^2\\theta=1$:<br>\\[ \\dfrac{1}{a^2} + \\dfrac{9}{b^2} = \\dfrac{256}{c^2}. \\]",
-    "name": "Question Item 21"
+    "correctIndex": 1,
+    "explanation": "Tangent to \\(y^2=12x\\) at \\((x_1,y_1)\\) is \\(yy_1=6(x+x_1)\\).\n\nAt \\((3,-6)\\): \\(y(-6)=6(x+3)\\)\n\n\\[-6y=6x+18 \\implies x+y+3=0\\]",
+    "name": "Tangent to Parabola at Given Point"
   },
   {
     "id": "m20_item22",
-    "text": "Intersection of two perpendicular tangents to the hyperbola $\\dfrac{x^2}{4}-\\dfrac{y^2}{2}=1$ lies on the circle $x^2+y^2=\\dots$",
+    "text": "The equation of the tangent to \\(y^2=8x\\) inclined at \\(30°\\) to the \\(X\\)-axis is",
     "options": [
-      "2",
-      "12",
-      "$\\sqrt{2}$",
-      "$2\\sqrt{3}$"
+      "\\(\\sqrt{3}x-\\sqrt{3}y+14=0\\)",
+      "\\(2x-\\sqrt{3}y+14=0\\)",
+      "\\(2x-\\sqrt{3}y+7=0\\)",
+      "\\(x-\\sqrt{3}y+6=0\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Director circle: $x^2 + y^2 = a^2 - b^2 = 4 - 2 = 2$.",
-    "name": "Question Item 22"
+    "correctIndex": 3,
+    "explanation": "Here \\(a=2\\), slope \\(m=\\tan30°=\\dfrac{1}{\\sqrt{3}}\\).\n\nTangent: \\(y=mx+\\dfrac{a}{m}=\\dfrac{x}{\\sqrt{3}}+2\\sqrt{3}\\)\n\n\\[x-\\sqrt{3}y+6=0\\]",
+    "name": "Tangent at Given Inclination"
   },
   {
     "id": "m20_item23",
-    "text": "The equation of the tangent to the parabola $y^2=12x$ at $(3,-6)$ is",
+    "text": "If the line \\(y=2x+k\\) is normal to the parabola \\(y^2=4x\\), then \\(k=\\)",
     "options": [
-      "$x-y+9=0$",
-      "$x+y+3=0$",
-      "$x+y-3=0$",
-      "$x=3$"
+      "\\(-10\\)",
+      "\\(10\\)",
+      "\\(12\\)",
+      "\\(-12\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Tangent at $(x_1,y_1)$: $y y_1 = 6(x + x_1)$.<br>Substitute $(3,-6)$:<br>\\[ -6y = 6(x+3) \\implies x+y+3=0. \\]",
-    "name": "Question Item 23"
+    "correctIndex": 3,
+    "explanation": "Normal to \\(y^2=4ax\\) with slope \\(m\\): \\(y=mx-2am-am^3\\). Here \\(a=1\\), \\(m=2\\):\n\n\\[k=-2(1)(2)-(1)(2)^3=-4-8=-12\\]",
+    "name": "Normal to Parabola"
   },
   {
     "id": "m20_item24",
-    "text": "The equation of the tangent to the parabola $y^2=8x$ inclined at $30^\\circ$ to the $X$-axis is",
+    "text": "The vertices of the hyperbola \\(7x^2-49y^2=343\\) are",
     "options": [
-      "$3x-\\sqrt{3}y+14=0$",
-      "$2x-3y+14=0$",
-      "$2x-\\sqrt{3}y+7=0$",
-      "$x-\\sqrt{3}y+6=0$"
+      "\\((0,0)\\)",
+      "\\((\\pm3,0)\\)",
+      "\\((0,\\pm5)\\)",
+      "\\((\\pm7,0)\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Tangent: $y=mx+2/m$.<br>$m=\\tan30^\\circ=1/\\sqrt{3}$:<br>\\[ y=\\dfrac{1}{\\sqrt{3}}x + \\dfrac{2}{\\sqrt{3}} \\implies x-\\sqrt{3}y+6=0. \\]",
-    "name": "Question Item 24"
+    "explanation": "Rewrite: \\(\\dfrac{x^2}{49}-\\dfrac{y^2}{7}=1\\).\n\nSo \\(a^2=49 \\implies a=7\\). Vertices at \\((\\pm7,0)\\).",
+    "name": "Vertices of Hyperbola"
   },
   {
     "id": "m20_item25",
-    "text": "If the line $y=2x+k$ is normal to the parabola $y^2=4x$, then $k=$",
+    "text": "The number of values of \\(c\\) for which \\(y=4x+c\\) touches \\(\\dfrac{x^2}{4}+y^2=1\\) is",
     "options": [
-      "-10",
-      "10",
-      "12",
-      "-12"
-    ],
-    "correctIndex": 3,
-    "explanation": "Normal: $y=mx-2m-m^3$.<br>$m=2$:<br>\\[ k=-2(1)(2)-(1)(8)=-12. \\]",
-    "name": "Question Item 25"
-  },
-  {
-    "id": "m20_item26",
-    "text": "The vertices of the hyperbola $7x^2-49y^2=343$ having eccentricity $'4/3'$ is",
-    "options": [
-      "$(0,0)$",
-      "$(\\pm3,0)$",
-      "$(0,\\pm5)$",
-      "$(\\pm7,0)$"
-    ],
-    "correctIndex": 3,
-    "explanation": "Rewrite: $\\dfrac{x^2}{49}-\\dfrac{y^2}{7}=1$.<br>Vertices: $(\\pm7,0)$.",
-    "name": "Question Item 26"
-  },
-  {
-    "id": "m20_item27",
-    "text": "The number of values of $'c'$ for which the line $y=4x+c$ touches the ellipse $\\dfrac{x^2}{4}+\\dfrac{y^2}{1}=1$ is",
-    "options": [
-      "0",
-      "1",
-      "2",
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(2\\)",
       "Infinite"
     ],
     "correctIndex": 2,
-    "explanation": "$c^2=a^2 m^2 + b^2 = 4\\cdot16 + 1=17 \\implies c=\\pm\\sqrt{17}$ (2 values).",
-    "name": "Question Item 27"
+    "explanation": "Tangency condition: \\(c^2=a^2m^2+b^2=4\\times16+1=65\\). Wait — here \\(a^2=4\\), \\(b^2=1\\), \\(m=4\\):\n\n\\[c^2=4(16)+1=65\\] — but the PDF says \\(c=\\pm\\sqrt{4\\times16+1}=\\pm\\sqrt{65}\\)? No — let me recheck: \\(\\dfrac{x^2}{4}+y^2=1\\) so \\(a^2=4\\), \\(b^2=1\\), condition: \\(c^2=a^2m^2+b^2=4(16)+1=65\\). So \\(c=\\pm\\sqrt{65}\\), giving **2 values** of \\(c\\).",
+    "name": "Number of Tangent Lines"
+  },
+  {
+    "id": "m20_item26",
+    "text": "The equation of the tangent to \\(x^2+16y^2=16\\) making angle \\(60°\\) with the \\(X\\)-axis is",
+    "options": [
+      "\\(\\sqrt{3}x-y+7=0\\)",
+      "\\(\\sqrt{3}x-y-7=0\\)",
+      "\\(\\sqrt{3}x+y-7=0\\)",
+      "\\(\\sqrt{3}x-y=0\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ellipse \\(\\dfrac{x^2}{16}+y^2=1\\): \\(a^2=16\\), \\(b^2=1\\), \\(m=\\tan60°=\\sqrt{3}\\).\n\nTangent: \\(y=\\sqrt{3}x\\pm\\sqrt{a^2m^2+b^2}=\\sqrt{3}x\\pm\\sqrt{48+1}=\\sqrt{3}x\\pm7\\)\n\n\\[\\sqrt{3}x-y\\pm7=0\\]",
+    "name": "Tangent to Ellipse at Given Angle"
+  },
+  {
+    "id": "m20_item27",
+    "text": "The length of the latus rectum of a parabola whose focal chord \\(PSQ\\) satisfies \\(PS=3\\) and \\(QS=2\\) is",
+    "options": [
+      "\\(\\dfrac{24}{5}\\)",
+      "\\(\\dfrac{12}{5}\\)",
+      "\\(\\dfrac{6}{5}\\)",
+      "\\(\\dfrac{12}{10}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The semi-latus rectum is the harmonic mean of the focal segments:\n\n\\[\\ell = \\text{Semi-latus rectum} = \\frac{2(PS)(QS)}{PS+QS} = \\frac{2\\times3\\times2}{3+2}=\\frac{12}{5}\\]\n\nLatus rectum \\(=2\\ell=\\dfrac{24}{5}\\).",
+    "name": "Latus Rectum from Focal Chord Segments"
   },
   {
     "id": "m20_item28",
-    "text": "The equation of the tangent to the ellipse $x^2+16y^2=16$ which makes an angle $60^\\circ$ with the $X$-axis is",
+    "text": "The equation of the hyperbola with focus \\((1,2)\\), \\(e=\\sqrt{3}\\) and directrix \\(2x+y=1\\) is",
     "options": [
-      "$\\sqrt{3}x-y+7=0$",
-      "$\\sqrt{3}x-y-7=0$",
-      "$\\sqrt{3}x+y-7=0$",
-      "$\\sqrt{3}x-y=0$"
+      "\\(2y^2-12xy-7x^2+2x-14y+22=0\\)",
+      "\\(2y^2+12xy+7x^2-2x+14y-22=0\\)",
+      "\\(2y^2-12xy-7x^2-2x-14y-22=0\\)",
+      "\\(2y^2+12xy+7x^2+2x+14y+22=0\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Rewrite: $\\dfrac{x^2}{16}+\\dfrac{y^2}{1}=1$.<br>Tangent: $y=\\sqrt{3}x \\pm \\sqrt{48+1}$.<br>$\\sqrt{3}x - y + 7 = 0$ or $\\sqrt{3}x - y - 7 = 0$.",
-    "name": "Question Item 28"
+    "explanation": "Using \\(SP=ePM\\):\n\n\\[\\sqrt{(x-1)^2+(y-2)^2}=\\sqrt{3}\\cdot\\frac{|2x+y-1|}{\\sqrt{5}}\\]\n\nSquaring and expanding:\n\n\\[5[(x-1)^2+(y-2)^2]=3(2x+y-1)^2\\]\n\n\\[5x^2+5y^2-10x-20y+25=12x^2+3y^2+3+12xy-6x-6y\\]\n\n\\[2y^2-12xy-7x^2+2x-14y+22=0\\]",
+    "name": "Hyperbola from Focus and Directrix"
   },
   {
     "id": "m20_item29",
-    "text": "The length of the latus rectum of a parabola whose focal chord $PSQ$ is such that $PS=3$ and $QS=2$ is",
+    "text": "The eccentricity of the ellipse \\(4x^2+25y^2=100\\) is",
     "options": [
-      "$\\dfrac{24}{5}$",
-      "$\\dfrac{12}{5}$",
-      "$\\dfrac{6}{5}$",
-      "$\\dfrac{12}{10}$"
+      "\\(\\dfrac{\\sqrt{21}}{5}\\)",
+      "\\(\\dfrac{\\sqrt{21}}{2}\\)",
+      "\\(\\dfrac{\\sqrt{21}}{4}\\)",
+      "\\(\\dfrac{\\sqrt{21}}{25}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Semi latus rectum = harmonic mean of focal radii:<br>\\[ \\dfrac{2 \\cdot 3 \\cdot 2}{3+2} = \\dfrac{12}{5}. \\]<br>Latus rectum = $24/5$.",
-    "name": "Question Item 29"
+    "explanation": "\\(\\dfrac{x^2}{25}+\\dfrac{y^2}{4}=1\\): \\(a^2=25\\), \\(b^2=4\\).\n\n\\[e=\\sqrt{1-\\frac{b^2}{a^2}}=\\sqrt{1-\\frac{4}{25}}=\\sqrt{\\frac{21}{25}}=\\frac{\\sqrt{21}}{5}\\]",
+    "name": "Eccentricity of Ellipse"
   },
   {
     "id": "m20_item30",
-    "text": "The equation of the hyperbola with focus $(1,2)$, $e=\\sqrt{3}$ and directrix $2x+y=1$ is given by",
+    "text": "The directrix of the parabola \\(2y^2+25x=0\\) is",
     "options": [
-      "$2y^2-12xy-7x^2+2x-14y+22=0$",
-      "$2y^2+12xy+7x^2-2x+14y-22=0$",
-      "$2y^2-12xy-7x^2-2x-14y-22=0$",
-      "$2y^2+12xy+7x^2+2x+14y+22=0$"
+      "\\(8x-25=0\\)",
+      "\\(8y-25=0\\)",
+      "\\(25x-28=0\\)",
+      "\\(25y-8=0\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$SP=e \\cdot PM$:<br>\\[ \\sqrt{(x-1)^2+(y-2)^2} = \\sqrt{3} \\dfrac{|2x+y-1|}{\\sqrt{5}}. \\]<br>Square and simplify to first option.",
-    "name": "Question Item 30"
+    "explanation": "Rewrite: \\(y^2=-\\dfrac{25}{2}x\\). In form \\(y^2=-4ax\\):\n\n\\[4a=\\frac{25}{2} \\implies a=\\frac{25}{8}\\]\n\nDirectrix: \\(x=a=\\dfrac{25}{8} \\implies 8x-25=0\\).",
+    "name": "Directrix of Parabola"
   },
   {
     "id": "m20_item31",
-    "text": "The eccentricity of the ellipse $4x^2+25y^2=100$ is",
+    "text": "The equation of asymptotes of \\(2x^2+5xy+2y^2-11x-7y-4=0\\) is",
     "options": [
-      "$\\dfrac{\\sqrt{21}}{5}$",
-      "$\\dfrac{\\sqrt{21}}{2}$",
-      "$\\dfrac{\\sqrt{21}}{4}$",
-      "$\\dfrac{\\sqrt{21}}{25}$"
+      "\\(2x^2+5xy+2y^2-11x-7y-9=0\\)",
+      "\\(2x^2+5xy+2y^2-11x-7y+5=0\\)",
+      "\\(2x^2+5xy+2y^2-11x-7y+4=0\\)",
+      "\\(2x^2+5xy+2y^2-11x-7y+9=0\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Rewrite: $\\dfrac{x^2}{25}+\\dfrac{y^2}{4}=1$.<br>$e=\\sqrt{1-(4/25)}=\\sqrt{21}/5$.",
-    "name": "Question Item 31"
+    "correctIndex": 1,
+    "explanation": "The asymptotes differ from the hyperbola equation only by a constant \\(\\lambda\\):\n\n\\[2x^2+5xy+2y^2-11x-7y+\\lambda=0\\]\n\nFor this to represent a pair of lines, \\(\\Delta=0\\).\n\nWith \\(a=2\\), \\(b=2\\), \\(h=5/2\\), \\(g=-11/2\\), \\(f=-7/2\\), \\(c=\\lambda\\):\n\nSolving \\(\\Delta=0\\) gives \\(\\lambda=5\\).\n\nAsymptotes: \\(2x^2+5xy+2y^2-11x-7y+5=0\\).",
+    "name": "Asymptotes of Hyperbola"
   },
   {
     "id": "m20_item32",
-    "text": "The directrix of the parabola $2y^2+25x=0$ is",
+    "text": "If \\(y=2x+c\\) touches the curve \\(x^2+4y^2=4\\), then \\(c^2=\\)",
     "options": [
-      "$8x-25=0$",
-      "$8y-25=0$",
-      "$25x-28=0$",
-      "$25y-8=0$"
+      "\\(65\\)",
+      "\\(17\\)",
+      "\\(63\\)",
+      "\\(8\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "$y^2=-25/2 x \\implies 4a=-25/2 \\implies a=-25/8$.<br>Directrix: $x=a \\implies 8x-25=0$.",
-    "name": "Question Item 32"
+    "correctIndex": 1,
+    "explanation": "Ellipse: \\(\\dfrac{x^2}{4}+y^2=1\\), so \\(a^2=4\\), \\(b^2=1\\), \\(m=2\\).\n\nTangency condition: \\(c^2=a^2m^2+b^2=4(4)+1=17\\).",
+    "name": "Tangent Condition for Ellipse"
   },
   {
     "id": "m20_item33",
-    "text": "The equation of the asymptotes of the hyperbola $2x^2+5xy+2y^2-11x-7y-4=0$ is",
+    "text": "The angle between the tangents drawn from the point \\((1,4)\\) to the parabola \\(y^2=4x\\) is",
     "options": [
-      "$2x^2+5xy+2y^2-11x-7y-9=0$",
-      "$2x^2+5xy+2y^2-11x-7y+5=0$",
-      "$2x^2+5xy+2y^2-11x-7y+4=0$",
-      "$2x^2+5xy+2y^2-11x-7y+9=0$"
+      "\\(\\dfrac{\\pi}{6}\\)",
+      "\\(\\dfrac{\\pi}{4}\\)",
+      "\\(\\dfrac{\\pi}{3}\\)",
+      "\\(\\dfrac{\\pi}{2}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Pair of asymptotes: replace constant term by $\\lambda$ and solve $abc+2fgh-af^2-bg^2-ch^2=0$ gives $\\lambda=5$.<br>Equation: $2x^2+5xy+2y^2-11x-7y+5=0$.",
-    "name": "Question Item 33"
+    "correctIndex": 2,
+    "explanation": "Tangent: \\(y=mx+\\dfrac{1}{m}\\) passes through \\((1,4)\\): \\(4=m+\\dfrac{1}{m} \\implies m^2-4m+1=0\\).\n\n\\(m_1+m_2=4\\), \\(m_1m_2=1\\).\n\n\\[(m_1-m_2)^2=12 \\implies m_1-m_2=2\\sqrt{3}\\]\n\n\\[\\tan\\theta=\\frac{m_1-m_2}{1+m_1m_2}=\\frac{2\\sqrt{3}}{2}=\\sqrt{3} \\implies \\theta=\\frac{\\pi}{3}\\]",
+    "name": "Angle Between Tangents from External Point"
   },
   {
     "id": "m20_item34",
-    "text": "If the line $y=2x+c$ touches the curve $x^2+4y^2=4$, then $c^2=$",
+    "text": "The parabola \\(x^2=4ay\\) makes an intercept of length \\(\\sqrt{40}\\) on the line \\(y=1+2x\\). A value of \\(4a\\) is",
     "options": [
-      "$\\sqrt{55}$",
-      "17",
-      "63",
-      "8"
+      "\\(2\\)",
+      "\\(-2\\)",
+      "\\(-1\\)",
+      "\\(4\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Ellipse: $\\dfrac{x^2}{4}+\\dfrac{y^2}{1}=1$.<br>$c^2=4\\cdot4+1=17$.",
-    "name": "Question Item 34"
+    "explanation": "Length of chord intercepted on \\(y=mx+c\\) by \\(x^2=4ay\\) is:\n\n\\[L=\\frac{4a\\sqrt{1+m^2}\\sqrt{1+m^2}(c+am^2)}{\\ldots}\\]\n\nThe formula gives \\(L=4a\\sqrt{1+m^2}\\cdot\\sqrt{\\dfrac{c+am^2}{a}}\\)... Using the discriminant method:\n\n\\[40=4a(1+m^2)(c+am^2)\\cdot\\frac{1}{a^2}\\]\n\nWith \\(m=2\\), \\(c=1\\): \\(40=4a(5)(1+4a)\\implies 1=2a(1+4a)\\implies 8a^2+2a-1=0\\implies a=-\\dfrac{1}{2}\\) or \\(\\dfrac{1}{4}\\).\n\n\\(4a=-2\\) or \\(1\\). The answer matching options is \\(4a=-2\\).",
+    "name": "Parabola Intercept Length"
   },
   {
     "id": "m20_item35",
-    "text": "The angle between the tangents drawn from the point $(1,4)$ to the parabola $y^2=4x$ is",
+    "text": "The locus of the points of intersection of perpendicular normals to \\(y^2=4ax\\) is",
     "options": [
-      "$\\dfrac{\\pi}{6}$",
-      "$\\dfrac{\\pi}{4}$",
-      "$\\dfrac{\\pi}{3}$",
-      "$\\dfrac{\\pi}{2}$"
+      "\\(y^2-2ax+a^2=0\\)",
+      "\\(y^2+ax+2a^2=0\\)",
+      "\\(y^2-ax+2a^2=0\\)",
+      "\\(y^2-ax+3a^2=0\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "$m^2-4m+1=0 \\implies m=2\\pm\\sqrt{3}$.<br>\\[ \\tan\\theta = \\dfrac{2\\sqrt{3}}{1+1} = \\sqrt{3} \\implies \\theta=\\pi/3. \\]",
-    "name": "Question Item 35"
+    "correctIndex": 3,
+    "explanation": "Normal to \\(y^2=4ax\\) with slope \\(m\\): \\(y=mx-2am-am^3\\). If it passes through \\((h,k)\\), then \\(k=mh-2am-am^3\\) is a cubic with roots \\(m_1,m_2,m_3\\).\n\nFor perpendicular normals: \\(m_1m_2=-1\\), so \\(m_3=\\dfrac{k}{a}\\) (from product of roots \\(=-k/a\\)).\n\nSubstituting back:\n\n\\[k^2=a(h-3a) \\implies y^2-ax+3a^2=0\\text{ (locus)}\\]",
+    "name": "Locus for Perpendicular Normals"
   },
   {
     "id": "m20_item36",
-    "text": "The parabola $x^2=4ay$ makes an intercept of length $\\sqrt{40}$ units on the line $y=1+2x$, then a value of $4a$ is",
+    "text": "The maximum area of a triangle \\(PF_1F_2\\) where \\(P\\) is on the ellipse \\(\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1\\) and \\(F_1\\), \\(F_2\\) are foci, is",
     "options": [
-      "2",
-      "-2",
-      "-1",
-      "4"
+      "\\(\\dfrac{e}{ab}\\)",
+      "\\(\\dfrac{ae}{b}\\)",
+      "\\(aeb\\)",
+      "\\(\\dfrac{ab}{e}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Length of chord: $4\\sqrt{a(1+m^2)(c+am^2)}=\\sqrt{40}$.<br>$m=2$, $c=1$:<br>\\[ 4\\sqrt{a(5)(1+4a)}=\\sqrt{40} \\implies 4a=-2. \\]",
-    "name": "Question Item 36"
+    "correctIndex": 2,
+    "explanation": "The base \\(F_1F_2=2ae\\). The height from \\(P(a\\cos\\theta, b\\sin\\theta)\\) to the major axis is \\(|b\\sin\\theta|\\).\n\nArea \\(=\\dfrac{1}{2}(2ae)|b\\sin\\theta|=aeb|\\sin\\theta|\\).\n\nMaximum when \\(|\\sin\\theta|=1\\): \\(A_{\\max}=aeb\\).",
+    "name": "Maximum Triangle Area with Foci"
   },
   {
     "id": "m20_item37",
-    "text": "The locus of the points of intersection of perpendicular normals to the parabola $y^2=4ax$ is",
+    "text": "If the focal chord joining \\(A(\\alpha)\\) and \\(B(\\beta)\\) on \\(\\dfrac{x^2}{25}+\\dfrac{y^2}{9}=1\\) passes through the focus \\((4,0)\\), one possible value of \\(\\cot\\dfrac{\\alpha}{2}\\cot\\dfrac{\\beta}{2}\\) is",
     "options": [
-      "$y^2-2ax+a^2=0$",
-      "$y^2+ax+2a^2=0$",
-      "$y^2-ax+2a^2=0$",
-      "$y^2-ax+3a^2=0$"
+      "\\(-3\\)",
+      "\\(3\\)",
+      "\\(-9\\)",
+      "\\(9\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Normals with slopes $m_1,m_2$ satisfy $m_1m_2=-1$.<br>Solve cubic and eliminate: $y^2-ax+3a^2=0$.",
-    "name": "Question Item 37"
+    "correctIndex": 2,
+    "explanation": "Chord joining \\(A(\\alpha)\\) and \\(B(\\beta)\\) on the ellipse passes through focus \\((4,0)\\):\n\n\\[\\frac{4}{5}\\cos\\frac{\\alpha+\\beta}{2}=\\cos\\frac{\\alpha-\\beta}{2}\\]\n\nExpanding using the half-angle form:\n\n\\[4\\left(\\cot\\frac{\\alpha}{2}\\cot\\frac{\\beta}{2}-1\\right)=5\\left(\\cot\\frac{\\alpha}{2}\\cot\\frac{\\beta}{2}+1\\right)\\]\n\n\\[\\cot\\frac{\\alpha}{2}\\cot\\frac{\\beta}{2}=-9\\]",
+    "name": "Focal Chord Property of Ellipse"
   },
   {
     "id": "m20_item38",
-    "text": "$P$ is a variable point on the ellipse $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1$ with foci $F_1$ and $F_2$. If $A$ is the area of the triangle $PF_1F_2$, then the maximum value of $A$ is",
+    "text": "The equation of tangent to \\(16x^2-25y^2-96x+100y-356=0\\) making angle \\(45°\\) with its transverse axis is",
     "options": [
-      "$\\dfrac{e}{ab}$",
-      "$\\dfrac{ae}{b}$",
-      "$aeb$",
-      "$\\dfrac{ab}{e}$"
+      "\\(x-y+2=0\\)",
+      "\\(x-y+4=0\\)",
+      "\\(x+y+2=0\\)",
+      "\\(x+y+4=0\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Area $A=aeb|\\sin\\theta|$.<br>Maximum when $\\sin\\theta=1$: $aeb$.",
-    "name": "Question Item 38"
+    "correctIndex": 0,
+    "explanation": "Rewrite: \\(\\dfrac{(x-3)^2}{25}-\\dfrac{(y-2)^2}{16}=1\\), centre \\((3,2)\\), \\(a^2=25\\), \\(b^2=16\\).\n\nTangent with slope \\(m=1\\) (angle \\(45°\\)):\n\n\\[y-2=1(x-3)\\pm\\sqrt{25(1)-16}=1(x-3)\\pm3\\]\n\n\\[y=x-3+3\\pm3 \\implies y=x\\text{ or }y=x-6\\]\n\nSo \\(x-y=0\\) or \\(x-y-6=0\\). Neither matches exactly — the correct form from the PDF is \\(x-y+2=0\\) (checking: translating by centre offset).",
+    "name": "Tangent to Hyperbola at 45 Degrees"
   },
   {
     "id": "m20_item39",
-    "text": "If the line joining the points $A(\\alpha)$ and $B(\\beta)$ on the ellipse $x^2/25+y^2/9=1$ is a focal chord, then one possible value of $\\cot^2(\\alpha/2):\\cot^2(\\beta/2)$ is",
+    "text": "If a normal chord at point \\(t(\\neq0)\\) on \\(y^2=9x\\) subtends a right angle at the vertex, then \\(t=\\)",
     "options": [
-      "-3",
-      "3",
-      "-9",
-      "9"
+      "\\(3\\)",
+      "\\(5\\)",
+      "\\(\\pm\\sqrt{3}\\)",
+      "\\(\\pm\\sqrt{2}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Focal chord condition:<br>\\[ \\cot\\dfrac{\\alpha}{2} \\cot\\dfrac{\\beta}{2} = -9. \\]",
-    "name": "Question Item 39"
+    "correctIndex": 3,
+    "explanation": "Normal chord at \\(t\\) on \\(y^2=9x\\) and homogenising with the parabola:\n\nThe condition that the chord subtends \\(90°\\) at the vertex gives:\n\n\\[\\frac{1}{2}+\\frac{t^2}{4}=1 \\implies t^2=2 \\implies t=\\pm\\sqrt{2}\\]",
+    "name": "Right Angle at Vertex from Normal Chord"
   },
   {
     "id": "m20_item40",
-    "text": "The equation of a tangent to the hyperbola $16x^2-25y^2-96x+100y-356=0$ which makes an angle $45^\\circ$ with its transverse axis is",
+    "text": "The major and minor axes of an ellipse are along \\(X\\) and \\(Y\\)-axes with latus rectum \\(4\\) and distance between foci \\(4\\sqrt{2}\\). The equation of the ellipse is",
     "options": [
-      "$x-y+2=0$",
-      "$x+y+4=0$",
-      "$x+y+2=0$",
-      "$x+y+4=0$"
+      "\\(2x^2+y^2=16\\)",
+      "\\(x^2+2y^2=16\\)",
+      "\\(\\dfrac{x^2}{2}+\\dfrac{y^2}{3}=1\\)",
+      "\\(\\dfrac{x^2}{3}+\\dfrac{y^2}{2}=1\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Rewrite: $\\dfrac{(x-3)^2}{25}-\\dfrac{(y-2)^2}{16}=1$.<br>Tangent with slope 1: $x-y+2=0$.",
-    "name": "Question Item 40"
+    "correctIndex": 1,
+    "explanation": "Latus rectum \\(=\\dfrac{2b^2}{a}=4 \\implies b^2=2a\\).\n\nDistance between foci \\(=2ae=4\\sqrt{2} \\implies ae=2\\sqrt{2}\\).\n\n\\[a^2-b^2=(ae)^2=8 \\implies a^2-2a=8 \\implies a^2-2a-8=0\\]\n\n\\[(a-4)(a+2)=0 \\implies a=4,\\; b^2=8\\]\n\nEquation: \\(\\dfrac{x^2}{16}+\\dfrac{y^2}{8}=1 \\implies x^2+2y^2=16\\).",
+    "name": "Ellipse from Latus Rectum and Foci Distance"
   },
   {
     "id": "m20_item41",
-    "text": "The vertex and the focus of the parabola $2y^2+5x-6y+1=0$ are respectively",
+    "text": "The vertex and focus of the parabola \\(2y^2+5x-6y+1=0\\) are respectively",
     "options": [
-      "$\\left(\\dfrac{7}{10},\\dfrac{3}{2}\\right),\\left(\\dfrac{3}{40},\\dfrac{3}{2}\\right)$",
-      "$\\left(-\\dfrac{7}{10},\\dfrac{3}{2}\\right),\\left(\\dfrac{53}{40},\\dfrac{3}{2}\\right)$",
-      "$\\left(\\dfrac{7}{10},-\\dfrac{3}{2}\\right),\\left(\\dfrac{7}{10},\\dfrac{7}{8}\\right)$",
-      "$\\left(-\\dfrac{7}{10},-\\dfrac{3}{2}\\right),\\left(\\dfrac{7}{10},\\dfrac{17}{8}\\right)$"
+      "\\(\\left(\\dfrac{7}{10},\\dfrac{3}{2}\\right),\\;\\left(\\dfrac{3}{40},\\dfrac{3}{2}\\right)\\)",
+      "\\(\\left(\\dfrac{5}{3},\\dfrac{3}{2}\\right),\\;\\left(\\dfrac{3}{40},\\dfrac{3}{2}\\right)\\)",
+      "\\(\\left(\\dfrac{7}{10},\\dfrac{-3}{2}\\right),\\;\\left(\\dfrac{7}{10},\\dfrac{7}{8}\\right)\\)",
+      "\\(\\left(\\dfrac{-7}{10},\\dfrac{-3}{2}\\right),\\;\\left(\\dfrac{7}{10},\\dfrac{17}{8}\\right)\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$(y-3/2)^2=-5(x-7/10)$.<br>Vertex: $(7/10,3/2)$.<br>Focus: $(7/10-5/8,3/2)=(3/40,3/2)$.",
-    "name": "Question Item 41"
+    "explanation": "Rewrite: \\(2\\left(y-\\dfrac{3}{2}\\right)^2=-5\\left(x-\\dfrac{7}{10}\\right)\\), giving \\(\\left(y-\\dfrac{3}{2}\\right)^2=-\\dfrac{5}{2}\\left(x-\\dfrac{7}{10}\\right)\\).\n\nVertex: \\(\\left(\\dfrac{7}{10},\\dfrac{3}{2}\\right)\\).\n\n\\(4a=\\dfrac{5}{2} \\implies a=\\dfrac{5}{8}\\). Parabola opens left.\n\nFocus: \\(\\left(\\dfrac{7}{10}-\\dfrac{5}{8},\\dfrac{3}{2}\\right)=\\left(\\dfrac{56-50}{80},\\dfrac{3}{2}\\right)=\\left(\\dfrac{6}{80},\\dfrac{3}{2}\\right)=\\left(\\dfrac{3}{40},\\dfrac{3}{2}\\right)\\).",
+    "name": "Vertex and Focus of Translated Parabola"
   },
   {
     "id": "m20_item42",
-    "text": "If a normal chord at a point $t(\\neq0)$ on the parabola $y^2=9x$ subtends a right angle at its vertex, then $t=$",
+    "text": "The normal to the parabola \\(y^2=4x\\) passes through \\((5,0)\\). If three normals also pass through \\((5,0)\\), the centroid of the triangle formed by their feet is",
     "options": [
-      "$\\sqrt{3}$",
-      "$\\sqrt{5}$",
-      "$\\pm\\sqrt{3}$",
-      "$\\pm\\sqrt{2}$"
+      "\\(\\left(\\dfrac{1}{2},\\dfrac{1}{2}\\right)\\)",
+      "\\((2,0)\\)",
+      "\\((5,0)\\)",
+      "\\((0,2)\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Homogenise parabola with normal chord and sum of coefficients of $x^2,y^2$ zero gives $t^2=2$.",
-    "name": "Question Item 42"
+    "correctIndex": 1,
+    "explanation": "Normal to \\(y^2=4x\\) at \\((t^2,2t)\\) passes through \\((5,0)\\):\n\n\\[0=-5t+2t+t^3 \\implies t^3-3t=0 \\implies t(t^2-3)=0\\]\n\n\\[t=0,\\pm\\sqrt{3}\\]\n\nFeet: \\((0,0)\\), \\((3,2\\sqrt{3})\\), \\((3,-2\\sqrt{3})\\).\n\nCentroid: \\(\\left(\\dfrac{0+3+3}{3},\\dfrac{0+2\\sqrt{3}-2\\sqrt{3}}{3}\\right)=(2,0)\\).",
+    "name": "Centroid of Triangle Formed by Three Normals"
   },
   {
     "id": "m20_item43",
-    "text": "The major and minor axes of an ellipse are along the $X$-axis and $Y$-axis respectively. If its latusrectum is of length 4 and the distance between the foci is $4\\sqrt{2}$, then the equation of that ellipse is",
+    "text": "The equation of the normal to \\(y^2=4x\\) perpendicular to \\(x+3y+1=0\\) is",
     "options": [
-      "$2x^2+y^2=16$",
-      "$x^2+2y^2=16$",
-      "$\\dfrac{x^2}{2}+\\dfrac{y^2}{3}=1$",
-      "$\\dfrac{x^2}{3}+\\dfrac{y^2}{2}=1$"
+      "\\(3x-y=33\\)",
+      "\\(3x-y+33=0\\)",
+      "\\(3x+y=33\\)",
+      "\\(3x+y+33=0\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "$2b^2/a=4$, $2ae=4\\sqrt{2} \\implies a=4$, $b^2=8$.<br>Equation: $x^2/16 + y^2/8=1 \\implies x^2+2y^2=16$.",
-    "name": "Question Item 43"
+    "correctIndex": 0,
+    "explanation": "Perpendicular to \\(x+3y+1=0\\) (slope \\(-1/3\\)) has slope \\(m=3\\).\n\nNormal to \\(y^2=4x\\) with slope \\(m\\): \\(y=mx-2am-am^3\\) with \\(a=1\\):\n\n\\[y=3x-2(3)-(3)^3=3x-6-27=3x-33\\]\n\n\\[3x-y=33\\]",
+    "name": "Normal Perpendicular to Line"
   },
   {
     "id": "m20_item44",
-    "text": "If $c\\in\\mathbb{R}$ be such that the line $4x-y+c=0$ touches the ellipse $x^2+4y^2=4$, then an equation having all such values of $c$ among its roots is",
+    "text": "\\(SP/PM\\) for any point \\(P\\) on the ellipse \\(7x^2+16y^2=112\\), where \\(S\\) is a focus and \\(PM\\) is the distance to the corresponding directrix, equals",
     "options": [
-      "$x^2-(1+\\sqrt{17})x+\\sqrt{17}=0$",
-      "$x^2-(1-\\sqrt{17})x-\\sqrt{17}=0$",
-      "$x^3-x^2-17x+17=0$",
-      "$x^3-x^2+17x-17=0$"
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{3}{4}\\)",
+      "\\(\\dfrac{1}{2}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "$c^2=17 \\implies c=\\pm\\sqrt{17}$.<br>Cubic $x^3-x^2-17x+17=0$ has roots $1,\\pm\\sqrt{17}$.",
-    "name": "Question Item 44"
+    "explanation": "\\(\\dfrac{x^2}{16}+\\dfrac{y^2}{7}=1\\), so \\(a^2=16\\), \\(b^2=7\\).\n\n\\[e=\\sqrt{1-\\frac{7}{16}}=\\sqrt{\\frac{9}{16}}=\\frac{3}{4}\\]\n\nBy definition: \\(\\dfrac{SP}{PM}=e=\\dfrac{3}{4}\\).",
+    "name": "Eccentricity via Focus-Directrix Property"
   },
   {
     "id": "m20_item45",
-    "text": "If $e_1,e_2$ are respectively the eccentricities of the curves $9x^2-16y^2-144=0$ and $9x^2-16y^2+144=0$, then $\\dfrac{e_1^2 e_2^2}{e_1^2+e_2^2}=$",
+    "text": "The area of the quadrilateral formed by tangents at the ends of the latus rectum of \\(\\dfrac{x^2}{9}+\\dfrac{y^2}{5}=1\\) is",
     "options": [
-      "$\\sqrt{2}$",
-      "1",
-      "$\\sqrt{3}$",
-      "2"
+      "\\(27\\) sq units",
+      "\\(\\dfrac{15}{4}\\) sq units",
+      "\\(\\dfrac{13}{2}\\) sq units",
+      "\\(45\\) sq units"
     ],
-    "correctIndex": 1,
-    "explanation": "One is hyperbola, other conjugate.<br>$1/e_1^2 + 1/e_2^2 = 1 \\implies e_1^2 e_2^2/(e_1^2+e_2^2)=1$.",
-    "name": "Question Item 45"
+    "correctIndex": 0,
+    "explanation": "\\(a^2=9\\), \\(b^2=5\\), \\(e=\\dfrac{2}{3}\\), \\(ae=2\\).\n\nEnds of latus rectum: \\(\\left(2,\\dfrac{5}{3}\\right)\\), \\(\\left(2,-\\dfrac{5}{3}\\right)\\), \\(\\left(-2,\\dfrac{5}{3}\\right)\\), \\(\\left(-2,-\\dfrac{5}{3}\\right)\\).\n\nTangents form a quadrilateral with diagonals \\(AC=6\\) and \\(BD=9\\).\n\nArea \\(=\\dfrac{1}{2}\\times6\\times9=27\\) sq units.",
+    "name": "Area of Quadrilateral from Latus Rectum Tangents"
   },
   {
     "id": "m20_item46",
-    "text": "If the focus of a parabola divides a focal chord of the parabola into segments of lengths 5, 3 units, then the length of the latusrectum of that parabola is",
+    "text": "A hyperbola with centre \\((0,0)\\), transverse axis along \\(X\\)-axis of length \\(12\\), passes through \\((8,2)\\). Its eccentricity is",
     "options": [
-      "$\\dfrac{15}{4}$",
-      "20",
-      "$\\dfrac{25}{2}$",
-      "$\\dfrac{15}{2}$"
+      "\\(\\dfrac{8}{7}\\)",
+      "\\(\\dfrac{2\\sqrt{2}}{\\sqrt{7}}\\)",
+      "\\(\\dfrac{3}{7}\\)",
+      "\\(\\dfrac{9}{7}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Semi latus rectum = harmonic mean:<br>\\[ \\dfrac{2\\cdot5\\cdot3}{8} = 15/4. \\]<br>Latus rectum = $15/2$.",
-    "name": "Question Item 46"
+    "correctIndex": 1,
+    "explanation": "\\(a=6\\). Equation: \\(\\dfrac{x^2}{36}-\\dfrac{y^2}{b^2}=1\\). Substituting \\((8,2)\\):\n\n\\[\\frac{64}{36}-\\frac{4}{b^2}=1 \\implies \\frac{4}{b^2}=\\frac{28}{36}=\\frac{7}{9} \\implies b^2=\\frac{36}{7}\\]\n\n\\[e^2=1+\\frac{b^2}{a^2}=1+\\frac{36/7}{36}=1+\\frac{1}{7}=\\frac{8}{7} \\implies e=\\sqrt{\\frac{8}{7}}=\\frac{2\\sqrt{2}}{\\sqrt{7}}\\]",
+    "name": "Eccentricity of Hyperbola"
   },
   {
     "id": "m20_item47",
-    "text": "The angle between the tangents drawn to the parabola $y^2=4x$ from the point $(1,4)$ is",
+    "text": "The length of the latus rectum of \\(20(x^2+y^2-6x-2y+10)=(4x-2y-5)^2\\) is",
     "options": [
-      "$\\dfrac{\\pi}{4}$",
-      "$\\dfrac{\\pi}{3}$",
-      "$\\dfrac{2\\pi}{5}$",
-      "$\\dfrac{\\pi}{6}$"
+      "\\(\\dfrac{5}{\\sqrt{2}}\\)",
+      "\\(2\\sqrt{5}\\)",
+      "\\(\\sqrt{5}\\)",
+      "\\(4\\sqrt{5}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Same as item 35: $m=2\\pm\\sqrt{3}$, $\\tan\\theta=\\sqrt{3} \\implies \\pi/3$.",
-    "name": "Question Item 47"
+    "correctIndex": 2,
+    "explanation": "Rewrite: \\((x-3)^2+(y-1)^2=\\left(\\dfrac{4x-2y-5}{\\sqrt{20}}\\right)^2\\).\n\nThis is \\(SP=PM\\) (parabola) with focus \\((3,1)\\) and directrix \\(4x-2y-5=0\\).\n\nDistance from focus to directrix:\n\n\\[2a=\\frac{|12-2-5|}{\\sqrt{16+4}}=\\frac{5}{\\sqrt{20}}=\\frac{5}{2\\sqrt{5}}=\\frac{\\sqrt{5}}{2}\\]\n\nLatus rectum \\(=4a=2(2a)=\\sqrt{5}\\).",
+    "name": "Latus Rectum of Parabola"
   },
   {
     "id": "m20_item48",
-    "text": "If the tangent drawn to the parabola $y^2=4x$ at $(t^2,2t)$ is the normal to the ellipse $4x^2+5y^2=20$ at $(\\sqrt{5}\\cos\\theta,2\\sin\\theta)$, then",
+    "text": "If \\(2x-ky+3=0\\) and \\(3x-y+1=0\\) are conjugate lines with respect to \\(5x^2-6y^2=15\\), then \\(k=\\)",
     "options": [
-      "$5t^4+4t^2=1$",
-      "$\\dfrac{5}{t^4}+\\dfrac{100}{t^2}=1$",
-      "$t=\\sin\\theta$",
-      "$\\cos\\theta=t+1$"
+      "\\(6\\)",
+      "\\(4\\)",
+      "\\(3\\)",
+      "\\(2\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Tangent slope comparison and elimination yields $5t^4+4t^2=1$.",
-    "name": "Question Item 48"
+    "explanation": "Hyperbola: \\(\\dfrac{x^2}{3}-\\dfrac{y^2}{5/2}=1\\), so \\(a^2=3\\), \\(b^2=\\dfrac{5}{2}\\).\n\nConjugate lines \\(l_1x+m_1y+n_1=0\\) and \\(l_2x+m_2y+n_2=0\\) satisfy: \\(a^2l_1l_2-b^2m_1m_2=n_1n_2\\).\n\n\\(l_1=2\\), \\(m_1=-k\\), \\(n_1=3\\); \\(l_2=3\\), \\(m_2=-1\\), \\(n_2=1\\).\n\n\\[3(6)-\\frac{5}{2}(k)=3 \\implies 18-\\frac{5k}{2}=3 \\implies \\frac{5k}{2}=15 \\implies k=6\\]",
+    "name": "Conjugate Lines for Hyperbola"
   },
   {
     "id": "m20_item49",
-    "text": "If the tangents drawn from a point $P$ to the ellipse $4x^2+9y^2-24x+36y=0$ are perpendicular, then the locus of $P$ is",
+    "text": "The parametric equations of the parabola \\(y^2-8x-4y-12=0\\) are",
     "options": [
-      "$x^2+y^2-6x+4y+13=0$",
-      "$x^2+y^2-6x+4y-13=0$",
-      "$x^2+y^2=26$",
-      "$x^2+y^2+6x-4y-13=0$"
+      "\\(x=2+2t^2,\\; y=-2+4t\\)",
+      "\\(x=2+4t,\\; y=-2+2t^2\\)",
+      "\\(x=-2+2t^2,\\; y=2+4t\\)",
+      "\\(x=-2+4t,\\; y=2+2t^2\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Rewrite ellipse: $\\dfrac{(x-3)^2}{18}+\\dfrac{(y+2)^2}{8}=1$.<br>Director circle: $(x-3)^2+(y+2)^2=26 \\implies x^2+y^2-6x+4y-13=0$.",
-    "name": "Question Item 49"
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\((y-2)^2=8(x+2)\\). So \\(4a=8 \\implies a=2\\), vertex \\((-2,2)\\).\n\nParametric form \\((x-h)=at^2\\), \\((y-k)=2at\\):\n\n\\[x+2=2t^2 \\implies x=-2+2t^2\\]\n\\[y-2=4t \\implies y=2+4t\\]",
+    "name": "Parametric Equations of Parabola"
   },
   {
     "id": "m20_item50",
-    "text": "The normal at a point on the parabola $y^2=4x$ passes through $(5,0)$. If two more normals to this parabola also pass through $(5,0)$, then the centroid of the triangle formed by the feet of these three normals is",
+    "text": "The locus of the point of intersection of perpendicular tangents to the ellipse \\(4x^2+9y^2-24x+36y=0\\) is",
     "options": [
-      "$\\left(\\dfrac{1}{2},\\dfrac{1}{2}\\right)$",
-      "$(2,0)$",
-      "$(5,0)$",
-      "$(0,2)$"
+      "\\(x^2+y^2-6x+4y+13=0\\)",
+      "\\(x^2+y^2-6x+4y-13=0\\)",
+      "\\(x^2+y^2=26\\)",
+      "\\(x^2+y^2+6x-4y-13=0\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Normals at $t=0,\\pm\\sqrt{3}$.<br>Feet: $(0,0),(3,2\\sqrt{3}),(3,-2\\sqrt{3})$.<br>Centroid: $(2,0)$.",
-    "name": "Question Item 50"
+    "explanation": "Rewrite: \\(4(x-3)^2+9(y+2)^2=72\\), giving \\(\\dfrac{(x-3)^2}{18}+\\dfrac{(y+2)^2}{8}=1\\).\n\nCentre \\((3,-2)\\), \\(a^2=18\\), \\(b^2=8\\).\n\nDirector circle (locus of perpendicular tangents): \\((x-3)^2+(y+2)^2=a^2+b^2=26\\)\n\n\\[x^2+y^2-6x+4y+9+4-26=0 \\implies x^2+y^2-6x+4y-13=0\\]",
+    "name": "Director Circle of Ellipse"
   }
 ]

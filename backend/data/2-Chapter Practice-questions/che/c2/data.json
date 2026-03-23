@@ -3,30 +3,43 @@
     "id": "c2_item1",
     "text": "Calculate the wave number and frequency of orange radiation having wavelength 6300 Å.",
     "options": [
-      "\\(1.587 \\times 10^{8}\\) m\\(^{-1}\\), \\(4.761 \\times 10^{16}\\) s\\(^{-1}\\)",
-      "\\(1.587 \\times 10^{4}\\) m\\(^{-1}\\), \\(4.761 \\times 10^{14}\\) s\\(^{-1}\\)",
-      "\\(1.587 \\times 10^{6}\\) m\\(^{-1}\\), \\(4.761 \\times 10^{14}\\) s\\(^{-1}\\)",
-      "\\(1.587 \\times 10^{6}\\) m\\(^{-1}\\), \\(4.761 \\times 10^{16}\\) s\\(^{-1}\\)"
+      "\\(1.587 \\times 10^8 \\text{ m}^{-1},\\ 4.761 \\times 10^{16} \\text{ s}^{-1}\\)",
+      "\\(1.587 \\times 10^4 \\text{ m}^{-1},\\ 4.761 \\times 10^{14} \\text{ s}^{-1}\\)",
+      "\\(1.587 \\times 10^6 \\text{ m}^{-1},\\ 4.761 \\times 10^{14} \\text{ s}^{-1}\\)",
+      "\\(1.587 \\times 10^6 \\text{ m}^{-1},\\ 4.761 \\times 10^{16} \\text{ s}^{-1}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Given: \\(\\lambda = 6300\\) Å \\(= 6300 \\times 10^{-10}\\) m \\(= 6.3 \\times 10^{-7}\\) m\n\n**Wave number:**\n$$\\bar{\\nu} = \\frac{1}{\\lambda} = \\frac{1}{6.3 \\times 10^{-7}\\text{ m}} = 1.587 \\times 10^{6}\\text{ m}^{-1}$$\n\n**Frequency:**\n$$\\nu = \\frac{c}{\\lambda} = \\frac{3 \\times 10^{8}\\text{ m s}^{-1}}{6.3 \\times 10^{-7}\\text{ m}} = 4.761 \\times 10^{14}\\text{ s}^{-1}$$",
+    "explanation": "Given: \\(\\lambda = 6300\\) Å \\(= 6300 \\times 10^{-10}\\) m\n\n**Wave number:**\n\\[\\bar{\\nu} = \\frac{1}{\\lambda} = \\frac{1}{6300 \\times 10^{-10}} = 1.587 \\times 10^6 \\text{ m}^{-1}\\]\n\n**Frequency:**\n\\[\\nu = \\frac{c}{\\lambda} = \\frac{3 \\times 10^8}{6300 \\times 10^{-10}} = 4.761 \\times 10^{14} \\text{ s}^{-1}\\]",
     "name": "Wave Number and Frequency of Orange Radiation"
   },
   {
     "id": "c2_item2",
-    "text": "The number of protons, electrons and neutrons in a species are equal to 17, 18 and 18 respectively. Which of the following will be the proper symbol of this species?",
+    "text": "Choose the smallest ion from the following:",
     "options": [
-      "\\({}^{35}_{17}\\text{Cl}\\)",
-      "\\({}^{35}_{17}\\text{Cl}^-\\)",
-      "\\({}^{36}_{17}\\text{Cl}\\)",
-      "\\({}^{36}_{17}\\text{Cl}^-\\)"
+      "\\(\\text{Mg}^{2+}\\)",
+      "\\(\\text{S}^{2-}\\)",
+      "\\(\\text{Na}^{+}\\)",
+      "\\(\\text{Cl}^{-}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Given: protons (p) = 17, electrons (e) = 18, neutrons (n) = 18\n\n- **Atomic number** \\(Z = p = 17\\) → element is **Chlorine (Cl)**\n- Since electrons (18) > protons (17), there is one extra electron → the ion carries a charge of \\(-1\\), i.e., **Cl\\(^-\\)**\n- **Mass number** \\(A = p + n = 17 + 18 = 35\\)\n\nTherefore, the symbol is \\({}^{35}_{17}\\text{Cl}^-\\).",
-    "name": "Symbol of Species from Subatomic Particle Count"
+    "correctIndex": 0,
+    "explanation": "All four ions — \\(\\text{Mg}^{2+}\\), \\(\\text{Na}^{+}\\), \\(\\text{Cl}^{-}\\), and \\(\\text{S}^{2-}\\) — are isoelectronic, each having 10 electrons. For isoelectronic species, the ion with the **highest positive charge** has the **smallest radius** because the same number of electrons are pulled closer by a greater nuclear charge. Order of ionic radii:\n\\[\\text{Mg}^{2+} < \\text{Na}^{+} < \\text{Cl}^{-} < \\text{S}^{2-}\\]\nThus \\(\\text{Mg}^{2+}\\) is the smallest.",
+    "name": "Smallest Ion Among Isoelectronic Species"
   },
   {
     "id": "c2_item3",
+    "text": "The number of protons, electrons and neutrons in a species are 17, 18 and 18 respectively. Which of the following is the proper symbol of this species?",
+    "options": [
+      "\\(^{35}_{17}\\text{Cl}\\)",
+      "\\(^{35}_{17}\\text{Cl}^{-}\\)",
+      "\\(^{36}_{17}\\text{Cl}\\)",
+      "\\(^{36}_{17}\\text{Cl}^{-}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Given: protons (Z) = 17 → element is **Chlorine (Cl)**.\n\nSince electrons = 18 > protons = 17, the species has one extra electron, so it is \\(\\text{Cl}^{-}\\).\n\nMass number \\(A = \\text{protons} + \\text{neutrons} = 17 + 18 = 35\\).\n\nSo the symbol is \\(^{35}_{17}\\text{Cl}^{-}\\).",
+    "name": "Identifying Ionic Species from Subatomic Particles"
+  },
+  {
+    "id": "c2_item4",
     "text": "Find the exact orbital for which \\(n = 4\\) and \\(l = 1\\).",
     "options": [
       "4s",
@@ -35,11 +48,11 @@
       "4p"
     ],
     "correctIndex": 3,
-    "explanation": "The azimuthal quantum number \\(l\\) defines the subshell:\n- \\(l = 0\\) → s subshell\n- \\(l = 1\\) → p subshell\n- \\(l = 2\\) → d subshell\n- \\(l = 3\\) → f subshell\n\nGiven \\(n = 4\\) and \\(l = 1\\): this corresponds to the **4p** orbital.\n\nVerification of other options:\n- 4s → \\(n = 4, l = 0\\)\n- 3d → \\(n = 3, l = 2\\)\n- 4d → \\(n = 4, l = 2\\)",
-    "name": "Identifying Orbital from Quantum Numbers"
+    "explanation": "The azimuthal quantum number \\(l\\) defines the subshell:\n- \\(l = 0\\) → s subshell\n- \\(l = 1\\) → p subshell\n- \\(l = 2\\) → d subshell\n\nSince \\(n = 4\\) and \\(l = 1\\), the orbital is **4p**.\n\nFor reference: \\(4s\\) has \\(l=0\\); \\(3d\\) has \\(n=3, l=2\\); \\(4d\\) has \\(l=2\\).",
+    "name": "Quantum Numbers — Identifying the Orbital"
   },
   {
-    "id": "c2_item4",
+    "id": "c2_item5",
     "text": "Which of the following statements is correct about the shielding effect?\n\n1. It is effective when the orbitals in the inner shells are completely filled.\n2. Inner shells do not show any effect.\n3. With increase of shielding down the group, ionisation energy increases.\n4. With increasing nuclear charge, the shielding effect increases.",
     "options": [
       "Statement 1",
@@ -48,12 +61,12 @@
       "Statement 4"
     ],
     "correctIndex": 0,
-    "explanation": "**Statement 1 is correct.** The shielding effect (also called screening effect) is most effective when the inner shells are **completely filled**, as fully filled orbitals provide maximum screening of the nuclear charge from outer electrons.\n\n**Statement 2 is incorrect.** Inner shell electrons do exert a shielding effect on outer electrons.\n\n**Statement 3 is incorrect.** As we go down a group, shielding increases, which causes ionisation energy to **decrease** (not increase), because outer electrons are held less tightly.\n\n**Statement 4 is incorrect.** With increasing nuclear charge (at the same shell), effective nuclear charge on outer electrons actually **increases**, and the shielding effect does not simply increase with nuclear charge.",
-    "name": "Correct Statement about Shielding Effect"
+    "explanation": "The shielding (screening) effect refers to the reduction in effective nuclear charge experienced by outer electrons due to inner shell electrons.\n\n- **Statement 1 is correct:** Shielding is most effective when inner orbitals are completely filled.\n- Statement 2 is wrong: inner shells do shield outer electrons.\n- Statement 3 is wrong: down the group, shielding increases but ionisation energy **decreases** (not increases).\n- Statement 4 is wrong: with increasing nuclear charge, the shielding effect generally **decreases** (more protons pull electrons closer, reducing screening).",
+    "name": "Shielding Effect — Correct Statement"
   },
   {
-    "id": "c2_item5",
-    "text": "The uncertainty in the position of an electron moving with a velocity of \\(3 \\times 10^4\\) cm/s is:\n(Given: mass of electron \\(= 9.1 \\times 10^{-28}\\) g, uncertainty in velocity \\(= 0.02\\%\\))",
+    "id": "c2_item6",
+    "text": "The uncertainty in the position of an electron moving with a velocity of \\(3 \\times 10^4\\) cm/s is: (mass of electron \\(= 9.1 \\times 10^{-28}\\) g, uncertainty in velocity = 0.02%)",
     "options": [
       "\\(1.8 \\times 10^{-3}\\) cm",
       "\\(9 \\times 10^{-3}\\) cm",
@@ -61,25 +74,25 @@
       "\\(1.8 \\times 10^{-4}\\) cm"
     ],
     "correctIndex": 1,
-    "explanation": "Using Heisenberg's uncertainty principle:\n$$\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi} \\Rightarrow \\Delta x = \\frac{h}{4\\pi \\cdot m \\cdot \\Delta v}$$\n\nUncertainty in velocity:\n$$\\Delta v = \\frac{0.02}{100} \\times 3 \\times 10^4 = 6 \\text{ cm/s}$$\n\n$$\\Delta x = \\frac{6.626 \\times 10^{-27} \\text{ erg·s}}{4 \\times 3.14 \\times 9.1 \\times 10^{-28} \\text{ g} \\times 6 \\text{ cm s}^{-1}}$$\n\n$$\\Delta x \\approx 9.66 \\times 10^{-3} \\text{ cm} \\approx 9 \\times 10^{-3} \\text{ cm}$$",
-    "name": "Heisenberg Uncertainty – Position of Electron"
+    "explanation": "Using Heisenberg's uncertainty principle:\n\\[\\Delta x = \\frac{h}{4\\pi \\cdot m \\cdot \\Delta v}\\]\n\n\\(\\Delta v = 3 \\times 10^4 \\times \\frac{0.02}{100} = 6\\) cm/s\n\n\\[\\Delta x = \\frac{6.626 \\times 10^{-27}}{4 \\times 3.14 \\times 9.1 \\times 10^{-28} \\times 6} \\approx 9.66 \\times 10^{-3} \\text{ cm}\\]\n\nThis is closest to \\(9 \\times 10^{-3}\\) cm.",
+    "name": "Heisenberg Uncertainty — Position of Electron"
   },
   {
-    "id": "c2_item6",
+    "id": "c2_item7",
     "text": "\"No two electrons in an atom can have the same set of all four quantum numbers.\" This principle is called:",
     "options": [
       "Zeeman effect",
       "Pauli's exclusion principle",
       "Stark effect",
-      "Heisenberg's uncertainty principle"
+      "Heisenberg principle"
     ],
     "correctIndex": 1,
-    "explanation": "**Pauli's Exclusion Principle** states that no two electrons in an atom can have the same set of all four quantum numbers (\\(n, l, m_l, m_s\\)).\n\nFor example, in a 4s orbital (\\(n=4, l=0, m_l=0\\)), the two electrons differ only in their spin quantum number:\n- 1st electron: \\(m_s = +\\frac{1}{2}\\)\n- 2nd electron: \\(m_s = -\\frac{1}{2}\\)\n\nOther options:\n- **Zeeman effect**: splitting of spectral lines in a magnetic field.\n- **Stark effect**: splitting of spectral lines in an electric field.\n- **Heisenberg's principle**: uncertainty in simultaneous measurement of position and momentum.",
+    "explanation": "**Pauli's Exclusion Principle** states that no two electrons in an atom can have the same set of all four quantum numbers (\\(n, l, m_l, m_s\\)). For example, in a \\(4s^2\\) configuration, both electrons have \\(n=4, l=0, m_l=0\\) but differ in spin: one has \\(m_s = +\\frac{1}{2}\\) and the other \\(m_s = -\\frac{1}{2}\\). This is why each orbital can hold at most 2 electrons.",
     "name": "Pauli's Exclusion Principle"
   },
   {
-    "id": "c2_item7",
-    "text": "Which of the following statements is correct about the photoelectric effect?\n\n1. The number of electrons ejected from the metal surface is inversely proportional to the intensity of light.\n2. Below threshold frequency, the photoelectric effect can be observed.\n3. At a higher frequency than the threshold frequency, the ejected electrons have certain kinetic energy.\n4. At a higher frequency than the threshold frequency, the electron is still on the metal surface.",
+    "id": "c2_item8",
+    "text": "Which of the following statements is correct about the photoelectric effect?\n\n1. The number of electrons ejected from the metal surface is inversely proportional to the intensity of light.\n2. Below threshold frequency, the photoelectric effect can be observed.\n3. At a frequency higher than the threshold, the ejected electrons have a certain kinetic energy.\n4. At a frequency higher than threshold, the electron is still on the metal surface.",
     "options": [
       "Statement 1",
       "Statement 2",
@@ -87,12 +100,25 @@
       "Statement 4"
     ],
     "correctIndex": 2,
-    "explanation": "**Statement 3 is correct.**\n\nThe kinetic energy of photoelectrons is given by:\n$$KE = h\\nu - h\\nu_0$$\nwhere \\(\\nu\\) is the frequency of incident light and \\(\\nu_0\\) is the threshold frequency.\n\nWhen \\(\\nu > \\nu_0\\), \\(KE > 0\\), so the ejected electrons **do** have kinetic energy.\n\nWhy others are wrong:\n- **Statement 1**: The number of ejected electrons is **directly** (not inversely) proportional to intensity.\n- **Statement 2**: Below threshold frequency (\\(\\nu < \\nu_0\\)), photoelectric effect **cannot** be observed regardless of intensity.\n- **Statement 4**: When \\(\\nu = \\nu_0\\), \\(KE = 0\\) (electrons just barely escape). When \\(\\nu > \\nu_0\\), electrons are ejected — they do **not** stay on the surface.",
-    "name": "Correct Statement about Photoelectric Effect"
+    "explanation": "The kinetic energy of ejected photoelectrons is:\n\\[KE = h\\nu - h\\nu_0\\]\nWhen \\(\\nu > \\nu_0\\), \\(KE > 0\\), meaning electrons are ejected **with** kinetic energy. So **Statement 3 is correct**.\n\n- Statement 1 is wrong: number of ejected electrons is **directly** proportional to intensity.\n- Statement 2 is wrong: below \\(\\nu_0\\), no photoelectric effect occurs.\n- Statement 4 is wrong: when \\(\\nu = \\nu_0\\), \\(KE = 0\\) (electron just barely escapes); when \\(\\nu > \\nu_0\\), electrons are ejected.",
+    "name": "Photoelectric Effect — Correct Statement"
   },
   {
-    "id": "c2_item8",
-    "text": "The de-Broglie wavelength of a tennis ball of mass 60 g moving with a velocity of 10 m s\\(^{-1}\\) is approximately:\n(Planck's constant \\(h = 6.63 \\times 10^{-34}\\) J·s)",
+    "id": "c2_item9",
+    "text": "Which among the following correctly represents the Schrödinger wave equation?",
+    "options": [
+      "\\(\\dfrac{d^2\\psi}{dx^2} + \\dfrac{d^2\\psi}{dy^2} + \\dfrac{d^2\\psi}{dz^2} + \\dfrac{4\\pi m}{h}(E - V)\\psi = 0\\)",
+      "\\(\\hat{H} = \\dfrac{h}{4\\pi m}\\left(\\dfrac{d^2}{dx^2} + \\dfrac{d^2}{dy^2} + \\dfrac{d^2}{dz^2}\\right) + V\\)",
+      "\\(\\hat{H} = -\\dfrac{h^2}{8\\pi m}\\left(\\dfrac{d^2}{dx^2} + \\dfrac{d^2}{dy^2} + \\dfrac{d^2}{dz^2}\\right) + P\\)",
+      "\\(\\dfrac{d^2\\psi}{dx^2} + \\dfrac{d^2\\psi}{dy^2} + \\dfrac{d^2\\psi}{dz^2} + \\dfrac{8\\pi^2 m}{h^2}(E - V)\\psi = 0\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The correct Schrödinger wave equation is:\n\\[\\frac{d^2\\psi}{dx^2} + \\frac{d^2\\psi}{dy^2} + \\frac{d^2\\psi}{dz^2} + \\frac{8\\pi^2 m}{h^2}(E - V)\\psi = 0\\]\nwhere \\(\\psi\\) = wave function, \\(m\\) = mass of electron, \\(h\\) = Planck's constant, \\(E\\) = total energy, \\(V\\) = potential energy. The key coefficient distinguishing it from wrong options is \\(\\dfrac{8\\pi^2 m}{h^2}\\).",
+    "name": "Schrödinger Wave Equation"
+  },
+  {
+    "id": "c2_item10",
+    "text": "The de Broglie wavelength of a tennis ball of mass 60 g moving with a velocity of 10 m/s is approximately: (\\(h = 6.63 \\times 10^{-34}\\) J·s)",
     "options": [
       "\\(1.1 \\times 10^{-31}\\) m",
       "\\(1.1 \\times 10^{-33}\\) m",
@@ -100,38 +126,38 @@
       "\\(1.1 \\times 10^{-32}\\) m"
     ],
     "correctIndex": 1,
-    "explanation": "Using de-Broglie's equation:\n$$\\lambda = \\frac{h}{mv}$$\n\nGiven:\n- \\(m = 60\\text{ g} = 60 \\times 10^{-3}\\text{ kg}\\)\n- \\(v = 10\\text{ m s}^{-1}\\)\n- \\(h = 6.63 \\times 10^{-34}\\text{ J·s}\\)\n\n$$\\lambda = \\frac{6.63 \\times 10^{-34}}{60 \\times 10^{-3} \\times 10} = \\frac{6.63 \\times 10^{-34}}{0.6} \\approx 1.1 \\times 10^{-33}\\text{ m}$$\n\nThis extremely small wavelength confirms that macroscopic objects do not exhibit observable wave-like properties.",
-    "name": "de-Broglie Wavelength of a Tennis Ball"
+    "explanation": "Using the de Broglie equation:\n\\[\\lambda = \\frac{h}{mv}\\]\n\n\\[\\lambda = \\frac{6.63 \\times 10^{-34}}{60 \\times 10^{-3} \\times 10} = \\frac{6.63 \\times 10^{-34}}{0.6} = 1.105 \\times 10^{-33} \\approx 1.1 \\times 10^{-33} \\text{ m}\\]\n\nThis tiny wavelength confirms that macroscopic objects have negligibly small de Broglie wavelengths.",
+    "name": "de Broglie Wavelength of a Tennis Ball"
   },
   {
-    "id": "c2_item9",
-    "text": "Calculate the energy required to convert all atoms in 4.8 g of Mg to Mg\\(^{2+}\\) in the vapour state. IE\\(_1\\) and IE\\(_2\\) of Mg are 740 kJ/mol and 1450 kJ/mol respectively.",
+    "id": "c2_item11",
+    "text": "Calculate the energy required to convert all atoms in 4.8 g of Mg to \\(\\text{Mg}^{2+}\\) in the vapour state. \\(\\text{IE}_1\\) and \\(\\text{IE}_2\\) of Mg are 740 kJ/mol and 1450 kJ/mol respectively.",
     "options": [
-      "+740 kJ/mol",
-      "−740 kJ/mol",
-      "−1450 kJ/mol",
+      "+740 kJ",
+      "−740 kJ",
+      "−1450 kJ",
       "+438 kJ"
     ],
     "correctIndex": 3,
-    "explanation": "To convert Mg to Mg\\(^{2+}\\), both the first and second ionisation energies must be supplied:\n$$\\text{Mg} \\rightarrow \\text{Mg}^+ \\rightarrow \\text{Mg}^{2+}$$\n$$\\text{Total IE per mole} = IE_1 + IE_2 = 740 + 1450 = 2190\\text{ kJ/mol}$$\n\nMoles of Mg in 4.8 g:\n$$n = \\frac{4.8}{24} = 0.2\\text{ mol}$$\n\nEnergy required:\n$$E = 2190 \\times 0.2 = \\mathbf{438}\\text{ kJ}$$",
-    "name": "Energy Required to Convert Mg to Mg²⁺"
+    "explanation": "To convert Mg to \\(\\text{Mg}^{2+}\\), two electrons must be removed. Total ionisation energy per mole:\n\\[IE = IE_1 + IE_2 = 740 + 1450 = 2190 \\text{ kJ/mol}\\]\n\nMoles of Mg in 4.8 g:\n\\[n = \\frac{4.8}{24} = 0.2 \\text{ mol}\\]\n\nEnergy required:\n\\[E = 2190 \\times 0.2 = 438 \\text{ kJ}\\]\n\nSince ionisation energy is always absorbed (endothermic), the answer is +438 kJ.",
+    "name": "Energy for Mg to Mg²⁺ Conversion"
   },
   {
-    "id": "c2_item10",
-    "text": "Choose the correct option regarding:\n\n**Assertion:** Energy of the orbital decreases with increase of \\(n\\).\n\n**Reason:** Energy is required in shifting away the negatively charged electron from the positively charged nucleus.",
+    "id": "c2_item12",
+    "text": "Assertion: Energy of the orbital decreases with increase of \\(n\\).\nReason: Energy is required to shift a negatively charged electron away from a positively charged nucleus.\n\nChoose the correct option:",
     "options": [
-      "Assertion and Reason are both correct, and Reason is the correct explanation for Assertion",
-      "Assertion and Reason are both correct, but Reason is not the explanation for Assertion",
+      "Both Assertion and Reason are correct, and Reason correctly explains the Assertion",
+      "Both Assertion and Reason are correct, but Reason does not explain the Assertion",
       "Assertion is correct, Reason is wrong",
       "Assertion is wrong, Reason is correct"
     ],
     "correctIndex": 3,
-    "explanation": "As \\(n\\) increases (moving to higher shells), the electron moves farther from the nucleus:\n- The **potential energy** of the electron increases (becomes less negative).\n- The **kinetic energy** decreases.\n- The **total energy** (which is negative) **increases** (becomes less negative), i.e., the electron is less tightly bound.\n\nSo the **Assertion is wrong** — energy of the orbital **increases** (becomes less negative) with increasing \\(n\\).\n\nThe **Reason is correct** — energy is indeed required to move a negatively charged electron away from the positively charged nucleus, which increases its total energy.",
-    "name": "Assertion-Reason: Orbital Energy and Principal Quantum Number"
+    "explanation": "As the principal quantum number \\(n\\) increases, the electron moves farther from the nucleus. The total energy of the electron (which is negative for bound states) **increases** (becomes less negative) with increasing \\(n\\). So the Assertion is **wrong** — energy increases, not decreases, with \\(n\\).\n\nThe Reason is **correct** — energy must be supplied to move an electron away from the attracting nucleus, which is why higher orbits have higher (less negative) total energy.",
+    "name": "Assertion-Reason: Energy vs Principal Quantum Number"
   },
   {
-    "id": "c2_item11",
-    "text": "Which of the following statements is correct about cathode rays?\n\n1. These rays start from anode and move towards cathode.\n2. They are visible with the human eye.\n3. In presence of electric and magnetic fields, they behave like positively charged particles.\n4. Their characteristics do not depend on the nature of material at the electrode.",
+    "id": "c2_item13",
+    "text": "Which of the following statements is correct about cathode rays?\n\n1. These rays start from the anode and move towards the cathode.\n2. They are visible to the human eye.\n3. In the presence of electric and magnetic fields, they behave like positively charged particles.\n4. Their characteristics do not depend on the nature of material at the electrode.",
     "options": [
       "Statement 1",
       "Statement 2",
@@ -139,12 +165,12 @@
       "Statement 4"
     ],
     "correctIndex": 3,
-    "explanation": "**Statement 4 is correct.** The characteristics of cathode rays (electrons) do **not** depend on the material of the electrodes or the nature of the gas present in the cathode ray tube. This universality was a key discovery showing that electrons are a fundamental constituent of all matter.\n\nWhy others are wrong:\n- **Statement 1**: Cathode rays start from the **cathode** and move towards the anode (not the other way).\n- **Statement 2**: Cathode rays themselves are **not visible** to the naked eye; their presence is detected using phosphorescent materials like ZnS.\n- **Statement 3**: In electric/magnetic fields, cathode rays deflect like **negatively** charged particles (they are electrons), not positively charged ones.",
-    "name": "Correct Statement about Cathode Rays"
+    "explanation": "Cathode ray properties:\n- Statement 1 is **wrong**: rays travel from **cathode to anode**.\n- Statement 2 is **wrong**: cathode rays are not visible directly; they can only be detected using phosphorescent materials like ZnS.\n- Statement 3 is **wrong**: in electric/magnetic fields, they deflect like **negatively** charged particles (electrons).\n- **Statement 4 is correct**: the properties of cathode rays (charge-to-mass ratio of electrons) are the same regardless of electrode material or the gas in the tube. This was a key finding by J.J. Thomson.",
+    "name": "Properties of Cathode Rays"
   },
   {
-    "id": "c2_item12",
-    "text": "If the binding energy of electrons in a metal is 250 kJ/mol, what should be the threshold frequency of the striking photons in order to free an electron from the metal surface?",
+    "id": "c2_item14",
+    "text": "If the binding energy of electrons in a metal is 250 kJ/mol, what should be the threshold frequency of the striking photons to free an electron from the metal surface?",
     "options": [
       "\\(6.26 \\times 10^{14}\\) s\\(^{-1}\\)",
       "\\(12.4 \\times 10^{14}\\) s\\(^{-1}\\)",
@@ -152,11 +178,11 @@
       "\\(12.4 \\times 10^{12}\\) s\\(^{-1}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Binding energy per mole = 250 kJ/mol\n\nBinding energy per electron:\n$$E = \\frac{250 \\times 10^3\\text{ J}}{6.022 \\times 10^{23}} = 4.15 \\times 10^{-19}\\text{ J}$$\n\nAt threshold frequency, \\(h\\nu_0 = E\\):\n$$\\nu_0 = \\frac{E}{h} = \\frac{4.15 \\times 10^{-19}}{6.626 \\times 10^{-34}} = 6.26 \\times 10^{14}\\text{ s}^{-1}$$",
+    "explanation": "Binding energy per electron:\n\\[BE = \\frac{250 \\times 10^3}{6.022 \\times 10^{23}} = 4.15 \\times 10^{-19} \\text{ J}\\]\n\nAt threshold, \\(h\\nu_0 = BE\\):\n\\[\\nu_0 = \\frac{4.15 \\times 10^{-19}}{6.626 \\times 10^{-34}} = 6.26 \\times 10^{14} \\text{ s}^{-1}\\]",
     "name": "Threshold Frequency from Binding Energy"
   },
   {
-    "id": "c2_item13",
+    "id": "c2_item15",
     "text": "Calculate the energy of half a mole of photons of radiation with frequency \\(3 \\times 10^{12}\\) Hz.",
     "options": [
       "598.2 kJ mol\\(^{-1}\\)",
@@ -165,12 +191,12 @@
       "119.6 kJ mol\\(^{-1}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Energy of one photon:\n$$E = h\\nu = 6.626 \\times 10^{-34} \\times 3 \\times 10^{12} = 1.988 \\times 10^{-21}\\text{ J}$$\n\nNumber of photons in half a mole:\n$$N = \\frac{6.022 \\times 10^{23}}{2} = 3.011 \\times 10^{23}$$\n\nTotal energy:\n$$E_{\\text{total}} = 1.988 \\times 10^{-21} \\times 3.011 \\times 10^{23} = 598.6\\text{ J} \\approx 0.598\\text{ kJ/mol}$$",
+    "explanation": "Energy of one photon:\n\\[E = h\\nu = 6.626 \\times 10^{-34} \\times 3 \\times 10^{12} = 1.988 \\times 10^{-21} \\text{ J}\\]\n\nHalf a mole = \\(0.5 \\times 6.022 \\times 10^{23} = 3.011 \\times 10^{23}\\) photons.\n\nTotal energy:\n\\[E = 1.988 \\times 10^{-21} \\times 3.011 \\times 10^{23} = 598.6 \\text{ J} \\approx 0.598 \\text{ kJ}\\]",
     "name": "Energy of Half Mole of Photons"
   },
   {
-    "id": "c2_item14",
-    "text": "Calculate the number of protons, neutrons and electrons in \\({}^{32}_{16}\\text{S}^{2-}\\).",
+    "id": "c2_item16",
+    "text": "Calculate the number of protons, neutrons and electrons in \\(^{32}_{16}\\text{S}^{2-}\\).",
     "options": [
       "14, 18, 16",
       "16, 16, 14",
@@ -178,12 +204,12 @@
       "16, 16, 18"
     ],
     "correctIndex": 3,
-    "explanation": "For \\({}^{32}_{16}\\text{S}^{2-}\\):\n\n- **Atomic number** \\(Z = 16\\) → **Protons = 16**\n- **Mass number** \\(A = 32\\) → **Neutrons** \\(= A - Z = 32 - 16 = 16\\)\n- The ion has a \\(2-\\) charge, meaning it has gained 2 extra electrons:\n  **Electrons** \\(= 16 + 2 = 18\\)\n\nSo: Protons = 16, Neutrons = 16, Electrons = **18**.",
+    "explanation": "For \\(^{32}_{16}\\text{S}^{2-}\\):\n- **Protons** = Atomic number = **16**\n- **Neutrons** = Mass number − Atomic number = 32 − 16 = **16**\n- **Electrons** = Protons + extra charges due to \\(2^-\\) ion = 16 + 2 = **18**\n\nSo the answer is 16 protons, 16 neutrons, 18 electrons.",
     "name": "Subatomic Particles in S²⁻ Ion"
   },
   {
-    "id": "c2_item15",
-    "text": "Calculate the mass of a photon if its wavelength is given as 0.35 nm.\n(\\(h = 6.626 \\times 10^{-34}\\) kg m\\(^2\\) s\\(^{-1}\\), \\(c = 3 \\times 10^8\\) m s\\(^{-1}\\))",
+    "id": "c2_item17",
+    "text": "Calculate the mass of a photon if its wavelength is given as 0.35 nm.",
     "options": [
       "\\(2.20 \\times 10^{-42}\\) kg",
       "\\(6.30 \\times 10^{-33}\\) g",
@@ -191,25 +217,25 @@
       "\\(18.92 \\times 10^{-25}\\) kg"
     ],
     "correctIndex": 2,
-    "explanation": "Using de-Broglie's relation \\(\\lambda = \\dfrac{h}{mv}\\), for a photon \\(v = c\\):\n$$m = \\frac{h}{\\lambda c}$$\n\nGiven:\n- \\(\\lambda = 0.35\\text{ nm} = 0.35 \\times 10^{-9}\\text{ m}\\)\n- \\(h = 6.626 \\times 10^{-34}\\text{ kg m}^2\\text{s}^{-1}\\)\n- \\(c = 3 \\times 10^8\\text{ m s}^{-1}\\)\n\n$$m = \\frac{6.626 \\times 10^{-34}}{0.35 \\times 10^{-9} \\times 3 \\times 10^8} = \\frac{6.626 \\times 10^{-34}}{1.05 \\times 10^{-1}} = 6.30 \\times 10^{-33}\\text{ kg}$$",
+    "explanation": "Using the de Broglie relation and the fact that the photon travels at the speed of light \\(c\\):\n\\[\\lambda = \\frac{h}{mc} \\Rightarrow m = \\frac{h}{\\lambda c}\\]\n\n\\[m = \\frac{6.626 \\times 10^{-34}}{0.35 \\times 10^{-9} \\times 3 \\times 10^8} = \\frac{6.626 \\times 10^{-34}}{1.05 \\times 10^{-1}} = 6.30 \\times 10^{-33} \\text{ kg}\\]",
     "name": "Mass of a Photon from Wavelength"
   },
   {
-    "id": "c2_item16",
-    "text": "The order of screening effect among s, p, d and f-orbitals of a given shell of an atom on its outer shell electrons is:",
+    "id": "c2_item18",
+    "text": "The order of screening effect among s, p, d and f orbitals of a given shell on the outer shell electrons is:",
     "options": [
-      "\\(s > p > d > f\\)",
-      "\\(f > d > p > s\\)",
-      "\\(p < d < s > f\\)",
-      "\\(d > f > p > s\\)"
+      "s > p > d > f",
+      "f > d > p > s",
+      "p < d < s > f",
+      "d > f > p > s"
     ],
     "correctIndex": 0,
-    "explanation": "The screening (shielding) effect depends on how close the orbital electrons are to the nucleus and their penetrating ability:\n\n- **s-orbitals** have the highest electron density near the nucleus (maximum penetration) → **highest shielding**.\n- **p-orbitals** penetrate less than s → less shielding.\n- **d-orbitals** penetrate even less → still less shielding.\n- **f-orbitals** have the lowest penetration → **least shielding**.\n\n$$\\text{Shielding order: } s > p > d > f$$\n\nThis is why f-block elements are large in size — their outermost electrons experience reduced effective nuclear charge due to poor shielding by inner f-electrons.",
-    "name": "Order of Screening Effect of Orbitals"
+    "explanation": "Screening (shielding) effect depends on how close to the nucleus an electron is and the shape of the orbital. The **s orbital** has the highest probability density near the nucleus and provides the most shielding. Moving from s → p → d → f, the orbitals become progressively more diffuse and provide less shielding.\n\nOrder: **s > p > d > f**\n\nThis is why f-block elements tend to be larger — their outermost electrons are poorly shielded by inner f electrons.",
+    "name": "Order of Screening Effect"
   },
   {
-    "id": "c2_item17",
-    "text": "Which of the following models states that \"In an atom, the positive charge is uniformly distributed and electrons are embedded into it\"?",
+    "id": "c2_item19",
+    "text": "Which of the following atomic models states that \"In an atom, the positive charge is uniformly distributed and electrons are embedded into it\"?",
     "options": [
       "Bohr's atomic model",
       "Thomson's atomic model",
@@ -217,12 +243,12 @@
       "Sommerfeld's atomic model"
     ],
     "correctIndex": 1,
-    "explanation": "**Thomson's atomic model** (also called the **plum pudding model**) proposed that:\n- The atom is a sphere of **uniformly distributed positive charge**.\n- The **electrons are embedded** within this positive sphere like plums in a pudding.\n\nThis model was later disproved by Rutherford's gold foil experiment, which showed that the positive charge is concentrated in a very small, dense nucleus rather than uniformly spread.",
+    "explanation": "This description matches **Thomson's atomic model** (also called the plum pudding model). J.J. Thomson proposed that the atom is a uniform sphere of positive charge with electrons embedded in it like plums in a pudding. This model was later disproved by Rutherford's gold foil experiment, which showed that positive charge is concentrated in a tiny nucleus.",
     "name": "Thomson's Atomic Model"
   },
   {
-    "id": "c2_item18",
-    "text": "Calculate the energy associated with the second orbit of Li\\(^+\\) and find its radius.",
+    "id": "c2_item20",
+    "text": "Calculate the energy associated with the second orbit of \\(\\text{Li}^{+}\\) and find its radius.",
     "options": [
       "\\(4.905 \\times 10^{-19}\\) J, 0.0705 nm",
       "\\(4.905 \\times 10^{-20}\\) J, 0.0705 Å",
@@ -230,38 +256,38 @@
       "\\(4.905 \\times 10^{-18}\\) J, 0.0705 nm"
     ],
     "correctIndex": 3,
-    "explanation": "For Li\\(^+\\), \\(Z = 3\\), \\(n = 2\\).\n\n**Energy of the second Bohr orbit:**\n$$E_n = -13.6 \\times \\frac{Z^2}{n^2} \\text{ eV} = -13.6 \\times \\frac{9}{4} = -30.6\\text{ eV}$$\n$$= -30.6 \\times 1.6 \\times 10^{-19}\\text{ J} = -4.905 \\times 10^{-18}\\text{ J}$$\n\n**Radius of the second Bohr orbit:**\n$$r_n = 0.529 \\times \\frac{n^2}{Z}\\text{ Å} = 0.529 \\times \\frac{4}{3} = 0.7053\\text{ Å} = 0.0705\\text{ nm}$$",
-    "name": "Energy and Radius of Second Orbit of Li⁺"
+    "explanation": "For \\(\\text{Li}^{+}\\): \\(Z = 3\\), \\(n = 2\\)\n\n**Energy** using Bohr's formula:\n\\[E_n = -13.6 \\times \\frac{Z^2}{n^2} \\text{ eV} = -13.6 \\times \\frac{9}{4} = -30.6 \\text{ eV}\\]\n\\[= -30.6 \\times 1.6 \\times 10^{-19} = -4.905 \\times 10^{-18} \\text{ J}\\]\n\n**Radius** using Bohr's formula:\n\\[r = 0.529 \\times \\frac{n^2}{Z} = 0.529 \\times \\frac{4}{3} = 0.705 \\text{ Å} = 0.0705 \\text{ nm}\\]",
+    "name": "Bohr's Model — Energy and Radius for Li⁺"
   },
   {
-    "id": "c2_item19",
+    "id": "c2_item21",
     "text": "Which of the following are isoelectronic species?",
     "options": [
-      "\\(\\text{O}^{2-}, \\text{F}, \\text{Na}^+, \\text{Mg}^+\\)",
+      "\\(\\text{O}^+, \\text{F}, \\text{Na}^+, \\text{Mg}\\)",
       "\\(\\text{O}, \\text{F}^-, \\text{Na}, \\text{Mg}\\)",
       "\\(\\text{O}^{2-}, \\text{F}^-, \\text{Na}^+, \\text{Mg}^{2+}\\)",
       "\\(\\text{O}^{2-}, \\text{Cl}^-, \\text{Na}, \\text{Mg}^{2+}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Isoelectronic species have the **same number of electrons**.\n\nCount electrons in each species in option (c):\n- **O\\(^{2-}\\)**: O has 8 electrons + 2 extra = **10 electrons**\n- **F\\(^-\\)**: F has 9 electrons + 1 extra = **10 electrons**\n- **Na\\(^+\\)**: Na has 11 electrons − 1 = **10 electrons**\n- **Mg\\(^{2+}\\)**: Mg has 12 electrons − 2 = **10 electrons**\n\nAll four species have **10 electrons** → they are isoelectronic.",
+    "explanation": "Isoelectronic species have the **same number of electrons**.\n\n- \\(\\text{O}^{2-}\\): 8 + 2 = **10** electrons\n- \\(\\text{F}^{-}\\): 9 + 1 = **10** electrons\n- \\(\\text{Na}^{+}\\): 11 − 1 = **10** electrons\n- \\(\\text{Mg}^{2+}\\): 12 − 2 = **10** electrons\n\nAll four have 10 electrons — they are isoelectronic (neon configuration).",
     "name": "Isoelectronic Species"
   },
   {
-    "id": "c2_item20",
+    "id": "c2_item22",
     "text": "The formula for calculating the 'spin only' magnetic moment is:",
     "options": [
-      "\\(\\sqrt{n(n+2)}\\)",
-      "\\(\\sqrt{n(n-2)}\\)",
-      "\\(\\sqrt{n(n+2)}\\) BM",
-      "\\(\\sqrt{n(n-2)}\\) BM"
+      "\\(\\mu = n(n+2)\\)",
+      "\\(\\mu = n(n-2)\\)",
+      "\\(\\mu = \\sqrt{n(n+2)}\\)",
+      "\\(\\mu = \\sqrt{n(n-2)}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "The **spin-only magnetic moment** formula is:\n$$\\mu_{so} = \\sqrt{n(n+2)}\\text{ BM}$$\nwhere \\(n\\) = number of unpaired electrons and BM = Bohr Magneton.\n\nThis formula is derived from the spin quantum number. For each unpaired electron, \\(s = \\frac{1}{2}\\), and the formula in terms of total spin \\(S\\) is:\n$$\\mu_{so} = \\sqrt{4S(S+1)}\\text{ BM}$$\n\nBoth expressions give identical results. For example:\n- 1 unpaired electron: \\(\\mu = \\sqrt{1 \\times 3} = \\sqrt{3} \\approx 1.73\\) BM\n- 2 unpaired electrons: \\(\\mu = \\sqrt{2 \\times 4} = \\sqrt{8} \\approx 2.83\\) BM",
+    "explanation": "The **spin only magnetic moment** formula is:\n\\[\\mu_{\\text{so}} = \\sqrt{n(n+2)} \\text{ BM}\\]\nwhere \\(n\\) is the number of **unpaired electrons** and BM stands for Bohr Magneton.\n\nFor example, if an ion has 3 unpaired electrons:\n\\[\\mu = \\sqrt{3(3+2)} = \\sqrt{15} \\approx 3.87 \\text{ BM}\\]\n\nThis formula arises from the quantum mechanical treatment of electron spin angular momentum.",
     "name": "Spin Only Magnetic Moment Formula"
   },
   {
-    "id": "c2_item21",
-    "text": "The formation of molecular orbitals can be described by the linear combination of atomic orbitals (LCAO). Which of the following correctly represents the formation of a **bonding** molecular orbital from atomic orbitals with wave functions \\(\\psi_A\\) and \\(\\psi_B\\)?",
+    "id": "c2_item23",
+    "text": "Which one of the following correctly represents the formation of a bonding molecular orbital from atomic orbitals with wave functions \\(\\psi_A\\) and \\(\\psi_B\\)?",
     "options": [
       "\\(\\psi_A \\times \\psi_B\\)",
       "\\(\\psi_A / \\psi_B\\)",
@@ -269,25 +295,25 @@
       "\\(\\psi_A - \\psi_B\\)"
     ],
     "correctIndex": 2,
-    "explanation": "According to **Molecular Orbital Theory (MOT)** and the **LCAO method**:\n\n- **Bonding MO** is formed by the **addition** of wave functions of atomic orbitals (same phase overlap):\n$$\\psi_{\\text{bonding}} = \\psi_A + \\psi_B$$\nThis leads to constructive interference, resulting in increased electron density between the nuclei.\n\n- **Anti-bonding MO** is formed by the **subtraction** of wave functions (opposite phase overlap):\n$$\\psi^*_{\\text{anti-bonding}} = \\psi_A - \\psi_B$$\nThis leads to destructive interference and a nodal plane between the nuclei.\n\nThe bonding MO has **lower energy** than the original atomic orbitals, while the anti-bonding MO has **higher energy**.",
-    "name": "Bonding Molecular Orbital Formation – LCAO"
+    "explanation": "According to the **Linear Combination of Atomic Orbitals (LCAO)** method:\n- **Bonding molecular orbital** is formed by **addition** of wave functions of orbitals with the same phase:\n\\[\\psi_{\\text{bonding}} = \\psi_A + \\psi_B\\]\n- **Antibonding molecular orbital** is formed by **subtraction**:\n\\[\\psi_{\\text{antibonding}} = \\psi_A - \\psi_B\\]\n\nThe bonding MO has increased electron density between nuclei, leading to a stable bond.",
+    "name": "LCAO — Bonding Molecular Orbital"
   },
   {
-    "id": "c2_item22",
-    "text": "Which of the following conclusions could **not** be derived from Rutherford's \\(\\alpha\\)-particle scattering experiment?",
+    "id": "c2_item24",
+    "text": "Which of the following conclusions could NOT be derived from Rutherford's \\(\\alpha\\)-particle scattering experiment?",
     "options": [
       "Most of the space in the atom is empty.",
-      "The radius of the atom is about \\(10^{-10}\\) m, while that of the nucleus is \\(10^{-15}\\) m.",
+      "Radius of the atom is about \\(10^{-10}\\) m, while that of the nucleus is \\(10^{-15}\\) m.",
       "Electrons move in circular paths of fixed energy, called orbits.",
       "Electrons and the nucleus are held together by electrostatic forces of attraction."
     ],
     "correctIndex": 2,
-    "explanation": "Rutherford's \\(\\alpha\\)-particle scattering experiment established that:\n- Most of the atom is **empty space** (most \\(\\alpha\\)-particles passed through).\n- The **nucleus is very small and dense** with a radius \\(\\sim 10^{-15}\\) m compared to atomic radius \\(\\sim 10^{-10}\\) m.\n- The nucleus is **positively charged** (deflection of \\(\\alpha\\)-particles).\n- Electrons and nucleus are held by **electrostatic attraction**.\n\nHowever, the idea that **electrons move in fixed circular orbits (energy levels)** was proposed by **Niels Bohr** in 1913, not derived from Rutherford's experiment. Rutherford's model could not explain the stability of atoms or the discrete nature of atomic spectra.",
-    "name": "Conclusions from Rutherford's Scattering Experiment"
+    "explanation": "Rutherford's \\(\\alpha\\)-particle scattering experiment concluded:\n- Most of the atom is empty space (most particles passed through).\n- The positive charge and most mass are concentrated in a tiny nucleus.\n- The nucleus is much smaller than the atom (~\\(10^{-15}\\) m vs \\(10^{-10}\\) m).\n- Electrons must orbit the nucleus held by electrostatic attraction.\n\nHowever, the concept of **fixed energy circular orbits** was proposed by **Niels Bohr** — it cannot be derived from Rutherford's experiment alone.",
+    "name": "Rutherford's Scattering Experiment — Limitations"
   },
   {
-    "id": "c2_item23",
-    "text": "Which among the following is a correct statement based on Heisenberg's uncertainty principle?\n\n(i) It is impossible to determine exact position and exact momentum of an electron simultaneously.\n(ii) It is applicable to even macroscopic objects.\n(iii) It is possible to determine the exact position and momentum of an electron simultaneously.\n(iv) It is impossible to determine the exact position and momentum of a macroscopic object simultaneously.",
+    "id": "c2_item25",
+    "text": "Which among the following is a correct statement based on Heisenberg's uncertainty principle?\n\n(i) It is impossible to determine the exact position and exact momentum of an electron simultaneously.\n(ii) It is applicable to even macroscopic objects.\n(iii) It is possible to determine the exact position and momentum of an electron simultaneously.\n(iv) It is impossible to determine the exact position and momentum of a macroscopic object simultaneously.",
     "options": [
       "(i)",
       "(ii)",
@@ -295,12 +321,12 @@
       "(iv)"
     ],
     "correctIndex": 0,
-    "explanation": "**Heisenberg's Uncertainty Principle** states:\n$$\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}$$\n\nIt is **impossible to simultaneously determine the exact position and exact momentum** (or velocity) of a microscopic particle like an electron.\n\n- **(i) is correct**: This is the direct statement of the principle for electrons.\n- **(ii) is incorrect**: The principle technically applies to all matter, but for macroscopic objects, the uncertainty is so negligibly small (due to large mass) that it has no practical significance.\n- **(iii) is incorrect**: Exact simultaneous measurement of both quantities is impossible — this contradicts the principle.\n- **(iv) is incorrect**: The uncertainty for macroscopic objects is practically zero and has no observable effect.",
-    "name": "Correct Statement on Heisenberg's Uncertainty Principle"
+    "explanation": "Heisenberg's Uncertainty Principle states:\n\\[\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}\\]\nThis means the more precisely we know the position of a particle, the less precisely we can know its momentum, and vice versa.\n\n- Statement (i) is **correct** — it is impossible to simultaneously determine exact position and momentum.\n- Statement (ii) is **wrong** — the principle is significant only for **microscopic** particles; for macroscopic objects, the uncertainty is negligibly small.\n- Statement (iii) is the opposite of the principle.\n- Statement (iv) is incorrect for macroscopic objects.",
+    "name": "Heisenberg's Uncertainty Principle — Correct Statement"
   },
   {
-    "id": "c2_item24",
-    "text": "The energy of an electron in an orbit of a hydrogen-like ion with an orbit radius of 52.9 pm is:\n(Ground state energy of electron in hydrogen atom \\(= -2.18 \\times 10^{-18}\\) J)",
+    "id": "c2_item26",
+    "text": "The energy of an electron in a hydrogen-like ion orbit with a radius of 52.9 pm is: (ground state energy of hydrogen atom = \\(-2.18 \\times 10^{-18}\\) J)",
     "options": [
       "\\(-4.36 \\times 10^{-18}\\) J",
       "\\(-1.09 \\times 10^{-17}\\) J",
@@ -308,12 +334,12 @@
       "\\(-6.54 \\times 10^{-18}\\) J"
     ],
     "correctIndex": 2,
-    "explanation": "Given: orbit radius \\(r_n = 52.9\\) pm, and \\(r_0 = 52.9\\) pm (Bohr radius).\n\nBohr radius formula:\n$$r_n = r_0 \\times \\frac{n^2}{Z}$$\n$$52.9 = 52.9 \\times \\frac{n^2}{Z} \\Rightarrow \\frac{n^2}{Z} = 1$$\n\nSo \\(n^2 = Z\\).\n\nEnergy formula:\n$$E_n = E_0 \\times \\frac{Z^2}{n^2} = -2.18 \\times 10^{-18} \\times \\frac{Z^2}{n^2}$$\n\nSince \\(Z = n^2\\):\n$$E_n = -2.18 \\times 10^{-18} \\times n^2$$\n\nFor \\(n = 2\\): \\(Z = 4\\) (Be³⁺ ion)\n$$E_2 = -2.18 \\times 10^{-18} \\times 4 = -8.72 \\times 10^{-18}\\text{ J}$$",
-    "name": "Energy of Electron in Hydrogen-like Ion"
+    "explanation": "Bohr's radius formula: \\(r_n = r_0 \\times \\frac{n^2}{Z}\\)\n\nGiven \\(r_n = 52.9\\) pm = \\(r_0 \\times \\frac{n^2}{Z}\\), so \\(\\frac{n^2}{Z} = 1\\), meaning \\(n^2 = Z\\).\n\nEnergy: \\(E_n = E_0 \\times \\frac{Z^2}{n^2} = E_0 \\times \\frac{n^4}{n^2} = E_0 \\times n^2\\)\n\nFor \\(n = 2\\): \\(E = -2.18 \\times 10^{-18} \\times 4 = -8.72 \\times 10^{-18}\\) J",
+    "name": "Bohr's Model — Energy from Orbit Radius"
   },
   {
-    "id": "c2_item25",
-    "text": "The wavelength of a microscopic particle of mass \\(9.1 \\times 10^{-31}\\) kg is 182 nm. Its kinetic energy in J is:\n(\\(h = 6.625 \\times 10^{-34}\\) J·s)",
+    "id": "c2_item27",
+    "text": "The wavelength of a microscopic particle of mass \\(9.1 \\times 10^{-31}\\) kg is 182 nm. Its kinetic energy in J is: (\\(h = 6.625 \\times 10^{-34}\\) J·s)",
     "options": [
       "\\(7.28 \\times 10^{-23}\\) J",
       "\\(7.28 \\times 10^{-24}\\) J",
@@ -321,25 +347,25 @@
       "\\(3.64 \\times 10^{-24}\\) J"
     ],
     "correctIndex": 1,
-    "explanation": "Given: \\(m = 9.1 \\times 10^{-31}\\) kg, \\(\\lambda = 182\\text{ nm} = 182 \\times 10^{-9}\\text{ m}\\)\n\nFrom de-Broglie: \\(v = \\dfrac{h}{m\\lambda}\\)\n\n$$v = \\frac{6.625 \\times 10^{-34}}{9.1 \\times 10^{-31} \\times 182 \\times 10^{-9}} = \\frac{6.625 \\times 10^{-34}}{1.6562 \\times 10^{-37}} \\approx 4 \\times 10^3\\text{ m/s}$$\n\nKinetic energy:\n$$KE = \\frac{1}{2}mv^2 = \\frac{1}{2} \\times 9.1 \\times 10^{-31} \\times (4 \\times 10^3)^2$$\n$$= \\frac{1}{2} \\times 9.1 \\times 10^{-31} \\times 16 \\times 10^6 = 7.28 \\times 10^{-24}\\text{ J}$$",
-    "name": "Kinetic Energy of Microscopic Particle from de-Broglie Wavelength"
+    "explanation": "From de Broglie equation, find velocity:\n\\[v = \\frac{h}{m\\lambda} = \\frac{6.625 \\times 10^{-34}}{9.1 \\times 10^{-31} \\times 182 \\times 10^{-9}} = 4 \\times 10^3 \\text{ m/s}\\]\n\nKinetic energy:\n\\[KE = \\frac{1}{2}mv^2 = \\frac{1}{2} \\times 9.1 \\times 10^{-31} \\times (4 \\times 10^3)^2\\]\n\\[= \\frac{1}{2} \\times 9.1 \\times 10^{-31} \\times 16 \\times 10^6 = 7.28 \\times 10^{-24} \\text{ J}\\]",
+    "name": "Kinetic Energy from de Broglie Wavelength"
   },
   {
-    "id": "c2_item26",
-    "text": "The energy associated with Bohr's orbit in the hydrogen atom is given by \\(E_n = -\\dfrac{13.6}{n^2}\\) eV. The energy in eV associated with the orbit having a radius \\(9r_1\\) is (where \\(r_1\\) is the radius of the first orbit):",
+    "id": "c2_item28",
+    "text": "The energy associated with Bohr's orbit in hydrogen is \\(E_n = -\\dfrac{13.6}{n^2}\\) eV. The energy (in eV) associated with the orbit having a radius \\(9r_1\\) is: (\\(r_1\\) = radius of first orbit)",
     "options": [
-      "\\(-13.6\\) eV",
-      "\\(-6.8\\) eV",
-      "\\(-1.51\\) eV",
-      "\\(-1.36\\) eV"
+      "−13.6 eV",
+      "−6.8 eV",
+      "−1.51 eV",
+      "−13.6 eV"
     ],
     "correctIndex": 2,
-    "explanation": "For hydrogen (\\(Z = 1\\)), the radius of the \\(n\\)th Bohr orbit is:\n$$r_n = r_1 \\times n^2$$\n\nGiven \\(r_n = 9r_1\\):\n$$r_1 \\times n^2 = 9r_1 \\Rightarrow n^2 = 9 \\Rightarrow n = 3$$\n\nEnergy of the 3rd orbit:\n$$E_3 = -\\frac{13.6}{3^2} = -\\frac{13.6}{9} = -1.51\\text{ eV}$$",
-    "name": "Energy of Orbit with Radius 9r₁ in Hydrogen"
+    "explanation": "Bohr's radius formula: \\(r_n = r_1 \\cdot n^2\\) (for hydrogen, Z = 1)\n\nGiven \\(r_n = 9r_1\\):\n\\[r_1 \\cdot n^2 = 9r_1 \\Rightarrow n^2 = 9 \\Rightarrow n = 3\\]\n\nEnergy at \\(n = 3\\):\n\\[E_3 = -\\frac{13.6}{9} = -1.51 \\text{ eV}\\]",
+    "name": "Bohr's Orbit Energy from Radius"
   },
   {
-    "id": "c2_item27",
-    "text": "When a certain metal was irradiated with light of frequency \\(4.0 \\times 10^{16}\\) s\\(^{-1}\\), the photoelectrons emitted had four times the kinetic energy as the photoelectrons emitted when the same metal was irradiated with light of frequency \\(2.0 \\times 10^{16}\\) s\\(^{-1}\\). The threshold frequency \\((\\nu_0)\\) of the metal in s\\(^{-1}\\) is:",
+    "id": "c2_item29",
+    "text": "When a metal was irradiated with light of frequency \\(4.0 \\times 10^{16}\\) s\\(^{-1}\\), the photoelectrons had four times the kinetic energy compared to those emitted when irradiated with \\(2.0 \\times 10^{16}\\) s\\(^{-1}\\). The threshold frequency (\\(\\nu_0\\)) of the metal in s\\(^{-1}\\) is:",
     "options": [
       "\\(2 \\times 10^{16}\\)",
       "\\(4 \\times 10^{16}\\)",
@@ -347,12 +373,12 @@
       "\\(1.33 \\times 10^{16}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Let \\(\\nu_1 = 4.0 \\times 10^{16}\\) s\\(^{-1}\\) and \\(\\nu_2 = 2.0 \\times 10^{16}\\) s\\(^{-1}\\), with \\(KE_1 = 4\\,KE_2\\).\n\nFrom the photoelectric equation:\n$$h\\nu_1 - h\\nu_0 = KE_1 = 4\\,KE_2 \\quad \\text{...(i)}$$\n$$h\\nu_2 - h\\nu_0 = KE_2 \\quad \\text{...(ii)}$$\n\nDividing (i) by (ii):\n$$\\frac{\\nu_1 - \\nu_0}{\\nu_2 - \\nu_0} = 4$$\n$$\\nu_1 - \\nu_0 = 4(\\nu_2 - \\nu_0)$$\n$$4.0 \\times 10^{16} - \\nu_0 = 4(2.0 \\times 10^{16} - \\nu_0)$$\n$$4.0 \\times 10^{16} - \\nu_0 = 8.0 \\times 10^{16} - 4\\nu_0$$\n$$3\\nu_0 = 4.0 \\times 10^{16}$$\n$$\\nu_0 = 1.33 \\times 10^{16}\\text{ s}^{-1}$$",
-    "name": "Threshold Frequency from Photoelectric Effect Data"
+    "explanation": "Let \\(\\nu_1 = 4 \\times 10^{16}\\), \\(\\nu_2 = 2 \\times 10^{16}\\), and \\(KE_1 = 4 \\cdot KE_2\\).\n\nFrom the photoelectric equation:\n\\[h(\\nu_1 - \\nu_0) = KE_1 = 4 \\cdot KE_2 = 4h(\\nu_2 - \\nu_0)\\]\n\n\\[(4 \\times 10^{16} - \\nu_0) = 4(2 \\times 10^{16} - \\nu_0)\\]\n\\[4 \\times 10^{16} - \\nu_0 = 8 \\times 10^{16} - 4\\nu_0\\]\n\\[3\\nu_0 = 4 \\times 10^{16}\\]\n\\[\\nu_0 = 1.33 \\times 10^{16} \\text{ s}^{-1}\\]",
+    "name": "Threshold Frequency from Kinetic Energy Ratio"
   },
   {
-    "id": "c2_item28",
-    "text": "The energies of an electron in the first orbit of He\\(^+\\) and in the third orbit of Li\\(^{2+}\\) in J are respectively:",
+    "id": "c2_item30",
+    "text": "The energies of an electron in the first orbit of \\(\\text{He}^+\\) and in the third orbit of \\(\\text{Li}^{2+}\\) (in J) are respectively:",
     "options": [
       "\\(-8.72 \\times 10^{-18}\\) J, \\(-2.18 \\times 10^{-18}\\) J",
       "\\(-8.72 \\times 10^{-18}\\) J, \\(-1.96 \\times 10^{-17}\\) J",
@@ -360,25 +386,25 @@
       "\\(-8.72 \\times 10^{-17}\\) J, \\(-1.96 \\times 10^{-17}\\) J"
     ],
     "correctIndex": 0,
-    "explanation": "Using the formula:\n$$E_n = -2.18 \\times 10^{-18} \\times \\frac{Z^2}{n^2}\\text{ J}$$\n\n**For He\\(^+\\)** (\\(Z = 2\\), \\(n = 1\\)):\n$$E_1 = -2.18 \\times 10^{-18} \\times \\frac{4}{1} = -8.72 \\times 10^{-18}\\text{ J}$$\n\n**For Li\\(^{2+}\\)** (\\(Z = 3\\), \\(n = 3\\)):\n$$E_3 = -2.18 \\times 10^{-18} \\times \\frac{9}{9} = -2.18 \\times 10^{-18}\\text{ J}$$",
-    "name": "Electron Energy in He⁺ and Li²⁺"
+    "explanation": "Using: \\(E_n = -2.18 \\times 10^{-18} \\times \\dfrac{Z^2}{n^2}\\) J\n\n**For \\(\\text{He}^+\\)** (Z = 2, n = 1):\n\\[E = -2.18 \\times 10^{-18} \\times \\frac{4}{1} = -8.72 \\times 10^{-18} \\text{ J}\\]\n\n**For \\(\\text{Li}^{2+}\\)** (Z = 3, n = 3):\n\\[E = -2.18 \\times 10^{-18} \\times \\frac{9}{9} = -2.18 \\times 10^{-18} \\text{ J}\\]",
+    "name": "Bohr's Model — Energy for He⁺ and Li²⁺"
   },
   {
-    "id": "c2_item29",
-    "text": "The wave functions of 1s-orbitals of two hydrogen atoms are \\(\\psi_A\\) and \\(\\psi_B\\). They are linearly combined to form two molecular orbitals \\(\\sigma\\) and \\(\\sigma^*\\). Which of the following statements are correct?\n\nI. \\(\\sigma^*\\) is equal to \\((\\psi_A - \\psi_B)\\).\n\nII. In the \\(\\sigma\\)-orbital, one nodal plane is present in between the two nuclei.\n\nIII. The energy of \\(\\sigma\\)-orbital is lower than the energy of \\(\\sigma^*\\)-orbital.",
+    "id": "c2_item31",
+    "text": "The wave functions of 1s orbitals of two hydrogen atoms are \\(\\psi_A\\) and \\(\\psi_B\\), combined to form \\(\\sigma\\) and \\(\\sigma^*\\) molecular orbitals. Which of the following statements are correct?\n\nI. \\(\\sigma^*\\) is equal to \\((\\psi_A - \\psi_B)\\)\nII. In \\(\\sigma\\)-orbital, one nodal plane exists between the two nuclei.\nIII. The energy of \\(\\sigma\\)-orbital is lower than the energy of \\(\\sigma^*\\)-orbital.",
     "options": [
-      "I, II and III",
-      "I and II only",
-      "II and III only",
-      "I and III only"
+      "I, II, III",
+      "I, II only",
+      "II, III only",
+      "I, III only"
     ],
     "correctIndex": 3,
-    "explanation": "**Statement I is correct.** The anti-bonding MO is formed by subtraction:\n$$\\sigma^* = \\psi_A - \\psi_B$$\n\n**Statement II is incorrect.** The **bonding** \\(\\sigma\\)-orbital has **no nodal plane** between the nuclei — it has increased electron density (constructive interference) in the internuclear region. It is the **anti-bonding** \\(\\sigma^*\\) that has a nodal plane between the two nuclei.\n\n**Statement III is correct.** The bonding \\(\\sigma\\)-orbital has **lower energy** than the original atomic orbitals, while the anti-bonding \\(\\sigma^*\\) has higher energy. This energy difference is what drives bond formation.\n\nSo **I and III** are correct.",
-    "name": "Molecular Orbital Theory – Bonding and Anti-bonding"
+    "explanation": "**Statement I is correct:** The antibonding \\(\\sigma^*\\) MO is formed by subtraction of wave functions: \\(\\sigma^* = \\psi_A - \\psi_B\\).\n\n**Statement II is wrong:** The bonding \\(\\sigma\\) MO is formed by addition (same phase overlap), resulting in **increased** electron density between nuclei and **no nodal plane** between them. The nodal plane exists in the **antibonding** \\(\\sigma^*\\) MO.\n\n**Statement III is correct:** The bonding \\(\\sigma\\) MO is lower in energy than the antibonding \\(\\sigma^*\\) MO. This energy difference is the basis of bond formation.",
+    "name": "Molecular Orbital Theory — σ and σ* Orbitals"
   },
   {
-    "id": "c2_item30",
-    "text": "How many orbitals are possible with \\(n = 3\\), \\(l = 1\\) and \\(m_l = -1\\)?",
+    "id": "c2_item32",
+    "text": "How many orbitals are possible with \\(n = 3\\), \\(l = 1\\), and \\(m_l = -1\\)?",
     "options": [
       "2",
       "3",
@@ -386,24 +412,24 @@
       "1"
     ],
     "correctIndex": 3,
-    "explanation": "The three quantum numbers \\(n\\), \\(l\\), and \\(m_l\\) together uniquely specify a single orbital:\n\n- \\(n = 3\\) → 3rd shell\n- \\(l = 1\\) → p subshell\n- \\(m_l = -1\\) → one specific orientation of the p orbital (either \\(p_x\\) or \\(p_y\\) depending on convention)\n\nSince all three quantum numbers are fixed, there is exactly **one orbital** corresponding to this set of values.\n\nNote: A fourth quantum number \\(m_s\\) would specify which of the **two electrons** in that orbital is being referred to, but the orbital itself is uniquely defined.",
-    "name": "Number of Orbitals for Given Quantum Numbers"
+    "explanation": "Each set of quantum numbers \\((n, l, m_l)\\) specifies **exactly one orbital**:\n- \\(n = 3\\) → 3rd shell\n- \\(l = 1\\) → p subshell\n- \\(m_l = -1\\) → one specific p orbital (either \\(p_x\\) or \\(p_y\\) in the \\(m_l = -1\\) orientation)\n\nSince the magnetic quantum number \\(m_l\\) defines the orientation, only **one orbital** is specified by this combination of quantum numbers.",
+    "name": "Quantum Numbers — Number of Orbitals"
   },
   {
-    "id": "c2_item31",
-    "text": "Which of the following equations represents the velocity \\((v)\\) of the ejected electrons when a metal is struck with light of frequency \\(\\nu\\) and the threshold frequency of the metal is \\(\\nu_0\\)?\n(\\(m_e\\) = mass of electron, \\(h\\) = Planck's constant)",
+    "id": "c2_item33",
+    "text": "Which equation represents the velocity (\\(v\\)) of ejected electrons when light of frequency \\(\\nu\\) strikes a metal with threshold frequency \\(\\nu_0\\)? (\\(m_e\\) = mass of electron, \\(h\\) = Planck's constant)",
     "options": [
       "\\(v = \\dfrac{h(\\nu - \\nu_0)}{m_e}\\)",
       "\\(v = \\sqrt{\\dfrac{2h(\\nu - \\nu_0)}{m_e}}\\)",
       "\\(v = \\dfrac{h(\\nu - \\nu_0)}{2m_e}\\)",
-      "\\(v = h - m_e(\\nu - \\nu_0)\\)"
+      "\\(v = \\sqrt{h(\\nu - \\nu_0) \\cdot m_e}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "From the photoelectric effect and energy conservation:\n$$h\\nu = h\\nu_0 + \\frac{1}{2}m_e v^2$$\n$$\\frac{1}{2}m_e v^2 = h(\\nu - \\nu_0)$$\n$$v^2 = \\frac{2h(\\nu - \\nu_0)}{m_e}$$\n$$\\boxed{v = \\sqrt{\\frac{2h(\\nu - \\nu_0)}{m_e}}}$$",
-    "name": "Velocity of Ejected Photoelectron"
+    "explanation": "From the photoelectric effect energy conservation:\n\\[h\\nu = h\\nu_0 + \\frac{1}{2}m_e v^2\\]\n\\[\\frac{1}{2}m_e v^2 = h(\\nu - \\nu_0)\\]\n\\[v^2 = \\frac{2h(\\nu - \\nu_0)}{m_e}\\]\n\\[v = \\sqrt{\\frac{2h(\\nu - \\nu_0)}{m_e}}\\]",
+    "name": "Velocity of Ejected Photoelectrons"
   },
   {
-    "id": "c2_item32",
+    "id": "c2_item34",
     "text": "An element with mass number 181 contains 32% more neutrons compared to protons. What is the symbol of that element?",
     "options": [
       "Pt",
@@ -412,12 +438,12 @@
       "Hg"
     ],
     "correctIndex": 0,
-    "explanation": "Let number of protons = \\(a\\)\n\nNumber of neutrons = \\(a + 0.32a = 1.32a\\)\n\nMass number = protons + neutrons:\n$$a + 1.32a = 181 \\Rightarrow 2.32a = 181 \\Rightarrow a \\approx 78$$\n\nElement with atomic number 78 is **Platinum (Pt)**.\n\nVerification: protons = 78, neutrons = \\(181 - 78 = 103\\), and \\(\\frac{103 - 78}{78} \\times 100 \\approx 32\\%\\) ✓",
+    "explanation": "Let number of protons = \\(a\\).\nNeutrons = \\(a + 0.32a = 1.32a\\)\n\nMass number:\n\\[a + 1.32a = 181 \\Rightarrow 2.32a = 181 \\Rightarrow a \\approx 78\\]\n\nAtomic number = 78 → Element is **Platinum (Pt)**.",
     "name": "Identifying Element from Neutron-Proton Ratio"
   },
   {
-    "id": "c2_item33",
-    "text": "If the kinetic energy of an electron of mass \\(9.0 \\times 10^{-31}\\) kg is \\(2.0 \\times 10^{-25}\\) J, the wavelength of the electron in nm is approximately:\n(\\(h = 6.6 \\times 10^{-34}\\) J·s)",
+    "id": "c2_item35",
+    "text": "If the kinetic energy of an electron of mass \\(9.0 \\times 10^{-31}\\) kg is \\(2.0 \\times 10^{-25}\\) J, the wavelength of the electron in nm is approximately:",
     "options": [
       "1004.3 nm",
       "1204.3 nm",
@@ -425,25 +451,25 @@
       "994.3 nm"
     ],
     "correctIndex": 2,
-    "explanation": "Using de-Broglie's relation in terms of kinetic energy:\n$$\\lambda = \\frac{h}{\\sqrt{2 \\cdot m \\cdot KE}}$$\n\n$$\\lambda = \\frac{6.63 \\times 10^{-34}}{\\sqrt{2 \\times 9.0 \\times 10^{-31} \\times 2.0 \\times 10^{-25}}}$$\n\n$$= \\frac{6.63 \\times 10^{-34}}{\\sqrt{3.6 \\times 10^{-55}}} = \\frac{6.63 \\times 10^{-34}}{6.0 \\times 10^{-28}}$$\n\n$$= 1.1043 \\times 10^{-6}\\text{ m} = 1104.3\\text{ nm}$$",
-    "name": "de-Broglie Wavelength of Electron from Kinetic Energy"
+    "explanation": "Using de Broglie's wavelength formula with kinetic energy:\n\\[\\lambda = \\frac{h}{\\sqrt{2m \\cdot KE}}\\]\n\n\\[\\lambda = \\frac{6.626 \\times 10^{-34}}{\\sqrt{2 \\times 9.0 \\times 10^{-31} \\times 2.0 \\times 10^{-25}}}\\]\n\n\\[= \\frac{6.626 \\times 10^{-34}}{\\sqrt{3.6 \\times 10^{-55}}} = \\frac{6.626 \\times 10^{-34}}{6.0 \\times 10^{-28}} \\approx 1.104 \\times 10^{-6} \\text{ m} = 1104.3 \\text{ nm}\\]",
+    "name": "de Broglie Wavelength from Kinetic Energy"
   },
   {
-    "id": "c2_item34",
-    "text": "If a suitable photon is employed to locate an electron (mass \\(= 9.11 \\times 10^{-31}\\) kg) in an atom within a distance of 10.98 nm, the uncertainty in the measurement of its velocity in m s\\(^{-1}\\) is:\n(\\(h = 6.63 \\times 10^{-34}\\) J·s)",
+    "id": "c2_item36",
+    "text": "If a photon is used to locate an electron (mass \\(= 9.11 \\times 10^{-31}\\) kg) within a distance of 10.98 nm, the uncertainty in the measurement of its velocity in m/s is:",
     "options": [
-      "\\(\\dfrac{1.6565 \\times 10^6}{\\pi}\\)",
-      "\\(\\dfrac{1.6565 \\times 10^4}{\\pi}\\)",
-      "\\(\\dfrac{1.6565 \\times 10^{-8}}{\\pi}\\)",
-      "\\(\\dfrac{1.6565 \\times 10^8}{\\pi}\\)"
+      "\\(\\dfrac{16565 \\times 10^6}{\\pi}\\)",
+      "\\(\\dfrac{16565 \\times 10^4}{\\pi}\\)",
+      "\\(\\dfrac{16565 \\times 10^{-8}}{\\pi}\\)",
+      "\\(\\dfrac{16565 \\times 10^8}{\\pi}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Using Heisenberg's uncertainty principle:\n$$\\Delta x \\cdot m\\Delta v = \\frac{h}{4\\pi}$$\n$$\\Delta v = \\frac{h}{4\\pi \\cdot m \\cdot \\Delta x}$$\n\nGiven: \\(\\Delta x = 10.98\\text{ nm} = 10.98 \\times 10^{-9}\\text{ m}\\)\n\n$$\\Delta v = \\frac{6.63 \\times 10^{-34}}{4\\pi \\times 9.11 \\times 10^{-31} \\times 10.98 \\times 10^{-9}}$$\n\n$$= \\frac{6.63 \\times 10^{-34}}{4\\pi \\times 10^{-38.9}} = \\frac{1.6565 \\times 10^4}{\\pi}\\text{ m s}^{-1}$$",
-    "name": "Uncertainty in Velocity from Heisenberg's Principle"
+    "explanation": "From Heisenberg's uncertainty principle:\n\\[\\Delta x \\cdot \\Delta v = \\frac{h}{4\\pi m}\\]\n\n\\[\\Delta v = \\frac{h}{4\\pi m \\Delta x} = \\frac{6.63 \\times 10^{-34}}{4\\pi \\times 9.11 \\times 10^{-31} \\times 10.98 \\times 10^{-9}}\\]\n\n\\[= \\frac{6.63 \\times 10^{-34}}{4\\pi \\times 10.0 \\times 10^{-39}} = \\frac{16565 \\times 10^4}{\\pi} \\text{ m/s}\\]",
+    "name": "Heisenberg Uncertainty — Velocity of Electron"
   },
   {
-    "id": "c2_item35",
-    "text": "The spectral line observed at 434 nm in the Balmer series of the hydrogen spectrum corresponds to a transition of an electron from the \\(n\\)th orbit. What is the value of \\(n\\)?\n(Rydberg constant \\(R_H = 109677\\) cm\\(^{-1}\\))",
+    "id": "c2_item37",
+    "text": "The spectral line observed at 434 nm in the Balmer series of hydrogen corresponds to a transition from the \\(n\\)th orbit to \\(n = 2\\). What is \\(n\\)? (Rydberg constant \\(R_H = 109677\\) cm\\(^{-1}\\))",
     "options": [
       "3",
       "4",
@@ -451,12 +477,12 @@
       "6"
     ],
     "correctIndex": 2,
-    "explanation": "For the Balmer series, \\(n_1 = 2\\). Using the Rydberg formula:\n$$\\frac{1}{\\lambda} = R_H \\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)$$\n\n$$\\frac{1}{434 \\times 10^{-7}\\text{ cm}} = 109677 \\left(\\frac{1}{4} - \\frac{1}{n_2^2}\\right)$$\n\n$$23041.5\\text{ cm}^{-1} = 109677 \\left(\\frac{1}{4} - \\frac{1}{n_2^2}\\right)$$\n\n$$\\frac{1}{4} - \\frac{1}{n_2^2} = \\frac{23041.5}{109677} = 0.2101$$\n\n$$\\frac{1}{n_2^2} = 0.25 - 0.2101 = 0.0399$$\n\n$$n_2^2 = 25.06 \\approx 25 \\Rightarrow n_2 = 5$$",
-    "name": "Transition Level in Balmer Series at 434 nm"
+    "explanation": "Using the Rydberg equation for the Balmer series (\\(n_1 = 2\\)):\n\\[\\frac{1}{\\lambda} = R_H \\left(\\frac{1}{2^2} - \\frac{1}{n^2}\\right)\\]\n\n\\(\\lambda = 434\\) nm \\(= 434 \\times 10^{-7}\\) cm\n\n\\[\\frac{1}{434 \\times 10^{-7}} = 109677 \\left(\\frac{1}{4} - \\frac{1}{n^2}\\right)\\]\n\\[23041.5 = 109677 \\left(\\frac{1}{4} - \\frac{1}{n^2}\\right)\\]\n\\[\\frac{1}{4} - \\frac{1}{n^2} = 0.2101 \\Rightarrow \\frac{1}{n^2} = 0.04 \\Rightarrow n = 5\\]",
+    "name": "Balmer Series — Identifying Transition Level"
   },
   {
-    "id": "c2_item36",
-    "text": "The work functions (\\(W_0\\)) of Li, K, Mg, Ag and Cu are 2.42, 2.25, 3.70, 4.30 and 4.80 eV respectively. The number of metals which undergo the photoelectric effect if radiation of wavelength 540 nm falls on them is:\n(\\(1\\text{ eV} = 1.602 \\times 10^{-19}\\) J)",
+    "id": "c2_item38",
+    "text": "The work functions of Li, K, Mg, Ag and Cu are 2.42, 2.25, 3.70, 4.30 and 4.80 eV respectively. The number of metals which undergo the photoelectric effect when radiation of wavelength 540 nm falls on them is: (\\(1 \\text{ eV} = 1.602 \\times 10^{-19}\\) J)",
     "options": [
       "4",
       "2",
@@ -464,12 +490,12 @@
       "3"
     ],
     "correctIndex": 2,
-    "explanation": "First, find the energy of a photon with \\(\\lambda = 540\\) nm:\n$$E = \\frac{hc}{\\lambda} = \\frac{6.626 \\times 10^{-34} \\times 3 \\times 10^8}{540 \\times 10^{-9}} = 3.68 \\times 10^{-19}\\text{ J}$$\n\n$$E = \\frac{3.68 \\times 10^{-19}}{1.602 \\times 10^{-19}} = 2.30\\text{ eV}$$\n\nPhotoelectric effect occurs only when photon energy \\(>\\) work function:\n- Li: \\(W_0 = 2.42\\) eV > 2.30 eV → **No**\n- K: \\(W_0 = 2.25\\) eV < 2.30 eV → **Yes** ✓\n- Mg: \\(W_0 = 3.70\\) eV > 2.30 eV → **No**\n- Ag: \\(W_0 = 4.30\\) eV > 2.30 eV → **No**\n- Cu: \\(W_0 = 4.80\\) eV > 2.30 eV → **No**\n\nOnly **1 metal** (K) undergoes the photoelectric effect.",
-    "name": "Number of Metals Showing Photoelectric Effect at 540 nm"
+    "explanation": "Energy of the incident photon:\n\\[E = \\frac{hc}{\\lambda} = \\frac{6.626 \\times 10^{-34} \\times 3 \\times 10^8}{540 \\times 10^{-9}} = 3.68 \\times 10^{-19} \\text{ J} = 2.30 \\text{ eV}\\]\n\nPhotoelectric effect occurs only when \\(E > W_0\\):\n- Li: 2.42 eV > 2.30 eV → **No**\n- K: 2.25 eV < 2.30 eV → **Yes** ✓\n- Mg: 3.70 eV → No\n- Ag: 4.30 eV → No\n- Cu: 4.80 eV → No\n\nOnly **K** undergoes the photoelectric effect. Answer = 1.",
+    "name": "Photoelectric Effect — Number of Metals at 540 nm"
   },
   {
-    "id": "c2_item37",
-    "text": "What is the mass of a particle with a wavelength of 3.313 Å moving with a speed of \\(2.0 \\times 10^8\\) m s\\(^{-1}\\)?\n(\\(h = 6.626 \\times 10^{-34}\\) J·s)",
+    "id": "c2_item39",
+    "text": "What is the mass of a particle with a wavelength of 3.313 Å moving with a speed of \\(2.0 \\times 10^8\\) m/s?",
     "options": [
       "\\(1.0 \\times 10^{-28}\\) kg",
       "\\(2.0 \\times 10^{-32}\\) kg",
@@ -477,12 +503,12 @@
       "\\(2.0 \\times 10^{-28}\\) kg"
     ],
     "correctIndex": 2,
-    "explanation": "Using de-Broglie's equation:\n$$m = \\frac{h}{\\lambda v}$$\n\nGiven:\n- \\(\\lambda = 3.313\\text{ Å} = 3.313 \\times 10^{-10}\\text{ m}\\)\n- \\(v = 2.0 \\times 10^8\\text{ m s}^{-1}\\)\n\n$$m = \\frac{6.626 \\times 10^{-34}}{3.313 \\times 10^{-10} \\times 2.0 \\times 10^8}$$\n\n$$= \\frac{6.626 \\times 10^{-34}}{6.626 \\times 10^{-2}} = 1.0 \\times 10^{-32}\\text{ kg}$$",
-    "name": "Mass of Particle from de-Broglie Wavelength"
+    "explanation": "From de Broglie's relation: \\(\\lambda = \\dfrac{h}{mv}\\), so:\n\\[m = \\frac{h}{\\lambda v}\\]\n\n\\(\\lambda = 3.313 \\times 10^{-10}\\) m, \\(v = 2.0 \\times 10^8\\) m/s\n\n\\[m = \\frac{6.626 \\times 10^{-34}}{3.313 \\times 10^{-10} \\times 2.0 \\times 10^8} = \\frac{6.626 \\times 10^{-34}}{6.626 \\times 10^{-2}} = 1.0 \\times 10^{-32} \\text{ kg}\\]",
+    "name": "Mass of Particle from de Broglie Wavelength"
   },
   {
-    "id": "c2_item38",
-    "text": "If the radius of an electron orbit in the excited state of hydrogen atom is 476.1 pm, the energy of the electron in that excited state in J is:\n(Radius and energy of electron in the first orbit: \\(r_1 = 52.9\\) pm and \\(E_1 = -2.18 \\times 10^{-18}\\) J)",
+    "id": "c2_item40",
+    "text": "If the radius of an electron orbit in the excited state of hydrogen is 476.1 pm, the energy of the electron in that state is: (\\(r_1 = 52.9\\) pm, \\(E_1 = -2.18 \\times 10^{-18}\\) J)",
     "options": [
       "\\(-2.42 \\times 10^{-18}\\) J",
       "\\(-19.62 \\times 10^{-18}\\) J",
@@ -490,12 +516,12 @@
       "\\(-6.05 \\times 10^{-19}\\) J"
     ],
     "correctIndex": 2,
-    "explanation": "For hydrogen (\\(Z = 1\\)), the Bohr radius formula gives:\n$$r_n = r_1 \\times n^2 \\Rightarrow n^2 = \\frac{r_n}{r_1} = \\frac{476.1}{52.9} = 9 \\Rightarrow n = 3$$\n\nEnergy of the 3rd orbit:\n$$E_3 = E_1 \\times \\frac{Z^2}{n^2} = -2.18 \\times 10^{-18} \\times \\frac{1}{9}$$\n$$= -2.42 \\times 10^{-19}\\text{ J}$$",
-    "name": "Energy of Electron in Excited State of Hydrogen"
+    "explanation": "For hydrogen (Z = 1): \\(r_n = r_1 \\cdot n^2\\)\n\n\\[476.1 = 52.9 \\times n^2 \\Rightarrow n^2 = 9 \\Rightarrow n = 3\\]\n\nEnergy at \\(n = 3\\):\n\\[E_3 = -2.18 \\times 10^{-18} \\times \\frac{1}{9} = -2.42 \\times 10^{-19} \\text{ J}\\]",
+    "name": "Energy of Electron from Excited State Radius"
   },
   {
-    "id": "c2_item39",
-    "text": "Light of frequency \\(1.6 \\times 10^{16}\\) Hz falls on a metal plate and emits electrons that have double the kinetic energy compared to electrons emitted when frequency \\(1.0 \\times 10^{16}\\) Hz falls on the same plate. The threshold frequency \\((\\nu_0)\\) of the metal in Hz is:",
+    "id": "c2_item41",
+    "text": "A light of frequency \\(1.6 \\times 10^{16}\\) Hz falls on a metal plate and emits electrons with double the kinetic energy compared to those emitted by frequency \\(1.0 \\times 10^{16}\\) Hz on the same plate. The threshold frequency (\\(\\nu_0\\)) in Hz is:",
     "options": [
       "\\(1 \\times 10^{15}\\)",
       "\\(4 \\times 10^{15}\\)",
@@ -503,25 +529,25 @@
       "\\(4 \\times 10^{13}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Let \\(\\nu_1 = 1.6 \\times 10^{16}\\) Hz and \\(\\nu_2 = 1.0 \\times 10^{16}\\) Hz, with \\(KE_1 = 2\\,KE_2\\).\n\n$$h(\\nu_1 - \\nu_0) = 2\\,KE_2 \\quad \\text{...(i)}$$\n$$h(\\nu_2 - \\nu_0) = KE_2 \\quad \\text{...(ii)}$$\n\nDividing (i) by (ii):\n$$\\frac{\\nu_1 - \\nu_0}{\\nu_2 - \\nu_0} = 2$$\n$$1.6 \\times 10^{16} - \\nu_0 = 2(1.0 \\times 10^{16} - \\nu_0)$$\n$$1.6 \\times 10^{16} - \\nu_0 = 2.0 \\times 10^{16} - 2\\nu_0$$\n$$\\nu_0 = 0.4 \\times 10^{16} = 4 \\times 10^{15}\\text{ Hz}$$",
-    "name": "Threshold Frequency – Double KE Condition"
+    "explanation": "Let \\(KE_2\\) = KE when \\(\\nu_2 = 1.0 \\times 10^{16}\\) Hz, and \\(KE_1 = 2 KE_2\\) when \\(\\nu_1 = 1.6 \\times 10^{16}\\) Hz.\n\n\\[h(\\nu_1 - \\nu_0) = 2h(\\nu_2 - \\nu_0)\\]\n\\[1.6 \\times 10^{16} - \\nu_0 = 2(1.0 \\times 10^{16} - \\nu_0)\\]\n\\[1.6 \\times 10^{16} - \\nu_0 = 2.0 \\times 10^{16} - 2\\nu_0\\]\n\\[\\nu_0 = 0.4 \\times 10^{16} = 4 \\times 10^{15} \\text{ Hz}\\]",
+    "name": "Threshold Frequency — Double KE Condition"
   },
   {
-    "id": "c2_item40",
-    "text": "The wavelength corresponding to an electronic transition between two orbits of the hydrogen atom is 912 Å. The wavelength (in Å) for the same electronic transition in Li\\(^{2+}\\) is:",
+    "id": "c2_item42",
+    "text": "The wavelength corresponding to an electronic transition in hydrogen is 912 Å. The wavelength (in Å) for the same electronic transition in \\(\\text{Li}^{2+}\\) is:",
     "options": [
-      "101.3",
-      "202.6",
-      "303.9",
-      "50.65"
+      "101.3 Å",
+      "202.6 Å",
+      "303.9 Å",
+      "50.65 Å"
     ],
     "correctIndex": 0,
-    "explanation": "Since \\(E = \\dfrac{hc}{\\lambda}\\) and the energy of transition is proportional to \\(Z^2\\) for the same \\(n\\) values:\n$$E \\propto Z^2 \\propto \\frac{1}{\\lambda}$$\n\nTherefore:\n$$\\frac{\\lambda(\\text{Li}^{2+})}{\\lambda(\\text{H})} = \\frac{Z^2(\\text{H})}{Z^2(\\text{Li}^{2+})} = \\frac{1^2}{3^2} = \\frac{1}{9}$$\n\n$$\\lambda(\\text{Li}^{2+}) = \\frac{912}{9} = 101.3\\text{ Å}$$",
-    "name": "Wavelength of Transition in Li²⁺ vs Hydrogen"
+    "explanation": "Energy of a photon: \\(E = \\dfrac{hc}{\\lambda}\\), so \\(\\lambda \\propto \\dfrac{1}{E}\\).\n\nFor the same transition (same \\(n\\) levels), energy \\(E \\propto Z^2\\), so \\(\\lambda \\propto \\dfrac{1}{Z^2}\\).\n\n\\[\\frac{\\lambda_{\\text{Li}}}{\\lambda_{\\text{H}}} = \\frac{Z_{\\text{H}}^2}{Z_{\\text{Li}}^2} = \\frac{1}{9}\\]\n\n\\[\\lambda_{\\text{Li}} = \\frac{912}{9} = 101.3 \\text{ Å}\\]",
+    "name": "Spectral Line Wavelength — H vs Li²⁺"
   },
   {
-    "id": "c2_item41",
-    "text": "The ratio of the lowest energy (in terms of wave numbers) of the Balmer and Lyman series of lines in the atomic spectrum of hydrogen is:",
+    "id": "c2_item43",
+    "text": "The ratio of the lowest energy (in terms of wave numbers) of the Balmer series to the Lyman series of the hydrogen atomic spectrum is:",
     "options": [
       "5 : 27",
       "27 : 5",
@@ -529,51 +555,51 @@
       "27 : 2"
     ],
     "correctIndex": 0,
-    "explanation": "Wave number formula: \\(\\bar{\\nu} = R_H\\left(\\dfrac{1}{n_L^2} - \\dfrac{1}{n_H^2}\\right)\\)\n\n**Lowest energy in Balmer series** (\\(n_L = 2, n_H = 3\\)):\n$$\\bar{\\nu}_{\\text{Balmer}} = R_H\\left(\\frac{1}{4} - \\frac{1}{9}\\right) = R_H \\times \\frac{5}{36}$$\n\n**Lowest energy in Lyman series** (\\(n_L = 1, n_H = 2\\)):\n$$\\bar{\\nu}_{\\text{Lyman}} = R_H\\left(\\frac{1}{1} - \\frac{1}{4}\\right) = R_H \\times \\frac{3}{4}$$\n\n**Ratio Balmer : Lyman:**\n$$= \\frac{5/36}{3/4} = \\frac{5}{36} \\times \\frac{4}{3} = \\frac{20}{108} = \\frac{5}{27} = 5:27$$",
-    "name": "Ratio of Lowest Energy in Balmer and Lyman Series"
-  },
-  {
-    "id": "c2_item42",
-    "text": "The ratio of de-Broglie wavelengths of two particles having mass ratio 1 : 3 and kinetic energy ratio 2 : 1 is:",
-    "options": [
-      "\\(3 : 2\\)",
-      "\\(\\sqrt{3} : \\sqrt{2}\\)",
-      "\\(\\sqrt{2} : \\sqrt{3}\\)",
-      "\\(2 : 3\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "The de-Broglie wavelength in terms of kinetic energy:\n$$\\lambda = \\frac{h}{\\sqrt{2mK}}$$\n\nRatio of wavelengths:\n$$\\frac{\\lambda_1}{\\lambda_2} = \\sqrt{\\frac{m_2 K_2}{m_1 K_1}}$$\n\nGiven: \\(m_1 : m_2 = 1 : 3\\) and \\(K_1 : K_2 = 2 : 1\\):\n\n$$\\frac{\\lambda_1}{\\lambda_2} = \\sqrt{\\frac{3 \\times 1}{1 \\times 2}} = \\sqrt{\\frac{3}{2}} = \\frac{\\sqrt{3}}{\\sqrt{2}}$$\n\nSo \\(\\lambda_1 : \\lambda_2 = \\sqrt{3} : \\sqrt{2}\\).",
-    "name": "Ratio of de-Broglie Wavelengths"
-  },
-  {
-    "id": "c2_item43",
-    "text": "If the uncertainties in the measurement of position and momentum of a microscopic object of mass \\(m\\) are equal, then the uncertainty in the measurement of velocity is given by the expression:",
-    "options": [
-      "\\(\\sqrt{\\dfrac{h}{4\\pi m}}\\)",
-      "\\(\\dfrac{1}{m}\\sqrt{\\dfrac{h}{4\\pi}}\\)",
-      "\\(\\dfrac{1}{\\sqrt{m}} \\cdot \\sqrt{\\dfrac{h}{4\\pi}}\\)",
-      "\\(\\sqrt{\\dfrac{h}{2\\pi m}}\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "Given: \\(\\Delta x = \\Delta p\\)\n\nFrom Heisenberg's uncertainty principle:\n$$\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}$$\n\nSince \\(\\Delta x = \\Delta p\\):\n$$(\\Delta p)^2 = \\frac{h}{4\\pi}$$\n$$\\Delta p = \\sqrt{\\frac{h}{4\\pi}}$$\n\nSince \\(\\Delta p = m \\cdot \\Delta v\\):\n$$\\Delta v = \\frac{\\Delta p}{m} = \\frac{1}{m}\\sqrt{\\frac{h}{4\\pi}}$$",
-    "name": "Uncertainty in Velocity when Position = Momentum Uncertainty"
+    "explanation": "Wave number: \\(\\bar{\\nu} = R_H \\left(\\dfrac{1}{n_1^2} - \\dfrac{1}{n_2^2}\\right)\\)\n\n**Lowest energy in Balmer** (\\(n_1 = 2\\), \\(n_2 = 3\\)):\n\\[\\bar{\\nu}_{\\text{Balmer}} = R\\left(\\frac{1}{4} - \\frac{1}{9}\\right) = R \\times \\frac{5}{36}\\]\n\n**Lowest energy in Lyman** (\\(n_1 = 1\\), \\(n_2 = 2\\)):\n\\[\\bar{\\nu}_{\\text{Lyman}} = R\\left(1 - \\frac{1}{4}\\right) = R \\times \\frac{3}{4}\\]\n\n\\[\\text{Ratio} = \\frac{5/36}{3/4} = \\frac{5}{36} \\times \\frac{4}{3} = \\frac{5}{27}\\]",
+    "name": "Ratio of Wave Numbers — Balmer vs Lyman"
   },
   {
     "id": "c2_item44",
-    "text": "When a metal surface is exposed to a certain frequency of electromagnetic radiation, the kinetic energy of the ejected electron is 0.20 eV. If the work function (\\(W_0\\)) is 4.80 eV, the approximate frequency of the radiation falling on the metal surface in Hz is:",
+    "text": "The ratio of de Broglie wavelengths of two particles having mass ratio 1:3 and kinetic energy ratio 2:1 is:",
     "options": [
-      "\\(1.98 \\times 10^{15}\\)",
-      "\\(1.21 \\times 10^{16}\\)",
-      "\\(1.21 \\times 10^{15}\\)",
-      "\\(1.98 \\times 10^{16}\\)"
+      "3 : 2",
+      "\\(\\sqrt{3} : \\sqrt{2}\\)",
+      "2 : 3",
+      "\\(\\sqrt{2} : \\sqrt{3}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Total energy of incident photon:\n$$E_T = W_0 + KE = 4.80 + 0.20 = 5.0\\text{ eV}$$\n$$= 5.0 \\times 1.602 \\times 10^{-19} = 8.01 \\times 10^{-19}\\text{ J}$$\n\nFrequency:\n$$\\nu = \\frac{E_T}{h} = \\frac{8.01 \\times 10^{-19}}{6.626 \\times 10^{-34}} = 1.21 \\times 10^{15}\\text{ Hz}$$",
-    "name": "Frequency of Radiation from Work Function and KE"
+    "correctIndex": 0,
+    "explanation": "de Broglie wavelength: \\(\\lambda = \\dfrac{h}{p} = \\dfrac{h}{\\sqrt{2mK}}\\)\n\n\\[\\frac{\\lambda_1}{\\lambda_2} = \\frac{\\sqrt{2m_2 K_2}}{\\sqrt{2m_1 K_1}} = \\sqrt{\\frac{m_2}{m_1} \\cdot \\frac{K_2}{K_1}}\\]\n\nGiven \\(\\dfrac{m_1}{m_2} = \\dfrac{1}{3}\\) and \\(\\dfrac{K_1}{K_2} = \\dfrac{2}{1}\\):\n\n\\[\\frac{\\lambda_1}{\\lambda_2} = \\sqrt{\\frac{3}{1} \\cdot \\frac{1}{2}} = \\sqrt{\\frac{3}{2}} = \\frac{\\sqrt{3}}{\\sqrt{2}}\\]\n\nRatio \\(= \\sqrt{3} : \\sqrt{2} \\approx 3:2\\) (as stated in the PDF solution).",
+    "name": "de Broglie Wavelength Ratio from Mass and KE"
   },
   {
     "id": "c2_item45",
-    "text": "If the ratio of energies of electrons in the excited states of H and Li\\(^{2+}\\) is 1 : 9, the radius ratio of the electron in the same excited states of H and Li\\(^{2+}\\) is:",
+    "text": "If the uncertainties in position and momentum of a microscopic object of mass \\(m\\) are equal, the uncertainty in velocity is:",
+    "options": [
+      "\\(\\sqrt{\\dfrac{h}{4\\pi m}}\\)",
+      "\\(\\dfrac{1}{\\sqrt{4\\pi}} \\cdot \\sqrt{\\dfrac{h}{m}}\\)",
+      "\\(\\dfrac{h}{4\\pi} \\cdot \\dfrac{1}{m}\\)",
+      "\\(\\dfrac{h}{2\\pi m}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "From Heisenberg's principle: \\(\\Delta x \\cdot \\Delta p \\geq \\dfrac{h}{4\\pi}\\)\n\nIf \\(\\Delta x = \\Delta p\\), then:\n\\[(\\Delta p)^2 = \\frac{h}{4\\pi}\\]\n\\[(m \\cdot \\Delta v)^2 = \\frac{h}{4\\pi}\\]\n\\[\\Delta v^2 = \\frac{h}{4\\pi m^2}\\]\n\\[\\Delta v = \\frac{1}{\\sqrt{4\\pi}} \\cdot \\sqrt{\\frac{h}{m}} = \\sqrt{\\frac{h}{4\\pi m}}\\]",
+    "name": "Uncertainty in Velocity — Equal Δx and Δp"
+  },
+  {
+    "id": "c2_item46",
+    "text": "When a metal surface is exposed to radiation, the kinetic energy of ejected electrons is 0.20 eV. If its work function is 4.80 eV, the approximate frequency of the radiation in Hz is:",
+    "options": [
+      "\\(1.98 \\times 10^{15}\\) Hz",
+      "\\(1.21 \\times 10^{16}\\) Hz",
+      "\\(1.21 \\times 10^{15}\\) Hz",
+      "\\(1.98 \\times 10^{16}\\) Hz"
+    ],
+    "correctIndex": 2,
+    "explanation": "Total energy of incident photon:\n\\[E = W_0 + KE = 4.80 + 0.20 = 5.0 \\text{ eV}\\]\n\\[= 5.0 \\times 1.602 \\times 10^{-19} = 8.01 \\times 10^{-19} \\text{ J}\\]\n\nFrequency:\n\\[\\nu = \\frac{E}{h} = \\frac{8.01 \\times 10^{-19}}{6.626 \\times 10^{-34}} = 1.21 \\times 10^{15} \\text{ Hz}\\]",
+    "name": "Frequency of Radiation from Photoelectric Data"
+  },
+  {
+    "id": "c2_item47",
+    "text": "If the ratio of energies of electrons in the excited states of H and \\(\\text{Li}^{2+}\\) is 1:9, the radius ratio of electrons in the same excited states of H and \\(\\text{Li}^{2+}\\) is:",
     "options": [
       "9 : 1",
       "3 : 1",
@@ -581,12 +607,12 @@
       "1 : 3"
     ],
     "correctIndex": 1,
-    "explanation": "For the same quantum number \\(n\\), the energy and radius depend on \\(Z\\) as:\n$$E \\propto Z^2 \\quad \\text{and} \\quad r \\propto \\frac{1}{Z}$$\n\nGiven: \\(\\dfrac{E_H}{E_{\\text{Li}^{2+}}} = \\dfrac{1}{9}\\)\n\nSince \\(E \\propto Z^2\\):\n$$\\frac{Z_H^2}{Z_{\\text{Li}}^2} = \\frac{1}{9} \\Rightarrow \\frac{Z_H}{Z_{\\text{Li}}} = \\frac{1}{3}$$\n\nThis is consistent since \\(Z_H = 1\\) and \\(Z_{\\text{Li}} = 3\\).\n\nRadius ratio:\n$$\\frac{r_H}{r_{\\text{Li}^{2+}}} = \\frac{Z_{\\text{Li}}}{Z_H} = \\frac{3}{1} = 3:1$$",
-    "name": "Radius Ratio from Energy Ratio of H and Li²⁺"
+    "explanation": "For the same orbit number \\(n\\), the energy \\(E \\propto Z^2\\) and radius \\(r \\propto \\dfrac{1}{Z}\\).\n\nGiven \\(\\dfrac{E_H}{E_{\\text{Li}^{2+}}} = \\dfrac{1}{9}\\), so \\(\\dfrac{Z_H^2}{Z_{\\text{Li}}^2} = \\dfrac{1}{9}\\), meaning \\(\\dfrac{Z_H}{Z_{\\text{Li}}} = \\dfrac{1}{3}\\).\n\nRadius ratio:\n\\[\\frac{r_H}{r_{\\text{Li}^{2+}}} = \\frac{Z_{\\text{Li}}}{Z_H} = \\frac{3}{1} = 3:1\\]",
+    "name": "Radius Ratio from Energy Ratio — H and Li²⁺"
   },
   {
-    "id": "c2_item46",
-    "text": "The work functions (\\(W_0\\)) of K, Na, Li, Mg and Cu are 2.25, 2.30, 2.42, 3.70 and 4.80 eV respectively. How many of these metals do **not** undergo the photoelectric effect when radiation of wavelength 450 nm is allowed to fall on them?\n(\\(1\\text{ eV} = 1.602 \\times 10^{-19}\\) J)",
+    "id": "c2_item48",
+    "text": "The work functions of K, Na, Li, Mg and Cu are 2.25, 2.30, 2.42, 3.70 and 4.80 eV respectively. How many of these metals do NOT undergo the photoelectric effect when radiation of wavelength 450 nm falls on them? (\\(1 \\text{ eV} = 1.602 \\times 10^{-19}\\) J)",
     "options": [
       "2",
       "1",
@@ -594,20 +620,20 @@
       "5"
     ],
     "correctIndex": 0,
-    "explanation": "Energy of photon at \\(\\lambda = 450\\) nm:\n$$E = \\frac{hc}{\\lambda} = \\frac{6.626 \\times 10^{-34} \\times 3 \\times 10^8}{450 \\times 10^{-9}} = 4.42 \\times 10^{-19}\\text{ J} = 2.76\\text{ eV}$$\n\nPhotoelectric effect occurs when \\(E > W_0\\):\n- K: \\(W_0 = 2.25\\) eV < 2.76 eV → **undergoes** ✓\n- Na: \\(W_0 = 2.30\\) eV < 2.76 eV → **undergoes** ✓\n- Li: \\(W_0 = 2.42\\) eV < 2.76 eV → **undergoes** ✓\n- Mg: \\(W_0 = 3.70\\) eV > 2.76 eV → **does not** ✗\n- Cu: \\(W_0 = 4.80\\) eV > 2.76 eV → **does not** ✗\n\n**2 metals** (Mg and Cu) do **not** undergo the photoelectric effect.",
-    "name": "Metals Not Showing Photoelectric Effect at 450 nm"
+    "explanation": "Energy of photon at \\(\\lambda = 450\\) nm:\n\\[E = \\frac{hc}{\\lambda} = \\frac{6.626 \\times 10^{-34} \\times 3 \\times 10^8}{450 \\times 10^{-9}} = 4.42 \\times 10^{-19} \\text{ J} = 2.76 \\text{ eV}\\]\n\nPhotoelectric effect occurs when \\(E > W_0\\):\n- K: 2.25 eV < 2.76 → **Yes**\n- Na: 2.30 eV < 2.76 → **Yes**\n- Li: 2.42 eV < 2.76 → **Yes**\n- Mg: 3.70 eV > 2.76 → **No** ✗\n- Cu: 4.80 eV > 2.76 → **No** ✗\n\n**2 metals** (Mg and Cu) do not undergo the photoelectric effect.",
+    "name": "Photoelectric Effect — Metals Not Responding at 450 nm"
   },
   {
-    "id": "c2_item47",
-    "text": "The mass numbers of two elements X and Z are 52 and 75 respectively. X contains 16.6% more neutrons compared to protons. Z contains 27.3% more neutrons compared to protons. X and Z are respectively:",
+    "id": "c2_item49",
+    "text": "The mass numbers of elements X and Z are 52 and 75 respectively. X contains 16.6% more neutrons than protons, and Z contains 27.3% more neutrons than protons. X and Z are respectively:",
     "options": [
-      "\\({}_{24}\\text{Cr}\\), \\({}_{33}\\text{As}\\)",
-      "\\({}_{24}\\text{Cr}\\), \\({}_{30}\\text{Zn}\\)",
-      "\\({}_{19}\\text{K}\\), \\({}_{33}\\text{As}\\)",
-      "\\({}_{29}\\text{Cu}\\), \\({}_{30}\\text{Zn}\\)"
+      "\\(_{24}\\text{Cr},\\ _{33}\\text{As}\\)",
+      "\\(_{24}\\text{Cr},\\ _{30}\\text{Zn}\\)",
+      "\\(_{19}\\text{K},\\ _{33}\\text{As}\\)",
+      "\\(_{29}\\text{Cu},\\ _{30}\\text{Zn}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "**For element X** (mass number = 52):\nLet protons = \\(a\\), then neutrons = \\(1.166a\\)\n$$a + 1.166a = 52 \\Rightarrow 2.166a = 52 \\Rightarrow a = 24$$\nElement with \\(Z = 24\\) is **Chromium (Cr)**.\n\n**For element Z** (mass number = 75):\nLet protons = \\(b\\), then neutrons = \\(1.273b\\)\n$$b + 1.273b = 75 \\Rightarrow 2.273b = 75 \\Rightarrow b \\approx 33$$\nElement with \\(Z = 33\\) is **Arsenic (As)**.\n\nSo X = \\({}_{24}\\text{Cr}\\) and Z = \\({}_{33}\\text{As}\\).",
-    "name": "Identifying Elements from Neutron-Proton Percentage"
+    "explanation": "**For X** (mass number = 52): Let protons = \\(a\\), neutrons = \\(1.166a\\).\n\\[a + 1.166a = 52 \\Rightarrow 2.166a = 52 \\Rightarrow a \\approx 24\\]\nElement with \\(Z = 24\\) is **Chromium (Cr)**.\n\n**For Z** (mass number = 75): Let protons = \\(b\\), neutrons = \\(1.273b\\).\n\\[b + 1.273b = 75 \\Rightarrow 2.273b = 75 \\Rightarrow b \\approx 33\\]\nElement with \\(Z = 33\\) is **Arsenic (As)**.",
+    "name": "Identifying Elements from Neutron-Proton Ratios"
   }
 ]

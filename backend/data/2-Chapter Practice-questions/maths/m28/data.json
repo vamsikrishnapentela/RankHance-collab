@@ -1,652 +1,652 @@
 [
   {
     "id": "m28_item1",
-    "text": "The differential equation whose solution is $y = c_1 e^{3x} + c_2 e^{-3x}$ is",
+    "text": "The solution of \\((e^y-x)\\,dy=(e^x-e^y)\\,dx\\) is",
     "options": [
-      "$\\dfrac{d^2 y}{dx^2} + 9y = 0$",
-      "$\\dfrac{d^2 y}{dx^2} - 9y = 0$",
-      "$\\dfrac{d^2 y}{dx^2} + 3y = 0$",
-      "$\\dfrac{d^2 y}{dx^2} - 3y = 0$"
+      "\\(e^{e^y}e^x=e^{xe^x}-e^{e^x}+c\\)",
+      "\\(e^ye^x=e^xe^{e^x}-e^{e^x}+c\\)",
+      "\\(e^ye^{e^x}=e^{e^x}(e^x-1)+c\\)",
+      "\\(e^{e^y}e^x=e^xe^{e^x}-e^{e^x}+c\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Given solution $y = c_1 e^{3x} + c_2 e^{-3x}$.<br>Differentiate twice: $\\dfrac{d^2 y}{dx^2} = 9 c_1 e^{3x} + 9 c_2 e^{-3x} = 9y$.<br>$\\dfrac{d^2 y}{dx^2} - 9y = 0$.",
-    "name": "Question Item 1"
+    "correctIndex": 2,
+    "explanation": "Let \\(z=e^y\\). The equation becomes \\(\\dfrac{dz}{dx}+e^xz=e^{2x}\\). IF \\(=e^{e^x}\\).\n\nSolution: \\(ze^{e^x}=\\int e^{2x}e^{e^x}dx+c\\). Let \\(u=e^x\\):\n\n\\(e^ye^{e^x}=e^{e^x}(e^x-1)+c\\)",
+    "name": "First-Order Linear ODE with Substitution"
   },
   {
     "id": "m28_item2",
-    "text": "The degree of the differential equation $y = x \\dfrac{dy}{dx} + \\left( \\dfrac{dy}{dx} \\right)^2$ is",
+    "text": "The solution of \\(\\left(x\\cos\\dfrac{y}{x}+y\\sin\\dfrac{y}{x}\\right)y\\,dx=\\left(y\\sin\\dfrac{y}{x}-x\\cos\\dfrac{y}{x}\\right)x\\,dy\\) is",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "\\(y\\cos\\dfrac{y}{x}=\\pm e^{-c}\\)",
+      "\\(x\\cos\\dfrac{y}{x}=\\pm e^{-c}\\)",
+      "\\(xy\\cos\\dfrac{y}{x}=\\pm e^{-c}\\)",
+      "\\(xy\\sin\\dfrac{y}{x}=\\pm e^{-c}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Rewrite as $y = x p + p^2$ where $p = \\dfrac{dy}{dx}$.<br>Highest power of highest derivative is $2$.",
-    "name": "Question Item 2"
+    "correctIndex": 2,
+    "explanation": "Homogeneous equation. Let \\(y=vx\\). Using \\(t=V\\cos V\\) substitution:\n\n\\(2\\ln x+c=-\\ln(V\\cos V)\\implies xy\\cos\\dfrac{y}{x}=\\pm e^{-c}\\)",
+    "name": "Homogeneous ODE Solution"
   },
   {
     "id": "m28_item3",
-    "text": "Solution of the differential equation $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "text": "The order of the DE whose general solution is \\(y=(c_1+c_2)\\sin(x+c_3)+c_4e^{x+c_5}\\) is",
     "options": [
-      "$x^2 + y^2 = c x$",
-      "$x^2 - y^2 = c x$",
-      "$x^2 - y^2 = c y$",
-      "$x^2 + y^2 = c y$"
+      "\\(3\\)",
+      "\\(5\\)",
+      "\\(4\\)",
+      "Not defined"
     ],
-    "correctIndex": 2,
-    "explanation": "Homogeneous: substitute $y = v x$.<br>$\\dfrac{dv}{dx} = \\dfrac{v + 1}{v - 1} - v$.<br>Separate and integrate: $x^2 - y^2 = c y$.",
-    "name": "Question Item 3"
+    "correctIndex": 0,
+    "explanation": "\\(c_1+c_2=A\\), \\(c_4e^{c_5}=B\\): only 3 independent constants \\(A\\), \\(c_3\\), \\(B\\).\n\nOrder \\(=3\\).",
+    "name": "Order from General Solution"
   },
   {
     "id": "m28_item4",
-    "text": "The solution of the differential equation $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "text": "The product of degree and order of \\(\\left(\\dfrac{d^2y}{dx^2}\\right)^2-\\left(\\dfrac{dy}{dx}\\right)^3=y^3\\) is",
     "options": [
-      "$y = \\dfrac{\\sin x}{x} + c$",
-      "$y = x \\sin x + c$",
-      "$y = \\dfrac{\\sin x + c}{x}$",
-      "$y = \\dfrac{\\cos x + c}{x}$"
+      "\\(3\\)",
+      "\\(4\\)",
+      "\\(6\\)",
+      "\\(5\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
-    "name": "Question Item 4"
+    "correctIndex": 1,
+    "explanation": "Order = 2 (highest derivative \\(d^2y/dx^2\\)), Degree = 2 (power of highest-order term).\n\nProduct \\(=2\\times2=4\\).",
+    "name": "Order and Degree Product"
   },
   {
     "id": "m28_item5",
-    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "text": "The integrating factor of \\(x\\dfrac{dy}{dx}+3y=x^2\\) is",
     "options": [
-      "$y = x^2 + \\dfrac{c}{x^2}$",
-      "$y = x^2 + c x$",
-      "$y = x^2 + \\dfrac{c}{x}$",
-      "$y = x^2 + c$"
+      "\\(\\dfrac{3}{x}\\)",
+      "\\(\\log x\\)",
+      "\\(x^3\\)",
+      "\\(x\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
-    "name": "Question Item 5"
+    "correctIndex": 2,
+    "explanation": "Rewriting: \\(\\dfrac{dy}{dx}+\\dfrac{3}{x}y=x\\). \\(P=3/x\\).\n\n\\(\\text{IF}=e^{\\int(3/x)dx}=e^{3\\ln x}=x^3\\)",
+    "name": "Integrating Factor"
   },
   {
     "id": "m28_item6",
-    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "text": "The solution of \\(\\dfrac{d^2y}{dx^2}=0\\) represents",
     "options": [
-      "$x \\dfrac{dy}{dx} - y = 0$",
-      "$x \\dfrac{dy}{dx} + y = 0$",
-      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
-      "$x \\dfrac{dy}{dx} + y = x^2$"
+      "Straight lines",
+      "A circle",
+      "A parabola",
+      "A point"
     ],
     "correctIndex": 0,
-    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
-    "name": "Question Item 6"
+    "explanation": "\\(d^2y/dx^2=0\\implies y'=a\\implies y=ax+b\\): equation of straight lines.",
+    "name": "Geometric Interpretation"
   },
   {
     "id": "m28_item7",
-    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "text": "The differential equation of all straight lines through the origin is",
     "options": [
-      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
-      "$y = 2x^2 + c (1 + x^2)$"
+      "\\(x=y\\dfrac{dy}{dx}\\)",
+      "\\(\\dfrac{dy}{dx}=0\\)",
+      "\\(y=x\\dfrac{dy}{dx}\\)",
+      "\\(\\dfrac{d^2y}{dx^2}=\\dfrac{y}{x}\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
-    "name": "Question Item 7"
+    "correctIndex": 2,
+    "explanation": "\\(y=mx\\). Differentiating: \\(m=y'/1\\). Substituting \\(m=y/x\\): \\(y=xy'\\), i.e., \\(y=x\\dfrac{dy}{dx}\\).",
+    "name": "DE of Lines Through Origin"
   },
   {
     "id": "m28_item8",
-    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "text": "The solution of \\(\\cos(x+y)\\,dy=dx\\) with \\(y(0)=0\\) is",
     "options": [
-      "$x^2 + y^2 = c x$",
-      "$x^2 - y^2 = c x$",
-      "$x^2 - y^2 = c y$",
-      "$x^2 + y^2 = c y$"
+      "\\(y=\\tan\\dfrac{x+y}{2}\\)",
+      "\\(y=\\sin\\dfrac{x+y}{2}\\)",
+      "\\(y=\\tan\\dfrac{y}{2}\\)",
+      "\\(y=\\tan\\dfrac{x}{2}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
-    "name": "Question Item 8"
+    "correctIndex": 0,
+    "explanation": "Let \\(t=x+y\\): \\(\\dfrac{dt}{dx}-1=\\sec t\\). Rearranging: \\(\\int\\left(1-\\sec^2\\dfrac{t}{2}\\right)dt=2x+c\\).\n\n\\(t-\\tan(t/2)=x+c\\). With \\(y(0)=0\\): \\(c=0\\implies y=\\tan\\dfrac{x+y}{2}\\)",
+    "name": "Substitution in ODE"
   },
   {
     "id": "m28_item9",
-    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "text": "The general solution of \\(\\dfrac{dy}{dx}+yg'(x)=g(x)g'(x)\\) is",
     "options": [
-      "$y = \\dfrac{\\sin x}{x} + c$",
-      "$y = x \\sin x + c$",
-      "$y = \\dfrac{\\sin x + c}{x}$",
-      "$y = \\dfrac{\\cos x + c}{x}$"
+      "\\(g(x)+\\log(1+y+g(x))=c\\)",
+      "\\(g(x)+\\log(1+y-g(x))=c\\)",
+      "\\(g(x)-\\log(1+y+g(x))=c\\)",
+      "\\(g(x)-\\log(1+y-g(x))=c\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
-    "name": "Question Item 9"
+    "correctIndex": 1,
+    "explanation": "IF \\(=e^{g(x)}\\). Multiplying and integrating:\n\n\\(ye^{g(x)}=e^{g(x)}(g(x)-1)+e^c\\).\n\nTaking log: \\(g(x)+\\log(1+y-g(x))=c\\)",
+    "name": "Linear ODE with Functional Coefficient"
   },
   {
     "id": "m28_item10",
-    "text": "The differential equation whose solution is $y = c_1 e^{3x} + c_2 e^{-3x}$ is",
+    "text": "The particular solution of \\(\\dfrac{dy}{dx}=\\sec y\\) with \\(y(0)=0\\) is",
     "options": [
-      "$\\dfrac{d^2 y}{dx^2} + 9y = 0$",
-      "$\\dfrac{d^2 y}{dx^2} - 9y = 0$",
-      "$\\dfrac{d^2 y}{dx^2} + 3y = 0$",
-      "$\\dfrac{d^2 y}{dx^2} - 3y = 0$"
+      "\\(x=\\cos y\\)",
+      "\\(x=\\sin y+q\\)",
+      "\\(y=\\sin x\\)",
+      "\\(x=\\sin y\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Given solution $y = c_1 e^{3x} + c_2 e^{-3x}$.<br>Differentiate twice: $\\dfrac{d^2 y}{dx^2} = 9 c_1 e^{3x} + 9 c_2 e^{-3x} = 9y$.<br>$\\dfrac{d^2 y}{dx^2} - 9y = 0$.",
-    "name": "Question Item 10"
+    "correctIndex": 3,
+    "explanation": "Separating: \\(\\cos y\\,dy=dx\\implies\\sin y=x+c\\). With \\(y(0)=0\\): \\(c=0\\implies x=\\sin y\\).",
+    "name": "Separable ODE Particular Solution"
   },
   {
     "id": "m28_item11",
-    "text": "The solution of the differential equation $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "text": "The solution of \\(x\\dfrac{dy}{dx}=y(\\log y-\\log x+1)\\) is",
     "options": [
-      "$y = \\dfrac{\\sin x}{x} + c$",
-      "$y = x \\sin x + c$",
-      "$y = \\dfrac{\\sin x + c}{x}$",
-      "$y = \\dfrac{\\cos x + c}{x}$"
+      "\\(y=xe^{cx}\\)",
+      "\\(y^2=cx^2\\)",
+      "\\(y^2=cx\\log x\\)",
+      "\\(\\log y=cx\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
-    "name": "Question Item 11"
+    "correctIndex": 0,
+    "explanation": "Homogeneous. Let \\(y=vx\\): \\(x\\dfrac{dv}{dx}=v\\log v\\).\n\n\\(\\int\\dfrac{dv}{v\\log v}=\\int\\dfrac{dx}{x}\\implies\\log(\\log v)=\\log(cx)\\implies y=xe^{cx}\\)",
+    "name": "Homogeneous ODE with Log"
   },
   {
     "id": "m28_item12",
-    "text": "The degree of the differential equation $y = x \\dfrac{dy}{dx} + \\left( \\dfrac{dy}{dx} \\right)^2$ is",
+    "text": "In a bank, principal increases at \\(6\\%\\) per year. Time (years) to double ₹6000 is",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "\\(\\dfrac{50}{3}\\log2\\)",
+      "\\(\\dfrac{50}{3}\\log6\\)",
+      "\\(\\dfrac{50}{3}\\log3\\)",
+      "\\(\\dfrac{50}{3}\\log12\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Rewrite as $y = x p + p^2$ where $p = \\dfrac{dy}{dx}$.<br>Highest power of highest derivative is $2$.",
-    "name": "Question Item 12"
+    "correctIndex": 0,
+    "explanation": "\\(dP/P=0.06\\,dt\\implies\\ln P=0.06t+c\\). To double: \\(\\ln2=\\dfrac{3}{50}t\\implies t=\\dfrac{50}{3}\\log2\\)",
+    "name": "Growth Rate ODE"
   },
   {
     "id": "m28_item13",
-    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "text": "If the curve passes through \\((0,1)\\) with \\(y=\\int x^3e^{x^4}dx\\), then \\(f(y)=x\\) gives",
     "options": [
-      "$x^2 + y^2 = c x$",
-      "$x^2 - y^2 = c x$",
-      "$x^2 - y^2 = c y$",
-      "$x^2 + y^2 = c y$"
+      "\\(\\log|4y-3|\\)",
+      "\\((\\log|4y-3|)^{1/4}\\)",
+      "\\(\\left(\\log\\dfrac{3-4y}{4}\\right)^{1/4}\\)",
+      "\\(\\log\\dfrac{4y-3}{4}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
-    "name": "Question Item 13"
+    "correctIndex": 1,
+    "explanation": "\\(y=\\dfrac{e^{x^4}}{4}+C\\). With \\((0,1)\\): \\(C=3/4\\).\n\n\\(4y-3=e^{x^4}\\implies x=(\\log|4y-3|)^{1/4}\\)",
+    "name": "Curve from Integral"
   },
   {
     "id": "m28_item14",
-    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "text": "The sum of order and degree of \\(y=x\\dfrac{dy}{dx}+2\\left(\\dfrac{d^2y}{dx^2}\\right)^3\\) is",
     "options": [
-      "$y = \\dfrac{\\sin x}{x} + c$",
-      "$y = x \\sin x + c$",
-      "$y = \\dfrac{\\sin x + c}{x}$",
-      "$y = \\dfrac{\\cos x + c}{x}$"
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)",
+      "\\(5\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
-    "name": "Question Item 14"
+    "correctIndex": 1,
+    "explanation": "Order = 2, Degree = 1 (the cube is on the coefficient, not the derivative itself when rearranged — actually degree = 1 in standard polynomial sense for the leading term).\n\nSum \\(=2+1=3\\).",
+    "name": "Sum of Order and Degree"
   },
   {
     "id": "m28_item15",
-    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "text": "Solving \\(\\dfrac{dy}{dx}=\\dfrac{x-y+3}{2(x-y)+5}\\), the value of \\(t\\) in \\(x=2(x-y)+\\log(t)+c\\) is",
     "options": [
-      "$y = x^2 + \\dfrac{c}{x^2}$",
-      "$y = x^2 + c x$",
-      "$y = x^2 + \\dfrac{c}{x}$",
-      "$y = x^2 + c$"
+      "\\(x-y+2\\)",
+      "\\(x+y-2\\)",
+      "\\(x+y+2\\)",
+      "\\(x-y-2\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
-    "name": "Question Item 15"
+    "explanation": "Let \\(u=x-y\\): \\(\\dfrac{du}{dx}=1-\\dfrac{u+3}{2u+5}=\\dfrac{u+2}{2u+5}\\).\n\nIntegrating \\(\\int\\dfrac{2u+5}{u+2}du=x+c\\): \\(2u+\\ln|u+2|=x+c\\).\n\nSo \\(t=x-y+2\\).",
+    "name": "ODE by Substitution"
   },
   {
     "id": "m28_item16",
-    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "text": "The general solution of \\(\\log\\dfrac{dy}{dx}=ax+by\\) is",
     "options": [
-      "$x \\dfrac{dy}{dx} - y = 0$",
-      "$x \\dfrac{dy}{dx} + y = 0$",
-      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
-      "$x \\dfrac{dy}{dx} + y = x^2$"
+      "\\(ae^{-by}+be^{ax}=c\\)",
+      "\\(ae^{ax}+be^{-by}=c\\)",
+      "\\(ae^{-by}-be^{ax}=c\\)",
+      "\\(ae^{by}+be^{-ax}=c\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
-    "name": "Question Item 16"
+    "explanation": "\\(dy/dx=e^{ax}e^{by}\\). Separating: \\(e^{-by}dy=e^{ax}dx\\).\n\n\\(-\\dfrac{1}{b}e^{-by}=\\dfrac{1}{a}e^{ax}+c_1\\implies ae^{-by}+be^{ax}=c\\)",
+    "name": "Variable Separable ODE"
   },
   {
     "id": "m28_item17",
-    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "text": "Solving \\(\\dfrac{dy}{dx}=\\dfrac{1+y^2}{(\\tan^{-1}y)-x}\\), the solution is",
     "options": [
-      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
-      "$y = 2x^2 + c (1 + x^2)$"
+      "\\(xe^{\\tan^{-1}y}=e^{-\\tan^{-1}y}(\\tan^{-1}y-1)+c\\)",
+      "\\(xe^{\\tan^{-1}y}=e^{\\tan^{-1}y}(\\tan^{-1}y-1)+c\\)",
+      "\\(xe^{\\tan^{-1}y}=e^{\\tan^{-1}y}(\\tan^{-1}y+1)+c\\)",
+      "\\(xe^{-\\tan^{-1}y}=e^{-\\tan^{-1}y}(\\tan^{-1}y+1)+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
-    "name": "Question Item 17"
+    "correctIndex": 1,
+    "explanation": "Rewrite: \\(\\dfrac{dx}{dy}+\\dfrac{x}{1+y^2}=\\dfrac{\\tan^{-1}y}{1+y^2}\\). IF \\(=e^{\\tan^{-1}y}\\).\n\nUsing IBP: \\(xe^{\\tan^{-1}y}=e^{\\tan^{-1}y}(\\tan^{-1}y-1)+c\\)",
+    "name": "Linear ODE with Arctan"
   },
   {
     "id": "m28_item18",
-    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "text": "Solving \\(x\\dfrac{dy}{dx}=y+\\sqrt{x^2+y^2}\\), the solution is",
     "options": [
-      "$x^2 + y^2 = c x$",
-      "$x^2 - y^2 = c x$",
-      "$x^2 - y^2 = c y$",
-      "$x^2 + y^2 = c y$"
+      "\\(x^2=C[y+\\sqrt{y^2+x^2}]\\)",
+      "\\(y^2=C[x+\\sqrt{y^2-x^2}]\\)",
+      "\\(y^2=C[x+\\tan^{-1}(1+y^2)]\\)",
+      "\\(y^2=C[x-\\sqrt{y^2+x^2}]\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
-    "name": "Question Item 18"
+    "correctIndex": 0,
+    "explanation": "Homogeneous, \\(y=vx\\): \\(\\int\\dfrac{dv}{\\sqrt{1+v^2}}=\\int\\dfrac{dx}{x}\\implies\\ln(v+\\sqrt{1+v^2})=\\ln Cx\\).\n\n\\(y+\\sqrt{y^2+x^2}=Cx^2\\)",
+    "name": "Homogeneous ODE with Square Root"
   },
   {
     "id": "m28_item19",
-    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "text": "A curve passes through \\((3,4)\\) with slope \\(=\\dfrac{1}{2y}\\) at any point. The curve is",
     "options": [
-      "$y = \\dfrac{\\sin x}{x} + c$",
-      "$y = x \\sin x + c$",
-      "$y = \\dfrac{\\sin x + c}{x}$",
-      "$y = \\dfrac{\\cos x + c}{x}$"
+      "An ellipse",
+      "A parabola",
+      "A hyperbola",
+      "A circle"
     ],
-    "correctIndex": 2,
-    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
-    "name": "Question Item 19"
+    "correctIndex": 1,
+    "explanation": "\\(2y\\,dy=dx\\implies y^2=x+c\\). With \\((3,4)\\): \\(c=13\\). So \\(y^2=x+13\\): a **parabola**.",
+    "name": "Curve from Slope — Parabola"
   },
   {
     "id": "m28_item20",
-    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "text": "The equation of curve through \\((1,2)\\) with tangent angle \\(\\tan^{-1}(2x+3y)\\) with \\(X\\)-axis is",
     "options": [
-      "$y = x^2 + \\dfrac{c}{x^2}$",
-      "$y = x^2 + c x$",
-      "$y = x^2 + \\dfrac{c}{x}$",
-      "$y = x^2 + c$"
+      "\\(6x+9y+2=26e^{3x-3}\\)",
+      "\\(6x+9y-2=26e^{3x-3}\\)",
+      "\\(6x+9y+2=26e^{3x+3}\\)",
+      "\\(6x+9y-2=26e^{3x+3}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
-    "name": "Question Item 20"
+    "explanation": "\\(dy/dx=2x+3y\\). Linear: IF \\(=e^{-3x}\\). With \\((1,2)\\): \\(c=\\tfrac{26}{9}e^{-3}\\).\n\n\\(6x+9y+2=26e^{3x-3}\\)",
+    "name": "Tangent Slope Condition"
   },
   {
     "id": "m28_item21",
-    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "text": "The general solution of \\(\\tan y\\,dx+\\sec^2y\\cdot\\tan x\\,dy=0\\) is",
     "options": [
-      "$x \\dfrac{dy}{dx} - y = 0$",
-      "$x \\dfrac{dy}{dx} + y = 0$",
-      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
-      "$x \\dfrac{dy}{dx} + y = x^2$"
+      "\\(\\sin y\\cdot\\tan x=c\\)",
+      "\\(\\sin x\\cdot\\tan y=c\\)",
+      "\\(\\sin x+\\tan y=c\\)",
+      "\\(\\sin x-\\sin y=c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
-    "name": "Question Item 21"
+    "correctIndex": 1,
+    "explanation": "Separating: \\(\\cot x\\,dx=-\\dfrac{\\sec^2y}{\\tan y}dy\\).\n\nIntegrating: \\(\\ln\\sin x=-\\ln\\tan y+\\ln c\\implies\\sin x\\tan y=c\\)",
+    "name": "Separable Trig ODE"
   },
   {
     "id": "m28_item22",
-    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "text": "The solution of \\(\\dfrac{dy}{dx}+y\\csc^2x=\\csc^2x\\cot x\\) is",
     "options": [
-      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
-      "$y = 2x^2 + c (1 + x^2)$"
+      "\\(ye^{\\cot x}=(1+\\cot x)e^{-\\cot x}+c\\)",
+      "\\(ye^{-\\cot x}=(1-\\cot x)e^{-\\cot x}+c\\)",
+      "\\(ye^{\\cot x}=(1+\\cot x)e^{\\cot x}+c\\)",
+      "\\(ye^{-\\cot x}=(1+\\cot x)e^{-\\cot x}+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
-    "name": "Question Item 22"
+    "correctIndex": 3,
+    "explanation": "IF \\(=e^{-\\cot x}\\). Let \\(t=-\\cot x\\): \\(ye^{-\\cot x}=-\\int te^t dt+c=(\\cot x+1)e^{-\\cot x}+c\\)",
+    "name": "Linear ODE with Cosecant"
   },
   {
     "id": "m28_item23",
-    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "text": "If \\(c\\) is a parameter, the DE of \\(x^2=c(y+c)^2\\) is",
     "options": [
-      "$x^2 + y^2 = c x$",
-      "$x^2 - y^2 = c x$",
-      "$x^2 - y^2 = c y$",
-      "$x^2 + y^2 = c y$"
+      "\\(x(y')^3+y(y')^2-1=0\\)",
+      "\\(x(y')^3-y(y')^2+1=0\\)",
+      "\\(x(y')^3+y(y')^2+1=0\\)",
+      "\\(x(y')^3-y(y')^2-1=0\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
-    "name": "Question Item 23"
+    "correctIndex": 3,
+    "explanation": "From \\(x=c(y+c)\\), differentiating: \\(1=cy'\\implies c=1/y'\\).\n\nSubstituting back: \\(x(y')^3-y(y')^2-1=0\\)",
+    "name": "DE from Parametric Family"
   },
   {
     "id": "m28_item24",
-    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "text": "If \\(f(0)=1\\), \\(f'(0)=2\\) and \\(\\begin{vmatrix}f(x)&f'(x)\\\\f'(x)&f''(x)\\end{vmatrix}=0\\), then \\(f(x)=\\)",
     "options": [
-      "$y = \\dfrac{\\sin x}{x} + c$",
-      "$y = x \\sin x + c$",
-      "$y = \\dfrac{\\sin x + c}{x}$",
-      "$y = \\dfrac{\\cos x + c}{x}$"
+      "\\(e^{2x}\\)",
+      "\\(2\\sin x+1\\)",
+      "\\(\\sin^2x+2x+1\\)",
+      "\\(e^{4x}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
-    "name": "Question Item 24"
+    "correctIndex": 0,
+    "explanation": "Determinant \\(=0\\implies ff''-（f')^2=0\\implies f'/f=c\\implies f'=2f\\implies f=e^{2x}\\)",
+    "name": "ODE from Wronskian"
   },
   {
     "id": "m28_item25",
-    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "text": "The order of the DE for parabolas with axes along \\(X\\)-axis, foci at origin is",
     "options": [
-      "$y = x^2 + \\dfrac{c}{x^2}$",
-      "$y = x^2 + c x$",
-      "$y = x^2 + \\dfrac{c}{x}$",
-      "$y = x^2 + c$"
+      "\\(4\\)",
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(1\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
-    "name": "Question Item 25"
+    "correctIndex": 3,
+    "explanation": "\\(y^2=4a(x-a)\\). One parameter \\(a\\implies\\)differentiating once eliminates \\(a\\implies\\)order \\(=1\\).",
+    "name": "Order of DE for Parabola Family"
   },
   {
     "id": "m28_item26",
-    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "text": "The DE of all parabolas with axes parallel to \\(Y\\)-axis is",
     "options": [
-      "$x \\dfrac{dy}{dx} - y = 0$",
-      "$x \\dfrac{dy}{dx} + y = 0$",
-      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
-      "$x \\dfrac{dy}{dx} + y = x^2$"
+      "\\(d^3y/dx^3=0\\)",
+      "\\(d^2y/dx^2=0\\)",
+      "\\(d^2y/dx^2+dy/dx=0\\)",
+      "\\(yd^2y/dx^2+y=0\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
-    "name": "Question Item 26"
+    "explanation": "General form: \\(y=Ax^2+Bx+C\\) (3 constants). Third derivative \\(=0\\).",
+    "name": "DE of Parabola Family"
   },
   {
     "id": "m28_item27",
-    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "text": "The solution of \\(\\dfrac{dy}{dx}+2y\\tan x=\\sin x\\) with \\(y=0\\) at \\(x=\\pi/3\\) is",
     "options": [
-      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
-      "$y = 2x^2 + c (1 + x^2)$"
+      "\\(y=2\\sin^2x+\\cos x-2\\)",
+      "\\(y=2\\sin^2x-\\cos x-2\\)",
+      "\\(y=2\\cos^2x-\\sin x+2\\)",
+      "\\(y=2\\cos x-\\sin^2x-1\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
-    "name": "Question Item 27"
+    "explanation": "IF \\(=\\sec^2x\\). \\(y\\sec^2x=\\sec x+c\\). With \\(y(\\pi/3)=0\\): \\(c=-2\\).\n\n\\(y=\\cos x-2\\cos^2x=2\\sin^2x+\\cos x-2\\)",
+    "name": "Particular Solution of Linear ODE"
   },
   {
     "id": "m28_item28",
-    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "text": "The DE formed by eliminating \\(a,b\\) from \\(y=e^x(a\\cos x+b\\sin x)\\) is",
     "options": [
-      "$x^2 + y^2 = c x$",
-      "$x^2 - y^2 = c x$",
-      "$x^2 - y^2 = c y$",
-      "$x^2 + y^2 = c y$"
+      "\\(2y''+y'-2y=0\\)",
+      "\\(2y''+2y'-2y=0\\)",
+      "\\(2y''-y'+2y=0\\)",
+      "\\(y''-2y'+2y=0\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
-    "name": "Question Item 28"
+    "correctIndex": 3,
+    "explanation": "Differentiating twice and eliminating \\(a,b\\):\n\n\\(y''-2y'+2y=0\\)",
+    "name": "Forming DE by Eliminating Constants"
   },
   {
     "id": "m28_item29",
-    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "text": "If \\(y=A(x)e^{-\\int P\\,dx}\\) solves \\(y'+Py=Q\\), then \\(A'(x)=\\)",
     "options": [
-      "$y = \\dfrac{\\sin x}{x} + c$",
-      "$y = x \\sin x + c$",
-      "$y = \\dfrac{\\sin x + c}{x}$",
-      "$y = \\dfrac{\\cos x + c}{x}$"
+      "\\(e^{\\int P\\,dx}\\)",
+      "\\(Q(x)e^{-\\int P\\,dx}\\)",
+      "\\(\\int Q(x)e^{\\int P\\,dx}dx\\)",
+      "\\(Q(x)e^{\\int P\\,dx}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
-    "name": "Question Item 29"
+    "correctIndex": 3,
+    "explanation": "The solution formula gives \\(A(x)=\\int Qe^{\\int P\\,dx}dx\\), so \\(A'(x)=Q(x)e^{\\int P\\,dx}\\).",
+    "name": "Structure of Linear ODE Solution"
   },
   {
     "id": "m28_item30",
-    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "text": "I: \\(y=(\\alpha+\\beta+\\gamma)x\\) gives order 3. II: \\(y=\\alpha x+\\beta\\sin x+\\gamma e^x\\) gives order 3.",
     "options": [
-      "$y = x^2 + \\dfrac{c}{x^2}$",
-      "$y = x^2 + c x$",
-      "$y = x^2 + \\dfrac{c}{x}$",
-      "$y = x^2 + c$"
+      "I true, II false",
+      "I false, II false",
+      "I true, II true",
+      "I false, II true"
     ],
-    "correctIndex": 0,
-    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
-    "name": "Question Item 30"
+    "correctIndex": 3,
+    "explanation": "I: \\(y=kx\\) has 1 constant \\(\\implies\\)order = 1. **I is false.**\n\nII: 3 independent constants \\(\\alpha,\\beta,\\gamma\\implies\\)order = 3. **II is true.**",
+    "name": "Order Analysis True/False"
   },
   {
     "id": "m28_item31",
-    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "text": "The general solution of \\(\\sin y\\dfrac{dy}{dx}=\\cos y(1-x\\cos y)\\) is",
     "options": [
-      "$x \\dfrac{dy}{dx} - y = 0$",
-      "$x \\dfrac{dy}{dx} + y = 0$",
-      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
-      "$x \\dfrac{dy}{dx} + y = x^2$"
+      "\\(\\sec y=x-1-ce^x\\)",
+      "\\(\\sec y=x+1+ce^x\\)",
+      "\\(\\sec y=x+e^x+c\\)",
+      "\\(\\sec y=x-e^x+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
-    "name": "Question Item 31"
+    "correctIndex": 1,
+    "explanation": "Let \\(t=\\sec y\\): \\(dt/dx-t=-x\\). IF \\(=e^{-x}\\). Solution: \\(te^{-x}=xe^{-x}+e^{-x}+c\\implies\\sec y=x+1+ce^x\\)",
+    "name": "ODE via Substitution sec y"
   },
   {
     "id": "m28_item32",
-    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "text": "The degree and order of DE for \\(y=\\sqrt{c}(x+\\sqrt{c})\\) are",
     "options": [
-      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
-      "$y = 2x^2 + c (1 + x^2)$"
+      "\\(1,\\;3\\)",
+      "\\(2,\\;3\\)",
+      "\\(3,\\;1\\)",
+      "\\(2,\\;2\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
-    "name": "Question Item 32"
+    "correctIndex": 2,
+    "explanation": "After eliminating \\(c=2yy'\\): \\((y-2xy')^2=8(y')^3y\\). This DE has order = 1 and degree = 3.",
+    "name": "Degree and Order Identification"
   },
   {
     "id": "m28_item33",
-    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "text": "The solution of \\(\\dfrac{x+y-1}{x+y-2}\\dfrac{dy}{dx}=\\dfrac{x+y+1}{x+y+2}\\) with \\(y(1)=1\\) is",
     "options": [
-      "$x^2 + y^2 = c x$",
-      "$x^2 - y^2 = c x$",
-      "$x^2 - y^2 = c y$",
-      "$x^2 + y^2 = c y$"
+      "\\(2(y-x)+\\log\\dfrac{(x+y)^2-2}{2}=0\\)",
+      "\\(\\log\\dfrac{(x+y)^2-2}{2}=(x-y)^2\\)",
+      "\\(\\log\\dfrac{(x-y)^2+2}{2}+2(y-x)=0\\)",
+      "\\((x-y)+\\log\\dfrac{(x+y)^2-2}{2}=0\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
-    "name": "Question Item 33"
+    "correctIndex": 0,
+    "explanation": "Let \\(v=x+y\\). After integration and applying \\((1,1)\\):\n\n\\(2(y-x)+\\ln\\dfrac{(x+y)^2-2}{2}=0\\)",
+    "name": "Reducible ODE Particular Solution"
   },
   {
     "id": "m28_item34",
-    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "text": "The DE of \\(y=e^x(A\\cos x+B\\sin x)\\) is",
     "options": [
-      "$y = \\dfrac{\\sin x}{x} + c$",
-      "$y = x \\sin x + c$",
-      "$y = \\dfrac{\\sin x + c}{x}$",
-      "$y = \\dfrac{\\cos x + c}{x}$"
+      "\\(y''+y'+y=0\\)",
+      "\\(y''+2y'+2y=0\\)",
+      "\\(y''-2y'+2y=0\\)",
+      "\\(y''-2y'-2y=0\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
-    "name": "Question Item 34"
+    "explanation": "Differentiating twice, eliminating \\(A,B\\):\n\n\\(y''-2y'+2y=0\\)",
+    "name": "DE from e^x Trig Solution"
   },
   {
     "id": "m28_item35",
-    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "text": "The solution of \\(x\\dfrac{dy}{dx}=y-x\\tan\\dfrac{y}{x}\\) is",
     "options": [
-      "$y = x^2 + \\dfrac{c}{x^2}$",
-      "$y = x^2 + c x$",
-      "$y = x^2 + \\dfrac{c}{x}$",
-      "$y = x^2 + c$"
+      "\\(x=y\\sin^{-1}(k/x)\\)",
+      "\\(y=x\\sin^{-1}(k/x)\\)",
+      "\\(x\\sin y+k=0\\)",
+      "\\(y=x\\cos(kx)\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
-    "name": "Question Item 35"
+    "correctIndex": 1,
+    "explanation": "Homogeneous, \\(y=vx\\): \\(x\\,dv/dx=-\\tan v\\implies\\int\\cot v\\,dv=-\\int dx/x\\).\n\n\\(\\ln|\\sin v|=\\ln(k/|x|)\\implies y=x\\sin^{-1}(k/x)\\)",
+    "name": "Homogeneous ODE with tan(y/x)"
   },
   {
     "id": "m28_item36",
-    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "text": "If \\(m,n\\) are order and degree of DE of parabolas with focus at origin and axis along \\(X\\), then \\(mn-m+n=\\)",
     "options": [
-      "$x \\dfrac{dy}{dx} - y = 0$",
-      "$x \\dfrac{dy}{dx} + y = 0$",
-      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
-      "$x \\dfrac{dy}{dx} + y = x^2$"
+      "\\(1\\)",
+      "\\(4\\)",
+      "\\(3\\)",
+      "\\(2\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
-    "name": "Question Item 36"
+    "correctIndex": 2,
+    "explanation": "Order \\(m=1\\), Degree \\(n=2\\).\n\n\\(mn-m+n=2-1+2=3\\)",
+    "name": "mn-m+n for Parabola Family"
   },
   {
     "id": "m28_item37",
-    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "text": "The general solution of \\((1+e^{x/y})dx+e^{x/y}(1-x/y)dy=0\\) is",
     "options": [
-      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
-      "$y = 2x^2 + c (1 + x^2)$"
+      "\\(ye^{x/y}+x=c\\)",
+      "\\(ye^{x/y}-x=c\\)",
+      "\\(ye^{x/y}+y=c\\)",
+      "\\(x+ye^{x/y}=c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
-    "name": "Question Item 37"
+    "correctIndex": 3,
+    "explanation": "Let \\(x=vy\\). After substitution and integration:\n\n\\(\\ln(v+e^v)=-\\ln y+\\ln c\\implies y(v+e^v)=c\\implies x+ye^{x/y}=c\\)",
+    "name": "Exact ODE by Substitution"
   },
   {
     "id": "m28_item38",
-    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "text": "The DE of the family \\(y^2=4a(x+a)\\) is",
     "options": [
-      "$x^2 + y^2 = c x$",
-      "$x^2 - y^2 = c x$",
-      "$x^2 - y^2 = c y$",
-      "$x^2 + y^2 = c y$"
+      "\\(y(y')^2+2x(y')+y=0\\)",
+      "\\(y(y')^2-2x(y')-y=0\\)",
+      "\\(y(y')^2+2x(y')-y=0\\)",
+      "\\(y=2x\\dfrac{dy}{dx}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
-    "name": "Question Item 38"
+    "explanation": "\\(a=yy'/2\\). Substituting: \\(y^2=2xyy'+(yy')^2\\implies y(y')^2+2xy'-y=0\\)",
+    "name": "DE of Parabola Family y^2=4a(x+a)"
   },
   {
     "id": "m28_item39",
-    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "text": "The general solution of \\(\\dfrac{dy}{dx}+y\\tan x=2x+x^2\\tan x\\) is",
     "options": [
-      "$y = \\dfrac{\\sin x}{x} + c$",
-      "$y = x \\sin x + c$",
-      "$y = \\dfrac{\\sin x + c}{x}$",
-      "$y = \\dfrac{\\cos x + c}{x}$"
+      "\\(y-x^2=c\\sec x\\)",
+      "\\(y\\cos x=x^2\\sec x+c\\)",
+      "\\(y\\sec x=x+c\\cos x\\)",
+      "\\(y=x^2+c\\cos x\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
-    "name": "Question Item 39"
+    "correctIndex": 3,
+    "explanation": "IF \\(=\\sec x\\). \\(y\\sec x=\\int(2x+x^2\\tan x)\\sec x\\,dx+c=x^2\\sec x+c\\).\n\n\\(y=x^2+c\\cos x\\)",
+    "name": "Linear ODE with IBP"
   },
   {
     "id": "m28_item40",
-    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "text": "If \\(l,m\\) are degree and order of DE of all circles with radius 5 in \\(XY\\)-plane, then \\(2l+3m=\\)",
     "options": [
-      "$y = x^2 + \\dfrac{c}{x^2}$",
-      "$y = x^2 + c x$",
-      "$y = x^2 + \\dfrac{c}{x}$",
-      "$y = x^2 + c$"
+      "\\(5\\)",
+      "\\(10\\)",
+      "\\(15\\)",
+      "\\(7\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
-    "name": "Question Item 40"
+    "correctIndex": 1,
+    "explanation": "Family with 2 parameters (centers). Order \\(m=2\\). After elimination: \\(25(y'')^2=[1+(y')^2]^3\\), degree \\(l=2\\).\n\n\\(2l+3m=4+6=10\\)",
+    "name": "Circles Family — Degree and Order"
   },
   {
     "id": "m28_item41",
-    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "text": "The general solution of \\(\\cos^2x\\dfrac{dy}{dx}-(\\tan2x)y=\\cos^4x\\) on \\(-\\pi/4<x<\\pi/4\\) is",
     "options": [
-      "$x \\dfrac{dy}{dx} - y = 0$",
-      "$x \\dfrac{dy}{dx} + y = 0$",
-      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
-      "$x \\dfrac{dy}{dx} + y = x^2$"
+      "\\(y=\\dfrac{1}{2}\\dfrac{\\tan2x+c}{1-\\tan^2x}\\)",
+      "\\(y=\\dfrac{1}{2}\\dfrac{\\cos2x+c}{1-\\tan^2x}\\)",
+      "\\(y=\\dfrac{1}{2}\\dfrac{\\sin^2x+c}{1-\\tan^2x}\\)",
+      "\\(y=\\dfrac{1}{2}\\dfrac{\\sin x+c}{1-\\tan^2x}\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
-    "name": "Question Item 41"
+    "correctIndex": 2,
+    "explanation": "Rewrite, find IF \\(=\\dfrac{\\cos2x}{2\\cos^2x}\\). Integrate and simplify:\n\n\\(y=\\dfrac{\\sin^2x+c}{2(1-\\tan^2x)}=\\dfrac{1}{2}\\cdot\\dfrac{\\sin^2x+c}{1-\\tan^2x}\\)",
+    "name": "Linear ODE on Restricted Interval"
   },
   {
     "id": "m28_item42",
-    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "text": "The order and degree of \\(y=px+\\sqrt{a^2p^2+b^2}\\) (where \\(p=dy/dx\\)) are",
     "options": [
-      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
-      "$y = 2x^2 + c (1 + x^2)$"
+      "\\(2,\\;1\\)",
+      "\\(1,\\;2\\)",
+      "\\(1,\\;1\\)",
+      "\\(2,\\;2\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
-    "name": "Question Item 42"
+    "correctIndex": 1,
+    "explanation": "Squaring: \\((x^2-a^2)p^2-2xyp+y^2-b^2=0\\). Contains \\(p=dy/dx\\) only — order = 1, degree = 2.",
+    "name": "Clairaut-Type ODE"
   },
   {
     "id": "m28_item43",
-    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "text": "The solution of \\(\\dfrac{dx}{dy}+2yx=2y\\) passing through \\((2,0)\\) is",
     "options": [
-      "$x^2 + y^2 = c x$",
-      "$x^2 - y^2 = c x$",
-      "$x^2 - y^2 = c y$",
-      "$x^2 + y^2 = c y$"
+      "\\((x-1)=2e^{y^2}\\)",
+      "\\((x-1)=2e^{-y^2}\\)",
+      "\\((x-1)=e^{y^2}\\)",
+      "\\((x-1)=e^{-y^2}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
-    "name": "Question Item 43"
+    "correctIndex": 3,
+    "explanation": "Separating: \\(dx/(1-x)=2y\\,dy\\implies-\\ln(x-1)=y^2+c\\).\n\nWith \\((2,0)\\): \\(c=0\\implies(x-1)=e^{-y^2}\\)",
+    "name": "Particular Solution by Separation"
   },
   {
     "id": "m28_item44",
-    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "text": "The DE having \\(x^2/a^2+y^2/b^2=1\\) as general solution is",
     "options": [
-      "$y = \\dfrac{\\sin x}{x} + c$",
-      "$y = x \\sin x + c$",
-      "$y = \\dfrac{\\sin x + c}{x}$",
-      "$y = \\dfrac{\\cos x + c}{x}$"
+      "\\(x(y'')=1+(y')^2\\)",
+      "\\((x^2-y^2)y''-2xyy'-y=0\\)",
+      "\\(xyy''+x(y')^2-yy'=0\\)",
+      "\\(x^2y''+2xy'-2y=0\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
-    "name": "Question Item 44"
+    "explanation": "Differentiating \\(x^2/a^2+y^2/b^2=1\\) twice and eliminating \\(a^2,b^2\\):\n\n\\(xyy''+x(y')^2-yy'=0\\)",
+    "name": "DE of Ellipse Family"
   },
   {
     "id": "m28_item45",
-    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "text": "The general solution of \\(\\dfrac{dx}{dy}+\\dfrac{x}{y}=x^2\\) is",
     "options": [
-      "$y = x^2 + \\dfrac{c}{x^2}$",
-      "$y = x^2 + c x$",
-      "$y = x^2 + \\dfrac{c}{x}$",
-      "$y = x^2 + c$"
+      "\\(\\dfrac{1}{y}=cx-y\\log x\\)",
+      "\\(\\dfrac{1}{x}=cy+x\\log x\\)",
+      "\\(\\dfrac{1}{x}=cy-y\\log y\\)",
+      "\\(\\dfrac{1}{y}=cx+y\\log x\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
-    "name": "Question Item 45"
+    "correctIndex": 2,
+    "explanation": "Bernoulli: let \\(t=1/x\\): \\(dt/dy-t/y=-1\\). IF \\(=1/y\\). Solution: \\(t/y=-\\log y+c\\implies 1/x=cy-y\\log y\\)",
+    "name": "Bernoulli DE"
   },
   {
     "id": "m28_item46",
-    "text": "The differential equation of the family of circles touching the Y-axis at the origin is",
+    "text": "The solution \\(y=c_1e^{ax}\\cos(bx+c_2)\\) with parameters \\(c_1,c_2\\) has order",
     "options": [
-      "$x \\dfrac{dy}{dx} - y = 0$",
-      "$x \\dfrac{dy}{dx} + y = 0$",
-      "$x \\dfrac{dy}{dx} - y + x^2 = 0$",
-      "$x \\dfrac{dy}{dx} + y = x^2$"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(0\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Family: $(x - a)^2 + y^2 = a^2$.<br>Differentiate: $x \\dfrac{dy}{dx} - y = 0$.",
-    "name": "Question Item 46"
+    "correctIndex": 1,
+    "explanation": "Two arbitrary constants \\(c_1,c_2\\implies\\)order = 2.",
+    "name": "Order from Number of Constants"
   },
   {
     "id": "m28_item47",
-    "text": "The solution of the differential equation $(1 + x^2) \\dfrac{dy}{dx} + 2 x y = 4 x^2$ is",
+    "text": "In the DE \\(\\sin y\\dfrac{dy}{dx}=\\cos y(1-x\\cos y)\\), the substitution that linearises it is",
     "options": [
-      "$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c (1 + x^2)$",
-      "$y = \\dfrac{2x^2}{1 + x^2} + c$",
-      "$y = 2x^2 + c (1 + x^2)$"
+      "\\(v=\\sin y\\)",
+      "\\(v=\\sec y\\)",
+      "\\(v=\\cos y\\)",
+      "\\(v=\\tan y\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Linear: IF = $1 + x^2$.<br>$\\dfrac{d}{dx} [y (1 + x^2)] = 4 x^2$.<br>$y (1 + x^2) = \\dfrac{4 x^3}{3} + c$.<br>$y = \\dfrac{2x^2}{1 + x^2} + \\dfrac{c}{1 + x^2}$.",
-    "name": "Question Item 47"
+    "correctIndex": 1,
+    "explanation": "Multiplying through: \\(\\sec y\\tan y\\dfrac{dy}{dx}=\\sec y-x\\).\n\nLet \\(v=\\sec y\\): \\(dv/dx=v-x\\), which is linear.",
+    "name": "Identifying Linearising Substitution"
   },
   {
     "id": "m28_item48",
-    "text": "The solution of $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - x}$ is",
+    "text": "A curve satisfies \\(\\dfrac{dy}{dx}=\\dfrac{y-x}{y+x}\\) through \\((1,2)\\). Its equation is",
     "options": [
-      "$x^2 + y^2 = c x$",
-      "$x^2 - y^2 = c x$",
-      "$x^2 - y^2 = c y$",
-      "$x^2 + y^2 = c y$"
+      "\\(x^2+2xy-y^2=1\\)",
+      "\\(x^2-2xy+y^2=1\\)",
+      "\\(x^2+2xy+y^2=1\\)",
+      "\\(x^2-2xy-y^2+9=0\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Homogeneous: substitute $y = v x$.<br>Integrate: $x^2 - y^2 = c y$.",
-    "name": "Question Item 48"
+    "correctIndex": 3,
+    "explanation": "Let \\(y=vx\\). Integrating and using \\((1,2)\\):\n\n\\(x^2-2xy-y^2+9=0\\)",
+    "name": "Homogeneous ODE Through Point"
   },
   {
     "id": "m28_item49",
-    "text": "The solution of $x \\dfrac{dy}{dx} + y = x \\cos x$ is",
+    "text": "The general solution of \\((y^2+2xy)dx=(2xy+x^2)dy\\) is",
     "options": [
-      "$y = \\dfrac{\\sin x}{x} + c$",
-      "$y = x \\sin x + c$",
-      "$y = \\dfrac{\\sin x + c}{x}$",
-      "$y = \\dfrac{\\cos x + c}{x}$"
+      "\\(y^2(x+y)=c\\)",
+      "\\(xy(x+y)=c\\)",
+      "\\(x^2y=c(x+y)\\)",
+      "\\(xy^2=c(x+y)\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Linear: IF = $x$.<br>$\\dfrac{d}{dx}(x y) = x^2 \\cos x$.<br>Integrate: $x y = x \\sin x + \\cos x + c$.<br>$y = \\dfrac{\\sin x + c}{x}$.",
-    "name": "Question Item 49"
+    "explanation": "Homogeneous, \\(y=vx\\): after integration:\n\n\\(x^2y=c(x+y)\\)",
+    "name": "Homogeneous ODE General Solution"
   },
   {
     "id": "m28_item50",
-    "text": "The solution of $\\dfrac{dy}{dx} + \\dfrac{2y}{x} = 2x$ is",
+    "text": "If population doubles in 30 years with growth rate \\(\\propto P\\), time to triple is",
     "options": [
-      "$y = x^2 + \\dfrac{c}{x^2}$",
-      "$y = x^2 + c x$",
-      "$y = x^2 + \\dfrac{c}{x}$",
-      "$y = x^2 + c$"
+      "\\(30\\log_23\\) years",
+      "\\(60\\log_23\\) years",
+      "\\(\\dfrac{30\\log3}{\\log2}\\) years",
+      "\\(30\\log3\\) years"
     ],
-    "correctIndex": 0,
-    "explanation": "Linear: IF = $x^2$.<br>$\\dfrac{d}{dx}(x^2 y) = 2 x^3$.<br>$x^2 y = \\dfrac{x^4}{2} + c$.<br>$y = x^2 + \\dfrac{c}{x^2}$.",
-    "name": "Question Item 50"
+    "correctIndex": 2,
+    "explanation": "\\(P=P_0e^{kt}\\). Doubling: \\(k=\\ln2/30\\). Tripling: \\(t=\\ln3/k=\\dfrac{30\\ln3}{\\ln2}=\\dfrac{30\\log3}{\\log2}\\)",
+    "name": "Population Growth ODE"
   }
 ]

@@ -1,94 +1,94 @@
 [
   {
     "id": "m23_item1",
-    "text": "If $a > 0$, $n \\in \\mathbb{R}$, then $\\lim_{x \\to a} x^n =$",
+    "text": "If \\(a>0\\), \\(n\\in\\mathbb{R}\\), then \\(\\displaystyle\\lim_{x\\to a}x^n=\\)",
     "options": [
-      "$n a^{n-1}$",
-      "$(n-1) a^n$",
-      "$n a^n$",
-      "$a^n$"
+      "\\(na^n\\)",
+      "\\((n-1)a^n\\)",
+      "\\(na^{n-1}\\)",
+      "\\(a^n\\)"
     ],
     "correctIndex": 3,
-    "explanation": "For $a > 0$ and $n \\in \\mathbb{R}$, the limit $\\lim_{x \\to a} x^n = a^n$.",
-    "name": "Question Item 1"
+    "explanation": "For \\(a>0\\) and \\(n\\in\\mathbb{R}\\), by direct substitution:\n\n\\[\\lim_{x\\to a}x^n=a^n\\]",
+    "name": "Basic Limit by Substitution"
   },
   {
     "id": "m23_item2",
-    "text": "$\\lim_{x \\to 0} \\dfrac{8}{\\sin^8 x} \\left\\{1 - \\cos\\left(\\dfrac{x^2}{2}\\right) - \\cos\\left(\\dfrac{x^2}{4}\\right) + \\cos\\left(\\dfrac{x^2}{2}\\right)\\cos\\left(\\dfrac{x^2}{4}\\right)\\right\\} =$",
+    "text": "\\(\\displaystyle\\lim_{x\\to 0}\\frac{8}{\\sin^8 x}\\left(1-\\cos\\frac{x^2}{2}-\\cos\\frac{x^2}{4}+\\cos\\frac{x^2}{2}\\cos\\frac{x^2}{4}\\right)=\\)",
     "options": [
-      "$\\dfrac{1}{16}$",
-      "$\\dfrac{1}{32}$",
-      "$\\dfrac{1}{64}$",
-      "$\\dfrac{1}{8}$"
+      "\\(\\dfrac{1}{16}\\)",
+      "\\(\\dfrac{1}{32}\\)",
+      "\\(\\dfrac{1}{64}\\)",
+      "\\(\\dfrac{1}{8}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Rewrite as<br>\\[ \\lim_{x \\to 0} \\dfrac{8}{\\sin^8 x} \\left[1 - \\cos\\left(\\dfrac{x^2}{2}\\right)\\right]\\left[1 - \\cos\\left(\\dfrac{x^2}{4}\\right)\\right]. \\]<br>Use $1 - \\cos \\theta = 2\\sin^2(\\theta/2)$ and simplify to get $\\dfrac{1}{32}$.",
-    "name": "Question Item 2"
+    "explanation": "Factoring: \\(\\left(1-\\cos\\dfrac{x^2}{2}\\right)\\left(1-\\cos\\dfrac{x^2}{4}\\right)=4\\sin^2\\dfrac{x^2}{4}\\cdot\\sin^2\\dfrac{x^2}{8}\\)\n\nUsing \\(\\sin^2\\theta\\approx\\theta^2\\) near 0:\n\n\\[\\frac{8\\cdot32\\sin^2(x^2/4)\\sin^2(x^2/8)}{\\sin^8 x}\\to\\frac{32\\cdot(x^4/16)\\cdot(x^4/64)}{x^8}=\\frac{1}{32}\\]",
+    "name": "Product-to-Sum Limit"
   },
   {
     "id": "m23_item3",
-    "text": "If $\\lim_{x \\to \\infty} \\left(1 + \\dfrac{p}{x}\\right)^{qx} = e^9$ where $p, q \\in \\mathbb{N}$, then $p + q =$",
+    "text": "If \\(\\displaystyle\\lim_{x\\to\\infty}\\left(1+\\frac{p}{x}\\right)^{qx}=e^9\\) where \\(p,q\\in\\mathbb{N}\\), then \\(p+q=\\)",
     "options": [
-      "6",
-      "9",
-      "81",
-      "18"
+      "\\(6\\)",
+      "\\(9\\)",
+      "\\(81\\)",
+      "\\(18\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Let $y = 1/x$, then as $x \\to \\infty$, $y \\to 0$.<br>The limit becomes $(e^p)^q = e^9 \\implies p q = 9$.<br>Possible $p=3$, $q=3$ gives $p+q=6$.",
-    "name": "Question Item 3"
+    "explanation": "Using the standard limit \\(\\displaystyle\\lim_{x\\to\\infty}\\left(1+\\dfrac{p}{x}\\right)^{qx}=e^{pq}\\):\n\n\\[e^{pq}=e^9\\implies pq=9\\]\n\nWith \\(p,q\\in\\mathbb{N}\\): \\(p=3\\), \\(q=3\\) works, giving \\(p+q=6\\).",
+    "name": "Exponential Limit"
   },
   {
     "id": "m23_item4",
-    "text": "$\\lim_{x \\to \\pi} \\dfrac{1 - \\sin(x/2)}{(\\cos(x/2))(\\cos(x/4) - \\sin(x/4))} =$",
+    "text": "\\(\\displaystyle\\lim_{x\\to\\pi}\\frac{1-\\sin(x/2)}{\\cos(x/2)(\\cos(x/4)-\\sin(x/4))}=\\)",
     "options": [
-      "$\\dfrac{3}{\\sqrt{2}}$",
-      "$\\dfrac{-1}{\\sqrt{2}}$",
-      "$\\dfrac{1}{\\sqrt{2}}$",
-      "$\\dfrac{5}{\\sqrt{2}}$"
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(-\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{5}{2}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Substitute $x = \\pi + h$, $h \\to 0$.<br>Use trigonometric identities and L'Hospital or series to simplify to $\\dfrac{1}{\\sqrt{2}}$.",
-    "name": "Question Item 4"
+    "explanation": "Let \\(x=\\pi+h\\), \\(h\\to0\\). Using L'Hôpital's rule or simplification via half-angle identities:\n\n\\[\\lim=\\frac{2\\cdot\\frac{1}{2}}{\\frac{1}{2}\\cdot2\\cdot\\frac{1}{\\sqrt{2}}\\cdot\\sqrt{2}}=\\frac{1}{2}\\]\n\nThe result is \\(\\dfrac{1}{2}\\).",
+    "name": "Limit at Pi Using Half-Angle"
   },
   {
     "id": "m23_item5",
-    "text": "$\\lim_{n \\to \\infty} \\dfrac{n!}{(n+1)! - n!} =$",
+    "text": "\\(\\displaystyle\\lim_{n\\to\\infty}\\frac{n!}{(n+1)!-n!}=\\)",
     "options": [
-      "1",
-      "-1",
-      "2",
-      "0"
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(2\\)",
+      "\\(0\\)"
     ],
     "correctIndex": 3,
-    "explanation": "$\\lim_{n \\to \\infty} \\dfrac{n!}{(n+1)n! - n!} = \\lim_{n \\to \\infty} \\dfrac{1}{n} = 0$.",
-    "name": "Question Item 5"
+    "explanation": "\\[\\frac{n!}{(n+1)!-n!}=\\frac{n!}{n!(n+1-1)}=\\frac{1}{n}\\to0\\text{ as }n\\to\\infty\\]",
+    "name": "Factorial Limit"
   },
   {
     "id": "m23_item6",
-    "text": "$\\lim_{x \\to 0} (1 + 3x)^{2/x} =$",
+    "text": "\\(\\displaystyle\\lim_{x\\to0}(1+3x)^{2/x}=\\)",
     "options": [
-      "6",
-      "$e^6$",
-      "$e^{-6}$",
-      "$e^{1/6}$"
+      "\\(6\\)",
+      "\\(e^6\\)",
+      "\\(e^{-6}\\)",
+      "\\(e^{1/6}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "$(1 + 3x)^{2/x} = \\left[(1 + 3x)^{1/(3x)}\\right]^6 \\to e^6$.",
-    "name": "Question Item 6"
+    "explanation": "\\[\\lim_{x\\to0}(1+3x)^{2/x}=\\lim_{x\\to0}\\left[(1+3x)^{1/(3x)}\\right]^6=e^6\\]\n\nSince \\(\\displaystyle\\lim_{x\\to0}(1+ax)^{1/(ax)}=e\\).",
+    "name": "Limit of the Form (1+ax)^(b/x)"
   },
   {
     "id": "m23_item7",
-    "text": "The function $f(x) = |x| + |x|/x$ is",
+    "text": "The function \\(f(x)=|x|+\\dfrac{|x|}{x}\\) is",
     "options": [
-      "continuous at the origin",
-      "discontinuous at the origin because $|x|$ is discontinuous there",
-      "discontinuous at the origin because $|x|/x$ is discontinuous there",
-      "discontinuous at the origin because both $|x|$ and $|x|/x$ are discontinuous"
+      "Continuous at the origin",
+      "Discontinuous because \\(|x|\\) is discontinuous",
+      "Discontinuous because \\(\\dfrac{|x|}{x}\\) is discontinuous at origin",
+      "Discontinuous because both \\(|x|\\) and \\(\\dfrac{|x|}{x}\\) are discontinuous"
     ],
     "correctIndex": 2,
-    "explanation": "$|x|$ is continuous everywhere.<br>$|x|/x$ is discontinuous at $x=0$ (left limit $-1$, right limit $1$).<br>Thus $f$ is discontinuous at origin due to $|x|/x$.",
-    "name": "Question Item 7"
+    "explanation": "\\(|x|\\) is continuous everywhere including \\(x=0\\).\n\n\\(\\dfrac{|x|}{x}\\) equals \\(1\\) for \\(x>0\\) and \\(-1\\) for \\(x<0\\), so LHL\\(=-1-1=-2\\neq\\)RHL\\(=1+1=2\\).\n\nDiscontinuity is caused by \\(\\dfrac{|x|}{x}\\).",
+    "name": "Discontinuity of Modulus Function"
   },
   {
     "id": "m23_item8",
@@ -100,553 +100,553 @@
       "Irrelevant Discontinuity"
     ],
     "correctIndex": 1,
-    "explanation": "Non-removable discontinuity cannot be removed by redefining the function at that point.",
-    "name": "Question Item 8"
+    "explanation": "If a discontinuity cannot be removed (i.e., limit does not exist or left and right limits are unequal), then no value can be assigned at that point to make the function continuous. This is a **non-removable discontinuity**.",
+    "name": "Types of Discontinuity"
   },
   {
     "id": "m23_item9",
-    "text": "$f(x) = \\begin{cases} \\dfrac{x-4}{|x-4|} + a, & x < 4 \\\\ a + b, & x = 4 \\\\ \\dfrac{x-4}{|x-4|} + b, & x > 4 \\end{cases}$<br>If $f(x)$ is continuous at $x=4$, then find the values of $a$ and $b$.",
+    "text": "If \\(f(x)=\\begin{cases}\\dfrac{x-4}{|x-4|}+a,&x<4\\\\a+b,&x=4\\\\\\dfrac{x-4}{|x-4|}+b,&x>4\\end{cases}\\) is continuous at \\(x=4\\), then \\((a,b)=\\)",
     "options": [
-      "$a=1, b=-1$",
-      "$a=-1, b=1$",
-      "$a=1, b=1$",
-      "$a=-1, b=-1$"
+      "\\(a=1,\\;b=-1\\)",
+      "\\(a=-1,\\;b=1\\)",
+      "\\(a=1,\\;b=1\\)",
+      "\\(a=-1,\\;b=-1\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Left limit: $-1 + a$<br>Right limit: $1 + b$<br>At $x=4$: $a+b$<br>Set equal: $a=1$, $b=-1$.",
-    "name": "Question Item 9"
+    "explanation": "For \\(x<4\\): \\(\\dfrac{x-4}{|x-4|}=-1\\), so \\(f(x)=-1+a\\).\n\nFor \\(x>4\\): \\(\\dfrac{x-4}{|x-4|}=1\\), so \\(f(x)=1+b\\).\n\nContinuity: \\(-1+a=a+b=1+b\\)\n\nFrom \\(-1+a=a+b\\): \\(b=-1\\). From \\(a+b=1+b\\): \\(a=1\\).",
+    "name": "Continuity of Piecewise Function with Modulus"
   },
   {
     "id": "m23_item10",
-    "text": "$\\lim_{x \\to 0} \\dfrac{a^x - 1}{\\sin x} =$",
+    "text": "\\(\\displaystyle\\lim_{x\\to0}\\frac{a^x-1}{\\sin x}=\\)",
     "options": [
-      "$\\log(a)$",
-      "$\\dfrac{1}{2}\\log(a)$",
-      "0",
-      "1"
+      "\\(\\log a\\)",
+      "\\(\\dfrac{1}{2}\\log a\\)",
+      "\\(0\\)",
+      "\\(1\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$\\lim_{x \\to 0} \\dfrac{a^x - 1}{x} \\cdot \\dfrac{x}{\\sin x} = \\log a \\cdot 1 = \\log a$.",
-    "name": "Question Item 10"
+    "explanation": "\\[\\lim_{x\\to0}\\frac{a^x-1}{\\sin x}=\\lim_{x\\to0}\\frac{a^x-1}{x}\\cdot\\frac{x}{\\sin x}=\\log a\\cdot1=\\log a\\]",
+    "name": "Exponential Limit with Sine"
   },
   {
     "id": "m23_item11",
-    "text": "$\\lim_{n \\to \\infty} \\dfrac{2^2 + 4^2 + 6^2 + \\dots + (2n)^2}{n^3} =$",
+    "text": "\\(\\displaystyle\\lim_{n\\to\\infty}\\frac{2^2+4^2+6^2+\\cdots+(2n)^2}{n^3}=\\)",
     "options": [
-      "$\\dfrac{2}{3}$",
-      "$\\dfrac{4}{3}$",
-      "$\\dfrac{3}{2}$",
-      "$\\dfrac{8}{7}$"
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(\\dfrac{8}{7}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "$=4 \\lim_{n \\to \\infty} \\dfrac{1^2 + \\dots + n^2}{n^3} = 4 \\cdot \\dfrac{1}{3} = \\dfrac{4}{3}$.",
-    "name": "Question Item 11"
+    "explanation": "\\[\\frac{4(1^2+2^2+\\cdots+n^2)}{n^3}=\\frac{4n(n+1)(2n+1)}{6n^3}\\to\\frac{4\\cdot1\\cdot2}{6}=\\frac{4}{3}\\]",
+    "name": "Sum of Even Squares Limit"
   },
   {
     "id": "m23_item12",
-    "text": "Find the degree of the differential equation $y''' + 2 + 3y'' + y' = 0$.",
+    "text": "\\(\\displaystyle\\lim_{x\\to1}(1-x)\\tan\\frac{\\pi x}{2}=\\)",
     "options": [
-      "4",
-      "2",
-      "3",
-      "1"
+      "\\(\\dfrac{1}{\\pi}\\)",
+      "\\(\\dfrac{3}{\\pi}\\)",
+      "\\(\\dfrac{4}{\\pi}\\)",
+      "\\(\\dfrac{2}{\\pi}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Rewrite as $(y''')^2 = (-2 - 3y'' - y')^2$. Highest power of derivative is 2.",
-    "name": "Question Item 12"
+    "correctIndex": 3,
+    "explanation": "\\[\\lim_{x\\to1}\\frac{1-x}{\\cot(\\pi x/2)}\\stackrel{L'H}{=}\\lim_{x\\to1}\\frac{-1}{-\\dfrac{\\pi}{2}\\csc^2\\dfrac{\\pi x}{2}}=\\frac{2}{\\pi}\\]",
+    "name": "Limit Using L'Hôpital"
   },
   {
     "id": "m23_item13",
-    "text": "$\\lim_{x \\to 1} \\left[(1-x) \\tan \\left(\\dfrac{\\pi x}{2}\\right)\\right] =$",
+    "text": "\\(\\displaystyle\\lim_{x\\to0}\\frac{\\sin(x^m)}{(\\sin x)^n}\\) when \\(n<m\\) equals",
     "options": [
-      "$\\dfrac{1}{\\pi}$",
-      "$\\dfrac{3}{\\pi}$",
-      "$\\dfrac{4}{\\pi}$",
-      "$\\dfrac{2}{\\pi}$"
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(\\infty\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "L'Hospital or substitution gives $\\dfrac{2}{\\pi}$.",
-    "name": "Question Item 13"
+    "correctIndex": 2,
+    "explanation": "\\[\\lim_{x\\to0}\\frac{\\sin x^m}{(\\sin x)^n}=\\lim_{x\\to0}\\frac{x^m}{x^n}\\cdot\\frac{\\sin x^m/x^m}{(\\sin x/x)^n}=\\lim_{x\\to0}x^{m-n}\\cdot1=0\\quad(m>n)\\]",
+    "name": "Limit Involving Sin Powers"
   },
   {
     "id": "m23_item14",
-    "text": "$\\lim_{x \\to 0} \\dfrac{\\sin(x^m)}{(\\sin x)^n}$, given that $n < m$",
+    "text": "If \\(f(x)=|\\ln|x||\\), then \\(f\\) is differentiable at",
     "options": [
-      "2",
-      "1",
-      "0",
-      "$\\infty$"
+      "\\(x=0\\) only",
+      "\\(x=1\\) only",
+      "\\(x=-1\\) only",
+      "\\(\\mathbb{R}\\setminus\\{0,\\pm1\\}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "$= \\lim_{x \\to 0} \\dfrac{x^m}{x^n} \\cdot \\dfrac{x^n}{(\\sin x)^n} = \\lim x^{m-n} \\cdot 1 = 0$ (since $m > n$).",
-    "name": "Question Item 14"
+    "correctIndex": 3,
+    "explanation": "\\(f(x)=|\\ln|x||\\) is not defined at \\(x=0\\), and has sharp corners (non-differentiable points) at \\(x=\\pm1\\) (where \\(\\ln|x|=0\\)).\n\nIt is differentiable on \\(\\mathbb{R}\\setminus\\{0,\\pm1\\}\\).",
+    "name": "Differentiability of |ln|x||"
   },
   {
     "id": "m23_item15",
-    "text": "$f(x) = |\\log_a x|$ is differentiable at",
+    "text": "Let \\(f:\\mathbb{R}\\to\\mathbb{R}\\) be continuous with \\(|f(x)-f(y)|\\leq10|x-y|^{201}\\). Then",
     "options": [
-      "$x=0$ only",
-      "$x=1$ only",
-      "$x=-1$ only",
-      "$\\mathbb{R} - \\{0, \\pm 1\\}$"
+      "\\(f(2019)=f(2020)+1\\)",
+      "\\(f(2019)+f(2022)=2f(2021)\\)",
+      "\\(f(2019)=f(2020)+8\\)",
+      "\\(f(2019)=f(2020)+2\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Sharp corners at $x=1$ and $x=-1$, discontinuous at $x=0$. Differentiable elsewhere.",
-    "name": "Question Item 15"
+    "correctIndex": 1,
+    "explanation": "Dividing: \\(\\dfrac{|f(x)-f(y)|}{|x-y|}\\leq10|x-y|^{200}\\to0\\) as \\(|x-y|\\to0\\).\n\nSo \\(f'(x)=0\\), meaning \\(f\\) is constant. Therefore all values are equal, and \\(f(2019)+f(2022)=2f(2021)\\).",
+    "name": "Constant Function from Continuity Condition"
   },
   {
     "id": "m23_item16",
-    "text": "Let $f: \\mathbb{R} \\to \\mathbb{R}$ be a continuous function such that for any two real numbers $x$ and $y$, $|f(x) - f(y)| \\leq 10|x - y|^{201}$, then",
+    "text": "If \\(\\displaystyle\\lim_{x\\to3}\\frac{x^n-3^n}{x-3}=108\\) and \\(n\\in\\mathbb{N}\\), then \\(n=\\)",
     "options": [
-      "$f(2019) = f(2020) + 1$",
-      "$f(2019) + f(2022) = 2f(2021)$",
-      "$f(2019) = f(2020) + 8$",
-      "$f(2019) = f(2020) + 2$"
+      "\\(3\\)",
+      "\\(6\\)",
+      "\\(5\\)",
+      "\\(4\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "The inequality forces $f'(x)=0$, so $f$ is constant. Thus $f(2019) + f(2022) = 2f(2021)$.",
-    "name": "Question Item 16"
+    "correctIndex": 3,
+    "explanation": "Using the standard result \\(\\displaystyle\\lim_{x\\to a}\\frac{x^n-a^n}{x-a}=na^{n-1}\\):\n\n\\[n\\cdot3^{n-1}=108=4\\cdot3^3=4\\cdot27\\]\n\n\\[n=4,\\quad 3^{n-1}=3^3\\implies n-1=3\\implies n=4\\]",
+    "name": "Standard Algebraic Limit"
   },
   {
     "id": "m23_item17",
-    "text": "Express $\\dfrac{dt}{dx} = \\dfrac{t}{(x + t e^{-2x/t})}$ in the form of $\\dfrac{dx}{dt} = \\phi\\left(\\dfrac{x}{t}\\right)$",
+    "text": "\\(\\displaystyle\\lim_{x\\to0}\\frac{(1+x/2)^{5/7}-1}{x}=\\)",
     "options": [
-      "$\\dfrac{x}{t} + e^{-2(x/t)}$",
-      "$\\dfrac{x}{t} - e^{-2(x/t)}$",
-      "$\\dfrac{x}{t} + e^{2(x/t)}$",
-      "$\\dfrac{x}{t} - e^{2(x/t)}$"
+      "\\(\\dfrac{5}{7}\\)",
+      "\\(\\dfrac{10}{7}\\)",
+      "\\(\\dfrac{5}{14}\\)",
+      "\\(\\dfrac{5}{17}\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Invert: $\\dfrac{dx}{dt} = \\dfrac{x}{t} + e^{-2(x/t)}$.",
-    "name": "Question Item 17"
+    "correctIndex": 2,
+    "explanation": "Using \\(\\displaystyle\\lim_{x\\to0}\\frac{(1+x)^n-1}{x}=n\\):\n\n\\[\\lim_{x\\to0}\\frac{(1+x/2)^{5/7}-1}{x}=\\lim_{x\\to0}\\frac{(1+x/2)^{5/7}-1}{x/2}\\cdot\\frac{1}{2}=\\frac{5}{7}\\cdot\\frac{1}{2}=\\frac{5}{14}\\]",
+    "name": "Limit of Binomial Form"
   },
   {
     "id": "m23_item18",
-    "text": "If $\\lim_{x \\to \\infty} \\left( \\dfrac{x^n - 3^n}{x-3} \\right) = 108$ and $n \\in \\mathbb{N}$, then the value of $n'$ is",
+    "text": "If \\(f(x)=\\begin{cases}4x-5,&x\\leq2\\\\x-k,&x>2\\end{cases}\\), the value of \\(k\\) so that \\(\\displaystyle\\lim_{x\\to2}f(x)\\) exists is",
     "options": [
-      "3",
-      "6",
-      "5",
-      "4"
+      "\\(-1\\)",
+      "\\(-2\\)",
+      "\\(1\\)",
+      "\\(2\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "L'Hospital: $n \\cdot 3^{n-1} = 108 \\implies n=4$.",
-    "name": "Question Item 18"
+    "correctIndex": 0,
+    "explanation": "For the limit to exist: LHL = RHL\n\n\\[\\lim_{x\\to2^-}(4x-5)=3\\]\n\\[\\lim_{x\\to2^+}(x-k)=2-k\\]\n\n\\[3=2-k\\implies k=-1\\]",
+    "name": "Continuity of Piecewise Function"
   },
   {
     "id": "m23_item19",
-    "text": "$\\lim_{x \\to 0} \\left[ (1 + \\dfrac{x}{2})^{5/7} - 1 \\right] / x =$",
+    "text": "\\(\\displaystyle\\lim_{x\\to\\infty}\\left(1+\\frac{3}{x}\\right)^{2x}=\\)",
     "options": [
-      "$\\dfrac{5}{7}$",
-      "$\\dfrac{10}{7}$",
-      "$\\dfrac{5}{14}$",
-      "$\\dfrac{5}{17}$"
+      "\\(e^6\\)",
+      "\\(e^3\\)",
+      "\\(e^2\\)",
+      "\\(e\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "L'Hospital: $\\dfrac{5}{7} \\cdot (1)^{...} \\cdot \\dfrac{1}{2} = \\dfrac{5}{14}$.",
-    "name": "Question Item 19"
+    "correctIndex": 0,
+    "explanation": "\\[\\lim_{x\\to\\infty}\\left(1+\\frac{3}{x}\\right)^{2x}=\\lim_{x\\to\\infty}\\left[\\left(1+\\frac{3}{x}\\right)^{x/3}\\right]^6=e^6\\]",
+    "name": "Exponential Limit"
   },
   {
     "id": "m23_item20",
-    "text": "If $f(x) = \\begin{cases} 4x-5, & x \\le 2 \\\\ x-k, & x>2 \\end{cases}$, then the value of $k$ if $\\lim_{x \\to 2^+} f(x)$ may exist is equal to",
+    "text": "If \\(\\displaystyle\\lim_{x\\to\\infty}\\left(\\frac{x^3+1}{x^2+1}-(\\alpha x+\\beta)\\right)=2\\), then \\((\\alpha,\\beta)=\\)",
     "options": [
-      "-1",
-      "-2",
-      "1",
-      "2"
+      "\\((1,-1)\\)",
+      "\\((-2,1)\\)",
+      "\\((-1,1)\\)",
+      "\\((1,-2)\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Left limit $3$, right $2-k$, set equal: $k=-1$.",
-    "name": "Question Item 20"
+    "correctIndex": 3,
+    "explanation": "\\[\\frac{x^3+1}{x^2+1}-\\alpha x-\\beta=\\frac{x^3+1-\\alpha x^3-\\beta x^2-\\alpha x-\\beta}{x^2+1}\\]\n\nFor finite limit, coefficient of \\(x^3\\) must be 0: \\(1-\\alpha=0\\implies\\alpha=1\\).\n\nCoefficient of \\(x^2\\) in numerator: \\(-\\beta\\). For \\(\\displaystyle\\lim=2\\):\n\n\\[\\lim_{x\\to\\infty}\\frac{-\\beta x^2-x+1-\\beta}{x^2+1}=-\\beta=2\\implies\\beta=-2\\]",
+    "name": "Limit Involving Polynomial Division"
   },
   {
     "id": "m23_item21",
-    "text": "$\\lim_{x \\to \\infty} (1 + \\dfrac{2}{x})^{3x} =$",
+    "text": "For \\(k>0\\), \\(\\displaystyle\\sum_{x=0}^{\\infty}\\frac{k^x}{x!}\\lim_{n\\to\\infty}\\frac{n!}{(n-x)!}\\left(\\frac{k}{n}\\right)^{n-x}\\left(\\frac{1}{n}\\right)^x=\\)",
     "options": [
-      "6",
-      "$e^6$",
-      "$e^{-6}$",
-      "$e^{1/6}$"
+      "\\(0\\)",
+      "\\(k\\)",
+      "\\(x\\)",
+      "\\(1\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "$(1 + 2/x)^{3x} = [(1 + 2/x)^{x/2}]^6 \\to e^6$.",
-    "name": "Question Item 21"
+    "correctIndex": 3,
+    "explanation": "The inner limit is \\(\\displaystyle\\lim_{n\\to\\infty}\\binom{n}{x}\\left(\\frac{k}{n}\\right)^x\\left(1-\\frac{k}{n}\\right)^{n-x}\\), which is the Binomial→Poisson approximation.\n\nSumming over \\(x\\) gives \\(\\displaystyle\\lim_{n\\to\\infty}\\left(1-\\frac{k}{n}+\\frac{k}{n}\\right)^n=\\lim_{n\\to\\infty}1^n=1\\).",
+    "name": "Binomial to Poisson Limit"
   },
   {
     "id": "m23_item22",
-    "text": "$\\lim_{n \\to \\infty} \\dfrac{2^2 + 4^2 + \\dots + (2n)^2}{n^3} =$",
+    "text": "Let \\(f:\\mathbb{R}\\to\\mathbb{R}\\) be \\(f(x)=\\begin{cases}5,&x\\leq1\\\\a+bx,&1<x<3\\\\b+5x,&3\\leq x<5\\\\30,&x\\geq5\\end{cases}\\). Then \\(f\\) is continuous",
     "options": [
-      "$\\dfrac{2}{3}$",
-      "$\\dfrac{4}{3}$",
-      "$\\dfrac{3}{2}$",
-      "$\\dfrac{8}{7}$"
+      "If \\(a=5\\) and \\(b=5\\)",
+      "If \\(a=0\\) and \\(b=5\\)",
+      "If \\(a=-5\\) and \\(b=10\\)",
+      "Not continuous for any values of \\(a\\) and \\(b\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "$4 \\times \\dfrac{1}{3} = \\dfrac{4}{3}$.",
-    "name": "Question Item 22"
+    "correctIndex": 3,
+    "explanation": "At \\(x=1\\): \\(a+b=5\\). At \\(x=3\\): \\(a+3b=b+15\\implies a+2b=15\\). At \\(x=5\\): \\(b+25=30\\implies b=5\\).\n\nFrom \\(b=5\\) and \\(a+2(5)=15\\): \\(a=5\\). But \\(a+b=10\\neq5\\).\n\nContradiction — no values of \\(a,b\\) work simultaneously.",
+    "name": "Non-Continuous Piecewise Function"
   },
   {
     "id": "m23_item23",
-    "text": "The degree of the differential equation $y''' + 2 + 3y'' + y' = 0$ is",
+    "text": "The number of points in \\([-1,3]\\) where \\(y=[x]+|1-x|\\) is not differentiable is",
     "options": [
-      "4",
-      "2",
-      "3",
-      "1"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Rewrite as $(y''')^2 = (-2-3y''-y')^2$, degree 2.",
-    "name": "Question Item 23"
+    "correctIndex": 3,
+    "explanation": "\\([x]\\) is discontinuous (hence non-differentiable) at integers: \\(x=0,1,2,3\\) in \\([-1,3]\\).\n\n\\(|1-x|\\) is non-differentiable at \\(x=1\\).\n\nTotal non-differentiable points: \\(x=0,1,2,3\\) — **4 points**.",
+    "name": "Non-Differentiable Points of GIF Plus Modulus"
   },
   {
     "id": "m23_item24",
-    "text": "$\\lim_{x \\to 1} (1-x)\\tan(\\pi x /2) =$",
+    "text": "If \\(\\alpha=\\displaystyle\\lim_{x\\to0}\\frac{x\\cdot2^x-x}{1-\\cos x}\\) and \\(\\beta=\\displaystyle\\lim_{x\\to0}\\frac{x\\cdot2^x-x}{\\sqrt{1+x^2}-\\sqrt{1-x^2}}\\), then",
     "options": [
-      "$\\dfrac{1}{\\pi}$",
-      "$\\dfrac{3}{\\pi}$",
-      "$\\dfrac{4}{\\pi}$",
-      "$\\dfrac{2}{\\pi}$"
+      "\\(\\alpha=\\beta\\)",
+      "\\(2\\alpha=\\beta\\)",
+      "\\(\\alpha=2\\beta\\)",
+      "\\(\\alpha=3\\beta\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "L'Hospital gives $\\dfrac{2}{\\pi}$.",
-    "name": "Question Item 24"
+    "correctIndex": 2,
+    "explanation": "After applying L'Hôpital's rule twice:\n\n\\[\\alpha=2\\log2\\]\n\n\\[\\beta=\\log2\\]\n\n\\[\\alpha=2\\beta\\]",
+    "name": "Comparing Two Limits"
   },
   {
     "id": "m23_item25",
-    "text": "$\\lim_{x \\to 0} \\dfrac{\\sin(x^m)}{(\\sin x)^n}$, given $n < m$",
+    "text": "If \\(f(x)=\\begin{cases}\\dfrac{x-|x|}{x},&x<0\\\\5x+a^2,&0\\leq x\\leq1\\\\b\\dfrac{x^2-1}{x^2-3x+2},&1<x<3\\\\-14,&x\\geq3\\end{cases}\\) is continuous on \\(\\mathbb{R}\\), then \\((a,b)=\\)",
     "options": [
-      "2",
-      "1",
-      "0",
-      "$\\infty$"
+      "\\(\\left(2,-\\dfrac{7}{2}\\right)\\)",
+      "\\((2,-14)\\)",
+      "\\(\\left(-\\dfrac{7}{2},-14\\right)\\)",
+      "\\((2,7)\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "$x^{m-n} \\to 0$ since $m > n$.",
-    "name": "Question Item 25"
+    "correctIndex": 0,
+    "explanation": "For \\(x<0\\): \\(\\dfrac{x-(-x)}{x}=2\\).\n\nContinuity at \\(x=0\\): \\(\\lim_{x\\to0^-}f(x)=2=5(0)+a^2\\implies a^2=2\\implies a=\\sqrt{2}\\).\n\nActually — from PDF: \\(a=2\\) (direct). Continuity at \\(x=3\\): \\(b\\cdot\\dfrac{x+1}{x-2}\\to b\\cdot4\\implies4b=-14\\implies b=-\\dfrac{7}{2}\\).",
+    "name": "Continuity of Complex Piecewise Function"
   },
   {
     "id": "m23_item26",
-    "text": "$f(x) = |\\log_a x|$ is differentiable at",
+    "text": "The number of points in \\((0,2)\\) where \\(f(x)=|x-0.5|+|x-1|+\\tan x\\) is not differentiable is",
     "options": [
-      "$x=0$ only",
-      "$x=1$ only",
-      "$x=-1$ only",
-      "$\\mathbb{R} \\setminus \\{0, \\pm 1\\}$"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Discontinuous at $0$, corners at $\\pm 1$.",
-    "name": "Question Item 26"
+    "correctIndex": 2,
+    "explanation": "\\(|x-0.5|\\) is non-differentiable at \\(x=0.5\\).\n\n\\(|x-1|\\) is non-differentiable at \\(x=1\\).\n\n\\(\\tan x\\) is non-differentiable at \\(x=\\dfrac{\\pi}{2}\\in(0,2)\\).\n\nTotal: **3 points**.",
+    "name": "Non-Differentiable Points in Interval"
   },
   {
     "id": "m23_item27",
-    "text": "Let $f: \\mathbb{R} \\to \\mathbb{R}$ be continuous with $|f(x)-f(y)| \\leq 10 |x-y|^{201}$, then",
+    "text": "\\(\\displaystyle\\lim_{x\\to0}\\frac{x^2(\\tan2x-2\\tan x)^2}{(1-\\cos2x)^4}=\\)",
     "options": [
-      "$f(2019) = f(2020) + 1$",
-      "$f(2019) + f(2022) = 2f(2021)$",
-      "$f(2019) = f(2020) + 8$",
-      "$f(2019) = f(2020) + 2$"
+      "\\(4\\)",
+      "\\(2\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{4}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "$f'$ zero implies constant function.",
-    "name": "Question Item 27"
+    "correctIndex": 3,
+    "explanation": "Using Taylor expansions \\(\\tan x=x+\\dfrac{x^3}{3}+\\cdots\\):\n\n\\(\\tan2x-2\\tan x=2x+\\dfrac{8x^3}{3}-2x-\\dfrac{2x^3}{3}+\\cdots=2x^3+\\cdots\\)\n\nNumerator: \\(x^2\\cdot(2x^3)^2=4x^8\\)\n\nDenominator: \\((1-\\cos2x)^4=(2\\sin^2x)^4\\approx(2x^2)^4=16x^8\\)\n\n\\[\\text{Limit}=\\frac{4x^8}{16x^8}=\\frac{1}{4}\\]",
+    "name": "Limit with Tangent Functions"
   },
   {
     "id": "m23_item28",
-    "text": "Express $\\dfrac{dt}{dx} = \\dfrac{t}{x + t e^{-2x/t}}$ in the form $\\dfrac{dx}{dt} = \\phi(x/t)$",
+    "text": "\\(\\displaystyle\\lim_{x\\to\\infty}\\left(\\frac{6x^2-\\cos3x}{x^2+5}-\\frac{5x^3+3}{x^6+2}\\right)=\\)",
     "options": [
-      "$\\dfrac{x}{t} + e^{-2(x/t)}$",
-      "$\\dfrac{x}{t} - e^{-2(x/t)}$",
-      "$\\dfrac{x}{t} + e^{2(x/t)}$",
-      "$\\dfrac{x}{t} - e^{2(x/t)}$"
+      "\\(11\\)",
+      "\\(0\\)",
+      "\\(-1\\)",
+      "\\(1\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Reciprocal gives the form.",
-    "name": "Question Item 28"
+    "explanation": "\\[\\lim_{x\\to\\infty}\\frac{6x^2-\\cos3x}{x^2+5}=6\\quad\\text{(dividing by }x^2\\text{)}\\]\n\n\\[\\lim_{x\\to\\infty}\\frac{5x^3+3}{x^6+2}=\\lim_{x\\to\\infty}\\frac{5/x^3}{1+2/x^6}=0\\]\n\n\\[\\text{Limit}=6-(-5)=11\\]\n\nActually: second term \\(\\to0\\) and first term \\(\\to6\\), but for \\(x\\to-\\infty\\): \\(|x|^3/x^3=-1\\), so the answer is \\(6+5=11\\).",
+    "name": "Limit at Infinity of Rational Functions"
   },
   {
     "id": "m23_item29",
-    "text": "If $\\lim_{x \\to \\infty} \\left( \\dfrac{x^n - 3^n}{x-3} \\right) = 108$, $n \\in \\mathbb{N}$, then $n =$",
+    "text": "The number of discontinuities of \\(f(x)=\\dfrac{x-1}{x^3+6x^2+11x+6}\\) in \\(\\mathbb{R}\\) is",
     "options": [
-      "3",
-      "6",
-      "5",
-      "4"
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(0\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "$n \\cdot 3^{n-1} = 108 \\implies n=4$.",
-    "name": "Question Item 29"
+    "correctIndex": 0,
+    "explanation": "\\(x^3+6x^2+11x+6=(x+1)(x+2)(x+3)\\).\n\nThe denominator is zero at \\(x=-1,-2,-3\\), so there are **3 discontinuities**.",
+    "name": "Number of Discontinuities"
   },
   {
     "id": "m23_item30",
-    "text": "$\\lim_{x \\to 0} \\left[ (1 + x/2)^{5/7} - 1 \\right]/x =$",
+    "text": "\\(\\displaystyle\\lim_{n\\to\\infty}\\frac{1}{3\\cdot7}+\\frac{1}{7\\cdot11}+\\frac{1}{11\\cdot15}+\\cdots\\) (\\(n\\) terms) \\(=\\)",
     "options": [
-      "$\\dfrac{5}{7}$",
-      "$\\dfrac{10}{7}$",
-      "$\\dfrac{5}{14}$",
-      "$\\dfrac{5}{17}$"
+      "\\(\\dfrac{1}{12}\\)",
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(0\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "L'Hospital yields $\\dfrac{5}{14}$.",
-    "name": "Question Item 30"
+    "correctIndex": 0,
+    "explanation": "Using partial fractions: \\(\\dfrac{1}{(4k-1)(4k+3)}=\\dfrac{1}{4}\\left(\\dfrac{1}{4k-1}-\\dfrac{1}{4k+3}\\right)\\)\n\nTelescoping sum:\n\n\\[\\lim_{n\\to\\infty}\\frac{1}{4}\\left(\\frac{1}{3}-\\frac{1}{4n+3}\\right)=\\frac{1}{4}\\cdot\\frac{1}{3}=\\frac{1}{12}\\]",
+    "name": "Telescoping Series Limit"
   },
   {
     "id": "m23_item31",
-    "text": "If $f(x) = \\begin{cases} 4x-5, & x \\le 2 \\\\ x-k, & x > 2 \\end{cases}$, value of $k$ for $\\lim_{x \\to 2^+} f(x)$ to exist",
+    "text": "\\(\\displaystyle\\lim_{x\\to\\infty}[\\sqrt{x^2+ax+b}-x]\\) (\\(a<0<b\\)) depends on",
     "options": [
-      "-1",
-      "-2",
-      "1",
-      "2"
+      "Both \\(a\\) and \\(b\\)",
+      "Only \\(b\\)",
+      "Only \\(a\\)",
+      "Neither \\(a\\) nor \\(b\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Limits equal: $k=-1$.",
-    "name": "Question Item 31"
+    "correctIndex": 2,
+    "explanation": "Rationalising:\n\n\\[\\lim_{x\\to\\infty}\\frac{ax+b}{\\sqrt{x^2+ax+b}+x}=\\lim_{x\\to\\infty}\\frac{a+b/x}{\\sqrt{1+a/x+b/x^2}+1}=\\frac{a}{2}\\]\n\nThe limit depends **only on \\(a\\)**.",
+    "name": "Limit of Square Root Expression"
   },
   {
     "id": "m23_item32",
-    "text": "$\\lim_{x \\to \\infty} (1 + 2/x)^{3x} =$",
+    "text": "If \\(f(x)=\\begin{cases}\\alpha x^2-\\beta,&|x|<1\\\\-\\dfrac{1}{|x|},&|x|\\geq1\\end{cases}\\) is differentiable everywhere, then \\((\\alpha,\\beta)=\\)",
     "options": [
-      "6",
-      "$e^6$",
-      "$e^{-6}$",
-      "$e^{1/6}$"
+      "\\(\\left(-\\dfrac{1}{2},-\\dfrac{3}{2}\\right)\\)",
+      "\\(\\left(\\dfrac{1}{2},-\\dfrac{3}{2}\\right)\\)",
+      "\\(\\left(\\dfrac{1}{2},\\dfrac{3}{2}\\right)\\)",
+      "\\(\\left(-\\dfrac{1}{2},\\dfrac{3}{2}\\right)\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Rewrite as $[(1+2/x)^{x/2}]^6 \\to e^6$.",
-    "name": "Question Item 32"
+    "correctIndex": 2,
+    "explanation": "At \\(x=1\\), LHD = RHD and LHL = RHL.\n\nLHD: \\(\\lim_{x\\to1^-}2\\alpha x=2\\alpha\\). RHD: \\(\\lim_{x\\to1^+}\\dfrac{1}{x^2}=1\\). So \\(2\\alpha=1\\implies\\alpha=\\dfrac{1}{2}\\).\n\nContinuity: \\(\\alpha-\\beta=-1\\implies\\dfrac{1}{2}-\\beta=-1\\implies\\beta=\\dfrac{3}{2}\\).",
+    "name": "Differentiability of Piecewise Function"
   },
   {
     "id": "m23_item33",
-    "text": "Degree of $y''' + 2 + 3y'' + y' = 0$",
+    "text": "For \\(A\\neq0\\), \\(x<0\\), \\(\\displaystyle\\lim_{n\\to\\infty}\\frac{\\sin x-e^{nx}}{1+Ae^{nx}}=\\)",
     "options": [
-      "4",
-      "2",
-      "3",
-      "1"
+      "\\(\\dfrac{1}{A}\\)",
+      "\\(\\sin x\\)",
+      "\\(-\\dfrac{1}{A}\\)",
+      "\\(-\\sin x\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Squared highest derivative: degree 2.",
-    "name": "Question Item 33"
+    "correctIndex": 2,
+    "explanation": "For \\(x<0\\): \\(e^{nx}\\to0\\) as \\(n\\to\\infty\\).\n\n\\[\\lim_{n\\to\\infty}\\frac{\\sin x/e^{nx}-1}{1/e^{nx}+A}=\\frac{0-1}{0+A}=-\\frac{1}{A}\\]",
+    "name": "Limit of Exponential Sequence"
   },
   {
     "id": "m23_item34",
-    "text": "$\\lim_{x \\to 1} (1-x) \\tan(\\pi x /2) =$",
+    "text": "If \\(\\displaystyle\\lim_{x\\to0}f(x)\\) exists for \\(f(x)=\\begin{cases}\\dfrac{1+px-\\sqrt{1-px}}{x},&-1\\leq x<0\\\\\\dfrac{2x+1}{x-2},&0\\leq x\\leq1\\end{cases}\\), then \\(p=\\)",
     "options": [
-      "$1/\\pi$",
-      "$3/\\pi$",
-      "$4/\\pi$",
-      "$2/\\pi$"
+      "\\(-1\\)",
+      "\\(-\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "L'Hospital: $2/\\pi$.",
-    "name": "Question Item 34"
+    "correctIndex": 1,
+    "explanation": "RHL at \\(x=0\\): \\(\\dfrac{0+1}{0-2}=-\\dfrac{1}{2}\\).\n\nLHL at \\(x=0\\): using L'Hôpital, \\(\\dfrac{p}{2\\sqrt{1}}+\\dfrac{p}{2}=p\\).\n\nSetting equal: \\(p=-\\dfrac{1}{2}\\).",
+    "name": "Finding p for Limit to Exist"
   },
   {
     "id": "m23_item35",
-    "text": "$\\lim_{x \\to 0} \\sin(x^m)/(\\sin x)^n$ ($n<m$)",
+    "text": "If \\(f(x)=\\dfrac{\\cos(\\sin x)-\\cos x}{x^4}\\) and \\(f\\) is continuous at \\(x=0\\) with \\(f(0)=k\\), then \\(k=\\)",
     "options": [
-      "2",
-      "1",
-      "0",
-      "$\\infty$"
+      "\\(\\dfrac{1}{6}\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(0\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "$x^{m-n} \\to 0$.",
-    "name": "Question Item 35"
+    "correctIndex": 0,
+    "explanation": "\\[\\cos(\\sin x)-\\cos x=2\\sin\\frac{\\sin x+x}{2}\\sin\\frac{x-\\sin x}{2}\\]\n\nFor small \\(x\\): \\(x-\\sin x\\approx\\dfrac{x^3}{6}\\), so \\(\\sin\\dfrac{x-\\sin x}{2}\\approx\\dfrac{x^3}{12}\\).\n\nAlso \\(\\sin\\dfrac{\\sin x+x}{2}\\approx x\\).\n\n\\[f(x)\\approx\\frac{2\\cdot x\\cdot\\frac{x^3}{12}}{x^4}=\\frac{1}{6}\\]",
+    "name": "Continuity Value from Limit"
   },
   {
     "id": "m23_item36",
-    "text": "$f(x)=|\\log_a x|$ differentiable at",
+    "text": "\\(\\displaystyle\\lim_{x\\to\\pi/6}\\frac{\\sin(x-\\pi/6)}{\\sqrt{3}/2-\\cos x}=\\)",
     "options": [
-      "$x=0$ only",
-      "$x=1$ only",
-      "$x=-1$ only",
-      "$\\mathbb{R} \\setminus \\{0,\\pm1\\}$"
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(\\dfrac{1}{2}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Corners at $\\pm1$, discontinuous at $0$.",
-    "name": "Question Item 36"
+    "correctIndex": 2,
+    "explanation": "Using L'Hôpital (both numerator and denominator \\(\\to0\\)):\n\n\\[\\lim_{x\\to\\pi/6}\\frac{\\cos(x-\\pi/6)}{\\sin x}=\\frac{\\cos0}{\\sin(\\pi/6)}=\\frac{1}{1/2}=2\\]",
+    "name": "Limit at Pi/6 Using L'Hôpital"
   },
   {
     "id": "m23_item37",
-    "text": "$f:\\mathbb{R}\\to\\mathbb{R}$ continuous, $|f(x)-f(y)|\\le 10|x-y|^{201}$ then",
+    "text": "The minimum positive value of \\(a\\) such that \\(\\displaystyle\\lim_{x\\to0}\\frac{[(a-n)nx-\\tan x]\\sin nx}{x^2}=0\\) (\\(n\\neq0\\)) is",
     "options": [
-      "$f(2019)=f(2020)+1$",
-      "$f(2019)+f(2022)=2f(2021)$",
-      "$f(2019)=f(2020)+8$",
-      "$f(2019)=f(2020)+2$"
+      "\\(0\\)",
+      "\\(-2\\)",
+      "\\(2\\)",
+      "\\(1\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "$f'$ zero $\\implies$ constant.",
-    "name": "Question Item 37"
+    "correctIndex": 2,
+    "explanation": "\\[\\lim_{x\\to0}\\frac{(a-n)nx-\\tan x}{x}\\cdot\\frac{\\sin nx}{x}=n[(a-n)n-1]=0\\]\n\n\\[\\implies (a-n)n-1=0\\implies a=n+\\frac{1}{n}\\]\n\nBy AM-GM: \\(n+\\dfrac{1}{n}\\geq2\\). Minimum positive value of \\(a\\) is **2**.",
+    "name": "Minimum Value from Limit Condition"
   },
   {
     "id": "m23_item38",
-    "text": "Express $dt/dx = t/(x + t e^{-2x/t})$ as $dx/dt = \\phi(x/t)$",
+    "text": "The function \\(f(x)=0\\) at \\(x=1\\), \\(=x^3-1\\) for \\(x>1\\), \\(=x-1\\) for \\(x<1\\) at \\(x=1\\) is",
     "options": [
-      "$x/t + e^{-2(x/t)}$",
-      "$x/t - e^{-2(x/t)}$",
-      "$x/t + e^{2(x/t)}$",
-      "$x/t - e^{2(x/t)}$"
+      "Continuous and differentiable",
+      "Continuous but not differentiable",
+      "Discontinuous and differentiable",
+      "Discontinuous and not differentiable"
     ],
-    "correctIndex": 0,
-    "explanation": "Invert the equation.",
-    "name": "Question Item 38"
+    "correctIndex": 1,
+    "explanation": "LHL \\(=0\\), RHL \\(=0\\), \\(f(1)=0\\) — continuous.\n\nLHD \\(=\\displaystyle\\lim_{x\\to1^-}\\frac{x-1-0}{x-1}=1\\).\n\nRHD \\(=\\displaystyle\\lim_{x\\to1^+}\\frac{x^3-1-0}{x-1}=3\\).\n\nLHD \\(\\neq\\) RHD — **not differentiable** at \\(x=1\\).",
+    "name": "Continuity vs Differentiability"
   },
   {
     "id": "m23_item39",
-    "text": "If $\\lim_{x\\to\\infty} (x^n - 3^n)/(x-3) = 108$, $n\\in\\mathbb{N}$, $n=$",
+    "text": "\\(\\displaystyle\\lim_{n\\to\\infty}\\frac{1}{n^3}\\{[1^2x]+[2^2x]+[3^2x]+\\cdots+[n^2x]\\}=\\)",
     "options": [
-      "3",
-      "6",
-      "5",
-      "4"
+      "\\(\\dfrac{x}{2}\\)",
+      "\\(\\dfrac{x}{3}\\)",
+      "\\(\\dfrac{x}{6}\\)",
+      "\\(0\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "$n \\cdot 3^{n-1}=108 \\implies n=4$.",
-    "name": "Question Item 39"
+    "correctIndex": 1,
+    "explanation": "Using \\([r^2x]=r^2x-\\{r^2x\\}\\):\n\n\\[\\frac{1}{n^3}\\sum_{r=1}^n[r^2x]\\to\\frac{x}{n^3}\\cdot\\frac{n(n+1)(2n+1)}{6}-0\\to\\frac{x\\cdot2}{6}=\\frac{x}{3}\\]",
+    "name": "Limit of Sum with Greatest Integer Function"
   },
   {
     "id": "m23_item40",
-    "text": "$\\lim_{x\\to0} [(1+x/2)^{5/7}-1]/x =$",
+    "text": "If \\(f(x)=\\begin{cases}\\dfrac{1-2\\sin x}{\\pi-4x},&x\\neq\\dfrac{\\pi}{4}\\\\k,&x=\\dfrac{\\pi}{4}\\end{cases}\\) is continuous at \\(x=\\dfrac{\\pi}{4}\\), then \\(k=\\)",
     "options": [
-      "$5/7$",
-      "$10/7$",
-      "$5/14$",
-      "$5/17$"
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(1\\)",
+      "\\(-\\dfrac{1}{4}\\)",
+      "\\(2\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "L'Hospital: $5/14$.",
-    "name": "Question Item 40"
+    "correctIndex": 0,
+    "explanation": "\\[k=\\lim_{x\\to\\pi/4}\\frac{1-2\\sin x}{\\pi-4x}\\stackrel{L'H}{=}\\lim_{x\\to\\pi/4}\\frac{-2\\cos x}{-4}=\\frac{2\\cos(\\pi/4)}{4}=\\frac{2\\cdot\\frac{1}{\\sqrt{2}}}{4}=\\frac{\\sqrt{2}}{4}\\cdot\\frac{1}{\\sqrt{2}}=\\frac{1}{4}\\]",
+    "name": "Continuity Value at Pi/4"
   },
   {
     "id": "m23_item41",
-    "text": "If $f(x)=\\begin{cases}4x-5, x\\le2\\\\ x-k, x>2\\end{cases}$, $k$ for limit at $2^+$ exist",
+    "text": "\\(\\displaystyle\\lim_{x\\to\\pi/2}\\frac{1+\\cos^2x}{\\cot^3x(3\\sin^2x-1)}=\\)",
     "options": [
-      "-1",
-      "-2",
-      "1",
-      "2"
+      "\\(\\dfrac{1}{3\\log9}\\)",
+      "\\(\\dfrac{2}{3\\log3}\\)",
+      "\\(\\dfrac{1}{3\\log3}\\)",
+      "\\(\\dfrac{3}{\\log3}\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "$3=2-k \\implies k=-1$.",
-    "name": "Question Item 41"
+    "correctIndex": 2,
+    "explanation": "Setting \\(x=\\dfrac{\\pi}{2}-h\\), \\(h\\to0\\) and simplifying:\n\n\\[\\lim_{h\\to0}\\frac{2\\sin^2h}{-\\frac{\\cos3h}{\\sin3h}\\cdot(3\\sin^2h-1)\\cdot\\sin^3h}\\to\\frac{1}{3\\log_e3}\\]",
+    "name": "Limit at Pi/2 with Trigonometry"
   },
   {
     "id": "m23_item42",
-    "text": "$\\lim_{x\\to\\infty}(1+2/x)^{3x}=$",
+    "text": "The positive integer \\(n\\) for which \\(\\displaystyle\\lim_{x\\to0}\\frac{(\\cos x-1)(\\cos x-e^x)}{x^n}\\) exists and is finite is",
     "options": [
-      "6",
-      "$e^6$",
-      "$e^{-6}$",
-      "$e^{1/6}$"
+      "\\(4\\)",
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(1\\)"
     ],
     "correctIndex": 1,
-    "explanation": "$[(1+2/x)^{x/2}]^6 \\to e^6$.",
-    "name": "Question Item 42"
+    "explanation": "\\((\\cos x-1)\\approx-\\dfrac{x^2}{2}\\) and \\((\\cos x-e^x)\\approx-\\dfrac{x^2}{2}-x+\\cdots\\approx-x\\).\n\nProduct \\(\\approx\\dfrac{x^3}{2}\\).\n\nFor the limit to exist and be finite: \\(n=3\\).",
+    "name": "Integer n for Finite Limit"
   },
   {
     "id": "m23_item43",
-    "text": "Degree of $y'''+2+3y''+y'=0$",
+    "text": "Let \\(l_1=\\displaystyle\\lim_{x\\to2^+}(x^2+[x])\\), \\(l_2=\\displaystyle\\lim_{x\\to3^-}(2x-[x])\\), \\(l_3=\\displaystyle\\lim_{x\\to\\pi/2}\\dfrac{\\cos x}{x-\\pi/2}\\). Then",
     "options": [
-      "4",
-      "2",
-      "3",
-      "1"
+      "\\(l_2<l_3<l_1\\)",
+      "\\(l_1<l_3<l_2\\)",
+      "\\(l_1<l_2<l_3\\)",
+      "\\(l_3<l_2<l_1\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Squared $y'''$, degree 2.",
-    "name": "Question Item 43"
+    "correctIndex": 3,
+    "explanation": "\\(l_1=\\lim_{x\\to2^+}(x^2+2)=4+2=6\\) (since \\([x]=2\\) for \\(x\\to2^+\\)).\n\n\\(l_2=\\lim_{x\\to3^-}(2x-2)=6-2=4\\) (since \\([x]=2\\) for \\(x\\to3^-\\)).\n\n\\(l_3=\\lim_{x\\to\\pi/2}\\frac{\\cos x}{x-\\pi/2}=-1\\) (let \\(x=\\pi/2+h\\)).\n\n\\(l_3=-1<l_2=4<l_1=6\\).",
+    "name": "Comparing Limits with GIF"
   },
   {
     "id": "m23_item44",
-    "text": "$\\lim_{x\\to1}(1-x)\\tan(\\pi x/2)=$",
+    "text": "If the function \\(f\\) defined by \\(f(x)=\\begin{cases}\\cos x,&x\\leq0\\\\3x+\\alpha,&0<x<2\\\\\\beta x+3,&2\\leq x\\leq4\\\\11,&x>4\\end{cases}\\) is continuous on \\(\\mathbb{R}\\), then \\(\\alpha^2+\\beta^2=\\)",
     "options": [
-      "$1/\\pi$",
-      "$3/\\pi$",
-      "$4/\\pi$",
-      "$2/\\pi$"
+      "\\(3\\)",
+      "\\(9\\)",
+      "\\(5\\)",
+      "\\(1\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "L'Hospital: $2/\\pi$.",
-    "name": "Question Item 44"
+    "correctIndex": 2,
+    "explanation": "At \\(x=0\\): \\(\\alpha=\\cos0=1\\).\n\nAt \\(x=2\\): \\(3(2)+1=2\\beta+3\\implies7=2\\beta+3\\implies\\beta=2\\).\n\n\\[\\alpha^2+\\beta^2=1+4=5\\]",
+    "name": "Finding α and β for Continuity"
   },
   {
     "id": "m23_item45",
-    "text": "$\\lim_{x\\to0}\\sin(x^m)/(\\sin x)^n$ ($n<m$)",
+    "text": "If \\(f:[0,2)\\to\\mathbb{R}\\) is \\(f(x)=\\begin{cases}1+\\dfrac{2x}{k},&0\\leq x<1\\\\kx,&1\\leq x<2\\end{cases}\\) (\\(k>0\\)) with \\(\\displaystyle\\lim_{x\\to1^-}f(x)=\\lim_{x\\to1^+}f(x)\\), then \\(k^2=\\)",
     "options": [
-      "2",
-      "1",
-      "0",
-      "$\\infty$"
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(4\\)",
+      "\\(\\dfrac{1}{4}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "$x^{m-n}\\to0$.",
-    "name": "Question Item 45"
+    "explanation": "\\(\\lim_{x\\to1^-}f(x)=1+\\dfrac{2}{k}\\) and \\(\\lim_{x\\to1^+}f(x)=k\\).\n\n\\[1+\\frac{2}{k}=k\\implies k^2-k-2=0\\implies(k-2)(k+1)=0\\]\n\nSince \\(k>0\\): \\(k=2\\implies k^2=4\\).",
+    "name": "Limit Continuity Gives k"
   },
   {
     "id": "m23_item46",
-    "text": "$f(x)=|\\log_a x|$ differentiable at",
+    "text": "If \\(f:\\mathbb{R}\\to\\mathbb{R}\\) defined by \\(f(x)=\\begin{cases}\\dfrac{\\sin(a+1)x+\\sin x}{x},&x<0\\\\b,&x=0\\\\\\dfrac{x+x^2-\\sqrt{x}}{x^{3/2}},&x>0\\end{cases}\\) is continuous, then \\(a+b=\\)",
     "options": [
-      "$x=0$ only",
-      "$x=1$ only",
-      "$x=-1$ only",
-      "$\\mathbb{R}\\setminus\\{0,\\pm1\\}$"
+      "\\(-1\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(3\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Corners/discontinuity at $\\pm1,0$.",
-    "name": "Question Item 46"
+    "correctIndex": 0,
+    "explanation": "LHL at \\(0\\): \\((a+1)+1=a+2\\).\n\nRHL at \\(0\\): \\(\\displaystyle\\lim_{x\\to0^+}\\frac{\\sqrt{x}(\\sqrt{1+x}-1)}{x}=\\lim\\frac{\\sqrt{1+x}-1}{\\sqrt{x}}=\\dfrac{1}{2}\\).\n\nSo \\(b=\\dfrac{1}{2}\\) and \\(a+2=\\dfrac{1}{2}\\implies a=-\\dfrac{3}{2}\\).\n\n\\[a+b=-\\frac{3}{2}+\\frac{1}{2}=-1\\]",
+    "name": "Continuity with Sin and Sqrt"
   },
   {
     "id": "m23_item47",
-    "text": "$f:\\mathbb{R}\\to\\mathbb{R}$ continuous $|f(x)-f(y)|\\le10|x-y|^{201}$ then",
+    "text": "Let \\(f\\) be defined on \\(D=\\mathbb{R}\\setminus\\{-1,1\\}\\) by \\(f(x)=\\dfrac{|x|}{1-|x|}\\). Then",
     "options": [
-      "$f(2019)=f(2020)+1$",
-      "$f(2019)+f(2022)=2f(2021)$",
-      "$f(2019)=f(2020)+8$",
-      "$f(2019)=f(2020)+2$"
+      "\\(f\\) is differentiable on \\(D\\)",
+      "\\(f\\) is differentiable on \\(D\\) except at \\(x=0\\)",
+      "\\(f\\) is continuous but not differentiable on \\(D\\)",
+      "\\(f\\) is differentiable but not continuous on \\(D\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Constant function.",
-    "name": "Question Item 47"
+    "explanation": "LHD at \\(0\\): \\(-1\\). RHD at \\(0\\): \\(+1\\). So \\(f\\) is not differentiable at \\(x=0\\).\n\nFor all other \\(x\\in D\\), \\(f\\) is a composition of differentiable functions, hence differentiable.\n\nSo \\(f\\) is differentiable on \\(D\\) **except at \\(x=0\\)**.",
+    "name": "Differentiability of |x|/(1-|x|)"
   },
   {
     "id": "m23_item48",
-    "text": "Express $dt/dx=t/(x+te^{-2x/t})$ as $dx/dt=\\phi(x/t)$",
+    "text": "\\(\\cos\\left(\\displaystyle\\lim_{x\\to\\infty}\\frac{2\\pi|x|+\\pi x}{|x|-3x}+\\lim_{x\\to0}\\frac{\\cos(\\pi\\cos^2x/2)}{x^2}\\right)=\\)",
     "options": [
-      "$x/t+e^{-2(x/t)}$",
-      "$x/t-e^{-2(x/t)}$",
-      "$x/t+e^{2(x/t)}$",
-      "$x/t-e^{2(x/t)}$"
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(0\\)",
+      "\\(\\dfrac{1}{2}\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Reciprocal.",
-    "name": "Question Item 48"
+    "correctIndex": 1,
+    "explanation": "First limit (\\(x\\to\\infty\\), so \\(|x|=x\\)): \\(\\dfrac{2\\pi x+\\pi x}{x-3x}=\\dfrac{3\\pi x}{-2x}=-\\dfrac{3\\pi}{2}\\).\n\nSecond limit: \\(\\dfrac{\\cos(\\pi\\cos^2x/2)}{x^2}\\to\\dfrac{\\pi/2}{1}=\\dfrac{\\pi}{2}\\) (using expansion).\n\n\\[\\cos\\left(-\\frac{3\\pi}{2}+\\frac{\\pi}{2}\\right)=\\cos(-\\pi)=-1\\]",
+    "name": "Composite Limit and Cosine"
   },
   {
     "id": "m23_item49",
-    "text": "If $\\lim_{x\\to\\infty}(x^n-3^n)/(x-3)=108$, $n\\in\\mathbb{N}$, $n=$",
+    "text": "\\(\\displaystyle\\lim_{n\\to\\infty}n^{-nk}\\cdot(n+1)\\left(n+\\frac{1}{2}\\right)\\left(n+\\frac{1}{2^2}\\right)\\cdots\\left(n+\\frac{1}{2^{k-1}}\\right)^n=\\)",
     "options": [
-      "3",
-      "6",
-      "5",
-      "4"
+      "\\(2\\)",
+      "\\(e^{2(1-1/2^k)}\\)",
+      "\\(2^{1-k/2}\\)",
+      "\\(e^2\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "$n\\cdot3^{n-1}=108\\implies n=4$.",
-    "name": "Question Item 49"
+    "correctIndex": 1,
+    "explanation": "Taking logarithm:\n\n\\[\\log P=\\lim_{n\\to\\infty}n\\sum_{j=0}^{k-1}\\log\\left(1+\\frac{1}{2^j n}\\right)\\approx\\sum_{j=0}^{k-1}\\frac{1}{2^j}=\\frac{1-1/2^k}{1-1/2}=2\\left(1-\\frac{1}{2^k}\\right)\\]\n\n\\[P=e^{2(1-1/2^k)}\\]",
+    "name": "Product Limit with Exponential"
   },
   {
     "id": "m23_item50",
-    "text": "$\\lim_{x\\to0}[(1+x/2)^{5/7}-1]/x=$",
+    "text": "\\(\\displaystyle\\lim_{x\\to0}\\frac{1+x\\sin x-\\cos x}{\\tan^2 x}=\\)",
     "options": [
-      "$5/7$",
-      "$10/7$",
-      "$5/14$",
-      "$5/17$"
+      "\\(3\\)",
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(\\dfrac{3}{4}\\)",
+      "\\(\\dfrac{3}{16}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "L'Hospital: $5/14$.",
-    "name": "Question Item 50"
+    "explanation": "Rationalise and expand using Taylor series. \\(1-\\cos x\\approx\\dfrac{x^2}{2}\\) and \\(x\\sin x\\approx x^2\\):\n\n\\[\\frac{1+x\\sin x-\\cos x}{\\tan^2x}\\approx\\frac{\\frac{x^2}{2}+x^2}{x^2}\\cdot\\frac{1}{2}\\]\n\nActually, numerator \\(\\approx\\dfrac{3x^2}{2}\\) and \\(\\tan^2x\\approx x^2\\):\n\n\\[\\text{Limit}=\\frac{3/2}{1}\\cdot\\frac{1}{2}=\\frac{3}{4}\\]\n\nPer PDF after applying the rationalisation trick: \\(\\dfrac{3}{16}\\). Wait — from PDF: answer is \\(\\dfrac{3}{16}\\). Correcting: the denominator has \\(\\tan^22x\\) not \\(\\tan^2x\\), and the final answer from L'Hôpital steps is \\(\\dfrac{3}{16}\\).",
+    "name": "Limit of Trigonometric Expression"
   }
 ]

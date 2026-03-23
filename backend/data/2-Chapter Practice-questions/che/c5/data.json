@@ -9,12 +9,12 @@
       "Frenkel defect"
     ],
     "correctIndex": 0,
-    "explanation": "When a metal contains **extra cations (metal ions) in the interstitial sites** of its crystal lattice, the defect observed is called **metal excess defect**.\n\nThis is a **non-stoichiometric defect** because the ratio of cations to anions deviates from the ideal formula.\n\nTo maintain electrical neutrality, an equal number of **free electrons** are also trapped in adjacent interstitial sites — these electrons are responsible for the colour and electrical conductivity observed in crystals with this defect.\n\n**Example:** NaCl heated in sodium vapour — extra Na⁺ ions occupy interstitial sites, and electrons trap in anion vacancies (F-centres), giving the crystal a yellow colour.",
-    "name": "Metal Excess Defect – Extra Cations at Interstitial Sites"
+    "explanation": "When extra metal cations occupy **interstitial positions** (spaces between regular lattice sites) beyond the stoichiometric ratio, the crystal has a **metal excess defect**. This is a non-stoichiometric defect — the composition deviates from the ideal formula.\n\nThe extra cations in interstitial sites are balanced by electrons trapped in nearby interstitial spaces (F-centres), which is why such materials often appear coloured and may conduct electricity.\n\nNote: Frenkel defect involves an ion simply *moving* from a lattice site to an interstitial site (no extra atoms). Schottky defect involves removal of ion pairs, creating vacancies.",
+    "name": "Metal Excess Defect — Interstitial Cations"
   },
   {
     "id": "c5_item2",
-    "text": "Calculate the coordination number of Na⁺ in NaCl crystal, given the radius of Na⁺ and Cl⁻ are 95 pm and 181 pm respectively.",
+    "text": "Calculate the coordination number of Na⁺ in NaCl crystal, given radius of Na⁺ = 95 pm and Cl⁻ = 181 pm.",
     "options": [
       "8",
       "4",
@@ -22,8 +22,8 @@
       "12"
     ],
     "correctIndex": 2,
-    "explanation": "The coordination number of an ion in an ionic crystal is determined by the **radius ratio** \\(\\left(\\dfrac{r_+}{r_-}\\right)\\):\n\n$$\\frac{r_{\\text{Na}^+}}{r_{\\text{Cl}^-}} = \\frac{95}{181} = 0.5248$$\n\nRadius ratio ranges and corresponding coordination numbers:\n\n| Radius Ratio | Coordination Number | Geometry |\n|---|---|---|\n| 0.155 – 0.225 | 3 | Triangular |\n| 0.225 – 0.414 | 4 | Tetrahedral |\n| **0.414 – 0.732** | **6** | **Octahedral** |\n| 0.732 – 1.000 | 8 | Cubic |\n\nSince 0.5248 lies in the range **0.414 – 0.732**, the coordination number of Na⁺ in NaCl is **6** (octahedral arrangement).",
-    "name": "Coordination Number of Na⁺ in NaCl using Radius Ratio"
+    "explanation": "The coordination number is determined by the **radius ratio** \\(\\dfrac{r^+}{r^-}\\):\n\n\\[\\frac{r_{\\text{Na}^+}}{r_{\\text{Cl}^-}} = \\frac{95}{181} = 0.5248\\]\n\nRadius ratio ranges and corresponding coordination numbers:\n- 0.155–0.225 → 3 (triangular)\n- 0.225–0.414 → 4 (tetrahedral)\n- **0.414–0.732 → 6 (octahedral)** ✓\n- 0.732–1.000 → 8 (cubic)\n\nSince 0.5248 lies in 0.414–0.732, the coordination number of Na⁺ in NaCl = **6**.",
+    "name": "Coordination Number of Na⁺ in NaCl"
   },
   {
     "id": "c5_item3",
@@ -35,12 +35,12 @@
       "Both Frenkel and Schottky defects"
     ],
     "correctIndex": 1,
-    "explanation": "When CaCl₂ is added to AgCl:\n\n- Each Ca²⁺ ion replaces **two** Ag⁺ ions in the lattice (to balance charge: Ca²⁺ replaces one Ag⁺ and leaves one cation vacancy).\n- One mole of Ca²⁺ introduced → one mole of Ag⁺ vacancy created.\n\nThis results in **cation vacancies**, which is characteristic of a **Schottky defect**.\n\nThis is an example of **impurity-induced** (extrinsic) Schottky defect. The density of the crystal **decreases** because lattice sites become vacant.\n\nFrenkel defect is **not** introduced here because Frenkel defect involves an ion moving to an interstitial site (not a simple vacancy).",
-    "name": "Defect Introduced when CaCl₂ is Added to AgCl"
+    "explanation": "When Ca²⁺ (charge = +2) replaces Ag⁺ (charge = +1) in the AgCl lattice:\n- Each Ca²⁺ occupies **one** cation site but has twice the charge.\n- To maintain electrical neutrality, **one Ag⁺ vacancy** must be created for each Ca²⁺ introduced.\n\nThis vacancy in the cation sublattice is a **Schottky-type defect** (impurity defect creating cation vacancies). It is NOT Frenkel defect because no ion moves to an interstitial site.\n\nThis is also an example of an **impurity defect** or **substitutional defect** that introduces cation vacancies.",
+    "name": "Defect Introduced by Adding CaCl₂ to AgCl"
   },
   {
     "id": "c5_item4",
-    "text": "A metallic solid undergoes Frenkel defect. Its original mass, volume and density are \\(M_0\\), \\(V_0\\) and \\(D_0\\) respectively. After the Frenkel defect, the mass, volume and density are M, V and D respectively. The correct variation is:",
+    "text": "A metallic solid undergoes a Frenkel defect. Its original mass, volume and density are M₀, V₀ and D₀ respectively. After the Frenkel defect the mass, volume and density are M, V and D respectively. The variations are:",
     "options": [
       "\\(M = M_0,\\ V = V_0,\\ D = D_0\\)",
       "\\(M < M_0,\\ V < V_0,\\ D < D_0\\)",
@@ -48,8 +48,8 @@
       "\\(M = M_0,\\ V < V_0,\\ D > D_0\\)"
     ],
     "correctIndex": 0,
-    "explanation": "In a **Frenkel defect**:\n- An ion (usually the smaller cation) **leaves its normal lattice site** and occupies a nearby **interstitial position** within the same crystal.\n- **No ion is lost** from the crystal — it simply moves to a different position.\n\nConsequences:\n- **Mass (M)**: unchanged, as no atom leaves the solid → \\(M = M_0\\)\n- **Volume (V)**: essentially unchanged (slight changes are negligible) → \\(V = V_0\\)\n- **Density (D)**: since both mass and volume are unchanged → \\(D = D_0\\)\n\nThis distinguishes Frenkel defect from Schottky defect, where actual ions are lost from the lattice, causing density to **decrease**.",
-    "name": "Effect of Frenkel Defect on Mass, Volume and Density"
+    "explanation": "In a **Frenkel defect**, an ion (usually a smaller cation) **leaves its regular lattice site** and moves to an **interstitial position within the same crystal**. No atom is added to or removed from the crystal — the ion simply relocates internally.\n\nTherefore:\n- **Mass** remains unchanged → \\(M = M_0\\)\n- **Volume** remains unchanged (the ion stays within the crystal) → \\(V = V_0\\)\n- **Density** = Mass/Volume remains unchanged → \\(D = D_0\\)\n\nThis contrasts with Schottky defect, where ions leave the crystal, decreasing density.",
+    "name": "Frenkel Defect — Effect on Mass, Volume, Density"
   },
   {
     "id": "c5_item5",
@@ -61,25 +61,25 @@
       "Good conductor of electricity"
     ],
     "correctIndex": 0,
-    "explanation": "**Molecular solids** are composed of molecules held together by **weak intermolecular forces** (van der Waals forces, dipole-dipole interactions, or hydrogen bonds).\n\nProperties:\n- **Soft** to touch (weak intermolecular forces)\n- **Low melting points** (weak forces easily broken)\n- **Volatile** — they readily form vapour at room temperature ✓\n- **Poor conductors** of electricity (no free ions or electrons)\n- **Non-conductors** of electricity (except some aromatic compounds that conduct via conjugated electrons)\n\nExamples: ice (H₂O), dry ice (CO₂), iodine (I₂), naphthalene.\n\n**Option (a) is correct** — volatility is a characteristic property of molecular solids.",
+    "explanation": "**Molecular solids** consist of molecules held together by **weak van der Waals forces** (London dispersion, dipole-dipole, or hydrogen bonding). Because these intermolecular forces are weak:\n\n- They are **soft** (not hard or brittle in the ionic sense)\n- They have **low melting and boiling points**\n- They are **volatile** — they readily vaporise at relatively low temperatures ✓\n- They are **poor electrical conductors** (no free ions or electrons)\n\nExamples: ice (H₂O), dry ice (CO₂), naphthalene.",
     "name": "Physical Property of Molecular Solids"
   },
   {
     "id": "c5_item6",
-    "text": "Analysis shows that nickel oxide has the formula \\(\\text{Ni}_{0.98}\\text{O}_{1.00}\\). The fractions of Ni²⁺ and Ni³⁺ ions in the crystal are:",
+    "text": "Analysis shows that nickel oxide has the formula Ni₀.₉₈O₁.₀₀. The fractions of Ni²⁺ and Ni³⁺ ions in the crystal are:",
     "options": [
-      "\\(\\text{Ni}^{2+} = 98\\%\\) and \\(\\text{Ni}^{3+} = 2\\%\\)",
-      "\\(\\text{Ni}^{2+} = 2\\%\\) and \\(\\text{Ni}^{3+} = 98\\%\\)",
-      "\\(\\text{Ni}^{2+} = 4\\%\\) and \\(\\text{Ni}^{3+} = 96\\%\\)",
-      "\\(\\text{Ni}^{2+} = 96\\%\\) and \\(\\text{Ni}^{3+} = 4\\%\\)"
+      "Ni²⁺ = 98% and Ni³⁺ = 2%",
+      "Ni²⁺ = 2% and Ni³⁺ = 98%",
+      "Ni²⁺ = 4% and Ni³⁺ = 96%",
+      "Ni²⁺ = 96% and Ni³⁺ = 4%"
     ],
     "correctIndex": 3,
-    "explanation": "The formula \\(\\text{Ni}_{0.98}\\text{O}_{1.00}\\) means there are **98 Ni ions** for every **100 oxide (O²⁻) ions**.\n\nLet \\(x\\) = number of Ni²⁺ ions\nThen \\((98 - x)\\) = number of Ni³⁺ ions\n\n**Charge balance** (total positive charge = total negative charge):\n$$2x + 3(98 - x) = 100 \\times 2$$\n$$2x + 294 - 3x = 200$$\n$$-x = -94$$\n$$x = 94$$\n\nSo:\n- Ni²⁺ = 94 out of 98 → \\(\\dfrac{94}{98} \\times 100 \\approx \\mathbf{96\\%}\\)\n- Ni³⁺ = 4 out of 98 → \\(\\dfrac{4}{98} \\times 100 \\approx \\mathbf{4\\%}\\)",
-    "name": "Fraction of Ni²⁺ and Ni³⁺ in Non-Stoichiometric NiO"
+    "explanation": "From the formula Ni₀.₉₈O₁.₀₀: there are **98 Ni ions** for every **100 O²⁻ ions**.\n\nLet \\(x\\) = number of Ni²⁺ ions → \\((98 - x)\\) = number of Ni³⁺ ions.\n\nFor electrical neutrality:\n\\[2x + 3(98 - x) = 2 \\times 100\\]\n\\[2x + 294 - 3x = 200\\]\n\\[-x = -94 \\Rightarrow x = 94\\]\n\nFractions:\n\\[\\text{Ni}^{2+} = \\frac{94}{98} \\approx 96\\%\\]\n\\[\\text{Ni}^{3+} = \\frac{4}{98} \\approx 4\\%\\]\n\nThis is a **metal deficiency defect** — fewer Ni atoms than the stoichiometric ratio, with some Ni²⁺ oxidised to Ni³⁺ to maintain neutrality.",
+    "name": "Non-Stoichiometric Defect — Ni Oxidation States"
   },
   {
     "id": "c5_item7",
-    "text": "The correct statement among the following regarding defects in solids is:\n\n(i) Frenkel defect is favoured by a small difference in the sizes of cation and anion.\n(ii) Frenkel defect is a metal excess defect.\n(iii) Trapping of electrons in the lattice leads to formation of F-centres.\n(iv) Schottky defect has no effect on the physical properties of solids.",
+    "text": "Which of the following statements about defects in solids is correct?\n\n(i) Frenkel defect is favoured by a small difference in sizes of cation and anion.\n(ii) Frenkel defect is a metal excess defect.\n(iii) Trapping of an electron in the lattice leads to formation of an F-centre.\n(iv) Schottky defect has no effect on the physical properties of solids.",
     "options": [
       "(i)",
       "(ii)",
@@ -87,8 +87,8 @@
       "(iv)"
     ],
     "correctIndex": 2,
-    "explanation": "**Statement (iii) is correct.**\n\nAn **F-centre** (Farbe centre, from German for 'colour') is a type of point defect in which:\n- An **anion vacancy** in the crystal lattice is occupied by **one or more unpaired electrons**.\n- These trapped electrons absorb visible light and re-emit it, causing the crystal to appear coloured.\n\nFor example, when NaCl is heated in sodium vapour, Na⁺ ions occupy interstitial sites and electrons get trapped in Cl⁻ vacancies, giving NaCl a yellow colour.\n\nWhy others are wrong:\n- **(i) Incorrect**: Frenkel defect is favoured by a **large** difference in ion sizes (small cation, large anion) — the small cation can easily move into the interstitial space.\n- **(ii) Incorrect**: Frenkel defect is an **ion displacement** defect (stoichiometry unchanged), not a metal excess defect.\n- **(iv) Incorrect**: Schottky defect **does** affect physical properties — it **decreases density** of the crystal.",
-    "name": "Correct Statement about Crystal Defects"
+    "explanation": "Checking each statement:\n\n- **(i) Wrong:** Frenkel defect is favoured by a **large difference** in sizes of cation and anion. The smaller cation can fit into an interstitial site when there is a large size difference (e.g., AgBr, AgCl, ZnS).\n\n- **(ii) Wrong:** Frenkel defect is a **stoichiometric defect** — the overall composition does not change. Metal excess defect is a non-stoichiometric defect.\n\n- **(iii) Correct:** An **F-centre** (Farbe centre, meaning colour centre) forms when an electron is trapped in an **anionic vacancy**. The trapped electron absorbs visible light, giving the crystal a characteristic colour. ✓\n\n- **(iv) Wrong:** Schottky defect creates vacancies that **decrease the density** of the crystal — a significant physical property change.",
+    "name": "Correct Statement About Crystal Defects"
   },
   {
     "id": "c5_item8",
@@ -100,64 +100,64 @@
       "\\(\\frac{1}{8}\\) of tetrahedral voids and \\(\\frac{1}{4}\\) of octahedral voids"
     ],
     "correctIndex": 3,
-    "explanation": "In an **inverse spinel** structure with formula \\(B(AB)O_4\\):\n\n- O²⁻ anions form an **fcc (ccp) lattice**.\n- For N oxygen atoms: **N octahedral voids** and **2N tetrahedral voids** are present.\n\nOccupation in inverse spinel:\n- Divalent metal ions (A²⁺): occupy **\\(\\frac{1}{8}\\)** of tetrahedral voids\n- Trivalent metal ions (B³⁺): split between:\n  - **\\(\\frac{1}{8}\\)** of tetrahedral voids (this combines with A²⁺ share)\n  - **\\(\\frac{1}{4}\\)** of octahedral voids\n\nSo overall:\n- Tetrahedral voids occupied = **\\(\\frac{1}{8}\\)**\n- Octahedral voids occupied = **\\(\\frac{1}{4}\\)**",
-    "name": "Fraction of Voids Occupied in Inverse Spinel"
+    "explanation": "In an **inverse spinel** structure (formula B(AB)O₄):\n- O²⁻ anions form a **face-centred cubic (fcc)** close-packed arrangement.\n- Divalent cations (A²⁺) occupy **\\(\\frac{1}{8}\\)** of the tetrahedral voids.\n- Trivalent cations (B³⁺) are distributed between the remaining \\(\\frac{1}{8}\\) tetrahedral voids AND **\\(\\frac{1}{4}\\)** of the octahedral voids.\n\nTotal void occupancy: \\(\\frac{1}{8}\\) tetrahedral + \\(\\frac{1}{4}\\) octahedral.",
+    "name": "Void Occupancy in Inverse Spinel Structure"
   },
   {
     "id": "c5_item9",
-    "text": "Copper (atomic mass = 63.5 u) has an fcc unit cell structure with edge length \\(x\\) Å at T(K). What is the approximate density of Cu in g cm⁻³?\n(\\(N_A = 6.0 \\times 10^{23}\\) mol⁻¹)",
+    "text": "Copper (atomic mass = 63.5 u) has an fcc unit cell structure with edge length \\(x\\) Å at T(K). The approximate density of Cu in g cm⁻³ is: (\\(N_A = 6.0 \\times 10^{23}\\) mol⁻¹)",
     "options": [
       "\\(\\dfrac{42.3}{x^3}\\)",
-      "\\(\\dfrac{423}{x^3}\\) (with x in Å)",
+      "\\(\\dfrac{4.23}{x^3}\\)",
       "\\(\\dfrac{423}{x^3}\\)",
       "\\(\\dfrac{212}{x^3}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "For an fcc unit cell, the number of atoms per unit cell \\(Z = 4\\).\n\nThe density formula is:\n$$d = \\frac{Z \\times M}{N_A \\times a^3}$$\n\nwhere \\(a = x\\) Å \\(= x \\times 10^{-8}\\) cm, \\(M = 63.5\\) g/mol, \\(N_A = 6.023 \\times 10^{23}\\)\n\n$$d = \\frac{4 \\times 63.5}{6.023 \\times 10^{23} \\times (x \\times 10^{-8})^3}$$\n\n$$= \\frac{254}{6.023 \\times 10^{23} \\times x^3 \\times 10^{-24}}$$\n\n$$= \\frac{254}{6.023 \\times x^3 \\times 10^{-1}} = \\frac{254}{0.6023 \\times x^3} \\approx \\frac{423}{x^3} \\text{ g cm}^{-3}$$",
-    "name": "Density of Copper fcc Unit Cell"
+    "explanation": "Density formula for a unit cell:\n\\[d = \\frac{Z \\times M}{a^3 \\times N_A}\\]\n\nFor **fcc**: \\(Z = 4\\), \\(M = 63.5\\) g/mol, \\(a = x\\) Å \\(= x \\times 10^{-8}\\) cm\n\n\\[d = \\frac{4 \\times 63.5}{(x \\times 10^{-8})^3 \\times 6.0 \\times 10^{23}}\\]\n\n\\[= \\frac{254}{x^3 \\times 10^{-24} \\times 6.0 \\times 10^{23}} = \\frac{254}{x^3 \\times 0.6} = \\frac{423.3}{x^3} \\approx \\frac{423}{x^3}\\]",
+    "name": "Density of Cu fcc Unit Cell"
   },
   {
     "id": "c5_item10",
-    "text": "Which one of the following statements is **not** correct?",
+    "text": "Which one of the following statements is NOT correct?",
     "options": [
       "Schottky defect in ionic solids does not change the density of the crystal",
       "Packing efficiency is the percentage of total space filled by the particles",
-      "In body centred cubic unit cell, the relationship between atomic radius (r) and edge length (a) is \\(r = \\dfrac{\\sqrt{3}}{4}a\\)",
+      "In a body-centred cubic unit cell, the relationship between atomic radius \\(r\\) and edge length \\(a\\) is \\(r = \\dfrac{\\sqrt{3}}{4}a\\)",
       "Photovoltaic cell is used for conversion of light energy into electrical energy"
     ],
     "correctIndex": 0,
-    "explanation": "**Statement (a) is incorrect.**\n\nIn a **Schottky defect**, equal numbers of cations and anions **leave the crystal lattice** and migrate to the surface, creating lattice vacancies. Since lattice sites become empty:\n- The **number of atoms per unit cell decreases**.\n- The **mass decreases** while volume remains approximately constant.\n- Therefore, **density decreases**.\n\nThe other statements are correct:\n- **(b)**: Packing efficiency = \\(\\dfrac{\\text{Volume of atoms in unit cell}}{\\text{Total volume of unit cell}} \\times 100\\) ✓\n- **(c)**: In bcc: body diagonal \\(= 4r = \\sqrt{3}\\,a\\) → \\(r = \\dfrac{\\sqrt{3}}{4}a\\) ✓\n- **(d)**: Photovoltaic cells (solar cells) convert light → electrical energy ✓",
-    "name": "Incorrect Statement about Solid State"
+    "explanation": "Checking each statement:\n\n- **(a) INCORRECT — this is the answer:** Schottky defect creates vacancies by **removing paired ions** from the lattice. Since mass decreases (ions leave) while volume stays approximately the same, **density decreases**. The statement that Schottky defect does NOT change density is **wrong**.\n\n- **(b) Correct:** Packing efficiency = \\(\\frac{\\text{Volume occupied by atoms}}{\\text{Total unit cell volume}} \\times 100\\%\\) ✓\n\n- **(c) Correct:** In bcc, atoms touch along the body diagonal: \\(4r = \\sqrt{3}\\,a \\Rightarrow r = \\frac{\\sqrt{3}}{4}a\\) ✓\n\n- **(d) Correct:** Photovoltaic (solar) cells convert light energy into electrical energy ✓",
+    "name": "Incorrect Statement — Solid State"
   },
   {
     "id": "c5_item11",
-    "text": "If the radius of an atom forming a body centred cubic (bcc) unit cell is 173.2 pm, the volume of the unit cell in cm³ is:",
+    "text": "If the radius of an atom forming a body-centred cubic (bcc) unit cell is 173.2 pm, the volume of the unit cell in cm³ is approximately:",
     "options": [
       "\\(3.12 \\times 10^{-23}\\) cm³",
       "\\(6.4 \\times 10^{-24}\\) cm³",
       "\\(3.2 \\times 10^{-24}\\) cm³",
-      "\\(2.13 \\times 10^{-23}\\) cm³"
+      "\\(6.4 \\times 10^{-23}\\) cm³"
     ],
-    "correctIndex": 1,
-    "explanation": "For a bcc structure, the relationship between edge length \\(a\\) and atomic radius \\(r\\) is:\n$$\\sqrt{3}\\,a = 4r \\Rightarrow a = \\frac{4r}{\\sqrt{3}}$$\n\nGiven: \\(r = 173.2\\) pm \\(= 173.2 \\times 10^{-10}\\) cm\n\n$$a = \\frac{4 \\times 173.2 \\times 10^{-10}}{1.732} = \\frac{692.8 \\times 10^{-10}}{1.732} = 400 \\times 10^{-10} \\text{ cm}$$\n\nVolume of unit cell:\n$$V = a^3 = (400 \\times 10^{-10})^3 = (4 \\times 10^{-8})^3 = 64 \\times 10^{-24} = 6.4 \\times 10^{-23} \\text{ cm}^3$$\n\nSo \\(V = 6.4 \\times 10^{-23}\\) cm³.",
-    "name": "Volume of BCC Unit Cell from Atomic Radius"
+    "correctIndex": 3,
+    "explanation": "In a **bcc** structure, atoms touch along the body diagonal:\n\\[4r = \\sqrt{3}\\,a \\Rightarrow a = \\frac{4r}{\\sqrt{3}} = \\frac{4 \\times 173.2}{1.732} = \\frac{692.8}{1.732} \\approx 400 \\text{ pm}\\]\n\n\\[a = 400 \\text{ pm} = 400 \\times 10^{-10} \\text{ cm}\\]\n\n\\[V = a^3 = (400 \\times 10^{-10})^3 = 64 \\times 10^{6} \\times 10^{-30} = 6.4 \\times 10^{-23} \\text{ cm}^3\\]",
+    "name": "Volume of bcc Unit Cell from Atomic Radius"
   },
   {
     "id": "c5_item12",
-    "text": "A compound is formed from elements X and Y. The atoms of Y (anions) form a ccp lattice. The atoms of X (cations) occupy half of the octahedral voids and half of the tetrahedral voids. What is the formula of the compound?",
+    "text": "A compound is formed from elements X and Y. Atoms of Y (anions) form a ccp lattice. Atoms of X (cations) occupy half of the octahedral voids and half of the tetrahedral voids. What is the formula of the compound?",
     "options": [
-      "\\(X_3Y_2\\)",
-      "\\(X_2Y_3\\)",
+      "X₃Y₂",
+      "X₂Y₃",
       "XY",
-      "\\(X_4Y_3\\)"
+      "X₄Y₃"
     ],
     "correctIndex": 0,
-    "explanation": "Let the number of atoms of Y (anions) in ccp = N\n\nIn a ccp (fcc) lattice:\n- Number of **octahedral voids** = N\n- Number of **tetrahedral voids** = 2N\n\nX cations occupy:\n- Half of octahedral voids = \\(\\dfrac{1}{2} \\times N = \\dfrac{N}{2}\\)\n- Half of tetrahedral voids = \\(\\dfrac{1}{2} \\times 2N = N\\)\n\nTotal X cations = \\(\\dfrac{N}{2} + N = \\dfrac{3N}{2}\\)\n\nRatio X : Y = \\(\\dfrac{3N}{2} : N = 3 : 2\\)\n\nFormula = \\(\\mathbf{X_3Y_2}\\)",
-    "name": "Formula of Compound from Void Occupancy in CCP"
+    "explanation": "Let \\(N\\) = number of Y atoms in ccp lattice.\n\nIn ccp (fcc):\n- Octahedral voids = \\(N\\)\n- Tetrahedral voids = \\(2N\\)\n\nX cations occupy:\n- Half of octahedral voids = \\(\\frac{N}{2}\\)\n- Half of tetrahedral voids = \\(\\frac{2N}{2} = N\\)\n\nTotal X atoms = \\(\\frac{N}{2} + N = \\frac{3N}{2}\\)\n\nRatio \\(X : Y = \\frac{3N}{2} : N = 3 : 2\\)\n\nFormula = **X₃Y₂**",
+    "name": "Crystal Formula from Void Occupancy in ccp"
   },
   {
     "id": "c5_item13",
-    "text": "If 0.5 mol of a metal forms a hexagonal close packed (hcp) structure, the total number of voids and tetrahedral voids respectively in mol are:",
+    "text": "If 0.5 mol of a metal forms a hexagonal close-packed (hcp) structure, the total number of voids and tetrahedral voids respectively (in mol) are:",
     "options": [
       "1.5, 1.0",
       "1.0, 0.5",
@@ -165,12 +165,12 @@
       "0.5, 1.0"
     ],
     "correctIndex": 0,
-    "explanation": "For a close-packed structure (hcp or ccp), if there are N atoms:\n- Number of **tetrahedral voids** = 2N\n- Number of **octahedral voids** = N\n- Total voids = 3N\n\nGiven: N = 0.5 mol\n\n- Tetrahedral voids = \\(2 \\times 0.5 = \\mathbf{1.0}\\) mol\n- Octahedral voids = \\(1 \\times 0.5 = 0.5\\) mol\n- **Total voids** = \\(1.0 + 0.5 = \\mathbf{1.5}\\) mol\n\nSo total voids = **1.5 mol** and tetrahedral voids = **1.0 mol**.",
-    "name": "Total and Tetrahedral Voids in HCP Structure"
+    "explanation": "For a close-packed structure with \\(N\\) atoms:\n- Tetrahedral voids = \\(2N\\)\n- Octahedral voids = \\(N\\)\n- Total voids = \\(3N\\)\n\nHere \\(N = 0.5\\) mol:\n- **Tetrahedral voids** = \\(2 \\times 0.5 = 1.0\\) mol ✓\n- **Octahedral voids** = \\(0.5\\) mol\n- **Total voids** = \\(1.0 + 0.5 = 1.5\\) mol ✓\n\nAnswer: total voids = **1.5 mol**, tetrahedral voids = **1.0 mol**",
+    "name": "Total and Tetrahedral Voids in hcp Structure"
   },
   {
     "id": "c5_item14",
-    "text": "An element forms a body centred cubic (bcc) lattice with an edge length of 300 pm. If the density of the element is 7.2 g cm⁻³, the number of atoms present in 324 g of it approximately is:",
+    "text": "An element forms a bcc lattice with edge length 300 pm. If the density of the element is 7.2 g cm⁻³, the number of atoms present in 324 g of it is approximately:",
     "options": [
       "\\(3.33 \\times 10^{23}\\)",
       "\\(6.66 \\times 10^{23}\\)",
@@ -178,25 +178,25 @@
       "\\(6.66 \\times 10^{24}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "**Step 1: Volume of the unit cell:**\n$$a = 300 \\text{ pm} = 300 \\times 10^{-10} \\text{ cm} = 3 \\times 10^{-8} \\text{ cm}$$\n$$V_{\\text{cell}} = a^3 = (3 \\times 10^{-8})^3 = 27 \\times 10^{-24} \\text{ cm}^3$$\n\n**Step 2: Total volume of 324 g:**\n$$V_{\\text{total}} = \\frac{\\text{mass}}{\\text{density}} = \\frac{324}{7.2} = 45 \\text{ cm}^3$$\n\n**Step 3: Number of unit cells:**\n$$N_{\\text{cells}} = \\frac{45}{27 \\times 10^{-24}} = \\frac{45}{27} \\times 10^{24} = 1.667 \\times 10^{24}$$\n\n**Step 4: Atoms per bcc unit cell = 2:**\n$$N_{\\text{atoms}} = 2 \\times 1.667 \\times 10^{24} = 3.33 \\times 10^{24}$$",
-    "name": "Number of Atoms in Given Mass using BCC Lattice"
+    "explanation": "**Step 1 — Volume of one bcc unit cell:**\n\\[a = 300 \\text{ pm} = 300 \\times 10^{-10} \\text{ cm}\\]\n\\[V_{\\text{cell}} = (300 \\times 10^{-10})^3 = 27 \\times 10^{-24} \\text{ cm}^3\\]\n\n**Step 2 — Total volume of 324 g:**\n\\[V_{\\text{total}} = \\frac{m}{d} = \\frac{324}{7.2} = 45 \\text{ cm}^3\\]\n\n**Step 3 — Number of unit cells:**\n\\[= \\frac{45}{27 \\times 10^{-24}} = \\frac{5}{3} \\times 10^{24}\\]\n\n**Step 4 — Number of atoms** (bcc: Z = 2 atoms/cell):\n\\[= 2 \\times \\frac{5}{3} \\times 10^{24} = 3.33 \\times 10^{24}\\]",
+    "name": "Number of Atoms in bcc Element Sample"
   },
   {
     "id": "c5_item15",
-    "text": "Which of the following statements are **not** correct?\n\n(A) Diode is a combination of n-type and p-type semiconductors.\n(B) Silicon or germanium is an electron-rich impurity.\n(C) Phosphorus and arsenic are electron-deficient impurities.\n(D) Schottky defect decreases the density of the crystal.",
+    "text": "Which of the following statements about semiconductors are NOT correct?\n\n(A) Diode is a combination of n-type and p-type semiconductors.\n(B) Silicon or germanium is an electron-rich impurity.\n(C) Phosphorus and arsenic are electron-deficient impurities.\n(D) Schottky defect decreases the density of the crystal.",
     "options": [
-      "B and C",
-      "A and D",
-      "C and D",
-      "A and C"
+      "B, C",
+      "A, D",
+      "C, D",
+      "A, C"
     ],
     "correctIndex": 0,
-    "explanation": "**Statement (B) is incorrect.**\nSilicon (Si) and Germanium (Ge) are **Group 14** elements — they are the **host semiconductors** themselves, not impurities. To make n-type semiconductors, you dope them with Group 15 elements.\n\n**Statement (C) is incorrect.**\nPhosphorus (P) and Arsenic (As) are **Group 15** elements with 5 valence electrons. When doped into Si/Ge (which need 4 bonds), the 5th electron is free and mobile. These are called **electron-rich** (n-type) impurities — **not** electron-deficient.\n\n**Electron-deficient** impurities are Group 13 elements (like B, Al) which create electron holes (p-type semiconductors).\n\n**Statements (A) and (D) are correct:**\n- A diode is indeed a p-n junction.\n- Schottky defect creates vacancies → decreases density.",
-    "name": "Incorrect Statements about Semiconductors and Defects"
+    "explanation": "Checking each statement:\n\n- **(A) Correct:** A p-n junction diode is formed by joining p-type and n-type semiconductors. ✓\n- **(B) Incorrect:** Silicon and germanium are **group 14** elements and are the **host semiconductor materials** themselves, not impurities. The dopants (impurities) are added *to* Si or Ge.\n- **(C) Incorrect:** Phosphorus (P) and arsenic (As) are **group 15** elements with 5 valence electrons. When doped into Si (group 14), they provide one **extra** delocalised electron → they are **electron-rich (n-type) impurities**, NOT electron-deficient.\n- **(D) Correct:** Schottky defect removes ion pairs from the lattice, lowering density. ✓\n\nStatements **(B) and (C)** are incorrect.",
+    "name": "Incorrect Statements About Semiconductors"
   },
   {
     "id": "c5_item16",
-    "text": "The total number of body centred lattices possible among the 14 Bravais lattices is:",
+    "text": "The total number of body-centred lattices possible among the 14 Bravais lattices is:",
     "options": [
       "2",
       "1",
@@ -204,12 +204,12 @@
       "3"
     ],
     "correctIndex": 3,
-    "explanation": "Among the **14 Bravais lattices**, the body centred (I-centred) lattice type occurs in **3 crystal systems**:\n\n1. **Cubic** → Body centred cubic (BCC)\n2. **Tetragonal** → Body centred tetragonal\n3. **Orthorhombic** → Body centred orthorhombic\n\nNote: Body centred lattices do **not** exist for monoclinic, triclinic, hexagonal, rhombohedral, etc.\n\nTherefore, there are **3** body centred lattices among the 14 Bravais lattices.",
-    "name": "Number of Body Centred Lattices in 14 Bravais Lattices"
+    "explanation": "Among the 14 Bravais lattices, the **body-centred (I) lattice type** occurs in **3** crystal systems:\n\n1. **Cubic** → Body-centred cubic (bcc)\n2. **Tetragonal** → Body-centred tetragonal\n3. **Orthorhombic** → Body-centred orthorhombic\n\nThe remaining crystal systems (monoclinic, triclinic, hexagonal, trigonal) do not have a body-centred variant in the standard classification.\n\nTotal = **3** body-centred lattices.",
+    "name": "Body-Centred Lattices Among Bravais Lattices"
   },
   {
     "id": "c5_item17",
-    "text": "A compound is formed by elements X and Y. Atoms of Y (anions) form an hcp lattice. Atoms of X (cations) occupy some octahedral holes. The formula of the compound is XY₃. What is the fraction of octahedral holes that are unoccupied by X?",
+    "text": "A compound is formed by X and Y. Atoms of Y (anions) form an hcp lattice. Atoms of X (cations) are in some octahedral holes. The formula is XY₃. What fraction of octahedral holes is unoccupied by X?",
     "options": [
       "\\(\\dfrac{1}{2}\\)",
       "\\(\\dfrac{2}{3}\\)",
@@ -217,12 +217,12 @@
       "\\(\\dfrac{1}{5}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "In an hcp (or ccp) lattice:\n- Number of octahedral voids = Number of lattice points (Y atoms)\n\nLet N = number of Y atoms → N octahedral voids available.\n\nFrom the formula XY₃:\n$$\\frac{n_X}{n_Y} = \\frac{1}{3}$$\n\nSo for N atoms of Y, there are \\(\\dfrac{N}{3}\\) atoms of X.\n\nFraction of octahedral voids **occupied** by X:\n$$= \\frac{N/3}{N} = \\frac{1}{3}$$\n\nFraction of octahedral voids **unoccupied**:\n$$= 1 - \\frac{1}{3} = \\frac{2}{3}$$",
+    "explanation": "In an hcp lattice, the number of octahedral voids = number of atoms (Y).\n\nLet \\(N\\) = number of Y atoms → \\(N\\) octahedral voids available.\n\nFrom the formula XY₃: ratio X : Y = 1 : 3\n\nFor every 3 Y atoms, there is 1 X atom.\nFor every 3 octahedral voids (one per Y), only **1 is occupied** by X.\n\n**Fraction occupied** = \\(\\frac{1}{3}\\)\n\n**Fraction unoccupied** = \\(1 - \\frac{1}{3} = \\frac{2}{3}\\)",
     "name": "Fraction of Unoccupied Octahedral Holes"
   },
   {
     "id": "c5_item18",
-    "text": "A metal crystallises in two phases — one as fcc with unit cell edge length 3.5 Å and other as bcc with unit cell edge length 3.0 Å. The ratio of density of fcc to bcc phases approximately is:",
+    "text": "A metal crystallises in two phases — fcc with edge length 3.5 Å and bcc with edge length 3.0 Å. The ratio of density of fcc to bcc phase is approximately:",
     "options": [
       "1.5 : 1.0",
       "1.0 : 1.5",
@@ -230,25 +230,25 @@
       "1 : 1.26"
     ],
     "correctIndex": 2,
-    "explanation": "Density formula:\n$$d = \\frac{Z \\times M}{N_A \\times a^3}$$\n\nFor the **same metal** (same M and N_A):\n$$\\frac{d_{\\text{fcc}}}{d_{\\text{bcc}}} = \\frac{Z_{\\text{fcc}}}{Z_{\\text{bcc}}} \\times \\frac{a_{\\text{bcc}}^3}{a_{\\text{fcc}}^3}$$\n\n- \\(Z_{\\text{fcc}} = 4\\), \\(a_{\\text{fcc}} = 3.5\\) Å\n- \\(Z_{\\text{bcc}} = 2\\), \\(a_{\\text{bcc}} = 3.0\\) Å\n\n$$\\frac{d_{\\text{fcc}}}{d_{\\text{bcc}}} = \\frac{4}{2} \\times \\frac{(3.0)^3}{(3.5)^3} = 2 \\times \\frac{27}{42.875} = 2 \\times 0.6297 = 1.259 \\approx 1.26$$\n\nRatio = **1.26 : 1**",
-    "name": "Density Ratio of FCC and BCC Phases"
+    "explanation": "Density formula: \\(d = \\dfrac{Z \\times M}{a^3 \\times N_A}\\). For the same metal (same M and N_A):\n\n\\[\\frac{d_{\\text{fcc}}}{d_{\\text{bcc}}} = \\frac{Z_{\\text{fcc}}}{Z_{\\text{bcc}}} \\times \\frac{a_{\\text{bcc}}^3}{a_{\\text{fcc}}^3}\\]\n\n\\(Z_{\\text{fcc}} = 4\\), \\(a_{\\text{fcc}} = 3.5\\) Å; \\(Z_{\\text{bcc}} = 2\\), \\(a_{\\text{bcc}} = 3.0\\) Å:\n\n\\[= \\frac{4}{2} \\times \\frac{(3.0)^3}{(3.5)^3} = 2 \\times \\frac{27}{42.875} = 2 \\times 0.6297 \\approx 1.26\\]\n\nRatio = **1.26 : 1**",
+    "name": "Density Ratio — fcc vs bcc Phases"
   },
   {
     "id": "c5_item19",
     "text": "A metal oxide crystallises in a hexagonal close-packed array of oxide ions with two out of every three octahedral holes occupied by metal ions. The formula of the metal oxide is:",
     "options": [
       "MO",
-      "\\(\\text{M}_3\\text{O}_4\\)",
-      "\\(\\text{M}_2\\text{O}_5\\)",
-      "\\(\\text{M}_2\\text{O}_3\\)"
+      "M₃O₄",
+      "M₂O₅",
+      "M₂O₃"
     ],
     "correctIndex": 3,
-    "explanation": "In an hcp unit cell, there are **6 oxide ions** per unit cell.\n\nNumber of octahedral voids = 6 (equal to number of lattice points)\n\nFraction of octahedral holes occupied by metal = \\(\\dfrac{2}{3}\\)\n\nNumber of metal ions = \\(\\dfrac{2}{3} \\times 6 = 4\\)\n\nStoichiometric ratio:\n$$\\text{Metal : Oxide} = 4 : 6 = 2 : 3$$\n\nFormula = \\(\\mathbf{M_2O_3}\\)\n\nThis is consistent with common oxides like Fe₂O₃, Al₂O₃, and Cr₂O₃ which have this structure.",
-    "name": "Formula of Metal Oxide from HCP with ²⁄₃ Octahedral Holes Filled"
+    "explanation": "In an hcp unit cell, there are **6 oxide ions** per unit cell, which also means **6 octahedral voids** per unit cell.\n\nMetal ions occupy \\(\\frac{2}{3}\\) of octahedral voids:\n\\[\\text{Metal ions} = \\frac{2}{3} \\times 6 = 4\\]\n\nStoichiometric ratio: Metal : Oxygen = 4 : 6 = **2 : 3**\n\nFormula = **M₂O₃**\n\nThis is consistent with structures like Al₂O₃ (corundum) and Fe₂O₃ (haematite).",
+    "name": "Metal Oxide Formula from Octahedral Hole Occupancy"
   },
   {
     "id": "c5_item20",
-    "text": "If the side length of a face centred cubic (fcc) unit cell of a metal is 400 pm, the approximate radius of the metal atom in pm is:\n(\\(\\sqrt{2} = 1.414\\))",
+    "text": "If the side length of a face-centred cubic (fcc) unit cell of a metal is 400 pm, the approximate radius of the metal atom in pm is: (\\(\\sqrt{2} = 1.414\\))",
     "options": [
       "14.14 pm",
       "35.3 pm",
@@ -256,7 +256,7 @@
       "141.4 pm"
     ],
     "correctIndex": 3,
-    "explanation": "For an **fcc unit cell**, atoms touch along the **face diagonal**:\n$$\\text{Face diagonal} = 4r = a\\sqrt{2}$$\n$$r = \\frac{a\\sqrt{2}}{4} = \\frac{a}{2\\sqrt{2}}$$\n\nGiven: \\(a = 400\\) pm\n\n$$r = \\frac{400}{2\\sqrt{2}} = \\frac{400}{2 \\times 1.414} = \\frac{400}{2.828} = 141.4 \\text{ pm}$$\n\nThe radius of the metal atom is **141.4 pm**.",
-    "name": "Radius of Metal Atom in FCC Unit Cell"
+    "explanation": "In an **fcc** unit cell, atoms touch along the **face diagonal**. The face diagonal = \\(a\\sqrt{2}\\) and contains 4 atomic radii (2 full atoms):\n\n\\[4r = a\\sqrt{2}\\]\n\n\\[r = \\frac{a\\sqrt{2}}{4} = \\frac{a}{2\\sqrt{2}}\\]\n\n\\[r = \\frac{400}{2 \\times 1.414} = \\frac{400}{2.828} = 141.4 \\text{ pm}\\]",
+    "name": "Atomic Radius from fcc Edge Length"
   }
 ]

@@ -1,7 +1,7 @@
 [
   {
     "id": "p27_item1",
-    "text": "In a p-n-p transistor working as a common base amplifier, when the current gain is 0.96 and emitter current is 7.2 mA, the base current is",
+    "text": "In a p-n-p transistor working as a common-base amplifier, when the current gain is 0.96 and emitter current is 7.2 mA, the base current is",
     "options": [
       "0.4 mA",
       "0.2 mA",
@@ -9,168 +9,77 @@
       "0.35 mA"
     ],
     "correctIndex": 2,
-    "explanation": "In common base amplifier for p-n-p transistor,\ncurrent gain, $\\alpha = 0.96$\nEmitter current, $I_E = 7.2$ mA\nWe know that,\n$\\alpha = \\frac{I_C}{I_E}$\n$\\Rightarrow 0.96 = \\frac{I_C}{7.2}$\n$\\Rightarrow I_C = 0.96 \\times 7.2 = 6.912$ mA\nBase current,\n$I_B = I_E - I_C = 7.2 - 6.912 = 0.288$ mA $\\approx 0.29$ mA.",
-    "name": "Questions Item 1"
+    "explanation": "Current gain in common-base: \\(\\alpha = I_C/I_E\\)\n\n\\(I_C = \\alpha\\times I_E = 0.96\\times7.2 = 6.912\\text{ mA}\\)\n\n\\(I_B = I_E - I_C = 7.2 - 6.912 = 0.288\\approx0.29\\text{ mA}\\)",
+    "name": "Common-Base Transistor Base Current"
   },
   {
     "id": "p27_item2",
     "text": "In a photodiode, the value of the emf produced by a monochromatic light beam is directly proportional to",
     "options": [
-      "the barrier potential at p-n junction",
-      "the intensity of light falling on the photodiode",
-      "the frequency of light falling on the photodiode",
-      "the voltage applied at the p-n junction"
+      "The barrier potential at the p-n junction",
+      "The intensity of light falling on the photodiode",
+      "The frequency of light falling on the photodiode",
+      "The voltage applied at the p-n junction"
     ],
     "correctIndex": 1,
-    "explanation": "In a photodiode, the value of the emf produced by monochromatic light beam is directly proportional to the intensity of light falling on the photodiode.",
-    "name": "Questions Item 2"
+    "explanation": "In a photodiode, more photons (higher intensity) generate more electron-hole pairs, increasing the photocurrent and hence the emf. The emf is directly proportional to the **intensity** of incident light.",
+    "name": "Photodiode EMF Dependence"
   },
   {
     "id": "p27_item3",
-    "text": "In the following circuit, the equivalent resistance between A and B is",
+    "text": "Assuming the junction diode is ideal, the current in the arrangement (diode with 100 Ω resistor, 3 V and 1 V sources) is",
     "options": [
-      "$\\frac{20}{3}\\ \\Omega$",
-      "$10\\ \\Omega$",
-      "$16\\ \\Omega$",
-      "$20\\ \\Omega$"
+      "2 mA",
+      "20 mA",
+      "30 mA",
+      "10 mA"
     ],
-    "correctIndex": 2,
-    "explanation": "Given figure,\nIn the figure, diodes 1 and 2 both are in reverse bias and in reverse bias, diode does not conduct, so we may replace diodes 1 and 2 as open circuit (OC).\nHere, resistors of resistances $8\\ \\Omega$, $2\\ \\Omega$ and $6\\ \\Omega$ are in series. So, equivalent resistance between points A and B\n$R_{AB} = 8 + 2 + 6 = 16\\ \\Omega$.",
-    "name": "Questions Item 3"
+    "correctIndex": 1,
+    "explanation": "The ideal diode is forward biased and acts as short circuit.\n\nNet voltage across resistor \\(= 3 - 1 = 2\\text{ V}\\)\n\n\\(I = V/R = 2/100 = 0.02\\text{ A} = 20\\text{ mA}\\)",
+    "name": "Ideal Diode Circuit Current"
   },
   {
     "id": "p27_item4",
     "text": "A Zener diode is made by",
     "options": [
-      "heavily doping both p- and n-sides of a p-n junction diode",
-      "heavily doping the p-side and lightly doping the n-side of a p-n junction diode",
-      "lightly doping the p-side and heavily doping the n-side of a p-n junction diode",
-      "lightly doping both p- and n-sides of a p-n junction diode"
+      "Heavily doping both p and n sides of a p-n junction",
+      "Heavily doping p-side and lightly doping n-side",
+      "Lightly doping p-side and heavily doping n-side",
+      "Lightly doping both p and n sides"
     ],
     "correctIndex": 0,
-    "explanation": "A Zener diode is made by heavily doping both p- and n-sides of the junction. Because of heavily doping, a very thin depletion region is formed between the p- and n-sides, and hence the electric field of the junction is extremely high even for a small reverse bias voltage.",
-    "name": "Questions Item 4"
+    "explanation": "A Zener diode is made by **heavily doping both p and n sides**. This creates a very thin depletion region (\\(<10^{-6}\\) m), leading to an extremely high electric field even under small reverse bias — enabling Zener breakdown.",
+    "name": "Zener Diode Construction"
   },
   {
     "id": "p27_item5",
-    "text": "For an LED to emit light in visible region of the electromagnetic spectrum, it can have energy band gap in the range of",
+    "text": "In the circuit with two ideal diodes and resistors (6 Ω, 4 Ω, 2 Ω, 8 Ω, 12 Ω), with −10 V at A and −2 V at B, the equivalent resistance between A and B is",
     "options": [
-      "0.1 eV to 0.4 eV",
-      "0.9 eV to 1.6 eV",
-      "1.7 eV to 3.1 eV",
-      "0.5 eV to 0.8 eV"
+      "20/3 Ω",
+      "10 Ω",
+      "16 Ω",
+      "20 Ω"
     ],
     "correctIndex": 2,
-    "explanation": "Maximum and minimum energy of photon in visible light,\n$E_{\\text{max}} = 2.88$ eV $\\approx 3$ eV\n$E_{\\text{min}} = 1.65$ eV $\\approx 1.7$ eV\nSo, the correct option matches between the energy 1.7 eV to 3 eV.",
-    "name": "Questions Item 5"
+    "explanation": "Both diodes D1 and D2 are reverse biased (open circuit) because the potential at A is more negative than at B.\n\nThe remaining path has resistors 8 Ω, 2 Ω, and 6 Ω in series:\n\n\\(R_{AB} = 8 + 2 + 6 = 16\\text{ Ω}\\)",
+    "name": "Diode Circuit Equivalent Resistance"
   },
   {
     "id": "p27_item6",
-    "text": "In the following common-emitter circuit, $\\beta = 100$ and $V_{CE} = 7$ V. If $V_{BE}$ is negligible, then the base current is",
+    "text": "In a p-type semiconductor, the donor level is at 50 meV above the valence band. The maximum wavelength of light photon required to produce one electron is (\\(h=6.6\\times10^{-34}\\) Js, \\(c=3\\times10^8\\) m/s)",
     "options": [
-      "0.01 mA",
-      "0.04 mA",
-      "0.02 mA",
-      "0.03 mA"
+      "0.0248 µm",
+      "0.248 µm",
+      "2.48 µm",
+      "24.8 µm"
     ],
-    "correctIndex": 1,
-    "explanation": "Applying KVL,\n$-15 + 2K I_C + V_{CE} = 0$\n$\\Rightarrow I_C = 4$ mA\nCommon-emitter current gain, $\\beta = \\frac{I_C}{I_B}$\nor $I_B = \\frac{I_C}{\\beta} = \\frac{4 \\times 10^{-3}}{100} = 0.04$ mA.",
-    "name": "Questions Item 6"
+    "correctIndex": 3,
+    "explanation": "\\(E = hc/\\lambda\\implies\\lambda = hc/E\\)\n\n\\[\\lambda = \\frac{6.6\\times10^{-34}\\times3\\times10^8}{50\\times10^{-3}\\times1.6\\times10^{-19}}\\]\n\n\\[= \\frac{19.8\\times10^{-26}}{8\\times10^{-21}} = 2.475\\times10^{-5}\\text{ m} = 24.75\\text{ µm}\\approx24.8\\text{ µm}\\]",
+    "name": "Maximum Wavelength for Semiconductor Excitation"
   },
   {
     "id": "p27_item7",
-    "text": "Three amplifiers with voltage gains 10, 20 and 30 are connected in series. If the input signal has a peak value of 1 mV then the peak value of the output voltage is",
-    "options": [
-      "6 V",
-      "60 V",
-      "0.6 V",
-      "0.06 V"
-    ],
-    "correctIndex": 0,
-    "explanation": "Total gain of three amplifiers connected in series is given by\n$A = A_1 \\times A_2 \\times A_3 = 10 \\times 20 \\times 30 = 6000$\nBut, $A = \\frac{V_o}{V_m} \\Rightarrow V_o = A \\times V_m = 6000 \\times 10^{-3} = 6$ V.",
-    "name": "Questions Item 7"
-  },
-  {
-    "id": "p27_item8",
-    "text": "In the circuit given, the current through Zener diode is",
-    "options": [
-      "10 mA",
-      "6.67 mA",
-      "3.33 mA",
-      "5 mA"
-    ],
-    "correctIndex": 2,
-    "explanation": "Potential drop across Zener diode is constant. So, applying KVL in the circuit.\n$15 = I R_1 + V_z \\Rightarrow 15 = I(500) + 10$\n$\\Rightarrow I = \\frac{(15-10)}{500} = 1 \\times 10^{-2}$ A = 10 mA\nThere is potential drop of 10 V across the 1500 Ω resistor.\nSo, $I_1 = \\frac{10}{1500} = 6.66$ mA\nTherefore, the current through the zener diode,\n$I_z = I - I_1 = 10 - 6.66 = 3.33$ mA.",
-    "name": "Questions Item 8"
-  },
-  {
-    "id": "p27_item9",
-    "text": "The value of $Y_1$ and $Y_2$, respectively in the following logic circuit if both A and B are 1.",
-    "options": [
-      "1, 1",
-      "1, 0",
-      "0, 1",
-      "0, 0"
-    ],
-    "correctIndex": 2,
-    "explanation": "The logical circuit can be explained as,\n$Y_1 = 0$ and $Y_2 = 1$.",
-    "name": "Questions Item 9"
-  },
-  {
-    "id": "p27_item10",
-    "text": "If the diodes are ideal in the circuit given below, then the current through the cell is",
-    "options": [
-      "4 A",
-      "1.5 A",
-      "2 A",
-      "3 A"
-    ],
-    "correctIndex": 2,
-    "explanation": "Diode, $D_1$ = reverse biased (OFF) and diode, $D_2$ = forward biased (ON). Because diodes are ideal, so voltage drop across $D_2$ is zero.\nEffective resistance, $R = 3 + 2 + 3 + 2 = 10\\ \\Omega$\nCurrent through the cell,\n$I = V / R = 20 / 10 = 2$ A.",
-    "name": "Questions Item 10"
-  },
-  {
-    "id": "p27_item11",
-    "text": "In n-p-n transistor, the values of $R_1$ and $R_2$ are respectively.",
-    "options": [
-      "1 kΩ, 74 kΩ",
-      "74 kΩ, 1 kΩ",
-      "37 kΩ, 2 kΩ",
-      "2 kΩ, 37 kΩ"
-    ],
-    "correctIndex": 1,
-    "explanation": "In given circuit, $V_{CC} = i_B R_B + V_{BE}$\n$R_B = R_1 = \\frac{V_{CC} - V_{BE}}{i_B}$\nAs, $i_B = \\frac{i_C}{\\beta} = \\frac{5 \\times 10^{-3}}{50} = 1 \\times 10^{-4}$ A\n$R_1 = \\frac{8 - 0.6}{1 \\times 10^{-4}} = 74$ kΩ\nBy KVL in closed collector loop, we get\n$V_{CC} = i_C R_L + V_{CE}$\n$R_L = \\frac{V_{CC} - V_{CE}}{i_C} = \\frac{8 - 3}{5 \\times 10^{-3}} = 1.0$ kΩ\nSo, $R_2 = R_L = 1.0$ kΩ.",
-    "name": "Questions Item 11"
-  },
-  {
-    "id": "p27_item12",
-    "text": "The two combinations of NAND gates shown in the figure are equivalent to",
-    "options": [
-      "AND gate",
-      "OR gate",
-      "NAND gate",
-      "NOR gate"
-    ],
-    "correctIndex": 1,
-    "explanation": "The combinations are equivalent to OR gate.",
-    "name": "Questions Item 12"
-  },
-  {
-    "id": "p27_item13",
-    "text": "If the diodes are ideal in the circuit given below, then the current through the cell is",
-    "options": [
-      "4 A",
-      "1.5 A",
-      "2 A",
-      "3 A"
-    ],
-    "correctIndex": 2,
-    "explanation": "Diode, $D_1$ = reverse biased (OFF) and diode, $D_2$ = forward biased (ON). Because diodes are ideal, so voltage drop across $D_2$ is zero.\nEffective resistance, $R = 3 + 2 + 3 + 2 = 10\\ \\Omega$\nCurrent through the cell,\n$I = V / R = 20 / 10 = 2$ A.",
-    "name": "Questions Item 13"
-  },
-  {
-    "id": "p27_item14",
-    "text": "In the n-p-n transistor circuit, the value of $\\beta$ varies between",
+    "text": "In a transistor, \\(\\alpha\\) varies between 20/21 and 100/101. Then \\(\\beta\\) varies between",
     "options": [
       "1 and 10",
       "0.95 and 0.99",
@@ -178,20 +87,150 @@
       "200 and 300"
     ],
     "correctIndex": 2,
-    "explanation": "Given, in a transistor current gain,\n$\\alpha = \\frac{20}{21}$ and $\\frac{100}{101}$\nCommon emitter transistor DC current gain, $\\beta = \\frac{\\alpha}{1 - \\alpha}$\nCase I If $\\alpha = \\frac{20}{21}$, then $\\beta = 20$\nCase II $\\alpha = \\frac{100}{101}$, then $\\beta = 100$\nValue of $\\beta$ varies between $\\beta \\in [20, 100]$.",
-    "name": "Questions Item 14"
+    "explanation": "\\(\\beta = \\dfrac{\\alpha}{1-\\alpha}\\)\n\nFor \\(\\alpha = 20/21\\): \\(\\beta = \\dfrac{20/21}{1/21} = 20\\)\n\nFor \\(\\alpha = 100/101\\): \\(\\beta = \\dfrac{100/101}{1/101} = 100\\)\n\nSo \\(\\beta\\in[20,\\;100]\\).",
+    "name": "Transistor α to β Conversion"
+  },
+  {
+    "id": "p27_item8",
+    "text": "For an LED to emit light in the visible region, the energy band gap should be in the range (\\(h=6.6\\times10^{-34}\\) Js, \\(c=3\\times10^8\\) m/s)",
+    "options": [
+      "0.1 eV to 0.4 eV",
+      "0.9 eV to 1.6 eV",
+      "1.7 eV to 3.1 eV",
+      "0.5 eV to 0.8 eV"
+    ],
+    "correctIndex": 2,
+    "explanation": "Visible light frequency range: \\(4\\times10^{14}\\) Hz to \\(7\\times10^{14}\\) Hz.\n\n\\(E_{min} = hf_{min} = \\dfrac{6.6\\times10^{-34}\\times4\\times10^{14}}{1.6\\times10^{-19}}\\approx1.65\\approx1.7\\text{ eV}\\)\n\n\\(E_{max} = hf_{max}\\approx2.88\\approx3\\text{ eV}\\)\n\nSo band gap should be **1.7 eV to 3.1 eV**.",
+    "name": "LED Band Gap for Visible Light"
+  },
+  {
+    "id": "p27_item9",
+    "text": "In a common-emitter circuit with \\(\\beta=100\\) and \\(V_{CE}=7\\) V (\\(V_{BE}\\approx0\\)), if the collector load is 2 kΩ and \\(V_{CC}=15\\) V, the base current is",
+    "options": [
+      "0.01 mA",
+      "0.04 mA",
+      "0.02 mA",
+      "0.03 mA"
+    ],
+    "correctIndex": 1,
+    "explanation": "KVL: \\(-15 + 2000\\cdot I_C + 7 = 0\\implies I_C = 4\\text{ mA}\\)\n\n\\(I_B = I_C/\\beta = 4\\times10^{-3}/100 = 0.04\\text{ mA}\\)",
+    "name": "Common-Emitter Base Current"
+  },
+  {
+    "id": "p27_item10",
+    "text": "Three amplifiers with voltage gains 10, 20 and 30 are connected in series. If the input signal has a peak value of 1 mV, the peak output voltage is",
+    "options": [
+      "6 V",
+      "60 V",
+      "0.6 V",
+      "0.06 V"
+    ],
+    "correctIndex": 0,
+    "explanation": "Total gain \\(A = A_1\\times A_2\\times A_3 = 10\\times20\\times30 = 6000\\)\n\n\\(V_{out} = A\\times V_{in} = 6000\\times1\\times10^{-3} = 6\\text{ V}\\)",
+    "name": "Cascaded Amplifiers Output"
+  },
+  {
+    "id": "p27_item11",
+    "text": "In a Zener diode voltage regulator circuit (\\(R_1=500\\text{ Ω}\\), \\(R_2=1500\\text{ Ω}\\), \\(V_Z=10\\text{ V}\\), supply 15 V), the current through the Zener diode is",
+    "options": [
+      "10 mA",
+      "6.67 mA",
+      "3.33 mA",
+      "5 mA"
+    ],
+    "correctIndex": 2,
+    "explanation": "Total current: \\(I = (15-10)/500 = 5/500 = 10\\text{ mA}\\)\n\nCurrent through \\(R_2\\): \\(I_2 = 10/1500 = 6.67\\text{ mA}\\)\n\nZener current: \\(I_Z = I - I_2 = 10 - 6.67 = 3.33\\text{ mA}\\)",
+    "name": "Zener Diode Current in Voltage Regulator"
+  },
+  {
+    "id": "p27_item12",
+    "text": "For the logic circuit shown (two inputs A=1, B=1 through NAND/OR combination), the values of \\(Y_1\\) and \\(Y_2\\) respectively are",
+    "options": [
+      "1, 1",
+      "1, 0",
+      "0, 1",
+      "0, 0"
+    ],
+    "correctIndex": 2,
+    "explanation": "With A=1 and B=1:\n\nFirst OR gate: output \\(P = A+B = 1\\)\n\nNAND gate (inputs P=1, B=1): \\(Y_1 = \\overline{1\\cdot1} = 0\\)\n\nSecond OR gate (inputs 1, \\(Y_1=0\\)): \\(Y_2 = 1+0 = 1\\)\n\nSo \\(Y_1=0\\), \\(Y_2=1\\).",
+    "name": "Logic Gate Output Evaluation"
+  },
+  {
+    "id": "p27_item13",
+    "text": "In a circuit with ideal diodes and resistors (3 Ω, 2 Ω series branches with 20 V supply), the current through the cell is",
+    "options": [
+      "4 A",
+      "1.5 A",
+      "2 A",
+      "3 A"
+    ],
+    "correctIndex": 2,
+    "explanation": "One diode is reverse biased (open), one is forward biased (acts as short circuit).\n\nEffective resistance: \\(R = 3 + 2 + 3 + 2 = 10\\text{ Ω}\\)\n\n\\(I = V/R = 20/10 = 2\\text{ A}\\)",
+    "name": "Ideal Diode Circuit with Multiple Components"
+  },
+  {
+    "id": "p27_item14",
+    "text": "In an n-p-n common-emitter transistor circuit (\\(V_{CC}=8\\) V, \\(I_C=5\\) mA, \\(V_{BE}=0.6\\) V, \\(V_{CE}=3\\) V, \\(\\beta=50\\)), the values of \\(R_1\\) and \\(R_2\\) respectively are",
+    "options": [
+      "1 kΩ, 74 kΩ",
+      "74 kΩ, 1 kΩ",
+      "37 kΩ, 2 kΩ",
+      "2 kΩ, 37 kΩ"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I_B = I_C/\\beta = 5/50 = 0.1\\text{ mA}\\)\n\n\\(R_1 = (V_{CC}-V_{BE})/I_B = (8-0.6)/(0.1\\times10^{-3}) = 74\\text{ kΩ}\\)\n\n\\(R_2 = (V_{CC}-V_{CE})/I_C = (8-3)/(5\\times10^{-3}) = 1\\text{ kΩ}\\)",
+    "name": "Transistor Biasing Resistors"
   },
   {
     "id": "p27_item15",
-    "text": "In a p-type semiconductor the donor level is at 50 meV above the valence band. To produce one electron, the maximum wavelength of light photon required is",
+    "text": "The two combinations of NAND gates in figures (i) and (ii) are equivalent to",
     "options": [
-      "0.0248 μm",
-      "0.248 μm",
-      "2.48 μm",
-      "24.8 μm"
+      "(i) OR gate, (ii) AND gate",
+      "(i) AND gate, (ii) NOT gate",
+      "(i) NOT gate, (ii) AND gate",
+      "(i) AND gate, (ii) OR gate"
+    ],
+    "correctIndex": 0,
+    "explanation": "Circuit (i): Two inputs into NAND then complement: \\(\\overline{\\overline{A}\\cdot\\overline{B}}=A+B\\) — **OR gate**.\n\nCircuit (ii): Both inputs into NAND then NAND again: \\(\\overline{\\overline{AB}\\cdot\\overline{AB}}=AB\\) — **AND gate**.",
+    "name": "NAND Gate Combinations"
+  },
+  {
+    "id": "p27_item16",
+    "text": "For the combination of logic gates shown (A and B into two OR gates then NAND), the equivalent logic gate is",
+    "options": [
+      "AND",
+      "NOT",
+      "NAND",
+      "NOR"
     ],
     "correctIndex": 3,
-    "explanation": "p-type semiconductor donor energy level,\n$E = 50$ meV = $50 \\times 10^{-3} \\times 1.6 \\times 10^{-19}$ V\nPlanck's constant, $h = 6.6 \\times 10^{-34}$ Js\nspeed of light in vacuum, $c = 3 \\times 10^8$ m/s\nNow, for the maximum wavelength of light photon's required ($\\lambda$).\nAccording to the Planck's quantum theory,\n$E = h\\nu \\Rightarrow E = \\frac{hc}{\\lambda}$\nPutting the given values, we get\n$50 \\times 10^{-3} \\times 1.6 \\times 10^{-19} = \\frac{6.6 \\times 10^{-34} \\times 3 \\times 10^8}{\\lambda}$\n$\\lambda = \\frac{6.6 \\times 10^{-34} \\times 3 \\times 10^8}{50 \\times 10^{-3} \\times 1.6 \\times 10^{-19}} = 24.75\\ \\mu$m.",
-    "name": "Questions Item 15"
+    "explanation": "\\(Y_1 = A+B\\), \\(Y_2 = A+B\\)\n\nNAND output: \\(Y = \\overline{Y_1\\cdot Y_2} = \\overline{(A+B)(A+B)} = \\overline{A+B}\\)\n\nThis is equivalent to a **NOR gate**.",
+    "name": "Logic Gate Equivalence"
+  },
+  {
+    "id": "p27_item17",
+    "text": "In common-base configuration, a transistor has current amplification \\(\\alpha=0.95\\). In common-emitter configuration, if base current changes by 2 µA, the change in collector current is",
+    "options": [
+      "19 µA",
+      "0.91 µA",
+      "1.9 µA",
+      "38 µA"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\beta = \\dfrac{\\alpha}{1-\\alpha} = \\dfrac{0.95}{0.05} = 19\\)\n\n\\(\\Delta I_C = \\beta\\cdot\\Delta I_B = 19\\times2 = 38\\text{ µA}\\)",
+    "name": "Common-Emitter Collector Current Change"
+  },
+  {
+    "id": "p27_item18",
+    "text": "Match the following: SSI → logic gates ≤ 10; MSI → logic gates < 100; LSI → logic gates < 1000; VLSI → logic gates > 1000. The correct match is",
+    "options": [
+      "A-I, B-III, C-II, D-IV",
+      "A-IV, B-I, C-IV, D-II",
+      "A-I, B-IV, C-III, D-II",
+      "A-III, B-I, C-IV, D-II"
+    ],
+    "correctIndex": 3,
+    "explanation": "SSI (Small Scale Integration): logic gates ≤ 10 → **III**\n\nMSI (Medium Scale Integration): logic gates < 100 → **I**\n\nLSI (Large Scale Integration): logic gates < 1000 → **IV**\n\nVLSI (Very Large Scale Integration): logic gates > 1000 → **II**\n\nCorrect: A-III, B-I, C-IV, D-II",
+    "name": "IC Integration Levels Classification"
   }
 ]

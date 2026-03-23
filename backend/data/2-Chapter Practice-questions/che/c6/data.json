@@ -1,7 +1,7 @@
 [
   {
     "id": "c6_item1",
-    "text": "160 g of non-volatile solute A is dissolved in 54 mL of water at 373 K. What is the vapour pressure of the aqueous solution of A?\n(Given: molecular weight of A = 160 g mol⁻¹, vapour pressure of pure water at 373 K = 760 Torr, density of water = 1 g/mL)",
+    "text": "160 g of non-volatile solute A (molecular weight = 160 g mol⁻¹) is dissolved in 54 mL of water at 373 K. What is the vapour pressure of the aqueous solution of A?",
     "options": [
       "760 Torr",
       "720 Torr",
@@ -9,8 +9,8 @@
       "450 Torr"
     ],
     "correctIndex": 2,
-    "explanation": "Using Raoult's law for relative lowering of vapour pressure:\n$$\\frac{p^\\circ - p}{p^\\circ} = \\chi_A = \\frac{n_A}{n_A + n_{\\text{H}_2\\text{O}}}$$\n\n**Moles of solute A:**\n$$n_A = \\frac{160}{160} = 1 \\text{ mol}$$\n\n**Moles of water (54 mL = 54 g):**\n$$n_{\\text{H}_2\\text{O}} = \\frac{54}{18} = 3 \\text{ mol}$$\n\n**Mole fraction of A:**\n$$\\chi_A = \\frac{1}{1 + 3} = \\frac{1}{4}$$\n\n**Vapour pressure of solution:**\n$$\\frac{760 - p}{760} = \\frac{1}{4}$$\n$$760 - p = 190 \\Rightarrow p = 760 - 190 = \\mathbf{570 \\text{ Torr}}$$",
-    "name": "Vapour Pressure of Solution using Raoult's Law"
+    "explanation": "At 373 K, vapour pressure of pure water \\(p^\\circ = 760\\) Torr.\n\nMoles of A = \\(\\frac{160}{160} = 1\\) mol\n\nMoles of water = \\(\\frac{54}{18} = 3\\) mol (density of water = 1 g/mL)\n\nMole fraction of A:\n\\[\\chi_A = \\frac{1}{1 + 3} = \\frac{1}{4}\\]\n\nBy Raoult's law (RLVP):\n\\[\\frac{p^\\circ - p}{p^\\circ} = \\chi_A = \\frac{1}{4}\\]\n\n\\[p = p^\\circ \\times \\frac{3}{4} = 760 \\times \\frac{3}{4} = 570 \\text{ Torr}\\]",
+    "name": "Vapour Pressure of Solution — Raoult's Law"
   },
   {
     "id": "c6_item2",
@@ -22,12 +22,12 @@
       "14 M"
     ],
     "correctIndex": 2,
-    "explanation": "The formula for molarity from percentage strength (w/w) and density:\n$$M = \\frac{\\text{\\% (w/w)} \\times d \\times 10}{M_{\\text{solute}}}$$\n\nGiven:\n- % (w/w) = 40\n- \\(d = 1.2\\) g/mL\n- \\(M_{\\text{HCl}} = 36.5\\) g/mol\n\n$$M = \\frac{40 \\times 1.2 \\times 10}{36.5} = \\frac{480}{36.5} \\approx 13.15 \\approx 13 \\text{ M}$$",
-    "name": "Molarity of HCl from Percentage Strength and Density"
+    "explanation": "Using the formula for molarity from percentage strength (w/w) and density:\n\\[M = \\frac{\\%(w/w) \\times d \\times 10}{M_{\\text{HCl}}}\\]\n\n\\[M = \\frac{40 \\times 1.2 \\times 10}{36.5} = \\frac{480}{36.5} \\approx 13.15 \\approx 13 \\text{ M}\\]",
+    "name": "Molarity from Percentage Strength and Density"
   },
   {
     "id": "c6_item3",
-    "text": "10 g of NaOH is dissolved in 500 mL of aqueous solution. Calculate the molarity of this solution.\n(Given: formula weight of NaOH = 40)",
+    "text": "10 g of NaOH is dissolved in 500 mL of aqueous solution. Calculate the molarity of this solution. (Formula weight of NaOH = 40 g mol⁻¹)",
     "options": [
       "\\(0.5 \\times 10^{-3}\\) M",
       "0.4 M",
@@ -35,7 +35,7 @@
       "0.5 M"
     ],
     "correctIndex": 3,
-    "explanation": "$$M = \\frac{\\text{mass of solute (g)}}{\\text{molar mass (g/mol)}} \\times \\frac{1000}{\\text{volume (mL)}}$$\n\n$$M = \\frac{10}{40} \\times \\frac{1000}{500} = 0.25 \\times 2 = 0.5 \\text{ M}$$",
+    "explanation": "\\[M = \\frac{\\text{mass of solute (g/L)}}{\\text{molar mass (g/mol)}}\\]\n\nMass of NaOH per litre = \\(\\frac{10}{500} \\times 1000 = 20\\) g/L\n\n\\[M = \\frac{20}{40} = 0.5 \\text{ M}\\]",
     "name": "Molarity of NaOH Solution"
   },
   {
@@ -48,12 +48,12 @@
       "Keeping the temperature of water constant"
     ],
     "correctIndex": 1,
-    "explanation": "**Adding salt (a non-volatile solute)** to water lowers the vapour pressure of the solution. This is explained by **Raoult's Law**:\n\n$$\\frac{p^\\circ - p}{p^\\circ} = \\chi_{\\text{solute}}$$\n\nThe lowering of vapour pressure (\\(\\Delta p = p^\\circ - p\\)) is proportional to the **mole fraction of solute**. Adding a non-volatile solute decreases the mole fraction of water at the surface, reducing the tendency of water molecules to escape into the vapour phase.\n\nWhy others don't apply:\n- Decreasing the quantity of water: at constant temperature, the vapour pressure of water in a sealed vessel depends on temperature, not quantity.\n- Halving the vessel volume: initially increases pressure, but equilibrium re-establishes the same vapour pressure.\n- Constant temperature: temperature doesn't change the vapour pressure by itself.",
-    "name": "Change that Decreases Vapour Pressure of Water"
+    "explanation": "Adding a **non-volatile solute** (like salt) to water lowers the vapour pressure. This follows Raoult's law:\n\\[\\frac{p^\\circ - p}{p^\\circ} = \\chi_{\\text{solute}}\\]\n\nSolute molecules occupy positions at the surface, reducing the fraction of solvent molecules that can escape.\n\n- Changing the **quantity** of water does not change vapour pressure (it is an intensive property).\n- Changing **vessel volume** changes total pressure but not equilibrium vapour pressure at constant T.\n- **Constant temperature** doesn't change vapour pressure by itself.",
+    "name": "Factors That Decrease Vapour Pressure"
   },
   {
     "id": "c6_item5",
-    "text": "On the basis of which physical property does the separation of different fractions in the fractional distillation technique take place?",
+    "text": "On the basis of which physical property does separation of different fractions occur in fractional distillation?",
     "options": [
       "Solubility",
       "Freezing point",
@@ -61,12 +61,12 @@
       "Melting point"
     ],
     "correctIndex": 2,
-    "explanation": "**Fractional distillation** separates liquid mixtures into their components based on their **differences in boiling points**.\n\nThe principle: components with **lower boiling points** vaporise first and are collected at lower temperatures in the fractionating column, while components with higher boiling points vaporise and condense at higher positions.\n\nThis technique is effective when the boiling points of the liquids differ by **10–40 K**. It is widely used for:\n- Separation of crude oil (petroleum refining)\n- Separation of air into N₂, O₂, and noble gases\n- Purification of alcohol",
-    "name": "Basis of Fractional Distillation"
+    "explanation": "**Fractional distillation** separates miscible liquids based on their differences in **boiling points**. Liquids with lower boiling points vaporise first and are collected in separate fractions. This technique is effective when the difference in boiling points between the liquids is between 10–40 K.",
+    "name": "Principle of Fractional Distillation"
   },
   {
     "id": "c6_item6",
-    "text": "Calculate the density of an aqueous solution of KI, if its molarity and molality are 1.44 M and 1.5 mol kg⁻¹ respectively.\n(Molar mass of KI = 166 g mol⁻¹)",
+    "text": "Calculate the density of an aqueous solution of KI if its molarity is 1.44 M and molality is 1.5 mol kg⁻¹. (Molar mass of KI = 166 g mol⁻¹)",
     "options": [
       "2.20 g L⁻¹",
       "2.50 g L⁻¹",
@@ -74,12 +74,12 @@
       "0.50 g L⁻¹"
     ],
     "correctIndex": 2,
-    "explanation": "Using the relationship between molarity (M), molality (m), density (d), and molar mass of solute (\\(M_B\\)):\n\n$$m = \\frac{M \\times 1000}{1000 \\times d - M \\times M_B}$$\n\nRearranging to find \\(d\\):\n$$d = \\frac{M \\times (1000 + m \\times M_B)}{1000 \\times m}$$\n\n$$d = \\frac{1.44 \\times (1000 + 1.5 \\times 166)}{1000 \\times 1.5}$$\n\n$$= \\frac{1.44 \\times (1000 + 249)}{1500} = \\frac{1.44 \\times 1249}{1500} = \\frac{1798.56}{1500} \\approx 1.20 \\text{ g/mL} = 1.20 \\text{ g L}^{-1}$$",
-    "name": "Density of KI Solution from Molarity and Molality"
+    "explanation": "Using the relation between molarity (M), molality (m), molar mass of solute (\\(M_B\\)), and density (d):\n\\[d = \\frac{1000M + m \\cdot M \\cdot M_B}{1000m}\\]\n\n\\[= \\frac{1000 \\times 1.44 + 1.5 \\times 1.44 \\times 166}{1000 \\times 1.5}\\]\n\n\\[= \\frac{1440 + 358.56}{1500} = \\frac{1798.56}{1500} \\approx 1.20 \\text{ g/L}\\]",
+    "name": "Density from Molarity and Molality"
   },
   {
     "id": "c6_item7",
-    "text": "Calculate the molarity of NaOH solution prepared by dissolving 0.4 g of NaOH in enough water to form 500 mL of the solution.\n(Molar mass of NaOH = 40 g mol⁻¹)",
+    "text": "Calculate the molarity of NaOH solution prepared by dissolving 0.4 g of NaOH in enough water to form 500 mL of solution. (Molar mass of NaOH = 40 g mol⁻¹)",
     "options": [
       "0.02 M",
       "0.05 M",
@@ -87,12 +87,12 @@
       "0.03 M"
     ],
     "correctIndex": 0,
-    "explanation": "$$M = \\frac{\\text{mass (g)}}{\\text{molar mass (g/mol)}} \\times \\frac{1000}{\\text{volume (mL)}}$$\n\n$$M = \\frac{0.4}{40} \\times \\frac{1000}{500} = 0.01 \\times 2 = 0.02 \\text{ M}$$",
-    "name": "Molarity of Dilute NaOH Solution"
+    "explanation": "\\[M = \\frac{w_B \\times 1000}{M_B \\times V(\\text{mL})} = \\frac{0.4 \\times 1000}{40 \\times 500} = \\frac{400}{20000} = 0.02 \\text{ M}\\]",
+    "name": "Molarity of NaOH from Mass and Volume"
   },
   {
     "id": "c6_item8",
-    "text": "Match the method used for determining colligative properties with their corresponding property:\n\nA. Beckmann method\nB. Ostwald-Walker method\nC. Berkeley-Hartley method\nD. Landsberger method\n\n1. Osmotic pressure\n2. Elevation in boiling point\n3. Depression in freezing point\n4. Relative lowering of vapour pressure",
+    "text": "Match the method used for determining a colligative property with the corresponding property:\n\nA. Beckmann method\nB. Ostwald-Walker method\nC. Berkeley-Hartley method\nD. Landsberger method\n\n1. Osmotic pressure\n2. Elevation in boiling point\n3. Depression in freezing point\n4. Relative lowering of vapour pressure",
     "options": [
       "A-2, B-4, C-3, D-1",
       "A-1, B-4, C-2, D-3",
@@ -100,21 +100,21 @@
       "A-3, B-4, C-1, D-2"
     ],
     "correctIndex": 3,
-    "explanation": "The correct matching:\n\n- **A. Beckmann method** → **Depression in freezing point (3)**\n  Uses a Beckmann thermometer to measure the lowering of freezing point.\n\n- **B. Ostwald-Walker method** → **Relative lowering of vapour pressure (4)**\n  Compares vapour pressures of pure solvent and solution by measuring air absorption.\n\n- **C. Berkeley-Hartley method** → **Osmotic pressure (1)**\n  Measures the pressure needed to prevent osmosis across a semi-permeable membrane.\n\n- **D. Landsberger method** → **Elevation in boiling point (2)**\n  Uses the Landsberger-Walker apparatus with volatile solvent vapour to determine boiling point elevation.",
+    "explanation": "The correct matching:\n\n- **Beckmann method** → **Depression in freezing point** (uses a sensitive thermometer)\n- **Ostwald-Walker method** → **Relative lowering of vapour pressure** (dry air is passed over solutions)\n- **Berkeley-Hartley method** → **Osmotic pressure** (applied external pressure stops osmosis)\n- **Landsberger method** → **Elevation in boiling point** (boiling solvent vapour heats the solution)\n\nAnswer: A-3, B-4, C-1, D-2",
     "name": "Methods for Measuring Colligative Properties"
   },
   {
     "id": "c6_item9",
-    "text": "Which of the following relations is true based on partial pressure and mole fraction (Dalton's law)?",
+    "text": "Which of the following relations is true based on partial pressure and mole fraction of a gas mixture component?",
     "options": [
       "\\(p_i = \\chi_i \\times T\\)",
       "\\(p_i = \\chi_i \\times p_{\\text{total}}\\)",
-      "\\(p_i = \\dfrac{\\chi_i}{V}\\)",
-      "\\(p_i \\chi_i = p_{\\text{total}}\\)"
+      "\\(\\dfrac{p_i}{\\chi_i} = V\\)",
+      "\\(p_i \\cdot \\chi_i = p_{\\text{total}}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "**Dalton's Law of Partial Pressures** states that the partial pressure of a component in a gas mixture is equal to the product of its mole fraction and the total pressure:\n\n$$\\boxed{p_i = \\chi_i \\times p_{\\text{total}}}$$\n\nwhere:\n- \\(p_i\\) = partial pressure of the \\(i\\)th component\n- \\(\\chi_i\\) = mole fraction of the \\(i\\)th component\n- \\(p_{\\text{total}}\\) = total pressure of the mixture\n\nThe mole fraction \\(\\chi_i = \\dfrac{n_i}{n_{\\text{total}}}\\), so \\(p_i = \\dfrac{n_i}{n_{\\text{total}}} \\times p_{\\text{total}}\\).",
-    "name": "Dalton's Law: Partial Pressure and Mole Fraction"
+    "explanation": "**Dalton's law of partial pressures** states that the partial pressure of any component in an ideal gas mixture equals its mole fraction multiplied by the total pressure:\n\\[p_i = \\chi_i \\times p_{\\text{total}}\\]\n\nThis is also connected to Raoult's law for solutions. All other options are dimensionally or conceptually incorrect.",
+    "name": "Dalton's Law — Partial Pressure and Mole Fraction"
   },
   {
     "id": "c6_item10",
@@ -126,12 +126,12 @@
       "0.4 M"
     ],
     "correctIndex": 2,
-    "explanation": "The relationship between normality and molarity:\n$$N = n\\text{-factor} \\times M$$\n\nFor Na₂CO₃, the **n-factor = 2** (it provides 2 OH⁻ equivalents or accepts 2 H⁺ in neutralisation reactions).\n\n$$M = \\frac{N}{n\\text{-factor}} = \\frac{0.2}{2} = 0.1 \\text{ M}$$",
-    "name": "Molarity from Normality of Na₂CO₃"
+    "explanation": "For Na₂CO₃, the **n-factor = 2** (it can furnish 2 Na⁺ ions or accept 2 H⁺ in neutralisation).\n\n\\[N = n\\text{-factor} \\times M\\]\n\\[M = \\frac{N}{n\\text{-factor}} = \\frac{0.2}{2} = 0.1 \\text{ M}\\]",
+    "name": "Molarity from Normality for Na₂CO₃"
   },
   {
     "id": "c6_item11",
-    "text": "Calculate the ratio of the rate of effusion of CO to N₂, when temperature and pressure gradients are held constant.",
+    "text": "Calculate the ratio of the effusion rates of CO and N₂ when temperature and pressure are held constant.",
     "options": [
       "1 : 2",
       "1 : 1",
@@ -139,12 +139,12 @@
       "1 : 4"
     ],
     "correctIndex": 1,
-    "explanation": "From **Graham's Law of effusion**:\n$$\\frac{r_{\\text{CO}}}{r_{\\text{N}_2}} = \\sqrt{\\frac{M_{\\text{N}_2}}{M_{\\text{CO}}}}$$\n\nMolar masses:\n- CO: \\(12 + 16 = 28\\) g/mol\n- N₂: \\(14 \\times 2 = 28\\) g/mol\n\n$$\\frac{r_{\\text{CO}}}{r_{\\text{N}_2}} = \\sqrt{\\frac{28}{28}} = \\sqrt{1} = 1$$\n\nSince CO and N₂ are **isoelectronic** and have the **same molar mass** (28 g/mol), their rates of effusion are **equal**: **1 : 1**.",
-    "name": "Ratio of Effusion Rates of CO and N₂"
+    "explanation": "By **Graham's law of effusion**: rate ∝ \\(\\dfrac{1}{\\sqrt{M}}\\)\n\nMolar masses: CO = 28 g/mol, N₂ = 28 g/mol — they are equal!\n\n\\[\\frac{r_{\\text{CO}}}{r_{\\text{N}_2}} = \\sqrt{\\frac{M_{\\text{N}_2}}{M_{\\text{CO}}}} = \\sqrt{\\frac{28}{28}} = 1\\]\n\nSo the ratio = **1 : 1**. CO and N₂ are isoelectronic and have the same molar mass, so they effuse at identical rates.",
+    "name": "Effusion Rate Ratio — CO and N₂"
   },
   {
     "id": "c6_item12",
-    "text": "In comparison to a 0.01 M solution of glucose, the depression in freezing point of a 0.01 M MgCl₂ solution is:\n(Molecular weight of MgCl₂ = 95, molecular weight of glucose = 180)",
+    "text": "In comparison to a 0.01 M solution of glucose, the depression in freezing point of a 0.01 M MgCl₂ solution is:",
     "options": [
       "The same",
       "About twice",
@@ -152,12 +152,12 @@
       "About six times"
     ],
     "correctIndex": 2,
-    "explanation": "Depression in freezing point: \\(\\Delta T_f = i \\times K_f \\times m\\)\n\nAt the same molality (0.01 M ≈ 0.01 m for dilute solutions):\n\n**Glucose** is a non-electrolyte → \\(i = 1\\) → \\(\\Delta T_f = 1 \\times K_f \\times 0.01\\)\n\n**MgCl₂** dissociates as:\n$$\\text{MgCl}_2 \\rightarrow \\text{Mg}^{2+} + 2\\text{Cl}^-$$\nProduces **3 ions** → \\(i = 3\\)\n\n$$\\Delta T_f(\\text{MgCl}_2) = 3 \\times K_f \\times 0.01$$\n\nRatio:\n$$\\frac{\\Delta T_f(\\text{MgCl}_2)}{\\Delta T_f(\\text{glucose})} = \\frac{3}{1} = 3$$\n\nThe depression in freezing point of MgCl₂ solution is **about three times** that of glucose.",
-    "name": "Freezing Point Depression: MgCl₂ vs Glucose"
+    "explanation": "\\(\\Delta T_f = i \\cdot K_f \\cdot m\\)\n\nThe van't Hoff factor \\(i\\) accounts for dissociation:\n- **Glucose** (non-electrolyte): \\(i = 1\\) → 1 particle\n- **MgCl₂** (Mg²⁺ + 2Cl⁻): \\(i \\approx 3\\) → 3 particles\n\nAt equal molarity:\n\\[\\frac{\\Delta T_f(\\text{MgCl}_2)}{\\Delta T_f(\\text{glucose})} = \\frac{3}{1} = 3\\]\n\nSo MgCl₂ shows **about three times** the depression.",
+    "name": "Comparative Depression in Freezing Point"
   },
   {
     "id": "c6_item13",
-    "text": "What will be the molality of the solution containing 18.25 g of HCl gas in 500 g of water?",
+    "text": "What will be the molality of a solution containing 18.25 g of HCl gas in 500 g of water?",
     "options": [
       "0.5 m",
       "0.1 m",
@@ -165,11 +165,24 @@
       "0.05 m"
     ],
     "correctIndex": 2,
-    "explanation": "$$\\text{Molality} = \\frac{\\text{moles of solute}}{\\text{mass of solvent (kg)}}$$\n\n**Moles of HCl:**\n$$n_{\\text{HCl}} = \\frac{18.25}{36.5} = 0.5 \\text{ mol}$$\n\n**Mass of solvent in kg:**\n$$m_{\\text{water}} = \\frac{500}{1000} = 0.5 \\text{ kg}$$\n\n$$\\text{Molality} = \\frac{0.5}{0.5} = 1 \\text{ m}$$",
+    "explanation": "Moles of HCl = \\(\\dfrac{18.25}{36.5} = 0.5\\) mol\n\nMass of solvent = 500 g = 0.5 kg\n\n\\[m = \\frac{\\text{moles of solute}}{\\text{mass of solvent (kg)}} = \\frac{0.5}{0.5} = 1 \\text{ m}\\]",
     "name": "Molality of HCl Solution"
   },
   {
     "id": "c6_item14",
+    "text": "Find the molarity of a 5 molal urea solution with density 1.3 g/mL. (Molar mass of urea = 60 g/mol)",
+    "options": [
+      "Greater than 5 M",
+      "Equal to 5 M",
+      "Less than 5 M",
+      "Cannot be predicted"
+    ],
+    "correctIndex": 1,
+    "explanation": "5 molal = 5 mol urea per 1 kg (1000 g) water.\n\nMass of urea = \\(5 \\times 60 = 300\\) g\n\nTotal solution mass = 1000 + 300 = 1300 g\n\nVolume of solution = \\(\\frac{1300}{1.3} = 1000\\) mL = 1 L\n\n\\[M = \\frac{\\text{moles of urea}}{\\text{volume in L}} = \\frac{5}{1} = 5 \\text{ M}\\]\n\nHere molarity = molality = 5, which is the answer per the PDF.",
+    "name": "Molarity of 5 Molal Urea Solution"
+  },
+  {
+    "id": "c6_item15",
     "text": "To avoid bends sickness, the tanks used by scuba divers are filled with air diluted with:",
     "options": [
       "Helium gas",
@@ -178,11 +191,11 @@
       "Xenon gas"
     ],
     "correctIndex": 0,
-    "explanation": "**Bends (decompression sickness)** occurs when a diver ascends too quickly. At high pressure underwater, nitrogen dissolves in body fluids (Henry's law). On rapid ascent, pressure drops suddenly, and dissolved N₂ comes out of solution as gas bubbles in blood/tissues, causing pain and potentially fatal consequences.\n\n**Solution:** Replace nitrogen with **helium** in the breathing mixture (called **heliox**).\n\nHelium is used because:\n- It is much **less soluble** in blood than nitrogen.\n- It diffuses out of the body much **faster** than N₂.\n- It is **chemically inert** and non-toxic.\n- It does not cause narcotic effects at high pressures (unlike N₂).",
-    "name": "Gas Used to Avoid Bends Sickness in Scuba Divers"
+    "explanation": "At high underwater pressures, nitrogen dissolves in blood at elevated concentrations (Henry's law). During rapid ascent, nitrogen comes out as bubbles causing **decompression sickness (bends)**.\n\nTo prevent this, nitrogen in air is replaced with **helium** (heliox mixture). Helium has far lower solubility in blood and tissues at high pressure, making it much safer. Its low narcotic effect and low density are additional advantages.",
+    "name": "Gas Used in Scuba Diving Tanks"
   },
   {
-    "id": "c6_item15",
+    "id": "c6_item16",
     "text": "Which of the following solutions has the lowest freezing point?",
     "options": [
       "1 M Urea",
@@ -191,12 +204,12 @@
       "1 M Al₂(SO₄)₃"
     ],
     "correctIndex": 3,
-    "explanation": "Depression in freezing point: \\(\\Delta T_f = i \\times K_f \\times m\\)\n\nAt the same molality (1 M ≈ 1 m), the solution with the highest van't Hoff factor \\(i\\) will have the greatest depression in freezing point (lowest freezing point).\n\nCount ions produced per formula unit:\n- **Urea**: non-electrolyte → \\(i = 1\\) (1 particle)\n- **NaCl** → Na⁺ + Cl⁻ → \\(i = 2\\) (2 particles)\n- **Na₂SO₄** → 2Na⁺ + SO₄²⁻ → \\(i = 3\\) (3 particles)\n- **Al₂(SO₄)₃** → 2Al³⁺ + 3SO₄²⁻ → \\(i = 5\\) (5 particles)\n\nMaximum \\(i = 5\\) for Al₂(SO₄)₃ → **lowest freezing point**.",
-    "name": "Solution with the Lowest Freezing Point"
+    "explanation": "\\(\\Delta T_f = i \\cdot K_f \\cdot m\\) — greatest depression when \\(i\\) is maximum.\n\n- Urea: \\(i = 1\\) (no dissociation)\n- NaCl: \\(i = 2\\) (Na⁺ + Cl⁻)\n- Na₂SO₄: \\(i = 3\\) (2Na⁺ + SO₄²⁻)\n- **Al₂(SO₄)₃**: \\(i = 5\\) (2Al³⁺ + 3SO₄²⁻) → **maximum particles**\n\nAl₂(SO₄)₃ gives the greatest \\(\\Delta T_f\\) and therefore the **lowest freezing point**.",
+    "name": "Lowest Freezing Point Solution"
   },
   {
-    "id": "c6_item16",
-    "text": "Which of the following statements is true?\n\n(i) 200 mL of 0.2 M NaOH has the same number of moles as 1000 mL of 1 M NaOH.\n(ii) 200 mL of 1 M NaOH has the same number of moles as 1000 mL of 0.2 M NaOH.\n(iii) 100 mL of 0.2 M NaOH has the same number of moles as 1000 mL of 1 M NaOH.\n(iv) 2000 mL of 0.2 M NaOH has the same number of moles as 1000 mL of 1 M NaOH.",
+    "id": "c6_item17",
+    "text": "Which of the following statements is true?\n\n(i) 200 mL of 0.2 M NaOH has same moles as 1000 mL of 1 M NaOH.\n(ii) 200 mL of 1 M NaOH has same moles as 1000 mL of 0.2 M NaOH.\n(iii) 100 mL of 0.2 M NaOH has same moles as 1000 mL of 1 M NaOH.\n(iv) 2000 mL of 0.2 M NaOH has same moles as 1000 mL of 1 M NaOH.",
     "options": [
       "(i)",
       "(ii)",
@@ -204,25 +217,25 @@
       "(iv)"
     ],
     "correctIndex": 1,
-    "explanation": "Moles = Molarity × Volume (in L)\n\n**Statement (ii):**\n- 200 mL of 1 M NaOH: moles = \\(1 \\times 0.2 = 0.2\\) mol\n- 1000 mL of 0.2 M NaOH: moles = \\(0.2 \\times 1 = 0.2\\) mol ✓ **Equal**\n\nChecking others:\n- **(i)**: 200 mL × 0.2 M = 0.04 mol ≠ 1000 mL × 1 M = 1 mol ✗\n- **(iii)**: 100 mL × 0.2 M = 0.02 mol ≠ 1000 mL × 1 M = 1 mol ✗\n- **(iv)**: 2000 mL × 0.2 M = 0.4 mol ≠ 1000 mL × 1 M = 1 mol ✗",
+    "explanation": "Moles = Molarity × Volume (in L)\n\n- **(i)**: \\(0.2 \\times 0.2 = 0.04\\) mol vs \\(1 \\times 1 = 1\\) mol → **Not equal**\n- **(ii)**: \\(1 \\times 0.2 = 0.2\\) mol vs \\(0.2 \\times 1 = 0.2\\) mol → **Equal ✓**\n- **(iii)**: \\(0.2 \\times 0.1 = 0.02\\) mol vs \\(1 \\times 1 = 1\\) mol → Not equal\n- **(iv)**: \\(0.2 \\times 2 = 0.4\\) mol vs \\(1 \\times 1 = 1\\) mol → Not equal",
     "name": "Equal Moles in Different NaOH Solutions"
   },
   {
-    "id": "c6_item17",
-    "text": "The volume of 0.02 M acidified permanganate solution required for complete reaction of 60 mL of 0.01 M I⁻ ion solution to form I₂ in mL is:",
+    "id": "c6_item18",
+    "text": "The volume of 0.02 M acidified permanganate solution required for complete reaction with 60 mL of 0.01 M I⁻ ion solution to form I₂ is:",
     "options": [
-      "60",
-      "20",
-      "40",
-      "6"
+      "60 mL",
+      "20 mL",
+      "40 mL",
+      "6 mL"
     ],
     "correctIndex": 3,
-    "explanation": "The reaction in acidic medium:\n$$2\\text{KMnO}_4 + 10\\text{I}^- + 16\\text{H}^+ \\rightarrow 2\\text{Mn}^{2+} + 5\\text{I}_2 + 8\\text{H}_2\\text{O}$$\n\nUsing the law of equivalents:\n$$N_1V_1 = N_2V_2$$\n\n- n-factor of KMnO₄ (acidic medium, Mn⁷⁺ → Mn²⁺) = **5**\n- n-factor of I⁻ (I⁻ → I₂, i.e., 0 to −1... actually I⁻ loses 1e⁻ to form I₂) = **1**\n\n$$0.02 \\times 5 \\times V_1 = 0.01 \\times 1 \\times 60$$\n$$0.1 \\times V_1 = 0.6$$\n$$V_1 = 6 \\text{ mL}$$",
-    "name": "Volume of KMnO₄ to React with I⁻ Solution"
+    "explanation": "In acidic medium:\n\\[2\\text{KMnO}_4 + 10\\text{I}^- \\rightarrow 5\\text{I}_2 + 2\\text{Mn}^{2+}\\]\n\n- n-factor of KMnO₄ (Mn⁷⁺ → Mn²⁺) = **5**\n- n-factor of I⁻ (2I⁻ → I₂) = **1** per I⁻\n\nUsing equivalence:\n\\[N_1 V_1 = N_2 V_2\\]\n\\[0.02 \\times 5 \\times V = 60 \\times 0.01 \\times 1\\]\n\\[0.1V = 0.6 \\Rightarrow V = 6 \\text{ mL}\\]",
+    "name": "Volume of KMnO₄ for Reaction with I⁻"
   },
   {
-    "id": "c6_item18",
-    "text": "The number of moles of solute present in the solutions I, II and III respectively is:\n\nI. 500 mL of 0.2 M NaOH\nII. 200 mL of 0.1 N H₂SO₄\nIII. 6 g of urea in 1 kg of water",
+    "id": "c6_item19",
+    "text": "The number of moles of solute present in the following solutions respectively are:\n\nI. 500 mL of 0.2 M NaOH\nII. 200 mL of 0.1 N H₂SO₄\nIII. 6 g of urea (M = 60) in 1 kg of water",
     "options": [
       "0.1, 0.01, 0.1",
       "0.1, 0.02, 0.1",
@@ -230,12 +243,25 @@
       "0.1, 0.01, 0.2"
     ],
     "correctIndex": 0,
-    "explanation": "**I. 500 mL of 0.2 M NaOH:**\n$$n = M \\times V(\\text{L}) = 0.2 \\times 0.5 = 0.1 \\text{ mol}$$\n\n**II. 200 mL of 0.1 N H₂SO₄:**\nH₂SO₄ has n-factor = 2\n$$M = \\frac{N}{\\text{n-factor}} = \\frac{0.1}{2} = 0.05 \\text{ M}$$\n$$n = 0.05 \\times 0.2 = 0.01 \\text{ mol}$$\n\n**III. 6 g of urea (mol. wt = 60) in 1 kg water:**\n$$n = \\frac{6}{60} = 0.1 \\text{ mol}$$\n\nAnswer: **0.1, 0.01, 0.1**",
-    "name": "Moles of Solute in Three Different Solutions"
+    "explanation": "**I:** Moles of NaOH = \\(0.2 \\times \\frac{500}{1000} = 0.1\\) mol\n\n**II:** For H₂SO₄, n-factor = 2, so molarity = \\(\\frac{0.1}{2} = 0.05\\) M\n\nMoles = \\(0.05 \\times \\frac{200}{1000} = 0.01\\) mol\n\n**III:** Moles of urea = \\(\\frac{6}{60} = 0.1\\) mol\n\nAnswer: **0.1, 0.01, 0.1**",
+    "name": "Moles of Solute in Various Solutions"
   },
   {
-    "id": "c6_item19",
-    "text": "1.2 mL of acetic acid having density 1.06 g cm⁻³ is dissolved in 1 litre of water. The depression in freezing point observed for this concentration of acid was 0.041°C. The van't Hoff factor of the acid is:\n(\\(K_f\\) of water = 1.86 K kg mol⁻¹)",
+    "id": "c6_item20",
+    "text": "6 g of a mixture of naphthalene (C₁₀H₈, M = 128) and anthracene (C₁₄H₁₀, M = 178) is dissolved in 300 g of benzene. If the depression in freezing point is 0.70 K, the composition of naphthalene and anthracene in the mixture respectively is: (\\(K_f\\) for benzene = 5.1 K kg mol⁻¹)",
+    "options": [
+      "2.60 g, 3.40 g",
+      "3.40 g, 2.60 g",
+      "2.90 g, 3.10 g",
+      "3.10 g, 2.90 g"
+    ],
+    "correctIndex": 1,
+    "explanation": "From \\(\\Delta T_f = K_f \\times m\\):\n\\[0.70 = 5.1 \\times m \\Rightarrow m = 0.1373 \\text{ mol/kg}\\]\n\nTotal moles = \\(0.1373 \\times 0.3 = 0.04118\\) mol\n\nLet \\(x\\) = mass of naphthalene, \\((6-x)\\) = mass of anthracene:\n\\[\\frac{x}{128} + \\frac{6-x}{178} = 0.04118\\]\n\nSolving: \\(x \\approx 3.40\\) g (naphthalene), anthracene = \\(6 - 3.40 = 2.60\\) g",
+    "name": "Composition from Depression in Freezing Point"
+  },
+  {
+    "id": "c6_item21",
+    "text": "1.2 mL of acetic acid (density = 1.06 g cm⁻³) is dissolved in 1 litre of water. The observed depression in freezing point was 0.041°C. The van't Hoff factor of the acid is: (\\(K_f\\) of water = 1.86 K kg mol⁻¹, molar mass of acetic acid = 60 g/mol)",
     "options": [
       "0.41",
       "1.04",
@@ -243,25 +269,25 @@
       "1.54"
     ],
     "correctIndex": 1,
-    "explanation": "$$\\Delta T_f = i \\times K_f \\times m$$\n\n**Mass of acetic acid:**\n$$\\text{mass} = 1.2 \\times 1.06 = 1.272 \\text{ g}$$\n\n**Moles of acetic acid** (M = 60 g/mol):\n$$n = \\frac{1.272}{60} = 0.0212 \\text{ mol}$$\n\n**Molality** (solvent = 1 kg water):\n$$m = \\frac{0.0212}{1} = 0.0212 \\text{ mol/kg}$$\n\n**van't Hoff factor:**\n$$i = \\frac{\\Delta T_f}{K_f \\times m} = \\frac{0.041}{1.86 \\times 0.0212} = \\frac{0.041}{0.03943} \\approx 1.04$$\n\n\\(i > 1\\) because acetic acid **partially dissociates** in water.",
-    "name": "van't Hoff Factor of Acetic Acid"
+    "explanation": "Mass of acetic acid = \\(1.2 \\times 1.06 = 1.272\\) g\n\nMoles = \\(\\frac{1.272}{60} = 0.0212\\) mol; Molality ≈ 0.0212 mol/kg\n\nFrom \\(\\Delta T_f = i \\cdot K_f \\cdot m\\):\n\\[0.041 = i \\times 1.86 \\times \\frac{1.272 \\times 1000}{60 \\times 1000}\\]\n\n\\[i = \\frac{0.041 \\times 60}{1.86 \\times 1.272} = \\frac{2.46}{2.366} \\approx 1.04\\]",
+    "name": "Van't Hoff Factor of Acetic Acid"
   },
   {
-    "id": "c6_item20",
+    "id": "c6_item22",
     "text": "100 mL of 1.5% (w/v) urea solution has an osmotic pressure of 6.0 atm and 100 mL of 3.42% (w/v) cane sugar solution has an osmotic pressure of 2.4 atm. If the two solutions are mixed, the osmotic pressure of the resulting solution in atm is:",
     "options": [
-      "8.4",
-      "16.8",
-      "4.2",
-      "2.1"
+      "8.4 atm",
+      "16.8 atm",
+      "4.2 atm",
+      "2.1 atm"
     ],
     "correctIndex": 2,
-    "explanation": "When two solutions are mixed, the resulting osmotic pressure can be calculated from the combined concentration:\n$$\\pi_{\\text{mix}} = \\frac{n_1 + n_2}{V_{\\text{total}}} RT$$\n\nUsing the given data:\n- \\(\\pi_1 = 6.0\\) atm for 100 mL urea\n- \\(\\pi_2 = 2.4\\) atm for 100 mL cane sugar\n- Total volume = 200 mL (double each)\n\nSince \\(\\pi = CRT\\) and concentration halves when volume doubles:\n$$\\pi_1' = \\frac{6.0}{2} = 3.0 \\text{ atm (urea in 200 mL)}$$\n$$\\pi_2' = \\frac{2.4}{2} = 1.2 \\text{ atm (sugar in 200 mL)}$$\n\n$$\\pi_{\\text{mix}} = 3.0 + 1.2 = \\mathbf{4.2 \\text{ atm}}$$",
-    "name": "Osmotic Pressure of Mixed Urea and Cane Sugar Solutions"
+    "explanation": "When the two solutions are mixed, total volume = 200 mL. Osmotic pressure scales with moles/volume:\n\n\\[\\pi_{\\text{urea (new)}} = \\frac{100}{200} \\times 6.0 = 3.05 \\text{ atm}\\]\n\\[\\pi_{\\text{sugar (new)}} = \\frac{100}{200} \\times 2.4 = 1.22 \\text{ atm}\\]\n\n\\[\\pi_{\\text{total}} = 3.05 + 1.22 \\approx 4.27 \\approx 4.2 \\text{ atm}\\]",
+    "name": "Osmotic Pressure of Mixed Solutions"
   },
   {
-    "id": "c6_item21",
-    "text": "A solution is prepared by dissolving 10 g of a non-volatile solute (molar mass M g mol⁻¹) in 360 g of water. The molar mass of the solute in g mol⁻¹ if the relative lowering of vapour pressure of solution is \\(5 \\times 10^{-3}\\) is:",
+    "id": "c6_item23",
+    "text": "A solution is prepared by dissolving 10 g of a non-volatile solute in 360 g of water. The relative lowering of vapour pressure is \\(5 \\times 10^{-3}\\). The molar mass of the solute in g mol⁻¹ is:",
     "options": [
       "199",
       "99.5",
@@ -269,25 +295,25 @@
       "149.5"
     ],
     "correctIndex": 1,
-    "explanation": "Using Raoult's law:\n$$\\frac{\\Delta p}{p^\\circ} = \\chi_B = \\frac{n_B}{n_A + n_B}$$\n\nGiven: \\(\\dfrac{\\Delta p}{p^\\circ} = 5 \\times 10^{-3}\\), \\(w_B = 10\\) g, \\(w_A = 360\\) g, \\(M_A = 18\\) g/mol\n\n$$n_A = \\frac{360}{18} = 20 \\text{ mol}, \\quad n_B = \\frac{10}{M_B}$$\n\nSince \\(\\chi_B\\) is small: \\(n_A + n_B \\approx n_A = 20\\)\n\n$$5 \\times 10^{-3} = \\frac{10/M_B}{20 + 10/M_B}$$\n\n$$5 \\times 10^{-3}(20 + 10/M_B) = 10/M_B$$\n$$0.1 + 0.05/M_B = 10/M_B$$\n$$0.1 = 9.95/M_B$$\n$$M_B = \\frac{9.95}{0.1} = 99.5 \\text{ g/mol}$$",
+    "explanation": "\\(n_A = \\frac{360}{18} = 20\\) mol (water), \\(n_B = \\frac{10}{M_B}\\)\n\n\\[\\frac{\\Delta p}{p^\\circ} = \\chi_B = \\frac{n_B}{n_A + n_B}\\]\n\n\\[5 \\times 10^{-3} = \\frac{10/M_B}{20 + 10/M_B}\\]\n\nSolving:\n\\[5 \\times 10^{-3}(20M_B + 10) = 10\\]\n\\[0.1M_B + 0.05 = 10 \\Rightarrow M_B = \\frac{9.95}{0.1} \\approx 99.5 \\text{ g/mol}\\]",
     "name": "Molar Mass from Relative Lowering of Vapour Pressure"
   },
   {
-    "id": "c6_item22",
-    "text": "x g of MgSO₄ (\\(i = 1.8\\)) in 2.5 L of solution has an osmotic pressure of 2.463 atm at 27°C. What is the value of x in g?\n(Molar mass of MgSO₄ = 120 g mol⁻¹, R = 0.082 L·atm·K⁻¹·mol⁻¹)",
+    "id": "c6_item24",
+    "text": "\\(x\\) g of MgSO₄ (\\(i = 1.8\\)) in 2.5 L of solution has an osmotic pressure of 2.463 atm at 27°C. The value of \\(x\\) in g is: (Molar mass of MgSO₄ = 120 g mol⁻¹, \\(R = 0.082\\) L·atm·K⁻¹·mol⁻¹)",
     "options": [
-      "33.2",
-      "6.6",
-      "3.3",
-      "16.6"
+      "33.2 g",
+      "6.6 g",
+      "3.3 g",
+      "16.6 g"
     ],
     "correctIndex": 3,
-    "explanation": "Using the modified osmotic pressure equation for electrolytes:\n$$\\pi = i \\cdot CRT = i \\cdot \\frac{w}{M \\cdot V} \\cdot RT$$\n\nGiven: \\(\\pi = 2.463\\) atm, \\(i = 1.8\\), \\(V = 2.5\\) L, \\(T = 300\\) K, \\(M = 120\\) g/mol\n\n$$2.463 = \\frac{1.8 \\times x \\times 0.082 \\times 300}{120 \\times 2.5}$$\n\n$$2.463 = \\frac{44.28x}{300}$$\n\n$$x = \\frac{2.463 \\times 300}{44.28} = \\frac{738.9}{44.28} \\approx 16.6 \\text{ g}$$",
-    "name": "Mass of MgSO₄ from Osmotic Pressure"
+    "explanation": "Using \\(\\pi = iCRT = i \\times \\dfrac{w}{MV} \\times RT\\):\n\n\\[2.463 = 1.8 \\times \\frac{x}{120 \\times 2.5} \\times 0.082 \\times 300\\]\n\n\\[2.463 = \\frac{1.8 \\times x \\times 24.6}{300}\\]\n\n\\[x = \\frac{2.463 \\times 300}{1.8 \\times 24.6} = \\frac{738.9}{44.28} \\approx 16.6 \\text{ g}\\]",
+    "name": "Mass from Osmotic Pressure with Van't Hoff Factor"
   },
   {
-    "id": "c6_item23",
-    "text": "30.0 mL of an HCl solution requires 20.0 mL of 0.1 M sodium carbonate solution for complete neutralisation. What is the volume of this HCl solution required to neutralise 30.0 mL of 0.2 M NaOH solution?",
+    "id": "c6_item25",
+    "text": "30.0 mL of an HCl solution requires 20.0 mL of 0.1 M Na₂CO₃ for complete neutralisation. What volume of this HCl solution is required to neutralise 30.0 mL of 0.2 M NaOH?",
     "options": [
       "25 mL",
       "50 mL",
@@ -295,12 +321,25 @@
       "45 mL"
     ],
     "correctIndex": 2,
-    "explanation": "**Step 1: Find molarity of HCl using titration with Na₂CO₃:**\n\nReaction: \\(2\\text{HCl} + \\text{Na}_2\\text{CO}_3 \\rightarrow 2\\text{NaCl} + \\text{H}_2\\text{O} + \\text{CO}_2\\)\n$$M_1V_1 = M_2V_2 \\times \\frac{2}{1}$$\n$$M_{\\text{HCl}} \\times 30 = 0.1 \\times 20 \\times 2$$\n$$M_{\\text{HCl}} = \\frac{4}{30} = 0.133 \\text{ M}$$\n\n**Step 2: Volume of HCl to neutralise 30 mL of 0.2 M NaOH:**\n\nReaction: \\(\\text{HCl} + \\text{NaOH} \\rightarrow \\text{NaCl} + \\text{H}_2\\text{O}\\) (1:1 ratio)\n$$M_{\\text{HCl}} \\times V_{\\text{HCl}} = 0.2 \\times 30$$\n$$0.133 \\times V = 6$$\n$$V = \\frac{6}{0.0667} = 90 \\text{ mL}$$",
-    "name": "Volume of HCl to Neutralise NaOH"
+    "explanation": "**Step 1 — Find molarity of HCl:**\n\nNa₂CO₃ reacts with 2 mol HCl per mole (n-factor = 2 for HCl context):\n\\[M_{\\text{HCl}} = \\frac{0.1 \\times 20 \\times 2}{30} = \\frac{4}{30} = 0.133 \\text{ M}\\]\n\n**Step 2 — Volume to neutralise 30 mL of 0.2 M NaOH:**\n\\[M_1 V_1 = M_2 V_2 \\Rightarrow 0.133 \\times V = 0.2 \\times 30\\]\n\\[V = \\frac{6}{0.0667} = 90 \\text{ mL}\\]",
+    "name": "Volume of HCl for Neutralisation"
   },
   {
-    "id": "c6_item24",
-    "text": "An ideal solution is prepared by mixing 59.75 g of CHCl₃ and 21.25 g of CH₂Cl₂. The vapour pressures of pure CHCl₃ and CH₂Cl₂ at 298 K are 200 mm Hg and 415 mm Hg respectively. The mole fractions of CHCl₃ and CH₂Cl₂ in the vapour phase respectively are:\n(Molar mass: CHCl₃ = 119.5 g/mol, CH₂Cl₂ = 85 g/mol)",
+    "id": "c6_item26",
+    "text": "What is the volume (in mL) of 20 vol H₂O₂ required to completely react with 500 mL of 0.02 M acidified KMnO₄ solution?",
+    "options": [
+      "14.0 mL",
+      "7.0 mL",
+      "28.0 mL",
+      "42.0 mL"
+    ],
+    "correctIndex": 0,
+    "explanation": "For H₂O₂: equivalent weight = 17, so normality of \"20 vol\" H₂O₂:\n\\[N_{\\text{H}_2\\text{O}_2} = \\frac{20}{5.6} \\approx 3.57 \\text{ N}\\]\n\nFor KMnO₄ in acidic medium, n-factor = 5:\n\\[N_{\\text{KMnO}_4} = 0.02 \\times 5 = 0.1 \\text{ N}\\]\n\nApplying \\(N_1 V_1 = N_2 V_2\\):\n\\[3.57 \\times V_1 = 0.1 \\times 500\\]\n\\[V_1 = \\frac{50}{3.57} = 14.0 \\text{ mL}\\]",
+    "name": "Volume of H₂O₂ to React with KMnO₄"
+  },
+  {
+    "id": "c6_item27",
+    "text": "An ideal solution is prepared by mixing 59.75 g of CHCl₃ (M = 119.5, \\(p^\\circ = 200\\) mm Hg) and 21.25 g of CH₂Cl₂ (M = 85, \\(p^\\circ = 415\\) mm Hg) at 298 K. The mole fractions of CHCl₃ and CH₂Cl₂ in the vapour phase respectively are:",
     "options": [
       "0.509, 0.491",
       "0.491, 0.509",
@@ -308,12 +347,12 @@
       "0.799, 0.201"
     ],
     "correctIndex": 1,
-    "explanation": "**Moles:**\n- CHCl₃: \\(\\dfrac{59.75}{119.5} = 0.5\\) mol\n- CH₂Cl₂: \\(\\dfrac{21.25}{85} = 0.25\\) mol; Total = 0.75 mol\n\n**Mole fractions in liquid:**\n$$\\chi_{\\text{CHCl}_3} = \\frac{0.5}{0.75} = 0.667, \\quad \\chi_{\\text{CH}_2\\text{Cl}_2} = \\frac{0.25}{0.75} = 0.333$$\n\n**Partial pressures:**\n$$p_{\\text{CHCl}_3} = 0.667 \\times 200 = 133.4 \\text{ mm Hg}$$\n$$p_{\\text{CH}_2\\text{Cl}_2} = 0.333 \\times 415 = 138.2 \\text{ mm Hg}$$\n$$p_{\\text{total}} = 133.4 + 138.2 = 271.6 \\text{ mm Hg}$$\n\n**Mole fractions in vapour phase:**\n$$y_{\\text{CHCl}_3} = \\frac{133.4}{271.6} \\approx 0.491$$\n$$y_{\\text{CH}_2\\text{Cl}_2} = \\frac{138.2}{271.6} \\approx 0.509$$",
-    "name": "Mole Fractions in Vapour Phase for CHCl₃–CH₂Cl₂ Solution"
+    "explanation": "Moles: CHCl₃ = \\(\\frac{59.75}{119.5} = 0.5\\) mol; CH₂Cl₂ = \\(\\frac{21.25}{85} = 0.25\\) mol\n\nLiquid mole fractions: \\(\\chi_{\\text{CHCl}_3} = 0.67\\), \\(\\chi_{\\text{CH}_2\\text{Cl}_2} = 0.33\\)\n\nPartial pressures:\n\\[p_{\\text{CHCl}_3} = 0.67 \\times 200 = 134 \\text{ mm Hg}\\]\n\\[p_{\\text{CH}_2\\text{Cl}_2} = 0.33 \\times 415 = 136.95 \\text{ mm Hg}\\]\n\\[p_{\\text{total}} = 270.95 \\text{ mm Hg}\\]\n\nVapour phase mole fractions:\n\\[y_{\\text{CHCl}_3} = \\frac{134}{270.95} \\approx 0.494\\]\n\\[y_{\\text{CH}_2\\text{Cl}_2} = \\frac{136.95}{270.95} \\approx 0.505\\]\n\nClosest to **0.491 and 0.509**.",
+    "name": "Vapour Phase Mole Fractions — CHCl₃ and CH₂Cl₂"
   },
   {
-    "id": "c6_item25",
-    "text": "The elevation in boiling point of an aqueous NaCl solution is 0.01°C. If its van't Hoff factor is 1.92, the molality of the NaCl solution is:\n(\\(K_b\\) for water = 0.52 K kg mol⁻¹)",
+    "id": "c6_item28",
+    "text": "The elevation in boiling point of an aqueous NaCl solution is 0.01°C. If its van't Hoff factor is 1.92, the molality of NaCl solution is: (\\(K_b\\) for water = 0.52 K kg mol⁻¹)",
     "options": [
       "0.01 m",
       "0.001 m",
@@ -321,12 +360,12 @@
       "0.02 m"
     ],
     "correctIndex": 0,
-    "explanation": "Using the equation for elevation in boiling point:\n$$\\Delta T_b = i \\times K_b \\times m$$\n$$m = \\frac{\\Delta T_b}{i \\times K_b} = \\frac{0.01}{1.92 \\times 0.52} = \\frac{0.01}{0.9984} \\approx 0.01 \\text{ mol/kg}$$\n\nMolality = **0.01 m**",
-    "name": "Molality of NaCl from Boiling Point Elevation"
+    "explanation": "Using \\(\\Delta T_b = i \\cdot K_b \\cdot m\\):\n\n\\[m = \\frac{\\Delta T_b}{i \\times K_b} = \\frac{0.01}{1.92 \\times 0.52} = \\frac{0.01}{0.9984} \\approx 0.01 \\text{ mol/kg}\\]",
+    "name": "Molality from Elevation in Boiling Point"
   },
   {
-    "id": "c6_item26",
-    "text": "20 mL of Fe²⁺ solution of certain concentration has completely reacted with 20 mL of 0.01 M K₂Cr₂O₇ in acidic medium. If 20 mL of the same Fe²⁺ solution has reacted completely with 20 mL of KMnO₄ solution in acid medium, the molarity of KMnO₄ solution is:",
+    "id": "c6_item29",
+    "text": "20 mL of Fe²⁺ solution completely reacted with 20 mL of 0.01 M K₂Cr₂O₇ in acidic medium. The same 20 mL of Fe²⁺ solution also reacted completely with 20 mL of KMnO₄ in acidic medium. The molarity of KMnO₄ solution is:",
     "options": [
       "0.01 M",
       "0.12 M",
@@ -334,12 +373,12 @@
       "0.012 M"
     ],
     "correctIndex": 3,
-    "explanation": "Using the law of equivalents: gram equivalents of Fe²⁺ = gram equivalents of K₂Cr₂O₇ = gram equivalents of KMnO₄.\n\n**n-factors:**\n- K₂Cr₂O₇ (Cr⁶⁺ → Cr³⁺): n-factor = **6** per molecule\n- KMnO₄ in acid (Mn⁷⁺ → Mn²⁺): n-factor = **5**\n\n**Equivalents of K₂Cr₂O₇:**\n$$\\text{meq} = M \\times n \\times V = 0.01 \\times 6 \\times 20 = 1.2$$\n\n**For KMnO₄** (same equivalents of Fe²⁺):\n$$M_2 \\times 5 \\times 20 = 1.2$$\n$$M_2 = \\frac{1.2}{100} = 0.012 \\text{ M}$$",
-    "name": "Molarity of KMnO₄ from Equivalence with K₂Cr₂O₇"
+    "explanation": "In acidic medium:\n- K₂Cr₂O₇: n-factor = 6 (reacts with 6 Fe²⁺ per mole)\n- KMnO₄: n-factor = 5 (reacts with 5 Fe²⁺ per mole)\n\nGram equivalents of K₂Cr₂O₇ = gram equivalents of KMnO₄ (both react with same Fe²⁺ solution)\n\n\\[M_1 V_1 n_1 = M_2 V_2 n_2\\]\n\\[0.01 \\times 20 \\times 6 = M_2 \\times 20 \\times 5\\]\n\\[M_2 = \\frac{0.01 \\times 6}{5} = 0.012 \\text{ M}\\]",
+    "name": "Molarity of KMnO₄ Using Equivalents"
   },
   {
-    "id": "c6_item27",
-    "text": "At 300 K, 460 g of toluene is mixed with 390 g of benzene to form an ideal solution. If vapour pressures of pure toluene and benzene are 32 mm and 40 mm respectively, the mole fraction of toluene in the vapour phase is:",
+    "id": "c6_item30",
+    "text": "At 300 K, 460 g of toluene (M = 92) is mixed with 390 g of benzene (M = 78). Pure vapour pressures: toluene = 32 mm Hg, benzene = 40 mm Hg. The mole fraction of toluene in the vapour phase is:",
     "options": [
       "0.196",
       "0.588",
@@ -347,25 +386,25 @@
       "0.444"
     ],
     "correctIndex": 3,
-    "explanation": "**Moles:**\n- Toluene: \\(\\dfrac{460}{92} = 5\\) mol\n- Benzene: \\(\\dfrac{390}{78} = 5\\) mol; Total = 10 mol\n\n**Mole fractions in liquid:**\n$$\\chi_T = \\chi_B = 0.5$$\n\n**Partial pressures:**\n$$p_T = 0.5 \\times 32 = 16 \\text{ mm Hg}$$\n$$p_B = 0.5 \\times 40 = 20 \\text{ mm Hg}$$\n$$p_{\\text{total}} = 36 \\text{ mm Hg}$$\n\n**Mole fraction of toluene in vapour:**\n$$y_T = \\frac{p_T}{p_{\\text{total}}} = \\frac{16}{36} = 0.444$$",
+    "explanation": "Moles: toluene = \\(\\frac{460}{92} = 5\\) mol; benzene = \\(\\frac{390}{78} = 5\\) mol\n\nMole fractions: \\(\\chi_T = \\chi_B = 0.5\\)\n\nTotal pressure:\n\\[p_{\\text{total}} = 32 \\times 0.5 + 40 \\times 0.5 = 16 + 20 = 36 \\text{ mm Hg}\\]\n\nPartial pressure of toluene = \\(32 \\times 0.5 = 16\\) mm Hg\n\n\\[y_T = \\frac{16}{36} = 0.444\\]",
     "name": "Mole Fraction of Toluene in Vapour Phase"
   },
   {
-    "id": "c6_item28",
-    "text": "If an aqueous solution contains 9% (w/w) of non-volatile, non-electrolyte X (molecular weight 180) and 1% (w/w) of Y (molecular weight 50), the boiling point of the solution in °C is approximately:\n(\\(K_b = 0.52\\) K kg mol⁻¹)",
+    "id": "c6_item31",
+    "text": "An aqueous solution contains 9% (w/w) of X (M = 180) and 1% (w/w) of Y (M = 50) as non-volatile, non-electrolytes. The boiling point of the solution is approximately: (\\(K_b = 0.52\\) K kg mol⁻¹)",
     "options": [
-      "101.4",
-      "100.4",
-      "102.4",
-      "100.8"
+      "101.4°C",
+      "100.4°C",
+      "102.4°C",
+      "100.8°C"
     ],
     "correctIndex": 1,
-    "explanation": "Assume 100 g of solution: 9 g of X, 1 g of Y, ~90 g (≈ 0.09 kg) of solvent.\n\n**Moles:**\n$$n_X = \\frac{9}{180} = 0.05 \\text{ mol}, \\quad n_Y = \\frac{1}{50} = 0.02 \\text{ mol}$$\n\n**Total molality:**\n$$m = \\frac{0.05 + 0.02}{0.090} = \\frac{0.07}{0.090} = 0.778 \\text{ mol/kg}$$\n\n**Elevation in boiling point:**\n$$\\Delta T_b = K_b \\times m = 0.52 \\times 0.778 = 0.40°C$$\n\n(Using the simpler approach from source: \\(\\Delta T_b = 0.52 \\times \\left(\\dfrac{0.05+0.02}{0.1}\\right) = 0.52 \\times 0.7 = 0.36°C \\approx 0.4°C\\))\n\n$$T_{\\text{b}} = 100 + 0.4 = \\mathbf{100.4°C}$$",
-    "name": "Boiling Point of Solution with Two Non-Electrolyte Solutes"
+    "explanation": "In 100 g solution: X = 9 g, Y = 1 g, solvent ≈ 90 g = 0.09 kg\n\n\\[\\Delta T_b = K_b \\times \\left(\\frac{w_X/M_X + w_Y/M_Y}{\\text{mass of solvent (kg)}}\\right)\\]\n\n\\[= 0.52 \\times \\frac{\\frac{9}{180} + \\frac{1}{50}}{0.09} = 0.52 \\times \\frac{0.05 + 0.02}{0.09}\\]\n\n\\[= 0.52 \\times \\frac{0.07}{0.09} = 0.52 \\times 0.778 \\approx 0.40\\]\n\nBoiling point = \\(100 + 0.40 = 100.4°C\\)",
+    "name": "Boiling Point Elevation — Two Solutes"
   },
   {
-    "id": "c6_item29",
-    "text": "An ideal solution of hexane and heptane at 30°C has a vapour pressure of 95 bar with hexane mole fraction 0.305. In the vapour phase, hexane mole fraction is 0.555. The vapour pressure of pure hexane and heptane at 30°C respectively in bar are:",
+    "id": "c6_item32",
+    "text": "An ideal solution of hexane and heptane at 30°C has a vapour pressure of 95 bar with hexane mole fraction 0.305. In the vapour phase hexane mole fraction is 0.555. The vapour pressures of pure hexane and heptane at 30°C respectively in bar are:",
     "options": [
       "172.9, 60.9",
       "60.8, 172.9",
@@ -373,12 +412,25 @@
       "86.5, 30.4"
     ],
     "correctIndex": 0,
-    "explanation": "Given: \\(p_{\\text{total}} = 95\\) bar, \\(\\chi_A = 0.305\\) (hexane), \\(y_A = 0.555\\) (hexane in vapour)\n\n**Partial pressure of hexane:**\n$$p_A = y_A \\times p_{\\text{total}} = 0.555 \\times 95 = 52.725 \\text{ bar}$$\n\n**Pure vapour pressure of hexane:**\n$$p_A^\\circ = \\frac{p_A}{\\chi_A} = \\frac{52.725}{0.305} = 172.9 \\text{ bar}$$\n\n**Partial pressure of heptane:**\n$$p_B = (1 - 0.555) \\times 95 = 0.445 \\times 95 = 42.275 \\text{ bar}$$\n\n**Pure vapour pressure of heptane:**\n$$p_B^\\circ = \\frac{p_B}{\\chi_B} = \\frac{42.275}{0.695} = 60.8 \\approx 60.9 \\text{ bar}$$",
-    "name": "Pure Vapour Pressures from Raoult's Law Data"
+    "explanation": "Let \\(p_A^\\circ\\) = pure hexane, \\(p_B^\\circ\\) = pure heptane.\n\nUsing \\(p_{\\text{total}} \\times y_A = p_A^\\circ \\times \\chi_A\\):\n\\[95 \\times 0.555 = p_A^\\circ \\times 0.305\\]\n\\[p_A^\\circ = \\frac{52.725}{0.305} = 172.9 \\text{ bar}\\]\n\nFor heptane (\\(y_B = 0.445\\), \\(\\chi_B = 0.695\\)):\n\\[95 \\times 0.445 = p_B^\\circ \\times 0.695\\]\n\\[p_B^\\circ = \\frac{42.275}{0.695} \\approx 60.8 \\text{ bar}\\]",
+    "name": "Pure Component Vapour Pressures from Raoult's Law"
   },
   {
-    "id": "c6_item30",
-    "text": "At T(K), the vapour pressures of pure liquids A and B are 100 mm and 160 mm respectively. An ideal solution is formed by mixing 2 moles of A and 3 moles of B. The mole fractions of A and B in the vapour state respectively are:",
+    "id": "c6_item33",
+    "text": "At 298 K, the vapour pressure of a solution of 7.5 g of non-volatile solute in 90 g of water is 2.8 kPa. When 18 g of water is added, the vapour pressure becomes 2.81 kPa at the same temperature. The molar mass of the solute in g mol⁻¹ is:",
+    "options": [
+      "17.5",
+      "68.2",
+      "71.5",
+      "51.8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Using RLVP = \\(\\dfrac{p^\\circ - p}{p^\\circ} = \\dfrac{w_2/M_2}{w_1/M_1}\\)\n\n**Case 1** (90 g water):\n\\[\\frac{p^\\circ - 2.8}{p^\\circ} = \\frac{7.5/M_2}{90/18} = \\frac{1.5}{M_2} \\quad \\cdots(i)\\]\n\n**Case 2** (108 g water):\n\\[\\frac{p^\\circ - 2.81}{p^\\circ} = \\frac{7.5/M_2}{108/18} = \\frac{1.25}{M_2} \\quad \\cdots(ii)\\]\n\nDividing and solving (i) and (ii) simultaneously: \\(M_2 = 71.5\\) g/mol",
+    "name": "Molar Mass from RLVP Before and After Dilution"
+  },
+  {
+    "id": "c6_item34",
+    "text": "An ideal solution is formed by mixing 2 moles of A (\\(p_A^\\circ = 100\\) mm Hg) and 3 moles of B (\\(p_B^\\circ = 160\\) mm Hg) at T(K). The mole fractions of A and B in the vapour state respectively are:",
     "options": [
       "0.706, 0.294",
       "0.294, 0.706",
@@ -386,12 +438,25 @@
       "0.60, 0.40"
     ],
     "correctIndex": 1,
-    "explanation": "**Mole fractions in liquid:**\n$$\\chi_A = \\frac{2}{2+3} = 0.4, \\quad \\chi_B = \\frac{3}{5} = 0.6$$\n\n**Total vapour pressure:**\n$$p_{\\text{total}} = \\chi_A p_A^\\circ + \\chi_B p_B^\\circ = 0.4 \\times 100 + 0.6 \\times 160 = 40 + 96 = 136 \\text{ mm}$$\n\n**Partial pressure of A:**\n$$p_A = \\chi_A \\times p_A^\\circ = 0.4 \\times 100 = 40 \\text{ mm}$$\n\n**Mole fraction of A in vapour:**\n$$y_A = \\frac{p_A}{p_{\\text{total}}} = \\frac{40}{136} = 0.294$$\n$$y_B = 1 - 0.294 = 0.706$$",
-    "name": "Mole Fractions in Vapour Phase from Raoult's Law"
+    "explanation": "Mole fractions in liquid: \\(\\chi_A = \\frac{2}{5} = 0.4\\), \\(\\chi_B = 0.6\\)\n\n\\[p_{\\text{total}} = 0.4 \\times 100 + 0.6 \\times 160 = 40 + 96 = 136 \\text{ mm Hg}\\]\n\n\\[y_A = \\frac{p_A}{p_{\\text{total}}} = \\frac{40}{136} = 0.294\\]\n\\[y_B = 1 - 0.294 = 0.706\\]",
+    "name": "Vapour Phase Mole Fractions — Raoult's Law"
   },
   {
-    "id": "c6_item31",
-    "text": "The measured osmotic pressure of a solution prepared by dissolving 17.4 mg of K₂SO₄ in 2 L of water at 27°C is \\(3.735 \\times 10^{-3}\\) bar. The van't Hoff factor is:\n(R = 0.083 L·bar·K⁻¹·mol⁻¹; Molar mass of K₂SO₄ = 174 g/mol)",
+    "id": "c6_item35",
+    "text": "1 L of 0.15 M Na₂SO₃ aqueous solution is mixed with 500 mL of 0.2 M K₂Cr₂O₇ in acid medium. What is the number of moles of K₂Cr₂O₇ remaining after the reaction?",
+    "options": [
+      "0.1 mol",
+      "0.0125 mol",
+      "0.025 mol",
+      "0.05 mol"
+    ],
+    "correctIndex": 3,
+    "explanation": "Moles of Na₂SO₃ = \\(0.15 \\times 1 = 0.15\\) mol\n\nMoles of K₂Cr₂O₇ = \\(0.2 \\times 0.5 = 0.1\\) mol\n\nIn this redox reaction:\n- Na₂SO₃: S⁴⁺ → S⁶⁺ (n-factor = 2) → equivalents = \\(0.15 \\times 2 = 0.30\\)\n- K₂Cr₂O₇: Cr⁶⁺ → Cr³⁺ (n-factor = 6) → equivalents needed = 0.30, moles needed = \\(\\frac{0.30}{6} = 0.05\\) mol\n\nK₂Cr₂O₇ remaining = \\(0.1 - 0.05 = 0.05\\) mol",
+    "name": "Moles of K₂Cr₂O₇ Remaining After Reaction"
+  },
+  {
+    "id": "c6_item36",
+    "text": "The measured osmotic pressure of a solution prepared by dissolving 17.4 mg of K₂SO₄ in 2 L of water at 27°C is \\(3.735 \\times 10^{-3}\\) bar. The van't Hoff factor is: (\\(R = 0.083\\) L·bar·K⁻¹·mol⁻¹, M of K₂SO₄ = 174 g/mol)",
     "options": [
       "2.84",
       "3.0",
@@ -399,11 +464,11 @@
       "2.32"
     ],
     "correctIndex": 1,
-    "explanation": "From \\(\\pi = iCRT\\):\n$$i = \\frac{\\pi \\times M \\times V}{w \\times R \\times T}$$\n\nGiven:\n- \\(\\pi = 3.735 \\times 10^{-3}\\) bar\n- \\(w = 17.4 \\times 10^{-3}\\) g \\(= 0.0174\\) g\n- \\(M = 174\\) g/mol\n- \\(V = 2\\) L\n- \\(T = 300\\) K\n\n$$C = \\frac{w}{M \\times V} = \\frac{0.0174}{174 \\times 2} = 5 \\times 10^{-5} \\text{ mol/L}$$\n\n$$i = \\frac{\\pi}{CRT} = \\frac{3.735 \\times 10^{-3}}{5 \\times 10^{-5} \\times 0.083 \\times 300} = \\frac{3.735 \\times 10^{-3}}{1.245 \\times 10^{-3}} \\approx 3.0$$\n\nThis confirms K₂SO₄ → 2K⁺ + SO₄²⁻ (3 ions), so \\(i = 3\\).",
-    "name": "van't Hoff Factor of K₂SO₄"
+    "explanation": "\\[C = \\frac{0.0174}{174 \\times 2} = 5 \\times 10^{-5} \\text{ mol/L}\\]\n\n\\[i = \\frac{\\pi}{CRT} = \\frac{3.735 \\times 10^{-3}}{5 \\times 10^{-5} \\times 0.083 \\times 300} = \\frac{3.735 \\times 10^{-3}}{1.245 \\times 10^{-3}} = 3.0\\]\n\nThis is consistent with K₂SO₄ → 2K⁺ + SO₄²⁻ giving \\(i = 3\\) for complete dissociation.",
+    "name": "Van't Hoff Factor from Osmotic Pressure"
   },
   {
-    "id": "c6_item32",
+    "id": "c6_item37",
     "text": "Dissolving 120 g of a compound (mol. wt = 60) in 1000 g of water gave a solution of density 1.12 g mL⁻¹. The molarity of the solution is:",
     "options": [
       "1.0 M",
@@ -412,11 +477,11 @@
       "4.0 M"
     ],
     "correctIndex": 1,
-    "explanation": "**Total mass of solution:**\n$$m_{\\text{total}} = 120 + 1000 = 1120 \\text{ g}$$\n\n**Total volume of solution:**\n$$V = \\frac{m_{\\text{total}}}{d} = \\frac{1120}{1.12} = 1000 \\text{ mL} = 1 \\text{ L}$$\n\n**Moles of solute:**\n$$n = \\frac{120}{60} = 2 \\text{ mol}$$\n\n**Molarity:**\n$$M = \\frac{n}{V} = \\frac{2}{1} = 2.0 \\text{ M}$$",
-    "name": "Molarity from Density and Mass of Solute"
+    "explanation": "Total mass of solution = 1000 + 120 = 1120 g\n\nVolume = \\(\\frac{1120}{1.12} = 1000\\) mL = 1 L\n\nMoles of solute = \\(\\frac{120}{60} = 2\\) mol\n\n\\[M = \\frac{2 \\text{ mol}}{1 \\text{ L}} = 2.0 \\text{ M}\\]",
+    "name": "Molarity from Mass and Density"
   },
   {
-    "id": "c6_item33",
+    "id": "c6_item38",
     "text": "To 50 mL of 0.1 N Na₂CO₃ solution, 150 mL of water is added. What is the molarity of the resultant solution?",
     "options": [
       "\\(\\dfrac{M}{40}\\)",
@@ -425,12 +490,12 @@
       "\\(\\dfrac{M}{30}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "**Step 1: Find new normality after dilution:**\n$$N_1V_1 = N_2V_2$$\n$$0.1 \\times 50 = N_2 \\times 200$$\n$$N_2 = \\frac{5}{200} = 0.025 \\text{ N} = \\frac{1}{40} \\text{ N}$$\n\n**Step 2: Convert normality to molarity:**\nFor Na₂CO₃, n-factor (Z) = 2 (provides 2 OH⁻ equivalents)\n$$M = \\frac{N}{Z} = \\frac{1/40}{2} = \\frac{1}{80} \\text{ M} = \\frac{M}{80}$$",
-    "name": "Molarity after Dilution of Na₂CO₃ Solution"
+    "explanation": "**Step 1 — Find new normality after dilution:**\n\\[N_1 V_1 = N_2 V_2 \\Rightarrow 0.1 \\times 50 = N_2 \\times 200\\]\n\\[N_2 = \\frac{5}{200} = \\frac{N}{40}\\]\n\n**Step 2 — Convert to molarity** (n-factor of Na₂CO₃ = 2):\n\\[M = \\frac{N_2}{2} = \\frac{1/40}{2} = \\frac{M}{80}\\]",
+    "name": "Molarity After Dilution of Na₂CO₃"
   },
   {
-    "id": "c6_item34",
-    "text": "0.1 m solutions of sodium sulphate, urea and sodium chloride are taken. The correct ratio of elevation of boiling point of these solutions is:",
+    "id": "c6_item39",
+    "text": "0.1 m solutions each of sodium sulphate, urea and sodium chloride are taken. The correct ratio of elevation of boiling point of these solutions is:",
     "options": [
       "1 : 1 : 1",
       "3 : 1 : 2",
@@ -438,12 +503,12 @@
       "2 : 3 : 1"
     ],
     "correctIndex": 1,
-    "explanation": "Elevation in boiling point \\(\\Delta T_b = i \\times K_b \\times m\\)\n\nAt the same molality (0.1 m), \\(\\Delta T_b \\propto i\\).\n\nVan't Hoff factors:\n- **Na₂SO₄** → 2Na⁺ + SO₄²⁻ → **\\(i = 3\\)**\n- **Urea** (non-electrolyte) → **\\(i = 1\\)**\n- **NaCl** → Na⁺ + Cl⁻ → **\\(i = 2\\)**\n\nRatio of \\(\\Delta T_b\\):\n$$\\text{Na}_2\\text{SO}_4 : \\text{Urea} : \\text{NaCl} = 3 : 1 : 2$$",
-    "name": "Ratio of Boiling Point Elevation for Different 0.1 m Solutions"
+    "explanation": "\\(\\Delta T_b = i \\cdot K_b \\cdot m\\). Since molality is the same, the ratio equals the ratio of \\(i\\) values:\n\n- **Na₂SO₄**: 2Na⁺ + SO₄²⁻ → \\(i = 3\\)\n- **Urea**: no dissociation → \\(i = 1\\)\n- **NaCl**: Na⁺ + Cl⁻ → \\(i = 2\\)\n\nRatio (Na₂SO₄ : urea : NaCl) = **3 : 1 : 2**",
+    "name": "Ratio of Boiling Point Elevation — Three Solutions"
   },
   {
-    "id": "c6_item35",
-    "text": "From the reaction:\n$$2\\text{KMnO}_4 + 3\\text{H}_2\\text{SO}_4 + 5\\text{H}_2\\text{O}_2 \\rightarrow \\text{K}_2\\text{SO}_4 + 2\\text{MnSO}_4 + 8\\text{H}_2\\text{O} + 5\\text{O}_2$$\nFind the normality of H₂O₂ solution if 20 mL of it is required to completely react with 16 mL of 0.02 M KMnO₄ solution.",
+    "id": "c6_item40",
+    "text": "From the reaction:\n\\[2\\text{KMnO}_4 + 3\\text{H}_2\\text{SO}_4 + 5\\text{H}_2\\text{O}_2 \\rightarrow \\text{K}_2\\text{SO}_4 + 2\\text{MnSO}_4 + 8\\text{H}_2\\text{O} + 5\\text{O}_2\\]\nFind the normality of H₂O₂ if 20 mL of it reacts completely with 16 mL of 0.02 M KMnO₄.",
     "options": [
       "\\(4 \\times 10^{-2}\\) N",
       "\\(2 \\times 10^{-2}\\) N",
@@ -451,12 +516,12 @@
       "\\(8 \\times 10^{-2}\\) N"
     ],
     "correctIndex": 3,
-    "explanation": "Using the law of equivalents:\n$$N_1V_1(\\text{H}_2\\text{O}_2) = N_2V_2(\\text{KMnO}_4)$$\n\n**n-factor of KMnO₄** (acidic medium, Mn⁷⁺ → Mn²⁺): **n = 5**\n\n$$N_2(\\text{KMnO}_4) = M \\times n = 0.02 \\times 5 = 0.1 \\text{ N}$$\n\nApplying equivalents:\n$$N_1 \\times 20 = 0.1 \\times 16$$\n$$N_1 = \\frac{1.6}{20} = 0.08 \\text{ N} = 8 \\times 10^{-2} \\text{ N}$$",
-    "name": "Normality of H₂O₂ from Reaction with KMnO₄"
+    "explanation": "For KMnO₄ in acidic medium, valence factor = 5.\n\nUsing equivalence: \\(N_1 V_1 = N_2 V_2\\)\n\n\\[N_{\\text{H}_2\\text{O}_2} \\times 20 = 0.02 \\times 5 \\times 16\\]\n\n\\[N = \\frac{0.02 \\times 5 \\times 16}{20} = \\frac{1.6}{20} = 0.08 = 8 \\times 10^{-2} \\text{ N}\\]",
+    "name": "Normality of H₂O₂ from Titration with KMnO₄"
   },
   {
-    "id": "c6_item36",
-    "text": "Benzene and toluene form an ideal solution. The vapour pressures of pure benzene and toluene at T(K) are 50 mm Hg and 40 mm Hg respectively. What is the mole fraction of toluene in the vapour phase when 117 g of benzene is mixed with 46 g of toluene?\n(Molar mass: benzene = 78 g/mol, toluene = 92 g/mol)",
+    "id": "c6_item41",
+    "text": "Benzene and toluene form an ideal solution. Vapour pressures at T(K): benzene = 50 mm Hg, toluene = 40 mm Hg. What is the mole fraction of toluene in the vapour phase when 117 g of benzene (M = 78) is mixed with 46 g of toluene (M = 92)?",
     "options": [
       "0.78",
       "0.21",
@@ -464,12 +529,25 @@
       "0.35"
     ],
     "correctIndex": 1,
-    "explanation": "**Moles:**\n- Benzene: \\(\\dfrac{117}{78} = 1.5\\) mol\n- Toluene: \\(\\dfrac{46}{92} = 0.5\\) mol; Total = 2.0 mol\n\n**Mole fractions in liquid:**\n$$\\chi_T = \\frac{0.5}{2.0} = 0.25, \\quad \\chi_B = 0.75$$\n\n**Partial pressures:**\n$$p_T = 0.25 \\times 40 = 10 \\text{ mm Hg}$$\n$$p_B = 0.75 \\times 50 = 37.5 \\text{ mm Hg}$$\n$$p_{\\text{total}} = 47.5 \\text{ mm Hg}$$\n\n**Mole fraction of toluene in vapour:**\n$$y_T = \\frac{10}{47.5} = 0.21$$",
-    "name": "Mole Fraction of Toluene in Vapour Phase"
+    "explanation": "Moles: benzene = \\(\\frac{117}{78} = 1.5\\) mol; toluene = \\(\\frac{46}{92} = 0.5\\) mol\n\nLiquid mole fractions: \\(\\chi_T = \\frac{0.5}{2.0} = 0.25\\); \\(\\chi_B = 0.75\\)\n\nTotal pressure:\n\\[p_T = 40 \\times 0.25 + 50 \\times 0.75 = 10 + 37.5 = 47.5 \\text{ mm Hg}\\]\n\nMole fraction of toluene in vapour:\n\\[y_T = \\frac{40 \\times 0.25}{47.5} = \\frac{10}{47.5} = 0.21\\]",
+    "name": "Mole Fraction of Toluene in Vapour — Benzene/Toluene"
   },
   {
-    "id": "c6_item37",
-    "text": "When 36 g of a non-volatile, non-electrolytic solute having the empirical formula CH₂O is dissolved in 1.2 kg of water, the solution freezes at −0.93°C. The molecular formula of the solute is:\n(\\(K_f\\) of water = 1.86 K kg mol⁻¹)",
+    "id": "c6_item42",
+    "text": "For the oxidation of 0.2 M FeSO₄ solution, 0.965 amperes current is passed for 1 hour. The volume of the solution that is oxidised in mL is:",
+    "options": [
+      "70 mL",
+      "80 mL",
+      "60 mL",
+      "90 mL"
+    ],
+    "correctIndex": 3,
+    "explanation": "Charge passed: \\(Q = I \\times t = 0.965 \\times 3600 = 3474\\) C\n\nReaction: Fe²⁺ → Fe (deposition requires 2e⁻ per Fe)\n\nMoles deposited = \\(\\frac{3474}{2 \\times 96500} = \\frac{3474}{193000} = 0.018\\) mol\n\n\\[V = \\frac{n \\times 1000}{M} = \\frac{0.018 \\times 1000}{0.2} = 90 \\text{ mL}\\]",
+    "name": "Volume of FeSO₄ Oxidised by Electrolysis"
+  },
+  {
+    "id": "c6_item43",
+    "text": "36 g of a non-volatile, non-electrolytic solute with empirical formula CH₂O is dissolved in 1.2 kg of water. The solution freezes at −0.93°C. The molecular formula of the solute is: (\\(K_f\\) of water = 1.86 K kg mol⁻¹)",
     "options": [
       "CH₂O",
       "C₂H₄O₂",
@@ -477,59 +555,72 @@
       "C₄H₈O₄"
     ],
     "correctIndex": 1,
-    "explanation": "$$\\Delta T_f = K_f \\times m = K_f \\times \\frac{w_B / M_B}{w_A(\\text{kg})}$$\n\n$$0.93 = 1.86 \\times \\frac{36 / M_B}{1.2}$$\n\n$$M_B = \\frac{1.86 \\times 36}{1.2 \\times 0.93} = \\frac{66.96}{1.116} = 60 \\text{ g/mol}$$\n\n**Empirical formula CH₂O** has formula mass = 12 + 2 + 16 = **30 g/mol**\n\n$$n = \\frac{60}{30} = 2$$\n\nMolecular formula = \\((\\text{CH}_2\\text{O})_2 = \\mathbf{C_2H_4O_2}\\) (acetic acid / glycolaldehyde)",
+    "explanation": "\\[\\Delta T_f = K_f \\times m \\Rightarrow 0.93 = 1.86 \\times \\frac{36}{M \\times 1.2}\\]\n\n\\[M = \\frac{1.86 \\times 36}{0.93 \\times 1.2} = \\frac{66.96}{1.116} = 60 \\text{ g/mol}\\]\n\nEmpirical formula CH₂O has mass = 30 g/mol.\n\n\\(n = \\frac{60}{30} = 2\\) → Molecular formula = **C₂H₄O₂**",
     "name": "Molecular Formula from Freezing Point Depression"
   },
   {
-    "id": "c6_item38",
-    "text": "The volume of 0.1 M HCl required in mL to neutralise 20 mL of a solution containing 0.106 g of Na₂CO₃ is:\n(Molar mass of Na₂CO₃ = 106 g/mol)",
+    "id": "c6_item44",
+    "text": "The volume of 0.1 M HCl required in mL to neutralise 20 mL of a solution containing 0.106 g of Na₂CO₃ is:",
     "options": [
-      "10",
-      "5",
-      "20",
-      "40"
+      "10 mL",
+      "5 mL",
+      "20 mL",
+      "40 mL"
     ],
     "correctIndex": 2,
-    "explanation": "**Moles of Na₂CO₃:**\n$$n = \\frac{0.106}{106} = 0.001 \\text{ mol}$$\n\n**Molarity of Na₂CO₃ in 20 mL:**\n$$M = \\frac{0.001 \\times 1000}{20} = 0.05 \\text{ M}$$\n\n**Neutralisation reaction:** \\(2\\text{HCl} + \\text{Na}_2\\text{CO}_3 \\rightarrow 2\\text{NaCl} + \\text{H}_2\\text{O} + \\text{CO}_2\\)\n\nUsing the equivalents equation (\\(Z_1 = 1\\) for HCl, \\(Z_2 = 2\\) for Na₂CO₃):\n$$M_1V_1Z_1 = M_2V_2Z_2$$\n$$0.1 \\times V_1 \\times 1 = 0.05 \\times 20 \\times 2$$\n$$V_1 = \\frac{2.0}{0.1} = 20 \\text{ mL}$$",
+    "explanation": "Molar mass of Na₂CO₃ = 106 g/mol\n\nMolarity of Na₂CO₃ = \\(\\frac{0.106}{106} \\times \\frac{1000}{20} = 0.05\\) M\n\nNeutralisation: Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂\n\n\\[M_1 V_1 Z_1 = M_2 V_2 Z_2 \\quad (Z_{\\text{HCl}} = 1,\\ Z_{\\text{Na}_2\\text{CO}_3} = 2)\\]\n\n\\[0.1 \\times V_1 \\times 1 = 0.05 \\times 20 \\times 2\\]\n\\[V_1 = \\frac{2}{0.1} = 20 \\text{ mL}\\]",
     "name": "Volume of HCl to Neutralise Na₂CO₃"
   },
   {
-    "id": "c6_item39",
-    "text": "If CO₂ gas having a partial pressure of 1.67 bar is bubbled through 1 L of water at 298 K, the amount of CO₂ dissolved in water in g L⁻¹ is approximately.\n(Henry's law constant of CO₂ = 1.67 kbar at 298 K)",
+    "id": "c6_item45",
+    "text": "The quantity of CO₂ in 500 mL of soda water packed under 3.34 bar CO₂ pressure at 298 K in grams is: (Henry's law constant \\(K_H\\) for CO₂ = 1.67 kbar at 298 K)",
     "options": [
-      "24.42",
-      "12.21",
-      "2.44",
-      "1.22"
+      "2.442 g",
+      "1.221 g",
+      "4.884 g",
+      "3.663 g"
     ],
-    "correctIndex": 2,
-    "explanation": "Using **Henry's Law**: \\(p = K_H \\times \\chi\\)\n\n$$\\chi_{\\text{CO}_2} = \\frac{p}{K_H} = \\frac{1.67 \\text{ bar}}{1.67 \\times 10^3 \\text{ bar}} = 1.0 \\times 10^{-3}$$\n\nFor dilute solution: \\(\\chi_{\\text{CO}_2} = \\dfrac{n_{\\text{CO}_2}}{n_{\\text{water}}}\\)\n\nMoles of water in 1 L = \\(\\dfrac{1000}{18} = 55.55\\) mol\n\n$$n_{\\text{CO}_2} = \\chi \\times n_{\\text{water}} = 1.0 \\times 10^{-3} \\times 55.55 = 0.0556 \\text{ mol}$$\n\n**Mass of CO₂:**\n$$m = 0.0556 \\times 44 = 2.44 \\text{ g/L}$$",
-    "name": "Mass of CO₂ Dissolved via Henry's Law"
+    "correctIndex": 0,
+    "explanation": "By Henry's law: \\(p = K_H \\cdot \\chi\\)\n\n\\[\\chi_{\\text{CO}_2} = \\frac{3.34}{1670} = 2 \\times 10^{-3}\\]\n\nMoles of water in 500 mL = \\(\\frac{500}{18} = 27.78\\) mol\n\n\\[n_{\\text{CO}_2} = \\chi \\times n_{\\text{H}_2\\text{O}} = 2 \\times 10^{-3} \\times 27.78 \\approx 0.0556 \\text{ mol}\\]\n\nMass of CO₂ = \\(0.0556 \\times 44 = 2.44 \\approx 2.442 \\text{ g}\\)",
+    "name": "Henry's Law — CO₂ in Soda Water"
   },
   {
-    "id": "c6_item40",
-    "text": "300 mL of an aqueous solution of a protein contains 2.52 g of the protein. If the osmotic pressure of such a solution at 300 K is \\(5.04 \\times 10^{-3}\\) bar, the molar mass of the protein in g mol⁻¹ is:\n(R = 0.083 L·bar·K⁻¹·mol⁻¹)",
+    "id": "c6_item46",
+    "text": "300 mL of an aqueous solution of a protein contains 2.52 g of the protein. If the osmotic pressure at 300 K is \\(5.04 \\times 10^{-3}\\) bar, the molar mass of the protein in g mol⁻¹ is: (\\(R = 0.083\\) L·bar·K⁻¹·mol⁻¹)",
     "options": [
-      "\\(83.0 \\times 10^3\\)",
-      "\\(20.8 \\times 10^3\\)",
-      "\\(41.5 \\times 10^3\\)",
-      "\\(41.5 \\times 10^4\\)"
+      "\\(83.0 \\times 10^3\\) g/mol",
+      "\\(20.8 \\times 10^3\\) g/mol",
+      "\\(41.5 \\times 10^3\\) g/mol",
+      "\\(41.5 \\times 10^4\\) g/mol"
     ],
     "correctIndex": 2,
-    "explanation": "For a non-dissociating macromolecule like a protein, \\(i = 1\\):\n$$\\pi = CRT = \\frac{w}{M \\times V} \\times RT$$\n$$M = \\frac{w \\times R \\times T}{\\pi \\times V}$$\n\nGiven:\n- \\(w = 2.52\\) g\n- \\(\\pi = 5.04 \\times 10^{-3}\\) bar\n- \\(V = 0.3\\) L\n- \\(R = 0.083\\) L·bar·K⁻¹·mol⁻¹\n- \\(T = 300\\) K\n\n$$M = \\frac{2.52 \\times 0.083 \\times 300}{5.04 \\times 10^{-3} \\times 0.3} = \\frac{62.748}{1.512 \\times 10^{-3}} = 41500 \\text{ g/mol} \\approx 41.5 \\times 10^3 \\text{ g/mol}$$",
+    "explanation": "Using \\(\\pi = CRT\\) (protein does not dissociate, \\(i = 1\\)):\n\n\\[C = \\frac{\\pi}{RT} = \\frac{5.04 \\times 10^{-3}}{0.083 \\times 300} = 2.024 \\times 10^{-4} \\text{ mol/L}\\]\n\nMoles in 300 mL = \\(2.024 \\times 10^{-4} \\times 0.3 = 6.07 \\times 10^{-5}\\) mol\n\n\\[M = \\frac{2.52}{6.07 \\times 10^{-5}} \\approx 41500 = 41.5 \\times 10^3 \\text{ g/mol}\\]",
     "name": "Molar Mass of Protein from Osmotic Pressure"
   },
   {
-    "id": "c6_item41",
-    "text": "12.25 g of CH₃CH₂CHClCOOH is added to 250 g of water to make a solution. If the dissociation constant of the acid is \\(1.44 \\times 10^{-3}\\), the depression in freezing point in °C is:\n(Molar mass of acid = 122.5 g/mol, \\(K_f\\) for water = 1.86 K kg mol⁻¹)",
+    "id": "c6_item47",
+    "text": "12.25 g of CH₃CH₂CHClCOOH (M = 122.5 g/mol) is added to 250 g of water. If the dissociation constant \\(K_a = 1.44 \\times 10^{-3}\\), the depression in freezing point of water in °C is: (\\(K_f\\) for water = 1.86 K kg mol⁻¹)",
     "options": [
-      "0.789",
-      "0.394",
-      "1.183",
-      "0.592"
+      "0.789°C",
+      "0.394°C",
+      "1.183°C",
+      "0.592°C"
     ],
     "correctIndex": 0,
-    "explanation": "**Step 1: Molality of acid:**\n$$m = \\frac{12.25/122.5}{0.250} = \\frac{0.1}{0.25} = 0.4 \\text{ mol/kg}$$\n\n**Step 2: Degree of dissociation (α):**\n$$K_a = C\\alpha^2 \\Rightarrow \\alpha = \\sqrt{\\frac{K_a}{C}} = \\sqrt{\\frac{1.44 \\times 10^{-3}}{0.4}} = \\sqrt{3.6 \\times 10^{-3}} = 0.06$$\n\n**Step 3: van't Hoff factor:**\n$$i = 1 + \\alpha = 1 + 0.06 = 1.06$$\n\n**Step 4: Depression in freezing point:**\n$$\\Delta T_f = i \\times K_f \\times m = 1.06 \\times 1.86 \\times 0.4 = 0.789 \\text{ °C}$$",
-    "name": "Freezing Point Depression of a Weak Acid Solution"
+    "explanation": "**Step 1 — Molality:**\n\\[m = \\frac{12.25/122.5}{250/1000} = \\frac{0.1}{0.25} = 0.4 \\text{ mol/kg}\\]\n\n**Step 2 — Degree of dissociation:**\n\\[\\alpha = \\sqrt{\\frac{K_a}{C}} = \\sqrt{\\frac{1.44 \\times 10^{-3}}{0.4}} = \\sqrt{3.6 \\times 10^{-3}} = 0.06\\]\n\n**Step 3 — Van't Hoff factor:**\n\\[i = 1 + \\alpha = 1.06\\]\n\n**Step 4 — ΔTf:**\n\\[\\Delta T_f = i \\times K_f \\times m = 1.06 \\times 1.86 \\times 0.4 = 0.789°C\\]",
+    "name": "Freezing Point Depression with Partial Dissociation"
+  },
+  {
+    "id": "c6_item48",
+    "text": "If CO₂ gas at a partial pressure of 1.67 bar is bubbled through 1 L of water at 298 K, the amount of CO₂ dissolved in water in g L⁻¹ is approximately: (\\(K_H\\) for CO₂ = 1.67 kbar at 298 K)",
+    "options": [
+      "24.42 g/L",
+      "12.21 g/L",
+      "2.44 g/L",
+      "1.22 g/L"
+    ],
+    "correctIndex": 2,
+    "explanation": "By Henry's law: \\(p_{\\text{CO}_2} = K_H \\cdot \\chi_{\\text{CO}_2}\\)\n\n\\[\\chi_{\\text{CO}_2} = \\frac{1.67}{1670} = 1 \\times 10^{-3}\\]\n\nMoles of water in 1 L ≈ \\(\\frac{1000}{18} = 55.5\\) mol\n\n\\[n_{\\text{CO}_2} = \\chi \\times n_{\\text{H}_2\\text{O}} = 10^{-3} \\times 55.5 = 0.0555 \\text{ mol}\\]\n\nMass = \\(0.0555 \\times 44 = 2.44\\) g/L",
+    "name": "Henry's Law — CO₂ Dissolved in Water"
   }
 ]

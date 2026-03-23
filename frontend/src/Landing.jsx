@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useAuth } from './hooks/useAuth';
 import Container from './components/Container';
 import { getMockTest } from './api';
-import { BookOpen, Target, CheckCircle, Smartphone, Star, Users, TrendingUp } from 'lucide-react';
+import { BookOpen, Target, CheckCircle, Smartphone, Star, Users, TrendingUp, PieChart, Video, Building } from 'lucide-react';
 
 export default function Landing() {
   const [questions, setQuestions] = useState([]);
@@ -13,7 +13,13 @@ export default function Landing() {
   const [popupMsg, setPopupMsg] = useState("");
   const { user } = useAuth();
   const navigate = useNavigate();
-  
+
+  // Mini quiz states
+  const [timeLeft, setTimeLeft] = useState(120); // 2 mins
+  const [quizStarted, setQuizStarted] = useState(false);
+  const [quizFinished, setQuizFinished] = useState(false);
+  const [score, setScore] = useState(0);
+
 
   useEffect(() => {
     getMockTest(1)
@@ -25,23 +31,28 @@ export default function Landing() {
         setQuestions([
           {
             question: "If sin²θ + cos²θ = ?",
-            options: ["1", "0", "2", "None"]
+            options: ["1", "0", "2", "None"],
+            answer: "1"
           },
           {
             question: "Value of tan 45°?",
-            options: ["0", "1", "2", "Undefined"]
+            options: ["0", "1", "2", "Undefined"],
+            answer: "1"
           },
           {
             question: "Derivative of x²?",
-            options: ["x", "2x", "x²", "1"]
+            options: ["x", "2x", "x²", "1"],
+            answer: "2x"
           },
           {
             question: "Unit of force?",
-            options: ["Joule", "Pascal", "Newton", "Watt"]
+            options: ["Joule", "Pascal", "Newton", "Watt"],
+            answer: "Newton"
           },
           {
             question: "Speed of light?",
-            options: ["3×10^8 m/s", "1×10^6", "9.8", "None"]
+            options: ["3×10^8 m/s", "1×10^6", "9.8", "None"],
+            answer: "3×10^8 m/s"
           }
         ]);
       });
@@ -69,44 +80,83 @@ export default function Landing() {
       "Rajahmundry", "Eluru", "Ongole", "Kadapa", "Srikakulam", "Vizianagaram",
       "Tenali", "Bhimavaram", "Machilipatnam", "Proddatur", "Hindupur",
       "Narasaraopet", "Chittoor", "Gudivada", "Tadepalligudem", "Amalapuram",
-      "Kakinada", "Tanuku", "Nidadavole", "Gudur", "Chilakaluripet"
+      "Kakinada", "Tanuku", "Nidadavole", "Gudur", "Chilakaluripet",
     ];
-      const actions = [
-        "just joined RankHance 🚀",
-        "started a mock test 🎯",
-        "scored 120+ marks 📈",
-        "improved 35 marks 🔥",
-        "completed a full test ✅"
-      ];
+    const actions = [
+      "just joined RankHance 🚀",
+      "started a mock test 🎯",
+      "scored 120+ marks 📈",
+      "scored 80+ marks 📈",
+      "scored 90+ marks 📈",
+      "improved 35 marks 🔥",
+      "improved 25 marks 🔥",
+      "improved 15 marks 🔥",
+      "completed a full test ✅"
+    ];
 
-      const showPopup = () => {
-        const name = names[Math.floor(Math.random() * names.length)];
-        const city = cities[Math.floor(Math.random() * cities.length)];
-        const action = actions[Math.floor(Math.random() * actions.length)];
+    const showPopup = () => {
+      const name = names[Math.floor(Math.random() * names.length)];
+      const city = cities[Math.floor(Math.random() * cities.length)];
+      const action = actions[Math.floor(Math.random() * actions.length)];
 
-        setPopupMsg(`${name} from ${city} ${action}`);
-        setPopupVisible(true);
+      setPopupMsg(`${name} from ${city} ${action}`);
+      setPopupVisible(true);
 
-        setTimeout(() => setPopupVisible(false), 4000);
-      };
+      setTimeout(() => setPopupVisible(false), 4000);
+    };
 
-      // First popup delay (natural feel)
-      const firstTimeout = setTimeout(() => {
-        showPopup();
-      }, 4000);
+    // First popup delay (natural feel)
+    const firstTimeout = setTimeout(() => {
+      showPopup();
+    }, 4000);
 
-      // Random interval (not fixed → feels real)
-      const interval = setInterval(() => {
-        showPopup();
-      }, Math.floor(Math.random() * 8000) + 12000); // 12s–20s
+    // Random interval (not fixed → feels real)
+    const interval = setInterval(() => {
+      showPopup();
+    }, Math.floor(Math.random() * 8000) + 12000); // 12s–20s
 
-      return () => {
-        clearInterval(interval);
-        clearTimeout(firstTimeout);
-      };
-    }, []);
+    return () => {
+      clearInterval(interval);
+      clearTimeout(firstTimeout);
+    };
+  }, []);
+
+  useEffect(() => {
+    let timer;
+    if (quizStarted && !quizFinished && timeLeft > 0) {
+      timer = setInterval(() => {
+        setTimeLeft(prev => prev - 1);
+      }, 1000);
+    } else if (timeLeft === 0 && quizStarted && !quizFinished) {
+      finishQuiz();
+    }
+    return () => clearInterval(timer);
+  }, [quizStarted, quizFinished, timeLeft]);
+
+  const finishQuiz = () => {
+    setQuizFinished(true);
+    let calcScore = 0;
+    questions.forEach((q, idx) => {
+      const correct = q.answer || q.correctAnswer || q.correctOption;
+      if (correct && selectedAnswers[idx] === correct) {
+        calcScore++;
+      } else if (!correct && selectedAnswers[idx]) {
+        calcScore++;
+      }
+    });
+    setScore(calcScore);
+  };
+
+  const formatTime = (secs) => {
+    const m = Math.floor(secs / 60);
+    const s = secs % 60;
+    return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+  };
 
   const handleSelect = (option) => {
+    if (quizFinished) return;
+    if (!quizStarted) setQuizStarted(true);
+
     setSelectedAnswers({
       ...selectedAnswers,
       [currentIndex]: option
@@ -151,9 +201,9 @@ export default function Landing() {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Stop random preparation. Follow a proven system with 
-              <span className="font-semibold text-gray-900"> chapter-wise practice</span>, 
-              <span className="font-semibold text-gray-900"> real exam mocks</span>, and 
+              Stop random preparation. Follow a proven system with
+              <span className="font-semibold text-gray-900"> chapter-wise practice</span>,
+              <span className="font-semibold text-gray-900"> real exam mocks</span>, and
               <span className="font-semibold text-gray-900"> smart analysis</span>.
             </p>
           </div>
@@ -180,10 +230,10 @@ export default function Landing() {
           </div>
 
           {/* 📊 TRUST STATS */}
-          <div className="flex flex-wrap justify-center gap-6 pt-6 text-sm text-gray-600">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-3 sm:gap-6 pt-6 text-sm text-gray-600">
             <span>📈 +30–50 Marks Improvement</span>
             <span>🎯 Real Exam Level Questions</span>
-            <span>💯 One-Time ₹99 Access</span>
+            <span>📊 Mock Test with Detailed Analysis</span>
           </div>
 
           {/* 🧊 PREMIUM CARD (VISUAL TRUST)
@@ -213,12 +263,12 @@ export default function Landing() {
       </section>
 
       {/* Trust Indicators */}
-      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white px-4 md:px-0">
         <Container>
-          <div className="grid md:grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
 
             {/* CARD */}
-            <div className="group relative p-8 bg-white/70 backdrop-blur-xl rounded-3xl border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+            <div className="group relative p-6 md:p-8 bg-white/70 backdrop-blur-xl rounded-3xl border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
               <Star className="w-12 h-12 mx-auto mb-4 text-yellow-400" />
               <div className="text-4xl font-extrabold text-gray-900 mb-1">4.8★</div>
               <div className="text-base font-semibold text-gray-800">Student Rating</div>
@@ -227,7 +277,7 @@ export default function Landing() {
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-yellow-200/10 blur-xl rounded-3xl"></div>
             </div>
 
-            <div className="group relative p-8 bg-white/70 backdrop-blur-xl rounded-3xl border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+            <div className="group relative p-6 md:p-8 bg-white/70 backdrop-blur-xl rounded-3xl border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
               <Users className="w-12 h-12 mx-auto mb-4 text-orange-500" />
               <div className="text-4xl font-extrabold text-gray-900 mb-1">1000+</div>
               <div className="text-base font-semibold text-gray-800">Active Students</div>
@@ -236,7 +286,7 @@ export default function Landing() {
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-orange-200/10 blur-xl rounded-3xl"></div>
             </div>
 
-            <div className="group relative p-8 bg-white/70 backdrop-blur-xl rounded-3xl border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+            <div className="group relative p-6 md:p-8 bg-white/70 backdrop-blur-xl rounded-3xl border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
               <TrendingUp className="w-12 h-12 mx-auto mb-4 text-green-500" />
               <div className="text-4xl font-extrabold text-gray-900 mb-1">50K+</div>
               <div className="text-base font-semibold text-gray-800">Questions Solved</div>
@@ -250,17 +300,17 @@ export default function Landing() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-16 md:py-20 bg-white scroll-mt-16">
+      <section id="features" className="py-16 md:py-20 bg-white scroll-mt-16 px-4 md:px-0">
         <Container>
-          <div className="text-center space-y-4 mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <div className="text-center space-y-4 mb-10 md:mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
               Everything You Need to Crack EAMCET 2026
             </h2>
-            <p className="text-gray-600 text-lg">
+            <p className="text-gray-600 text-base md:text-lg px-2">
               Stop random preparation. Follow a structured system designed for real rank improvement.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-center">
             {[
               {
                 icon: BookOpen,
@@ -280,41 +330,44 @@ export default function Landing() {
                 desc: "Attempt full 160-question exams",
                 tag: "Know your real performance"
               },
+              {
+                icon: PieChart,
+                title: "Weightage Analysis",
+                desc: "Check chapter-wise weightage for EAMCET",
+                tag: "Focus on high-yield topics"
+              },
+              {
+                icon: Video,
+                title: "Special Live Sessions",
+                desc: "Join live mentorship & counselling",
+                tag: "Learn from Toppers"
+              },
             ].map((f, i) => (
               <div
                 key={i}
-                className="group relative p-6 rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-center space-y-4"
+                className="group relative p-4 md:p-6 rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-row md:flex-col items-center md:items-center text-left md:text-center gap-4 md:gap-0"
               >
-                <f.icon className="w-12 h-12 text-orange-500 mx-auto" />
-
-                <h3 className="text-lg font-bold text-gray-900">{f.title}</h3>
-
-                <p className="text-sm text-gray-600">{f.desc}</p>
-
-                <div className="inline-block px-3 py-1 text-xs rounded-full bg-orange-50 text-orange-600 font-semibold">
-                  👉 {f.tag}
+                <div className="p-3 md:p-0 bg-orange-50 md:bg-transparent rounded-2xl md:rounded-none shrink-0 group-hover:scale-110 transition-transform">
+                  <f.icon className="w-8 h-8 md:w-12 md:h-12 text-orange-500 mx-auto" />
                 </div>
 
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-orange-200/10 blur-xl rounded-3xl"></div>
+                <div className="flex-1 min-w-0 md:space-y-4">
+                  <h3 className="text-base md:text-lg font-bold text-gray-900 mb-1 md:mb-0 truncate md:whitespace-normal">{f.title}</h3>
+                  <p className="text-xs md:text-sm text-gray-600 mb-2 md:mb-0 line-clamp-2 md:line-clamp-none">{f.desc}</p>
+                  
+                  <div className="inline-block px-2 md:px-3 py-1 text-[10px] md:text-xs rounded-full bg-orange-50 text-orange-600 font-semibold">
+                    👉 {f.tag}
+                  </div>
+                </div>
+
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-orange-200/10 blur-[20px] rounded-3xl -z-10"></div>
               </div>
             ))}
 
             {/* FUTURE FEATURES (PREMIUM DIMMED STYLE) */}
             {[
               {
-                icon: BookOpen,
-                title: "Weightage Analysis",
-                desc: "Identify high-scoring chapters instantly",
-                tag: "Study Smart"
-              },
-              {
-                icon: Target,
-                title: "Study Planner",
-                desc: "Daily strategy used by top rankers",
-                tag: "Stay Consistent"
-              },
-              {
-                icon: CheckCircle,
+                icon: Building,
                 title: "College Predictor",
                 desc: "Know your college based on expected rank",
                 tag: "Plan Ahead"
@@ -322,25 +375,24 @@ export default function Landing() {
             ].map((f, i) => (
               <div
                 key={i}
-                className="group relative p-6 rounded-3xl bg-gray-50 border border-gray-100 text-center space-y-4 opacity-70 hover:opacity-100 transition-all duration-300"
+                className="group relative p-4 md:p-6 rounded-3xl bg-gray-50 border border-gray-100 opacity-70 hover:opacity-100 transition-all duration-300 flex flex-row md:flex-col items-center text-left md:text-center gap-4 md:gap-0"
               >
-                {/* ICON */}
-                <f.icon className="w-10 h-10 text-orange-400 mx-auto" />
+                <div className="p-3 md:p-0 bg-gray-200 md:bg-transparent rounded-2xl md:rounded-none shrink-0">
+                  <f.icon className="w-8 h-8 md:w-10 md:h-10 text-orange-400 mx-auto" />
+                </div>
 
-                {/* TITLE */}
-                <h3 className="text-lg font-bold text-gray-800">{f.title}</h3>
-
-                {/* DESC */}
-                <p className="text-sm text-gray-500">{f.desc}</p>
-
-                {/* TAG */}
-                <div className="inline-block px-3 py-1 text-xs rounded-full bg-gray-200 text-gray-600 font-semibold">
-                  🔒 {f.tag}
+                <div className="flex-1 min-w-0 md:space-y-4">
+                  <h3 className="text-base md:text-lg font-bold text-gray-800 mb-1 md:mb-0 truncate md:whitespace-normal">{f.title}</h3>
+                  <p className="text-xs md:text-sm text-gray-500 mb-2 md:mb-0 line-clamp-2 md:line-clamp-none">{f.desc}</p>
+                  
+                  <div className="inline-block px-2 md:px-3 py-1 text-[10px] md:text-xs rounded-full bg-gray-200 text-gray-600 font-semibold">
+                    🔒 {f.tag}
+                  </div>
                 </div>
 
                 {/* Coming Soon Badge */}
-                <div className="absolute top-3 right-3 text-[10px] bg-orange-100 text-orange-500 px-2 py-1 rounded-full font-semibold">
-                  Coming Soon
+                <div className="absolute top-3 right-3 md:top-3 md:right-3 text-[9px] md:text-[10px] bg-orange-100 text-orange-500 px-2 py-1 rounded-full font-semibold">
+                  Soon
                 </div>
               </div>
             ))}
@@ -349,13 +401,13 @@ export default function Landing() {
       </section>
 
       {/* Demo Mock Section */}
-      <section className="py-16 md:py-20 bg-gray-50">
-        <Container className="text-center space-y-10">
-          <div className="space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+      <section className="py-16 md:py-20 bg-gray-50 px-4 md:px-0">
+        <Container className="text-center space-y-8 md:space-y-10">
+          <div className="space-y-3 md:space-y-4 px-2">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
               Experience Real Exam Feel 🎯
             </h2>
-            <p className="text-gray-600 text-lg">
+            <p className="text-gray-600 text-base md:text-lg">
               Practice with real exam pressure, timer & question flow
             </p>
           </div>
@@ -364,14 +416,37 @@ export default function Landing() {
             <div className="col-span-full text-center py-12">
               <p className="text-gray-500 text-lg">Loading mock test...</p>
             </div>
+          ) : quizFinished ? (
+            <div className="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-gray-100 max-w-2xl mx-auto space-y-6">
+              <div className="w-20 h-20 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="w-10 h-10" />
+              </div>
+              <h3 className="text-3xl font-bold text-gray-900">Quiz Completed! ✅</h3>
+              <p className="text-xl text-gray-600">
+                You scored <span className="font-bold text-orange-500">{score}</span> out of {questions.length}
+              </p>
+              <p className="text-gray-500 mt-2">
+                This was just a mini-demo. In the real app, we provide in-depth analysis, topic-wise strengths, and step-by-step solutions to help you identify weaknesses.
+              </p>
+
+              <div className="pt-6">
+                <Link to="/login" className="inline-block">
+                  <button className="bg-orange-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:bg-orange-600 hover:scale-105 transition-all">
+                    Try Full Mock Test →
+                  </button>
+                </Link>
+              </div>
+            </div>
           ) : (
-            <div className="grid md:grid-cols-2 gap-6 items-stretch">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
               {/* LEFT SIDE */}
               <div className="bg-white p-6 rounded-3xl shadow-lx border border-gray-100 backdrop-blur-lg">
                 <div className="space-y-4">
                   <div className="flex justify-between text-sm text-gray-500">
                     <span>Question {currentIndex + 1} / {questions.length}</span>
-                    <span className="text-orange-500 font-semibold">⏱ 02:45:12</span>
+                    <span className={`font-semibold ${timeLeft <= 30 ? 'text-red-500' : 'text-orange-500'}`}>
+                      ⏱ {formatTime(timeLeft)}
+                    </span>
                   </div>
                   <div className="w-full bg-gray-200 h-2 rounded-full">
                     <div
@@ -392,8 +467,8 @@ export default function Landing() {
                         key={i}
                         onClick={() => handleSelect(opt)}
                         className={`p-3 rounded-xl border cursor-pointer transition ${selectedAnswers[currentIndex] === opt
-                            ? "bg-orange-100 border-orange-500"
-                            : "hover:bg-orange-50"
+                          ? "bg-orange-100 border-orange-500"
+                          : "hover:bg-orange-50"
                           }`}
                       >
                         {opt}
@@ -401,42 +476,52 @@ export default function Landing() {
                     ))}
                   </div>
                 </div>
-                <div className="flex justify-between mt-6">
+                <div className="flex justify-between items-center mt-6">
                   <button
                     onClick={prevQuestion}
                     disabled={currentIndex === 0}
-                    className="px-4 py-2 bg-gray-200 rounded-lg disabled:opacity-50"
+                    className="px-4 py-2 bg-gray-200 rounded-lg disabled:opacity-50 font-semibold"
                   >
                     Previous
                   </button>
+
                   <button
-                    onClick={nextQuestion}
-                    disabled={currentIndex === questions.length - 1}
-                    className="px-4 py-2 bg-orange-500 text-white rounded-lg disabled:opacity-50"
+                    onClick={() => {
+                      if (currentIndex === questions.length - 1) {
+                        finishQuiz();
+                      } else {
+                        nextQuestion();
+                      }
+                    }}
+                    className={`px-6 py-2 text-white rounded-lg font-semibold shadow-md transition-all ${currentIndex === questions.length - 1
+                        ? "bg-green-500 hover:bg-green-600"
+                        : "bg-orange-500 hover:bg-orange-600"
+                      }`}
                   >
-                    Next →
+                    {currentIndex === questions.length - 1 ? "Submit" : "Next →"}
                   </button>
                 </div>
               </div>
               {/* RIGHT SIDE */}
               <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-3xl shadow-lg border border-orange-100 h-full flex flex-col justify-center text-center space-y-4">
-                <h3 className="text-xl font-bold">Your Progress</h3>
-                <p className="text-3xl font-bold text-orange-500">
-                  {Object.keys(selectedAnswers).length} / {questions.length}
-                </p>
-                <p className="text-gray-600">Questions Attempted</p>
+                {!quizStarted ? (
+                  <>
+                    <h3 className="text-xl font-bold">Ready to Begin?</h3>
+                    <p className="text-gray-600">Select any answer to start the 2-minute timer.</p>
+                  </>
+                ) : (
+                  <>
+                    <h3 className="text-xl font-bold">Your Progress</h3>
+                    <p className="text-3xl font-bold text-orange-500">
+                      {Object.keys(selectedAnswers).length} / {questions.length}
+                    </p>
+                    <p className="text-gray-600">Questions Attempted</p>
+                  </>
+                )}
 
               </div>
             </div>
           )}
-
-          <div className="flex justify-center">
-            <Link to="/login" className="block">
-              <button className="bg-orange-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:bg-orange-600 hover:scale-105 transition-all">
-                Try Full Mock Test →
-              </button>
-            </Link>
-          </div>
         </Container>
       </section>
 
@@ -475,347 +560,347 @@ export default function Landing() {
       </section>  */}
 
 
-    
 
-          <section
-      id="pricing"
-      className="relative py-20 md:py-28 bg-gradient-to-b from-white via-orange-50 to-white scroll-mt-12 overflow-hidden"
-    >
-      {/* 🔥 Background Glow */}
-      <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-orange-300/30 blur-[120px] rounded-full"></div>
 
-      <Container className="relative z-10 space-y-14">
+      <section
+        id="pricing"
+        className="relative py-16 md:py-28 bg-gradient-to-b from-white via-orange-50 to-white scroll-mt-12 overflow-hidden px-4 md:px-0"
+      >
+        {/* 🔥 Background Glow */}
+        <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-orange-300/30 blur-[120px] rounded-full"></div>
 
-        {/* 🧠 HEADING */}
-        <div className="text-center space-y-4 max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-            Choose Your Path to <br />
-            <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-              Top Rank 🚀
-            </span>
-          </h2>
+        <Container className="relative z-10 space-y-10 md:space-y-14">
 
-          <p className="text-gray-600 text-lg">
-            Don’t leave your rank to chance. Choose a structured path that works.
-          </p>
-        </div>
+          {/* 🧠 HEADING */}
+          <div className="text-center space-y-4 max-w-2xl mx-auto px-2">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+              Choose Your Path to <br className="hidden sm:block" />
+              <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
+                Top Rank 🚀
+              </span>
+            </h2>
 
-        {/* 💳 PRICING CARDS */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-
-          {/* 🧊 FREE PLAN */}
-          <div className="p-8 rounded-3xl border border-gray-100 bg-white/70 backdrop-blur-xl shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
-
-            <div className="space-y-6">
-
-              <div>
-                <h3 className="text-xl font-bold text-gray-900">Free Plan</h3>
-                <p className="text-gray-500 text-sm">
-                  Try basics before upgrading
-                </p>
-              </div>
-
-              <ul className="space-y-3 text-sm text-gray-700">
-
-                <li>✔ Basic chapter questions</li>
-                <li>✔ Limited practice access</li>
-
-                <li className="text-gray-400">✖ No full mock tests</li>
-                <li className="text-gray-400">✖ No performance analysis</li>
-                <li className="text-gray-400">✖ No exam simulation</li>
-
-              </ul>
-            </div>
-
-            <div className="mt-6 text-sm text-gray-500">
-              ⚠ Improvement is slow without proper guidance
-            </div>
-
+            <p className="text-gray-600 text-base md:text-lg tracking-wide">
+              Don’t leave your rank to chance. Choose a structured path that works.
+            </p>
           </div>
 
-          {/* 🔥 PREMIUM PLAN */}
-          <div className="relative p-10 rounded-3xl bg-white border border-orange-200 shadow-2xl flex flex-col justify-between transition-all hover:scale-[1.02]">
+          {/* 💳 PRICING CARDS */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
 
-            {/* 🔥 Glow Border */}
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-orange-400 to-orange-600 opacity-10 blur-xl"></div>
+            {/* 🧊 FREE PLAN */}
+            <div className="p-6 md:p-8 rounded-3xl border border-gray-100 bg-white/70 backdrop-blur-xl shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
 
-            {/* 🏆 BADGE */}
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xs px-4 py-1 rounded-full shadow-md font-semibold">
-              🔥 MOST POPULAR
-            </div>
-
-            <div className="relative z-10 space-y-6">
-
-              <div>
-                <h3 className="text-xl font-bold text-orange-500">
-                  Premium Plan
-                </h3>
-
-                <div className="flex items-end gap-2 mt-2">
-                  <span className="text-lg line-through text-gray-400">₹299</span>
-                  <span className="text-4xl font-extrabold text-orange-500">
-                    ₹99
-                  </span>
-                </div>
-
-                <p className="text-sm text-gray-500 mt-1">
-                  One-time payment • Up to EAMCET 2026  
-                </p>
-              </div>
-
-              <ul className="space-y-3 text-sm text-gray-700">
-
-                <li>✔ Full-length mock tests (160Q)</li>
-                <li>✔ Real exam simulation</li>
-                <li>✔ Chapter-wise structured practice</li>
-                <li>✔ Performance tracking & analysis</li>
-                <li>✔ Covers AP & TS syllabus completely</li>
-
-              </ul>
-
-              {/* 💡 TRUST LINE */}
-              <div className="bg-orange-50 border border-orange-100 rounded-xl p-3 text-sm text-orange-700">
-                🎯 Students improve 30–50 marks with this system
-              </div>
-
-            </div>
-
-            {/* 🚀 CTA */}
-            <button
-              onClick={() => {
-                const token = localStorage.getItem("rankhance_token");
-
-                if (!token) {
-                  localStorage.setItem("showPayment", "true");
-                  navigate("/login");
-                } else {
-                  localStorage.setItem("showPayment", "true");
-                  navigate("/dashboard");
-                }
-              }}
-              className="relative z-10 mt-6 w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
-            >
-              Unlock Premium Now →
-            </button>
-
-          </div>
-
-        </div>
-
-        {/* 💬 TRUST FOOTER */}
-        <div className="text-center text-sm text-gray-500">
-          💳 Secure payment • Instant access • No hidden charges • Fast and Accurate
-        </div>
-
-      </Container>
-    </section>
-
-      {/* Testimonials Section */}
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
-      <Container className="space-y-14">
-
-        {/* HEADING */}
-        <div className="text-center space-y-4">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-            Trusted by 1000+ EAMCET Aspirants 🚀
-          </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Real students improving their scores with RankHance — not just words, real results.
-          </p>
-        </div>
-
-        {/* TESTIMONIAL GRID */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-          {/* CARD */}
-          {[
-            {
-              name: "Ravi K.",
-              role: "EAMCET Aspirant",
-              text: "I improved 40+ marks in mocks. Now I finally have clarity on what to study.",
-              result: "+42 Marks"
-            },
-            {
-              name: "Anjali S.",
-              role: "Student",
-              text: "Mock tests feel exactly like the real exam. My time management improved a lot.",
-              result: "Better Time Management"
-            },
-            {
-              name: "Sai Teja",
-              role: "Dropper",
-              text: "Analysis showed my weak areas clearly. I stopped wasting time on random topics.",
-              result: "Focused Preparation"
-            },
-            {
-              name: "Priya M.",
-              role: "Intermediate Student",
-              text: "Before this I was randomly studying. Now I follow a proper strategy.",
-              result: "Structured Learning"
-            },
-            {
-              name: "Arun Reddy",
-              role: "EAMCET 2025",
-              text: "₹99 is nothing compared to the value I got. Highly recommended.",
-              result: "High ROI"
-            },
-            {
-              name: "Kiran",
-              role: "Student",
-              text: "Feels like real exam environment. My confidence increased a lot.",
-              result: "Confidence Boost"
-            }
-          ].map((t, i) => (
-            <div
-              key={i}
-              className="group relative p-6 rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
-            >
-              {/* ⭐ Stars */}
-              <div className="flex gap-1 mb-3 text-yellow-400">
-                {"★★★★★"}
-              </div>
-
-              {/* TEXT */}
-              <p className="text-gray-700 text-sm leading-relaxed mb-5">
-                “{t.text}”
-              </p>
-
-              {/* RESULT BADGE */}
-              <div className="inline-block mb-4 px-3 py-1 rounded-full bg-green-50 text-green-600 text-xs font-semibold">
-                {t.result}
-              </div>
-
-              {/* USER */}
-              <div className="flex items-center gap-3">
-                {/* Avatar */}
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 text-white flex items-center justify-center font-bold">
-                  {t.name.charAt(0)}
-                </div>
+              <div className="space-y-6">
 
                 <div>
-                  <p className="font-semibold text-gray-900 text-sm">
-                    {t.name}
+                  <h3 className="text-xl font-bold text-gray-900">Free Plan</h3>
+                  <p className="text-gray-500 text-sm">
+                    Try basics before upgrading
                   </p>
-                  <p className="text-xs text-gray-500">{t.role}</p>
                 </div>
+
+                <ul className="space-y-3 text-sm text-gray-700">
+
+                  <li>✔ Basic chapter questions</li>
+                  <li>✔ Limited practice access</li>
+
+                  <li className="text-gray-400">✖ No full mock tests</li>
+                  <li className="text-gray-400">✖ No performance analysis</li>
+                  <li className="text-gray-400">✖ No exam simulation</li>
+                  <li className="text-gray-400">✖ No 2 special guidance sessions</li>
+
+                </ul>
               </div>
 
-              {/* Glow effect */}
-              <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition pointer-events-none bg-gradient-to-r from-orange-200/20 to-orange-400/20 blur-xl"></div>
+              <div className="mt-6 text-sm text-gray-500">
+                ⚠ Improvement is slow without proper guidance
+              </div>
+
             </div>
-          ))}
 
-        </div>
+            {/* 🔥 PREMIUM PLAN */}
+            <div id="premium-plan" className="relative p-6 md:p-10 rounded-3xl bg-white border border-orange-200 shadow-2xl flex flex-col justify-between transition-all hover:scale-[1.02]">
 
-        {/* TRUST STRIP */}
-        <div className="flex flex-wrap justify-center gap-6 pt-8 text-sm text-gray-500">
-          <span>✅ 1000+ Students</span>
-          <span>📈 Avg +30–50 Marks Improvement</span>
-          <span>💯 Real Exam Level Practice</span>
-          <span>⭐ 4.8/5 Student Rating</span>
-        </div>
+              {/* 🔥 Glow Border */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-orange-400 to-orange-600 opacity-10 blur-xl"></div>
 
-      </Container>
-    </section>
+              {/* 🏆 BADGE */}
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xs px-4 py-1 rounded-full shadow-md font-semibold">
+                🔥 MOST POPULAR
+              </div>
+
+              <div className="relative z-10 space-y-6">
+
+                <div>
+                  <h3 className="text-xl font-bold text-orange-500">
+                    Premium Plan
+                  </h3>
+
+                  <div className="flex items-end gap-2 mt-2">
+                    <span className="text-lg line-through text-gray-400">₹999</span>
+                    <span className="text-4xl font-extrabold text-orange-500">
+                      ₹99
+                    </span>
+                  </div>
+
+                  <p className="text-sm text-gray-500 mt-1">
+                    One-time payment • Access up to your college joining date
+                  </p>
+                </div>
+
+                <ul className="space-y-3 text-sm text-gray-700">
+                  <li>✔ Full-Length Mock Tests (160 Questions)</li>
+                  <li>✔ Performance Tracking & Detailed Analysis</li>
+                  <li>✔ Weightage-Based Exam Insights</li>
+                  <li>✔ Chapter-Wise Structured Practice</li>
+                  <li>✔ 2 Special Live Guidance Sessions</li>
+                  <li>✔ Complete AP & TS Syllabus Coverage</li>
+                </ul>
+
+                {/* 💡 TRUST LINE */}
+                <div className="bg-orange-50 border border-orange-100 rounded-xl p-3 text-sm text-orange-700">
+                  🎯 Students improve 30–50 marks with this system
+                </div>
+
+              </div>
+
+              {/* 🚀 CTA */}
+              <button
+                onClick={() => {
+                  const token = localStorage.getItem("rankhance_token");
+
+                  if (!token) {
+                    localStorage.setItem("showPayment", "true");
+                    navigate("/login");
+                  } else {
+                    localStorage.setItem("showPayment", "true");
+                    navigate("/dashboard");
+                  }
+                }}
+                className="relative z-10 mt-6 w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+              >
+                Unlock Premium Now →
+              </button>
+
+            </div>
+
+          </div>
+
+          {/* 💬 TRUST FOOTER */}
+          <div className="text-center text-sm text-gray-500">
+            💳 Secure payment • Instant access • No hidden charges • Fast and Accurate
+          </div>
+
+        </Container>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white px-4 md:px-0">
+        <Container className="space-y-10 md:space-y-14">
+
+          {/* HEADING */}
+          <div className="text-center space-y-4 px-2">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+              Trusted by 1000+ EAMCET Aspirants 🚀
+            </h2>
+            <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
+              Real students improving their scores with RankHance — not just words, real results.
+            </p>
+          </div>
+
+          {/* TESTIMONIAL GRID */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+            {/* CARD */}
+            {[
+              {
+                name: "Ravi K.",
+                role: "EAMCET Aspirant",
+                text: "I improved 40+ marks in mocks. Now I finally have clarity on what to study.",
+                result: "+42 Marks"
+              },
+              {
+                name: "Anjali S.",
+                role: "Student",
+                text: "Mock tests feel exactly like the real exam. My time management improved a lot.",
+                result: "Better Time Management"
+              },
+              {
+                name: "Sai Teja",
+                role: "Dropper",
+                text: "Analysis showed my weak areas clearly. I stopped wasting time on random topics.",
+                result: "Focused Preparation"
+              },
+              {
+                name: "Priya M.",
+                role: "Intermediate Student",
+                text: "Before this I was randomly studying. Now I follow a proper strategy.",
+                result: "Structured Learning"
+              },
+              {
+                name: "Arun Reddy",
+                role: "EAMCET 2025",
+                text: "₹99 is nothing compared to the value I got. Highly recommended.",
+                result: "High ROI"
+              },
+              {
+                name: "Kiran",
+                role: "Student",
+                text: "Feels like real exam environment. My confidence increased a lot.",
+                result: "Confidence Boost"
+              }
+            ].map((t, i) => (
+              <div
+                key={i}
+                className="group relative p-6 rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+              >
+                {/* ⭐ Stars */}
+                <div className="flex gap-1 mb-3 text-yellow-400">
+                  {"★★★★★"}
+                </div>
+
+                {/* TEXT */}
+                <p className="text-gray-700 text-sm leading-relaxed mb-5">
+                  “{t.text}”
+                </p>
+
+                {/* RESULT BADGE */}
+                <div className="inline-block mb-4 px-3 py-1 rounded-full bg-green-50 text-green-600 text-xs font-semibold">
+                  {t.result}
+                </div>
+
+                {/* USER */}
+                <div className="flex items-center gap-3">
+                  {/* Avatar */}
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 text-white flex items-center justify-center font-bold">
+                    {t.name.charAt(0)}
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-gray-900 text-sm">
+                      {t.name}
+                    </p>
+                    <p className="text-xs text-gray-500">{t.role}</p>
+                  </div>
+                </div>
+
+                {/* Glow effect */}
+                <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition pointer-events-none bg-gradient-to-r from-orange-200/20 to-orange-400/20 blur-xl"></div>
+              </div>
+            ))}
+
+          </div>
+
+          {/* TRUST STRIP */}
+          <div className="flex flex-wrap justify-center gap-6 pt-8 text-sm text-gray-500">
+            <span>✅ 1000+ Students</span>
+            <span>📈 Avg +30–50 Marks Improvement</span>
+            <span>💯 Real Exam Level Practice</span>
+            <span>⭐ 4.8/5 Student Rating</span>
+          </div>
+
+        </Container>
+      </section>
 
       {/* Footer */}
-<footer className="relative bg-gradient-to-b from-gray-900 via-gray-950 to-black text-gray-300 py-14 overflow-hidden">
+      <footer className="relative bg-gradient-to-b from-gray-900 via-gray-950 to-black text-gray-300 py-10 md:py-14 overflow-hidden">
 
-  {/* 🔥 Background Glow */}
-  <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-orange-500/10 blur-[120px] rounded-full"></div>
+        {/* 🔥 Background Glow */}
+        <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-orange-500/10 blur-[120px] rounded-full"></div>
 
-  <Container className="relative z-10 grid md:grid-cols-2 gap-10">
+        <Container className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 px-4 md:px-0">
 
-    {/* LEFT SIDE */}
-    <div className="space-y-5">
+          {/* LEFT SIDE */}
+          <div className="space-y-5">
 
-      <h3 className="text-2xl font-extrabold text-white tracking-wide">
-        RankHance
-      </h3>
+            <h3 className="text-2xl font-extrabold text-white tracking-wide">
+              RankHance
+            </h3>
 
-      <p className="text-sm text-gray-400 max-w-md leading-relaxed">
-        Your smart preparation partner for EAMCET 2026. Practice with real exam level questions, track your progress, and achieve your dream rank.
-      </p>
+            <p className="text-sm text-gray-400 max-w-md leading-relaxed">
+              Your smart preparation partner for EAMCET 2026. Practice with real exam level questions, track your progress, and achieve your dream rank.
+            </p>
 
-      <p className="text-sm text-orange-400 font-semibold">
-        🚀 Start now. Improve daily. Crack your dream rank.
-      </p>
+            <p className="text-sm text-orange-400 font-semibold">
+              🚀 Start now. Improve daily. Crack your dream rank.
+            </p>
 
-      {/* CONTACT */}
-      <div className="space-y-2 text-sm">
+            {/* CONTACT */}
+            <div className="space-y-2 text-sm">
 
-        <p className="text-gray-400">
-          📧 For any issues:{" "}
-          <a
-            href="mailto:rankhance.in@gmail.com"
-            className="text-orange-400 hover:text-orange-300 font-semibold transition"
-          >
-            rankhance.in@gmail.com
-          </a>
-        </p>
+              <p className="text-gray-400">
+                📧 For any issues:{" "}
+                <a
+                  href="mailto:rankhance.in@gmail.com"
+                  className="text-orange-400 hover:text-orange-300 font-semibold transition"
+                >
+                  rankhance.in@gmail.com
+                </a>
+              </p>
 
-        <p className="text-gray-400">
-          💬 WhatsApp:{" "}
-          <a
-            href="https://wa.me/9392609600"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-green-400 hover:text-green-300 font-semibold transition"
-          >
-            Chat with us
-          </a>
-        </p>
+              <p className="text-gray-400">
+                💬 WhatsApp:{" "}
+                <a
+                  href="https://wa.me/9392609600"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-400 hover:text-green-300 font-semibold transition"
+                >
+                  Chat with us
+                </a>
+              </p>
 
-      </div>
+            </div>
 
-    </div>
+          </div>
 
-    {/* RIGHT SIDE */}
-    <div className="flex flex-col md:items-end space-y-4 text-sm">
+          {/* RIGHT SIDE */}
+          <div className="flex flex-col items-start md:items-end space-y-4 text-sm mt-4 md:mt-0">
 
-      <a href="/" className="hover:text-white transition hover:translate-x-1 duration-200">Home</a>
-      <a href="/dashboard" className="hover:text-white transition hover:translate-x-1 duration-200">Practice</a>
-      <a href="/mock-tests" className="hover:text-white transition hover:translate-x-1 duration-200">Mock Tests</a>
-      <a href="#pricing" className="hover:text-white transition hover:translate-x-1 duration-200">Pricing</a>
-      <a href="#features" className="hover:text-white transition hover:translate-x-1 duration-200">Features</a>
+            <a href="/" className="hover:text-white transition hover:translate-x-1 duration-200">Home</a>
+            <a href="/dashboard" className="hover:text-white transition hover:translate-x-1 duration-200">Practice</a>
+            <a href="/mock-tests" className="hover:text-white transition hover:translate-x-1 duration-200">Mock Tests</a>
+            <a href="#premium-plan" className="hover:text-white transition hover:translate-x-1 duration-200">Pricing</a>
+            <a href="#features" className="hover:text-white transition hover:translate-x-1 duration-200">Features</a>
 
-    </div>
+          </div>
 
-  </Container>
+        </Container>
 
-  {/* 🔥 DIVIDER */}
-  <div className="mt-12 border-t border-gray-800"></div>
+        {/* 🔥 DIVIDER */}
+        <div className="mt-16 border-t border-gray-800"></div>
 
-  {/* BOTTOM */}
-  <div className="text-center mt-6 space-y-4 px-6">
+        {/* BOTTOM */}
+        <div className="text-center mt-8 space-y-4 px-4 md:px-6">
 
-    <div className="flex justify-center flex-wrap gap-4 text-sm sm:text-base text-gray-400 font-medium">
+          <div className="flex justify-center flex-wrap gap-3 sm:gap-4 text-sm sm:text-base text-gray-400 font-medium">
 
-      <a href="/terms" className="hover:text-white transition">Terms & Conditions</a>
-      <span className="text-gray-600">|</span>
+            <a href="/terms" className="hover:text-white transition">Terms & Conditions</a>
+            <span className="text-gray-600 hidden sm:inline">|</span>
 
-      <a href="/privacy" className="hover:text-white transition">Privacy Policy</a>
-      <span className="text-gray-600">|</span>
+            <a href="/privacy" className="hover:text-white transition">Privacy Policy</a>
+            <span className="text-gray-600 hidden sm:inline">|</span>
 
-      <a href="/refund" className="hover:text-white transition">Refund Policy</a>
-      <span className="text-gray-600">|</span>
+            <a href="/refund" className="hover:text-white transition">Refund Policy</a>
+            <span className="text-gray-600 hidden sm:inline">|</span>
 
-      <a href="/contact" className="hover:text-white transition">Contact Us</a>
+            <a href="/contact" className="hover:text-white transition">Contact Us</a>
 
-    </div>
+          </div>
 
-    {/* 💫 MINI TRUST LINE */}
-    <p className="text-xs text-gray-500">
-      Trusted by students across AP & TS • Built for serious aspirants 🚀
-    </p>
+          {/* 💫 MINI TRUST LINE */}
+          <p className="text-xs text-gray-500">
+            Trusted by students across AP & TS • Built for serious aspirants 🚀
+          </p>
 
-    <div className="text-xs text-gray-600">
-      © 2026 RankHance. All rights reserved.
-    </div>
+          <div className="text-xs text-gray-600 pb-4 md:pb-0">
+            © 2026 RankHance. All rights reserved.
+          </div>
 
-  </div>
+        </div>
 
-</footer>
+      </footer>
 
       {popupVisible && (
         <div

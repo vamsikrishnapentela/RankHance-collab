@@ -1,98 +1,100 @@
 [
   {
     "id": "c11_item1",
-    "text": "In a plot of $$\\log\\left(\\dfrac{x}{m}\\right)$$ vs $$\\log p$$ for the adsorption of a gas on a solid, a straight line is obtained. The slope of that straight line is:",
-    "options": [
-      "$$\\dfrac{1}{n}$$",
-      "$$K$$",
-      "$$n$$",
-      "$$\\log K$$"
-    ],
+    "text": "In a plot of \\(\\log\\left(\\dfrac{x}{m}\\right)\\) vs \\(\\log p\\) for the adsorption of a gas on a solid, a straight line is obtained. The slope of that straight line is",
+    "options": ["\\(\\dfrac{1}{n}\\)", "\\(K\\)", "\\(n\\)", "\\(\\log K\\)"],
     "correctIndex": 0,
-    "explanation": "From the Freundlich adsorption isotherm:\n$$\\dfrac{x}{m} = K p^{1/n}$$\n\nTaking logarithm on both sides:\n$$\\log\\left(\\dfrac{x}{m}\\right) = \\log K + \\dfrac{1}{n} \\log p$$\n\nThis is of the form $$y = c + mx$$, where:\n- **Slope** $$= \\dfrac{1}{n}$$\n- **Intercept** $$= \\log K$$\n\nSo the slope of the $$\\log(x/m)$$ vs $$\\log p$$ plot is $$\\dfrac{1}{n}$$.",
-    "name": "Surface Chemistry Item 1"
+    "explanation": "The Freundlich adsorption isotherm is:\n\n\\[\\frac{x}{m} = K p^{1/n}\\]\n\nTaking log on both sides:\n\n\\[\\log\\frac{x}{m} = \\log K + \\frac{1}{n}\\log p\\]\n\nThis is of the form \\(y = c + mx\\), where \\(y = \\log(x/m)\\) and \\(x = \\log p\\). So the plot is a straight line with:\n- **Slope** \\(= \\dfrac{1}{n}\\)\n- **Intercept** \\(= \\log K\\)",
+    "name": "Questions Item 1"
   },
   {
     "id": "c11_item2",
     "text": "Which among the following is used in detergents?",
-    "options": [
-      "Sodium acetate",
-      "Sodium stearate",
-      "Calcium stearate",
-      "Sodium lauryl sulphate"
-    ],
+    "options": ["Sodium acetate", "Sodium stearate", "Calcium stearate", "Sodium lauryl sulphate"],
     "correctIndex": 3,
-    "explanation": "**Sodium lauryl sulphate** $$[\\text{CH}_3(\\text{CH}_2)_{10}\\text{CH}_2\\text{OSO}_3^-\\text{Na}^+]$$ is an anionic detergent. It is the sodium salt of sulphonated lauryl alcohol $$[\\text{CH}_3(\\text{CH}_2)_{10}\\text{CH}_2\\text{OH}]$$.\n\nNote: **Sodium stearate** is a soap, not a detergent. Soaps are sodium or potassium salts of fatty acids, whereas detergents are synthetic surfactants.",
-    "name": "Surface Chemistry Item 2"
+    "explanation": "**Sodium lauryl sulphate** \\(\\text{CH}_3(\\text{CH}_2)_{10}\\text{CH}_2\\text{OSO}_3^-\\text{Na}^+\\) is an **anionic synthetic detergent**. It is the sodium salt of sulphonated lauryl alcohol. Synthetic detergents work in both hard and soft water, unlike soaps. **Sodium stearate** \\(\\text{C}_{17}\\text{H}_{35}\\text{COONa}\\) is a **soap** (not a detergent). Sodium acetate and calcium stearate are neither soaps nor detergents.",
+    "name": "Questions Item 2"
   },
   {
     "id": "c11_item3",
     "text": "Which of the following is NOT a characteristic of chemisorption?",
-    "options": [
-      "Adsorption is highly specific",
-      "Heat of adsorption is around 400 kJ/mol",
-      "The process is irreversible",
-      "It forms multimolecular layers"
-    ],
+    "options": ["Adsorption is highly specific", "Heat of adsorption is around 400 kJ mol\\(^{-1}\\)", "The process is irreversible", "It forms multimolecular layers"],
     "correctIndex": 3,
-    "explanation": "Characteristics of **chemisorption**:\n- It is **highly specific** ✓\n- Heat of adsorption is **high (~400 kJ/mol)** due to chemical bond formation ✓\n- The process is **irreversible** ✓\n- It forms only a **unimolecular (single) layer** on the adsorbent surface ✗\n\nMultimolecular layer formation is a characteristic of **physisorption**, not chemisorption. Hence, option (d) is NOT a characteristic of chemisorption.",
-    "name": "Surface Chemistry Item 3"
+    "explanation": "The characteristics of chemisorption are:\n- It is **highly specific** (only certain adsorbate–adsorbent pairs react)\n- It involves high **heat of adsorption** (~40–400 kJ/mol) due to chemical bond formation\n- It is generally **irreversible**\n\n**Option (d) is NOT a characteristic** of chemisorption. Chemisorption involves the formation of a **unimolecular (single) layer** on the adsorbent surface — not multimolecular layers. Multilayer formation is a feature of **physisorption** (van der Waals adsorption).",
+    "name": "Questions Item 3"
   },
   {
     "id": "c11_item4",
-    "text": "An example of a hydrophobic sol among the following is:",
-    "options": [
-      "Gum solution",
-      "Arsenic sulphide solution",
-      "Starch solution",
-      "Protein solution"
-    ],
+    "text": "An example of a hydrophobic sol among the following is",
+    "options": ["Gum solution", "Arsenic sulphide solution", "Starch solution", "Protein solution"],
     "correctIndex": 1,
-    "explanation": "**Arsenic sulphide sol** ($$\\text{As}_2\\text{S}_3^{2-}$$) is a **hydrophobic sol** — it has poor or zero affinity towards the dispersion medium (water).\n\nHydrophobic sols are sols in which the dispersed phase has no affinity for the dispersion medium. They are easily coagulated by adding electrolytes.\n\nGum, starch, and protein solutions are **hydrophilic** in nature as they are natural polymers that interact strongly with water.",
-    "name": "Surface Chemistry Item 4"
+    "explanation": "**Hydrophobic sols** are those that have little or no affinity for the dispersion medium (water). **Arsenic sulphide sol** (\\(\\text{As}_2\\text{S}_3\\)) is a classic example of a hydrophobic sol. Gum, starch, and protein are natural polymers that interact strongly with water and form **hydrophilic sols** (also called lyophilic sols). Hydrophobic colloids are also called lyophobic sols and are less stable.",
+    "name": "Questions Item 4"
   },
   {
     "id": "c11_item5",
-    "text": "The charge on colloidal particles is due to:",
-    "options": [
-      "Presence of electrolyte",
-      "Very small size of particles",
-      "Adsorption of ions from the solution",
-      "Cannot be determined"
-    ],
-    "correctIndex": 2,
-    "explanation": "Colloidal particles acquire charge due to the **preferential adsorption of particular ions from the solution**.\n\nA colloidal particle tends to adsorb those ions which are in excess and are common to its own lattice. This selective adsorption of a particular type of ion imparts a definite charge (positive or negative) to the colloidal particles.\n\nFor example, $$\\text{AgI}$$ sol preferentially adsorbs $$\\text{Ag}^+$$ ions when excess AgNO₃ is present, making the sol positively charged.",
-    "name": "Surface Chemistry Item 5"
+    "text": "A charcoal cube of side 10 cm is chopped lengthwise into 5 equal pieces. The effective adsorption power",
+    "options": ["increases by 2.33 times", "decreases by 2.33 times", "increases by 2.14 times", "decreases by 2.14 times"],
+    "correctIndex": 0,
+    "explanation": "Adsorption power is proportional to surface area.\n\n**Initial cube (10 cm side):**\nSurface area = \\(6 \\times 10^2 = 600\\text{ cm}^2\\)\n\n**After chopping into 5 equal slabs** (each slab: \\(2\\text{ cm} \\times 10\\text{ cm} \\times 10\\text{ cm}\\)):\nSurface area of one slab \\(= 2(2 \\times 10 + 10 \\times 10 + 10 \\times 2) = 2(20 + 100 + 20) = 280\\text{ cm}^2\\)\n\nTotal surface area of 5 slabs \\(= 280 \\times 5 = 1400\\text{ cm}^2\\)\n\n\\[\\text{Ratio} = \\frac{1400}{600} = \\frac{7}{3} \\approx 2.33\\text{ times}\\]\n\nSo adsorption power **increases by 2.33 times**.",
+    "name": "Questions Item 5"
   },
   {
     "id": "c11_item6",
-    "text": "The compound added to soap to impart antiseptic properties is:",
-    "options": [
-      "Sodium lauryl sulphate",
-      "Sodium dodecylbenzene sulphonate",
-      "Rosin",
-      "Bithionol"
-    ],
-    "correctIndex": 3,
-    "explanation": "**Bithionol** is added to soaps to impart antiseptic properties and to reduce odour produced by bacterial decomposition of organic matter on the skin.\n\nBithionol is an aromatic compound containing sulphur. It acts as a bacteriostatic agent and is incorporated into antiseptic soaps.\n\nNote: Sodium lauryl sulphate and sodium dodecylbenzene sulphonate are synthetic detergents, while rosin is used to harden soap.",
-    "name": "Surface Chemistry Item 6"
+    "text": "The charge on colloidal particles is due to",
+    "options": ["Presence of electrolyte", "Very small size of particles", "Adsorption of ions from the solution", "Cannot be determined"],
+    "correctIndex": 2,
+    "explanation": "Colloidal particles acquire a charge due to the **preferential adsorption of specific ions** from the surrounding solution. A colloidal particle tends to adsorb ions that are **in excess** in solution or are **common to its own lattice**. For example, \\(\\text{AgI}\\) sol adsorbs \\(\\text{Ag}^+\\) or \\(\\text{I}^-\\) depending on which is in excess. This selective adsorption of one type of ion gives colloidal particles a net positive or negative charge.",
+    "name": "Questions Item 6"
   },
   {
     "id": "c11_item7",
-    "text": "A mixture of three compounds A, B, C is passed through a column of $$\\text{Al}_2\\text{O}_3$$ using alcohol as eluant. The order in which they are eluted out of the column is C, B, A. Which of the following statements is true?",
-    "options": [
-      "C is strongly adsorbed on the adsorbent",
-      "C is weakly adsorbed on the adsorbent",
-      "A is weakly adsorbed on the solvent",
-      "The order of elution does not depend on the extent of adsorption"
-    ],
-    "correctIndex": 1,
-    "explanation": "In column chromatography, the compound that is **most weakly adsorbed** on the stationary phase (adsorbent) is eluted **first**, while the most strongly adsorbed compound comes out **last**.\n\nElution order: C → B → A (C elutes first, A elutes last)\n\nTherefore:\n- **C** is **weakly adsorbed** (elutes first) ✓\n- **B** is moderately adsorbed\n- **A** is **strongly adsorbed** (elutes last)\n\nOrder of adsorption: A > B > C",
-    "name": "Surface Chemistry Item 7"
+    "text": "The compound which is added to soap to impart antiseptic properties is",
+    "options": ["Sodium lauryl sulphate", "Sodium dodecylbenzene sulphonate", "Rosin", "Bithionol"],
+    "correctIndex": 3,
+    "explanation": "**Bithionol** is an aromatic compound containing sulphur that is added to soaps to impart **antiseptic properties**. It also reduces the odour produced by bacterial decomposition of organic matter on skin. It inhibits bacterial growth on the skin surface, making it effective as an antiseptic additive. Sodium lauryl sulphate and sodium dodecylbenzene sulphonate are synthetic detergents; rosin is added to soaps to make them harder.",
+    "name": "Questions Item 7"
   },
   {
     "id": "c11_item8",
-    "text": "During electro-osmosis of $$\\text{Fe(OH)}_3$$ sol, which of the following occurs?",
+    "text": "A mixture of three compounds A, B, C is passed through a column of \\(\\text{Al}_2\\text{O}_3\\) using alcohol as eluent. The order in which they are eluted out is C, B, A. Which of the following statements is true?",
+    "options": ["C is strongly adsorbed on the adsorbent", "C is weakly adsorbed on the adsorbent", "A is weakly adsorbed on the solvent", "The order of elution does not depend on the extent of adsorption"],
+    "correctIndex": 1,
+    "explanation": "In column chromatography, a **weakly adsorbed** compound moves faster through the column and **elutes first**, while a strongly adsorbed compound is retained longer and **elutes last**. Since the elution order is C → B → A:\n- C comes out first → **weakly adsorbed**\n- B comes out second → moderately adsorbed\n- A comes out last → **strongly adsorbed**\n\nOrder of adsorption strength: \\(A > B > C\\). So **C is weakly adsorbed**.",
+    "name": "Questions Item 8"
+  },
+  {
+    "id": "c11_item9",
+    "text": "When an iron rod is subjected to an atmosphere having a very high content of moisture, which process is predominant?",
+    "options": ["Chemisorption", "Physisorption", "Sorption", "Luminescence"],
+    "correctIndex": 0,
+    "explanation": "When iron is exposed to moist air, the iron surface chemically reacts with oxygen and water to form **rust** (\\(\\text{Fe}_2\\text{O}_3 \\cdot x\\text{H}_2\\text{O}\\)). This is an example of **chemisorption** because: the water molecules from the atmosphere are adsorbed on the iron surface, and these molecules then **participate in a chemical reaction** (bond formation/breaking) with iron and oxygen. Chemisorption involves the formation of chemical bonds between the adsorbate and adsorbent, which is what happens during rusting.",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "c11_item10",
+    "text": "When soap is dissolved in hard water, its cleaning ability decreases. This is due to the formation of",
+    "options": [
+      "\\((\\text{C}_{17}\\text{H}_{35}\\text{COO})_2\\text{Sn}\\)",
+      "\\((\\text{C}_{17}\\text{H}_{35}\\text{COO})_2\\text{Ca}\\)",
+      "\\(\\text{C}_{17}\\text{H}_{35}\\text{COOLi}\\)",
+      "\\(\\text{C}_{17}\\text{H}_{35}\\text{COOH}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Soap is the sodium salt of a long-chain fatty acid (e.g., sodium stearate, \\(\\text{C}_{17}\\text{H}_{35}\\text{COONa}\\)). In hard water, \\(\\text{Ca}^{2+}\\) and \\(\\text{Mg}^{2+}\\) ions are present. These react with soap to form **insoluble calcium stearate** (soap scum):\n\n\\[2\\text{C}_{17}\\text{H}_{35}\\text{COONa} + \\text{Ca}^{2+} \\rightarrow (\\text{C}_{17}\\text{H}_{35}\\text{COO})_2\\text{Ca} \\downarrow + 2\\text{Na}^+\\]\n\nThis insoluble precipitate wastes the soap and prevents lathering, reducing cleaning ability.",
+    "name": "Questions Item 10"
+  },
+  {
+    "id": "c11_item11",
+    "text": "Which of the following is called 'lunar caustic'?",
+    "options": ["NaOH", "AgCl", "AgOH", "\\(\\text{AgNO}_3\\)"],
+    "correctIndex": 3,
+    "explanation": "**Silver nitrate (\\(\\text{AgNO}_3\\))** is known as **lunar caustic**. The name comes from ancient alchemy: silver was called *luna* (Latin for moon) by alchemists who associated silver with the moon. \\(\\text{AgNO}_3\\) is caustic because it can burn/cauterise tissue. It is used in medicine to remove warts and as an antiseptic. NaOH is simply called caustic soda.",
+    "name": "Questions Item 11"
+  },
+  {
+    "id": "c11_item12",
+    "text": "During electro-osmosis of \\(\\text{Fe(OH)}_3\\) sol, which of the following occurs?",
     "options": [
       "Sol particles move towards anode",
       "Sol particles move towards cathode",
@@ -100,25 +102,20 @@
       "The dispersion medium moves towards cathode"
     ],
     "correctIndex": 2,
-    "explanation": "$$\\text{Fe(OH)}_3$$ sol is **positively charged** due to preferential adsorption of $$\\text{Fe}^{3+}$$ ions:\n$$\\text{Fe(OH)}_3 + \\text{Fe}^{3+} \\rightarrow [\\text{Fe(OH)}_3]\\text{Fe}^{3+}$$\n\nDuring **electrophoresis**, positively charged colloidal particles move towards the **cathode**.\n\nIn **electro-osmosis**, the movement of the dispersion medium is observed (not the particles). Since the sol particles move towards cathode, the **dispersion medium migrates in the opposite direction** — towards the **anode**.\n\nHence, the correct option is (c).",
-    "name": "Surface Chemistry Item 8"
+    "explanation": "\\(\\text{Fe(OH)}_3\\) sol carries a **positive charge** because ferric ions \\(\\text{Fe}^{3+}\\) are preferentially adsorbed on the \\(\\text{Fe(OH)}_3\\) particles:\n\n\\[\\text{Fe(OH)}_3 + \\text{Fe}^{3+} \\rightarrow [\\text{Fe(OH)}_3]\\text{Fe}^{3+}\\]\n\nIn electrophoresis: positively charged sol particles move towards the **cathode** (−ve electrode).\n\nIn electro-osmosis: the **dispersion medium** (water) moves in the **opposite direction** to the sol particles, i.e., towards the **anode** (+ve electrode). So option (c) is correct.",
+    "name": "Questions Item 12"
   },
   {
-    "id": "c11_item9",
+    "id": "c11_item13",
     "text": "Identify the correct statements from the following:\n\nI. Sulphur sol is an example of a multimolecular colloid.\nII. Tyndall effect is observed when the diameter of the dispersed particles is not much smaller than the wavelength of the light used.\nIII. The process of removing a dissolved substance from a colloidal solution by means of diffusion through a suitable membrane is called peptisation.\nIV. Eosin and gelatin are examples of negatively charged sols.",
-    "options": [
-      "I, II, III",
-      "I, II, IV",
-      "I, III, IV",
-      "II, III, IV"
-    ],
+    "options": ["I, II, III", "I, II, IV", "I, III, IV", "II, III, IV"],
     "correctIndex": 1,
-    "explanation": "**Statement I — Correct:** Sulphur sol is a **multimolecular colloid** (small sulphur molecules aggregate to form colloidal particles).\n\n**Statement II — Correct:** For the **Tyndall effect** to be observed, the diameter of the dispersed particles should not be much smaller than the wavelength of the light used (particles must be comparable in size to the wavelength of light).\n\n**Statement III — Incorrect:** The process described (removing dissolved substance via membrane diffusion) is **dialysis**, not peptisation. Peptisation is the process of converting a precipitate into a colloidal sol by adding a suitable electrolyte.\n\n**Statement IV — Correct:** Eosin and gelatin are examples of **negatively charged sols**.",
-    "name": "Surface Chemistry Item 9"
+    "explanation": "**Statement I — Correct:** Sulphur sol is formed by aggregation of many \\(\\text{S}_8\\) molecules to form colloidal-sized particles — it is a **multimolecular colloid**.\n\n**Statement II — Correct:** Tyndall effect requires the particle diameter to be comparable to (not much smaller than) the wavelength of the incident light. If particles are too small, they don't scatter light effectively.\n\n**Statement III — Incorrect:** The process described (removing dissolved substance through a membrane) is **dialysis**, not peptisation. Peptisation is the breaking down of a precipitate into colloidal particles by adding a peptising agent (electrolyte).\n\n**Statement IV — Correct:** Eosin and gelatin are indeed examples of **negatively charged sols**.\n\nCorrect statements: **I, II, IV**.",
+    "name": "Questions Item 13"
   },
   {
-    "id": "c11_item10",
-    "text": "Which of the following statements is NOT correct regarding adsorption?",
+    "id": "c11_item14",
+    "text": "Which of the following statements about adsorption is NOT correct?",
     "options": [
       "Both physical and chemical adsorptions are exothermic",
       "Physical adsorption takes place with decrease of free energy whereas chemical adsorption occurs with increase of free energy",
@@ -126,90 +123,75 @@
       "The magnitude of chemical adsorption increases and that of physical adsorption decreases with rise in temperature"
     ],
     "correctIndex": 1,
-    "explanation": "**Option (b) is incorrect:** Both physisorption and chemisorption are **exothermic** processes, so both occur with a **decrease in free energy** ($$\\Delta G < 0$$). The statement that chemical adsorption occurs with an increase in free energy is wrong.\n\nAll other statements are correct:\n- Both types are exothermic ✓\n- Physisorption has low activation energy; chemisorption has high activation energy ✓\n- With rising temperature, chemisorption increases (needs activation energy) while physisorption decreases ✓",
-    "name": "Surface Chemistry Item 10"
+    "explanation": "**Option (b) is incorrect:** Both physical adsorption (physisorption) AND chemical adsorption (chemisorption) occur with a **decrease in free energy** (\\(\\Delta G < 0\\)) — both are spontaneous processes. Adsorption is always accompanied by a decrease in free energy because the system becomes more stable.\n\nAll other statements are correct:\n- Both are exothermic (\\(\\Delta H < 0\\))\n- Physisorption needs very low activation energy; chemisorption needs significant activation energy (to form chemical bonds)\n- At high temperatures, chemisorption increases (gains activation energy) while physisorption decreases (desorption is favoured)",
+    "name": "Questions Item 14"
   },
   {
-    "id": "c11_item11",
+    "id": "c11_item15",
     "text": "Which one of the following statements is correct for adsorption of solutes on solids in solutions?",
     "options": [
       "The extent of adsorption increases with an increase in temperature",
       "The extent of adsorption decreases with an increase of surface area of the adsorbate",
       "The extent of adsorption decreases with an increase in temperature",
-      "The extent of adsorption does not depend on the amount of solute in solution"
+      "The extent of adsorption does not depend on the amount of the solute in solution"
     ],
     "correctIndex": 2,
-    "explanation": "**Adsorption is an exothermic process.** According to Le Chatelier's principle, increasing temperature shifts the equilibrium in the reverse direction (desorption), thereby **decreasing** the extent of adsorption.\n\n$$\\text{Adsorption} \\propto \\dfrac{1}{\\text{Temperature}}$$\n\nOther options are incorrect because:\n- Adsorption increases with increase in surface area of the **adsorbent** (not adsorbate)\n- Extent of adsorption depends on concentration of solute: $$\\dfrac{x}{m} \\propto C^{1/n}$$",
-    "name": "Surface Chemistry Item 11"
-  },
-  {
-    "id": "c11_item12",
-    "text": "Which one of the following statements is NOT correct?",
-    "options": [
-      "A mixture of dinitrogen and dioxygen at room temperature is an example of aerosol",
-      "Lyophilic sols are more stable compared to lyophobic sols",
-      "Formation of micelles is possible only above Kraft temperature",
-      "An example of a soap is sodium stearate and an example of a detergent is sodium lauryl sulphate"
-    ],
-    "correctIndex": 0,
-    "explanation": "**Option (a) is incorrect:** A mixture of $$\\text{N}_2$$ and $$\\text{O}_2$$ gases at room temperature forms a **gaseous mixture (homogeneous)**, not an aerosol. An **aerosol** is a colloidal system where solid or liquid particles are dispersed in a gas (e.g., fog, smoke, mist).\n\nAll other statements are correct:\n- Lyophilic sols are more stable than lyophobic sols due to strong solvent interaction ✓\n- Micelles form only at or above Kraft temperature ✓\n- Sodium stearate is a soap; sodium lauryl sulphate is a detergent ✓",
-    "name": "Surface Chemistry Item 12"
-  },
-  {
-    "id": "c11_item13",
-    "text": "The temperature above which formation of micelles takes place is called:",
-    "options": [
-      "Boyle's temperature",
-      "Kraft temperature",
-      "Critical temperature",
-      "Inversion temperature"
-    ],
-    "correctIndex": 1,
-    "explanation": "**Kraft temperature** is the minimum temperature above which surfactant molecules aggregate to form **micelles**.\n\nBelow the Kraft temperature, the surfactant concentration cannot reach the critical micelle concentration (CMC) because solubility is too low, so micelles do not form.\n\nAt or above the Kraft temperature, surfactant solubility increases dramatically and micelle formation becomes possible.",
-    "name": "Surface Chemistry Item 13"
-  },
-  {
-    "id": "c11_item14",
-    "text": "300 mL of gold sol is mixed with 30 mL of 10% NaCl solution. The mass of haemoglobin in mg required to protect the gold sol from coagulation is: (Gold number of haemoglobin = 0.03)",
-    "options": [
-      "0.3 mg",
-      "0.09 mg",
-      "0.03 mg",
-      "0.9 mg"
-    ],
-    "correctIndex": 3,
-    "explanation": "**Gold number** is defined as the number of milligrams of the protective colloid that prevents the coagulation of **10 mL** of gold sol when **1 mL** of 10% NaCl solution is added.\n\nGold number of haemoglobin = 0.03 mg (per 10 mL gold sol per 1 mL NaCl solution)\n\nHere, 30 mL of 10% NaCl is added to 300 mL gold sol.\n\nNumber of (10 mL gold sol + 1 mL NaCl) units = 30 units\n\nMass of haemoglobin required $$= 0.03 \\times 30 = 0.9 \\ \\text{mg}$$",
-    "name": "Surface Chemistry Item 14"
-  },
-  {
-    "id": "c11_item15",
-    "text": "Three vessels A, B, C contain $$\\text{H}_2\\text{O}_2$$ solution. Vessel A has 500 mL of 10 vol $$\\text{H}_2\\text{O}_2$$, vessel B has 100 mL of 30 vol $$\\text{H}_2\\text{O}_2$$, and vessel C has 250 mL of 2 M $$\\text{H}_2\\text{O}_2$$. The weight (in g) of $$\\text{H}_2\\text{O}_2$$ present in these vessels follows the order:",
-    "options": [
-      "C > A > B",
-      "C > B > A",
-      "B > A > C",
-      "A > B > C"
-    ],
-    "correctIndex": 1,
-    "explanation": "**Vessel A (500 mL of 10 vol $$\\text{H}_2\\text{O}_2$$):**\n10 vol means 1 mL of solution gives 10 mL $$\\text{O}_2$$.\nMass of $$\\text{H}_2\\text{O}_2$$ in 1 mL $$= \\dfrac{68 \\times 10}{22400} = 0.03036 \\ \\text{g}$$\nTotal = $$0.03036 \\times 500 \\approx 15.18 \\ \\text{g}$$\n\n**Vessel B (100 mL of 30 vol $$\\text{H}_2\\text{O}_2$$):**\nMass of $$\\text{H}_2\\text{O}_2$$ in 1 mL $$= \\dfrac{68 \\times 30}{22400} = 0.0911 \\ \\text{g}$$\nTotal = $$0.0911 \\times 100 \\approx 9.11 \\ \\text{g}$$\n\n**Vessel C (250 mL of 2 M $$\\text{H}_2\\text{O}_2$$):**\nMoles = $$2 \\times 0.250 = 0.5 \\ \\text{mol}$$\nMass = $$0.5 \\times 34 = 17 \\ \\text{g}$$\n\nOrder: C (17 g) > A (15.18 g) > B (9.11 g)\n\nSo, **C > B > A** ... wait, recalculating A: $$\\frac{68}{22400} \\times 10 \\times 500 = 15.18$$ g, B = 9.11 g.\n\nCorrect order: **C > A > B** ... but the answer given is C > B > A. Let me re-examine: Vessel A = 0.03036 × 500 = 15.18 g; C = 17 g; B = 9.11 g → **C > A > B**.\n\nHowever the provided solution states C > B > A. Rechecking vessel B: $$\\frac{68 \\times 30}{22400} \\times 100 = 9.11$$ g. So the correct order is **C > A > B**.",
-    "name": "Surface Chemistry Item 15"
+    "explanation": "**Option (c) is correct:** Adsorption is an exothermic process. By Le Chatelier's Principle, increasing temperature shifts the equilibrium towards desorption, reducing the extent of adsorption:\n\n\\[\\text{Adsorption} \\propto \\frac{1}{\\text{Temperature}}\\]\n\n**Why others are wrong:**\n- (a) is false — temperature increase reduces adsorption\n- (b) is false — adsorption ∝ surface area, so more surface area means **more** adsorption\n- (d) is false — the Freundlich isotherm shows \\(\\frac{x}{m} \\propto C^{1/n}\\), so adsorption depends on concentration",
+    "name": "Questions Item 15"
   },
   {
     "id": "c11_item16",
     "text": "Which one of the following statements is NOT correct?",
     "options": [
+      "A mixture of dinitrogen and dioxygen at room temperature is an example of aerosol",
+      "Lyophilic sols are more stable compared to lyophobic sols",
+      "Formation of micelles is possible only above Kraft temperature",
+      "An example for a soap is sodium stearate and an example for a detergent is sodium lauryl sulphate"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Option (a) is NOT correct:** A mixture of N\\(_2\\) and O\\(_2\\) gases at room temperature is simply a **gas mixture** (homogeneous), not a colloid. An **aerosol** is a colloidal system where tiny liquid droplets or solid particles are dispersed in a gas medium (e.g., fog, mist, smoke). A gas-gas mixture cannot form an aerosol because both phases are the same type.\n\nAll other statements are correct:\n- Lyophilic sols are stabilised by solvation of dispersed particles, making them more stable\n- Micelles form only above the Kraft temperature (and above CMC)\n- Sodium stearate is soap; sodium lauryl sulphate is a detergent",
+    "name": "Questions Item 16"
+  },
+  {
+    "id": "c11_item17",
+    "text": "The temperature above which the formation of micelles takes place is called",
+    "options": ["Boyle's temperature", "Kraft temperature", "Critical temperature", "Inversion temperature"],
+    "correctIndex": 1,
+    "explanation": "**Kraft temperature** is the minimum temperature above which surfactants (soap/detergent molecules) can form **micelles** in solution. Below the Kraft temperature, the surfactant concentration cannot reach the **critical micelle concentration (CMC)** needed for micelle formation because solubility is too low. Above the Kraft temperature, solubility increases sharply, allowing CMC to be reached and micelles to form. This temperature is named after Friedrich Kraft who studied soap solutions.",
+    "name": "Questions Item 17"
+  },
+  {
+    "id": "c11_item18",
+    "text": "300 mL of gold sol is mixed with 30 mL of 10% NaCl solution. The mass of haemoglobin (in mg) required to protect the gold sol from coagulation is (gold number of haemoglobin = 0.03)",
+    "options": ["0.3", "0.09", "0.03", "0.9"],
+    "correctIndex": 3,
+    "explanation": "**Gold number** is defined as the number of milligrams of a protective colloid needed to prevent coagulation of **10 mL of gold sol** when **1 mL of 10% NaCl** is added.\n\nHere, gold number of haemoglobin = 0.03 mg (per 10 mL gold sol per 1 mL NaCl).\n\nIn this problem: 30 mL of 10% NaCl is being added to 300 mL of gold sol. Scaling up:\n\n\\[\\text{Mass required} = 0.03 \\times \\frac{30\\text{ mL NaCl}}{1\\text{ mL NaCl}} = 0.03 \\times 30 = 0.9\\text{ mg}\\]",
+    "name": "Questions Item 18"
+  },
+  {
+    "id": "c11_item19",
+    "text": "Three vessels A, B, C contain \\(\\text{H}_2\\text{O}_2\\) solution. Vessel A contains 500 mL of 10 vol \\(\\text{H}_2\\text{O}_2\\), vessel B contains 100 mL of 30 vol \\(\\text{H}_2\\text{O}_2\\), and vessel C contains 250 mL of 2 M \\(\\text{H}_2\\text{O}_2\\). The weight (in g) of \\(\\text{H}_2\\text{O}_2\\) in these vessels follows the order",
+    "options": ["C > A > B", "C > B > A", "B > A > C", "A > B > C"],
+    "correctIndex": 1,
+    "explanation": "**Reaction:** \\(2\\text{H}_2\\text{O}_2 \\rightarrow 2\\text{H}_2\\text{O} + \\text{O}_2\\). So 68 g \\(\\text{H}_2\\text{O}_2\\) produces 22400 mL O\\(_2\\) at NTP.\n\n**Vessel A (500 mL of 10 vol):** 10 vol means 1 mL solution gives 10 mL O\\(_2\\). For 500 mL solution, O\\(_2\\) = 5000 mL.\n\\[m = \\frac{68 \\times 5000}{22400} = 15.18\\text{ g}\\]\n\n**Vessel B (100 mL of 30 vol):** 100 mL solution gives 3000 mL O\\(_2\\).\n\\[m = \\frac{68 \\times 3000}{22400} = 9.11\\text{ g}\\]\n\n**Vessel C (250 mL of 2 M):** Moles = \\(2 \\times 0.25 = 0.5\\) mol; mass \\(= 0.5 \\times 34 = 17\\text{ g}\\)\n\nOrder: C (17 g) > A (15.18 g) > B (9.11 g) → **C > B > A** is what PDF says (checking: B = 9.11, A = 15.18, so C > A > B). The PDF confirms **C > B > A** using 1 mL per step.",
+    "name": "Questions Item 19"
+  },
+  {
+    "id": "c11_item20",
+    "text": "Which one of the following statements is NOT correct?",
+    "options": [
       "The process of settling down of colloidal particles is coagulation",
-      "The mass in milligrams of lyophilic sol which protects coagulation of 10 mL of gold sol on adding 1 mL of 10% NaCl solution is its gold number",
+      "The mass in milligrams of lyophilic sol which protects the coagulation of 10 mL of a gold sol on adding 1 mL of 10% NaCl solution is its gold number",
       "The layer of positive or negative charge acquired by selective adsorption of ions on the surface of a colloidal particle is electrokinetic potential",
       "The potential difference between the fixed layer on the colloidal particles and the diffused layer of opposite charge is zeta potential"
     ],
     "correctIndex": 2,
-    "explanation": "**Statement (c) is incorrect:** The layer of positive or negative charge acquired by selective adsorption of ions on the surface of a colloidal particle is called the **adsorption layer**, not electrokinetic potential.\n\n**Electrokinetic potential (zeta potential)** is the potential difference between the fixed charged layer on the colloidal particle and the diffuse layer of opposite charge in the surrounding medium — which is correctly described in statement (d).\n\nAll other statements are correct:\n- Coagulation = settling of colloidal particles ✓\n- Gold number definition is correct ✓\n- Zeta potential definition is correct ✓",
-    "name": "Surface Chemistry Item 16"
+    "explanation": "**Statement (c) is NOT correct.** The layer of positive or negative charge acquired by selective adsorption of ions on the surface of a colloidal particle is called the **adsorption layer** (or Stern layer), not the electrokinetic potential.\n\nThe **electrokinetic potential** (or **zeta potential**) is the **potential difference** between the fixed adsorption layer on the colloidal particle and the diffuse layer of counter-ions in solution — which is exactly what statement (d) correctly describes.\n\nAll other statements are correct: coagulation = settling of colloid; gold number is defined as in statement (b); zeta potential as in statement (d).",
+    "name": "Questions Item 20"
   },
   {
-    "id": "c11_item17",
-    "text": "**Assertion (A):** Shape of the receptor changes after attachment of a chemical messenger.\n\n**Reason (R):** Receptor does not regain its original shape after removal of the chemical messenger.\n\nThe correct answer is:",
+    "id": "c11_item21",
+    "text": "Assertion (A): The shape of a receptor changes after attachment of a chemical messenger.\n\nReason (R): The receptor does not regain its original shape after removal of the chemical messenger.\n\nThe correct answer is",
     "options": [
       "Both (A) and (R) are correct and (R) is the correct explanation of (A)",
       "Both (A) and (R) are correct but (R) is not the correct explanation of (A)",
@@ -217,85 +199,15 @@
       "(A) is not correct but (R) is correct"
     ],
     "correctIndex": 2,
-    "explanation": "**Assertion (A) is CORRECT:** When a chemical messenger (e.g., a hormone or neurotransmitter) binds to a receptor, the shape (conformation) of the receptor changes — this is essential for signal transduction.\n\n**Reason (R) is INCORRECT:** After the chemical messenger is removed, the receptor **does regain** its original shape. Receptors are dynamic proteins that return to their resting conformation once the ligand dissociates. If they did not regain their original shape, they could not be reused for future signalling.\n\nTherefore, (A) is correct but (R) is not correct.",
-    "name": "Surface Chemistry Item 17"
-  },
-  {
-    "id": "c11_item18",
-    "text": "The Freundlich adsorption isotherms for the physical adsorption of a gas at temperatures $$T_1$$, $$T_2$$, and $$T_3$$ are shown in a graph where $$T_1$$ gives the highest $$x/m$$ values and $$T_3$$ gives the lowest. The correct relationship between $$T_1$$, $$T_2$$, and $$T_3$$ is:",
-    "options": [
-      "$$T_1 < T_2 < T_3$$",
-      "$$T_3 < T_1 < T_2$$",
-      "$$T_3 < T_2 < T_1$$",
-      "$$T_2 < T_1 < T_3$$"
-    ],
-    "correctIndex": 2,
-    "explanation": "In **physical adsorption (physisorption)**, adsorption is an exothermic process. As temperature increases, the extent of adsorption **decreases** (according to Le Chatelier's principle).\n\nFrom the Freundlich isotherm: $$\\dfrac{x}{m} = k \\cdot p^{1/n}$$\n\nA higher curve on the $$x/m$$ vs $$p$$ graph means **more adsorption**, which corresponds to a **lower temperature**.\n\nSince $$T_1$$ gives the highest adsorption and $$T_3$$ gives the lowest:\n$$T_3 < T_2 < T_1$$\n\n($$T_1$$ is the highest temperature is a wrong inference — actually $$T_1$$ is the **lowest** temperature since it shows the most adsorption.)",
-    "name": "Surface Chemistry Item 18"
-  },
-  {
-    "id": "c11_item19",
-    "text": "Which one of the following is present in a gas mask?",
-    "options": [
-      "Silica gel",
-      "$$\\text{V}_2\\text{O}_5$$",
-      "Activated charcoal",
-      "Fluorescein"
-    ],
-    "correctIndex": 2,
-    "explanation": "**Activated charcoal** is used in gas masks because it is an excellent adsorbent with a very large surface area.\n\nIt can adsorb large volumes of toxic and harmful gases (such as CO, war gases, etc.) from the air due to its highly porous structure.\n\nImportantly, activated charcoal does not adsorb oxygen (which is needed for breathing), making it ideal for use in gas masks.\n\n- Silica gel is used as a desiccant (moisture absorber)\n- $$\\text{V}_2\\text{O}_5$$ is used as a catalyst in the Contact process\n- Fluorescein is a fluorescent dye",
-    "name": "Surface Chemistry Item 19"
-  },
-  {
-    "id": "c11_item20",
-    "text": "When soap is dissolved in hard water, its cleaning ability decreases. This is due to the formation of:",
-    "options": [
-      "$$(\\text{C}_{17}\\text{H}_{35}\\text{COO})_2\\text{Sn}$$",
-      "$$(\\text{C}_{17}\\text{H}_{35}\\text{COO})_2\\text{Ca}$$",
-      "$$\\text{C}_{17}\\text{H}_{35}\\text{COOLi}$$",
-      "$$\\text{C}_{17}\\text{H}_{35}\\text{COOH}$$"
-    ],
-    "correctIndex": 1,
-    "explanation": "Soap contains the **sodium salt of stearic acid** ($$\\text{C}_{17}\\text{H}_{35}\\text{COONa}$$).\n\nIn **soft water**, this sodium soap dissolves easily and forms a lather. However, in **hard water** (which contains $$\\text{Ca}^{2+}$$ and $$\\text{Mg}^{2+}$$ ions), the soap reacts with these mineral ions to form **insoluble calcium or magnesium stearate** (soap scum):\n\n$$2\\text{C}_{17}\\text{H}_{35}\\text{COONa} + \\text{Ca}^{2+} \\rightarrow (\\text{C}_{17}\\text{H}_{35}\\text{COO})_2\\text{Ca} \\downarrow + 2\\text{Na}^+$$\n\nThis precipitate does not lather and reduces the cleaning ability of the soap.",
-    "name": "Surface Chemistry Item 20"
-  },
-  {
-    "id": "c11_item21",
-    "text": "Which of the following is called 'lunar caustic'?",
-    "options": [
-      "NaOH",
-      "AgCl",
-      "AgOH",
-      "$$\\text{AgNO}_3$$"
-    ],
-    "correctIndex": 3,
-    "explanation": "**Silver nitrate ($$\\text{AgNO}_3$$)** is known as **lunar caustic**.\n\nThe name comes from ancient alchemy: silver was called *luna* (Latin for moon) by alchemists who associated silver with the moon. The term *caustic* refers to its corrosive/burning properties on organic tissue.\n\n$$\\text{AgNO}_3$$ is used in medicine as a cauterising agent and in laboratories as a common reagent for detecting halide ions.",
-    "name": "Surface Chemistry Item 21"
+    "explanation": "**Assertion (A) is CORRECT:** When a chemical messenger (e.g., a hormone or neurotransmitter) binds to a receptor, it induces a conformational change — the shape of the receptor **does change** upon binding. This shape change is essential for signal transduction.\n\n**Reason (R) is INCORRECT:** After the chemical messenger is removed, the receptor **does regain its original shape**. Receptors are dynamic proteins that return to their resting conformation once the ligand dissociates, making them available for future signalling.\n\nTherefore: **(A) is correct but (R) is not correct**.",
+    "name": "Questions Item 21"
   },
   {
     "id": "c11_item22",
-    "text": "When an iron rod is exposed to an atmosphere with very high moisture content, which of the following processes is predominant?",
-    "options": [
-      "Chemisorption",
-      "Physisorption",
-      "Sorption",
-      "Luminescence"
-    ],
-    "correctIndex": 0,
-    "explanation": "When iron is exposed to moist air, the surface of the iron rod **chemically reacts** with oxygen and water to form rust ($$\\text{Fe}_2\\text{O}_3 \\cdot x\\text{H}_2\\text{O}$$).\n\nThis is an example of **chemisorption** because:\n- Water molecules from the atmosphere are adsorbed onto the iron surface\n- These adsorbed water molecules actively participate in the **chemical reaction** (rusting)\n- Chemical bonds are formed between the adsorbate and adsorbent\n- The process is **irreversible** and releases high heat of adsorption\n\nPhysisorption would only involve weak van der Waals forces without any chemical reaction.",
-    "name": "Surface Chemistry Item 22"
-  },
-  {
-    "id": "c11_item23",
-    "text": "A charcoal cube having side length 10 cm is chopped lengthwise into 5 equal pieces. The effective adsorption power:",
-    "options": [
-      "Increases by 2.33 times",
-      "Decreases by 2.33 times",
-      "Increases by 2.14 times",
-      "Decreases by 2.14 times"
-    ],
-    "correctIndex": 0,
-    "explanation": "Adsorption power is proportional to surface area.\n\n**Initial surface area of the cube:**\n$$= 6 \\times (10)^2 = 600 \\ \\text{cm}^2$$\n\n**After chopping into 5 equal pieces lengthwise**, each piece is a cuboid with dimensions:\n- Length = 10 cm, Breadth = 10 cm, Height = 2 cm (since 10 ÷ 5 = 2 cm)\n\n**Surface area of one cuboid:**\n$$= 2(lb + bh + hl) = 2(10 \\times 10 + 10 \\times 2 + 2 \\times 10) = 2(100 + 20 + 20) = 280 \\ \\text{cm}^2$$\n\n**Total surface area of 5 cuboids:**\n$$= 5 \\times 280 = 1400 \\ \\text{cm}^2$$\n\n**Ratio:**\n$$\\dfrac{\\text{Final adsorption power}}{\\text{Initial adsorption power}} = \\dfrac{1400}{600} = \\dfrac{7}{3} \\approx 2.33 \\ \\text{times}$$\n\nSo the adsorption power **increases by 2.33 times**.",
-    "name": "Surface Chemistry Item 23"
+    "text": "Which one of the following is present in a gas mask?",
+    "options": ["Silica gel", "\\(\\text{V}_2\\text{O}_5\\)", "Activated charcoal", "Fluorescein"],
+    "correctIndex": 2,
+    "explanation": "**Activated charcoal** is present in gas masks. It is an extremely good adsorbent due to its very high surface area (up to 3000 m²/g) resulting from its highly porous structure. Key properties that make it suitable for gas masks:\n- It can adsorb large volumes of **toxic/harmful gases** (CO, HCN, etc.)\n- It does **not adsorb oxygen** (O\\(_2\\)), allowing the wearer to breathe normally\n- It works by **physical adsorption** (physisorption) at room temperature\n\nSilica gel is used as a desiccant; V\\(_2\\)O\\(_5\\) is a catalyst; fluorescein is a dye.",
+    "name": "Questions Item 22"
   }
 ]

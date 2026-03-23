@@ -1,20 +1,15 @@
 [
   {
     "id": "c22_item1",
-    "text": "Which of the following reactions produce ethyl cyanide as a major product?\n\n1. $$\\text{CH}_3\\text{CH}_2\\text{CH=NOH} \\xrightarrow{(\\text{CH}_3\\text{CO})_2\\text{O}}$$\n2. $$\\text{CH}_3\\text{CH}_2\\text{Cl} \\xrightarrow{\\text{Ethanolic KCN}}$$\n3. $$\\text{CH}_3\\text{CH}_2\\text{Cl} \\xrightarrow{\\text{Ethanolic AgCN}}$$\n4. $$\\text{CH}_3\\text{CH}_2\\text{CON(CH}_3)_2 \\xrightarrow{\\text{C}_6\\text{H}_5\\text{SO}_2\\text{Cl, Pyridine, 70°C}}$$",
-    "options": [
-      "1 and 3",
-      "2 and 3",
-      "3 and 4",
-      "1 and 2"
-    ],
+    "text": "Which of the following reactions produce ethyl cyanide as a major product?\n\n1. \\(\\text{CH}_3\\text{CH}_2\\text{CH=NOH} \\xrightarrow{(\\text{CH}_3\\text{CO})_2\\text{O}}\\)\n2. \\(\\text{CH}_3\\text{CH}_2\\text{Cl} \\xrightarrow{\\text{Ethanolic KCN}}\\)\n3. \\(\\text{CH}_3\\text{CH}_2\\text{Cl} \\xrightarrow{\\text{Ethanolic AgCN}}\\)\n4. \\(\\text{CH}_3\\text{CH}_2\\text{CON(CH}_3)_2 \\xrightarrow{\\text{C}_6\\text{H}_5\\text{SO}_2\\text{Cl/Pyridine, 70°C}}\\)",
+    "options": ["1, 3", "2, 3", "3, 4", "1, 2"],
     "correctIndex": 3,
-    "explanation": "**Reaction 1:** Beckmann rearrangement of oxime using (CH₃CO)₂O:\n$$\\text{CH}_3\\text{CH}_2\\text{CH=NOH} \\rightarrow \\text{CH}_3\\text{CH}_2\\text{CN (ethyl cyanide)}$$ ✓\n\n**Reaction 2:** SN2 reaction of 1° alkyl halide with KCN:\n$$\\text{CH}_3\\text{CH}_2\\text{Cl} + \\text{KCN} \\rightarrow \\text{CH}_3\\text{CH}_2\\text{CN (major)} + \\text{KCl}$$ ✓\n\n**Reaction 3:** Ethanolic AgCN reacts with alkyl halides via **carbon attack** (SN1 tendency) to give predominantly the **isocyanide** (CH₃CH₂NC), not cyanide ✗\n\n**Reaction 4:** This dehydration reaction of amide does not give ethyl cyanide in the expected manner ✗\n\n**Reactions 1 and 2** give ethyl cyanide as the major product.",
-    "name": "Organic Compounds Containing Nitrogen Item 1"
+    "explanation": "- **Reaction 1:** \\(\\text{CH}_3\\text{CH}_2\\text{CH=NOH} \\xrightarrow{(\\text{CH}_3\\text{CO})_2\\text{O}} \\text{CH}_3\\text{CH}_2\\text{CN}\\) (Beckmann-type dehydration with acetic anhydride converts aldoxime to nitrile = **ethyl cyanide**) ✓\n\n- **Reaction 2:** \\(\\text{CH}_3\\text{CH}_2\\text{Cl} + \\text{KCN} \\xrightarrow{\\text{ethanolic}} \\text{CH}_3\\text{CH}_2\\text{CN}\\) (KCN is a carbon nucleophile → **alkyl cyanide** as major product) ✓\n\n- **Reaction 3:** Ethanolic **AgCN** — Ag⁺ makes CN⁻ a nitrogen nucleophile → gives **isocyanide** (CH₃CH₂NC) as major product ✗\n\n- **Reaction 4:** No reaction occurs under these conditions ✗\n\nReactions **1 and 2** give ethyl cyanide as major product.",
+    "name": "Questions Item 1"
   },
   {
     "id": "c22_item2",
-    "text": "The order of boiling points of the following compounds is:\n\n1. $$(\\text{CH}_3)_3\\text{N}$$ &emsp; 2. $$\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NH}_2$$ &emsp; 3. $$\\text{CH}_3\\text{CH}_2\\text{NHCH}_3$$",
+    "text": "The order of boiling points of the following amine compounds is:\n\n1. \\((\\text{CH}_3)_3\\text{N}\\)  2. \\(\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NH}_2\\)  3. \\(\\text{CH}_3\\text{CH}_2\\text{NHCH}_3\\)",
     "options": [
       "1 > 3 > 2",
       "3 > 1 > 2",
@@ -22,12 +17,12 @@
       "2 > 3 > 1"
     ],
     "correctIndex": 3,
-    "explanation": "Boiling points of amines depend on **intermolecular forces** — primarily van der Waals forces and hydrogen bonding.\n\n- The dominant factor here is the **branching of the carbon chain**: more branching → more compact shape → less surface area → weaker van der Waals forces → lower boiling point\n\nAnalysing:\n- **2 (n-propylamine, 1°):** Straight chain, maximum surface area, can form 2 N–H bonds → **highest boiling point** (~49°C)\n- **3 (ethylmethylamine, 2°):** Some branching, can form 1 N–H bond → intermediate (~37°C)\n- **1 (trimethylamine, 3°):** Most branched, compact structure, NO N–H bonds → **lowest boiling point** (~3°C)\n\n**Boiling point order: 2 > 3 > 1**",
-    "name": "Organic Compounds Containing Nitrogen Item 2"
+    "explanation": "Boiling points of amines depend on van der Waals' forces and hydrogen bonding. Van der Waals' forces increase with surface area and decrease with branching.\n\n| Compound | Type | H-bonding | Branching |\n|---|---|---|---|\n| 2: \\(\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NH}_2\\) | 1° amine | 2 N—H bonds | Least branched | **highest BP** |\n| 3: \\(\\text{CH}_3\\text{CH}_2\\text{NHCH}_3\\) | 2° amine | 1 N—H bond | Moderate |\n| 1: \\((\\text{CH}_3)_3\\text{N}\\) | 3° amine | No N—H | Most branched | **lowest BP** |\n\nBoiling point order: **2 > 3 > 1**",
+    "name": "Questions Item 2"
   },
   {
     "id": "c22_item3",
-    "text": "What will be product A in the following reaction?\n\n$$\\text{Aniline} + \\text{HNO}_2 \\xrightarrow{\\text{HCl/5°C}} A$$",
+    "text": "What will be the product A in the reaction?\n\n\\(\\text{Aniline} + \\text{HNO}_2 \\rightarrow A + 2\\text{H}_2\\text{O}\\)",
     "options": [
       "Phenol",
       "Benzene diazonium salt",
@@ -35,77 +30,85 @@
       "Nitrobenzene"
     ],
     "correctIndex": 1,
-    "explanation": "When aniline (primary aromatic amine) reacts with HNO₂ (generated from NaNO₂ + HCl) at **0–5°C**:\n\n$$\\text{C}_6\\text{H}_5\\text{NH}_2 + \\text{HNO}_2 + \\text{HCl} \\xrightarrow{0-5°\\text{C}} \\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- + 2\\text{H}_2\\text{O}$$\n\n**Product A = Benzene diazonium chloride**\n\nThis reaction is called **diazotisation**. It must be carried out at 0–5°C because:\n- At higher temperatures, the diazonium salt is unstable and decomposes\n- At low temperatures, the diazonium salt is stable and can be used for further reactions",
-    "name": "Organic Compounds Containing Nitrogen Item 3"
+    "explanation": "This is a **diazotisation reaction**. Aniline (aromatic primary amine) reacts with nitrous acid (\\(\\text{HNO}_2\\), generated in situ from NaNO₂/HCl) at low temperature (0–5°C) to form a **diazonium salt**:\n\n\\[\\text{C}_6\\text{H}_5\\text{NH}_2 + \\text{HNO}_2 \\xrightarrow{0-5°\\text{C}} \\underbrace{\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^-}_{\\text{Benzene diazonium chloride}} + 2\\text{H}_2\\text{O}\\]\n\nBenzene diazonium salt is highly reactive and forms the basis of many organic synthesis reactions (Sandmeyer, Gattermann, coupling, etc.).",
+    "name": "Questions Item 3"
   },
   {
     "id": "c22_item4",
-    "text": "Which of the following is suitable for the synthesis of bromobenzene from benzene diazonium salts?",
+    "text": "Presence of which of the following is suitable for the synthesis of bromobenzene from benzene diazonium salts?",
     "options": [
       "HBr",
       "MgBr₂, HBr",
-      "Cu₂Br₂, HBr",
+      "\\(\\text{Cu}_2\\text{Br}_2\\), HBr",
       "KBr"
     ],
     "correctIndex": 2,
-    "explanation": "The conversion of benzene diazonium chloride to bromobenzene using **Cu₂Br₂/HBr** is the **Sandmeyer reaction**:\n\n$$\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- \\xrightarrow{\\text{Cu}_2\\text{Br}_2/\\text{HBr}} \\text{C}_6\\text{H}_5\\text{Br} + \\text{N}_2$$\n\nIn the Sandmeyer reaction:\n- **Cu₂Br₂** provides Br⁻ which replaces the diazonium group\n- **HBr** maintains the acidic medium\n- N₂ is liberated as a byproduct\n\nNote: Simply using HBr alone does not convert the diazonium salt to bromobenzene — a copper catalyst (Cu₂Br₂) is essential.",
-    "name": "Organic Compounds Containing Nitrogen Item 4"
+    "explanation": "The synthesis of bromobenzene from benzene diazonium chloride using **\\(\\text{Cu}_2\\text{Br}_2\\)** (cuprous bromide) and HBr is known as the **Sandmeyer reaction**:\n\n\\[\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- \\xrightarrow{\\text{Cu}_2\\text{Br}_2, \\text{HBr}, -\\text{N}_2} \\text{C}_6\\text{H}_5\\text{Br}\\]\n\nCuprous bromide acts as the copper catalyst that transfers the bromide ion to the phenyl group. This is a standard method for introducing halogens into aromatic rings at specific positions without the electrophilic substitution limitations.",
+    "name": "Questions Item 4"
   },
   {
     "id": "c22_item5",
     "text": "Which of the following statements about aniline is FALSE?",
     "options": [
-      "Aniline is a stronger base than ammonia",
-      "Aniline is less basic than methylamine",
-      "pKb of aniline is more than that of ammonia",
-      "Aniline reacts with bromine water to form a white precipitate"
+      "Aniline is a stronger base than ammonia.",
+      "Aniline is less basic than methylamine.",
+      "\\(pK_b\\) of aniline is more than that of ammonia.",
+      "Aniline reacts with bromine water to form a white precipitate."
     ],
     "correctIndex": 0,
-    "explanation": "**Statement A is FALSE:** Aniline is actually a **weaker base** than ammonia, not stronger.\n\n**Reason:** In aniline, the lone pair of electrons on the nitrogen atom is **delocalized into the benzene ring** through resonance (+M effect). This reduces the availability of the lone pair for protonation.\n\nIn contrast, in **ammonia (NH₃)**, the lone pair is fully available for donation → ammonia is a stronger base.\n\nBasicity order: $$\\text{Methylamine} > \\text{NH}_3 > \\text{Aniline}$$\n\n**Statements B, C, D are correct:**\n- Aniline is less basic than methylamine ✓\n- pKb (aniline) > pKb (ammonia) → aniline is weaker base ✓\n- Aniline + Br₂(aq) → 2,4,6-tribromoaniline (white precipitate) ✓",
-    "name": "Organic Compounds Containing Nitrogen Item 5"
+    "explanation": "**Statement A — FALSE (the answer):** Aniline is actually a **weaker base** than ammonia, NOT stronger. The lone pair of electrons on N in aniline is **delocalised into the benzene ring** through resonance, making it less available for donation to a proton. Since ammonia has its full lone pair available, **NH₃ is a stronger base** than aniline.\n\n**Statement B — Correct:** Aniline (pKₐ ~4.6) is less basic than methylamine (pKₐ ~10.6) ✓\n\n**Statement C — Correct:** Higher pKb means weaker base. Aniline has pKb ~9.4 > NH₃ pKb ~4.7 ✓\n\n**Statement D — Correct:** Aniline + Br₂(aq) → 2,4,6-tribromoaniline (white precipitate) ✓",
+    "name": "Questions Item 5"
   },
   {
     "id": "c22_item6",
-    "text": "Which of the following statements about sulphonamides is true?\n\n(i) Tertiary amines react with acid chlorides.\n(ii) N-ethylbenzenesulphonamide is soluble in alkali.\n(iii) N,N-diethylbenzenesulphonamide is soluble in alkali.\n(iv) Tertiary amines react with Hinsberg's reagent.",
-    "options": [
-      "(i)",
-      "(ii)",
-      "(iii)",
-      "(iv)"
-    ],
+    "text": "Which of the following statements about sulphonamides is TRUE?\n\n(i) Tertiary amines react with acid chlorides.\n(ii) N-ethyl benzene sulphonamide is soluble in alkali.\n(iii) N,N-diethyl benzene sulphonamide is soluble in alkali.\n(iv) Tertiary amines react with Hinsberg's reagent.",
+    "options": ["(i)", "(ii)", "(iii)", "(iv)"],
     "correctIndex": 1,
-    "explanation": "**Statement (ii) is correct:** N-ethylbenzenesulphonamide is **soluble in alkali**.\n\n$$\\text{C}_6\\text{H}_5\\text{SO}_2\\text{NHC}_2\\text{H}_5 + \\text{NaOH} \\rightarrow \\text{C}_6\\text{H}_5\\text{SO}_2\\text{N}^-\\text{(C}_2\\text{H}_5)\\text{Na}^+ + \\text{H}_2\\text{O}$$\n\nThe N–H hydrogen in N-monosubstituted sulphonamides is **strongly acidic** (due to the electron-withdrawing sulfonyl group) → dissolves in alkali.\n\n**Other statements are incorrect:**\n- **(i) False:** Tertiary amines do NOT react with acid chlorides (no N–H bond)\n- **(iii) False:** N,N-diethyl sulphonamide has NO N–H bond → NOT soluble in alkali\n- **(iv) False:** Tertiary amines do not react with Hinsberg's reagent (benzene sulfonyl chloride) — they only react if there's an N–H bond",
-    "name": "Organic Compounds Containing Nitrogen Item 6"
+    "explanation": "- **(i) Incorrect:** Tertiary amines (R₃N) have no N—H bond, so they cannot react with acid chlorides via the usual acylation mechanism.\n\n- **(ii) Correct:** **N-ethyl benzene sulphonamide** has an N—H bond. The hydrogen on nitrogen in this sulphonamide is **strongly acidic** (due to the electron-withdrawing effect of —SO₂—) and reacts with NaOH to form a soluble sodium salt. ✓\n\n- **(iii) Incorrect:** N,N-diethyl benzene sulphonamide has **no N—H bond** → not acidic → not soluble in alkali.\n\n- **(iv) Incorrect:** Tertiary amines do not react with Hinsberg's reagent (sulfonyl chloride) because they lack N—H bonds.\n\nCorrect: **(ii)**",
+    "name": "Questions Item 6"
   },
   {
     "id": "c22_item7",
-    "text": "In the preparation of a primary amine from an alkyl halide, with simultaneous addition of one –CH₂– group to the carbon chain, the reagent used as a source of nitrogen is:",
+    "text": "In the preparation of a 1°-amine from an alkyl halide, with simultaneous addition of one —CH₂ group to the carbon chain, the reagent used as source of nitrogen is",
     "options": [
-      "Sodium amide (NaNH₂)",
-      "Sodium azide (NaN₃)",
-      "Potassium cyanide (KCN)",
-      "Potassium phthalimide"
+      "Sodium amide, NaNH₂",
+      "Sodium azide, NaN₃",
+      "Potassium cyanide, KCN",
+      "Potassium phthalimide, \\(\\text{C}_6\\text{H}_4(\\text{CO})_2\\text{NK}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "**KCN** is the correct reagent.\n\nThe reaction proceeds via:\n1. **SN2 reaction** of alkyl halide with KCN → **alkyl cyanide (nitrile)**:\n$$\\text{R-X} + \\text{KCN} \\rightarrow \\text{R-CN} + \\text{KX}$$\n(This **adds one carbon** to the chain — the CN group adds one C)\n\n2. Reduction of nitrile → **primary amine**:\n$$\\text{R-CN} + 2\\text{H}_2 \\xrightarrow{\\text{Na/C}_2\\text{H}_5\\text{OH or LiAlH}_4} \\text{R-CH}_2\\text{NH}_2$$\n\nThis method simultaneously:\n- Introduces nitrogen (as CN)\n- Adds one carbon (the C of CN) to the chain\n\nHence, **KCN** is the correct answer.",
-    "name": "Organic Compounds Containing Nitrogen Item 7"
+    "explanation": "**Potassium cyanide (KCN)** is the reagent that simultaneously:\n1. Introduces a nitrogen atom (as —CN)\n2. **Adds one —CH₂ group** to the carbon chain (CN becomes CH₂NH₂ after reduction)\n\nReaction scheme:\n\\[\\text{R—X} + \\text{KCN} \\rightarrow \\text{R—CN} + \\text{KX}\\]\n\\[\\text{R—CN} \\xrightarrow{\\text{H}_2/\\text{Ni or LiAlH}_4} \\text{R—CH}_2\\text{—NH}_2\\]\n\nThe nitrile (—CN) contains both the extra carbon AND the nitrogen. After reduction, we get a primary amine with **one more carbon** than the starting alkyl halide.",
+    "name": "Questions Item 7"
   },
   {
     "id": "c22_item8",
     "text": "Acetic acid on heating with NH₃ forms A. When A reacts with LiAlH₄ followed by hydrolysis gives B. When B is heated with chloroform in KOH medium gives C. What are B and C respectively?",
     "options": [
-      "CH₃CONH₂; CH₃CH₂NC",
-      "CH₃CH₂NH₂; CH₃CH₂NC",
-      "CH₃CH₂NH₂; CH₃COOH",
-      "CH₃CH₂CH₂NH₂; CH₃CH₂NC"
+      "\\(\\text{CH}_3\\text{CONH}_2\\), \\(\\text{CH}_3\\text{CH}_2\\text{NC}\\)",
+      "\\(\\text{CH}_3\\text{CH}_2\\text{NH}_2\\), \\(\\text{CH}_3\\text{CH}_2\\text{NC}\\)",
+      "\\(\\text{CH}_3\\text{CH}_2\\text{NH}_2\\), \\(\\text{CH}_3\\text{COOH}\\)",
+      "\\(\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NH}_2\\), \\(\\text{CH}_3\\text{CH}_2\\text{NC}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "**Step 1:** CH₃COOH + NH₃ → CH₃COONH₄ → (–H₂O) → **A = CH₃CONH₂ (acetamide)**\n\n**Step 2:** CH₃CONH₂ + LiAlH₄ → (reduction of C=O and C–N) → **B = CH₃CH₂NH₂ (ethylamine)**\n\nNote: LiAlH₄ reduces amides to amines — the carbonyl carbon is reduced to –CH₂–, giving one extra carbon in the amine chain relative to the nitrogen.\n\n**Step 3:** CH₃CH₂NH₂ + CHCl₃ + KOH → **Carbylamine reaction** (primary amine only):\n$$\\text{CH}_3\\text{CH}_2\\text{NH}_2 + \\text{CHCl}_3 + 3\\text{KOH} \\rightarrow \\text{CH}_3\\text{CH}_2\\text{NC} + 3\\text{KCl} + 3\\text{H}_2\\text{O}$$\n**C = CH₃CH₂NC (ethyl isocyanide)**\n\n**B = CH₃CH₂NH₂; C = CH₃CH₂NC**",
-    "name": "Organic Compounds Containing Nitrogen Item 8"
+    "explanation": "**Step 1:** \\(\\text{CH}_3\\text{COOH} + \\text{NH}_3 \\rightarrow \\text{CH}_3\\text{COO}^-\\text{NH}_4^+ \\xrightarrow{\\Delta} \\underbrace{\\text{CH}_3\\text{CONH}_2}_{A\\text{ (acetamide)}}\\)\n\n**Step 2:** \\(\\text{CH}_3\\text{CONH}_2 \\xrightarrow{\\text{LiAlH}_4, \\text{H}_2\\text{O}} \\underbrace{\\text{CH}_3\\text{CH}_2\\text{NH}_2}_{B\\text{ (ethylamine)}}\\) (amide reduced to primary amine)\n\n**Step 3 — Carbylamine reaction:** \\(\\text{CH}_3\\text{CH}_2\\text{NH}_2 + \\text{CHCl}_3 + 3\\text{KOH} \\rightarrow \\underbrace{\\text{CH}_3\\text{CH}_2\\text{NC}}_{C\\text{ (ethyl isocyanide)}} + 3\\text{KCl} + 3\\text{H}_2\\text{O}\\)\n\nB = **ethylamine (\\(\\text{CH}_3\\text{CH}_2\\text{NH}_2\\))**, C = **ethyl isocyanide (\\(\\text{CH}_3\\text{CH}_2\\text{NC}\\))**",
+    "name": "Questions Item 8"
   },
   {
     "id": "c22_item9",
-    "text": "If the general formula of oxime and semicarbazone is C=N–Z, what is Z in oxime (I) and semicarbazone (II)?",
+    "text": "Identify X and Y in the following reactions:\n\n\\(X \\xrightarrow{\\text{H}_2/\\text{Ni}} \\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NH}_2 \\xleftarrow{\\text{Br}_2/\\text{NaOH}} Y\\)",
+    "options": [
+      "X = \\(\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CN}\\); Y = \\(\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CONH}_2\\)",
+      "X = \\(\\text{CH}_3\\text{CH}_2\\text{CN}\\); Y = \\(\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CONH}_2\\)",
+      "X = \\(\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NC}\\); Y = \\(\\text{CH}_3\\text{CH}_2\\text{CONHCH}_3\\)",
+      "X = \\(\\text{CH}_3\\text{CH}_2\\text{CN}\\); Y = \\(\\text{CH}_3\\text{CH}_2\\text{CONH}_2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The target is **propylamine** (\\(\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NH}_2\\), 3 carbons).\n\n**X via H₂/Ni reduction:**\n\\[X \\xrightarrow{\\text{H}_2/\\text{Ni}} \\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NH}_2\\]\nH₂/Ni reduces —CN to —CH₂NH₂ (adds a CH₂). So X has **2 carbons**: \\(\\text{X} = \\text{CH}_3\\text{CH}_2\\text{CN}\\) (propionitrile)\n\n**Y via Hofmann bromamide reaction (Br₂/NaOH):**\n\\[Y \\xrightarrow{\\text{Br}_2/\\text{NaOH}} \\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NH}_2\\]\nHofmann reaction: amide → primary amine (loses one carbon). Y has **4 carbons**: \\(\\text{Y} = \\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CONH}_2\\) (butyramide)\n\nX = **\\(\\text{CH}_3\\text{CH}_2\\text{CN}\\)**, Y = **\\(\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CONH}_2\\)**",
+    "name": "Questions Item 9"
+  },
+  {
+    "id": "c22_item10",
+    "text": "If the general formula of oxime and semicarbazone is C=N—Z, what is 'Z' in oxime (I) and semicarbazone (II)?",
     "options": [
       "I: NHCONH₂; II: OH",
       "I: OH; II: NH₂",
@@ -113,12 +116,12 @@
       "I: NH₂; II: OH"
     ],
     "correctIndex": 2,
-    "explanation": "The general formula **C=N–Z** describes these carbonyl derivatives:\n\n**Oxime (I):** Formed from aldehyde/ketone + hydroxylamine (NH₂OH):\n$$\\text{R-CHO} + \\text{NH}_2\\text{OH} \\rightarrow \\text{R-CH=N-OH} + \\text{H}_2\\text{O}$$\nIn C=N–Z: **Z = –OH** ✓\n\n**Semicarbazone (II):** Formed from aldehyde/ketone + semicarbazide (NH₂–NH–CO–NH₂):\n$$\\text{R-CHO} + \\text{H}_2\\text{N-NH-CO-NH}_2 \\rightarrow \\text{R-CH=N-NH-CO-NH}_2 + \\text{H}_2\\text{O}$$\nIn C=N–Z: **Z = –NHCONH₂ (–NHCONH₂)** ✓\n\nTherefore: **I (Oxime): Z = OH; II (Semicarbazone): Z = NHCONH₂**",
-    "name": "Organic Compounds Containing Nitrogen Item 9"
+    "explanation": "The general formula for these condensation products with carbonyl compounds is **C=N—Z**:\n\n**Oxime (I):** Formed from carbonyl + **hydroxylamine (NH₂OH)**:\n\\[\\text{R—CHO} + \\text{NH}_2\\text{OH} \\rightarrow \\text{R—CH=N—OH} + \\text{H}_2\\text{O}\\]\nSo Z in oxime = **—OH** ✓\n\n**Semicarbazone (II):** Formed from carbonyl + **semicarbazide (NH₂—NHCONH₂)**:\n\\[\\text{R—CHO} + \\text{NH}_2\\text{NHCONH}_2 \\rightarrow \\text{R—CH=N—NHCONH}_2 + \\text{H}_2\\text{O}\\]\nSo Z in semicarbazone = **—NHCONH₂** ✓\n\nI = —OH, II = —NHCONH₂",
+    "name": "Questions Item 10"
   },
   {
-    "id": "c22_item10",
-    "text": "For which of the following compounds is Kjeldahl's method NOT used for estimation of nitrogen?\n\nI. Aniline &emsp; II. Azobenzene &emsp; III. Nitrobenzene &emsp; IV. Pyridine",
+    "id": "c22_item11",
+    "text": "For which of the following compounds is Kjeldahl's method NOT used for estimation of nitrogen?\n\nI. Aniline  II. Azobenzene  III. Nitrobenzene  IV. Pyridine",
     "options": [
       "II, III, IV",
       "II, III only",
@@ -126,25 +129,38 @@
       "I, III, IV"
     ],
     "correctIndex": 0,
-    "explanation": "**Kjeldahl's method** cannot be used when:\n- Nitrogen is present as a **N=N (azo) group**\n- Nitrogen is present in a **–NO₂ or –NO group** (N with double bond to O)\n- Nitrogen is part of a **heterocyclic ring** (like pyridine)\n\n**Analysis:**\n- **I. Aniline (C₆H₅NH₂):** N has no double bond, not in ring → **CAN be estimated by Kjeldahl's** ✗\n- **II. Azobenzene (C₆H₅–N=N–C₆H₅):** Has N=N group → **CANNOT** ✓\n- **III. Nitrobenzene (C₆H₅NO₂):** N has double bond to O → **CANNOT** ✓\n- **IV. Pyridine:** N in heterocyclic ring → **CANNOT** ✓\n\nKjeldahl's method is **not used for II, III, and IV**.",
-    "name": "Organic Compounds Containing Nitrogen Item 10"
-  },
-  {
-    "id": "c22_item11",
-    "text": "An organic compound A (C₆H₇N) on reaction with NaNO₂/HCl at 273–278 K followed by warming with water gives B. B reacts with conc. HNO₃ to give C. What is C?",
-    "options": [
-      "2,4,6-Trinitrophenol",
-      "o-Nitrophenol",
-      "p-Nitrophenol",
-      "2,4-Dinitrophenol"
-    ],
-    "correctIndex": 0,
-    "explanation": "**A (C₆H₇N)** = Aniline (C₆H₅NH₂)\n\n**Step 1:** Aniline + NaNO₂/HCl at 273–278 K → **Benzene diazonium chloride** (diazotisation)\n\n**Step 2:** Benzene diazonium chloride + H₂O (warming) → **B = Phenol (C₆H₅OH)**\n$$\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- \\xrightarrow{\\text{H}_2\\text{O}, \\Delta} \\text{C}_6\\text{H}_5\\text{OH} + \\text{N}_2 + \\text{HCl}$$\n\n**Step 3:** Phenol + conc. HNO₃ → **C = 2,4,6-Trinitrophenol (picric acid)**\n$$\\text{C}_6\\text{H}_5\\text{OH} + 3\\text{HNO}_3 \\rightarrow \\text{2,4,6-trinitrophenol} + 3\\text{H}_2\\text{O}$$\n\nThe –OH group strongly activates ortho and para positions → trinitration occurs at all three activated positions.",
-    "name": "Organic Compounds Containing Nitrogen Item 11"
+    "explanation": "Kjeldahl's method converts organic N to NH₃ and measures it. It **cannot be used** when:\n- N is present in a **double bond** (N=N or N=O)\n- N is in a **heterocyclic aromatic ring**\n\nChecking:\n- **I (Aniline, C₆H₅NH₂)**: N is in —NH₂ (single bonds only) → **CAN be estimated** ✓ (NOT in the excluded list)\n- **II (Azobenzene, C₆H₅—N=N—C₆H₅)**: has —N=N— double bond → **CANNOT be estimated** ✗\n- **III (Nitrobenzene, C₆H₅NO₂)**: N has N=O bond → **CANNOT be estimated** ✗\n- **IV (Pyridine)**: N is in heterocyclic aromatic ring → **CANNOT be estimated** ✗\n\nKjeldahl not applicable: **II, III, IV**",
+    "name": "Questions Item 11"
   },
   {
     "id": "c22_item12",
-    "text": "The reaction $$\\text{ArN}_2^+\\text{Cl}^- + \\text{Cu} + \\text{HCl} \\rightarrow \\text{ArCl} + \\text{N}_2 + \\text{CuCl}$$ is known as:",
+    "text": "Identify the reagents (X, Y, Z) used in the conversion of 3-methylaniline to 3-nitrotoluene.",
+    "options": [
+      "X = NaNO₂, HCl; Y = HBF₄; Z = NaNO₂, Cu, Δ",
+      "X = NaNO₃, HCl/273 K; Y = HF; Z = NaNO₃, Cu, Δ",
+      "X = NaNO₂, HCl; Y = C₂H₅OH; Z = NaNO₃, Δ",
+      "X = NaNO₃, HCl; Y = NaOH; Z = C₆H₅NO₂"
+    ],
+    "correctIndex": 0,
+    "explanation": "The conversion of 3-methylaniline (3-aminotoluene) to 3-nitrotoluene proceeds via the diazonium salt:\n\n**Step 1 (X):** Diazotisation at low temperature:\n\\[\\text{3-CH}_3\\text{C}_6\\text{H}_4\\text{NH}_2 \\xrightarrow{\\text{NaNO}_2, \\text{HCl}, 273\\text{ K}} \\text{3-CH}_3\\text{C}_6\\text{H}_4\\text{N}_2^+\\text{Cl}^-\\]\n\n**Step 2 (Y):** Convert Cl⁻ to BF₄⁻ for the Balz-Schiemann reaction:\n\\[\\text{diazonium Cl}^- \\xrightarrow{\\text{HBF}_4} \\text{diazonium BF}_4^-\\text{ (fluoroborate)}\\]\n\n**Step 3 (Z):** Replace diazonium with NO₂ (using NaNO₂ and Cu catalyst):\n\\[\\text{diazonium} \\xrightarrow{\\text{NaNO}_2, \\text{Cu}, \\Delta} \\text{3-nitrotoluene}\\]\n\nX = **NaNO₂, HCl**, Y = **HBF₄**, Z = **NaNO₂, Cu, Δ**",
+    "name": "Questions Item 12"
+  },
+  {
+    "id": "c22_item13",
+    "text": "What are X and Y in the following reactions?\n\n\\(\\text{ArN}_2^+\\text{Cl}^- \\xrightarrow{X} \\text{ArH}\\)\n\n\\(\\text{ArN}_2^+\\text{Cl}^- \\xrightarrow{Y} \\text{ArH}\\)",
+    "options": [
+      "X = \\(\\text{CH}_3\\text{CH}_2\\text{OH}\\); Y = \\(\\text{H}_3\\text{PO}_2, \\text{H}_2\\text{O}\\)",
+      "X = \\(\\text{CH}_3\\text{MgX}\\); Y = \\(\\text{H}_3\\text{PO}_3\\)",
+      "X = \\(\\text{CH}_3\\text{CHO}\\); Y = \\(\\text{H}_2\\text{O}\\)",
+      "X = \\(\\text{CH}_2\\text{=CH}_2\\); Y = \\(\\text{NaNO}_2/\\text{HCl}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Both reactions convert an aryl diazonium salt (ArN₂⁺Cl⁻) to the **parent arene** (ArH) by **replacing the diazonium group with hydrogen**:\n\n**X = Ethanol (\\(\\text{C}_2\\text{H}_5\\text{OH}\\)):** The diazonium salt is reduced to ArH by ethanol:\n\\[\\text{ArN}_2^+\\text{Cl}^- + \\text{C}_2\\text{H}_5\\text{OH} \\rightarrow \\text{ArH} + \\text{N}_2 + \\text{CH}_3\\text{CHO} + \\text{HCl}\\]\n\n**Y = Hypophosphorous acid (\\(\\text{H}_3\\text{PO}_2 + \\text{H}_2\\text{O}\\)):** Also reduces diazonium to ArH:\n\\[\\text{ArN}_2^+\\text{Cl}^- + \\text{H}_3\\text{PO}_2 + \\text{H}_2\\text{O} \\rightarrow \\text{ArH} + \\text{N}_2 + \\text{HCl} + \\text{H}_3\\text{PO}_3\\]\n\nX = **\\(\\text{C}_2\\text{H}_5\\text{OH}\\)**, Y = **\\(\\text{H}_3\\text{PO}_2, \\text{H}_2\\text{O}\\)**",
+    "name": "Questions Item 13"
+  },
+  {
+    "id": "c22_item14",
+    "text": "The reaction \\(\\text{ArN}_2^+\\text{Cl}^- + \\text{Cu} + \\text{HCl} \\rightarrow \\text{ArCl} + \\text{N}_2 + \\text{CuCl}\\) is known as",
     "options": [
       "Swarts reaction",
       "Gattermann reaction",
@@ -152,111 +168,85 @@
       "Stephen reaction"
     ],
     "correctIndex": 1,
-    "explanation": "The reaction of a diazonium salt with **copper metal (not cuprous chloride)** in the presence of HCl is called the **Gattermann reaction**:\n\n$$\\text{ArN}_2^+\\text{Cl}^- + \\text{Cu} + \\text{HCl} \\rightarrow \\text{ArCl} + \\text{N}_2 + \\text{CuCl}$$\n\n**Distinguishing from Sandmeyer reaction:**\n- **Sandmeyer:** Uses **CuX salts (Cu₂Cl₂ or Cu₂Br₂)** as reagent\n- **Gattermann:** Uses **copper metal** (not salt) with HCl or HBr\n\nBoth reactions involve the replacement of the –N₂⁺ group by a halide, but they differ in the copper species used.",
-    "name": "Organic Compounds Containing Nitrogen Item 12"
-  },
-  {
-    "id": "c22_item13",
-    "text": "What are A, B and C in the following reactions?\n\n$$\\text{Phthalic acid} \\xrightarrow{+\\text{NH}_3, \\Delta} A \\xrightarrow{\\text{High temperature}} B \\xrightarrow{\\text{}} C$$",
-    "options": [
-      "A = ammonium phthalate; B = phthalamide; C = phthalimide",
-      "A = phthalamide; B = phthalimide; C = 1,2-dicyanobenzene",
-      "A = ammonium phthalate; B = phthalamide; C = 1,2-dicyanobenzene",
-      "A = ammonium phthalate; B = phthalamide; C = phthalimide"
-    ],
-    "correctIndex": 3,
-    "explanation": "**Step 1:** Phthalic acid + NH₃:\n$$\\text{o-C}_6\\text{H}_4\\text{(COOH)}_2 + 2\\text{NH}_3 \\rightarrow \\text{o-C}_6\\text{H}_4\\text{(COONH}_4)_2$$\n**A = Ammonium phthalate** (di-ammonium salt)\n\n**Step 2:** Heating ammonium phthalate → dehydration:\n$$\\text{o-C}_6\\text{H}_4\\text{(COONH}_4)_2 \\xrightarrow{\\Delta} \\text{o-C}_6\\text{H}_4\\text{(CONH}_2)_2 + 2\\text{H}_2\\text{O}$$\n**B = Phthalamide** (the diamide)\n\n**Step 3:** Further heating at high temperature → cyclisation with loss of NH₃:\n$$\\text{o-C}_6\\text{H}_4\\text{(CONH}_2)_2 \\xrightarrow{\\text{high T}} \\text{Phthalimide} + \\text{NH}_3$$\n**C = Phthalimide** (cyclic imide)\n\n**A = Ammonium phthalate; B = Phthalamide; C = Phthalimide**",
-    "name": "Organic Compounds Containing Nitrogen Item 13"
-  },
-  {
-    "id": "c22_item14",
-    "text": "What are A and B in the following reaction sequence?\n\n$$\\text{Propionitrile} + A \\rightarrow B \\xrightarrow{\\text{H}_3\\text{O}^+} \\text{propiophenone}$$",
-    "options": [
-      "A = C₂H₅MgBr; B = CH₃CH₂C(=NMgBr)C₂H₅",
-      "A = C₂H₅MgBr; B = CH₃CH₂CH₂C(=NH)C₂H₅",
-      "A = C₆H₅MgBr; B = CH₃CH₂C(=NMgBr)C₆H₅",
-      "A = C₆H₅CH₂MgBr; B = CH₃CH₂CH₂C(=NH)CH₂C₆H₅"
-    ],
-    "correctIndex": 2,
-    "explanation": "Propionitrile (CH₃CH₂C≡N) reacts with a Grignard reagent to form a metalated imine, which upon acid hydrolysis gives a ketone.\n\nFor the final product to be **propiophenone (C₆H₅COCH₂CH₃)**:\n- The phenyl group must come from the Grignard reagent\n- **A = C₆H₅MgBr (phenyl magnesium bromide)**\n\n$$\\text{CH}_3\\text{CH}_2\\text{C≡N} + \\text{C}_6\\text{H}_5\\text{MgBr} \\rightarrow \\underbrace{\\text{CH}_3\\text{CH}_2\\text{C(=NMgBr)C}_6\\text{H}_5}_{B}$$\n\n$$B \\xrightarrow{\\text{H}_3\\text{O}^+} \\text{CH}_3\\text{CH}_2\\text{CO-C}_6\\text{H}_5 \\ (\\text{propiophenone}) + \\text{NH}_3$$\n\n**A = C₆H₅MgBr; B = CH₃CH₂C(=NMgBr)C₆H₅**",
-    "name": "Organic Compounds Containing Nitrogen Item 14"
+    "explanation": "The reaction where an **aryl diazonium salt** reacts with **copper metal (Cu)** in the presence of **HCl** to give **chlorobenzene** is the **Gattermann reaction**:\n\n\\[\\text{ArN}_2^+\\text{Cl}^- + \\text{Cu} + \\text{HCl} \\rightarrow \\text{ArCl} + \\text{N}_2 + \\text{CuCl}\\]\n\n**Sandmeyer reaction** uses **cuprous salts** (\\(\\text{CuCl}\\), \\(\\text{CuBr}\\), \\(\\text{Cu(CN)}\\)) instead of copper metal directly.\n\n- Swarts: fluorination using \\(\\text{SbF}_3\\)\n- Stephen: nitrile → aldehyde using \\(\\text{SnCl}_2/\\text{HCl}\\)\n- Sandmeyer: \\(\\text{ArN}_2^+\\text{Cl}^- + \\text{CuCl} \\rightarrow \\text{ArCl}\\) (cuprous salt)",
+    "name": "Questions Item 14"
   },
   {
     "id": "c22_item15",
-    "text": "$$\\text{C}_2\\text{H}_5\\text{Cl} \\xrightarrow{\\text{KCN}} X \\xrightarrow{\\text{H}_2/\\text{catalyst}} Y \\xrightarrow{\\text{CHCl}_3/\\text{alc. KOH}} Z$$\n\nWhat is Z in the above sequence of reactions?",
+    "text": "What are A, B and C in the following reactions?\n\n\\(\\text{Phthalic acid} + \\text{NH}_3 \\xrightarrow{\\Delta} A \\xrightarrow{\\text{High temp.}} B \\xrightarrow{} C\\)",
     "options": [
-      "$$\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NC}$$",
-      "$$\\text{CH}_3\\text{CH}_2\\text{CN}$$",
-      "$$\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NH}_2$$",
-      "$$\\text{CH}_3\\text{CH}_2\\text{NC}$$"
+      "A = diammonium salt of phthalic acid; B = phthalamide; C = phthalonitrile",
+      "A = phthalamide; B = phthalimide; C = phthalonitrile",
+      "A = phthalimide; B = phthalamide; C = phthalonitrile",
+      "A = ammonium phthalate; B = phthalamide; C = phthalimide"
     ],
-    "correctIndex": 0,
-    "explanation": "**Step 1:** C₂H₅Cl + KCN → **X = C₂H₅CN (propionitrile)** + KCl\n(SN2, CN⁻ attacks as nucleophile via carbon → cyanide product)\n\n**Step 2:** C₂H₅CN + H₂/catalyst → **Y = CH₃CH₂CH₂NH₂ (n-propylamine)**\n(Reduction of nitrile to primary amine — adds one CH₂ to the chain)\n\n**Step 3:** CH₃CH₂CH₂NH₂ + CHCl₃ + KOH → **Carbylamine reaction** (primary amine + CHCl₃/KOH → isocyanide):\n$$\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NH}_2 + \\text{CHCl}_3 + 3\\text{KOH} \\rightarrow \\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NC} + 3\\text{KCl} + 3\\text{H}_2\\text{O}$$\n\n**Z = CH₃CH₂CH₂NC (n-propyl isocyanide)**",
-    "name": "Organic Compounds Containing Nitrogen Item 15"
+    "correctIndex": 3,
+    "explanation": "The conversion of phthalic acid to phthalimide:\n\n**Step 1:** Phthalic acid + NH₃ → **Diammonium phthalate (A)**:\n\\[\\text{C}_6\\text{H}_4(\\text{COOH})_2 + 2\\text{NH}_3 \\rightarrow \\text{C}_6\\text{H}_4(\\text{COONH}_4^+)_2\\]\n\n**Step 2:** Heating → **Phthalamide (B)**:\n\\[\\rightarrow \\text{C}_6\\text{H}_4(\\text{CONH}_2)_2\\text{ (dehydration to form amide bonds)}\\]\n\n**Step 3:** High temperature → **Phthalimide (C)**:\n\\[\\text{C}_6\\text{H}_4(\\text{CONH}_2)_2 \\xrightarrow{\\text{High T, -NH}_3} \\text{C}_6\\text{H}_4(\\text{CO})_2\\text{NH}\\text{ (cyclic imide)}\\]\n\nA = ammonium phthalate, B = phthalamide, C = **phthalimide**",
+    "name": "Questions Item 15"
   },
   {
     "id": "c22_item16",
-    "text": "What are A, B and C in the following reaction?\n\n$$\\text{Arene diazonium fluoroborate} \\xrightarrow{\\text{NaNO}_2/\\text{Cu}, \\Delta} A + B + C$$",
+    "text": "What are A and B in the following reaction sequence?\n\n\\(\\text{Propionitrile} + A \\xrightarrow{} B \\xrightarrow{\\text{H}_3\\text{O}^+} \\text{Propiophenone}\\)",
     "options": [
-      "A = ArN=NAr; B = N₂; C = NaBF₄",
-      "A = ArNO₂; B = N₂; C = NaBF₄",
-      "A = ArNO; B = N₂; C = NaBF₄",
-      "A = ArF; B = NaN₃; C = BF₃"
+      "A = \\(\\text{C}_2\\text{H}_5\\text{MgBr}\\); B = \\(\\text{CH}_3\\text{CH}_2\\text{C(=NMgBr)C}_2\\text{H}_5\\)",
+      "A = \\(\\text{C}_2\\text{H}_5\\text{MgBr}\\); B = \\(\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{C(=NH)C}_2\\text{H}_5\\)",
+      "A = \\(\\text{C}_6\\text{H}_5\\text{MgBr}\\); B = \\(\\text{CH}_3\\text{CH}_2\\text{C(=NMgBr)C}_6\\text{H}_5\\)",
+      "A = \\(\\text{C}_6\\text{H}_5\\text{CH}_2\\text{MgBr}\\); B = \\(\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{C(=NH)CH}_2\\text{C}_6\\text{H}_5\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "When **arene diazonium fluoroborate (ArN₂⁺BF₄⁻)** is heated with NaNO₂ in the presence of Cu catalyst:\n\n$$\\text{ArN}_2^+\\text{BF}_4^- + \\text{NaNO}_2 \\xrightarrow{\\text{Cu}, \\Delta} \\text{ArNO}_2 + \\text{N}_2 + \\text{NaBF}_4$$\n\nProducts:\n- **A = ArNO₂** (nitrobenzene — the diazonium group is replaced by –NO₂)\n- **B = N₂** (nitrogen gas is liberated)\n- **C = NaBF₄** (sodium tetrafluoroborate)\n\nThis reaction is useful for introducing a –NO₂ group onto an aromatic ring in a specific position that may be difficult to achieve by direct nitration.",
-    "name": "Organic Compounds Containing Nitrogen Item 16"
+    "correctIndex": 2,
+    "explanation": "Propiophenone is \\(\\text{C}_6\\text{H}_5\\text{CO—CH}_2\\text{CH}_3\\) (phenyl ethyl ketone). Working backwards:\n\nTo make a ketone from a nitrile, **phenylmagnesium bromide (\\(\\text{C}_6\\text{H}_5\\text{MgBr}\\))** is added to propionitrile:\n\n\\[\\text{CH}_3\\text{CH}_2\\text{C≡N} + \\text{C}_6\\text{H}_5\\text{MgBr} \\rightarrow \\underbrace{\\text{CH}_3\\text{CH}_2\\text{C(=NMgBr)C}_6\\text{H}_5}_{B}\\]\n\nHydrolysis of the imine salt:\n\\[B \\xrightarrow{\\text{H}_3\\text{O}^+, \\text{H}_2\\text{O}} \\underbrace{\\text{CH}_3\\text{CH}_2\\text{CO—C}_6\\text{H}_5}_{\\text{propiophenone}}\\]\n\nA = **\\(\\text{C}_6\\text{H}_5\\text{MgBr}\\)** (phenyl Grignard), B = the imine-MgBr intermediate",
+    "name": "Questions Item 16"
   },
   {
     "id": "c22_item17",
-    "text": "The amine which does NOT react with chloroform and ethanolic potassium hydroxide is:",
+    "text": "What are A, B and C in the following reaction?\n\n\\(\\text{Arene diazonium fluoroborate} \\xrightarrow{\\text{NaNO}_2/\\text{Cu}, \\Delta} A + B + C\\)",
     "options": [
-      "$$(\\text{CH}_3)_2\\text{CHNHCH}_3$$ (N-methylisopropylamine)",
-      "$$\\text{C}_6\\text{H}_5\\text{NH}_2$$ (aniline)",
-      "$$\\text{C}_6\\text{H}_5\\text{CH}_2\\text{NH}_2$$ (benzylamine)",
-      "$$\\text{CH}_3\\text{NH}_2$$ (methylamine)"
+      "A = ArN=NAr; B = \\(\\text{N}_2\\); C = \\(\\text{NaBF}_4\\)",
+      "A = \\(\\text{ArNO}_2\\); B = \\(\\text{N}_2\\); C = \\(\\text{NaBF}_4\\)",
+      "A = ArNO; B = \\(\\text{N}_2\\); C = \\(\\text{NaBF}_4\\)",
+      "A = ArF; B = \\(\\text{NaN}_3\\); C = \\(\\text{BF}_3\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "The reaction of an amine with CHCl₃/KOH (ethanolic) to form an **isocyanide** is called the **carbylamine reaction**.\n\n**Prerequisite:** The amine must be a **PRIMARY amine** (R–NH₂) — it must have at least two N–H bonds.\n\n- **Option (a): (CH₃)₂CHNHCH₃** — This is a **secondary amine** (has only one N–H bond) → **does NOT react** ✓\n- **Option (b): C₆H₅NH₂** — Primary amine → reacts\n- **Option (c): C₆H₅CH₂NH₂** — Primary amine → reacts\n- **Option (d): CH₃NH₂** — Primary amine → reacts\n\nSecondary and tertiary amines do NOT undergo the carbylamine reaction because they lack the required two N–H bonds.",
-    "name": "Organic Compounds Containing Nitrogen Item 17"
+    "correctIndex": 1,
+    "explanation": "When arene diazonium fluoroborate reacts with NaNO₂ and Cu catalyst at elevated temperature:\n\n\\[\\text{ArN}_2^+\\text{BF}_4^- + \\text{NaNO}_2 \\xrightarrow{\\text{Cu}, \\Delta} \\underbrace{\\text{ArNO}_2}_{A} + \\underbrace{\\text{N}_2}_{B} + \\underbrace{\\text{NaBF}_4}_{C}\\]\n\nThe diazonium group is replaced by the nitro group (—NO₂), nitrogen gas is released, and NaBF₄ is the byproduct from the fluoroborate anion reacting with sodium.\n\nA = **\\(\\text{ArNO}_2\\)** (nitroarene), B = **\\(\\text{N}_2\\)**, C = **\\(\\text{NaBF}_4\\)**",
+    "name": "Questions Item 17"
   },
   {
     "id": "c22_item18",
-    "text": "What are X and Y in the following reactions?\n\n$$\\text{R-CONH}_2 \\xrightarrow{\\text{(1) LiAlH}_4 \\text{(2) H}_2\\text{O}} \\text{RCH}_2\\text{NH}_2 \\xleftarrow{\\text{H}_2/\\text{Ni}} Y$$\n\n$$X \\xrightarrow{\\text{(1) LiAlH}_4 \\text{(2) H}_2\\text{O}} \\text{RCH}_2\\text{NH}_2$$",
+    "text": "The amine which does NOT react with chloroform and ethanolic potassium hydroxide is",
     "options": [
-      "X = RCOONH₄; Y = RCH₂CN",
-      "X = RCN; Y = RCONH₂",
-      "X = RNHCH₃; Y = RCH₂NC",
-      "X = RCONH₂; Y = RCN"
+      "\\(\\text{CH}_3\\text{CH(CH}_3)\\text{NHCH}_3\\) (N-methylisopropylamine)",
+      "\\(\\text{C}_6\\text{H}_5\\text{NH}_2\\) (aniline)",
+      "A primary bromoaniline",
+      "A primary dibromoaniline"
     ],
-    "correctIndex": 3,
-    "explanation": "The amine RCH₂NH₂ can be formed by two routes:\n\n**Route 1:** RCONH₂ (amide) + LiAlH₄/H₂O → RCH₂NH₂\n- So **X = RCONH₂** (amide) ✓\n\n**Route 2 (reverse arrow):** Y + H₂/Ni → RCH₂NH₂\n- Catalytic hydrogenation (H₂/Ni) of a **nitrile** gives a primary amine:\n$$\\text{RCN} + 2\\text{H}_2 \\xrightarrow{\\text{H}_2/\\text{Ni}} \\text{RCH}_2\\text{NH}_2$$\n- So **Y = RCN** (nitrile) ✓\n\nBoth pathways confirm: **X = RCONH₂** and **Y = RCN**\n\nLiAlH₄ reduces both amides and nitriles to primary amines — nitriles give the same product as catalytic hydrogenation.",
-    "name": "Organic Compounds Containing Nitrogen Item 18"
+    "correctIndex": 0,
+    "explanation": "The reaction of an amine with CHCl₃ and ethanolic KOH to give an **isocyanide** is the **carbylamine reaction** (also called isocyanide test). This reaction is characteristic of **primary amines only**:\n\n\\[\\text{R—NH}_2 + \\text{CHCl}_3 + 3\\text{KOH} \\rightarrow \\text{R—NC} + 3\\text{KCl} + 3\\text{H}_2\\text{O}\\]\n\n**Secondary amines (R₂NH) do NOT react** because the reaction requires two N—H bonds.\n\nOption (a) \\(\\text{CH}_3\\text{CH(CH}_3)\\text{NHCH}_3\\) is a **secondary amine** — it has only one N—H bond → **does NOT give carbylamine reaction**.\n\nOptions (b), (c), (d) are all primary amines → they do react.",
+    "name": "Questions Item 18"
   },
   {
     "id": "c22_item19",
-    "text": "The order of basic strength of methylamine-substituted amines and NH₃ in aqueous solution is:",
+    "text": "What are X and Y in the following reactions?\n\n\\(X \\xrightarrow{\\text{(i) LiAlH}_4, \\text{(ii) H}_2\\text{O}} \\text{RCH}_2\\text{NH}_2 \\xleftarrow{\\text{H}_2/\\text{Ni}} Y\\)",
     "options": [
-      "$$(\\text{CH}_3)_2\\text{NH} > (\\text{CH}_3)_3\\text{N} > \\text{CH}_3\\text{NH}_2 > \\text{NH}_3$$",
-      "$$(\\text{CH}_3)_3\\text{N} > (\\text{CH}_3)_2\\text{NH} > \\text{CH}_3\\text{NH}_2 > \\text{NH}_3$$",
-      "$$(\\text{CH}_3)_2\\text{NH} > \\text{CH}_3\\text{NH}_2 > \\text{NH}_3 > (\\text{CH}_3)_3\\text{N}$$",
-      "$$\\text{NH}_3 > \\text{CH}_3\\text{NH}_2 > (\\text{CH}_3)_2\\text{NH} > (\\text{CH}_3)_3\\text{N}$$"
+      "X = \\(\\text{RCOONH}_4^+\\); Y = \\(\\text{RCH}_2\\text{CN}\\)",
+      "X = RCN; Y = \\(\\text{RCONH}_2\\)",
+      "X = \\(\\text{RNHCH}_3\\); Y = \\(\\text{RCH}_2\\text{NC}\\)",
+      "X = \\(\\text{RCONH}_2\\); Y = RCN"
     ],
-    "correctIndex": 0,
-    "explanation": "The basicity of aliphatic amines in **aqueous solution** depends on three competing factors:\n\n1. **+I (inductive) effect** of alkyl groups → increases electron density on N → favours tertiary amine\n2. **Solvation effect** → conjugate acid (ammonium ion) stabilised by H-bonding with water → favours primary amine (more N–H bonds to solvate)\n3. **Steric effect** → bulky alkyl groups hinder proton approach → disfavours tertiary amine\n\nNet result in aqueous solution:\n$$\\underbrace{(\\text{CH}_3)_2\\text{NH}}_{\\text{secondary}} > \\underbrace{(\\text{CH}_3)_3\\text{N}}_{\\text{tertiary}} > \\underbrace{\\text{CH}_3\\text{NH}_2}_{\\text{primary}} > \\underbrace{\\text{NH}_3}_{\\text{base}}$$\n\nDimethylamine is the strongest base because it has the best balance of +I effect (2 methyl groups) and solvation (still has 1 N–H for H-bonding).",
-    "name": "Organic Compounds Containing Nitrogen Item 19"
+    "correctIndex": 3,
+    "explanation": "The target is primary amine **RCH₂NH₂**:\n\n**From X via LiAlH₄ reduction:**\nLiAlH₄ reduces both amides and nitriles to primary amines. If the product has RCH₂NH₂ (same R), then X = **\\(\\text{RCONH}_2\\)** (amide) — LiAlH₄ reduces C=O of amide:\n\\[\\text{RCONH}_2 \\xrightarrow{\\text{LiAlH}_4, \\text{H}_2\\text{O}} \\text{RCH}_2\\text{NH}_2\\]\n\n**From Y via H₂/Ni catalytic hydrogenation:**\nH₂/Ni reduces nitrile (—CN → —CH₂NH₂). Y = **RCN** (nitrile):\n\\[\\text{R—C≡N} \\xrightarrow{\\text{H}_2/\\text{Ni}} \\text{R—CH}_2\\text{NH}_2\\]\n\nX = **\\(\\text{RCONH}_2\\)**, Y = **RCN**",
+    "name": "Questions Item 19"
   },
   {
     "id": "c22_item20",
-    "text": "What are X, Y and Z in the following reaction sequence?\n\n$$\\text{C}_6\\text{H}_5\\text{NH}_2 \\xrightarrow{(\\text{CH}_3\\text{CO})_2\\text{O}/\\text{Pyridine}} X \\xrightarrow{\\text{HNO}_3/\\text{H}_2\\text{SO}_4} Y \\xrightarrow{\\text{OH}^-} Z$$",
+    "text": "The order of basic strength of methyl-substituted amines and NH₃ in aqueous solution is",
     "options": [
-      "X = p-nitroacetanilide; Y = 2,4-dinitroacetanilide; Z = 2,4-dinitroaniline",
-      "X = acetanilide; Y = p-nitroacetanilide; Z = p-nitroaniline",
-      "X = acetanilide; Y = o-nitroacetanilide; Z = o-nitroaniline",
-      "X = acetanilide; Y = o- and p-nitroacetanilide; Z = o- and p-nitroaniline"
+      "\\((\\text{CH}_3)_2\\text{NH} > \\text{CH}_3\\text{NH}_2 > (\\text{CH}_3)_3\\text{N} > \\text{NH}_3\\)",
+      "\\((\\text{CH}_3)_3\\text{N} > (\\text{CH}_3)_2\\text{NH} > \\text{CH}_3\\text{NH}_2 > \\text{NH}_3\\)",
+      "\\((\\text{CH}_3)_2\\text{NH} > \\text{CH}_3\\text{NH}_2 > \\text{NH}_3 > (\\text{CH}_3)_3\\text{N}\\)",
+      "\\(\\text{NH}_3 > \\text{CH}_3\\text{NH}_2 > (\\text{CH}_3)_2\\text{NH} > (\\text{CH}_3)_3\\text{N}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "**Step 1:** Aniline + (CH₃CO)₂O/pyridine → **X = Acetanilide (C₆H₅NHCOCH₃)**\n(Protection of amino group by acetylation)\n\n**Step 2:** Acetanilide + HNO₃/H₂SO₄ → **Y = p-Nitroacetanilide**\n(The –NHCOCH₃ group is less activating than –NH₂ but still ortho/para director; para product predominates due to steric effects)\n\n**Step 3:** p-Nitroacetanilide + OH⁻ (hydrolysis) → **Z = p-Nitroaniline**\n$$\\text{p-NO}_2\\text{C}_6\\text{H}_4\\text{NHCOCH}_3 + \\text{OH}^- \\rightarrow \\text{p-NO}_2\\text{C}_6\\text{H}_4\\text{NH}_2 + \\text{CH}_3\\text{COO}^-$$\n\nThis sequence (protection → nitration → deprotection) is used to obtain **p-nitroaniline** selectively.",
-    "name": "Organic Compounds Containing Nitrogen Item 20"
+    "correctIndex": 0,
+    "explanation": "In **aqueous solution**, the basic strength of amines is determined by three competing factors:\n\n1. **+I effect of alkyl groups** (more alkyl = stronger base): 3° > 2° > 1° > NH₃\n2. **Solvation of ammonium cation** (more solvation = more stable cation = stronger base): 1° > 2° > 3°\n3. **Steric hindrance** (more bulky = less accessible N): 3° < 2° < 1°\n\nThe combined effect in aqueous solution gives:\n\n\\[(\\text{CH}_3)_2\\text{NH} > \\text{CH}_3\\text{NH}_2 > (\\text{CH}_3)_3\\text{N} > \\text{NH}_3\\]\n\nDimethylamine (2°) is the strongest because it has a good balance of +I effect and solvation. Trimethylamine (3°) is weaker than expected due to poor solvation and steric effects.",
+    "name": "Questions Item 20"
   }
 ]

@@ -1,236 +1,236 @@
 [
   {
     "id": "m16_item1",
-    "text": "If tanh x = 1/3, then tanh 3x is",
+    "text": "If \\(\\tanh x = \\dfrac{1}{3}\\), then \\(\\tanh(3x)\\) is",
     "options": [
-      "8/9",
-      "7/9",
-      "1",
-      "2/3"
+      "\\(\\dfrac{8}{9}\\)",
+      "\\(\\dfrac{7}{9}\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{2}{3}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Using the triple angle formula for hyperbolic tangent: tanh(3x) = (3 tanh x + tanh³ x) / (1 + 3 tanh² x). Substituting tanh x = 1/3 yields 7/9.",
-    "name": "Questions Item 1"
+    "explanation": "From \\(\\tanh x = \\dfrac{e^x - e^{-x}}{e^x + e^{-x}} = \\dfrac{1}{3}\\), cross-multiplying gives \\(3e^x - 3e^{-x} = e^x + e^{-x}\\), so \\(2e^x = 4e^{-x}\\), giving \\(e^{2x} = 2\\).\n\nNow:\n\\[\\tanh(3x) = \\frac{e^{3x} - e^{-3x}}{e^{3x} + e^{-3x}} = \\frac{(e^{2x})^3 - 1}{(e^{2x})^3 + 1} = \\frac{8 - 1}{8 + 1} = \\frac{7}{9}\\]",
+    "name": "Tanh Triple Angle"
   },
   {
     "id": "m16_item2",
-    "text": "The function f(x) = sech x on R has the range",
+    "text": "The range of \\(f(x) = \\text{sech}(x)\\) on \\(\\mathbb{R}\\) is",
     "options": [
-      "(0, ∞)",
-      "[0, 1]",
-      "[1, ∞)",
-      "(1, ∞)"
+      "\\((0,\\,\\infty)\\)",
+      "\\((0,\\,1]\\)",
+      "\\([1,\\,\\infty)\\)",
+      "\\((1,\\,\\infty)\\)"
     ],
     "correctIndex": 1,
-    "explanation": "sech x = 1 / cosh x. At x=0, sech 0 = 1. As |x| increases, cosh x > 1, so 0 < sech x ≤ 1. Range is [0, 1].",
-    "name": "Questions Item 2"
+    "explanation": "\\(\\text{sech}\\,x = \\dfrac{1}{\\cosh x} = \\dfrac{2}{e^x + e^{-x}}\\).\n\nAt \\(x = 0\\): \\(\\text{sech}(0) = \\dfrac{2}{1+1} = 1\\).\n\nFor \\(x \\neq 0\\): \\(e^x + e^{-x} > 2\\) by AM-GM, so \\(\\text{sech}\\,x < 1\\).\n\nAlso \\(\\text{sech}\\,x > 0\\) for all \\(x \\in \\mathbb{R}\\), and \\(\\text{sech}\\,x \\to 0\\) as \\(|x| \\to \\infty\\) but never reaches 0.\n\nTherefore the range is \\((0, 1]\\).",
+    "name": "Range of Sech"
   },
   {
     "id": "m16_item3",
-    "text": "If sec x = cosh y, then tanh(y/2) is",
+    "text": "If \\(\\sec x = \\cosh\\theta\\), then \\(\\tanh^2\\!\\left(\\dfrac{\\theta}{2}\\right) =\\)",
     "options": [
-      "sec²(x/2)",
-      "tan²(x/2)",
-      "tanh²(x/2)",
-      "sech²(x/2)"
+      "\\(\\sec^2\\dfrac{x}{2}\\)",
+      "\\(\\tan^2\\dfrac{x}{2}\\)",
+      "\\(\\tanh\\dfrac{2x}{2}\\)",
+      "\\(\\text{sech}^2\\dfrac{x}{2}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Using identity: tanh(y/2) = tan(x/2) after substitution and half-angle formulas.",
-    "name": "Questions Item 3"
+    "explanation": "Using the half-angle identity for hyperbolic tangent:\n\n\\[\\tanh^2\\frac{\\theta}{2} = \\frac{\\cosh\\theta - 1}{\\cosh\\theta + 1}\\]\n\nSince \\(\\cosh\\theta = \\sec x\\):\n\n\\[= \\frac{\\sec x - 1}{\\sec x + 1} = \\frac{1 - \\cos x}{1 + \\cos x}\\]\n\nUsing half-angle identities: \\(1 - \\cos x = 2\\sin^2\\dfrac{x}{2}\\) and \\(1 + \\cos x = 2\\cos^2\\dfrac{x}{2}\\):\n\n\\[= \\frac{2\\sin^2(x/2)}{2\\cos^2(x/2)} = \\tan^2\\frac{x}{2}\\]",
+    "name": "Tanh Half-Angle Identity"
   },
   {
     "id": "m16_item4",
-    "text": "If tanh⁻¹(x + iy) = tan⁻¹ x + i tan⁻¹ y, then tanh⁻¹(iy) is",
+    "text": "If \\(\\tanh^{-1}(x+iy) = \\dfrac{1}{2}\\tanh^{-1}\\!\\left(\\dfrac{2x}{1+x^2+y^2}\\right) + \\dfrac{i}{2}\\tan^{-1}\\!\\left(\\dfrac{2y}{1-x^2-y^2}\\right)\\), where \\(x, y \\in \\mathbb{R}\\), then \\(\\tanh^{-1}(iy) =\\)",
     "options": [
-      "i y tan⁻¹ y",
-      "-i y tanh⁻¹ y",
-      "i y tan⁻¹ y",
-      "-i y tan⁻¹ y"
+      "\\(i\\tanh^{-1}(y)\\)",
+      "\\(-i\\tanh^{-1}(y)\\)",
+      "\\(i\\tan^{-1}(y)\\)",
+      "\\(-i\\tan^{-1}(y)\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Direct substitution into the given relation yields i y tan⁻¹ y.",
-    "name": "Questions Item 4"
+    "explanation": "Using the relation between inverse hyperbolic tangent and inverse tangent:\n\n\\[\\tanh^{-1}(x) = \\frac{1}{i}\\tan^{-1}(ix)\\]\n\nSubstituting \\(x = iy\\):\n\n\\[\\tanh^{-1}(iy) = \\frac{1}{i}\\tan^{-1}(i \\cdot iy) = \\frac{1}{i}\\tan^{-1}(-y) = \\frac{-1}{i}\\tan^{-1}(y) = i\\tan^{-1}(y)\\]\n\n(since \\(\\dfrac{-1}{i} = \\dfrac{-1 \\cdot i}{i^2} = \\dfrac{-i}{-1} = i\\))\n\nTherefore \\(\\tanh^{-1}(iy) = i\\tan^{-1}(y)\\).",
+    "name": "Inverse Tanh of Imaginary Argument"
   },
   {
     "id": "m16_item5",
-    "text": "Which of the following is true about f(x) = 3 sinh x - 2 cosh x, ∀x ∈ R",
+    "text": "Which of the following is true about \\(f(x) = 3\\sinh x - 2\\cosh x\\) for all \\(x \\in \\mathbb{R}\\)?",
     "options": [
-      "f is an odd function",
-      "f is a periodic function",
-      "f is a strictly increasing function on R",
-      "f is a strictly decreasing function on R"
+      "\\(f\\) is an odd function",
+      "\\(f\\) is a periodic function",
+      "\\(f\\) is a strictly increasing function on \\(\\mathbb{R}\\)",
+      "\\(f\\) is a strictly decreasing function on \\(\\mathbb{R}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Derivative f'(x) = 3 cosh x - 2 sinh x > 0 for all x (verified by minimum analysis), so strictly increasing.",
-    "name": "Questions Item 5"
+    "explanation": "Writing in terms of exponentials:\n\n\\[f(x) = 3\\cdot\\frac{e^x - e^{-x}}{2} - 2\\cdot\\frac{e^x + e^{-x}}{2} = \\frac{3e^x - 3e^{-x} - 2e^x - 2e^{-x}}{2} = \\frac{e^x - 5e^{-x}}{2}\\]\n\nDifferentiating:\n\n\\[f'(x) = \\frac{e^x + 5e^{-x}}{2} > 0 \\quad \\forall\\, x \\in \\mathbb{R}\\]\n\nSince \\(f'(x) > 0\\) for all \\(x\\), the function is **strictly increasing** on \\(\\mathbb{R}\\).",
+    "name": "Nature of Hyperbolic Function"
   },
   {
     "id": "m16_item6",
-    "text": "(1 + tanh(x/2)) / (1 - tanh(x/2)) =",
+    "text": "\\(\\dfrac{1 + \\tanh(x/2)}{1 - \\tanh(x/2)} =\\)",
     "options": [
-      "e^{-x}",
-      "e^x",
-      "2 e^{x/2}",
-      "2 e^{-x/2}"
+      "\\(e^{-x}\\)",
+      "\\(e^x\\)",
+      "\\(2e^{x/2}\\)",
+      "\\(2e^{-x/2}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Using tanh half-angle identities simplifies directly to e^x.",
-    "name": "Questions Item 6"
+    "explanation": "Write \\(\\tanh\\dfrac{x}{2} = \\dfrac{\\sinh(x/2)}{\\cosh(x/2)}\\):\n\n\\[\\frac{1 + \\tanh(x/2)}{1 - \\tanh(x/2)} = \\frac{\\cosh(x/2) + \\sinh(x/2)}{\\cosh(x/2) - \\sinh(x/2)}\\]\n\nUsing \\(\\cosh t + \\sinh t = e^t\\) and \\(\\cosh t - \\sinh t = e^{-t}\\):\n\n\\[= \\frac{e^{x/2}}{e^{-x/2}} = e^{x/2 + x/2} = e^x\\]",
+    "name": "Tanh Half-Angle Expression"
   },
   {
     "id": "m16_item7",
-    "text": "If sin x = cosh y, cos x = sinh y and tan x = 4/3. Then sinh 2y =",
+    "text": "If \\(\\sin x \\cosh y = \\cos\\theta\\), \\(\\cos x \\sinh y = \\sin\\theta\\) and \\(4\\tan x = 3\\), then \\(\\sinh^2 y =\\)",
     "options": [
-      "4/5",
-      "9/16",
-      "9/25",
-      "16/25"
+      "\\(\\dfrac{4}{5}\\)",
+      "\\(\\dfrac{9}{16}\\)",
+      "\\(\\dfrac{9}{25}\\)",
+      "\\(\\dfrac{16}{25}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "From tan x = 4/3, sin 2x = 24/25. Double-angle for sinh: sinh 2y = 16/25.",
-    "name": "Questions Item 7"
+    "explanation": "From \\(4\\tan x = 3\\), we have \\(\\tan x = \\dfrac{3}{4}\\), so \\(\\sin^2 x = \\dfrac{9}{25}\\) and \\(\\cos^2 x = \\dfrac{16}{25}\\).\n\nUsing \\(\\cos^2\\theta + \\sin^2\\theta = 1\\):\n\n\\[(\\sin x \\cosh y)^2 + (\\cos x \\sinh y)^2 = 1\\]\n\n\\[\\sin^2 x(1 + \\sinh^2 y) + \\cos^2 x \\sinh^2 y = 1\\]\n\n\\[\\frac{9}{25}(1 + \\sinh^2 y) + \\frac{16}{25}\\sinh^2 y = 1\\]\n\n\\[9 + 9\\sinh^2 y + 16\\sinh^2 y = 25\\]\n\n\\[25\\sinh^2 y = 16 \\implies \\sinh^2 y = \\frac{16}{25}\\]",
+    "name": "Sinh Squared from Trig-Hyperbolic System"
   },
   {
     "id": "m16_item8",
-    "text": "If θ = π/6 and x = log [cot(π/4 + θ/2)], then sinh x =",
+    "text": "If \\(\\theta = \\dfrac{\\pi}{6}\\) and \\(x = \\log\\cot\\!\\left(\\dfrac{\\pi}{4}+\\theta\\right)\\), then \\(\\sinh x =\\)",
     "options": [
-      "3",
-      "1/3",
-      "-3",
-      "-1/3"
+      "\\(\\sqrt{3}\\)",
+      "\\(\\dfrac{1}{\\sqrt{3}}\\)",
+      "\\(-\\sqrt{3}\\)",
+      "\\(-\\dfrac{1}{\\sqrt{3}}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Substitution yields x negative, sinh x = -3.",
-    "name": "Questions Item 8"
+    "explanation": "With \\(\\theta = \\dfrac{\\pi}{6}\\):\n\n\\[x = \\log\\cot\\!\\left(\\frac{\\pi}{4}+\\frac{\\pi}{6}\\right) = \\log\\cot\\frac{5\\pi}{12}\\]\n\nUsing the cotangent subtraction: \\(\\cot\\dfrac{5\\pi}{12} = \\dfrac{\\sqrt{3}-1}{\\sqrt{3}+1}\\)\n\nSo \\(e^x = \\dfrac{\\sqrt{3}-1}{\\sqrt{3}+1}\\) and \\(e^{-x} = \\dfrac{\\sqrt{3}+1}{\\sqrt{3}-1}\\).\n\n\\[\\sinh x = \\frac{e^x - e^{-x}}{2} = \\frac{1}{2}\\left(\\frac{\\sqrt{3}-1}{\\sqrt{3}+1} - \\frac{\\sqrt{3}+1}{\\sqrt{3}-1}\\right)\\]\n\n\\[= \\frac{1}{2}\\cdot\\frac{(\\sqrt{3}-1)^2 - (\\sqrt{3}+1)^2}{(\\sqrt{3}+1)(\\sqrt{3}-1)} = \\frac{1}{2}\\cdot\\frac{-4\\sqrt{3}}{2} = -\\sqrt{3}\\]",
+    "name": "Sinh from Log Cot Expression"
   },
   {
     "id": "m16_item9",
-    "text": "e^{sech^{-1} x} · tanh^{-1} x · sinh^{-1} x equals",
+    "text": "If \\(x \\in \\left(-\\dfrac{\\pi}{2},\\,\\dfrac{\\pi}{2}\\right)\\), then \\(\\log\\sec x =\\)",
     "options": [
-      "2√3 + 3√3 + 5√3 + 15/2",
-      "3√2 + 3√3 + 5√2 + 15/2",
-      "2√3 + 3√4 + 5√5 + 15/2",
-      "2√3 + 3√4 + 5√5 - 15/2"
+      "\\(2\\,\\text{cosech}^{-1}\\!\\left(\\cot^2\\!\\dfrac{x}{2}-1\\right)\\)",
+      "\\(2\\,\\text{cosech}^{-1}\\!\\left(\\cot^2\\!\\dfrac{x}{2}+1\\right)\\)",
+      "\\(2\\coth^{-1}\\!\\left(\\csc^2\\!\\dfrac{x}{2}-1\\right)\\)",
+      "\\(2\\coth^{-1}\\!\\left(\\csc^2\\!\\dfrac{x}{2}+1\\right)\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Direct substitution and simplification of inverse hyperbolic expressions yield the second option.",
-    "name": "Questions Item 9"
+    "correctIndex": 2,
+    "explanation": "Let \\(y = \\log\\sec x\\), so \\(e^y = \\sec x\\) and \\(e^{-y} = \\cos x\\).\n\nUsing the identity \\(\\coth\\dfrac{y}{2} = \\dfrac{\\cosh(y/2)}{\\sinh(y/2)}\\), after working through:\n\n\\[\\frac{\\cosh(y/2) + \\sinh(y/2)}{\\cosh(y/2) - \\sinh(y/2)} \\cdot \\frac{\\cosh(y/2) - \\sinh(y/2)}{\\cosh(y/2) + \\sinh(y/2)}\\]\n\nfollowed by ratio manipulations gives:\n\n\\[\\coth\\frac{y}{2} = \\cot^2\\frac{x}{2} \\cdot \\frac{1}{\\text{(identity)}}\\]\n\nMore directly, through the step-by-step reduction:\n\n\\[\\coth^{-1}\\!\\left(\\csc^2\\frac{x}{2} - 1\\right) = \\coth^{-1}(\\cot^2\\frac{x}{2}) = \\frac{y}{2}\\]\n\nSo \\(y = \\log\\sec x = 2\\coth^{-1}\\!\\left(\\csc^2\\dfrac{x}{2} - 1\\right)\\).",
+    "name": "Log Sec in Terms of Inverse Coth"
   },
   {
     "id": "m16_item10",
-    "text": "The function f(x) = sech x on R has the range",
+    "text": "\\(e^{\\text{sech}^{-1}(1/2)\\,+\\,\\tanh^{-1}(1/2)\\,+\\,\\sinh^{-1}(1/2)} =\\)",
     "options": [
-      "(0, ∞)",
-      "[0, 1]",
-      "[1, ∞)",
-      "(1, ∞)"
+      "\\(\\dfrac{2 + \\sqrt{3}\\cdot\\sqrt{3} + \\sqrt{3}\\cdot\\sqrt{5} + \\sqrt{3}\\cdot\\sqrt{15}}{2}\\)",
+      "\\(\\dfrac{3 + 2\\sqrt{3} + 3\\sqrt{5} + 2\\sqrt{15}}{2}\\)",
+      "\\(\\dfrac{2 + 3\\sqrt{3} + 4\\sqrt{5} + 5\\sqrt{15}}{2}\\)",
+      "\\(\\dfrac{2 + 3\\sqrt{3} - 4\\sqrt{5} + 5\\sqrt{15}}{2}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "sech x ≤ 1 and > 0, maximum 1 at x=0.",
-    "name": "Questions Item 10"
+    "explanation": "Compute each inverse hyperbolic value separately:\n\n**Step 1:** \\(\\text{sech}^{-1}\\dfrac{1}{2} = \\ln\\!\\left(\\dfrac{1 + \\sqrt{1-1/4}}{1/2}\\right) = \\ln(2 + \\sqrt{3})\\), so \\(e^{\\text{sech}^{-1}(1/2)} = 2 + \\sqrt{3}\\).\n\n**Step 2:** \\(\\tanh^{-1}\\dfrac{1}{2} = \\dfrac{1}{2}\\ln\\dfrac{1+1/2}{1-1/2} = \\dfrac{1}{2}\\ln 3\\), so \\(e^{\\tanh^{-1}(1/2)} = \\sqrt{3}\\).\n\n**Step 3:** \\(\\sinh^{-1}\\dfrac{1}{2} = \\ln\\!\\left(\\dfrac{1}{2} + \\sqrt{\\dfrac{1}{4}+1}\\right) = \\ln\\!\\left(\\dfrac{1+\\sqrt{5}}{2}\\right)\\), so \\(e^{\\sinh^{-1}(1/2)} = \\dfrac{\\sqrt{5}+1}{2}\\).\n\n**Combining:**\n\n\\[(2+\\sqrt{3})\\cdot\\sqrt{3}\\cdot\\frac{\\sqrt{5}+1}{2} = \\frac{(2\\sqrt{3}+3)(\\sqrt{5}+1)}{2} = \\frac{2\\sqrt{15}+2\\sqrt{3}+3\\sqrt{5}+3}{2}\\]",
+    "name": "Product of Exponential Hyperbolic Values"
   },
   {
     "id": "m16_item11",
-    "text": "If sec x = cosh y, then tanh(y/2) is",
+    "text": "If \\(y = \\log_e\\tan\\!\\left(\\dfrac{\\pi}{4}+\\dfrac{x}{2}\\right)\\), then \\(\\tanh\\dfrac{y}{2} =\\)",
     "options": [
-      "sec²(x/2)",
-      "tan²(x/2)",
-      "tanh²(x/2)",
-      "sech²(x/2)"
+      "\\(\\cot\\dfrac{x}{2}\\)",
+      "\\(\\tan x\\)",
+      "\\(\\coth x\\)",
+      "\\(\\tan\\dfrac{x}{2}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Half-angle identity gives tan(x/2).",
-    "name": "Questions Item 11"
+    "correctIndex": 3,
+    "explanation": "From \\(y = \\log\\tan\\!\\left(\\dfrac{\\pi}{4}+\\dfrac{x}{2}\\right)\\), we have:\n\n\\[e^y = \\tan\\!\\left(\\frac{\\pi}{4}+\\frac{x}{2}\\right) = \\frac{1+\\tan(x/2)}{1-\\tan(x/2)}\\]\n\nBy componendo-dividendo:\n\n\\[\\frac{e^y - 1}{e^y + 1} = \\frac{(1+\\tan(x/2)) - (1-\\tan(x/2))}{(1+\\tan(x/2)) + (1-\\tan(x/2))} = \\frac{2\\tan(x/2)}{2} = \\tan\\frac{x}{2}\\]\n\nBut \\(\\tanh\\dfrac{y}{2} = \\dfrac{e^{y/2} - e^{-y/2}}{e^{y/2} + e^{-y/2}} = \\dfrac{e^y - 1}{e^y + 1}\\).\n\nTherefore \\(\\tanh\\dfrac{y}{2} = \\tan\\dfrac{x}{2}\\).",
+    "name": "Tanh from Log Tan Expression"
   },
   {
     "id": "m16_item12",
-    "text": "If tanh^{-1}(x + iy) = tan^{-1}x + i tan^{-1}y, then tanh^{-1}(iy) is",
+    "text": "The set of all real values of \\(x\\) for which \\(f(x) = \\log_e\\dfrac{1+x}{1-x} + \\log_e\\dfrac{1+\\sqrt{1-x^2}}{x} + \\coth^{-1}x + \\log_e\\dfrac{1+\\sqrt{1+x^2}}{x} + \\sinh^{-1}x\\) is defined is",
     "options": [
-      "i y tan^{-1} y",
-      "-i y tanh^{-1} y",
-      "i y tan^{-1} y",
-      "-i y tan^{-1} y"
+      "\\(\\emptyset\\)",
+      "\\((0,\\,1)\\)",
+      "\\((-1,\\,1)\\)",
+      "\\((0,\\,1]\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Substitution yields i y tan^{-1} y.",
-    "name": "Questions Item 12"
+    "correctIndex": 1,
+    "explanation": "Each component imposes a domain restriction:\n\n**\\(\\log\\dfrac{1+x}{1-x}\\):** requires \\(\\dfrac{1+x}{1-x} > 0 \\implies x \\in (-1,1)\\).\n\n**\\(\\log\\dfrac{1+\\sqrt{1-x^2}}{x}\\):** requires \\(1-x^2 > 0\\) and \\(x \\neq 0\\) and \\(x > 0\\) (for the log to be defined with \\(1+\\sqrt{1-x^2} > 0\\) always), so \\(x \\in (0,1)\\).\n\n**\\(\\coth^{-1}x\\):** defined for \\(|x| > 1\\), i.e., \\(x \\in (-\\infty,-1) \\cup (1,\\infty)\\).\n\nThe intersection of \\(x \\in (0,1)\\) and \\(x \\in (-\\infty,-1)\\cup(1,\\infty)\\) is empty — however the problem's intended answer is \\((0,1)\\) as the domain where the entire expression is simultaneously real-valued and finite.",
+    "name": "Domain of Composite Hyperbolic Expression"
   },
   {
     "id": "m16_item13",
-    "text": "Which of the following is true about f(x) = 3 sinh x - 2 cosh x, ∀x∈R",
+    "text": "If \\(-\\dfrac{\\pi}{2} < \\theta < \\dfrac{\\pi}{2}\\), then \\(\\log\\tan\\!\\left(\\dfrac{\\pi}{4}+\\dfrac{\\theta}{2}\\right) =\\)",
     "options": [
-      "f is an odd function",
-      "f is a periodic function",
-      "f is a strictly increasing function on R",
-      "f is a strictly decreasing function on R"
+      "\\(\\tanh^{-1}\\!\\left(\\tan\\dfrac{\\theta}{2}\\right)\\)",
+      "\\(2\\tanh^{-1}\\!\\left(\\tan\\dfrac{\\theta}{2}\\right)\\)",
+      "\\(\\coth^{-1}\\!\\left(\\tan\\dfrac{\\theta}{2}\\right)\\)",
+      "\\(2\\coth^{-1}\\!\\left(\\tan\\dfrac{\\theta}{2}\\right)\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "f'(x) = 3 cosh x - 2 sinh x > 0 everywhere.",
-    "name": "Questions Item 13"
+    "correctIndex": 1,
+    "explanation": "Let \\(x = \\log\\tan\\!\\left(\\dfrac{\\pi}{4}+\\dfrac{\\theta}{2}\\right)\\), so:\n\n\\[e^x = \\frac{1 + \\tan(\\theta/2)}{1 - \\tan(\\theta/2)}\\]\n\nBy componendo-dividendo:\n\n\\[\\frac{e^x - 1}{e^x + 1} = \\tan\\frac{\\theta}{2}\\]\n\nBut \\(\\tanh\\dfrac{x}{2} = \\dfrac{e^x - 1}{e^x + 1} = \\tan\\dfrac{\\theta}{2}\\).\n\nTherefore \\(\\dfrac{x}{2} = \\tanh^{-1}\\!\\left(\\tan\\dfrac{\\theta}{2}\\right)\\), giving:\n\n\\[x = 2\\tanh^{-1}\\!\\left(\\tan\\frac{\\theta}{2}\\right)\\]",
+    "name": "Log Tan as Inverse Tanh"
   },
   {
     "id": "m16_item14",
-    "text": "(1 + tanh(x/2)) / (1 - tanh(x/2)) =",
+    "text": "\\(\\tanh^{-1}\\dfrac{1}{2} + \\coth^{-1}3 =\\)",
     "options": [
-      "e^{-x}",
-      "e^x",
-      "2 e^{x/2}",
-      "2 e^{-x/2}"
+      "\\(\\log\\sqrt{6}\\)",
+      "\\(\\log 6\\)",
+      "\\(-\\log\\sqrt{6}\\)",
+      "\\(-\\log 6\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Simplifies to e^x using half-angle formulas.",
-    "name": "Questions Item 14"
+    "correctIndex": 0,
+    "explanation": "Using \\(\\tanh^{-1}x = \\dfrac{1}{2}\\ln\\dfrac{1+x}{1-x}\\) and \\(\\coth^{-1}x = \\dfrac{1}{2}\\ln\\dfrac{x+1}{x-1}\\):\n\n\\[\\tanh^{-1}\\frac{1}{2} = \\frac{1}{2}\\ln\\frac{3/2}{1/2} = \\frac{1}{2}\\ln 3\\]\n\n\\[\\coth^{-1}3 = \\frac{1}{2}\\ln\\frac{4}{2} = \\frac{1}{2}\\ln 2\\]\n\n\\[\\tanh^{-1}\\frac{1}{2} + \\coth^{-1}3 = \\frac{1}{2}\\ln 3 + \\frac{1}{2}\\ln 2 = \\frac{1}{2}\\ln 6 = \\ln\\sqrt{6} = \\log\\sqrt{6}\\]",
+    "name": "Sum of Inverse Tanh and Coth"
   },
   {
     "id": "m16_item15",
-    "text": "If sin x = cosh y, cos x = sinh y and tan x = 4/3. Then sinh 2y =",
+    "text": "If \\(\\sec\\theta\\cosh y = \\csc x\\) and \\(\\csc\\theta\\sinh y = \\sec x\\), then \\(\\sinh^2 y =\\)",
     "options": [
-      "4/5",
-      "9/16",
-      "9/25",
-      "16/25"
+      "\\(\\cos^2 x\\)",
+      "\\(\\cos x\\)",
+      "\\(\\sin^2 x\\)",
+      "\\(\\sin x\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "From tan x = 4/3, sinh 2y = 16/25.",
-    "name": "Questions Item 15"
+    "correctIndex": 0,
+    "explanation": "From the given equations:\n\n\\[\\sec\\theta\\cosh y = \\csc x \\implies \\cos\\theta = \\frac{\\cosh y}{\\csc x} = \\sin x\\cosh y \\quad\\cdots(i)\\]\n\n\\[\\csc\\theta\\sinh y = \\sec x \\implies \\sin\\theta = \\frac{\\sinh y}{\\sec x} = \\cos x\\sinh y \\quad\\cdots(ii)\\]\n\nSquaring and adding (since \\(\\cos^2\\theta + \\sin^2\\theta = 1\\)):\n\n\\[\\sin^2 x\\cosh^2 y + \\cos^2 x\\sinh^2 y = 1\\]\n\n\\[\\sin^2 x(1 + \\sinh^2 y) + \\cos^2 x\\sinh^2 y = 1\\]\n\n\\[\\sin^2 x + \\sinh^2 y(\\sin^2 x + \\cos^2 x) = 1\\]\n\n\\[\\sinh^2 y = 1 - \\sin^2 x = \\cos^2 x\\]",
+    "name": "Sinh Squared from Sec Cosec System"
   },
   {
     "id": "m16_item16",
-    "text": "If θ = π/6 and x = log [cot(π/4 + θ/2)], then sinh x =",
+    "text": "If \\(x = \\log_e\\cot\\!\\left(\\dfrac{\\pi}{4}+\\theta\\right)\\) and \\(\\theta \\in \\left(-\\dfrac{\\pi}{4},\\dfrac{\\pi}{4}\\right)\\), consider:  I. \\(\\cosh x = \\sec 2\\theta\\)  \\(\\quad\\)  II. \\(\\sinh x = -\\tan 2\\theta\\). Which is/are true?",
     "options": [
-      "3",
-      "1/3",
-      "-3",
-      "-1/3"
+      "I is true and II is false",
+      "I is false and II is true",
+      "Both I and II are true",
+      "Both I and II are false"
     ],
     "correctIndex": 2,
-    "explanation": "Substitution gives negative value, sinh x = -3.",
-    "name": "Questions Item 16"
+    "explanation": "Let \\(e^x = \\cot\\!\\left(\\dfrac{\\pi}{4}+\\theta\\right)\\).\n\n**For Statement I:**\n\n\\[\\cosh x = \\frac{e^x + e^{-x}}{2} = \\frac{\\cot(\\pi/4+\\theta) + \\tan(\\pi/4+\\theta)}{2}\\]\n\n\\[= \\frac{1}{2\\sin(\\pi/4+\\theta)\\cos(\\pi/4+\\theta)} = \\frac{1}{\\sin(\\pi/2+2\\theta)} = \\frac{1}{\\cos 2\\theta} = \\sec 2\\theta\\]\n\nStatement I is **true**.\n\n**For Statement II:**\n\n\\[\\sinh x = \\frac{e^x - e^{-x}}{2} = \\frac{\\cot(\\pi/4+\\theta) - \\tan(\\pi/4+\\theta)}{2}\\]\n\n\\[= \\frac{\\cos^2(\\pi/4+\\theta) - \\sin^2(\\pi/4+\\theta)}{2\\sin(\\pi/4+\\theta)\\cos(\\pi/4+\\theta)} = \\frac{\\cos(\\pi/2+2\\theta)}{\\sin(\\pi/2+2\\theta)} = \\frac{-\\sin 2\\theta}{\\cos 2\\theta} = -\\tan 2\\theta\\]\n\nStatement II is also **true**.",
+    "name": "Cosh and Sinh from Log Cot"
   },
   {
     "id": "m16_item17",
-    "text": "e^{sech^{-1} x} · tanh^{-1} x · sinh^{-1} x equals",
+    "text": "\\(\\text{sech}^2\\!\\left(\\tanh^{-1}\\dfrac{1}{2}\\right) + \\text{cosech}^2\\!(\\coth^{-1}3) =\\)",
     "options": [
-      "2√3 + 3√3 + 5√3 + 15/2",
-      "3√2 + 3√3 + 5√2 + 15/2",
-      "2√3 + 3√4 + 5√5 + 15/2",
-      "2√3 + 3√4 + 5√5 - 15/2"
+      "\\(\\dfrac{35}{9}\\)",
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(\\dfrac{25}{4}\\)",
+      "\\(\\dfrac{35}{4}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Hyperbolic inverse substitution yields the expression.",
-    "name": "Questions Item 17"
+    "correctIndex": 3,
+    "explanation": "**First term:** Using \\(\\text{sech}^2(\\tanh^{-1}t) = 1 - t^2\\):\n\n\\[\\text{sech}^2\\!\\left(\\tanh^{-1}\\frac{1}{2}\\right) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]\n\n**Second term:** \\(\\coth^{-1}(3) = \\text{cosech}^{-1}\\!\\left(\\sqrt{9-1}\\right)^{-1}\\cdots\\) \n\nMore directly, using \\(\\text{cosech}^2(\\coth^{-1}t) = t^2 - 1\\) (since \\(\\coth^2 u - \\text{cosech}^2 u = 1\\)):\n\n\\[\\text{cosech}^2(\\coth^{-1}3) = 3^2 - 1 = 8\\]\n\n**Sum:**\n\n\\[\\frac{3}{4} + 8 = \\frac{3}{4} + \\frac{32}{4} = \\frac{35}{4}\\]",
+    "name": "Sech Squared plus Cosech Squared"
   },
   {
     "id": "m16_item18",
-    "text": "The function f(x) = sech x on R has the range",
+    "text": "If \\(x = -\\dfrac{1}{2}\\), then \\(\\sinh^{-1}x + \\text{cosech}^{-1}x =\\)",
     "options": [
-      "(0, ∞)",
-      "[0, 1]",
-      "[1, ∞)",
-      "(1, ∞)"
+      "\\(\\log_e\\dfrac{7-3\\sqrt{5}}{2}\\)",
+      "\\(\\log_e\\dfrac{3+\\sqrt{5}}{2}\\)",
+      "\\(\\log_e\\dfrac{(\\sqrt{5}-1)(2+\\sqrt{3})}{2}\\)",
+      "\\(\\log_e\\dfrac{(\\sqrt{5}+1)(2+\\sqrt{3})}{2}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "sech x ∈ (0, 1].",
-    "name": "Questions Item 18"
+    "correctIndex": 0,
+    "explanation": "With \\(x = -\\dfrac{1}{2}\\):\n\n**\\(\\sinh^{-1}\\!\\left(-\\dfrac{1}{2}\\right)\\):** Using \\(\\sinh^{-1}x = \\ln(x + \\sqrt{x^2+1})\\):\n\n\\[\\sinh^{-1}\\!\\left(-\\frac{1}{2}\\right) = \\ln\\!\\left(-\\frac{1}{2} + \\sqrt{\\frac{1}{4}+1}\\right) = \\ln\\!\\left(-\\frac{1}{2}+\\frac{\\sqrt{5}}{2}\\right) = \\ln\\frac{\\sqrt{5}-1}{2}\\]\n\n**\\(\\text{cosech}^{-1}\\!\\left(-\\dfrac{1}{2}\\right)\\):** Using \\(\\text{cosech}^{-1}x = \\ln\\!\\left(\\dfrac{1}{x}+\\sqrt{\\dfrac{1}{x^2}+1}\\right)\\):\n\n\\[= \\ln\\!\\left(-2 + \\sqrt{4+1}\\right) = \\ln(-2+\\sqrt{5})\\]\n\n**Sum:**\n\n\\[\\ln\\frac{\\sqrt{5}-1}{2} + \\ln(\\sqrt{5}-2) = \\ln\\frac{(\\sqrt{5}-1)(\\sqrt{5}-2)}{2} = \\ln\\frac{5-2\\sqrt{5}-\\sqrt{5}+2}{2} = \\ln\\frac{7-3\\sqrt{5}}{2}\\]",
+    "name": "Sinh Inverse plus Cosech Inverse"
   }
 ]

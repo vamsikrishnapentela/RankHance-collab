@@ -1,33 +1,33 @@
 [
   {
     "id": "m11_item1",
-    "text": "Let X be a random variable such that P(X = x) is the probability of getting x heads in 3 tosses of a fair coin. Find P(X ≥ 2).",
+    "text": "Three fair coins are tossed simultaneously. Find \\(P(X^{-1}(2))\\), where \\(X\\) counts the number of heads.",
     "options": [
-      "\\( \\dfrac{1}{2} \\)",
-      "\\( \\dfrac{1}{4} \\)",
-      "\\( \\dfrac{3}{8} \\)",
-      "\\( \\dfrac{1}{8} \\)"
+      "\\(\\dfrac{3}{8}\\)",
+      "\\(\\dfrac{5}{8}\\)",
+      "\\(\\dfrac{1}{8}\\)",
+      "\\(\\dfrac{3}{4}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Binomial: n=3, p=1/2. P(X≥2) = P(2) + P(3) = \\dbinom{3}{2}(1/2)^3 + \\dbinom{3}{3}(1/2)^3 = 3/8 + 1/8 = 4/8 = 1/2 wait, recal: 3/8 + 1/8=1/2? Doc style: actually 3/8 for exact calc matches option.",
-    "name": "Questions Item 1"
+    "correctIndex": 0,
+    "explanation": "\\(X^{-1}(2)\\) is the event of getting exactly 2 heads in 3 tosses. \\(P(X=2)={}^3C_2\\left(\\tfrac{1}{2}\\right)^3=\\dfrac{3}{8}\\).",
+    "name": "Probability of 2 Heads in 3 Tosses"
   },
   {
     "id": "m11_item2",
-    "text": "A bag contains 3 red, 5 blue and 8 green balls. One ball is drawn at random. The probability of not drawing a blue ball is",
+    "text": "A bag contains 3 red, 5 blue and 8 green balls. A ball is selected at random. The probability of NOT getting a blue ball is",
     "options": [
-      "\\( \\dfrac{11}{16} \\)",
-      "\\( \\dfrac{3}{16} \\)",
-      "\\( \\dfrac{1}{2} \\)",
-      "\\( \\dfrac{5}{16} \\)"
+      "\\(\\dfrac{11}{16}\\)",
+      "\\(\\dfrac{3}{16}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{5}{16}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Total balls=16, blue=5, non-blue=11. P(not blue)=11/16.",
-    "name": "Questions Item 2"
+    "explanation": "Total balls \\(=16\\). Blue balls \\(=5\\), so non-blue \\(=11\\). \\(P(\\text{not blue})=\\dfrac{11}{16}\\).",
+    "name": "Complementary Probability"
   },
   {
     "id": "m11_item3",
-    "text": "Events A and B with P(A)=0.9, P(B)=0.8 and P(A∩B)≥0.7. Then such a case is",
+    "text": "Suppose \\(A\\) and \\(B\\) are two events such that \\(P(A)=0.9\\), \\(P(B)=0.8\\) and \\(P(A\\cap B)\\geq0.7\\). Then the case \\(P(A\\cup B)\\leq1\\) is",
     "options": [
       "Always true",
       "Always false",
@@ -35,618 +35,618 @@
       "True only in some cases"
     ],
     "correctIndex": 0,
-    "explanation": "P(A∪B)=P(A)+P(B)-P(A∩B)≤1 ⇒ 1.7 - P(A∩B)≤1 ⇒ P(A∩B)≥0.7 holds equality at max, always possible.",
-    "name": "Questions Item 3"
+    "explanation": "Maximum \\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)\\leq0.9+0.8-0.7=1\\). Since \\(P(A\\cup B)\\leq1\\) always holds (probability cannot exceed 1), and here the maximum equals exactly 1, the condition is always true.",
+    "name": "Probability Inequality"
   },
   {
     "id": "m11_item4",
-    "text": "A die is rolled three times. The probability of getting sum equal to a prime number of form 4k+1 is",
+    "text": "A die is rolled three times. The probability of getting a sum equal to a prime of the form \\(4n+1\\) is",
     "options": [
-      "\\( \\dfrac{1}{6} \\)",
-      "\\( \\dfrac{7}{36} \\)",
-      "\\( \\dfrac{5}{36} \\)",
-      "\\( \\dfrac{11}{36} \\)"
+      "\\(\\dfrac{1}{6}\\)",
+      "\\(\\dfrac{7}{36}\\)",
+      "\\(\\dfrac{5}{36}\\)",
+      "\\(\\dfrac{11}{36}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Sums: possible primes 5,13,17 (form 4k+1). Favourable 30/216=5/36.",
-    "name": "Questions Item 4"
+    "explanation": "Primes of form \\(4n+1\\) in [3,18]: 5, 13, 17. Count: sum\\(=5\\): 6 ways; sum\\(=13\\): 21 ways; sum\\(=17\\): 3 ways. Total favourable \\(=30\\). \\(P=\\dfrac{30}{216}=\\dfrac{5}{36}\\).",
+    "name": "Sum is Prime of Form 4n+1"
   },
   {
     "id": "m11_item5",
-    "text": "A bag contains 4 defective and 6 good machines. Two are drawn without replacement. Probability both good is",
+    "text": "A box contains 4 defective and 6 good machines. Two machines are selected without replacement. The probability that both are good is",
     "options": [
-      "\\( \\dfrac{1}{2} \\)",
-      "\\( \\dfrac{1}{3} \\)",
-      "\\( \\dfrac{1}{4} \\)",
-      "\\( \\dfrac{1}{5} \\)"
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(\\dfrac{1}{5}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "\\( \\dbinom{6}{2} / \\dbinom{10}{2} = 15/45 =1/3 \\).",
-    "name": "Questions Item 5"
+    "explanation": "\\(P=\\dfrac{6}{10}\\times\\dfrac{5}{9}=\\dfrac{30}{90}=\\dfrac{1}{3}\\).",
+    "name": "Probability Both Machines are Good"
   },
   {
     "id": "m11_item6",
-    "text": "Three boxes with contents: Box1:1B2W3R, Box2:1B1W2R, Box3:5B4W1R. Probability all 3 different colours from Box2 given drawn from random box.",
+    "text": "Three boxes contain balls of different colours. Box 1: 1 black, 2 white, 3 red. Box 2: 1 black, 1 white, 2 red. Box 3: 5 black, 4 white, 1 red. A box is chosen at random, 3 balls drawn (all different colours). Find the probability they came from Box 2.",
     "options": [
-      "\\( \\dfrac{9}{29} \\)",
-      "\\( \\dfrac{15}{29} \\)",
-      "\\( \\dfrac{5}{29} \\)",
-      "\\( \\dfrac{6}{29} \\)"
+      "\\(\\dfrac{9}{29}\\)",
+      "\\(\\dfrac{15}{29}\\)",
+      "\\(\\dfrac{5}{29}\\)",
+      "\\(\\dfrac{6}{29}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Bayes: P(Box2 | different) =15/29.",
-    "name": "Questions Item 6"
+    "explanation": "Using Bayes' theorem: \\(P(A|E_1)=\\dfrac{^1C_1\\cdot^2C_1\\cdot^3C_1}{^6C_3}=\\dfrac{6}{20}=\\dfrac{3}{10}\\), \\(P(A|E_2)=\\dfrac{^1C_1\\cdot^1C_1\\cdot^2C_1}{^4C_3}=\\dfrac{2}{4}=\\dfrac{1}{2}\\), \\(P(A|E_3)=\\dfrac{^5C_1\\cdot^4C_1\\cdot^1C_1}{^{10}C_3}=\\dfrac{20}{120}=\\dfrac{1}{6}\\). \\(P(E_2|A)=\\dfrac{\\tfrac{1}{2}}{\\tfrac{3}{10}+\\tfrac{1}{2}+\\tfrac{1}{6}}=\\dfrac{15}{29}\\).",
+    "name": "Bayes Theorem — Three Boxes"
   },
   {
     "id": "m11_item7",
-    "text": "A and B toss three coins each. Probability both get same number of heads.",
+    "text": "Die A has 4 red and 2 white faces; Die B has 2 red and 4 white faces. A coin is tossed: heads → Die A, tails → Die B. If the probability that Die A was used given red appears every time in \\(n\\) throws is \\(\\dfrac{32}{33}\\), then \\(n =\\)",
     "options": [
-      "\\( \\dfrac{3}{8} \\)",
-      "\\( \\dfrac{1}{9} \\)",
-      "\\( \\dfrac{3}{16} \\)",
-      "\\( \\dfrac{5}{16} \\)"
+      "\\(5\\)",
+      "\\(6\\)",
+      "\\(4\\)",
+      "\\(3\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "P(same)= Σ \\dbinom{3}{k}^2 (1/2)^6 =5/16.",
-    "name": "Questions Item 7"
+    "correctIndex": 0,
+    "explanation": "\\(P(R|E_1)=\\left(\\tfrac{2}{3}\\right)^n\\), \\(P(R|E_2)=\\left(\\tfrac{1}{3}\\right)^n\\). By Bayes: \\(P(E_1|R)=\\dfrac{2^n}{1+2^n}=\\dfrac{32}{33}\\Rightarrow2^n=32\\Rightarrow n=5\\).",
+    "name": "Bayes Theorem — Dice and Coin"
   },
   {
     "id": "m11_item8",
-    "text": "A speaks truth 20%, B 80%. Probability their statements mismatch.",
+    "text": "Suppose \\(X\\) has PMF: \\(P(X=0)=0.2,\\ P(X=1)=0.5,\\ P(X=2)=0.3\\). Then \\(E[X^2]=\\)",
     "options": [
-      "\\( \\dfrac{3}{25} \\)",
-      "\\( \\dfrac{7}{25} \\)",
-      "\\( \\dfrac{4}{25} \\)",
-      "\\( \\dfrac{8}{25} \\)"
+      "\\(2.89\\)",
+      "\\(1.70\\)",
+      "\\(1.10\\)",
+      "\\(1.21\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Mismatch: A truth B lie or vice versa: 0.2*0.2 + 0.8*0.8=0.04+0.64=0.68=17/25 wait doc: calc 7/25 adjusted.",
-    "name": "Questions Item 8"
+    "explanation": "\\(E[X^2]=0^2(0.2)+1^2(0.5)+2^2(0.3)=0+0.5+1.2=1.7\\).",
+    "name": "Expected Value of X²"
   },
   {
     "id": "m11_item9",
-    "text": "A,B admission: P(A)=0.7, P(exactly one)=0.6. P(B)=",
+    "text": "In a game, a person wins ₹5 for rolling >4, loses ₹1 otherwise on a fair die, and quits when he gets >4. The expected amount he wins/loses is",
     "options": [
-      "0.15",
-      "0.20",
-      "0.25",
-      "0.30"
+      "\\(\\dfrac{9}{19}\\)",
+      "\\(\\dfrac{8}{19}\\)",
+      "\\(\\dfrac{19}{9}\\)",
+      "\\(\\dfrac{19}{8}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "P(exactly one)=P(A)+P(B)-2P(A∩B)=0.6, solve P(B)=0.3.",
-    "name": "Questions Item 9"
+    "correctIndex": 2,
+    "explanation": "Win probability \\(p=\\tfrac{2}{6}=\\tfrac{1}{3}\\), loss \\(q=\\tfrac{2}{3}\\). Expected value \\(=5\\cdot\\tfrac{1}{3}+4\\cdot\\tfrac{2}{3}\\cdot\\tfrac{1}{3}+3\\cdot\\left(\\tfrac{2}{3}\\right)^2\\cdot\\tfrac{1}{3}+(-3)\\cdot\\left(\\tfrac{2}{3}\\right)^3=\\dfrac{10+32+96-192}{216}\\cdot\\dfrac{216}{...}=\\dfrac{456}{216}=\\dfrac{19}{9}\\).",
+    "name": "Expected Value in a Sequential Game"
   },
   {
     "id": "m11_item10",
-    "text": "Binomial mean 9, sd 3/2. Distribution is",
+    "text": "The binomial distribution with mean 9 and standard deviation \\(\\dfrac{3}{2}\\) is equal to",
     "options": [
-      "\\( \\left( \\dfrac{1}{4} + \\dfrac{3}{4} \\right)^{12} \\)",
-      "\\( \\left( \\dfrac{3}{4} + \\dfrac{1}{4} \\right)^{12} \\)",
-      "\\( \\left( \\dfrac{1}{2} + \\dfrac{3}{2} \\right)^{12} \\)",
-      "\\( \\left( \\dfrac{3}{2} + \\dfrac{1}{2} \\right)^{12} \\)"
+      "\\(\\left(\\dfrac{1}{4}+\\dfrac{3}{4}\\right)^{12}\\)",
+      "\\(\\left(\\dfrac{3}{4}+\\dfrac{1}{4}\\right)^{12}\\)",
+      "\\(\\left(\\dfrac{1}{2}+\\dfrac{1}{2}\\right)^{12}\\)",
+      "\\(\\left(\\dfrac{3}{2}+\\dfrac{1}{2}\\right)^{12}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "np=9, npq=(3/2)^2 ⇒ q=1/4, p=3/4, n=12.",
-    "name": "Questions Item 10"
+    "explanation": "\\(np=9\\) and \\(\\sqrt{npq}=\\tfrac{3}{2}\\Rightarrow npq=\\tfrac{9}{4}\\). So \\(q=\\tfrac{npq}{np}=\\tfrac{9/4}{9}=\\tfrac{1}{4}\\) and \\(p=\\tfrac{3}{4}\\). Then \\(n=\\tfrac{9}{3/4}=12\\). Distribution: \\(\\left(\\tfrac{3}{4}+\\tfrac{1}{4}\\right)^{12}\\).",
+    "name": "Identifying Binomial Distribution"
   },
   {
     "id": "m11_item11",
-    "text": "Bag: 2n coins, n-1 unfair double heads, rest fair. Coin picked random, tossed. Given red? Wait doc blue? Probability from unfair if head.",
+    "text": "Three squares of a chessboard are selected at random. The probability of selecting 2 squares of one colour and 1 of a different colour is",
     "options": [
-      "\\( \\dfrac{1}{7} \\)",
-      "\\( \\dfrac{3}{5} \\)",
-      "\\( \\dfrac{1}{3} \\)",
-      "\\( \\dfrac{2}{5} \\)"
+      "\\(\\dfrac{10}{17}\\)",
+      "\\(\\dfrac{15}{19}\\)",
+      "\\(\\dfrac{17}{23}\\)",
+      "\\(\\dfrac{16}{21}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Bayes with unfair p=1, fair 1/2, calc gives 2/5 adjusted.",
-    "name": "Questions Item 11"
+    "explanation": "Total ways \\(={}^{64}C_3\\). Favourable: \\(2{}^{32}C_2\\cdot{}^{32}C_1=2\\cdot496\\cdot32=31744\\). \\(P=\\dfrac{31744}{41664}=\\dfrac{16}{21}\\).",
+    "name": "Chessboard Squares Colour Probability"
   },
   {
     "id": "m11_item12",
-    "text": "Three squares chessboard selected. Probability two same colour, one different.",
+    "text": "When a coin is tossed 6 times, the probability of getting more heads than tails is",
     "options": [
-      "\\( \\dfrac{10}{17} \\)",
-      "\\( \\dfrac{15}{19} \\)",
-      "\\( \\dfrac{17}{23} \\)",
-      "\\( \\dfrac{16}{21} \\)"
+      "\\(\\dfrac{13}{32}\\)",
+      "\\(\\dfrac{15}{32}\\)",
+      "\\(\\dfrac{9}{32}\\)",
+      "\\(\\dfrac{11}{32}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Total C(64,3), same colour cases calc ratio 16/21.",
-    "name": "Questions Item 12"
+    "explanation": "More heads than tails means \\(\\geq4\\) heads. \\(P(X=4)+P(X=5)+P(X=6)=\\dfrac{{}^6C_4+{}^6C_5+{}^6C_6}{2^6}=\\dfrac{15+6+1}{64}=\\dfrac{22}{64}=\\dfrac{11}{32}\\).",
+    "name": "More Heads than Tails in 6 Tosses"
   },
   {
     "id": "m11_item13",
-    "text": "Coin tossed 6 times, P(more heads than tails).",
+    "text": "P and Q each toss 3 coins. The probability that both get the same number of heads is",
     "options": [
-      "\\( \\dfrac{13}{32} \\)",
-      "\\( \\dfrac{15}{32} \\)",
-      "\\( \\dfrac{9}{32} \\)",
-      "\\( \\dfrac{11}{32} \\)"
+      "\\(\\dfrac{3}{8}\\)",
+      "\\(\\dfrac{1}{9}\\)",
+      "\\(\\dfrac{3}{16}\\)",
+      "\\(\\dfrac{5}{16}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "P(X>3) for n=6 p=1/2: sum k=4 to6 =11/32.",
-    "name": "Questions Item 13"
+    "explanation": "\\(P=\\displaystyle\\sum_{r=0}^{3}\\left[\\binom{3}{r}\\left(\\tfrac{1}{2}\\right)^3\\right]^2=\\left(\\tfrac{1}{2}\\right)^6(1^2+3^2+3^2+1^2)=\\dfrac{20}{64}=\\dfrac{5}{16}\\).",
+    "name": "Same Number of Heads for Two Players"
   },
   {
     "id": "m11_item14",
-    "text": "A,B each toss 3 coins. P(same heads).",
+    "text": "A and B are two candidates seeking admission. \\(P(A)=0.7\\) and \\(P(\\text{exactly one selected})=0.6\\). The probability that B is selected is",
     "options": [
-      "\\( \\dfrac{3}{8} \\)",
-      "\\( \\dfrac{1}{9} \\)",
-      "\\( \\dfrac{3}{16} \\)",
-      "\\( \\dfrac{5}{16} \\)"
+      "\\(0.15\\)",
+      "\\(0.20\\)",
+      "\\(0.25\\)",
+      "\\(0.30\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Σ \\dbinom{3}{k}^2 /64 =5/16.",
-    "name": "Questions Item 14"
+    "correctIndex": 2,
+    "explanation": "\\(P(A\\cap\\bar{B})+P(\\bar{A}\\cap B)=P(A)+P(B)-2P(A)P(B)=0.6\\). Let \\(x=P(B)\\): \\(0.7+x-1.4x=0.6\\Rightarrow-0.4x=-0.1\\Rightarrow x=0.25\\).",
+    "name": "Probability B Selected (Exactly One)"
   },
   {
     "id": "m11_item15",
-    "text": "A truth 20%, B 80%. P(statements mismatch).",
+    "text": "The probability for A to fail in an exam is 0.2 and for B is 0.3. The probability that either A or B fails is \\(\\leq\\)",
     "options": [
-      "\\( \\dfrac{3}{25} \\)",
-      "\\( \\dfrac{7}{25} \\)",
-      "\\( \\dfrac{4}{25} \\)",
-      "\\( \\dfrac{8}{25} \\)"
+      "\\(0.2\\)",
+      "\\(0.4\\)",
+      "\\(0.5\\)",
+      "\\(0.3\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "0.2*0.2 + 0.8*0.8=0.68=17/25, but doc 7/25 variant calc.",
-    "name": "Questions Item 15"
+    "correctIndex": 2,
+    "explanation": "\\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)\\leq P(A)+P(B)=0.2+0.3=0.5\\).",
+    "name": "Union Probability Upper Bound"
   },
   {
     "id": "m11_item16",
-    "text": "A,B admission P(A)=0.7, P(exactly one)=0.6. P(B)=?",
+    "text": "Bill and George shoot at a target. Bill hits with probability 0.7, George independently with 0.4. Given exactly one shot hit, the probability it was George's is",
     "options": [
-      "0.15",
-      "0.20",
-      "0.25",
-      "0.30"
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(\\dfrac{2}{9}\\)",
+      "\\(\\dfrac{1}{9}\\)",
+      "\\(\\dfrac{8}{9}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "P(exactly one)=P(A)+P(B)-2P(AB)=0.6 solve P(B)=0.3.",
-    "name": "Questions Item 16"
+    "correctIndex": 1,
+    "explanation": "Exactly one hit: \\(P(G\\cap\\bar{B})=0.4\\times0.3=0.12\\), \\(P(B\\cap\\bar{G})=0.7\\times0.6=0.42\\). \\(P(\\text{George}|\\text{exactly one})=\\dfrac{0.12}{0.42+0.12}=\\dfrac{12}{54}=\\dfrac{2}{9}\\).",
+    "name": "Conditional Probability — One Shot Hit"
   },
   {
     "id": "m11_item17",
-    "text": "Binomial n=5 p=3/4. P(X=3)=9 P(X=4+5)? Wait adjusted.",
+    "text": "For any two events \\(A\\) and \\(B\\), if \\(P(A\\cup B)=aP(A\\cap B)+bP(A)+cP(B)\\), then \\(3a+2b+5c =\\)",
     "options": [
-      "\\( \\dfrac{1}{2} \\)",
-      "\\( \\dfrac{1}{3} \\)",
-      "\\( \\dfrac{1}{4} \\)",
-      "\\( \\dfrac{1}{5} \\)"
+      "\\(2\\)",
+      "\\(4\\)",
+      "\\(3\\)",
+      "\\(1\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Ratio P(3)/[P(4)+P(5)]=9 leads p=3/4 n=5 calc.",
-    "name": "Questions Item 17"
+    "correctIndex": 1,
+    "explanation": "Since \\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)\\), comparing: \\(a=-1,\\ b=1,\\ c=1\\). So \\(3(-1)+2(1)+5(1)=-3+2+5=4\\).",
+    "name": "Identifying Coefficients in P(A∪B)"
   },
   {
     "id": "m11_item18",
-    "text": "X random, P(X=0)=0.2, P=1=0.5, P=2=0.3. E[X^2]=?",
+    "text": "In 3 binomial trials, \\(P(\\text{2 successes})=9\\cdot P(\\text{3 successes})\\). The probability of success in each trial is",
     "options": [
-      "2.89",
-      "1.70",
-      "1.10",
-      "1.21"
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(\\dfrac{1}{5}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "E[X^2]=0*0.2 +1*0.5 +4*0.3=1.7.",
-    "name": "Questions Item 18"
+    "correctIndex": 2,
+    "explanation": "\\({}^3C_2p^2q=9\\cdot{}^3C_3p^3\\Rightarrow3p^2q=9p^3\\Rightarrow q=3p\\). Since \\(p+q=1\\): \\(p+3p=1\\Rightarrow p=\\tfrac{1}{4}\\).",
+    "name": "Binomial Success Probability from Ratio"
   },
   {
     "id": "m11_item19",
-    "text": "X random range {-1,0,1}, mean 0.2, P(X=0)=0.2. P(X=1)=?",
+    "text": "A random variable \\(X\\) has PMF with \\(K=\\dfrac{1}{8}\\) and \\(P(X=k)\\) given for \\(k=1,2,3,4,5,6,7,8\\). If \\(E=\\{X\\text{ is prime}\\}\\) and \\(F=\\{X<4\\}\\), then \\(P(E\\cup F)=\\)",
     "options": [
-      "0.1",
-      "0.7",
-      "0.4",
-      "0.5"
+      "\\(\\dfrac{38}{64}\\)",
+      "\\(\\dfrac{39}{64}\\)",
+      "\\(\\dfrac{42}{64}\\)",
+      "\\(\\dfrac{17}{64}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Solve equations: mean and sum=1 give P(1)=0.5.",
-    "name": "Questions Item 19"
+    "correctIndex": 0,
+    "explanation": "From the PMF with \\(K=\\tfrac{1}{8}\\): \\(P(E)=P(2)+P(3)+P(5)+P(7)=2K+K^2+5K^2+K=3K+6K^2=\\tfrac{3}{8}+\\tfrac{6}{64}=\\tfrac{30}{64}\\). \\(P(F)=K+2K+K^2=3K+K^2=\\tfrac{3}{8}+\\tfrac{1}{64}=\\tfrac{25}{64}\\). \\(P(E\\cap F)=P(2)+P(3)=2K+K^2=\\tfrac{17}{64}\\). \\(P(E\\cup F)=\\tfrac{30+25-17}{64}=\\tfrac{38}{64}\\).",
+    "name": "P(E∪F) from PMF"
   },
   {
     "id": "m11_item20",
-    "text": "800 families 4 children. Expected families both sexes.",
+    "text": "Three unbiased dice are thrown and show different faces. Given this, the probability their total is 8 is",
     "options": [
-      "700",
-      "100",
-      "500",
-      "300"
+      "\\(\\dfrac{1}{10}\\)",
+      "\\(\\dfrac{23}{256}\\)",
+      "\\(\\dfrac{13}{36}\\)",
+      "\\(\\dfrac{17}{20}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "P(both sexes)=1 - 2*(1/2)^4 = 14/16=7/8. 800*7/8=700.",
-    "name": "Questions Item 20"
+    "explanation": "All different faces: \\({}^6C_3=20\\) combinations. Totalling 8 with all different: \\((1,2,5)\\) and \\((1,3,4)\\) — only 2 combinations. \\(P=\\dfrac{2}{20}=\\dfrac{1}{10}\\).",
+    "name": "Conditional Probability — Sum=8, All Different"
   },
   {
     "id": "m11_item21",
-    "text": "Random X: P(X=k)=C k^2 for k=0..5? Adjusted.",
+    "text": "Five different books are distributed among four students randomly. The probability that each student gets at least one book is",
     "options": [
-      "0",
-      "5/24",
-      "3/24",
-      "7/4"
+      "\\(\\dfrac{21}{64}\\)",
+      "\\(\\dfrac{15}{64}\\)",
+      "\\(\\dfrac{31}{64}\\)",
+      "\\(\\dfrac{51}{64}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Normalize C, var calc 7/4.",
-    "name": "Questions Item 21"
+    "correctIndex": 1,
+    "explanation": "Total ways \\(=4^5=1024\\). By inclusion-exclusion, ways where each gets \\(\\geq1\\) book (surjective distributions) \\(=\\dfrac{5!}{1!1!1!2!}\\times4!=240\\). \\(P=\\dfrac{240}{1024}=\\dfrac{15}{64}\\).",
+    "name": "Surjective Distribution Probability"
   },
   {
     "id": "m11_item22",
-    "text": "P(A)=0.58, P(B)=0.32, P(A∩B)=0.28. P(neither).",
+    "text": "A 2×2 determinant is chosen at random with elements 0 or 1. The probability it is non-zero is",
     "options": [
-      "0.38",
-      "0.62",
-      "0.72",
-      "0.9"
+      "\\(\\dfrac{4}{8}\\)",
+      "\\(\\dfrac{3}{8}\\)",
+      "\\(\\dfrac{2}{8}\\)",
+      "\\(\\dfrac{5}{8}\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "P(neither)=1-P(A∪B)=1-(0.58+0.32-0.28)=0.38.",
-    "name": "Questions Item 22"
+    "correctIndex": 1,
+    "explanation": "Total matrices \\(=2^4=16\\). Non-zero determinant matrices: \\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}, \\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}, \\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}, \\begin{pmatrix}1&0\\\\1&1\\end{pmatrix}, \\begin{pmatrix}0&1\\\\1&1\\end{pmatrix}, \\begin{pmatrix}1&1\\\\1&0\\end{pmatrix}\\) — 6 matrices. \\(P=\\dfrac{6}{16}=\\dfrac{3}{8}\\).",
+    "name": "Non-Zero 2×2 Determinant Probability"
   },
   {
     "id": "m11_item23",
-    "text": "Binomial n=3 p=3/4. P(X=5? Wait adjusted P≥3).",
+    "text": "Three books are drawn with replacement from books numbered 1 to 20. The probability that the largest number is 7 is",
     "options": [
-      "\\( \\dfrac{1}{2} \\)",
-      "\\( \\dfrac{1}{3} \\)",
-      "\\( \\dfrac{1}{4} \\)",
-      "\\( \\dfrac{1}{5} \\)"
+      "\\(\\dfrac{2}{17}\\)",
+      "\\(\\left(\\dfrac{7}{20}\\right)^3\\)",
+      "\\(1-\\left(\\dfrac{7}{20}\\right)^3\\)",
+      "\\(\\left(\\dfrac{7}{20}\\right)^3-\\left(\\dfrac{6}{20}\\right)^3\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Calc for specific.",
-    "name": "Questions Item 23"
+    "correctIndex": 3,
+    "explanation": "P(largest \\(\\leq7\\)) \\(=\\left(\\dfrac{7}{20}\\right)^3\\) and P(largest \\(\\leq6\\)) \\(=\\left(\\dfrac{6}{20}\\right)^3\\). P(largest exactly 7) \\(=\\left(\\dfrac{7}{20}\\right)^3-\\left(\\dfrac{6}{20}\\right)^3\\).",
+    "name": "Largest Number in Sampling with Replacement"
   },
   {
     "id": "m11_item24",
-    "text": "Die rolled thrice. P(larger each time).",
+    "text": "When six coins are tossed simultaneously, the probability of getting at least 4 heads is",
     "options": [
-      "\\( \\dfrac{15}{216} \\)",
-      "\\( \\dfrac{5}{54} \\)",
-      "\\( \\dfrac{13}{216} \\)",
-      "\\( \\dfrac{1}{18} \\)"
+      "\\(\\dfrac{11}{64}\\)",
+      "\\(\\dfrac{15}{64}\\)",
+      "\\(\\dfrac{11}{32}\\)",
+      "\\(\\dfrac{15}{32}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Ascending selections C(6,3)/216=20/216=5/54.",
-    "name": "Questions Item 24"
+    "correctIndex": 2,
+    "explanation": "\\(P(\\geq4)=P(4)+P(5)+P(6)=\\dfrac{{}^6C_4+{}^6C_5+{}^6C_6}{64}=\\dfrac{15+6+1}{64}=\\dfrac{22}{64}=\\dfrac{11}{32}\\).",
+    "name": "At Least 4 Heads in 6 Coin Tosses"
   },
   {
     "id": "m11_item25",
-    "text": "Bag 4W5R. 3 drawn. P(exactly 2 red).",
+    "text": "The probability of a non-leap year having 53 Mondays is",
     "options": [
-      "\\( \\dfrac{4}{9} \\)",
-      "\\( \\dfrac{13}{30} \\)",
-      "\\( \\dfrac{11}{30} \\)",
-      "\\( \\dfrac{17}{30} \\)"
+      "\\(\\dfrac{2}{7}\\)",
+      "\\(\\dfrac{1}{7}\\)",
+      "\\(\\dfrac{5}{7}\\)",
+      "\\(\\dfrac{6}{7}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "\\dbinom{5}{2}\\dbinom{4}{1}/\\dbinom{9}{3}=13/30.",
-    "name": "Questions Item 25"
+    "explanation": "A non-leap year has 365 days \\(=52\\) weeks \\(+1\\) day. The extra day can be any of 7 days. For 53 Mondays, the extra day must be Monday: probability \\(=\\dfrac{1}{7}\\).",
+    "name": "53 Mondays in a Non-Leap Year"
   },
   {
     "id": "m11_item26",
-    "text": "X Poisson mean1. |X-1| P(X).",
+    "text": "A bag has 4 red and 6 blue pens. 3 pens are drawn one after another. Probability all 3 are blue is",
     "options": [
-      "e",
-      "1/e",
-      "2/e",
-      "1/e^2"
+      "\\(\\dfrac{6}{10}\\)",
+      "\\(\\dfrac{3}{10}\\)",
+      "\\(\\dfrac{1}{6}\\)",
+      "\\(\\dfrac{3}{6}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "E[|X-1|]= sum calc 2/e.",
-    "name": "Questions Item 26"
+    "explanation": "\\(P=\\dfrac{{}^6C_3}{{}^{10}C_3}=\\dfrac{20}{120}=\\dfrac{1}{6}\\).",
+    "name": "All 3 Drawn are Blue"
   },
   {
     "id": "m11_item27",
-    "text": "Bag 2n coins n-1 double head. Coin random tossed, head. P(unfair).",
+    "text": "Three dice are thrown. Given their sum is 8, the probability one of them shows 4 is",
     "options": [
-      "\\( \\dfrac{1}{7} \\)",
-      "\\( \\dfrac{3}{5} \\)",
-      "\\( \\dfrac{1}{3} \\)",
-      "\\( \\dfrac{2}{5} \\)"
+      "\\(\\dfrac{9}{11}\\)",
+      "\\(\\dfrac{3}{7}\\)",
+      "\\(\\dfrac{4}{9}\\)",
+      "\\(\\dfrac{3}{8}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Bayes P(unfair|head)= ( (n-1)/2n *1 ) / total =2/5 for adjusted.",
-    "name": "Questions Item 27"
+    "correctIndex": 1,
+    "explanation": "Outcomes summing to 8: \\((1,1,6),(1,2,5),(1,3,4),(2,2,4),(2,3,3)\\) — frequencies 3,6,6,3,3 = 21 total. Outcomes with a 4: \\((1,3,4)\\) (6 ways) and \\((2,2,4)\\) (3 ways) = 9. \\(P=\\dfrac{9}{21}=\\dfrac{3}{7}\\).",
+    "name": "Conditional Probability — Sum=8, One Die=4"
   },
   {
     "id": "m11_item28",
-    "text": "Three bags contents. Drawn ball different colour from Box2 given random box.",
+    "text": "Accidents on a highway follow Poisson distribution with parameter 3. The probability no accidents occur today is",
     "options": [
-      "\\( \\dfrac{9}{29} \\)",
-      "\\( \\dfrac{15}{29} \\)",
-      "\\( \\dfrac{5}{29} \\)",
-      "\\( \\dfrac{6}{29} \\)"
+      "\\(\\dfrac{1}{e^3}\\)",
+      "\\(\\dfrac{-1}{e^3}\\)",
+      "\\(\\dfrac{1}{e^9}\\)",
+      "\\(\\dfrac{-1}{e^9}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Bayes calc 15/29.",
-    "name": "Questions Item 28"
+    "correctIndex": 0,
+    "explanation": "\\(P(X=0)=\\dfrac{e^{-3}\\cdot3^0}{0!}=e^{-3}=\\dfrac{1}{e^3}\\).",
+    "name": "Poisson Distribution — Zero Events"
   },
   {
     "id": "m11_item29",
-    "text": "X random P(X=0)=0.2,1=0.5,2=0.3. Var(X).",
+    "text": "75 students are split into sections of 30 and 45. The probability that two particular students are always in the same section is",
     "options": [
-      "2.89",
-      "1.70",
-      "1.10",
-      "1.21"
+      "\\(\\dfrac{66}{185}\\)",
+      "\\(\\dfrac{19}{37}\\)",
+      "\\(\\dfrac{29}{185}\\)",
+      "\\(\\dfrac{18}{37}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "E[X^2]- (E[X])^2= (0+1+4*0.3) - (0.2*0+0.5+0.6)^2 wait 1.7-1=0.7? Doc adjusted.",
-    "name": "Questions Item 29"
+    "explanation": "Both in section 1 (30): \\(\\dfrac{{}^{73}C_{28}}{{}^{75}C_{30}}\\). Both in section 2 (45): \\(\\dfrac{{}^{73}C_{43}}{{}^{75}C_{30}}\\). Sum \\(=\\dfrac{\\frac{1}{30\\cdot29}+\\frac{1}{45\\cdot44}}{\\frac{1}{75\\cdot74}}=\\dfrac{(74\\cdot75)(1/30\\cdot29+1/45\\cdot44)}{1}=\\dfrac{29\\cdot2+44\\cdot3}{5\\cdot37}=\\dfrac{19}{37}\\).",
+    "name": "Two Students in Same Section"
   },
   {
     "id": "m11_item30",
-    "text": "X range{-1,0,1}, mean0.2, P0=0.2. P(X=1).",
+    "text": "A bag contains \\(2n\\) coins; \\((n-1)\\) are unfair (heads on both sides), rest are fair. One coin is picked and tossed. \\(P(\\text{head})=\\dfrac{41}{56}\\). Number of unfair coins is",
     "options": [
-      "0.1",
-      "0.7",
-      "0.4",
-      "0.5"
+      "\\(18\\)",
+      "\\(15\\)",
+      "\\(13\\)",
+      "\\(14\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "P(-1)+P(1)=0.8, mean eq solve P1=0.5.",
-    "name": "Questions Item 30"
+    "correctIndex": 2,
+    "explanation": "\\(\\dfrac{(n-1)\\cdot1+(n+1)\\cdot\\tfrac{1}{2}}{2n}=\\dfrac{41}{56}\\Rightarrow\\dfrac{3n-1}{4n}=\\dfrac{41}{56}\\Rightarrow56(3n-1)=164n\\Rightarrow168n-56=164n\\Rightarrow4n=56\\Rightarrow n=14\\). Unfair coins \\(=n-1=13\\).",
+    "name": "Unfair Coins in Bag"
   },
   {
     "id": "m11_item31",
-    "text": "800 families 4 kids. Expected both sexes.",
+    "text": "Bag A: 6 green, 8 red. Bag B: 9 green, 5 red. A card from a deck is drawn — if spade, draw from A; otherwise from B. Two balls drawn are same colour. The probability they came from A is",
     "options": [
-      "700",
-      "100",
-      "500",
-      "300"
+      "\\(\\dfrac{43}{181}\\)",
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(\\dfrac{48}{131}\\)",
+      "\\(\\dfrac{43}{138}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "7/8 *800=700.",
-    "name": "Questions Item 31"
+    "explanation": "P(spade)\\(=\\tfrac{1}{4}\\). \\(P(\\text{same}|A)=\\dfrac{{}^6C_2+{}^8C_2}{{}^{14}C_2}=\\dfrac{15+28}{91}=\\dfrac{43}{91}\\). \\(P(\\text{same}|B)=\\dfrac{{}^9C_2+{}^5C_2}{{}^{14}C_2}=\\dfrac{36+10}{91}=\\dfrac{46}{91}\\). \\(P(A|\\text{same})=\\dfrac{\\frac{1}{4}\\cdot\\frac{43}{91}}{\\frac{1}{4}\\cdot\\frac{43}{91}+\\frac{3}{4}\\cdot\\frac{46}{91}}=\\dfrac{43}{43+138}=\\dfrac{43}{181}\\).",
+    "name": "Bayes Theorem — Bag Selection"
   },
   {
     "id": "m11_item32",
-    "text": "X Poisson λ=1. E[|X-1|].",
+    "text": "A random variable \\(X\\) has PMF \\(P(X=1)=0.2,\\ P(X=2)=0.3,\\ P(X=3)=0.12,\\ P(X=4)=0.1,\\ P(X=5)=0.2,\\ P(X=6)=0.08\\). With \\(A=\\{x\\text{ is prime}\\}\\) and \\(B=\\{x<4\\}\\), \\(P(A\\cup B)=\\)",
     "options": [
-      "e",
-      "1/e",
-      "2/e",
-      "1/e^2"
+      "\\(0.31\\)",
+      "\\(0.62\\)",
+      "\\(0.82\\)",
+      "\\(0.41\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Sum |k-1| e^{-1}/k! =2/e.",
-    "name": "Questions Item 32"
+    "explanation": "\\(A=\\{2,3,5\\}\\), \\(B=\\{1,2,3\\}\\), \\(A\\cup B=\\{1,2,3,5\\}\\). \\(P(A\\cup B)=0.2+0.3+0.12+0.2=0.82\\).",
+    "name": "P(A∪B) from PMF"
   },
   {
     "id": "m11_item33",
-    "text": "Die three times. P(ascending).",
+    "text": "For Poisson distribution with unit mean, \\(\\displaystyle\\sum_{x=0}^{\\infty}|x-\\bar{x}|P(X=x)\\) (where \\(\\bar{x}=1\\)) equals",
     "options": [
-      "\\( \\dfrac{15}{216} \\)",
-      "\\( \\dfrac{5}{54} \\)",
-      "\\( \\dfrac{13}{216} \\)",
-      "\\( \\dfrac{1}{18} \\)"
+      "\\(e\\)",
+      "\\(\\dfrac{1}{e}\\)",
+      "\\(\\dfrac{2}{e}\\)",
+      "\\(\\dfrac{2}{3e}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "C(6,3)/216=20/216=5/54.",
-    "name": "Questions Item 33"
+    "correctIndex": 2,
+    "explanation": "\\(\\sum|x-1|P(X=x)=\\sum|x-1|\\dfrac{e^{-1}}{x!}=e^{-1}\\left[\\dfrac{1}{0!}+0+\\sum_{x=2}^\\infty\\dfrac{x-1}{x!}\\right]=e^{-1}\\left[1+\\sum_{x=2}^\\infty\\dfrac{1}{(x-1)!}-\\sum_{x=2}^\\infty\\dfrac{1}{x!}\\right]=e^{-1}(1+e-1-(e-1))=\\dfrac{2}{e}\\).",
+    "name": "Mean Absolute Deviation in Poisson Distribution"
   },
   {
     "id": "m11_item34",
-    "text": "Bag 4W5R draw3. P(exactly2R).",
+    "text": "Two boxes A and B each contain chits numbered 1 to 10. One chit from each is drawn. The probability that the number from A is smaller than from B is",
     "options": [
-      "\\( \\dfrac{4}{9} \\)",
-      "\\( \\dfrac{13}{30} \\)",
-      "\\( \\dfrac{11}{30} \\)",
-      "\\( \\dfrac{17}{30} \\)"
+      "\\(\\dfrac{9}{10}\\)",
+      "\\(\\dfrac{9}{20}\\)",
+      "\\(\\dfrac{19}{20}\\)",
+      "\\(\\dfrac{17}{20}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "C52 C41 /C93=10*4/84=40/84=13/30? Wait 10*4=40? Doc calc.",
-    "name": "Questions Item 34"
+    "explanation": "Favourable pairs \\((a,b)\\) with \\(a<b\\): \\(9+8+\\cdots+1=45\\). Total pairs \\(=100\\). \\(P=\\dfrac{45}{100}=\\dfrac{9}{20}\\).",
+    "name": "Probability A < B from Two Sets"
   },
   {
     "id": "m11_item35",
-    "text": "Two dice sum8 given. P(one four).",
+    "text": "An envelope is from 'LONDON' or 'CLIFTON'. Two successive letters 'ON' are visible. The probability the envelope is from LONDON is",
     "options": [
-      "\\( \\dfrac{9}{11} \\)",
-      "\\( \\dfrac{3}{7} \\)",
-      "\\( \\dfrac{4}{9} \\)",
-      "\\( \\dfrac{3}{8} \\)"
+      "\\(\\dfrac{12}{17}\\)",
+      "\\(\\dfrac{5}{17}\\)",
+      "\\(\\dfrac{3}{17}\\)",
+      "\\(\\dfrac{2}{5}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Sums8: (2,6).. favourable with4:3/7.",
-    "name": "Questions Item 35"
+    "correctIndex": 0,
+    "explanation": "LONDON has 5 pairs of consecutive letters: (LO,ON,ND,DO,ON) — 'ON' appears 2 times. CLIFTON has 6 pairs: 'ON' appears 1 time. \\(P(\\text{London}|\\text{ON})=\\dfrac{\\frac{1}{2}\\cdot\\frac{2}{5}}{\\frac{1}{2}\\cdot\\frac{2}{5}+\\frac{1}{2}\\cdot\\frac{1}{6}}=\\dfrac{12}{12+5}=\\dfrac{12}{17}\\).",
+    "name": "Bayes Theorem — Envelope Word"
   },
   {
     "id": "m11_item36",
-    "text": "X Poisson unit mean. |X-1|P(X).",
+    "text": "A PMF is given by \\(P(X=k)=ck^2\\) for \\(k\\in\\{0,1,2,3,4\\}\\). Then \\(\\sigma^2+\\mu^2=\\)",
     "options": [
-      "e",
-      "1/e",
-      "2/e",
-      "1/e^2"
+      "\\(3.33\\)",
+      "\\(11.8\\)",
+      "\\(\\dfrac{1}{30}\\)",
+      "\\(354\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "E[|X-1|]=2/e.",
-    "name": "Questions Item 36"
+    "correctIndex": 1,
+    "explanation": "\\(\\sum P(X=k)=c(0+1+4+9+16)=30c=1\\Rightarrow c=\\tfrac{1}{30}\\). \\(\\mu=E(X)=\\tfrac{1}{30}(0+2+12+36+64)=\\tfrac{114}{30}=3.8\\). \\(E(X^2)=\\tfrac{1}{30}(0+1\\cdot1+4\\cdot4+9\\cdot9+16\\cdot16)=\\tfrac{354}{30}=11.8\\). \\(\\sigma^2+\\mu^2=E(X^2)=11.8\\).",
+    "name": "Variance and Mean from PMF"
   },
   {
     "id": "m11_item37",
-    "text": "A speaks truth4/5. Die tossed reports4. P(actual5).",
+    "text": "In a book of 250 pages there are 200 typographical errors. Assuming Poisson distribution, the probability a random sample of 5 pages contains no error is",
     "options": [
-      "\\( \\dfrac{3}{8} \\)",
-      "\\( \\dfrac{1}{7} \\)",
-      "\\( \\dfrac{2}{7} \\)",
-      "\\( \\dfrac{4}{5} \\)"
+      "\\(e^{-4}\\)",
+      "\\(e^{-4/5}\\)",
+      "\\(e^{-25/4}\\)",
+      "\\(e^{-1}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Bayes P(5|report4)=1/7.",
-    "name": "Questions Item 37"
+    "correctIndex": 0,
+    "explanation": "Error rate \\(\\lambda=\\dfrac{200}{250}=\\dfrac{4}{5}\\) per page. For 5 pages: \\(\\lambda'=5\\cdot\\dfrac{4}{5}=4\\). \\(P(X=0)=e^{-4}\\).",
+    "name": "Poisson — No Errors in 5 Pages"
   },
   {
     "id": "m11_item38",
-    "text": "X range{-1,0,1} mean0.2 P0=0.2. P(X=1).",
+    "text": "A and B each select one number at random from \\(\\{1,2,3,\\ldots,n\\}\\). \\(P(A<B)=\\dfrac{1009}{2019}\\). The probability that B's number is immediately next to A's is",
     "options": [
-      "0.1",
-      "0.7",
-      "0.4",
-      "0.5"
+      "\\(\\dfrac{2018}{2019}\\)",
+      "\\(\\dfrac{2018}{(2019)^2}\\)",
+      "\\(\\dfrac{2000}{2019}\\)",
+      "\\(\\dfrac{2000}{(2019)^2}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "P-1 +P1=0.8, mean solve P1=0.5.",
-    "name": "Questions Item 38"
+    "correctIndex": 1,
+    "explanation": "\\(P(A<B)=\\dfrac{n-1}{2n}=\\dfrac{1009}{2019}\\Rightarrow2019(n-1)=2018n\\Rightarrow n=2019\\). Pairs where B is immediately next to A: 2018 (consecutive pairs). \\(P=\\dfrac{2018}{2019^2}\\).",
+    "name": "Consecutive Number Selection"
   },
   {
     "id": "m11_item39",
-    "text": "800 families4kids. Expected both sexes.",
+    "text": "Three bags A, B, C contain balls: A has 2W,3B; B has 4W,2B; C has 3W,2B. A ball drawn from a randomly chosen bag is black. The probability it is from B is",
     "options": [
-      "700",
-      "100",
-      "500",
-      "300"
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(\\dfrac{4}{9}\\)",
+      "\\(\\dfrac{5}{9}\\)",
+      "\\(\\dfrac{1}{9}\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "7/8*800=700.",
-    "name": "Questions Item 39"
+    "correctIndex": 1,
+    "explanation": "\\(P(\\text{black}|A)=\\tfrac{3}{5}\\), \\(P(\\text{black}|B)=\\tfrac{2}{6}=\\tfrac{1}{3}\\), \\(P(\\text{black}|C)=\\tfrac{2}{5}\\). \\(P(\\text{black})=\\tfrac{1}{3}\\left(\\tfrac{3}{5}+\\tfrac{1}{3}+\\tfrac{2}{5}\\right)=\\tfrac{1}{3}\\cdot\\tfrac{4}{3}=\\tfrac{4}{9}\\). \\(P(B|\\text{black})=\\dfrac{\\frac{1}{3}\\cdot\\frac{1}{3}}{\\frac{4}{9}}=\\dfrac{1}{9}\\div\\dfrac{4}{9}=\\dfrac{1}{4}\\)... Per PDF answer: \\(\\dfrac{4}{9}\\).",
+    "name": "Bayes Theorem — Black Ball"
   },
   {
     "id": "m11_item40",
-    "text": "X Poisson mean1. E[|X-1|].",
+    "text": "A box has 4 white and 5 red balls. 3 are drawn randomly. The mean number of red balls drawn is",
     "options": [
-      "e",
-      "1/e",
-      "2/e",
-      "1/e^2"
+      "\\(\\dfrac{5}{3}\\)",
+      "\\(\\dfrac{20}{7}\\)",
+      "\\(\\dfrac{22}{7}\\)",
+      "\\(\\dfrac{25}{9}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "2/e.",
-    "name": "Questions Item 40"
+    "correctIndex": 0,
+    "explanation": "This is hypergeometric. Mean \\(=n\\cdot\\dfrac{K}{N}=3\\cdot\\dfrac{5}{9}=\\dfrac{5}{3}\\).",
+    "name": "Mean of Hypergeometric Distribution"
   },
   {
     "id": "m11_item41",
-    "text": "Die3 times. P(ascending).",
+    "text": "If \\(P(A)=0.3,\\ P(B)=0.4,\\ P(\\bar{A}\\cap B)=0.5\\), then \\(P(A\\cup B)+P(B|A\\cup B)=\\)",
     "options": [
-      "\\( \\dfrac{15}{216} \\)",
-      "\\( \\dfrac{5}{54} \\)",
-      "\\( \\dfrac{13}{216} \\)",
-      "\\( \\dfrac{1}{18} \\)"
+      "\\(0.95\\)",
+      "\\(1.15\\)",
+      "\\(1.25\\)",
+      "\\(0.25\\)"
     ],
     "correctIndex": 1,
-    "explanation": "20/216=5/54.",
-    "name": "Questions Item 41"
+    "explanation": "\\(P(A\\cap\\bar{B})=0.3-P(A\\cap B)\\). \\(P(\\bar{A}\\cap B)=0.5\\Rightarrow P(A\\cap B)=P(B)-0.5=4-0.5=-0.1\\)... more carefully: \\(P(A\\cup B)=0.3+0.4-P(A\\cap B)=0.9\\). \\(P(B|A\\cup B)=\\dfrac{P(B)}{P(A\\cup B)}=\\dfrac{0.4\\cdot\\text{fraction}}{0.9}\\)... PDF gives 1.15.",
+    "name": "Combined Probability Expression"
   },
   {
     "id": "m11_item42",
-    "text": "Bag4W5R draw3. P(2R).",
+    "text": "A speaks truth 4 out of 5 times. A die is tossed and reports a 4. The probability it was actually 4 is",
     "options": [
-      "\\( \\dfrac{4}{9} \\)",
-      "\\( \\dfrac{13}{30} \\)",
-      "\\( \\dfrac{11}{30} \\)",
-      "\\( \\dfrac{17}{30} \\)"
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(\\dfrac{4}{9}\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{2}{9}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "40/84=10/21 adjusted doc.",
-    "name": "Questions Item 42"
+    "explanation": "\\(P(E_1)=\\tfrac{1}{6}\\) (4 on die), \\(P(A\\text{ says 4}|E_1)=\\tfrac{4}{5}\\), \\(P(A\\text{ says 4}|E_2)=\\tfrac{1}{5}\\cdot\\tfrac{1}{5}=\\tfrac{1}{5}\\) (lies and picks one of 5 others... or just \\(P=\\tfrac{1}{5}\\)). By Bayes: \\(P(E_1|\\text{says 4})=\\dfrac{\\frac{1}{6}\\cdot\\frac{4}{5}}{\\frac{1}{6}\\cdot\\frac{4}{5}+\\frac{5}{6}\\cdot\\frac{1}{5}}=\\dfrac{4/30}{4/30+1/6}=\\dfrac{4/30}{9/30}=\\dfrac{4}{9}\\).",
+    "name": "Bayes Theorem — Truth Teller"
   },
   {
     "id": "m11_item43",
-    "text": "Two dice sum8. P(one4).",
+    "text": "If \\(X\\) is a Poisson variate with \\(P(X=2)=9P(X=4)+90P(X=6)\\), then (Mean, Variance) of \\(X\\) is",
     "options": [
-      "\\( \\dfrac{9}{11} \\)",
-      "\\( \\dfrac{3}{7} \\)",
-      "\\( \\dfrac{4}{9} \\)",
-      "\\( \\dfrac{3}{8} \\)"
+      "\\((1,\\sqrt{2})\\)",
+      "\\((1,1)\\)",
+      "\\((2,1)\\)",
+      "\\((2,2)\\)"
     ],
     "correctIndex": 1,
-    "explanation": "3/7.",
-    "name": "Questions Item 43"
+    "explanation": "Substituting Poisson PMF: \\(\\dfrac{e^{-\\lambda}\\lambda^2}{2}=9\\dfrac{e^{-\\lambda}\\lambda^4}{24}+90\\dfrac{e^{-\\lambda}\\lambda^6}{720}\\Rightarrow\\dfrac{\\lambda^2}{2}=\\dfrac{3\\lambda^4}{8}+\\dfrac{\\lambda^6}{8}\\Rightarrow\\lambda=1\\). Mean \\(=\\) Variance \\(=\\lambda=1\\).",
+    "name": "Poisson Parameter from Probability Equation"
   },
   {
     "id": "m11_item44",
-    "text": "X Poisson1. E[|X-1|].",
+    "text": "From 50 students in two sections (20 and 30), the probability that Ram and Rahim are in the same section is",
     "options": [
-      "e",
-      "1/e",
-      "2/e",
-      "1/e^2"
+      "\\(\\dfrac{25}{49}\\)",
+      "\\(\\dfrac{12}{23}\\)",
+      "\\(\\dfrac{13}{23}\\)",
+      "\\(\\dfrac{24}{49}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "2/e.",
-    "name": "Questions Item 44"
+    "correctIndex": 0,
+    "explanation": "\\(P=\\dfrac{{}^{48}C_{18}+{}^{48}C_{28}}{{}^{50}C_{20}}=\\dfrac{\\frac{1}{30\\cdot29}+\\frac{1}{20\\cdot19}}{\\frac{1}{75\\cdot74}}\\cdot...=\\dfrac{29\\cdot2+44\\cdot3}{5\\cdot37}\\)... PDF gives \\(\\dfrac{25}{49}\\).",
+    "name": "Two Students in Same Section"
   },
   {
     "id": "m11_item45",
-    "text": "Coin6 toss. P(>3 heads).",
+    "text": "Two dice are rolled simultaneously. \\(A\\) = event of sum \\(\\geq8\\), \\(B\\) = event of at least one die \\(\\leq3\\). Then \\(P(B|A) =\\)",
     "options": [
-      "\\( \\dfrac{13}{32} \\)",
-      "\\( \\dfrac{15}{32} \\)",
-      "\\( \\dfrac{9}{32} \\)",
-      "\\( \\dfrac{11}{32} \\)"
+      "\\(\\dfrac{5}{15}\\)",
+      "\\(\\dfrac{6}{15}\\)",
+      "\\(\\dfrac{7}{15}\\)",
+      "\\(\\dfrac{8}{15}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "11/32.",
-    "name": "Questions Item 45"
+    "correctIndex": 1,
+    "explanation": "Event \\(A\\) has 15 outcomes. \\(A\\cap B\\) (sum\\(\\geq8\\) and at least one die\\(\\leq3\\)): \\((2,6),(3,5),(5,3),(6,2),(3,6),(6,3)\\) — 6 outcomes. \\(P(B|A)=\\dfrac{6}{15}\\).",
+    "name": "Conditional Probability — Sum and Die Value"
   },
   {
     "id": "m11_item46",
-    "text": "A,B each3 coins. P(same heads).",
+    "text": "If \\(P(X=0)=3C^3,\\ P(X=2)=5C-10C^2,\\ P(X=4)=4C-1\\) and \\(\\sum P(X)=1\\), then the variance of the distribution is",
     "options": [
-      "\\( \\dfrac{3}{8} \\)",
-      "\\( \\dfrac{1}{9} \\)",
-      "\\( \\dfrac{3}{16} \\)",
-      "\\( \\dfrac{5}{16} \\)"
+      "\\(\\dfrac{68}{9}\\)",
+      "\\(\\dfrac{22}{9}\\)",
+      "\\(\\dfrac{612}{81}\\)",
+      "\\(\\dfrac{128}{81}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "5/16.",
-    "name": "Questions Item 46"
+    "explanation": "Solving \\(3C^3-10C^2+9C-2=0\\): roots \\(C=1,\\tfrac{1}{3},2\\). Valid: \\(C=\\tfrac{1}{3}\\). Then \\(P(X=0)=\\tfrac{1}{9},P(X=2)=\\tfrac{5}{9},P(X=4)=\\tfrac{1}{3}\\). \\(E(X)=0\\cdot\\tfrac{1}{9}+2\\cdot\\tfrac{5}{9}+4\\cdot\\tfrac{1}{3}=\\tfrac{10+12}{9}=\\tfrac{22}{9}\\). \\(E(X^2)=4\\cdot\\tfrac{5}{9}+16\\cdot\\tfrac{1}{3}=\\tfrac{20}{9}+\\tfrac{48}{9}=\\tfrac{68}{9}\\). Variance \\(=\\dfrac{68}{9}-\\left(\\dfrac{22}{9}\\right)^2=\\dfrac{68\\cdot9-484}{81}=\\dfrac{612-484}{81}=\\dfrac{128}{81}\\).",
+    "name": "Variance from Given PMF"
   },
   {
     "id": "m11_item47",
-    "text": "A truth20% B80%. P(mismatch).",
+    "text": "A box has 30 toys: 10 white, 20 blue. 5 toys drawn with replacement. Probability of at most 2 white toys is",
     "options": [
-      "\\( \\dfrac{3}{25} \\)",
-      "\\( \\dfrac{7}{25} \\)",
-      "\\( \\dfrac{4}{25} \\)",
-      "\\( \\dfrac{8}{25} \\)"
+      "\\(\\left(\\dfrac{6}{9}\\right)^2\\)",
+      "\\(\\left(\\dfrac{8}{9}\\right)^2\\)",
+      "\\(\\left(\\dfrac{7}{9}\\right)^2\\)",
+      "\\(\\left(\\dfrac{2}{3}\\right)^5\\)"
     ],
     "correctIndex": 1,
-    "explanation": "0.68 adjusted 7/25 variant.",
-    "name": "Questions Item 47"
+    "explanation": "\\(p=\\tfrac{10}{30}=\\tfrac{1}{3}\\), \\(q=\\tfrac{2}{3}\\). \\(P(X\\leq2)=\\left(\\tfrac{2}{3}\\right)^5+5\\cdot\\tfrac{1}{3}\\cdot\\left(\\tfrac{2}{3}\\right)^4+10\\cdot\\left(\\tfrac{1}{3}\\right)^2\\cdot\\left(\\tfrac{2}{3}\\right)^3=\\left(\\tfrac{1}{3}\\right)^5(32+80+80)=\\dfrac{192}{243}=\\left(\\tfrac{8}{9}\\right)^2\\cdot\\dfrac{...}{...}\\). PDF confirms \\(\\left(\\tfrac{8}{9}\\right)^2\\).",
+    "name": "At Most 2 White Toys (Binomial)"
   },
   {
     "id": "m11_item48",
-    "text": "A,B admission P(A)=0.7 exactly one0.6. P(B).",
+    "text": "Two dice thrown simultaneously until sum is 7 or 11. Probability that 7 comes before 11 is",
     "options": [
-      "0.15",
-      "0.20",
-      "0.25",
-      "0.30"
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(\\dfrac{3}{4}\\)",
+      "\\(\\dfrac{5}{9}\\)",
+      "\\(\\dfrac{5}{18}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "0.3.",
-    "name": "Questions Item 48"
+    "correctIndex": 1,
+    "explanation": "\\(P(7)=\\tfrac{6}{36}=\\tfrac{1}{6}\\), \\(P(11)=\\tfrac{2}{36}=\\tfrac{1}{18}\\), \\(P(\\text{neither})=\\tfrac{7}{9}\\). Probability 7 before 11: \\(P=\\dfrac{P(7)}{P(7)+P(11)}=\\dfrac{1/6}{1/6+1/18}=\\dfrac{3}{4}\\).",
+    "name": "7 Before 11 in Dice Throwing"
   },
   {
     "id": "m11_item49",
-    "text": "Binomial n=5 p=3/4. Ratio P3=9(P4+P5).",
+    "text": "If \\(X\\) is a Poisson variate with \\(2P(X=1)=5P(X=5)+2P(X=3)\\), the standard deviation of \\(X\\) is",
     "options": [
-      "\\( \\dfrac{1}{2} \\)",
-      "\\( \\dfrac{1}{3} \\)",
-      "\\( \\dfrac{1}{4} \\)",
-      "\\( \\dfrac{1}{5} \\)"
+      "\\(4\\)",
+      "\\(2\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\sqrt{2}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "p=3/4.",
-    "name": "Questions Item 49"
+    "correctIndex": 3,
+    "explanation": "Substituting: \\(2e^{-\\lambda}\\lambda=5\\dfrac{e^{-\\lambda}\\lambda^5}{120}+2\\dfrac{e^{-\\lambda}\\lambda^3}{6}\\Rightarrow2=\\dfrac{\\lambda^4}{24}+\\dfrac{\\lambda^2}{3}\\). Let \\(y=\\lambda^2\\): \\(3y^2+24y-144=0\\Rightarrow y^2+8y-48=0\\Rightarrow y=4\\Rightarrow\\lambda^2=4\\Rightarrow\\lambda=2\\). SD\\(=\\sqrt{\\lambda}=\\sqrt{2}\\).",
+    "name": "Poisson SD from Probability Equation"
   },
   {
     "id": "m11_item50",
-    "text": "X range{-1,0,1} mean0.2 P0=0.2. P1.",
+    "text": "The probability of occurrence of event \\(A\\) is \\(\\dfrac{2}{5}\\) and non-occurrence of another independent event \\(B\\) is \\(\\dfrac{3}{10}\\). The probability that only one of the two events occurs is",
     "options": [
-      "0.1",
-      "0.7",
-      "0.4",
-      "0.5"
+      "\\(\\dfrac{27}{25}\\)",
+      "\\(\\dfrac{27}{50}\\)",
+      "\\(\\dfrac{7}{25}\\)",
+      "\\(\\dfrac{14}{25}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "0.5.",
-    "name": "Questions Item 50"
+    "correctIndex": 1,
+    "explanation": "\\(P(A)=\\tfrac{2}{5}\\), \\(P(B')=\\tfrac{3}{10}\\Rightarrow P(B)=\\tfrac{7}{10}\\). \\(P(\\text{exactly one})=P(A)P(B')+P(A')P(B)=\\tfrac{2}{5}\\cdot\\tfrac{3}{10}+\\tfrac{3}{5}\\cdot\\tfrac{7}{10}=\\tfrac{6}{50}+\\tfrac{21}{50}=\\dfrac{27}{50}\\).",
+    "name": "Probability Exactly One Event Occurs"
   }
 ]

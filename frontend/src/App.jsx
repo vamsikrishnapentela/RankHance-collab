@@ -17,17 +17,21 @@ import PaymentModal from './components/PaymentModal';
 import { useAuth } from './hooks/useAuth';
 import Terms from './Terms';
 import Privacy from './Privacy';
-import Refund from './Refund';   
+import Refund from './Refund';
 import Contact from './Contact';
 import CreatorDashboard from './CreatorDashboard';
 import AdminDashboard from './AdminDashboard';
 import MyAttempts from './MyAttempts';
+import Support from './Support';
+import Weightage from './Weightage';
+import LiveSessions from './LiveSessions';
 
 function AppLayout() {
   const location = useLocation();
   const navigate = useNavigate();
   const { user, logout, isPaid, loading } = useAuth();
   const isAuthPage = ['/login', '/signup'].includes(location.pathname);
+  const isLandingPage = location.pathname === '/';
 
   const [showProfile, setShowProfile] = useState(false);
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
@@ -72,14 +76,14 @@ function AppLayout() {
   const smoothScrollTo = (targetId, duration = 1000) => {
     const target = document.getElementById(targetId);
     if (!target) return;
-    const start    = window.scrollY;
-    const end      = target.offsetTop - 80;
+    const start = window.scrollY;
+    const end = target.getBoundingClientRect().top + window.scrollY - 100;
     const distance = end - start;
-    let startTime  = null;
+    let startTime = null;
     const easeInOut = (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
     const animation = (currentTime) => {
       if (!startTime) startTime = currentTime;
-      const elapsed  = currentTime - startTime;
+      const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
       window.scrollTo(0, start + distance * easeInOut(progress));
       if (elapsed < duration) requestAnimationFrame(animation);
@@ -91,33 +95,33 @@ function AppLayout() {
     <div className="min-h-[100dvh] font-sans flex flex-col items-center w-full">
       {!isAuthPage && (
         <>
-          <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md h-16 z-50 border-b border-gray-100 flex items-center px-6">
-            <div className="max-w-5xl mx-auto w-full flex justify-between items-center">
+          <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md h-16 z-50 border-b border-gray-100 flex items-center px-3 sm:px-6">
+            <div className="max-w-5xl mx-auto w-full flex justify-between items-center gap-2 sm:gap-4">
               {/* Logo */}
-              <Link to="/" className="text-2xl font-bold font-heading">
+              <Link to="/" className="text-lg sm:text-2xl font-bold font-heading shrink-0">
                 <span className="text-gray-900">Rank</span>
                 <span className="text-[var(--color-primary)]">Hance</span>
               </Link>
 
               {/* Nav items */}
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2.5 sm:gap-4">
                 {user ? (
                   <>
-                    <Link
+                    {/* ── Dashboard button ─────────────────────────────── */}
+                    {/* <Link
                       to="/dashboard"
                       className="text-gray-600 font-bold hover:text-gray-900 transition-colors"
                     >
                       Dashboard
-                    </Link>
+                    </Link> */}
 
                     {/* ── My Attempts button ─────────────────────────────── */}
                     <Link
                       to="/my-attempts"
-                      className={`text-sm font-bold px-3 py-1.5 rounded-lg transition-colors ${
-                        location.pathname === '/my-attempts'
-                          ? 'bg-[var(--color-primary)]/10 text-[var(--color-primary)]'
-                          : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                      }`}
+                      className={`text-[13px] sm:text-sm font-bold px-2 sm:px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap ${location.pathname === '/my-attempts'
+                        ? 'bg-[var(--color-primary)]/10 text-[var(--color-primary)]'
+                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                        }`}
                     >
                       My Attempts
                     </Link>
@@ -198,18 +202,18 @@ function AppLayout() {
                   </>
                 ) : (
                   <>
-                    <Link to="/login" className="text-gray-600 font-bold hover:text-gray-900 transition-colors">
+                    <Link to="/login" className="text-[13px] sm:text-base text-gray-600 font-bold hover:text-gray-900 transition-colors whitespace-nowrap">
                       Login
                     </Link>
                     <button
                       onClick={() => smoothScrollTo('features', 1800)}
-                      className="text-gray-600 font-bold hover:text-gray-900 transition-colors"
+                      className="text-[13px] sm:text-base text-gray-600 font-bold hover:text-gray-900 transition-colors whitespace-nowrap"
                     >
                       Features
                     </button>
                     <button
-                      onClick={() => smoothScrollTo('pricing', 1800)}
-                      className="text-gray-600 font-bold hover:text-gray-900 transition-colors"
+                      onClick={() => smoothScrollTo('premium-plan', 1800)}
+                      className="text-[13px] sm:text-base text-gray-600 font-bold hover:text-gray-900 transition-colors whitespace-nowrap"
                     >
                       Pricing
                     </button>
@@ -220,53 +224,58 @@ function AppLayout() {
           </nav>
 
           {/* Marquee banner */}
-          <div className="fixed top-16 w-full z-40 bg-orange-400 text-white text-base font-semibold overflow-hidden">
-            <div className="flex whitespace-nowrap animate-marquee gap-14 py-3 items-center">
-              <div className="flex whitespace-nowrap gap-12">
-                <span>🔥 1200+ EAMCET Aspirants Already Preparing with RankHance</span>             
-                <span>🎯 Chapter-wise Practice + Real Exam Level Questions</span>              
-                <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>              
-                <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>  
-                <span>📊 Identify Weak Areas &amp; Improve Faster</span> 
-                <span>💥 One-Time payment — No hidden charges</span>
-                <span>⏳ Limited Time Offer — Price May Increase Soon</span>
-              </div>
-              <div className="flex whitespace-nowrap gap-12">
-                <span>🔥 1200+ EAMCET Aspirants Already Preparing with RankHance</span>             
-                <span>🎯 Chapter-wise Practice + Real Exam Level Questions</span>              
-                <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>              
-                <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>  
-                <span>📊 Identify Weak Areas &amp; Improve Faster</span> 
-                <span>💥 One-Time payment — No hidden charges</span>
-                <span>⏳ Limited Time Offer — Price May Increase Soon</span>
+          {isLandingPage && (
+            <div className="fixed top-16 w-full z-40 bg-orange-400 text-white text-base font-semibold overflow-hidden">
+              <div className="flex whitespace-nowrap animate-marquee gap-14 py-3 items-center">
+                <div className="flex whitespace-nowrap gap-12">
+                  <span>🔥 1200+ EAMCET Aspirants Already Preparing with RankHance</span>
+                  <span>🎯 Chapter-wise Practice + Real Exam Level Questions</span>
+                  <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>
+                  <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>
+                  <span>📊 Identify Weak Areas &amp; Improve Faster</span>
+                  <span>💥 One-Time payment — No hidden charges</span>
+                  <span>⏳ Limited Time Offer — Price May Increase Soon</span>
+                </div>
+                <div className="flex whitespace-nowrap gap-12">
+                  <span>🔥 1200+ EAMCET Aspirants Already Preparing with RankHance</span>
+                  <span>🎯 Chapter-wise Practice + Real Exam Level Questions</span>
+                  <span>📈 Students Improving 30–50 Marks with Smart Analysis</span>
+                  <span>🚀 Full Length Mock Tests (160 Questions) Like Real Exam</span>
+                  <span>📊 Identify Weak Areas &amp; Improve Faster</span>
+                  <span>💥 One-Time payment — No hidden charges</span>
+                  <span>⏳ Limited Time Offer — Price May Increase Soon</span>
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </>
       )}
 
-      <div className={`${!isAuthPage ? 'pt-24' : ''} w-full flex-1 flex flex-col relative`}>
+      <div className={`${!isAuthPage ? (isLandingPage ? 'pt-24' : 'pt-16') : ''} w-full flex-1 flex flex-col relative`}>
         <Routes>
-          <Route path="/"               element={<Landing />} />
-          <Route path="/login"          element={<Login />} />
-          <Route path="/signup"         element={<Signup />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/dashboard"      element={<Dashboard />} />
-          <Route path="/practice"       element={<Practice />} />
-          <Route path="/subjects"       element={<Subjects />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/practice" element={<Practice />} />
+          <Route path="/subjects" element={<Subjects />} />
           <Route path="/chapters/:subject" element={<Chapters />} />
           <Route path="/questions/:subject/:chapter" element={<Questions />} />
-          <Route path="/mock-tests"     element={<MockTests />} />
-          <Route path="/mock/:id"       element={<MockAttempt />} />
-          <Route path="/result"         element={<Result />} />
-          <Route path="/review"         element={<Review />} />
-          <Route path="/my-attempts"    element={<MyAttempts />} />
-          <Route path="/terms"          element={<Terms />} />
-          <Route path="/privacy"        element={<Privacy />} />
-          <Route path="/refund"         element={<Refund />} />
-          <Route path="/contact"        element={<Contact />} />
-          <Route path="/creator"        element={<CreatorDashboard />} />
-          <Route path="/admin"          element={<AdminDashboard />} />
+          <Route path="/mock-tests" element={<MockTests />} />
+          <Route path="/mock/:id" element={<MockAttempt />} />
+          <Route path="/result" element={<Result />} />
+          <Route path="/review" element={<Review />} />
+          <Route path="/my-attempts" element={<MyAttempts />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/refund" element={<Refund />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/creator" element={<CreatorDashboard />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/weightage" element={<Weightage />} />
+          <Route path="/live-sessions" element={<LiveSessions />} />
         </Routes>
 
         <PaymentModal

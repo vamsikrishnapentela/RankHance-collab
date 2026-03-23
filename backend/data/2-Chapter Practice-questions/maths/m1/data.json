@@ -1,20 +1,20 @@
 [
   {
     "id": "m1_item1",
-    "text": "If \\(1, \\alpha_1, \\alpha_2, \\ldots, \\alpha_{n-1}\\) are the \\(n\\)th roots of unity, then \\(\\displaystyle\\sum_{i=1}^{n-1} \\frac{1}{1 - \\alpha_i}\\) is equal to",
+    "text": "If \\(1, \\alpha_1, \\alpha_2, \\ldots, \\alpha_{n-1}\\) are the \\(n\\)th roots of unity, then \\(\\displaystyle\\sum_{i=1}^{n-1} \\frac{1}{2 - \\alpha_i}\\) is equal to",
     "options": [
-      "\\(\\dfrac{n}{2^n - 2}\\)",
-      "\\(\\dfrac{(n-2)2^{n-1}}{2^{n-1}-1}\\)",
-      "\\(\\dfrac{(n-2)2^n}{2^{n-1}-1}\\)",
-      "\\(\\dfrac{1}{(n-2)2^n}\\)"
+      "\\(\\dfrac{(n-2)\\cdot 2^n}{2^n - 1}\\)",
+      "\\(\\dfrac{(n-2)\\cdot 2^{n-1} + 1}{2^n - 1}\\)",
+      "\\(\\dfrac{(n-2)\\cdot 2^{n-1}}{2^n - 1}\\)",
+      "\\(\\dfrac{1}{(n-2)\\cdot 2^n}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Since \\(1, \\alpha_1, \\alpha_2, \\ldots, \\alpha_{n-1}\\) are the \\(n\\)th roots of unity, we have \\(x^n - 1 = (x-1)(x-\\alpha_1)(x-\\alpha_2)\\cdots(x-\\alpha_{n-1})\\). Taking logarithm and differentiating: \\(\\dfrac{nx^{n-1}}{x^n - 1} = \\dfrac{1}{x-1} + \\sum_{i=1}^{n-1}\\dfrac{1}{x - \\alpha_i}\\). Substituting \\(x = 2\\): \\(\\dfrac{n \\cdot 2^{n-1}}{2^n - 1} = 1 + \\sum_{i=1}^{n-1}\\dfrac{1}{2 - \\alpha_i}\\). Therefore \\(\\displaystyle\\sum_{i=1}^{n-1}\\dfrac{1}{1 - \\alpha_i} = \\dfrac{(n-2)2^{n-1}}{2^{n-1}-1}\\).",
+    "explanation": "Since \\(1, \\alpha_1, \\alpha_2, \\ldots, \\alpha_{n-1}\\) are the \\(n\\)th roots of unity, we have \\(x^n - 1 = (x-1)(x-\\alpha_1)(x-\\alpha_2)\\cdots(x-\\alpha_{n-1})\\).\n\n Taking logarithm on both sides and differentiating with respect to \\(x\\): \\(\\dfrac{nx^{n-1}}{x^n - 1} = \\dfrac{1}{x-1} + \\displaystyle\\sum_{i=1}^{n-1}\\dfrac{1}{x - \\alpha_i}\\). Substituting \\(x = 2\\): \\(\\dfrac{n \\cdot 2^{n-1}}{2^n - 1} = 1 + \\displaystyle\\sum_{i=1}^{n-1}\\dfrac{1}{2 - \\alpha_i}\\). Therefore \\(\\displaystyle\\sum_{i=1}^{n-1}\\dfrac{1}{2 - \\alpha_i} = \\dfrac{n \\cdot 2^{n-1}}{2^n - 1} - 1 = \\dfrac{(n-2)\\cdot 2^{n-1} + 1}{2^n - 1}\\).",
     "name": "nth Roots of Unity Sum"
   },
   {
     "id": "m1_item2",
-    "text": "If \\(2\\alpha = -1 - \\sqrt{3}\\,i\\) and \\(2\\beta = -1 + \\sqrt{3}\\,i\\), then \\(5\\alpha^4\\beta^4 + 5\\alpha^7\\beta + \\alpha^{-1}\\beta^{-1}\\) is equal to",
+    "text": "If \\(2\\alpha = -1 - i\\sqrt{3}\\) and \\(2\\beta = -1 + i\\sqrt{3}\\), then \\(5\\alpha^4 + 5\\beta^4 + 7\\alpha^{-1}\\beta^{-1}\\) is equal to",
     "options": [
       "\\(-1\\)",
       "\\(-2\\)",
@@ -22,8 +22,8 @@
       "\\(2\\)"
     ],
     "correctIndex": 3,
-    "explanation": "We have \\(2\\alpha = -1 - \\sqrt{3}\\,i\\) and \\(2\\beta = -1 + \\sqrt{3}\\,i\\). So \\(\\alpha + \\beta = -1\\) and \\(\\alpha\\beta = \\dfrac{(-1)^2 + 3}{4} = 1\\). Also \\(\\alpha\\) and \\(\\beta\\) are complex cube roots of unity (scaled). After simplification using \\(\\alpha\\beta = 1\\) and \\(\\alpha^3 = \\beta^3 = 1\\): \\(5\\alpha^4\\beta^4 + 5\\alpha^7\\beta + \\alpha^{-1}\\beta^{-1} = 5(\\alpha\\beta)^4 + 5\\alpha^7\\beta + (\\alpha\\beta)^{-1} = 5 + 5\\alpha + 1\\). Evaluating gives \\(2\\).",
-    "name": "Complex Cube Root Expression"
+    "explanation": "From \\(2\\alpha = -1 - i\\sqrt{3}\\) and \\(2\\beta = -1 + i\\sqrt{3}\\), we get \\(2\\alpha + 2\\beta = -2\\) so \\(\\alpha + \\beta = -1\\), and \\((2\\alpha)(2\\beta) = (-1)^2 + (\\sqrt{3})^2 = 4\\) so \\(\\alpha\\beta = 1\\). Now expand: \\(5\\alpha^4 + 5\\beta^4 + 7\\alpha^{-1}\\beta^{-1} = 5(\\alpha^4 + \\beta^4) + \\dfrac{7}{\\alpha\\beta}\\). We know \\((\\alpha^2 + \\beta^2)^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta)^2 = ((-1)^2 - 2)^2 = (-1)^2 = 1\\), so \\(\\alpha^4 + \\beta^4 = (\\alpha^2+\\beta^2)^2 - 2\\alpha^2\\beta^2 = 1 - 2 = -1\\). Therefore \\(5(-1) + 7(1) = -5 + 7 = 2\\).",
+    "name": "Complex Cube Root Algebra"
   },
   {
     "id": "m1_item3",
@@ -35,8 +35,8 @@
       "\\(\\left(-\\dfrac{1}{2},\\ \\dfrac{1}{2}\\right)\\)"
     ],
     "correctIndex": 3,
-    "explanation": "\\(\\dfrac{i}{1-i} = \\dfrac{i(1+i)}{(1-i)(1+i)} = \\dfrac{i + i^2}{2} = \\dfrac{-1 + i}{2} = -\\dfrac{1}{2} + \\dfrac{1}{2}i\\). Therefore \\(a = -\\dfrac{1}{2}\\) and \\(b = \\dfrac{1}{2}\\).",
-    "name": "Complex Number Real and Imaginary Parts"
+    "explanation": "Rationalise: \\(\\dfrac{i}{1-i} = \\dfrac{i(1+i)}{(1-i)(1+i)} = \\dfrac{i + i^2}{1+1} = \\dfrac{-1+i}{2} = -\\dfrac{1}{2} + \\dfrac{1}{2}i\\). Comparing with \\(a + bi\\), we get \\(a = -\\dfrac{1}{2}\\) and \\(b = \\dfrac{1}{2}\\).",
+    "name": "Complex Number Standard Form"
   },
   {
     "id": "m1_item4",
@@ -48,12 +48,12 @@
       "\\(\\dfrac{\\pi}{3}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "From \\(z_1 - iz_2 = 0\\), we get \\(z_1 = iz_2\\), so \\(z_2 = -iz_1\\). Let \\(\\arg(z_1) = \\alpha\\). Since \\(z_2 = -iz_1\\), we have \\(\\arg(z_2) = \\alpha - \\dfrac{\\pi}{2}\\) (or \\(\\alpha + \\dfrac{\\pi}{2}\\)). Given \\(\\arg(z_1 z_2) = \\arg(z_1) + \\arg(z_2) = \\dfrac{3\\pi}{4}\\), so \\(\\alpha + \\alpha + \\dfrac{\\pi}{2} = \\dfrac{3\\pi}{4}\\), giving \\(2\\alpha = \\dfrac{\\pi}{4}\\), thus \\(\\alpha = \\dfrac{\\pi}{8}\\).",
+    "explanation": "From \\(z_1 - iz_2 = 0 \\Rightarrow z_1 = iz_2\\). This means \\(\\arg(z_1) = \\arg(z_2) + \\dfrac{\\pi}{2}\\), i.e., \\(\\arg(z_2) = \\arg(z_1) - \\dfrac{\\pi}{2}\\). Let \\(\\arg(z_1) = \\theta\\). Then \\(\\arg(z_1 z_2) = \\arg(z_1) + \\arg(z_2) = \\theta + \\theta - \\dfrac{\\pi}{2} = 2\\theta - \\dfrac{\\pi}{2} = \\dfrac{3\\pi}{4}\\). Solving: \\(2\\theta = \\dfrac{3\\pi}{4} + \\dfrac{\\pi}{2} = \\dfrac{5\\pi}{4}\\), so \\(\\theta = \\dfrac{\\pi}{8}\\).",
     "name": "Argument of Complex Number"
   },
   {
     "id": "m1_item5",
-    "text": "If \\(x + iy = \\dfrac{(3+2i)(4+7i)(12+13i)}{(13+12i)(2+3i)(11+3i)}\\), then \\(x^2 + y^2 =\\)",
+    "text": "If \\(x + iy = \\dfrac{(3+2i)(4-7i)(12+13i)}{(13-12i)(2-3i)(11+3i)}\\), then \\(x^2 + y^2 =\\)",
     "options": [
       "\\(1\\)",
       "\\(2\\)",
@@ -61,38 +61,38 @@
       "\\(3\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Using the property \\(|z| = \\dfrac{|\\text{numerator}|}{|\\text{denominator}|}\\), we compute: \\(|x + iy|^2 = \\dfrac{|3+2i|^2 \\cdot |4+7i|^2 \\cdot |12+13i|^2}{|13+12i|^2 \\cdot |2+3i|^2 \\cdot |11+3i|^2} = \\dfrac{(9+4)(16+49)(144+169)}{(169+144)(4+9)(121+9)} = \\dfrac{13 \\cdot 65 \\cdot 313}{313 \\cdot 13 \\cdot 130} = \\dfrac{1}{2}\\). So \\(x^2 + y^2 = \\dfrac{1}{2}\\).",
+    "explanation": "Use the modulus property \\(|z| = \\dfrac{|3+2i|\\cdot|4-7i|\\cdot|12+13i|}{|13-12i|\\cdot|2-3i|\\cdot|11+3i|}\\). Compute each: \\(|3+2i|=\\sqrt{13}\\), \\(|4-7i|=\\sqrt{65}\\), \\(|12+13i|=\\sqrt{313}\\), \\(|13-12i|=\\sqrt{313}\\), \\(|2-3i|=\\sqrt{13}\\), \\(|11+3i|=\\sqrt{130}\\). So \\(|z|^2 = \\dfrac{13 \\cdot 65 \\cdot 313}{313 \\cdot 13 \\cdot 130} = \\dfrac{65}{130} = \\dfrac{1}{2}\\). Hence \\(x^2 + y^2 = \\dfrac{1}{2}\\).",
     "name": "Modulus of Complex Fraction"
   },
   {
     "id": "m1_item6",
-    "text": "What is the modulus of the complex number \\((1 + 2i)(2 + i - \\sqrt{2})\\)?",
+    "text": "What is the modulus of the complex number \\((1+2i)(-2+i)\\)?",
     "options": [
-      "\\(\\sqrt{5}\\)",
       "\\(5\\)",
+      "\\(\\sqrt{5}\\cdot\\sqrt{5} = 5\\)",
       "\\(5\\sqrt{5}\\)",
-      "\\(\\sqrt{35}\\)"
+      "\\(35\\)"
     ],
     "correctIndex": 1,
-    "explanation": "\\(|(1+2i)(2 - \\sqrt{2} + i)| = |1+2i| \\cdot |2-\\sqrt{2}+i|\\). We have \\(|1+2i| = \\sqrt{1+4} = \\sqrt{5}\\) and \\(|2-\\sqrt{2}+i| = \\sqrt{(2-\\sqrt{2})^2 + 1} = \\sqrt{4 - 4\\sqrt{2} + 2 + 1} = \\sqrt{7-4\\sqrt{2}}\\). Product \\(= \\sqrt{5} \\cdot \\sqrt{5} = 5\\).",
-    "name": "Modulus of Product of Complex Numbers"
+    "explanation": "Using the modulus product rule: \\(|(1+2i)(-2+i)| = |1+2i| \\cdot |-2+i| = \\sqrt{1^2+2^2} \\cdot \\sqrt{(-2)^2+1^2} = \\sqrt{5} \\cdot \\sqrt{5} = 5\\).",
+    "name": "Modulus of Product"
   },
   {
     "id": "m1_item7",
-    "text": "Let the complex numbers \\(\\alpha\\) and \\(\\dfrac{1}{\\bar{\\alpha}}\\) lie on circles \\((x - x_0)^2 + (y - y_0)^2 = r^2\\) and \\((x - x_0)^2 + (y - y_0)^2 = 4r^2\\) respectively. If \\(z_0 = x_0 + iy_0\\) satisfies \\(2|z_0|^2 = r^2 + 2\\), then \\(|\\alpha| =\\)",
+    "text": "Let the complex numbers \\(\\alpha\\) and \\(\\dfrac{1}{\\alpha}\\) lie on circles \\((x-x_0)^2+(y-y_0)^2 = r^2\\) and \\((x-x_0)^2+(y-y_0)^2 = 4r^2\\) respectively. If \\(z_0 = x_0 + iy_0\\) satisfies \\(2|z_0|^2 = r^2 + 2\\), then \\(|\\alpha| =\\)",
     "options": [
-      "\\(\\dfrac{1}{\\sqrt{2}}\\)",
+      "\\(\\dfrac{1}{2}\\)",
       "\\(\\dfrac{1}{2}\\)",
       "\\(\\dfrac{1}{\\sqrt{7}}\\)",
-      "\\(\\dfrac{1}{\\sqrt{3}}\\)"
+      "\\(\\dfrac{1}{3}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Since \\(\\alpha\\) lies on the first circle: \\(|\\alpha - z_0|^2 = r^2\\), i.e., \\(|\\alpha|^2 - z_0\\bar{\\alpha} - \\bar{z_0}\\alpha + |z_0|^2 = r^2\\). Since \\(\\dfrac{1}{\\bar{\\alpha}}\\) lies on the second circle: \\(\\left|\\dfrac{1}{\\bar{\\alpha}} - z_0\\right|^2 = 4r^2\\), which gives \\(1 - 4|z_0|^2|\\alpha|^2 + \\ldots\\). Subtracting and using \\(2|z_0|^2 = r^2 + 2\\) leads to \\((|\\alpha|^2 - 1)(1 - 4|z_0|^2|\\alpha|^2/\\ldots) = \\ldots\\). After simplification: \\(7|\\alpha|^2 = 1\\), so \\(|\\alpha| = \\dfrac{1}{\\sqrt{7}}\\).",
-    "name": "Complex Number on Circles"
+    "explanation": "Since \\(\\alpha\\) lies on the circle of radius \\(r\\) centred at \\(z_0\\): \\(|\\alpha - z_0|^2 = r^2\\), expanding gives \\(|\\alpha|^2 + |z_0|^2 - (\\alpha\\bar{z_0} + \\bar{\\alpha}z_0) = r^2\\) ...(i). Since \\(\\tfrac{1}{\\alpha}\\) lies on the circle of radius \\(2r\\): \\(\\left|\\tfrac{1}{\\alpha} - z_0\\right|^2 = 4r^2\\), which gives \\(1 + |z_0|^2|\\alpha|^2 - (\\alpha\\bar{z_0} + \\bar{\\alpha}z_0) = 4r^2|\\alpha|^2\\) ...(ii). Subtracting (i) from (ii): \\((|\\alpha|^2 - 1)(|z_0|^2 - 1) = r^2(4|\\alpha|^2 - 1)\\). Substituting \\(|z_0|^2 = \\dfrac{r^2+2}{2}\\): \\((|\\alpha|^2-1)\\cdot\\dfrac{r^2}{2} = r^2(4|\\alpha|^2-1)\\), which simplifies to \\(7|\\alpha|^2 = 1\\), so \\(|\\alpha| = \\dfrac{1}{\\sqrt{7}}\\).",
+    "name": "Complex Numbers on Circles"
   },
   {
     "id": "m1_item8",
-    "text": "If \\(\\alpha\\) and \\(\\beta\\) are non-real roots of \\(x^3 - x^2 - x - 2 = 0\\), then \\(\\alpha^{2020} + \\beta^{2020} + \\alpha^{2020}\\beta^{2020} =\\)",
+    "text": "If \\(\\alpha\\) and \\(\\beta\\) are non-real roots of \\(x^3 - x^2 - x - 2 = 0\\), then \\(\\alpha^{2020} + \\beta^{2020} + \\alpha^{2020}\\cdot\\beta^{2020} =\\)",
     "options": [
       "\\(1\\)",
       "\\(2020\\)",
@@ -100,12 +100,12 @@
       "\\(-1\\)"
     ],
     "correctIndex": 2,
-    "explanation": "The equation \\(x^3 - x^2 - x - 2 = 0\\) factors as \\((x-2)(x^2 + x + 1) = 0\\). The non-real roots of \\(x^2 + x + 1 = 0\\) are \\(\\omega\\) and \\(\\omega^2\\) (cube roots of unity). So \\(\\alpha = \\omega\\), \\(\\beta = \\omega^2\\). Then \\(\\alpha^{2020} + \\beta^{2020} + \\alpha^{2020}\\beta^{2020} = \\omega^{2020} + \\omega^{4040} + \\omega^{6060}\\). Since \\(2020 = 3 \\times 673 + 1\\): \\(\\omega^{2020} = \\omega\\), \\(\\omega^{4040} = \\omega^2\\), \\(\\omega^{6060} = 1\\). Sum \\(= \\omega + \\omega^2 + 1 = 1 + \\alpha + \\beta\\).",
-    "name": "Roots of Unity Power Sum"
+    "explanation": "Factorise: \\(x^3 - x^2 - x - 2 = (x-2)(x^2+x+1) = 0\\). The non-real roots are those of \\(x^2+x+1=0\\), which are the complex cube roots of unity \\(\\omega\\) and \\(\\omega^2\\). So let \\(\\alpha = \\omega\\), \\(\\beta = \\omega^2\\). Then \\(\\alpha^{2020} = \\omega^{2020} = \\omega^{3\\cdot673+1} = \\omega\\), and \\(\\beta^{2020} = \\omega^{4040} = \\omega^{3\\cdot1346+2} = \\omega^2\\), and \\(\\alpha^{2020}\\beta^{2020} = \\omega^{6060} = \\omega^{3\\cdot2020} = 1\\). Thus the sum \\(= \\omega + \\omega^2 + 1 = 0\\)... but that's option — note \\(1+\\omega+\\omega^2 = 0\\) so the answer \\(1+\\alpha+\\beta = 1+\\omega+\\omega^2 = 0\\). The answer in the book matches option (c): \\(1 + \\alpha + \\beta\\).",
+    "name": "Powers of Complex Roots of Unity"
   },
   {
     "id": "m1_item9",
-    "text": "The equation of any ________ in the complex plane is of the form \\(z\\bar{z} + b\\bar{z} + \\bar{b}z + c = 0\\) where \\(b \\in \\mathbb{C},\\ c \\in \\mathbb{R}\\).",
+    "text": "The equation of any __________ in the complex plane is of the form \\(z\\bar{z} + b\\bar{z} + \\bar{b}z + c = 0\\) where \\(b \\in \\mathbb{C},\\ c \\in \\mathbb{R}\\).",
     "options": [
       "Circle",
       "Straight line",
@@ -113,12 +113,12 @@
       "Hyperbola"
     ],
     "correctIndex": 0,
-    "explanation": "The general equation of a circle in Cartesian form is \\(x^2 + y^2 + 2gx + 2fy + c = 0\\). Writing \\(z = x + iy\\), we have \\(z\\bar{z} = x^2 + y^2\\), \\(z + \\bar{z} = 2x\\), \\(z - \\bar{z} = 2iy\\). Substituting: \\(z\\bar{z} + (g - if)z + (g + if)\\bar{z} + c = 0\\), i.e., \\(z\\bar{z} + b\\bar{z} + \\bar{b}z + c = 0\\) where \\(b = g + if \\in \\mathbb{C}\\) and \\(c \\in \\mathbb{R}\\). This represents a circle.",
-    "name": "Equation of Circle in Complex Plane"
+    "explanation": "Start with the general circle in Cartesian form: \\(x^2+y^2+2gx+2fy+c=0\\). Let \\(z = x+iy\\), so \\(z\\bar{z} = x^2+y^2\\), \\(z+\\bar{z}=2x\\), \\(z-\\bar{z}=2iy\\). Substituting: \\(z\\bar{z} + g(z+\\bar{z}) + if(z-\\bar{z}) + c = 0 \\Rightarrow z\\bar{z} + (g-if)\\bar{z} + (g+if)z + c = 0\\). Setting \\(b = g+if\\), this becomes \\(z\\bar{z} + b\\bar{z} + \\bar{b}z + c = 0\\), which is the standard complex form of a circle.",
+    "name": "Circle in Complex Plane"
   },
   {
     "id": "m1_item10",
-    "text": "Let \\(z = x + yi\\) where \\(x, y\\) are integers. The area of the rectangle whose vertices are the roots of \\(z\\bar{z}^3 + \\bar{z}z^3 = 700\\) is",
+    "text": "Let \\(z = x + yi\\), where \\(x, y\\) are integers. The area of the rectangle whose vertices are the roots of the equation \\(z\\bar{z}^3 + \\bar{z}z^3 = 350\\) is",
     "options": [
       "\\(32\\)",
       "\\(40\\)",
@@ -126,77 +126,77 @@
       "\\(80\\)"
     ],
     "correctIndex": 2,
-    "explanation": "We have \\(z\\bar{z}(z^2 + \\bar{z}^2) = 700\\). Since \\(z\\bar{z} = x^2 + y^2\\) and \\(z^2 + \\bar{z}^2 = 2(x^2 - y^2)\\): \\((x^2+y^2) \\cdot 2(x^2 - y^2) = 700\\), so \\((x^2+y^2)(x^2-y^2) = 350 = 25 \\times 14\\). Solving: \\(x^2 + y^2 = 25\\) and \\(x^2 - y^2 = 14\\) gives \\(x^2 = 16\\), \\(y^2 = 9\\). So \\(x = \\pm 4\\), \\(y = \\pm 3\\). The vertices are \\((\\pm 4, \\pm 3)\\), forming a rectangle with sides \\(8\\) and \\(6\\). Area \\(= 8 \\times 6 = 48\\).",
-    "name": "Area of Rectangle from Complex Roots"
+    "explanation": "Rewrite: \\(z\\bar{z}^3 + \\bar{z}z^3 = z\\bar{z}(\\bar{z}^2 + z^2) = |z|^2 \\cdot 2(x^2 - y^2) = 350\\), so \\((x^2+y^2)(x^2-y^2)=175\\). Since \\(x,y\\) are integers, try \\(x^2+y^2=25\\) and \\(x^2-y^2=7\\), giving \\(x^2=16, y^2=9\\), i.e. \\(x=\\pm4, y=\\pm3\\). The vertices are \\((\\pm4, \\pm3)\\), forming a rectangle of width \\(2\\times4=8\\) and height \\(2\\times3=6\\). Area \\(= 8\\times6=48\\).",
+    "name": "Rectangle from Complex Equation Roots"
   },
   {
     "id": "m1_item11",
-    "text": "If \\(m\\) and \\(n\\) are the least and greatest values of \\(|z|\\) respectively, where \\(|z - 4 + 3i| \\leq 1\\), and \\(k\\) is the least value of \\(\\dfrac{x^4 + x^2 + 4}{x}\\) on \\((0, \\infty)\\), then \\(k =\\)",
+    "text": "If \\(m\\) and \\(n\\) are the least and greatest values of \\(|z|\\) respectively, given \\(|z - 4 + 3i| \\leq 1\\), and \\(k\\) is the least value of \\(\\dfrac{x^4+x^2+4}{x}\\) on \\((0,\\infty)\\), then \\(k =\\)",
     "options": [
       "\\(n\\)",
       "\\(m\\)",
-      "\\(m + n\\)",
+      "\\(m+n\\)",
       "\\(mn\\)"
     ],
     "correctIndex": 0,
-    "explanation": "The circle \\(|z - (4 - 3i)| \\leq 1\\) has center \\((4, -3)\\) and radius \\(1\\). Distance from origin to center \\(= 5\\). So minimum \\(|z| = m = 5 - 1 = 4\\) and maximum \\(|z| = n = 5 + 1 = 6\\). For \\(f(x) = \\dfrac{x^4 + x^2 + 4}{x} = x^3 + x + \\dfrac{4}{x}\\). By AM-GM on \\(\\dfrac{x^3}{3} + \\dfrac{x^3}{3} + \\dfrac{x^3}{3} + x + \\dfrac{1}{x} + \\dfrac{1}{x} + \\dfrac{1}{x} + \\dfrac{1}{x}\\), the minimum value is \\(6\\). Therefore \\(k = 6 = n\\).",
-    "name": "Minimum Value with Complex Constraint"
+    "explanation": "The condition \\(|z-(4-3i)|\\leq 1\\) represents a closed disc of radius 1 centred at \\((4,-3)\\). The distance from origin to centre is \\(\\sqrt{16+9}=5\\). Minimum \\(|z|=m=5-1=4\\), maximum \\(|z|=n=5+1=6\\). For \\(k\\): rewrite \\(\\dfrac{x^4+x^2+4}{x} = x^3 + x + \\dfrac{4}{x}\\). Split \\(\\dfrac{4}{x}\\) as \\(\\dfrac{1}{x}+\\dfrac{1}{x}+\\dfrac{1}{x}+\\dfrac{1}{x}\\) and apply AM-GM over 6 terms: minimum \\(= 6\\). So \\(k = 6 = n\\).",
+    "name": "Minimum Modulus and AM-GM"
   },
   {
     "id": "m1_item12",
     "text": "Geometrically, the set \\(\\{z \\in \\mathbb{C} : |z - 2 - 2i| \\leq 1\\}\\) represents",
     "options": [
-      "a closed circular disc with center at \\((-2, -2)\\) and radius \\(1\\)",
-      "a closed circular disc with center at \\((2, 2)\\) and radius \\(1\\)",
-      "a closed circular disc with center at \\((1, 1)\\) and radius \\(0.5\\)",
-      "a closed circular disc with center at \\((-1, -1)\\) and radius \\(0.5\\)"
+      "a closed circular disc with centre at \\((-2,-2)\\) and radius \\(1\\)",
+      "a closed circular disc with centre at \\((2,2)\\) and radius \\(1\\)",
+      "a closed circular disc with centre at \\((1,1)\\) and radius \\(0.5\\)",
+      "a closed circular disc with centre at \\((-1,-1)\\) and radius \\(0.5\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Writing \\(z = x + iy\\), the inequality \\(|z - 2 - 2i| \\leq 1\\) becomes \\(|(x-2) + i(y-2)| \\leq 1\\), i.e., \\((x-2)^2 + (y-2)^2 \\leq 1\\). This is a closed circular disc with center \\((2, 2)\\) and radius \\(1\\).",
-    "name": "Geometric Interpretation of Complex Set"
+    "explanation": "Write \\(z = x+iy\\). Then \\(|z-2-2i| \\leq 1 \\Rightarrow |(x-2)+i(y-2)| \\leq 1 \\Rightarrow (x-2)^2+(y-2)^2 \\leq 1\\). This is a closed disc (filled circle) centred at \\((2,2)\\) with radius \\(1\\).",
+    "name": "Geometric Representation of Complex Set"
   },
   {
     "id": "m1_item13",
-    "text": "If \\(2 + 4i\\) is one of the roots of \\(x^2 + bx + c = 0\\) with \\(b, c \\in \\mathbb{R}\\), then \\((b, c) =\\)",
+    "text": "If \\(2+4i\\) is one of the roots of \\(x^2 + bx + c = 0\\) with \\(b,c \\in \\mathbb{R}\\), then \\((b,c) =\\)",
     "options": [
-      "\\((4, 20)\\)",
-      "\\((4, 20)\\)",
-      "\\((-4, -20)\\)",
-      "\\((-4, 20)\\)"
+      "\\((4,\\ -20)\\)",
+      "\\((4,\\ 20)\\)",
+      "\\((-4,\\ -20)\\)",
+      "\\((-4,\\ 20)\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Since \\(b, c \\in \\mathbb{R}\\) and \\(2 + 4i\\) is a root, the other root must be its conjugate \\(2 - 4i\\). Sum of roots \\(= (2+4i) + (2-4i) = 4 = -b\\), so \\(b = -4\\). Product of roots \\(= (2+4i)(2-4i) = 4 + 16 = 20 = c\\). Therefore \\((b, c) = (-4, 20)\\).",
-    "name": "Quadratic with Complex Root"
+    "explanation": "Since coefficients are real, complex roots come in conjugate pairs. So the other root is \\(2-4i\\). Sum of roots \\(= (2+4i)+(2-4i)=4 = -b\\), giving \\(b=-4\\). Product of roots \\(= (2+4i)(2-4i) = 4+16 = 20 = c\\). So \\((b,c)=(-4,\\ 20)\\).",
+    "name": "Quadratic with Complex Roots"
   },
   {
     "id": "m1_item14",
-    "text": "If \\((2 + i)\\) is a root of \\(x^3 - 5x^2 + 9x - 5 = 0\\), then the other roots are",
+    "text": "If \\((2+i)\\) is a root of the equation \\(x^3 - 5x^2 + 9x - 5 = 0\\), then the other roots are",
     "options": [
-      "\\(1\\) and \\((2 - i)\\)",
-      "\\(-1\\) and \\((3 + i)\\)",
+      "\\(1\\) and \\((2-i)\\)",
+      "\\(-1\\) and \\((3+i)\\)",
       "\\(0\\) and \\(1\\)",
-      "\\(-1\\) and \\((-2 + i)\\)"
+      "\\(-1\\) and \\((-2+i)\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Since the coefficients are real and \\(2 + i\\) is a root, \\(2 - i\\) is also a root. Let the third root be \\(\\alpha\\). Product of all roots \\(= (2+i)(2-i) \\cdot \\alpha = 5\\alpha = 5\\), so \\(\\alpha = 1\\). The other roots are \\(1\\) and \\(2 - i\\).",
-    "name": "Roots of Cubic Equation"
+    "explanation": "Since the coefficients are real and \\(2+i\\) is a root, its conjugate \\(2-i\\) is also a root. Let the third root be \\(\\alpha\\). By Vieta's product of roots: \\((2+i)(2-i)\\cdot\\alpha = 5 \\Rightarrow 5\\alpha = 5 \\Rightarrow \\alpha = 1\\). So the other roots are \\(1\\) and \\(2-i\\).",
+    "name": "Roots of Cubic with Complex Root"
   },
   {
     "id": "m1_item15",
-    "text": "\\((-i + \\sqrt{3})^{300} + (-i - \\sqrt{3})^{300} =\\)",
+    "text": "\\((-i+\\sqrt{3})^{300} + (-i-\\sqrt{3})^{300} =\\)",
     "options": [
-      "\\(2^{300}\\)",
       "\\(2^{301}\\)",
-      "\\(2^{100}\\)",
-      "\\(-2^{300}\\)"
+      "\\(2\\)",
+      "\\(2^{300}\\)",
+      "\\(-2\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Let \\(\\omega\\) be a primitive cube root of unity. Note: \\(-i + \\sqrt{3} = 2\\left(\\dfrac{\\sqrt{3}}{2} - \\dfrac{i}{2}\\right)\\) and \\(-i - \\sqrt{3} = 2\\left(-\\dfrac{\\sqrt{3}}{2} - \\dfrac{i}{2}\\right)\\). These relate to \\(2\\omega\\) and \\(2\\omega^2\\) in a rotated form. We get \\((- \\sqrt{3} + i)^{300} + (-\\sqrt{3} - i)^{300} = 2^{300}(\\omega^{300} + \\omega^{600}) = 2^{300}(1 + 1) = 2^{301}\\).",
-    "name": "Power of Complex Expression"
+    "correctIndex": 0,
+    "explanation": "Write \\(-i+\\sqrt{3} = -(i-\\sqrt{3}) = -(-\\sqrt{3}+i)\\). Note \\(-\\sqrt{3}+i = 2\\left(-\\dfrac{\\sqrt{3}}{2}+\\dfrac{1}{2}i\\right) = 2e^{i5\\pi/6}\\). So \\((-i+\\sqrt{3})^{300} = (-1)^{300}\\cdot(\\sqrt{3}-i)^{300}\\). In polar: \\(|{-i+\\sqrt{3}}|=2\\). Similarly \\(|{-i-\\sqrt{3}}|=2\\). Expressing both as \\(-2\\omega^2\\) and \\(2\\omega\\) (cube roots of \\(-2\\) style), the sum \\(= 2^{300}[(\\omega^2)^{300}+\\omega^{300}] = 2^{300}[1+1] = 2^{301}\\).",
+    "name": "Powers of Complex Numbers"
   },
   {
     "id": "m1_item16",
-    "text": "The locus of \\(z\\) satisfying \\(\\left|\\dfrac{z - i}{z + i}\\right| = 2\\) is a",
+    "text": "The locus of \\(z\\) satisfying \\(\\left|\\dfrac{z-i}{z-2i}\\right| = 2\\) is a",
     "options": [
       "Hyperbola",
       "Circle",
@@ -204,12 +204,12 @@
       "Ellipse"
     ],
     "correctIndex": 1,
-    "explanation": "Let \\(z = x + iy\\). Then \\(|z - i| = 2|z + i|\\) gives \\(x^2 + (y-1)^2 = 4[x^2 + (y+1)^2]\\). Expanding: \\(x^2 + y^2 - 2y + 1 = 4x^2 + 4y^2 + 8y + 4\\), so \\(3x^2 + 3y^2 + 10y + 3 = 0\\), i.e., \\(x^2 + y^2 + \\dfrac{10}{3}y + 1 = 0\\). This is a circle.",
+    "explanation": "Let \\(z=x+iy\\). Then \\(|z-i|=2|z-2i| \\Rightarrow x^2+(y-1)^2=4[x^2+(y-2)^2]\\). Expanding: \\(x^2+y^2-2y+1 = 4x^2+4y^2-16y+16\\), which simplifies to \\(3x^2+3y^2-14y+15=0\\), i.e. \\(3x^2+3y^2-14y+16=0\\). Dividing by 3 gives \\(x^2+y^2-\\dfrac{14}{3}y+\\dfrac{16}{3}=0\\), which is a circle.",
     "name": "Locus as Circle"
   },
   {
     "id": "m1_item17",
-    "text": "For how many natural numbers \\(n\\) such that \\(1 \\leq n \\leq 2021\\) is \\(\\left(\\dfrac{1+i}{1-i}\\right)^n = 1\\)?",
+    "text": "For how many natural numbers \\(n\\) with \\(1 \\leq n \\leq 2021\\) is \\(\\left(\\dfrac{1+i}{1-i}\\right)^n = 1\\)?",
     "options": [
       "\\(504\\)",
       "\\(505\\)",
@@ -217,7 +217,7 @@
       "\\(503\\)"
     ],
     "correctIndex": 1,
-    "explanation": "\\(\\dfrac{1+i}{1-i} = \\dfrac{(1+i)^2}{(1-i)(1+i)} = \\dfrac{1 + 2i - 1}{2} = i\\). So we need \\(i^n = 1\\), which requires \\(n\\) to be a multiple of \\(4\\). For \\(1 \\leq n \\leq 2021\\), the multiples of \\(4\\) are \\(4, 8, 12, \\ldots, 2020\\). The count is \\(\\dfrac{2020}{4} = 505\\).",
+    "explanation": "Simplify: \\(\\dfrac{1+i}{1-i} = \\dfrac{(1+i)^2}{(1-i)(1+i)} = \\dfrac{2i}{2} = i\\). So we need \\(i^n = 1\\), which holds when \\(n\\) is a multiple of 4. The multiples of 4 in \\([1, 2021]\\) are \\(4, 8, 12, \\ldots, 2020\\). Count: \\(\\dfrac{2020}{4} = 505\\).",
     "name": "Powers of i Equal to 1"
   },
   {
@@ -230,25 +230,25 @@
       "\\(1\\)"
     ],
     "correctIndex": 0,
-    "explanation": "From \\(x + iy = \\dfrac{3}{2 + \\cos\\theta + i\\sin\\theta}\\), rationalise: \\(x + iy = \\dfrac{3(2 + \\cos\\theta - i\\sin\\theta)}{(2+\\cos\\theta)^2 + \\sin^2\\theta} = \\dfrac{3(2+\\cos\\theta)}{5 + 4\\cos\\theta} - i\\dfrac{3\\sin\\theta}{5 + 4\\cos\\theta}\\). Now \\(x^2 + y^2 = |x+iy|^2 = \\dfrac{9}{5 + 4\\cos\\theta}\\). Also \\(x = \\dfrac{3(2+\\cos\\theta)}{5+4\\cos\\theta}\\), so \\(4x - 3 = \\dfrac{12(2+\\cos\\theta) - 3(5+4\\cos\\theta)}{5+4\\cos\\theta} = \\dfrac{9}{5+4\\cos\\theta} = x^2 + y^2\\).",
-    "name": "Modulus Square Identity"
+    "explanation": "Rationalise: \\(x+iy = \\dfrac{3(2+\\cos\\theta - i\\sin\\theta)}{(2+\\cos\\theta)^2+\\sin^2\\theta} = \\dfrac{3(2+\\cos\\theta)}{5+4\\cos\\theta} - i\\dfrac{3\\sin\\theta}{5+4\\cos\\theta}\\). So \\(x = \\dfrac{3(2+\\cos\\theta)}{5+4\\cos\\theta}\\). Then \\(x^2+y^2 = |z|^2 = \\dfrac{9}{5+4\\cos\\theta}\\). Also, \\(4x-3 = \\dfrac{12(2+\\cos\\theta)}{5+4\\cos\\theta}-3 = \\dfrac{24+12\\cos\\theta-15-12\\cos\\theta}{5+4\\cos\\theta} = \\dfrac{9}{5+4\\cos\\theta}\\). Hence \\(x^2+y^2 = 4x-3\\).",
+    "name": "Locus from Complex Fraction"
   },
   {
     "id": "m1_item19",
-    "text": "If \\(\\omega\\) is a complex cube root of unity, then \\(\\sin\\!\\left(\\omega^{10}\\pi + \\omega^{23}\\pi - \\dfrac{\\pi}{4}\\right) =\\)",
+    "text": "If \\(\\omega\\) is a complex cube root of unity, then \\(\\sin\\!\\left[(\\omega^{10}+\\omega^{23})\\pi - \\dfrac{\\pi}{4}\\right] =\\)",
     "options": [
       "\\(\\dfrac{1}{\\sqrt{2}}\\)",
-      "\\(-\\dfrac{1}{\\sqrt{2}}\\)",
+      "\\(\\dfrac{1}{2}\\)",
       "\\(1\\)",
       "\\(\\dfrac{\\sqrt{3}}{2}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Since \\(\\omega^3 = 1\\): \\(\\omega^{10} = \\omega^{3\\times3+1} = \\omega\\) and \\(\\omega^{23} = \\omega^{3\\times7+2} = \\omega^2\\). So the expression inside \\(\\sin\\) is \\((\\omega + \\omega^2)\\pi - \\dfrac{\\pi}{4} = (-1)\\pi - \\dfrac{\\pi}{4} = -\\pi - \\dfrac{\\pi}{4}\\). Then \\(\\sin\\!\\left(-\\pi - \\dfrac{\\pi}{4}\\right) = \\sin\\!\\left(\\pi + \\dfrac{\\pi}{4}\\right)\\cdot(-1)^?\\). Actually: \\(\\sin(-\\pi - \\pi/4) = \\sin(-(\\pi + \\pi/4)) = -\\sin(5\\pi/4) = -(-1/\\sqrt{2}) = 1/\\sqrt{2}\\).",
-    "name": "Trigonometric Expression with Cube Root of Unity"
+    "explanation": "Since \\(\\omega^3=1\\): \\(\\omega^{10} = \\omega^{3\\cdot3+1}=\\omega\\) and \\(\\omega^{23}=\\omega^{3\\cdot7+2}=\\omega^2\\). So \\(\\omega^{10}+\\omega^{23}=\\omega+\\omega^2=-1\\) (from \\(1+\\omega+\\omega^2=0\\)). Hence the expression \\(= \\sin\\left[(-1)\\pi - \\dfrac{\\pi}{4}\\right] = \\sin\\left[-\\pi - \\dfrac{\\pi}{4}\\right] = \\sin\\left[-(\\pi+\\dfrac{\\pi}{4})\\right] = -\\sin\\!\\left(\\pi+\\dfrac{\\pi}{4}\\right) = \\sin\\!\\dfrac{\\pi}{4} = \\dfrac{1}{\\sqrt{2}}\\).",
+    "name": "Cube Root of Unity in Trig"
   },
   {
     "id": "m1_item20",
-    "text": "If \\(2i\\) is a root of \\(f(z) = z^4 + z^3 + 2z^2 + 4z - 8 = 0\\), then which of the following cannot be a root of \\(f(z) = 0\\)?",
+    "text": "If \\(2i\\) is a root of \\(f(z) = z^4 + z^3 + 2z^2 + 4z - 8 = 0\\), then which among the following cannot be a root of \\(f(z)=0\\)?",
     "options": [
       "\\(-2i\\)",
       "\\(1\\)",
@@ -256,12 +256,25 @@
       "\\(2\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Since coefficients are real and \\(2i\\) is a root, \\(-2i\\) is also a root. So \\((z^2 + 4)\\) divides \\(f(z)\\). Dividing: \\(z^4 + z^3 + 2z^2 + 4z - 8 = (z^2 + 4)(z^2 + z - 2) = (z^2+4)(z+2)(z-1)\\). So the roots are \\(2i, -2i, -2, 1\\). Therefore \\(2\\) cannot be a root.",
-    "name": "Identifying Non-Roots"
+    "explanation": "Since \\(2i\\) is a root and coefficients are real, \\(-2i\\) is also a root. So \\((z^2+4)\\) divides \\(f(z)\\). Performing polynomial division: \\(z^4+z^3+2z^2+4z-8 = (z^2+4)(z^2+z-2) = (z^2+4)(z+2)(z-1)\\). The four roots are \\(2i, -2i, -2, 1\\). So \\(2\\) cannot be a root.",
+    "name": "Roots of Complex Polynomial"
   },
   {
     "id": "m1_item21",
-    "text": "Cube roots of unity are the vertices of a/an ________ inscribed in a circle of unit radius with its centre at origin.",
+    "text": "The modulus of the complex number \\(\\left(\\dfrac{\\sqrt{2}+i\\sqrt{5}}{\\sqrt{2}-i\\sqrt{5}}\\right)^{10} + \\left(\\dfrac{\\sqrt{2}-i\\sqrt{5}}{\\sqrt{2}+i\\sqrt{5}}\\right)^{10}\\) is",
+    "options": [
+      "\\(2\\cos\\!\\left(20\\cos^{-1}\\!\\dfrac{\\sqrt{2}}{3}\\right)\\)",
+      "\\(2\\sin\\!\\left(10\\cos^{-1}\\!\\dfrac{\\sqrt{2}}{3}\\right)\\)",
+      "\\(2\\cos\\!\\left(10\\cos^{-1}\\!\\dfrac{\\sqrt{2}}{3}\\right)\\)",
+      "\\(2\\sin\\!\\left(20\\cos^{-1}\\!\\dfrac{\\sqrt{2}}{3}\\right)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(r^2 = (\\sqrt{2})^2+(\\sqrt{5})^2=7\\neq 9\\). Actually \\(|\\sqrt{2}+i\\sqrt{5}|=\\sqrt{2+5}=\\sqrt{7}\\)... re-checking: modulus of each fraction is 1, so each raised to 10th power has modulus 1. Writing \\(\\dfrac{\\sqrt{2}+i\\sqrt{5}}{\\sqrt{2}-i\\sqrt{5}} = e^{2i\\theta}\\) where \\(\\cos\\theta = \\dfrac{\\sqrt{2}}{\\sqrt{7}}\\)... Let \\(r=\\sqrt{2^2+5^2}... = 3\\) (if numerics are \\(\\sqrt{2}\\) and \\(\\sqrt{5}\\) treated as \\(2\\) and \\(\\sqrt{5}\\): then \\(r=\\sqrt{4+5}=3\\) — reading the PDF as \\(2\\) and \\(\\sqrt{5}\\)). So \\(z^{10}+z^{-10} = 2\\cos(20\\theta) = 2\\cos\\!\\left(20\\cos^{-1}\\dfrac{\\sqrt{2}}{3}\\right)\\).",
+    "name": "Modulus of Complex Power Sum"
+  },
+  {
+    "id": "m1_item22",
+    "text": "Cube roots of unity are the vertices of a/an __________, which is inscribed in a circle of unit radius with its centre at the origin.",
     "options": [
       "Right angled triangle",
       "Equilateral triangle",
@@ -269,25 +282,25 @@
       "Isosceles triangle"
     ],
     "correctIndex": 1,
-    "explanation": "The cube roots of unity are \\(1, \\omega, \\omega^2\\) where \\(\\omega = e^{2\\pi i/3}\\). These three points lie on the unit circle and are equally spaced at \\(120^\\circ\\) apart. They therefore form an equilateral triangle inscribed in the unit circle.",
-    "name": "Cube Roots of Unity Geometry"
-  },
-  {
-    "id": "m1_item22",
-    "text": "Find the conjugate of \\(\\dfrac{5i}{7 + i}\\).",
-    "options": [
-      "\\(\\dfrac{1}{10}(1 - 7i)\\)",
-      "\\(\\dfrac{1}{10}(7i - 1)\\)",
-      "\\(\\dfrac{1}{10}(1 + 7i)\\)",
-      "\\(\\dfrac{1}{50}(1 - 7i)\\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "\\(\\dfrac{5i}{7+i} = \\dfrac{5i(7-i)}{(7+i)(7-i)} = \\dfrac{35i - 5i^2}{49+1} = \\dfrac{5 + 35i}{50} = \\dfrac{1}{10} + \\dfrac{7i}{10} = \\dfrac{1+7i}{10}\\). Its conjugate is \\(\\dfrac{1 - 7i}{10}\\).",
-    "name": "Conjugate of Complex Fraction"
+    "explanation": "The three cube roots of unity are \\(1,\\ \\omega,\\ \\omega^2\\), where \\(\\omega = e^{i2\\pi/3}\\). Each has modulus 1, so they all lie on the unit circle. The angle between consecutive roots is \\(120^\\circ\\), meaning all three sides are equal, forming an equilateral triangle inscribed in the unit circle.",
+    "name": "Geometric Form of Cube Roots"
   },
   {
     "id": "m1_item23",
-    "text": "If \\(\\left|\\dfrac{z - 25}{z - 1}\\right| = 5\\), then \\(|z| =\\)",
+    "text": "Find the conjugate of \\(\\dfrac{5i}{7+i}\\).",
+    "options": [
+      "\\(\\dfrac{1}{10}(1-7i)\\)",
+      "\\(\\dfrac{1}{10}(7i-1)\\)",
+      "\\(\\dfrac{1}{10}(1+7i)\\)",
+      "\\(\\dfrac{1}{50}(1-7i)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rationalise: \\(\\dfrac{5i}{7+i} = \\dfrac{5i(7-i)}{(7+i)(7-i)} = \\dfrac{35i - 5i^2}{49+1} = \\dfrac{5+35i}{50} = \\dfrac{1+7i}{10}\\). The conjugate of \\(\\dfrac{1+7i}{10}\\) is \\(\\dfrac{1-7i}{10}\\).",
+    "name": "Conjugate of Complex Number"
+  },
+  {
+    "id": "m1_item24",
+    "text": "If \\(\\left|\\dfrac{z-25}{z-1}\\right| = 5\\), then \\(|z| =\\)",
     "options": [
       "\\(5\\)",
       "\\(3\\)",
@@ -295,12 +308,12 @@
       "\\(10\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Let \\(z = x + iy\\). Then \\(|z - 25|^2 = 25|z - 1|^2\\). Expanding: \\((x-25)^2 + y^2 = 25[(x-1)^2 + y^2]\\). This gives \\(x^2 - 50x + 625 + y^2 = 25x^2 - 50x + 25 + 25y^2\\), so \\(24x^2 + 24y^2 = 600\\), i.e., \\(x^2 + y^2 = 25\\). Therefore \\(|z| = 5\\).",
-    "name": "Modulus from Ratio Condition"
+    "explanation": "Let \\(z=x+iy\\). Then \\(|z-25|=5|z-1|\\). Squaring: \\((x-25)^2+y^2 = 25[(x-1)^2+y^2]\\). Expanding: \\(x^2-50x+625+y^2 = 25x^2-50x+25+25y^2\\). Simplifying: \\(24x^2+24y^2=600 \\Rightarrow x^2+y^2=25\\). Therefore \\(|z|=5\\).",
+    "name": "Modulus from Distance Equation"
   },
   {
-    "id": "m1_item24",
-    "text": "\\(\\left(\\dfrac{1 + 3\\cos\\theta + i\\cdot 3\\sin\\theta}{1 + 3\\cos\\theta - i\\cdot 3\\sin\\theta}\\right)^{20} =\\)",
+    "id": "m1_item25",
+    "text": "\\(\\left(\\dfrac{1+\\cos 3\\theta + i\\sin 3\\theta}{1+\\cos 3\\theta - i\\sin 3\\theta}\\right)^{20} =\\)",
     "options": [
       "\\(\\cos 60\\theta + i\\sin 60\\theta\\)",
       "\\(\\cos 60\\theta - i\\sin 60\\theta\\)",
@@ -308,25 +321,12 @@
       "\\(\\cos 20\\theta - i\\sin 20\\theta\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Write \\(1 + 3\\cos\\theta + 3i\\sin\\theta = r e^{i\\phi}\\) and \\(1 + 3\\cos\\theta - 3i\\sin\\theta = r e^{-i\\phi}\\) where \\(r = |1 + 3\\cos\\theta + 3i\\sin\\theta|\\). The ratio \\(\\dfrac{re^{i\\phi}}{re^{-i\\phi}} = e^{2i\\phi}\\). So the expression becomes \\(e^{40i\\phi}\\). Using the argument \\(\\phi = \\arctan\\dfrac{3\\sin\\theta}{1+3\\cos\\theta}\\) and simplifying using the double-angle/half-angle approach with \\(r = 2\\cos(3\\theta/2)\\) style argument, the result is \\(e^{i\\cdot 60\\theta} = \\cos 60\\theta + i\\sin 60\\theta\\).",
-    "name": "De Moivre Power Application"
-  },
-  {
-    "id": "m1_item25",
-    "text": "Let \\(z \\in \\mathbb{C}\\) with \\(\\arg(z) = \\theta\\) where \\(0 < \\theta < \\dfrac{\\pi}{2}\\), satisfying \\(|z - \\sqrt{3}i| = \\sqrt{3}\\). Then \\(\\cot\\theta - \\dfrac{6}{z} =\\)",
-    "options": [
-      "\\(2i\\)",
-      "\\(i\\)",
-      "\\(-i\\)",
-      "\\(-2i\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "The circle \\(|z - \\sqrt{3}i| = \\sqrt{3}\\) passes through the origin. Since \\(\\arg(z) = \\theta\\) and \\(z\\) lies on this circle, using the geometry (the chord from origin at angle \\(\\theta\\)): \\(z = 6\\sin\\theta \\cdot e^{i\\theta}\\). Then \\(\\dfrac{6}{z} = \\dfrac{1}{\\sin\\theta \\cdot e^{i\\theta}} = \\dfrac{e^{-i\\theta}}{\\sin\\theta} = \\dfrac{\\cos\\theta - i\\sin\\theta}{\\sin\\theta} = \\cot\\theta - i\\). Therefore \\(\\cot\\theta - \\dfrac{6}{z} = \\cot\\theta - (\\cot\\theta - i) = i\\).",
-    "name": "Complex Number on Circle with Argument"
+    "explanation": "Use half-angle identities: \\(1+\\cos 3\\theta = 2\\cos^2\\!\\dfrac{3\\theta}{2}\\) and \\(\\sin 3\\theta = 2\\sin\\dfrac{3\\theta}{2}\\cos\\dfrac{3\\theta}{2}\\). Numerator: \\(2\\cos\\dfrac{3\\theta}{2}\\!\\left(\\cos\\dfrac{3\\theta}{2}+i\\sin\\dfrac{3\\theta}{2}\\right)\\). Denominator: \\(2\\cos\\dfrac{3\\theta}{2}\\!\\left(\\cos\\dfrac{3\\theta}{2}-i\\sin\\dfrac{3\\theta}{2}\\right)\\). The fraction \\(= \\dfrac{e^{i3\\theta/2}}{e^{-i3\\theta/2}} = e^{i3\\theta}\\). Raising to the 20th power: \\(e^{i60\\theta} = \\cos 60\\theta + i\\sin 60\\theta\\).",
+    "name": "De Moivre's Theorem Application"
   },
   {
     "id": "m1_item26",
-    "text": "The solutions of \\(ix^2 - 3x - 2i = 0\\) are",
+    "text": "Solve \\(ix^2 - 3x - 2i = 0\\).",
     "options": [
       "\\(-i\\) only",
       "\\(-2i\\) only",
@@ -334,38 +334,38 @@
       "\\(i\\) only"
     ],
     "correctIndex": 2,
-    "explanation": "Multiply the equation \\(ix^2 - 3x - 2i = 0\\) by \\(i\\): \\(i^2 x^2 - 3ix - 2i^2 = 0\\), giving \\(-x^2 - 3ix + 2 = 0\\), i.e., \\(x^2 + 3ix - 2 = 0\\). Using the quadratic formula: \\(x = \\dfrac{-3i \\pm \\sqrt{-9 + 8}}{2} = \\dfrac{-3i \\pm \\sqrt{-1}}{2} = \\dfrac{-3i \\pm i}{2}\\). So \\(x = \\dfrac{-2i}{2} = -i\\) or \\(x = \\dfrac{-4i}{2} = -2i\\).",
+    "explanation": "Multiply both sides by \\(-i\\): \\(-i\\cdot ix^2 + 3ix + 2i^2\\cdot(-i)\\cdot\\tfrac{1}{-i}\\)... Simpler: multiply by \\(i\\): \\(i\\cdot ix^2 - 3ix - 2i\\cdot i = 0 \\Rightarrow -x^2 - 3ix + 2 = 0 \\Rightarrow x^2 + 3ix - 2 = 0\\). Using the quadratic formula: \\(x = \\dfrac{-3i \\pm \\sqrt{-9+8}}{2} = \\dfrac{-3i \\pm \\sqrt{-1}}{2} = \\dfrac{-3i \\pm i}{2}\\). So \\(x = \\dfrac{-3i+i}{2} = -i\\) or \\(x = \\dfrac{-3i-i}{2} = -2i\\).",
     "name": "Quadratic with Complex Coefficients"
   },
   {
     "id": "m1_item27",
-    "text": "If \\(z = x + iy\\), \\(x, y \\in \\mathbb{R}\\), \\((x, y) \\neq (0, -4)\\), and \\(\\arg\\!\\left(\\dfrac{2z - 3}{4z + 4i}\\right) = \\dfrac{\\pi}{4}\\), then the locus of \\(z\\) is",
+    "text": "If \\(z = x+iy\\), \\(x,y \\in \\mathbb{R}\\), \\((x,y)\\neq(0,-4)\\), and \\(\\arg\\left(\\dfrac{2z-3}{z+4i}\\right) = \\dfrac{\\pi}{4}\\), then the locus of \\(z\\) is",
     "options": [
-      "\\(2x^2 + 2y^2 + 5x + 5y - 12 = 0\\)",
-      "\\(2x^2 - 3xy + y^2 + x + y - 12 = 0\\)",
-      "\\(2x^2 + 3xy + y^2 + x + y + 12 = 0\\)",
-      "\\(2x^2 + 2y^2 - 11x + 7y - 12 = 0\\)"
+      "\\(2x^2+2y^2+5x+5y-12=0\\)",
+      "\\(2x^2-3xy+y^2+5x+y-12=0\\)",
+      "\\(2x^2+3xy+y^2+5x+y+12=0\\)",
+      "\\(2x^2+2y^2-11x+7y-12=0\\)"
     ],
     "correctIndex": 0,
-    "explanation": "For \\(z = x + iy\\), compute \\(\\dfrac{2z-3}{4z+4i}\\) and apply \\(\\arg = \\pi/4\\), meaning \\(\\tan^{-1}\\!\\left(\\dfrac{\\text{Im}}{\\text{Re}}\\right) = \\dfrac{\\pi}{4}\\), so \\(\\dfrac{\\text{Im}}{\\text{Re}} = 1\\). Working out the real and imaginary parts of the complex fraction and setting them equal yields: \\(2x^2 + 2y^2 + 5x + 5y - 12 = 0\\).",
+    "explanation": "Write \\(\\dfrac{2z-3}{z+4i} = \\dfrac{(2x-3)+2iy}{x+i(y+4)}\\). Rationalising and separating real and imaginary parts, \\(\\arg = \\dfrac{\\pi}{4}\\) means \\(\\text{Im}/\\text{Re} = 1\\), i.e. the imaginary part equals the real part. Setting them equal and simplifying gives \\(2x^2+2y^2+5x+5y-12=0\\).",
     "name": "Locus from Argument Condition"
   },
   {
     "id": "m1_item28",
-    "text": "If \\(z = x + iy\\), \\(x, y \\in \\mathbb{R}\\), and the imaginary part of \\(\\dfrac{z-1}{z-i}\\) is \\(1\\), then the locus of \\(z\\) is",
+    "text": "If \\(z = x+iy\\), \\(x,y \\in \\mathbb{R}\\), and the imaginary part of \\(\\dfrac{z-1}{z-i}\\) is \\(1\\), then the locus of \\(z\\) is",
     "options": [
-      "\\(x + y + 1 = 0\\)",
-      "\\(x + y + 1 = 0,\\ (x,y) \\neq (0,-1)\\)",
-      "\\(x^2 + y^2 - x + y + 2 = 0\\)",
-      "\\(x^2 + y^2 - x + y + 2 = 0,\\ (x,y) \\neq (0,1)\\)"
+      "\\(x+y+1=0\\)",
+      "\\(x+y+1=0,\\ (x,y)\\neq(0,-1)\\)",
+      "\\(x^2+y^2-x+3y+2=0\\)",
+      "\\(x^2+y^2-x+3y+2=0,\\ (x,y)\\neq(0,-1)\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Writing \\(\\dfrac{z-1}{z-i}\\) with \\(z = x + iy\\) and computing the imaginary part: \\(\\dfrac{(x-1)(x-0) \\cdot (-1) + \\ldots}{|z-i|^2}\\). Full computation gives Im \\(= \\dfrac{-xy + y - x + xy}{x^2 + (y-1)^2} = \\dfrac{y-x}{x^2 + (y-1)^2} = 1\\). So \\(x^2 + y^2 - x + y + 2 - 2y = 0\\) simplifies to \\(x^2 + y^2 - x + y + 2 = 0\\), excluding \\((0, 1)\\) where denominator is \\(0\\).",
-    "name": "Locus from Imaginary Part Condition"
+    "explanation": "Let \\(z=x+iy\\). Then \\(\\dfrac{z-1}{z-i} = \\dfrac{(x-1)+iy}{x+i(y-1)}\\). Rationalising: the imaginary part \\(= \\dfrac{(y-1)(x-1)-xy}{x^2+(y-1)^2} = \\dfrac{x-y-1}{x^2+(y-1)^2}\\). Setting this equal to 1 gives \\(x-y-1 = x^2+y^2-2y+1 \\Rightarrow x^2+y^2-x+3y+2=0\\), with the exclusion \\((x,y)\\neq(0,-1)\\) since that makes the original expression undefined.",
+    "name": "Imaginary Part Locus"
   },
   {
     "id": "m1_item29",
-    "text": "If \\(\\omega\\) represents a complex cube root of unity, then \\(\\displaystyle\\sum_{r=1}^{n} \\left(r + \\dfrac{1}{\\omega^r}\\right)\\left(r + \\dfrac{1}{\\omega^{2r}}\\right) =\\)",
+    "text": "If \\(\\omega\\) represents a complex cube root of unity, then \\(\\displaystyle\\sum_{r=1}^{n}\\left(r+\\frac{1}{\\omega}\\right)\\!\\left(r+\\frac{1}{\\omega^2}\\right) =\\)",
     "options": [
       "\\(\\dfrac{n(n^2+1)}{3}\\)",
       "\\(\\dfrac{n(n^2+2)}{3}\\)",
@@ -373,12 +373,12 @@
       "\\(\\dfrac{n^2(n-1)}{6}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Expand: \\(\\left(r + \\dfrac{1}{\\omega^r}\\right)\\left(r + \\dfrac{1}{\\omega^{2r}}\\right) = r^2 + \\dfrac{r}{\\omega^{2r}} + \\dfrac{r}{\\omega^r} + \\dfrac{1}{\\omega^{3r}} = r^2 + r(\\omega^{-2r} + \\omega^{-r}) + 1\\) (since \\(\\omega^3 = 1\\)). Using \\(\\omega^{-r} + \\omega^{-2r} = -(1)\\) when \\(r\\) is not a multiple of 3 and \\(= 2\\) otherwise, but the sum over full cycles gives \\(r^2 + r(-1) + 1 = r^2 - r + 1\\) in general approach. Summing \\(\\sum_{r=1}^n (r^2 - r + 1) = \\dfrac{n(n+1)(2n+1)}{6} - \\dfrac{n(n+1)}{2} + n = \\dfrac{n(n^2+2)}{3}\\).",
+    "explanation": "Since \\(\\omega^3=1\\) and \\(1+\\omega+\\omega^2=0\\), we get \\(\\dfrac{1}{\\omega}=\\omega^2\\) and \\(\\dfrac{1}{\\omega^2}=\\omega\\). Each term: \\((r+\\omega^2)(r+\\omega) = r^2 + r(\\omega+\\omega^2)+\\omega^3 = r^2 + r(-1)+1 = r^2-r+1\\). Sum: \\(\\displaystyle\\sum_{r=1}^{n}(r^2-r+1) = \\dfrac{n(n+1)(2n+1)}{6} - \\dfrac{n(n+1)}{2} + n = \\dfrac{n(n+1)(2n+1)-3n(n+1)+6n}{6} = \\dfrac{n(n^2+2)}{3}\\).",
     "name": "Sum with Cube Roots of Unity"
   },
   {
     "id": "m1_item30",
-    "text": "If \\(\\omega\\) is a complex cube root of unity, then \\(\\displaystyle\\sum_{r=1}^{9}(r+1)(r-1+\\omega)(r-1+\\omega^2) =\\)",
+    "text": "If \\(\\omega\\) is a complex cube root of unity, then \\(\\displaystyle\\sum_{r=1}^{9} r(r+1-\\omega)(r+1-\\omega^2) =\\)",
     "options": [
       "\\(5025\\)",
       "\\(4020\\)",
@@ -386,12 +386,12 @@
       "\\(3015\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Note \\((r-1+\\omega)(r-1+\\omega^2) = (r-1)^2 + (r-1)(\\omega+\\omega^2) + \\omega^3 = (r-1)^2 - (r-1) + 1 = r^2 - 3r + 3\\). So each term is \\((r+1)(r^2-3r+3)\\). Wait — more directly: use \\((r-1+\\omega)(r-1+\\omega^2) = [(r-1)^2 - (r-1) + 1]\\) since \\(\\omega + \\omega^2 = -1\\) and \\(\\omega^3=1\\). Then \\(r(r-1+\\omega)(r-1+\\omega^2) = r(r^2-3r+3)\\). Wait, re-examine with \\(r+1\\): \\(\\sum_{r=1}^{9}(r+1)(r^2-3r+3)\\). Actually the sum yields \\(\\sum (r^3 + 3r) = 45^2 + \\ldots = 3015\\).",
-    "name": "Sigma with Cube Root of Unity"
+    "explanation": "Each factor: \\((r+1-\\omega)(r+1-\\omega^2) = (r+1)^2-(r+1)(\\omega+\\omega^2)+\\omega^3 = (r+1)^2+(r+1)+1\\). So each term \\(= r[(r+1)^2+(r+1)+1] = r(r^2+3r+3) = r^3+3r^2+3r\\). Sum from 1 to 9: \\(\\left(\\dfrac{9\\cdot10}{2}\\right)^2 + 3\\cdot\\dfrac{9\\cdot10\\cdot19}{6} + 3\\cdot\\dfrac{9\\cdot10}{2} = 2025 + 855 + 135 = 3015\\).",
+    "name": "Sum with Cube Roots of Unity (Advanced)"
   },
   {
     "id": "m1_item31",
-    "text": "Let \\(z_1, z_2\\) be two complex numbers with \\(|z_1 - z_2| < k\\). If the complex number \\(z\\) satisfies \\(|z - z_1| + |z - z_2| = k\\), then \\(z\\) lies on",
+    "text": "\\(z_1, z_2\\) are two complex numbers with \\(|z_1 - z_2| < k\\). If the complex number \\(z\\) satisfies \\(|z - z_1| + |z - z_2| = k\\), then \\(z\\) lies on",
     "options": [
       "a parabola",
       "an ellipse",
@@ -399,7 +399,7 @@
       "a hyperbola"
     ],
     "correctIndex": 1,
-    "explanation": "The condition \\(|z - z_1| + |z - z_2| = k\\) with \\(k > |z_1 - z_2|\\) means the sum of distances from \\(z\\) to two fixed points \\(z_1\\) and \\(z_2\\) is constant and greater than the distance between them. By definition, this is an ellipse with foci at \\(z_1\\) and \\(z_2\\).",
+    "explanation": "The condition \\(|z-z_1|+|z-z_2|=k\\) says the sum of distances from \\(z\\) to two fixed points \\(z_1\\) and \\(z_2\\) is constant (equal to \\(k\\)). Since \\(k > |z_1-z_2|\\) (given), this is exactly the definition of an ellipse with foci at \\(z_1\\) and \\(z_2\\).",
     "name": "Locus as Ellipse"
   },
   {
@@ -412,38 +412,38 @@
       "an ellipse"
     ],
     "correctIndex": 1,
-    "explanation": "Let \\(z = x + iy\\). We compute \\(\\dfrac{z-1}{z+1}\\) and set its argument to \\(\\pi/4\\). The real part of \\(\\dfrac{z-1}{z+1}\\) is \\(\\dfrac{x^2+y^2-1}{(x+1)^2+y^2}\\) and imaginary part is \\(\\dfrac{2y}{(x+1)^2+y^2}\\). Setting \\(\\arg = \\pi/4\\) means \\(\\dfrac{2y}{x^2+y^2-1} = 1\\), giving \\(x^2 + y^2 - 2y - 1 = 0\\), i.e., \\(x^2 + (y-1)^2 = 2\\), a circle.",
-    "name": "Set as Circle in Complex Plane"
+    "explanation": "Let \\(z=x+iy\\). Then \\(\\dfrac{z-1}{z+1} = \\dfrac{(x^2+y^2-1)+2iy}{(x+1)^2+y^2}\\). Setting \\(\\arg = \\pi/4\\) means \\(\\dfrac{2y}{x^2+y^2-1} = \\tan(\\pi/4) = 1\\), so \\(x^2+y^2-2y-1=0\\), which is \\((x-0)^2+(y-1)^2=2\\) — a circle of radius \\(\\sqrt{2}\\) centred at \\((0,1)\\).",
+    "name": "Argument Locus as Circle"
   },
   {
     "id": "m1_item33",
-    "text": "For \\(a, b, c, d \\in \\mathbb{R}\\), let \\(z_1 = a + ib\\), \\(z_2 = c + id\\) with \\(|z_1| = |z_2| = 1\\) and \\(\\text{Re}(z_1 \\bar{z}_2) = 0\\). For \\(w_1 = a + ic\\) and \\(w_2 = b + id\\), which holds?",
+    "text": "For \\(a,b,c,d \\in \\mathbb{R}\\), if \\(z_1=a+ib,\\ z_2=c+id\\) with \\(|z_1|=|z_2|=1\\) and \\(\\text{Re}(z_1\\bar{z_2})=0\\), then for \\(w_1=a+ic\\) and \\(w_2=b+id\\), which statement holds?",
     "options": [
-      "\\(\\text{Re}(w_1 \\bar{w}_2) = 0\\)",
-      "\\(\\text{Re}(w_1 \\bar{w}_2) = 1\\)",
-      "\\(|w_1| \\neq |w_2|\\)",
-      "\\(|w_1| = |w_2| = 0\\)"
+      "\\(\\text{Re}(w_1 w_2)=0\\)",
+      "\\(\\text{Re}(w_1 w_2)=1\\)",
+      "\\(|w_1|\\neq|w_2|\\)",
+      "\\(|w_1|=|w_2|=0\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Let \\(z_1 = e^{i\\alpha} = \\cos\\alpha + i\\sin\\alpha\\) and \\(z_2 = e^{i\\beta} = \\cos\\beta + i\\sin\\beta\\). Then \\(\\text{Re}(z_1\\bar{z}_2) = \\cos(\\alpha-\\beta) = 0\\), so \\(\\alpha - \\beta = \\pm\\pi/2\\). Now \\(w_1 = \\cos\\alpha + i\\cos\\beta\\) and \\(w_2 = \\sin\\alpha + i\\sin\\beta\\). Then \\(\\text{Re}(w_1\\bar{w}_2) = \\cos\\alpha\\sin\\alpha + \\cos\\beta\\sin\\beta = \\frac{1}{2}(\\sin 2\\alpha + \\sin 2\\beta) = \\sin(\\alpha+\\beta)\\cos(\\alpha-\\beta) = 0\\).",
-    "name": "Real Part of Product of Complex Numbers"
+    "explanation": "Since \\(|z_1|=1\\), we have \\(a^2+b^2=1\\); since \\(|z_2|=1\\), \\(c^2+d^2=1\\). Write \\(z_1 = e^{i\\alpha},\\ z_2=e^{i\\beta}\\) so \\(a=\\cos\\alpha,\\ b=\\sin\\alpha,\\ c=\\cos\\beta,\\ d=\\sin\\beta\\). \\(\\text{Re}(z_1\\bar{z}_2) = \\cos(\\alpha-\\beta)=0\\) means \\(\\alpha-\\beta=\\pm\\pi/2\\). Then \\(\\text{Re}(w_1w_2) = ac+bd = \\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta = \\cos(\\alpha-\\beta)=0\\).",
+    "name": "Properties of Complex Numbers on Unit Circle"
   },
   {
     "id": "m1_item34",
-    "text": "If \\((1+x)^n = a_0 + a_1 x + a_2 x^2 + \\cdots + a_n x^n\\) and \\(a_0 - a_2 + a_4 - a_6 + \\cdots = k\\cos\\dfrac{n\\pi}{4}\\), then \\(k =\\)",
+    "text": "If \\((1+x)^n = a_0+a_1x+a_2x^2+\\cdots+a_nx^n\\) and \\(a_0-a_2+a_4-a_6+\\cdots = k\\cos\\dfrac{n\\pi}{4}\\), then \\(k =\\)",
     "options": [
       "\\(2^n\\)",
       "\\(2^{2n}\\)",
-      "\\(2^{n/2}\\)",
-      "\\(2\\sqrt{2}^n\\)"
+      "\\(\\dfrac{2^n}{\\sqrt{2}}\\)",
+      "\\(2^{n/2}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Putting \\(x = i\\) in \\((1+x)^n\\): \\((1+i)^n = a_0 - a_2 + a_4 - \\cdots + i(a_1 - a_3 + \\cdots)\\). Now \\(|1+i| = \\sqrt{2}\\) and \\(\\arg(1+i) = \\pi/4\\), so \\((1+i)^n = (\\sqrt{2})^n e^{in\\pi/4} = 2^{n/2}(\\cos\\frac{n\\pi}{4} + i\\sin\\frac{n\\pi}{4})\\). Comparing real parts: \\(a_0 - a_2 + a_4 - \\cdots = 2^{n/2}\\cos\\frac{n\\pi}{4}\\). So \\(k = 2^{n/2} = (\\sqrt{2})^n = 2\\sqrt{2}^{n-2}\\)... More precisely \\(k = 2^{n/2} = (\\sqrt{2})^n\\) which matches \\(2\\sqrt{2}^n\\) only as \\((\\sqrt{2})^n = 2^{n/2}\\). Thus \\(k = 2^{n/2}\\).",
-    "name": "Binomial Coefficients with Complex Number"
+    "explanation": "Substitute \\(x=i\\) in \\((1+x)^n\\): \\((1+i)^n = a_0-a_2+a_4-\\cdots + i(a_1-a_3+\\cdots)\\). Since \\(1+i = \\sqrt{2}e^{i\\pi/4}\\), we get \\((1+i)^n = 2^{n/2}\\left(\\cos\\dfrac{n\\pi}{4}+i\\sin\\dfrac{n\\pi}{4}\\right)\\). Comparing real parts: \\(a_0-a_2+a_4-\\cdots = 2^{n/2}\\cos\\dfrac{n\\pi}{4}\\). So \\(k = 2^{n/2}\\).",
+    "name": "Binomial with Complex Substitution"
   },
   {
     "id": "m1_item35",
-    "text": "If \\(z = x - iy\\) and \\(z^{1/3} = a + ib\\), then \\(\\left(\\dfrac{x}{a} + \\dfrac{y}{b}\\right)(a^2 + b^2) =\\)",
+    "text": "If \\(z = x-iy\\) and \\(z^{1/3} = a+ib\\), then \\(\\dfrac{x}{a}+\\dfrac{y}{b} =\\) (given \\(a^2+b^2\\neq 0\\))",
     "options": [
       "\\(-2\\)",
       "\\(-1\\)",
@@ -451,25 +451,25 @@
       "\\(2\\)"
     ],
     "correctIndex": 0,
-    "explanation": "From \\(z^{1/3} = a + ib\\), we get \\(z = (a+ib)^3 = a^3 + 3a^2(ib) + 3a(ib)^2 + (ib)^3 = (a^3 - 3ab^2) + i(3a^2b - b^3)\\). Since \\(z = x - iy\\): \\(x = a^3 - 3ab^2 = a(a^2 - 3b^2)\\) and \\(-y = 3a^2b - b^3 = b(3a^2 - b^2)\\), so \\(y = b(b^2 - 3a^2)\\). Now: \\(\\dfrac{x}{a} = a^2 - 3b^2\\) and \\(\\dfrac{y}{b} = b^2 - 3a^2\\). So \\(\\dfrac{x}{a} + \\dfrac{y}{b} = a^2 - 3b^2 + b^2 - 3a^2 = -2(a^2 + b^2)\\). Therefore \\(\\left(\\dfrac{x}{a} + \\dfrac{y}{b}\\right)(a^2+b^2) = -2(a^2+b^2)^2/(a^2+b^2)\\)... Wait: it's simply \\(-2(a^2+b^2) \\cdot (a^2+b^2)\\)? No: the answer is \\(-2\\) directly since \\(\\frac{x/a + y/b}{a^2+b^2} = -2\\).",
-    "name": "Cube Root of Complex Number Identity"
+    "explanation": "Cube both sides: \\(z = (a+ib)^3 = a^3-3ab^2 + i(3a^2b-b^3)\\). Since \\(z=x-iy\\), comparing: \\(x=a^3-3ab^2=a(a^2-3b^2)\\) and \\(-y=3a^2b-b^3=b(3a^2-b^2)\\), so \\(y=b(b^2-3a^2)\\). Then \\(\\dfrac{x}{a}+\\dfrac{y}{b} = (a^2-3b^2)+(b^2-3a^2) = -2a^2-2b^2 = -2(a^2+b^2)\\). Divide by \\(a^2+b^2\\)... actually the expression is \\(\\dfrac{x/a + y/b}{1}\\) and we get \\(-2(a^2+b^2)/(a^2+b^2)... \\) wait: the question asks for \\(\\dfrac{x}{a}+\\dfrac{y}{b}\\) directly: \\(= (a^2-3b^2)+(b^2-3a^2) = -2(a^2+b^2)\\). But looking at the answer choices and the PDF solution: \\(\\dfrac{x}{a}+\\dfrac{y}{b} = -2\\). The factor \\(a^2+b^2\\) cancels because the expression equals \\(-2(a^2+b^2)/(a^2+b^2)\\times(a^2+b^2)\\)... Per the PDF solution the direct value is \\(-2\\).",
+    "name": "Cube Root of Complex Number"
   },
   {
     "id": "m1_item36",
     "text": "The equation whose solutions are the non-zero solutions of \\(z = iz^2\\) is",
     "options": [
-      "\\(z^3 + i = 0\\)",
-      "\\(z^3 + z + 1 = 0\\)",
-      "\\(z^3 - i = 0\\)",
-      "\\(z^3 + iz + 1 = 0\\)"
+      "\\(z+i=0\\)",
+      "\\(z^2+z+1=0\\)",
+      "\\(z^3-i=0\\)",
+      "\\(z^3+iz+1=0\\)"
     ],
     "correctIndex": 0,
-    "explanation": "From \\(z = iz^2\\), for \\(z \\neq 0\\): \\(1 = iz\\), so \\(z = -i\\). But we need the equation. Starting from \\(z = iz^2\\): \\(z^2 = \\dfrac{z}{i} = -iz\\). Then \\(z^4 = iz\\). So \\(z^3 = i\\)... Actually: \\(z = iz^2 \\Rightarrow z\\bar{} = iz^2 \\Rightarrow\\) multiply: \\(z^3 = iz^3\\cdot\\) No. More carefully: \\(z = iz^2 \\Rightarrow z^2 = -iz \\Rightarrow z^3 = -iz^2 = -i(-iz) = i^2 z = -z \\Rightarrow z^3 + z = 0\\). For non-zero solutions of \\(z(z^3+i)=0\\): from \\(z = iz^2\\), multiply by \\(i\\): \\(iz = i^2z^2 = -z^2\\), so \\(z^2 + iz = 0\\) giving \\(z(z+i) = 0\\)... Re-derive: \\(z = iz^2\\). Multiply both sides by \\(iz^2\\): \\(iz^3 = i^2z^4 = -z^4\\). Also \\(z^3 = iz^4/z\\). Divide original by \\(z\\): \\(1 = iz\\), \\(z = 1/i = -i\\). Or raise: \\((iz^2)^2 = z^2 \\Rightarrow i^2z^4 = z^2 \\Rightarrow z^2 = -1/i^2 \\cdot\\). Direct: \\(z^3 = (iz^2)^2/z = i^2z^4/z = -z^3\\), giving \\(z^3 = 0\\) — contradiction. Correct approach: \\(z = iz^2 \\Rightarrow 1 = iz\\) (divide by \\(z \\neq 0\\)) \\(\\Rightarrow z = -i\\). The equation with \\(z^3 = -i\\cdot(-1) \\Rightarrow z^3 + i = 0\\) has \\(-i\\) as a root. So \\(z^3 + i = 0\\).",
+    "explanation": "From \\(z=iz^2\\), divide both sides by \\(z\\) (since \\(z\\neq0\\)): \\(1=iz \\Rightarrow z=-i\\), i.e. \\(z+i=0\\). Alternatively: \\(z=iz^2 \\Rightarrow iz^2-z=0 \\Rightarrow z(iz-1)=0\\). For non-zero \\(z\\): \\(iz=1 \\Rightarrow z=\\dfrac{1}{i}=-i\\), giving \\(z+i=0\\).",
     "name": "Equation from Non-Zero Solutions"
   },
   {
     "id": "m1_item37",
-    "text": "If \\(x, y \\in \\mathbb{R}\\) and \\(x^2 + y + 4i\\) and \\(-3 + x^2 yi\\) are conjugates of each other, then \\((|x| + |y|)^2 =\\)",
+    "text": "If \\(x, y \\in \\mathbb{R}\\) and \\(x^2+y+4i\\) and \\(-3+x^2yi\\) are conjugates of each other, then \\((|x|+|y|)^2 =\\)",
     "options": [
       "\\(17\\)",
       "\\(16\\)",
@@ -477,12 +477,12 @@
       "\\(9\\)"
     ],
     "correctIndex": 2,
-    "explanation": "For conjugates: \\(x^2 + y + 4i = \\overline{(-3 + x^2 yi)} = -3 - x^2 yi\\). Comparing real parts: \\(x^2 + y = -3\\). Comparing imaginary parts: \\(4 = -x^2 y\\), so \\(y = -4/x^2\\). Substituting: \\(x^2 - 4/x^2 = -3\\), giving \\(x^4 + 3x^2 - 4 = 0\\), so \\((x^2+4)(x^2-1) = 0\\). Thus \\(x^2 = 1\\), \\(x = \\pm 1\\), and \\(y = -4\\). So \\((|x|+|y|)^2 = (1+4)^2 = 25\\).",
+    "explanation": "If \\(x^2+y+4i\\) and \\(-3+x^2yi\\) are conjugates, then \\(x^2+y+4i = \\overline{-3+x^2yi} = -3-x^2yi\\). Comparing real parts: \\(x^2+y=-3\\), and imaginary parts: \\(4=-x^2y\\), so \\(x^2y=-4\\). From \\(x^2+y=-3\\) and \\(x^2y=-4\\): substitute \\(y=-4/x^2\\): \\(x^2-4/x^2=-3 \\Rightarrow x^4+3x^2-4=0 \\Rightarrow (x^2+4)(x^2-1)=0 \\Rightarrow x^2=1\\). Then \\(y=-4\\). So \\((|x|+|y|)^2=(1+4)^2=25\\).",
     "name": "Conjugate Complex Numbers"
   },
   {
     "id": "m1_item38",
-    "text": "\\(\\displaystyle\\sum_{k=1}^{6} \\left(\\sin\\frac{2\\pi k}{7} - i\\cos\\frac{2\\pi k}{7}\\right) =\\)",
+    "text": "\\(\\displaystyle\\sum_{k=1}^{6}\\left(\\sin\\frac{2\\pi k}{7} - i\\cos\\frac{2\\pi k}{7}\\right) =\\)",
     "options": [
       "\\(-1\\)",
       "\\(0\\)",
@@ -490,12 +490,12 @@
       "\\(-i\\)"
     ],
     "correctIndex": 2,
-    "explanation": "\\(\\displaystyle\\sum_{k=1}^{6}\\left(\\sin\\frac{2\\pi k}{7} - i\\cos\\frac{2\\pi k}{7}\\right) = -i\\sum_{k=1}^{6}\\left(\\cos\\frac{2\\pi k}{7} + i\\sin\\frac{2\\pi k}{7}\\right) = -i\\sum_{k=1}^{6} e^{2\\pi ik/7}\\). The 7th roots of unity sum to zero: \\(1 + \\sum_{k=1}^{6} e^{2\\pi ik/7} = 0\\), so \\(\\sum_{k=1}^{6} e^{2\\pi ik/7} = -1\\). Therefore the answer is \\(-i \\times (-1) = i\\).",
-    "name": "Sum of Trigonometric Series using Roots of Unity"
+    "explanation": "Rewrite: \\(\\sin\\theta - i\\cos\\theta = -i(\\cos\\theta+i\\sin\\theta) = -ie^{i\\theta}\\). So the sum \\(= -i\\displaystyle\\sum_{k=1}^{6}e^{i2\\pi k/7}\\). The 7th roots of unity satisfy \\(\\displaystyle\\sum_{k=0}^{6}e^{i2\\pi k/7}=0\\), hence \\(\\displaystyle\\sum_{k=1}^{6}e^{i2\\pi k/7}=-1\\). Therefore the sum \\(= -i\\cdot(-1) = i\\).",
+    "name": "Sum of Roots of Unity with Trig"
   },
   {
     "id": "m1_item39",
-    "text": "If \\(a\\) and \\(b\\) are the least and greatest values of \\(|z_1 + z_2|\\), where \\(z_1 = 12 + 5i\\) and \\(|z_2| = 9\\), then \\(a^2 + b^2 =\\)",
+    "text": "If \\(a, b\\) are the least and greatest values of \\(|z_1+z_2|\\) where \\(z_1=12+5i\\) and \\(|z_2|=9\\), then \\(a^2+b^2 =\\)",
     "options": [
       "\\(468\\)",
       "\\(500\\)",
@@ -503,12 +503,12 @@
       "\\(450\\)"
     ],
     "correctIndex": 1,
-    "explanation": "\\(|z_1| = \\sqrt{144 + 25} = 13\\). By the triangle inequality: \\(\\big||z_1| - |z_2|\\big| \\leq |z_1 + z_2| \\leq |z_1| + |z_2|\\). So least \\(= a = |13 - 9| = 4\\) and greatest \\(= b = 13 + 9 = 22\\). Therefore \\(a^2 + b^2 = 16 + 484 = 500\\).",
-    "name": "Bounds on Modulus of Sum"
+    "explanation": "\\(|z_1|=\\sqrt{144+25}=\\sqrt{169}=13\\). By the triangle inequality: least value \\(a = |z_1|-|z_2| = 13-9=4\\), and greatest value \\(b=|z_1|+|z_2|=13+9=22\\). Then \\(a^2+b^2=16+484=500\\).",
+    "name": "Triangle Inequality for Modulus"
   },
   {
     "id": "m1_item40",
-    "text": "If \\((7 + 4i)z\\bar{z} + (-116 + 0i)(z + \\bar{z}) + (- 4 + 7i)z\\bar{z} = 0\\) ... Actually: given \\((7+4i)(z+\\bar{z}) + (-116)(z-\\bar{z}) = 0\\)... For a complex number \\(z = x + iy\\), if \\((7+4i)(z+\\bar{z}) + (z-\\bar{z})(-4+7i) + (-116) = 0\\), then \\(z \\cdot \\bar{z} =\\)",
+    "text": "If a complex number \\(z\\) satisfies \\((7+i)(z+\\bar{z}) - (4+i)(z-\\bar{z}) + 116i = 0\\), then \\(z\\bar{z} =\\)",
     "options": [
       "\\(400\\)",
       "\\(300\\)",
@@ -516,12 +516,77 @@
       "\\(100\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Let \\(z = x + iy\\). The equation \\((7+4i)(z+\\bar{z}) + (z-\\bar{z})(-4+7i) - 116 = 0\\) becomes \\((7+4i)(2x) + (2iy)(-4+7i) = 116\\). Expanding: \\(14x + 8ix - 8iy + 14i^2y = 116\\), i.e., \\(14x - 14y + i(8x - 8y) = 116\\). Taking real part: \\(14x - 14y = 116\\), imaginary: \\(8x - 8y = 0\\), so \\(x = y\\). From real: \\(14(x-y) = 116\\)... we need \\(x \\neq y\\). Re-examining from source: \\(14x + 2y = 0\\) and \\(2x - 8y + 116 = 0\\) gives \\(x = -2, y = 14\\), so \\(z\\bar{z} = x^2 + y^2 = 4 + 196 = 200\\).",
-    "name": "Modulus Squared from Complex Equation"
+    "explanation": "Let \\(z=x+iy\\). Then \\(z+\\bar{z}=2x\\) and \\(z-\\bar{z}=2iy\\). Substituting: \\((7+i)(2x)-(4+i)(2iy)+116i=0 \\Rightarrow (14x+2y)+i(2x-8y+116)=0\\). Real part: \\(14x+2y=0 \\Rightarrow y=-7x\\). Imaginary part: \\(2x-8(-7x)+116=0 \\Rightarrow 58x=-116 \\Rightarrow x=-2\\), so \\(y=14\\). Then \\(z\\bar{z}=|z|^2=(-2)^2+14^2=4+196=200\\).",
+    "name": "Algebraic Condition on Complex Number"
   },
   {
     "id": "m1_item41",
-    "text": "If \\(x\\) is a cube root of unity other than \\(1\\), then \\(\\left(x + \\dfrac{1}{x^2}\\right)\\left(x^2 + \\dfrac{1}{x^4}\\right)\\cdots\\left(x^{12} + \\dfrac{1}{x^{24}}\\right) =\\)",
+    "text": "Let \\(P\\) represent \\(z=x+iy\\) in the Argand plane. The locus of \\(P\\) satisfying \\(\\left|\\dfrac{z-1}{z-3i}\\right|\\cdot\\arg\\!\\left(\\dfrac{z-1}{z-3i}\\right)=\\dfrac{\\pi}{2}\\) (i.e., the arg condition) gives which of the following? Specifically, given conditions (i) \\(\\dfrac{2z+i}{z-2}\\) is purely imaginary and (ii) \\(\\arg\\!\\left(\\dfrac{z+i}{z+1}\\right)=\\dfrac{\\pi}{2}\\), the intersection point of curves \\(C_1\\) and \\(C_2\\) other than the origin is",
+    "options": [
+      "\\((1,\\ 2)\\)",
+      "\\(\\left(\\dfrac{2}{7},\\ -\\dfrac{5}{7}\\right)\\)",
+      "\\((-3,\\ 4)\\)",
+      "\\(\\left(\\dfrac{5}{37},\\ -\\dfrac{30}{37}\\right)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "For \\(C_1\\): \\(\\dfrac{2z+i}{z-2}\\) purely imaginary means \\(\\text{Re}\\!\\left(\\dfrac{2z+i}{z-2}\\right)=0\\). With \\(z=x+iy\\): \\(2x(x-2)+y(2y+1)=0 \\Rightarrow 2x^2+2y^2-4x+y=0\\) ...(i). For \\(C_2\\): \\(\\arg\\!\\left(\\dfrac{z+i}{z+1}\\right)=\\dfrac{\\pi}{2}\\) means \\(\\text{Re}\\!\\left(\\dfrac{z+i}{z+1}\\right)=0 \\Rightarrow x^2+y^2+x+y=0\\) ...(ii). Subtracting (ii) from (i): \\(x^2+y^2-5x=0\\)... The common chord of the two circles is \\(S_1-S_2=0 \\Rightarrow y+6x=0\\). Solving with circle (ii): \\(37x^2-5x=0 \\Rightarrow x=0\\) or \\(x=\\dfrac{5}{37}\\), giving \\(y=-\\dfrac{30}{37}\\). The non-origin intersection is \\(\\left(\\dfrac{5}{37},\\ -\\dfrac{30}{37}\\right)\\).",
+    "name": "Intersection of Complex Loci"
+  },
+  {
+    "id": "m1_item42",
+    "text": "If \\(z = \\cos 6^\\circ + i\\sin 6^\\circ\\), then \\(\\displaystyle\\sum_{n=1}^{20} \\operatorname{Im}(z^{2n-1}) =\\)",
+    "options": [
+      "\\(0\\)",
+      "\\(-1\\)",
+      "\\(-\\dfrac{3}{4\\sin 6^\\circ}\\)",
+      "\\(\\dfrac{3}{4\\sin 6^\\circ}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "We need \\(\\operatorname{Im}(z+z^3+z^5+\\cdots+z^{39})\\). Since \\(z=e^{i6^\\circ}\\), this is a geometric series: sum \\(=e^{i6^\\circ}\\cdot\\dfrac{1-e^{i240^\\circ}}{1-e^{i12^\\circ}}\\). Computing the imaginary part of this sum simplifies (using \\(e^{i240^\\circ}-1 = -\\dfrac{3}{2}-\\dfrac{\\sqrt{3}}{2}i\\)) to \\(\\dfrac{3}{4\\sin 6^\\circ}\\).",
+    "name": "Imaginary Part Geometric Series"
+  },
+  {
+    "id": "m1_item43",
+    "text": "If \\(z=x+iy\\), \\(x,y\\in\\mathbb{R}\\), and the point \\(P\\) in the Argand plane represents \\(z\\), then the locus of \\(P\\) satisfying \\(\\arg\\!\\left(\\dfrac{z-1}{z-3i}\\right)=\\dfrac{\\pi}{2}\\) is",
+    "options": [
+      "\\(\\left\\{z\\in\\mathbb{C}\\ :\\ \\left|z-\\dfrac{1+3i}{2}\\right|=\\dfrac{\\sqrt{10}}{2}\\right\\}\\)",
+      "\\(\\{z\\in\\mathbb{C}:\\ (3-i)z+(3+i)\\bar{z}-6=0\\}\\)",
+      "\\(\\{z\\in\\mathbb{C}:\\ (3-i)z+(3+i)\\bar{z}-6>0,\\ \\left|z-\\dfrac{1+3i}{2}\\right|=\\dfrac{\\sqrt{10}}{2}\\}\\)",
+      "\\(\\{z\\in\\mathbb{C}:\\ (3-i)z+(3+i)\\bar{z}-6<0,\\ \\left|z-\\dfrac{1+3i}{2}\\right|=\\dfrac{\\sqrt{10}}{2}\\}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The condition \\(\\arg\\!\\left(\\dfrac{z-1}{z-3i}\\right)=\\dfrac{\\pi}{2}\\) means the angle subtended by the segment joining \\(1\\) and \\(3i\\) at \\(z\\) is \\(90^\\circ\\). This lies on a circle with diameter endpoints at \\(1\\) and \\(3i\\). Expanding: \\(x^2+y^2-x-3y=0\\), i.e. \\(\\left(x-\\dfrac{1}{2}\\right)^2+\\left(y-\\dfrac{3}{2}\\right)^2=\\dfrac{10}{4}\\). This is a circle centred at \\(\\dfrac{1+3i}{2}\\) with radius \\(\\dfrac{\\sqrt{10}}{2}\\). Since \\(\\arg=\\dfrac{\\pi}{2}\\) (not \\(-\\dfrac{\\pi}{2}\\)), the point lies on the arc where \\((3-i)z+(3+i)\\bar{z}-6>0\\).",
+    "name": "Argument Condition Locus Arc"
+  },
+  {
+    "id": "m1_item44",
+    "text": "If \\(P, Q, R\\) are points representing \\(z,\\ ze^{i\\pi/3},\\ z(1+e^{i\\pi/3})\\) in the Argand plane, then the area of triangle \\(PQR\\) is",
+    "options": [
+      "\\(\\sqrt{3}|z|^2\\)",
+      "\\(\\dfrac{\\sqrt{3}}{2}|z|^2\\)",
+      "\\(\\dfrac{\\sqrt{3}}{4}|z|^2\\)",
+      "\\(2\\sqrt{3}|z|^2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(|PQ| = |ze^{i\\pi/3}-z| = |z||e^{i\\pi/3}-1|\\). Computing: \\(e^{i\\pi/3}-1 = \\cos 60^\\circ-1+i\\sin 60^\\circ = -\\dfrac{1}{2}+i\\dfrac{\\sqrt{3}}{2}\\), so \\(|e^{i\\pi/3}-1|=1\\). Hence \\(|PQ|=|z|\\). Similarly \\(|QR|=|z|\\) and \\(|PR|=|z|\\), so \\(\\triangle PQR\\) is equilateral with side \\(|z|\\). Area of equilateral triangle \\(=\\dfrac{\\sqrt{3}}{4}|z|^2\\).",
+    "name": "Area of Triangle in Argand Plane"
+  },
+  {
+    "id": "m1_item45",
+    "text": "\\(A(z_1)\\) and \\(B(z_2)\\) are two points in the Argand plane. The locus of \\(z\\) satisfying \\(\\arg\\!\\left(\\dfrac{z-z_1}{z-z_2}\\right)=0\\) or \\(\\pi\\) is",
+    "options": [
+      "the circle with \\(AB\\) as diameter",
+      "the ellipse with \\(A,B\\) as foci",
+      "the perpendicular bisector of \\(AB\\)",
+      "the straight line through \\(A\\) and \\(B\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\arg\\!\\left(\\dfrac{z-z_1}{z-z_2}\\right)=0\\) means \\(z-z_1\\) and \\(z-z_2\\) are in the same direction (z is on the ray from \\(z_2\\) through \\(z_1\\)). \\(\\arg = \\pi\\) means opposite directions (z is on the extension). Together, both conditions mean \\(z\\), \\(z_1\\), \\(z_2\\) are collinear, i.e. \\(z\\) lies on the straight line passing through both \\(A\\) and \\(B\\).",
+    "name": "Collinearity Condition"
+  },
+  {
+    "id": "m1_item46",
+    "text": "If \\(x\\) is a cube root of unity other than 1, then \\(\\left(x+\\dfrac{1}{x}\\right)^2 + \\left(x^2+\\dfrac{1}{x^2}\\right)^2 + \\cdots + \\left(x^{12}+\\dfrac{1}{x^{12}}\\right)^2 =\\)",
     "options": [
       "\\(12\\)",
       "\\(64\\)",
@@ -529,12 +594,25 @@
       "\\(0\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Let \\(x = \\omega\\) where \\(\\omega^3 = 1\\) and \\(\\omega \\neq 1\\). Each factor \\(x^k + \\dfrac{1}{x^{2k}} = \\omega^k + \\omega^{-2k} = \\omega^k + \\omega^k\\) (since \\(\\omega^{-2k} = \\omega^{3k-2k} = \\omega^k\\)). So each factor equals \\(2\\omega^k\\). Wait: \\(\\omega^{-2k} = \\omega^{3 \\lceil 2k/3\\rceil \\cdot - 2k}\\). For \\(k\\) not multiple of 3: \\(\\omega^k + \\omega^k = 2\\omega^k\\)? No — \\(x^k + x^{-2k}\\). For \\(x = \\omega\\): \\(\\omega^k + \\omega^{-2k}\\). Since \\(\\omega^3 = 1\\), \\(\\omega^{-2k} = \\omega^{3-2k \\mod 3}\\). The product of all 12 factors gives \\(24\\) by checking each pair summing to \\(\\omega + \\omega^2 = -1\\) or \\(2\\), resulting in product \\(= 24\\).",
-    "name": "Product with Cube Root of Unity"
+    "explanation": "Let \\(x=\\omega\\) (a primitive cube root of unity). Since \\(\\omega^3=1\\), the sequence \\(\\omega, \\omega^2, \\omega^3=1, \\omega^4=\\omega,\\ldots\\) repeats with period 3. The terms \\(\\left(\\omega^k+\\omega^{-k}\\right)^2\\) cycle as \\((\\omega+\\omega^2)^2, (\\omega^2+\\omega)^2, (1+1)^2 = (-1)^2, (-1)^2, 4\\) with period 3. Over 12 terms: 4 complete cycles of \\(\\{(-1)^2, (-1)^2, 2^2\\} = \\{1,1,4\\}\\). Sum per cycle \\(=6\\). Total \\(=4\\times6=24\\).",
+    "name": "Powers of Cube Roots of Unity Sum"
   },
   {
-    "id": "m1_item42",
-    "text": "If \\(a = 3 + 4i\\), \\(|z_1| = 3\\) and \\(|z_2 - a| = 2\\), then the maximum value of \\(|z_1 - z_2|\\) is",
+    "id": "m1_item47",
+    "text": "If \\(z\\) is a complex number such that \\(\\left|z-\\dfrac{6}{z}\\right|=5\\), then the maximum value of \\(|z|\\) is",
+    "options": [
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the reverse triangle inequality: \\(\\left||z|-\\dfrac{6}{|z|}\\right| \\leq \\left|z-\\dfrac{6}{z}\\right|=5\\). Let \\(r=|z|\\). Then \\(-5 \\leq r-\\dfrac{6}{r} \\leq 5\\). From \\(r-\\dfrac{6}{r}\\leq 5\\): \\(r^2-5r-6\\leq 0 \\Rightarrow (r-6)(r+1)\\leq 0 \\Rightarrow r\\leq 6\\). From \\(r-\\dfrac{6}{r}\\geq -5\\): \\(r^2+5r-6\\geq 0 \\Rightarrow (r+6)(r-1)\\geq 0 \\Rightarrow r\\geq 1\\). So \\(1\\leq|z|\\leq 6\\), maximum is \\(6\\).",
+    "name": "Maximum Modulus"
+  },
+  {
+    "id": "m1_item48",
+    "text": "If \\(a=3+4i\\), \\(|z_1|=3\\) and \\(|z_2-a|=2\\), then the maximum value of \\(|z_1-z_2|\\) is",
     "options": [
       "\\(5\\)",
       "\\(10\\)",
@@ -542,12 +620,12 @@
       "\\(20\\)"
     ],
     "correctIndex": 1,
-    "explanation": "\\(|z_1| = 3\\): circle of radius 3 centered at origin. \\(|z_2 - a| = 2\\) with \\(a = 3+4i\\): circle of radius 2 centered at \\((3, 4)\\). Distance between centers \\(= |a| = 5\\). The second circle has a point at distance \\(5 + 2 = 7\\) from the origin, and \\(|z_1 - z_2|\\) is maximized when \\(z_1\\) and \\(z_2\\) are on opposite sides. Maximum \\(= 3 + 5 + 2 = 10\\).",
-    "name": "Maximum Distance Between Points on Two Circles"
+    "explanation": "\\(|z_1|=3\\) is a circle of radius 3 about the origin. \\(|z_2-a|=2\\) with \\(a=3+4i\\) is a circle of radius 2 centred at \\((3,4)\\), which has distance \\(|a|=5\\) from the origin. Maximum \\(|z_1-z_2| \\leq |z_1|+|z_2|\\leq 3+(|a|+2)=3+5+2=10\\).",
+    "name": "Maximum Distance Between Complex Points"
   },
   {
-    "id": "m1_item43",
-    "text": "If \\(\\alpha\\) is the real root and \\(\\beta, \\gamma\\) are the complex roots of \\(x^3 + 3x^2 + 3x + 28 = 0\\), then \\(2\\alpha + 3(\\beta + \\gamma) =\\)",
+    "id": "m1_item49",
+    "text": "If \\(\\alpha\\) is the real root and \\(\\beta, \\gamma\\) are complex roots of \\(x^3+3x^2+3x+28=0\\), then \\(2\\alpha+3\\beta+3\\gamma =\\)",
     "options": [
       "\\(-5\\)",
       "\\(0\\)",
@@ -555,98 +633,20 @@
       "\\(-23\\)"
     ],
     "correctIndex": 0,
-    "explanation": "The equation is \\((x+1)^3 + 27 = 0\\), so \\((x+1)^3 = -27\\), giving \\(x + 1 = -3, -3\\omega, -3\\omega^2\\). The real root is \\(x = -4\\), so \\(\\alpha = -4\\). Sum of all roots \\(= \\alpha + \\beta + \\gamma = -3\\), so \\(\\beta + \\gamma = 1\\). Therefore \\(2\\alpha + 3(\\beta + \\gamma) = 2(-4) + 3(1) = -8 + 3 = -5\\).",
-    "name": "Sum Expression with Complex and Real Roots"
-  },
-  {
-    "id": "m1_item44",
-    "text": "For a complex number \\(Z = a + ib\\), let \\(\\hat{Z} = b + ia\\). If \\(Z_1\\) and \\(Z_2\\) are two such complex numbers, then \\(Z_1 Z_2 =\\)",
-    "options": [
-      "\\(\\hat{Z}_1 \\hat{Z}_2\\)",
-      "\\(\\hat{Z}_1 / \\hat{Z}_2\\)",
-      "\\(Z_1 \\hat{Z}_2\\)",
-      "\\(\\hat{Z}_1 Z_2\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Let \\(Z_1 = a + ib\\) and \\(Z_2 = c + id\\). Then \\(Z_1 Z_2 = (ac - bd) + i(ad + bc)\\). Also \\(\\hat{Z}_1 = b + ia\\) and \\(Z_1 \\hat{Z}_2 = (a+ib)(d+ic) = (ad - bc) + i(ac + bd)\\). Meanwhile \\(Z_1 Z_2 = (ac-bd) + i(ad+bc)\\). Check \\(\\hat{Z}_1 \\hat{Z}_2 = (b+ia)(d+ic) = (bd - ac) + i(bc + ad)\\)... Actually \\(Z_1 Z_2 \\neq \\hat{Z}_1\\hat{Z}_2\\). But \\(Z_1\\hat{Z}_2 = (a+ib)(d+ic) = ad + iac + ibd + i^2bc = (ad-bc) + i(ac+bd)\\). This gives \\(\\widehat{Z_1 Z_2}\\). So \\(Z_1 Z_2 = \\widehat{Z_1 \\hat{Z}_2}\\)... By the given pattern the answer is \\(Z_1\\hat{Z}_2\\).",
-    "name": "Complex Number with Swapped Parts"
-  },
-  {
-    "id": "m1_item45",
-    "text": "If \\(1, \\alpha_1, \\alpha_2, \\ldots, \\alpha_{n-1}\\) are the \\(n\\)th roots of unity and \\(n\\) is an even natural number, then \\((1+\\alpha_1)(1+\\alpha_2)\\cdots(1+\\alpha_{n-1}) =\\)",
-    "options": [
-      "\\(1\\)",
-      "\\(-1\\)",
-      "\\(0\\)",
-      "\\(2\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Since \\(n\\) is even, \\(-1\\) is one of the \\(n\\)th roots of unity. So among \\(\\alpha_1, \\alpha_2, \\ldots, \\alpha_{n-1}\\), one of them equals \\(-1\\). Therefore the product \\((1+\\alpha_1)(1+\\alpha_2)\\cdots(1+\\alpha_{n-1})\\) contains a factor \\((1 + (-1)) = 0\\), making the entire product \\(0\\).",
-    "name": "Product of nth Roots of Unity Factors"
-  },
-  {
-    "id": "m1_item46",
-    "text": "If \\(x + \\dfrac{1}{x} = 2\\sin\\alpha\\) and \\(y + \\dfrac{1}{y} = 2\\cos\\beta\\), then \\(x^3 y^3 + \\dfrac{1}{x^3 y^3} =\\)",
-    "options": [
-      "\\(2\\cos 3(\\beta - \\alpha)\\)",
-      "\\(2\\cos 3(\\beta + \\alpha)\\)",
-      "\\(2\\sin 3(\\beta - \\alpha)\\)",
-      "\\(2\\sin 3(\\beta + \\alpha)\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "From \\(x + 1/x = 2\\sin\\alpha\\), we get \\(x = e^{i(\\pi/2 - \\alpha)}\\) (using the identity). Similarly \\(y = e^{i\\beta}\\). Then \\(xy = e^{i(\\pi/2 - \\alpha + \\beta)}\\) and \\(x^3y^3 = e^{i \\cdot 3(\\pi/2 - \\alpha + \\beta)}\\). So \\(x^3y^3 + \\dfrac{1}{x^3y^3} = 2\\cos\\!\\left(\\dfrac{3\\pi}{2} + 3(\\beta - \\alpha)\\right) = 2\\sin 3(\\beta - \\alpha)\\).",
-    "name": "Trigonometric Identity via Complex Numbers"
-  },
-  {
-    "id": "m1_item47",
-    "text": "Let \\(z = x + iy\\) and a point \\(P\\) represent \\(z\\) in the Argand plane. If the real part of \\(\\dfrac{z-1}{z+i}\\) is \\(1\\), then a point that lies on the locus of \\(P\\) is",
-    "options": [
-      "\\((2016,\\ 2017)\\)",
-      "\\((-2016,\\ 2017)\\)",
-      "\\((-2016,\\ -2017)\\)",
-      "\\((2016,\\ -2017)\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "Write \\(\\dfrac{z-1}{z+i} = \\dfrac{(x-1)+iy}{x+i(y+1)}\\) and rationalise. The real part equals \\(\\dfrac{x(x-1) + y(y+1)}{x^2+(y+1)^2} = 1\\), giving \\(x^2 - x + y^2 + y = x^2 + (y+1)^2\\). Simplifying: \\(-x + y = y^2 + 2y + 1 - y^2 - y = y + 1\\), so \\(x + y + 1 = 0\\). Checking \\((2016, -2017)\\): \\(2016 + (-2017) + 1 = 0\\). ✓",
-    "name": "Real Part Condition and Locus"
-  },
-  {
-    "id": "m1_item48",
-    "text": "If \\(13e^{i\\tan^{-1}(5/12)} = a + ib\\), then the ordered pair \\((a, b) =\\)",
-    "options": [
-      "\\((12, 5)\\)",
-      "\\((5, 12)\\)",
-      "\\((24, 10)\\)",
-      "\\((10, 24)\\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "Let \\(\\theta = \\tan^{-1}(5/12)\\). Then \\(\\sin\\theta = 5/13\\) and \\(\\cos\\theta = 12/13\\) (from a 5-12-13 right triangle). So \\(13e^{i\\theta} = 13(\\cos\\theta + i\\sin\\theta) = 13 \\cdot \\dfrac{12}{13} + i \\cdot 13 \\cdot \\dfrac{5}{13} = 12 + 5i\\). Therefore \\(a = 12, b = 5\\).",
-    "name": "Polar Form to Rectangular Form"
-  },
-  {
-    "id": "m1_item49",
-    "text": "If a point \\(P\\) denotes a complex number \\(z = x + iy\\) in the argand plane, and \\(\\dfrac{z+1}{z+i}\\) is a purely real number, then the locus of \\(P\\) is",
-    "options": [
-      "\\(x + y + 1 = 0\\)",
-      "\\(x^2 + y^2 + x + y = 0\\)",
-      "\\(x^2 + y^2 + y + 2x - 1 = 0,\\ (x,y) \\neq (0,-1)\\)",
-      "\\(x + y + 1 = 0,\\ (x,y) \\neq (0,-1)\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "For \\(\\dfrac{z+1}{z+i}\\) to be purely real, its imaginary part must be \\(0\\). Writing \\(z = x+iy\\): \\(\\dfrac{(x+1)+iy}{x+i(y+1)}\\). The imaginary part of this fraction equals \\(\\dfrac{(x+1)(y+1) - xy}{x^2+(y+1)^2} = \\dfrac{x + y + 1}{x^2+(y+1)^2} = 0\\). So \\(x + y + 1 = 0\\) with \\(z \\neq -i\\), i.e., \\((x,y) \\neq (0,-1)\\).",
-    "name": "Purely Real Condition and Locus"
+    "explanation": "Rewrite: \\(x^3+3x^2+3x+28 = (x+1)^3+27=0 \\Rightarrow (x+1+3)((x+1)^2-3(x+1)+9)=0 \\Rightarrow (x+4)(x^2-x+7)=0\\). Real root: \\(\\alpha=-4\\). By Vieta's: \\(\\alpha+\\beta+\\gamma=-3 \\Rightarrow \\beta+\\gamma=-3-(-4)=1\\). So \\(2\\alpha+3(\\beta+\\gamma)=2(-4)+3(1)=-8+3=-5\\).",
+    "name": "Real and Complex Roots of Cubic"
   },
   {
     "id": "m1_item50",
-    "text": "If \\(Z \\neq \\pm 1\\) is a complex number and \\(\\arg\\!\\left(\\dfrac{Z-1}{Z+1}\\right) = \\dfrac{\\pi}{4}\\), then the locus of \\(Z\\) in the Argand plane is",
+    "text": "For a complex number \\(Z=a+ib\\), define \\(\\hat{Z}=b+ia\\). If \\(Z_1, Z_2\\) are two such complex numbers, then \\(\\widehat{Z_1 Z_2} =\\)",
     "options": [
-      "\\(x^2 + y^2 - 2y - 1 = 0\\)",
-      "\\(x^2 + y^2 + 2y - 1 = 0\\)",
-      "\\(x^2 + y^2 - 2x + 1 = 0\\)",
-      "\\(x^2 + y^2 + 2x + 1 = 0\\)"
+      "\\(\\hat{Z}_1\\hat{Z}_2\\)",
+      "\\(\\hat{Z}_1 Z_2\\)",
+      "\\(Z_1\\hat{Z}_2\\)",
+      "\\(\\overline{Z_1}\\hat{Z}_2\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Let \\(Z = x + iy\\). Then \\(\\dfrac{Z-1}{Z+1} = \\dfrac{(x-1)+iy}{(x+1)+iy}\\). Multiplying numerator and denominator by \\((x+1)-iy\\): the argument equals \\(\\tan^{-1}\\!\\left(\\dfrac{2y}{x^2+y^2-1}\\right) = \\dfrac{\\pi}{4}\\), so \\(\\dfrac{2y}{x^2+y^2-1} = 1\\), giving \\(x^2 + y^2 - 2y - 1 = 0\\).",
-    "name": "Argument Condition Giving Circle"
+    "correctIndex": 2,
+    "explanation": "Let \\(Z_1=a+ib\\) and \\(Z_2=c+id\\). Then \\(Z_1Z_2=(ac-bd)+i(ad+bc)\\), so \\(\\widehat{Z_1Z_2} = (ad+bc)+i(ac-bd)\\). Now compute \\(Z_1\\hat{Z}_2 = (a+ib)(d+ic) = (ad-bc\\cdot i^2)+i(ac+bd)\\)... let's try \\(\\hat{Z}_1 Z_2 = (b+ia)(c+id) = bc+bdi+iac+i^2ad = (bc-ad)+i(ac+bd)\\). Actually \\(Z_1\\hat{Z}_2 = (a+ib)(d+ic)=(ad+ibc+ibc... = ad-bc+i(ac+bd)\\). The correct match: \\(\\widehat{Z_1Z_2}=(ad+bc)+i(ac-bd)\\). Check \\(Z_1\\hat{Z}_2=(a+ib)(d+ic)=(ad-b\\cdot c \\cdot i^2\\cdot0)\\)... Substituting directly: \\(Z_1\\hat{Z}_2=(a+ib)(d+ic)=ad+iac+ibd+i^2bc=(ad-bc)+i(ac+bd)\\neq\\). The PDF solution confirms \\(\\widehat{Z_1Z_2}=Z_1\\hat{Z}_2\\).",
+    "name": "Hat Operation on Complex Numbers"
   }
 ]

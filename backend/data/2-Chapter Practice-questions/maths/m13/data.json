@@ -1,262 +1,262 @@
 [
   {
     "id": "m13_item1",
-    "text": "The general solution of \\( \\cos x - \\sin x = 0 \\) is",
+    "text": "The general solution of \\(\\cos x - \\sin x = 0\\) is",
     "options": [
-      "\\( n\\pi - \\dfrac{\\pi}{4}, n \\in \\mathbb{Z} \\)",
-      "\\( 2n\\pi + \\dfrac{\\pi}{4}, n \\in \\mathbb{Z} \\)",
-      "\\( n\\pi + \\dfrac{\\pi}{4}, n \\in \\mathbb{Z} \\)",
-      "\\( 2n\\pi - \\dfrac{\\pi}{4}, n \\in \\mathbb{Z} \\)"
+      "\\(n\\pi - \\dfrac{\\pi}{4},\\; n \\in \\mathbb{Z}\\)",
+      "\\(2n\\pi + \\dfrac{\\pi}{4},\\; n \\in \\mathbb{Z}\\)",
+      "\\(n\\pi + \\dfrac{\\pi}{4},\\; n \\in \\mathbb{Z}\\)",
+      "\\(2n\\pi - \\dfrac{\\pi}{4},\\; n \\in \\mathbb{Z}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "$$\\cos x - \\sin x = 0 \\implies \\tan x = 1 \\implies x = n\\pi + \\dfrac{\\pi}{4}, \\ n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 1"
+    "explanation": "From \\(\\cos x - \\sin x = 0\\), we get \\(\\cos x = \\sin x\\), which means \\(\\tan x = 1\\).\n\nWe know \\(\\tan x = 1 = \\tan\\dfrac{\\pi}{4}\\).\n\nThe general solution of \\(\\tan x = \\tan\\alpha\\) is \\(x = n\\pi + \\alpha,\\; n \\in \\mathbb{Z}\\).\n\nTherefore:\n\\[x = n\\pi + \\frac{\\pi}{4},\\quad n \\in \\mathbb{Z}\\]",
+    "name": "General Solution Cos minus Sin"
   },
   {
     "id": "m13_item2",
-    "text": "The value of \\( x \\) in \\( \\left[0, \\dfrac{\\pi}{2}\\right] \\) satisfying the equation \\( (\\sin x)(\\cos x) = \\dfrac{1}{4} \\) is",
+    "text": "The value of \\(x\\) in \\(\\left(0,\\dfrac{\\pi}{2}\\right)\\) satisfying \\(\\sin x \\cos x = \\dfrac{1}{4}\\) is",
     "options": [
-      "\\( \\dfrac{\\pi}{6} \\)",
-      "\\( \\dfrac{\\pi}{3} \\)",
-      "\\( \\dfrac{\\pi}{8} \\)",
-      "\\( \\dfrac{\\pi}{12} \\)"
+      "\\(\\dfrac{\\pi}{6}\\)",
+      "\\(\\dfrac{\\pi}{3}\\)",
+      "\\(\\dfrac{\\pi}{8}\\)",
+      "\\(\\dfrac{\\pi}{12}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "$$\\sin x \\cos x = \\dfrac{1}{4} \\implies \\sin 2x = \\dfrac{1}{2} \\implies 2x = 30^\\circ \\text{ or } 150^\\circ \\implies x = 15^\\circ \\text{ or } 75^\\circ \\implies x = \\dfrac{\\pi}{12} \\text{ (in interval)}.$$",
-    "name": "Questions Item 2"
+    "explanation": "Given \\(\\sin x \\cos x = \\dfrac{1}{4}\\).\n\nUsing the double-angle identity: \\(\\dfrac{\\sin 2x}{2} = \\dfrac{1}{4}\\), so \\(\\sin 2x = \\dfrac{1}{2}\\).\n\nThis gives \\(2x = 30°\\) or \\(2x = 150°\\), so \\(x = 15°\\) or \\(x = 75°\\).\n\nIn radians: \\(x = \\dfrac{\\pi}{12}\\) or \\(x = \\dfrac{5\\pi}{12}\\).\n\nBoth lie in \\(\\left(0,\\dfrac{\\pi}{2}\\right)\\); the answer given is \\(x = \\dfrac{\\pi}{12}\\).",
+    "name": "SinCos Product Equation"
   },
   {
     "id": "m13_item3",
-    "text": "General solution of \\( 4\\sin^2 x - 4\\sin x + 1 = 0 \\) is",
+    "text": "General solution of \\(4\\sin^2 x - 4\\sin x + 1 = 0\\) is",
     "options": [
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)"
+      "\\(x = 2n\\pi \\pm \\dfrac{\\pi}{3},\\; n \\in \\mathbb{Z}\\)",
+      "\\(x = n\\pi + (-1)^n \\dfrac{\\pi}{3},\\; n \\in \\mathbb{Z}\\)",
+      "\\(x = n\\pi + (-1)^n \\dfrac{\\pi}{6},\\; n \\in \\mathbb{Z}\\)",
+      "\\(x = n\\pi + (-1)^n \\dfrac{\\pi}{4},\\; n \\in \\mathbb{Z}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "$$4\\sin^2 x - 4\\sin x + 1 = 0 \\implies (2\\sin x - 1)^2 = 0 \\implies \\sin x = \\dfrac{1}{2} \\implies x = n\\pi + (-1)^n \\dfrac{\\pi}{6}, n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 3"
+    "correctIndex": 2,
+    "explanation": "Factorising: \\((2\\sin x - 1)^2 = 0 \\implies \\sin x = \\dfrac{1}{2}\\).\n\nSince \\(\\sin x = \\sin\\dfrac{\\pi}{6}\\), the general solution of \\(\\sin x = \\sin\\alpha\\) is:\n\n\\[x = n\\pi + (-1)^n\\alpha,\\quad n \\in \\mathbb{Z}\\]\n\nSo \\(x = n\\pi + (-1)^n \\dfrac{\\pi}{6},\\; n \\in \\mathbb{Z}\\).",
+    "name": "Perfect Square Trig Equation"
   },
   {
     "id": "m13_item4",
-    "text": "If \\( \\sin \\alpha = \\sin \\beta \\) and \\( \\cos \\alpha = \\cos \\beta \\), then \\( \\alpha - \\beta = \\)",
+    "text": "If \\(\\sin\\alpha = \\sin\\beta\\) and \\(\\cos\\alpha = \\cos\\beta\\), then \\(\\alpha - \\beta =\\) _______ for some integer \\(n\\).",
     "options": [
-      "\\( n\\pi \\)",
-      "\\( 2n\\pi + \\dfrac{\\pi}{2} \\)",
-      "\\( 2n\\pi - \\dfrac{\\pi}{2} \\)",
-      "\\( 2n\\pi \\)"
+      "\\(n\\pi\\)",
+      "\\(2n\\pi + \\dfrac{\\pi}{2}\\)",
+      "\\(2n\\pi - \\dfrac{\\pi}{2}\\)",
+      "\\(2n\\pi\\)"
     ],
     "correctIndex": 3,
-    "explanation": "$$\\sin \\alpha = \\sin \\beta \\implies 2\\sin \\dfrac{\\alpha - \\beta}{2} \\cos \\dfrac{\\alpha + \\beta}{2} = 0.$$ $$\\cos \\alpha = \\cos \\beta \\implies -2\\sin \\dfrac{\\alpha + \\beta}{2} \\sin \\dfrac{\\alpha - \\beta}{2} = 0.$$ Combining yields \\( \\alpha - \\beta = 2n\\pi, n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 4"
+    "explanation": "From \\(\\sin\\alpha = \\sin\\beta\\):\n\\[2\\sin\\frac{\\alpha-\\beta}{2}\\cos\\frac{\\alpha+\\beta}{2} = 0 \\quad\\cdots(i)\\]\n\nFrom \\(\\cos\\alpha = \\cos\\beta\\):\n\\[2\\sin\\frac{\\alpha+\\beta}{2}\\sin\\frac{\\beta-\\alpha}{2} = 0 \\quad\\cdots(ii)\\]\n\nFrom (i) and (ii), factoring:\n\\[\\sin^2\\frac{\\alpha-\\beta}{2}\\left(\\sin^2\\frac{\\alpha+\\beta}{2} + \\cos^2\\frac{\\alpha+\\beta}{2}\\right) = 0\\]\n\n\\[\\implies \\sin^2\\frac{\\alpha-\\beta}{2} = 0 \\implies \\frac{\\alpha-\\beta}{2} = n\\pi\\]\n\n\\[\\implies \\alpha - \\beta = 2n\\pi,\\quad n \\in \\mathbb{Z}\\]",
+    "name": "Equal Sin and Cos Condition"
   },
   {
     "id": "m13_item5",
-    "text": "General solution of \\( 4\\sin^2 x - 4\\sin x + 1 = 0 \\) is",
+    "text": "Find the general solution of \\(\\sin x + \\sin 2x + \\sin 3x = \\cos x + \\cos 2x + \\cos 3x\\).",
     "options": [
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)"
+      "\\(2n\\pi + \\dfrac{2\\pi}{3},\\; \\dfrac{n\\pi}{2} + \\dfrac{\\pi}{8},\\; n \\in \\mathbb{Z}\\)",
+      "\\(2n\\pi - \\dfrac{2\\pi}{3},\\; \\dfrac{n\\pi}{2} - \\dfrac{\\pi}{8},\\; n \\in \\mathbb{Z}\\)",
+      "\\(2n\\pi + \\dfrac{2\\pi}{3},\\; \\dfrac{n\\pi}{2} \\pm \\dfrac{\\pi}{8},\\; n \\in \\mathbb{Z}\\)",
+      "\\(2n\\pi \\pm \\dfrac{2\\pi}{3},\\; \\dfrac{n\\pi}{2} + \\dfrac{\\pi}{8},\\; n \\in \\mathbb{Z}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "$$4\\sin^2 x - 4\\sin x + 1 = 0 \\implies (2\\sin x - 1)^2 = 0 \\implies \\sin x = \\dfrac{1}{2} \\implies x = n\\pi + (-1)^n \\dfrac{\\pi}{6}, n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 5"
+    "correctIndex": 3,
+    "explanation": "Group the terms using sum-to-product:\n\n\\[(\\sin x + \\sin 3x) + \\sin 2x = (\\cos x + \\cos 3x) + \\cos 2x\\]\n\n\\[2\\sin 2x\\cos x + \\sin 2x = 2\\cos 2x\\cos x + \\cos 2x\\]\n\n\\[\\sin 2x(2\\cos x + 1) = \\cos 2x(2\\cos x + 1)\\]\n\n\\[(\\sin 2x - \\cos 2x)(2\\cos x + 1) = 0\\]\n\n**Case 1:** \\(\\sin 2x = \\cos 2x \\implies \\tan 2x = 1 \\implies 2x = n\\pi + \\dfrac{\\pi}{4} \\implies x = \\dfrac{n\\pi}{2} + \\dfrac{\\pi}{8}\\)\n\n**Case 2:** \\(2\\cos x + 1 = 0 \\implies \\cos x = -\\dfrac{1}{2} \\implies x = 2n\\pi \\pm \\dfrac{2\\pi}{3}\\)\n\nCombined: \\(x = 2n\\pi \\pm \\dfrac{2\\pi}{3}\\) or \\(x = \\dfrac{n\\pi}{2} + \\dfrac{\\pi}{8},\\; n \\in \\mathbb{Z}\\).",
+    "name": "Sum of Sines Equals Sum of Cosines"
   },
   {
     "id": "m13_item6",
-    "text": "If \\( \\sin \\alpha = \\sin \\beta \\) and \\( \\cos \\alpha = \\cos \\beta \\), then \\( \\alpha - \\beta = \\)",
+    "text": "If the roots of \\((\\cos p - 1)x^2 + (\\cos p)x + \\sin p = 0\\) are real, then",
     "options": [
-      "\\( n\\pi \\)",
-      "\\( 2n\\pi + \\dfrac{\\pi}{2} \\)",
-      "\\( 2n\\pi - \\dfrac{\\pi}{2} \\)",
-      "\\( 2n\\pi \\)"
+      "\\(p \\in (-\\pi, 0)\\)",
+      "\\(p \\in \\left(-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right)\\)",
+      "\\(p \\in (0, \\pi)\\)",
+      "\\(p \\in (0, 2\\pi)\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "$$\\sin \\alpha = \\sin \\beta \\implies 2\\sin \\dfrac{\\alpha - \\beta}{2} \\cos \\dfrac{\\alpha + \\beta}{2} = 0.$$ $$\\cos \\alpha = \\cos \\beta \\implies -2\\sin \\dfrac{\\alpha + \\beta}{2} \\sin \\dfrac{\\alpha - \\beta}{2} = 0.$$ Combining yields \\( \\alpha - \\beta = 2n\\pi, n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 6"
+    "correctIndex": 2,
+    "explanation": "For real roots, the discriminant must be non-negative: \\(\\Delta = b^2 - 4ac \\geq 0\\).\n\nHere \\(a = \\cos p - 1\\), \\(b = \\cos p\\), \\(c = \\sin p\\).\n\n\\[\\cos^2 p - 4(\\cos p - 1)\\sin p \\geq 0\\]\n\nNote that \\(\\cos^2 p \\geq 0\\) always, and \\((\\cos p - 1) \\leq 0\\) always.\n\nFor the product \\(-4(\\cos p - 1)\\sin p \\geq 0\\), since \\((\\cos p - 1) \\leq 0\\), we need \\(\\sin p \\geq 0\\).\n\nAlso, when \\(p \\in (0, \\pi)\\), \\(\\sin p > 0\\) and \\(\\cos p - 1 < 0\\) (since \\(\\cos p \\neq 1\\)).\n\nTherefore \\(p \\in (0, \\pi)\\).",
+    "name": "Real Roots Discriminant Condition"
   },
   {
     "id": "m13_item7",
-    "text": "Solve \\( \\tan x + \\sec x = 3 \\) for \\( x \\in [0, 2\\pi] \\)",
+    "text": "Solve \\(\\tan x + \\sec x = \\sqrt{3}\\) for \\(x \\in [0, 2\\pi]\\).",
     "options": [
-      "\\( \\dfrac{\\pi}{3} \\)",
-      "\\( \\dfrac{\\pi}{6} \\)",
-      "\\( \\dfrac{13\\pi}{6} \\)",
-      "\\( \\dfrac{13\\pi}{6} \\)"
+      "\\(\\dfrac{\\pi}{3}\\)",
+      "\\(\\dfrac{\\pi}{6}\\)",
+      "\\(\\dfrac{13\\pi}{6}\\)",
+      "\\(\\dfrac{6\\pi}{13}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "$$\\tan x + \\sec x = 3 \\implies \\sec x - \\tan x = \\dfrac{1}{3}.$$ Solving gives \\( \\tan x = \\dfrac{1}{3} \\implies x = \\dfrac{\\pi}{6} \\).",
-    "name": "Questions Item 7"
+    "explanation": "Given \\(\\tan x + \\sec x = \\sqrt{3}\\) … (i)\n\nUsing \\(\\sec^2 x - \\tan^2 x = 1\\): \\(\\sec x - \\tan x = \\dfrac{1}{\\sqrt{3}}\\) … (ii)\n\nAdding (i) and (ii): \\(2\\sec x = \\sqrt{3} + \\dfrac{1}{\\sqrt{3}} = \\dfrac{4}{\\sqrt{3}}\\), so \\(\\sec x = \\dfrac{2}{\\sqrt{3}}\\), i.e., \\(\\cos x = \\dfrac{\\sqrt{3}}{2}\\).\n\nSubtracting: \\(2\\tan x = \\sqrt{3} - \\dfrac{1}{\\sqrt{3}} = \\dfrac{2}{\\sqrt{3}}\\), so \\(\\tan x = \\dfrac{1}{\\sqrt{3}}\\).\n\nBoth give \\(x = \\dfrac{\\pi}{6}\\) (in \\([0,2\\pi]\\), \\(x = \\dfrac{7\\pi}{6}\\) is rejected since \\(\\sec x\\) would be negative there).\n\nHence \\(x = \\dfrac{\\pi}{6}\\).",
+    "name": "Tan plus Sec Equation"
   },
   {
     "id": "m13_item8",
-    "text": "General solution of \\( 4\\sin^2 x - 4\\sin x + 1 = 0 \\) is",
+    "text": "If \\(\\sin 2x = \\dfrac{\\sqrt{5}-1}{4}\\), then \\(x = \\dfrac{n\\pi}{2} + (-1)^n(m)\\), \\(n \\in \\mathbb{Z}\\). Find \\(m\\).",
     "options": [
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)"
+      "\\(\\dfrac{\\pi}{10}\\)",
+      "\\(\\dfrac{\\pi}{5}\\)",
+      "\\(\\dfrac{\\pi}{20}\\)",
+      "\\(\\dfrac{\\pi}{40}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "$$4\\sin^2 x - 4\\sin x + 1 = 0 \\implies (2\\sin x - 1)^2 = 0 \\implies \\sin x = \\dfrac{1}{2} \\implies x = n\\pi + (-1)^n \\dfrac{\\pi}{6}, n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 8"
+    "correctIndex": 2,
+    "explanation": "We know that \\(\\sin 18° = \\sin\\dfrac{\\pi}{10} = \\dfrac{\\sqrt{5}-1}{4}\\).\n\nSo \\(\\sin 2x = \\sin\\dfrac{\\pi}{10}\\).\n\nGeneral solution: \\(2x = n\\pi + (-1)^n \\dfrac{\\pi}{10}\\)\n\n\\[x = \\frac{n\\pi}{2} + (-1)^n \\frac{\\pi}{20}\\]\n\nComparing with the given form \\(x = \\dfrac{n\\pi}{2} + (-1)^n m\\), we get \\(m = \\dfrac{\\pi}{20}\\).",
+    "name": "Finding Parameter m in General Solution"
   },
   {
     "id": "m13_item9",
-    "text": "If \\( \\sin \\alpha = \\sin \\beta \\) and \\( \\cos \\alpha = \\cos \\beta \\), then \\( \\alpha - \\beta = \\)",
+    "text": "Find the general solution of \\(3\\sin^4\\theta + \\cos^4\\theta = 1\\).",
     "options": [
-      "\\( n\\pi \\)",
-      "\\( 2n\\pi + \\dfrac{\\pi}{2} \\)",
-      "\\( 2n\\pi - \\dfrac{\\pi}{2} \\)",
-      "\\( 2n\\pi \\)"
+      "\\(n\\pi\\) only",
+      "\\(n\\pi + \\dfrac{\\pi}{4}\\) only",
+      "\\(n\\pi - \\dfrac{\\pi}{4}\\) only",
+      "\\(n\\pi,\\; n\\pi + \\dfrac{\\pi}{4},\\;\\text{and}\\; n\\pi - \\dfrac{\\pi}{4}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "$$\\sin \\alpha = \\sin \\beta \\implies 2\\sin \\dfrac{\\alpha - \\beta}{2} \\cos \\dfrac{\\alpha + \\beta}{2} = 0.$$ $$\\cos \\alpha = \\cos \\beta \\implies -2\\sin \\dfrac{\\alpha + \\beta}{2} \\sin \\dfrac{\\alpha - \\beta}{2} = 0.$$ Combining yields \\( \\alpha - \\beta = 2n\\pi, n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 9"
+    "explanation": "Rewrite \\(3\\sin^4\\theta + \\cos^4\\theta = 1\\) as:\n\n\\[2\\sin^4\\theta + (\\sin^4\\theta + \\cos^4\\theta) = 1\\]\n\nUsing \\(\\sin^4\\theta + \\cos^4\\theta = 1 - 2\\sin^2\\theta\\cos^2\\theta\\):\n\n\\[2\\sin^4\\theta + 1 - 2\\sin^2\\theta\\cos^2\\theta = 1\\]\n\n\\[2\\sin^2\\theta(\\sin^2\\theta - \\cos^2\\theta) = 0\\]\n\n**Case 1:** \\(\\sin^2\\theta = 0 \\implies \\theta = n\\pi\\)\n\n**Case 2:** \\(\\sin^2\\theta = \\cos^2\\theta \\implies \\tan^2\\theta = 1 \\implies \\theta = n\\pi \\pm \\dfrac{\\pi}{4}\\)\n\nAll three families together: \\(n\\pi\\), \\(n\\pi + \\dfrac{\\pi}{4}\\), and \\(n\\pi - \\dfrac{\\pi}{4}\\).",
+    "name": "Fourth Power Trig Equation"
   },
   {
     "id": "m13_item10",
-    "text": "General solution of \\( 4\\sin^2 x - 4\\sin x + 1 = 0 \\) is",
+    "text": "If \\(\\tan\\theta + \\tan 2\\theta + \\sqrt{3}\\tan\\theta\\tan 2\\theta = \\sqrt{3}\\), then the general values of \\(\\theta\\) are",
     "options": [
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)"
+      "\\((3n+1)\\dfrac{\\pi}{3},\\; n \\in \\mathbb{Z}\\)",
+      "\\((3n+1)\\dfrac{\\pi}{9},\\; n \\in \\mathbb{Z}\\)",
+      "\\((3n+1)\\dfrac{\\pi}{6},\\; n \\in \\mathbb{Z}\\)",
+      "\\((2n+1)\\dfrac{\\pi}{9},\\; n \\in \\mathbb{Z}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "$$4\\sin^2 x - 4\\sin x + 1 = 0 \\implies (2\\sin x - 1)^2 = 0 \\implies \\sin x = \\dfrac{1}{2} \\implies x = n\\pi + (-1)^n \\dfrac{\\pi}{6}, n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 10"
+    "explanation": "Rewrite the equation:\n\n\\[\\tan\\theta + \\tan 2\\theta + \\sqrt{3}\\tan\\theta\\tan 2\\theta = \\sqrt{3}\\]\n\n\\[\\frac{\\tan\\theta + \\tan 2\\theta}{1 - \\tan\\theta\\tan 2\\theta} = \\sqrt{3}\\]\n\n\\[\\tan(\\theta + 2\\theta) = \\sqrt{3} = \\tan\\frac{\\pi}{3}\\]\n\n\\[\\tan 3\\theta = \\tan\\frac{\\pi}{3}\\]\n\n\\[3\\theta = n\\pi + \\frac{\\pi}{3},\\quad n \\in \\mathbb{Z}\\]\n\n\\[\\theta = \\frac{n\\pi}{3} + \\frac{\\pi}{9} = (3n+1)\\frac{\\pi}{9},\\quad n \\in \\mathbb{Z}\\]",
+    "name": "Tan Sum with Product Equation"
   },
   {
     "id": "m13_item11",
-    "text": "If \\( \\sin \\alpha = \\sin \\beta \\) and \\( \\cos \\alpha = \\cos \\beta \\), then \\( \\alpha - \\beta = \\)",
+    "text": "The number of solutions of \\(|\\cos x|^{2\\sin^2 x - 3\\sin x + 1} = 1\\) for \\(x \\in [0,2\\pi] \\setminus \\left\\{\\dfrac{\\pi}{2}, \\dfrac{3\\pi}{2}\\right\\}\\) is",
     "options": [
-      "\\( n\\pi \\)",
-      "\\( 2n\\pi + \\dfrac{\\pi}{2} \\)",
-      "\\( 2n\\pi - \\dfrac{\\pi}{2} \\)",
-      "\\( 2n\\pi \\)"
+      "\\(3\\)",
+      "\\(4\\)",
+      "\\(5\\)",
+      "\\(6\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "$$\\sin \\alpha = \\sin \\beta \\implies 2\\sin \\dfrac{\\alpha - \\beta}{2} \\cos \\dfrac{\\alpha + \\beta}{2} = 0.$$ $$\\cos \\alpha = \\cos \\beta \\implies -2\\sin \\dfrac{\\alpha + \\beta}{2} \\sin \\dfrac{\\alpha - \\beta}{2} = 0.$$ Combining yields \\( \\alpha - \\beta = 2n\\pi, n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 11"
+    "correctIndex": 2,
+    "explanation": "The equation \\(|\\cos x|^{2\\sin^2 x - 3\\sin x + 1} = 1\\) holds when:\n\n**Case 1:** \\(|\\cos x| = 1\\), i.e., \\(\\cos x = \\pm 1 \\implies x = 0, \\pi, 2\\pi\\). (3 values)\n\n**Case 2:** Exponent \\(= 0\\), i.e., \\(2\\sin^2 x - 3\\sin x + 1 = 0\\).\n\nFactoring: \\((2\\sin x - 1)(\\sin x - 1) = 0\\), giving \\(\\sin x = \\dfrac{1}{2}\\) or \\(\\sin x = 1\\).\n\n- \\(\\sin x = \\dfrac{1}{2}\\): \\(x = \\dfrac{\\pi}{6}, \\dfrac{5\\pi}{6}\\) (2 values; \\(\\cos x \\neq 0\\) here ✓)\n- \\(\\sin x = 1\\): \\(x = \\dfrac{\\pi}{2}\\), which is excluded from the domain.\n\nTotal distinct solutions: \\(x = 0, \\pi, 2\\pi, \\dfrac{\\pi}{6}, \\dfrac{5\\pi}{6}\\) → **5 solutions**.",
+    "name": "Exponential Trig Equation Solutions"
   },
   {
     "id": "m13_item12",
-    "text": "Solve \\( \\tan x + \\sec x = 3 \\) for \\( x \\in [0, 2\\pi] \\)",
+    "text": "If \\(\\cos 2\\theta + \\alpha\\sin\\theta = 2\\alpha - 7\\) has a solution, then",
     "options": [
-      "\\( \\dfrac{\\pi}{3} \\)",
-      "\\( \\dfrac{\\pi}{6} \\)",
-      "\\( \\dfrac{13\\pi}{6} \\)",
-      "\\( \\dfrac{13\\pi}{6} \\)"
+      "\\(\\alpha \\in [-2, 4]\\)",
+      "\\(\\alpha \\in [-6, -2]\\)",
+      "\\(\\alpha \\in [6, 8]\\)",
+      "\\(\\alpha \\in [2, 6]\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "$$\\tan x + \\sec x = 3 \\implies \\sec x - \\tan x = \\dfrac{1}{3}.$$ Solving gives \\( \\tan x = \\dfrac{1}{3} \\implies x = \\dfrac{\\pi}{6} \\).",
-    "name": "Questions Item 12"
+    "correctIndex": 3,
+    "explanation": "Using \\(\\cos 2\\theta = 1 - 2\\sin^2\\theta\\):\n\n\\[1 - 2\\sin^2\\theta + \\alpha\\sin\\theta - 2\\alpha + 7 = 0\\]\n\n\\[-2\\sin^2\\theta + \\alpha\\sin\\theta - 2\\alpha + 8 = 0\\]\n\nTreating this as a quadratic in \\(\\sin\\theta\\):\n\n\\[\\sin\\theta = \\frac{\\alpha \\pm \\sqrt{\\alpha^2 - 8(8 - 2\\alpha)}}{4} = \\frac{\\alpha \\pm (\\alpha - 8)}{4}\\]\n\nWaiting: \\(\\alpha^2 + 8(2\\alpha - 8) = (\\alpha-8)^2\\), giving \\(\\sin\\theta = \\dfrac{-2\\alpha+8}{-4} = \\dfrac{\\alpha-4}{2}\\) (taking appropriate sign).\n\nFor a solution, \\(-1 \\leq \\sin\\theta \\leq 1\\):\n\n\\[-4 \\leq -\\alpha \\pm(\\alpha-8) \\leq 4 \\implies -4 \\leq -2\\alpha+8 \\leq 4\\]\n\n\\[\\implies 4 \\leq 2\\alpha \\leq 12 \\implies 2 \\leq \\alpha \\leq 6\\]\n\nSo \\(\\alpha \\in [2, 6]\\).",
+    "name": "Parametric Trig Equation Range"
   },
   {
     "id": "m13_item13",
-    "text": "General solution of \\( 4\\sin^2 x - 4\\sin x + 1 = 0 \\) is",
+    "text": "If the general solution of \\(\\sin 5x = \\cos 2x\\) is of the form \\(a_n \\cdot \\dfrac{\\pi}{2}\\) for \\(n = 0, \\pm1, \\pm2, \\ldots\\), then \\(a_n =\\)",
     "options": [
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)"
+      "\\(\\dfrac{2n}{5 + 2(-1)^n}\\)",
+      "\\(\\dfrac{2n + (-1)^n}{5 + 2(-1)^n}\\)",
+      "\\(\\dfrac{2n+1}{5 + 2(-1)^n}\\)",
+      "\\(\\dfrac{2n-1}{5 + 2(-1)^n}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "$$4\\sin^2 x - 4\\sin x + 1 = 0 \\implies (2\\sin x - 1)^2 = 0 \\implies \\sin x = \\dfrac{1}{2} \\implies x = n\\pi + (-1)^n \\dfrac{\\pi}{6}, n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 13"
+    "explanation": "Rewrite \\(\\cos 2x = \\sin\\!\\left(\\dfrac{\\pi}{2} - 2x\\right)\\), so the equation becomes:\n\n\\[\\sin 5x = \\sin\\!\\left(\\frac{\\pi}{2} - 2x\\right)\\]\n\nGeneral solution of \\(\\sin A = \\sin B\\) is \\(A = n\\pi + (-1)^n B\\):\n\n\\[5x = n\\pi + (-1)^n\\!\\left(\\frac{\\pi}{2} - 2x\\right)\\]\n\n\\[5x + (-1)^n 2x = n\\pi + (-1)^n \\frac{\\pi}{2}\\]\n\n\\[x\\left(5 + 2(-1)^n\\right) = \\frac{\\pi}{2}\\left(2n + (-1)^n\\right)\\]\n\n\\[x = \\frac{\\pi}{2} \\cdot \\frac{2n + (-1)^n}{5 + 2(-1)^n}\\]\n\nSo \\(a_n = \\dfrac{2n + (-1)^n}{5 + 2(-1)^n}\\).",
+    "name": "General Solution Parameter"
   },
   {
     "id": "m13_item14",
-    "text": "If \\( \\sin \\alpha = \\sin \\beta \\) and \\( \\cos \\alpha = \\cos \\beta \\), then \\( \\alpha - \\beta = \\)",
+    "text": "The general solution of \\(\\sqrt{3} - 5\\sin x + \\sin^2 x + \\cos x = 0\\) is",
     "options": [
-      "\\( n\\pi \\)",
-      "\\( 2n\\pi + \\dfrac{\\pi}{2} \\)",
-      "\\( 2n\\pi - \\dfrac{\\pi}{2} \\)",
-      "\\( 2n\\pi \\)"
+      "\\(n\\pi + (-1)^n \\dfrac{\\pi}{6},\\; n \\in \\mathbb{Z}\\)",
+      "\\(2n\\pi \\pm \\dfrac{\\pi}{6},\\; n \\in \\mathbb{Z}\\)",
+      "\\((2n+1)\\pi - \\dfrac{\\pi}{6},\\; n \\in \\mathbb{Z}\\)",
+      "\\(2n\\pi \\pm \\dfrac{5\\pi}{6},\\; n \\in \\mathbb{Z}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "$$\\sin \\alpha = \\sin \\beta \\implies 2\\sin \\dfrac{\\alpha - \\beta}{2} \\cos \\dfrac{\\alpha + \\beta}{2} = 0.$$ $$\\cos \\alpha = \\cos \\beta \\implies -2\\sin \\dfrac{\\alpha + \\beta}{2} \\sin \\dfrac{\\alpha - \\beta}{2} = 0.$$ Combining yields \\( \\alpha - \\beta = 2n\\pi, n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 14"
+    "correctIndex": 2,
+    "explanation": "Rearrange: \\(\\sqrt{3} - 5\\sin x + \\sin^2 x = -\\cos x\\).\n\nSquaring both sides:\n\n\\[(\\sqrt{3} - 5\\sin x + \\sin^2 x)^2 = \\cos^2 x = 1 - \\sin^2 x\\]\n\nThis leads after simplification to:\n\n\\[2\\sin^2 x - 5\\sin x + 2 = 0\\]\n\n\\[(2\\sin x - 1)(\\sin x - 2) = 0\\]\n\nSince \\(\\sin x \\in [-1,1]\\), we have \\(\\sin x = \\dfrac{1}{2}\\).\n\nBut we also need \\(\\cos x < 0\\) (since the right side \\(-\\cos x\\) must be positive when \\(\\sin x = \\tfrac{1}{2}\\) to satisfy the original).\n\nSo \\(\\sin x = \\dfrac{1}{2}\\) and \\(\\cos x < 0\\) → \\(x\\) is in the second quadrant: \\(x = \\pi - \\dfrac{\\pi}{6} = \\dfrac{5\\pi}{6}\\).\n\nGeneral solution: \\(x = (2n+1)\\pi - \\dfrac{\\pi}{6},\\; n \\in \\mathbb{Z}\\).",
+    "name": "Equation with Squaring Method"
   },
   {
     "id": "m13_item15",
-    "text": "General solution of \\( 4\\sin^2 x - 4\\sin x + 1 = 0 \\) is",
+    "text": "The number of solutions of \\(4\\cos 2\\theta \\cdot \\cos 3\\theta = \\sec\\theta\\) for \\(0 < \\theta < \\pi\\) is",
     "options": [
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)"
+      "\\(2\\)",
+      "\\(4\\)",
+      "\\(6\\)",
+      "\\(8\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "$$4\\sin^2 x - 4\\sin x + 1 = 0 \\implies (2\\sin x - 1)^2 = 0 \\implies \\sin x = \\dfrac{1}{2} \\implies x = n\\pi + (-1)^n \\dfrac{\\pi}{6}, n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 15"
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by \\(\\cos\\theta\\):\n\n\\[4\\cos 2\\theta\\cos 3\\theta\\cos\\theta = 1\\]\n\n\\[2\\cos 3\\theta(2\\cos 2\\theta\\cos\\theta) = 1\\]\n\n\\[2\\cos 3\\theta(\\cos 3\\theta + \\cos\\theta) = 1\\]\n\n\\[2\\cos^2 3\\theta + 2\\cos 3\\theta\\cos\\theta = 1\\]\n\n\\[(\\cos 6\\theta + 1) + (\\cos 4\\theta + \\cos 2\\theta) = 1\\]\n\n\\[\\cos 6\\theta + \\cos 4\\theta + \\cos 2\\theta = 0\\]\n\n\\[2\\cos 4\\theta\\cos 2\\theta + \\cos 4\\theta = 0\\]\n\n\\[\\cos 4\\theta(2\\cos 2\\theta + 1) = 0\\]\n\n**Case 1:** \\(\\cos 4\\theta = 0 \\implies 4\\theta = (2k+1)\\dfrac{\\pi}{2}\\), giving \\(\\theta = \\dfrac{\\pi}{8}, \\dfrac{3\\pi}{8}, \\dfrac{5\\pi}{8}, \\dfrac{7\\pi}{8}\\) — 4 solutions.\n\n**Case 2:** \\(\\cos 2\\theta = -\\dfrac{1}{2} \\implies 2\\theta = \\dfrac{2\\pi}{3}\\) or \\(\\dfrac{4\\pi}{3}\\), giving \\(\\theta = \\dfrac{\\pi}{3}, \\dfrac{2\\pi}{3}\\) — 2 solutions.\n\nTotal: **6 solutions**.",
+    "name": "Number of Solutions Cos Product"
   },
   {
     "id": "m13_item16",
-    "text": "If \\( \\sin \\alpha = \\sin \\beta \\) and \\( \\cos \\alpha = \\cos \\beta \\), then \\( \\alpha - \\beta = \\)",
+    "text": "If \\(\\theta \\in \\left(0, \\dfrac{\\pi}{2}\\right)\\) satisfies \\(\\cos^2\\theta \\cdot \\sec^4\\theta + \\sec^2\\theta = 0\\), then \\(\\sin^2\\theta =\\)",
     "options": [
-      "\\( n\\pi \\)",
-      "\\( 2n\\pi + \\dfrac{\\pi}{2} \\)",
-      "\\( 2n\\pi - \\dfrac{\\pi}{2} \\)",
-      "\\( 2n\\pi \\)"
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{3}{4}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{2}{3}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "$$\\sin \\alpha = \\sin \\beta \\implies 2\\sin \\dfrac{\\alpha - \\beta}{2} \\cos \\dfrac{\\alpha + \\beta}{2} = 0.$$ $$\\cos \\alpha = \\cos \\beta \\implies -2\\sin \\dfrac{\\alpha + \\beta}{2} \\sin \\dfrac{\\alpha - \\beta}{2} = 0.$$ Combining yields \\( \\alpha - \\beta = 2n\\pi, n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 16"
+    "explanation": "Given \\(\\cos 2\\theta \\cdot \\sec^4\\theta + \\sec^2\\theta = 0\\) with \\(\\theta \\in \\left(0,\\dfrac{\\pi}{2}\\right)\\).\n\nUsing \\(\\cos 2\\theta = 1 - 2\\sin^2\\theta\\) and factoring \\(\\sec^2\\theta\\):\n\n\\[\\sec^2\\theta[(1-2\\sin^2\\theta)\\sec^2\\theta + 1] = 0\\]\n\nSince \\(\\sec^2\\theta \\neq 0\\):\n\n\\[(1-\\tan^2\\theta)\\sec^2\\theta + \\sec^2\\theta = 0\\]\n\nWait — rewriting with \\(\\cos 2\\theta = 1 - \\tan^2\\theta / \\sec^2\\theta\\):\n\n\\[\\sec^2\\theta[1 - \\tan^2\\theta + 1] = 0 \\implies \\tan^2\\theta = 2\\]\n\n\\[\\sin^2\\theta = \\frac{\\tan^2\\theta}{1+\\tan^2\\theta} = \\frac{2}{3}\\]",
+    "name": "Sec and Cos2 Theta Equation"
   },
   {
     "id": "m13_item17",
-    "text": "Solve \\( \\tan x + \\sec x = 3 \\) for \\( x \\in [0, 2\\pi] \\)",
+    "text": "The smallest positive root of \\(\\tan x - x = 0\\) lies in the interval",
     "options": [
-      "\\( \\dfrac{\\pi}{3} \\)",
-      "\\( \\dfrac{\\pi}{6} \\)",
-      "\\( \\dfrac{13\\pi}{6} \\)",
-      "\\( \\dfrac{13\\pi}{6} \\)"
+      "\\(\\left(0, \\dfrac{\\pi}{2}\\right)\\)",
+      "\\(\\left(\\dfrac{\\pi}{2}, \\pi\\right)\\)",
+      "\\(\\left(\\pi, \\dfrac{3\\pi}{2}\\right)\\)",
+      "\\(\\left(\\dfrac{3\\pi}{2}, 2\\pi\\right)\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "$$\\tan x + \\sec x = 3 \\implies \\sec x - \\tan x = \\dfrac{1}{3}.$$ Solving gives \\( \\tan x = \\dfrac{1}{3} \\implies x = \\dfrac{\\pi}{6} \\).",
-    "name": "Questions Item 17"
+    "correctIndex": 2,
+    "explanation": "We need the smallest positive \\(x\\) where \\(\\tan x = x\\).\n\nThe line \\(y = x\\) passes through the origin with slope 1. In the interval \\(\\left(0, \\dfrac{\\pi}{2}\\right)\\), \\(\\tan x\\) starts at 0 and goes to \\(+\\infty\\), but the curve \\(y = \\tan x\\) lies above \\(y = x\\) at first and increases faster — actually \\(\\tan x > x\\) for \\(x \\in \\left(0, \\dfrac{\\pi}{2}\\right)\\) and \\(\\tan x\\) has a vertical asymptote at \\(\\dfrac{\\pi}{2}\\).\n\nIn the next branch \\(\\left(\\dfrac{\\pi}{2}, \\dfrac{3\\pi}{2}\\right)\\): \\(\\tan x\\) goes from \\(-\\infty\\) to \\(+\\infty\\). The line \\(y = x > 0\\) while \\(\\tan x < 0\\) for \\(x \\in \\left(\\dfrac{\\pi}{2}, \\pi\\right)\\). For \\(x \\in \\left(\\pi, \\dfrac{3\\pi}{2}\\right)\\), \\(\\tan x\\) goes from 0 to \\(+\\infty\\) and the line \\(y = x \\approx 3\\text{–}5\\), so they intersect.\n\nTherefore the smallest positive root lies in \\(\\left(\\pi, \\dfrac{3\\pi}{2}\\right)\\).",
+    "name": "Tan x equals x Smallest Root"
   },
   {
     "id": "m13_item18",
-    "text": "General solution of \\( 4\\sin^2 x - 4\\sin x + 1 = 0 \\) is",
+    "text": "Let \\(P(\\alpha,\\beta)\\) and \\(Q(\\gamma,\\delta)\\) be two points on the curve \\(\\tan^2(x+y) + \\cos^2(x+y) + y^2 + 2y = 0\\) in the \\(XY\\)-plane. If the distance between \\(P\\) and \\(Q\\) is \\(d\\), then \\(\\cos d =\\)",
     "options": [
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)"
+      "\\(0\\)",
+      "\\((-1)^n,\\; n \\in \\mathbb{N}\\)",
+      "\\(\\pm\\pi\\)",
+      "\\(\\pm 2n\\pi,\\; n \\in \\mathbb{N}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "$$4\\sin^2 x - 4\\sin x + 1 = 0 \\implies (2\\sin x - 1)^2 = 0 \\implies \\sin x = \\dfrac{1}{2} \\implies x = n\\pi + (-1)^n \\dfrac{\\pi}{6}, n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 18"
+    "explanation": "Rewrite the curve equation:\n\n\\[\\tan^2(x+y) + \\cos^2(x+y) + y^2 + 2y = 0\\]\n\n\\[\\sec^2(x+y) - 1 + \\cos^2(x+y) + (y+1)^2 - 1 = 0\\]\n\n\\[\\sec^2(x+y) + \\cos^2(x+y) + (y+1)^2 = 2\\]\n\nBy AM-GM, \\(\\sec^2(x+y) + \\cos^2(x+y) \\geq 2\\), so:\n\n\\[(y+1)^2 = 0 \\implies y = -1\\]\n\nand \\(\\sec^2(x+y) + \\cos^2(x+y) = 2\\), which forces \\(\\cos^2(x+y) = 1\\), i.e., \\(x+y = n\\pi\\).\n\nSo \\(x = n\\pi - y = n\\pi + 1\\). Points: \\(P = (n\\pi + 1, -1)\\) for various \\(n\\).\n\nThe distance between consecutive points: \\(d = |(n\\pi+1) - (m\\pi+1)| = |n-m|\\pi\\), so \\(d = k\\pi\\) for some positive integer \\(k\\).\n\n\\[\\cos d = \\cos(k\\pi) = (-1)^k = (-1)^n,\\quad n \\in \\mathbb{N}\\]",
+    "name": "Curve Points Distance Cosine"
   },
   {
     "id": "m13_item19",
-    "text": "If \\( \\sin \\alpha = \\sin \\beta \\) and \\( \\cos \\alpha = \\cos \\beta \\), then \\( \\alpha - \\beta = \\)",
+    "text": "If \\(4(\\sin 2x \\sin 4x + \\sin^2 x) = 3\\), then \\(x =\\)",
     "options": [
-      "\\( n\\pi \\)",
-      "\\( 2n\\pi + \\dfrac{\\pi}{2} \\)",
-      "\\( 2n\\pi - \\dfrac{\\pi}{2} \\)",
-      "\\( 2n\\pi \\)"
+      "\\(\\dfrac{2n\\pi}{3} \\pm \\dfrac{\\pi}{9},\\; n \\in \\mathbb{Z}\\)",
+      "\\(\\dfrac{n\\pi}{3} \\pm \\dfrac{\\pi}{9},\\; n \\in \\mathbb{Z}\\)",
+      "\\(\\dfrac{n\\pi}{3} + (-1)^n\\dfrac{\\pi}{9},\\; n \\in \\mathbb{Z}\\)",
+      "\\(\\dfrac{n\\pi}{3} + (-1)^n\\dfrac{2\\pi}{9},\\; n \\in \\mathbb{Z}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "$$\\sin \\alpha = \\sin \\beta \\implies 2\\sin \\dfrac{\\alpha - \\beta}{2} \\cos \\dfrac{\\alpha + \\beta}{2} = 0.$$ $$\\cos \\alpha = \\cos \\beta \\implies -2\\sin \\dfrac{\\alpha + \\beta}{2} \\sin \\dfrac{\\alpha - \\beta}{2} = 0.$$ Combining yields \\( \\alpha - \\beta = 2n\\pi, n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 19"
+    "correctIndex": 1,
+    "explanation": "Expand using \\(2\\sin A\\sin B = \\cos(A-B) - \\cos(A+B)\\):\n\n\\[4(\\sin 2x\\sin 4x + \\sin^2 x) = 3\\]\n\n\\[2(\\cos 2x - \\cos 6x) + 2(1 - \\cos 2x) = 3\\]\n\n\\[2\\cos 2x - 2\\cos 6x + 2 - 2\\cos 2x = 3\\]\n\n\\[-2\\cos 6x = 1 \\implies \\cos 6x = -\\frac{1}{2}\\]\n\n\\[6x = 2n\\pi \\pm \\frac{2\\pi}{3}\\]\n\n\\[x = \\frac{n\\pi}{3} \\pm \\frac{\\pi}{9},\\quad n \\in \\mathbb{Z}\\]",
+    "name": "Product and Power of Sin Equation"
   },
   {
     "id": "m13_item20",
-    "text": "General solution of \\( 4\\sin^2 x - 4\\sin x + 1 = 0 \\) is",
+    "text": "Let \\([x]\\) denote the greatest integer \\(\\leq x\\). If the number of solutions of \\(\\sin x \\sqrt{4\\cos^2 x} = \\dfrac{2 + x - [x]}{1 - x + [x]}\\) is \\(k\\), then for \\(x \\in \\left(\\dfrac{\\pi}{4}, \\dfrac{\\pi}{3}\\right)\\), the value of \\(k\\tan^2 x\\) is",
     "options": [
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = n\\pi \\pm \\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{3}, n \\in \\mathbb{Z} \\)",
-      "\\( x = (2n+1)\\dfrac{\\pi}{6}, n \\in \\mathbb{Z} \\)"
+      "Equal to 1",
+      "Lies between \\(2\\) and \\(2\\sqrt{3}\\)",
+      "Equal to zero",
+      "Lies between \\(\\dfrac{1}{\\sqrt{3}}\\) and \\(\\dfrac{1}{2}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "$$4\\sin^2 x - 4\\sin x + 1 = 0 \\implies (2\\sin x - 1)^2 = 0 \\implies \\sin x = \\dfrac{1}{2} \\implies x = n\\pi + (-1)^n \\dfrac{\\pi}{6}, n \\in \\mathbb{Z}.$$",
-    "name": "Questions Item 20"
+    "correctIndex": 2,
+    "explanation": "Using \\(x - [x] = \\{x\\}\\) (fractional part), the equation becomes:\n\n\\[2\\sin x|\\cos x| = \\frac{2+\\{x\\}}{1-\\{x\\}}\\]\n\nThe right side: since \\(\\{x\\} \\in [0,1)\\), the numerator \\(2+\\{x\\} \\geq 2\\) and the denominator \\(1-\\{x\\} > 0\\), so the right side \\(\\geq 2\\).\n\nThe left side: for \\(x \\in \\left(\\dfrac{\\pi}{4}, \\dfrac{\\pi}{3}\\right)\\), \\(|\\cos x| = \\cos x > 0\\), so the left side is \\(\\sin 2x\\).\n\nThe maximum of \\(\\sin 2x\\) is 1 (at \\(x = \\dfrac{\\pi}{4}\\)), while the right side is \\(\\geq 2\\). So there is **no solution**, meaning \\(k = 0\\).\n\nTherefore \\(k\\tan^2 x = 0 \\cdot \\tan^2 x = 0\\).",
+    "name": "Greatest Integer Floor Equation"
   }
 ]

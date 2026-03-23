@@ -37,7 +37,7 @@ export const login = async (credentials) => {
 export const loginWithGoogle = async (tokenId) => {
   const referral = localStorage.getItem("referral");
 
-  const { data } = await api.post('/auth/google', { 
+  const { data } = await api.post('/auth/google', {
     tokenId,
     referredBy: referral || null
   });
@@ -122,6 +122,27 @@ export const getCreatorDashboard = async () => {
 //admin apis
 export const getAdminDashboard = async () => {
   const { data } = await api.get('/admin/dashboard');
+  return data;
+};
+
+// --- Support API ---
+export const createTicket = async (ticketData) => {
+  const { data } = await api.post('/support/ticket', ticketData);
+  return data;
+};
+
+export const getUserTickets = async () => {
+  const { data } = await api.get('/support/user-tickets');
+  return data;
+};
+
+export const getAdminTickets = async () => {
+  const { data } = await api.get('/support/admin-tickets');
+  return data;
+};
+
+export const replyToTicketAdmin = async (replyData) => {
+  const { data } = await api.post('/support/admin-reply', replyData);
   return data;
 };
 

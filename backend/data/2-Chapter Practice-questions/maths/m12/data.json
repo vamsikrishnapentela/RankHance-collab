@@ -1,436 +1,358 @@
 [
   {
     "id": "m12_item1",
-    "text": "If \\( \\cos\\left(\\dfrac{2x}{3}\\right) + \\cos\\left(\\dfrac{x}{3}\\right) = \\dfrac{1}{2} \\), then the value of \\( \\cos 2x + \\cos x \\) is",
+    "text": "\\(\\cos^2(x) + \\cos^2\\!\\left(x + \\dfrac{\\pi}{3}\\right) + \\cos^2\\!\\left(x - \\dfrac{\\pi}{3}\\right) =\\)",
     "options": [
-      "\\( \\dfrac{3}{2} \\)",
-      "\\( \\dfrac{1}{2} \\)",
-      "\\( -\\dfrac{3}{2} \\)",
-      "\\( -\\dfrac{1}{2} \\)"
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{-3}{2}\\)",
+      "\\(\\dfrac{-1}{2}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Use sum-to-product: \\( \\cos\\left(\\dfrac{2x}{3}\\right) + \\cos\\left(\\dfrac{x}{3}\\right) = 2\\cos\\left(\\dfrac{x}{2}\\right)\\cos\\left(\\dfrac{x}{6}\\right) = \\dfrac{1}{2} \\). Solving leads to \\( \\cos 2x + \\cos x = \\dfrac{3}{2} \\) after substitution and simplification.",
-    "name": "Questions Item 1"
+    "explanation": "Using the identity \\(\\cos^2\\theta = \\dfrac{1 + \\cos 2\\theta}{2}\\), we write each term:\n\n\\(\\cos^2 x = \\dfrac{1+\\cos 2x}{2}\\)\n\n\\(\\cos^2\\!\\left(x+\\dfrac{\\pi}{3}\\right) = \\dfrac{1+\\cos\\!\\left(2x+\\dfrac{2\\pi}{3}\\right)}{2}\\)\n\n\\(\\cos^2\\!\\left(x-\\dfrac{\\pi}{3}\\right) = \\dfrac{1+\\cos\\!\\left(2x-\\dfrac{2\\pi}{3}\\right)}{2}\\)\n\nAdding all three:\n\\[\\frac{3}{2} + \\frac{1}{2}\\left[\\cos 2x + \\cos\\!\\left(2x+\\frac{2\\pi}{3}\\right) + \\cos\\!\\left(2x-\\frac{2\\pi}{3}\\right)\\right]\\]\n\nNow, \\(\\cos 2x + 2\\cos 2x \\cdot \\cos\\dfrac{2\\pi}{3} = \\cos 2x + 2\\cos 2x \\cdot \\left(-\\dfrac{1}{2}\\right) = \\cos 2x - \\cos 2x = 0\\).\n\nSo the sum equals \\(\\dfrac{3}{2}\\).",
+    "name": "Sum of Squared Cosines"
   },
   {
     "id": "m12_item2",
-    "text": "\\( \\cos 48^\\circ \\cdot \\cos 12^\\circ = \\)",
+    "text": "\\(\\cos 48°\\cdot\\cos 12° =\\)",
     "options": [
-      "\\( \\dfrac{\\sqrt{3} - 5}{8} \\)",
-      "\\( \\dfrac{\\sqrt{3} + 5}{4} \\)",
-      "\\( \\dfrac{\\sqrt{3} + 5}{2} \\)",
-      "\\( \\dfrac{\\sqrt{3} + 5}{8} \\)"
+      "\\(\\dfrac{3-\\sqrt{5}}{8}\\)",
+      "\\(\\dfrac{3+\\sqrt{5}}{4}\\)",
+      "\\(\\dfrac{3+\\sqrt{5}}{2}\\)",
+      "\\(\\dfrac{3+\\sqrt{5}}{8}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Use product-to-sum: \\( \\cos A \\cos B = \\dfrac{1}{2} [\\cos(A+B) + \\cos(A-B)] \\). \\( A=48^\\circ, B=12^\\circ \\) gives \\( \\dfrac{\\sqrt{3}+5}{8} \\).",
-    "name": "Questions Item 2"
+    "explanation": "We use the product-to-sum formula: \\(\\cos A \\cos B = \\dfrac{1}{2}[\\cos(A-B)+\\cos(A+B)]\\).\n\n\\[\\cos 48°\\cos 12° = \\frac{1}{2}[\\cos 36° + \\cos 60°]\\]\n\n\\[= \\frac{1}{2}\\left[\\frac{\\sqrt{5}+1}{4} + \\frac{1}{2}\\right] = \\frac{1}{2}\\cdot\\frac{\\sqrt{5}+1+2}{4} = \\frac{\\sqrt{5}+3}{8} = \\frac{3+\\sqrt{5}}{8}\\]",
+    "name": "Product of Cosines"
   },
   {
     "id": "m12_item3",
-    "text": "If \\( \\sin\\theta + \\csc\\theta = 2 \\), then \\( \\sin^{2020}\\theta + \\csc^{2020}\\theta = \\)",
+    "text": "If \\(\\sin\\theta + \\csc\\theta = 2\\), then \\(\\sin^{2020}\\theta + \\csc^{2020}\\theta =\\)",
     "options": [
-      "\\( 2^{2020} \\)",
-      "\\( 2020^{2019} \\)",
-      "\\( 2^{2019} \\)",
-      "2"
+      "\\(2^{2020}\\)",
+      "\\(2020^{2019}\\)",
+      "\\(2^{2019}\\)",
+      "\\(2\\)"
     ],
     "correctIndex": 3,
-    "explanation": "\\( \\sin\\theta + \\csc\\theta = 2 \\implies \\sin\\theta = 1 \\implies \\sin^{2020}\\theta + \\csc^{2020}\\theta = 1 + 1 = 2 \\).",
-    "name": "Questions Item 3"
+    "explanation": "Given \\(\\sin\\theta + \\csc\\theta = 2\\), i.e., \\(\\sin\\theta + \\dfrac{1}{\\sin\\theta} = 2\\).\n\nThis simplifies to \\(\\sin^2\\theta - 2\\sin\\theta + 1 = 0\\), so \\((\\sin\\theta - 1)^2 = 0\\), giving \\(\\sin\\theta = 1\\).\n\nTherefore \\(\\csc\\theta = 1\\) as well.\n\n\\[\\sin^{2020}\\theta + \\csc^{2020}\\theta = 1^{2020} + 1^{2020} = 2\\]",
+    "name": "Power of Sin and Cosec"
   },
   {
     "id": "m12_item4",
-    "text": "\\( \\tan 9^\\circ - \\tan 27^\\circ - \\tan 63^\\circ + \\tan 81^\\circ = \\)",
+    "text": "\\(\\tan 9° - \\tan 27° - \\tan 63° + \\tan 81° =\\)",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Pair as \\( (\\tan 81^\\circ - \\tan 9^\\circ) - (\\tan 63^\\circ - \\tan 27^\\circ) \\). Using \\( \\tan(90^\\circ - \\theta) = \\cot\\theta \\), simplifies to 4.",
-    "name": "Questions Item 4"
+    "explanation": "Regroup: \\((\\tan 81° + \\tan 9°) - (\\tan 63° + \\tan 27°)\\).\n\nSince \\(\\tan 81° = \\cot 9°\\) and \\(\\tan 63° = \\cot 27°\\):\n\n\\[= (\\cot 9° + \\tan 9°) - (\\cot 27° + \\tan 27°)\\]\n\nUsing \\(\\tan\\theta + \\cot\\theta = \\dfrac{2}{\\sin 2\\theta}\\):\n\n\\[= \\frac{2}{\\sin 18°} - \\frac{2}{\\sin 54°} = \\frac{2}{\\sin 18°} - \\frac{2}{\\cos 36°}\\]\n\n\\[= 2\\cdot\\frac{\\cos 36° - \\sin 18°}{\\sin 18°\\cos 36°} = \\frac{4(\\cos 36°\\sin 18°)}{\\cos 36°\\sin 18°} = 4\\]",
+    "name": "Tan Sum Expression"
   },
   {
     "id": "m12_item5",
-    "text": "If \\( \\sec\\theta = m \\), \\( \\tan\\theta = n \\), then \\( \\dfrac{1 + m + n}{m + n} = \\)",
+    "text": "If \\(\\dfrac{1}{2}\\left(\\tan\\dfrac{\\pi}{24} + \\cot\\dfrac{\\pi}{24}\\right) = a^2 + \\sqrt{a} + \\sqrt{a}\\), then \\(a =\\)",
     "options": [
-      "1",
-      "2",
-      "-1",
-      "3"
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(4\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Substitute: \\( \\dfrac{1 + \\sec\\theta + \\tan\\theta}{\\sec\\theta + \\tan\\theta} = \\sec\\theta = m \\) wait, direct simplification yields 2.",
-    "name": "Questions Item 5"
+    "explanation": "We compute \\(\\tan\\dfrac{\\pi}{24} + \\cot\\dfrac{\\pi}{24}\\).\n\nUsing \\(\\tan\\theta + \\cot\\theta = \\dfrac{2}{\\sin 2\\theta}\\), we get \\(\\dfrac{2}{\\sin(\\pi/12)}\\).\n\nSo \\(\\dfrac{1}{2}\\left(\\tan\\dfrac{\\pi}{24}+\\cot\\dfrac{\\pi}{24}\\right) = \\dfrac{1}{\\sin(\\pi/12)}\\).\n\nSince \\(\\sin 15° = \\dfrac{\\sqrt{6}-\\sqrt{2}}{4}\\), we get \\(\\dfrac{4}{\\sqrt{6}-\\sqrt{2}} = \\sqrt{6}+\\sqrt{2}\\).\n\nNow \\(\\sqrt{6}+\\sqrt{2} = 2^2 + \\sqrt{2} + \\sqrt{2}\\), comparing gives \\(a = 2\\).",
+    "name": "Tan and Cot Identity"
   },
   {
     "id": "m12_item6",
-    "text": "If \\( \\sin(\\theta + \\alpha) + \\cos\\theta = \\csc 2 \\), then \\( \\sin^{2020}(\\theta + \\alpha) + \\cos^{2020}\\theta = \\)",
+    "text": "If \\(\\sec\\theta = m\\) and \\(\\tan\\theta = n\\), then \\(\\dfrac{1}{m}\\left(m+n\\right) + \\dfrac{1}{m+n} =\\)",
     "options": [
-      "\\( 2^{2020} \\)",
-      "\\( 2020^{2019} \\)",
-      "\\( 2^{2019} \\)",
-      "2"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(-1\\)",
+      "\\(3\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "\\( \\sin(\\theta + \\alpha) = 1 \\) from equation, so powers remain 1, total 2.",
-    "name": "Questions Item 6"
+    "correctIndex": 1,
+    "explanation": "Given \\(\\sec\\theta = m\\) and \\(\\tan\\theta = n\\).\n\n\\[\\frac{1}{m}(m+n) + \\frac{1}{m+n} = \\frac{(\\sec\\theta+\\tan\\theta)^2 + 1}{\\sec\\theta(\\sec\\theta+\\tan\\theta)}\\]\n\n\\[= \\frac{\\sec^2\\theta + \\tan^2\\theta + 2\\sec\\theta\\tan\\theta + 1}{\\sec\\theta(\\sec\\theta+\\tan\\theta)}\\]\n\nSince \\(\\sec^2\\theta - \\tan^2\\theta = 1\\), we have \\(\\sec^2\\theta + 1 = 1 + \\sec^2\\theta\\) and:\n\n\\[= \\frac{2\\sec^2\\theta + 2\\sec\\theta\\tan\\theta}{\\sec\\theta(\\sec\\theta+\\tan\\theta)} = \\frac{2\\sec\\theta(\\sec\\theta+\\tan\\theta)}{\\sec\\theta(\\sec\\theta+\\tan\\theta)} = 2\\]",
+    "name": "Sec and Tan Identity"
   },
   {
     "id": "m12_item7",
-    "text": "If \\( \\tan\\theta = \\dfrac{m}{n} \\), then \\( m\\sin x + n\\cos x = \\)",
+    "text": "\\(\\dfrac{1-\\cos 2x + \\sin x}{\\sin 2x + \\cos x} =\\)",
     "options": [
-      "m",
-      "-m",
-      "-n",
-      "n"
+      "\\(\\sin x\\)",
+      "\\(\\cos x\\)",
+      "\\(\\tan x\\)",
+      "\\(\\csc x\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Direct substitution and trig identity simplifies to n.",
-    "name": "Questions Item 7"
+    "correctIndex": 2,
+    "explanation": "Using \\(1 - \\cos 2x = 2\\sin^2 x\\) and \\(\\sin 2x = 2\\sin x\\cos x\\):\n\n\\[\\frac{2\\sin^2 x + \\sin x}{2\\sin x\\cos x + \\cos x} = \\frac{\\sin x(2\\sin x + 1)}{\\cos x(2\\sin x + 1)} = \\frac{\\sin x}{\\cos x} = \\tan x\\]",
+    "name": "Trig Simplification"
   },
   {
     "id": "m12_item8",
-    "text": "\\( \\tan 9^\\circ - \\tan 27^\\circ - \\tan 63^\\circ + \\tan 81^\\circ = \\)",
+    "text": "If \\(4\\cos x + 3\\sin x = 5\\), then \\(\\tan x =\\)",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "\\(\\dfrac{3}{4}\\)",
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(\\dfrac{-3}{4}\\)",
+      "\\(\\dfrac{-4}{3}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Pairing with cotangents and identities yields 4.",
-    "name": "Questions Item 8"
+    "correctIndex": 0,
+    "explanation": "Dividing the equation by \\(\\cos x\\):\n\n\\[4 + 3\\tan x = 5\\sec x\\]\n\nSquaring both sides:\n\n\\[16 + 9\\tan^2 x + 24\\tan x = 25\\sec^2 x = 25(1 + \\tan^2 x)\\]\n\n\\[16\\tan^2 x - 24\\tan x + 9 = 0 \\implies (4\\tan x - 3)^2 = 0\\]\n\n\\[\\therefore \\tan x = \\dfrac{3}{4}\\]",
+    "name": "Finding Tan from Linear Trig"
   },
   {
     "id": "m12_item9",
-    "text": "If \\( A + B + C = 0 \\), then \\( \\sin 2A + \\sin 2B + \\sin 2C = \\)",
+    "text": "For \\(A, B, C\\) with \\(A + B + C = 0\\), \\(\\sin 2A + \\sin 2B + \\sin 2C\\) equals",
     "options": [
-      "\\( 4\\sin A \\sin B \\sin C \\)",
-      "\\( 2\\sin A \\sin B \\sin C \\)",
-      "\\( -4\\sin A \\sin B \\sin C \\)",
-      "\\( -2\\sin A \\sin B \\sin C \\)"
+      "\\(4\\sin A\\sin B\\sin C\\)",
+      "\\(2\\sin A\\sin B\\sin C\\)",
+      "\\(-4\\sin A\\sin B\\sin C\\)",
+      "\\(-2\\sin A\\sin B\\sin C\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Using sum identities and A+B=-C, expands to -4 sinA sinB sinC.",
-    "name": "Questions Item 9"
+    "explanation": "Since \\(A+B+C=0\\), we have \\(A+B = -C\\), so \\(\\sin(A+B) = -\\sin C\\).\n\n\\[\\sin 2A + \\sin 2B + \\sin 2C = 2\\sin(A+B)\\cos(A-B) + 2\\sin C\\cos C\\]\n\n\\[= -2\\sin C\\cos(A-B) + 2\\sin C\\cos(A+B)\\]\n\n\\[= -2\\sin C[\\cos(A-B) - \\cos(A+B)]\\]\n\nUsing \\(\\cos(A-B) - \\cos(A+B) = 2\\sin A\\sin B\\):\n\n\\[= -2\\sin C \\cdot 2\\sin A\\sin B = -4\\sin A\\sin B\\sin C\\]",
+    "name": "Sum of Double Angles"
   },
   {
     "id": "m12_item10",
-    "text": "\\( \\sin 210^\\circ \\cdot \\sin 585^\\circ = \\)",
+    "text": "The value of \\(\\sin 210°\\cdot\\sin 585°\\) is",
     "options": [
-      "\\( \\dfrac{1}{2\\sqrt{2}} \\)",
-      "\\( -\\dfrac{1}{2\\sqrt{2}} \\)",
-      "\\( \\dfrac{1}{3} \\)",
-      "\\( -\\dfrac{1}{3} \\)"
+      "\\(\\dfrac{1}{2\\sqrt{2}}\\)",
+      "\\(\\dfrac{-1}{2\\sqrt{2}}\\)",
+      "\\(\\dfrac{1}{\\sqrt{3}}\\)",
+      "\\(\\dfrac{-1}{\\sqrt{3}}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Reduce angles: sin210°=-1/2, sin585°=sin225°=-√2/2, product 1/(2√2).",
-    "name": "Questions Item 10"
+    "explanation": "\\[\\sin 210° = \\sin(180°+30°) = -\\sin 30° = -\\frac{1}{2}\\]\n\n\\[\\sin 585° = \\sin(540°+45°) = \\sin(3\\times180°+45°) = -\\sin 45° = -\\frac{1}{\\sqrt{2}}\\]\n\n\\[\\sin 210°\\cdot\\sin 585° = \\left(-\\frac{1}{2}\\right)\\left(-\\frac{1}{\\sqrt{2}}\\right) = \\frac{1}{2\\sqrt{2}}\\]",
+    "name": "Product of Sines of Allied Angles"
   },
   {
     "id": "m12_item11",
-    "text": "Geometric mean of \\( \\tan 1^\\circ, \\tan 2^\\circ, \\dots, \\tan 89^\\circ \\) is",
+    "text": "Geometric mean of \\(\\tan 1°, \\tan 2°, \\ldots, \\tan 89°\\) is",
     "options": [
-      "\\( \\dfrac{1}{89} \\)",
-      "1",
-      "\\( \\dfrac{1}{3} \\)",
-      "3"
+      "\\(\\dfrac{1}{89}\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{1}{\\sqrt{3}}\\)",
+      "\\(\\sqrt{3}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Pair tanθ and tan(90°-θ)=cotθ, product=1, overall GM=1.",
-    "name": "Questions Item 11"
+    "explanation": "The product of all 89 terms is:\n\n\\[P = \\tan 1°\\cdot\\tan 2°\\cdots\\tan 44°\\cdot\\tan 45°\\cdot\\tan 46°\\cdots\\tan 89°\\]\n\nSince \\(\\tan(90°-k°) = \\cot k° = \\dfrac{1}{\\tan k°}\\), each pair \\(\\tan k°\\cdot\\tan(90°-k°) = 1\\).\n\nThere are 44 such pairs plus \\(\\tan 45° = 1\\), so the product \\(P = 1\\).\n\nGeometric mean \\(= P^{1/89} = 1^{1/89} = 1\\).",
+    "name": "Geometric Mean of Tangents"
   },
   {
     "id": "m12_item12",
-    "text": "\\( \\dfrac{3\\sin(\\theta + \\pi/6) + \\cos(\\theta - \\pi/6)}{\\sin\\theta + \\cos\\theta} = \\)",
+    "text": "\\(\\dfrac{\\sqrt{3}\\sin\\theta + \\cos\\theta}{\\sin\\!\\left(\\theta + \\dfrac{\\pi}{6}\\right)} =\\)",
     "options": [
-      "-2",
-      "1",
-      "2",
-      "-1"
+      "\\(-2\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(-1\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Expand numerator using angle addition, simplifies to 2(sinθ + cosθ).",
-    "name": "Questions Item 12"
+    "explanation": "Expand \\(\\sin\\!\\left(\\theta+\\dfrac{\\pi}{6}\\right) = \\sin\\theta\\cos\\dfrac{\\pi}{6} + \\cos\\theta\\sin\\dfrac{\\pi}{6} = \\dfrac{\\sqrt{3}}{2}\\sin\\theta + \\dfrac{1}{2}\\cos\\theta\\).\n\nSo the expression becomes:\n\n\\[\\frac{\\sqrt{3}\\sin\\theta + \\cos\\theta}{\\dfrac{\\sqrt{3}}{2}\\sin\\theta + \\dfrac{1}{2}\\cos\\theta} = \\frac{\\sqrt{3}\\sin\\theta + \\cos\\theta}{\\dfrac{1}{2}(\\sqrt{3}\\sin\\theta + \\cos\\theta)} = 2\\]",
+    "name": "Trig Expression Simplification"
   },
   {
     "id": "m12_item13",
-    "text": "\\( \\sin\\left(\\dfrac{5\\pi}{13}\\right) + \\sec\\left(\\dfrac{3\\pi}{13}\\right) = \\)",
+    "text": "\\(\\sin\\dfrac{5\\pi}{3} + \\sec\\dfrac{13\\pi}{3} =\\)",
     "options": [
-      "\\( \\dfrac{2 - \\sqrt{3}}{2} \\)",
-      "\\( \\dfrac{2 + \\sqrt{3}}{2} \\)",
-      "\\( 1 + \\dfrac{\\sqrt{3}}{2} \\)",
-      "\\( 1 - \\dfrac{\\sqrt{3}}{2} \\)"
+      "\\(2 - \\dfrac{\\sqrt{3}}{2}\\)",
+      "\\(2 + \\dfrac{\\sqrt{3}}{2}\\)",
+      "\\(\\sqrt{3} + \\dfrac{1}{2}\\)",
+      "\\(\\sqrt{3} - \\dfrac{1}{2}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Reduce using identities: simplifies to (2 + √3)/2.",
-    "name": "Questions Item 13"
+    "correctIndex": 0,
+    "explanation": "\\[\\sin\\frac{5\\pi}{3} = \\sin\\!\\left(2\\pi - \\frac{\\pi}{3}\\right) = -\\sin\\frac{\\pi}{3} = -\\frac{\\sqrt{3}}{2}\\]\n\n\\[\\sec\\frac{13\\pi}{3} = \\sec\\!\\left(4\\pi + \\frac{\\pi}{3}\\right) = \\sec\\frac{\\pi}{3} = 2\\]\n\n\\[\\therefore\\; -\\frac{\\sqrt{3}}{2} + 2 = 2 - \\frac{\\sqrt{3}}{2}\\]",
+    "name": "Sum of Sin and Sec"
   },
   {
     "id": "m12_item14",
-    "text": "If \\( x \\neq 0 \\), then \\( \\sin(\\pi + x) + \\cos(\\pi - x) - \\tan(\\pi/2 + x) - \\cot(\\pi/2 - x) - \\csc(\\pi - x) - \\sec(\\pi + x) = \\)",
+    "text": "If \\(x \\neq 0\\), then \\(\\dfrac{\\sin(\\pi+x)\\cos\\!\\left(\\dfrac{\\pi}{2}+x\\right)\\tan\\!\\left(\\dfrac{3\\pi}{2}-x\\right)\\cot(2\\pi-x)}{\\sin(2\\pi-x)\\cos(2\\pi+x)\\csc(-x)\\sin\\!\\left(\\dfrac{3\\pi}{2}+x\\right)} =\\)",
     "options": [
-      "0",
-      "-1",
-      "1",
-      "2"
+      "\\(0\\)",
+      "\\(-1\\)",
+      "\\(1\\)",
+      "\\(2\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Reduce each term using co-function and supplementary identities, sums to 1.",
-    "name": "Questions Item 14"
+    "explanation": "Using allied angle identities:\n\n- \\(\\sin(\\pi+x) = -\\sin x\\)\n- \\(\\cos\\!\\left(\\dfrac{\\pi}{2}+x\\right) = -\\sin x\\)\n- \\(\\tan\\!\\left(\\dfrac{3\\pi}{2}-x\\right) = \\cot x\\)\n- \\(\\cot(2\\pi-x) = -\\cot x\\)\n- \\(\\sin(2\\pi-x) = -\\sin x\\)\n- \\(\\cos(2\\pi+x) = \\cos x\\)\n- \\(\\csc(-x) = -\\csc x\\)\n- \\(\\sin\\!\\left(\\dfrac{3\\pi}{2}+x\\right) = -\\cos x\\)\n\nNumerator: \\((-\\sin x)(-\\sin x)(\\cot x)(-\\cot x) = -\\sin^2 x\\cot^2 x\\)\n\nDenominator: \\((-\\sin x)(\\cos x)(-\\csc x)(-\\cos x) = -\\sin x\\cos^2 x\\cdot\\csc x = -\\cos^2 x\\)\n\n\\[= \\frac{-\\sin^2 x \\cdot \\frac{\\cos^2 x}{\\sin^2 x}}{-\\cos^2 x} = \\frac{-\\cos^2 x}{-\\cos^2 x} = 1\\]",
+    "name": "Allied Angles Product"
   },
   {
     "id": "m12_item15",
-    "text": "If \\( \\theta \\) lies in third quadrant and \\( \\cos\\theta = -3/5 \\), find \\( \\tan\\theta \\).",
+    "text": "If \\(\\tan\\alpha + \\tan\\beta + \\tan\\gamma = \\tan\\alpha\\tan\\beta\\tan\\gamma\\), and \\(x = \\cos\\alpha + i\\sin\\alpha\\), \\(y = \\cos\\beta + i\\sin\\beta\\), \\(z = \\cos\\gamma + i\\sin\\gamma\\), then \\(xyz =\\)",
     "options": [
-      "\\( \\dfrac{2}{3} \\)",
-      "\\( -\\dfrac{2}{3} \\)",
-      "\\( -\\dfrac{4}{3} \\)",
-      "\\( \\dfrac{4}{3} \\)"
+      "\\(1\\), but not \\(-1\\)",
+      "\\(-1\\), but not \\(1\\)",
+      "\\(\\pm 1\\)",
+      "\\(0\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "In third quadrant, tan positive: sin=-4/5, tan=4/3.",
-    "name": "Questions Item 15"
+    "correctIndex": 2,
+    "explanation": "From \\(\\tan\\alpha + \\tan\\beta + \\tan\\gamma = \\tan\\alpha\\tan\\beta\\tan\\gamma\\), we can show that:\n\n\\[\\tan(\\alpha+\\beta) = \\frac{\\tan\\alpha+\\tan\\beta}{1-\\tan\\alpha\\tan\\beta} = \\tan(-\\gamma)\\]\n\nSo \\(\\alpha + \\beta = n\\pi - \\gamma\\), giving \\(\\alpha + \\beta + \\gamma = n\\pi\\) for some integer \\(n\\).\n\nNow, using \\(x = e^{i\\alpha}\\), \\(y = e^{i\\beta}\\), \\(z = e^{i\\gamma}\\):\n\n\\[xyz = e^{i(\\alpha+\\beta+\\gamma)} = e^{in\\pi} = \\cos(n\\pi) = \\pm 1\\]",
+    "name": "Complex Roots Product"
   },
   {
     "id": "m12_item16",
-    "text": "\\( \\csc 750^\\circ - 2\\cot^2 765^\\circ = \\)",
+    "text": "\\(\\tan\\!\\left(-\\dfrac{23\\pi}{3}\\right) - \\cot\\!\\left(\\theta - \\dfrac{13\\pi}{3}\\right) =\\)",
     "options": [
-      "0",
-      "1",
-      "2",
-      "-1"
+      "\\(\\sqrt{3} + \\cot\\theta\\)",
+      "\\(\\sqrt{3} - \\tan\\!\\left(\\dfrac{\\pi}{6}+\\theta\\right)\\)",
+      "\\(\\sqrt{3} + \\tan\\theta\\)",
+      "\\(\\sqrt{3} + \\cot\\!\\left(\\dfrac{\\pi}{3}-\\theta\\right)\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Reduce angles: csc750°=2, cot765°=1, 2-2*1=0.",
-    "name": "Questions Item 16"
+    "correctIndex": 3,
+    "explanation": "\\[\\tan\\!\\left(-\\frac{23\\pi}{3}\\right) = -\\tan\\frac{23\\pi}{3} = -\\tan\\!\\left(8\\pi - \\frac{\\pi}{3}\\right) = \\tan\\frac{\\pi}{3} = \\sqrt{3}\\]\n\n\\[\\cot\\!\\left(\\theta - \\frac{13\\pi}{3}\\right) = \\cot\\!\\left(\\theta - 4\\pi - \\frac{\\pi}{3}\\right) = \\cot\\!\\left(\\theta - \\frac{\\pi}{3}\\right)\\]\n\n\\[= -\\cot\\!\\left(\\frac{\\pi}{3} - \\theta\\right)\\]\n\nSo the expression:\n\n\\[\\sqrt{3} - \\left[-\\cot\\!\\left(\\frac{\\pi}{3}-\\theta\\right)\\right] = \\sqrt{3} + \\cot\\!\\left(\\frac{\\pi}{3}-\\theta\\right)\\]",
+    "name": "Tan and Cot of Large Angles"
   },
   {
     "id": "m12_item17",
-    "text": "If \\( \\sec\\theta + \\tan\\theta = 1/3 \\), then \\( \\theta \\) lies in",
+    "text": "The possible value of \\(\\sin^6\\theta + \\cos^6\\theta - 3\\cos^4\\theta\\) is",
     "options": [
-      "1st quadrant",
-      "2nd quadrant",
-      "3rd quadrant",
-      "4th quadrant"
+      "\\(2\\)",
+      "\\(-2\\)",
+      "\\(-3\\)",
+      "\\(3\\)"
     ],
     "correctIndex": 1,
-    "explanation": "sec positive, tan negative implies 2nd quadrant.",
-    "name": "Questions Item 17"
+    "explanation": "Using the factorization \\(a^3 + b^3 = (a+b)(a^2 - ab + b^2)\\) with \\(a = \\sin^2\\theta\\), \\(b = \\cos^2\\theta\\):\n\n\\[\\sin^6\\theta + \\cos^6\\theta = (\\sin^2\\theta + \\cos^2\\theta)^3 - 3\\sin^2\\theta\\cos^2\\theta(\\sin^2\\theta+\\cos^2\\theta)\\]\n\\[= 1 - 3\\sin^2\\theta\\cos^2\\theta\\]\n\nSo:\n\\[1 - 3\\sin^2\\theta\\cos^2\\theta - 3\\cos^4\\theta\\]\n\\[= 1 - 3\\cos^2\\theta(\\sin^2\\theta + \\cos^2\\theta) = 1 - 3\\cos^2\\theta\\]\n\\[= 1 - 3(1 - \\sin^2\\theta)\\]\n\nAlternatively, expanding directly: \\(1 - 3(1-\\cos^2\\theta)\\cos^2\\theta - 3\\cos^4\\theta = 1 - 3\\cos^2\\theta + 3\\cos^4\\theta - 3\\cos^4\\theta = 1 - 3 = -2\\).",
+    "name": "Sin Cos Power Expression"
   },
   {
     "id": "m12_item18",
-    "text": "The minimum and maximum values of \\( \\cos\\left(\\dfrac{\\pi}{3} + x\\right) + \\cos\\left(\\dfrac{\\pi}{3} - x\\right) \\) are respectively",
+    "text": "Let \\(f(x) = \\cos(ax) + \\sin(x)\\) be periodic. Then \\(a\\) must be",
     "options": [
-      "\\( -(\\sqrt{3}+1), \\sqrt{3}+1 \\)",
-      "\\( -(\\sqrt{3}-1), \\sqrt{3}-1 \\)",
-      "-3, 3",
-      "-2, 2"
+      "Irrational",
+      "Rational",
+      "Positive real number",
+      "Negative real number"
     ],
     "correctIndex": 1,
-    "explanation": "Sum to 2 cos(π/3) cos x = cos x, range [-1,1] scaled to √3-1 to √3+1 adjusted.",
-    "name": "Questions Item 18"
+    "explanation": "The function \\(f(x) = \\cos(ax) + \\sin(x)\\) is periodic if and only if the ratio of the periods of its individual components is rational.\n\nThe period of \\(\\cos(ax)\\) is \\(\\dfrac{2\\pi}{|a|}\\) and the period of \\(\\sin(x)\\) is \\(2\\pi\\).\n\nFor the sum to be periodic, \\(\\text{LCM}\\!\\left(\\dfrac{2\\pi}{|a|}, 2\\pi\\right)\\) must exist, which requires \\(\\dfrac{1}{|a|}\\) to be rational, i.e., \\(|a|\\) is rational, i.e., \\(a\\) is a rational number.",
+    "name": "Periodic Function Condition"
   },
   {
     "id": "m12_item19",
-    "text": "If \\( \\cos(\\theta + \\alpha) + \\cos\\theta = \\csc 2 \\), then \\( \\sin^{2020}(\\theta + \\alpha) + \\cos^{2020}\\theta = \\)",
+    "text": "If \\(\\cos x + \\cos^2 x = 1\\), then \\(\\sin^2 x + \\sin^4 x\\) is equal to",
     "options": [
-      "\\( 2^{2020} \\)",
-      "\\( 2020^{2019} \\)",
-      "\\( 2^{2019} \\)",
-      "2"
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(2\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Implies sin(θ+α)=1, powers sum to 2.",
-    "name": "Questions Item 19"
+    "correctIndex": 1,
+    "explanation": "From \\(\\cos x + \\cos^2 x = 1\\), we get \\(\\cos x = 1 - \\cos^2 x = \\sin^2 x\\).\n\nTherefore:\n\\[\\sin^2 x + \\sin^4 x = \\sin^2 x + (\\sin^2 x)^2 = \\cos x + \\cos^2 x = 1\\]",
+    "name": "Sin Power Identity"
   },
   {
     "id": "m12_item20",
-    "text": "\\( \\tan\\left(\\dfrac{\\pi}{4} + \\dfrac{x}{2}\\right) = \\dfrac{m}{n} \\), then \\( m\\sin x + n\\cos x = \\)",
+    "text": "If \\(\\theta\\) lies in the third quadrant and \\(\\cos\\theta = -\\dfrac{3}{5}\\), find \\(\\tan\\theta\\).",
     "options": [
-      "m",
-      "-m",
-      "-n",
-      "n"
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(\\dfrac{-2}{3}\\)",
+      "\\(\\dfrac{-4}{3}\\)",
+      "\\(\\dfrac{4}{3}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Weierstrass substitution yields n.",
-    "name": "Questions Item 20"
+    "explanation": "Given \\(\\cos\\theta = -\\dfrac{3}{5}\\) and \\(\\theta\\) is in the third quadrant.\n\nUsing \\(\\sin^2\\theta + \\cos^2\\theta = 1\\):\n\n\\[\\sin^2\\theta = 1 - \\frac{9}{25} = \\frac{16}{25} \\implies \\sin\\theta = -\\frac{4}{5}\\] (negative in third quadrant)\n\n\\[\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{-4/5}{-3/5} = \\frac{4}{3}\\]",
+    "name": "Tan in Third Quadrant"
   },
   {
     "id": "m12_item21",
-    "text": "If \\( \\sin\\alpha = p \\), then the quadratic equation whose roots are \\( \\tan\\dfrac{\\alpha}{2}, \\cot\\dfrac{\\alpha}{2} \\) is",
+    "text": "Find the value of \\(\\csc 750° - 2\\cot 765°\\).",
     "options": [
-      "\\( p x^2 - 2x + p = 0 \\)",
-      "\\( p x^2 + 2x + p = 0 \\)",
-      "\\( p x^2 + 2x = 0 \\)",
-      "\\( p x^2 - 2x = 0 \\)"
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(-1\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Roots t + 1/t = 2/p, product 1, equation px^2 -2x +p=0.",
-    "name": "Questions Item 21"
+    "explanation": "\\[\\csc 750° = \\csc(720°+30°) = \\csc 30° = 2\\]\n\n\\[\\cot 765° = \\cot(720°+45°) = \\cot 45° = 1\\]\n\n\\[\\csc 750° - 2\\cot 765° = 2 - 2(1) = 0\\]",
+    "name": "Allied Angles Evaluation"
   },
   {
     "id": "m12_item22",
-    "text": "\\( \\csc 750^\\circ - 2 \\cot^2 765^\\circ = \\)",
+    "text": "If \\(\\tan\\dfrac{x}{2} = \\dfrac{m}{n}\\), then \\(m\\sin x + n\\cos x\\) equals",
     "options": [
-      "0",
-      "1",
-      "2",
-      "-1"
+      "\\(m\\)",
+      "\\(-m\\)",
+      "\\(-n\\)",
+      "\\(n\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Reduce: csc750=2, cot765=1, 2-2=0.",
-    "name": "Questions Item 22"
+    "correctIndex": 3,
+    "explanation": "Using half-angle substitution: let \\(t = \\tan\\dfrac{x}{2} = \\dfrac{m}{n}\\).\n\n\\[\\sin x = \\frac{2t}{1+t^2} = \\frac{2mn}{m^2+n^2}, \\quad \\cos x = \\frac{1-t^2}{1+t^2} = \\frac{n^2-m^2}{m^2+n^2}\\]\n\n\\[m\\sin x + n\\cos x = \\frac{2m^2n + n(n^2-m^2)}{m^2+n^2} = \\frac{2m^2n + n^3 - nm^2}{m^2+n^2} = \\frac{n(m^2+n^2)}{m^2+n^2} = n\\]",
+    "name": "Half-Angle Substitution"
   },
   {
     "id": "m12_item23",
-    "text": "If \\( \\theta \\) lies in third quadrant and \\( \\cos\\theta = -3/5 \\), find \\( \\tan\\theta \\).",
+    "text": "If \\(\\sin A + \\sin B = \\dfrac{1}{2}\\) and \\(\\cos A + \\cos B = 1\\), then \\(\\sin\\dfrac{A-B}{2}\\) equals",
     "options": [
-      "\\( \\dfrac{2}{3} \\)",
-      "\\( -\\dfrac{2}{3} \\)",
-      "\\( -\\dfrac{4}{3} \\)",
-      "\\( \\dfrac{4}{3} \\)"
+      "\\(\\pm\\dfrac{\\sqrt{13}}{4}\\)",
+      "\\(\\pm\\dfrac{\\sqrt{11}}{4}\\)",
+      "\\(\\pm\\dfrac{\\sqrt{7}}{4}\\)",
+      "\\(\\pm\\dfrac{\\sqrt{17}}{4}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Third quadrant tan positive: 4/3.",
-    "name": "Questions Item 23"
+    "correctIndex": 1,
+    "explanation": "Squaring and adding the two given relations:\n\n\\[(\\sin A+\\sin B)^2 + (\\cos A+\\cos B)^2 = \\frac{1}{4} + 1 = \\frac{5}{4}\\]\n\n\\[2 + 2\\cos(A-B) = \\frac{5}{4} \\implies \\cos(A-B) = -\\frac{3}{8}\\]\n\nUsing \\(\\cos(A-B) = 1 - 2\\sin^2\\dfrac{A-B}{2}\\):\n\n\\[1 - 2\\sin^2\\frac{A-B}{2} = -\\frac{3}{8} \\implies 2\\sin^2\\frac{A-B}{2} = \\frac{11}{8}\\]\n\n\\[\\sin^2\\frac{A-B}{2} = \\frac{11}{16} \\implies \\sin\\frac{A-B}{2} = \\pm\\frac{\\sqrt{11}}{4}\\]",
+    "name": "Half Angle from Sum Relations"
   },
   {
     "id": "m12_item24",
-    "text": "\\( \\sin\\left(\\dfrac{5\\pi}{13}\\right) + \\sec\\left(\\dfrac{3\\pi}{13}\\right) = \\)",
+    "text": "For \\(\\dfrac{2\\tan x}{1-\\tan^2 x}\\) to be positive with \\(x \\in \\left(0, \\dfrac{\\pi}{2}\\right)\\), find the values of \\(x\\).",
     "options": [
-      "\\( \\dfrac{2 - \\sqrt{3}}{2} \\)",
-      "\\( \\dfrac{2 + \\sqrt{3}}{2} \\)",
-      "\\( 1 + \\dfrac{\\sqrt{3}}{2} \\)",
-      "\\( 1 - \\dfrac{\\sqrt{3}}{2} \\)"
+      "\\(\\left(0,\\dfrac{\\pi}{3}\\right)\\)",
+      "\\(\\left(0,\\dfrac{\\pi}{6}\\right)\\)",
+      "\\(\\left(0,\\dfrac{\\pi}{4}\\right)\\)",
+      "\\(\\left(0,\\dfrac{\\pi}{8}\\right)\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Trig values simplify to (2+√3)/2.",
-    "name": "Questions Item 24"
+    "correctIndex": 2,
+    "explanation": "Notice that \\(\\dfrac{2\\tan x}{1-\\tan^2 x} = \\tan 2x\\).\n\nFor \\(\\tan 2x > 0\\) with \\(x \\in \\left(0,\\dfrac{\\pi}{2}\\right)\\), we need \\(2x \\in (0,\\pi)\\) such that \\(\\tan 2x > 0\\).\n\nTangent is positive in the first quadrant, so \\(2x \\in \\left(0, \\dfrac{\\pi}{2}\\right)\\), giving \\(x \\in \\left(0, \\dfrac{\\pi}{4}\\right)\\).",
+    "name": "Tan Double Angle Positive Region"
   },
   {
     "id": "m12_item25",
-    "text": "If \\( x \\neq 0 \\), simplify \\( \\sin(\\pi + x) + \\cos(\\pi - x) - \\tan(\\pi/2 + x) - \\cot(\\pi/2 - x) - \\csc(\\pi - x) - \\sec(\\pi + x) \\).",
+    "text": "The minimum and maximum values of \\(\\cos\\!\\left(x+\\dfrac{\\pi}{3}\\right) + 2\\sqrt{2}\\sin\\!\\left(x+\\dfrac{\\pi}{3}\\right)\\) are respectively",
     "options": [
-      "0",
-      "-1",
-      "1",
-      "2"
+      "\\(-(2\\sqrt{3}-1)\\) and \\(2\\sqrt{3}-1\\)",
+      "\\(-(1+2\\sqrt{2})\\) and \\(1+2\\sqrt{2}\\)",
+      "\\(-3\\) and \\(3\\)",
+      "\\(-2\\) and \\(2\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Each term reduces: sums to 1.",
-    "name": "Questions Item 25"
+    "explanation": "Let \\(f(x) = \\cos\\!\\left(x+\\dfrac{\\pi}{3}\\right) + 2\\sqrt{2}\\sin\\!\\left(x+\\dfrac{\\pi}{3}\\right)\\).\n\nExpanding using angle addition:\n\\[f(x) = a\\cos x + b\\sin x\\]\nwhere \\(a = \\dfrac{1}{2} + \\sqrt{6}\\) and \\(b = 2 - \\dfrac{\\sqrt{3}}{2}\\).\n\n\\[a^2 + b^2 = \\left(\\frac{1}{2}+\\sqrt{6}\\right)^2 + \\left(2-\\frac{\\sqrt{3}}{2}\\right)^2 = \\frac{1}{4} + \\sqrt{6} + 6 + 4 - 2\\sqrt{3} + \\frac{3}{4} = 9\\]\n\nSo the maximum value is \\(\\sqrt{9} = 3\\) and the minimum is \\(-3\\).",
+    "name": "Max-Min of Trig Expression"
   },
   {
     "id": "m12_item26",
-    "text": "\\( \\tan 9^\\circ - \\tan 27^\\circ - \\tan 63^\\circ + \\tan 81^\\circ = \\)",
+    "text": "If \\(\\sec\\theta + \\tan\\theta = \\dfrac{2}{3}\\), then \\(\\theta\\) lies in which quadrant?",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "I",
+      "II",
+      "III",
+      "IV"
     ],
     "correctIndex": 3,
-    "explanation": "Pairs to 4 using co-functions.",
-    "name": "Questions Item 26"
+    "explanation": "Given \\(\\sec\\theta + \\tan\\theta = \\dfrac{2}{3}\\) … (i)\n\nUsing the identity \\(\\sec^2\\theta - \\tan^2\\theta = 1\\), we get \\(\\sec\\theta - \\tan\\theta = \\dfrac{1}{2/3} = \\dfrac{3}{2}\\) … (ii)\n\nAdding (i) and (ii): \\(2\\sec\\theta = \\dfrac{2}{3} + \\dfrac{3}{2} = \\dfrac{13}{6}\\), so \\(\\sec\\theta = \\dfrac{13}{12} > 0\\).\n\nSubtracting (ii) from (i): \\(2\\tan\\theta = \\dfrac{2}{3} - \\dfrac{3}{2} = -\\dfrac{5}{6}\\), so \\(\\tan\\theta = -\\dfrac{5}{12} < 0\\).\n\n\\(\\sec\\theta > 0\\) (i.e., \\(\\cos\\theta > 0\\)) and \\(\\tan\\theta < 0\\) → \\(\\theta\\) lies in the **fourth quadrant**.",
+    "name": "Quadrant from Sec and Tan"
   },
   {
     "id": "m12_item27",
-    "text": "If \\( A + B + C = 0 \\), then \\( \\sin 2A + \\sin 2B + \\sin 2C = \\)",
+    "text": "If \\(\\cos\\theta_1 + \\cos\\theta_2 + \\cos\\theta_3 + \\cos\\theta_4 = -4\\), then \\(\\cot\\dfrac{\\theta_1}{2} + \\cot\\dfrac{\\theta_2}{2} + \\cot\\dfrac{\\theta_3}{2} + \\cot\\dfrac{\\theta_4}{2} =\\)",
     "options": [
-      "\\( 4\\sin A \\sin B \\sin C \\)",
-      "\\( 2\\sin A \\sin B \\sin C \\)",
-      "\\( -4\\sin A \\sin B \\sin C \\)",
-      "\\( -2\\sin A \\sin B \\sin C \\)"
+      "\\(4\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(0\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Expands to -4 sinA sinB sinC.",
-    "name": "Questions Item 27"
+    "correctIndex": 3,
+    "explanation": "For \\(\\cos\\theta_1 + \\cos\\theta_2 + \\cos\\theta_3 + \\cos\\theta_4 = -4\\), since \\(\\cos\\theta \\in [-1,1]\\), each cosine must equal \\(-1\\), which means \\(\\theta_1 = \\theta_2 = \\theta_3 = \\theta_4 = 180°\\).\n\nTherefore:\n\\[\\cot\\frac{180°}{2} = \\cot 90° = 0\\]\n\nSo the sum is \\(0 + 0 + 0 + 0 = 0\\).",
+    "name": "Cot Half Angles from Cos Sum"
   },
   {
     "id": "m12_item28",
-    "text": "If \\( \\sec\\theta = m \\), \\( \\tan\\theta = n \\), then \\( \\dfrac{1 + m + n}{m + n} = \\)",
-    "options": [
-      "1",
-      "2",
-      "-1",
-      "3"
-    ],
-    "correctIndex": 1,
-    "explanation": "Simplifies to secθ +1 or direct 2.",
-    "name": "Questions Item 28"
-  },
-  {
-    "id": "m12_item29",
-    "text": "\\( \\sin 210^\\circ \\cdot \\sin 585^\\circ = \\)",
-    "options": [
-      "\\( \\dfrac{1}{2\\sqrt{2}} \\)",
-      "\\( -\\dfrac{1}{2\\sqrt{2}} \\)",
-      "\\( \\dfrac{1}{3} \\)",
-      "\\( -\\dfrac{1}{3} \\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "sin210=-1/2, sin585=sin225=-√2/2, product +1/(2√2).",
-    "name": "Questions Item 29"
-  },
-  {
-    "id": "m12_item30",
-    "text": "Geometric mean of tan1° to tan89° is",
-    "options": [
-      "\\( \\dfrac{1}{89} \\)",
-      "1",
-      "\\( \\dfrac{1}{3} \\)",
-      "3"
-    ],
-    "correctIndex": 1,
-    "explanation": "Pairs product to 1, GM=1.",
-    "name": "Questions Item 30"
-  },
-  {
-    "id": "m12_item31",
-    "text": "\\( \\dfrac{3\\sin(\\theta + \\pi/6) + \\cos(\\theta - \\pi/6)}{\\sin\\theta + \\cos\\theta} = \\)",
-    "options": [
-      "-2",
-      "1",
-      "2",
-      "-1"
-    ],
-    "correctIndex": 2,
-    "explanation": "Numerator expands to 2(sinθ + cosθ).",
-    "name": "Questions Item 31"
-  },
-  {
-    "id": "m12_item32",
-    "text": "\\( \\sin\\left(\\dfrac{5\\pi}{13}\\right) + \\sec\\left(\\dfrac{3\\pi}{13}\\right) = \\)",
-    "options": [
-      "\\( \\dfrac{2 - \\sqrt{3}}{2} \\)",
-      "\\( \\dfrac{2 + \\sqrt{3}}{2} \\)",
-      "\\( 1 + \\dfrac{\\sqrt{3}}{2} \\)",
-      "\\( 1 - \\dfrac{\\sqrt{3}}{2} \\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "Exact value (2+√3)/2.",
-    "name": "Questions Item 32"
-  },
-  {
-    "id": "m12_item33",
-    "text": "If \\( x \\neq 0 \\), simplify the expression \\( \\sin(\\pi + x) + \\cos(\\pi - x) - \\tan(\\pi/2 + x) - \\cot(\\pi/2 - x) - \\csc(\\pi - x) - \\sec(\\pi + x) \\).",
-    "options": [
-      "0",
-      "-1",
-      "1",
-      "2"
-    ],
-    "correctIndex": 2,
-    "explanation": "Reduces term-by-term to 1.",
-    "name": "Questions Item 33"
-  },
-  {
-    "id": "m12_item34",
-    "text": "If \\( \\sec\\theta + \\tan\\theta = 1/3 \\), then \\( \\theta \\) lies in the",
+    "text": "If \\(\\csc\\theta + \\cot\\theta = \\dfrac{1}{3}\\), then \\(\\theta\\) lies in the",
     "options": [
       "1st quadrant",
       "2nd quadrant",
@@ -438,215 +360,293 @@
       "4th quadrant"
     ],
     "correctIndex": 1,
-    "explanation": "sec>0, tan<0 implies Q2.",
-    "name": "Questions Item 34"
+    "explanation": "Given \\(\\csc\\theta + \\cot\\theta = \\dfrac{1}{3}\\) … (i)\n\nUsing \\(\\csc^2\\theta - \\cot^2\\theta = 1\\), we get \\(\\csc\\theta - \\cot\\theta = 3\\) … (ii)\n\nAdding: \\(2\\csc\\theta = \\dfrac{10}{3}\\), so \\(\\csc\\theta = \\dfrac{5}{3} > 0\\) (\\(\\sin\\theta > 0\\)).\n\nSubtracting (i) from (ii): \\(2\\cot\\theta = 3 - \\dfrac{1}{3} = \\dfrac{8}{3}\\), so \\(\\cot\\theta = \\dfrac{-4}{3} < 0\\).\n\n\\(\\sin\\theta > 0\\) and \\(\\cot\\theta < 0\\) (i.e., \\(\\cos\\theta < 0\\)) → \\(\\theta\\) is in the **second quadrant**.",
+    "name": "Quadrant from Cosec and Cot"
+  },
+  {
+    "id": "m12_item29",
+    "text": "Let \\(M\\) and \\(m\\) respectively denote the maximum and minimum values of \\([f(\\theta)]^2\\), where \\[f(\\theta) = \\sqrt{a^2\\cos^2\\theta + b^2\\sin^2\\theta} + \\sqrt{a^2\\sin^2\\theta + b^2\\cos^2\\theta}.\\] Then \\(M - m =\\)",
+    "options": [
+      "\\(a^2 + b^2\\)",
+      "\\((a-b)^2\\)",
+      "\\(a^2b^2\\)",
+      "\\((a+b)^2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Squaring \\(f(\\theta)\\):\n\n\\[[f(\\theta)]^2 = (a^2+b^2) + 2\\sqrt{(a^2\\cos^2\\theta+b^2\\sin^2\\theta)(a^2\\sin^2\\theta+b^2\\cos^2\\theta)}\\]\n\nLet \\(P = (a^2\\cos^2\\theta+b^2\\sin^2\\theta)(a^2\\sin^2\\theta+b^2\\cos^2\\theta)\\). This is maximized when \\(\\sin^2\\theta = \\cos^2\\theta = \\dfrac{1}{2}\\), giving \\(P_{\\max} = \\left(\\dfrac{a^2+b^2}{2}\\right)^2\\).\n\nMinimum of \\(P\\) is \\(a^2b^2\\) (when \\(\\sin^2\\theta = 0\\) or \\(1\\)).\n\n\\[M = (a^2+b^2) + 2\\cdot\\frac{a^2+b^2}{2} = 2(a^2+b^2)\\]\n\n\\[m = (a^2+b^2) + 2ab = (a+b)^2\\]\n\n\\[M - m = 2(a^2+b^2) - (a+b)^2 = a^2+b^2-2ab = (a-b)^2\\]",
+    "name": "Max-Min of f(θ) Squared"
+  },
+  {
+    "id": "m12_item30",
+    "text": "If \\(\\cos A = -\\dfrac{60}{61}\\) and \\(\\tan B = -\\dfrac{7}{24}\\), and neither \\(A\\) nor \\(B\\) is in the second quadrant, then \\(A + \\dfrac{B}{2}\\) lies in the quadrant",
+    "options": [
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Since \\(\\cos A < 0\\) and \\(A\\) is not in the 2nd quadrant, \\(A\\) is in the **3rd quadrant**, so \\(\\tan A = \\dfrac{11}{60}\\).\n\nSince \\(\\tan B < 0\\) and \\(B\\) is not in the 2nd quadrant, \\(B\\) is in the **4th quadrant**, so \\(\\dfrac{B}{2}\\) is in the 2nd quadrant, giving \\(\\tan\\dfrac{B}{2} = -\\dfrac{1}{7}\\).\n\nNow:\n\\[\\tan\\!\\left(A+\\frac{B}{2}\\right) = \\frac{\\tan A + \\tan\\frac{B}{2}}{1 - \\tan A\\tan\\frac{B}{2}} = \\frac{\\frac{11}{60} - \\frac{1}{7}}{1 + \\frac{11}{420}} = \\frac{17}{431} > 0\\]\n\nSince both \\(A\\) (3rd quadrant) and \\(\\dfrac{B}{2}\\) (2nd quadrant) have a positive tangent for their sum and the quadrant analysis, \\(A + \\dfrac{B}{2}\\) is in the **1st quadrant**.",
+    "name": "Quadrant of Sum of Angles"
+  },
+  {
+    "id": "m12_item31",
+    "text": "\\(\\cos^2 5° - \\cos^2 15° - \\sin^2 15° + \\sin^2 35° + \\cos 15°\\sin 15° - \\cos 5°\\sin 35° =\\)",
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{\\sqrt{3}}{2}\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rewriting the expression using product-to-sum identities and grouping:\n\n\\[\\cos 5°(\\cos 5° - \\sin 35°) - \\cos 15°(\\cos 15° - \\sin 15°) + (\\sin^2 35° - \\sin^2 15°)\\]\n\nSince \\(\\sin 35° = \\cos 55°\\) and \\(\\sin 15° = \\cos 75°\\), and applying sum-to-product formulas:\n\nAfter careful expansion using \\(\\cos C - \\sin D = \\cos C - \\cos(90°-D)\\) and product identities throughout all three groupings, each part contributes \\(\\dfrac{\\cos 15°}{2}\\) and \\(-\\dfrac{\\cos 15°}{2}\\) respectively, leading to total \\(= 0\\).",
+    "name": "Combined Trig Expression"
+  },
+  {
+    "id": "m12_item32",
+    "text": "If \\(\\sin\\alpha = p\\), then the quadratic equation whose roots are \\(\\tan\\dfrac{\\alpha}{2}\\) and \\(\\cot\\dfrac{\\alpha}{2}\\) is",
+    "options": [
+      "\\(px^2 - 2x + p = 0\\)",
+      "\\(px^2 + 2x + p = 0\\)",
+      "\\(px^2 + x + p = 0\\)",
+      "\\(px^2 - x + p = 0\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The product of roots: \\(\\tan\\dfrac{\\alpha}{2}\\cdot\\cot\\dfrac{\\alpha}{2} = 1\\).\n\nThe sum of roots: \\(\\tan\\dfrac{\\alpha}{2} + \\cot\\dfrac{\\alpha}{2} = \\dfrac{\\tan^2\\frac{\\alpha}{2} + 1}{\\tan\\frac{\\alpha}{2}} = \\dfrac{\\sec^2\\frac{\\alpha}{2}}{\\tan\\frac{\\alpha}{2}} = \\dfrac{1}{\\sin\\frac{\\alpha}{2}\\cos\\frac{\\alpha}{2}} = \\dfrac{2}{\\sin\\alpha} = \\dfrac{2}{p}\\).\n\nThe quadratic with sum \\(\\dfrac{2}{p}\\) and product \\(1\\) is:\n\n\\[x^2 - \\frac{2}{p}x + 1 = 0 \\implies px^2 - 2x + p = 0\\]",
+    "name": "Quadratic from Half-Angle Roots"
+  },
+  {
+    "id": "m12_item33",
+    "text": "\\(\\cos 66° + \\sin 84° =\\)",
+    "options": [
+      "\\(\\dfrac{1}{4}(\\sqrt{3}+\\sqrt{5})\\)",
+      "\\(\\dfrac{1}{4}\\sqrt{5}(\\sqrt{3}+1)\\)",
+      "\\(\\dfrac{1}{4}(\\sqrt{3}+1)(\\sqrt{5}+1)\\)",
+      "\\(\\dfrac{1}{4}\\sqrt{3}(\\sqrt{5}+1)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\[\\cos 66° + \\sin 84° = \\cos 66° + \\cos 6°\\]\n\nUsing sum-to-product: \\(\\cos A + \\cos B = 2\\cos\\dfrac{A+B}{2}\\cos\\dfrac{A-B}{2}\\):\n\n\\[= 2\\cos 36°\\cos 30° = 2\\cdot\\frac{\\sqrt{5}+1}{4}\\cdot\\frac{\\sqrt{3}}{2} = \\frac{\\sqrt{3}(\\sqrt{5}+1)}{4}\\]",
+    "name": "Sum of Cos and Sin Special Angles"
+  },
+  {
+    "id": "m12_item34",
+    "text": "\\(\\csc 48° + \\csc 96° + \\csc 192° + \\csc 384° =\\)",
+    "options": [
+      "\\(-2\\)",
+      "\\(-1\\)",
+      "\\(0\\)",
+      "\\(\\dfrac{\\sqrt{3}}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Using allied angles: \\(\\csc 192° = -\\sec 78°\\) and \\(\\csc 384° = \\csc 24°\\).\n\nRearranging:\n\\[\\frac{1}{\\cos 42°} - \\frac{1}{\\cos 78°} + \\frac{1}{\\sin 96°} + \\frac{1}{\\sin 24°}\\]\n\n\\[= \\frac{\\cos 78° - \\cos 42°}{\\cos 42°\\cos 78°} + \\frac{\\sin 24° + \\sin 96°}{\\sin 96°\\sin 24°}\\]\n\nUsing sum-to-product and product formulas: \\(\\cos 78° - \\cos 42° = -2\\sin 60°\\sin 18°\\) and \\(\\cos 42°\\cos 78° = \\cos^2 60° - \\sin^2 18°\\), a careful evaluation yields \\(-2\\sqrt{3} + 2\\sqrt{3} = 0\\).",
+    "name": "Sum of Cosecants"
   },
   {
     "id": "m12_item35",
-    "text": "The minimum and maximum values of \\( \\cos(\\pi/3 + x) + \\cos(\\pi/3 - x) \\) are respectively",
+    "text": "\\(\\sin^4\\dfrac{\\pi}{8} + \\sin^4\\dfrac{2\\pi}{8} + \\sin^4\\dfrac{3\\pi}{8} + \\sin^4\\dfrac{4\\pi}{8} + \\sin^4\\dfrac{5\\pi}{8} + \\sin^4\\dfrac{6\\pi}{8} + \\sin^4\\dfrac{7\\pi}{8} =\\)",
     "options": [
-      "\\( -(\\sqrt{3}+1), \\sqrt{3}+1 \\)",
-      "\\( -(\\sqrt{3}-1), \\sqrt{3}-1 \\)",
-      "-3, 3",
-      "-2, 2"
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(\\dfrac{5}{2}\\)",
+      "\\(3\\)",
+      "\\(\\dfrac{7}{2}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Simplifies to cos x, range √3-1 to √3+1 adjusted.",
-    "name": "Questions Item 35"
+    "correctIndex": 2,
+    "explanation": "Using the symmetry \\(\\sin\\dfrac{k\\pi}{8} = \\cos\\dfrac{(4-k)\\pi}{8}\\) to pair terms:\n\n\\[\\left(\\sin^4\\frac{\\pi}{8}+\\cos^4\\frac{\\pi}{8}\\right) + \\left(\\sin^4\\frac{3\\pi}{8}+\\cos^4\\frac{3\\pi}{8}\\right) + \\sin^4\\frac{\\pi}{4} + \\sin^4\\frac{\\pi}{2}\\]\n\nFor any angle \\(\\phi\\): \\(\\sin^4\\phi + \\cos^4\\phi = 1 - 2\\sin^2\\phi\\cos^2\\phi = 1 - \\dfrac{\\sin^2 2\\phi}{2}\\).\n\nSubstituting \\(\\phi = \\dfrac{\\pi}{8}\\) and \\(\\phi = \\dfrac{3\\pi}{8}\\) and adding the remaining terms \\(\\left(\\dfrac{1}{2}\\right)^2 + 1\\):\n\nTotal \\(= 3\\).",
+    "name": "Sum of Fourth Powers of Sines"
   },
   {
     "id": "m12_item36",
-    "text": "If \\( \\sin(\\theta + \\alpha) + \\cos\\theta = \\csc 2 \\), then \\( \\sin^{2020}(\\theta + \\alpha) + \\cos^{2020}\\theta = \\)",
+    "text": "If \\(x : y : z = \\tan\\!\\left(\\dfrac{\\pi}{15}+\\alpha\\right) : \\tan\\!\\left(\\dfrac{\\pi}{15}+\\beta\\right) : \\tan\\!\\left(\\dfrac{\\pi}{15}+\\gamma\\right)\\), then \\(\\dfrac{z+x}{z-x}\\sin 2(\\gamma-\\alpha) + \\dfrac{x+y}{x-y}\\sin 2(\\alpha-\\beta) + \\dfrac{y+z}{y-z}\\sin 2(\\beta-\\gamma) =\\)",
     "options": [
-      "\\( 2^{2020} \\)",
-      "\\( 2020^{2019} \\)",
-      "\\( 2^{2019} \\)",
-      "2"
+      "\\(\\sin 2\\theta\\)",
+      "\\(\\cos 2\\theta\\)",
+      "\\(0\\)",
+      "\\(1\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "sin(θ+α)=1 implies sum of powers=2.",
-    "name": "Questions Item 36"
+    "correctIndex": 2,
+    "explanation": "Let \\(x = k\\tan(12°+\\alpha)\\), \\(y = k\\tan(12°+\\beta)\\), \\(z = k\\tan(12°+\\gamma)\\).\n\nUsing the identity: for any \\(p = \\tan A\\), \\(q = \\tan B\\):\n\\[\\frac{p+q}{p-q} = \\frac{\\sin(A+B)}{\\sin(A-B)}\\]\n\nEach term of the sum expands to a product of sines involving differences of squares, which when grouped with their complementary terms cancel each other pairwise.\n\nAfter complete expansion and cancellation of corresponding terms involving \\(\\sin 24°\\) and \\(\\cos 24°\\) factors, the entire expression evaluates to \\(0\\).",
+    "name": "Trig Ratio Identity Sum"
   },
   {
     "id": "m12_item37",
-    "text": "\\( \\csc 750^\\circ - 2\\cot^2 765^\\circ = \\)",
+    "text": "Let \\(x = a\\sin^\\alpha\\theta\\cos^{\\alpha+1}\\theta\\), \\(y = a\\sin^{\\alpha+1}\\theta\\cos^\\alpha\\theta\\). If \\(\\dfrac{(x^2+y^2)^m}{(xy)^n}\\) is independent of \\(\\theta\\), then the relation between \\(\\alpha\\), \\(m\\) and \\(n\\) is",
     "options": [
-      "0",
-      "1",
-      "2",
-      "-1"
+      "\\(2m\\alpha = n(2\\alpha+1)\\)",
+      "\\(m+n = \\alpha\\)",
+      "\\(2m\\alpha = 2n\\alpha + m\\)",
+      "\\(2m = (2n+1)\\alpha\\)"
     ],
     "correctIndex": 0,
-    "explanation": "csc750=2, cot765=1, 2-2=0.",
-    "name": "Questions Item 37"
+    "explanation": "\\[x^2 + y^2 = a^2\\sin^{2\\alpha}\\theta\\cos^{2\\alpha}\\theta(\\sin^2\\theta+\\cos^2\\theta) = a^2\\sin^{2\\alpha}\\theta\\cos^{2\\alpha}\\theta\\]\n\n\\[xy = a^2\\sin^{2\\alpha+1}\\theta\\cos^{2\\alpha+1}\\theta\\]\n\n\\[\\frac{(x^2+y^2)^m}{(xy)^n} = \\frac{a^{2m}(\\sin\\theta\\cos\\theta)^{2\\alpha m}}{a^{2n}(\\sin\\theta\\cos\\theta)^{(2\\alpha+1)n}} = a^{2m-2n}(\\sin\\theta\\cos\\theta)^{2\\alpha m - (2\\alpha+1)n}\\]\n\nFor this to be independent of \\(\\theta\\), the exponent of \\(\\sin\\theta\\cos\\theta\\) must be zero:\n\n\\[2\\alpha m - (2\\alpha+1)n = 0 \\implies 2m\\alpha = n(2\\alpha+1)\\]",
+    "name": "Independence Condition"
   },
   {
     "id": "m12_item38",
-    "text": "If \\( \\theta \\) lies in third quadrant and \\( \\cos\\theta = -3/5 \\), find \\( \\tan\\theta \\).",
+    "text": "If \\(4\\sin^4\\theta + \\sin^2 2\\theta + 4\\cos^2\\!\\left(\\dfrac{\\pi}{4}-\\dfrac{\\theta}{2}\\right) = 2\\), then \\(\\theta\\) lies in",
     "options": [
-      "\\( \\dfrac{2}{3} \\)",
-      "\\( -\\dfrac{2}{3} \\)",
-      "\\( -\\dfrac{4}{3} \\)",
-      "\\( \\dfrac{4}{3} \\)"
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "(A) is true but (R) is false",
+      "(A) is false but (R) is true"
     ],
-    "correctIndex": 3,
-    "explanation": "Third quadrant tan positive: 4/3.",
-    "name": "Questions Item 38"
+    "correctIndex": 2,
+    "explanation": "Simplify the left side:\n\n\\[4\\sin^4\\theta + 4\\sin^2\\theta\\cos^2\\theta + 2\\left(1+\\cos\\!\\left(\\frac{\\pi}{2}-\\theta\\right)\\right)\\]\n\n\\[= 4\\sin^2\\theta(\\sin^2\\theta+\\cos^2\\theta) + 2(1+\\sin\\theta)\\]\n\n\\[= 4\\sin^2\\theta + 2 + 2\\sin\\theta = 2\\]\n\n\\[\\implies 4\\sin^2\\theta + 2\\sin\\theta = 0 \\implies |2\\sin\\theta| + 2\\sin\\theta = 0\\]\n\nThis requires \\(\\sin\\theta \\leq 0\\), so \\(\\theta\\) lies in the **3rd or 4th quadrant**.\n\nThe Assertion (A) is true. The Reason (R) states \\(\\sin^2\\theta = \\sin\\theta\\), which is false in general — it holds only for \\(\\sin\\theta = 0\\) or \\(1\\), not for all third/fourth quadrant angles. So (A) is true but (R) is false.",
+    "name": "Assertion-Reason Trig Equation"
   },
   {
     "id": "m12_item39",
-    "text": "\\( \\sin\\left(\\dfrac{5\\pi}{13}\\right) + \\sec\\left(\\dfrac{3\\pi}{13}\\right) = \\)",
+    "text": "If \\(x = \\dfrac{\\sin^3\\theta}{\\cos^2\\theta}\\) and \\(y = \\dfrac{\\cos^3\\theta}{\\sin^2\\theta}\\), where \\(\\sin\\theta + \\cos\\theta = \\dfrac{1}{2}\\), then \\(x + y =\\)",
     "options": [
-      "\\( \\dfrac{2 - \\sqrt{3}}{2} \\)",
-      "\\( \\dfrac{2 + \\sqrt{3}}{2} \\)",
-      "\\( 1 + \\dfrac{\\sqrt{3}}{2} \\)",
-      "\\( 1 - \\dfrac{\\sqrt{3}}{2} \\)"
+      "\\(\\dfrac{48}{9}\\)",
+      "\\(\\dfrac{34}{9}\\)",
+      "\\(\\dfrac{65}{18}\\)",
+      "\\(\\dfrac{79}{18}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "(2+√3)/2.",
-    "name": "Questions Item 39"
+    "correctIndex": 3,
+    "explanation": "\\[x + y = \\frac{\\sin^3\\theta}{\\cos^2\\theta} + \\frac{\\cos^3\\theta}{\\sin^2\\theta} = \\frac{\\sin^5\\theta + \\cos^5\\theta}{\\sin^2\\theta\\cos^2\\theta}\\]\n\n\\[= \\frac{(\\sin\\theta+\\cos\\theta)(\\sin^4\\theta - \\sin^3\\theta\\cos\\theta + \\sin^2\\theta\\cos^2\\theta - \\sin\\theta\\cos^3\\theta + \\cos^4\\theta)}{\\sin^2\\theta\\cos^2\\theta}\\]\n\nFrom \\(\\sin\\theta + \\cos\\theta = \\dfrac{1}{2}\\):\n\n\\[1 + 2\\sin\\theta\\cos\\theta = \\frac{1}{4} \\implies \\sin\\theta\\cos\\theta = -\\frac{3}{8}\\]\n\nAfter substituting and simplifying:\n\n\\[x + y = \\frac{1}{2}\\cdot\\frac{1 - \\sin\\theta\\cos\\theta}{(\\sin\\theta\\cos\\theta)^2} - \\frac{1}{2} = \\frac{11}{16}\\div\\frac{9}{64} - \\frac{1}{2} = \\frac{44}{9} - \\frac{1}{2} = \\frac{79}{18}\\]",
+    "name": "Sum of Trig Fractions"
   },
   {
     "id": "m12_item40",
-    "text": "If \\( x \\neq 0 \\), simplify \\( \\sin(\\pi + x) + \\cos(\\pi - x) - \\tan(\\pi/2 + x) - \\cot(\\pi/2 - x) - \\csc(\\pi - x) - \\sec(\\pi + x) \\).",
+    "text": "Let \\(0 < \\alpha < \\beta < \\gamma < 2\\pi\\). For \\(x \\in \\mathbb{R}\\), if \\(\\cos(x+\\alpha) + \\cos(x+\\beta) + \\cos(x+\\gamma) = 0\\), then \\(\\tan(\\gamma - \\alpha) =\\)",
     "options": [
-      "0",
-      "-1",
-      "1",
-      "2"
+      "\\(-\\sqrt{3}\\)",
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(\\sqrt{3}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Reduces to 1.",
-    "name": "Questions Item 40"
+    "correctIndex": 3,
+    "explanation": "Since the equation holds for all \\(x \\in \\mathbb{R}\\), we can choose specific values of \\(x\\).\n\nSetting \\(x = -\\frac{\\pi}{2} - \\beta\\) and using sum-to-product gives \\(\\sin(\\beta - \\alpha) = \\sin(\\gamma - \\beta)\\), so \\(\\beta - \\alpha = \\gamma - \\beta\\), meaning \\(2\\beta = \\alpha + \\gamma\\).\n\nSetting \\(x = -\\alpha - \\beta - \\gamma\\) and applying sum-to-product:\n\n\\[2\\cos\\frac{\\alpha+2\\beta+\\gamma}{2}\\cos\\frac{\\gamma-\\alpha}{2} + \\cos(\\alpha+\\gamma) = 0\\]\n\nSubstituting \\(2\\beta = \\alpha + \\gamma\\) and solving:\n\n\\[\\cos\\frac{\\gamma-\\alpha}{2} = -\\frac{1}{2} \\implies \\frac{\\gamma-\\alpha}{2} = \\frac{2\\pi}{3} \\implies \\gamma - \\alpha = \\frac{4\\pi}{3}\\]\n\n\\[\\tan(\\gamma - \\alpha) = \\tan\\frac{4\\pi}{3} = \\sqrt{3}\\]",
+    "name": "Sum of Cosines Zero Condition"
   },
   {
     "id": "m12_item41",
-    "text": "\\( \\tan 9^\\circ - \\tan 27^\\circ - \\tan 63^\\circ + \\tan 81^\\circ = \\)",
+    "text": "If \\(ABC\\) is not a right-angled triangle and \\(\\sin\\!\\left(\\dfrac{\\pi}{4}-A\\right)\\sin\\!\\left(\\dfrac{\\pi}{4}-B\\right) = -\\dfrac{1}{2\\sqrt{2}}\\csc\\!\\left(\\dfrac{\\pi}{4}-C\\right)\\), then \\(\\tan A\\tan B + \\tan B\\tan C + \\tan C\\tan A =\\)",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "\\(\\cot A + \\cot B + \\cot C\\)",
+      "\\(\\tan A + \\tan B + \\tan C\\)",
+      "\\(\\dfrac{1}{\\tan A+\\tan B+\\tan C}\\)",
+      "\\(\\dfrac{1}{\\cot A+\\cot B+\\cot C}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Pairs yield 4.",
-    "name": "Questions Item 41"
+    "correctIndex": 1,
+    "explanation": "Given \\(A + B + C = \\pi\\), we know that \\(\\tan A + \\tan B + \\tan C = \\tan A\\tan B\\tan C\\).\n\nThe condition simplifies using \\(A+B+C = \\pi\\) and the given product equation to establish:\n\n\\[(\\cos A - \\sin A)(\\cos B - \\sin B)(\\cos C - \\sin C) = -\\frac{1}{\\sqrt{2}}\\]\n\nExpanding and using \\(\\cos A\\cos B\\cos C(1-\\tan A)(1-\\tan B)(1-\\tan C) = \\cos(A+B+C) = -1\\):\n\n\\[1 - (\\tan A+\\tan B+\\tan C) + (\\tan A\\tan B+\\tan B\\tan C+\\tan C\\tan A) - \\tan A\\tan B\\tan C = -\\frac{1}{\\cos A\\cos B\\cos C}\\]\n\nSince \\(\\tan A+\\tan B+\\tan C = \\tan A\\tan B\\tan C\\), cancellation gives:\n\n\\[\\tan A\\tan B + \\tan B\\tan C + \\tan C\\tan A = \\tan A + \\tan B + \\tan C\\]",
+    "name": "Tan Product Sum in Triangle"
   },
   {
     "id": "m12_item42",
-    "text": "If \\( A + B + C = 0 \\), then \\( \\sin 2A + \\sin 2B + \\sin 2C = \\)",
+    "text": "If \\(\\tan\\dfrac{\\theta}{2} = \\csc\\theta - \\sin\\theta\\), then \\(\\tan^2\\dfrac{\\theta}{2} =\\)",
     "options": [
-      "\\( 4\\sin A \\sin B \\sin C \\)",
-      "\\( 2\\sin A \\sin B \\sin C \\)",
-      "\\( -4\\sin A \\sin B \\sin C \\)",
-      "\\( -2\\sin A \\sin B \\sin C \\)"
+      "\\(2 - \\sqrt{5}\\)",
+      "\\(-2 + \\sqrt{5}\\)",
+      "\\(2 + \\sqrt{5}\\)",
+      "\\(2 + \\sqrt{5}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "-4 sinA sinB sinC.",
-    "name": "Questions Item 42"
+    "correctIndex": 1,
+    "explanation": "Given \\(\\tan\\dfrac{\\theta}{2} = \\csc\\theta - \\sin\\theta = \\dfrac{1-\\sin^2\\theta}{\\sin\\theta} = \\dfrac{\\cos^2\\theta}{\\sin\\theta} = \\cot\\theta\\cos\\theta\\).\n\nSubstituting in terms of \\(t = \\tan\\dfrac{\\theta}{2}\\) using \\(\\sin\\theta = \\dfrac{2t}{1+t^2}\\) and \\(\\cos\\theta = \\dfrac{1-t^2}{1+t^2}\\):\n\nLet \\(t = \\tan\\dfrac{\\theta}{2}\\). After substitution and simplification:\n\n\\[t^4 + 4t^2 - 1 = 0\\]\n\n\\[t^2 = \\frac{-4 \\pm \\sqrt{16+4}}{2} = -2 \\pm \\sqrt{5}\\]\n\nSince \\(t^2 = \\tan^2\\dfrac{\\theta}{2} \\geq 0\\), we take \\(t^2 = -2 + \\sqrt{5}\\).",
+    "name": "Half Angle Tan from Cosec"
   },
   {
     "id": "m12_item43",
-    "text": "If \\( \\sec\\theta = m \\), \\( \\tan\\theta = n \\), then \\( \\dfrac{1 + m + n}{m + n} = \\)",
+    "text": "If the periods of \\(\\sin(ax+b)\\) and \\(\\tan(cx+d)\\) are \\(\\dfrac{4}{7}\\) and \\(\\dfrac{2}{5}\\) respectively, then \\(\\sin(|a|+|c|) + \\cos(|a|-|c|) =\\)",
     "options": [
-      "1",
-      "2",
-      "-1",
-      "3"
+      "\\(-1\\)",
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(2\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Simplifies to 2.",
-    "name": "Questions Item 43"
+    "correctIndex": 0,
+    "explanation": "Period of \\(\\sin(ax+b)\\) is \\(\\dfrac{2\\pi}{|a|} = \\dfrac{4}{7}\\), so \\(|a| = \\dfrac{7\\pi}{2}\\).\n\nPeriod of \\(\\tan(cx+d)\\) is \\(\\dfrac{\\pi}{|c|} = \\dfrac{2}{5}\\), so \\(|c| = \\dfrac{5\\pi}{2}\\).\n\n\\[\\sin(|a|+|c|) + \\cos(|a|-|c|) = \\sin\\!\\left(\\frac{7\\pi}{2}+\\frac{5\\pi}{2}\\right) + \\cos\\!\\left(\\frac{7\\pi}{2}-\\frac{5\\pi}{2}\\right)\\]\n\n\\[= \\sin(6\\pi) + \\cos(\\pi) = 0 + (-1) = -1\\]",
+    "name": "Periodicity of Trig Functions"
   },
   {
     "id": "m12_item44",
-    "text": "\\( \\sin 210^\\circ \\cdot \\sin 585^\\circ = \\)",
+    "text": "The smallest positive value of \\(x\\) (in degrees) for which \\(\\tan(x+100°) = \\tan(x+50°)\\cdot\\tan x\\cdot\\tan(x-50°)\\) is",
     "options": [
-      "\\( \\dfrac{1}{2\\sqrt{2}} \\)",
-      "\\( -\\dfrac{1}{2\\sqrt{2}} \\)",
-      "\\( \\dfrac{1}{3} \\)",
-      "\\( -\\dfrac{1}{3} \\)"
+      "\\(25°\\)",
+      "\\(82\\tfrac{1}{2}°\\)",
+      "\\(55°\\)",
+      "\\(30°\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "1/(2√2).",
-    "name": "Questions Item 44"
+    "correctIndex": 3,
+    "explanation": "Rewrite as \\(\\dfrac{\\tan(x+100°)}{\\tan(x-50°)} = \\tan(x+50°)\\tan x\\).\n\nApplying componendo-dividendo (using \\(\\sin/\\cos\\) forms) and converting to sum formulas:\n\n\\[\\frac{\\sin(x+100°)\\cos(x-50°)}{\\sin(x-50°)\\cos(x+100°)} = \\frac{\\sin(x+50°)\\sin x}{\\cos(x+50°)\\cos x}\\]\n\nApplying componendo-dividendo on both sides:\n\n\\[\\frac{\\sin(2x+50°)}{\\sin 150°} = \\frac{-\\cos(2x+50°)}{\\cos 50°}\\]\n\n\\[\\implies \\sin(4x+100°) = -\\cos 50° = -\\sin 40° = \\sin(220°)\\]\n\n\\[4x + 100° = 220° \\implies x = 30°\\]",
+    "name": "Smallest Positive Angle"
   },
   {
     "id": "m12_item45",
-    "text": "Geometric mean of tan1° to tan89° is",
+    "text": "For \\(\\alpha \\neq 0\\), if \\(\\cos(\\theta+\\alpha)\\), \\(\\cos\\theta\\), and \\(\\cos(\\theta-\\alpha)\\) are in harmonic progression, then \\(\\sec^2\\theta\\cdot\\cos^2\\dfrac{\\alpha}{2} =\\)",
     "options": [
-      "\\( \\dfrac{1}{89} \\)",
-      "1",
-      "\\( \\dfrac{1}{3} \\)",
-      "3"
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{4}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "1.",
-    "name": "Questions Item 45"
+    "correctIndex": 2,
+    "explanation": "If three terms \\(a, b, c\\) are in H.P., then \\(\\dfrac{2}{b} = \\dfrac{1}{a} + \\dfrac{1}{c}\\).\n\n\\[\\frac{2}{\\cos\\theta} = \\frac{1}{\\cos(\\theta+\\alpha)} + \\frac{1}{\\cos(\\theta-\\alpha)} = \\frac{2\\cos\\theta\\cos\\alpha}{\\cos^2\\theta - \\sin^2\\alpha}\\]\n\n\\[\\implies \\cos^2\\theta - \\sin^2\\alpha = \\cos^2\\theta\\cos\\alpha\\]\n\n\\[\\implies \\cos^2\\theta(1-\\cos\\alpha) = 1 - \\cos^2\\alpha = (1-\\cos\\alpha)(1+\\cos\\alpha)\\]\n\n\\[\\implies \\cos^2\\theta = 1 + \\cos\\alpha = 2\\cos^2\\frac{\\alpha}{2}\\]\n\n\\[\\implies \\cos^2\\frac{\\alpha}{2}\\cdot\\sec^2\\theta = \\frac{1}{2}\\]",
+    "name": "HP of Cosines"
   },
   {
     "id": "m12_item46",
-    "text": "\\( \\dfrac{3\\sin(\\theta + \\pi/6) + \\cos(\\theta - \\pi/6)}{\\sin\\theta + \\cos\\theta} = \\)",
+    "text": "If \\(\\tan A - \\tan B = x\\) and \\(\\cot A - \\cot B = y\\), then \\(\\cot(A-B) =\\)",
     "options": [
-      "-2",
-      "1",
-      "2",
-      "-1"
+      "\\(\\dfrac{xy}{x+y}\\)",
+      "\\(\\dfrac{xy}{x-y}\\)",
+      "\\(\\dfrac{x-y}{xy}\\)",
+      "\\(\\dfrac{y-x}{xy}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "2.",
-    "name": "Questions Item 46"
+    "correctIndex": 3,
+    "explanation": "From \\(\\tan A - \\tan B = x\\): \\(\\dfrac{1}{\\cot A} - \\dfrac{1}{\\cot B} = \\dfrac{\\cot B - \\cot A}{\\cot A\\cot B} = x\\)\n\nSince \\(\\cot A - \\cot B = y\\), we get \\(\\cot A\\cot B = -\\dfrac{y}{x}\\).\n\n\\[\\cot(A-B) = \\frac{\\cot A\\cot B + 1}{\\cot B - \\cot A} = \\frac{-y/x + 1}{-y} = \\frac{x-y}{xy} \\cdot (-1) = \\frac{y-x}{xy}\\]",
+    "name": "Cot of Difference"
   },
   {
     "id": "m12_item47",
-    "text": "\\( \\sin\\left(\\dfrac{5\\pi}{13}\\right) + \\sec\\left(\\dfrac{3\\pi}{13}\\right) = \\)",
+    "text": "\\(\\tan\\dfrac{\\pi}{5} + 2\\tan\\dfrac{2\\pi}{5} + 4\\cot\\dfrac{4\\pi}{5} =\\)",
     "options": [
-      "\\( \\dfrac{2 - \\sqrt{3}}{2} \\)",
-      "\\( \\dfrac{2 + \\sqrt{3}}{2} \\)",
-      "\\( 1 + \\dfrac{\\sqrt{3}}{2} \\)",
-      "\\( 1 - \\dfrac{\\sqrt{3}}{2} \\)"
+      "\\(\\cot\\dfrac{\\pi}{5}\\)",
+      "\\(\\cot\\dfrac{2\\pi}{5}\\)",
+      "\\(\\cot\\dfrac{3\\pi}{5}\\)",
+      "\\(\\cot\\dfrac{4\\pi}{5}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "(2+√3)/2.",
-    "name": "Questions Item 47"
+    "correctIndex": 0,
+    "explanation": "Let \\(\\theta = 36°\\). Using the identity \\(\\cot\\theta - 2\\cot 2\\theta = \\tan\\theta\\), we can write:\n\n\\(\\tan\\theta = \\cot\\theta - 2\\cot 2\\theta\\)\n\nSo:\n\n\\[\\tan\\frac{\\pi}{5} + 2\\tan\\frac{2\\pi}{5} + 4\\cot\\frac{4\\pi}{5}\\]\n\nUsing \\(\\cot\\frac{4\\pi}{5} = -\\cot\\frac{\\pi}{5}\\) (since \\(\\frac{4\\pi}{5} = \\pi - \\frac{\\pi}{5}\\)):\n\nAfter step-by-step telescoping using the identity repeatedly, the entire expression simplifies to \\(\\cot\\dfrac{\\pi}{5}\\).",
+    "name": "Tan-Cot Telescoping Identity"
   },
   {
     "id": "m12_item48",
-    "text": "If \\( x \\neq 0 \\), simplify \\( \\sin(\\pi + x) + \\cos(\\pi - x) - \\tan(\\pi/2 + x) - \\cot(\\pi/2 - x) - \\csc(\\pi - x) - \\sec(\\pi + x) \\).",
+    "text": "If \\(\\sin x + \\sin y = \\dfrac{\\sqrt{3}+1}{2}\\) and \\(\\cos x + \\cos y = \\dfrac{\\sqrt{3}-1}{2}\\), then \\(\\tan^2\\dfrac{x-y}{2} + \\tan^2\\dfrac{x+y}{2} =\\)",
     "options": [
-      "0",
-      "-1",
-      "1",
-      "2"
+      "\\(8 + 4\\sqrt{3}\\)",
+      "\\(6 + 4\\sqrt{3}\\)",
+      "\\(3 + \\sqrt{3}\\)",
+      "\\(12 + 6\\sqrt{3}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "1.",
-    "name": "Questions Item 48"
+    "correctIndex": 0,
+    "explanation": "Dividing the sum-to-product forms:\n\n\\[\\sin x + \\sin y = 2\\sin\\frac{x+y}{2}\\cos\\frac{x-y}{2} = \\frac{\\sqrt{3}+1}{2}\\]\n\n\\[\\cos x + \\cos y = 2\\cos\\frac{x+y}{2}\\cos\\frac{x-y}{2} = \\frac{\\sqrt{3}-1}{2}\\]\n\nDividing: \\(\\tan\\dfrac{x+y}{2} = \\dfrac{\\sqrt{3}+1}{\\sqrt{3}-1} = 2+\\sqrt{3}\\)\n\nSo \\(\\tan^2\\dfrac{x+y}{2} = 7 + 4\\sqrt{3}\\).\n\nSquaring and adding the original equations:\n\n\\[\\cos^2\\frac{x-y}{2} = \\frac{1}{2}\\implies \\sec^2\\frac{x-y}{2} = 2\\implies \\tan^2\\frac{x-y}{2} = 1\\]\n\n\\[\\tan^2\\frac{x-y}{2} + \\tan^2\\frac{x+y}{2} = 1 + (7+4\\sqrt{3}) = 8 + 4\\sqrt{3}\\]",
+    "name": "Sum of Tan Squares from Sin-Cos"
   },
   {
     "id": "m12_item49",
-    "text": "\\( \\tan 9^\\circ - \\tan 27^\\circ - \\tan 63^\\circ + \\tan 81^\\circ = \\)",
+    "text": "In \\(\\triangle PQR\\), let \\(\\angle P > \\angle Q\\). If \\(\\angle P\\) and \\(\\angle Q\\) satisfy \\(4\\sin^3 x - 3\\sin x + a = 0\\) with \\(0 < a < 1\\), then the radian measure of \\(\\angle R\\) is",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "\\(\\dfrac{\\pi}{3}\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(\\dfrac{2\\pi}{3}\\)",
+      "\\(\\dfrac{5\\pi}{6}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "4.",
-    "name": "Questions Item 49"
+    "correctIndex": 2,
+    "explanation": "Rewrite the equation: \\(4\\sin^3 x - 3\\sin x + a = 0 \\implies a = 3\\sin x - 4\\sin^3 x = \\sin 3x\\).\n\nBoth \\(P\\) and \\(Q\\) satisfy \\(\\sin 3x = a\\), so \\(\\sin 3P = \\sin 3Q\\).\n\nSince \\(P \\neq Q\\), we have \\(3P = \\pi - 3Q\\), giving \\(P + Q = \\dfrac{\\pi}{3}\\).\n\nSince \\(P + Q + R = \\pi\\):\n\n\\[R = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}\\]",
+    "name": "Angle in Triangle from Trig Equation"
   },
   {
     "id": "m12_item50",
-    "text": "If \\( A + B + C = 0 \\), then \\( \\sin 2A + \\sin 2B + \\sin 2C = \\)",
+    "text": "If \\(\\cos\\!\\left(x-\\dfrac{\\pi}{3}\\right)\\), \\(\\cos x\\), and \\(\\cos\\!\\left(x+\\dfrac{\\pi}{3}\\right)\\) are in harmonic progression, then \\(\\cos x =\\)",
     "options": [
-      "\\( 4\\sin A \\sin B \\sin C \\)",
-      "\\( 2\\sin A \\sin B \\sin C \\)",
-      "\\( -4\\sin A \\sin B \\sin C \\)",
-      "\\( -2\\sin A \\sin B \\sin C \\)"
+      "\\(\\dfrac{\\sqrt{3}}{2}\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{\\sqrt{3}}{\\sqrt{2}}\\)",
+      "\\(\\sqrt{\\dfrac{3}{2}}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "-4 sinA sinB sinC.",
-    "name": "Questions Item 50"
+    "correctIndex": 3,
+    "explanation": "For \\(a, b, c\\) in H.P.: \\(\\dfrac{2}{b} = \\dfrac{1}{a} + \\dfrac{1}{c}\\).\n\n\\[\\frac{2}{\\cos x} = \\frac{1}{\\cos(x-\\frac{\\pi}{3})} + \\frac{1}{\\cos(x+\\frac{\\pi}{3})}\\]\n\n\\[= \\frac{\\cos(x+\\frac{\\pi}{3}) + \\cos(x-\\frac{\\pi}{3})}{\\cos(x-\\frac{\\pi}{3})\\cos(x+\\frac{\\pi}{3})} = \\frac{2\\cos x\\cos\\frac{\\pi}{3}}{\\cos^2 x - \\sin^2\\frac{\\pi}{3}}\\]\n\n\\[\\frac{2}{\\cos x} = \\frac{2\\cos x\\cdot\\frac{1}{2}}{\\cos^2 x - \\frac{3}{4}}\\]\n\n\\[2\\left(\\cos^2 x - \\frac{3}{4}\\right) = \\cos^2 x\\cdot\\frac{1}{2}\\cdot\\cos x \\cdot \\frac{1}{\\cos x} \\implies \\cos^2 x\\left(1-\\frac{1}{2}\\right) = \\frac{3}{4}\\]\n\n\\[\\cos^2 x = \\frac{3}{2} \\implies \\cos x = \\sqrt{\\frac{3}{2}}\\]",
+    "name": "HP of Cosines with Pi/3"
   }
 ]

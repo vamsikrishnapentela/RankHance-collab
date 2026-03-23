@@ -1,314 +1,209 @@
 [
   {
     "id": "c12_item1",
-    "text": "Copper matte is composed of:",
-    "options": [
-      "$$\\text{Cu}_2\\text{S}$$ and $$\\text{Cu}_2\\text{O}$$",
-      "$$\\text{Cu}_2\\text{S}$$ and $$\\text{FeS}$$",
-      "$$\\text{CuFeS}_2$$ and $$\\text{Cu}_2\\text{S}$$",
-      "$$\\text{CuS}$$ and $$\\text{FeS}$$"
-    ],
+    "text": "Copper matte is composed of",
+    "options": ["\\(\\text{Cu}_2\\text{S}\\) and \\(\\text{Cu}_2\\text{O}\\)", "\\(\\text{Cu}_2\\text{S}\\) and \\(\\text{FeS}\\)", "\\(\\text{CuFeS}_2\\) and \\(\\text{Cu}_2\\text{S}\\)", "\\(\\text{CuS}\\) and \\(\\text{FeS}\\)"],
     "correctIndex": 1,
-    "explanation": "**Copper matte** is an intermediate product obtained during the extraction of copper from its ore (copper pyrites, $$\\text{CuFeS}_2$$).\n\nIt is composed of **$$\\text{Cu}_2\\text{S}$$ and $$\\text{FeS}$$**.\n\nDuring smelting, copper pyrites is partially roasted and the resulting mixture of $$\\text{Cu}_2\\text{S}$$ and $$\\text{FeS}$$ forms the copper matte. The matte is then subjected to Bessemer converter to obtain blister copper.",
-    "name": "General Principles of Metallurgy Item 1"
+    "explanation": "**Copper matte** is the intermediate product obtained during the smelting of copper ore (copper pyrites, \\(\\text{CuFeS}_2\\)). During roasting and smelting in a reverberatory furnace, the iron sulphide reacts with oxygen while some copper sulphide and iron sulphide remain unoxidised as a molten sulfide mixture. This mixture is called copper matte and is composed of **\\(\\text{Cu}_2\\text{S}\\) and \\(\\text{FeS}\\)**.",
+    "name": "Questions Item 1"
   },
   {
     "id": "c12_item2",
-    "text": "Which among the following is used as flux in the extraction of iron from oxide ores?",
-    "options": [
-      "$$\\text{SiO}_2$$",
-      "$$\\text{CaCO}_3$$",
-      "$$\\text{CaO}$$",
-      "$$\\text{CaSiO}_3$$"
-    ],
+    "text": "Which among the following is used as a flux in the extraction of iron from oxide ores?",
+    "options": ["\\(\\text{SiO}_2\\)", "\\(\\text{CaCO}_3\\)", "\\(\\text{CaO}\\)", "\\(\\text{CaSiO}_3\\)"],
     "correctIndex": 1,
-    "explanation": "**Limestone ($$\\text{CaCO}_3$$)** is used as the flux in the extraction of iron from haematite in a blast furnace.\n\nIt decomposes on heating to form CaO:\n$$\\text{CaCO}_3 \\xrightarrow{\\Delta} \\text{CaO} + \\text{CO}_2$$\n\nThe CaO then reacts with the acidic silicate gangue ($$\\text{SiO}_2$$) to form molten slag:\n$$\\text{CaO} + \\text{SiO}_2 \\xrightarrow{\\Delta} \\text{CaSiO}_3$$\n\nSo $$\\text{CaCO}_3$$ is the flux added, while $$\\text{CaSiO}_3$$ is the slag produced.",
-    "name": "General Principles of Metallurgy Item 2"
+    "explanation": "In the blast furnace extraction of iron, **limestone (\\(\\text{CaCO}_3\\))** is used as the **flux**. It decomposes on heating to form CaO, which then reacts with the acidic silicate gangue (\\(\\text{SiO}_2\\)) to form the molten slag calcium silicate:\n\n\\[\\text{CaCO}_3 \\xrightarrow{\\Delta} \\text{CaO} + \\text{CO}_2\\]\n\n\\[\\text{CaO} + \\text{SiO}_2 \\xrightarrow{\\Delta} \\text{CaSiO}_3 \\text{ (slag)}\\]\n\nThe slag (\\(\\text{CaSiO}_3\\)) is the product, not the flux. CaO is the active agent but it is generated from \\(\\text{CaCO}_3\\).",
+    "name": "Questions Item 2"
   },
   {
     "id": "c12_item3",
-    "text": "The alloy which contains 95% aluminium and small amounts of copper, magnesium and manganese is:",
-    "options": [
-      "Magnalium",
-      "Aluminium bronze",
-      "Invar",
-      "Duralumin"
-    ],
+    "text": "The alloy which contains 95% aluminium and small amounts of copper, magnesium and manganese is",
+    "options": ["Magnalium", "Aluminium bronze", "Invar", "Duralumin"],
     "correctIndex": 3,
-    "explanation": "**Duralumin** is an alloy composed of:\n- ~95% Aluminium (Al)\n- ~3% Copper (Cu)\n- 0.5–1% Magnesium (Mg)\n- 1–1.5% Manganese (Mn)\n\nIt is lightweight yet strong and is widely used in aircraft manufacturing.\n\nNote: **Magnalium** = Al + Mg; **Aluminium bronze** = Cu + Al; **Invar** = Fe + Ni (known for low thermal expansion).",
-    "name": "General Principles of Metallurgy Item 3"
+    "explanation": "**Duralumin** is an important alloy of aluminium with the composition: ~95% Al, ~3% Cu, 0.5–1% Mg, and 1–1.5% Mn. It is a lightweight, high-strength alloy widely used in aircraft construction and other structural applications. Magnalium (Al + Mg) and aluminium bronze (Al + Cu) have different compositions. Invar is an alloy of Fe and Ni, not aluminium.",
+    "name": "Questions Item 3"
   },
   {
     "id": "c12_item4",
-    "text": "Which of the following statements is NOT correct regarding the Ellingham diagram and reduction of alumina?",
-    "options": [
-      "Reduction of alumina to give aluminium by magnesium is thermodynamically feasible",
-      "The point of intersection of $$\\text{Al}_2\\text{O}_3$$ and MgO curves in the Ellingham diagram is below 1665 K",
-      "Use of magnesium as reducing agent in metallurgy of aluminium is economical",
-      "Ellingham diagram represents the graphical plot of Gibbs energy vs temperature for the formation of oxides of common metals"
-    ],
+    "text": "Which of the following statements is NOT correct regarding the Ellingham diagram?\n\n1. Reduction of alumina to give aluminium by magnesium is thermodynamically feasible.\n2. The point of intersection of \\(\\text{Al}_2\\text{O}_3\\) and MgO curves in the Ellingham diagram is below 1665 K.\n3. Use of magnesium as reducing agent in metallurgy of aluminium is economical.\n4. The Ellingham diagram represents the graphical plot of Gibbs energy vs temperature for the formation of the oxides of common metals.",
+    "options": ["Statement 1", "Statement 2", "Statement 3", "Statement 4"],
     "correctIndex": 2,
-    "explanation": "Statements 1, 2, and 4 are correct based on Ellingham diagram principles:\n- Mg can thermodynamically reduce $$\\text{Al}_2\\text{O}_3$$ (feasible) ✓\n- The intersection of $$\\text{Al}_2\\text{O}_3$$ and MgO curves is below 1665 K ✓\n- Ellingham diagram plots $$\\Delta G$$ vs temperature for metal oxide formation ✓\n\n**Statement 3 is incorrect:** Although Mg can reduce $$\\text{Al}_2\\text{O}_3$$ thermodynamically, using Mg as a reducing agent in the metallurgy of Al is **uneconomical** because Mg is more expensive than Al itself. The Hall-Heroult electrolytic process is used industrially instead.",
-    "name": "General Principles of Metallurgy Item 4"
+    "explanation": "Statements 1, 2, and 4 are **correct** according to Ellingham diagram principles:\n- Mg can reduce \\(\\text{Al}_2\\text{O}_3\\) thermodynamically (feasible below ~1665 K)\n- The intersection of \\(\\text{Al}_2\\text{O}_3\\) and MgO curves occurs below 1665 K\n- The Ellingham diagram plots \\(\\Delta G^\\circ\\) vs temperature for oxide formation\n\n**Statement 3 is incorrect:** Although using Mg as a reducing agent for Al production is thermodynamically feasible, it is highly **uneconomical** because Mg itself is an expensive metal obtained by electrolysis. The Hall-Héroult electrolytic process is the practical method used industrially.",
+    "name": "Questions Item 4"
   },
   {
     "id": "c12_item5",
-    "text": "Match the following:\n\n| List-I | List-II |\n|---|---|\n| A. Calcination | 1. Galena |\n| B. Roasting | 2. Magnetite |\n| C. Magnetic separation | 3. Pyrometallurgy |\n| D. Carbon reduction of metal oxide | 4. Malachite |",
-    "options": [
-      "A-4, B-1, C-3, D-2",
-      "A-4, B-1, C-2, D-3",
-      "A-2, B-4, C-3, D-2",
-      "A-3, B-2, C-1, D-4"
-    ],
+    "text": "Match the items of List-I with those of List-II:\n\nA. Calcination — B. Roasting — C. Magnetic separation — D. Carbon reduction of metal oxide\n\n1. Galena (PbS) — 2. Magnetite (\\(\\text{Fe}_3\\text{O}_4\\)) — 3. Pyrometallurgy — 4. Malachite (\\(\\text{CuCO}_3 \\cdot \\text{Cu(OH)}_2\\))\n\nChoose the correct match (A-B-C-D):",
+    "options": ["4-1-3-2", "4-1-2-3", "2-4-3-2", "3-2-1-4"],
     "correctIndex": 1,
-    "explanation": "- **A. Calcination → 4. Malachite** [$$\\text{CuCO}_3 \\cdot \\text{Cu(OH)}_2$$]: Calcination is applied to hydrated, carbonate, or bicarbonate ores to remove $$\\text{CO}_2$$ or water.\n\n- **B. Roasting → 1. Galena (PbS)**: Roasting is applied to sulphide ores by heating in excess air to convert them to oxides.\n\n- **C. Magnetic separation → 2. Magnetite ($$\\text{Fe}_3\\text{O}_4$$)**: Used when the ore or gangue is magnetic.\n\n- **D. Carbon reduction of metal oxide → 3. Pyrometallurgy**: Reduction of metal oxides using carbon (coke) at high temperatures is a pyrometallurgical process.\n\nCorrect match: A-4, B-1, C-2, D-3",
-    "name": "General Principles of Metallurgy Item 5"
+    "explanation": "**A (Calcination) → 4 (Malachite):** Calcination is applied to hydrated, carbonate or bicarbonate ores to drive off water and CO₂. Malachite (\\(\\text{CuCO}_3 \\cdot \\text{Cu(OH)}_2\\)) is such an ore.\n\n**B (Roasting) → 1 (Galena):** Roasting is used for sulphide ores (in excess air). Galena (PbS) is a sulphide ore.\n\n**C (Magnetic separation) → 2 (Magnetite):** Used when ore or gangue is magnetic. Magnetite (\\(\\text{Fe}_3\\text{O}_4\\)) is a magnetic ore.\n\n**D (Carbon reduction) → 3 (Pyrometallurgy):** Carbon reduction of metal oxides is carried out in furnaces at high temperatures, which is pyrometallurgy.\n\nCorrect match: **A-4, B-1, C-2, D-3**.",
+    "name": "Questions Item 5"
   },
   {
     "id": "c12_item6",
-    "text": "Which statement is incorrect regarding the Hall-Heroult process for metallurgy of aluminium?",
-    "options": [
-      "Use of $$\\text{Na}_3\\text{AlF}_6$$ lowers the melting point of $$\\text{Al}_2\\text{O}_3$$",
-      "Steel vessel with lining of carbon acts as cathode",
-      "Graphite is used as anode",
-      "Carbon dioxide gas is generated at cathode"
-    ],
+    "text": "Which statement is incorrect regarding the Hall-Héroult process for metallurgy of aluminium?\n\n1. Use of \\(\\text{Na}_3\\text{AlF}_6\\) lowers the melting point of \\(\\text{Al}_2\\text{O}_3\\)\n2. Steel vessel with lining of carbon acts as cathode\n3. Graphite is used as anode\n4. Carbon dioxide gas is generated at cathode",
+    "options": ["Statement 1", "Statement 2", "Statement 3", "Statement 4"],
     "correctIndex": 3,
-    "explanation": "In the **Hall-Heroult process**:\n\n- **Cryolite ($$\\text{Na}_3\\text{AlF}_6$$)** is added to lower the melting point of $$\\text{Al}_2\\text{O}_3$$ from ~2050°C to ~900°C ✓\n- The **steel vessel lined with carbon** acts as the **cathode** ✓\n- **Graphite** rods are used as the **anode** ✓\n- **Statement 4 is INCORRECT:** $$\\text{CO}_2$$ gas is generated at the **anode** (not cathode), as graphite anodes react with oxygen:\n$$\\text{C} + \\text{O}_2 \\rightarrow \\text{CO}_2$$\nAt the cathode, **aluminium metal is deposited**: $$\\text{Al}^{3+} + 3e^- \\rightarrow \\text{Al}$$",
-    "name": "General Principles of Metallurgy Item 6"
+    "explanation": "In the Hall-Héroult process:\n\n**Statements 1, 2, 3 are correct:**\n- Cryolite (\\(\\text{Na}_3\\text{AlF}_6\\)) is added to \\(\\text{Al}_2\\text{O}_3\\) to lower its melting point (~2000°C) to ~1000°C\n- The steel vessel lined with carbon acts as the **cathode** where Al is deposited\n- Graphite rods act as the **anode**\n\n**Statement 4 is incorrect:** CO₂ gas is generated at the **anode** (graphite), not at the cathode. At the anode: \\(\\text{C} + \\text{O}^{2-} \\rightarrow \\text{CO}_2\\). At the cathode: \\(\\text{Al}^{3+} + 3e^- \\rightarrow \\text{Al}\\) (aluminium is deposited).",
+    "name": "Questions Item 6"
   },
   {
     "id": "c12_item7",
-    "text": "Calamine, bauxite, malachite and siderite are ores of which metals respectively?",
-    "options": [
-      "Zn, Al, Cu, Fe",
-      "Cu, Al, Zn, Fe",
-      "Zn, Al, Fe, Cu",
-      "Al, Fe, Zn, Cu"
-    ],
+    "text": "Calamine, bauxite, malachite and siderite are respectively ores of",
+    "options": ["Zn, Al, Cu, Fe", "Cu, Al, Zn, Fe", "Zn, Al, Fe, Cu", "Al, Fe, Zn, Cu"],
     "correctIndex": 0,
-    "explanation": "- **Calamine** ($$\\text{ZnCO}_3$$) → ore of **Zinc (Zn)**\n- **Bauxite** ($$\\text{AlO}_x(\\text{OH})_{3-2x}$$) → ore of **Aluminium (Al)**\n- **Malachite** ($$\\text{CuCO}_3 \\cdot \\text{Cu(OH)}_2$$) → ore of **Copper (Cu)**\n- **Siderite** ($$\\text{FeCO}_3$$) → ore of **Iron (Fe)**\n\nSo the correct order is: **Zn, Al, Cu, Fe**",
-    "name": "General Principles of Metallurgy Item 7"
+    "explanation": "The ores and their corresponding metals:\n\n| Ore | Formula | Metal |\n|---|---|---|\n| Calamine | \\(\\text{ZnCO}_3\\) | **Zn** |\n| Bauxite | \\(\\text{AlO}_x(\\text{OH})_{3-2x}\\) | **Al** |\n| Malachite | \\(\\text{CuCO}_3 \\cdot \\text{Cu(OH)}_2\\) | **Cu** |\n| Siderite | \\(\\text{FeCO}_3\\) | **Fe** |\n\nTherefore: Calamine → Zn, Bauxite → Al, Malachite → Cu, Siderite → Fe.",
+    "name": "Questions Item 7"
   },
   {
     "id": "c12_item8",
-    "text": "Match the following refining methods with the metals:\n\n| List-I | List-II |\n|---|---|\n| A. Nickel | 1. Electrolytic refining |\n| B. Titanium | 2. Zone refining |\n| C. Germanium | 3. van-Arkel method |\n| D. Copper | 4. Mond process |",
-    "options": [
-      "A-4, B-1, C-3, D-2",
-      "A-3, B-4, C-2, D-1",
-      "A-4, B-3, C-2, D-1",
-      "A-2, B-1, C-4, D-3"
-    ],
+    "text": "Match the items of List-I (metals) with List-II (refining methods):\n\nA. Nickel — B. Titanium — C. Germanium — D. Copper\n\n1. Electrolytic refining — 2. Zone refining — 3. van Arkel method — 4. Mond process\n\nChoose the correct match (A-B-C-D):",
+    "options": ["4-1-3-2", "3-4-2-1", "4-3-2-1", "2-1-4-3"],
     "correctIndex": 2,
-    "explanation": "- **A. Nickel → 4. Mond process:** Nickel is purified using the carbonyl process. Nickel reacts with CO to form volatile $$\\text{Ni(CO)}_4$$, which decomposes on heating to give pure Ni.\n\n- **B. Titanium → 3. van-Arkel method:** Ti is converted to $$\\text{TiI}_4$$ (volatile), which is decomposed on a hot tungsten filament to get pure Ti.\n\n- **C. Germanium → 2. Zone refining:** Used to produce ultra-pure semiconductors like Si and Ge.\n\n- **D. Copper → 1. Electrolytic refining:** Impure Cu is used as anode; pure Cu deposits at the cathode.\n\nCorrect match: A-4, B-3, C-2, D-1",
-    "name": "General Principles of Metallurgy Item 8"
+    "explanation": "**A (Nickel) → 4 (Mond process):** The Mond (carbonyl) process purifies Ni by forming volatile \\(\\text{Ni(CO)}_4\\) which decomposes to give pure Ni: \\(\\text{Ni} + 4\\text{CO} \\rightarrow \\text{Ni(CO)}_4 \\xrightarrow{\\Delta} \\text{Ni} + 4\\text{CO}\\).\n\n**B (Titanium) → 3 (van Arkel method):** Ti is purified by converting to \\(\\text{TiI}_4\\), which decomposes on a hot filament to deposit pure Ti.\n\n**C (Germanium) → 2 (Zone refining):** Ultra-pure semiconductors like Si and Ge are refined by zone refining, where a narrow molten zone sweeps impurities to one end.\n\n**D (Copper) → 1 (Electrolytic refining):** Cu, Zn, Ag, Au, Ni etc. are refined electrolytically using the impure metal as anode and pure metal as cathode.\n\nCorrect match: **A-4, B-3, C-2, D-1**.",
+    "name": "Questions Item 8"
   },
   {
     "id": "c12_item9",
     "text": "In the extraction of silver, zinc metal is used as a reducing agent. What is the molecular structure of the zinc complex formed in this reaction?",
-    "options": [
-      "Tetrahedral",
-      "Linear",
-      "Bent",
-      "Square planar"
-    ],
+    "options": ["Tetrahedral", "Linear", "Bent", "Square planar"],
     "correctIndex": 0,
-    "explanation": "During extraction of silver, the ore is treated with dilute KCN solution:\n$$\\text{Ag}_2\\text{S} + 4\\text{NaCN} \\rightarrow 2\\text{Na}[\\text{Ag(CN)}_2] + \\text{Na}_2\\text{S}$$\n\nZinc is then added to displace silver:\n$$2\\text{Na}[\\text{Ag(CN)}_2] + \\text{Zn} \\rightarrow \\text{Na}_2[\\text{Zn(CN)}_4] + 2\\text{Ag}$$\n\nThe zinc complex formed is **$$[\\text{Zn(CN)}_4]^{2-}$$**. In this complex, $$\\text{Zn}^{2+}$$ has a $$d^{10}$$ configuration and forms 4 bonds with CN⁻ ligands in a **tetrahedral geometry**.",
-    "name": "General Principles of Metallurgy Item 9"
+    "explanation": "In silver extraction, silver ore is dissolved in dilute KCN solution:\n\n\\[\\text{Ag}_2\\text{S} + 4\\text{NaCN} \\rightarrow 2\\text{Na}[\\text{Ag(CN)}_2] + \\text{Na}_2\\text{S}\\]\n\nZinc is then added to displace silver:\n\n\\[2\\text{Na}[\\text{Ag(CN)}_2] + \\text{Zn} \\rightarrow \\text{Na}_2[\\text{Zn(CN)}_4] + 2\\text{Ag}\\downarrow\\]\n\nIn the complex \\([\\text{Zn(CN)}_4]^{2-}\\), zinc is \\(\\text{Zn}^{2+}\\) with electron configuration \\([\\text{Ar}]3d^{10}\\). It undergoes \\(sp^3\\) hybridisation and the four CN\\(^-\\) ligands arrange in a **tetrahedral** geometry around Zn.",
+    "name": "Questions Item 9"
   },
   {
     "id": "c12_item10",
     "text": "Which among the following materials is extensively used as a piezoelectric material?",
-    "options": [
-      "Quartz",
-      "Mica",
-      "Amorphous silica",
-      "Tridymite"
-    ],
+    "options": ["Quartz", "Mica", "Amorphous silica", "Tridymite"],
     "correctIndex": 0,
-    "explanation": "**Quartz ($$\\text{SiO}_2$$)** is extensively used as a piezoelectric material.\n\n**Piezoelectric materials** generate an electric potential when subjected to mechanical stress, and conversely, they deform when an electric field is applied.\n\nQuartz and Rochelle salt show the highest piezoelectric effects. Quartz is widely used in watches, oscillators, sensors, and electronic frequency control devices.\n\nNote: Amorphous silica and tridymite are other forms of $$\\text{SiO}_2$$ but do not exhibit significant piezoelectric properties.",
-    "name": "General Principles of Metallurgy Item 10"
+    "explanation": "**Piezoelectric materials** generate an electric potential when mechanical stress is applied (and vice versa). **Quartz (\\(\\text{SiO}_2\\))** is the most well-known and extensively used piezoelectric material. It exhibits the piezoelectric effect due to its non-centrosymmetric crystalline structure. Quartz crystals are used in oscillators, watches, sonar devices, and electronic frequency control. Rochelle salt also shows piezoelectric effects. Mica, amorphous silica, and tridymite do not have the required asymmetric crystal structure for piezoelectricity.",
+    "name": "Questions Item 10"
   },
   {
     "id": "c12_item11",
-    "text": "Which of the following statements is NOT correct about the froth-flotation process?",
-    "options": [
-      "Froth-flotation is used for removing gangue from sulphide ore",
-      "Cresols are used to stabilise the froth",
-      "Sodium cyanide can be used as depressant for preferential separation",
-      "Aniline can be used as a froth enhancer"
-    ],
+    "text": "Which of the following statements is NOT correct about froth flotation?\n\n(i) Froth flotation is used for removing gangue from sulphide ore.\n(ii) Cresols are used to stabilise the froth.\n(iii) Sodium cyanide can be used as depressant for preferential separation.\n(iv) Aniline can be used as froth enhancer.",
+    "options": ["(i)", "(ii)", "(iii)", "(iv)"],
     "correctIndex": 3,
-    "explanation": "**Statement (iv) is incorrect:** Aniline (and cresols) are added to **stabilise the froth**, not to enhance it. They are froth stabilisers.\n\nThe correct roles in froth-flotation are:\n- **Collectors** (e.g., pine oil, xanthates): Make the ore surface hydrophobic so it attaches to air bubbles\n- **Froth stabilisers** (e.g., cresols, aniline): Stabilise the froth\n- **Depressants** (e.g., NaCN): Prevent certain ores from floating, enabling selective separation\n\nAll other statements (i), (ii), and (iii) are correct.",
-    "name": "General Principles of Metallurgy Item 11"
+    "explanation": "In froth flotation:\n- Statement (i) is **correct**: Froth flotation is specifically designed for concentrating sulphide ores.\n- Statement (ii) is **correct**: Cresols (pine oil) and aniline are both added to **stabilise the froth** — not as froth enhancers.\n- Statement (iii) is **correct**: NaCN acts as a depressant by selectively preventing one sulphide from entering the froth (e.g., it suppresses ZnS while allowing PbS to float).\n- Statement (iv) is **incorrect**: Aniline is used as a **froth stabiliser**, not a froth enhancer. Froth enhancers are different additives (collectors/promoters like xanthates).",
+    "name": "Questions Item 11"
   },
   {
     "id": "c12_item12",
     "text": "Which of the following metals CANNOT be obtained by auto-reduction of their compounds?",
-    "options": [
-      "Lead",
-      "Mercury",
-      "Titanium",
-      "Copper"
-    ],
+    "options": ["Lead", "Mercury", "Titanium", "Copper"],
     "correctIndex": 2,
-    "explanation": "**Auto-reduction** (self-reduction) is a process used in metallurgy of less electropositive (noble) metals, where the metal sulphide ore is partly converted to oxide, and the remaining sulphide reacts with the oxide to give the free metal:\n\n$$2\\text{Cu}_2\\text{S} + 3\\text{O}_2 \\rightarrow 2\\text{Cu}_2\\text{O} + 2\\text{SO}_2$$\n$$2\\text{Cu}_2\\text{O} + \\text{Cu}_2\\text{S} \\rightarrow 6\\text{Cu} + \\text{SO}_2$$\n\nThis method works for **Hg, Pb, Cu** (less electropositive metals).\n\n**Titanium (Ti)** is a highly electropositive and reactive metal — it cannot be extracted by auto-reduction. Ti is obtained by the **Kroll process** (reduction of $$\\text{TiCl}_4$$ with Mg).",
-    "name": "General Principles of Metallurgy Item 12"
+    "explanation": "**Auto-reduction** (self-reduction) is used in metallurgy of **less electropositive** metals. In this method, the sulphide ore is heated in a limited supply of air — part of the ore is oxidised to sulphate/oxide, which then reacts with the remaining sulphide to release the metal:\n\n\\[2\\text{PbS} + 3\\text{O}_2 \\rightarrow 2\\text{PbO} + 2\\text{SO}_2\\]\n\\[2\\text{PbO} + \\text{PbS} \\rightarrow 3\\text{Pb} + \\text{SO}_2\\]\n\nThis works for Hg, Pb, and Cu because they are less electropositive. **Titanium (Ti)** is a **more electropositive** (reactive) metal and cannot be obtained by auto-reduction; it requires the Kroll process (reduction with Mg).",
+    "name": "Questions Item 12"
   },
   {
     "id": "c12_item13",
-    "text": "Which of the following are carbonate ores?\n\nI. Magnetite &nbsp;&nbsp; II. Kaolinite &nbsp;&nbsp; III. Siderite &nbsp;&nbsp; IV. Calamine",
-    "options": [
-      "I, II, III",
-      "II, III, IV",
-      "I, II only",
-      "III, IV only"
-    ],
+    "text": "Which of the following are carbonate ores?\n\nI. Magnetite (\\(\\text{Fe}_3\\text{O}_4\\))\nII. Kaolinite (\\(\\text{Al}_2\\text{Si}_2\\text{O}_5(\\text{OH})_4\\))\nIII. Siderite (\\(\\text{FeCO}_3\\))\nIV. Calamine (\\(\\text{ZnCO}_3\\))",
+    "options": ["I, II, III", "II, III, IV", "I, II only", "III, IV only"],
     "correctIndex": 3,
-    "explanation": "- **I. Magnetite** → $$\\text{Fe}_3\\text{O}_4$$ → **oxide ore** ✗\n- **II. Kaolinite** → $$\\text{Al}_2\\text{Si}_2\\text{O}_5(\\text{OH})_4$$ → **silicate ore** ✗\n- **III. Siderite** → $$\\text{FeCO}_3$$ → **carbonate ore** ✓\n- **IV. Calamine** → $$\\text{ZnCO}_3$$ → **carbonate ore** ✓\n\nTherefore, only **III and IV** are carbonate ores.",
-    "name": "General Principles of Metallurgy Item 13"
+    "explanation": "A **carbonate ore** is one that contains the metal in the form of a carbonate (\\(\\text{CO}_3^{2-}\\)):\n\n- **Magnetite (\\(\\text{Fe}_3\\text{O}_4\\))** → oxide ore ✗\n- **Kaolinite (\\(\\text{Al}_2\\text{Si}_2\\text{O}_5(\\text{OH})_4\\))** → silicate ore ✗\n- **Siderite (\\(\\text{FeCO}_3\\))** → carbonate ore ✓\n- **Calamine (\\(\\text{ZnCO}_3\\))** → carbonate ore ✓\n\nOnly **Siderite and Calamine** (III and IV) are carbonate ores.",
+    "name": "Questions Item 13"
   },
   {
     "id": "c12_item14",
     "text": "Noble metals like gold and platinum are soluble in which of the following mixtures?",
     "options": [
-      "1 : 1 mixture of conc. $$\\text{HNO}_3$$ and conc. $$\\text{H}_2\\text{SO}_4$$",
-      "1 : 3 mixture of conc. HCl and conc. $$\\text{HNO}_3$$",
-      "1 : 3 mixture of conc. $$\\text{HNO}_3$$ and conc. HCl",
-      "1 : 3 mixture of conc. $$\\text{H}_2\\text{SO}_4$$ and conc. HCl"
+      "1:1 mixture of conc. \\(\\text{HNO}_3\\) and conc. \\(\\text{H}_2\\text{SO}_4\\)",
+      "1:3 mixture of conc. HCl and conc. \\(\\text{HNO}_3\\)",
+      "1:3 mixture of conc. \\(\\text{HNO}_3\\) and conc. HCl",
+      "1:3 mixture of conc. \\(\\text{H}_2\\text{SO}_4\\) and conc. HCl"
     ],
     "correctIndex": 2,
-    "explanation": "Noble metals like **gold (Au)** and **platinum (Pt)** dissolve in **aqua regia**, which is a mixture of concentrated nitric acid and concentrated hydrochloric acid in a **1 : 3 molar ratio** (1 part $$\\text{HNO}_3$$ : 3 parts HCl).\n\n$$\\text{Au} + \\text{HNO}_3 + 4\\text{HCl} \\rightarrow \\text{H}[\\text{AuCl}_4] + \\text{NO} + 2\\text{H}_2\\text{O}$$\n\nAqua regia works because $$\\text{HNO}_3$$ oxidises the metal while HCl provides Cl⁻ ions to form stable chloro-complexes, thus driving the dissolution forward.",
-    "name": "General Principles of Metallurgy Item 14"
+    "explanation": "Noble metals like gold and platinum are dissolved by **aqua regia**, a highly corrosive mixture of:\n\n\\[\\text{Aqua regia} = 1 \\text{ part conc. } \\text{HNO}_3 + 3 \\text{ parts conc. HCl}\\]\n\nThe HNO₃ oxidises the metal and HCl provides Cl⁻ ions that form stable chloro-complexes (e.g., \\([\\text{AuCl}_4]^-\\)), making the dissolution thermodynamically favourable. Option (b) has the ratio reversed (3:1 HCl:HNO₃) which is the correct mixture but described in wrong order in option (b). Option (c) correctly states 1 part HNO₃ and 3 parts HCl.",
+    "name": "Questions Item 14"
   },
   {
     "id": "c12_item15",
     "text": "Which one of the following statements is NOT correct?",
     "options": [
-      "van-Arkel method is used for refining of zirconium",
-      "Mond process is used for refining of nickel",
+      "The van Arkel method is used for refining of zirconium",
+      "The Mond process is used for refining of nickel",
       "Zone refining is based on the principle that impurities are more soluble in the melt than in the solid state of the metal",
       "High melting metals are refined by liquation"
     ],
     "correctIndex": 3,
-    "explanation": "**Statement (d) is incorrect:** **Liquation** is used for metals with **low melting points** (readily fusible metals) such as Pb, Sn, Bi, and Hg, where the impure metal melts and flows away from the less fusible impurities.\n\nIt is **NOT** used for high melting metals. High melting metals are refined by methods such as electrolytic refining or vapour phase refining.\n\nAll other statements are correct:\n- van-Arkel method: used for Zr and Ti ✓\n- Mond process: used for Ni ✓\n- Zone refining: based on differential solubility of impurities in melt vs solid ✓",
-    "name": "General Principles of Metallurgy Item 15"
+    "explanation": "**Option (d) is NOT correct.** The **liquation** method is used for refining metals with **low melting points** (easily fusible) such as Pb, Sn, Bi, and Hg, where the impurities have a higher melting point. The impure metal is placed on a sloping surface and gently heated — the pure metal melts and flows down while the impurities remain.\n\nHigh melting metals (like W, Mo, Re) are refined by **zone refining** or **electron beam melting**, not by liquation. The other three statements are all correct.",
+    "name": "Questions Item 15"
   },
   {
     "id": "c12_item16",
-    "text": "The pair of metals refined by vapour phase refining is:",
-    "options": [
-      "Ni, Cu",
-      "Sn, Ni",
-      "Zr, Ni",
-      "Cu, Zr"
-    ],
+    "text": "The pair of metals refined by vapour phase refining is",
+    "options": ["Ni, Cu", "Sn, Ni", "Zr, Ni", "Cu, Zr"],
     "correctIndex": 2,
-    "explanation": "**Vapour phase refining** is used for metals that can be converted into volatile compounds, which are then decomposed to get pure metal.\n\nMetals refined by this method include: **Ni, Ti, Zr, V, Th**\n\n- **Ni** → Mond process: $$\\text{Ni} + 4\\text{CO} \\rightarrow \\text{Ni(CO)}_4$$ (volatile) → decomposed at 450–470 K to give pure Ni\n- **Zr** → van-Arkel method: $$\\text{Zr} + 2\\text{I}_2 \\rightarrow \\text{ZrI}_4$$ → decomposed on hot filament\n\nTherefore, **Zr and Ni** are both refined by vapour phase refining methods.",
-    "name": "General Principles of Metallurgy Item 16"
+    "explanation": "**Vapour phase refining** involves converting the impure metal into a volatile compound, which is then decomposed to yield the pure metal. Metals refined by this method include **Ni** (Mond process: \\(\\text{Ni} + 4\\text{CO} \\rightarrow \\text{Ni(CO)}_4 \\rightarrow \\text{Ni}\\)) and **Zr, Ti** (van Arkel method: \\(\\text{Zr} + 2\\text{I}_2 \\rightarrow \\text{ZrI}_4 \\rightarrow \\text{Zr}\\)). Also V and Th can be refined this way. So **Zr and Ni** are both refined by vapour phase refining.",
+    "name": "Questions Item 16"
   },
   {
     "id": "c12_item17",
-    "text": "The copper(II) halide which does NOT exist is:",
-    "options": [
-      "$$\\text{CuF}_2$$",
-      "$$\\text{CuBr}_2$$",
-      "$$\\text{CuI}_2$$",
-      "$$\\text{CuCl}_2$$"
-    ],
+    "text": "The copper(II) halide which does not exist is",
+    "options": ["\\(\\text{CuF}_2\\)", "\\(\\text{CuBr}_2\\)", "\\(\\text{CuI}_2\\)", "\\(\\text{CuCl}_2\\)"],
     "correctIndex": 2,
-    "explanation": "**$$\\text{CuI}_2$$ does not exist** because it is unstable.\n\nThe iodide ion ($$\\text{I}^-$$) is a strong reducing agent. When $$\\text{Cu}^{2+}$$ reacts with $$\\text{I}^-$$, the iodide reduces $$\\text{Cu}^{2+}$$ to $$\\text{Cu}^+$$, and part of the iodide is oxidised to $$\\text{I}_2$$:\n\n$$2\\text{Cu}^{2+}(aq) + 4\\text{I}^-(aq) \\rightarrow 2\\text{CuI}(s) + \\text{I}_2(aq)$$\n\nSo $$\\text{CuI}$$ (copper(I) iodide) is formed instead of $$\\text{CuI}_2$$.\n\n$$\\text{CuF}_2$$, $$\\text{CuCl}_2$$, and $$\\text{CuBr}_2$$ all exist as stable compounds.",
-    "name": "General Principles of Metallurgy Item 17"
+    "explanation": "**\\(\\text{CuI}_2\\)** does not exist because iodide ion (\\(\\text{I}^-\\)) is a strong enough **reducing agent** to reduce \\(\\text{Cu}^{2+}\\) to \\(\\text{Cu}^+\\), while I⁻ is oxidised to \\(\\text{I}_2\\):\n\n\\[2\\text{Cu}^{2+}(aq) + 4\\text{I}^-(aq) \\rightarrow 2\\text{CuI}(s) + \\text{I}_2(aq)\\]\n\nThe standard reduction potential of \\(\\text{I}_2/\\text{I}^-\\) (+0.535 V) is less than \\(\\text{Cu}^{2+}/\\text{Cu}^+\\) (in CuI), making this reaction spontaneous. \\(\\text{CuF}_2\\), \\(\\text{CuCl}_2\\), and \\(\\text{CuBr}_2\\) are all stable because F⁻, Cl⁻, and Br⁻ are not strong enough reducing agents to reduce Cu²⁺.",
+    "name": "Questions Item 17"
   },
   {
     "id": "c12_item18",
-    "text": "$$X_2$$ is used in the refining of Ti metal by the van-Arkel method. $$Y_2$$ does not liberate $$\\text{O}_2$$ from water and does not form HY and HOY with water. $$X_2$$ and $$Y_2$$ are respectively:",
-    "options": [
-      "$$\\text{I}_2, \\text{Cl}_2$$",
-      "$$\\text{Cl}_2, \\text{I}_2$$",
-      "$$\\text{I}_2, \\text{I}_2$$",
-      "$$\\text{Cl}_2, \\text{Cl}_2$$"
-    ],
+    "text": "\\(X_2\\) is used in the refining of Ti metal by the van Arkel method. \\(Y_2\\) does not liberate \\(\\text{O}_2\\) from water and does not form HY and HOY with water. \\(X_2\\) and \\(Y_2\\) are respectively",
+    "options": ["\\(\\text{I}_2\\), \\(\\text{Cl}_2\\)", "\\(\\text{Cl}_2\\), \\(\\text{I}_2\\)", "\\(\\text{I}_2\\), \\(\\text{I}_2\\)", "\\(\\text{Cl}_2\\), \\(\\text{Cl}_2\\)"],
     "correctIndex": 2,
-    "explanation": "**For $$X_2$$:** The van-Arkel method for refining Ti uses **iodine ($$\\text{I}_2$$)**:\n$$\\text{Ti} + 2\\text{I}_2 \\xrightarrow{\\Delta} \\text{TiI}_4 \\xrightarrow{\\text{hot filament}} \\text{Ti (pure)} + 2\\text{I}_2$$\n\n**For $$Y_2$$:** When $$\\text{I}_2$$ reacts with water:\n$$\\text{I}_2 + \\text{H}_2\\text{O} \\rightarrow \\text{IO}^- + \\text{H}^+ + \\text{I}^-$$\n\nUnlike $$\\text{Cl}_2$$, iodine does **not** liberate $$\\text{O}_2$$ from water and does not form **HI** (as a product of disproportionation) or **HOI** readily with water in the same way chlorine does.\n\nTherefore, both $$X_2$$ and $$Y_2$$ are **$$\\text{I}_2$$**.",
-    "name": "General Principles of Metallurgy Item 18"
+    "explanation": "**For \\(X_2\\):** In the van Arkel method, Ti is refined using **\\(\\text{I}_2\\)**:\n\\[\\text{Ti(impure)} + 2\\text{I}_2 \\xrightarrow{\\Delta} \\text{TiI}_4 \\xrightarrow{\\text{hot filament}} \\text{Ti(pure)} + 2\\text{I}_2\\]\n\n**For \\(Y_2\\):** The clue is that \\(Y_2\\) does not liberate \\(\\text{O}_2\\) from water and does not form HY or HOY with water. When **\\(\\text{I}_2\\)** reacts with water, the reaction is:\n\\[\\text{I}_2 + \\text{H}_2\\text{O} \\rightarrow \\text{IO}^- + 2\\text{H}^+ + \\text{I}^-\\]\nIt does **not** produce \\(\\text{O}_2\\), and does not form HI or HOI with water. (Cl₂ forms HCl and HOCl with water.)\n\nTherefore both \\(X_2\\) and \\(Y_2\\) are **\\(\\text{I}_2\\)**.",
+    "name": "Questions Item 18"
   },
   {
     "id": "c12_item19",
-    "text": "In the froth-flotation process, what is the depressant used in the separation of sulphide ores of zinc and lead?",
-    "options": [
-      "NaCl",
-      "$$\\text{Na}_2\\text{CO}_3$$",
-      "NaCN",
-      "$$\\text{Na}_2\\text{SO}_4$$"
-    ],
+    "text": "In the froth flotation process, what is the depressant used in the separation of sulphide ores of zinc and lead?",
+    "options": ["NaCl", "\\(\\text{Na}_2\\text{CO}_3\\)", "NaCN", "\\(\\text{Na}_2\\text{SO}_4\\)"],
     "correctIndex": 2,
-    "explanation": "In the froth-flotation process, **depressants** selectively prevent one ore from forming froth while allowing the other to float.\n\nFor separating **ZnS and PbS**, **NaCN (sodium cyanide)** is used as the depressant:\n\n$$4\\text{NaCN} + \\text{ZnS} \\rightarrow \\text{Na}_2[\\text{Zn(CN)}_4] + \\text{Na}_2\\text{S}$$\n\nNaCN reacts with ZnS to form the soluble complex $$\\text{Na}_2[\\text{Zn(CN)}_4]$$, preventing ZnS from coming into the froth. **PbS** is not affected and freely rises with the froth, enabling selective separation.",
-    "name": "General Principles of Metallurgy Item 19"
+    "explanation": "When both ZnS and PbS are present in a mixture, they need to be separated by froth flotation. A **depressant** is added to selectively prevent one ore from entering the froth while allowing the other to float.\n\n**NaCN** is used as the depressant. It reacts with ZnS to form a soluble complex, preventing ZnS from being hydrophobic and entering the froth:\n\n\\[4\\text{NaCN} + \\text{ZnS} \\rightarrow \\text{Na}_2[\\text{Zn(CN)}_4] + \\text{Na}_2\\text{S}\\]\n\nThis keeps ZnS in solution while PbS floats with the froth, allowing their separation.",
+    "name": "Questions Item 19"
   },
   {
     "id": "c12_item20",
-    "text": "Identify the correct statements from the following:\n\ni. In the extraction of Ag and Au, zinc is used as a reducing agent.\nii. Impure zinc can be refined by distillation method.\niii. Malachite is an ore of nickel.",
-    "options": [
-      "i, ii, iii",
-      "i, iii only",
-      "ii, iii only",
-      "i, ii only"
-    ],
+    "text": "Identify the correct statements from the following:\n\ni. In the extraction of Ag and Au, zinc is used as reducing agent.\nii. Impure zinc can be refined by the distillation method.\niii. Malachite is an ore of nickel.",
+    "options": ["i, ii, iii", "i, iii only", "ii, iii only", "i, ii only"],
     "correctIndex": 3,
-    "explanation": "**Statement (i) — Correct:** In the extraction of Ag and Au, zinc displaces the metals from their cyanide complexes:\n$$2[\\text{Ag(CN)}_2]^-(aq) + \\text{Zn}(s) \\rightarrow 2\\text{Ag}(s) + [\\text{Zn(CN)}_4]^{2-}(aq)$$\n\n**Statement (ii) — Correct:** Impure zinc (b.p. ~907°C) can be purified by **distillation** since most impurities have higher boiling points.\n\n**Statement (iii) — Incorrect:** Malachite [$$\\text{Cu}_2(\\text{CO}_3)(\\text{OH})_2$$] is an ore of **copper (Cu)**, not nickel.\n\nTherefore, only statements **(i) and (ii)** are correct.",
-    "name": "General Principles of Metallurgy Item 20"
+    "explanation": "**Statement (i) — Correct:** In the cyanide process for Ag and Au extraction, Zn displaces the noble metal from its cyano-complex:\n\\[2[\\text{Ag(CN)}_2]^-(aq) + \\text{Zn}(s) \\rightarrow 2\\text{Ag}(s) + [\\text{Zn(CN)}_4]^{2-}(aq)\\]\n\n**Statement (ii) — Correct:** Zinc has a low boiling point (907°C), so impure zinc can be purified by **distillation** — the zinc vaporises and is condensed, leaving behind higher-boiling impurities.\n\n**Statement (iii) — Incorrect:** Malachite \\([\\text{Cu}_2(\\text{CO}_3)(\\text{OH})_2]\\) is an ore of **copper**, not nickel.\n\nCorrect statements: **i and ii only**.",
+    "name": "Questions Item 20"
   },
   {
     "id": "c12_item21",
-    "text": "The method used for producing semiconductor-grade metals of high purity is:",
-    "options": [
-      "Poling",
-      "Electrolysis",
-      "Zone refining",
-      "Vapour phase refining"
-    ],
+    "text": "The method used for producing semiconductor grade metals of high purity is",
+    "options": ["Poling", "Electrolysis", "Zone refining", "Vapour phase refining"],
     "correctIndex": 2,
-    "explanation": "**Zone refining** is the method used to produce **ultra-high purity semiconductor metals** such as silicon (Si) and germanium (Ge).\n\n**Principle:** Impurities are more soluble in the molten (melt) phase than in the solid phase. A narrow molten zone is passed along the impure metal rod — impurities concentrate in the melt and are swept to one end, leaving pure metal behind.\n\nThis method can achieve purity levels of 1 part in $$10^9$$, which is essential for semiconductor device fabrication.",
-    "name": "General Principles of Metallurgy Item 21"
+    "explanation": "**Zone refining** is the method used to produce extremely pure metals required for semiconductor applications (Si, Ge). The principle: impurities are more soluble in the molten (liquid) metal than in the solid state. A narrow molten zone is passed slowly from one end of a metal rod to the other — impurities concentrate in the molten zone and move towards one end, leaving behind pure metal. The impure end is then cut off. This can yield metals with purity up to 99.9999%.",
+    "name": "Questions Item 21"
   },
   {
     "id": "c12_item22",
-    "text": "Which ore is concentrated by leaching?",
-    "options": [
-      "$$\\text{PbS}$$",
-      "$$\\text{Al}_2\\text{O}_3 \\cdot 2\\text{H}_2\\text{O}$$",
-      "$$\\text{SnO}_2$$",
-      "$$\\text{Fe}_2\\text{O}_3$$"
-    ],
+    "text": "The ore which is concentrated by leaching is",
+    "options": ["PbS", "\\(\\text{Al}_2\\text{O}_3 \\cdot 2\\text{H}_2\\text{O}\\)", "\\(\\text{SnO}_2\\)", "\\(\\text{Fe}_2\\text{O}_3\\)"],
     "correctIndex": 1,
-    "explanation": "**Leaching** is a process in which powdered ore is treated with a chemical reagent that selectively dissolves the ore, leaving impurities behind.\n\n**Bauxite ($$\\text{Al}_2\\text{O}_3 \\cdot 2\\text{H}_2\\text{O}$$)** is concentrated by leaching (Bayer's process):\n\n$$\\text{Al}_2\\text{O}_3 + 2\\text{NaOH} \\rightarrow 2\\text{NaAlO}_2 + \\text{H}_2\\text{O}$$\n\nBauxite is treated with hot concentrated NaOH solution, dissolving $$\\text{Al}_2\\text{O}_3$$ and $$\\text{SiO}_2$$ while leaving impurities like $$\\text{Fe}_2\\text{O}_3$$ and $$\\text{TiO}_2$$ undissolved.\n\nLeaching is also used for gold and silver ores (cyanide leaching).",
-    "name": "General Principles of Metallurgy Item 22"
+    "explanation": "**Leaching** is a chemical method of concentration where the powdered ore is treated with a suitable reagent that dissolves the ore but not the impurities. **Bauxite (\\(\\text{Al}_2\\text{O}_3 \\cdot 2\\text{H}_2\\text{O}\\))** is concentrated by leaching with hot concentrated NaOH (Bayer's process):\n\n\\[\\text{Al}_2\\text{O}_3 + 2\\text{NaOH} \\rightarrow 2\\text{NaAlO}_2 + \\text{H}_2\\text{O}\\]\n\nThe aluminate dissolves while impurities (\\(\\text{Fe}_2\\text{O}_3\\), \\(\\text{TiO}_2\\)) remain undissolved and are filtered off. PbS uses froth flotation; SnO₂ and Fe₂O₃ use gravity/magnetic methods.",
+    "name": "Questions Item 22"
   },
   {
     "id": "c12_item23",
     "text": "What is the slag formed in the extraction of iron?",
-    "options": [
-      "CaO",
-      "$$\\text{CaSiO}_3$$",
-      "$$\\text{MgSiO}_3$$",
-      "$$\\text{SiO}_2$$"
-    ],
+    "options": ["\\(\\text{CaO}\\)", "\\(\\text{CaSiO}_3\\)", "\\(\\text{MgSiO}_3\\)", "\\(\\text{SiO}_2\\)"],
     "correctIndex": 1,
-    "explanation": "Iron ores contain acidic impurities like **silica ($$\\text{SiO}_2$$)**. Limestone ($$\\text{CaCO}_3$$) is added as a flux.\n\n**Step 1:** Limestone decomposes:\n$$\\text{CaCO}_3 \\rightarrow \\text{CaO} + \\text{CO}_2$$\n\n**Step 2:** CaO reacts with $$\\text{SiO}_2$$ to form slag:\n$$\\text{CaO} + \\text{SiO}_2 \\rightarrow \\text{CaSiO}_3$$\n\n**Calcium silicate ($$\\text{CaSiO}_3$$)** is the molten slag formed, which is lighter than molten iron and floats on top, making it easy to remove.",
-    "name": "General Principles of Metallurgy Item 23"
+    "explanation": "In the blast furnace extraction of iron, the ore contains acidic impurities like silica (\\(\\text{SiO}_2\\)). Limestone (\\(\\text{CaCO}_3\\)) is added as flux. It decomposes to CaO, which reacts with \\(\\text{SiO}_2\\) to form the **slag**:\n\n\\[\\text{CaCO}_3 \\xrightarrow{\\Delta} \\text{CaO} + \\text{CO}_2\\]\n\n\\[\\text{CaO} + \\text{SiO}_2 \\rightarrow \\text{CaSiO}_3 \\text{ (slag)}\\]\n\n**Calcium silicate (\\(\\text{CaSiO}_3\\))** is the slag — it is molten and floats on top of the liquid iron, from where it is tapped off separately.",
+    "name": "Questions Item 23"
   },
   {
     "id": "c12_item24",
-    "text": "The pair of oxides that are leached out when powdered bauxite is digested with concentrated NaOH solution at 473–523 K and 35–36 bar pressure are:",
+    "text": "The pair of oxides that are leached out when powdered bauxite is digested with concentrated NaOH solution at 473–523 K and 35–36 bar pressure are",
     "options": [
-      "$$\\text{TiO}_2$$ and $$\\text{SiO}_2$$",
-      "$$\\text{SiO}_2$$ and $$\\text{Al}_2\\text{O}_3$$",
-      "$$\\text{SiO}_2$$ and $$\\text{Fe}_2\\text{O}_3$$",
-      "$$\\text{Al}_2\\text{O}_3$$ and $$\\text{Fe}_2\\text{O}_3$$"
+      "\\(\\text{TiO}_2\\) and \\(\\text{SiO}_2\\)",
+      "\\(\\text{SiO}_2\\) and \\(\\text{Al}_2\\text{O}_3\\)",
+      "\\(\\text{SiO}_2\\) and \\(\\text{Fe}_2\\text{O}_3\\)",
+      "\\(\\text{Al}_2\\text{O}_3\\) and \\(\\text{Fe}_2\\text{O}_3\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Bauxite ($$\\text{Al}_2\\text{O}_3 \\cdot 2\\text{H}_2\\text{O}$$) contains impurities: $$\\text{SiO}_2$$, $$\\text{Fe}_2\\text{O}_3$$, and $$\\text{TiO}_2$$.\n\nWhen treated with hot concentrated NaOH:\n- $$\\text{Al}_2\\text{O}_3$$ (amphoteric) dissolves: $$\\text{Al}_2\\text{O}_3 + 2\\text{NaOH} \\rightarrow 2\\text{NaAlO}_2 + \\text{H}_2\\text{O}$$ ✓\n- $$\\text{SiO}_2$$ (acidic oxide) dissolves: $$\\text{SiO}_2 + 2\\text{NaOH} \\rightarrow \\text{Na}_2\\text{SiO}_3 + \\text{H}_2\\text{O}$$ ✓\n- $$\\text{Fe}_2\\text{O}_3$$ (basic oxide) — does **not** dissolve in NaOH ✗\n- $$\\text{TiO}_2$$ (basic oxide) — does **not** dissolve in NaOH ✗\n\nSo only **$$\\text{SiO}_2$$ and $$\\text{Al}_2\\text{O}_3$$** are leached out.",
-    "name": "General Principles of Metallurgy Item 24"
+    "explanation": "Bauxite (\\(\\text{Al}_2\\text{O}_3 \\cdot 2\\text{H}_2\\text{O}\\)) contains impurities: \\(\\text{SiO}_2\\), \\(\\text{Fe}_2\\text{O}_3\\), and \\(\\text{TiO}_2\\). When treated with hot concentrated NaOH:\n\n- **\\(\\text{Al}_2\\text{O}_3\\)** dissolves (amphoteric oxide): \\(\\text{Al}_2\\text{O}_3 + 2\\text{NaOH} \\rightarrow 2\\text{NaAlO}_2 + \\text{H}_2\\text{O}\\)\n- **\\(\\text{SiO}_2\\)** dissolves (acidic oxide): \\(\\text{SiO}_2 + 2\\text{NaOH} \\rightarrow \\text{Na}_2\\text{SiO}_3 + \\text{H}_2\\text{O}\\)\n- **\\(\\text{Fe}_2\\text{O}_3\\)** and **\\(\\text{TiO}_2\\)** are **basic oxides** — they remain **insoluble** in NaOH\n\nTherefore, only **\\(\\text{SiO}_2\\) and \\(\\text{Al}_2\\text{O}_3\\)** are leached out (dissolved).",
+    "name": "Questions Item 24"
   }
 ]

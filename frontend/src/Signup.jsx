@@ -3,11 +3,12 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from './hooks/useAuth';
 import Button from './components/Button';
 import Container from './components/Container';
-import { Mail, Lock, User, ArrowRight, Loader2, Eye, EyeOff } from 'lucide-react';
+import { Mail, Lock, User, Phone, ArrowRight, Loader2, Eye, EyeOff } from 'lucide-react';
 
 export default function Signup() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
@@ -22,16 +23,29 @@ export default function Signup() {
 
   useEffect(() => {
     /* global google */
-    if (window.google && !window.googleInitialized) {
-      window.googleInitialized = true;
-      google.accounts.id.initialize({
-        client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID',
-        callback: handleGoogleCallback,
-      });
-      google.accounts.id.renderButton(
-        document.getElementById("googleSignUpDiv"),
-        { theme: "outline", size: "large", width: "100%", text: "signup_with" }
-      );
+    const initGoogleSignIn = () => {
+      if (window.google) {
+        google.accounts.id.initialize({
+          client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID',
+          callback: handleGoogleCallback,
+        });
+        google.accounts.id.renderButton(
+          document.getElementById("googleSignUpDiv"),
+          { theme: "outline", size: "large", width: "100%", text: "signup_with" }
+        );
+      }
+    };
+
+    if (window.google) {
+      initGoogleSignIn();
+    } else {
+      const interval = setInterval(() => {
+        if (window.google) {
+          clearInterval(interval);
+          initGoogleSignIn();
+        }
+      }, 100);
+      return () => clearInterval(interval);
     }
   }, []);
 
@@ -51,7 +65,7 @@ export default function Signup() {
     setError('');
     setIsSubmitting(true);
     try {
-      const userData = await register({ name, email, password });
+      const userData = await register({ name, email, phone, password });
 
         if(userData.isAdmin){
         navigate('/admin');
@@ -166,6 +180,21 @@ export default function Signup() {
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full h-14 pl-12 pr-4 rounded-2xl border-2 border-gray-100 focus:border-orange-500 focus:outline-none transition-all font-medium"
                   placeholder="name@example.com"
+                />
+              </div>
+            </div>
+
+            <div className="space-y-1">
+              <label className="text-sm font-bold text-gray-700 ml-1">Phone Number</label>
+              <div className="relative group">
+                <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-orange-500 transition-colors" />
+                <input
+                  type="tel"
+                  required
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  className="w-full h-14 pl-12 pr-4 rounded-2xl border-2 border-gray-100 focus:border-orange-500 focus:outline-none transition-all font-medium"
+                  placeholder="9876543210"
                 />
               </div>
             </div>

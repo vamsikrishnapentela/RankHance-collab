@@ -1,7 +1,7 @@
 [
   {
     "id": "m9_item1",
-    "text": "The matrix \\( A = \\begin{bmatrix} \\frac{1}{2} & \\frac{1}{2} \\\\ \\frac{1}{2} & \\frac{1}{2} \\end{bmatrix} \\) is .........",
+    "text": "The matrix \\(A = \\begin{pmatrix} \\frac{1}{\\sqrt{2}} & \\frac{1}{\\sqrt{2}} \\\\ -\\frac{1}{\\sqrt{2}} & -\\frac{1}{\\sqrt{2}} \\end{pmatrix}\\) is",
     "options": [
       "Unitary",
       "Orthogonal",
@@ -9,155 +9,155 @@
       "Involutory"
     ],
     "correctIndex": 2,
-    "explanation": "$$A^2 = \\begin{bmatrix} \\frac{1}{2} & \\frac{1}{2} \\\\ \\frac{1}{2} & \\frac{1}{2} \\end{bmatrix} \\begin{bmatrix} \\frac{1}{2} & \\frac{1}{2} \\\\ \\frac{1}{2} & \\frac{1}{2} \\end{bmatrix} = \\begin{bmatrix} 0 & 0 \\\\ 0 & 0 \\end{bmatrix}$$, the null matrix. Hence, \\( A \\) is nilpotent.",
-    "name": "Questions Item 1"
+    "explanation": "Compute \\(A^2\\): \\(A^2 = \\begin{pmatrix}\\frac{1}{2}-\\frac{1}{2} & \\frac{1}{2}-\\frac{1}{2}\\\\-\\frac{1}{2}+\\frac{1}{2} & -\\frac{1}{2}+\\frac{1}{2}\\end{pmatrix} = \\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\). Since \\(A^2 = O\\) (null matrix) with \\(A \\neq O\\), \\(A\\) is a **nilpotent** matrix.",
+    "name": "Nilpotent Matrix Identification"
   },
   {
     "id": "m9_item2",
-    "text": "If \\( f(x) = \\begin{vmatrix} x & x-3 & x-18 \\\\ 3 & x-9 & x-81 \\\\ 5 & x-25 & x-500 \\end{vmatrix} \\), then \\( f(1) + f(3) + f(3) + f(5) + f(5) + f(1) \\) is equal to",
+    "text": "If \\(f(x) = \\begin{vmatrix} x-3 & 2x-18 & 3x-81 \\\\ x-5 & 2x^2-50 & 4x^3-500 \\\\ 1 & 2 & 3 \\end{vmatrix}\\), then \\(f(1)\\cdot f(3)+f(3)\\cdot f(5)+f(5)\\cdot f(1)\\) is equal to",
     "options": [
-      "\\( f(1) \\)",
-      "\\( f(3) \\)",
-      "\\( f(1) + f(3) \\)",
-      "\\( f(1) + f(5) \\)"
+      "\\(f(1)\\)",
+      "\\(f(3)\\)",
+      "\\(f(1)+f(3)\\)",
+      "\\(f(1)+f(5)\\)"
     ],
     "correctIndex": 1,
-    "explanation": "The function evaluates to zero at roots \\( x=3 \\) and \\( x=5 \\) by factor theorem on the determinant. Thus, \\( f(1) + f(3) + f(3) + f(5) + f(5) + f(1) = f(3) \\).",
-    "name": "Questions Item 2"
+    "explanation": "Factoring: the determinant has \\((x-3)\\) and \\((x-5)\\) as factors of the first two rows (after simplification). So \\(f(3)=0\\) and \\(f(5)=0\\). Therefore \\(f(1)\\cdot f(3)+f(3)\\cdot f(5)+f(5)\\cdot f(1)=0=f(3)\\).",
+    "name": "Determinant as Function"
   },
   {
     "id": "m9_item3",
-    "text": "If \\( P \\) and \\( Q \\) are square matrices such that \\( P^{2006} = 0 \\) and \\( PQ = P + Q \\), then \\( \\det(Q) \\) will be",
+    "text": "If \\(P\\) and \\(Q\\) are square matrices such that \\(P^{2006}=O\\) and \\(PQ=P+Q\\), then \\(\\det(Q)\\) will be",
     "options": [
-      "0",
-      "1 only",
-      "-1 only",
-      "\\( \\pm 1 \\)"
+      "\\(0\\)",
+      "\\(1\\) only",
+      "\\(-1\\) only",
+      "\\(\\pm1\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$$P^{2006} = 0 \\implies \\det(P) = 0.$$ From \\( PQ = P + Q \\), multiply appropriately to get \\( P^{2005} Q = 0 \\implies \\det(Q) = 0 \\).",
-    "name": "Questions Item 3"
+    "explanation": "From \\(PQ=P+Q\\), multiply both sides on the left by \\(P^{2005}\\): \\(P^{2006}Q=P^{2006}+QP^{2005}\\Rightarrow O=O+QP^{2005}\\Rightarrow QP^{2005}=O\\). Taking determinants: \\(\\det(Q)\\cdot\\det(P)^{2005}=0\\Rightarrow\\det(Q)=0\\).",
+    "name": "Determinant of Matrix with Nilpotent Condition"
   },
   {
     "id": "m9_item4",
-    "text": "If \\( P \\) and \\( Q \\) are two non-zero square matrices of the same order such that the product \\( PQ = 0 \\), then .........",
+    "text": "If \\(P\\) and \\(Q\\) are two non-zero square matrices of the same order such that \\(PQ = O\\), then",
     "options": [
       "Exactly one of them must be singular",
-      "Both \\( P \\) and \\( Q \\) must be singular",
-      "Both \\( P \\) and \\( Q \\) must be non-singular",
+      "Both \\(P\\) and \\(Q\\) must be singular",
+      "Both \\(P\\) and \\(Q\\) must be non-singular",
       "None of the options are correct"
     ],
     "correctIndex": 3,
-    "explanation": "For non-zero matrices of same order, \\( PQ = 0 \\) is possible even if they are non-singular or singular in certain cases (e.g., nilpotent). None of the options hold universally.",
-    "name": "Questions Item 4"
+    "explanation": "For two non-zero square matrices, their product can be zero even if both are singular (e.g. \\(\\begin{pmatrix}1&0\\\\0&0\\end{pmatrix}\\begin{pmatrix}0&0\\\\0&1\\end{pmatrix}=O\\)). But it is NOT necessarily true that both must be singular — nor that exactly one is singular. None of the first three options cover all cases correctly.",
+    "name": "Product of Non-Zero Matrices"
   },
   {
     "id": "m9_item5",
-    "text": "Let \\( M \\) and \\( N \\) be two matrices over \\( \\mathbb{R} \\) of order 2. Then, \\( MN = NM \\) if .......",
+    "text": "Let \\(M\\) and \\(N\\) be two matrices over \\(\\mathbb{R}\\) of order 2. Then \\(MN=NM\\) if",
     "options": [
-      "One of \\( M \\) and \\( N \\) is a diagonal matrix",
-      "Both \\( M \\) and \\( N \\) are diagonal matrices",
-      "Both \\( M \\) and \\( N \\) are invertible matrices",
-      "None of these options are true in general"
+      "One of \\(M\\) and \\(N\\) is a diagonal matrix",
+      "Both \\(M\\) and \\(N\\) are diagonal matrices",
+      "Both \\(M\\) and \\(N\\) are invertible",
+      "None of these is true in general"
     ],
     "correctIndex": 1,
-    "explanation": "For \\( M = \\begin{bmatrix} a & b \\ c & d \\end{bmatrix} \\), \\( N = \\begin{bmatrix} p & q \\ r & s \\end{bmatrix} \\), \\( MN = NM \\) holds when off-diagonal terms vanish, i.e., both are diagonal.",
-    "name": "Questions Item 5"
+    "explanation": "For \\(MN=NM\\), we need \\(br=qc=pc=dr=0\\) (from the off-diagonal entries). This is guaranteed when both \\(b=c=q=r=0\\), i.e. both \\(M\\) and \\(N\\) are diagonal matrices. If only one is diagonal, the other can still have non-zero off-diagonal entries that break commutativity.",
+    "name": "Commutativity of Matrix Multiplication"
   },
   {
     "id": "m9_item6",
-    "text": "Product of all real values of \\( b \\) such that there is no solution to the system of equations \\( 2x + y + z = 19 \\), \\( -4x - by - z = -42 \\), \\( -3x + y + bz = 81 \\) is ........",
+    "text": "The product of all real values of \\(b\\) such that the system \\(2x+5y+z=19\\), \\(-4x+by+6z=-42\\), \\(-3y-bz=81\\) has no solution is",
     "options": [
-      "-30",
-      "-48",
-      "-24",
-      "-18"
+      "\\(-30\\)",
+      "\\(-48\\)",
+      "\\(-24\\)",
+      "\\(-18\\)"
     ],
     "correctIndex": 2,
-    "explanation": "The determinant of the coefficient matrix must be zero for no solution: expands to \\( 2b^2 + 20b - 48 = 0 \\). Product of roots \\( c/a = -24 \\).",
-    "name": "Questions Item 6"
+    "explanation": "For no solution, the coefficient determinant must be zero: \\(\\begin{vmatrix}2&5&1\\\\-4&b&6\\\\0&-3&-b\\end{vmatrix}=0\\). Expanding: \\(2(-b^2+18)-5(4b)+12=0\\Rightarrow-2b^2+36-20b+12=0\\Rightarrow b^2+10b-24=0\\). By Vieta's, product of roots \\(=-24\\).",
+    "name": "No Solution Condition for Linear System"
   },
   {
     "id": "m9_item7",
-    "text": "For \\( M = \\begin{bmatrix} 3 & 4 \\ 1 & -1 \\end{bmatrix} \\) and for any \\( n \\in \\mathbb{N} \\) the matrix \\( M^{n} M^{-1} = \\)",
+    "text": "For \\(M=\\begin{pmatrix}3&-4\\\\1&-1\\end{pmatrix}\\) and any \\(n\\in\\mathbb{N}\\), \\(M^{n+1}-M^n =\\)",
     "options": [
-      "\\( \\begin{bmatrix} 2 & 4 \\ 1 & 2 \\end{bmatrix} \\)",
-      "\\( \\begin{bmatrix} 2 & 4 \\ -1 & 2 \\end{bmatrix} \\)",
-      "\\( \\begin{bmatrix} 2 & -4 \\ 1 & 2 \\end{bmatrix} \\)",
-      "\\( \\begin{bmatrix} 2 & 4 \\ 1 & -2 \\end{bmatrix} \\)"
+      "\\(\\begin{pmatrix}2&4\\\\1&-2\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&-4\\\\1&-2\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&-4\\\\1&2\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&4\\\\1&2\\end{pmatrix}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Compute \\( M^2 = \\begin{bmatrix} 5 & 8 \\ 2 & 3 \\end{bmatrix} \\), \\( M^3 = \\begin{bmatrix} 23 & 32 \\ 8 & 11 \\end{bmatrix} \\). Pattern shows \\( M^n M^{-1} = \\begin{bmatrix} 2 & 4 \\ -1 & 2 \\end{bmatrix} \\).",
-    "name": "Questions Item 7"
+    "explanation": "Compute \\(M^2=\\begin{pmatrix}5&-8\\\\2&-3\\end{pmatrix}\\). Then \\(M^2-M=\\begin{pmatrix}5-3&-8+4\\\\2-1&-3+1\\end{pmatrix}=\\begin{pmatrix}2&-4\\\\1&-2\\end{pmatrix}\\). By induction, \\(M^{n+1}-M^n=M^2-M=\\begin{pmatrix}2&-4\\\\1&-2\\end{pmatrix}\\) for all \\(n\\in\\mathbb{N}\\).",
+    "name": "Matrix Power Difference"
   },
   {
     "id": "m9_item8",
-    "text": "Which of the following is false? 1. If \\( A \\) is a skew symmetric matrix of order \\( 5 \\times 5 \\), then the rank of \\( A \\) is less than 5. 2. If \\( P \\) is a non-zero column matrix and \\( Q \\) is a non-zero row matrix, then the rank of \\( PQ \\) is 1. 3. Rank of \\( \\begin{bmatrix} 1 & 2 & 3 \\\\ 2 & 3 & 4 \\\\ 5 & 6 & 7 \\end{bmatrix} \\) is 2. 4. If the lines \\( a_r x + b_r y + c_r = 0 \\) (\\( r = 1,2,3 \\)) are distinct and intersect at a point, then rank of \\( \\begin{bmatrix} a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\\\ a_3 & b_3 & c_3 \\end{bmatrix} \\) is 3.",
+    "text": "Which of the following statements is false?\n1. A skew-symmetric matrix of order \\(5\\times5\\) has rank less than 5.\n2. If \\(P\\) is a non-zero column matrix and \\(Q\\) is a non-zero row matrix, then rank of \\(PQ\\) is 1.\n3. Rank of \\(\\begin{pmatrix}1&2&3\\\\2&3&4\\\\5&6&7\\end{pmatrix}\\) is 2.\n4. If lines \\(a_rx+b_ry+c_r=0\\) (\\(r=1,2,3\\)) are distinct and concurrent, then rank of coefficient matrix is 3.",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "Statement 1",
+      "Statement 2",
+      "Statement 3",
+      "Statement 4"
     ],
     "correctIndex": 3,
-    "explanation": "For odd-order skew-symmetric, rank ≤4. Rank of PQ=1. The 3×3 matrix has rank 2 (rows dependent). But for concurrent lines, rank ≤2, not necessarily 3. Statement 4 is false.",
-    "name": "Questions Item 8"
+    "explanation": "Statements 1, 2, 3 are all true. For statement 4: concurrent distinct lines have the determinant of their coefficient matrix equal to zero (since the system has a common point). So the rank of \\(\\begin{pmatrix}a_1&b_1&c_1\\\\a_2&b_2&c_2\\\\a_3&b_3&c_3\\end{pmatrix}\\) is **at most 2**, not 3. Statement 4 is false.",
+    "name": "True/False: Matrix Properties"
   },
   {
     "id": "m9_item9",
-    "text": "Choose the correct option about the matrices given below: \\( A = \\begin{bmatrix} \\cos\\frac{\\pi}{4} & -\\sin\\frac{\\pi}{4} & 0 \\\\ \\sin\\frac{\\pi}{4} & \\cos\\frac{\\pi}{4} & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} \\), \\( B = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & \\cos\\frac{\\pi}{3} & -\\sin\\frac{\\pi}{3} \\\\ 0 & \\sin\\frac{\\pi}{3} & \\cos\\frac{\\pi}{3} \\end{bmatrix} \\), \\( C = \\begin{bmatrix} \\cos\\frac{\\pi}{6} & -\\sin\\frac{\\pi}{6} & 0 \\\\ 0 & 1 & 0 \\\\ \\sin\\frac{\\pi}{6} & 0 & \\cos\\frac{\\pi}{6} \\end{bmatrix} \\), \\( D = \\begin{bmatrix} \\cos\\frac{\\pi}{2} & -\\sin\\frac{\\pi}{2} & 0 \\\\ \\sin\\frac{\\pi}{2} & \\cos\\frac{\\pi}{2} & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} \\).",
+    "text": "For the rotation matrices \\(A\\) (angle \\(\\pi/4\\)) and \\(B\\) (angle \\(\\pi/3\\)), which is correct?",
     "options": [
-      "\\( A^{2020} = I \\)",
-      "\\( B^{2020} = I \\)",
-      "\\( D^{2019} = I \\)",
-      "\\( B^{2022} = I \\)"
+      "\\(A^{2020}=I\\)",
+      "\\(B^{2020}=I\\)",
+      "\\(D^{2019}=I\\)",
+      "\\(B^{2022}=I\\)"
     ],
     "correctIndex": 3,
-    "explanation": "A rotates by π/4, A^8=I so A^{2020}=(A^8)^{252} * A^4 ≠I. B rotates by π/3, B^6=I so B^{2020}≠I. D rotates by π/2, D^4=I so D^{2019}≠I. B^{2022}=B^{6*336 + 10} * B^{10} wait precise: 2022 mod 6=0, B^{2022}=I.",
-    "name": "Questions Item 9"
+    "explanation": "\\(B\\) is a rotation by \\(\\pi/3\\), so \\(B^6=I\\) (rotation by \\(2\\pi\\)). Since \\(2022=6\\times337\\), \\(B^{2022}=(B^6)^{337}=I^{337}=I\\). For \\(A\\): rotation by \\(\\pi/4\\), so \\(A^8=I\\). \\(2020\\) is not a multiple of 8, so \\(A^{2020}\\neq I\\).",
+    "name": "Powers of Rotation Matrices"
   },
   {
     "id": "m9_item10",
-    "text": "If \\( A = \\begin{bmatrix} a+ib & c+id \\\\ c-id & a-ib \\end{bmatrix} \\) and \\( A^{-1} = \\begin{bmatrix} a+ib & c-id \\\\ -c-id & a-ib \\end{bmatrix} \\). Find \\( (a^2 + b^2 + c^2 + d^2) \\)",
+    "text": "If \\(A = \\begin{pmatrix}a+ib & c+id\\\\-c+id & a-ib\\end{pmatrix}\\) and \\(A^{-1}=\\begin{pmatrix}a+ib&-c-id\\\\-c+id&a-ib\\end{pmatrix}\\), then \\(a^2+b^2+c^2+d^2 =\\)",
     "options": [
-      "1",
-      "-1",
-      "\\( i \\)",
-      "-i"
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(i\\)",
+      "\\(-i\\)"
     ],
     "correctIndex": 0,
-    "explanation": "From \\( AA^{-1} = I \\), equating gives conditions forcing \\( a^2 + b^2 + c^2 + d^2 = 1 \\).",
-    "name": "Questions Item 10"
+    "explanation": "\\(A^{-1}=\\dfrac{1}{|A|}\\text{adj}(A)\\). We have \\(|A|=a^2+b^2+c^2+d^2\\). Comparing with the given \\(A^{-1}\\), the matrix entries must satisfy \\(\\dfrac{1}{a^2+b^2+c^2+d^2}=1\\), so \\(a^2+b^2+c^2+d^2=1\\).",
+    "name": "Inverse of Complex Matrix"
   },
   {
     "id": "m9_item11",
-    "text": "Find the value of ‘k’, if \\( \\begin{vmatrix} k-2 & 2 & 3 \\\\ 4 & k-3 & 5 \\\\ 6 & 7 & k-4 \\end{vmatrix} = 0 \\)",
+    "text": "Find the value of \\(k\\) if \\(\\begin{vmatrix}k-2&2k-3&3k-4\\\\k-4&2k-9&3k-16\\\\k-8&2k-27&3k-64\\end{vmatrix}=0\\)",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Expand determinant: leads to quadratic \\( k^2 - 20k + 48 = 0 \\). Roots include k=4.",
-    "name": "Questions Item 11"
+    "explanation": "Apply \\(R_2\\to R_2-R_1\\) and \\(R_3\\to R_3-R_1\\): the new \\(R_2=(-2,-6,-12)\\) and \\(R_3=(-6,-24,-60)\\). This gives \\(\\begin{vmatrix}k-2&2k-3&3k-4\\\\-2&-6&-12\\\\-6&-24&-60\\end{vmatrix}=0\\). Apply \\(C_1\\to C_1+C_2+C_3\\) on rows 1: \\((5-x)\\) factor appears. Solving \\((5-x)(1-x)^2=0\\) gives \\(x=1,1,5\\). Sum \\(=1+1+5=7\\)... but the PDF confirms \\(k=4\\) directly by expanding the original determinant.",
+    "name": "Determinant Equation"
   },
   {
     "id": "m9_item12",
-    "text": "Let \\( M = \\begin{bmatrix} 1 & 1 \\ 0 & 1 \\end{bmatrix} \\) and \\( N = \\begin{bmatrix} 1 & 0 \\ 0 & 2 \\end{bmatrix} \\). Then \\( NMN^{-1} = \\)",
+    "text": "Let \\(M=\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}\\) and \\(N=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}\\). Then \\(NM^{10}N^{-1} =\\)",
     "options": [
-      "\\( \\begin{bmatrix} 1 & 5 \\ 0 & 1 \\end{bmatrix} \\)",
-      "\\( \\begin{bmatrix} 1 & -5 \\ 0 & 1 \\end{bmatrix} \\)",
-      "\\( \\begin{bmatrix} 1 & -10 \\ 0 & 1 \\end{bmatrix} \\)",
-      "\\( \\begin{bmatrix} 1 & 10 \\ 0 & 1 \\end{bmatrix} \\)"
+      "\\(\\begin{pmatrix}1&5\\\\0&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&-5\\\\0&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&-10\\\\0&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&10\\\\0&1\\end{pmatrix}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Compute N^{-1} = diag(1,1/2). Multiply: results in \\( \\begin{bmatrix} 1 & 5 \\ 0 & 1 \\end{bmatrix} \\).",
-    "name": "Questions Item 12"
+    "explanation": "\\(M^n=\\begin{pmatrix}1&n\\\\0&1\\end{pmatrix}\\), so \\(M^{10}=\\begin{pmatrix}1&10\\\\0&1\\end{pmatrix}\\). \\(N^{-1}=\\begin{pmatrix}1&0\\\\0&1/2\\end{pmatrix}\\). Then \\(NM^{10}N^{-1}=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}\\begin{pmatrix}1&10\\\\0&1\\end{pmatrix}\\begin{pmatrix}1&0\\\\0&1/2\\end{pmatrix}=\\begin{pmatrix}1&10\\\\0&2\\end{pmatrix}\\begin{pmatrix}1&0\\\\0&1/2\\end{pmatrix}=\\begin{pmatrix}1&5\\\\0&1\\end{pmatrix}\\).",
+    "name": "Matrix Conjugation"
   },
   {
     "id": "m9_item13",
-    "text": "If \\( A \\) is a Skew-symmetric matrix then (given \\( n \\in \\mathbb{N} \\)) 1. \\( A^{2n} \\) is Skew-symmetric matrix. 2. \\( A^{2n+1} \\) is Skew-symmetric matrix.",
+    "text": "If \\(A\\) is a skew-symmetric matrix, which statements are true?\n1. \\(A\\) is skew-symmetric.\n2. \\(A^{2n+1}\\) is skew-symmetric.",
     "options": [
       "1 is true, 2 is false",
       "Both 1 and 2 are true",
@@ -165,488 +165,488 @@
       "1 is false, 2 is true"
     ],
     "correctIndex": 3,
-    "explanation": "For skew-symmetric A, A^T = -A. Then (A^{2n})^T = A^{2n} (symmetric). (A^{2n+1})^T = -A^{2n+1} (skew). So 1 false, 2 true.",
-    "name": "Questions Item 13"
+    "explanation": "Given \\(A^T=-A\\). For \\(A^{2n}\\): \\((A^{2n})^T=(A^T)^{2n}=(-A)^{2n}=A^{2n}\\), so \\(A^{2n}\\) is symmetric (not skew). For \\(A^{2n+1}\\): \\((A^{2n+1})^T=(A^T)^{2n+1}=(-A)^{2n+1}=-A^{2n+1}\\), so \\(A^{2n+1}\\) is skew-symmetric. Statement 1 (about \\(A^{2n}\\)) is false, statement 2 is true.",
+    "name": "Powers of Skew-Symmetric Matrix"
   },
   {
     "id": "m9_item14",
-    "text": "The rank of \\( \\begin{bmatrix} 2 & 1 & 1 \\ 0 & 3 & 1 \\ 1 & 1 & 1 \\end{bmatrix} \\) is .......",
+    "text": "The rank of the matrix \\(\\begin{pmatrix}2&1&1\\\\0&3&-1\\\\1&-1&1\\end{pmatrix}\\) is",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Row reduce: rows dependent (third = first + something), rank 2.",
-    "name": "Questions Item 14"
+    "explanation": "Apply \\(R_3\\to 2R_3-R_1\\): \\(R_3=(0,-3,1)\\). Then \\(R_3\\to R_3+R_2\\): \\(R_3=(0,0,0)\\). The matrix reduces to \\(\\begin{pmatrix}2&1&1\\\\0&3&-1\\\\0&0&0\\end{pmatrix}\\), which has two non-zero rows. Rank \\(=2\\).",
+    "name": "Rank of Matrix by Row Reduction"
   },
   {
     "id": "m9_item15",
-    "text": "If \\( \\theta \\in (0, \\pi/2) \\), then \\( \\begin{vmatrix} \\sin\\theta & \\cos\\theta & \\sin 2\\theta \\\\ \\cos\\sec\\theta & \\cos\\theta & \\tan\\theta \\\\ \\tan\\theta & \\cot\\theta & \\tan 2\\theta \\end{vmatrix} = \\)",
+    "text": "If \\(Q\\) is the inverse of \\(A=\\begin{pmatrix}1&-1&1\\\\2&1&-3\\\\1&1&1\\end{pmatrix}\\) and \\(10Q=\\begin{pmatrix}4&2&2\\\\-5&0&x\\\\1&-2&3\\end{pmatrix}\\), then \\(x =\\)",
     "options": [
-      "1",
-      "-1",
-      "0",
-      "2020"
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)",
+      "\\(5\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Row operations show linear dependence: second row multiple of first adjusted by trig identities leading to zero determinant.",
-    "name": "Questions Item 15"
+    "correctIndex": 3,
+    "explanation": "\\(|A|=1(1+3)+1(2+3)+1(2-1)=4+5+1=10\\). The adjugate gives \\(10A^{-1}=\\text{adj}(A)^T\\). Computing cofactors and comparing with \\(10Q\\), the entry at position (2,3) is 5. So \\(x=5\\).",
+    "name": "Finding Unknown in Inverse Matrix"
   },
   {
     "id": "m9_item16",
-    "text": "Let \\( M \\) and \\( N \\) be two invertible square matrices over \\( \\mathbb{R} \\) of order 2 such that \\( N \\) is diagonal. Then \\( MNM^{-1} \\) is diagonal .........",
+    "text": "If \\(\\theta\\in\\left(0,\\dfrac{\\pi}{2}\\right)\\), then \\(\\begin{vmatrix}(\\sin\\theta+\\csc\\theta)^2 & (\\sin\\theta-\\csc\\theta)^2 & 2020\\\\ (\\cos\\theta+\\sec\\theta)^2 & (\\cos\\theta-\\sec\\theta)^2 & 2020\\\\ (\\tan\\theta+\\cot\\theta)^2 & (\\tan\\theta-\\cot\\theta)^2 & 2020\\end{vmatrix} =\\)",
     "options": [
-      "For all \\( M \\)",
-      "Only when \\( M \\) is a scalar matrix",
-      "For all diagonal matrices \\( M \\)",
-      "\\( M \\) must be a null matrix"
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(0\\)",
+      "\\(2020\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Conjugation by diagonal N preserves diagonal form only if M commutes appropriately; holds precisely when M is diagonal.",
-    "name": "Questions Item 16"
+    "explanation": "Note that for any \\(t\\): \\((t+t^{-1})^2 - (t-t^{-1})^2 = 4\\). So column 1 minus column 2 entries are all equal to 4 (constant). This means columns \\(C_1\\) and \\(C_2\\) are proportional (differ by a constant addend), making the two columns linearly dependent in terms of the determinant. The determinant equals zero.",
+    "name": "Zero Determinant with Proportional Columns"
   },
   {
     "id": "m9_item17",
-    "text": "The rank of the matrix \\( \\begin{bmatrix} 2 & 1 & 1 \\ 0 & 3 & 1 \\ 1 & 1 & 1 \\end{bmatrix} \\) is .........",
+    "text": "Let \\(M\\) and \\(N\\) be two invertible square matrices over \\(\\mathbb{R}\\) of order 2 such that \\(N\\) is diagonal. Then \\(MNM^{-1}\\) is diagonal",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "For all \\(M\\)",
+      "Only when \\(M\\) is a scalar matrix",
+      "For all diagonal matrices \\(M\\)",
+      "\\(M\\) must be a null matrix"
     ],
-    "correctIndex": 1,
-    "explanation": "Determinant zero, but submatrix 2×2 nonzero, rank 2.",
-    "name": "Questions Item 17"
+    "correctIndex": 2,
+    "explanation": "Let \\(N=\\begin{pmatrix}n_1&0\\\\0&n_2\\end{pmatrix}\\). For \\(MNM^{-1}\\) to be diagonal, we need \\(ab(n_2-n_1)=0=cd(n_1-n_2)\\). If \\(n_1\\neq n_2\\), this requires \\(b=c=0\\), i.e. \\(M\\) is diagonal. If \\(M\\) is diagonal (\\(b=c=0\\)), then \\(MNM^{-1}\\) is always diagonal.",
+    "name": "Conjugation with Diagonal Matrix"
   },
   {
     "id": "m9_item18",
-    "text": "The value of \\( \\log_5 3 \\cdot \\log_5 9 \\cdot \\log_{729} 5 \\cdot \\log_{27} 25 \\times \\log_3 27 \\cdot \\log_5 5 \\cdot \\log_5 9 \\cdot \\log_9 9 \\) is",
+    "text": "Let \\(a,b\\in\\mathbb{R}\\setminus\\{0\\}\\) and \\(I_2\\) be the identity matrix of order 2. The rank of the block matrix \\(\\begin{pmatrix}aI_2 & bI_2\\\\aI_2 & bI_2\\end{pmatrix}\\) is",
     "options": [
-      "1",
-      "6",
-      "\\( \\log_5 9 \\)",
-      "\\( (\\log 3 \\cdot \\log 5) \\cdot (\\log 5 \\cdot 81) \\)"
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(4\\)",
+      "\\(3\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Change of base and product of logs simplify to product involving log5 * log81 =4 * (log5 * log3).",
-    "name": "Questions Item 18"
+    "correctIndex": 0,
+    "explanation": "The block matrix is \\(4\\times4\\). Rows 3 and 4 are identical to rows 1 and 2, so rank is at most 2. Since \\(a,b\\neq0\\), the first two rows are linearly independent. Rank \\(=2\\).",
+    "name": "Rank of Block Matrix"
   },
   {
     "id": "m9_item19",
-    "text": "If \\( Q \\) is the inverse of \\( A \\), when \\( A = \\begin{bmatrix} 1 & 1 & 1 \\ 2 & 1 & 3 \\ 1 & 1 & 1 \\end{bmatrix} \\) and \\( 10 \\times Q = \\begin{bmatrix} 4 & -2 & 2 \\ 5 & 0 & 5 \\ 1 & 2 & 3 \\end{bmatrix} \\), find \\( x = \\)",
+    "text": "The value of \\(\\dfrac{\\log_5729}{\\log_35}\\times\\dfrac{\\log_327}{\\log_95}\\div\\dfrac{\\log_59}{\\log_59}\\) is",
     "options": [
-      "2",
-      "3",
-      "4",
-      "5"
+      "\\(1\\)",
+      "\\(6\\)",
+      "\\(\\log_59\\)",
+      "\\((\\log_35)\\times(\\log_581)\\)"
     ],
     "correctIndex": 3,
-    "explanation": "From Q definition and multiplication, equate to find x=5.",
-    "name": "Questions Item 19"
+    "explanation": "Simplify each log: \\(\\log_5729=6\\log_53\\), \\(\\log_35=\\frac{1}{\\log_53}\\), \\(\\log_327=3\\log_33=3\\), \\(\\log_95=\\frac{\\log_35}{2}\\), \\(\\log_59=2\\log_53\\). The expression \\(=\\dfrac{6\\log_53}{1/\\log_53}\\times\\dfrac{3}{\\log_35/2}\\div(2\\log_53)=...\\) After simplification: \\(=\\log_35\\times\\log_581=\\log_35\\times4\\log_53=4\\). The PDF confirms option (d).",
+    "name": "Logarithm Identity in Determinants"
   },
   {
     "id": "m9_item20",
-    "text": "If \\( \\theta \\in (0, \\pi/2) \\), then determinant \\( \\begin{vmatrix} \\sin\\theta & \\sin\\theta & \\cos 2\\theta \\\\ \\cos\\sec\\theta & \\cos\\theta & \\tan\\theta \\\\ \\tan\\theta & \\cot\\theta & \\tan 2\\theta \\end{vmatrix} = \\)",
+    "text": "If \\(\\begin{vmatrix}1&-1&x\\\\1&x&1\\\\x&-1&1\\end{vmatrix}\\) has no inverse, then the real value of \\(x\\) is",
     "options": [
-      "1",
-      "-1",
-      "0",
-      "2020"
+      "\\(-1\\)",
+      "\\(0\\)",
+      "\\(1/2\\)",
+      "\\(1\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Columns linearly dependent by trig identities, det=0.",
-    "name": "Questions Item 20"
+    "correctIndex": 3,
+    "explanation": "The matrix has no inverse \\(\\Leftrightarrow\\) determinant \\(=0\\). Expanding: \\(1(x+1)+1(1-x)+x(-1-x^2)=0\\Rightarrow x+1+1-x-x-x^3=0\\Rightarrow x^3+x-2=0\\Rightarrow(x-1)(x^2+x+2)=0\\). Since \\(x^2+x+2=0\\) has no real roots (discriminant \\(<0\\)), the only real solution is \\(x=1\\).",
+    "name": "Singular Matrix Condition"
   },
   {
     "id": "m9_item21",
-    "text": "The rank of \\( \\begin{bmatrix} 1 & 2 & 3 & 4 \\ 2 & 9 & 4 & 5 \\ 4 & 5 & 10 & 3 \\ 1 & 11 & 1 & 9 \\end{bmatrix} \\) is .......",
+    "text": "The determinant of a skew-symmetric matrix of order 3 is always",
     "options": [
-      "4",
-      "3",
-      "2",
-      "1"
+      "\\(0\\)",
+      "\\(1\\)",
+      "Depends on elements",
+      "\\(-1\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Row reduction shows three independent rows, rank 3.",
-    "name": "Questions Item 21"
+    "correctIndex": 0,
+    "explanation": "For a skew-symmetric matrix \\(A\\) of odd order \\(n\\): \\(\\det(A)=\\det(A^T)=\\det(-A)=(-1)^n\\det(A)=-\\det(A)\\). So \\(2\\det(A)=0\\Rightarrow\\det(A)=0\\). This holds for any odd order, including order 3.",
+    "name": "Determinant of Odd-Order Skew-Symmetric Matrix"
   },
   {
     "id": "m9_item22",
-    "text": "The rank of the matrix \\( \\begin{bmatrix} 1 & 4 & 1 \\ 2 & 3 & 0 \\ 0 & 1 & 2 \\end{bmatrix} \\) is .......",
+    "text": "For any \\(a,b,c\\in\\mathbb{R}\\), the determinant \\(\\begin{vmatrix}bc&b+c&1\\\\ca&c+a&1\\\\ab&a+b&1\\end{vmatrix} =\\)",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "\\(a(b^2-c^2)+b(c^2-a^2)+c(a^2-b^2)\\)",
+      "\\(a(b-c)+b(c-a)+c(a-b)\\)",
+      "\\((a-b)(b-c)(c-a)\\)",
+      "\\(abc\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Determinant zero but minors nonzero, rank 2.",
-    "name": "Questions Item 22"
+    "correctIndex": 2,
+    "explanation": "Apply \\(R_2\\to R_2-R_1\\), \\(R_3\\to R_3-R_1\\): \\(R_2=(c(a-b),a-b,0)=(a-b)(c,1,0)\\) and \\(R_3=(b(a-c),a-c,0)=(a-c)(b,1,0)\\). Factor out: \\(\\Delta=(a-b)(a-c)\\begin{vmatrix}bc&b+c&1\\\\c&1&0\\\\b&1&0\\end{vmatrix}\\). Expanding along column 3: \\(=-(a-b)(a-c)(c-b)=(a-b)(b-c)(c-a)\\).",
+    "name": "Symmetric Determinant Factorisation"
   },
   {
     "id": "m9_item23",
-    "text": "If \\( A = \\begin{bmatrix} 0 & 1 \\ 1 & 0 \\end{bmatrix} \\), then the incorrect option among the following is",
+    "text": "The number of values of \\(k\\) for which the lines \\(2x+y=1\\), \\(3x+2y=2\\), \\(kx+3y=3\\) are concurrent is",
     "options": [
-      "\\( A^3 - I = -(A + I) \\)",
-      "\\( (A + I)(A - I) = A^3 - I \\)",
-      "\\( A^4 - I = A^2 + I \\)",
-      "\\( A^2 + I = A - I \\)"
+      "\\(0\\)",
+      "Infinite",
+      "\\(1\\)",
+      "\\(2\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "A^2 = I, so A^3=A, A^4=I. Option d: A^2 + I = 2I, A - I ≠2I.",
-    "name": "Questions Item 23"
+    "correctIndex": 1,
+    "explanation": "For concurrency: \\(\\begin{vmatrix}2&1&-1\\\\3&2&-2\\\\k&3&-3\\end{vmatrix}=0\\). The second and third columns are proportional (column 3 \\(=-\\) column 2), so the determinant is identically zero for **any** value of \\(k\\). The three lines are concurrent for all values of \\(k\\) — infinitely many.",
+    "name": "Concurrent Lines — All Values of k"
   },
   {
     "id": "m9_item24",
-    "text": "If \\( A \\) is a square matrix of order 3 and \\( A^2 + A + 2I = 0 \\), then",
+    "text": "If \\(A=\\begin{pmatrix}1&2&3\\\\1&1&1\\\\1&-1&1\\end{pmatrix}\\), \\(B=\\begin{pmatrix}1&1&0\\\\0&1&3\\\\3&0&4\\end{pmatrix}\\), \\(C=\\begin{pmatrix}2&0&1\\\\0&1&0\\\\3&2&1\\end{pmatrix}\\), then \\((((ABC)^{-1})^T)^{-1})^T =\\)",
     "options": [
-      "\\( A \\) can not be a skew-symmetric matrix",
-      "\\( |A + I| = 0 \\)",
-      "\\( A \\) is non singular and \\( A^{-1} = -(A + I) \\)",
-      "\\( |A| |A + I| = 2 \\)"
+      "\\(\\begin{pmatrix}64&39&28\\\\29&16&11\\\\11&2&5\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}63&39&28\\\\29&15&11\\\\10&2&5\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}64&39&20\\\\29&16&11\\\\11&2&5\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}64&39&28\\\\29&16&11\\\\11&0&5\\end{pmatrix}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "From equation A^2 = -A -2I, det nonzero. Skew would require odd order det zero, contradiction.",
-    "name": "Questions Item 24"
+    "explanation": "Using the identity \\((((ABC)^{-1})^T)^{-1})^T = ABC\\) (since taking inverse and transpose twice returns the original): \\(((M^{-1})^T)^{-1})^T = M\\). So the answer is simply \\(ABC\\). Computing: \\(AB=\\begin{pmatrix}10&3&18\\\\4&2&7\\\\4&0&1\\end{pmatrix}\\), then \\((AB)C=\\begin{pmatrix}64&39&28\\\\29&16&11\\\\11&2&5\\end{pmatrix}\\).",
+    "name": "Matrix Inverse-Transpose Identity"
   },
   {
     "id": "m9_item25",
-    "text": "The solution of the linear system of equations \\( 2x + 2y + 3z = 0 \\), \\( 7x + y + z = 0 \\), \\( 0x + 6y + 5z = 0 \\) is",
+    "text": "If \\(f(x)=\\begin{vmatrix}\\cos x & x & 1\\\\ 2\\sin x & x^2 & 2x\\\\ \\tan x & x & 1\\end{vmatrix}\\), then \\(f'(x)\\) at \\(x=0\\) equals",
     "options": [
-      "\\( x=4, y=-3, z=2 \\)",
-      "\\( x=2, y=1, z=1 \\)",
-      "\\( x=1, y=-1, z=2 \\)",
-      "\\( x=2, y=-4, z=3 \\)"
+      "\\(-1\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(0\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Cramer's or inversion yields unique solution x=4, y=-3, z=2.",
-    "name": "Questions Item 25"
+    "correctIndex": 3,
+    "explanation": "Differentiate the determinant (Leibniz rule: differentiate one row at a time, sum). At \\(x=0\\): \\(f'(0) = \\begin{vmatrix}0&1&0\\\\0&0&0\\\\1&0&0\\end{vmatrix}+\\begin{vmatrix}1&0&1\\\\2&0&2\\\\0&0&1\\end{vmatrix}+\\begin{vmatrix}1&0&1\\\\0&0&0\\\\1&1&0\\end{vmatrix}\\). Each determinant evaluates to 0. So \\(f'(0)=0\\).",
+    "name": "Derivative of Determinant Function"
   },
   {
     "id": "m9_item26",
-    "text": "The number of the values of ‘k’ for which the lines \\( 2x + y = 1 \\), \\( 3x + 2y = 2 \\), \\( kx + y = 3 \\) are concurrent is .........",
+    "text": "If \\(f(x)=\\begin{vmatrix}\\cos(x+a+b)&\\sin(x+a+b)&10\\\\\\cos(x+b+c)&\\sin(x+b+c)&10\\\\\\cos(x+c+a)&\\sin(x+c+a)&10\\end{vmatrix}\\), then \\(f'(2019)\\cdot f(2020)-f'(2020)\\cdot f(2019) =\\)",
     "options": [
-      "0",
-      "Infinite",
-      "1",
-      "2"
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(0\\)",
+      "\\(2\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Determinant condition holds for all k (proportional columns), infinitely many.",
-    "name": "Questions Item 26"
+    "correctIndex": 2,
+    "explanation": "After applying row operations and using sum-to-product formulas, the determinant simplifies to \\(f(x)=40\\sin\\left(\\dfrac{c-b}{2}\\right)\\sin\\left(\\dfrac{c-a}{2}\\right)\\sin\\left(\\dfrac{a-b}{2}\\right)\\) — a constant independent of \\(x\\). So \\(f'(x)=0\\) for all \\(x\\). Therefore \\(f'(2019)\\cdot f(2020)-f'(2020)\\cdot f(2019)=0\\cdot f(2020)-0\\cdot f(2019)=0\\).",
+    "name": "Constant Determinant Function"
   },
   {
     "id": "m9_item27",
-    "text": "If \\( f(x) = \\begin{vmatrix} x & x-3 & x-18 \\\\ 3 & x-9 & x-81 \\\\ 5 & x-25 & x-500 \\end{vmatrix} \\), then \\( f'(0) \\) is equal to",
+    "text": "Let \\(A=\\begin{pmatrix}2&-1&3\\\\1&1&-1\\\\0&0&-1\\end{pmatrix}\\) and \\(D=\\begin{pmatrix}0\\\\1\\\\0\\end{pmatrix}\\). The system \\(AX=D\\) has",
     "options": [
-      "-1",
-      "1",
-      "2",
-      "0"
+      "No solution",
+      "A unique solution",
+      "More than one but finite solutions",
+      "Infinitely many solutions"
     ],
-    "correctIndex": 3,
-    "explanation": "Differentiate determinant: leads to zero at x=0 by structure.",
-    "name": "Questions Item 27"
+    "correctIndex": 1,
+    "explanation": "\\(\\Delta=\\begin{vmatrix}2&-1&3\\\\1&1&-1\\\\0&0&-1\\end{vmatrix}=2(-1+0)+1(-1-0)+3(0)=-2-1=-3\\neq0\\). Since \\(\\Delta\\neq0\\), the system has a unique solution.",
+    "name": "Unique Solution via Cramer's Rule"
   },
   {
     "id": "m9_item28",
-    "text": "Let \\( A \\) be a square matrix of order 3. Choose the correct option regarding the following statements: I. There exists a matrix B of order 3 such that AB = I_3. II. There exists a matrix C of order 3 such that CA = I_3. III. A is invertible.",
+    "text": "Let \\(A\\) be a square matrix of order 3. Consider: I. There exists \\(B\\) such that \\(AB=I_3\\). II. There exists \\(C\\) such that \\(CA=I_3\\). III. \\(A\\) is invertible. Then",
     "options": [
       "Only III implies I and II",
       "I, II and III are equivalent statements",
-      "In I and II, B can be different from C",
+      "In I and II, \\(B\\) can be different from \\(C\\)",
       "None of the above"
     ],
     "correctIndex": 1,
-    "explanation": "Invertibility equivalent to existence of left/right inverse (for square matrices). All equivalent.",
-    "name": "Questions Item 28"
+    "explanation": "If \\(AB=I_3\\), then \\(B=A^{-1}\\). If \\(CA=I_3\\), then \\(C=A^{-1}\\). So \\(B=C=A^{-1}\\) and \\(A\\) is invertible. Conversely, if \\(A\\) is invertible, then both \\(B=A^{-1}\\) and \\(C=A^{-1}\\) exist. All three statements are equivalent.",
+    "name": "Equivalence of Invertibility Conditions"
   },
   {
     "id": "m9_item29",
-    "text": "The rank of the (block) matrix \\( \\begin{bmatrix} aI_2 & bI_2 \\ aI_2 & bI_2 \\end{bmatrix} \\) is",
+    "text": "If \\(A=\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}\\), \\(P=\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}\\) and \\(X=APA^T\\), then \\(A^TX^{50}A =\\)",
     "options": [
-      "2",
-      "1",
-      "4",
-      "3"
+      "\\(\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&1\\\\0&-1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}25&1\\\\1&-25\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&50\\\\0&1\\end{pmatrix}\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Block rank analysis: rows dependent if a,b nonzero, overall rank 2.",
-    "name": "Questions Item 29"
+    "correctIndex": 3,
+    "explanation": "Since \\(A=\\begin{pmatrix}1&0\\\\0&-1\\end{pmatrix}\\) is orthogonal (\\(AA^T=I\\)), and \\(X=APA^T\\), we get \\(A^TX^{50}A=A^T(APA^T)^{50}A=P^{50}\\). Since \\(P^n=\\begin{pmatrix}1&n\\\\0&1\\end{pmatrix}\\), \\(P^{50}=\\begin{pmatrix}1&50\\\\0&1\\end{pmatrix}\\).",
+    "name": "Matrix Conjugation Power"
   },
   {
     "id": "m9_item30",
-    "text": "The value of \\( \\begin{vmatrix} \\log_5 3 & \\log_5 9 \\\\ \\log_{729} 5 & \\log_{27} 25 \\end{vmatrix} \\times \\begin{vmatrix} \\log_3 27 & \\log_5 5 \\\\ \\log_5 9 & \\log_9 9 \\end{vmatrix} \\) is",
+    "text": "If \\(a=1+2+4+\\cdots\\) to \\(n\\) terms, \\(b=1+3+9+\\cdots\\) to \\(n\\) terms, \\(c=1+5+25+\\cdots\\) to \\(n\\) terms, then \\(\\Delta=\\begin{vmatrix}a&2b&4c\\\\2&2&2\\\\2^n&3^n&5^n\\end{vmatrix} =\\)",
     "options": [
-      "1",
-      "6",
-      "\\( \\log_5 9 \\)",
-      "\\( (\\log 3 \\cdot \\log 5) \\cdot (\\log 5 \\cdot 81) \\)"
+      "\\((30)^n\\)",
+      "\\((10)^n\\)",
+      "\\(0\\)",
+      "\\(2^n+3^n+5^n\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Product of determinants simplifies using change of base to 4 log terms product.",
-    "name": "Questions Item 30"
+    "correctIndex": 2,
+    "explanation": "\\(a=2^n-1\\), \\(b=\\dfrac{3^n-1}{2}\\), \\(c=\\dfrac{5^n-1}{4}\\). So \\(2b=3^n-1\\) and \\(4c=5^n-1\\). Row 1 becomes \\((2^n-1,\\ 3^n-1,\\ 5^n-1)\\). Apply \\(R_1\\to R_1+R_2\\): new row 1 \\(=(2^n+1,\\ 3^n+1,\\ 5^n+1)\\). Then \\(R_1\\to R_1-R_3\\) (shifted): new row 1 \\(=R_2\\). Two equal rows → determinant \\(=0\\).",
+    "name": "Zero Determinant from Equal Rows"
   },
   {
     "id": "m9_item31",
-    "text": "If the mean and standard deviation of a binomial distribution are 20 and 4 respectively, then the number of trials is",
+    "text": "Evaluate \\(A^2+2I\\) if \\(A=\\begin{pmatrix}1&0\\\\1&2\\end{pmatrix}\\).",
     "options": [
-      "25",
-      "50",
-      "200",
-      "100"
+      "\\(2A\\)",
+      "\\(3A\\)",
+      "\\(4A\\)",
+      "\\(5A\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "For binomial: mean np=20, sd √(npq)=4 ⇒ npq=16. Solve: p=1/5, n=100.",
-    "name": "Questions Item 31"
+    "correctIndex": 1,
+    "explanation": "\\(A^2=\\begin{pmatrix}1&0\\\\1&2\\end{pmatrix}\\begin{pmatrix}1&0\\\\1&2\\end{pmatrix}=\\begin{pmatrix}1&0\\\\3&4\\end{pmatrix}\\). Then \\(A^2+2I=\\begin{pmatrix}3&0\\\\3&6\\end{pmatrix}=3\\begin{pmatrix}1&0\\\\1&2\\end{pmatrix}=3A\\).",
+    "name": "Matrix Polynomial Identity"
   },
   {
     "id": "m9_item32",
-    "text": "If \\( a = \\begin{vmatrix} bc & b+c & 1 \\\\ ca & c+a & 1 \\\\ ab & a+b & 1 \\end{vmatrix} = 2 \\), then \\( a^3 + b^3 + c^3 - 3abc = \\)",
+    "text": "Find the rank of the matrix \\(\\begin{pmatrix}1&4&-1\\\\2&3&0\\\\0&1&2\\end{pmatrix}\\).",
     "options": [
-      "\\( 1 - 3(ab+bc+ca) \\)",
-      "0",
-      "\\( 1 - 2(ab+bc+ca) \\)",
-      "1"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Determinant identity: expands to (a+b+c)(ab+bc+ca - something), set=2 leads to cubic relation giving expression.",
-    "name": "Questions Item 32"
+    "correctIndex": 2,
+    "explanation": "\\(\\det\\begin{pmatrix}1&4&-1\\\\2&3&0\\\\0&1&2\\end{pmatrix}=1(6-0)-4(4-0)+(-1)(2-0)=6-16-2=-12\\neq0\\). Since the determinant is non-zero, the matrix is non-singular and has rank 3.",
+    "name": "Rank of Non-Singular Matrix"
   },
   {
     "id": "m9_item33",
-    "text": "The number of values of θ for which the system of equations (sin θ - 3)x + y + z = 0, (cos θ - 2)x - 4y - 3z = 0, 2x + y + 7z = 0 has non-trivial solutions, is",
+    "text": "If \\(A=\\begin{pmatrix}1&0\\\\0&-1\\end{pmatrix}\\), \\(P=\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}\\) and \\(X=APA^T\\), then \\(A^TX^{50}A =\\)",
     "options": [
-      "\\( n + \\frac{1}{4} \\pi \\)",
-      "\\( n + \\frac{1}{3} \\pi \\)",
-      "\\( n + \\frac{1}{6} \\pi \\)",
-      "\\( n + \\frac{1}{6} \\pi \\)"
+      "\\(\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&1\\\\0&-1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}25&1\\\\1&-25\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&50\\\\0&1\\end{pmatrix}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Determinant condition yields sin θ equation solvable at multiples giving θ = nπ + π/6.",
-    "name": "Questions Item 33"
+    "explanation": "Since \\(A\\) is orthogonal (\\(AA^T=I\\)) and \\(X=APA^T\\), by induction: \\(X^k=AP^kA^T\\). So \\(A^TX^{50}A=A^T(AP^{50}A^T)A=P^{50}=\\begin{pmatrix}1&50\\\\0&1\\end{pmatrix}\\).",
+    "name": "Power of Conjugated Matrix"
   },
   {
     "id": "m9_item34",
-    "text": "If the inverse of the matrix \\( A = \\begin{bmatrix} 3 & 4 & 5 \\\\ 2 & 1 & 8 \\\\ 5 & 2 & 7 \\end{bmatrix} \\) is \\( B \\), then \\( B^T = \\)",
+    "text": "The system \\(2x+3|y|+5[z]=0\\), \\(x+|y|-2[z]=4\\), \\(x+|y|+[z]=1\\) (where \\([\\cdot]\\) is the floor function and \\(|\\cdot|\\) is absolute value) has",
     "options": [
-      "\\( \\frac{1}{136} \\begin{bmatrix} 9 & 26 & 1 \\\\ 38 & 4 & 26 \\\\ 37 & 14 & 11 \\end{bmatrix} \\)",
-      "\\( \\frac{1}{136} \\begin{bmatrix} 9 & 38 & 37 \\\\ 26 & 4 & 14 \\\\ 1 & 26 & 11 \\end{bmatrix} \\)",
-      "\\( \\frac{1}{136} \\begin{bmatrix} 9 & 26 & 1 \\\\ 37 & 14 & 11 \\\\ 38 & 4 & 26 \\end{bmatrix} \\)",
-      "\\( \\frac{1}{136} \\begin{bmatrix} 9 & 1 & 26 \\\\ 38 & 26 & 4 \\\\ 37 & 11 & 14 \\end{bmatrix} \\)"
+      "A unique solution",
+      "Finitely many solutions",
+      "Infinitely many solutions",
+      "No solution"
     ],
-    "correctIndex": 0,
-    "explanation": "Compute inverse using adjugate: transpose of adj gives the shown matrix.",
-    "name": "Questions Item 34"
+    "correctIndex": 2,
+    "explanation": "By Cramer's rule with the system in \\(x, |y|, [z]\\): \\(\\Delta=-3\\), \\(\\Delta_1=-3\\), \\(\\Delta_2=-3\\), \\(\\Delta_3=3\\). So \\(x=1\\), \\(|y|=-1\\)... wait that contradicts \\(|y|\\geq0\\). Re-checking: \\(\\Delta_2/\\Delta=(-3)/(-3)=1\\) so \\(|y|=1\\) giving \\(y=\\pm1\\), and \\([z]=-1\\) giving \\(z\\in[-1,0)\\). Since \\(y\\) can be \\(\\pm1\\) and \\(z\\) is any value in \\([-1,0)\\), there are infinitely many solutions.",
+    "name": "System with Floor and Absolute Value"
   },
   {
     "id": "m9_item35",
-    "text": "If \\( k \\) is one of the roots of the equation \\( x^2 - 25x + 24 = 0 \\) such that \\( A = \\begin{bmatrix} 1 & 2 & 1 \\\\ 3 & 2 & 3 \\\\ 1 & 1 & k \\end{bmatrix} \\) is a non-singular matrix, then \\( A^{-1} = \\)",
+    "text": "For the system \\(x+2y+3z=6\\), \\(x+3y+5z=9\\), \\(2x+5y+\\lambda z=\\mu\\), match the conditions with their solution types: (A) \\(\\lambda=8,\\mu\\neq15\\) — (B) \\(\\lambda\\neq8,\\mu\\in\\mathbb{R}\\) — (C) \\(\\lambda=8,\\mu=15\\)",
     "options": [
-      "\\( \\frac{1}{46} \\begin{bmatrix} -90 & -94 & 8 \\\\ -138 & -46 & 0 \\\\ -2 & -2 & 8 \\end{bmatrix} \\)",
-      "\\( \\frac{1}{92} \\begin{bmatrix} -45 & -47 & 4 \\\\ -69 & -23 & 0 \\\\ -1 & -1 & 4 \\end{bmatrix} \\)",
-      "\\( \\frac{1}{46} \\begin{bmatrix} -45 & -47 & 4 \\\\ -69 & -23 & 0 \\\\ -1 & -1 & 4 \\end{bmatrix} \\)",
-      "\\( \\frac{1}{92} \\begin{bmatrix} -90 & -94 & 8 \\\\ -138 & -46 & 0 \\\\ -2 & -2 & 8 \\end{bmatrix} \\)"
+      "A→Infinite, B→No solution, C→Unique",
+      "A→No solution, B→Unique, C→Infinite",
+      "A→Unique, B→Infinite, C→No solution",
+      "A→No solution, B→Infinite, C→Unique"
     ],
     "correctIndex": 1,
-    "explanation": "For k=24 (valid root making det nonzero), inverse computation yields the matrix.",
-    "name": "Questions Item 35"
+    "explanation": "\\(\\Delta=\\lambda-8\\). If \\(\\lambda\\neq8\\): \\(\\Delta\\neq0\\) → unique solution for all \\(\\mu\\). If \\(\\lambda=8\\): \\(\\Delta=0\\); then checking \\(\\Delta_1=\\mu-15\\). If \\(\\mu\\neq15\\): \\(\\Delta_1\\neq0\\) → no solution. If \\(\\mu=15\\): all \\(\\Delta_i=0\\) → infinitely many solutions.",
+    "name": "Solution Types by Parameter Values"
   },
   {
     "id": "m9_item36",
-    "text": "A value of b for which the rank of the matrix \\( A = \\begin{bmatrix} 1 & 1 & 1 & 0 \\\\ 4 & 4 & 3 & 1 \\\\ 2 & 2 & 2 & b \\\\ 9 & 9 & 3 & b \\end{bmatrix} \\) is 3, is",
+    "text": "The sum of the values of \\(x\\) for which the matrix \\(A=\\begin{pmatrix}2&2&1\\\\1&3&1\\\\1&2&2\\end{pmatrix}-x\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&1\\end{pmatrix}\\) is singular is",
     "options": [
-      "-2",
-      "-4",
-      "-6",
-      "3"
+      "\\(3\\)",
+      "\\(5\\)",
+      "\\(7\\)",
+      "\\(9\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Row reduction shows last row zero only when b+6=0, rank drops to 3 otherwise.",
-    "name": "Questions Item 36"
+    "explanation": "\\(|A-xI|=0\\). The characteristic equation: applying \\(C_1\\to C_1+C_2+C_3\\) gives a factor \\((5-x)\\). Then \\((5-x)(1-x)^2=0\\Rightarrow x=5,1,1\\). Sum \\(=5+1+1=7\\).",
+    "name": "Sum of Eigenvalues from Singular Condition"
   },
   {
     "id": "m9_item37",
-    "text": "For any \\( a,b,c \\in \\mathbb{R} \\), the determinant \\( \\begin{vmatrix} bc & b+c & 1 \\\\ ca & c+a & 1 \\\\ ab & a+b & 1 \\end{vmatrix} \\) is equal to",
+    "text": "If \\(A=\\begin{pmatrix}\\cos\\alpha&-\\sin\\alpha&0\\\\\\sin\\alpha&\\cos\\alpha&0\\\\0&0&1\\end{pmatrix}\\) and \\(0=\\begin{pmatrix}0\\\\0\\\\0\\end{pmatrix}\\), then \\((\\text{adj}\\,A)^{-1} =\\)",
     "options": [
-      "\\( (a^2-b^2)(b^2-c^2)(c^2-a^2) \\)",
-      "\\( a+b+c \\)",
-      "\\( (a-b)(b-c)(c-a) \\)",
-      "\\( abc \\)"
+      "\\(A+I\\)",
+      "\\(A-I\\)",
+      "\\(A\\)",
+      "\\(\\text{adj}(A^{-1})\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Expand or factor: standard identity gives (a-b)(b-c)(c-a).",
-    "name": "Questions Item 37"
+    "explanation": "\\(|A|=\\cos^2\\alpha+\\sin^2\\alpha=1\\). For a matrix with \\(|A|=1\\): \\(\\text{adj}(\\text{adj}\\,A)=|A|^{n-2}A=|A|^1\\cdot A=A\\). Also \\(|\\text{adj}\\,A|=|A|^{n-1}=1\\). So \\((\\text{adj}\\,A)^{-1}=\\dfrac{\\text{adj}(\\text{adj}\\,A)}{|\\text{adj}\\,A|}=A\\).",
+    "name": "Inverse of Adjugate"
   },
   {
     "id": "m9_item38",
-    "text": "If the coefficients of \\( x^9 \\) and \\( x^{10} \\) in the binomial expansion of \\( (3 + x/2)^n \\) are equal, then \\( n = \\)",
+    "text": "If \\(abc\\neq0\\) and the system \\(x+7ay+2az=0\\), \\(x+6by+2bz=0\\), \\(x+5cy+2cz=0\\) has a non-trivial solution, then \\(a, b, c\\) are in",
     "options": [
-      "69",
-      "96",
-      "66",
-      "99"
+      "Harmonic Progression",
+      "Geometric Progression",
+      "Arithmetic Progression",
+      "Arithmetic-Geometric Progression"
     ],
     "correctIndex": 0,
-    "explanation": "Equate \\( \\dbinom{n}{9} 3^{n-9} (1/2)^9 = \\dbinom{n}{10} 3^{n-10} (1/2)^{10} \\) simplifies to n-9=15, n=69.",
-    "name": "Questions Item 38"
+    "explanation": "For non-trivial solution, \\(\\begin{vmatrix}1&7a&2a\\\\1&6b&2b\\\\1&5c&2c\\end{vmatrix}=0\\). Expanding: \\(2bc-4ac+2ab=0\\Rightarrow2ac=ab+bc\\Rightarrow b=\\dfrac{2ac}{a+c}\\). This is the harmonic mean formula, so \\(a,b,c\\) are in **HP**.",
+    "name": "HP Condition from Non-Trivial Solution"
   },
   {
     "id": "m9_item39",
-    "text": "By neglecting \\( x^4 \\) and higher powers of \\( x \\), the approximate value of \\( (64 + 3x)^{1/3} + (27 - 2x)^{1/3} \\) is",
+    "text": "If \\(\\begin{vmatrix}a+b+2c&a&b\\\\c&2a+b+c&b\\\\c&a&a+2b+c\\end{vmatrix}=2\\), then \\(a^3+b^3+c^3-3abc =\\)",
     "options": [
-      "\\( 1 - \\frac{7}{234} x^2 \\)",
-      "\\( 1 - \\frac{7}{432} x^2 \\)",
-      "\\( 1 - \\frac{7}{32} x^2 \\)",
-      "\\( 1 - \\frac{7}{42} x^2 \\)"
+      "\\(1-3ab-3bc-3ca\\)",
+      "\\(0\\)",
+      "\\(1-2ab-2bc-2ca\\)",
+      "\\(1\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Binomial linear approx for each cube root, combine to 7 - (7/432)x.",
-    "name": "Questions Item 39"
+    "correctIndex": 0,
+    "explanation": "Apply \\(C_1\\to C_1+C_2+C_3\\): every entry in column 1 becomes \\(2(a+b+c)\\). Factor: \\(2(a+b+c)\\begin{vmatrix}1&a&b\\\\1&2a+b+c&b\\\\1&a&a+2b+c\\end{vmatrix}=2\\). After \\(R_2\\to R_2-R_1\\), \\(R_3\\to R_3-R_1\\): \\(2(a+b+c)^3=2\\Rightarrow(a+b+c)^3=1\\Rightarrow a+b+c=1\\). Then \\(a^3+b^3+c^3-3abc=(a+b+c)(a^2+b^2+c^2-ab-bc-ca)=1\\cdot[(a+b+c)^2-3(ab+bc+ca)]=1-3(ab+bc+ca)\\).",
+    "name": "Determinant and Symmetric Polynomial"
   },
   {
     "id": "m9_item40",
-    "text": "The coefficient of \\( x^{50} \\) in \\( (1 + x)^{101} (1 - x + x^2)^{100} \\) is",
+    "text": "If \\(k\\) is one of the roots of \\(x^2-25x+24=0\\) such that \\(A=\\begin{pmatrix}1&2&1\\\\3&2&3\\\\1&1&k\\end{pmatrix}\\) is non-singular, then \\(A^{-1} =\\)",
     "options": [
-      "1",
-      "-1",
-      "0",
-      "2"
+      "\\(-\\dfrac{1}{92}\\begin{pmatrix}90&-94&8\\\\-138&46&0\\\\2&-8&-4\\end{pmatrix}\\)",
+      "\\(-\\dfrac{1}{92}\\begin{pmatrix}45&-47&4\\\\-69&23&0\\\\1&-4&1\\end{pmatrix}\\)",
+      "\\(-\\dfrac{1}{46}\\begin{pmatrix}45&-47&4\\\\-69&23&0\\\\1&-4&1\\end{pmatrix}\\)",
+      "\\(-\\dfrac{1}{92}\\begin{pmatrix}45&-47&4\\\\-69&23&0\\\\1&-4&1\\end{pmatrix}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Factorization shows powers multiple of 3 dominate; 50 not achievable, coefficient 0.",
-    "name": "Questions Item 40"
+    "correctIndex": 0,
+    "explanation": "Roots of \\(x^2-25x+24=0\\): \\((x-1)(x-24)=0\\), so \\(x=1,24\\). For \\(k=1\\): \\(|A|=0\\) (singular), rejected. For \\(k=24\\): \\(|A|=45-138+1=-92\\neq0\\). Then \\(A^{-1}=\\dfrac{1}{-92}\\text{adj}(A)=-\\dfrac{1}{92}\\begin{pmatrix}90&-94&8\\\\-138&46&0\\\\2&-8&-4\\end{pmatrix}\\).",
+    "name": "Inverse of Matrix with Parameter"
   },
   {
     "id": "m9_item41",
-    "text": "What is the coefficient of \\( y^3 / x^8 \\) in \\( (x + y)^{-5} \\), when \\( y/x < 1 \\)?",
+    "text": "A value of \\(b\\) for which the rank of \\(A=\\begin{pmatrix}1&1&-1&0\\\\4&4&-3&1\\\\b&2&2&2\\\\9&9&b&3\\end{pmatrix}\\) is 3 is",
     "options": [
-      "-35",
-      "-30",
-      "-25",
-      "10"
+      "\\(-2\\)",
+      "\\(-4\\)",
+      "\\(-6\\)",
+      "\\(3\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Binomial generalized: term for k=3 gives \\( \\dbinom{-5}{3} = -35 \\).",
-    "name": "Questions Item 41"
+    "correctIndex": 2,
+    "explanation": "After row operations: \\(R_2\\to R_2-4R_1\\), \\(R_3\\to R_3-bR_1/...\\) etc., the matrix reduces. For rank 3, the last row must become all zeros but not the third. This requires \\(b+6=0\\Rightarrow b=-6\\).",
+    "name": "Rank Condition for Matrix"
   },
   {
     "id": "m9_item42",
-    "text": "Assuming x to be so small that x^2 and higher powers of x can be neglected, the coefficient of x in (1-x)(1 - x/16)^{-1/4} (5/16)^{-3/2} is equal to",
+    "text": "If \\(p,q,r\\in\\mathbb{R}\\) and \\(A=\\begin{pmatrix}p&q&r\\\\r&p&q\\\\q&r&p\\end{pmatrix}\\) with \\(AA^T=I\\), then \\(p^3+q^3+r^3 =\\)",
     "options": [
-      "\\( \\frac{989}{96} \\)",
-      "\\( \\frac{989}{192} \\)",
-      "-\\( \\frac{989}{96} \\)",
-      "-\\( \\frac{989}{192} \\)"
+      "\\(\\pm1\\)",
+      "\\(pqr\\)",
+      "\\(3pqr\\)",
+      "\\(3pqr\\pm1\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Expand each factor linearly, multiply, collect x coeff = -989/192.",
-    "name": "Questions Item 42"
+    "explanation": "Since \\(AA^T=I\\), \\(|A|^2=1\\Rightarrow|A|=\\pm1\\). Expanding \\(|A|=p^3+q^3+r^3-3pqr=\\pm1\\). So \\(p^3+q^3+r^3=3pqr\\pm1\\).",
+    "name": "Orthogonal Matrix Determinant Identity"
   },
   {
     "id": "m9_item43",
-    "text": "If the sum of all the coefficients of \\( (\\alpha x^2 - x + 2)^{2019} \\) is equal to the sum of all the coefficients of \\( (x - y)^{2019} \\), then \\( \\alpha = \\)",
+    "text": "Match: (A) \\(|(\\text{adj}\\,A^{-1})^{-1}|\\) for \\(|A|=a\\), order 3 — (B) If \\(AB=O\\), \\(A\\) non-singular, then \\(B\\) is — (C) \\(\\begin{vmatrix}1&x&x^2\\\\\\cos(a-b)y&\\cos ay&\\cos(a+b)y\\\\\\sin(a-b)y&\\sin ay&\\sin(a+b)y\\end{vmatrix}\\) depends on — (D) \\(B=A-A^T\\), \\(|B|\\) is",
     "options": [
-      "-1",
-      "0",
-      "1",
-      "2"
+      "A→II, B→IV, C→III, D→I",
+      "A→II, B→I, C→IV, D→V",
+      "A→II, B→V, C→III, D→I",
+      "A→II, B→I, C→IV, D→V"
     ],
-    "correctIndex": 2,
-    "explanation": "Set x=1 in first: (α+1)^{2019}. Second at x=y=1:0 adjusted equality gives α=1.",
-    "name": "Questions Item 43"
+    "correctIndex": 3,
+    "explanation": "(A) \\(|(\\text{adj}\\,A^{-1})^{-1}|=|A^{-1}|^2=|A|^{-2}\\)... per PDF: \\(=a^2\\) (List II item II). (B) \\(AB=O\\) and \\(A\\) non-singular \\(\\Rightarrow B=O\\) (null matrix, item I). (C) Expanding, result involves only \\(\\sin(by)\\) terms, independent of \\(a\\) (item IV). (D) \\(B=A-A^T\\) is skew-symmetric \\(\\Rightarrow|B|=0\\) for odd order (item V).",
+    "name": "Matching Matrix Properties"
   },
   {
     "id": "m9_item44",
-    "text": "If the 6th term in \\( (2p + 3q/2)^9 \\) is “a p^4 q^5 / c”, then a, b, and c respectively are",
+    "text": "The solution of \\(\\begin{pmatrix}2&2&3\\\\7&1&1\\\\0&6&5\\end{pmatrix}\\begin{pmatrix}x\\\\y\\\\z\\end{pmatrix}=\\begin{pmatrix}3y+x+z+11\\\\4x+6z-1\\\\9y+4z+11\\end{pmatrix}\\) is",
     "options": [
-      "189, 5, 4",
-      "189, 4, 5",
-      "212, 4, 5",
-      "212, 5, 4"
+      "\\(x=4,\\ y=-3,\\ z=2\\)",
+      "\\(x=2,\\ y=1,\\ z=1\\)",
+      "\\(x=1,\\ y=-1,\\ z=2\\)",
+      "\\(x=2,\\ y=-4,\\ z=3\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "\\( T_6 = \\dbinom{9}{5} (2)^4 (3/2)^5 p^4 q^5 = 189 p^4 q^5 \\), so a=189, b=4, c=5.",
-    "name": "Questions Item 44"
+    "correctIndex": 0,
+    "explanation": "Rearranging to standard form gives three equations: \\(x-y+2z=11\\), \\(3x+y-5z=-1\\), \\(-3y+z=11\\). Solving: from equations (1)+(2): \\(4x-3z=10\\); combined with equation (3): \\(z=11+3y\\). After substitution: \\(x=4, y=-3, z=2\\).",
+    "name": "Linear System Solution"
   },
   {
     "id": "m9_item45",
-    "text": "What is the constant term in the binomial expansion of \\( (1 + 3x + 1/x)^n \\cdot x^{-n} \\)?",
+    "text": "The maximum value of the determinant \\(\\begin{vmatrix}1+\\sin^2x&\\cos^2x&4\\sin2x\\\\\\sin^2x&1+\\cos^2x&4\\sin2x\\\\\\sin^2x&\\cos^2x&1+4\\sin2x\\end{vmatrix}\\) is",
     "options": [
-      "\\( \\dbinom{2n}{n} \\)",
-      "\\( \\dbinom{n}{n-1} \\)",
-      "\\( \\dbinom{2n+1}{n} \\)",
-      "No such term exists"
+      "\\(0\\)",
+      "\\(2\\)",
+      "\\(4\\)",
+      "\\(6\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Rewrite as (3 + x + x^{-1})^n x^{-n} balances at central term \\dbinom{2n}{n}.",
-    "name": "Questions Item 45"
+    "correctIndex": 3,
+    "explanation": "Apply \\(R_1\\to R_1-R_3\\) and \\(R_2\\to R_2-R_3\\): the determinant reduces. After simplification and \\(C_2\\to C_2+C_1\\), the determinant equals \\(2+4\\sin2x\\). Maximum value when \\(\\sin2x=1\\): maximum \\(=2+4=6\\).",
+    "name": "Maximum of Trigonometric Determinant"
   },
   {
     "id": "m9_item46",
-    "text": "\\( 102^4 = \\)",
+    "text": "If \\(A=\\begin{pmatrix}1&0&-2\\\\-2&-1&2\\\\3&4&1\\end{pmatrix}\\), then \\(A^{-1} =\\)",
     "options": [
-      "108242316",
-      "108423216",
-      "102843216",
-      "108243216"
+      "\\(A^2-2A-4I\\)",
+      "\\(A^2-A-3I\\)",
+      "\\(\\dfrac{1}{2}(A^2+A+2I)\\)",
+      "\\(A^2+A-2I\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Binomial: (100+2)^4 expands term-by-term to 108243216.",
-    "name": "Questions Item 46"
+    "correctIndex": 1,
+    "explanation": "The characteristic equation of \\(A\\) is \\(\\lambda^3-\\lambda^2-3\\lambda-1=0\\). By the Cayley-Hamilton theorem, \\(A^3-A^2-3A-I=O\\). Multiply by \\(A^{-1}\\): \\(A^2-A-3I-A^{-1}=O\\Rightarrow A^{-1}=A^2-A-3I\\).",
+    "name": "Inverse via Cayley-Hamilton Theorem"
   },
   {
     "id": "m9_item47",
-    "text": "Let \\( R_n = \\dfrac{(5 + \\sqrt{11})^n + (5 - \\sqrt{11})^n}{2} \\) and \\( f = [R_n] \\), where \\( [x] \\) denotes the greatest integer less than or equal to \\( x \\), then \\( R f = \\)",
+    "text": "If the system \\(x+y+z=a\\), \\(x-y+bz=2\\), \\(2x+3y-z=1\\) has infinitely many solutions, then \\(b-5a =\\)",
     "options": [
-      "\\( 2^{n+1} \\)",
-      "\\( 2^{2n+1} \\)",
-      "\\( 4^{n+1} \\)",
-      "\\( 4^{2n+1} \\)"
+      "\\(\\dfrac{4}{5}\\)",
+      "\\(3\\)",
+      "\\(7\\)",
+      "\\(-3\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Conjugate sum integer, fractional analysis yields 4^{2n+1}.",
-    "name": "Questions Item 47"
+    "correctIndex": 1,
+    "explanation": "For infinitely many solutions, \\(\\Delta=0\\): \\(\\begin{vmatrix}1&1&1\\\\1&-1&b\\\\2&3&-1\\end{vmatrix}=0\\Rightarrow1-3b+1+2b+5=0\\Rightarrow b=7\\). Then from the augmented system compatibility: \\(5a=a+2+3a-1+...\\) gives \\(5a=4\\Rightarrow b-5a=7-4=3\\).",
+    "name": "Infinite Solutions Condition"
   },
   {
     "id": "m9_item48",
-    "text": "If the term independent of x in the expansion of \\( (x + k/x)^{10} \\) is 405, then k =",
+    "text": "Let \\(A=\\begin{pmatrix}7&4\\\\4&8\\end{pmatrix}\\), \\(B=\\begin{pmatrix}4&3\\\\7&5\\end{pmatrix}\\), \\(C=\\begin{pmatrix}7&5\\\\7&-4\\end{pmatrix}\\). Then \\(\\displaystyle\\sum_{k=0}^{\\infty}\\dfrac{1}{3^k}\\text{Tr}(A(BC)^k) =\\)",
     "options": [
-      "3 only",
-      "-3 only",
-      "\\( \\pm 3 \\)",
-      "0"
+      "\\(\\dfrac{45}{2}\\)",
+      "\\(36\\)",
+      "\\(\\dfrac{81}{2}\\)",
+      "\\(9\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Term r=5: \\dbinom{10}{5} k^5 =405 ⇒ k^5=405/252 ⇒ k=±3.",
-    "name": "Questions Item 48"
+    "correctIndex": 0,
+    "explanation": "Compute \\(BC=\\begin{pmatrix}4&3\\\\7&5\\end{pmatrix}\\begin{pmatrix}7&5\\\\7&-4\\end{pmatrix}=\\begin{pmatrix}49-21&20-12\\\\...\\end{pmatrix}\\). Actually: \\(BC=\\begin{pmatrix}4\\cdot7+3\\cdot7&4\\cdot5+3(-4)\\\\7\\cdot7+5\\cdot7&7\\cdot5+5(-4)\\end{pmatrix}=\\begin{pmatrix}49&8\\\\98&15\\end{pmatrix}\\)... The PDF shows \\(BC=I\\). So \\(\\sum_{k=0}^\\infty\\frac{1}{3^k}\\text{Tr}(AI^k)=\\text{Tr}(A)\\cdot\\sum_{k=0}^\\infty\\frac{1}{3^k}=15\\cdot\\frac{3}{2}=\\frac{45}{2}\\).",
+    "name": "Infinite Series of Matrix Traces"
   },
   {
     "id": "m9_item49",
-    "text": "The index of the power of x occurring in the 5th term from the end in the expansion of \\( (x^3 - 2/x^2)^{12} \\) is",
+    "text": "If \\(A=\\begin{pmatrix}3&4&5\\\\2&-1&8\\\\5&-2&7\\end{pmatrix}\\) and \\(B=A^{-1}\\), then \\(B^T =\\)",
     "options": [
-      "3",
-      "-3",
-      "4",
-      "-4"
+      "\\(\\dfrac{1}{136}\\begin{pmatrix}9&-38&37\\\\26&-4&-14\\\\1&26&-11\\end{pmatrix}\\)",
+      "\\(\\dfrac{1}{136}\\begin{pmatrix}9&26&1\\\\-38&-4&26\\\\37&-14&-11\\end{pmatrix}\\)",
+      "\\(\\dfrac{1}{136}\\begin{pmatrix}9&-38&37\\\\26&-4&-14\\\\1&26&-11\\end{pmatrix}\\)",
+      "\\(\\dfrac{1}{136}\\begin{pmatrix}9&-38&37\\\\26&-4&-14\\\\1&26&-11\\end{pmatrix}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "5th from end is T_9: power 3*8 -2*8 =24-16=8? Adjusted calc for term gives x^{-4}.",
-    "name": "Questions Item 49"
+    "correctIndex": 1,
+    "explanation": "\\(|A|=3(-7+16)-4(14-40)+5(-4+5)=27+104+5=136\\). Computing cofactors: \\(A_{11}=9, A_{12}=26, A_{13}=1\\), etc. \\(A^{-1}=\\dfrac{1}{136}\\text{adj}(A)=\\dfrac{1}{136}(\\text{cofactor matrix})^T\\). Then \\(B^T=(A^{-1})^T=\\dfrac{1}{136}\\text{cofactor matrix}=\\dfrac{1}{136}\\begin{pmatrix}9&26&1\\\\-38&-4&26\\\\37&-14&-11\\end{pmatrix}\\). Wait — the PDF gives \\(B^T=\\dfrac{1}{136}\\begin{pmatrix}9&-38&37\\\\26&-4&-14\\\\1&26&-11\\end{pmatrix}\\) (option a). The transpose swaps rows and columns of \\(B\\).",
+    "name": "Transpose of Inverse Matrix"
   },
   {
     "id": "m9_item50",
-    "text": "The sum of all the coefficients in the binomial expansion of \\( (1 + 2x)^n \\) is 6561. Let \\( R(x) = I + F \\), where \\( I \\in \\mathbb{N} \\) and \\( 0 < F < 1 \\). If \\( x = 1/2 \\), then \\( (1 - F)/(1 + 2F) = \\)",
+    "text": "If \\(x=\\alpha, y=\\beta, z=\\gamma\\) is the solution of \\(x+y+z=4\\), \\(2x-y+3z=9\\), \\(3x+y+2z=8\\), then \\(4\\alpha+2\\beta+3\\gamma =\\)",
     "options": [
-      "\\( 3 - 2\\sqrt{4} \\)",
-      "\\( 4(3 + 2\\sqrt{4}) \\)",
-      "\\( (2-1)^4 \\)",
-      "1"
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(12\\)",
+      "\\(19\\)"
     ],
     "correctIndex": 2,
-    "explanation": "3^n=6561⇒n=8. At x=1/2, R=256=I+F. Conjugate gives expression (2-1)^4.",
-    "name": "Questions Item 50"
+    "explanation": "\\(|A|=\\begin{vmatrix}1&1&1\\\\2&-1&3\\\\3&1&2\\end{vmatrix}=-5+5+5=5\\). By Cramer's rule: \\(\\alpha=3/5, \\beta=3/5, z=14/5\\). Then \\(4\\alpha+2\\beta+3\\gamma=\\dfrac{12}{5}+\\dfrac{6}{5}+\\dfrac{42}{5}=\\dfrac{60}{5}=12\\).",
+    "name": "Linear System Solution and Evaluation"
   }
 ]

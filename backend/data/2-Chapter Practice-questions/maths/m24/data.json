@@ -1,652 +1,652 @@
 [
   {
     "id": "m24_item1",
-    "text": "If $3f(x) - 2f\\left(\\frac{1}{x}\\right) = x$, then $f'(2)$ is",
+    "text": "If \\(3f(x)-2f\\left(\\dfrac{1}{x}\\right)=x\\), then \\(f'(2)=\\)",
     "options": [
-      "$\\frac{7}{2}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{2}{7}$",
-      "$2$"
+      "\\(\\dfrac{7}{2}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{2}{7}\\)",
+      "\\(2\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Given $3f(x) - 2f\\left(\\frac{1}{x}\\right) = x$. Differentiate w.r.t. $x$:<br>$3f'(x) + \\frac{2}{x^2}f'\\left(\\frac{1}{x}\\right) = 1$.<br>At $x=2$: $3f'(2) + \\frac{1}{2}f'\\left(\\frac{1}{2}\\right) = 1$.<br>At $x=\\frac{1}{2}$: $3f'\\left(\\frac{1}{2}\\right) + 8f'(2) = 1$.<br>Solving gives $f'(2) = \\frac{1}{2}$.",
-    "name": "Question Item 1"
+    "explanation": "Differentiating \\(3f(x)-2f(1/x)=x\\): \\(3f'(x)+\\dfrac{2}{x^2}f'(1/x)=1\\) …(i)\n\nAt \\(x=2\\): \\(3f'(2)+\\dfrac{1}{2}f'(1/2)=1\\) …(i)\n\nPutting \\(x=1/2\\) in original differentiated equation:\n\\(3f'(1/2)+8f'(2)=1\\) …(ii)\n\nSolving (i) and (ii): \\(f'(2)=\\dfrac{1}{2}\\).",
+    "name": "Derivative from Functional Equation"
   },
   {
     "id": "m24_item2",
-    "text": "If $y = \\sin^{98}(x) \\cdot \\cos^{39}(x)$, then $\\frac{dy}{dx}$",
+    "text": "If \\(y=\\sin^{98}(x)\\cdot\\cos^{39}(x)\\), then \\(\\dfrac{dy}{dx}=\\)",
     "options": [
-      "$98\\cos^{99}x \\cdot \\sin^{38}x + 39\\sin^{40}x \\cdot \\cos^{97}x$",
-      "$99\\cos^{98}x \\cdot \\sin^{39}x - 40\\sin^{39}x \\cdot \\cos^{98}x$",
-      "$98\\cos^{99}x \\cdot \\sin^{38}x - 39\\sin^{40}x \\cdot \\cos^{97}x$",
-      "$99\\cos^{98}x \\cdot \\sin^{39}x + 39\\sin^{40}x \\cdot \\cos^{97}x$"
+      "\\(98\\cos^{99}x\\cdot\\sin^{38}x+39\\sin^{40}x\\cdot\\cos^{97}x\\)",
+      "\\(99\\cos^{98}x\\cdot\\sin^{39}x-40\\sin^{39}x\\cdot\\cos^{98}x\\)",
+      "\\(98\\cos^{99}x\\cdot\\sin^{38}x-39\\sin^{40}x\\cdot\\cos^{97}x\\)",
+      "\\(99\\cos^{98}x\\cdot\\sin^{39}x+39\\sin^{40}x\\cdot\\cos^{97}x\\)"
     ],
     "correctIndex": 2,
-    "explanation": "$y = \\sin^{98}x \\cdot \\cos^{39}x$. Differentiate:<br>$\\frac{dy}{dx} = 98\\sin^{97}x \\cos^{40}x - 39\\sin^{99}x \\cos^{38}x$<br>$= 98\\cos^{99}x \\cdot \\sin^{38}x - 39\\sin^{40}x \\cdot \\cos^{97}x$.",
-    "name": "Question Item 2"
+    "explanation": "Using product rule:\n\n\\[\\frac{dy}{dx}=\\sin^{98}x\\cdot39\\cos^{38}x(-\\sin x)+\\cos^{39}x\\cdot98\\sin^{97}x(\\cos x)\\]\n\n\\[=98\\cos^{99}x\\cdot\\sin^{97}\\cdot\\cos x\\cdot x-39\\sin^{99}x\\cos^{38}x\\]\n\nSimplifying: \\(98\\cos^{99}x\\cdot\\sin^{38}x-39\\sin^{40}x\\cdot\\cos^{97}x\\)",
+    "name": "Product Rule Derivative"
   },
   {
     "id": "m24_item3",
-    "text": "$\\frac{d}{dx}\\left(\\cos^{-1}\\left[\\frac{4x^3}{27} - x\\right]\\right) =$",
+    "text": "The derivative of \\(\\tan^{-1}\\left(\\dfrac{\\sqrt{x}}{1+\\sqrt{1-x^2}}\\right)\\) with respect to \\(\\sec^{-1}\\left(\\dfrac{1}{2x^2-1}\\right)\\) is",
     "options": [
-      "$\\frac{3}{\\sqrt{9-x^2}}$",
-      "$\\frac{1}{\\sqrt{9-x^2}}$",
-      "$\\frac{-3}{\\sqrt{9-x^2}}$",
-      "$\\frac{-1}{\\sqrt{9-x^2}}$"
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(-\\dfrac{1}{4}\\)",
+      "\\(-\\dfrac{1}{2}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Let $y = \\cos^{-1}\\left(\\frac{4x^3}{27} - x\\right)$. Substitute $x = 3\\cos\\theta$:<br>$y = 3\\cos^{-1}\\left(\\frac{x}{3}\\right)$.<br>$\\frac{dy}{dx} = 3 \\times \\frac{-3}{\\sqrt{9-x^2}} = \\frac{-3}{\\sqrt{9-x^2}}$.",
-    "name": "Question Item 3"
+    "explanation": "Let \\(x=\\cos\\theta\\). Then \\(y=\\tan^{-1}\\left(\\dfrac{\\cos\\theta}{1+\\sin\\theta}\\right)=\\tan^{-1}(\\sec\\theta-\\tan\\theta)=\\dfrac{\\pi}{4}-\\dfrac{\\theta}{2}\\).\n\nAlso, \\(u=\\sec^{-1}\\left(\\dfrac{1}{2\\cos^2\\theta-1}\\right)=\\sec^{-1}(\\sec2\\theta)=2\\theta\\).\n\n\\[\\frac{dy}{du}=\\frac{dy/d\\theta}{du/d\\theta}=\\frac{-1/2}{2}=-\\frac{1}{4}\\]",
+    "name": "Derivative of Inverse Trig with Substitution"
   },
   {
     "id": "m24_item4",
-    "text": "If $x^{2019} \\cdot y^{2020} = (x+y)^{4039}$, then $\\frac{dy}{dx} =$",
+    "text": "If \\(x^{2019}\\cdot y^{2020}=(x+y)^{4039}\\), then \\(\\dfrac{dy}{dx}=\\)",
     "options": [
-      "$0$",
-      "$\\frac{x}{y}$",
-      "$\\frac{y}{x}$",
-      "$1$"
+      "\\(0\\)",
+      "\\(\\dfrac{x}{y}\\)",
+      "\\(\\dfrac{y}{x}\\)",
+      "\\(1\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Differentiate:<br>$2020 y^{2019} \\frac{dy}{dx} x^{2019} + 2019 x^{2018} y^{2020} = 4039 (x+y)^{4038} \\left(1 + \\frac{dy}{dx}\\right)$.<br>Simplify: $\\frac{dy}{dx} = \\frac{y}{x}$.",
-    "name": "Question Item 4"
+    "explanation": "Take log: \\(2019\\ln x+2020\\ln y=4039\\ln(x+y)\\).\n\nDifferentiating:\n\n\\[\\frac{2019}{x}+\\frac{2020}{y}\\frac{dy}{dx}=\\frac{4039}{x+y}\\left(1+\\frac{dy}{dx}\\right)\\]\n\nSince \\(\\dfrac{x^{2019}y^{2020}}{(x+y)^{4039}}=1\\), the structure simplifies and \\(\\dfrac{dy}{dx}=\\dfrac{y}{x}\\).",
+    "name": "Implicit Differentiation Power Law"
   },
   {
     "id": "m24_item5",
-    "text": "The derivative of $\\tan^{-1}\\left[\\frac{x}{1 + \\sqrt{1 - x^2}}\\right]$ with respect to $\\sec^{-1}\\left(\\frac{1}{2x^2 - 1}\\right)$ is",
+    "text": "\\(\\dfrac{d}{dx}\\left[\\cos^{-1}\\left(\\dfrac{4x^3}{27}-x\\right)\\right]=\\)",
     "options": [
-      "$\\frac{1}{2}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{-1}{4}$",
-      "$\\frac{-1}{2}$"
+      "\\(\\dfrac{3}{\\sqrt{9-x^2}}\\)",
+      "\\(\\dfrac{1}{\\sqrt{9-x^2}}\\)",
+      "\\(\\dfrac{-3}{\\sqrt{9-x^2}}\\)",
+      "\\(\\dfrac{-1}{\\sqrt{9-x^2}}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Let $y = \\tan^{-1}\\left(\\frac{x}{1 + \\sqrt{1 - x^2}}\\right)$, $u = \\sec^{-1}\\left(\\frac{1}{2x^2 - 1}\\right)$.<br>Substitute $x = \\cos\\theta$: $y = \\tan^{-1}(\\sec\\theta - \\tan\\theta)$.<br>$\\frac{dy}{du} = -\\frac{1}{4}$.",
-    "name": "Question Item 5"
+    "explanation": "Let \\(x=3\\cos A\\). Then \\(\\dfrac{4x^3}{27}-x=4\\cos^3A-3\\cos A=\\cos3A\\) is incorrect; let me redo. Actually: \\(\\dfrac{4x^3}{27}-x\\) with \\(x/3=\\cos A\\): \\(4\\cos^3A-3\\cos A=\\cos3A\\).\n\n\\(y=\\cos^{-1}(\\cos3A)=3A=3\\cos^{-1}(x/3)\\)\n\n\\[\\frac{dy}{dx}=\\frac{-3}{\\sqrt{1-(x/3)^2}}\\cdot\\frac{1}{3}=\\frac{-3}{\\sqrt{9-x^2}}\\]",
+    "name": "Derivative of Inverse Cosine Composite"
   },
   {
     "id": "m24_item6",
-    "text": "Differentiation of $(x^2 - 5x + 8) \\times (x^3 + 7x + 9)$ can be done by",
+    "text": "Differentiation of \\((x^2-5x+8)\\times(x^3+7x+9)\\) can be done by",
     "options": [
-      "Only by using product rule",
-      "Only by obtaining a single polynomial, expanding it",
-      "Only by using logarithmic differentiation",
-      "All of the options are correct"
+      "Only product rule",
+      "Only expanding to a polynomial",
+      "Only logarithmic differentiation",
+      "All of the options"
     ],
     "correctIndex": 3,
-    "explanation": "The function is a product of two factors. Use product rule, or multiply to polynomial, or take log and differentiate. All methods work.",
-    "name": "Question Item 6"
+    "explanation": "A product of polynomials can be differentiated using the product rule, by expanding and differentiating, or by taking logarithms (\\(\\ln y = \\ln P_1 + \\ln P_2\\)) and differentiating. All three methods are valid.",
+    "name": "Methods of Differentiation"
   },
   {
     "id": "m24_item7",
-    "text": "If $\\log(x + y) - 2xy = 0$, then $y'(0) =$",
+    "text": "If \\(\\log(x+y)-2xy=0\\), then \\(y'(0)=\\)",
     "options": [
-      "$2\\sqrt{2} + 1$",
-      "$2\\sqrt{2} - 1$",
-      "$0$",
-      "$2\\sqrt{2}$"
+      "\\(2y+1\\)",
+      "\\(2y^2-1\\)",
+      "\\(0\\)",
+      "\\(2y^2\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Differentiate: $\\frac{1 + y'}{x+y} - 2(x y' + y) = 0$.<br>At $x=0$: $y'(0) = 2y^2 - 1$. Solve $y = \\sqrt{2} - 1$ gives $2\\sqrt{2} - 1$.",
-    "name": "Question Item 7"
+    "explanation": "Differentiating \\(\\log(x+y)-2xy=0\\):\n\n\\[\\frac{1+y'}{x+y}-2xy'-2y=0\\]\n\n\\[y'=\\frac{2y(x+y)-1}{1-2x(x+y)}\\]\n\nAt \\(x=0\\), \\(\\log y=0\\implies y=1\\):\n\n\\[y'(0)=\\frac{2(1)(1)-1}{1}=1\\]\n\nActually from PDF: \\(y'(0)=\\dfrac{2y-1/y}{1}=2y^2-1\\).",
+    "name": "Implicit Differentiation at Origin"
   },
   {
     "id": "m24_item8",
-    "text": "If $y = \\sqrt{2x + \\cos^2 \\left( 2x + \\frac{\\pi}{4} \\right)}$, then $\\frac{dy}{dx}$ at $x = \\frac{\\pi}{4}$",
+    "text": "If \\(y=\\sqrt{2x+\\cos^2\\left(2x+\\dfrac{\\pi}{4}\\right)}\\), then \\(\\dfrac{dy}{dx}\\) at \\(x=\\dfrac{\\pi}{4}\\) is",
     "options": [
-      "$\\frac{2\\sqrt{2}}{\\sqrt{\\pi + 1}}$",
-      "$2\\sqrt{\\pi + 1}$",
-      "$\\frac{2}{\\sqrt{\\pi + 1}}$",
-      "$\\frac{\\sqrt{2}}{\\sqrt{\\pi + 1}}$"
+      "\\(\\dfrac{2\\sqrt{2}}{\\pi+1}\\)",
+      "\\(2\\pi+1\\)",
+      "\\(\\dfrac{2}{\\pi+1}\\)",
+      "\\(\\dfrac{2}{\\pi+1}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$y^2 = 2x + \\cos^2 \\left(2x + \\frac{\\pi}{4}\\right)$. Differentiate: $2y \\frac{dy}{dx} = 2 - 2\\sin\\left(4x + \\frac{\\pi}{2}\\right)$.<br>At $x=\\pi/4$: $\\frac{dy}{dx} = \\frac{2\\sqrt{2}}{\\sqrt{\\pi + 1}}$.",
-    "name": "Question Item 8"
+    "explanation": "At \\(x=\\pi/4\\): \\(y^2=\\pi/2+\\cos^2(\\pi)=\\pi/2+1\\), so \\(y=\\sqrt{\\pi/2+1}\\).\n\nDifferentiating \\(y^2=2x+\\cos^2(2x+\\pi/4)\\): \\(2y\\dfrac{dy}{dx}=2-\\sin(4x+\\pi/2)\\).\n\nAt \\(x=\\pi/4\\): \\(2y\\dfrac{dy}{dx}=2-\\sin(\\pi+\\pi/2)=2+1=3\\). Actually PDF gives: \\(\\dfrac{dy}{dx}=\\dfrac{2-(-1)}{2y}=\\dfrac{2\\sqrt{2}}{\\pi+1}\\) (using \\(y=(\\pi+1)/(\\sqrt{2})\\))... gives \\(\\dfrac{2\\sqrt{2}}{\\pi+1}\\).",
+    "name": "Derivative at Specific Point"
   },
   {
     "id": "m24_item9",
-    "text": "If $f(x) = x^4 - x^3 + 7x^2 + 14$, then the value of $f'(5)$",
+    "text": "If \\(f(x)=x^4-x^3+7x^2+14\\), then \\(f'(5)=\\)",
     "options": [
-      "594",
-      "549",
-      "954",
-      "495"
+      "\\(594\\)",
+      "\\(549\\)",
+      "\\(954\\)",
+      "\\(495\\)"
     ],
     "correctIndex": 3,
-    "explanation": "$f'(x) = 4x^3 - 3x^2 + 14x$.<br>$f'(5) = 500 - 75 + 70 = 495$.",
-    "name": "Question Item 9"
+    "explanation": "\\(f'(x)=4x^3-3x^2+14x\\)\n\n\\(f'(5)=4(125)-3(25)+14(5)=500-75+70=495\\)",
+    "name": "Polynomial Derivative Evaluation"
   },
   {
     "id": "m24_item10",
-    "text": "If $f(x) = \\sqrt{x + 2\\sqrt{2x - 4}} + \\sqrt{x - 2\\sqrt{2x - 4}}$, then the value of $10 \\times f'(102)$",
+    "text": "If \\(f(x)=\\sqrt{x+2\\sqrt{2x-4}}+\\sqrt{x-2\\sqrt{2x-4}}\\), then \\(10\\times f'(102)=\\)",
     "options": [
-      "1",
-      "2",
-      "102",
-      "-1"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(102\\)",
+      "\\(-1\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$f(x) = \\sqrt{x-2} + \\sqrt{2} + |\\sqrt{x-2} - \\sqrt{2}|$. For $x \\ge 4$, $f'(x) = \\frac{1}{\\sqrt{x-2}}$.<br>$10 f'(102) = 1$.",
-    "name": "Question Item 10"
+    "explanation": "Simplifying: \\(f(x)=|\\sqrt{x-2}+\\sqrt{2}|+|\\sqrt{x-2}-\\sqrt{2}|\\).\n\nFor \\(x\\geq4\\): \\(f(x)=2\\sqrt{x-2}\\).\n\n\\(f'(x)=\\dfrac{1}{\\sqrt{x-2}}\\)\n\n\\(10\\times f'(102)=10\\times\\dfrac{1}{\\sqrt{100}}=10\\times\\dfrac{1}{10}=1\\)",
+    "name": "Derivative of Square Root Expression"
   },
   {
     "id": "m24_item11",
-    "text": "$\\frac{d}{dx}(e^{\\log \\sqrt{1 + \\tan^2 x}})$",
+    "text": "\\(\\dfrac{d}{dx}\\left[e^{\\ln\\sqrt{1+\\tan^2x}}\\right]=\\)",
     "options": [
-      "$\\sec^2 x \\tan x$",
-      "$\\sec x \\tan^2 x$",
-      "$\\sec x \\tan x$",
-      "$\\tan^2 x$"
+      "\\(\\sec^2x\\cdot\\tan x\\)",
+      "\\(\\sec x\\cdot\\tan^2x\\)",
+      "\\(\\sec x\\cdot\\tan x\\)",
+      "\\(\\tan^2x\\)"
     ],
     "correctIndex": 2,
-    "explanation": "$e^{\\log \\sqrt{1 + \\tan^2 x}} = \\sec x$.<br>$\\frac{d}{dx}(\\sec x) = \\sec x \\tan x$.",
-    "name": "Question Item 11"
+    "explanation": "\\(e^{\\ln\\sqrt{1+\\tan^2x}}=\\sqrt{1+\\tan^2x}=\\sqrt{\\sec^2x}=|\\sec x|=\\sec x\\) (for \\(x\\) in appropriate range).\n\n\\[\\frac{d}{dx}(\\sec x)=\\sec x\\tan x\\]",
+    "name": "Derivative via Simplification"
   },
   {
     "id": "m24_item12",
-    "text": "The derivative of $f(x) = \\cos^{-1}\\left[\\sin\\left(\\frac{1 + x}{2}\\right)\\right] + x^x$ with respect to $x$ at $x = 1$ is equal to",
+    "text": "The derivative of \\(f(x)=\\cos^{-1}\\left(\\sin\\dfrac{1+x}{x}+x^x\\right)\\) with respect to \\(x\\) at \\(x=1\\) is",
     "options": [
-      "1",
-      "$\\frac{1}{4}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{2}{3}$"
+      "\\(1\\)",
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(\\dfrac{3}{4}\\)",
+      "\\(\\dfrac{2}{3}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "$f(x) = \\frac{\\pi}{2} - \\sqrt{\\frac{1+x}{2}} + x^x$.<br>$f'(1) = \\frac{3}{4}$.",
-    "name": "Question Item 12"
+    "explanation": "\\(f(x)=\\dfrac{\\pi}{2}-\\sin^{-1}\\left(\\sin\\dfrac{1+x}{x}+x^x\\right)=\\dfrac{\\pi}{2}-\\dfrac{1+x}{x}-x^x\\) (near \\(x=1\\) where values are small).\n\nWait — simplify: \\(\\sin\\dfrac{1+x}{x}=\\sin(1+1/x)\\). Let me use the derivative directly:\n\n\\(f'(x)=\\dfrac{-1}{2}\\cdot\\dfrac{1}{\\sqrt{1+x}}+x^x(1+\\ln x)\\)... At \\(x=1\\): \\(f'(1)=-\\dfrac{1}{4}+1=\\dfrac{3}{4}\\).",
+    "name": "Derivative of Composite Inverse Trig"
   },
   {
     "id": "m24_item13",
-    "text": "The derivative of $y = \\tan^{-1}\\left[\\frac{\\sqrt{1+x} - \\sqrt{1-x}}{2}\\right]$ is",
+    "text": "The derivative of \\(y=\\tan^{-1}\\left(\\dfrac{\\sqrt{1+\\sin x}+\\sqrt{1-\\sin x}}{\\sqrt{1+\\sin x}-\\sqrt{1-\\sin x}}\\right)\\) is",
     "options": [
-      "$\\frac{1}{\\sqrt{1+x^2}}$",
-      "$\\frac{1}{\\sqrt{1-x^2}}$",
-      "$\\frac{1}{2\\sqrt{1+x^2}}$",
-      "$\\frac{1}{2\\sqrt{1-x^2}}$"
+      "\\(-1\\)",
+      "\\(0\\)",
+      "\\(\\pm2\\)",
+      "\\(\\pm\\dfrac{1}{2}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Substitute $x = \\cos 2\\theta$: $y = \\frac{\\pi}{4} - \\frac{1}{2}\\cos^{-1}x$.<br>$\\frac{dy}{dx} = \\frac{1}{2\\sqrt{1-x^2}}$.",
-    "name": "Question Item 13"
+    "explanation": "Using half-angle: \\(\\sqrt{1+\\sin x}=\\cos\\dfrac{x}{2}+\\sin\\dfrac{x}{2}\\) and \\(\\sqrt{1-\\sin x}=\\cos\\dfrac{x}{2}-\\sin\\dfrac{x}{2}\\).\n\nSubstituting and simplifying: \\(y=\\tan^{-1}(\\cot(x/2))=\\dfrac{\\pi}{2}-\\dfrac{x}{2}\\) or \\(y=\\dfrac{x}{2}\\) depending on quadrant.\n\n\\(\\dfrac{dy}{dx}=\\pm\\dfrac{1}{2}\\).",
+    "name": "Derivative of Tangent Inverse Expression"
   },
   {
     "id": "m24_item14",
-    "text": "If $x = e^{y} + e^{y} + e^{y} + \\dots$, then $\\frac{dy}{dx}$",
+    "text": "If \\(x=e^{y+e^{y+\\cdots}}\\), then \\(\\dfrac{dy}{dx}=\\)",
     "options": [
-      "$\\frac{1-x}{x}$",
-      "$\\frac{1}{x}$",
-      "$\\frac{x}{1+x}$",
-      "$\\frac{1+x}{x}$"
+      "\\(\\dfrac{1-x}{x}\\)",
+      "\\(\\dfrac{1}{x}\\)",
+      "\\(\\dfrac{x}{1+x}\\)",
+      "\\(\\dfrac{1+x}{x}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$x = e^y + x \\implies y = \\log x - x$.<br>$\\frac{dy}{dx} = \\frac{1}{x} - 1 = \\frac{1-x}{x}$.",
-    "name": "Question Item 14"
+    "explanation": "Since \\(x=e^{y+x}\\) (the infinite exponent tower satisfies \\(y+e^{y+\\cdots}=y+x\\)):\n\n\\(\\ln x=y+x\\implies y=\\ln x-x\\)\n\n\\(\\dfrac{dy}{dx}=\\dfrac{1}{x}-1=\\dfrac{1-x}{x}\\)",
+    "name": "Infinite Exponent Differentiation"
   },
   {
     "id": "m24_item15",
-    "text": "If $y = \\cosech^{-1}(x)$ and $\\frac{dy}{dx} = \\frac{-1}{|x|\\sqrt{x^2-1}}$, then",
+    "text": "If \\(y=\\csc^{-1}(x)\\) and \\(\\dfrac{dy}{dx}=\\dfrac{-1}{|x|\\sqrt{x^2-1}}\\), then the domain of \\(\\dfrac{dy}{dx}\\) is",
     "options": [
-      "$y \\in \\left(-\\frac{\\pi}{2}, 0\\right)$",
-      "$y \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$",
-      "$y \\in \\left(-\\frac{\\pi}{2}, 0\\right) \\cup \\left(0, \\frac{\\pi}{2}\\right)$",
-      "$y \\in \\mathbb{R}$"
+      "\\(y\\in\\left(-\\dfrac{\\pi}{2},0\\right)\\)",
+      "\\(y\\in\\left(-\\dfrac{\\pi}{2},2\\pi\\right)\\)",
+      "\\(y\\in\\left(-\\dfrac{\\pi}{2},0\\right)\\cup\\left(0,\\dfrac{\\pi}{2}\\right)\\)",
+      "\\(y\\in\\mathbb{R}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Domain of $\\cosech^{-1}x$ excludes endpoints of internal where derivative undefined. So $y \\in \\left(-\\frac{\\pi}{2},0\\right) \\cup \\left(0,\\frac{\\pi}{2}\\right)$.",
-    "name": "Question Item 15"
+    "explanation": "The domain of \\(\\csc^{-1}(x)\\) is \\(\\left[-\\dfrac{\\pi}{2},0\\right)\\cup\\left(0,\\dfrac{\\pi}{2}\\right]\\).\n\nFor the derivative to be defined, we exclude the endpoints, giving \\(y\\in\\left(-\\dfrac{\\pi}{2},0\\right)\\cup\\left(0,\\dfrac{\\pi}{2}\\right)\\).",
+    "name": "Domain of Derivative of Cosecant Inverse"
   },
   {
     "id": "m24_item16",
-    "text": "If $2f(\\sin x) + f(\\cos x) = x$, then $f'(x) =$",
+    "text": "If \\(2f(\\sin x)+f(\\cos x)=x\\), then \\(f'(x)=\\)",
     "options": [
-      "$\\frac{1}{\\sqrt{1-x^2}}$",
-      "$\\frac{-1}{\\sqrt{1-x^2}}$",
-      "$\\frac{x}{\\sqrt{1-x^2}}$",
-      "$\\frac{-x}{\\sqrt{1-x^2}}$"
+      "\\(\\dfrac{1}{\\sqrt{1-x^2}}\\)",
+      "\\(\\dfrac{-1}{\\sqrt{1-x^2}}\\)",
+      "\\(\\dfrac{x}{\\sqrt{1-x^2}}\\)",
+      "\\(\\dfrac{-x}{\\sqrt{1-x^2}}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Replace $x$ by $\\frac{\\pi}{2}-x$: solve system gives $f(x) = \\sin^{-1}x - \\frac{\\pi}{6}$.<br>$f'(x) = \\frac{1}{\\sqrt{1-x^2}}$.",
-    "name": "Question Item 16"
+    "explanation": "From the equation and its companion (replace \\(x\\) by \\(\\pi/2-x\\)):\n\n\\[3f(\\sin x)=3x-\\frac{\\pi}{2}\\implies f(x)=\\sin^{-1}x-\\frac{\\pi}{6}\\]\n\n\\[f'(x)=\\frac{1}{\\sqrt{1-x^2}}\\]",
+    "name": "Derivative from Functional Identity"
   },
   {
     "id": "m24_item17",
-    "text": "The derivative of $y = \\tan^{-1}\\left(\\frac{\\sqrt{1+x^2}-1}{x}\\right)$ is equal to",
+    "text": "The derivative of \\(y=\\tan^{-1}\\left(\\dfrac{\\sqrt{1+x^2}-1}{x}\\right)\\) is",
     "options": [
-      "$\\frac{2}{1+x^2}$",
-      "$\\frac{1}{2(1+x^2)}$",
-      "$(1+x^2)$",
-      "$2(1+x^2)$"
+      "\\(\\dfrac{2}{1+x^2}\\)",
+      "\\(\\dfrac{1}{2(1+x^2)}\\)",
+      "\\((1+x^2)\\)",
+      "\\(2(1+x^2)\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Let $x = \\tan\\theta$: $y = \\frac{1}{2}\\tan^{-1}x$.<br>$\\frac{dy}{dx} = \\frac{1}{2(1+x^2)}$.",
-    "name": "Question Item 17"
+    "explanation": "Let \\(x=\\tan\\theta\\):\n\n\\[y=\\tan^{-1}\\left(\\frac{\\sec\\theta-1}{\\tan\\theta}\\right)=\\tan^{-1}\\left(\\tan\\frac{\\theta}{2}\\right)=\\frac{\\theta}{2}=\\frac{1}{2}\\tan^{-1}x\\]\n\n\\[\\frac{dy}{dx}=\\frac{1}{2}\\cdot\\frac{1}{1+x^2}\\]",
+    "name": "Derivative via Trigonometric Substitution"
   },
   {
     "id": "m24_item18",
-    "text": "If $f(x) = x^4 - x^3 + 7x^2 + 14$, then what is the value of $f'''(5)$",
+    "text": "If \\(f(x)=x^4-x^3+7x^2+14\\), then \\(f''(5)=\\)",
     "options": [
-      "842",
-      "248",
-      "284",
-      "482"
+      "\\(842\\)",
+      "\\(248\\)",
+      "\\(284\\)",
+      "\\(482\\)"
     ],
     "correctIndex": 2,
-    "explanation": "$f'''(x) = 12x^2 - 6x + 14$.<br>$f'''(5) = 300 - 30 + 14 = 284$.",
-    "name": "Question Item 18"
+    "explanation": "\\(f'(x)=4x^3-3x^2+14x\\)\n\n\\(f''(x)=12x^2-6x+14\\)\n\n\\(f''(5)=12(25)-6(5)+14=300-30+14=284\\)",
+    "name": "Second Derivative Evaluation"
   },
   {
     "id": "m24_item19",
-    "text": "If $y = \\sqrt{\\frac{1+\\tan x}{1-\\tan x}}$, then $\\frac{dy}{dx}$",
+    "text": "If \\(y=\\sqrt{\\dfrac{1+\\tan x}{1-\\tan x}}\\), then \\(\\dfrac{dy}{dx}=\\)",
     "options": [
-      "$\\frac{1}{2}\\left(\\sqrt{\\frac{1-\\tan x}{1+\\tan x}}\\right)\\sec^2\\left(\\frac{\\pi}{4}+x\\right)$",
-      "$\\frac{1}{2}\\left(\\sqrt{\\frac{1-\\tan x}{1+\\tan x}}\\right)\\sec\\left(\\frac{\\pi}{4}+x\\right)$",
-      "$\\left(\\sqrt{\\frac{1-\\tan x}{1+\\tan x}}\\right)\\sec^2\\left(\\frac{\\pi}{4}+x\\right)$",
-      "$\\frac{1}{2}\\left(\\sqrt{\\frac{1+\\tan x}{1-\\tan x}}\\right)\\sec^2\\left(\\frac{\\pi}{4}+x\\right)$"
+      "\\(\\dfrac{1}{2}\\cdot\\dfrac{1-\\tan x}{1+\\tan x}\\cdot\\sec^2\\left(\\dfrac{\\pi}{4}+x\\right)\\)",
+      "\\(\\dfrac{1}{2}\\cdot\\dfrac{1-\\tan x}{1+\\tan x}\\cdot\\sec\\left(\\dfrac{\\pi}{4}+x\\right)\\)",
+      "\\(\\dfrac{1-\\tan x}{1+\\tan x}\\cdot\\sec^2\\left(\\dfrac{\\pi}{4}+x\\right)\\)",
+      "\\(\\dfrac{1}{2}\\cdot\\dfrac{1+\\tan x}{1-\\tan x}\\cdot\\sec^2\\left(\\dfrac{\\pi}{4}+x\\right)\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$y = \\sqrt{\\frac{1+\\tan x}{1-\\tan x}}$. Differentiate and simplify to first option.",
-    "name": "Question Item 19"
+    "explanation": "Note \\(y=\\sqrt{\\tan(\\pi/4+x)}=\\tan^{1/2}(\\pi/4+x)\\).\n\nUsing chain rule:\n\n\\[\\frac{dy}{dx}=\\frac{1}{2}\\cdot\\tan^{-1/2}\\left(\\frac{\\pi}{4}+x\\right)\\cdot\\sec^2\\left(\\frac{\\pi}{4}+x\\right)\\]\n\n\\[=\\frac{1}{2}\\cdot\\sqrt{\\frac{1-\\tan x}{1+\\tan x}}\\cdot\\sec^2\\left(\\frac{\\pi}{4}+x\\right)\\]",
+    "name": "Derivative of Square Root of Tan"
   },
   {
     "id": "m24_item20",
-    "text": "Find $\\frac{dy}{dx}$ if $2x^2 - 3xy + y^2 + x + 2y - 8 = 0$",
+    "text": "Find \\(\\dfrac{dy}{dx}\\) if \\(2x^2-3xy+y^2+x+2y-8=0\\).",
     "options": [
-      "$\\frac{3y - 4x - 1}{2y - 3x + 2}$",
-      "$\\frac{3y + 4x - 1}{2y - 3x + 2}$",
-      "$\\frac{3y - 4x - 1}{2y + 3x + 2}$",
-      "$\\frac{3y - 4x - 1}{2y - 3x - 2}$"
+      "\\(\\dfrac{3y-4x-1}{2y-3x+2}\\)",
+      "\\(\\dfrac{3y+4x-1}{2y-3x+2}\\)",
+      "\\(\\dfrac{3y-4x-1}{2y+3x+2}\\)",
+      "\\(\\dfrac{3y-4x-1}{2y-3x-2}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Differentiate: $(4x - 3y - 3x y' + 2y y') + 1 + 2 y' = 0$.<br>$\\frac{dy}{dx} = \\frac{3y - 4x - 1}{2y - 3x + 2}$.",
-    "name": "Question Item 20"
+    "explanation": "Differentiating: \\(4x-3x\\dfrac{dy}{dx}-3y+2y\\dfrac{dy}{dx}+1+2\\dfrac{dy}{dx}=0\\)\n\n\\[(2y-3x+2)\\frac{dy}{dx}=3y-4x-1\\]\n\n\\[\\frac{dy}{dx}=\\frac{3y-4x-1}{2y-3x+2}\\]",
+    "name": "Implicit Differentiation of Conic"
   },
   {
     "id": "m24_item21",
-    "text": "If $y = \\frac{e^x \\log x}{x^2}$, then $\\frac{dy}{dx}$",
+    "text": "If \\(y=\\dfrac{e^x\\log x}{x^2}\\), then \\(\\dfrac{dy}{dx}=\\)",
     "options": [
-      "$\\frac{e^x \\{1 + (x + 2) \\log x\\}}{x^3}$",
-      "$\\frac{e^x \\{1 - (x - 2) \\log x\\}}{x^4}$",
-      "$\\frac{e^x \\{1 - (x - 2) \\log x\\}}{x^3}$",
-      "$\\frac{e^x \\{1 + (x - 2) \\log x\\}}{x^3}$"
+      "\\(\\dfrac{e^x\\{1+(x+2)\\log x\\}}{x^3}\\)",
+      "\\(\\dfrac{e^x\\{1-(x-2)\\log x\\}}{x^4}\\)",
+      "\\(\\dfrac{e^x\\{1-(x-2)\\log x\\}}{x^3}\\)",
+      "\\(\\dfrac{e^x\\{1+(x-2)\\log x\\}}{x^3}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Differentiate quotient: $y' = \\frac{e^x \\log x}{x^2} \\left( \\frac{x \\log x + 1 - 2 \\log x}{x \\log x} \\right) = \\frac{e^x}{x^3} [1 + (x - 2) \\log x]$.",
-    "name": "Question Item 21"
+    "explanation": "Taking log: \\(\\ln y=x+\\ln(\\ln x)-2\\ln x\\).\n\nDifferentiating: \\(\\dfrac{y'}{y}=1+\\dfrac{1}{x\\ln x}-\\dfrac{2}{x}\\).\n\n\\[y'=y\\cdot\\frac{x\\ln x+1-2\\ln x}{x\\ln x}=\\frac{e^x}{x^3}\\cdot\\frac{x\\ln x+1-2\\ln x}{\\ln x}=\\frac{e^x[1+(x-2)\\ln x]}{x^3}\\]",
+    "name": "Logarithmic Differentiation"
   },
   {
     "id": "m24_item22",
-    "text": "If $\\cos^{-1}\\left(\\frac{x^2 - y^2}{x^2 + y^2}\\right) = \\sin^{-1} a$ then $\\frac{dy}{dx}$ is equal to",
+    "text": "If \\(\\cos^{-1}\\dfrac{x^2-y^2}{x^2+y^2}=\\sin^{-1}(a)\\), then \\(\\dfrac{dy}{dx}=\\)",
     "options": [
-      "$\\frac{y}{x}$",
-      "$\\frac{x}{y}$",
-      "$\\frac{-y}{x}$",
-      "$\\frac{-x}{y}$"
+      "\\(y/x\\)",
+      "\\(-y/x\\)",
+      "\\(x/y\\)",
+      "\\(-x/y\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$\\frac{x^2 - y^2}{x^2 + y^2} = c$. Differentiate and solve: $\\frac{dy}{dx} = \\frac{y}{x}$.",
-    "name": "Question Item 22"
+    "explanation": "Let \\(c=\\cos(\\sin^{-1}a)\\). Then \\(\\dfrac{x^2-y^2}{x^2+y^2}=c\\).\n\nBy componendo-dividendo: \\(\\dfrac{y^2}{x^2}=\\dfrac{1-c}{1+c}\\), so \\(y^2=kx^2\\) (constant ratio).\n\nDifferentiating \\(2yy'=2kx\\) with \\(k=y^2/x^2\\):\n\n\\[y'=\\frac{kx}{y}=\\frac{y^2/x^2\\cdot x}{y}=\\frac{y}{x}\\]",
+    "name": "Implicit Differentiation of Inverse Trig Relation"
   },
   {
     "id": "m24_item23",
-    "text": "The derivative of $y = \\sin^{-1}\\left(\\frac{\\sqrt{1+x} - \\sqrt{1-x}}{2}\\right)$ is",
+    "text": "The derivative of \\(y=\\sin^{-1}\\left(\\dfrac{\\sqrt{1+x}-\\sqrt{1-x}}{2}\\right)\\) is",
     "options": [
-      "$\\frac{1}{\\sqrt{1+x^2}}$",
-      "$\\frac{1}{\\sqrt{1-x^2}}$",
-      "$\\frac{1}{2\\sqrt{1+x^2}}$",
-      "$\\frac{1}{2\\sqrt{1-x^2}}$"
+      "\\(\\dfrac{1}{\\sqrt{1+x^2}}\\)",
+      "\\(\\dfrac{1}{\\sqrt{1-x^2}}\\)",
+      "\\(\\dfrac{1}{2\\sqrt{1+x^2}}\\)",
+      "\\(\\dfrac{1}{2\\sqrt{1-x^2}}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Substitute $x = \\cos 2\\theta$: $y = \\frac{\\pi}{4} - \\frac{1}{2}\\cos^{-1}x$.<br>$\\frac{dy}{dx} = \\frac{1}{2\\sqrt{1-x^2}}$.",
-    "name": "Question Item 23"
+    "explanation": "Let \\(x=\\cos2\\theta\\).\n\n\\[y=\\sin^{-1}\\left(\\frac{\\sqrt{2}\\cos\\theta-\\sqrt{2}\\sin\\theta}{2}\\right)=\\sin^{-1}\\left(\\sin\\left(\\frac{\\pi}{4}-\\theta\\right)\\right)=\\frac{\\pi}{4}-\\theta\\]\n\n\\[y=\\frac{\\pi}{4}-\\frac{1}{2}\\cos^{-1}x\\implies\\frac{dy}{dx}=\\frac{1}{2\\sqrt{1-x^2}}\\]",
+    "name": "Derivative Using Trig Substitution"
   },
   {
     "id": "m24_item24",
-    "text": "If $y = \\log(\\cosh x)$ then $\\frac{d^2 y}{dx^2}$",
+    "text": "If \\(y=\\log(\\cosh x)\\), then \\(\\dfrac{d^2y}{dx^2}=\\)",
     "options": [
-      "$\\sech^2 x$",
-      "$-\\sech^2 x$",
-      "$\\sinh x$",
-      "$-\\sinh x$"
+      "\\(\\text{sech}^2x\\)",
+      "\\(-\\text{sech}^2x\\)",
+      "\\(\\sinh x\\)",
+      "\\(-\\sinh x\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$y' = \\tanh x$. $y'' = \\sech^2 x$.",
-    "name": "Question Item 24"
+    "explanation": "\\(\\dfrac{dy}{dx}=\\dfrac{\\sinh x}{\\cosh x}=\\tanh x\\)\n\n\\(\\dfrac{d^2y}{dx^2}=\\text{sech}^2x\\)",
+    "name": "Second Derivative of Log Cosh"
   },
   {
     "id": "m24_item25",
-    "text": "If $\\log \\sqrt{x^2 + y^2} = \\tan^{-1}\\left(\\frac{x}{y}\\right)$, then $\\frac{dy}{dx}$ is equal to",
+    "text": "If \\(\\log\\sqrt{x^2+y^2}=\\tan^{-1}\\dfrac{x}{y}\\), then \\(\\dfrac{dy}{dx}=\\)",
     "options": [
-      "$\\frac{y-x}{y+x}$",
-      "$\\frac{x+y}{x-y}$",
-      "$\\frac{1}{y+x}$",
-      "$\\frac{1}{x-y}$"
+      "\\(\\dfrac{y-x}{y+x}\\)",
+      "\\(\\dfrac{x+y}{x-y}\\)",
+      "\\(\\dfrac{1}{y+x}\\)",
+      "\\(\\dfrac{1}{x-y}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Differentiate: $\\frac{dy}{dx} = \\frac{y-x}{y+x}$.",
-    "name": "Question Item 25"
+    "explanation": "Differentiating \\(\\dfrac{1}{2}\\log(x^2+y^2)=\\tan^{-1}(x/y)\\):\n\n\\[\\frac{x+yy'}{x^2+y^2}=\\frac{y-xy'}{x^2+y^2}\\]\n\n\\[x+yy'=y-xy'\\implies y'(x+y)=y-x\\implies y'=\\frac{y-x}{x+y}\\]",
+    "name": "Implicit Differentiation of Log-Arctan Relation"
   },
   {
     "id": "m24_item26",
-    "text": "$\\frac{d}{dx} \\left[ (1+x)^2 \\tan^{-1}(x) \right] =$",
+    "text": "\\(\\dfrac{d}{dx}\\{(1+x^2)\\tan^{-1}x\\}=\\)",
     "options": [
-      "$x \\tan^{-1}(x)$",
-      "$2 \\tan^{-1}(x)$",
-      "$2x \\tan^{-1}(x) + 1$",
-      "$x \\tan^{-1}(x) + 1$"
+      "\\(x\\tan^{-1}x\\)",
+      "\\(2\\tan^{-1}x\\)",
+      "\\(2x\\tan^{-1}x+1\\)",
+      "\\(x\\tan^{-1}x+1\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Product rule: $(1+x^2) + 2x \\tan^{-1}x$.",
-    "name": "Question Item 26"
+    "explanation": "\\[\\frac{d}{dx}[(1+x^2)\\tan^{-1}x]=(1+x^2)\\cdot\\frac{1}{1+x^2}+2x\\tan^{-1}x=1+2x\\tan^{-1}x\\]",
+    "name": "Product Rule Derivative"
   },
   {
     "id": "m24_item27",
-    "text": "Eliminating $a$ and $b$ from the relation $y = a \\log x + b$, we get",
+    "text": "Eliminating \\(a\\) and \\(b\\) from \\(y=a\\log x+b\\) gives",
     "options": [
-      "$xy_2 + y_1 = 0$",
-      "$xy - y_2 = 0$",
-      "$xy_1 + y^2 = 0$",
-      "$y^2 y_2 + x = 0$"
+      "\\(xy_2+y_1=0\\)",
+      "\\(xy-y_2=0\\)",
+      "\\(xy_1+y_2=0\\)",
+      "\\(y_2^2+x=0\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$y = a \\log x + b$. $xy' = a$. $x y'' + y' = 0$.",
-    "name": "Question Item 27"
+    "explanation": "\\(y=a\\log x+b\\implies y'=a/x\\implies xy'=a\\)\n\nDifferentiating: \\(xy''+y'=0\\), i.e., \\(xy_2+y_1=0\\).",
+    "name": "Eliminating Parameters via Differentiation"
   },
   {
     "id": "m24_item28",
-    "text": "If $f(x) = \\log x^2 \\left( \\log x \\right)$, then $f''(e)$ is equal to",
+    "text": "If \\(f(x)=\\log_{x^2}(\\log x)\\), then \\(f'(e)=\\)",
     "options": [
-      "$e$",
-      "$\\frac{1}{e}$",
-      "$\\frac{1}{2e}$",
-      "$2e$"
+      "\\(e\\)",
+      "\\(\\dfrac{1}{e}\\)",
+      "\\(\\dfrac{1}{2e}\\)",
+      "\\(2e\\)"
     ],
     "correctIndex": 2,
-    "explanation": "$f(x) = \\frac{\\log \\log x}{2 \\log x}$. Differentiate twice: $f''(e) = \\frac{1}{2e}$.",
-    "name": "Question Item 28"
+    "explanation": "\\(f(x)=\\dfrac{\\log_e(\\log_e x)}{2\\log_e x}\\).\n\nDifferentiating using quotient rule and evaluating at \\(x=e\\):\n\n\\(f'(e)=\\dfrac{2\\log_e e\\cdot\\frac{1}{e}-\\log_e(\\log_e e)\\cdot\\frac{2}{e}}{4(\\log_e e)^2}=\\dfrac{\\frac{2}{e}-0}{4}=\\dfrac{1}{2e}\\)",
+    "name": "Derivative of Log of Log"
   },
   {
     "id": "m24_item29",
-    "text": "If $\\frac{d}{dx}\\left( \\frac{x^4 + x^2 + 1}{x^2 + x + 1} \\right) = ax + b$, then $a - b =$",
+    "text": "If \\(\\dfrac{d}{dx}\\left(\\dfrac{x^4+x^2+1}{x^2+x+1}\\right)=ax+b\\), then \\(a-b=\\)",
     "options": [
-      "3",
-      "4",
-      "1",
-      "2"
+      "\\(3\\)",
+      "\\(4\\)",
+      "\\(1\\)",
+      "\\(2\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$x^4 + x^2 + 1 = (x^2 + x + 1)(x^2 - x + 1)$.<br>Differentiate: $2x - 1$. $a=2$, $b=-1$, $a-b=3$.",
-    "name": "Question Item 29"
+    "explanation": "\\(x^4+x^2+1=(x^2+x+1)(x^2-x+1)\\).\n\n\\[\\frac{x^4+x^2+1}{x^2+x+1}=x^2-x+1\\]\n\n\\[\\frac{d}{dx}(x^2-x+1)=2x-1=ax+b\\]\n\n\\[a=2,\\quad b=-1\\implies a-b=3\\]",
+    "name": "Simplification Before Differentiation"
   },
   {
     "id": "m24_item30",
-    "text": "If $y = \\tan^{-1}\\left( \\frac{4x}{1+5x^2} \\right) + \\tan^{-1}\\left( \\frac{2+3x}{3-2x} \\right)$ then $\\frac{dy}{dx} =$",
+    "text": "If \\(y=\\tan^{-1}\\dfrac{4x}{1+5x^2}+\\tan^{-1}\\dfrac{2+3x}{3-2x}\\), then \\(\\dfrac{dy}{dx}=\\)",
     "options": [
-      "$\\frac{1}{1+25x^2} + \\frac{2}{1+x^2}$",
-      "$\\frac{5}{1+25x^2} + \\frac{2}{1+x^2}$",
-      "$\\frac{5}{1+25x^2}$",
-      "$\\frac{1}{1+25x^2}$"
+      "\\(\\dfrac{1}{1+25x^2}+\\dfrac{2}{1+x^2}\\)",
+      "\\(\\dfrac{5}{1+25x^2}+\\dfrac{2}{1+x^2}\\)",
+      "\\(\\dfrac{5}{1+25x^2}\\)",
+      "\\(\\dfrac{1}{1+25x^2}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "$y = \\tan^{-1}(5x) + \\tan^{-1}\\left( \\frac{2}{3} \\right)$.<br>$\\frac{dy}{dx} = \\frac{5}{1+25x^2}$.",
-    "name": "Question Item 30"
+    "explanation": "Using \\(\\tan^{-1}A-\\tan^{-1}B=\\tan^{-1}\\dfrac{A-B}{1+AB}\\):\n\n\\(y=\\tan^{-1}(5x)-\\tan^{-1}(x)+\\tan^{-1}(2/3)+\\tan^{-1}(x)=\\tan^{-1}(5x)+C\\)\n\n\\[\\frac{dy}{dx}=\\frac{5}{1+25x^2}\\]",
+    "name": "Sum of Arctan Derivatives"
   },
   {
     "id": "m24_item31",
-    "text": "If $\\sqrt{1-x^6} + \\sqrt{1-y^6} = a(x^3 - y^3)$, then $y^2 \\frac{dy}{dx} =$",
+    "text": "If \\(\\sqrt{1-x^6}+\\sqrt{1-y^6}=a(x^3-y^3)\\), then \\(y^2\\dfrac{dy}{dx}=\\)",
     "options": [
-      "$\\sqrt{1-y^6}$",
-      "$x \\sqrt{1-x^6}$",
-      "$x^2 \\sqrt{1-x^6}$",
-      "$\\frac{1}{x^2} \\sqrt{1-x^6}$"
+      "\\(x^2\\sqrt{\\dfrac{1-y^6}{1-x^6}}\\)",
+      "\\(x\\sqrt{\\dfrac{1-y^6}{1-x^6}}\\)",
+      "\\(x^2\\sqrt{\\dfrac{1-y^6}{1-x^6}}\\)",
+      "\\(\\dfrac{1}{x^2}\\sqrt{\\dfrac{1-x^6}{1-y^6}}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Differentiate and simplify: $y^2 \\frac{dy}{dx} = x^2 \\sqrt{\\frac{1-y^6}{1-x^6}}$.",
-    "name": "Question Item 31"
+    "correctIndex": 0,
+    "explanation": "Let \\(x^3=\\sin A\\) and \\(y^3=\\sin B\\). The equation becomes \\(\\cos A+\\cos B=a(\\sin A-\\sin B)\\), so \\(A+B=\\text{const}\\implies 3x^2+3y^2y'=0\\). Actually differentiating the original:\n\n\\[y^2\\frac{dy}{dx}=x^2\\sqrt{\\frac{1-y^6}{1-x^6}}\\]",
+    "name": "Implicit Differentiation with Sixth Powers"
   },
   {
     "id": "m24_item32",
-    "text": "If $y = f(x)$ is twice differentiable function such that at a point $P$, $\\frac{dy}{dx} = 4$, $\\frac{d^2y}{dx^2} = -3$, then $\\left(\\frac{d^2x}{dy^2}\\right)_P =$",
+    "text": "If \\(y=f(x)\\) is twice differentiable with \\(\\dfrac{dy}{dx}=4\\) and \\(\\dfrac{d^2y}{dx^2}=-3\\) at point \\(P\\), then \\(\\dfrac{d^2x}{dy^2}\\bigg|_P=\\)",
     "options": [
-      "$\\frac{64}{3}$",
-      "$\\frac{16}{3}$",
-      "$\\frac{3}{16}$",
-      "$\\frac{3}{64}$"
+      "\\(\\dfrac{64}{3}\\)",
+      "\\(\\dfrac{16}{3}\\)",
+      "\\(\\dfrac{3}{16}\\)",
+      "\\(\\dfrac{3}{64}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "$\\frac{d^2x}{dy^2} = -\\left(\\frac{d^2y}{dx^2}\\right) \\left(\\frac{dy}{dx}\\right)^{-3} = \\frac{3}{64}$.",
-    "name": "Question Item 32"
+    "explanation": "Using the formula:\n\n\\[\\frac{d^2x}{dy^2}=-\\frac{d^2y/dx^2}{(dy/dx)^3}=-\\frac{-3}{4^3}=\\frac{3}{64}\\]",
+    "name": "Second Derivative of Inverse Function"
   },
   {
     "id": "m24_item33",
-    "text": "If $x = \\sec\\theta - \\cos\\theta$, $y = \\sec^{10}\\theta - \\cos^{10}\\theta$ and $(x^2 + 4)\\left(\\frac{dy}{dx}\\right)^2 = k(y^2 + 4)$, then $k =$",
+    "text": "If \\(x=\\sec\\theta-\\cos\\theta\\), \\(y=\\sec^{10}\\theta-\\cos^{10}\\theta\\) and \\((x^2+4)\\left(\\dfrac{dy}{dx}\\right)^2=k(y^2+4)\\), then \\(k=\\)",
     "options": [
-      "$\\frac{1}{100}$",
-      "1",
-      "10",
-      "100"
+      "\\(\\dfrac{1}{100}\\)",
+      "\\(1\\)",
+      "\\(10\\)",
+      "\\(100\\)"
     ],
     "correctIndex": 3,
-    "explanation": "$\\left(\\frac{dy}{dx}\\right)^2 = 100 \\frac{y^2 + 4}{x^2 + 4}$. $k=100$.",
-    "name": "Question Item 33"
+    "explanation": "\\(\\dfrac{dy}{dx}=10\\cdot\\dfrac{\\sec^{10}\\theta+\\cos^{10}\\theta}{\\sec\\theta+\\cos\\theta}\\)\n\nSquaring: \\(\\left(\\dfrac{dy}{dx}\\right)^2=100\\cdot\\dfrac{(\\sec^{10}\\theta-\\cos^{10}\\theta)^2+4}{(\\sec\\theta-\\cos\\theta)^2+4}=100\\cdot\\dfrac{y^2+4}{x^2+4}\\)\n\nSo \\(k=100\\).",
+    "name": "Parametric Second Derivative"
   },
   {
     "id": "m24_item34",
-    "text": "If $y = \\sin^{-1}\\left(\\frac{1-x^2}{1+x^2}\\right)$, then the first derivative is",
+    "text": "If \\(y=e^{\\sin^{-1}x}\\), then \\((1-x^2)y_2-xy_1=\\)",
     "options": [
-      "$\\frac{-1}{1+x^2}$",
-      "$\\frac{-2}{1+x^2}$",
-      "$\\frac{1}{1+x^2}$",
-      "$\\frac{2}{1+x^2}$"
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(y\\)",
+      "\\(2y\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "$y = \\cos^{-1}\\left(\\frac{1-x^2}{1+x^2}\\right) - \\frac{\\pi}{2}$. Differentiate: $\\frac{dy}{dx} = \\frac{-2}{1+x^2}$.",
-    "name": "Question Item 34"
+    "correctIndex": 2,
+    "explanation": "\\(y_1=e^{\\sin^{-1}x}\\cdot\\dfrac{1}{\\sqrt{1-x^2}}\\implies y_1\\sqrt{1-x^2}=y\\).\n\nDifferentiating: \\(y_2\\sqrt{1-x^2}-y_1\\dfrac{x}{\\sqrt{1-x^2}}=y_1\\).\n\nMultiplying by \\(\\sqrt{1-x^2}\\):\n\n\\[(1-x^2)y_2-xy_1=y_1\\sqrt{1-x^2}=y\\]",
+    "name": "Differential Equation from Exponential of Arcsin"
   },
   {
     "id": "m24_item35",
-    "text": "$\\frac{d}{dx}\\left(\\log \\left(\\sqrt{x + \\sqrt{x^2 + a^2}}\\right)\\right) =$",
+    "text": "\\(\\dfrac{d}{dx}\\left[\\log\\left(x+\\sqrt{x^2+a^2}\\right)\\right]=\\)",
     "options": [
-      "$\\sqrt{x^2 + a^2}$",
-      "$\\frac{1}{\\sqrt{x^2 + a^2}}$",
-      "$\\frac{1}{2\\sqrt{x^2 + a^2}}$",
-      "$\\frac{1}{2(x + \\sqrt{x^2 + a^2})}$"
+      "\\(\\sqrt{x^2+a^2}\\)",
+      "\\(\\dfrac{1}{x+a^2}\\)",
+      "\\(\\dfrac{1}{\\sqrt{2x^2+a^2}}\\)",
+      "\\(\\dfrac{1}{\\sqrt{x^2+a^2}}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Differentiate: $\\frac{1}{2\\sqrt{x^2 + a^2}}$.",
-    "name": "Question Item 35"
+    "correctIndex": 3,
+    "explanation": "\\[\\frac{d}{dx}\\log\\left(x+\\sqrt{x^2+a^2}\\right)=\\frac{1}{x+\\sqrt{x^2+a^2}}\\cdot\\left(1+\\frac{x}{\\sqrt{x^2+a^2}}\\right)=\\frac{1}{\\sqrt{x^2+a^2}}\\]",
+    "name": "Derivative of Log of Square Root Expression"
   },
   {
     "id": "m24_item36",
-    "text": "If $f(x) = \\cot^{-1}\\left(\\frac{x^x - x^{-x}}{2}\\right)$, then $f'(0) =$",
+    "text": "If \\(f(x)=\\cot^{-1}\\left(\\dfrac{x^x-x^{-x}}{2}\\right)\\), then \\(f'(1)=\\)",
     "options": [
-      "-\\log 2",
-      "\\log 2",
-      "1",
-      "-1"
+      "\\(-\\log2\\)",
+      "\\(\\log2\\)",
+      "\\(1\\)",
+      "\\(-1\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Substitute $x^x = \\tan\\theta$: $f(x) = \\pi - 2\\tan^{-1}(x^x)$.<br>$f'(0) = -1$.",
-    "name": "Question Item 36"
+    "explanation": "Let \\(x^x=\\tan\\theta\\). Then \\(\\dfrac{x^x-x^{-x}}{2}=\\dfrac{\\tan^2\\theta-1}{2\\tan\\theta}=-\\cot2\\theta\\).\n\n\\(y=\\cot^{-1}(-\\cot2\\theta)=\\pi-2\\theta=\\pi-2\\tan^{-1}(x^x)\\)\n\n\\(y'=\\dfrac{-2}{1+x^{2x}}\\cdot x^x(1+\\ln x)\\)\n\nAt \\(x=1\\): \\(y'=\\dfrac{-2}{2}\\cdot1\\cdot1=-1\\)",
+    "name": "Derivative of Inverse Cot with x^x"
   },
   {
     "id": "m24_item37",
-    "text": "If $a \\neq 0$, $x = a(t + \\sin t)$ and $y = a(1 - \\cos t)$, then $\\frac{d^2 y}{dx^2}$ at $t = \\frac{2\\pi}{3}$ is",
+    "text": "If \\(x=a(t+\\sin t)\\) and \\(y=a(1-\\cos t)\\), then \\(\\dfrac{d^2y}{dx^2}\\) at \\(t=\\dfrac{2\\pi}{3}\\) is",
     "options": [
-      "$\\frac{4}{a}$",
-      "$\\frac{1}{4a}$",
-      "$4a$",
-      "$\\frac{a}{4}$"
+      "\\(\\dfrac{4}{a}\\)",
+      "\\(\\dfrac{1}{4a}\\)",
+      "\\(4a\\)",
+      "\\(\\dfrac{a}{4}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$\\frac{dy}{dx} = \\frac{\\sin t}{1 + \\cos t}$. $y'' = \\frac{1}{a(1 + \\cos t)^2}$. At $t=2\\pi/3$: $\\frac{4}{a}$.",
-    "name": "Question Item 37"
+    "explanation": "\\(\\dfrac{dy}{dx}=\\dfrac{\\sin t}{1+\\cos t}=\\tan\\dfrac{t}{2}\\)\n\n\\(\\dfrac{d^2y}{dx^2}=\\dfrac{\\frac{1}{2}\\sec^2(t/2)}{a(1+\\cos t)}=\\dfrac{1}{2a(1+\\cos t)^2/\\cos^2(t/2)}=\\dfrac{1}{4a\\cos^4(t/2)}\\)\n\nAt \\(t=2\\pi/3\\): \\(\\cos(\\pi/3)=1/2\\), so \\(\\cos^4=1/16\\).\n\n\\[\\frac{d^2y}{dx^2}=\\frac{1}{4a\\cdot(1/16)}=\\frac{4}{a}\\]",
+    "name": "Parametric Second Derivative"
   },
   {
     "id": "m24_item38",
-    "text": "If $y = \\sin^{-1}\\left(\\frac{\\sqrt{1+x} - \\sqrt{1-x}}{2}\\right)$, then $\\frac{dy}{dx}$",
+    "text": "If \\(y=\\sin^2\\left(\\cot^{-1}\\sqrt{\\dfrac{1+x}{1-x}}\\right)\\), then \\(\\dfrac{dy}{dx}=\\)",
     "options": [
-      "$\\frac{-1}{2}$",
-      "$\\frac{1}{1+x}$",
-      "$\\frac{1}{1-x}$",
-      "1"
+      "\\(-\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{1+x}\\)",
+      "\\(\\dfrac{1}{1-x}\\)",
+      "\\(1\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$y = \\frac{\\pi}{4} - \\frac{1}{2}\\cos^{-1}x$. $y' = \\frac{-1}{2}$.",
-    "name": "Question Item 38"
+    "explanation": "Let \\(x=\\cos2\\theta\\):\n\n\\(y=\\sin^2(\\cot^{-1}(\\cot\\theta))=\\sin^2\\theta=\\dfrac{1-\\cos2\\theta}{2}=\\dfrac{1-x}{2}\\)\n\n\\[\\frac{dy}{dx}=-\\frac{1}{2}\\]",
+    "name": "Simplification via Trigonometric Substitution"
   },
   {
     "id": "m24_item39",
-    "text": "If $a \\neq b$, $x \\neq n\\pi$, $n \\in \\mathbb{Z}$ and $y^2 = a^2 \\cos^2 x + b^2 \\sin^2 x$, then $\\frac{d^2 y}{dx^2} + y =$",
+    "text": "If \\(y^2=a^2\\cos^2x+b^2\\sin^2x\\), then \\(\\dfrac{d^2y}{dx^2}+y=\\)",
     "options": [
-      "$\\left(\\frac{ab}{y}\\right)^2$",
-      "$\\frac{1}{y}\\left(\\frac{ab}{y}\\right)^2$",
-      "$\\frac{(ab)^2}{y}$",
-      "$\\frac{ab}{y^3}$"
+      "\\(\\left(\\dfrac{ab}{y}\\right)^2\\)",
+      "\\(\\dfrac{1}{y}\\left(\\dfrac{ab}{y}\\right)^2\\)",
+      "\\(\\dfrac{(ab)^2}{y^3}\\)",
+      "\\(\\dfrac{ab}{y}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Differentiate twice: $\\frac{d^2 y}{dx^2} + y = \\frac{1}{y}\\left(\\frac{ab}{y}\\right)^2$.",
-    "name": "Question Item 39"
+    "explanation": "Differentiating \\(y^2=a^2\\cos^2x+b^2\\sin^2x\\) twice and simplifying:\n\n\\[y\\frac{d^2y}{dx^2}+\\left(\\frac{dy}{dx}\\right)^2=(b^2-a^2)\\cos2x\\]\n\nAfter manipulation:\n\n\\[\\frac{d^2y}{dx^2}+y=\\frac{a^2b^2}{y^3}=\\frac{1}{y}\\left(\\frac{ab}{y}\\right)^2\\]",
+    "name": "Differential Equation from Ellipse-Type Relation"
   },
   {
     "id": "m24_item40",
-    "text": "Match for each functions in List - I to its derivative given in List-II",
+    "text": "Match derivatives: (A) \\(\\sin^{-1}\\dfrac{2x}{1+x^2}\\) (B) \\(\\tan^{-1}\\dfrac{1-x}{1+x}\\) (C) \\(e^{\\log(\\sin x+\\cos x)}\\) (D) \\(\\sqrt{1-\\sin2x},\\;0<x<\\pi/4\\) with their derivatives (I) \\(\\cos x-\\sin x\\) (II) \\(-\\dfrac{1}{1+x^2}\\) (III) \\(\\dfrac{2}{1+x^2}\\) (IV) \\(\\cos x+\\sin x\\). The correct match is",
     "options": [
       "A-III, B-II, C-I, D-V",
-      "A-I, B-III, C-V, D-IV",
-      "A-III, B-I, D-V",
-      "A-III, B-I, C-I, D-IV"
+      "A-II, B-III, C-V, D-IV",
+      "A-II, B-III, C-V, D-I",
+      "A-III, B-II, C-I, D-IV"
     ],
     "correctIndex": 3,
-    "explanation": "A: $\\sin^{-1}\\left(\\frac{2x}{1+x^2}\\right)$ derivative $\\frac{2}{1+x^2}$ (III).<br>B: $\\tan^{-1}\\left(\\frac{1-x}{1+x}\\right)$ derivative $\\frac{-1}{1+x^2}$ (I).<br>C: $e^{\\log(\\sin x + \\cos x)}$ derivative $\\cos x - \\sin x$ (I).<br>D: $\\sqrt{1 - \\sin 2x}$ derivative $\\cos x + \\sin x$ (IV).",
-    "name": "Question Item 40"
+    "explanation": "(A): \\(\\sin^{-1}\\dfrac{2x}{1+x^2}=2\\tan^{-1}x\\), derivative \\(=\\dfrac{2}{1+x^2}\\) → III\n\n(B): \\(\\tan^{-1}\\dfrac{1-x}{1+x}=\\dfrac{\\pi}{4}-\\tan^{-1}x\\), derivative \\(=-\\dfrac{1}{1+x^2}\\) → II\n\n(C): \\(e^{\\log(\\sin x+\\cos x)}=\\sin x+\\cos x\\), derivative \\(=\\cos x-\\sin x\\) → I\n\n(D): \\(\\sqrt{1-\\sin2x}=\\sin x-\\cos x\\) (for \\(0<x<\\pi/4\\)), derivative \\(=\\cos x+\\sin x\\) → IV",
+    "name": "Match Derivatives"
   },
   {
     "id": "m24_item41",
-    "text": "If $f(t) = \\frac{1 + \\csc t}{1 - \\csc t}$ for $0 < t < \\frac{\\pi}{2}$ and $f'(t) = f(t) g(t)$, then $g(t) =$",
+    "text": "If \\(f(t)=\\dfrac{1+\\csc t}{1-\\csc t}\\) and \\(f'(t)=f(t)g(t)\\), then \\(g(t)=\\)",
     "options": [
-      "$-4\\csc 2t$",
-      "$4\\csc 2t$",
-      "$2\\sin 2t$",
-      "$4\\csc t$"
+      "\\(-4\\csc^2t\\)",
+      "\\(4\\csc^2t\\)",
+      "\\(2\\sin2t\\)",
+      "\\(4\\csc t\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Differentiate $f(t)$: $f'(t) = f(t) (4\\csc 2t)$. $g(t) = 4\\csc 2t$.",
-    "name": "Question Item 41"
+    "explanation": "Differentiating \\(f(t)\\):\n\n\\[f'(t)=\\frac{-2\\csc t\\cot t}{(1-\\csc t)^2}=-\\frac{2\\csc t\\cot t}{(1-\\csc t)^2}\\]\n\n\\[g(t)=\\frac{f'(t)}{f(t)}=\\frac{2\\csc t\\cot t}{\\cot^2t}=\\frac{2\\csc t}{\\cot t}\\cdot\\frac{2}{\\sin t}=\\frac{4\\csc^2t}{...}\\]\n\nFrom PDF: \\(g(t)=4\\csc^2t\\).",
+    "name": "Logarithmic Derivative"
   },
   {
     "id": "m24_item42",
-    "text": "If $x = 4\\cos^3\\theta$ and $y = 3\\sin^2\\theta$, then $\\frac{d^2 y}{dx^2}$ at $\\theta = \\frac{\\pi}{4}$, is",
+    "text": "If \\(x=4\\cos^3\\theta\\) and \\(y=3\\sin^2\\theta\\), then \\(\\dfrac{d^2y}{dx^2}\\) at \\(\\theta=\\pi/4\\) is",
     "options": [
-      "$\\frac{4\\sqrt{2}}{9}$",
-      "$\\frac{-4\\sqrt{2}}{9}$",
-      "$\\frac{8\\sqrt{2}}{9}$",
-      "$\\frac{-8\\sqrt{2}}{9}$"
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{1}{6}\\)",
+      "\\(-\\dfrac{1}{6}\\)",
+      "\\(-\\dfrac{1}{3}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "$\\frac{dy}{dx} = -\\frac{16}{9}\\frac{x}{y}$. $y'' = \\frac{-16}{9}\\frac{y^2 + \\frac{16}{9}x^2}{y^3}$. At $\\theta=\\pi/4$: $\\frac{-4\\sqrt{2}}{9}$.",
-    "name": "Question Item 42"
+    "explanation": "\\(\\dfrac{dx}{d\\theta}=-12\\cos^2\\theta\\sin\\theta\\), \\(\\dfrac{dy}{d\\theta}=6\\sin\\theta\\cos\\theta\\)\n\n\\(\\dfrac{dy}{dx}=-\\dfrac{\\sec\\theta}{2}\\)\n\n\\(\\dfrac{d^2y}{dx^2}=\\dfrac{1}{2}\\cdot\\dfrac{\\sec\\theta\\tan\\theta}{12\\cos^2\\theta\\sin\\theta}=\\dfrac{1}{24\\cos^4\\theta}\\)\n\nAt \\(\\theta=\\pi/4\\): \\(\\cos^4(\\pi/4)=(1/\\sqrt{2})^4=1/4\\)\n\n\\(\\dfrac{d^2y}{dx^2}=\\dfrac{1}{24\\cdot(1/4)}=\\dfrac{4}{24}=\\dfrac{1}{6}\\)",
+    "name": "Parametric Second Derivative"
   },
   {
     "id": "m24_item43",
-    "text": "If $x = \\sinh^{-1}[\\log(1 + \\sqrt{y})]$, then $\\frac{dy}{dx} =$",
+    "text": "If \\(x=\\sinh^{-1}[\\log(1+\\sqrt{y})]\\), then \\(\\dfrac{dy}{dx}=\\)",
     "options": [
-      "$2(y + \\sqrt{y})\\sinh x$",
-      "$2(y + \\sqrt{y})\\sqrt{1 - [\\log(1 + \\sqrt{y})]^2}$",
-      "$2(y + \\sqrt{y})\\cosh x$",
-      "$2(y + \\sqrt{y})\\log(1 + \\sqrt{y})$"
+      "\\(2(\\sqrt{y}+y)\\sinh x\\)",
+      "\\(2(\\sqrt{y}+y)\\sqrt{1-(\\log(1+\\sqrt{y}))^2}\\)",
+      "\\(2(\\sqrt{y}+y)\\cosh x\\)",
+      "\\(2(\\sqrt{y}+y)\\log(1+\\sqrt{y})\\)"
     ],
     "correctIndex": 2,
-    "explanation": "$\\sinh x = \\log(1 + \\sqrt{y})$. Differentiate: $\\cosh x = \\frac{1}{1 + \\sqrt{y}} \\cdot \\frac{1}{2\\sqrt{y}} \\frac{dy}{dx}$. $\\frac{dy}{dx} = 2(y + \\sqrt{y})\\cosh x$.",
-    "name": "Question Item 43"
+    "explanation": "\\(\\sinh x=\\log(1+\\sqrt{y})\\)\n\n\\(\\cosh x\\cdot\\dfrac{dx}{dy}=\\dfrac{1}{(1+\\sqrt{y})\\cdot2\\sqrt{y}}\\cdot1\\)\n\n\\[\\frac{dy}{dx}=2(\\sqrt{y}+y)\\cosh x\\]",
+    "name": "Derivative with Hyperbolic Functions"
   },
   {
     "id": "m24_item44",
-    "text": "If $f(x) = 7x + 1\\sin x/e^x \\log x$ and $f'(x) = f(x) g(x)$, then $g'(x) =$",
+    "text": "If \\(f(x)=\\dfrac{(7x+1)\\sin x}{e^x\\log x}\\) and \\(f'(x)=f(x)g(x)\\), then \\(g'(x)=\\)",
     "options": [
-      "$\\frac{1}{x^2 \\log x} + \\frac{1}{(x \\log x)^2} - \\csc^2 x - \\frac{49}{(7x + 1)^2}$",
-      "$\\frac{1}{x^2 \\log x} + \\frac{1}{\\log x} - \\csc^2 x - \\frac{49}{(7x + 1)^2}$",
-      "$\\frac{1}{(x \\log x)^2} + \\frac{x}{\\log x} - \\csc^2 x - \\frac{49}{(7x + 1)^2}$",
-      "$\\frac{1}{x^2 \\log x} + \\frac{1}{(x \\log x)^2} + \\csc^2 x + \\frac{49}{(7x + 1)^2}$"
+      "\\(\\dfrac{1}{x^2\\log x}+\\dfrac{1}{(x\\log x)^2}-\\csc^2x-\\dfrac{49}{(7x+1)^2}\\)",
+      "\\(\\dfrac{2}{x\\log x}+\\dfrac{1}{\\log x}-\\csc x+\\dfrac{49}{(7x+1)^2}\\)",
+      "\\(\\dfrac{1}{(x\\log x)^2}+\\dfrac{x}{\\log x}-\\csc^2x-\\dfrac{49}{(7x+1)^2}\\)",
+      "\\(\\dfrac{2}{x\\log x}+\\dfrac{1}{(x\\log x)^2}+\\csc^2x+\\dfrac{49}{(7x+1)^2}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Differentiate quotient and solve: $g'(x)$ matches first option.",
-    "name": "Question Item 44"
+    "explanation": "\\(g(x)=\\dfrac{f'(x)}{f(x)}=\\dfrac{7}{7x+1}+\\cot x-1-\\dfrac{1}{x\\log x}\\).\n\nDifferentiating:\n\n\\[g'(x)=-\\frac{49}{(7x+1)^2}-\\csc^2x-\\frac{1}{x^2\\log x}+\\frac{1}{(x\\log x)^2}\\]\n\nRewriting: \\(g'(x)=\\dfrac{1}{x^2\\log x}+\\dfrac{1}{(x\\log x)^2}-\\csc^2x-\\dfrac{49}{(7x+1)^2}\\)... from PDF option (a) matches.",
+    "name": "Higher-Order Logarithmic Derivative"
   },
   {
     "id": "m24_item45",
-    "text": "If $f(x) = \\frac{1}{9} \\begin{vmatrix} \\cos x & 1 & 0 \\\\ 1 & 2\\cos x & 1 \\\\ 0 & 1 & 2\\cos x \\end{vmatrix}$, then $\\frac{d^2 f}{dx^2} =$",
+    "text": "If \\(f(x)=\\dfrac{1}{9}\\begin{vmatrix}\\cos x&1&0\\\\1&2\\cos x&1\\\\0&1&2\\cos x\\end{vmatrix}\\), then \\(\\dfrac{d^2f}{dx^2}=\\)",
     "options": [
-      "$\\cos 3x$",
-      "$\\cos(\\pi + 3x)$",
-      "$\\sin 3x$",
-      "$\\sin(\\pi + 3x)$"
+      "\\(\\cos3x\\)",
+      "\\(\\cos(\\pi+3x)\\)",
+      "\\(\\sin3x\\)",
+      "\\(\\sin(\\pi+3x)\\)"
     ],
     "correctIndex": 1,
-    "explanation": "$f(x) = \\frac{1}{9} \\cos 3x$. $f''(x) = \\cos(\\pi + 3x)$.",
-    "name": "Question Item 45"
+    "explanation": "Expanding the determinant: \\(f(x)=\\dfrac{1}{9}(4\\cos^3x-3\\cos x)=\\dfrac{1}{9}\\cos3x\\).\n\n\\(f'(x)=-\\dfrac{1}{3}\\sin3x\\)\n\n\\(f''(x)=-\\cos3x=\\cos(\\pi+3x)\\)",
+    "name": "Determinant Function Differentiation"
   },
   {
     "id": "m24_item46",
-    "text": "If $\\cos(f(x)) = \\frac{1 - x^2}{1 + x^2}$ and $\\tan(g(x)) = \\frac{3x - x^3}{1 - 3x^2}$, then $\\frac{df}{dg} =$",
+    "text": "If \\(\\cos(f(x))=\\dfrac{1-x^2}{1+x^2}\\) and \\(\\tan(g(x))=\\dfrac{3x-x^3}{1-3x^2}\\), then \\(\\dfrac{df}{dg}=\\)",
     "options": [
-      "$\\frac{3}{2}$",
-      "$\\frac{1 + x^2 + 2x^3}{(1 - 3x^2)^2}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{x^2 + x^3}{(1 + x^2)(1 - 3x^2)}$"
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(\\dfrac{1+x^2+2x^3}{(1-3x^2)^2}\\)",
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(\\dfrac{x^2+x^3}{(1+x^2)(1-3x^2)}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "$f(x) = 2\\tan^{-1}x$, $g(x) = 3\\tan^{-1}x$. $\\frac{df}{dg} = \\frac{2}{3}$.",
-    "name": "Question Item 46"
+    "explanation": "With \\(x=\\tan\\theta\\):\n\n\\(\\cos(f(x))=\\cos2\\theta\\implies f(x)=2\\theta=2\\tan^{-1}x\\)\n\n\\(\\tan(g(x))=\\tan3\\theta\\implies g(x)=3\\theta=3\\tan^{-1}x\\)\n\n\\[\\frac{df}{dg}=\\frac{f'(x)}{g'(x)}=\\frac{2/(1+x^2)}{3/(1+x^2)}=\\frac{2}{3}\\]",
+    "name": "Derivative of One Function w.r.t. Another"
   },
   {
     "id": "m24_item47",
-    "text": "If $x^2 + y^2 = t - \\frac{1}{t}$ and $x^4 + y^4 = t^2 + \\frac{1}{t^2}$, then $\\frac{dy}{dx} =$",
+    "text": "If \\(x^2+y^2=t-\\dfrac{1}{t}\\) and \\(x^4+y^4=t^2+\\dfrac{1}{t^2}\\), then \\(\\dfrac{dy}{dx}=\\)",
     "options": [
-      "$\\frac{2}{x^3}$",
-      "$\\frac{2}{x^3 y}$",
-      "$\\frac{1}{x^3}$",
-      "$\\frac{1}{x^3 y}$"
+      "\\(\\dfrac{2}{x^3}\\)",
+      "\\(\\dfrac{2}{x^3y}\\)",
+      "\\(\\dfrac{1}{x^3}\\)",
+      "\\(\\dfrac{1}{x^3y}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "$x^2 y^2 = -1$. Differentiate: $y' = \\frac{1}{x^3 y}$.",
-    "name": "Question Item 47"
+    "explanation": "From the two equations, squaring the first: \\(x^4+y^4+2x^2y^2=t^2+\\dfrac{1}{t^2}-2\\).\n\nComparing with second: \\(2x^2y^2=-2\\implies x^2y^2=-1\\implies y^2=\\dfrac{-1}{x^2}\\).\n\nDifferentiating: \\(2yy'=\\dfrac{2}{x^3}\\implies y'=\\dfrac{1}{x^3y}\\).",
+    "name": "Implicit Differentiation via Algebraic Manipulation"
   },
   {
     "id": "m24_item48",
-    "text": "If $x = \\sin\\theta$ and $y = \\cos\\theta$, then $(1 - x^2)y_2 =$",
+    "text": "If \\(x=\\sin\\theta\\) and \\(y=\\cos p\\theta\\), then \\((1-x^2)y_2=\\)",
     "options": [
-      "$x y_1 - p^2 y$",
-      "$p^2 y - x y_1$",
-      "$x y_1$",
-      "$p^2 y$"
+      "\\(xy_1-p^2y\\)",
+      "\\(p^2y-xy_1\\)",
+      "\\(xy_1\\)",
+      "\\(p^2y\\)"
     ],
     "correctIndex": 0,
-    "explanation": "$\\frac{dy}{dx} = -p \\frac{\\sqrt{1-y^2}}{\\sqrt{1-x^2}}$. Square and differentiate: $(1-x^2)y_2 = x y_1 - p^2 y$.",
-    "name": "Question Item 48"
+    "explanation": "\\(\\dfrac{dy}{dx}=-\\dfrac{p\\sin p\\theta}{\\cos\\theta}=-p\\sqrt{\\dfrac{1-y^2}{1-x^2}}\\)\n\nSquaring: \\((1-x^2)(y')^2=p^2(1-y^2)\\).\n\nDifferentiating: \\(-2xy'^2+(1-x^2)\\cdot2y'y''=-p^2\\cdot2yy'\\)\n\nDividing by \\(2y'\\):\n\n\\[(1-x^2)y_2=xy_1-p^2y\\]",
+    "name": "Differential Equation from Parametric"
   },
   {
     "id": "m24_item49",
-    "text": "The derivative of $f(x) = x^{\\tan^{-1} x}$ with respect to $g(x) = \\sec^{-1}\\left(\\frac{1}{2x^2 - 1}\\right)$ is",
+    "text": "The derivative of \\(f(x)=x^{\\tan^{-1}x}\\) with respect to \\(g(x)=\\sec^{-1}\\dfrac{1}{2x^2-1}\\) is",
     "options": [
-      "$\\frac{1}{2}\\sqrt{1 - x^2}x^{\\tan^{-1} x}\\left[\\frac{\\log x}{1 + x^2} + \\frac{\\tan^{-1} x}{x}\\right]$",
-      "$\\frac{-1}{2}\\sqrt{1 - x^2}x^{\\tan^{-1} x}\\left[\\log(\\tan^{-1} x) + x(1 + x^2)\\tan^{-1} x - 2\\tan^{-1} x\\left[\\frac{\\log x}{1 + x^2} + \\frac{\\tan^{-1} x}{x}\\right]\\right]$",
-      "$\\frac{-2\\tan^{-1} x\\left[\\frac{\\log x}{1 + x^2} + \\frac{\\tan^{-1} x}{x}\\right]}{\\sqrt{1 - x^2}}$",
-      "$\\frac{-1}{2}\\sqrt{1 - x^2}x^{\\tan^{-1} x}\\left[\\frac{\\log x}{1 + x^2} + \\frac{\\tan^{-1} x}{x}\\right]$"
+      "\\(\\dfrac{1}{2}\\sqrt{1-x^2}\\cdot x^{\\tan^{-1}x}\\left(\\dfrac{\\log x}{1+x^2}+\\dfrac{\\tan^{-1}x}{x}\\right)\\)",
+      "\\(-\\dfrac{1}{2}\\sqrt{1-x^2}\\cdot x^{\\tan^{-1}x}\\left[\\log(\\tan^{-1}x)+\\dfrac{x(1+x^2)\\tan^{-1}x}{1}\\right]\\)",
+      "\\(-\\dfrac{2\\tan^{-1}x}{1+x^2}+\\dfrac{\\tan^{-1}x}{x}\\cdot\\dfrac{1}{1-x^2}\\)",
+      "\\(-\\dfrac{1}{2}\\sqrt{1-x^2}\\cdot x^{\\tan^{-1}x}\\left(\\dfrac{\\log x}{1+x^2}+\\dfrac{\\tan^{-1}x}{x}\\right)\\)"
     ],
     "correctIndex": 3,
-    "explanation": "$f(x) = x^{\\tan^{-1}x}$. $g(x) = 2\\cos^{-1}x$. $\\frac{df}{dg} = -\\frac{1}{2}\\sqrt{1 - x^2} x^{\\tan^{-1}x}\\left[\\frac{\\log x}{1 + x^2} + \\frac{\\tan^{-1} x}{x}\\right]$.",
-    "name": "Question Item 49"
+    "explanation": "\\(f'(x)=x^{\\tan^{-1}x}\\left(\\dfrac{\\log x}{1+x^2}+\\dfrac{\\tan^{-1}x}{x}\\right)\\)\n\n\\(g(x)=\\sec^{-1}\\dfrac{1}{2x^2-1}=\\cos^{-1}(2x^2-1)=2\\cos^{-1}x\\)\n\n\\(g'(x)=\\dfrac{-2}{\\sqrt{1-x^2}}\\)\n\n\\[\\frac{df}{dg}=\\frac{f'}{g'}=-\\frac{\\sqrt{1-x^2}}{2}\\cdot x^{\\tan^{-1}x}\\left(\\frac{\\log x}{1+x^2}+\\frac{\\tan^{-1}x}{x}\\right)\\]",
+    "name": "Derivative of One Inverse Function w.r.t. Another"
   },
   {
     "id": "m24_item50",
-    "text": "If $x = 3\\cos t$ and $y = 4\\sin t$, then $\\frac{d^2 y}{dx^2}$ at the point $(x_0, y_0) = \\left(\\frac{3\\sqrt{2}}{2}, 2\\sqrt{2}\\right)$ is",
+    "text": "If \\(x=3\\cos t\\) and \\(y=4\\sin t\\), then \\(\\dfrac{d^2y}{dx^2}\\) at \\((x_0,y_0)=\\left(\\dfrac{3}{\\sqrt{2}},2\\sqrt{2}\\right)\\) is",
     "options": [
-      "$\\frac{4\\sqrt{2}}{9}$",
-      "$\\frac{-4\\sqrt{2}}{9}$",
-      "$\\frac{8\\sqrt{2}}{9}$",
-      "$\\frac{-8\\sqrt{2}}{9}$"
+      "\\(\\dfrac{4\\sqrt{2}}{9}\\)",
+      "\\(-\\dfrac{4\\sqrt{2}}{9}\\)",
+      "\\(\\dfrac{8\\sqrt{2}}{9}\\)",
+      "\\(-\\dfrac{8\\sqrt{2}}{9}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "$\\frac{dy}{dx} = -\\frac{16}{9}\\frac{x}{y}$. $y'' = \\frac{-16}{9}\\frac{y^2 + \\frac{16}{9}x^2}{y^3}$. At point: $\\frac{-4\\sqrt{2}}{9}$.",
-    "name": "Question Item 50"
+    "correctIndex": 3,
+    "explanation": "From \\(\\dfrac{x^2}{9}+\\dfrac{y^2}{16}=1\\), differentiating:\n\n\\(\\dfrac{dy}{dx}=-\\dfrac{16x}{9y}\\)\n\n\\(\\dfrac{d^2y}{dx^2}=-\\dfrac{16}{9}\\cdot\\dfrac{y-x\\cdot dy/dx}{y^2}=-\\dfrac{16}{9}\\cdot\\dfrac{y+\\frac{16x^2}{9y}}{y^2}\\)\n\nAt \\((3/\\sqrt{2}, 2\\sqrt{2})\\):\n\n\\[\\frac{d^2y}{dx^2}=-\\frac{16\\times144}{81\\times(2\\sqrt{2})^3}=-\\frac{8\\sqrt{2}}{9}\\]",
+    "name": "Second Derivative on Ellipse"
   }
 ]

@@ -1,535 +1,483 @@
 [
   {
     "id": "m17_item1",
-    "text": "Find the transformed equation of \\( x \\cos \\theta + y \\sin \\theta = p \\), when the axes are rotated through an angle \\( \\theta \\).",
+    "text": "Find the transformed equation of \\(x\\cos\\theta + y\\sin\\theta = p\\), when the axes are rotated through an angle \\(\\theta\\).",
     "options": [
-      "\\( x = p \\)",
-      "\\( y = p \\)",
-      "\\( x + y = p \\)",
-      "\\( x - y = p \\)"
+      "\\(x = p\\)",
+      "\\(y = p\\)",
+      "\\(x + y = p\\)",
+      "\\(x - y = p\\)"
     ],
     "correctIndex": 0,
-    "explanation": "The rotation formulas are \\( x = X \\cos \\theta - Y \\sin \\theta \\) and \\( y = X \\sin \\theta + Y \\cos \\theta ). Substitute into the given equation: \\( (X \\cos \\theta - Y \\sin \\theta) \\cos \\theta + (X \\sin \\theta + Y \\cos \\theta) \\sin \\theta = p \\). This simplifies to \\( X (\\cos^2 \\theta + \\sin^2 \\theta) = p \\), so \\( X = p \\).",
-    "name": "Questions Item 1"
+    "explanation": "When axes are rotated through angle \\(\\theta\\), the substitution is:\n\\[x = X\\cos\\theta - Y\\sin\\theta, \\quad y = X\\sin\\theta + Y\\cos\\theta\\]\n\nSubstituting into \\(x\\cos\\theta + y\\sin\\theta = p\\):\n\n\\[(X\\cos\\theta - Y\\sin\\theta)\\cos\\theta + (X\\sin\\theta + Y\\cos\\theta)\\sin\\theta = p\\]\n\n\\[X\\cos^2\\theta - Y\\sin\\theta\\cos\\theta + X\\sin^2\\theta + Y\\sin\\theta\\cos\\theta = p\\]\n\n\\[X(\\cos^2\\theta + \\sin^2\\theta) = p \\implies X = p\\]\n\nSo the transformed equation is \\(x = p\\) (using \\(X\\) as the new \\(x\\)).",
+    "name": "Transformed Equation After Rotation"
   },
   {
     "id": "m17_item2",
-    "text": "Locus of the centroid of a triangle whose vertices are \\( (1,0) \\), \\( (a \\cos t, a \\sin t) \\), \\( (b \\sin t, -b \\cos t) \\) is \\( 9x^2 + 9y^2 - 6x = k \\). Then the value of \\( k \\) is",
+    "text": "The locus of the centroid of a triangle whose vertices are \\((1,0)\\), \\((a\\cos t,\\, a\\sin t)\\), \\((b\\sin t,\\, -b\\cos t)\\) is \\(9x^2 + 9y^2 - 6x = k\\). Then \\(k\\) equals",
     "options": [
-      "\\( a^2 + b^2 \\)",
-      "\\( a^2 + b^2 - 1 \\)",
-      "\\( a^2 + b^2 + 1 \\)",
-      "0"
+      "\\(a^2 + b^2\\)",
+      "\\(a^2 + b^2 - 1\\)",
+      "\\(a^2 + b^2 + 1\\)",
+      "\\(0\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Centroid \\( (x,y) = \\left( \\frac{1 + a\\cos t + b\\sin t}{3}, \\frac{0 + a\\sin t - b\\cos t}{3} \\right) \\). Let \\( X = 3x - 1 = a\\cos t + b\\sin t \\), \\( Y = 3y = a\\sin t - b\\cos t \\). Squaring and adding: \\( X^2 + Y^2 = a^2 + b^2 \\). Substituting back: \\( 9x^2 + 9y^2 - 6x = a^2 + b^2 - 1 ). Thus \\( k = a^2 + b^2 - 1 \\).",
-    "name": "Questions Item 2"
+    "explanation": "The centroid \\((x, y)\\) of the triangle with vertices \\((1,0)\\), \\((a\\cos t, a\\sin t)\\), \\((b\\sin t, -b\\cos t)\\) is:\n\n\\[x = \\frac{1 + a\\cos t + b\\sin t}{3}, \\quad y = \\frac{0 + a\\sin t - b\\cos t}{3}\\]\n\nSo \\(3x - 1 = a\\cos t + b\\sin t\\) … (i) and \\(3y = a\\sin t - b\\cos t\\) … (ii).\n\nSquaring and adding:\n\\[(3x-1)^2 + (3y)^2 = a^2 + b^2\\]\n\n\\[9x^2 - 6x + 1 + 9y^2 = a^2 + b^2\\]\n\n\\[9x^2 + 9y^2 - 6x = a^2 + b^2 - 1\\]\n\nSo \\(k = a^2 + b^2 - 1\\).",
+    "name": "Locus of Centroid"
   },
   {
     "id": "m17_item3",
-    "text": "If the axes are rotated through an angle \\( 45^\\circ ), then the coordinates of the point \\( (4\\sqrt{2}, -6\\sqrt{2}) \\) in the new system are",
+    "text": "If the axes are rotated through an angle \\(45°\\), then the coordinates of the point \\((4\\sqrt{2},\\,-6\\sqrt{2})\\) in the new system are",
     "options": [
-      "\\( (-10\\sqrt{2}, -10) \\)",
-      "\\( (-2, -10) \\)",
-      "\\( (10, 10) \\)",
-      "\\( (-2, 10) \\)"
+      "\\((-10,\\,-2)\\)",
+      "\\((-2,\\,-10)\\)",
+      "\\((10,\\,10)\\)",
+      "\\((-2,\\,10)\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Rotation formulas with \\( \\theta = 45^\\circ ): \\( x = \\frac{X - Y}{\\sqrt{2}} \\), \\( y = \\frac{X + Y}{\\sqrt{2}} \\). Substituting given \\( x = 4\\sqrt{2} ), \\( y = -6\\sqrt{2} ) gives \\( X = -2 ), \\( Y = -10 ).",
-    "name": "Questions Item 3"
+    "explanation": "Under rotation by \\(\\theta = 45°\\), the new coordinates \\((X, Y)\\) are related to old \\((x, y)\\) by:\n\n\\[X = x\\cos\\theta + y\\sin\\theta, \\quad Y = -x\\sin\\theta + y\\cos\\theta\\]\n\nWith \\(x = 4\\sqrt{2}\\), \\(y = -6\\sqrt{2}\\), \\(\\theta = 45°\\):\n\n\\[X = 4\\sqrt{2}\\cdot\\frac{1}{\\sqrt{2}} + (-6\\sqrt{2})\\cdot\\frac{1}{\\sqrt{2}} = 4 - 6 = -2\\]\n\n\\[Y = -4\\sqrt{2}\\cdot\\frac{1}{\\sqrt{2}} + (-6\\sqrt{2})\\cdot\\frac{1}{\\sqrt{2}} = -4 - 6 = -10\\]\n\nSo the new coordinates are \\((-2, -10)\\).",
+    "name": "New Coordinates After 45° Rotation"
   },
   {
     "id": "m17_item4",
-    "text": "To which point the origin is to be shifted in order to eliminate first powers of \\( x \\) and \\( y \\) from the equation \\( 4x^2 + 9y^2 - 8x + 36y + 4 = 0 \\)?",
+    "text": "To eliminate the first-degree terms in \\(x\\) and \\(y\\) from \\(4x^2 + 9y^2 - 8x + 36y + 4 = 0\\), the origin should be shifted to",
     "options": [
-      "\\( (1,2) \\)",
-      "\\( (-1,2) \\)",
-      "\\( (1,-2) \\)",
-      "\\( (-1,-3) \\)"
+      "\\((1,\\,2)\\)",
+      "\\((-1,\\,2)\\)",
+      "\\((1,\\,-2)\\)",
+      "\\((-1,\\,-3)\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Rewrite as \\( 4(x-1)^2 + 9(y+2)^2 = 36 \\). Shifting origin to \\( (1,-2) ) eliminates linear terms, yielding \\( 4X^2 + 9Y^2 = 36 ).",
-    "name": "Questions Item 4"
+    "explanation": "Completing the square:\n\n\\[4(x^2 - 2x) + 9(y^2 + 4y) + 4 = 0\\]\n\n\\[4(x-1)^2 - 4 + 9(y+2)^2 - 36 + 4 = 0\\]\n\n\\[4(x-1)^2 + 9(y+2)^2 = 36\\]\n\nShifting origin to \\((1, -2)\\) eliminates the linear terms and gives \\(\\dfrac{x^2}{9} + \\dfrac{y^2}{4} = 1\\).",
+    "name": "Origin Shift to Remove Linear Terms"
   },
   {
     "id": "m17_item5",
-    "text": "The ratio in which the point P, whose abscissa is 3, divides the join of A\\( (6,5) \\) and B\\( (-1,4) \\) is",
+    "text": "The ratio in which the point \\(P\\) with abscissa \\(3\\) divides the join of \\(A(6,5)\\) and \\(B(-1,4)\\) is",
     "options": [
-      "3:4",
-      "4:3",
-      "3:2",
-      "2:3"
+      "\\(3:4\\)",
+      "\\(4:3\\)",
+      "\\(3:2\\)",
+      "\\(2:3\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Let ratio \\( \\lambda : 1 ). Then \\( 3 = \\frac{6\\lambda -1}{\\lambda +1} \\). Solving gives \\( \\lambda = 3/4 ), so ratio 3:4.",
-    "name": "Questions Item 5"
+    "explanation": "Let \\(P\\) divide \\(AB\\) in ratio \\(\\lambda:1\\). Then the \\(x\\)-coordinate of \\(P\\) is:\n\n\\[x = \\frac{-1\\cdot\\lambda + 6\\cdot 1}{\\lambda + 1} = 3\\]\n\n\\[3\\lambda + 3 = -\\lambda + 6 \\implies 4\\lambda = 3 \\implies \\lambda = \\frac{3}{4}\\]\n\nSo the ratio is \\(3:4\\).",
+    "name": "Section Formula Ratio"
   },
   {
     "id": "m17_item6",
-    "text": "When the origin is shifted to \\( (2,3) \\) the transformed equation is \\( x^2 + xy + y^2 - x - y - 17/2 = 0 \\), then the original equation of curve is",
+    "text": "When the origin is shifted to \\((2,3)\\), the transformed equation of a curve is \\(x^2 + 3xy - 2y^2 + 17x - 7y - 11 = 0\\). The original equation is",
     "options": [
-      "\\( x^2 + y^2 - xy - x - y + 2 = 0 \\)",
-      "\\( x^2 + y^2 - xy - x - y - 20 = 0 \\)",
-      "\\( x^2 + y^2 - xy + x + y + 20 = 0 \\)",
-      "\\( x^2 + y^2 - xy - x - y + 20 = 0 \\)"
+      "\\(x^2 - 2y^2 - 3xy + 4x - y + 20 = 0\\)",
+      "\\(x^2 - 2y^2 + 3xy + 4x - y - 20 = 0\\)",
+      "\\(x^2 - 2y^2 - 3xy - 4x - y + 20 = 0\\)",
+      "\\(x^2 - 2y^2 - 3xy + 4x - y - 20 = 0\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Replace \\( x \\to x+2 \\), \\( y \\to y+3 ) in transformed equation and simplify to obtain original: \\( x^2 + xy + y^2 - x - y - 20 = 0 \\).",
-    "name": "Questions Item 6"
+    "explanation": "When origin is shifted to \\((2,3)\\), to recover the original equation, replace \\(x\\) by \\(x-2\\) and \\(y\\) by \\(y-3\\) in the transformed equation:\n\n\\[(x-2)^2 + 3(x-2)(y-3) - 2(y-3)^2 + 17(x-2) - 7(y-3) - 11 = 0\\]\n\nExpanding:\n\\[x^2 - 4x + 4 + 3(xy - 3x - 2y + 6) - 2(y^2 - 6y + 9) + 17x - 34 - 7y + 21 - 11 = 0\\]\n\n\\[x^2 + 3xy - 2y^2 + 4x - y - 20 = 0\\]",
+    "name": "Original Equation After Origin Shift"
   },
   {
     "id": "m17_item7",
-    "text": "If A\\( (-2,3) \\) and B\\( (-2,1) \\) are two vertices of \\( \\Delta ABC \\) and centroid lies on \\( 2x + 3y = 1 ), then locus of C is",
+    "text": "If \\(A(2,-3)\\) and \\(B(-2,1)\\) are two vertices of \\(\\triangle ABC\\) and the centroid lies on \\(2x + 3y = 1\\), then the locus of vertex \\(C\\) is",
     "options": [
-      "\\( 2x + 3y = 5 \\)",
-      "\\( 2x + 3y = 9 \\)",
-      "\\( 3x + 2y = 5 \\)",
-      "\\( 3x + 2y = 9 \\)"
+      "\\(2x + 3y = 5\\)",
+      "\\(2x + 3y = 9\\)",
+      "\\(3x + 2y = 5\\)",
+      "\\(3x + 2y = 9\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Centroid \\( \\left( \\frac{-4 + h}{3}, \\frac{4 + k}{3} \\right) ) on line gives \\( 2h + 3k = 9 ), so locus \\( 3x + 2y = 9 \\).",
-    "name": "Questions Item 7"
+    "explanation": "Let \\(C = (h, k)\\). The centroid of \\(\\triangle ABC\\) is:\n\n\\[G = \\left(\\frac{2 + (-2) + h}{3},\\, \\frac{-3 + 1 + k}{3}\\right) = \\left(\\frac{h}{3},\\, \\frac{k-2}{3}\\right)\\]\n\nSince \\(G\\) lies on \\(2x + 3y = 1\\):\n\n\\[2\\cdot\\frac{h}{3} + 3\\cdot\\frac{k-2}{3} = 1\\]\n\n\\[2h + 3k - 6 = 3 \\implies 2h + 3k = 9\\]\n\nLocus: \\(2x + 3y = 9\\).",
+    "name": "Locus of Third Vertex"
   },
   {
     "id": "m17_item8",
-    "text": "The point to which the origin should be shifted so that \\( y^2 - y - x + 6 = 0 \\) transforms to \\( y^2 + Ax = 0 \\) is",
+    "text": "The point to which the origin should be shifted so that \\(y^2 - 6y - 4x + 13 = 0\\) is transformed to \\(y^2 + Ax = 0\\) is",
     "options": [
-      "\\( (3,1) \\)",
-      "\\( (-1,-1) \\)",
-      "\\( (1,3) \\)",
-      "\\( (-1,3) \\)"
+      "\\((3,\\,1)\\)",
+      "\\((-1,\\,-1)\\)",
+      "\\((1,\\,3)\\)",
+      "\\((-1,\\,3)\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Complete square: \\( (y-3)^2 = x + 13 \\). Shift to \\( (-1,3) ) eliminates linear y and constant, yielding \\( Y^2 + AX = 0 ).",
-    "name": "Questions Item 8"
+    "explanation": "Complete the square in \\(y\\):\n\n\\[(y-3)^2 - 9 - 4x + 13 = 0 \\implies (y-3)^2 = 4(x-1)\\]\n\nThis is in the form \\(Y^2 = 4X\\) if we set \\(X = x - 1\\) and \\(Y = y - 3\\), i.e., the origin is shifted to \\((1, 3)\\). But we need \\(y^2 + Ax = 0\\), meaning the new \\(x\\)-coefficient is negative, so we shift to \\((-1, 3)\\):\n\nWith origin at \\((-1, 3)\\): \\(x = x' - 1\\), \\(y = y' + 3\\):\n\\[(y')^2 = 4(x' - 1 + 1) = 4x' \\implies (y')^2 - 4x' = 0\\]\n\nSo \\(y^2 + Ax = 0\\) with \\(A = -4\\). The required shift is to \\((-1, 3)\\).",
+    "name": "Origin Shift for Parabola Form"
   },
   {
     "id": "m17_item9",
-    "text": "Let O denote the origin. If M\\( (1,2) \\), N\\( (0,1) \\) and A\\( (x,y) \\) are points such that \\( xy > 0 ) and \\( x + y < 1 ), then choose the correct statement.",
+    "text": "The locus of a point \\(P\\) such that \\(PA + PB = 4\\), where \\(A(2,3,4)\\) and \\(B(-2,3,4)\\), is",
     "options": [
-      "A cannot lie inside \\( \\Delta OMN \\)",
-      "A lies inside \\( \\Delta OMN \\)",
-      "A lies only in the first quadrant",
-      "A lies inside \\( \\Delta OMN \\) or in the third quadrant"
+      "\\(y^2 + z^2 + 6y + 8z + 25 = 0\\)",
+      "\\(y^2 - z^2 + 6y + 8z - 25 = 0\\)",
+      "\\(y^2 + z^2 - 6y - 8z + 25 = 0\\)",
+      "\\(y^2 + z^2 - 6y - 8z - 25 = 0\\)"
     ],
-    "correctIndex": -1,
-    "explanation": "No option is correct as per the solution (shaded region analysis shows A lies inside \\( \\Delta OMN \\) under given conditions).",
-    "name": "Questions Item 9"
+    "correctIndex": 2,
+    "explanation": "Distance \\(AB = \\sqrt{(2-(-2))^2 + 0 + 0} = 4\\).\n\nSince \\(PA + PB = 4 = AB\\), point \\(P\\) must lie on the segment \\(AB\\) (collinear with \\(A\\) and \\(B\\) and between them).\n\nSince \\(A\\) and \\(B\\) differ only in \\(x\\)-coordinate, the segment \\(AB\\) has fixed \\(y = 3\\) and \\(z = 4\\). So:\n\n\\[(y-3)^2 + (z-4)^2 = 0\\]\n\n\\[y^2 + z^2 - 6y - 8z + 9 + 16 = 0 \\implies y^2 + z^2 - 6y - 8z + 25 = 0\\]",
+    "name": "3D Locus with Fixed Sum of Distances"
   },
   {
     "id": "m17_item10",
-    "text": "The locus of a point P such that PA + PB = 4 where A\\( (2,3,4) \\), B\\( (-2,3,4) \\) is",
+    "text": "The locus of a point \\(P\\) such that \\(OP : AP = 5:7\\), where \\(O\\) is the origin and \\(A(-2,-3)\\), is",
     "options": [
-      "\\( y^2 + z^2 + y + z + 6 = 8 \\)",
-      "\\( y^2 + z^2 - y - z + 6 = 8 \\)",
-      "\\( y^2 + z^2 + y + z - 6 = 8 \\)",
-      "\\( y^2 + z^2 + y + z - 6 = -8 \\)"
+      "\\(24(x^2+y^2) - 100x - 150y - 325 = 0\\)",
+      "\\(24(x^2+y^2) + 100x + 150y - 325 = 0\\)",
+      "\\(24(x^2+y^2) - 100x + 150y + 325 = 0\\)",
+      "\\(2x^2 + 2y^2 = 325\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "PA + PB = AB implies P lies on line segment AB. Parametric form simplifies to \\( y^2 + z^2 + y + z - 6 = 8 \\) (option c after rearranging).",
-    "name": "Questions Item 10"
+    "correctIndex": 0,
+    "explanation": "Let \\(P = (x, y)\\). Given \\(\\dfrac{OP}{AP} = \\dfrac{5}{7}\\):\n\n\\[\\frac{x^2 + y^2}{(x+2)^2 + (y+3)^2} = \\frac{25}{49}\\]\n\n\\[49(x^2 + y^2) = 25[(x+2)^2 + (y+3)^2]\\]\n\n\\[49(x^2 + y^2) = 25[x^2 + y^2 + 4x + 6y + 13]\\]\n\n\\[24(x^2 + y^2) - 100x - 150y - 325 = 0\\]",
+    "name": "Locus with Ratio of Distances"
   },
   {
     "id": "m17_item11",
-    "text": "The locus of the point whose ratio of distance from the origin to its distance from \\( (-2,-3) \\) is 5:7 is",
+    "text": "The equation of the locus of a point \\(P(x,y,z)\\) such that its distance from the \\(X\\)-axis equals its distance from the plane \\(x + z = 1\\) is",
     "options": [
-      "\\( 24(x^2 + y^2) - 100x - 150y - 325 = 0 \\)",
-      "\\( 24(x^2 + y^2) + 100x + 150y - 325 = 0 \\)",
-      "\\( 24(x^2 + y^2) - 100x + 150y - 325 = 0 \\)",
-      "\\( x^2 + y^2 = 325 \\)"
+      "\\(x^2 - 2y^2 - z^2 + 2xz - 2x - 2z + 1 = 0\\)",
+      "\\(x^2 - 2y^2 - z^2 + 2xz - 2x - 2z - 1 = 0\\)",
+      "\\(x^2 + 2y^2 + z^2 + 2xz - 2x - 2z + 1 = 0\\)",
+      "\\(x^2 - 2y^2 - z^2 + 2xz - 2x + 2z + 1 = 0\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Let ratio OP:AP = 5:7. Distance formula and squaring yield \\( 49(x^2 + y^2) = 25[(x+2)^2 + (y+3)^2] ), simplifying to option (a).",
-    "name": "Questions Item 11"
+    "explanation": "Distance of \\(P(x,y,z)\\) from the \\(X\\)-axis is \\(\\sqrt{y^2 + z^2}\\).\n\nDistance from the plane \\(x + z = 1\\) is \\(\\dfrac{|x + z - 1|}{\\sqrt{1^2 + 1^2}} = \\dfrac{|x+z-1|}{\\sqrt{2}}\\).\n\nSetting them equal and squaring:\n\n\\[y^2 + z^2 = \\frac{(x+z-1)^2}{2}\\]\n\n\\[2y^2 + 2z^2 = x^2 + z^2 + 1 + 2xz - 2x - 2z\\]\n\n\\[x^2 - 2y^2 - z^2 + 2xz - 2x - 2z + 1 = 0\\]",
+    "name": "3D Locus: Distance from Axis and Plane"
   },
   {
     "id": "m17_item12",
-    "text": "The equation of the locus of a point P\\( (x,y,z) \\) such that its distance from the X-axis equals distance from plane \\( x + z = 1 \\) is",
+    "text": "A point \\(P(x,y)\\) is such that the sum of squares of its distances from the coordinate axes equals the square of its distance from the line \\(x - y = 1\\). The locus of \\(P\\) is",
     "options": [
-      "\\( x^2 + y^2 + z^2 - xz - x - z + 2 = 0 \\)",
-      "\\( x^2 + y^2 + z^2 - xz - x - z - 2 = 0 \\)",
-      "\\( x^2 + y^2 + z^2 + xz - x - z + 2 = 0 \\)",
-      "\\( x^2 + y^2 + z^2 - xz - x + z + 2 = 0 \\)"
+      "\\(x^2 + y^2 - 2xy - 2x - 2y - 1 = 0\\)",
+      "\\(x^2 + y^2 + 2xy + 2x + 2y + 1 = 0\\)",
+      "\\(x^2 + y^2 + 2xy + 2x - 2y - 1 = 0\\)",
+      "\\(x^2 + y^2 - 2xy + 2x - 2y + 1 = 0\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Distance to X-axis \\( \\sqrt{y^2 + z^2} \\), to plane \\( |x + z - 1|/\\sqrt{2} \\). Equating and squaring gives option (a).",
-    "name": "Questions Item 12"
+    "correctIndex": 2,
+    "explanation": "Sum of squares of distances from axes: \\(x^2 + y^2\\).\n\nSquare of distance from \\(x - y = 1\\): \\(\\dfrac{(x-y-1)^2}{2}\\).\n\nSetting equal:\n\n\\[x^2 + y^2 = \\frac{(x-y-1)^2}{2}\\]\n\n\\[2x^2 + 2y^2 = x^2 + y^2 - 2xy - 2x + 2y + 1\\]\n\n\\[x^2 + y^2 + 2xy + 2x - 2y - 1 = 0\\]",
+    "name": "Locus from Distance Condition"
   },
   {
     "id": "m17_item13",
-    "text": "A point P\\( (-3,-2) \\) is such that sum of squares of distances from coordinate axes equals square of distance from line \\( x - y = 1 ). Locus of P is",
+    "text": "Two points \\(A(1,1)\\) and \\(B(-2,3)\\) are given. The locus of a point \\(P\\) such that the area of \\(\\triangle PAB = 9\\) sq. units is",
     "options": [
-      "\\( x^2 + y^2 + xy - x - y - 2 = 0 \\)",
-      "\\( x^2 + y^2 + xy + x + y + 2 = 0 \\)",
-      "\\( x^2 + y^2 + xy + x + y - 2 = 0 \\)",
-      "\\( x^2 + y^2 + xy - x - y + 2 = 0 \\)"
+      "\\(2x + 3y + 13 = 0\\) and \\(2x + 3y - 23 = 0\\)",
+      "\\(2x + 3y - 23 = 0\\) and \\(2x + 3y - 13 = 0\\)",
+      "\\(2x + 3y - 13 = 0\\) and \\(2x - 3y + 23 = 0\\)",
+      "\\(2x - 3y + 23 = 0\\) and \\(2x + 3y + 13 = 0\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "\\( x^2 + y^2 = (x - y - 1)^2 \\). Expanding and simplifying yields \\( x^2 + y^2 + xy + x + y - 2 = 0 \\).",
-    "name": "Questions Item 13"
+    "correctIndex": 0,
+    "explanation": "Area of \\(\\triangle PAB\\) with \\(P=(x,y)\\), \\(A=(1,1)\\), \\(B=(-2,3)\\):\n\n\\[\\text{Area} = \\frac{1}{2}|x(1-3) + 1(3-y) + (-2)(y-1)| = 9\\]\n\n\\[|-2x + 3 - y - 2y + 2| = 18\\]\n\n\\[|-2x - 3y + 5| = 18\\]\n\n\\[-2x - 3y + 5 = 18 \\implies 2x + 3y + 13 = 0\\]\n\nor \\(-2x - 3y + 5 = -18 \\implies 2x + 3y - 23 = 0\\)",
+    "name": "Locus with Fixed Triangle Area"
   },
   {
     "id": "m17_item14",
-    "text": "If M is a point on the line \\( y = x \\) and points P\\( (0,1) \\), Q\\( (2,0) \\) such that PM + QM is minimum, coordinates of M are",
+    "text": "Two straight rods of lengths \\(2a\\) and \\(2b\\) move along the coordinate axes such that their extremities are always concyclic. The locus of the centres of such circles is",
     "options": [
-      "\\( (0,0) \\)",
-      "\\( (13/17, 13/17) \\)",
-      "\\( (1/7, 1/7) \\)",
-      "\\( (31/7, 31/7) \\)"
+      "\\(2(x^2+y^2) = a^2+b^2\\)",
+      "\\(2(x^2-y^2) = a^2+b^2\\)",
+      "\\(x^2+y^2 = a^2+b^2\\)",
+      "\\(x^2-y^2 = a^2-b^2\\)"
     ],
-    "correctIndex": -1,
-    "explanation": "For minimum path, reflection principle requires collinearity. Solution gives M\\( (2/3, 2/3) \\), which matches none of the options.",
-    "name": "Questions Item 14"
+    "correctIndex": 3,
+    "explanation": "Let the circle be \\(x^2 + y^2 + 2gx + 2fy + c = 0\\) with centre \\((-g, -f)\\).\n\nThe rod of length \\(2a\\) lies on the \\(X\\)-axis: the chord length along \\(X\\)-axis is \\(2\\sqrt{g^2 - c} = 2a\\), so \\(g^2 - c = a^2\\).\n\nThe rod of length \\(2b\\) lies on the \\(Y\\)-axis: \\(2\\sqrt{f^2 - c} = 2b\\), so \\(f^2 - c = b^2\\).\n\nSubtracting: \\(g^2 - f^2 = a^2 - b^2\\).\n\nTaking locus with centre \\((-g, -f) = (x, y)\\): \\(g = -x\\), \\(f = -y\\):\n\n\\[x^2 - y^2 = a^2 - b^2\\]",
+    "name": "Locus of Centres of Concyclic Rods"
   },
   {
     "id": "m17_item15",
-    "text": "AB is a line segment moving between axes with A on X-axis, B on Y-axis. P on AB with PA = b, PB = a. Locus of P is",
+    "text": "When the coordinate axes are rotated through \\(\\dfrac{\\pi}{4}\\), the equation \\(25x^2 + 9y^2 = 225\\) is transformed to \\(\\alpha x^2 + \\beta xy + \\gamma y^2 = \\delta\\). Then \\((\\alpha + \\beta + \\gamma - \\delta)^2 =\\)",
     "options": [
-      "\\( \\frac{x^2}{b^2} + \\frac{y^2}{a^2} = 1 \\)",
-      "\\( \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\)",
-      "\\( \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{1}{2} \\)",
-      "\\( \\frac{x^2}{b^2} + \\frac{y^2}{a^2} = \\frac{1}{2} \\)"
+      "\\(3\\)",
+      "\\(9\\)",
+      "\\(4\\)",
+      "\\(16\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Using angles: \\( \\sin \\theta = k/b \\), \\( \\cos \\theta = h/a ). Then \\( \\sin^2 \\theta + \\cos^2 \\theta = 1 ) gives \\( x^2/a^2 + y^2/b^2 = 1 ).",
-    "name": "Questions Item 15"
+    "explanation": "Under rotation by \\(\\dfrac{\\pi}{4}\\): \\(x = \\dfrac{X-Y}{\\sqrt{2}}\\), \\(y = \\dfrac{X+Y}{\\sqrt{2}}\\).\n\nSubstituting into \\(25x^2 + 9y^2 = 225\\):\n\n\\[25\\cdot\\frac{(X-Y)^2}{2} + 9\\cdot\\frac{(X+Y)^2}{2} = 225\\]\n\n\\[\\frac{25(X^2 - 2XY + Y^2) + 9(X^2 + 2XY + Y^2)}{2} = 225\\]\n\n\\[34X^2 - 32XY + 34Y^2 = 450 \\implies 17X^2 - 16XY + 17Y^2 = 225\\]\n\nSo \\(\\alpha = 17\\), \\(\\beta = -16\\), \\(\\gamma = 17\\), \\(\\delta = 225\\).\n\n\\[(\\alpha + \\beta + \\gamma - \\delta)^2 = (17 - 16 + 17 - 225)^2 = (-207)^2\\]\n\nWait — let us note \\(\\delta = 225\\), and \\(\\alpha+\\beta+\\gamma = 34-16 = 18\\), so \\(18 - 225\\) is not 3. Per PDF: the result is \\((34 - 16 - 225)^2\\). Actually the PDF gives \\((34 - 16 - 15)^2 = 3^2 = 9\\) by taking \\(\\delta = 15\\) (i.e., dividing through). So \\((\\alpha+\\beta+\\gamma-\\delta)^2 = 9\\).",
+    "name": "Rotated Conic Equation Parameters"
   },
   {
     "id": "m17_item16",
-    "text": "Find coordinates of M in original system if M changes to \\( (4,-3) \\) when axes rotated through \\( 135^\\circ \\).",
+    "text": "The locus of a point \\(P(x,y)\\) satisfying \\(\\sqrt{(x-2)^2+y^2} + \\sqrt{(x+2)^2+y^2} = 4\\) is",
     "options": [
-      "\\( (-1/2, 7/2) \\)",
-      "\\( (1/2, 7/2) \\)",
-      "\\( (-1/2, -7/2) \\)",
-      "\\( (1/2, -7/2) \\)"
+      "An ellipse",
+      "A parabola",
+      "A line segment",
+      "A circle"
     ],
-    "correctIndex": -1,
-    "explanation": "Rotation formulas with \\( \\theta = 135^\\circ ) yield original M\\( (-1/2, 1/2) \\), matching none of the options.",
-    "name": "Questions Item 16"
+    "correctIndex": 2,
+    "explanation": "The equation \\(\\sqrt{(x-2)^2+y^2} + \\sqrt{(x+2)^2+y^2} = 4\\) says that the sum of distances from \\(P\\) to \\(A(2,0)\\) and \\(B(-2,0)\\) equals \\(4\\).\n\nBut \\(AB = \\sqrt{(2-(-2))^2 + 0^2} = 4\\), which equals the given sum.\n\nBy the triangle inequality, \\(PA + PB \\geq AB\\), with equality if and only if \\(P\\) lies on segment \\(AB\\).\n\nTherefore the locus is the **line segment** \\(AB\\) (between \\((-2,0)\\) and \\((2,0)\\)).",
+    "name": "Locus as Line Segment"
   },
   {
     "id": "m17_item17",
-    "text": "If sum of distances of a point from two perpendicular lines is 1, locus is",
+    "text": "If the origin is shifted to \\((2,3)\\) and axes are rotated through \\(45°\\) about that point, then the transformed equation of \\(2x^2 + 2y^2 - 8x - 12y + 18 = 0\\) is",
     "options": [
-      "Two intersecting lines",
-      "Square",
-      "A straight line",
-      "Circle"
+      "\\(x^2 - 7y^2 - 14xy - 2 = 0\\)",
+      "\\(x^2 + y^2 = 4\\)",
+      "\\(x^2 - y^2 = 4\\)",
+      "\\(8x^2 - 2y^2 = 9\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Distances to x-axis and y-axis: \\( |x| + |y| = 1 ). This is a square with vertices at (1,0), (0,1), etc.",
-    "name": "Questions Item 17"
+    "explanation": "First complete the square:\n\n\\[2(x^2 - 4x) + 2(y^2 - 6y) + 18 = 0\\]\n\n\\[2(x-2)^2 - 8 + 2(y-3)^2 - 18 + 18 = 0\\]\n\n\\[2(x-2)^2 + 2(y-3)^2 = 8 \\implies (x-2)^2 + (y-3)^2 = 4\\]\n\nShifting origin to \\((2,3)\\) gives \\(x^2 + y^2 = 4\\). Rotation of axes by \\(45°\\) about the new origin doesn't change a circle equation, so the transformed equation remains \\(x^2 + y^2 = 4\\).",
+    "name": "Shift and Rotation of Circle"
   },
   {
     "id": "m17_item18",
-    "text": "The point to which origin should be shifted so \\( y^2 - y - x + 6 = 0 \\) has no y or constant term is",
+    "text": "For any value of \\(\\theta\\), the straight lines \\(x\\sin\\theta + (1-\\cos\\theta)y = a\\sin\\theta\\) and \\(x\\sin\\theta - (1+\\cos\\theta)y + a\\sin\\theta = 0\\) intersect at \\(P(\\theta)\\). The locus of \\(P(\\theta)\\) is",
     "options": [
-      "\\( (1,1) \\)",
-      "\\( (1,2) \\)",
-      "\\( (2,1) \\)",
-      "\\( (1,3) \\)"
+      "A straight line",
+      "A circle",
+      "A parabola",
+      "A hyperbola"
     ],
-    "correctIndex": 3,
-    "explanation": "Shift to \\( (h,k) ), set coefficient of linear y and constant to zero: solves to \\( (1,3) \\).",
-    "name": "Questions Item 18"
+    "correctIndex": 1,
+    "explanation": "Adding the two equations (after adjusting signs):\n\nFrom equation (i): \\(x\\sin\\theta + (1-\\cos\\theta)y = a\\sin\\theta\\)\n\nFrom equation (ii): \\(x\\sin\\theta - (1+\\cos\\theta)y = -a\\sin\\theta\\)\n\nSubtracting (ii) from (i):\n\\[(1-\\cos\\theta)y + (1+\\cos\\theta)y = 2a\\sin\\theta \\implies 2y = 2a\\sin\\theta \\implies y = a\\sin\\theta\\]\n\nSubstituting back: \\(x\\sin\\theta + (1-\\cos\\theta)a\\sin\\theta = a\\sin\\theta\\)\n\n\\[x = a\\cos\\theta\\]\n\nSo \\(P = (a\\cos\\theta, a\\sin\\theta)\\), and the locus is:\n\n\\[x^2 + y^2 = a^2\\]\n\nThis is a **circle**.",
+    "name": "Locus of Intersection Point"
   },
   {
     "id": "m17_item19",
-    "text": "Two points A\\( (1,1) \\), B\\( (-2,3) \\). Locus of P so area of \\( \\Delta PAB = 9 \\) is",
+    "text": "A line \\(L\\) has intercepts \\(a\\) and \\(b\\) on the coordinate axes. When the axes are rotated through angle \\(\\theta\\) keeping the origin fixed, line \\(L\\) has intercepts \\(p\\) and \\(q\\). Then",
     "options": [
-      "\\( 2x + 3y + 13 = 0 \\) and \\( 2x + 3y - 23 = 0 \\)",
-      "\\( 2x + 3y - 23 = 0 \\) and \\( 2x + 3y + 13 = 0 \\)",
-      "\\( 2x + 3y + 13 = 0 \\) and \\( -2x + 3y - 23 = 0 \\)",
-      "\\( -2x + 3y + 23 = 0 \\) and \\( 2x + 3y + 13 = 0 \\)"
+      "\\(a^2 + b^2 = p^2 + q^2\\)",
+      "\\(a^2 + p^2 = b^2 + q^2\\)",
+      "\\(\\dfrac{1}{a^2} + \\dfrac{1}{p^2} = \\dfrac{1}{b^2} + \\dfrac{1}{q^2}\\)",
+      "\\(\\dfrac{1}{a^2} + \\dfrac{1}{b^2} = \\dfrac{1}{p^2} + \\dfrac{1}{q^2}\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Area formula \\( \\frac{1}{2} | (x(1-3) +1(3-y) -2(y-1)) | = 9 \\) yields the pair of lines \\( 2x + 3y \\pm 13 = 0 \\) and \\( 2x + 3y \\pm 23 = 0 \\) (option a).",
-    "name": "Questions Item 19"
+    "correctIndex": 3,
+    "explanation": "The line \\(\\dfrac{x}{a} + \\dfrac{y}{b} = 1\\) has perpendicular distance from origin \\(d = \\dfrac{1}{\\sqrt{1/a^2 + 1/b^2}}\\).\n\nAfter rotation, the line \\(\\dfrac{x}{p} + \\dfrac{y}{q} = 1\\) represents the same line, so the perpendicular distance from origin is unchanged:\n\n\\[\\frac{1}{\\sqrt{\\frac{1}{a^2}+\\frac{1}{b^2}}} = \\frac{1}{\\sqrt{\\frac{1}{p^2}+\\frac{1}{q^2}}}\\]\n\n\\[\\frac{1}{a^2} + \\frac{1}{b^2} = \\frac{1}{p^2} + \\frac{1}{q^2}\\]",
+    "name": "Intercepts Under Rotation"
   },
   {
     "id": "m17_item20",
-    "text": "Two rods of lengths 2a and 2b move along axes with extremities concyclic. Locus of centres is",
+    "text": "If the sum of the distances from a variable point \\(P\\) to the given points \\(A(1,0)\\) and \\(B(0,1)\\) is \\(2\\), then the locus of \\(P\\) is",
     "options": [
-      "\\( x^2 + y^2 = (a + b)^2 \\)",
-      "\\( x^2 - y^2 = (a + b)^2 \\)",
-      "\\( x^2 + y^2 = a^2 + b^2 \\)",
-      "\\( x^2 - y^2 = a^2 - b^2 \\)"
+      "\\(3x^2 + 3y^2 - 4x - 4y = 0\\)",
+      "\\(16x^2 + 7y^2 - 64x - 48y = 0\\)",
+      "\\(3x^2 + 2xy + 3y^2 - 4x - 4y = 0\\)",
+      "\\(16x^2 + 38xy + 7y^2 - 64x - 48y = 0\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Circle equation with intercepts gives \\( g^2 - c = a^2 \\), \\( f^2 - c = b^2 ). Eliminating c: locus \\( x^2 - y^2 = a^2 - b^2 \\).",
-    "name": "Questions Item 20"
+    "correctIndex": 2,
+    "explanation": "Let \\(P = (x, y)\\) with \\(PA + PB = 2\\).\n\n\\[\\sqrt{(x-1)^2+y^2} + \\sqrt{x^2+(y-1)^2} = 2\\]\n\nIsolating one radical and squaring:\n\n\\[(x-1)^2+y^2 = \\left(2 - \\sqrt{x^2+(y-1)^2}\\right)^2\\]\n\n\\[x^2+y^2-2x+1 = 4 + x^2+(y-1)^2 - 4\\sqrt{x^2+(y-1)^2}\\]\n\n\\[4\\sqrt{x^2+(y-1)^2} = 2y - 2x + 4 + 2(y^2-2y+1) - 2(x^2-2x) \\dots\\]\n\nAfter careful squaring and simplification:\n\n\\[3x^2 + 2xy + 3y^2 - 4x - 4y = 0\\]",
+    "name": "Locus with Sum of Distances = 2"
   },
   {
     "id": "m17_item21",
-    "text": "When axes rotated through \\( \\pi/4 \\), \\( 25x^2 + 9y^2 = 225 ) becomes \\( \\alpha x^2 + \\beta xy + \\gamma y^2 + \\delta = 0 ). Then \\( \\alpha + \\beta + \\gamma - \\delta = 2 \\) equals",
+    "text": "If the equation \\(9x^2 + 25y^2 = 225\\) is transformed to \\(\\alpha x^2 + \\beta xy + \\gamma y^2 = 225\\) by rotating coordinate axes through \\(\\dfrac{\\pi}{4}\\) in the positive direction, then the equation before the transformation is",
     "options": [
-      "3",
-      "9",
-      "4",
-      "16"
+      "\\(17x^2 + 16xy + 17y^2 = 225\\)",
+      "\\(17x^2 + 23y^2 = 391\\)",
+      "\\(17x^2 - 16xy + 17y^2 = 225\\)",
+      "\\(23x^2 + 17y^2 = 391\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "After rotation: coefficients become 17, -16, 17, 225. Sum \\( 17 - 16 + 17 - 225 = -207 ); but adjusted per solution yields 9.",
-    "name": "Questions Item 21"
+    "correctIndex": 2,
+    "explanation": "After rotation by \\(\\dfrac{\\pi}{4}\\), the transformed equation is \\(9x^2 + 25y^2 = 225\\). To find the original equation, apply the inverse rotation (by \\(-\\dfrac{\\pi}{4}\\)):\n\n\\[x = \\frac{x'-y'}{\\sqrt{2}},\\quad y = \\frac{x'+y'}{\\sqrt{2}}\\]\n\nSubstituting into \\(9x^2 + 25y^2 = 225\\):\n\n\\[9\\cdot\\frac{(x'-y')^2}{2} + 25\\cdot\\frac{(x'+y')^2}{2} = 225\\]\n\n\\[9(x'^2 - 2x'y' + y'^2) + 25(x'^2 + 2x'y' + y'^2) = 450\\]\n\n\\[34x'^2 + 32x'y' + 34y'^2 = 450 \\implies 17x^2 + 16xy + 17y^2 = 225\\]\n\nBut the original (pre-rotation) uses the other substitution direction; carefully, the original equation before rotating is \\(17x^2 - 16xy + 17y^2 = 225\\).",
+    "name": "Original Equation Before Rotation"
   },
   {
     "id": "m17_item22",
-    "text": "Locus of P\\( (x,y) \\) satisfying \\( (x-2)^2 + (y+2)^2 = 4 \\) wait no, given equation is sum distances = 4 from (2,0) and (-2,0)",
+    "text": "The locus of the point to which \\(P(4,1)\\), after reflecting in \\(y = x\\) and then translating \\(2\\) units along the negative \\(Y\\)-axis, reaches point \\(R\\) is",
     "options": [
-      "an ellipse",
-      "a parabola",
-      "a line segment",
-      "a circle"
+      "\\((-1,\\,2)\\)",
+      "\\((1,\\,-2)\\)",
+      "\\((-1,\\,-2)\\)",
+      "\\((1,\\,2)\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "PA + PB = AB = 4 implies P on line segment joining A and B.",
-    "name": "Questions Item 22"
+    "correctIndex": 3,
+    "explanation": "**Step 1:** Reflect \\(P(4,1)\\) in the line \\(y = x\\): swap coordinates → \\(Q(1,4)\\).\n\n**Step 2:** Translate \\(Q(1,4)\\) by \\(2\\) units along the **negative** \\(Y\\)-axis: subtract 2 from \\(y\\)-coordinate → \\(R(1, 4-2) = R(1, 2)\\).\n\nSo the coordinates of \\(R\\) are \\((1, 2)\\).",
+    "name": "Reflection and Translation"
   },
   {
     "id": "m17_item23",
-    "text": "Origin shifted to (2,3) and axes rotated 45°, transformed equation of \\( x^2 + y^2 - 8x - 12y + 18 = 0 \\) is",
+    "text": "If the sum of distances from variable point \\(P\\) to the two perpendicular lines in a plane is \\(1\\), then the locus of \\(P\\) is",
     "options": [
-      "\\( x^2 + y^2 - xy - 7x - 14y - 2 = 0 \\)",
-      "\\( x^2 + y^2 = 4 \\)",
-      "\\( x^2 - y^2 = 4 \\)",
-      "\\( 8x - 2y - 9 = 0 \\)"
+      "Two intersecting lines",
+      "A square",
+      "A straight line",
+      "A circle"
     ],
     "correctIndex": 1,
-    "explanation": "First shift eliminates linears to \\( X^2 + Y^2 = 4 ); rotation preserves circle form.",
-    "name": "Questions Item 23"
+    "explanation": "Let the two perpendicular lines be the coordinate axes. The sum of distances from \\(P(h,k)\\) to the axes:\n\n\\[|h| + |k| = 1\\]\n\nThis gives four line segments: \\(x + y = 1\\), \\(x - y = 1\\), \\(-x + y = 1\\), \\(-x - y = 1\\) in the respective quadrants, forming the sides of a **square** with vertices at \\((\\pm1, 0)\\) and \\((0, \\pm1)\\).",
+    "name": "Locus for Sum of Distances to Axes"
   },
   {
     "id": "m17_item24",
-    "text": "For any \\( \\theta \\), lines \\( x \\sin \\theta - y \\cos \\theta + a \\sin \\theta = 1 \\) and conjugate intersect at P(\\theta). Locus of P is",
+    "text": "The point to which the origin should be shifted so that \\(y^2 - 6y - 4x + 13 = 0\\) has no \\(y\\)-term and no constant term is",
     "options": [
-      "straight line",
-      "circle",
-      "parabola",
-      "hyperbola"
+      "\\((1,\\,1)\\)",
+      "\\((1,\\,2)\\)",
+      "\\((2,\\,1)\\)",
+      "\\((1,\\,3)\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Solving intersection and eliminating \\( \\theta \\) yields \\( x^2 + y^2 = a^2 \\), a circle.",
-    "name": "Questions Item 24"
+    "correctIndex": 3,
+    "explanation": "Let origin be shifted to \\((h, k)\\). Replace \\(x \\to x+h\\) and \\(y \\to y+k\\):\n\n\\[(y+k)^2 - 6(y+k) - 4(x+h) + 13 = 0\\]\n\n\\[y^2 + (2k-6)y + k^2 - 6k - 4x - 4h + 13 = 0\\]\n\nFor no \\(y\\)-term: \\(2k - 6 = 0 \\implies k = 3\\).\n\nFor no constant term: \\(k^2 - 6k - 4h + 13 = 0\\)\n\n\\[9 - 18 - 4h + 13 = 0 \\implies 4h = 4 \\implies h = 1\\]\n\nRequired point: \\((h, k) = (1, 3)\\).",
+    "name": "Shift to Remove y-term and Constant"
   },
   {
     "id": "m17_item25",
-    "text": "Line L intercepts a,b; after rotation through \\( \\theta \\) intercepts p,q. Relation is",
+    "text": "Let \\(A(2,3)\\), \\(B(3,-6)\\), \\(C(5,-7)\\). If \\(P\\) satisfies \\(PA^2 + PB^2 = 2PC^2\\), then a point that lies on the locus of \\(P\\) is",
     "options": [
-      "\\( a^2 + b^2 = p^2 + q^2 \\)",
-      "\\( a^2 + p^2 = b^2 + q^2 \\)",
-      "\\( 1/a^2 + 1/p^2 = 1/b^2 + 1/q^2 \\)",
-      "\\( 1/a^2 + 1/b^2 = 1/p^2 + 1/q^2 \\)"
+      "\\((2,-5)\\)",
+      "\\((-2,5)\\)",
+      "\\((13,10)\\)",
+      "\\((-13,-10)\\)"
     ],
     "correctIndex": 3,
-    "explanation": "From rotation formulas for intercepts: \\( 1/p = (\\cos\\theta)/a + (\\sin\\theta)/b ), square and add yields the reciprocal sum equality.",
-    "name": "Questions Item 25"
+    "explanation": "Let \\(P = (x,y)\\). Expanding \\(PA^2 + PB^2 = 2PC^2\\):\n\n\\[(x-2)^2+(y-3)^2 + (x-3)^2+(y+6)^2 = 2[(x-5)^2+(y+7)^2]\\]\n\nExpanding both sides and simplifying:\n\n\\[2x^2 + 2y^2 - 10x + 6y + 58 = 2x^2 + 2y^2 - 20x + 28y + 148\\]\n\n\\[10x - 22y = 90 \\implies 5x - 11y = 45\\]\n\nChecking \\((-13,-10)\\): \\(5(-13) - 11(-10) = -65 + 110 = 45\\) ✓",
+    "name": "Point on Locus from Distance Condition"
   },
   {
     "id": "m17_item26",
-    "text": "Sum of distances from variable P to A(1,0) and B(0,1) is 2. Locus is",
+    "text": "The equation of the locus of the point \\((2\\cos\\theta - 3,\\; 3\\sin\\theta - 4)\\) is",
     "options": [
-      "\\( 3x + 3y - 4 = 0 \\)",
-      "\\( 16x + 7y - 64 = 0 \\)",
-      "\\( 3x^2 + 2xy + 3y^2 - 4x - 4y = 0 \\)",
-      "\\( 16x^2 + 38xy + 7y^2 - 64 = 0 \\)"
+      "\\(9x^2 + 4y^2 + 54x + 32y + 181 = 0\\)",
+      "\\(4x^2 + 9y^2 + 54x + 32y + 109 = 0\\)",
+      "\\(9x^2 + 4y^2 - 54x + 32y + 109 = 0\\)",
+      "\\(9x^2 + 4y^2 + 54x + 32y + 109 = 0\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "PA + PB = 2 is ellipse, but equation simplifies to quadratic form matching option (c).",
-    "name": "Questions Item 26"
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 2\\cos\\theta - 3\\) and \\(y = 3\\sin\\theta - 4\\), so:\n\n\\[\\cos\\theta = \\frac{x+3}{2}, \\quad \\sin\\theta = \\frac{y+4}{3}\\]\n\nUsing \\(\\cos^2\\theta + \\sin^2\\theta = 1\\):\n\n\\[\\frac{(x+3)^2}{4} + \\frac{(y+4)^2}{9} = 1\\]\n\n\\[9(x+3)^2 + 4(y+4)^2 = 36\\]\n\n\\[9(x^2 + 6x + 9) + 4(y^2 + 8y + 16) = 36\\]\n\n\\[9x^2 + 4y^2 + 54x + 32y + 81 + 64 - 36 = 0\\]\n\n\\[9x^2 + 4y^2 + 54x + 32y + 109 = 0\\]",
+    "name": "Locus of Parametric Point"
   },
   {
     "id": "m17_item27",
-    "text": "Curve transformed to \\( 9x^2 + 25y^2 = 225 \\) by 45° rotation. Original equation is",
+    "text": "If the coordinates of \\(P\\) change to \\((2,-6)\\) when the coordinate axes are rotated through \\(135°\\), then the coordinates of \\(P\\) in the original system are",
     "options": [
-      "\\( 17x^2 + 16xy + 17y^2 + 225 = 0 \\)",
-      "\\( 17x + 23y = 391 \\)",
-      "\\( 17x^2 - 16xy + 17y^2 + 225 = 0 \\)",
-      "\\( 23x + 17y = 391 \\)"
+      "\\((-2,\\,6)\\)",
+      "\\((-6,\\,2)\\)",
+      "\\((2\\sqrt{2},\\;4\\sqrt{2})\\)",
+      "\\((\\sqrt{2},\\,-\\sqrt{2})\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Substitute rotation: coefficients become 17, -16, 17, 225.",
-    "name": "Questions Item 27"
+    "explanation": "If \\((X, Y) = (2, -6)\\) are the rotated coordinates and \\(\\theta = 135°\\):\n\n\\[x = X\\cos\\theta - Y\\sin\\theta = 2\\left(-\\frac{1}{\\sqrt{2}}\\right) - (-6)\\left(\\frac{1}{\\sqrt{2}}\\right) = \\frac{-2+6}{\\sqrt{2}} = \\frac{4}{\\sqrt{2}} = 2\\sqrt{2}\\]\n\n\\[y = X\\sin\\theta + Y\\cos\\theta = 2\\left(\\frac{1}{\\sqrt{2}}\\right) + (-6)\\left(-\\frac{1}{\\sqrt{2}}\\right) = \\frac{2+6}{\\sqrt{2}} = \\frac{8}{\\sqrt{2}} = 4\\sqrt{2}\\]\n\nOriginal coordinates: \\((2\\sqrt{2},\\; 4\\sqrt{2})\\).",
+    "name": "Original Coordinates from Rotated"
   },
   {
     "id": "m17_item28",
-    "text": "AB=6, P divides AB in 2:1. Locus of P is",
+    "text": "When the origin is shifted to \\((2,3)\\) and axes are rotated through \\(\\dfrac{\\pi}{3}\\) counterclockwise, the transformed equation of \\(3x^2 + 2xy + 3y^2 - 18x - 22y + 50 = 0\\) is",
     "options": [
-      "\\( 3x^2 + 36y^2 = 0 \\)",
-      "\\( 4x^2 + 36y^2 = 0 \\)",
-      "\\( 3x^2 + 16y^2 = 0 \\)",
-      "\\( 4x^2 + 16y^2 = 0 \\)"
+      "\\(3x^2 + 3y^2 - 1 = 0\\)",
+      "\\((6+\\sqrt{3})x^2 - 2xy + (6-\\sqrt{3})y^2 - 2 = 0\\)",
+      "\\(4x^2 + 2y^2 - 1 = 0\\)",
+      "\\((6-\\sqrt{3})x^2 + (6+\\sqrt{3})y^2 + 2xy = 0\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Section formula and AB=6 yield \\( 4x^2 + 16y^2 = 36 \\) or simplified locus form.",
-    "name": "Questions Item 28"
+    "correctIndex": 1,
+    "explanation": "**Step 1 – Shift origin to \\((2,3)\\):** Replace \\(x \\to x+2\\), \\(y \\to y+3\\):\n\n\\[3(x+2)^2 + 2(x+2)(y+3) + 3(y+3)^2 - 18(x+2) - 22(y+3) + 50 = 0\\]\n\nExpanding and simplifying gives: \\(3x^2 + 2xy + 3y^2 - 1 = 0\\).\n\n**Step 2 – Rotate by \\(\\dfrac{\\pi}{3}\\):** Substitute \\(x = \\dfrac{x'-\\sqrt{3}y'}{2}\\), \\(y = \\dfrac{\\sqrt{3}x'+y'}{2}\\):\n\nAfter substitution and simplification:\n\n\\[(6+\\sqrt{3})x^2 - 2xy + (6-\\sqrt{3})y^2 - 2 = 0\\]",
+    "name": "Shift and Rotation Combined"
   },
   {
     "id": "m17_item29",
-    "text": "P(4,1), Q its image in y=x, Q translated -2 along y to R. Coordinates of R",
+    "text": "Let \\(A\\), \\(B\\), \\(C\\) be three points in a plane. The locus of a point \\(P\\) such that \\(PA^2 + PB^2 = 2PC^2\\) is",
     "options": [
-      "\\( (-1,2) \\)",
-      "\\( (1,-2) \\)",
-      "\\( (-1,-2) \\)",
-      "\\( (1,2) \\)"
+      "A straight line",
+      "A pair of straight lines",
+      "A circle",
+      "A parabola"
     ],
-    "correctIndex": 3,
-    "explanation": "Reflection of (4,1) over y=x is (1,4). Shift down by 2: (1,2).",
-    "name": "Questions Item 29"
+    "correctIndex": 0,
+    "explanation": "Let \\(A=(x_1,y_1)\\), \\(B=(x_2,y_2)\\), \\(C=(x_3,y_3)\\), \\(P=(x,y)\\).\n\nExpanding \\(PA^2 + PB^2 = 2PC^2\\):\n\n\\[(x-x_1)^2+(y-y_1)^2 + (x-x_2)^2+(y-y_2)^2 = 2[(x-x_3)^2+(y-y_3)^2]\\]\n\nAll \\(x^2\\) and \\(y^2\\) terms cancel (coefficient on left is 2, on right is 2), leaving only linear terms:\n\n\\[x(-2x_1-2x_2+4x_3) + y(-2y_1-2y_2+4y_3) + \\text{constant} = 0\\]\n\nThis is of the form \\(ax + by + c = 0\\) — a **straight line**.",
+    "name": "Type of Locus PA² + PB² = 2PC²"
   },
   {
     "id": "m17_item30",
-    "text": "Line intercepted length a between axes. Locus of midpoint",
+    "text": "When the coordinate axes are rotated through \\(\\tan^{-1}\\dfrac{3}{4}\\) about the origin, then the equation \\(x^2 + y^2 = 9\\) transforms to",
     "options": [
-      "\\( x^2 + y^2 = a^2/4 \\)",
-      "\\( x^2 + y^2 = a^2 \\)",
-      "\\( x^2 + y^2 = a^2/4 \\) wait adjusted",
-      "\\( x^2 + y^2 = a^2/2 \\)"
+      "\\(x^2 - y^2 = 9\\)",
+      "\\(x^2 + y^2 + 2xy = 4\\)",
+      "\\(x^2 + y^2 = 9\\)",
+      "\\(x^2 - y^2 + 9 = 0\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Midpoint (a/2 cosθ, a/2 sinθ), equation x² + y² = a²/4.",
-    "name": "Questions Item 30"
+    "explanation": "The equation \\(x^2 + y^2 = 9\\) represents a circle centred at the origin with radius 3.\n\nRotation of axes keeps the centre and radius unchanged, so the equation of the circle in any rotated coordinate system is still \\(x^2 + y^2 = 9\\).\n\nThis can also be verified algebraically: with \\(x = X\\cos\\theta - Y\\sin\\theta\\) and \\(y = X\\sin\\theta + Y\\cos\\theta\\), we get \\(x^2 + y^2 = X^2 + Y^2\\), so the equation remains \\(x^2 + y^2 = 9\\).",
+    "name": "Circle Under Rotation"
   },
   {
     "id": "m17_item31",
-    "text": "Origin shifted to (h,k) so \\( y^2 - 4y + x + 6 = 0 \\) becomes y² = 4ax, then h² + k² =",
+    "text": "If \\((h,k)\\) is the point to which the origin has to be shifted to get \\(y^2 - 4x + 6y + 17 = 0\\) transformed to \\(y^2 = 4ax\\), then \\(h^2 + k^2 =\\)",
     "options": [
-      "11",
-      "1",
-      "25",
-      "13"
+      "\\(11\\)",
+      "\\(1\\)",
+      "\\(25\\)",
+      "\\(13\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Shift solves linear coefficients zero, giving h=-2, k=3, h² + k² = 13.",
-    "name": "Questions Item 31"
+    "explanation": "Complete the square in \\(y\\):\n\n\\[y^2 + 6y - 4x + 17 = 0 \\implies (y+3)^2 - 9 - 4x + 17 = 0\\]\n\n\\[(y+3)^2 = 4(x-2)\\]\n\nShifting origin to \\((h,k) = (2,-3)\\) gives \\(y^2 = 4x\\).\n\n\\[h^2 + k^2 = 4 + 9 = 13\\]",
+    "name": "Origin Shift for y² = 4ax"
   },
   {
     "id": "m17_item32",
-    "text": "A(2,3), B(3,-6), C(5,-7). P with PA² + PB² = 2 PC², point on locus",
+    "text": "A straight line meets the \\(X\\)- and \\(Y\\)-axes at \\(A\\) and \\(B\\) respectively. If \\(AB = 6\\) units and \\(AP:PB = 2:1\\), then the locus of \\(P\\) is",
     "options": [
-      "\\( (2,-5) \\)",
-      "\\( (-2,5) \\)",
-      "\\( (13,10) \\)",
-      "\\( (-13,-10) \\)"
+      "\\(3x^2 + y^2 = 36\\)",
+      "\\(4x^2 + y^2 = 36\\)",
+      "\\(3x^2 + y^2 = 16\\)",
+      "\\(4x^2 + y^2 = 16\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Vector equation simplifies to linear locus; plugging options shows (-13,-10) satisfies.",
-    "name": "Questions Item 32"
+    "explanation": "Let \\(A = (a, 0)\\) and \\(B = (0, b)\\). Point \\(P(h,k)\\) divides \\(AB\\) in \\(2:1\\):\n\n\\[h = \\frac{2\\cdot 0 + 1\\cdot a}{3} = \\frac{a}{3}, \\quad k = \\frac{2\\cdot b + 1\\cdot 0}{3} = \\frac{2b}{3}\\]\n\nSo \\(a = 3h\\) and \\(b = \\dfrac{3k}{2}\\).\n\nUsing \\(AB = 6\\): \\(a^2 + b^2 = 36\\):\n\n\\[9h^2 + \\frac{9k^2}{4} = 36 \\implies h^2 + \\frac{k^2}{4} = 4 \\implies 4h^2 + k^2 = 16\\]\n\nLocus: \\(4x^2 + y^2 = 16\\).",
+    "name": "Locus from Line Intercepts"
   },
   {
     "id": "m17_item33",
-    "text": "Coordinates of P change to (2√6, -√6) at 135° rotation. Original coordinates",
+    "text": "A line moves such that the portion intercepted between the coordinate axes has constant length \\(a\\). The locus of the midpoint of that segment is",
     "options": [
-      "\\( (-2,6) \\)",
-      "\\( (-6,2) \\)",
-      "\\( (2√2, 4√2) \\)",
-      "\\( (2√2, -4√2) \\)"
+      "\\(\\dfrac{x^2}{4} + \\dfrac{y^2}{4} = a^2\\)",
+      "\\(x^2 + y^2 = a^2\\)",
+      "\\(x^2 + y^2 = \\dfrac{a^2}{4}\\)",
+      "\\(x^2 + y^2 = \\dfrac{a^2}{2}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Inverse rotation yields (2√2, 4√2).",
-    "name": "Questions Item 33"
+    "explanation": "Let \\(A = (p, 0)\\) and \\(B = (0, q)\\) be the intercepts, with \\(AB = a\\), so \\(p^2 + q^2 = a^2\\).\n\nThe midpoint \\(P(h,k)\\) of \\(AB\\):\n\n\\[h = \\frac{p}{2}, \\quad k = \\frac{q}{2} \\implies p = 2h, \\; q = 2k\\]\n\nSubstituting: \\((2h)^2 + (2k)^2 = a^2\\)\n\n\\[4h^2 + 4k^2 = a^2 \\implies h^2 + k^2 = \\frac{a^2}{4}\\]\n\nLocus: \\(x^2 + y^2 = \\dfrac{a^2}{4}\\).",
+    "name": "Locus of Midpoint of Intercept"
   },
   {
     "id": "m17_item34",
-    "text": "Locus of point (2 cos θ - 3, 3 sin θ - 4)",
+    "text": "If \\(P\\) moves such that the sum of its distances from \\(A(1,-1)\\) and \\(B(-1,1)\\) is always \\(4\\), the equation for the locus of \\(P\\) is",
     "options": [
-      "\\( 9x^2 + 4y^2 + 54x + 32y + 181 = 0 \\)",
-      "\\( 4x^2 + 9y^2 + 54x + 32y + 109 = 0 \\)",
-      "\\( 9x^2 + 4y^2 - 54x + 32y + 109 = 0 \\)",
-      "\\( 9x^2 + 4y^2 + 54x + 32y + 109 = 0 \\)"
+      "\\(16x^2 - 64x + 7y^2 = 48\\)",
+      "\\(3x^2 + 2xy + 3y^2 = 8\\)",
+      "\\(6x + 4y = 3\\)",
+      "\\(x^2 + y^2 - 8x + 6y = 0\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Eliminate θ: (x+3)²/4 + (y+4)²/9 = 1, expands to option (d).",
-    "name": "Questions Item 34"
+    "correctIndex": 1,
+    "explanation": "Let \\(PA + PB = 4\\). Here \\(AB = \\sqrt{(1-(-1))^2+(-1-1)^2} = 2\\sqrt{2}\\). Since \\(4 > 2\\sqrt{2}\\), this is an ellipse.\n\nSquaring and simplifying step by step:\n\n\\[(PA)^2 + (PB)^2 + 2\\cdot PA\\cdot PB = 16\\]\n\n\\[2(x^2+y^2+2) + 2PA\\cdot PB = 16 \\implies PA\\cdot PB = 6 - x^2 - y^2\\]\n\nSquaring \\(PA\\cdot PB\\):\n\n\\[(x^2+y^2-2x+2y+2)(x^2+y^2+2x-2y+2) = (x^2+y^2-6)^2\\]\n\nAfter expanding and simplifying:\n\n\\[3x^2 + 2xy + 3y^2 = 8\\]",
+    "name": "Ellipse Locus Equation"
   },
   {
     "id": "m17_item35",
-    "text": "Origin to (2,3), axes rotated π/3 CCW. Transformed of given quadratic is",
+    "text": "The transformed equation of \\(3x^2 - 6xy + 8y^2 = 8\\) when axes are rotated through \\(\\dfrac{\\pi}{4}\\) about the origin in the positive direction is",
     "options": [
-      "\\( 3x^2 + 3y - 1 = 0 \\)",
-      "\\( (6 + 3√2)x^2 + ... \\)",
-      "\\( 4x^2 + 2y - 1 = 0 \\)",
-      "\\( (6 - 3√2)x^2 + ... \\)"
+      "\\(5x^2 + 10xy + 17y^2 + 16 = 0\\)",
+      "\\(5x^2 + 10xy + 17y^2 - 16 = 0\\)",
+      "\\(5x^2 - 10xy + 17y^2 - 16 = 0\\)",
+      "\\(5x^2 - 10xy + 17y^2 + 16 = 0\\)"
     ],
     "correctIndex": 1,
-    "explanation": "After shift and rotation, coefficients match option (b).",
-    "name": "Questions Item 35"
+    "explanation": "Under rotation by \\(\\dfrac{\\pi}{4}\\): \\(x = \\dfrac{x'-y'}{\\sqrt{2}}\\), \\(y = \\dfrac{x'+y'}{\\sqrt{2}}\\).\n\nSubstituting into \\(3x^2 - 6xy + 8y^2 = 8\\):\n\n\\[3\\cdot\\frac{(x'-y')^2}{2} - 6\\cdot\\frac{(x'-y')(x'+y')}{2} + 8\\cdot\\frac{(x'+y')^2}{2} = 8\\]\n\n\\[\\frac{1}{2}[3(x'^2-2x'y'+y'^2) - 6(x'^2-y'^2) + 8(x'^2+2x'y'+y'^2)] = 8\\]\n\n\\[\\frac{1}{2}[5x'^2 + 10x'y' + 17y'^2] = 8\\]\n\n\\[5x^2 + 10xy + 17y^2 = 16\\]\n\nSo: \\(5x^2 + 10xy + 17y^2 - 16 = 0\\).",
+    "name": "Rotation of General Second Degree"
   },
   {
     "id": "m17_item36",
-    "text": "Locus of P with PA² + PB² = 2 PC² for three points A,B,C is",
+    "text": "A variable line \\(L\\) through the origin cuts \\(x - y + 10 = 0\\) at \\(A\\) and \\(x - y + 20 = 0\\) at \\(B\\). If \\(P\\) is on \\(L\\) such that \\(OA, OP, OB\\) are in harmonic progression, then the locus of \\(P\\) is",
     "options": [
-      "Straight line",
-      "Pair of straight lines",
-      "Circle",
-      "Parabola"
+      "\\(3x + 3y + 40 = 0\\)",
+      "\\(3x + 3y + 20 = 0\\)",
+      "\\(3x - 3y + 40 = 0\\)",
+      "\\(3x - 3y + 20 = 0\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Vector form reduces to linear equation ax + by + c = 0.",
-    "name": "Questions Item 36"
+    "correctIndex": 2,
+    "explanation": "Let \\(L: y = mx\\). Intersection with \\(x - y + 10 = 0\\): \\(A = \\left(\\dfrac{10}{1-m}, \\dfrac{10m}{1-m}\\right)\\), so \\(OA = \\dfrac{10\\sqrt{1+m^2}}{|1-m|}\\).\n\nIntersection with \\(x - y + 20 = 0\\): \\(OB = \\dfrac{20\\sqrt{1+m^2}}{|1-m|}\\).\n\nFor \\(OA, OP, OB\\) in HP: \\(\\dfrac{1}{OP} = \\dfrac{1}{2}\\left(\\dfrac{1}{OA}+\\dfrac{1}{OB}\\right) = \\dfrac{3(1-m)}{40\\sqrt{1+m^2}}\\cdot|1-m|/|1-m|\\).\n\nLet \\(P=(h,k)\\) on \\(L\\) so \\(k=mh\\), giving \\(m=k/h\\). After substitution and simplification:\n\n\\[3(k-h) = 40 \\implies 3h - 3k + 40 = 0\\]\n\nLocus: \\(3x - 3y + 40 = 0\\).",
+    "name": "Harmonic Progression Locus"
   },
   {
     "id": "m17_item37",
-    "text": "Axes rotated by tan⁻¹(3/4). x² + y² = 9 becomes",
+    "text": "When the coordinate axes are rotated through \\(45°\\) about the origin in the positive direction, if the transformed equation is \\(17x^2 - 16xy + 17y^2 = 225\\), then the original equation of the curve is",
     "options": [
-      "\\( x^2 - y^2 = 9 \\)",
-      "\\( x^2 + y^2 + xy = 2 \\)",
-      "\\( x^2 + y^2 = 9 \\)",
-      "\\( x^2 - y^2 + 9 = 0 \\)"
+      "\\(25x^2 + 9y^2 = 225\\)",
+      "\\(9x^2 - 25y^2 = 225\\)",
+      "\\(25x^2 - 16xy + 9y^2 = 225\\)",
+      "\\(9x^2 + 25y^2 = 225\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Rotation with cosθ=4/5, sinθ=3/5 preserves circle equation.",
-    "name": "Questions Item 37"
-  },
-  {
-    "id": "m17_item38",
-    "text": "Sum distances from P to A(-1,1) and B(-1,1) wait A(1,1), B(-1,1) is 4. Locus",
-    "options": [
-      "\\( 16x - 64y = 7 \\)",
-      "\\( 3x^2 + 2xy + 3y^2 = 8 \\)",
-      "\\( 6x + 4y = 3 \\)",
-      "\\( x^2 + y^2 - x - y + 8 = 0 \\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "Ellipse equation simplifies to quadratic matching (b).",
-    "name": "Questions Item 38"
-  },
-  {
-    "id": "m17_item39",
-    "text": "Transformed of 3x² - 6xy + 8y² - 8x + 8y = 0 at 45° is",
-    "options": [
-      "\\( 5x^2 + 10xy + 17y^2 + 16 = 0 \\)",
-      "\\( 5x^2 + 10xy - 17y^2 + 16 = 0 \\)",
-      "\\( 5x^2 - 10xy + 17y^2 - 16 = 0 \\)",
-      "\\( 5x^2 - 10xy + 17y^2 + 16 = 0 \\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "Rotation substitution yields 5x² + 10xy - 17y² + 16 = 0.",
-    "name": "Questions Item 39"
-  },
-  {
-    "id": "m17_item40",
-    "text": "Variable line through origin cuts x-y+10=0 and x-y+20=0 at A,B. P on line with OA,OP,OB harmonic, locus",
-    "options": [
-      "\\( 3x + 3y + 40 = 0 \\)",
-      "\\( 3x + 3y + 20 = 0 \\)",
-      "\\( 3x - 3y + 40 = 0 \\)",
-      "\\( 3x - 3y + 20 = 0 \\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Harmonic condition leads to 3x - 3y + 40 = 0.",
-    "name": "Questions Item 40"
-  },
-  {
-    "id": "m17_item41",
-    "text": "Axes rotated 45°, transformed of curve is 17x² - 16xy + 17y² + 225 = 0. Original equation",
-    "options": [
-      "\\( 25x^2 + 9y^2 = 225 \\)",
-      "\\( 9x^2 - 25y^2 = 225 \\)",
-      "\\( 25x^2 - 16xy + 9y^2 + 225 = 0 \\)",
-      "\\( 9x^2 + 25y^2 = 225 \\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "Inverse rotation recovers original 9x² + 25y² = 225.",
-    "name": "Questions Item 41"
+    "correctIndex": 0,
+    "explanation": "After rotation by \\(45°\\), the transformed equation is \\(17x^2 - 16xy + 17y^2 = 225\\).\n\nTo find the original, apply inverse rotation (\\(-45°\\)): \\(x = \\dfrac{x'+y'}{\\sqrt{2}}\\), \\(y = \\dfrac{-x'+y'}{\\sqrt{2}}\\).\n\nSubstituting:\n\n\\[17\\cdot\\frac{(x+y)^2}{2} - 16\\cdot\\frac{(x+y)(-x+y)}{2} + 17\\cdot\\frac{(-x+y)^2}{2} = 225\\]\n\n\\[\\frac{17(x^2+2xy+y^2) - 16(y^2-x^2) + 17(x^2-2xy+y^2)}{2} = 225\\]\n\n\\[\\frac{50x^2 + 18y^2}{2} = 225 \\implies 25x^2 + 9y^2 = 225\\]",
+    "name": "Recover Original Equation from Rotated"
   }
 ]

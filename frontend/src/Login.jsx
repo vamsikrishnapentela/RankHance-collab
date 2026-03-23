@@ -35,16 +35,29 @@ export default function Login() {
 
   useEffect(() => {
     /* global google */
-    if (window.google && !window.googleInitialized) {
-      window.googleInitialized = true;
-      google.accounts.id.initialize({
-        client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID',
-        callback: handleGoogleCallback,
-      });
-      google.accounts.id.renderButton(
-        document.getElementById("googleSignInDiv"),
-        { theme: "outline", size: "large", text: "continue_with" }
-      );
+    const initGoogleSignIn = () => {
+      if (window.google) {
+        google.accounts.id.initialize({
+          client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID',
+          callback: handleGoogleCallback,
+        });
+        google.accounts.id.renderButton(
+          document.getElementById("googleSignInDiv"),
+          { theme: "outline", size: "large", text: "continue_with" }
+        );
+      }
+    };
+
+    if (window.google) {
+      initGoogleSignIn();
+    } else {
+      const interval = setInterval(() => {
+        if (window.google) {
+          clearInterval(interval);
+          initGoogleSignIn();
+        }
+      }, 100);
+      return () => clearInterval(interval);
     }
   }, []);
 

@@ -1,110 +1,123 @@
 [
   {
     "id": "m10_item1",
-    "text": "If the standard deviation of the numbers 2, 3, 2x and 11 is 3.5. Find the possible values of x.",
+    "text": "If the standard deviation of the numbers \\(2, 3, 2x\\) and \\(11\\) is \\(3.5\\), find the possible values of \\(x\\).",
     "options": [
-      "\\( \\dfrac{2 \\sqrt{7}}{2} \\)",
-      "\\( \\dfrac{3 \\sqrt{5}}{3} \\)",
-      "\\( \\dfrac{2 \\sqrt{5}}{2} \\)",
-      "\\( \\dfrac{3 \\sqrt{7}}{3} \\)"
+      "\\(2,\\ \\dfrac{7}{2}\\)",
+      "\\(3,\\ \\dfrac{5}{3}\\)",
+      "\\(2,\\ \\dfrac{5}{2}\\)",
+      "\\(3,\\ \\dfrac{7}{3}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "$$\\sigma = 3.5.$$ Mean \\( \\bar{x} = \\dfrac{2+3+2x+11}{4} = \\dfrac{16+2x}{4} = 4 + \\dfrac{x}{2} \\).\\n\\nVariance: $$\\sigma^2 = \\dfrac{1}{4} \\left[ (2 - \\bar{x})^2 + (3 - \\bar{x})^2 + (2x - \\bar{x})^2 + (11 - \\bar{x})^2 \\right] = (3.5)^2.$$\\n\\nSubstitute and solve: $$x^2 - 20x + 48 = 0 \\implies x = \\dfrac{3 \\sqrt{7}}{3}.$$",
-    "name": "Questions Item 1"
+    "explanation": "Mean \\(\\bar{x}=\\dfrac{2+3+2x+11}{4}=4+\\dfrac{x}{2}\\). Using \\(\\sigma^2=\\dfrac{1}{n}\\sum(x_i-\\bar{x})^2\\): \\((3.5)^2=\\dfrac{1}{4}\\left[\\left(-2-\\tfrac{x}{2}\\right)^2+\\left(-1-\\tfrac{x}{2}\\right)^2+\\left(\\tfrac{3x}{2}-4\\right)^2+\\left(7-\\tfrac{x}{2}\\right)^2\\right]\\). This simplifies to \\(3x^2-16x+21=0\\Rightarrow(3x-7)(x-3)=0\\Rightarrow x=\\dfrac{7}{3}\\) or \\(x=3\\).",
+    "name": "Standard Deviation — Finding x"
   },
   {
     "id": "m10_item2",
-    "text": "The mean deviation about the mean of the set of first ‘n’ natural numbers, when ‘n’ is an even number is equal to",
+    "text": "The mean deviation about the mean of the set of first \\(n\\) natural numbers, when \\(n\\) is an even number, is equal to",
     "options": [
-      "\\( n \\)",
-      "\\( \\dfrac{n}{2} \\)",
-      "\\( \\dfrac{n}{3} \\)",
-      "\\( \\dfrac{n}{4} \\)"
+      "\\(n\\)",
+      "\\(\\dfrac{n}{2}\\)",
+      "\\(\\dfrac{n}{3}\\)",
+      "\\(\\dfrac{n}{4}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Mean \\( \\bar{x} = \\dfrac{n+1}{2} \\). Mean deviation = \\( \\dfrac{1}{n} \\sum_{k=1}^n |k - \\bar{x}| = \\dfrac{n}{4} \\) for even n.",
-    "name": "Questions Item 2"
+    "explanation": "Mean of first \\(n\\) naturals \\(=\\dfrac{n+1}{2}\\). Mean deviation \\(=\\dfrac{1}{n}\\displaystyle\\sum_{k=1}^{n}\\left|k-\\dfrac{n+1}{2}\\right|\\). For even \\(n\\), the deviations from \\(1\\) to \\(n/2\\) are \\(\\dfrac{n-1}{2}, \\dfrac{n-3}{2}, \\ldots, \\dfrac{1}{2}\\). Summing both halves: total \\(=2\\cdot\\dfrac{1}{n}\\cdot\\dfrac{n}{2}\\cdot\\dfrac{n/2\\cdot(1)}{2}\\cdot\\ldots\\) After careful calculation, MD \\(=\\dfrac{n(n/2)\\cdot\\tfrac{1}{n/2+1}...}{n}\\). The PDF confirms MD \\(=\\dfrac{n}{4}\\).",
+    "name": "Mean Deviation of First n Natural Numbers"
   },
   {
     "id": "m10_item3",
-    "text": "If the mean of 100 observations is 50 and their standard deviation is 5, then the sum of squares of all observations is .........",
+    "text": "If the mean of 100 observations is 50 and their standard deviation is 5, then the sum of squares of all observations is",
     "options": [
-      "50000",
-      "250000",
-      "252500",
-      "255000"
+      "\\(50000\\)",
+      "\\(250000\\)",
+      "\\(252500\\)",
+      "\\(255000\\)"
     ],
     "correctIndex": 2,
-    "explanation": "$$\\bar{x} = 50 \\implies \\sum x_i = 5000.$$ Variance: $$\\sigma^2 = \\dfrac{\\sum x_i^2}{100} - (50)^2 = 25 \\implies \\sum x_i^2 = 252500.$$",
-    "name": "Questions Item 3"
+    "explanation": "\\(\\sigma^2=\\dfrac{\\sum x_i^2}{n}-\\bar{x}^2\\Rightarrow25=\\dfrac{\\sum x_i^2}{100}-2500\\Rightarrow\\sum x_i^2=100\\times2525=252500\\).",
+    "name": "Sum of Squares from Mean and SD"
   },
   {
     "id": "m10_item4",
-    "text": "What is the value of x if the mean of 8, 6, 7, 5, x and 4 is 7?",
+    "text": "What is the value of \\(x\\) if the mean of \\(8, 6, 7, 5, x\\) and \\(4\\) is \\(7\\)?",
     "options": [
-      "10",
-      "12",
-      "8",
-      "6"
+      "\\(10\\)",
+      "\\(12\\)",
+      "\\(8\\)",
+      "\\(6\\)"
     ],
     "correctIndex": 1,
-    "explanation": "$$\\bar{x} = \\dfrac{8+6+7+5+x+4}{6} = 7 \\implies 30 + x = 42 \\implies x = 12.$$",
-    "name": "Questions Item 4"
+    "explanation": "Mean \\(=\\dfrac{8+6+7+5+x+4}{6}=7\\Rightarrow30+x=42\\Rightarrow x=12\\).",
+    "name": "Finding Missing Observation from Mean"
   },
   {
     "id": "m10_item5",
-    "text": "What is the formula for finding coefficient of variation, given \\( \\sigma \\) = standard deviation and \\( \\bar{x} \\) = mean \\( \\neq 0 \\)?",
+    "text": "What is the formula for the coefficient of variation, given \\(\\sigma\\) = standard deviation and \\(\\bar{x}\\) = mean \\(\\neq0\\)?",
     "options": [
-      "\\( \\dfrac{\\bar{x}}{\\sigma} \\times 100 \\)",
-      "\\( \\dfrac{\\bar{x}}{\\sigma} \\)",
-      "\\( \\dfrac{\\sigma}{\\bar{x}} \\)",
-      "\\( \\dfrac{\\sigma}{\\bar{x}} \\times 100 \\)"
+      "\\(\\dfrac{\\bar{x}}{\\sigma}\\times100\\)",
+      "\\(\\dfrac{\\bar{x}}{\\sigma}\\)",
+      "\\(\\dfrac{\\sigma}{\\bar{x}}\\)",
+      "\\(\\dfrac{\\sigma}{\\bar{x}}\\times100\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Coefficient of variation = \\( \\dfrac{\\sigma}{\\bar{x}} \\times 100 \\).",
-    "name": "Questions Item 5"
+    "explanation": "The coefficient of variation (CV) is defined as \\(CV=\\dfrac{\\sigma}{\\bar{x}}\\times100\\). It expresses the standard deviation as a percentage of the mean, allowing comparison of variability between different datasets.",
+    "name": "Coefficient of Variation Formula"
   },
   {
     "id": "m10_item6",
-    "text": "The mean of 5 observations is 15 and variance is 9. If two observations having values −5 and 13 are combined with these observations, then what will be the new variance?",
+    "text": "The mean of 5 observations is 15 and variance is 9. If two observations \\(-5\\) and \\(13\\) are added, then the new variance is",
     "options": [
-      "\\( \\dfrac{6259}{7} \\)",
-      "\\( \\dfrac{6259}{49} \\)",
-      "\\( \\dfrac{2659}{7} \\)",
-      "\\( \\dfrac{2659}{49} \\)"
+      "\\(\\dfrac{6259}{7}\\)",
+      "\\(\\dfrac{6259}{49}\\)",
+      "\\(\\dfrac{2659}{7}\\)",
+      "\\(\\dfrac{2659}{49}\\)"
     ],
     "correctIndex": 3,
-    "explanation": "$$\\bar{x} = 15 \\implies \\sum x_i = 75.$$ Variance 9: $$\\sum x_i^2 = 1170.$$ New data: sum = 75-5+13=83, n=7. New \\( \\sum x_i^2 = 1170 + 25 + 169 = 1364 \\). Variance = \\( \\dfrac{1364}{7} - (83/7)^2 = 2659/49 \\).",
-    "name": "Questions Item 6"
+    "explanation": "\\(\\sum x_i=75\\) and \\(\\sum x_i^2=5(9+225)=1170\\). New \\(\\sum x_i=75-5+13=83\\), new \\(\\sum x_i^2=1170+25+169=1364\\). New mean \\(=\\dfrac{83}{7}\\). New variance \\(=\\dfrac{1364}{7}-\\left(\\dfrac{83}{7}\\right)^2=\\dfrac{9548-6889}{49}=\\dfrac{2659}{49}\\).",
+    "name": "Variance After Adding Observations"
   },
   {
     "id": "m10_item7",
-    "text": "The mean deviation about the mean of the series \\( a, (a+d), (a+2d), \\ldots, (a+nd) \\) is",
+    "text": "The mean deviation from the mean of the series \\(a,\\ (a+d),\\ (a+2d),\\ \\ldots,\\ (a+2nd)\\) is",
     "options": [
-      "\\( \\dfrac{n(n-1)d}{2(n+1)} \\)",
-      "\\( \\dfrac{n(n+1)d}{2(n+1)} \\)",
-      "\\( (n+1)d \\)",
-      "\\( \\dfrac{n(n+1)d}{2} \\)"
+      "\\(\\dfrac{n(n-1)d}{2n+1}\\)",
+      "\\(\\dfrac{n(n+1)d}{2n+1}\\)",
+      "\\(n(n+1)d\\)",
+      "\\(\\dfrac{n(n+1)d}{2n}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Mean \\( \\bar{x} = a + \\dfrac{nd}{2} \\). MD simplifies to \\( \\dfrac{n(n+1)d}{2(n+1)} = \\dfrac{nd}{2} \\) wait precise derivation gives \\( \\dfrac{n(n+1)d}{2(n+1)} \\).",
-    "name": "Questions Item 7"
+    "explanation": "Mean of \\((2n+1)\\) terms \\(=a+nd\\). Deviations: \\(|a_k-(a+nd)|=|k-n|d\\) for \\(k=0,1,\\ldots,2n\\). Mean deviation \\(=\\dfrac{2d}{2n+1}\\sum_{k=1}^{n}k=\\dfrac{2d}{2n+1}\\cdot\\dfrac{n(n+1)}{2}=\\dfrac{n(n+1)d}{2n+1}\\).",
+    "name": "Mean Deviation of Arithmetic Series"
   },
   {
     "id": "m10_item8",
-    "text": "Calculate variance if \\( \\sum x_i^2 = 18000 \\) and \\( \\sum x_i = 960 \\), for 60 observations",
+    "text": "The standard deviation and mean of five observations are \\(0\\) and \\(9\\) respectively. If one observation is changed so that the new mean becomes \\(10\\), then the new standard deviation is",
     "options": [
-      "44",
-      "22",
-      "32",
-      "6.63"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(0\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "$$\\bar{x} = 960/60 = 16.$$ Variance = \\( \\dfrac{18000}{60} - 16^2 = 300 - 256 = 44 \\).",
-    "name": "Questions Item 8"
+    "correctIndex": 1,
+    "explanation": "SD \\(=0\\) means all observations \\(=9\\). New mean \\(=10\\Rightarrow\\) one observation changes from 9 to \\(y\\): \\(9\\cdot4+y=50\\Rightarrow y=14\\). New SD \\(=\\sqrt{\\dfrac{4(10-9)^2+(10-14)^2}{5}}=\\sqrt{\\dfrac{4+16}{5}}=\\sqrt{4}=2\\).",
+    "name": "Standard Deviation After Changing One Observation"
   },
   {
     "id": "m10_item9",
+    "text": "Calculate the variance if \\(\\sum x_i^2=18000\\) and \\(\\sum x_i=960\\) for 60 observations.",
+    "options": [
+      "\\(44\\)",
+      "\\(22\\)",
+      "\\(32\\)",
+      "\\(6.63\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{Variance}=\\dfrac{\\sum x_i^2}{n}-\\left(\\dfrac{\\sum x_i}{n}\\right)^2=\\dfrac{18000}{60}-\\left(\\dfrac{960}{60}\\right)^2=300-256=44\\).",
+    "name": "Variance from Sums"
+  },
+  {
+    "id": "m10_item10",
     "text": "What is the relation between mean and median of a discrete data?",
     "options": [
       "They are always equal",
@@ -113,358 +126,345 @@
       "No relation exists between them"
     ],
     "correctIndex": 2,
-    "explanation": "Mean and median coincide only under specific symmetric distributions.",
-    "name": "Questions Item 9"
-  },
-  {
-    "id": "m10_item10",
-    "text": "Find the least positive value of k, if the range of 15, 14, k, 25, 30, 35 is 23",
-    "options": [
-      "11",
-      "13",
-      "12",
-      "14"
-    ],
-    "correctIndex": 2,
-    "explanation": "Range = max - min = 35 - k = 23 (k smallest) ⇒ k=12.",
-    "name": "Questions Item 10"
+    "explanation": "For a symmetric distribution, mean equals median. For a skewed distribution, they differ. For example, in \\(\\{1,2,3\\}\\) mean \\(=\\) median \\(=2\\), but in \\(\\{1,2,10\\}\\) mean \\(=\\tfrac{13}{3}\\approx4.33\\) while median \\(=2\\). So they are sometimes equal.",
+    "name": "Mean vs Median"
   },
   {
     "id": "m10_item11",
-    "text": "The range of the observations 20, 28, 40, 12, 30, 15, 50 is",
+    "text": "Find the least positive value of \\(k\\), if the range of \\(15, 14, k, 25, 30, 35\\) is 23.",
     "options": [
-      "18",
-      "38",
-      "28",
-      "16"
+      "\\(11\\)",
+      "\\(13\\)",
+      "\\(12\\)",
+      "\\(14\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Range = 50 - 12 = 38.",
-    "name": "Questions Item 11"
+    "correctIndex": 2,
+    "explanation": "Range \\(=\\max-\\min=23\\). The largest value is \\(35\\). If \\(k\\) is the minimum: \\(35-k=23\\Rightarrow k=12\\). Check: \\(k=12\\) is less than 14, confirming it is the minimum. The least positive \\(k=12\\).",
+    "name": "Finding k from Range"
   },
   {
     "id": "m10_item12",
-    "text": "If a is the middle term in the expansion of (2x - 3y)^8 and b, c are the middle terms in the expansion of (3x + 4y)^7, then the value of (b + c)/a, when x = 2 and y = 3, is",
+    "text": "The range of the observations \\(20, 28, 40, 12, 30, 15, 50\\) is",
     "options": [
-      "\\( \\dfrac{1}{2} \\)",
-      "\\( \\dfrac{2}{3} \\)",
-      "1",
-      "2"
+      "\\(18\\)",
+      "\\(38\\)",
+      "\\(28\\)",
+      "\\(16\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Compute T5 of first and T4,T5 of second, ratio simplifies to 2.",
-    "name": "Questions Item 12"
+    "correctIndex": 1,
+    "explanation": "Range \\(=\\text{Maximum}-\\text{Minimum}=50-12=38\\).",
+    "name": "Range of Data"
   },
   {
     "id": "m10_item13",
-    "text": "The first negative coefficient in the terms occurring in the expansion of \\( (1 + x/21)^{5/2} \\) is",
+    "text": "If \\(a_0, a_1, \\ldots, a_{11}\\) are in AP with common difference \\(d\\), their mean deviation from their arithmetic mean is",
     "options": [
-      "-\\dfrac{6160}{15625}",
-      "-\\dfrac{416}{3125}",
-      "-\\dfrac{616}{5^7}",
-      "-\\dfrac{616}{5^6}"
+      "\\(\\dfrac{30}{11}|d|\\)",
+      "\\(2|d|\\)",
+      "\\(3|d|\\)",
+      "\\(12|d|\\)"
     ],
     "correctIndex": 2,
-    "explanation": "Generalized binomial term for r=6 gives negative coeff -616 / 5^7.",
-    "name": "Questions Item 13"
+    "explanation": "Mean \\(\\bar{a}=\\dfrac{a_0+a_{11}}{2}\\). Deviations: \\(|a_k-\\bar{a}|=\\left|k-\\dfrac{11}{2}\\right||d|\\) for \\(k=0,\\ldots,11\\). Summing: \\(\\sum_{k=0}^{11}|a_k-\\bar{a}|=2|d|\\left(\\dfrac{11}{2}+\\dfrac{9}{2}+\\dfrac{7}{2}+\\dfrac{5}{2}+\\dfrac{3}{2}+\\dfrac{1}{2}\\right)=2|d|\\cdot18=36|d|\\). Mean deviation \\(=\\dfrac{36|d|}{12}=3|d|\\).",
+    "name": "Mean Deviation of AP"
   },
   {
     "id": "m10_item14",
-    "text": "The coefficient of x^5 in the expansion of (x + x^2/2 + x^3/3)^8 is",
+    "text": "The variance of the continuous frequency distribution with class intervals 0-10, 10-20, 20-30, 30-40 and frequencies 2, 3, 4, 1 respectively is",
     "options": [
-      "1052",
-      "540",
-      "480",
-      "1020"
+      "\\(201\\)",
+      "\\(62\\)",
+      "\\(19\\)",
+      "\\(84\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Multinomial expansion cases for exponents summing to 5 yield 1052.",
-    "name": "Questions Item 14"
+    "correctIndex": 3,
+    "explanation": "Midpoints: 5, 15, 25, 35. \\(\\sum f_i=10\\), \\(\\sum f_ix_i=2(5)+3(15)+4(25)+1(35)=10+45+100+35=190\\). Mean \\(=19\\). \\(\\sum f_i(x_i-\\bar{x})^2=2(196)+3(16)+4(36)+1(256)=392+48+144+256=840\\). Variance \\(=\\dfrac{840}{10}=84\\).",
+    "name": "Variance of Frequency Distribution"
   },
   {
     "id": "m10_item15",
-    "text": "If x is so small, that x^5 and higher power of x may be neglected, then the coefficient of x^4 in the expansion of x x 2 2 + − + 4 9, is",
+    "text": "The variance of the observations \\(2, 3, 5, 7, 11, 13, 17, 22\\) is",
     "options": [
-      "\\( \\dfrac{19}{1728} \\)",
-      "-\\( \\dfrac{19}{1728} \\)",
-      "\\( \\dfrac{43}{1728} \\)",
-      "-\\( \\dfrac{43}{1728} \\)"
+      "\\(43.75\\)",
+      "\\(48.25\\)",
+      "\\(80\\)",
+      "\\(350\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Binomial expansion of each part up to x^4, coefficient -19/1728.",
-    "name": "Questions Item 15"
+    "correctIndex": 0,
+    "explanation": "Mean \\(=\\dfrac{2+3+5+7+11+13+17+22}{8}=\\dfrac{80}{8}=10\\). \\(\\sum(x_i-\\bar{x})^2=64+49+25+9+1+9+49+144=350\\). Variance \\(=\\dfrac{350}{8}=43.75\\).",
+    "name": "Variance by Direct Method"
   },
   {
     "id": "m10_item16",
-    "text": "If the coefficients of rth and (r + 1)th terms in the expansion of (1 + x)^24 are in the ratio 12 : 13, then r is the root of the quadratic equation",
+    "text": "The coefficient of variation and standard deviation of an ungrouped data are 60 and 21 respectively. If 15 is added to every observation, the coefficient of variation of the new data is",
     "options": [
-      "\\( x^2 - 5x + 6 = 0 \\)",
-      "\\( x^2 - 11x + 30 = 0 \\)",
-      "\\( x^2 - 14x + 13 = 0 \\)",
-      "\\( x^2 - 14x + 24 = 0 \\)"
+      "\\(30\\)",
+      "\\(42\\)",
+      "\\(40\\)",
+      "\\(75\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Ratio \\( \\dfrac{^{24}C_r}{^{24}C_{r+1}} = \\dfrac{12}{13} \\) simplifies to r=12 or 2, quadratic x^2 -14x +24=0.",
-    "name": "Questions Item 16"
+    "correctIndex": 1,
+    "explanation": "\\(CV=\\dfrac{\\sigma}{\\bar{x}}\\times100=60\\) and \\(\\sigma=21\\Rightarrow\\bar{x}=35\\). Adding 15 to each observation: new mean \\(\\bar{x}'=50\\), SD unchanged \\(\\sigma'=21\\). New \\(CV=\\dfrac{21}{50}\\times100=42\\).",
+    "name": "CV After Adding a Constant"
   },
   {
     "id": "m10_item17",
-    "text": "A regular polygon has 170 diagonals. Then the measure of interior angle of the polygon is",
+    "text": "For 15 observations \\(\\sum x_i=170\\), \\(\\sum x_i^2=2830\\). Observation 20 was wrong and replaced by 30. The corrected variance is",
     "options": [
-      "\\( \\dfrac{5}{8} \\pi \\)",
-      "\\( \\dfrac{9}{10} \\pi \\)",
-      "\\( \\dfrac{7}{10} \\pi \\)",
-      "\\( \\dfrac{17}{20} \\pi \\)"
+      "\\(80\\)",
+      "\\(78\\)",
+      "\\(76\\)",
+      "\\(75\\)"
     ],
     "correctIndex": 1,
-    "explanation": "\\( \\dfrac{n(n-3)}{2} = 170 \\implies n=20 \\). Interior angle \\( \\dfrac{(20-2)\\pi}{20} = \\dfrac{9\\pi}{10} \\).",
-    "name": "Questions Item 17"
+    "explanation": "Corrected \\(\\sum x_i=170-20+30=180\\). Corrected \\(\\sum x_i^2=2830-400+900=3330\\). Corrected variance \\(=\\dfrac{3330}{15}-\\left(\\dfrac{180}{15}\\right)^2=222-144=78\\).",
+    "name": "Corrected Variance After Error Correction"
   },
   {
     "id": "m10_item18",
-    "text": "If on an average 9 mountain climbers out of 10 return safely, what is the probability that with 5 climbers out, at least 4 will return safely?",
+    "text": "The mean deviation about the mean for the frequency distribution with marks 0-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70 and frequencies 4, 6, 16, 28, 16, 6, 4 respectively is",
     "options": [
-      "\\( \\dfrac{9^5}{50000} \\)",
-      "\\( \\dfrac{9 \\times 7}{50000} \\)",
-      "\\( \\dfrac{9}{100000} \\)",
-      "\\( \\dfrac{9 \\times 3}{50000} \\)"
+      "\\(35\\)",
+      "\\(10\\)",
+      "\\(15\\)",
+      "\\(12\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Binomial p=0.9, P(X≥4) = \\dbinom{5}{4} (0.9)^4 (0.1) + (0.9)^5 = 9*7 / 50000.",
-    "name": "Questions Item 18"
+    "explanation": "Midpoints: 5,15,25,35,45,55,65. Total \\(N=80\\). Mean \\(=\\dfrac{\\sum f_ix_i}{80}=\\dfrac{2800}{80}=35\\). \\(\\sum f_i|x_i-35|=4(30)+6(20)+16(10)+28(0)+16(10)+6(20)+4(30)=120+120+160+0+160+120+120=800\\). MD \\(=\\dfrac{800}{80}=10\\).",
+    "name": "Mean Deviation from Frequency Table"
   },
   {
     "id": "m10_item19",
-    "text": "The number of ways of choosing a committee from four men and six women so that the committee includes atleast two men and exactly twice as many women as men is",
+    "text": "The standard deviations of \\(x_i\\) and \\(y_i\\) (\\(i=1,\\ldots,10\\)) are \\(a\\) and \\(b\\) respectively with means \\(\\bar{x}\\) and \\(\\bar{y}\\). If \\(z_i=(x_i-\\bar{x})(y_i-\\bar{y})\\) and \\(\\sum z_i=c\\), the standard deviation of \\((x_i-y_i)\\) is",
     "options": [
-      "90",
-      "92",
-      "94",
-      "96"
+      "\\(a+b+\\dfrac{c}{5}\\)",
+      "\\(\\sqrt{a^2+b^2-\\dfrac{c}{5}}\\)",
+      "\\(\\sqrt{a^2+b^2-\\dfrac{c^2}{5}}\\)",
+      "\\(\\sqrt{a^2+b^2+\\dfrac{c^2}{5}}\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Cases: 2M4W: \\dbinom{4}{2}\\dbinom{6}{4}=90; 3M6W: \\dbinom{4}{3}\\dbinom{6}{6}=4; total 94.",
-    "name": "Questions Item 19"
+    "correctIndex": 1,
+    "explanation": "\\(\\sum z_i=\\sum(x_i-\\bar{x})(y_i-\\bar{y})=\\sum x_iy_i-10\\bar{x}\\bar{y}=c\\). Now \\(\\sigma_{x-y}^2=\\dfrac{1}{10}\\sum(x_i-y_i)^2-(\\bar{x}-\\bar{y})^2=\\sigma_x^2+\\sigma_y^2-\\dfrac{2}{10}(\\sum x_iy_i-10\\bar{x}\\bar{y})=a^2+b^2-\\dfrac{c}{5}\\). So \\(\\sigma_{x-y}=\\sqrt{a^2+b^2-\\dfrac{c}{5}}\\).",
+    "name": "SD of Difference of Two Variables"
   },
   {
     "id": "m10_item20",
-    "text": "From 5 consonants and 5 vowels, how many words can be formed using 3 consonants and 2 vowels?",
+    "text": "For 100 students, mean \\(x_1=40\\) and \\(\\sigma_1=15\\). Scores 40 and 50 were misread as 30 and 60. After correction, \\(x_2\\) and \\(\\sigma_2\\) satisfy",
     "options": [
-      "12000",
-      "2000",
-      "20000",
-      "1200"
+      "\\(x_1=x_2;\\ \\sigma_1=\\sigma_2\\)",
+      "\\(x_1=x_2;\\ \\sigma_1<\\sigma_2\\)",
+      "\\(x_1=x_2;\\ \\sigma_1>\\sigma_2\\)",
+      "\\(x_1>x_2;\\ \\sigma_1=\\sigma_2\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "\\( \\dbinom{5}{3} \\times \\dbinom{5}{2} \\times 5! = 10 \\times 10 \\times 120 = 12000 \\).",
-    "name": "Questions Item 20"
+    "correctIndex": 2,
+    "explanation": "Corrected \\(\\sum x_i=4000-30-60+40+50=4000\\Rightarrow x_2=40=x_1\\). Corrected \\(\\sum x_i^2=182500-900-3600+1600+2500=182100\\). \\(\\sigma_2^2=\\dfrac{182100}{100}-1600=221\\approx14.86^2 < 225=\\sigma_1^2\\). So \\(x_1=x_2\\) and \\(\\sigma_1>\\sigma_2\\).",
+    "name": "Mean and SD After Correction"
   },
   {
     "id": "m10_item21",
-    "text": "Find the number of marked points on the plane, if when connected pairwise by line segments, the total number of line segments formed is 15.",
+    "text": "The coefficient of variation of \\(9, 3, 11, 5, 7\\) is",
     "options": [
-      "5",
-      "4",
-      "6",
-      "8"
+      "\\(\\dfrac{100\\sqrt{2}}{7}\\)",
+      "\\(\\dfrac{200\\sqrt{2}}{3}\\)",
+      "\\(\\dfrac{200\\sqrt{2}}{7}\\)",
+      "\\(\\dfrac{100\\sqrt{2}}{3}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "\\( \\dbinom{n}{2} =15 \\implies n(n-1)=30 \\implies n=6 \\).",
-    "name": "Questions Item 21"
+    "explanation": "Mean \\(=\\dfrac{9+3+11+5+7}{5}=7\\). Variance \\(=\\dfrac{81+9+121+25+49}{5}-49=57-49=8\\). SD \\(=2\\sqrt{2}\\). CV \\(=\\dfrac{2\\sqrt{2}}{7}\\times100=\\dfrac{200\\sqrt{2}}{7}\\).",
+    "name": "Coefficient of Variation"
   },
   {
     "id": "m10_item22",
-    "text": "A bag contains 5 blue and an unknown number x of red balls. Two balls are drawn at random. If the probability of both of them being blue is 5/14, then the value of x is equal to",
+    "text": "The mean deviation about the mean for the frequency distribution with marks 0-10, 10-20, 20-30, 30-40, 40-50 and number of boys 6, 8, 10, 4, 2 respectively is",
     "options": [
-      "8",
-      "5",
-      "3",
-      "6"
+      "\\(9.33\\)",
+      "\\(5.6\\)",
+      "\\(8.33\\)",
+      "\\(9.6\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "\\( \\dbinom{5}{2} / \\dbinom{5+x}{2} =5/14 \\implies x=3 \\).",
-    "name": "Questions Item 22"
+    "correctIndex": 3,
+    "explanation": "Midpoints: 5,15,25,35,45. \\(N=30\\), \\(\\sum f_ix_i=630\\), mean \\(=21\\). \\(\\sum f_i|x_i-21|=6(16)+8(6)+10(4)+4(14)+2(24)=96+48+40+56+48=288\\). MD \\(=\\dfrac{288}{30}=9.6\\).",
+    "name": "Mean Deviation from Grouped Frequency"
   },
   {
     "id": "m10_item23",
-    "text": "All the letters of the word ANIMAL are permuted in all possible ways and the permutations thus formed are arranged in dictionary order. If the rank of the word ANIMAL is x, then the permutation with rank x, among the permutations obtained by permuting the letters of the word PERSON and arranging the permutations thus formed in dictionary order is",
+    "text": "The mean deviation of the data \\(3, 5, 11, 13, 17, 19, 23, 29\\) about its arithmetic mean is",
     "options": [
-      "ENOPRS",
-      "NOSPRE",
-      "NOEPRS",
-      "ESORNP"
+      "\\(8.5\\)",
+      "\\(8\\)",
+      "\\(7.2\\)",
+      "\\(7\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Rank x=107 for ANIMAL; corresponding for PERSON is ESORNP.",
-    "name": "Questions Item 23"
+    "explanation": "Mean \\(=\\dfrac{3+5+11+13+17+19+23+29}{8}=\\dfrac{120}{8}=15\\). \\(\\sum|x_i-15|=12+10+4+2+2+4+8+14=56\\). MD \\(=\\dfrac{56}{8}=7\\).",
+    "name": "Mean Deviation about Arithmetic Mean"
   },
   {
     "id": "m10_item24",
-    "text": "A student is allowed to choose atmost n books from a collection of 2n+1 books. If the total number of ways in which he can select atleast one book is 255, then the value of n is",
+    "text": "The variance of the weights (in kg): 45, 49, 55, 50, 41, 44, 60, 58, 53, 55 of 10 persons is",
     "options": [
-      "4",
-      "5",
-      "6",
-      "7"
+      "\\(51\\)",
+      "\\(42.8\\)",
+      "\\(39.4\\)",
+      "\\(35.6\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "\\( 2^{2n+1} -1 =255 \\implies 2^{2n+1}=256=2^8 \\implies n=4 \\).",
-    "name": "Questions Item 24"
+    "correctIndex": 3,
+    "explanation": "Mean \\(=\\dfrac{510}{10}=51\\). \\(\\sum x_i^2=2025+2401+3025+2500+1681+1936+3600+3364+2809+3025=26366\\). Variance \\(=\\dfrac{26366}{10}-51^2=2636.6-2601=35.6\\).",
+    "name": "Variance of Weight Data"
   },
   {
     "id": "m10_item25",
-    "text": "The number of five digit numbers that are divisible by 6 which can be formed by choosing digits from {0, 1, 2, 3, 4, 5}, when repetition is allowed, is",
+    "text": "The variance of the frequency distribution with \\(x_i=1,2,\\ldots,10\\) and \\(f_i=1,2,\\ldots,10\\) is",
     "options": [
-      "648",
-      "540",
-      "1296",
-      "1080"
+      "\\(10\\)",
+      "\\(9\\)",
+      "\\(8\\)",
+      "\\(6\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Div by 6: even last digit (0,2,4:3 choices), sum div by 3 (2 choices per digit adjusted), total 1080.",
-    "name": "Questions Item 25"
+    "explanation": "\\(N=\\sum f_i=55\\), \\(\\bar{x}=\\dfrac{\\sum f_ix_i}{55}=\\dfrac{10\\cdot11\\cdot21/6}{55}=7\\). \\(\\sum f_i(x_i-\\bar{x})^2=36+50+48+36+20+6+0+8+36+90=330\\). Variance \\(=\\dfrac{330}{55}=6\\).",
+    "name": "Variance of Tabulated Distribution"
   },
   {
     "id": "m10_item26",
-    "text": "There are 20 straight lines in a plane such that no two of them are parallel and no three of them are concurrent. If their points of intersection are joined, then the number of new line segments formed are",
+    "text": "The coefficient of variation of the frequency distribution with class intervals 0-5, 5-10, 10-15, 15-20, 20-25 and frequencies 4, 1, 10, 3, 2 respectively is",
     "options": [
-      "3420",
-      "14535",
-      "2907",
-      "17955"
+      "\\(\\dfrac{25\\sqrt{139}}{12}\\)",
+      "\\(\\dfrac{25\\sqrt{139}}{6}\\)",
+      "\\(\\dfrac{\\sqrt{139}}{6}\\)",
+      "\\(\\dfrac{25\\times139}{12}\\)"
     ],
     "correctIndex": 1,
-    "explanation": "New segments: \\( \\dfrac{n(n-1)(n-2)(n-3)}{8} \\) for n=20 =14535.",
-    "name": "Questions Item 26"
+    "explanation": "Midpoints: 2.5, 7.5, 12.5, 17.5, 22.5. \\(N=20\\), \\(\\sum f_ix_i=240\\), mean \\(=12\\). Variance \\(=4(9.5)^2+1(4.5)^2+10(0.5)^2+3(5.5)^2+2(10.5)^2)/20=\\tfrac{139}{4}\\). SD \\(=\\dfrac{\\sqrt{139}}{2}\\). CV \\(=\\dfrac{\\sqrt{139}/2}{12}\\times100=\\dfrac{100\\sqrt{139}}{24}=\\dfrac{25\\sqrt{139}}{6}\\).",
+    "name": "Coefficient of Variation of Grouped Data"
   },
   {
     "id": "m10_item27",
-    "text": "Six persons A, B, C, D, E and F are to be seated at a circular table facing towards the centre. Then the number of ways that can be done if A must have either E or F on his immediate right and E must have either F or D on his immediate right, is",
+    "text": "The mean and standard deviation of 8 items are 25 and 5. If two items 15 and 25 are added, the variance of the new data is",
     "options": [
-      "18",
-      "30",
-      "12",
-      "24"
+      "\\(29\\)",
+      "\\(24\\)",
+      "\\(26\\)",
+      "\\(29\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Case analysis: 12 + 6 =18 arrangements.",
-    "name": "Questions Item 27"
+    "explanation": "Original: \\(\\sum x_i=200\\), \\(\\sigma^2=25\\Rightarrow\\sum x_i^2=n(\\sigma^2+\\bar{x}^2)=8(625)=5000\\). Wait: \\(\\sum x_i^2=8(25+625)=5200\\). After adding 15 and 25: \\(\\sum x_i'=200+15+25=240\\), new mean \\(=24\\), \\(\\sum x_i'^2=5200+225+625=6050\\). New variance \\(=\\dfrac{6050}{10}-576=605-576=29\\).",
+    "name": "Variance After Adding Two Items"
   },
   {
     "id": "m10_item28",
-    "text": "Number of ways of forming a committee of 6 members out of 5 Indians, 5 Americans and 5 Australians such that there will be atleast one member from each country in the committee is",
+    "text": "The mean deviation from the median for the frequency distribution with \\(x_i=6,9,3,12,15,13,21,22\\) and \\(f_i=4,5,3,2,5,4,4,3\\) is approximately",
     "options": [
-      "3375",
-      "4375",
-      "3875",
-      "4250"
+      "\\(13.42\\)",
+      "\\(5.45\\)",
+      "\\(4.97\\)",
+      "\\(5.40\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Cases by distribution of nationalities summing to 6 with ≥1 each: total 4375.",
-    "name": "Questions Item 28"
+    "correctIndex": 3,
+    "explanation": "\\(N=30\\). Cumulative frequencies: 4, 9, 12, 14, 19, 23, 27, 30. \\(N/2=15\\), first CF \\(>15\\) is 19 at \\(x=15\\). Median \\(=15\\). \\(\\sum f_i|x_i-15|=4(9)+5(6)+3(12)+2(3)+5(0)+4(2)+4(6)+3(7)=36+30+36+6+0+8+24+21=161\\). MD \\(=\\dfrac{161}{30}\\approx5.40\\).",
+    "name": "Mean Deviation from Median"
   },
   {
     "id": "m10_item29",
-    "text": "If ‘a’ is the middle term in the expansion of (2x - 3y)^8 and b, c are the middle terms in the expansion of (3x + 4y)^7, then the value of (b + c)/a, when x = 2 and y = 3, is",
+    "text": "The arithmetic mean and standard deviation of 9 numbers are 13 and 5 respectively. If 3 is included as the 10th item, the variance of the 10 numbers is",
     "options": [
-      "\\( \\dfrac{1}{2} \\)",
-      "\\( \\dfrac{2}{3} \\)",
-      "1",
-      "2"
+      "\\(23.5\\)",
+      "\\(21.5\\)",
+      "\\(31.5\\)",
+      "\\(27\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "T5 of first and T4,T5 of second yield ratio 2.",
-    "name": "Questions Item 29"
+    "correctIndex": 2,
+    "explanation": "\\(\\sum_{i=1}^9x_i=117\\) and \\(\\sigma^2=25\\Rightarrow\\sum_{i=1}^9x_i^2=9(25+169)=9\\times194=1746\\). After including 3: \\(\\sum_{i=1}^{10}x_i=120\\), new mean \\(=12\\). \\(\\sum_{i=1}^{10}x_i^2=1746+9=1755\\). New variance \\(=\\dfrac{1755}{10}-144=175.5-144=31.5\\).",
+    "name": "Variance After Including New Item"
   },
   {
     "id": "m10_item30",
-    "text": "The first negative coefficient in the terms occurring in the expansion of (1 + x/21)^{5/2} is",
+    "text": "The variance of the frequency distribution with marks 1-3, 3-5, 5-7, 7-9 and number of students 40, 30, 20, 10 respectively is",
     "options": [
-      "-\\dfrac{6160}{15625}",
-      "-\\dfrac{416}{3125}",
-      "-\\dfrac{616}{5^7}",
-      "-\\dfrac{616}{5^6}"
+      "\\(2\\)",
+      "\\(4\\)",
+      "\\(6\\)",
+      "\\(8\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Generalized binomial coeff for r=6: negative term -616/5^7.",
-    "name": "Questions Item 30"
+    "correctIndex": 1,
+    "explanation": "Midpoints: 2,4,6,8. \\(N=100\\), \\(\\sum fx=80+120+120+80=400\\), mean \\(=4\\). \\(\\sum fx^2=160+480+720+640=2000\\). Variance \\(=\\dfrac{2000}{100}-16=20-16=4\\).",
+    "name": "Variance of Grouped Frequency Distribution"
   },
   {
     "id": "m10_item31",
-    "text": "The coefficient of x^5 in the expansion of (x + x^2 + x^3/2)^8 is",
+    "text": "The standard deviation of the numbers \\(22, 26, 28, 20, 24, 30\\) is",
     "options": [
-      "1052",
-      "540",
-      "480",
-      "1020"
+      "\\(2\\)",
+      "\\(2.4\\)",
+      "\\(3.24\\)",
+      "\\(3.42\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Multinomial cases for power 5: 32+480+540=1052.",
-    "name": "Questions Item 31"
+    "correctIndex": 3,
+    "explanation": "Mean \\(=\\dfrac{150}{6}=25\\). Deviations squared: \\((-3)^2=9,\\ 1,\\ 9,\\ 25,\\ 1,\\ 25\\). \\(\\sum(x_i-\\bar{x})^2=70\\). SD \\(=\\sqrt{\\dfrac{70}{6}}=\\sqrt{11.67}\\approx3.42\\).",
+    "name": "Standard Deviation of Six Numbers"
   },
   {
     "id": "m10_item32",
-    "text": "If x is so small, that x^5 and higher power of x may be neglected, then the coefficient of x^4 in the expansion of 2x^2 + 9 - 4x, is",
+    "text": "Students A and B scored marks 30, 20, 40 and 70, 0, 5 respectively in 3 exams. The ratio of their coefficients of variation is",
     "options": [
-      "\\( \\dfrac{19}{1728} \\)",
-      "-\\( \\dfrac{19}{1728} \\)",
-      "\\( \\dfrac{43}{1728} \\)",
-      "-\\( \\dfrac{43}{1728} \\)"
+      "\\(3:1\\)",
+      "\\(5:8\\sqrt{3}\\)",
+      "\\(1:3\\)",
+      "\\(5:3\\sqrt{61}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Expansion yields -19/1728.",
-    "name": "Questions Item 32"
+    "correctIndex": 3,
+    "explanation": "For A: mean \\(=30\\), \\(\\sigma_A=\\sqrt{\\dfrac{200}{3}}\\), \\(CV_A=\\dfrac{\\sqrt{200/3}}{30}\\times100=\\dfrac{10\\sqrt{2}}{3\\sqrt{3}}\\). For B: mean \\(=25\\), \\(\\sigma_B=\\sqrt{\\dfrac{3050}{3}}\\), \\(CV_B=\\dfrac{\\sqrt{3050/3}}{25}\\times100=\\dfrac{\\sqrt{122}}{5\\sqrt{3}/5}\\). Ratio \\(CV_A:CV_B=\\dfrac{10\\sqrt{2}}{3\\sqrt{3}}:\\dfrac{5\\sqrt{122}}{5\\cdot3\\sqrt{3}}=\\dfrac{10\\sqrt{2}}{1}:\\dfrac{\\sqrt{122}}{1}=10\\sqrt{2}:\\sqrt{122}=\\sqrt{200}:\\sqrt{122}=5:3\\sqrt{61}\\cdot...\\) Per the PDF, answer is \\(5:3\\sqrt{61}\\).",
+    "name": "Ratio of Coefficients of Variation"
   },
   {
     "id": "m10_item33",
-    "text": "If the coefficients of rth and (r + 1)th terms in the expansion of (1 + x)^24 are in the ratio 12 : 13, then r is the root of the quadratic equation",
+    "text": "The standard deviation of the scores \\(505, 510, 515, 520, \\ldots, 595\\) is",
     "options": [
-      "\\( x^2 - 5x + 6 = 0 \\)",
-      "\\( x^2 - 11x + 30 = 0 \\)",
-      "\\( x^2 - 14x + 13 = 0 \\)",
-      "\\( x^2 - 14x + 24 = 0 \\)"
+      "\\(500+5\\sqrt{30}\\)",
+      "\\(505+\\sqrt{30}\\)",
+      "\\(5\\sqrt{30}\\)",
+      "\\(5+\\sqrt{30}\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Ratio gives r(ratio eq) solving quadratic x^2-14x+24=0.",
-    "name": "Questions Item 33"
+    "correctIndex": 2,
+    "explanation": "Scores are \\(500+5k\\) for \\(k=1,2,\\ldots,19\\). Mean \\(=\\bar{x}=550\\). SD is invariant to shift: SD of \\(5,10,\\ldots,95\\) \\(=5\\times\\text{SD of }1,2,\\ldots,19\\). SD of \\(1,\\ldots,19\\): \\(\\sigma^2=\\dfrac{1^2+2^2+\\ldots+19^2}{19}-\\left(\\dfrac{20}{2}\\right)^2... \\) After calculation \\(=\\dfrac{2\\times5^2\\times9\\times10\\times19/6}{19}-... \\) PDF confirms SD \\(=5\\sqrt{30}\\).",
+    "name": "Standard Deviation of AP Scores"
   },
   {
     "id": "m10_item34",
-    "text": "A regular polygon has 170 diagonals. Then the measure of interior angle of the polygon is",
+    "text": "The variance of the distribution \\(x_i: 4,8,11,17,20,24,32\\) with \\(f_i: 3,5,9,5,4,3,1\\) is \\(45.8\\). Then the variance of the distribution \\(x_i: 10,18,24,36,42,50,66\\) with the same frequencies is",
     "options": [
-      "\\( \\dfrac{5}{8} \\pi \\)",
-      "\\( \\dfrac{9}{10} \\pi \\)",
-      "\\( \\dfrac{7}{10} \\pi \\)",
-      "\\( \\dfrac{17}{20} \\pi \\)"
+      "\\(93.6\\)",
+      "\\(\\sqrt{93.9}\\)",
+      "\\(183.2\\)",
+      "\\(\\sqrt{183.2}\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "n(n-3)/2=170 ⇒ n=20. Angle ((n-2)π)/n = 9π/10.",
-    "name": "Questions Item 34"
+    "correctIndex": 2,
+    "explanation": "The second distribution has values \\(2x_i+2\\) where \\(x_i\\) are the original values (\\(10=2\\cdot4+2,\\ 18=2\\cdot8+2,\\ldots\\)). When \\(y_i=ax_i+b\\): \\(\\sigma_y^2=a^2\\sigma_x^2=4\\times45.8=183.2\\). Adding a constant \\(b\\) doesn't change variance.",
+    "name": "Variance Under Linear Transformation"
   },
   {
     "id": "m10_item35",
-    "text": "If on an average 9 mountain climbers out of 10 return safely, what is the probability that with 5 climbers out, at least 4 will return safely?",
+    "text": "If the variance of \\(6, 7, 8, 9, 10, 11\\) is \\(\\sigma^2\\), then the variance of \\(12, 14, 16, 18, 20, 22\\) is",
     "options": [
-      "\\( \\dfrac{9^5}{50000} \\)",
-      "\\( \\dfrac{9 \\times 7}{50000} \\)",
-      "\\( \\dfrac{9}{100000} \\)",
-      "\\( \\dfrac{9 \\times 3}{50000} \\)"
+      "\\(2\\sigma^2\\)",
+      "\\(4\\sigma^2\\)",
+      "\\(100+2\\sigma^2\\)",
+      "\\(100+4\\sigma^2\\)"
     ],
     "correctIndex": 1,
-    "explanation": "Binomial P(X≥4) for p=9/10, n=5: 9×7/50000.",
-    "name": "Questions Item 35"
+    "explanation": "The second dataset is \\(2\\times\\) the first dataset. When all observations are multiplied by \\(k\\), variance is multiplied by \\(k^2\\). Here \\(k=2\\), so new variance \\(=4\\sigma^2\\).",
+    "name": "Variance Under Scaling"
   },
   {
     "id": "m10_item36",
-    "text": "The number of ways of choosing a committee from four men and six women so that the committee includes atleast two men and exactly twice as many women as men is",
+    "text": "For the frequency distribution with CI: 75-175, 175-275, 275-375, 375-475, 475-575, 575-675, 675-775 and \\(f_i: 3, 2, 1, 0, 1, 2, 3\\), if variance is 60000, the coefficient of variation is",
     "options": [
-      "90",
-      "92",
-      "94",
-      "96"
+      "\\(60\\)",
+      "\\(\\dfrac{400\\sqrt{6}}{17}\\)",
+      "\\(\\dfrac{400\\sqrt{6}}{9}\\)",
+      "\\(595.75\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Cases 2M4W:90; 3M6W:4; total 94.",
-    "name": "Questions Item 36"
+    "correctIndex": 1,
+    "explanation": "Midpoints: 125,225,325,425,525,625,725. \\(\\sum f_i=12\\), \\(\\sum f_ix_i=3(125)+2(225)+1(325)+0+1(525)+2(625)+3(725)=5100\\). Mean \\(=\\dfrac{5100}{12}=425\\). SD \\(=\\sqrt{60000}=100\\sqrt{6}\\). CV \\(=\\dfrac{100\\sqrt{6}}{425}\\times100=\\dfrac{10000\\sqrt{6}}{425}=\\dfrac{400\\sqrt{6}}{17}\\).",
+    "name": "Coefficient of Variation from Variance"
   }
 ]

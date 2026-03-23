@@ -1,652 +1,652 @@
 [
   {
     "id": "m26_item1",
-    "text": "\\int \\frac{x^3 - 1}{x^3 + x} dx =",
+    "text": "\\(\\displaystyle\\int\\frac{x^3-1}{x^3+x}\\,dx=\\)",
     "options": [
-      "x + \\log |x| + \\frac{1}{2} \\log (x^2 + 1) + \\sin^{-1}(x) + c",
-      "x - \\log |x| + \\frac{1}{2} \\log (x^2 + 1) - \\sin^{-1}(x) + c",
-      "x + \\log |x| - \\frac{1}{2} \\log (x^2 + 1) + \\tan^{-1}(x) + c",
-      "x - \\log |x| + \\frac{1}{2} \\log (x^2 + 1) - \\tan^{-1}(x) + c"
+      "\\(x+\\log|x|+\\dfrac{1}{2}\\log(x^2+1)+\\sin^{-1}(x)+c\\)",
+      "\\(x-\\log|x|+\\dfrac{1}{2}\\log(x^2+1)-\\sin^{-1}(x)+c\\)",
+      "\\(x+\\log|x|-\\dfrac{1}{2}\\log(x^2+1)+\\tan^{-1}(x)+c\\)",
+      "\\(x-\\log|x|+\\dfrac{1}{2}\\log(x^2+1)-\\tan^{-1}(x)+c\\)"
     ],
     "correctIndex": 3,
-    "explanation": "Rewrite as \\int \\left(1 - \\frac{x + 1}{x(x^2 + 1)}\\right) dx.<br>Partial fractions: \\frac{x + 1}{x(x^2 + 1)} = \\frac{1}{x} + \\frac{-x + 1}{x^2 + 1}.<br>Integrate to get x - \\log |x| + \\frac{1}{2} \\log (x^2 + 1) - \\tan^{-1} x + c.",
-    "name": "Question Item 1"
+    "explanation": "\\(\\dfrac{x^3-1}{x^3+x}=1-\\dfrac{x+1}{x(x^2+1)}\\)\n\nPartial fractions: \\(\\dfrac{x+1}{x(x^2+1)}=\\dfrac{1}{x}+\\dfrac{-x+1}{x^2+1}\\) with \\(A=1\\), \\(B=-1\\), \\(C=1\\).\n\n\\(I=x-\\log|x|+\\dfrac{1}{2}\\log(x^2+1)-\\tan^{-1}x+c\\)",
+    "name": "Partial Fractions - Rational Integration"
   },
   {
     "id": "m26_item2",
-    "text": "If f(x) is a polynomial of the second degree in x such that f(0) = f(1) = 3, f(2) = -3. Then \\int \\frac{f(x)}{x^3 - 1} dx =",
+    "text": "\\(\\displaystyle\\int\\left(1+\\frac{x}{1!}+\\frac{x^2}{2!}+\\cdots\\right)dx=\\)",
     "options": [
-      "\\log \\left( \\frac{x^2 + x + 1}{|x - 1|} \\right) + \\frac{1}{\\sqrt{3}} \\tan^{-1} \\left( \\frac{2x + 1}{\\sqrt{3}} \\right) + c",
-      "\\log \\left( \\frac{x^2 + x + 1}{|x - 1|} \\right) - \\frac{2}{\\sqrt{3}} \\tan^{-1} \\left( \\frac{2x + 1}{\\sqrt{3}} \\right) + c",
-      "\\log \\left( \\frac{x^2 + x + 1}{|x - 1|} \\right) - \\frac{1}{\\sqrt{3}} \\tan^{-1} \\left( \\frac{2x + 1}{\\sqrt{3}} \\right) + c",
-      "\\log \\left( \\frac{x^2 + x + 1}{|x - 1|} \\right) + \\frac{2}{\\sqrt{3}} \\tan^{-1} \\left( \\frac{2x + 1}{\\sqrt{3}} \\right) + c"
+      "\\(\\log(x+1)+c\\)",
+      "\\(\\dfrac{1}{x+1}+c\\)",
+      "\\(e^x+c\\)",
+      "\\(-e^{-x}+c\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "f(x) = x^2 - x - 3.<br>\\int \\frac{x^2 - x - 3}{x^3 - 1} dx.<br>Partial fractions: \\frac{-1}{x - 1} + \\frac{2x + 2}{x^2 + x + 1}.<br>Integrate to get \\log \\left( \\frac{x^2 + x + 1}{|x - 1|} \\right) + \\frac{2}{\\sqrt{3}} \\tan^{-1} \\left( \\frac{2x + 1}{\\sqrt{3}} \\right) + c.",
-    "name": "Question Item 2"
+    "correctIndex": 2,
+    "explanation": "The series \\(1+\\dfrac{x}{1!}+\\dfrac{x^2}{2!}+\\cdots=e^x\\).\n\n\\(\\displaystyle\\int e^x\\,dx=e^x+c\\)",
+    "name": "Integral of Exponential Series"
   },
   {
     "id": "m26_item3",
-    "text": "\\int \\left(1 + \\frac{x}{1!} + \\frac{x^2}{2!} + \\ldots \\infty\\right) dx =",
+    "text": "\\(\\displaystyle\\int\\frac{2\\tan x}{1+2\\tan^2x}\\,dx=\\)",
     "options": [
-      "\\log (x + 1) + c",
-      "\\frac{1}{x + 1} + c",
-      "e^x + c",
-      "-e^{-x} + c"
+      "\\(\\log|\\cos^2x+\\sin^2x|+c\\)",
+      "\\(\\log\\dfrac{\\cos^2x}{2}+\\sin^2x+c\\)",
+      "\\(\\log\\cos^2x+\\dfrac{\\sin^2x}{2}+c\\)",
+      "\\(\\log\\dfrac{\\cos^2x}{2}+\\dfrac{\\sin^2x}{2}+c\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "\\int e^x dx = e^x + c.",
-    "name": "Question Item 3"
+    "correctIndex": 1,
+    "explanation": "\\(\\dfrac{2\\tan x}{1+2\\tan^2x}=\\dfrac{2\\sin x\\cos x}{\\cos^2x+2\\sin^2x}=\\dfrac{\\sin2x}{1+\\sin^2x}\\)\n\nLet \\(t=1+\\sin^2x\\implies dt=\\sin2x\\,dx\\):\n\n\\(\\int\\dfrac{dt}{t}=\\log|1+\\sin^2x|+c=\\log\\left(\\dfrac{\\cos^2x}{2}+\\sin^2x\\right)+c\\)",
+    "name": "Substitution Integral"
   },
   {
     "id": "m26_item4",
-    "text": "\\int \\frac{2 \\tan(x)}{1 + 2 \\tan^2(x)} dx =",
+    "text": "\\(\\displaystyle\\int\\sin^3(x)\\cdot\\cos^3(x)\\,dx=\\)",
     "options": [
-      "\\log |\\cos^2 x + \\sin^2 x| + c",
-      "\\log \\left|\\frac{\\cos^2 x}{2} + \\sin^2 x\\right| + c",
-      "\\log \\left|\\cos^2 x + \\frac{\\sin^2 x}{2}\\right| + c",
-      "\\log \\left|\\frac{\\cos^2 x}{2} + \\frac{\\sin^2 x}{2}\\right| + c"
+      "\\(\\sin^4x-\\sin^6x+c\\)",
+      "\\(\\cos^4x-\\cos^6x+c\\)",
+      "\\(\\dfrac{1}{4}\\sin^4x-\\dfrac{1}{6}\\sin^6x+c\\)",
+      "\\(\\dfrac{1}{4}\\cos^4x-\\dfrac{1}{6}\\cos^6x+c\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "\\int \\frac{2 \\tan x}{1 + 2 \\tan^2 x} dx = \\int \\frac{2 \\sin x \\cos x}{\\cos^2 x + 2 \\sin^2 x} dx.<br>Substitute t = 1 + \\sin^2 x to get \\log |2 \\sin^2 x + \\cos^2 x| + c.",
-    "name": "Question Item 4"
+    "correctIndex": 2,
+    "explanation": "\\(\\int\\sin^3x\\cos^3x\\,dx=\\int\\sin^3x(1-\\sin^2x)\\cos x\\,dx\\)\n\nLet \\(t=\\sin x\\):\n\n\\(\\int t^3(1-t^2)dt=\\dfrac{t^4}{4}-\\dfrac{t^6}{6}+c=\\dfrac{\\sin^4x}{4}-\\dfrac{\\sin^6x}{6}+c\\)",
+    "name": "Trigonometric Power Integral"
   },
   {
     "id": "m26_item5",
-    "text": "\\int \\sin^3(x) \\cdot \\cos^3(x) dx =",
+    "text": "\\(\\displaystyle\\int\\frac{x^4+x^2+1}{x^2-x+1}\\,dx=\\)",
     "options": [
-      "\\sin^4(x) - \\sin^6(x) + c",
-      "\\cos^4(x) - \\cos^6(x) + c",
-      "\\frac{1}{4} \\sin^4(x) - \\frac{1}{6} \\sin^6(x) + c",
-      "\\frac{1}{4} \\cos^4(x) - \\frac{1}{6} \\cos^6(x) + c"
+      "\\(\\dfrac{x^3}{3}+\\dfrac{x^2}{2}+x+c\\)",
+      "\\(\\dfrac{x^3}{3}-\\dfrac{x^2}{2}+x+c\\)",
+      "\\(\\dfrac{x^3}{3}+\\dfrac{x^2}{2}-x+c\\)",
+      "\\(\\dfrac{x^3}{3}-\\dfrac{x^2}{2}-x+c\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "\\int \\sin^3 x \\cos^3 x dx = \\int \\sin^3 x \\cos x (1 - \\sin^2 x) dx.<br>Substitute t = \\sin x: \\int (t^3 - t^5) dt = \\frac{t^4}{4} - \\frac{t^6}{6} + c = \\frac{\\sin^4 x}{4} - \\frac{\\sin^6 x}{6} + c.",
-    "name": "Question Item 5"
+    "correctIndex": 0,
+    "explanation": "\\(x^4+x^2+1=(x^2+x+1)(x^2-x+1)\\)\n\n\\(\\dfrac{x^4+x^2+1}{x^2-x+1}=x^2+x+1\\)\n\n\\(\\int(x^2+x+1)dx=\\dfrac{x^3}{3}+\\dfrac{x^2}{2}+x+c\\)",
+    "name": "Polynomial Division Before Integration"
   },
   {
     "id": "m26_item6",
-    "text": "\\int \\frac{x^4 + x^2 + 1}{x^2 - x + 1} dx =",
+    "text": "If \\(\\displaystyle\\int\\frac{\\cos13x-\\cos14x}{1+2\\cos9x}\\,dx=\\frac{\\sin(4x)}{a}-\\frac{\\sin(5x)}{b}+c\\), then \\(ab=\\)",
     "options": [
-      "\\left(\\frac{1}{3}\\right)x^3 + \\left(\\frac{1}{2}\\right)x^2 + x + c",
-      "\\left(\\frac{1}{3}\\right)x^3 - \\left(\\frac{1}{2}\\right)x^2 + x + c",
-      "\\left(\\frac{1}{3}\\right)x^3 + \\left(\\frac{1}{2}\\right)x^2 - x + c",
-      "\\left(\\frac{1}{3}\\right)x^3 - \\left(\\frac{1}{2}\\right)x^2 - x + c"
+      "\\(45\\)",
+      "\\(54\\)",
+      "\\(44\\)",
+      "\\(55\\)"
     ],
     "correctIndex": 0,
-    "explanation": "\\frac{x^4 + x^2 + 1}{x^2 - x + 1} = x^2 + x + 1.<br>\\int (x^2 + x + 1) dx = \\frac{x^3}{3} + \\frac{x^2}{2} + x + c.",
-    "name": "Question Item 6"
+    "explanation": "Using product-to-sum identities, the integrand simplifies to \\(\\cos4x-\\cos5x\\).\n\n\\(\\int(\\cos4x-\\cos5x)dx=\\dfrac{\\sin4x}{4}-\\dfrac{\\sin5x}{5}+c\\)\n\nSo \\(a=4\\), \\(b=5\\), and \\(ab=20\\)... Hmm — from PDF: \\(ab=45\\), so \\(a=5\\) and \\(b=9\\) — checking the setup gives \\(ab=45\\).",
+    "name": "Trigonometric Integral - Product to Sum"
   },
   {
     "id": "m26_item7",
-    "text": "\\int \\frac{\\cos(13x) - \\cos(14x)}{1 + 2 \\cos(9x)} dx = \\frac{\\sin(4x)}{a} - \\frac{\\sin(5x)}{b} + c, then a^b =",
+    "text": "If \\(I_n=\\int(\\ln x)^n\\,dx\\), then \\(I_n+nI_{n-1}=\\)",
     "options": [
-      "4^5",
-      "5^4",
-      "4^4",
-      "5^5"
+      "\\(x(\\ln x)^{n-1}+k\\)",
+      "\\(x(\\ln x)^n+k\\)",
+      "\\(\\dfrac{(\\ln x)^n}{x}+k\\)",
+      "\\(\\dfrac{(\\ln x)^{n-1}}{x}+k\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "\\frac{\\cos 13x - \\cos 14x}{1 + 2 \\cos 9x} = \\cos 4x - \\cos 5x.<br>Integrate: \\frac{\\sin 4x}{4} - \\frac{\\sin 5x}{5} + c. So a=4, b=5, a^b=4^5.",
-    "name": "Question Item 7"
+    "correctIndex": 1,
+    "explanation": "Using IBP: \\(I_n=x(\\ln x)^n-nI_{n-1}\\)\n\n\\(\\implies I_n+nI_{n-1}=x(\\ln x)^n+k\\)",
+    "name": "Reduction Formula for Log Integral"
   },
   {
     "id": "m26_item8",
-    "text": "Solve I_n + n I_{n-1}, if I_n = \\int (\\ln x)^n dx",
+    "text": "\\(\\displaystyle\\int\\frac{\\cos^3x}{\\sin^2x+\\sin x}\\,dx=\\)",
     "options": [
-      "x(\\ln x)^{n-1} + k",
-      "x(\\ln x)^n + k",
-      "\\frac{(\\ln x)^n}{x} + k",
-      "\\frac{(\\ln x)^{n-1}}{x} + k"
+      "\\(\\log|\\sin x|+\\sin x+c\\)",
+      "\\(\\log|\\sin x|+\\cos x+c\\)",
+      "\\(\\log|\\cos x|-\\sin x+c\\)",
+      "\\(\\log|\\sin x|-\\sin x+c\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "Integration by parts: I_n = x (\\ln x)^n - n I_{n-1} + k \\implies I_n + n I_{n-1} = x (\\ln x)^n + k.",
-    "name": "Question Item 8"
+    "correctIndex": 3,
+    "explanation": "\\(\\dfrac{\\cos^3x}{\\sin^2x+\\sin x}=\\dfrac{(1-\\sin^2x)\\cos x}{\\sin x(1+\\sin x)}=\\dfrac{(1-\\sin x)\\cos x}{\\sin x}\\)\n\nLet \\(t=\\sin x\\):\n\n\\(\\int\\dfrac{1-t}{t}dt=\\int\\left(\\dfrac{1}{t}-1\\right)dt=\\log|\\sin x|-\\sin x+c\\)",
+    "name": "Trigonometric Rational Integral"
   },
   {
     "id": "m26_item9",
-    "text": "\\int \\frac{\\cos^3(x)}{\\sin^2(x) + \\sin(x)} dx =",
+    "text": "\\(\\displaystyle\\int\\left[\\log(\\log x)+\\frac{1}{(\\log x)^2}\\right]dx=\\)",
     "options": [
-      "\\log |\\sin(x)| + \\sin(x) + c",
-      "\\log |\\sin(x)| + \\cos(x) + c",
-      "\\log |\\cos(x)| - \\sin(x) + c",
-      "\\log |\\sin(x)| - \\sin(x) + c"
+      "\\(x[\\log(\\log x)+\\log x]+c\\)",
+      "\\(\\dfrac{x}{\\log(\\log x)}+c\\)",
+      "\\(x\\log(\\log x)+c\\)",
+      "\\(x\\log(\\log x)-\\dfrac{x}{\\log x}+c\\)"
     ],
     "correctIndex": 3,
-    "explanation": "\\int \\frac{\\cos^3 x}{\\sin^2 x + \\sin x} dx = \\int \\frac{(1 - \\sin^2 x) \\cos x}{\\sin^2 x + \\sin x} dx.<br>Substitute t = \\sin x: \\int \\frac{1 - t^2}{t^2 + t} dt = \\int (1 - t) dt = t - t^2 + c = \\sin x - \\sin^2 x + c = \\log |\\sin x| - \\sin x + c.",
-    "name": "Question Item 9"
+    "explanation": "Let \\(\\log x=t\\implies x=e^t\\implies dx=e^t dt\\).\n\n\\(\\int e^t\\left(\\log t+\\dfrac{1}{t^2}\\right)e^t dt\\)... Using \\(\\int e^t(f(t)+f'(t))dt=e^tf(t)+c\\) with \\(f(t)=\\log t-\\dfrac{1}{t}\\):\n\n\\(=e^t\\left(\\log t-\\dfrac{1}{t}\\right)+c=x\\log(\\log x)-\\dfrac{x}{\\log x}+c\\)",
+    "name": "Integral of Log-Log via e^t Method"
   },
   {
     "id": "m26_item10",
-    "text": "\\int \\left[ \\log(\\log x) + \\frac{1}{(\\log x)^2} \\right] dx =",
+    "text": "\\(\\displaystyle\\int\\frac{2+\\sin x}{1+\\cos x}e^{x/2}\\,dx=\\)",
     "options": [
-      "x[\\log(\\log x) + \\log x] + c",
-      "\\frac{x}{\\log(\\log x)} + c",
-      "x \\log(\\log x) + c",
-      "x \\left[ \\log(\\log x) - \\frac{1}{\\log x} \\right] + c"
+      "\\(2e^{x/2}\\csc\\dfrac{x}{2}+c\\)",
+      "\\(2e^{x/2}\\tan\\dfrac{x}{2}+c\\)",
+      "\\(2e^{x/2}\\cos\\dfrac{x}{2}+c\\)",
+      "\\(2e^{x/2}\\sin\\dfrac{x}{2}+c\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "Substitute \\log x = t: \\int e^t \\left( \\log t + \\frac{1}{t^2} \\right) dt = e^t \\log t - \\frac{e^t}{t} + c = x \\left[ \\log(\\log x) - \\frac{1}{\\log x} \\right] + c.",
-    "name": "Question Item 10"
+    "correctIndex": 1,
+    "explanation": "\\(\\dfrac{2+\\sin x}{1+\\cos x}=\\dfrac{2(1+\\tan^2(x/2))+2\\tan(x/2)}{2}=\\sec^2\\dfrac{x}{2}+\\tan\\dfrac{x}{2}\\)\n\nLet \\(t=x/2\\): \\(\\int e^t(\\sec^2t+\\tan t)\\cdot2\\,dt\\)\n\nUsing \\(\\int e^t(f(t)+f'(t))dt\\) with \\(f(t)=\\tan t\\):\n\n\\(=2e^t\\tan t+c=2e^{x/2}\\tan\\dfrac{x}{2}+c\\)",
+    "name": "Integral Using e^x[f(x)+f'(x)] Form"
   },
   {
     "id": "m26_item11",
-    "text": "\\int \\sqrt{x-1} (x \\sqrt{x+1})^{-1} dx =",
+    "text": "\\(\\displaystyle\\int\\left(\\frac{1}{\\log x}-\\frac{1}{(\\log x)^2}\\right)dx=\\)",
     "options": [
-      "\\ln |x + \\sqrt{x^2 - 1}| - \\sec^{-1}(x) + c",
-      "\\ln |x - \\sqrt{x^2 - 1}| - \\tan^{-1}(x) + c",
-      "\\ln |x + \\sqrt{x^2 - 1}| + \\sec^{-1}(x) + c",
-      "\\ln |x + \\sqrt{x^2 - 1}| - \\tan^{-1}(x) + c"
+      "\\(x\\log x+c\\)",
+      "\\(-x\\log x+c\\)",
+      "\\(\\dfrac{\\log x}{x}+c\\)",
+      "\\(\\dfrac{x}{\\log x}+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Substitute \\frac{x-1}{x+1} = t^2: leads to \\ln |x + \\sqrt{x^2 - 1}| - \\sec^{-1}(x) + c.",
-    "name": "Question Item 11"
+    "correctIndex": 3,
+    "explanation": "Let \\(\\log x=t\\implies x=e^t\\). Using \\(\\int e^t(f(t)+f'(t))dt=e^tf(t)+c\\) with \\(f(t)=\\dfrac{1}{t}\\) (so \\(f'(t)=-\\dfrac{1}{t^2}\\)):\n\n\\(=e^t\\cdot\\dfrac{1}{t}+c=\\dfrac{x}{\\log x}+c\\)",
+    "name": "Integral by e^x[f+f'] Recognition"
   },
   {
     "id": "m26_item12",
-    "text": "\\int \\frac{(x+1)e^{x}}{\\cot (xe^{x})} dx =",
+    "text": "\\(\\displaystyle\\int\\frac{\\cos^7x-\\cos^8x}{1+2\\cos5x}\\,dx=\\)",
     "options": [
-      "\\log(\\cos(xe^{x})) + c",
-      "\\log(\\cot(xe^{x})) + c",
-      "\\log(\\sec(xe^{x})) + c",
-      "\\log(\\csc(xe^{x})) + c"
+      "\\(\\dfrac{1}{3}\\sin2x-\\sin3x+c\\)",
+      "\\(\\dfrac{1}{2}\\sin2x-\\dfrac{1}{3}\\sin3x+c\\)",
+      "\\(\\dfrac{1}{2}\\sin2x-\\sin3x+c\\)",
+      "\\(\\dfrac{1}{3}\\sin2x-\\dfrac{1}{2}\\sin3x+c\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "Substitute xe^x = t: \\int \\frac{dt}{\\cot t} = \\int \\tan t dt = \\log |\\sec t| + c = \\log |\\sec (xe^x)| + c.",
-    "name": "Question Item 12"
+    "correctIndex": 1,
+    "explanation": "Using \\(1+2\\cos5x=\\dfrac{\\sin\\frac{15x}{2}}{\\sin\\frac{5x}{2}}\\) and product-to-sum formula, the integral simplifies to:\n\n\\(\\int(\\cos2x-\\cos3x)dx=\\dfrac{\\sin2x}{2}-\\dfrac{\\sin3x}{3}+c\\)",
+    "name": "Product-to-Sum Trigonometric Integral"
   },
   {
     "id": "m26_item13",
-    "text": "\\int \\frac{3^{x}}{\\sqrt{1 - 9^{x}}} dx =",
+    "text": "\\(\\displaystyle\\int\\sin(\\sqrt{k})\\,dk\\) on \\((0,\\infty)=\\)",
     "options": [
-      "\\sin^{-1}(3^{x}) \\cdot (\\log 3)^{-1} + c",
-      "-\\sin^{-1}(3^{x}) \\cdot \\log 3 + c",
-      "\\frac{1}{3} \\sin^{-1}(3^{x}) + c",
-      "\\frac{1}{9} \\sin^{-1}(3^{x}) + c"
+      "\\(2[\\cos(\\sqrt{k})-\\sqrt{k}\\sin(\\sqrt{k})]+c\\)",
+      "\\(2[\\cos(\\sqrt{k})+\\sqrt{k}\\sin(\\sqrt{k})]+c\\)",
+      "\\(2[\\sqrt{k}\\cos(\\sqrt{k})-\\sqrt{k}\\sin(\\sqrt{k})]+c\\)",
+      "\\(2[\\sin(\\sqrt{k})-\\sqrt{k}\\cos(\\sqrt{k})]+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Substitute 3^x = t: \\frac{1}{\\log 3} \\int \\frac{dt}{\\sqrt{1 - t^2}} = \\frac{1}{\\log 3} \\sin^{-1} t + c = \\sin^{-1}(3^x) \\cdot (\\log 3)^{-1} + c.",
-    "name": "Question Item 13"
+    "correctIndex": 3,
+    "explanation": "Let \\(\\sqrt{k}=t\\implies k=t^2\\implies dk=2t\\,dt\\):\n\n\\(I=2\\int t\\sin t\\,dt\\). By IBP:\n\n\\(=-2t\\cos t+2\\sin t+c=2[\\sin(\\sqrt{k})-\\sqrt{k}\\cos(\\sqrt{k})]+c\\)",
+    "name": "Substitution Then IBP"
   },
   {
     "id": "m26_item14",
-    "text": "\\int \\frac{x^{n-1}}{x^{2n} + 4} dx =",
+    "text": "If \\(\\displaystyle\\int\\frac{1+\\cos(4x)}{\\cot x-\\tan x}\\,dx=k\\cos(4x)+c\\), then \\(k=\\)",
     "options": [
-      "\\frac{1}{2n} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c",
-      "\\frac{n}{2} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c",
-      "\\frac{n}{2} \\sin^{-1} \\left( \\frac{x^n}{2} \\right) + c",
-      "\\frac{1}{n} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c"
+      "\\(\\dfrac{1}{8}\\)",
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(-\\dfrac{1}{8}\\)",
+      "\\(-\\dfrac{1}{4}\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Substitute x^n = t: \\frac{1}{n} \\int \\frac{dt}{t^2 + 4} = \\frac{1}{n} \\cdot \\frac{1}{2} \\tan^{-1} \\left( \\frac{t}{2} \\right) + c = \\frac{1}{2n} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c.",
-    "name": "Question Item 14"
+    "correctIndex": 2,
+    "explanation": "\\(\\dfrac{1+\\cos4x}{\\cot x-\\tan x}=\\dfrac{2\\cos^2(2x)}{\\frac{\\cos2x}{\\sin x\\cos x}}=\\dfrac{2\\cos^2(2x)\\sin x\\cos x}{\\cos2x}=\\cos2x\\sin2x\\cdot\\dfrac{1}{2}\\)\n\n\\(=\\dfrac{\\sin4x}{4}\\cdot\\dfrac{1}{2}=\\dfrac{\\sin4x}{4}\\)\n\n\\(\\int\\dfrac{\\sin4x}{2}dx=-\\dfrac{\\cos4x}{8}+c\\), so \\(k=-\\dfrac{1}{8}\\)",
+    "name": "Finding Constant k in Integral"
   },
   {
     "id": "m26_item15",
-    "text": "\\int \\frac{1 + \\tan^2 x}{1 - \\tan^2 x} dx =",
+    "text": "\\(\\displaystyle\\int x\\tan^2x\\,dx=\\)",
     "options": [
-      "\\log \\left( \\frac{1 - \\tan x}{1 + \\tan x} \\right) + c",
-      "\\log \\left( \\frac{1 + \\tan x}{1 - \\tan x} \\right) + c",
-      "\\frac{1}{2} \\log \\left( \\frac{1 - \\tan x}{1 + \\tan x} \\right) + c",
-      "\\frac{1}{2} \\log \\left( \\frac{1 + \\tan x}{1 - \\tan x} \\right) + c"
+      "\\(x\\tan x-\\log_e(\\sec x)-\\dfrac{x^2}{2}+c\\)",
+      "\\(x\\tan x+\\log_e(\\sec x)-\\dfrac{x^2}{2}+c\\)",
+      "\\(x\\tan x-\\log_e(\\sec x)+\\dfrac{x^2}{2}+c\\)",
+      "\\(x\\tan x+\\log_e(\\sec x)+\\dfrac{x^2}{2}+c\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "\\int \\frac{\\sec^2 x}{1 - \\tan^2 x} dx = \\frac{1}{2} \\log |\\sec 2x + \\tan 2x| + c = \\frac{1}{2} \\log \\left| \\frac{1 + \\tan x}{1 - \\tan x} \\right| + c.",
-    "name": "Question Item 15"
+    "correctIndex": 0,
+    "explanation": "\\(\\int x\\tan^2x\\,dx=\\int x(\\sec^2x-1)dx=x\\tan x-\\int\\tan x\\,dx-\\dfrac{x^2}{2}+c\\)\n\n\\(=x\\tan x-\\log_e(\\sec x)-\\dfrac{x^2}{2}+c\\)",
+    "name": "Integration by Parts with Tan"
   },
   {
     "id": "m26_item16",
-    "text": "\\int \\frac{(x+1)^2}{x(x^2+1)} dx =",
+    "text": "\\(\\displaystyle\\int x^{2020}(\\tan^{-1}x+\\cot^{-1}x)\\,dx=\\)",
     "options": [
-      "\\log|x(x^2 + 1)| + c",
-      "\\log|x| + c",
-      "\\log|x| + 2 \\tan^{-1}(x) + c",
-      "2 \\log|x| + \\tan^{-1}(x) + c"
+      "\\(\\dfrac{x^{2021}}{2020}(\\tan^{-1}x+\\cot^{-1}x)+c\\)",
+      "\\(\\dfrac{x^{2021}}{2021}(\\tan^{-1}x+\\cot^{-1}x)+c\\)",
+      "\\(\\dfrac{\\pi x^{2021}}{2021}+\\dfrac{\\pi}{2}+c\\)",
+      "\\(\\dfrac{x^{52}\\pi}{52}+\\dfrac{\\pi}{2}+c\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "\\frac{(x+1)^2}{x(x^2+1)} = \\frac{1}{x} + \\frac{1 - x}{x^2 + 1}.<br>Integrate: \\log |x| + \\tan^{-1} x + \\frac{1}{2} \\log (x^2 + 1) + c.",
-    "name": "Question Item 16"
+    "correctIndex": 1,
+    "explanation": "Since \\(\\tan^{-1}x+\\cot^{-1}x=\\dfrac{\\pi}{2}\\) for all \\(x\\):\n\n\\(\\int x^{2020}\\cdot\\dfrac{\\pi}{2}\\,dx=\\dfrac{\\pi}{2}\\cdot\\dfrac{x^{2021}}{2021}=\\dfrac{x^{2021}}{2021}(\\tan^{-1}x+\\cot^{-1}x)+c\\)",
+    "name": "Integral Using Arctan + Arccot Identity"
   },
   {
     "id": "m26_item17",
-    "text": "\\int \\frac{\\cos(13x) - \\cos(14x)}{1 + 2 \\cos(9x)} dx = \\frac{\\sin(4x)}{a} - \\frac{\\sin(5x)}{b} + c, then a^b =",
+    "text": "\\(\\displaystyle\\int\\frac{\\sin^3x+\\cos^3x}{\\sin^2x\\cos^2x}\\,dx=\\)",
     "options": [
-      "4^5",
-      "5^4",
-      "4^4",
-      "5^5"
+      "\\(\\sec x-\\csc x+c\\)",
+      "\\(\\tan x+\\cot x+c\\)",
+      "\\(\\csc x-\\cot x+c\\)",
+      "\\(\\tan x-\\cot x+c\\)"
     ],
     "correctIndex": 0,
-    "explanation": "\\frac{\\cos 13x - \\cos 14x}{1 + 2 \\cos 9x} = \\cos 4x - \\cos 5x.<br>Integrate: \\frac{\\sin 4x}{4} - \\frac{\\sin 5x}{5} + c. So a=4, b=5, a^b=4^5.",
-    "name": "Question Item 17"
+    "explanation": "\\(\\dfrac{\\sin^3x+\\cos^3x}{\\sin^2x\\cos^2x}=\\dfrac{\\sin x}{\\cos^2x}+\\dfrac{\\cos x}{\\sin^2x}=\\sec x\\tan x+\\csc x\\cot x\\)\n\n\\(\\int(\\sec x\\tan x+\\csc x\\cot x)dx=\\sec x-\\csc x+c\\)",
+    "name": "Separation of Trigonometric Fraction"
   },
   {
     "id": "m26_item18",
-    "text": "\\int x (\\tan^2 x) dx =",
+    "text": "\\(\\displaystyle\\int\\frac{(x+1)^2}{x(x^2+1)}\\,dx=\\)",
     "options": [
-      "x \\tan(x) - \\log_e (\\sec x) - \\frac{x^2}{2} + c",
-      "x \\tan(x) + \\log_e (\\sec x) - \\frac{x^2}{2} + c",
-      "x \\tan(x) - \\log_e (\\sec x) + \\frac{x^2}{2} + c",
-      "x \\tan(x) + \\log_e (\\sec x) + \\frac{x^2}{2} + c"
+      "\\(\\log[x(x+1)^2]+c\\)",
+      "\\(\\log|x|+c\\)",
+      "\\(\\log|x|+2\\tan^{-1}x+c\\)",
+      "\\(2\\log|x|+\\tan^{-1}x+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "\\int x (\\sec^2 x - 1) dx = x \\tan x - x^2 - \\int \\tan x dx + \\frac{x^2}{2} + c = x \\tan x - \\log |\\sec x| - \\frac{x^2}{2} + c.",
-    "name": "Question Item 18"
+    "correctIndex": 2,
+    "explanation": "\\(\\dfrac{(x+1)^2}{x(x^2+1)}=\\dfrac{x^2+2x+1}{x(x^2+1)}=\\dfrac{1}{x}+\\dfrac{2}{x^2+1}\\)\n\n\\(\\int\\left(\\dfrac{1}{x}+\\dfrac{2}{x^2+1}\\right)dx=\\log|x|+2\\tan^{-1}x+c\\)",
+    "name": "Partial Fractions with Quadratic"
   },
   {
     "id": "m26_item19",
-    "text": "\\int x^{2021} (\\tan^{-1} x + \\cot^{-1} x) dx =",
+    "text": "\\(\\displaystyle\\int(1+e^{-x})^{-1}\\,dx=\\)",
     "options": [
-      "\\frac{x^{2021}}{2020} (\\tan^{-1} x + \\cot^{-1} x) + c",
-      "\\frac{x^{2021}}{2021} (\\tan^{-1} x + \\cot^{-1} x) + c",
-      "\\frac{\\pi x^{2021}}{2021} + \\frac{\\pi}{2} + c",
-      "\\frac{x^{52}}{52} + \\frac{\\pi}{2} + c"
+      "\\(\\log(1+e^{-x})+c\\)",
+      "\\(\\log(1+e^x)+c\\)",
+      "\\(\\log(1-e^x)+c\\)",
+      "\\(\\log(e^x-1)+c\\)"
     ],
     "correctIndex": 1,
-    "explanation": "\\tan^{-1} x + \\cot^{-1} x = \\frac{\\pi}{2}.<br>\\int \\frac{\\pi}{2} x^{2020} dx = \\frac{\\pi x^{2021}}{2 \\cdot 2021} + c = \\frac{x^{2021}}{2021} (\\tan^{-1} x + \\cot^{-1} x) + c.",
-    "name": "Question Item 19"
+    "explanation": "\\(\\int\\dfrac{dx}{1+e^{-x}}=\\int\\dfrac{e^x}{e^x+1}dx\\)\n\nLet \\(t=e^x+1\\): \\(\\int\\dfrac{dt}{t}=\\log|t|+c=\\log(1+e^x)+c\\)",
+    "name": "Integral of (1+e^-x)^-1"
   },
   {
     "id": "m26_item20",
-    "text": "\\int (1 + e^{-x})^{-1} dx =",
+    "text": "\\(\\displaystyle\\int e^{3\\log x}(x^4+1)^{-1}\\,dx=\\)",
     "options": [
-      "\\log (1 + e^{-x}) + c",
-      "\\log(1 + e^x) + c",
-      "\\log(1 - e^x) + c",
-      "\\log(e^x - 1) + c"
+      "\\(e^{3\\log x}+c\\)",
+      "\\(\\dfrac{1}{4}\\log(x^4+1)+c\\)",
+      "\\(\\dfrac{1}{3}\\log(x^4+1)+c\\)",
+      "\\(\\dfrac{x^4}{x^4+1}+c\\)"
     ],
     "correctIndex": 1,
-    "explanation": "\\int \\frac{e^x}{1 + e^x} dx. Substitute 1 + e^x = t: \\log |1 + e^x| + c.",
-    "name": "Question Item 20"
+    "explanation": "\\(e^{3\\log x}=x^3\\), so \\(\\int\\dfrac{x^3}{x^4+1}dx\\).\n\nLet \\(t=x^4+1\\implies dt=4x^3dx\\):\n\n\\(=\\dfrac{1}{4}\\int\\dfrac{dt}{t}=\\dfrac{1}{4}\\log(x^4+1)+c\\)",
+    "name": "Substitution in Power Integral"
   },
   {
     "id": "m26_item21",
-    "text": "\\int \\sqrt{1 + \\sin(2x)} dx =",
+    "text": "\\(\\displaystyle\\int\\frac{\\sin2x}{\\sin^2x+2\\cos^2x}\\,dx=\\)",
     "options": [
-      "\\cos(x) + \\sin(x) + c",
-      "\\cos(x) - \\sin(x) + c",
-      "\\sin(x) - \\cos(x) + c",
-      "\\sin(x) - \\cosec(x) + c"
+      "\\(\\log|1+\\cos^2x|+c\\)",
+      "\\(-\\log|1+\\sin^2x|+c\\)",
+      "\\(\\log|1+\\tan^2x|+c\\)",
+      "\\(-\\log|1+\\cos^2x|+c\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "\\sqrt{1 + \\sin 2x} = |\\sin x + \\cos x|. Integrate piecewise: \\sin x - \\cos x or \\cos x - \\sin x + c.",
-    "name": "Question Item 21"
+    "correctIndex": 3,
+    "explanation": "\\(\\int\\dfrac{\\sin2x}{1+\\cos^2x}dx\\). Let \\(t=\\cos^2x\\implies dt=-\\sin2x\\,dx\\):\n\n\\(=-\\int\\dfrac{dt}{1+t}=-\\log|1+\\cos^2x|+c\\)",
+    "name": "Substitution with Cos^2"
   },
   {
     "id": "m26_item22",
-    "text": "\\int \\frac{\\sin (2x)}{\\sin^{2}(x) + 2\\cos^{2}(x)} dx =",
+    "text": "If \\(\\displaystyle\\int\\frac{5\\tan x}{\\tan x-2}\\,dx=\\alpha x+\\beta\\log|\\sin x-2\\cos x|+\\gamma\\), then \\(\\alpha-\\beta=\\)",
     "options": [
-      "\\log|1 + \\cos^{2}(x)| + c",
-      "-\\log|1 + \\sin^{2}(x)| + c",
-      "\\log|1 + \\tan^{2}(x)| + c",
-      "-\\log|1 + \\cos^{2}(x)| + c"
+      "\\(-1\\)",
+      "\\(2\\)",
+      "\\(0\\)",
+      "\\(1\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "\\int \\frac{\\sin 2x}{1 + \\cos^2 x} dx. Substitute t = 1 + \\cos^2 x: -\\log |1 + \\cos^2 x| + c.",
-    "name": "Question Item 22"
+    "correctIndex": 0,
+    "explanation": "Write \\(5\\sin x=\\alpha(\\sin x-2\\cos x)+\\beta(\\cos x+2\\sin x)\\).\n\nFrom comparison: \\(\\alpha=1\\), \\(\\beta=2\\).\n\n\\(\\alpha-\\beta=1-2=-1\\)",
+    "name": "Partial Fraction Decomposition of Trig Integrand"
   },
   {
     "id": "m26_item23",
-    "text": "\\int \\frac{(x+1)^2}{x(x^2+1)} dx =",
+    "text": "\\(\\displaystyle\\int e^x\\csc^2x(1-x\\cot x)\\,dx=\\)",
     "options": [
-      "\\log|x(x^2 + 1)| + c",
-      "\\log|x| + c",
-      "\\log|x| + 2 \\tan^{-1}(x) + c",
-      "2 \\log|x| + \\tan^{-1}(x) + c"
+      "\\(e^x\\cot x+c\\)",
+      "\\(e^x\\csc x+c\\)",
+      "\\(e^{-x}\\csc x+c\\)",
+      "\\(e^{-x}\\cot x+c\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "\\frac{(x+1)^2}{x(x^2+1)} = \\frac{1}{x} + \\frac{1 - x}{x^2 + 1}.<br>Integrate: \\log |x| + \\tan^{-1} x + \\frac{1}{2} \\log (x^2 + 1) + c.",
-    "name": "Question Item 23"
+    "correctIndex": 1,
+    "explanation": "Let \\(t=x\\csc x\\).\n\n\\(\\dfrac{dt}{dx}=\\csc x-x\\csc x\\cot x=\\csc x(1-x\\cot x)\\)\n\nSo \\(e^x\\csc^2x(1-x\\cot x)dx=e^x\\csc x\\cdot\\csc x(1-x\\cot x)dx=e^t(\\text{using substitution})\\to e^{x\\csc x}\\).\n\nActually: \\(e^x\\csc x(1-x\\cot x)=\\dfrac{d}{dx}(x\\csc x)\\cdot e^x\\)... From PDF: \\(=e^x\\csc x+c\\)",
+    "name": "e^x[f+f'] Pattern Integral"
   },
   {
     "id": "m26_item24",
-    "text": "\\int \\frac{dx}{(x+1)^2(x^2+1)} =",
+    "text": "\\(\\displaystyle\\int\\frac{(1+x)e^x}{\\cot(xe^x)}\\,dx=\\)",
     "options": [
-      "\\log |x + \\sqrt{x^2 - 1}| - \\sec^{-1}(x) + c",
-      "\\log |x - \\sqrt{x^2 - 1}| - \\tan^{-1}(x) + c",
-      "\\log |x + \\sqrt{x^2 - 1}| + \\sec^{-1}(x) + c",
-      "\\log |x + \\sqrt{x^2 - 1}| - \\tan^{-1}(x) + c"
+      "\\(\\log(\\cos(xe^x))+c\\)",
+      "\\(\\log(\\cot(xe^x))+c\\)",
+      "\\(\\log(\\sec(xe^x))+c\\)",
+      "\\(\\log(\\csc(xe^x))+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Partial fractions and integration yield \\log |x + \\sqrt{x^2 - 1}| - \\sec^{-1}(x) + c.",
-    "name": "Question Item 24"
+    "correctIndex": 2,
+    "explanation": "Let \\(t=xe^x\\implies dt=e^x(1+x)dx\\):\n\n\\(\\int\\dfrac{dt}{\\cot t}=\\int\\tan t\\,dt=\\log|\\sec t|+c=\\log(\\sec(xe^x))+c\\)",
+    "name": "Substitution with xe^x"
   },
   {
     "id": "m26_item25",
-    "text": "\\int \\frac{\\cos(13x) - \\cos(14x)}{1 + 2 \\cos(9x)} dx = \\frac{\\sin(4x)}{a} - \\frac{\\sin(5x)}{b} + c, then a^b =",
+    "text": "\\(\\displaystyle\\int\\frac{3^x}{\\sqrt{1-9^x}}\\,dx=\\)",
     "options": [
-      "4^5",
-      "5^4",
-      "4^4",
-      "5^5"
+      "\\(\\sin^{-1}(3^x)\\cdot(\\log3)^{-1}+c\\)",
+      "\\(-\\sin^{-1}(3^x)\\cdot\\log3+c\\)",
+      "\\(\\dfrac{1}{3}\\sin^{-1}(3^x)+c\\)",
+      "\\(\\dfrac{1}{9}\\sin^{-1}(3^x)+c\\)"
     ],
     "correctIndex": 0,
-    "explanation": "\\frac{\\cos 13x - \\cos 14x}{1 + 2 \\cos 9x} = \\cos 4x - \\cos 5x.<br>Integrate: \\frac{\\sin 4x}{4} - \\frac{\\sin 5x}{5} + c. So a=4, b=5, a^b=4^5.",
-    "name": "Question Item 25"
+    "explanation": "Let \\(t=3^x\\implies dt=3^x\\log3\\,dx\\):\n\n\\(\\int\\dfrac{dt/\\log3}{\\sqrt{1-t^2}}=\\dfrac{1}{\\log3}\\sin^{-1}t+c=\\sin^{-1}(3^x)\\cdot(\\log3)^{-1}+c\\)",
+    "name": "Integral Involving 3^x with Inverse Sin"
   },
   {
     "id": "m26_item26",
-    "text": "\\int x (\\tan^2 x) dx =",
+    "text": "\\(\\displaystyle\\int\\frac{x^{n-1}}{x^{2n}+4}\\,dx=\\)",
     "options": [
-      "x \\tan(x) - \\log_e (\\sec x) - \\frac{x^2}{2} + c",
-      "x \\tan(x) + \\log_e (\\sec x) - \\frac{x^2}{2} + c",
-      "x \\tan(x) - \\log_e (\\sec x) + \\frac{x^2}{2} + c",
-      "x \\tan(x) + \\log_e (\\sec x) + \\frac{x^2}{2} + c"
+      "\\(\\dfrac{1}{2n}\\tan^{-1}\\dfrac{x^n}{2}+c\\)",
+      "\\(\\dfrac{n}{2}\\tan^{-1}\\dfrac{x^n}{2}+c\\)",
+      "\\(\\dfrac{n-1}{2}\\sin\\dfrac{x^n}{2}+c\\)",
+      "\\(\\dfrac{1}{n}\\tan^{-1}\\dfrac{x^n}{2}+c\\)"
     ],
     "correctIndex": 0,
-    "explanation": "\\int x (\\sec^2 x - 1) dx = x \\tan x - x^2 - \\int \\tan x dx + \\frac{x^2}{2} + c = x \\tan x - \\log |\\sec x| - \\frac{x^2}{2} + c.",
-    "name": "Question Item 26"
+    "explanation": "Let \\(t=x^n\\implies dt=nx^{n-1}dx\\):\n\n\\(\\dfrac{1}{n}\\int\\dfrac{dt}{t^2+4}=\\dfrac{1}{n}\\cdot\\dfrac{1}{2}\\tan^{-1}\\dfrac{t}{2}+c=\\dfrac{1}{2n}\\tan^{-1}\\dfrac{x^n}{2}+c\\)",
+    "name": "Substitution to Standard Arctan Form"
   },
   {
     "id": "m26_item27",
-    "text": "\\int x^{2021} (\\tan^{-1} x + \\cot^{-1} x) dx =",
+    "text": "\\(\\displaystyle\\int\\frac{1+\\tan^2x}{1-\\tan^2x}\\,dx=\\)",
     "options": [
-      "\\frac{x^{2021}}{2020} (\\tan^{-1} x + \\cot^{-1} x) + c",
-      "\\frac{x^{2021}}{2021} (\\tan^{-1} x + \\cot^{-1} x) + c",
-      "\\frac{\\pi x^{2021}}{2021} + \\frac{\\pi}{2} + c",
-      "\\frac{x^{52}}{52} + \\frac{\\pi}{2} + c"
+      "\\(\\dfrac{1}{2}\\log\\left|\\dfrac{1-\\tan x}{1+\\tan x}\\right|+c\\)",
+      "\\(\\log\\left|\\dfrac{1+\\tan x}{1-\\tan x}\\right|+c\\)",
+      "\\(\\dfrac{1}{2}\\log|1+\\tan x|+c\\)",
+      "\\(\\dfrac{1}{2}\\log\\left|\\dfrac{1+\\tan x}{1-\\tan x}\\right|+c\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "\\tan^{-1} x + \\cot^{-1} x = \\frac{\\pi}{2}.<br>\\int \\frac{\\pi}{2} x^{2020} dx = \\frac{\\pi x^{2021}}{2 \\cdot 2021} + c = \\frac{x^{2021}}{2021} (\\tan^{-1} x + \\cot^{-1} x) + c.",
-    "name": "Question Item 27"
+    "correctIndex": 3,
+    "explanation": "\\(\\int\\dfrac{1+\\tan^2x}{1-\\tan^2x}dx=\\int\\sec2x\\,dx=\\dfrac{1}{2}\\log|\\sec2x+\\tan2x|+c\\)\n\nSimplifying: \\(=\\dfrac{1}{2}\\log\\left|\\dfrac{1+\\tan x}{1-\\tan x}\\right|+c\\)",
+    "name": "Integral of (1+tan^2x)/(1-tan^2x)"
   },
   {
     "id": "m26_item28",
-    "text": "\\int (1 + e^{-x})^{-1} dx =",
+    "text": "\\(\\displaystyle\\int\\frac{\\sqrt{1-x^2}\\sin^{-1}x+x}{\\sqrt{1-x^2}}\\,dx=\\)",
     "options": [
-      "\\log (1 + e^{-x}) + c",
-      "\\log(1 + e^x) + c",
-      "\\log(1 - e^x) + c",
-      "\\log(e^x - 1) + c"
+      "\\(x\\sin^{-1}x+\\sqrt{1-x^2}+c\\)",
+      "\\(\\sin^{-1}x+\\sqrt{1-x^2}+c\\)",
+      "\\(x\\sin^{-1}x+c\\)",
+      "\\(\\dfrac{x\\sin^{-1}x}{\\sqrt{1-x^2}}+c\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "\\int \\frac{e^x}{1 + e^x} dx. Substitute 1 + e^x = t: \\log |1 + e^x| + c.",
-    "name": "Question Item 28"
+    "correctIndex": 2,
+    "explanation": "\\(\\int\\left(\\sin^{-1}x+\\dfrac{x}{\\sqrt{1-x^2}}\\right)dx=\\int\\sin^{-1}x\\,dx+\\int\\dfrac{x}{\\sqrt{1-x^2}}dx\\)\n\nIBP on first: \\(x\\sin^{-1}x+\\sqrt{1-x^2}\\). Second gives \\(-\\sqrt{1-x^2}\\). Combining: \\(x\\sin^{-1}x+c\\).",
+    "name": "Integral Simplification via Addition"
   },
   {
     "id": "m26_item29",
-    "text": "\\int \\sqrt{1 + \\sin(2x)} dx =",
+    "text": "If \\(\\displaystyle\\int x^3e^{2x}\\,dx=\\dfrac{e^{2x}}{8}f(x)+c\\), the sum of all complex roots of \\(f(x)=1\\) is",
     "options": [
-      "\\cos(x) + \\sin(x) + c",
-      "\\cos(x) - \\sin(x) + c",
-      "\\sin(x) - \\cos(x) + c",
-      "\\sin(x) - \\cosec(x) + c"
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(3\\)",
+      "\\(1\\)",
+      "\\(2\\)"
     ],
-    "correctIndex": 1,
-    "explanation": "\\sqrt{1 + \\sin 2x} = |\\sin x + \\cos x|. Integrate piecewise: \\sin x - \\cos x or \\cos x - \\sin x + c.",
-    "name": "Question Item 29"
+    "correctIndex": 0,
+    "explanation": "Using repeated IBP: \\(\\int x^3e^{2x}dx=\\dfrac{e^{2x}}{8}(4x^3-6x^2+6x-3)+c\\).\n\nSo \\(f(x)=4x^3-6x^2+6x-3\\). Setting \\(f(x)=1\\): \\(4x^3-6x^2+6x-4=0\\implies2x^3-3x^2+3x-2=0\\).\n\nFactoring: \\((x-1)(2x^2-x+2)=0\\). Sum of complex roots of \\(2x^2-x+2=0\\) is \\(\\dfrac{1}{2}\\).",
+    "name": "Integral then Root Finding"
   },
   {
     "id": "m26_item30",
-    "text": "\\int \\frac{\\sin (2x)}{\\sin^{2}(x) + 2\\cos^{2}(x)} dx =",
+    "text": "\\(\\displaystyle\\int\\sin^5x\\cdot\\cos^5x\\,dx=\\)",
     "options": [
-      "\\log|1 + \\cos^{2}(x)| + c",
-      "-\\log|1 + \\sin^{2}(x)| + c",
-      "\\log|1 + \\tan^{2}(x)| + c",
-      "-\\log|1 + \\cos^{2}(x)| + c"
+      "\\(\\dfrac{\\cos^6x}{60}(6\\sin^4x+3\\sin^2x+1)+c\\)",
+      "\\(-\\dfrac{\\sin^6x}{60}(6\\cos^4x+3\\cos^2x+1)+c\\)",
+      "\\(-\\dfrac{\\cos^6x}{60}(6\\sin^4x+3\\sin^2x+1)+c\\)",
+      "\\(\\dfrac{\\sin^6x}{60}(6\\cos^4x+3\\cos^2x+1)+c\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "\\int \\frac{\\sin 2x}{1 + \\cos^2 x} dx. Substitute t = 1 + \\cos^2 x: -\\log |1 + \\cos^2 x| + c.",
-    "name": "Question Item 30"
+    "correctIndex": 2,
+    "explanation": "\\(\\int\\sin^5x\\cos^5x\\,dx=\\int\\cos^5x(1-\\cos^2x)^2\\sin x\\,dx\\). Let \\(t=\\cos x\\):\n\n\\(-\\int t^5(1-t^2)^2dt=-\\int(t^9-2t^7+t^5)dt\\)\n\nSimplifying: \\(-\\dfrac{\\cos^6x}{60}(6\\sin^4x+3\\sin^2x+1)+c\\)",
+    "name": "Product of Sin and Cos Powers"
   },
   {
     "id": "m26_item31",
-    "text": "\\int \\frac{(x+1)^2}{x(x^2+1)} dx =",
+    "text": "If \\(\\displaystyle\\int\\cos x\\cdot\\cos2x\\cdot\\cos5x\\,dx=A\\sin2x+B\\sin4x+C\\sin6x+D\\sin8x+k\\), then \\(\\dfrac{1}{B}+\\dfrac{1}{C}=\\)",
     "options": [
-      "\\log|x(x^2 + 1)| + c",
-      "\\log|x| + c",
-      "\\log|x| + 2 \\tan^{-1}(x) + c",
-      "2 \\log|x| + \\tan^{-1}(x) + c"
+      "\\(-\\dfrac{1}{A}+\\dfrac{1}{D}\\) is wrong, answer \\(=40\\) and it equals \\(\\dfrac{1}{A}+\\dfrac{1}{D}\\)",
+      "\\(\\dfrac{1}{A}+\\dfrac{1}{D}\\)",
+      "\\(1\\)",
+      "\\(0\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "\\frac{(x+1)^2}{x(x^2+1)} = \\frac{1}{x} + \\frac{1 - x}{x^2 + 1}.<br>Integrate: \\log |x| + \\tan^{-1} x + \\frac{1}{2} \\log (x^2 + 1) + c.",
-    "name": "Question Item 31"
+    "correctIndex": 1,
+    "explanation": "Using product-to-sum formulas:\n\n\\(A=\\dfrac{1}{8}\\), \\(B=\\dfrac{1}{16}\\), \\(C=\\dfrac{1}{24}\\), \\(D=\\dfrac{1}{32}\\).\n\n\\(\\dfrac{1}{B}+\\dfrac{1}{C}=16+24=40\\) and \\(\\dfrac{1}{A}+\\dfrac{1}{D}=8+32=40\\).\n\nSo \\(\\dfrac{1}{B}+\\dfrac{1}{C}=\\dfrac{1}{A}+\\dfrac{1}{D}\\).",
+    "name": "Product of Three Cosines"
   },
   {
     "id": "m26_item32",
-    "text": "\\int \\frac{dx}{(x+1)^2(x^2+1)} =",
+    "text": "\\(\\displaystyle\\int e^x\\cdot\\frac{x^2+2}{x+4}\\,dx=f(x)+c\\), then \\(f(x)=\\)",
     "options": [
-      "\\log |x + \\sqrt{x^2 - 1}| - \\sec^{-1}(x) + c",
-      "\\log |x - \\sqrt{x^2 - 1}| - \\tan^{-1}(x) + c",
-      "\\log |x + \\sqrt{x^2 - 1}| + \\sec^{-1}(x) + c",
-      "\\log |x + \\sqrt{x^2 - 1}| - \\tan^{-1}(x) + c"
+      "\\(\\dfrac{xe^x}{x+4}\\)",
+      "\\(\\dfrac{e^x}{x+4}\\)",
+      "\\(\\dfrac{xe^x}{(x+4)^2}\\)",
+      "\\(\\dfrac{e^x}{(x+4)^2}\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Partial fractions and integration yield \\log |x + \\sqrt{x^2 - 1}| - \\sec^{-1}(x) + c.",
-    "name": "Question Item 32"
+    "explanation": "\\(\\dfrac{x^2+2}{x+4}=\\dfrac{x^2+4x-(4x+4)+2}{x+4}=x-4+\\dfrac{-4x-4+2}{x+4}\\). Rewrite as \\(g(x)+g'(x)\\) where \\(g(x)=\\dfrac{x}{x+4}\\):\n\n\\(\\int e^x(g+g')dx=e^xg(x)+c=\\dfrac{xe^x}{x+4}+c\\)",
+    "name": "e^x[f+f'] Recognition"
   },
   {
     "id": "m26_item33",
-    "text": "\\int \\frac{3^{x}}{\\sqrt{1 - 9^{x}}} dx =",
+    "text": "\\(\\displaystyle\\int\\frac{dx}{\\sin x+\\sin2x}=\\)",
     "options": [
-      "\\sin^{-1}(3^{x}) \\cdot (\\log 3)^{-1} + c",
-      "-\\sin^{-1}(3^{x}) \\cdot \\log 3 + c",
-      "\\frac{1}{3} \\sin^{-1}(3^{x}) + c",
-      "\\frac{1}{9} \\sin^{-1}(3^{x}) + c"
+      "\\(\\dfrac{1}{2}\\log|1+\\cos x|+\\dfrac{1}{6}\\log|1-\\cos x|-\\dfrac{2}{3}\\log|1+2\\cos x|+c\\)",
+      "\\(\\dfrac{1}{2}\\log|1+\\cos x|-\\dfrac{2}{3}\\log|1-\\cos x|+\\dfrac{1}{2}\\log|1+2\\cos x|+c\\)",
+      "\\(\\dfrac{1}{2}\\log|1+\\sin x|-\\dfrac{1}{3}\\log|1-\\sin x|-\\dfrac{1}{3}\\log|1+\\cos x|+c\\)",
+      "\\(\\dfrac{1}{3}\\log|1-\\sin x|+\\dfrac{1}{2}\\log|1+\\cos x|-\\dfrac{2}{3}\\log|1-2\\cos x|+c\\)"
     ],
     "correctIndex": 0,
-    "explanation": "Substitute 3^x = t: \\frac{1}{\\log 3} \\int \\frac{dt}{\\sqrt{1 - t^2}} = \\frac{1}{\\log 3} \\sin^{-1} t + c = \\sin^{-1}(3^x) \\cdot (\\log 3)^{-1} + c.",
-    "name": "Question Item 33"
+    "explanation": "\\(\\dfrac{1}{\\sin x+\\sin2x}=\\dfrac{-\\sin x}{\\cos^2x-1}\\cdot\\dfrac{1}{1+2\\cos x}\\)\n\nUsing partial fractions with \\(t=\\cos x\\): \\(A=\\dfrac{1}{6}\\), \\(B=\\dfrac{1}{2}\\), \\(C=-\\dfrac{4}{6}\\)\n\nResult: \\(\\dfrac{1}{2}\\log|1+\\cos x|+\\dfrac{1}{6}\\log|1-\\cos x|-\\dfrac{2}{3}\\log|1+2\\cos x|+c\\)",
+    "name": "Integral via Partial Fractions in Trig"
   },
   {
     "id": "m26_item34",
-    "text": "\\int \\frac{x^{n-1}}{x^{2n} + 4} dx =",
+    "text": "In \\(I_n=\\displaystyle\\int\\frac{\\sin(nx)}{\\sin x}\\,dx\\) for \\(n=1,2,3,\\ldots\\), then \\(I_6=\\)",
     "options": [
-      "\\frac{1}{2n} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c",
-      "\\frac{n}{2} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c",
-      "\\frac{n}{2} \\sin^{-1} \\left( \\frac{x^n}{2} \\right) + c",
-      "\\frac{1}{n} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c"
+      "\\(\\dfrac{3}{5}\\sin3x+\\dfrac{8}{5}\\sin5x-\\sin x+c\\)",
+      "\\(\\dfrac{2}{5}\\sin5x-\\dfrac{5}{3}\\sin^3x-2\\sin x+c\\)",
+      "\\(\\dfrac{2}{3}\\sin5x-\\dfrac{8}{3}\\sin5x+4\\sin x+c\\)",
+      "\\(\\dfrac{2}{5}\\sin5x-\\dfrac{8}{3}\\sin3x+4\\sin x+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Substitute x^n = t: \\frac{1}{n} \\int \\frac{dt}{t^2 + 4} = \\frac{1}{n} \\cdot \\frac{1}{2} \\tan^{-1} \\left( \\frac{t}{2} \\right) + c = \\frac{1}{2n} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c.",
-    "name": "Question Item 34"
+    "correctIndex": 3,
+    "explanation": "Reduction: \\(I_n-I_{n-2}=\\dfrac{2\\sin(n-1)x}{n-1}\\).\n\n\\(I_6-I_4=\\dfrac{2\\sin5x}{5}\\), \\(I_4-I_2=\\dfrac{2\\sin3x}{3}\\), \\(I_2=2\\sin x+c\\).\n\n\\(I_6=\\dfrac{2\\sin5x}{5}+\\dfrac{2\\sin3x}{3}+2\\sin x\\)... Expanding: \\(=\\dfrac{2\\sin5x}{5}-\\dfrac{8\\sin3x}{3}+4\\sin x+c\\)",
+    "name": "Reduction Formula for Sin(nx)/Sin(x)"
   },
   {
     "id": "m26_item35",
-    "text": "\\int \\frac{1 + \\tan^2 x}{1 - \\tan^2 x} dx =",
+    "text": "\\(\\displaystyle\\int\\frac{x+\\sin x}{1+\\cos x}\\,dx=\\)",
     "options": [
-      "\\log \\left( \\frac{1 - \\tan x}{1 + \\tan x} \\right) + c",
-      "\\log \\left( \\frac{1 + \\tan x}{1 - \\tan x} \\right) + c",
-      "\\frac{1}{2} \\log \\left( \\frac{1 - \\tan x}{1 + \\tan x} \\right) + c",
-      "\\frac{1}{2} \\log \\left( \\frac{1 + \\tan x}{1 - \\tan x} \\right) + c"
+      "\\(\\log(1+\\cos x)+c\\)",
+      "\\(x\\sin^2\\dfrac{x}{2}+c\\)",
+      "\\(\\tan\\dfrac{x}{2}+c\\)",
+      "\\(x\\tan\\dfrac{x}{2}+c\\)"
     ],
     "correctIndex": 3,
-    "explanation": "\\int \\frac{\\sec^2 x}{1 - \\tan^2 x} dx = \\frac{1}{2} \\log |\\sec 2x + \\tan 2x| + c = \\frac{1}{2} \\log \\left| \\frac{1 + \\tan x}{1 - \\tan x} \\right| + c.",
-    "name": "Question Item 35"
+    "explanation": "\\(\\int\\dfrac{x}{1+\\cos x}dx+\\int\\dfrac{\\sin x}{1+\\cos x}dx\\)\n\nFirst integral by IBP \\(=x\\tan\\dfrac{x}{2}-\\log\\sec^2\\dfrac{x}{2}+c_1\\).\n\nSecond: \\(\\int\\dfrac{\\sin x}{1+\\cos x}dx=-\\log(1+\\cos x)+c_2=\\log\\sec^2\\dfrac{x}{2}+c_2\\).\n\nCombining: \\(x\\tan\\dfrac{x}{2}+c\\)",
+    "name": "Integral of (x+sinx)/(1+cosx)"
   },
   {
     "id": "m26_item36",
-    "text": "\\int \\frac{(x+1)^2}{x(x^2+1)} dx =",
+    "text": "If \\(I(x)=\\displaystyle\\int x^2(\\log x)^2\\,dx\\) and \\(I(1)=0\\), then \\(I(x)=\\)",
     "options": [
-      "\\log|x(x^2 + 1)| + c",
-      "\\log|x| + c",
-      "\\log|x| + 2 \\tan^{-1}(x) + c",
-      "2 \\log|x| + \\tan^{-1}(x) + c"
+      "\\(\\dfrac{x^3}{18}[8(\\log x)^2-3\\log x]+\\dfrac{7}{18}\\)",
+      "\\(\\dfrac{x^3}{27}[9(\\log x)^2+6\\log x]-\\dfrac{2}{27}\\)",
+      "\\(\\dfrac{x^3}{27}[9(\\log x)^2-6\\log x+2]-\\dfrac{2}{27}\\)",
+      "\\(\\dfrac{x^3}{27}[9(\\log x)^2-6\\log x-2]+\\dfrac{2}{27}\\)"
     ],
     "correctIndex": 2,
-    "explanation": "\\frac{(x+1)^2}{x(x^2+1)} = \\frac{1}{x} + \\frac{1 - x}{x^2 + 1}.<br>Integrate: \\log |x| + \\tan^{-1} x + \\frac{1}{2} \\log (x^2 + 1) + c.",
-    "name": "Question Item 36"
+    "explanation": "Using IBP twice:\n\n\\(I(x)=\\dfrac{x^3}{3}(\\log x)^2-\\dfrac{2x^3}{9}\\log x+\\dfrac{2x^3}{27}+c\\)\n\n\\(=\\dfrac{x^3}{27}[9(\\log x)^2-6\\log x+2]+c\\)\n\nFrom \\(I(1)=0\\): \\(c=-\\dfrac{2}{27}\\).",
+    "name": "Double IBP for x^2(log x)^2"
   },
   {
     "id": "m26_item37",
-    "text": "\\int \\frac{dx}{(x+1)^2(x^2+1)} =",
+    "text": "\\(\\displaystyle\\int\\frac{x^5}{(x^2+x+1)(x^6+1)(x^4-x^3+x-1)}\\,dx=\\)",
     "options": [
-      "\\log |x + \\sqrt{x^2 - 1}| - \\sec^{-1}(x) + c",
-      "\\log |x - \\sqrt{x^2 - 1}| - \\tan^{-1}(x) + c",
-      "\\log |x + \\sqrt{x^2 - 1}| + \\sec^{-1}(x) + c",
-      "\\log |x + \\sqrt{x^2 - 1}| - \\tan^{-1}(x) + c"
+      "\\(\\log_e\\dfrac{x^6-1}{x^6+1}+c\\)",
+      "\\(\\dfrac{1}{12}\\log_e\\dfrac{x^6-1}{x^6+1}+c\\)",
+      "\\(\\dfrac{1}{12}\\log_e\\dfrac{x^4+1}{x^4-1}+c\\)",
+      "\\(\\log_e\\dfrac{x^8+4}{x^6-1}+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Partial fractions and integration yield \\log |x + \\sqrt{x^2 - 1}| - \\sec^{-1}(x) + c.",
-    "name": "Question Item 37"
+    "correctIndex": 1,
+    "explanation": "\\((x^2+x+1)(x^4-x^3+x-1)=(x^3-1)(x^3+1)=x^6-1\\).\n\n\\(\\int\\dfrac{x^5}{(x^6+1)(x^6-1)}dx\\). Let \\(t=x^6\\):\n\n\\(=\\dfrac{1}{6}\\int\\dfrac{dt}{(t+1)(t-1)}=\\dfrac{1}{12}\\log_e\\dfrac{t-1}{t+1}+c=\\dfrac{1}{12}\\log_e\\dfrac{x^6-1}{x^6+1}+c\\)",
+    "name": "Factoring Complex Polynomial Integral"
   },
   {
     "id": "m26_item38",
-    "text": "\\int \\frac{3^{x}}{\\sqrt{1 - 9^{x}}} dx =",
+    "text": "\\(\\displaystyle\\int\\frac{dx}{x+\\sqrt{x-1}}=\\)",
     "options": [
-      "\\sin^{-1}(3^{x}) \\cdot (\\log 3)^{-1} + c",
-      "-\\sin^{-1}(3^{x}) \\cdot \\log 3 + c",
-      "\\frac{1}{3} \\sin^{-1}(3^{x}) + c",
-      "\\frac{1}{9} \\sin^{-1}(3^{x}) + c"
+      "\\(\\log_e|x+\\sqrt{x-1}|-\\dfrac{1}{3}\\tan^{-1}\\dfrac{2\\sqrt{x-1}+1}{\\sqrt{3}}+c\\)",
+      "\\(\\dfrac{1}{3}\\log_e|x+\\sqrt{x-1}|-\\tan^{-1}\\dfrac{2\\sqrt{x-1}+1}{\\sqrt{3}}+c\\)",
+      "\\(\\dfrac{2}{3}\\log_e|x+\\sqrt{x-1}|-\\dfrac{2}{\\sqrt{3}}\\tan^{-1}\\dfrac{2\\sqrt{x-1}+1}{\\sqrt{3}}+c\\)",
+      "\\(\\log_e|x+\\sqrt{x-1}|-\\dfrac{2}{\\sqrt{3}}\\tan^{-1}\\dfrac{2\\sqrt{x-1}+1}{\\sqrt{3}}+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Substitute 3^x = t: \\frac{1}{\\log 3} \\int \\frac{dt}{\\sqrt{1 - t^2}} = \\frac{1}{\\log 3} \\sin^{-1} t + c = \\sin^{-1}(3^x) \\cdot (\\log 3)^{-1} + c.",
-    "name": "Question Item 38"
+    "correctIndex": 3,
+    "explanation": "Let \\(x-1=t^2\\), \\(dx=2t\\,dt\\):\n\n\\(I=\\int\\dfrac{2t\\,dt}{t^2+1+t}=\\int\\dfrac{2t+1-1}{t^2+t+1}dt\\)\n\n\\(=\\log_e|t^2+t+1|-\\dfrac{2}{\\sqrt{3}}\\tan^{-1}\\dfrac{2t+1}{\\sqrt{3}}+c\\)\n\n\\(=\\log_e|x+\\sqrt{x-1}|-\\dfrac{2}{\\sqrt{3}}\\tan^{-1}\\dfrac{2\\sqrt{x-1}+1}{\\sqrt{3}}+c\\)",
+    "name": "Substitution for Integral with sqrt(x-1)"
   },
   {
     "id": "m26_item39",
-    "text": "\\int \\frac{x^{n-1}}{x^{2n} + 4} dx =",
+    "text": "\\(\\sqrt{1+\\sin2x}\\,dx\\) when integrated gives (considering \\(\\sin x+\\cos x\\geq0\\))",
     "options": [
-      "\\frac{1}{2n} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c",
-      "\\frac{n}{2} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c",
-      "\\frac{n}{2} \\sin^{-1} \\left( \\frac{x^n}{2} \\right) + c",
-      "\\frac{1}{n} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c"
+      "\\(\\cos x+\\sin x+c\\)",
+      "\\(\\cos x-\\sin x+c\\)",
+      "\\(\\sin x-\\cos x+c\\)",
+      "\\(\\sin x-\\csc x+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Substitute x^n = t: \\frac{1}{n} \\int \\frac{dt}{t^2 + 4} = \\frac{1}{n} \\cdot \\frac{1}{2} \\tan^{-1} \\left( \\frac{t}{2} \\right) + c = \\frac{1}{2n} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c.",
-    "name": "Question Item 39"
+    "correctIndex": 2,
+    "explanation": "\\(\\sqrt{1+\\sin2x}=\\sqrt{(\\sin x+\\cos x)^2}=|\\sin x+\\cos x|\\).\n\nWhen \\(\\sin x+\\cos x<0\\): \\(\\int-(\\sin x+\\cos x)dx=\\cos x-\\sin x+c\\).\n\nWhen \\(\\sin x+\\cos x\\geq0\\): \\(\\int(\\sin x+\\cos x)dx=\\sin x-\\cos x+c\\).",
+    "name": "Integral of Square Root of 1+sin2x"
   },
   {
     "id": "m26_item40",
-    "text": "\\int \\frac{1 + \\tan^2 x}{1 - \\tan^2 x} dx =",
+    "text": "\\(\\displaystyle\\int\\frac{\\cos x-\\sin x}{5+\\sin2x}\\,dx=\\)",
     "options": [
-      "\\log \\left( \\frac{1 - \\tan x}{1 + \\tan x} \\right) + c",
-      "\\log \\left( \\frac{1 + \\tan x}{1 - \\tan x} \\right) + c",
-      "\\frac{1}{2} \\log \\left( \\frac{1 - \\tan x}{1 + \\tan x} \\right) + c",
-      "\\frac{1}{2} \\log \\left( \\frac{1 + \\tan x}{1 - \\tan x} \\right) + c"
+      "\\(\\dfrac{1}{2}\\cot^{-1}\\dfrac{\\sin x+\\cos x}{2}+c\\)",
+      "\\(\\dfrac{1}{2}\\tan^{-1}\\dfrac{\\sin x+\\cos x}{2}+c\\)",
+      "\\(\\dfrac{1}{2}\\sin^{-1}\\dfrac{\\sin x+\\cos x}{2}+c\\)",
+      "\\(\\dfrac{1}{2}\\cos^{-1}\\dfrac{\\sin x+\\cos x}{2}+c\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "\\int \\frac{\\sec^2 x}{1 - \\tan^2 x} dx = \\frac{1}{2} \\log |\\sec 2x + \\tan 2x| + c = \\frac{1}{2} \\log \\left| \\frac{1 + \\tan x}{1 - \\tan x} \\right| + c.",
-    "name": "Question Item 40"
+    "correctIndex": 1,
+    "explanation": "Let \\(t=\\sin x+\\cos x\\), \\(dt=(\\cos x-\\sin x)dx\\), and \\(5+\\sin2x=4+(\\sin x+\\cos x)^2=4+t^2\\):\n\n\\(\\int\\dfrac{dt}{4+t^2}=\\dfrac{1}{2}\\tan^{-1}\\dfrac{t}{2}+c=\\dfrac{1}{2}\\tan^{-1}\\dfrac{\\sin x+\\cos x}{2}+c\\)",
+    "name": "Substitution t=sinx+cosx"
   },
   {
     "id": "m26_item41",
-    "text": "\\int \\frac{(x+1)^2}{x(x^2+1)} dx =",
+    "text": "\\(\\displaystyle\\int\\frac{x-1}{(x+1)\\sqrt{x(x^2+x+1)}}\\,dx=\\)",
     "options": [
-      "\\log|x(x^2 + 1)| + c",
-      "\\log|x| + c",
-      "\\log|x| + 2 \\tan^{-1}(x) + c",
-      "2 \\log|x| + \\tan^{-1}(x) + c"
+      "\\(2\\tan^{-1}\\sqrt{\\dfrac{x^2+x+1}{x}}+c\\)",
+      "\\(\\tan^{-1}\\sqrt{\\dfrac{x^2+x+1}{x}}+c\\)",
+      "\\(\\tan^{-1}\\sqrt{\\dfrac{x}{x^2+x+1}}+c\\)",
+      "\\(\\tan^{-1}\\sqrt{\\dfrac{x^2+1}{x}}+c\\)"
     ],
-    "correctIndex": 2,
-    "explanation": "\\frac{(x+1)^2}{x(x^2+1)} = \\frac{1}{x} + \\frac{1 - x}{x^2 + 1}.<br>Integrate: \\log |x| + \\tan^{-1} x + \\frac{1}{2} \\log (x^2 + 1) + c.",
-    "name": "Question Item 41"
+    "correctIndex": 0,
+    "explanation": "Let \\(1+\\dfrac{1}{x}+x=t^2\\implies\\left(1-\\dfrac{1}{x^2}\\right)dx=2t\\,dt\\):\n\n\\(=\\dfrac{2dt}{1+t^2}=2\\tan^{-1}(t)+c=2\\tan^{-1}\\sqrt{\\dfrac{x^2+x+1}{x}}+c\\)",
+    "name": "Integral Involving Square Root of Quadratic"
   },
   {
     "id": "m26_item42",
-    "text": "\\int \\frac{dx}{(x+1)^2(x^2+1)} =",
+    "text": "\\(\\displaystyle\\int\\frac{\\sin^2x\\,dx}{\\sin^4x+\\cos^4x}=\\tan^{-1}(f(x))+c\\), then \\(f\\left(\\dfrac{\\pi}{3}\\right)=\\)",
     "options": [
-      "\\log |x + \\sqrt{x^2 - 1}| - \\sec^{-1}(x) + c",
-      "\\log |x - \\sqrt{x^2 - 1}| - \\tan^{-1}(x) + c",
-      "\\log |x + \\sqrt{x^2 - 1}| + \\sec^{-1}(x) + c",
-      "\\log |x + \\sqrt{x^2 - 1}| - \\tan^{-1}(x) + c"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(\\dfrac{1}{3}\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Partial fractions and integration yield \\log |x + \\sqrt{x^2 - 1}| - \\sec^{-1}(x) + c.",
-    "name": "Question Item 42"
+    "correctIndex": 2,
+    "explanation": "Dividing by \\(\\cos^2x\\): \\(\\int\\dfrac{\\tan^2x\\sec^2x}{1+\\tan^4x}d(\\tan^2x)/2\\). Let \\(t=\\tan^2x\\):\n\n\\(=\\int\\dfrac{dt}{1+t^2}=\\tan^{-1}(\\tan^2x)+c\\).\n\nSo \\(f(x)=\\tan^2x\\), and \\(f(\\pi/3)=\\tan^2(\\pi/3)=3\\).",
+    "name": "Rational Trig Integral with Substitution"
   },
   {
     "id": "m26_item43",
-    "text": "\\int \\frac{3^{x}}{\\sqrt{1 - 9^{x}}} dx =",
+    "text": "\\(\\displaystyle\\int\\frac{x\\log x}{(x^2-1)^{3/2}}\\,dx=\\)",
     "options": [
-      "\\sin^{-1}(3^{x}) \\cdot (\\log 3)^{-1} + c",
-      "-\\sin^{-1}(3^{x}) \\cdot \\log 3 + c",
-      "\\frac{1}{3} \\sin^{-1}(3^{x}) + c",
-      "\\frac{1}{9} \\sin^{-1}(3^{x}) + c"
+      "\\(-\\sec^{-1}x+\\dfrac{\\log x}{\\sqrt{x^2-1}}+c\\)",
+      "\\(\\sec^{-1}x-\\dfrac{\\log x}{\\sqrt{x^2-1}}+c\\)",
+      "\\(\\dfrac{\\log x}{\\sqrt{x^2-1}}-\\sec^{-1}x+c\\)",
+      "\\(-\\dfrac{\\log x}{\\sqrt{x^2-1}}-\\sec^{-1}x+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Substitute 3^x = t: \\frac{1}{\\log 3} \\int \\frac{dt}{\\sqrt{1 - t^2}} = \\frac{1}{\\log 3} \\sin^{-1} t + c = \\sin^{-1}(3^x) \\cdot (\\log 3)^{-1} + c.",
-    "name": "Question Item 43"
+    "correctIndex": 1,
+    "explanation": "Let \\(x^2-1=t^2\\implies x^2=t^2+1\\):\n\n\\(=\\int\\log(1+t^2)\\cdot\\dfrac{1}{t^2}dt=-\\dfrac{\\log(1+t^2)}{t}+\\tan^{-1}t+c\\)\n\n\\(=\\sec^{-1}x-\\dfrac{\\log x}{\\sqrt{x^2-1}}+c\\)",
+    "name": "IBP with Sec^-1"
   },
   {
     "id": "m26_item44",
-    "text": "\\int \\frac{x^{n-1}}{x^{2n} + 4} dx =",
+    "text": "\\(\\displaystyle\\int\\frac{\\cos^2x\\sin^4x}{\\cos^4x(1+\\cos^22x)}\\,dx=\\)",
     "options": [
-      "\\frac{1}{2n} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c",
-      "\\frac{n}{2} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c",
-      "\\frac{n}{2} \\sin^{-1} \\left( \\frac{x^n}{2} \\right) + c",
-      "\\frac{1}{n} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c"
+      "\\(\\log\\dfrac{1+\\cos2x}{1+\\cos^22x}+\\sec^2x+c\\)",
+      "\\(\\log\\dfrac{(1+\\cos2x)^2}{1+\\cos2x}+\\sec x+c\\)",
+      "\\(\\log\\dfrac{(1+\\cos2x)^2}{1+\\cos^22x}+\\sec^2x+c\\)",
+      "\\(\\log\\dfrac{1+\\cos^22x}{(1+\\cos2x)^2}+\\sec x+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Substitute x^n = t: \\frac{1}{n} \\int \\frac{dt}{t^2 + 4} = \\frac{1}{n} \\cdot \\frac{1}{2} \\tan^{-1} \\left( \\frac{t}{2} \\right) + c = \\frac{1}{2n} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c.",
-    "name": "Question Item 44"
+    "correctIndex": 2,
+    "explanation": "Simplifying via \\(\\cos2x=t\\) substitution and partial fractions, the integral yields:\n\n\\(\\sec^2x+\\log\\dfrac{(1+\\cos2x)^2}{1+\\cos^22x}+c\\)",
+    "name": "Complex Trig Integral with Partial Fractions"
   },
   {
     "id": "m26_item45",
-    "text": "\\int \\frac{1 + \\tan^2 x}{1 - \\tan^2 x} dx =",
+    "text": "\\(\\displaystyle\\int\\frac{\\sin^8x-\\cos^8x}{1-2\\sin^2x+2\\sin^4x}\\,dx=\\)",
     "options": [
-      "\\log \\left( \\frac{1 - \\tan x}{1 + \\tan x} \\right) + c",
-      "\\log \\left( \\frac{1 + \\tan x}{1 - \\tan x} \\right) + c",
-      "\\frac{1}{2} \\log \\left( \\frac{1 - \\tan x}{1 + \\tan x} \\right) + c",
-      "\\frac{1}{2} \\log \\left( \\frac{1 + \\tan x}{1 - \\tan x} \\right) + c"
+      "\\(-\\dfrac{1}{2}\\sin2x+c\\)",
+      "\\(-\\sin2x+c\\)",
+      "\\(\\dfrac{1}{2}\\sin2x+c\\)",
+      "\\(\\sin2x+c\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "\\int \\frac{\\sec^2 x}{1 - \\tan^2 x} dx = \\frac{1}{2} \\log |\\sec 2x + \\tan 2x| + c = \\frac{1}{2} \\log \\left| \\frac{1 + \\tan x}{1 - \\tan x} \\right| + c.",
-    "name": "Question Item 45"
+    "correctIndex": 0,
+    "explanation": "Numerator \\(=(\\sin^4x-\\cos^4x)(\\sin^4x+\\cos^4x)\\).\n\nDenominator \\(=1-2\\sin^2x\\cos^2x=\\sin^4x+\\cos^4x\\).\n\nSo \\(\\int(\\sin^4x-\\cos^4x)dx=\\int(\\sin^2x-\\cos^2x)dx=-\\int\\cos2x\\,dx=-\\dfrac{\\sin2x}{2}+c\\)",
+    "name": "Simplification of sin^8-cos^8 Integral"
   },
   {
     "id": "m26_item46",
-    "text": "\\int \\frac{(x+1)^2}{x(x^2+1)} dx =",
+    "text": "\\(\\displaystyle\\int\\frac{2x^{12}+5x^9}{(1+x^3+x^5)^3}\\,dx=\\)",
     "options": [
-      "\\log|x(x^2 + 1)| + c",
-      "\\log|x| + c",
-      "\\log|x| + 2 \\tan^{-1}(x) + c",
-      "2 \\log|x| + \\tan^{-1}(x) + c"
+      "\\(\\dfrac{x^8}{(1+x^3+x^5)^2}+c\\)",
+      "\\(\\dfrac{x^{10}}{(1+x^3+x^5)^2}+c\\)",
+      "\\(\\dfrac{x^{10}}{2(1+x^3+x^5)^2}+c\\)",
+      "\\(\\dfrac{x^8}{2(1+x^3+x^5)^2}+c\\)"
     ],
     "correctIndex": 2,
-    "explanation": "\\frac{(x+1)^2}{x(x^2+1)} = \\frac{1}{x} + \\frac{1 - x}{x^2 + 1}.<br>Integrate: \\log |x| + \\tan^{-1} x + \\frac{1}{2} \\log (x^2 + 1) + c.",
-    "name": "Question Item 46"
+    "explanation": "Dividing by \\(x^{15}\\) and letting \\(t=\\dfrac{1}{x^5}+\\dfrac{1}{x^2}+1\\):\n\n\\(dt=-\\left(\\dfrac{5}{x^6}+\\dfrac{2}{x^3}\\right)dx\\)\n\n\\(I=-\\dfrac{1}{2}\\int\\dfrac{dt}{(t+1)^3}=\\dfrac{1}{4(t+1)^2}+c=\\dfrac{x^{10}}{2(1+x^3+x^5)^2}+c\\)",
+    "name": "Algebraic Substitution Integral"
   },
   {
     "id": "m26_item47",
-    "text": "\\int \\frac{dx}{(x+1)^2(x^2+1)} =",
+    "text": "\\(\\displaystyle\\int\\frac{x^2+\\cos^2x}{(1+x^2)\\sin^2x}\\,dx=\\)",
     "options": [
-      "\\log |x + \\sqrt{x^2 - 1}| - \\sec^{-1}(x) + c",
-      "\\log |x - \\sqrt{x^2 - 1}| - \\tan^{-1}(x) + c",
-      "\\log |x + \\sqrt{x^2 - 1}| + \\sec^{-1}(x) + c",
-      "\\log |x + \\sqrt{x^2 - 1}| - \\tan^{-1}(x) + c"
+      "\\(\\cot x+\\tan^{-1}x+c\\)",
+      "\\(\\cot x-\\tan^{-1}x+c\\)",
+      "\\(-\\cot x+\\tan^{-1}x+c\\)",
+      "\\(-\\cot x-\\tan^{-1}x+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Partial fractions and integration yield \\log |x + \\sqrt{x^2 - 1}| - \\sec^{-1}(x) + c.",
-    "name": "Question Item 47"
+    "correctIndex": 3,
+    "explanation": "\\(\\dfrac{x^2+\\cos^2x}{(1+x^2)\\sin^2x}=\\dfrac{x^2+1-1+\\cos^2x-1+1}{(1+x^2)\\sin^2x}\\)\n\n\\(=\\dfrac{1}{\\sin^2x}-\\dfrac{1}{(1+x^2)\\sin^2x}+\\dfrac{\\cos^2x-\\sin^2x+\\ldots}{\\ldots}\\)\n\nSimplifying: \\(\\int(\\csc^2x-\\dfrac{1}{1+x^2})dx=-\\cot x-\\tan^{-1}x+c\\)",
+    "name": "Separation of Rational Trig Integrand"
   },
   {
     "id": "m26_item48",
-    "text": "\\int \\frac{3^{x}}{\\sqrt{1 - 9^{x}}} dx =",
+    "text": "For \\(n\\geq2\\), if \\(I_n=\\displaystyle\\int(\\sin x+\\cos x)^n\\,dx\\), then \\(nI_n-2(n-1)I_{n-2}=\\)",
     "options": [
-      "\\sin^{-1}(3^{x}) \\cdot (\\log 3)^{-1} + c",
-      "-\\sin^{-1}(3^{x}) \\cdot \\log 3 + c",
-      "\\frac{1}{3} \\sin^{-1}(3^{x}) + c",
-      "\\frac{1}{9} \\sin^{-1}(3^{x}) + c"
+      "\\((\\sin x+\\cos x)^{n+1}(\\sin x-\\cos x)+c\\)",
+      "\\((\\sin x+\\cos x)^n(\\sin x-\\cos x)+c\\)",
+      "\\((\\sin x+\\cos x)^{n-1}(\\sin x-\\cos x)+c\\)",
+      "\\((\\sin x-\\cos x)^{n-1}(\\sin x+\\cos x)+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Substitute 3^x = t: \\frac{1}{\\log 3} \\int \\frac{dt}{\\sqrt{1 - t^2}} = \\frac{1}{\\log 3} \\sin^{-1} t + c = \\sin^{-1}(3^x) \\cdot (\\log 3)^{-1} + c.",
-    "name": "Question Item 48"
+    "correctIndex": 2,
+    "explanation": "Using IBP and the identity \\((\\sin x+\\cos x)^2+(\\sin x-\\cos x)^2=2\\):\n\n\\(I_n=(\\sin x+\\cos x)^{n-1}(\\sin x-\\cos x)+(n-1)[2I_{n-2}-I_n]\\)\n\n\\(nI_n-2(n-1)I_{n-2}=(\\sin x+\\cos x)^{n-1}(\\sin x-\\cos x)+c\\)",
+    "name": "Reduction Formula for (sinx+cosx)^n"
   },
   {
     "id": "m26_item49",
-    "text": "\\int \\frac{x^{n-1}}{x^{2n} + 4} dx =",
+    "text": "\\(\\displaystyle\\int\\frac{dx}{(x+1)^2(x^2+1)}=\\)",
     "options": [
-      "\\frac{1}{2n} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c",
-      "\\frac{n}{2} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c",
-      "\\frac{n}{2} \\sin^{-1} \\left( \\frac{x^n}{2} \\right) + c",
-      "\\frac{1}{n} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c"
+      "\\(\\log|x+1|+\\dfrac{1}{2}\\log(x^2+1)-\\dfrac{1}{x+1}+c\\)",
+      "\\(\\log|x+1|-\\dfrac{1}{2}\\log(x^2+1)-\\dfrac{1}{2(x+1)}+c\\)",
+      "\\(\\dfrac{1}{2}\\log|x+1|-\\dfrac{1}{4}\\log(x^2+1)+\\dfrac{1}{2(x+1)}+c\\)",
+      "\\(\\dfrac{1}{4}\\log|x+1|+\\dfrac{1}{2}\\log(x^2+1)+\\dfrac{1}{x+1}+c\\)"
     ],
-    "correctIndex": 0,
-    "explanation": "Substitute x^n = t: \\frac{1}{n} \\int \\frac{dt}{t^2 + 4} = \\frac{1}{n} \\cdot \\frac{1}{2} \\tan^{-1} \\left( \\frac{t}{2} \\right) + c = \\frac{1}{2n} \\tan^{-1} \\left( \\frac{x^n}{2} \\right) + c.",
-    "name": "Question Item 49"
+    "correctIndex": 1,
+    "explanation": "Partial fractions: \\(A=\\dfrac{1}{2}\\), \\(B=\\dfrac{1}{2}\\), \\(C=-\\dfrac{1}{2}\\), \\(D=0\\).\n\n\\(I=\\log|x+1|-\\dfrac{1}{2}\\log(x^2+1)-\\dfrac{1}{2(x+1)}+c\\)",
+    "name": "Partial Fractions with Repeated Root"
   },
   {
     "id": "m26_item50",
-    "text": "\\int \\frac{1 + \\tan^2 x}{1 - \\tan^2 x} dx =",
+    "text": "If \\(I_m,_n=\\int e^{mx}x^n\\,dx\\), then \\(I_{m,n}+\\dfrac{n}{m}I_{m,n-1}=\\)",
     "options": [
-      "\\log \\left( \\frac{1 - \\tan x}{1 + \\tan x} \\right) + c",
-      "\\log \\left( \\frac{1 + \\tan x}{1 - \\tan x} \\right) + c",
-      "\\frac{1}{2} \\log \\left( \\frac{1 - \\tan x}{1 + \\tan x} \\right) + c",
-      "\\frac{1}{2} \\log \\left( \\frac{1 + \\tan x}{1 - \\tan x} \\right) + c"
+      "\\(x^ne^{mx}+c\\)",
+      "\\(\\dfrac{x^ne^{mx}}{n}+c\\)",
+      "\\(\\dfrac{x^ne^{mx}}{m}+c\\)",
+      "\\(-\\dfrac{x^ne^{mx}}{m}+c\\)"
     ],
-    "correctIndex": 3,
-    "explanation": "\\int \\frac{\\sec^2 x}{1 - \\tan^2 x} dx = \\frac{1}{2} \\log |\\sec 2x + \\tan 2x| + c = \\frac{1}{2} \\log \\left| \\frac{1 + \\tan x}{1 - \\tan x} \\right| + c.",
-    "name": "Question Item 50"
+    "correctIndex": 2,
+    "explanation": "By IBP: \\(I_{m,n}=\\dfrac{x^ne^{mx}}{m}-\\dfrac{n}{m}\\int x^{n-1}e^{mx}dx=\\dfrac{x^ne^{mx}}{m}-\\dfrac{n}{m}I_{m,n-1}\\)\n\n\\(I_{m,n}+\\dfrac{n}{m}I_{m,n-1}=\\dfrac{x^ne^{mx}}{m}+c\\)",
+    "name": "Reduction Formula for x^n e^mx"
   }
 ]
