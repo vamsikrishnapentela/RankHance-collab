@@ -51,8 +51,13 @@ export default function AdminDashboard() {
         message: replyMessage,
         status: closeTicket ? 'Closed' : 'Responded'
       });
-      setTickets(tickets.map(t => t._id === updated._id ? updated : t));
-      setActiveTicket(updated);
+      const finalUpdated = {
+        ...updated,
+        userId: updated.userId?.name ? updated.userId : activeTicket.userId,
+        messages: updated.messages || activeTicket.messages || []
+      };
+      setTickets(tickets.map(t => t._id === finalUpdated._id ? finalUpdated : t));
+      setActiveTicket(finalUpdated);
       if (!closeTicket) setReplyMessage('');
     } catch (err) {
       alert("Failed to update ticket.");
@@ -338,12 +343,12 @@ export default function AdminDashboard() {
                   </div>
 
                   <div className="flex-1 overflow-y-auto py-4 space-y-4 pr-2">
-                    {activeTicket.messages.map((msg, idx) => {
+                    {(activeTicket.messages || []).map((msg, idx) => {
                       const isAdmin = msg.sender === 'admin';
                       return (
                         <div key={idx} className={`flex w-full ${isAdmin ? 'justify-end' : 'justify-start'}`}>
                           <div className={`max-w-[80%] rounded-xl p-3 ${isAdmin ? 'bg-orange-500 text-white rounded-br-none' : 'bg-gray-100 text-gray-800 rounded-bl-none'}`}>
-                            <p className="text-sm font-semibold mb-1 opacity-70">{msg.senderName}</p>
+                            <p className="text-sm font-semibold mb-1 opacity-70">{msg.senderName || 'Admin'}</p>
                             <p className="text-sm whitespace-pre-wrap">{msg.message}</p>
                           </div>
                         </div>

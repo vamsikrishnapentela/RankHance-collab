@@ -28,7 +28,7 @@ export default function Practice() {
   // 1. Subject Selection View
   if (!subject) {
     return (
-      <div className="flex-1 w-full flex flex-col items-center justify-center p-6 bg-gray-50 min-h-[calc(100vh-64px)]">
+      <div className="flex-1 w-full flex flex-col items-center justify-center p-6 bg-gray-50 min-h-[calc(100dvh-64px)]">
         <h2 className="text-3xl font-extrabold text-gray-900 mb-10 tracking-tight text-center">
           Choose a Subject
         </h2>
@@ -118,7 +118,7 @@ export default function Practice() {
   // 2. Chapter List View
   if (!selectedChapter) {
     return (
-      <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100vh-64px)]">
+      <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100dvh-64px)]">
         <div className="max-w-3xl mx-auto w-full">
           <button
             onClick={goBackToSubjects}

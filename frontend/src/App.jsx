@@ -1,30 +1,31 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
-import Landing from './Landing';
-import Dashboard from './Dashboard';
-import Practice from './Practice';
-import MockTests from './MockTests';
-import MockAttempt from './MockAttempt';
-import Result from './Result';
-import Review from './Review';
-import Subjects from './Subjects';
-import Chapters from './Chapters';
-import Questions from './Questions';
-import Login from './Login';
-import Signup from './Signup';
-import ForgotPassword from './ForgotPassword';
-import PaymentModal from './components/PaymentModal';
 import { useAuth } from './hooks/useAuth';
-import Terms from './Terms';
-import Privacy from './Privacy';
-import Refund from './Refund';
-import Contact from './Contact';
-import CreatorDashboard from './CreatorDashboard';
-import AdminDashboard from './AdminDashboard';
-import MyAttempts from './MyAttempts';
-import Support from './Support';
-import Weightage from './Weightage';
-import LiveSessions from './LiveSessions';
+import Landing from './Landing';
+import PaymentModal from './components/PaymentModal';
+
+const Dashboard = lazy(() => import('./Dashboard'));
+const Practice = lazy(() => import('./Practice'));
+const MockTests = lazy(() => import('./MockTests'));
+const MockAttempt = lazy(() => import('./MockAttempt'));
+const Result = lazy(() => import('./Result'));
+const Review = lazy(() => import('./Review'));
+const Subjects = lazy(() => import('./Subjects'));
+const Chapters = lazy(() => import('./Chapters'));
+const Questions = lazy(() => import('./Questions'));
+const Login = lazy(() => import('./Login'));
+const Signup = lazy(() => import('./Signup'));
+const ForgotPassword = lazy(() => import('./ForgotPassword'));
+const Terms = lazy(() => import('./Terms'));
+const Privacy = lazy(() => import('./Privacy'));
+const Refund = lazy(() => import('./Refund'));
+const Contact = lazy(() => import('./Contact'));
+const CreatorDashboard = lazy(() => import('./CreatorDashboard'));
+const AdminDashboard = lazy(() => import('./AdminDashboard'));
+const MyAttempts = lazy(() => import('./MyAttempts'));
+const Support = lazy(() => import('./Support'));
+const Weightage = lazy(() => import('./Weightage'));
+const LiveSessions = lazy(() => import('./LiveSessions'));
 
 function AppLayout() {
   const location = useLocation();
@@ -252,31 +253,37 @@ function AppLayout() {
       )}
 
       <div className={`${!isAuthPage ? (isLandingPage ? 'pt-24' : 'pt-16') : ''} w-full flex-1 flex flex-col relative`}>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/practice" element={<Practice />} />
-          <Route path="/subjects" element={<Subjects />} />
-          <Route path="/chapters/:subject" element={<Chapters />} />
-          <Route path="/questions/:subject/:chapter" element={<Questions />} />
-          <Route path="/mock-tests" element={<MockTests />} />
-          <Route path="/mock/:id" element={<MockAttempt />} />
-          <Route path="/result" element={<Result />} />
-          <Route path="/review" element={<Review />} />
-          <Route path="/my-attempts" element={<MyAttempts />} />
-          <Route path="/terms" element={<Terms />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/refund" element={<Refund />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/creator" element={<CreatorDashboard />} />
-          <Route path="/admin" element={<AdminDashboard />} />
-          <Route path="/support" element={<Support />} />
-          <Route path="/weightage" element={<Weightage />} />
-          <Route path="/live-sessions" element={<LiveSessions />} />
-        </Routes>
+        <Suspense fallback={
+          <div className="flex-1 w-full flex items-center justify-center min-h-[50vh]">
+            <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-orange-500"></div>
+          </div>
+        }>
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/practice" element={<Practice />} />
+            <Route path="/subjects" element={<Subjects />} />
+            <Route path="/chapters/:subject" element={<Chapters />} />
+            <Route path="/questions/:subject/:chapter" element={<Questions />} />
+            <Route path="/mock-tests" element={<MockTests />} />
+            <Route path="/mock/:id" element={<MockAttempt />} />
+            <Route path="/result" element={<Result />} />
+            <Route path="/review" element={<Review />} />
+            <Route path="/my-attempts" element={<MyAttempts />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/refund" element={<Refund />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/creator" element={<CreatorDashboard />} />
+            <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/support" element={<Support />} />
+            <Route path="/weightage" element={<Weightage />} />
+            <Route path="/live-sessions" element={<LiveSessions />} />
+          </Routes>
+        </Suspense>
 
         <PaymentModal
           isOpen={isPaymentModalOpen}

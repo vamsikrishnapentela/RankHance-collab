@@ -244,7 +244,7 @@ export default function MockAttempt() {
   // ── Loading / error states ─────────────────────────────────────────────────
   if (loading) {
     return (
-      <div className="flex-1 w-full bg-gray-50 flex flex-col items-center justify-center p-6 min-h-[calc(100vh-64px)]">
+      <div className="flex-1 w-full bg-gray-50 flex flex-col items-center justify-center p-6 min-h-[calc(100dvh-64px)]">
         <div className="text-lg font-medium text-gray-500">Loading test...</div>
       </div>
     );
@@ -252,7 +252,7 @@ export default function MockAttempt() {
 
   if (error || (globalTotal === 0 && !isRestored)) {
     return (
-      <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100vh-64px)]">
+      <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100dvh-64px)]">
         <div className="w-full max-w-3xl mx-auto">
           <div className="text-center text-red-500 font-bold py-20 bg-red-50 rounded-xl px-6">
             {error || 'No questions available.'}
@@ -266,10 +266,10 @@ export default function MockAttempt() {
   const isFlagged = flags.has(currentGlobalIdx);
 
   return (
-    <div className="flex-1 w-full bg-gray-50 min-h-[calc(100vh-64px)]">
+    <div className="flex-1 w-full bg-gray-50 min-h-[calc(100dvh-64px)]">
 
       {/* ── Top Bar ──────────────────────────────────────────────────────────── */}
-      <div className="sticky top-28 z-40 w-full bg-white/95 backdrop-blur-md border-b border-gray-100">
+      <div className="sticky top-16 z-40 w-full bg-white/95 backdrop-blur-md border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
           {isRestored && (
             <div className="w-full sm:w-auto text-sm text-white bg-green-600 px-3 py-1 rounded-lg font-semibold">

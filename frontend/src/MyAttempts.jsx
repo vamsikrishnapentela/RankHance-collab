@@ -56,7 +56,7 @@ export default function MyAttempts() {
   // ── Loading ────────────────────────────────────────────────────────────────
   if (loading) {
     return (
-      <div className="flex-1 w-full bg-gray-50 flex items-center justify-center min-h-[calc(100vh-64px)]">
+      <div className="flex-1 w-full bg-gray-50 flex items-center justify-center min-h-[calc(100dvh-64px)]">
         <div className="flex flex-col items-center gap-3 text-gray-400">
           <div className="w-8 h-8 border-4 border-[var(--color-primary)] border-t-transparent rounded-full animate-spin" />
           <span className="font-medium">Loading your attempts…</span>
@@ -68,7 +68,7 @@ export default function MyAttempts() {
   // ── Error ──────────────────────────────────────────────────────────────────
   if (error) {
     return (
-      <div className="flex-1 w-full bg-gray-50 flex items-center justify-center p-6 min-h-[calc(100vh-64px)]">
+      <div className="flex-1 w-full bg-gray-50 flex items-center justify-center p-6 min-h-[calc(100dvh-64px)]">
         <Card className="text-center p-12 max-w-md">
           <AlertCircle className="w-10 h-10 text-red-400 mx-auto mb-3" />
           <p className="text-red-600 font-semibold mb-6">{error}</p>
@@ -81,7 +81,7 @@ export default function MyAttempts() {
   // ── Empty ──────────────────────────────────────────────────────────────────
   if (attempts.length === 0) {
     return (
-      <div className="flex-1 w-full bg-gray-50 flex items-center justify-center p-6 min-h-[calc(100vh-64px)]">
+      <div className="flex-1 w-full bg-gray-50 flex items-center justify-center p-6 min-h-[calc(100dvh-64px)]">
         <Card className="text-center p-12 max-w-md">
           <FileText className="w-12 h-12 text-gray-300 mx-auto mb-4" />
           <h2 className="text-xl font-bold text-gray-800 mb-2">No Attempts Yet</h2>
@@ -96,7 +96,7 @@ export default function MyAttempts() {
 
   // ── List ───────────────────────────────────────────────────────────────────
   return (
-    <div className="flex-1 w-full bg-gray-50 min-h-[calc(100vh-64px)] py-10">
+    <div className="flex-1 w-full bg-gray-50 min-h-[calc(100dvh-64px)] py-10">
       <Container>
         {/* Header */}
         <div className="mb-8">

@@ -120,7 +120,7 @@ const Review = () => {
   // ── Loading state ─────────────────────────────────────────────────────────
   if (loading) {
     return (
-      <div className="flex-1 w-full bg-gray-50 flex items-center justify-center min-h-[calc(100vh-64px)]">
+      <div className="flex-1 w-full bg-gray-50 flex items-center justify-center min-h-[calc(100dvh-64px)]">
         <div className="flex items-center gap-3 text-gray-500 text-lg font-medium">
           <Loader className="w-5 h-5 animate-spin" />
           Loading your review…
@@ -132,7 +132,7 @@ const Review = () => {
   // ── Error state ───────────────────────────────────────────────────────────
   if (fetchError) {
     return (
-      <div className="flex-1 w-full bg-gray-50 flex flex-col items-center justify-center p-6 min-h-[calc(100vh-64px)]">
+      <div className="flex-1 w-full bg-gray-50 flex flex-col items-center justify-center p-6 min-h-[calc(100dvh-64px)]">
         <Card className="text-center p-12 max-w-md">
           <p className="text-red-600 font-semibold mb-6">{fetchError}</p>
           <Button onClick={() => navigate('/mock-tests')} variant="primary">
@@ -146,7 +146,7 @@ const Review = () => {
   // ── Empty state ───────────────────────────────────────────────────────────
   if (questions.length === 0) {
     return (
-      <div className="flex-1 w-full bg-gray-50 flex flex-col items-center justify-center p-6 min-h-[calc(100vh-64px)]">
+      <div className="flex-1 w-full bg-gray-50 flex flex-col items-center justify-center p-6 min-h-[calc(100dvh-64px)]">
         <Card className="text-center p-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">No Review Data</h2>
           <Button onClick={() => navigate('/mock-tests')} variant="primary">
@@ -168,7 +168,7 @@ const Review = () => {
 
   // ── Render ────────────────────────────────────────────────────────────────
   return (
-    <div className="flex-1 w-full bg-gray-50 min-h-[calc(100vh-64px)] p-6">
+    <div className="flex-1 w-full bg-gray-50 min-h-[calc(100dvh-64px)] p-6">
       <Container>
 
         {/* Back button */}

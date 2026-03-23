@@ -55,7 +55,7 @@ export default function Chapters() {
   };
 
   return (
-    <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100vh-64px)]">
+    <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100dvh-64px)]">
       <div className="max-w-3xl mx-auto w-full">
         <button 
           onClick={goBackToSubjects}

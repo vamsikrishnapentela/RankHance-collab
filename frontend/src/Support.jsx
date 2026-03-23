@@ -101,11 +101,11 @@ export default function Support() {
       </nav>
 
       <div className="pt-24 pb-12 flex-1 w-full bg-gray-50 flex flex-col px-6 min-h-screen">
-        <Container className="max-w-5xl h-[calc(100vh-140px)]">
+        <Container className="max-w-5xl h-[calc(100dvh-140px)]">
           <div className="bg-white rounded-3xl shadow-xl border border-gray-100 h-full flex overflow-hidden">
             
             {/* Sidebar (Tickets List) */}
-            <div className={`w-full md:w-1/3 border-r border-gray-100 flex flex-col ${activeTicket ? 'hidden md:flex' : 'flex'}`}>
+            <div className={`w-full md:w-1/3 border-r border-gray-100 flex flex-col ${activeTicket || isCreating ? 'hidden md:flex' : 'flex'}`}>
               <div className="p-6 flex justify-between items-center border-b border-gray-100">
                 <h2 className="text-xl font-bold">Support Hub</h2>
                 <button 
@@ -147,7 +147,7 @@ export default function Support() {
             </div>
 
             {/* Chat Area / Create Ticket */}
-            <div className={`flex-1 flex col flex-col bg-gray-50/50 ${!activeTicket && !isCreating ? 'hidden md:flex' : 'flex'}`}>
+            <div className={`flex-1 flex flex-col bg-gray-50/50 ${!activeTicket && !isCreating ? 'hidden md:flex' : 'flex'}`}>
               
               {!isCreating && !activeTicket ? (
                 <div className="flex-1 flex flex-col items-center justify-center text-gray-400 space-y-4">

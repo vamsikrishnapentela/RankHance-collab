@@ -83,15 +83,43 @@ export default function Landing() {
       "Kakinada", "Tanuku", "Nidadavole", "Gudur", "Chilakaluripet",
     ];
     const actions = [
-      "just joined RankHance 🚀",
-      "started a mock test 🎯",
-      "scored 120+ marks 📈",
-      "scored 80+ marks 📈",
-      "scored 90+ marks 📈",
-      "improved 35 marks 🔥",
-      "improved 25 marks 🔥",
-      "improved 15 marks 🔥",
-      "completed a full test ✅"
+      "joined RankHance today 🚀",
+      "started practicing chapters 📚",
+      "attempted first mock test 🎯",
+      "scored 100+ marks 📈",
+      "joined RankHance today 🚀",
+      "scored 110+ marks 📈",
+      "joined RankHance today 🚀",
+      "scored 70+ marks 📈",
+      "boosted score by 20 marks 🔥",
+      "boosted score by 30 marks 🔥",
+      "joined RankHance today 🚀",
+      "boosted score by 40 marks 🔥",
+      "improved accuracy to 85% 🎯",
+      "joined RankHance today 🚀",
+      "improved accuracy to 90% 🎯",
+      "completed 5 mock tests 🧠",
+      "completed 10 mock tests 🧠",
+      "finished chapter practice 📘",
+      "mastered weak topics 💪",
+      "joined RankHance today 🚀",
+      "analyzed performance deeply 📊",
+      "joined RankHance today 🚀",
+      "cracked tough questions 💥",
+      "solved 100+ questions today ⚡",
+      "joined RankHance today 🚀",
+      "on a 7-day streak 🔥",
+      "improving rank steadily 📈",
+      "getting exam-ready 🎯",
+      "building strong basics 🧱",
+      "gaining confidence daily 💯",
+      "focused on weak areas 🎯",
+      "joined RankHance today 🚀",
+      "tracking progress smartly 📊",
+      "one step closer to rank 🏆",
+      "joined RankHance today 🚀",
+      "pushing limits daily 🚀",
+      "consistent practice paying off 💪"
     ];
 
     const showPopup = () => {
@@ -213,7 +241,7 @@ export default function Landing() {
 
             <Link
               to="/dashboard"
-              className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-2xl shadow-xl hover:shadow-2xl transition-all font-semibold text-lg flex items-center justify-center gap-2 hover:scale-105"
+              className="px-6 py-3 md:px-8 md:py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-2xl shadow-xl hover:shadow-2xl transition-all font-semibold text-base md:text-lg flex items-center justify-center gap-2 hover:scale-105"
             >
               Start Practicing →
             </Link>
@@ -354,7 +382,7 @@ export default function Landing() {
                 <div className="flex-1 min-w-0 md:space-y-4">
                   <h3 className="text-base md:text-lg font-bold text-gray-900 mb-1 md:mb-0 truncate md:whitespace-normal">{f.title}</h3>
                   <p className="text-xs md:text-sm text-gray-600 mb-2 md:mb-0 line-clamp-2 md:line-clamp-none">{f.desc}</p>
-                  
+
                   <div className="inline-block px-2 md:px-3 py-1 text-[10px] md:text-xs rounded-full bg-orange-50 text-orange-600 font-semibold">
                     👉 {f.tag}
                   </div>
@@ -384,7 +412,7 @@ export default function Landing() {
                 <div className="flex-1 min-w-0 md:space-y-4">
                   <h3 className="text-base md:text-lg font-bold text-gray-800 mb-1 md:mb-0 truncate md:whitespace-normal">{f.title}</h3>
                   <p className="text-xs md:text-sm text-gray-500 mb-2 md:mb-0 line-clamp-2 md:line-clamp-none">{f.desc}</p>
-                  
+
                   <div className="inline-block px-2 md:px-3 py-1 text-[10px] md:text-xs rounded-full bg-gray-200 text-gray-600 font-semibold">
                     🔒 {f.tag}
                   </div>
@@ -431,7 +459,7 @@ export default function Landing() {
 
               <div className="pt-6">
                 <Link to="/login" className="inline-block">
-                  <button className="bg-orange-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:bg-orange-600 hover:scale-105 transition-all">
+                  <button className="bg-orange-500 text-white px-6 py-3 md:px-8 md:py-4 rounded-2xl font-semibold text-base md:text-lg shadow-lg hover:bg-orange-600 hover:scale-105 transition-all">
                     Try Full Mock Test →
                   </button>
                 </Link>
@@ -493,9 +521,9 @@ export default function Landing() {
                         nextQuestion();
                       }
                     }}
-                    className={`px-6 py-2 text-white rounded-lg font-semibold shadow-md transition-all ${currentIndex === questions.length - 1
-                        ? "bg-green-500 hover:bg-green-600"
-                        : "bg-orange-500 hover:bg-orange-600"
+                    className={`px-4 py-2 md:px-6 md:py-2 text-white rounded-lg font-semibold shadow-md transition-all ${currentIndex === questions.length - 1
+                      ? "bg-green-500 hover:bg-green-600"
+                      : "bg-orange-500 hover:bg-orange-600"
                       }`}
                   >
                     {currentIndex === questions.length - 1 ? "Submit" : "Next →"}
@@ -678,7 +706,7 @@ export default function Landing() {
                     navigate("/dashboard");
                   }
                 }}
-                className="relative z-10 mt-6 w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+                className="relative z-10 mt-6 w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 md:py-4 rounded-xl font-semibold text-base md:text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
               >
                 Unlock Premium Now →
               </button>

@@ -182,7 +182,7 @@ const Result = () => {
   // ── No data guard ────────────────────────────────────────────────────────
   if (!questions) {
     return (
-      <div className="flex-1 w-full bg-gray-50 flex flex-col items-center justify-center p-6 min-h-[calc(100vh-64px)]">
+      <div className="flex-1 w-full bg-gray-50 flex flex-col items-center justify-center p-6 min-h-[calc(100dvh-64px)]">
         <Card className="text-center p-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">No Results</h2>
           <p className="text-gray-500 mb-6">No test data found.</p>
@@ -209,7 +209,7 @@ const Result = () => {
   };
 
   return (
-    <div className="flex-1 w-full bg-gray-50 min-h-[calc(100vh-64px)] p-6">
+    <div className="flex-1 w-full bg-gray-50 min-h-[calc(100dvh-64px)] p-6">
       <Container>
         <Button
           variant="secondary"

@@ -72,7 +72,7 @@ export default function MockTests() {
 
   if (loading || authLoading) {
     return (
-      <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100vh-64px)]">
+      <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100dvh-64px)]">
         <div className="w-full max-w-5xl mx-auto py-8 flex justify-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[var(--color-primary)]"></div>
         </div>
@@ -81,7 +81,7 @@ export default function MockTests() {
   }
 
   return (
-    <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100vh-64px)] overflow-y-auto">
+    <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100dvh-64px)] overflow-y-auto">
       <div className="w-full max-w-5xl mx-auto py-8">
         <Button 
           variant="secondary" 

@@ -17,6 +17,16 @@ export default function Dashboard() {
       setIsPaymentModalOpen(true);
       localStorage.removeItem("showPayment");
     }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const paymentStatus = urlParams.get('payment');
+    if (paymentStatus === 'success') {
+      alert('Payment Successful! Premium Content Unlocked.');
+      window.history.replaceState({}, document.title, window.location.pathname);
+    } else if (paymentStatus?.startsWith('failed')) {
+      alert('Payment Failed or could not be verified. If amount was deducted, please contact support.');
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
   }, []);
 
   const cards = [
@@ -80,7 +90,7 @@ export default function Dashboard() {
     );
   }
   return (
-    <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100vh-64px)] overflow-y-auto">
+    <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100dvh-64px)] overflow-y-auto">
       <div className="w-full max-w-5xl mx-auto py-8">
         <h1 className="text-3xl font-extrabold text-gray-900 mb-8 w-full text-center tracking-tight">
           Welcome! What do you want to practice today?

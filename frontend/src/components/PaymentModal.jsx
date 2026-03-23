@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { createOrder, verifyPayment } from '../api';
 import { useAuth } from '../hooks/useAuth';
 import { X, ShieldCheck, Zap, Star } from 'lucide-react';
@@ -7,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const PaymentModal = ({ isOpen, onClose }) => {
   const { user, refreshUser } = useAuth();
   const navigate = useNavigate();
+  const [isProcessing, setIsProcessing] = useState(false);
 
   if (!isOpen) return null;
 
@@ -16,6 +18,9 @@ const PaymentModal = ({ isOpen, onClose }) => {
       onClose();
       return;
     }
+
+    if (isProcessing) return;
+    setIsProcessing(true);
 
     try {
       const order = await createOrder();
@@ -33,8 +38,10 @@ const PaymentModal = ({ isOpen, onClose }) => {
             alert('Payment Successful! Content Unlocked.');
             await refreshUser();
             onClose();
+            setIsProcessing(false);
           } catch (err) {
             alert('Payment verification failed.');
+            setIsProcessing(false);
           }
         },
         prefill: {
@@ -46,11 +53,28 @@ const PaymentModal = ({ isOpen, onClose }) => {
         }
       };
 
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (isMobile) {
+        const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+        options.callback_url = `${baseUrl}/api/payment/verify-redirect?frontend=${encodeURIComponent(window.location.origin)}`;
+        options.redirect = true;
+      }
+
+      options.modal = {
+        ondismiss: function() {
+          setIsProcessing(false);
+        }
+      };
+
       const rzp = new window.Razorpay(options);
+      rzp.on('payment.failed', function() {
+        setIsProcessing(false);
+      });
       rzp.open();
     } catch (err) {
       console.error("Order creation failed", err);
       alert("Failed to initiate payment. Please try again.");
+      setIsProcessing(false);
     }
   };
 
@@ -64,9 +88,9 @@ const PaymentModal = ({ isOpen, onClose }) => {
           <X className="w-5 h-5 text-gray-500" />
         </button>
 
-        <div className="p-8 text-center space-y-6">
-          <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto">
-            <Star className="w-10 h-10 text-orange-500 fill-orange-500" />
+        <div className="p-6 text-center space-y-4">
+          <div className="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center mx-auto">
+            <Star className="w-7 h-7 text-orange-500 fill-orange-500" />
           </div>
 
           <div className="space-y-2">
@@ -106,8 +130,8 @@ const PaymentModal = ({ isOpen, onClose }) => {
               <span className="text-gray-400 line-through text-lg">₹999</span>
               <span className="text-4xl font-extrabold text-gray-900">₹99</span>
             </div>
-            <Button variant="primary" className="w-full h-14" onClick={handlePayment}>
-              Pay Now & Unlock
+            <Button variant="primary" className="w-full h-12 md:h-14 text-base md:text-lg" onClick={handlePayment} disabled={isProcessing}>
+              {isProcessing ? 'Processing...' : 'Pay Now & Unlock'}
             </Button>
             <p className="text-xs text-gray-400">One-time payment • Access up to your college joining date</p>
           </div>

@@ -21,6 +21,7 @@ const googleClient = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/rankhance')
     .then(() => console.log('Connected to MongoDB'))
@@ -255,6 +256,41 @@ app.post('/api/payment/verify', auth, async (req, res) => {
     }
 });
 
+app.post('/api/payment/verify-redirect', async (req, res) => {
+    const { razorpay_order_id, razorpay_payment_id, razorpay_signature } = req.body;
+    const frontend = req.query.frontend || 'https://rankhance.in';
+    try {
+        const user = await User.findOne({ razorpayOrderId: razorpay_order_id });
+        if (!user) return res.redirect(`${frontend}/dashboard?payment=failed`);
+        if (user.isPaid) return res.redirect(`${frontend}/dashboard?payment=success`);
+
+        const generatedSignature = crypto
+            .createHmac("sha256", process.env.RAZORPAY_KEY_SECRET || "YOUR_KEY_SECRET")
+            .update(`${razorpay_order_id}|${razorpay_payment_id}`)
+            .digest("hex");
+
+        if (generatedSignature !== razorpay_signature)
+            return res.redirect(`${frontend}/dashboard?payment=failed_signature`);
+
+        user.isPaid = true;
+        user.razorpayOrderId = undefined;
+
+        if (user.referredBy) {
+            const creator = await User.findOne({ referralCode: user.referredBy, isCreator: true });
+            if (creator && creator.email !== user.email) {
+                creator.paidReferrals = (creator.paidReferrals || 0) + 1;
+                creator.earnings = (creator.earnings || 0) + Math.floor(0.1 * 99);
+                await creator.save();
+            }
+        }
+        await user.save();
+        res.redirect(`${frontend}/dashboard?payment=success`);
+    } catch (err) {
+        console.error("Redirect verification error:", err);
+        res.redirect(`${frontend}/dashboard?payment=error`);
+    }
+});
+
 // ─── Content ──────────────────────────────────────────────────────────────────
 
 app.get('/api/subjects', (req, res) => {
@@ -290,14 +326,48 @@ app.get('/api/:chapterType/:subjectId', async (req, res, next) => {
     next();
 });
 
-app.get('/api/questions/:chapterId', (req, res) => {
+app.get('/api/questions/:chapterId', async (req, res) => {
     const { chapterId } = req.params;
+    
+    // Auth Check
+    const token = req.header('x-auth-token');
+    let paid = false;
+    if (token) {
+        try {
+            const decoded = jwt.verify(token, process.env.JWT_SECRET || 'YOUR_JWT_SECRET');
+            const user = await User.findById(decoded.user.id);
+            if (user) paid = user.isPaid;
+        } catch (e) { }
+    }
+
+    const chNum = parseInt(chapterId.slice(1), 10);
+    if (!paid && chNum > 2) {
+        return res.status(403).json({ message: "Premium content. Please upgrade." });
+    }
+
     const subjectId = chapterId.startsWith('m') ? 'maths' : chapterId.startsWith('p') ? 'phy' : 'che';
     res.json(readJsonFile(`2-Chapter Practice-questions/${subjectId}/${chapterId}/data.json`) || []);
 });
 
-app.get('/api/quiz/:chapterId', (req, res) => {
+app.get('/api/quiz/:chapterId', async (req, res) => {
     const { chapterId } = req.params;
+    
+    // Auth Check
+    const token = req.header('x-auth-token');
+    let paid = false;
+    if (token) {
+        try {
+            const decoded = jwt.verify(token, process.env.JWT_SECRET || 'YOUR_JWT_SECRET');
+            const user = await User.findById(decoded.user.id);
+            if (user) paid = user.isPaid;
+        } catch (e) { }
+    }
+
+    const chNum = parseInt(chapterId.slice(1), 10);
+    if (!paid && chNum > 2) {
+        return res.status(403).json({ message: "Premium content. Please upgrade." });
+    }
+
     const subjectId = chapterId.startsWith('m') ? 'maths' : chapterId.startsWith('p') ? 'phy' : 'che';
     res.json(readJsonFile(`1-quiz-questions/${subjectId}/${chapterId}/data.json`) || []);
 });
@@ -589,6 +659,7 @@ app.post('/api/support/admin-reply', auth, async (req, res) => {
 
         ticket.updatedAt = Date.now();
         await ticket.save();
+        await ticket.populate('userId', 'name email');
         res.json(ticket);
     } catch (err) {
         console.error("Admin reply error:", err);

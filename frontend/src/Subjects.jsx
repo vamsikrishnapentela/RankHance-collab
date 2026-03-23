@@ -33,14 +33,14 @@ export default function Subjects() {
 
   if (loading) {
     return (
-      <div className="flex-1 w-full flex flex-col items-center justify-center p-6 bg-gray-50 min-h-[calc(100vh-64px)]">
+      <div className="flex-1 w-full flex flex-col items-center justify-center p-6 bg-gray-50 min-h-[calc(100dvh-64px)]">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[var(--color-primary)]"></div>
       </div>
     );
   }
 
   return (
-    <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100vh-64px)]">
+    <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100dvh-64px)]">
       <Container>
         <Button 
           variant="secondary" 

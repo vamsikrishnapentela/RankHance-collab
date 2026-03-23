@@ -11,6 +11,8 @@ body {
   background-color: #F9FAFB;
   color: #111827;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
 }
 
 h1,
@@ -41,7 +43,7 @@ h6 {
 .animate-marquee {
   display: flex;
   width: max-content;
-  animation: marquee 25s linear infinite;
+  animation: marquee 35s linear infinite;
 }
 
 @keyframes popup-in {

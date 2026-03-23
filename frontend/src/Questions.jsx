@@ -3,6 +3,7 @@ import { useParams, useSearchParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ChevronLeft, ChevronRight, CheckCircle, XCircle } from 'lucide-react';
 import MathRenderer from './components/MathRenderer.jsx';
 import { getQuestions, getQuiz } from './api';
+import PaymentModal from './components/PaymentModal';
 
 export default function Questions() {
   const { subject, chapter } = useParams();
@@ -15,6 +16,7 @@ export default function Questions() {
   const [answers, setAnswers] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
 
   const subjectNames = {
     maths: 'Mathematics',
@@ -39,8 +41,12 @@ export default function Questions() {
           data = await getQuestions(chapter);
         }
         setQuestions(data || []);
-      } catch {
-        setError('Something went wrong – try again');
+      } catch (err) {
+        if (err.response && err.response.status === 403) {
+          setError('PREMIUM_REQUIRED');
+        } else {
+          setError('Something went wrong – try again');
+        }
       } finally {
         setLoading(false);
       }
@@ -72,7 +78,7 @@ export default function Questions() {
 
   if (loading) {
     return (
-      <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100vh-64px)]">
+      <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100dvh-64px)]">
         <div className="flex justify-center items-center h-64">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[var(--color-primary)]"></div>
         </div>
@@ -81,7 +87,7 @@ export default function Questions() {
   }
 
   return (
-    <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100vh-64px)]">
+    <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100dvh-64px)]">
       <div className="max-w-3xl mx-auto w-full">
         <button 
           onClick={goBackToChapters}
@@ -91,7 +97,15 @@ export default function Questions() {
           Back
         </button>
         
-        {error ? (
+        {error === 'PREMIUM_REQUIRED' ? (
+          <div className="text-center py-16 bg-white rounded-3xl border border-gray-100 shadow-sm max-w-lg mx-auto space-y-6 px-6">
+             <div className="w-16 h-16 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">🔒</div>
+             <h3 className="text-2xl font-bold text-gray-900">Premium Content</h3>
+             <p className="text-gray-500">This chapter is locked. Please upgrade to the premium plan to practice these questions.</p>
+             <button onClick={() => setIsPaymentModalOpen(true)} className="px-8 py-3 bg-orange-500 text-white font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">Unlock Premium Now</button>
+             <PaymentModal isOpen={isPaymentModalOpen} onClose={() => setIsPaymentModalOpen(false)} />
+          </div>
+        ) : error ? (
           <div className="text-center text-red-500 font-bold py-10 bg-red-50 rounded-xl">{error}</div>
         ) : questions.length === 0 ? (
           <div className="text-center py-10 text-gray-500 font-medium bg-white rounded-xl shadow-sm border border-gray-200">
