@@ -39,7 +39,7 @@ export default function Dashboard() {
       color: 'bg-orange-100'
     },
     {
-      title: 'Exam Questions Practise ',
+      title: 'Exam Questions Practice ',
       description: 'Solve real exam questions chapter by chapter',
       icon: <BookOpen className="w-8 h-8 text-orange-500" />,
       link: '/subjects?type=practice',
@@ -100,7 +100,7 @@ export default function Dashboard() {
           {cards.map((card, index) => {
             if (card.active) {
               const isLocked = card.requiresPayment && !isPaid;
-              
+
               const CardContent = (
                 <Card hover className="group hover:scale-[1.02] transition-all duration-300 ease-in-out h-full">
                   <div className="flex flex-row md:flex-col items-center md:items-start gap-4 md:gap-6 justify-between h-full p-4 md:p-6">
