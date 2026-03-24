@@ -6,7 +6,7 @@ const path = require('path');
 const Razorpay = require('razorpay');
 const crypto = require('crypto');
 const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { OAuth2Client } = require('google-auth-library');
 const User = require('./models/User');
@@ -23,7 +23,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/rankhance')
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/rankhance', {
+    serverSelectionTimeoutMS: 5000,
+    family: 4
+})
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('MongoDB connection error:', err));
 
@@ -328,7 +331,7 @@ app.get('/api/:chapterType/:subjectId', async (req, res, next) => {
 
 app.get('/api/questions/:chapterId', async (req, res) => {
     const { chapterId } = req.params;
-    
+
     // Auth Check
     const token = req.header('x-auth-token');
     let paid = false;
@@ -351,7 +354,7 @@ app.get('/api/questions/:chapterId', async (req, res) => {
 
 app.get('/api/quiz/:chapterId', async (req, res) => {
     const { chapterId } = req.params;
-    
+
     // Auth Check
     const token = req.header('x-auth-token');
     let paid = false;
@@ -391,6 +394,25 @@ app.get('/api/mocktests', async (req, res) => {
         })));
     }
     res.json([]);
+});
+
+app.get('/api/formulas/:subject/:year', async (req, res) => {
+    const { subject, year } = req.params;
+    const token = req.header('x-auth-token');
+    let paid = false;
+    if (token) {
+        try {
+            const decoded = jwt.verify(token, process.env.JWT_SECRET || 'YOUR_JWT_SECRET');
+            const user = await User.findById(decoded.user.id);
+            if (user) paid = user.isPaid;
+        } catch (e) { }
+    }
+
+    const data = readJsonFile(`formulas/${subject}-${year}.json`);
+    if (data) {
+        return res.json(data.map((ch, idx) => ({ ...ch, locked: !paid && idx >= 1 })));
+    }
+    res.status(404).json({ message: "Formulas not found for this subject and year" });
 });
 
 app.get('/api/weightage', (req, res) => {

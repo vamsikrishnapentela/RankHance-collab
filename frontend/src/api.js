@@ -113,6 +113,18 @@ export const getSubjects = async () => {
   return data;
 };
 
+// GET /api/formulas/:subject/:year
+export const getFormulas = async (subject, year) => {
+  const subjectMap = {
+    'maths': 'maths',
+    'physics': 'phy',
+    'chemistry': 'che'
+  };
+  const mappedSubject = subjectMap[subject] || subject;
+  const { data } = await api.get(`/formulas/${mappedSubject}/${year}`);
+  return data;
+};
+
 // GET /api/creator/dashboard
 export const getCreatorDashboard = async () => {
   const { data } = await api.get('/creator/dashboard');

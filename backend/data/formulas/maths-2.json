@@ -1,0 +1,2556 @@
+[
+    {
+        "chapter": "Complex Numbers",
+        "id": "complex_numbers",
+        "topics": [
+            {
+                "id": "cn01",
+                "label": "Basic Concepts & Operations",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Additive Inverse",
+                        "latex": "-(a + ib) = -a - ib"
+                    },
+                    {
+                        "sub": "Multiplicative Inverse",
+                        "latex": "\\frac{x - iy}{x^2 + y^2}"
+                    },
+                    {
+                        "sub": "Modulus",
+                        "latex": "|x + iy| = \\sqrt{x^2 + y^2}"
+                    },
+                    {
+                        "sub": "Conjugate",
+                        "text": "Conjugate of x + iy is x - iy"
+                    },
+                    {
+                        "sub": "Addition & Subtraction",
+                        "latex": "z_1 + z_2 = (a+c,\\, b+d),\\quad z_1 - z_2 = (a-c,\\, b-d)"
+                    },
+                    {
+                        "sub": "Multiplication",
+                        "latex": "z_1 z_2 = (ac - bd,\\; ad + bc)"
+                    },
+                    {
+                        "sub": "Division",
+                        "latex": "\\frac{z_1}{z_2} = \\left(\\frac{ac+bd}{c^2+d^2},\\; \\frac{bc-ad}{c^2+d^2}\\right)"
+                    }
+                ]
+            },
+            {
+                "id": "cn02",
+                "label": "Square Root of (a + ib)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "b > 0",
+                        "latex": "\\sqrt{a+ib} = \\pm\\left(\\sqrt{\\frac{\\sqrt{a^2+b^2}+a}{2}} + i\\sqrt{\\frac{\\sqrt{a^2+b^2}-a}{2}}\\right)"
+                    },
+                    {
+                        "sub": "b < 0",
+                        "latex": "\\sqrt{a+ib} = \\pm\\left(\\sqrt{\\frac{\\sqrt{a^2+b^2}+a}{2}} - i\\sqrt{\\frac{\\sqrt{a^2+b^2}-a}{2}}\\right)"
+                    }
+                ]
+            },
+            {
+                "id": "cn03",
+                "label": "Mod-Amplitude Form & Argument",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Mod-Amplitude Form",
+                        "latex": "z = x+iy = r(\\cos\\theta + i\\sin\\theta),\\quad r = \\sqrt{x^2+y^2}"
+                    },
+                    {
+                        "sub": "Quadrant Rules",
+                        "text": "Q1: Arg(z)=θ | Q2: Arg(z)=π−θ | Q3: Arg(z)=−π+θ | Q4: Arg(z)=−θ"
+                    },
+                    {
+                        "sub": "Principal Argument",
+                        "latex": "\\text{Arg}(z) = \\tan^{-1}\\left(\\frac{y}{x}\\right)"
+                    },
+                    {
+                        "sub": "Arg of Product",
+                        "latex": "\\text{Arg}(z_1 z_2) = \\text{Arg}(z_1) + \\text{Arg}(z_2)"
+                    },
+                    {
+                        "sub": "Arg of Quotient",
+                        "latex": "\\text{Arg}\\left(\\frac{z_1}{z_2}\\right) = \\text{Arg}(z_1) - \\text{Arg}(z_2)"
+                    }
+                ]
+            },
+            {
+                "id": "cn04",
+                "label": "cis & Modulus Properties",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Reciprocal",
+                        "latex": "\\frac{1}{\\cos\\theta+i\\sin\\theta} = \\cos\\theta - i\\sin\\theta"
+                    },
+                    {
+                        "sub": "cis Product",
+                        "latex": "\\text{cis}\\,\\alpha \\cdot \\text{cis}\\,\\beta = \\text{cis}(\\alpha+\\beta)"
+                    },
+                    {
+                        "sub": "cis Quotient",
+                        "latex": "\\frac{\\text{cis}\\,\\alpha}{\\text{cis}\\,\\beta} = \\text{cis}(\\alpha-\\beta)"
+                    },
+                    {
+                        "sub": "Modulus Product",
+                        "latex": "|z_1 z_2| = |z_1||z_2|"
+                    },
+                    {
+                        "sub": "Modulus Quotient",
+                        "latex": "\\left|\\frac{z_1}{z_2}\\right| = \\frac{|z_1|}{|z_2|}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "De Moivre's Theorem",
+        "id": "de_moivre",
+        "topics": [
+            {
+                "id": "dm01",
+                "label": "Theorem & Basic Identities",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Theorem",
+                        "latex": "(\\cos\\theta + i\\sin\\theta)^n = \\cos(n\\theta) + i\\sin(n\\theta)"
+                    },
+                    {
+                        "sub": "Euler's Form",
+                        "latex": "\\cos\\theta + i\\sin\\theta = e^{i\\theta}"
+                    },
+                    {
+                        "sub": "Product",
+                        "latex": "z_1 z_2 = r_1 r_2\\,\\text{cis}(\\theta_1+\\theta_2)"
+                    },
+                    {
+                        "sub": "Negative Angle",
+                        "latex": "\\text{cis}(-\\theta) = \\cos\\theta - i\\sin\\theta = \\frac{1}{\\text{cis}\\,\\theta}"
+                    },
+                    {
+                        "sub": "Conjugate Product",
+                        "latex": "(\\cos\\theta+i\\sin\\theta)(\\cos\\theta-i\\sin\\theta)=1"
+                    },
+                    {
+                        "sub": "Negative Power",
+                        "latex": "(\\cos\\theta-i\\sin\\theta)^n = (\\cos\\theta+i\\sin\\theta)^{-n}"
+                    }
+                ]
+            },
+            {
+                "id": "dm02",
+                "label": "Cube Roots & nth Roots",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Values of ω",
+                        "latex": "\\omega = \\frac{-1+i\\sqrt{3}}{2},\\quad \\omega^2 = \\frac{-1-i\\sqrt{3}}{2}"
+                    },
+                    {
+                        "sub": "Properties",
+                        "latex": "1+\\omega+\\omega^2=0,\\quad \\omega^3=1"
+                    },
+                    {
+                        "sub": "Cube Roots",
+                        "latex": "a^{1/3},\\; a^{1/3}\\omega,\\; a^{1/3}\\omega^2"
+                    },
+                    {
+                        "sub": "nth Roots (Unity)",
+                        "latex": "\\omega = \\cos\\left(\\frac{2\\pi}{n}\\right) + i\\sin\\left(\\frac{2\\pi}{n}\\right)"
+                    },
+                    {
+                        "sub": "General nth Roots",
+                        "latex": "z_k = r^{1/n}\\,\\text{cis}\\left(\\frac{\\theta+2k\\pi}{n}\\right),\\; k=0,1,...,n-1"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Quadratic Expressions",
+        "id": "quadratic_expressions",
+        "topics": [
+            {
+                "id": "qe0",
+                "label": "1. Relation Between Roots & Coefficients (General Equation)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Sum of roots (s₁)",
+                        "latex": "s_1 = \\sum\\alpha = -\\frac{a_1}{a_0}"
+                    },
+                    {
+                        "sub": "Sum of products of 2 roots (s₂)",
+                        "latex": "s_2 = \\sum\\alpha_1\\alpha_2 = \\frac{a_2}{a_0}"
+                    },
+                    {
+                        "sub": "Sum of products of 3 roots (s₃)",
+                        "latex": "s_3 = \\sum\\alpha_1\\alpha_2\\alpha_3 = -\\frac{a_3}{a_0}"
+                    },
+                    {
+                        "sub": "Product of all roots (sₙ)",
+                        "latex": "s_n = \\alpha_1\\alpha_2...\\alpha_n = (-1)^n\\frac{a_n}{a_0}"
+                    }
+                ]
+            },
+            {
+                "id": "qe1",
+                "label": "2. Quadratic Equation – Roots & Standard Results",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Quadratic Formula",
+                        "latex": "x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}"
+                    },
+                    {
+                        "sub": "Sum & Product of Roots",
+                        "latex": "\\alpha+\\beta = -\\frac{b}{a},\\quad \\alpha\\beta = \\frac{c}{a}"
+                    },
+                    {
+                        "sub": "Difference of Roots",
+                        "latex": "|\\alpha-\\beta| = \\frac{\\sqrt{b^2-4ac}}{|a|}"
+                    },
+                    {
+                        "sub": "Discriminant",
+                        "latex": "\\Delta = b^2 - 4ac"
+                    },
+                    {
+                        "sub": "Nature of Roots",
+                        "text": "Δ>0 → Real & distinct | Δ=0 → Real & equal | Δ<0 → Imaginary"
+                    },
+                    {
+                        "sub": "Equation from Roots",
+                        "latex": "x^2 - (\\alpha+\\beta)x + \\alpha\\beta = 0"
+                    }
+                ]
+            },
+            {
+                "id": "qe2",
+                "label": "3. Condition for Common Root",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Condition",
+                        "latex": "(c_1 a_2-c_2 a_1)^2 = (a_1 b_2-a_2 b_1)(b_1 c_2-b_2 c_1)"
+                    },
+                    {
+                        "sub": "Common Root",
+                        "latex": "\\frac{c_1 a_2-c_2 a_1}{a_1 b_2-a_2 b_1}"
+                    }
+                ]
+            },
+            {
+                "id": "qe3",
+                "label": "4. Sign of Quadratic Expression",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Between Roots",
+                        "text": "α < x < β ⇒ f(x) has opposite sign to a"
+                    },
+                    {
+                        "sub": "Outside Roots",
+                        "text": "x < α or x > β ⇒ f(x) has same sign as a"
+                    },
+                    {
+                        "sub": "If Δ < 0",
+                        "text": "f(x) always has same sign as a"
+                    },
+                    {
+                        "sub": "If Δ = 0",
+                        "latex": "\\text{Same sign except at } x = -\\frac{b}{a}"
+                    }
+                ]
+            },
+            {
+                "id": "qe4",
+                "label": "5. Interval Based Results",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "< 0",
+                        "latex": "(x-\\alpha)(x-\\beta) < 0 \\Rightarrow \\alpha < x < \\beta"
+                    },
+                    {
+                        "sub": "≤ 0",
+                        "latex": "(x-\\alpha)(x-\\beta) \\leq 0 \\Rightarrow \\alpha \\leq x \\leq \\beta"
+                    },
+                    {
+                        "sub": "> 0",
+                        "latex": "(x-\\alpha)(x-\\beta) > 0 \\Rightarrow x < \\alpha \\text{ or } x > \\beta"
+                    },
+                    {
+                        "sub": "≥ 0",
+                        "latex": "(x-\\alpha)(x-\\beta) \\geq 0 \\Rightarrow x \\leq \\alpha \\text{ or } x \\geq \\beta"
+                    }
+                ]
+            },
+            {
+                "id": "qe5",
+                "label": "6. Maximum & Minimum Value",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Vertex",
+                        "latex": "x = -\\frac{b}{2a}"
+                    },
+                    {
+                        "sub": "Minimum (a > 0)",
+                        "latex": "\\frac{4ac-b^2}{4a} \\text{ at } x=-\\frac{b}{2a}"
+                    },
+                    {
+                        "sub": "Maximum (a < 0)",
+                        "latex": "\\frac{4ac-b^2}{4a} \\text{ at } x=-\\frac{b}{2a}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Theory of Equations",
+        "id": "theory_of_equations_full",
+        "topics": [
+            {
+                "id": "te1",
+                "label": "1. Relation Between Roots & Coefficients (General)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Sum of roots",
+                        "latex": "s_1 = -\\frac{a_1}{a_0}"
+                    },
+                    {
+                        "sub": "Sum of products of 2",
+                        "latex": "s_2 = \\frac{a_2}{a_0}"
+                    },
+                    {
+                        "sub": "Sum of products of 3",
+                        "latex": "s_3 = -\\frac{a_3}{a_0}"
+                    },
+                    {
+                        "sub": "Product of all roots",
+                        "latex": "s_n = (-1)^n\\frac{a_n}{a_0}"
+                    }
+                ]
+            },
+            {
+                "id": "te2",
+                "label": "2. Cubic Equation – Key Relations",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Given",
+                        "latex": "ax^3+bx^2+cx+d=0"
+                    },
+                    {
+                        "sub": "Sum of roots",
+                        "latex": "\\alpha+\\beta+\\gamma = -\\frac{b}{a}"
+                    },
+                    {
+                        "sub": "Sum of products (2 at a time)",
+                        "latex": "\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha = \\frac{c}{a}"
+                    },
+                    {
+                        "sub": "Product of roots",
+                        "latex": "\\alpha\\beta\\gamma = -\\frac{d}{a}"
+                    },
+                    {
+                        "sub": "Important identity",
+                        "latex": "\\sum\\alpha^2\\beta + \\sum\\alpha\\beta^2 = s_1 s_2 - 3s_3"
+                    }
+                ]
+            },
+            {
+                "id": "te3",
+                "label": "3. Biquadratic Equation (Degree 4)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Given",
+                        "latex": "ax^4+bx^3+cx^2+dx+e=0"
+                    },
+                    {
+                        "sub": "Sum of roots",
+                        "latex": "\\alpha+\\beta+\\gamma+\\delta = -\\frac{b}{a}"
+                    },
+                    {
+                        "sub": "Sum of products (2)",
+                        "latex": "\\frac{c}{a}"
+                    },
+                    {
+                        "sub": "Sum of products (3)",
+                        "latex": "-\\frac{d}{a}"
+                    },
+                    {
+                        "sub": "Product of roots",
+                        "latex": "\\frac{e}{a}"
+                    }
+                ]
+            },
+            {
+                "id": "te4",
+                "label": "4. Formation of Polynomial from Roots",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "2 roots",
+                        "latex": "(x-\\alpha)(x-\\beta)=0"
+                    },
+                    {
+                        "sub": "Standard form",
+                        "latex": "x^2-(\\alpha+\\beta)x+\\alpha\\beta=0"
+                    },
+                    {
+                        "sub": "3 roots",
+                        "latex": "(x-\\alpha)(x-\\beta)(x-\\gamma)=0"
+                    },
+                    {
+                        "sub": "4 roots",
+                        "latex": "(x-\\alpha)(x-\\beta)(x-\\gamma)(x-\\delta)=0"
+                    }
+                ]
+            },
+            {
+                "id": "te5",
+                "label": "5. Symmetric Functions (Important Identities)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Basic identity",
+                        "latex": "(a+b)^2-(a-b)^2=4ab"
+                    },
+                    {
+                        "sub": "Squares sum",
+                        "latex": "a^2+b^2 = \\frac{(a+b)^2+(a-b)^2}{2}"
+                    },
+                    {
+                        "sub": "3 variables",
+                        "latex": "(a+b+c)^2 = a^2+b^2+c^2+2(ab+bc+ca)"
+                    },
+                    {
+                        "sub": "Cube identity",
+                        "latex": "a^3+b^3+c^3-3abc = (a+b+c)[(a+b+c)^2-3(ab+bc+ca)]"
+                    },
+                    {
+                        "sub": "Important",
+                        "latex": "a^2b^2+b^2c^2+c^2a^2 = (ab+bc+ca)^2-2abc(a+b+c)"
+                    }
+                ]
+            },
+            {
+                "id": "te6",
+                "label": "6. Transformation of Equations",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Roots → −αᵢ",
+                        "latex": "f(-x)=0"
+                    },
+                    {
+                        "sub": "Roots → 1/αᵢ",
+                        "latex": "f(1/x)=0"
+                    },
+                    {
+                        "sub": "Roots → αᵢ+k",
+                        "latex": "f(x-k)=0"
+                    },
+                    {
+                        "sub": "Roots → αᵢ−k",
+                        "latex": "f(x+k)=0"
+                    },
+                    {
+                        "sub": "Roots → k·αᵢ",
+                        "latex": "f(x/k)=0"
+                    },
+                    {
+                        "sub": "Roots → αᵢ/k",
+                        "latex": "f(kx)=0"
+                    },
+                    {
+                        "sub": "Roots → αᵢ²",
+                        "latex": "f(\\sqrt{x})=0"
+                    },
+                    {
+                        "sub": "Roots → αᵢ³",
+                        "latex": "f(\\sqrt[3]{x})=0"
+                    }
+                ]
+            },
+            {
+                "id": "te7",
+                "label": "7. Special Roots (AP & GP)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "In A.P",
+                        "latex": "a-d,\\; a,\\; a+d"
+                    },
+                    {
+                        "sub": "In G.P",
+                        "latex": "\\frac{a}{r},\\; a,\\; ar"
+                    }
+                ]
+            },
+            {
+                "id": "te8",
+                "label": "8. Removal of Terms",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Remove 2nd term",
+                        "latex": "h = -\\frac{a_1}{na_0},\\text{ then use } f(x+h)=0"
+                    },
+                    {
+                        "sub": "Remove r-th term",
+                        "text": "Find h using f^(n−r+1)(h)=0"
+                    }
+                ]
+            },
+            {
+                "id": "te9",
+                "label": "9. Reciprocal Equations",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Condition",
+                        "latex": "f(x) = f(1/x)"
+                    },
+                    {
+                        "sub": "Class I",
+                        "latex": "a_0 = a_n,\\; a_1 = a_{n-1}"
+                    },
+                    {
+                        "sub": "Even degree",
+                        "text": "Put x + 1/x = t"
+                    },
+                    {
+                        "sub": "Odd degree",
+                        "text": "-1 is a root"
+                    },
+                    {
+                        "sub": "Class II",
+                        "latex": "a_0 = -a_n"
+                    },
+                    {
+                        "sub": "Special roots",
+                        "text": "1 and -1 may be roots"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Permutations and Combinations",
+        "id": "permutations_combinations_full",
+        "topics": [
+            {
+                "id": "pc1",
+                "label": "1. Permutations (Arrangements)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Basic Formula",
+                        "latex": "{}^nP_r = \\frac{n!}{(n-r)!}"
+                    },
+                    {
+                        "sub": "Identity",
+                        "latex": "{}^nP_r + r \\cdot {}^nP_{r-1} = {}^{n+1}P_r"
+                    }
+                ]
+            },
+            {
+                "id": "pc2",
+                "label": "2. Factorial",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Definition",
+                        "latex": "n! = n(n-1)(n-2)\\cdots 2 \\cdot 1"
+                    }
+                ]
+            },
+            {
+                "id": "pc3",
+                "label": "3. Combinations (Selections)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Formula",
+                        "latex": "{}^nC_r = \\frac{n!}{(n-r)!\\,r!}"
+                    },
+                    {
+                        "sub": "Symmetry",
+                        "latex": "{}^nC_r = {}^nC_{n-r}"
+                    },
+                    {
+                        "sub": "Equal Values",
+                        "latex": "{}^nC_r = {}^nC_s \\Rightarrow r=s \\text{ or } r+s=n"
+                    },
+                    {
+                        "sub": "Pascal Identity",
+                        "latex": "{}^nC_r + {}^nC_{r-1} = {}^{n+1}C_r"
+                    },
+                    {
+                        "sub": "Relation with Permutation",
+                        "latex": "\\frac{{}^nP_r}{{}^nC_r} = r!"
+                    }
+                ]
+            },
+            {
+                "id": "pc4",
+                "label": "4. Sum of r-Digit Numbers",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Without 0",
+                        "latex": "{}^{(n-1)}P_{r-1} \\times (\\text{sum of digits}) \\times \\underbrace{11...1}_{r}"
+                    },
+                    {
+                        "sub": "With 0",
+                        "latex": "{}^{(n-1)}P_{r-1}\\times(\\text{sum})\\times(11...) - {}^{(n-2)}P_{r-2}\\times(\\text{sum})\\times(11...)"
+                    }
+                ]
+            },
+            {
+                "id": "pc5",
+                "label": "5. Permutations with Identical Objects",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Formula",
+                        "latex": "\\frac{n!}{p!\\,q!\\,r!}"
+                    },
+                    {
+                        "sub": "Concept",
+                        "text": "p, q, r are identical objects"
+                    }
+                ]
+            },
+            {
+                "id": "pc6",
+                "label": "6. Permutations with Repetition",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Repetition Allowed",
+                        "latex": "n^r"
+                    },
+                    {
+                        "sub": "At least one repetition",
+                        "latex": "n^r - {}^nP_r"
+                    }
+                ]
+            },
+            {
+                "id": "pc7",
+                "label": "7. Number of Divisors",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Number Form",
+                        "latex": "n = p_1^{\\alpha_1} p_2^{\\alpha_2} \\cdots p_k^{\\alpha_k}"
+                    },
+                    {
+                        "sub": "Formula",
+                        "latex": "(\\alpha_1+1)(\\alpha_2+1)\\cdots(\\alpha_k+1)"
+                    }
+                ]
+            },
+            {
+                "id": "pc8",
+                "label": "8. Circular Permutations & Derangements",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Circular Permutation",
+                        "latex": "(n-1)!"
+                    },
+                    {
+                        "sub": "Necklace / Garland",
+                        "latex": "\\frac{(n-1)!}{2}"
+                    },
+                    {
+                        "sub": "Derangements",
+                        "latex": "n!\\left(\\frac{1}{2!}-\\frac{1}{3!}+\\cdots+(-1)^n\\frac{1}{n!}\\right)"
+                    }
+                ]
+            },
+            {
+                "id": "pc9",
+                "label": "9. Polygon – Number of Diagonals",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Formula",
+                        "latex": "{}^nC_2 - n = \\frac{n(n-3)}{2}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Binomial Theorem",
+        "id": "binomial_theorem_full",
+        "topics": [
+            {
+                "id": "bt1",
+                "label": "1. Binomial Expansion",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "(x+a)^n",
+                        "latex": "(x+a)^n = \\sum_{r=0}^{n} {}^nC_r x^{n-r} a^r"
+                    },
+                    {
+                        "sub": "(x−a)^n",
+                        "latex": "(x-a)^n = \\sum_{r=0}^{n} (-1)^r {}^nC_r x^{n-r} a^r"
+                    }
+                ]
+            },
+            {
+                "id": "bt2",
+                "label": "2. General Term",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "General term",
+                        "latex": "T_{r+1} = {}^nC_r x^{n-r} a^r"
+                    }
+                ]
+            },
+            {
+                "id": "bt3",
+                "label": "3. Middle Term",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "n even",
+                        "latex": "\\left(\\frac{n}{2}+1\\right)^{th} \\text{ term}"
+                    },
+                    {
+                        "sub": "n odd",
+                        "latex": "\\left(\\frac{n+1}{2}\\right)^{th} \\text{ and } \\left(\\frac{n+3}{2}\\right)^{th} \\text{ terms}"
+                    }
+                ]
+            },
+            {
+                "id": "bt4",
+                "label": "4. Greatest Term",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Condition",
+                        "latex": "r = \\frac{(n+1)|x|}{1+|x|}"
+                    },
+                    {
+                        "sub": "If r integer",
+                        "text": "Greatest terms: T_r and T_{r+1}"
+                    },
+                    {
+                        "sub": "If r not integer",
+                        "latex": "T_{[r]+1}"
+                    }
+                ]
+            },
+            {
+                "id": "bt5",
+                "label": "5. Greatest Binomial Coefficient",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "n even",
+                        "latex": "{}^nC_{n/2}"
+                    },
+                    {
+                        "sub": "n odd",
+                        "latex": "{}^nC_{(n-1)/2} \\text{ and } {}^nC_{(n+1)/2}"
+                    }
+                ]
+            },
+            {
+                "id": "bt6",
+                "label": "6. Number of Terms",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "(x+a)^n",
+                        "latex": "n+1"
+                    },
+                    {
+                        "sub": "(x+y+z)^n",
+                        "latex": "\\frac{(n+1)(n+2)}{2}"
+                    }
+                ]
+            },
+            {
+                "id": "bt7",
+                "label": "7. Rational Terms",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Formula",
+                        "latex": "\\left[\\frac{n}{\\text{lcm}(l,k)}\\right] \\text{ or } +1"
+                    }
+                ]
+            },
+            {
+                "id": "bt8",
+                "label": "8. Term from End",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "r-th term from end",
+                        "latex": "(n-r+2)^{th} \\text{ term}"
+                    }
+                ]
+            },
+            {
+                "id": "bt9",
+                "label": "9. Term with x^m",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Value of r",
+                        "latex": "r = \\frac{np-m}{p+q}"
+                    }
+                ]
+            },
+            {
+                "id": "bt10",
+                "label": "10. Independent Term",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Value of r",
+                        "latex": "r = \\frac{np}{p+q}"
+                    }
+                ]
+            },
+            {
+                "id": "bt11",
+                "label": "11. Basic Identities",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Symmetry",
+                        "latex": "{}^nC_r = {}^nC_{n-r}"
+                    },
+                    {
+                        "sub": "Ratio",
+                        "latex": "\\frac{{}^nC_r}{{}^nC_{r-1}} = \\frac{n-r+1}{r}"
+                    },
+                    {
+                        "sub": "Pascal",
+                        "latex": "{}^nC_r + {}^nC_{r-1} = {}^{n+1}C_r"
+                    }
+                ]
+            },
+            {
+                "id": "bt13",
+                "label": "13. Special Summations",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Arithmetic Coefficients",
+                        "latex": "aC_0 + (a+d)C_1 + \\cdots + (a+nd)C_n = (2a+nd)2^{n-1}"
+                    },
+                    {
+                        "sub": "Alternating Form",
+                        "latex": "aC_0 - (a+d)C_1 + (a+2d)C_2 - \\cdots = 0"
+                    }
+                ]
+            },
+            {
+                "id": "bt14",
+                "label": "14. Coefficient Identities",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "With x",
+                        "latex": "C_1 + 2C_2 x + 3C_3 x^2 + \\cdots + nC_n x^{n-1} = n(1+x)^{n-1}"
+                    },
+                    {
+                        "sub": "Without x",
+                        "latex": "C_1 + 2C_2 + 3C_3 + \\cdots + nC_n = n2^{n-1}"
+                    },
+                    {
+                        "sub": "Alternating",
+                        "latex": "C_1 - 2C_2 + 3C_3 - \\cdots = 0"
+                    }
+                ]
+            },
+            {
+                "id": "bt15",
+                "label": "15. Sum of Binomial Coefficients",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Total Sum",
+                        "latex": "\\sum_{r=0}^{n} C_r = 2^n"
+                    },
+                    {
+                        "sub": "Alternating Sum",
+                        "latex": "\\sum_{r=0}^{n} (-1)^r C_r = 0"
+                    },
+                    {
+                        "sub": "Even = Odd",
+                        "latex": "C_0+C_2+\\cdots = C_1+C_3+\\cdots = 2^{n-1}"
+                    }
+                ]
+            },
+            {
+                "id": "bt16",
+                "label": "16. Advanced Identities",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Series Formula",
+                        "latex": "C_0 + \\frac{C_1}{2}x + \\cdots + \\frac{C_n}{n+1}x^n = \\frac{(1+x)^{n+1}-1}{(n+1)x}"
+                    },
+                    {
+                        "sub": "Product Identity",
+                        "latex": "C_0 C_r + C_1 C_{r+1} + \\cdots = {}^{2n}C_{n+r} = \\frac{(2n)!}{(n-r)!(n+r)!}"
+                    }
+                ]
+            },
+            {
+                "id": "bt17",
+                "label": "17. Negative Index Expansion",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Condition",
+                        "latex": "|x| < 1"
+                    },
+                    {
+                        "sub": "(1−x)^{−n}",
+                        "latex": "(1-x)^{-n} = 1 + \\frac{nx}{1!} + \\frac{n(n+1)}{2!}x^2 + \\frac{n(n+1)(n+2)}{3!}x^3 + \\cdots"
+                    }
+                ]
+            },
+            {
+                "id": "bt18",
+                "label": "18. Rational Power Expansion",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "(1+x)^{−p/q}",
+                        "latex": "(1+x)^{-p/q} = 1 - \\frac{p}{1!}\\left(\\frac{x}{q}\\right) + \\frac{p(p+q)}{2!}\\left(\\frac{x}{q}\\right)^2 - \\cdots"
+                    },
+                    {
+                        "sub": "(1−x)^{−p/q}",
+                        "latex": "(1-x)^{-p/q} = 1 + \\frac{p}{1!}\\left(\\frac{x}{q}\\right) + \\frac{p(p+q)}{2!}\\left(\\frac{x}{q}\\right)^2 + \\cdots"
+                    }
+                ]
+            },
+            {
+                "id": "bt19",
+                "label": "19. Special Expansions",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "(1−x)^{−n}",
+                        "latex": "(1-x)^{-n} = 1 + nC_1 x + (n+1)C_2 x^2 + (n+2)C_3 x^3 + \\cdots"
+                    },
+                    {
+                        "sub": "(1+x)^{−n}",
+                        "latex": "(1+x)^{-n} = 1 - nC_1 x + (n+1)C_2 x^2 - (n+2)C_3 x^3 + \\cdots"
+                    }
+                ]
+            },
+            {
+                "id": "bt20",
+                "label": "20. Important Series",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "(1−x)^{−1}",
+                        "latex": "(1-x)^{-1} = 1+x+x^2+x^3+\\cdots"
+                    },
+                    {
+                        "sub": "(1+x)^{−1}",
+                        "latex": "(1+x)^{-1} = 1-x+x^2-x^3+\\cdots"
+                    },
+                    {
+                        "sub": "(1+x)^{−2}",
+                        "latex": "(1+x)^{-2} = 1-2x+3x^2-4x^3+\\cdots+(-1)^n(n+1)x^n+\\cdots"
+                    },
+                    {
+                        "sub": "(1−x)^{−2}",
+                        "latex": "(1-x)^{-2} = 1+2x+3x^2+4x^3+\\cdots+(n+1)x^n+\\cdots"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Partial Fractions",
+        "id": "partial_fractions_full",
+        "topics": [
+            {
+                "id": "pf1",
+                "label": "1. Degree of Polynomial",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Definition",
+                        "text": "Highest power of the variable in a polynomial is called degree."
+                    },
+                    {
+                        "sub": "Example",
+                        "latex": "f(x)=x^3+3x^2+2x+1 \\Rightarrow \\text{Degree}=3"
+                    }
+                ]
+            },
+            {
+                "id": "pf2",
+                "label": "2. Rational Fraction",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Definition",
+                        "latex": "\\frac{f(x)}{g(x)},\\text{ where } g(x)\\neq 0"
+                    }
+                ]
+            },
+            {
+                "id": "pf3",
+                "label": "3. Proper & Improper Fractions",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Proper",
+                        "latex": "\\deg f(x) < \\deg g(x)"
+                    },
+                    {
+                        "sub": "Improper",
+                        "latex": "\\deg f(x) \\geq \\deg g(x)"
+                    }
+                ]
+            },
+            {
+                "id": "pf4",
+                "label": "4. Type-I (Distinct Linear Factors)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Form",
+                        "latex": "\\frac{A}{ax+b}"
+                    },
+                    {
+                        "sub": "Example",
+                        "latex": "\\frac{px+q}{(x-a)(x-b)} = \\frac{A}{x-a}+\\frac{B}{x-b}"
+                    }
+                ]
+            },
+            {
+                "id": "pf5",
+                "label": "5. Type-II (Repeated Linear Factors)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Form",
+                        "latex": "\\frac{A_1}{ax+b}+\\frac{A_2}{(ax+b)^2}+\\cdots+\\frac{A_n}{(ax+b)^n}"
+                    }
+                ]
+            },
+            {
+                "id": "pf6",
+                "label": "6. Type-III (Quadratic Factors)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Form",
+                        "latex": "\\frac{Ax+B}{ax^2+bx+c}"
+                    }
+                ]
+            },
+            {
+                "id": "pf7",
+                "label": "7. Type-IV (Repeated Quadratic)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Form",
+                        "latex": "\\frac{A_1 x+B_1}{ax^2+bx+c}+\\cdots+\\frac{A_n x+B_n}{(ax^2+bx+c)^n}"
+                    }
+                ]
+            },
+            {
+                "id": "pf8",
+                "label": "8. Improper Fraction Cases",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Case I (deg equal)",
+                        "latex": "\\frac{f(x)}{g(x)} = k + \\text{proper fraction}"
+                    },
+                    {
+                        "sub": "k value",
+                        "text": "k = (leading coeff. of numerator) / (leading coeff. of denominator)"
+                    },
+                    {
+                        "sub": "Case II (deg f > deg g)",
+                        "latex": "\\frac{f(x)}{g(x)} = q(x) + \\frac{r(x)}{g(x)}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Measures of Dispersion",
+        "id": "measures_of_dispersion_full",
+        "topics": [
+            {
+                "id": "mod1",
+                "label": "1. Mean Deviation (Ungrouped Data)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "About Mean",
+                        "latex": "\\frac{1}{n}\\sum|x_i-\\bar{x}|,\\quad \\bar{x}=\\frac{\\sum x_i}{n}"
+                    },
+                    {
+                        "sub": "About Median",
+                        "latex": "\\frac{1}{n}\\sum|x_i-\\text{Median}|"
+                    },
+                    {
+                        "sub": "Median (odd n)",
+                        "latex": "\\left(\\frac{n+1}{2}\\right)^{th} \\text{ observation}"
+                    },
+                    {
+                        "sub": "Median (even n)",
+                        "latex": "\\frac{1}{2}\\left[\\left(\\frac{n}{2}\\right)^{th}+\\left(\\frac{n+2}{2}\\right)^{th}\\right]"
+                    }
+                ]
+            },
+            {
+                "id": "mod2",
+                "label": "2. Mean (Grouped Data)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Direct Method",
+                        "latex": "\\bar{x} = \\frac{\\sum f_i x_i}{N},\\quad N=\\sum f_i"
+                    },
+                    {
+                        "sub": "Step Deviation",
+                        "latex": "\\bar{x} = A + \\frac{\\sum f_i y_i}{N}\\times h,\\quad y_i=\\frac{x_i-A}{h}"
+                    }
+                ]
+            },
+            {
+                "id": "mod3",
+                "label": "3. Median (Grouped Data)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Formula",
+                        "latex": "\\text{Median} = L + \\frac{\\frac{N}{2}-\\text{P.C.f}}{f}\\times h"
+                    },
+                    {
+                        "sub": "Median Class",
+                        "text": "Class whose cumulative frequency ≥ N/2"
+                    },
+                    {
+                        "sub": "Notation",
+                        "text": "L = lower limit, f = frequency, h = class width"
+                    }
+                ]
+            },
+            {
+                "id": "mod4",
+                "label": "4. Mean Deviation (Grouped Data)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "About Mean",
+                        "latex": "\\frac{1}{N}\\sum f_i|x_i-\\bar{x}|"
+                    },
+                    {
+                        "sub": "About Median",
+                        "latex": "\\frac{1}{N}\\sum f_i|x_i-\\text{Median}|"
+                    }
+                ]
+            },
+            {
+                "id": "mod5",
+                "label": "5. Variance & Standard Deviation (Ungrouped)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Variance",
+                        "latex": "\\sigma^2 = \\frac{1}{n}\\sum(x_i-\\bar{x})^2 = \\frac{1}{n}\\sum x_i^2-(\\bar{x})^2"
+                    },
+                    {
+                        "sub": "Standard Deviation",
+                        "latex": "\\sigma = \\sqrt{\\sigma^2}"
+                    }
+                ]
+            },
+            {
+                "id": "mod6",
+                "label": "6. Variance & SD (Grouped Data)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Variance",
+                        "latex": "\\sigma^2 = \\frac{1}{N}\\sum f_i(x_i-\\bar{x})^2 = \\frac{1}{N}\\sum f_i x_i^2-(\\bar{x})^2"
+                    },
+                    {
+                        "sub": "Standard Deviation",
+                        "latex": "\\sigma = \\sqrt{\\sigma^2}"
+                    }
+                ]
+            },
+            {
+                "id": "mod7",
+                "label": "7. Step Deviation Method (Variance)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Variance",
+                        "latex": "\\sigma^2 = \\frac{h^2}{N^2}\\left(N\\sum f_i y_i^2-(\\sum f_i y_i)^2\\right)"
+                    },
+                    {
+                        "sub": "Standard Deviation",
+                        "latex": "\\sigma = \\frac{h}{N}\\sqrt{N\\sum f_i y_i^2-(\\sum f_i y_i)^2}"
+                    }
+                ]
+            },
+            {
+                "id": "mod8",
+                "label": "8. Effect of Change of Scale",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Formula",
+                        "latex": "V(ax+b) = a^2\\sigma^2"
+                    }
+                ]
+            },
+            {
+                "id": "mod9",
+                "label": "9. Coefficient of Variation",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Formula",
+                        "latex": "\\frac{\\sigma}{\\bar{x}}\\times 100"
+                    }
+                ]
+            },
+            {
+                "id": "mod10",
+                "label": "10. Consistency",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Condition",
+                        "text": "If C.V. of A < C.V. of B, then A is more stable"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Probability",
+        "id": "probability_full",
+        "topics": [
+            {
+                "id": "prob1",
+                "label": "1. Event",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Definition",
+                        "text": "Any subset of sample space is called an event."
+                    }
+                ]
+            },
+            {
+                "id": "prob2",
+                "label": "2. Probability of Event",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Formula",
+                        "latex": "P(E) = \\frac{n(E)}{n(S)}"
+                    }
+                ]
+            },
+            {
+                "id": "prob3",
+                "label": "3. Basic Properties",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Range",
+                        "latex": "0 \\leq P(E) \\leq 1"
+                    },
+                    {
+                        "sub": "Null & Sure",
+                        "latex": "P(\\emptyset)=0,\\; P(S)=1"
+                    },
+                    {
+                        "sub": "Complement",
+                        "latex": "P(\\overline{E}) = 1 - P(E)"
+                    },
+                    {
+                        "sub": "Subset",
+                        "latex": "E_1 \\subseteq E_2 \\Rightarrow P(E_1) \\leq P(E_2)"
+                    },
+                    {
+                        "sub": "Difference",
+                        "latex": "P(E_2-E_1) = P(E_2)-P(E_1)"
+                    },
+                    {
+                        "sub": "Mutually Exclusive",
+                        "latex": "P(E_1 \\cap E_2)=0"
+                    },
+                    {
+                        "sub": "Exhaustive",
+                        "latex": "E_1 \\cup E_2 = S"
+                    }
+                ]
+            },
+            {
+                "id": "prob4",
+                "label": "4. Addition Theorem",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Two Events",
+                        "latex": "P(A \\cup B) = P(A)+P(B)-P(A \\cap B)"
+                    },
+                    {
+                        "sub": "Three Events",
+                        "latex": "P(A\\cup B\\cup C) = P(A)+P(B)+P(C)-P(A\\cap B)-P(B\\cap C)-P(C\\cap A)+P(A\\cap B\\cap C)"
+                    }
+                ]
+            },
+            {
+                "id": "prob5",
+                "label": "5. Conditional Probability",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "P(B/A)",
+                        "latex": "P(B/A) = \\frac{P(A \\cap B)}{P(A)}"
+                    },
+                    {
+                        "sub": "P(A/B)",
+                        "latex": "P(A/B) = \\frac{P(A \\cap B)}{P(B)}"
+                    }
+                ]
+            },
+            {
+                "id": "prob6",
+                "label": "6. Multiplication Theorem",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Formula",
+                        "latex": "P(A \\cap B) = P(A)P(B/A) = P(B)P(A/B)"
+                    }
+                ]
+            },
+            {
+                "id": "prob7",
+                "label": "7. Independent Events",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Condition",
+                        "latex": "P(A \\cap B) = P(A)P(B)"
+                    }
+                ]
+            },
+            {
+                "id": "prob8",
+                "label": "8. Mutually Exclusive Events",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Formula",
+                        "latex": "P(A \\cup B) = P(A)+P(B)"
+                    }
+                ]
+            },
+            {
+                "id": "prob9",
+                "label": "9. Useful Results",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "A and not B",
+                        "latex": "P(A \\cap \\overline{B}) = P(A)-P(A \\cap B)"
+                    },
+                    {
+                        "sub": "B and not A",
+                        "latex": "P(\\overline{A} \\cap B) = P(B)-P(A \\cap B)"
+                    }
+                ]
+            },
+            {
+                "id": "prob10",
+                "label": "10. Baye's Theorem",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Formula",
+                        "latex": "P(E_k/A) = \\frac{P(E_k)P(A/E_k)}{\\sum_{i=1}^{n} P(E_i)P(A/E_i)}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Random Variables & Distributions",
+        "id": "random_variables",
+        "topics": [
+            {
+                "id": "rv1",
+                "label": "1. Basic Results",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Total Probability",
+                        "latex": "\\sum P(X=x_i) = 1"
+                    },
+                    {
+                        "sub": "Mean",
+                        "latex": "\\mu = \\sum x_i P(X=x_i)"
+                    },
+                    {
+                        "sub": "Variance",
+                        "latex": "\\sigma^2 = \\sum x_i^2 P(X=x_i) - \\mu^2"
+                    },
+                    {
+                        "sub": "Standard Deviation",
+                        "latex": "\\sigma = \\sqrt{\\sigma^2}"
+                    },
+                    {
+                        "sub": "Exponential Expansion",
+                        "latex": "e^x = 1+\\frac{x}{1!}+\\frac{x^2}{2!}+\\frac{x^3}{3!}+\\cdots"
+                    }
+                ]
+            },
+            {
+                "id": "rv2",
+                "label": "2. Binomial Distribution",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Probability",
+                        "latex": "P(X=k) = \\binom{n}{k}p^k q^{n-k},\\quad p+q=1"
+                    },
+                    {
+                        "sub": "Mean",
+                        "latex": "\\mu = np"
+                    },
+                    {
+                        "sub": "Variance",
+                        "latex": "\\sigma^2 = npq"
+                    },
+                    {
+                        "sub": "Standard Deviation",
+                        "latex": "\\sigma = \\sqrt{npq}"
+                    }
+                ]
+            },
+            {
+                "id": "rv3",
+                "label": "3. Poisson Distribution",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Probability",
+                        "latex": "P(X=k) = \\frac{e^{-\\lambda}\\lambda^k}{k!},\\quad \\lambda>0"
+                    },
+                    {
+                        "sub": "Mean",
+                        "latex": "\\mu = \\lambda"
+                    },
+                    {
+                        "sub": "Variance",
+                        "latex": "\\sigma^2 = \\lambda"
+                    },
+                    {
+                        "sub": "Standard Deviation",
+                        "latex": "\\sigma = \\sqrt{\\lambda}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Circles",
+        "id": "circles_full",
+        "topics": [
+            {
+                "id": "cir1",
+                "label": "1. Basic Concepts & Equations",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Standard Form",
+                        "latex": "(x-h)^2+(y-k)^2=r^2"
+                    },
+                    {
+                        "sub": "Circle at Origin",
+                        "latex": "x^2+y^2=r^2"
+                    },
+                    {
+                        "sub": "General Form",
+                        "latex": "x^2+y^2+2gx+2fy+c=0"
+                    },
+                    {
+                        "sub": "Centre & Radius (Standard)",
+                        "latex": "\\text{Centre}=(-g,-f),\\quad r=\\sqrt{g^2+f^2-c}"
+                    }
+                ]
+            },
+            {
+                "id": "cir2",
+                "label": "2. Special Circles & Basic Properties",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Point Circle",
+                        "text": "r = 0"
+                    },
+                    {
+                        "sub": "Unit Circle",
+                        "text": "r = 1"
+                    },
+                    {
+                        "sub": "Concentric Circles",
+                        "text": "Same centre, different radii"
+                    },
+                    {
+                        "sub": "Diameter Property",
+                        "text": "Diameter is the longest chord; angle in semicircle = 90°"
+                    }
+                ]
+            },
+            {
+                "id": "cir3",
+                "label": "3. Chords & Intercepts",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Chord Equation",
+                        "latex": "(x-x_1)(x-x_2)+(y-y_1)(y-y_2)=0"
+                    },
+                    {
+                        "sub": "X-intercept",
+                        "latex": "2\\sqrt{g^2-c}"
+                    },
+                    {
+                        "sub": "Y-intercept",
+                        "latex": "2\\sqrt{f^2-c}"
+                    },
+                    {
+                        "sub": "Touches x-axis",
+                        "latex": "g^2=c"
+                    },
+                    {
+                        "sub": "Touches y-axis",
+                        "latex": "f^2=c"
+                    }
+                ]
+            },
+            {
+                "id": "cir4",
+                "label": "4. S, S₁, S₁₁ & Parametric Form",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "S",
+                        "latex": "S = x^2+y^2+2gx+2fy+c"
+                    },
+                    {
+                        "sub": "S₁",
+                        "latex": "S_1 = xx_1+yy_1+g(x+x_1)+f(y+y_1)+c"
+                    },
+                    {
+                        "sub": "S₁₁",
+                        "latex": "S_{11} = x_1^2+y_1^2+2gx_1+2fy_1+c"
+                    },
+                    {
+                        "sub": "Parametric Form",
+                        "latex": "x=h+r\\cos\\theta,\\quad y=k+r\\sin\\theta"
+                    }
+                ]
+            },
+            {
+                "id": "cir5",
+                "label": "5. Tangent & Normal",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Tangent at Point",
+                        "latex": "S_1 = 0"
+                    },
+                    {
+                        "sub": "Slope Form",
+                        "latex": "y = mx \\pm r\\sqrt{1+m^2}"
+                    },
+                    {
+                        "sub": "Normal Equation",
+                        "latex": "(x-x_1)(y_1+f)-(y-y_1)(x_1+g)=0"
+                    },
+                    {
+                        "sub": "Parametric Tangent",
+                        "latex": "x\\cos\\theta+y\\sin\\theta=r"
+                    },
+                    {
+                        "sub": "Parametric Normal",
+                        "latex": "x\\sin\\theta-y\\cos\\theta=0"
+                    }
+                ]
+            },
+            {
+                "id": "cir6",
+                "label": "6. Power of Point & Chords",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Point Position",
+                        "text": "S₁₁ > 0 (outside), = 0 (on circle), < 0 (inside)"
+                    },
+                    {
+                        "sub": "Power of Point",
+                        "latex": "S_{11}"
+                    },
+                    {
+                        "sub": "Length of Tangent",
+                        "latex": "\\sqrt{S_{11}}"
+                    },
+                    {
+                        "sub": "Chord Midpoint",
+                        "latex": "S_1 = S_{11}"
+                    },
+                    {
+                        "sub": "Chord Length",
+                        "latex": "2\\sqrt{r^2-d^2}"
+                    }
+                ]
+            },
+            {
+                "id": "cir7",
+                "label": "7. Polar, Pole & Advanced Results",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Chord of Contact / Polar",
+                        "latex": "S_1=0"
+                    },
+                    {
+                        "sub": "Pole",
+                        "latex": "\\left(\\frac{-lr^2}{n},\\frac{-mr^2}{n}\\right)"
+                    },
+                    {
+                        "sub": "Conjugate Points",
+                        "latex": "S_{12}=0"
+                    },
+                    {
+                        "sub": "Inverse Point",
+                        "latex": "\\left(\\frac{r^2 x_1}{x_1^2+y_1^2},\\frac{r^2 y_1}{x_1^2+y_1^2}\\right)"
+                    }
+                ]
+            },
+            {
+                "id": "cir8",
+                "label": "8. Relative Position of Circles",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "No Intersection",
+                        "latex": "C_1C_2 > r_1+r_2"
+                    },
+                    {
+                        "sub": "External Touch",
+                        "latex": "C_1C_2 = r_1+r_2"
+                    },
+                    {
+                        "sub": "Intersect",
+                        "latex": "|r_1-r_2| < C_1C_2 < r_1+r_2"
+                    },
+                    {
+                        "sub": "Internal Touch",
+                        "latex": "C_1C_2 = |r_1-r_2|"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "System of Circles",
+        "id": "system_of_circles_full",
+        "topics": [
+            {
+                "id": "sys1",
+                "label": "1. Angle Between Circles",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Basic Formula",
+                        "latex": "\\cos\\theta = \\frac{d^2-r_1^2-r_2^2}{2r_1r_2}"
+                    },
+                    {
+                        "sub": "General Form",
+                        "latex": "\\cos\\theta = \\frac{c+c'-2gg'-2ff'}{2\\sqrt{g^2+f^2-c}\\sqrt{g'^2+f'^2-c'}}"
+                    }
+                ]
+            },
+            {
+                "id": "sys2",
+                "label": "2. Orthogonal Circles",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Condition (Distance)",
+                        "latex": "d^2 = r_1^2+r_2^2"
+                    },
+                    {
+                        "sub": "Condition (General)",
+                        "latex": "2gg'+2ff' = c+c'"
+                    }
+                ]
+            },
+            {
+                "id": "sys3",
+                "label": "3. Radical Axis",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Equation",
+                        "latex": "S-S'=0"
+                    },
+                    {
+                        "sub": "If Circles Intersect",
+                        "text": "Common chord is the radical axis"
+                    },
+                    {
+                        "sub": "If Circles Touch",
+                        "text": "Common tangent is the radical axis"
+                    },
+                    {
+                        "sub": "Concentric Case",
+                        "text": "Radical axis does not exist"
+                    }
+                ]
+            },
+            {
+                "id": "sys4",
+                "label": "4. Radical Centre",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Definition",
+                        "text": "Point of concurrency of radical axes of three non-collinear circles"
+                    }
+                ]
+            },
+            {
+                "id": "sys5",
+                "label": "5. Family of Circles",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Through Intersection Points",
+                        "latex": "S+\\lambda S'=0,\\quad \\lambda \\in \\mathbb{R}-\\{-1\\}"
+                    },
+                    {
+                        "sub": "Through Circle & Line",
+                        "latex": "S+\\lambda L=0,\\quad \\lambda \\in \\mathbb{R}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Parabola",
+        "id": "parabola_full",
+        "topics": [
+            {
+                "id": "para_table",
+                "label": "1. Standard Forms of Parabola",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "y²=4ax",
+                        "text": "Axis: y=0, Focus: (a,0), Directrix: x=−a, LR ends: (a,±2a), LR length: 4a"
+                    },
+                    {
+                        "sub": "(y−k)²=4a(x−h)",
+                        "text": "Vertex: (h,k), Focus: (h+a,k), Directrix: x=h−a"
+                    },
+                    {
+                        "sub": "x²=4ay",
+                        "text": "Axis: x=0, Focus: (0,a), Directrix: y=−a, LR ends: (±2a,a)"
+                    },
+                    {
+                        "sub": "(x−k)²=4a(y−h)",
+                        "text": "Vertex: (k,h), Focus: (k,h+a), Directrix: y=h−a"
+                    }
+                ]
+            },
+            {
+                "id": "para2",
+                "label": "2. Definition",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Definition",
+                        "text": "Locus of P such that SP = PM (eccentricity e = 1)"
+                    }
+                ]
+            },
+            {
+                "id": "para3",
+                "label": "3. Parametric Form",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Coordinates",
+                        "latex": "x=at^2,\\quad y=2at"
+                    }
+                ]
+            },
+            {
+                "id": "para4",
+                "label": "4. Tangents",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Point Form",
+                        "latex": "S_1=0"
+                    },
+                    {
+                        "sub": "Slope Form",
+                        "latex": "y=mx+\\frac{a}{m}"
+                    },
+                    {
+                        "sub": "Condition",
+                        "latex": "c=\\frac{a}{m}"
+                    },
+                    {
+                        "sub": "Parametric",
+                        "latex": "x-ty+at^2=0"
+                    }
+                ]
+            },
+            {
+                "id": "para5",
+                "label": "5. Tangent (x²=4ay)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Condition",
+                        "latex": "c=-am^2"
+                    }
+                ]
+            },
+            {
+                "id": "para6",
+                "label": "6. Normals",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Slope Form",
+                        "latex": "y=mx-2am-am^3"
+                    },
+                    {
+                        "sub": "Parametric",
+                        "latex": "y+xt=2at+at^3"
+                    }
+                ]
+            },
+            {
+                "id": "para7",
+                "label": "7. Focal Properties",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Focal Distance",
+                        "latex": "|x_1+a|"
+                    },
+                    {
+                        "sub": "Focal Chord",
+                        "latex": "t_1 t_2=-1"
+                    },
+                    {
+                        "sub": "Normal Relation",
+                        "latex": "t_2=-t_1-\\frac{2}{t_1}"
+                    },
+                    {
+                        "sub": "Right Angle Condition",
+                        "latex": "t=\\pm\\sqrt{2}"
+                    }
+                ]
+            },
+            {
+                "id": "para8",
+                "label": "8. Focal Chord Result",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Coordinates",
+                        "latex": "x_1 x_2 = a^2,\\quad y_1 y_2 = -4a^2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Ellipse",
+        "id": "ellipse_full",
+        "topics": [
+            {
+                "id": "ell_table",
+                "label": "1. Standard Forms of Ellipse",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "x²/a²+y²/b²=1 (a>b)",
+                        "text": "Major axis: x-axis (2a), Minor: y-axis (2b), Foci: (±ae,0), LR: 2b²/a, e=√(1−b²/a²)"
+                    },
+                    {
+                        "sub": "x²/a²+y²/b²=1 (b>a)",
+                        "text": "Major axis: y-axis (2b), Minor: x-axis (2a), Foci: (0,±be), LR: 2a²/b, e=√(1−a²/b²)"
+                    },
+                    {
+                        "sub": "Shifted (a>b)",
+                        "latex": "\\frac{(x-h)^2}{a^2}+\\frac{(y-k)^2}{b^2}=1,\\text{ Centre }(h,k)"
+                    }
+                ]
+            },
+            {
+                "id": "ell2",
+                "label": "2. Parametric Form",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Coordinates",
+                        "latex": "x=a\\cos\\theta,\\quad y=b\\sin\\theta"
+                    }
+                ]
+            },
+            {
+                "id": "ell3",
+                "label": "3. Tangents",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Point Form",
+                        "latex": "\\frac{xx_1}{a^2}+\\frac{yy_1}{b^2}=1"
+                    },
+                    {
+                        "sub": "Parametric",
+                        "latex": "\\frac{x\\cos\\theta}{a}+\\frac{y\\sin\\theta}{b}=1"
+                    },
+                    {
+                        "sub": "Slope Form",
+                        "latex": "y=mx\\pm\\sqrt{a^2m^2+b^2}"
+                    },
+                    {
+                        "sub": "Condition",
+                        "latex": "c^2=a^2m^2+b^2"
+                    }
+                ]
+            },
+            {
+                "id": "ell4",
+                "label": "4. Normals",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Point Form",
+                        "latex": "\\frac{a^2 x}{x_1}-\\frac{b^2 y}{y_1}=a^2-b^2"
+                    },
+                    {
+                        "sub": "Parametric",
+                        "latex": "\\frac{ax}{\\cos\\theta}-\\frac{by}{\\sin\\theta}=a^2-b^2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Hyperbola",
+        "id": "hyperbola_full",
+        "topics": [
+            {
+                "id": "hyperbola_table",
+                "label": "1. Standard Forms of Hyperbola",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "x²/a²−y²/b²=1",
+                        "text": "Transverse: x-axis (2a), Conjugate: y-axis (2b), Foci: (±ae,0), LR: 2b²/a, e=√(1+b²/a²)"
+                    },
+                    {
+                        "sub": "x²/a²−y²/b²=−1",
+                        "text": "Transverse: y-axis (2b), Conjugate: x-axis (2a), Foci: (0,±be), LR: 2a²/b"
+                    },
+                    {
+                        "sub": "Shifted form",
+                        "latex": "\\frac{(x-\\alpha)^2}{a^2}-\\frac{(y-\\beta)^2}{b^2}=1"
+                    }
+                ]
+            },
+            {
+                "id": "hyper2",
+                "label": "2. Rectangular Hyperbola",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Standard Form",
+                        "latex": "x^2-y^2=a^2"
+                    },
+                    {
+                        "sub": "Eccentricity",
+                        "latex": "e=\\sqrt{2}"
+                    },
+                    {
+                        "sub": "Special Form",
+                        "latex": "xy=c^2"
+                    }
+                ]
+            },
+            {
+                "id": "hyper3",
+                "label": "3. Eccentricity Relation",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Relation",
+                        "latex": "\\frac{1}{e^2}+\\frac{1}{e_1^2}=1"
+                    }
+                ]
+            },
+            {
+                "id": "hyper4",
+                "label": "4. Asymptotes",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Equation",
+                        "latex": "\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=0"
+                    },
+                    {
+                        "sub": "Angle Between",
+                        "latex": "2\\tan^{-1}\\left(\\frac{b}{a}\\right)"
+                    }
+                ]
+            },
+            {
+                "id": "hyper5",
+                "label": "5. Latus Rectum",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Length",
+                        "latex": "\\frac{2b^2}{a}"
+                    },
+                    {
+                        "sub": "Endpoints",
+                        "latex": "\\left(\\pm ae,\\pm\\frac{b^2}{a}\\right)"
+                    }
+                ]
+            },
+            {
+                "id": "hyper6",
+                "label": "6. Tangents",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Point Form",
+                        "latex": "S_1=0"
+                    },
+                    {
+                        "sub": "Parametric",
+                        "latex": "\\frac{x}{a}\\sec\\theta-\\frac{y}{b}\\tan\\theta=1"
+                    },
+                    {
+                        "sub": "Condition",
+                        "latex": "c^2=a^2m^2-b^2"
+                    },
+                    {
+                        "sub": "Slope Form",
+                        "latex": "y=mx\\pm\\sqrt{a^2m^2-b^2}"
+                    }
+                ]
+            },
+            {
+                "id": "hyper7",
+                "label": "7. Normals",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Point Form",
+                        "latex": "\\frac{a^2 x}{x_1}+\\frac{b^2 y}{y_1}=a^2+b^2"
+                    },
+                    {
+                        "sub": "Parametric",
+                        "latex": "\\frac{ax}{\\sec\\theta}+\\frac{by}{\\tan\\theta}=a^2+b^2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Indefinite Integration",
+        "id": "indefinite_integration_full",
+        "topics": [
+            {
+                "id": "int1",
+                "label": "1. Basic Standard Integrals",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Power Rule",
+                        "latex": "\\int x^n\\,dx = \\frac{x^{n+1}}{n+1}+c"
+                    },
+                    {
+                        "sub": "Log Form",
+                        "latex": "\\int \\frac{1}{x}\\,dx = \\log|x|+c"
+                    },
+                    {
+                        "sub": "Constant",
+                        "latex": "\\int k\\,dx = kx+c"
+                    },
+                    {
+                        "sub": "1/√x",
+                        "latex": "\\int \\frac{1}{\\sqrt{x}}\\,dx = 2\\sqrt{x}+c"
+                    }
+                ]
+            },
+            {
+                "id": "int2",
+                "label": "2. Function-Based Integrals",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Log Rule",
+                        "latex": "\\int\\frac{f'(x)}{f(x)}\\,dx = \\log|f(x)|+c"
+                    },
+                    {
+                        "sub": "Root Rule",
+                        "latex": "\\int\\frac{f'(x)}{\\sqrt{f(x)}}\\,dx = 2\\sqrt{f(x)}+c"
+                    },
+                    {
+                        "sub": "Power Rule",
+                        "latex": "\\int(f(x))^n f'(x)\\,dx = \\frac{(f(x))^{n+1}}{n+1}+c"
+                    },
+                    {
+                        "sub": "Exponential Trick",
+                        "latex": "\\int e^x[f(x)+f'(x)]\\,dx = e^x f(x)+c"
+                    }
+                ]
+            },
+            {
+                "id": "int3",
+                "label": "3. Exponential Integrals",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "eˣ",
+                        "latex": "\\int e^x\\,dx = e^x+c"
+                    },
+                    {
+                        "sub": "aˣ",
+                        "latex": "\\int a^x\\,dx = \\frac{a^x}{\\log a}+c"
+                    }
+                ]
+            },
+            {
+                "id": "int4",
+                "label": "4. Trigonometric Integrals",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin x",
+                        "latex": "\\int\\sin x\\,dx = -\\cos x+c"
+                    },
+                    {
+                        "sub": "cos x",
+                        "latex": "\\int\\cos x\\,dx = \\sin x+c"
+                    },
+                    {
+                        "sub": "tan x",
+                        "latex": "\\int\\tan x\\,dx = \\log|\\sec x|+c"
+                    },
+                    {
+                        "sub": "cot x",
+                        "latex": "\\int\\cot x\\,dx = \\log|\\sin x|+c"
+                    },
+                    {
+                        "sub": "sec x",
+                        "latex": "\\int\\sec x\\,dx = \\log|\\sec x+\\tan x|+c"
+                    },
+                    {
+                        "sub": "cosec x",
+                        "latex": "\\int\\csc x\\,dx = \\log|\\csc x-\\cot x|+c"
+                    },
+                    {
+                        "sub": "sec x·tan x",
+                        "latex": "\\int\\sec x\\tan x\\,dx = \\sec x+c"
+                    },
+                    {
+                        "sub": "cosec x·cot x",
+                        "latex": "\\int\\csc x\\cot x\\,dx = -\\csc x+c"
+                    },
+                    {
+                        "sub": "sec² x",
+                        "latex": "\\int\\sec^2 x\\,dx = \\tan x+c"
+                    },
+                    {
+                        "sub": "cosec² x",
+                        "latex": "\\int\\csc^2 x\\,dx = -\\cot x+c"
+                    }
+                ]
+            },
+            {
+                "id": "int5",
+                "label": "5. Hyperbolic Integrals",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sinh x",
+                        "latex": "\\int\\sinh x\\,dx = \\cosh x+c"
+                    },
+                    {
+                        "sub": "cosh x",
+                        "latex": "\\int\\cosh x\\,dx = \\sinh x+c"
+                    },
+                    {
+                        "sub": "tanh x",
+                        "latex": "\\int\\tanh x\\,dx = \\log|\\cosh x|+c"
+                    },
+                    {
+                        "sub": "coth x",
+                        "latex": "\\int\\coth x\\,dx = \\log|\\sinh x|+c"
+                    },
+                    {
+                        "sub": "sech² x",
+                        "latex": "\\int\\operatorname{sech}^2 x\\,dx = \\tanh x+c"
+                    },
+                    {
+                        "sub": "csch² x",
+                        "latex": "\\int\\operatorname{csch}^2 x\\,dx = -\\coth x+c"
+                    }
+                ]
+            },
+            {
+                "id": "int6",
+                "label": "6. Standard Forms (Inverse Trigonometric)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "1/(a²+x²)",
+                        "latex": "\\int\\frac{1}{a^2+x^2}\\,dx = \\frac{1}{a}\\tan^{-1}\\left(\\frac{x}{a}\\right)+c"
+                    },
+                    {
+                        "sub": "1/(a²−x²)",
+                        "latex": "\\int\\frac{1}{a^2-x^2}\\,dx = \\frac{1}{2a}\\log\\left|\\frac{a+x}{a-x}\\right|+c"
+                    },
+                    {
+                        "sub": "1/(x²−a²)",
+                        "latex": "\\int\\frac{1}{x^2-a^2}\\,dx = \\frac{1}{2a}\\log\\left|\\frac{x-a}{x+a}\\right|+c"
+                    }
+                ]
+            },
+            {
+                "id": "int7",
+                "label": "7. Root Forms",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "1/√(a²−x²)",
+                        "latex": "\\int\\frac{1}{\\sqrt{a^2-x^2}}\\,dx = \\sin^{-1}\\left(\\frac{x}{a}\\right)+c"
+                    },
+                    {
+                        "sub": "1/√(a²+x²)",
+                        "latex": "\\int\\frac{1}{\\sqrt{a^2+x^2}}\\,dx = \\log\\left|x+\\sqrt{a^2+x^2}\\right|+c"
+                    },
+                    {
+                        "sub": "1/√(x²−a²)",
+                        "latex": "\\int\\frac{1}{\\sqrt{x^2-a^2}}\\,dx = \\log\\left|x+\\sqrt{x^2-a^2}\\right|+c"
+                    }
+                ]
+            },
+            {
+                "id": "int8",
+                "label": "8. Integration of Roots",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "√(a²−x²)",
+                        "latex": "\\int\\sqrt{a^2-x^2}\\,dx = \\frac{x}{2}\\sqrt{a^2-x^2}+\\frac{a^2}{2}\\sin^{-1}\\left(\\frac{x}{a}\\right)+c"
+                    },
+                    {
+                        "sub": "√(a²+x²)",
+                        "latex": "\\int\\sqrt{a^2+x^2}\\,dx = \\frac{x}{2}\\sqrt{a^2+x^2}+\\frac{a^2}{2}\\sinh^{-1}\\left(\\frac{x}{a}\\right)+c"
+                    },
+                    {
+                        "sub": "√(x²−a²)",
+                        "latex": "\\int\\sqrt{x^2-a^2}\\,dx = \\frac{x}{2}\\sqrt{x^2-a^2}-\\frac{a^2}{2}\\cosh^{-1}\\left(\\frac{x}{a}\\right)+c"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Definite Integration",
+        "id": "definite_integration_full",
+        "topics": [
+            {
+                "id": "def1",
+                "label": "1. Properties of Definite Integrals",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Symmetry (0 to a)",
+                        "latex": "\\int_0^a f(x)\\,dx = \\int_0^a f(a-x)\\,dx"
+                    },
+                    {
+                        "sub": "Symmetry (a to b)",
+                        "latex": "\\int_a^b f(x)\\,dx = \\int_a^b f(a+b-x)\\,dx"
+                    }
+                ]
+            },
+            {
+                "id": "def2",
+                "label": "2. Even & Odd Functions",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Even Function",
+                        "latex": "\\int_{-a}^{a} f(x)\\,dx = 2\\int_0^a f(x)\\,dx"
+                    },
+                    {
+                        "sub": "Odd Function",
+                        "latex": "\\int_{-a}^{a} f(x)\\,dx = 0"
+                    }
+                ]
+            },
+            {
+                "id": "def3",
+                "label": "3. Special Symmetry Results",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "0 to 2a (if f(2a−x)=f(x))",
+                        "latex": "\\int_0^{2a} f(x)\\,dx = 2\\int_0^a f(x)\\,dx"
+                    },
+                    {
+                        "sub": "0 to 2a (if f(2a−x)=−f(x))",
+                        "latex": "\\int_0^{2a} f(x)\\,dx = 0"
+                    }
+                ]
+            },
+            {
+                "id": "def4",
+                "label": "4. Trigonometric Symmetry",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "0 to 2π (f(2π−x)=f(x))",
+                        "latex": "\\int_0^{2\\pi} f(x)\\,dx = 2\\int_0^\\pi f(x)\\,dx"
+                    },
+                    {
+                        "sub": "0 to π (f(π−x)=f(x))",
+                        "latex": "\\int_0^\\pi f(x)\\,dx = 2\\int_0^{\\pi/2} f(x)\\,dx"
+                    }
+                ]
+            },
+            {
+                "id": "def5",
+                "label": "5. Reduction Formula (Sin & Cos Powers)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Definition",
+                        "latex": "I_n = \\int_0^{\\pi/2}\\sin^n x\\,dx = \\int_0^{\\pi/2}\\cos^n x\\,dx"
+                    },
+                    {
+                        "sub": "n odd",
+                        "latex": "I_n = \\frac{n-1}{n}\\cdot\\frac{n-3}{n-2}\\cdots\\frac{2}{3}\\cdot 1"
+                    },
+                    {
+                        "sub": "n even",
+                        "latex": "I_n = \\frac{n-1}{n}\\cdot\\frac{n-3}{n-2}\\cdots\\frac{1}{2}\\cdot\\frac{\\pi}{2}"
+                    }
+                ]
+            },
+            {
+                "id": "def7",
+                "label": "7. Area Between Curves",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Basic Formula",
+                        "latex": "\\text{Area} = \\int_a^b [f(x)-g(x)]\\,dx,\\quad f(x)\\geq g(x)"
+                    }
+                ]
+            },
+            {
+                "id": "def8",
+                "label": "8. Area with Changing Curves",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Formula",
+                        "latex": "\\int_a^c [f(x)-g(x)]\\,dx + \\int_c^b [g(x)-f(x)]\\,dx"
+                    }
+                ]
+            },
+            {
+                "id": "def9",
+                "label": "9. Definite Integral as Limit (Riemann Sum)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "0 to 1",
+                        "latex": "\\int_0^1 f(x)\\,dx = \\lim_{n\\to\\infty}\\frac{1}{n}\\sum_{i=1}^{n} f\\left(\\frac{i}{n}\\right)"
+                    },
+                    {
+                        "sub": "0 to p",
+                        "latex": "\\int_0^p f(x)\\,dx = \\lim_{n\\to\\infty}\\frac{1}{n}\\sum_{i=1}^{np} f\\left(\\frac{i}{n}\\right)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Differential Equations",
+        "id": "differential_equations_full",
+        "topics": [
+            {
+                "id": "de1",
+                "label": "1. Basic Definitions",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Definition",
+                        "text": "An equation involving differential coefficients is called a Differential Equation."
+                    },
+                    {
+                        "sub": "Order",
+                        "text": "Order = Highest derivative present in the equation."
+                    },
+                    {
+                        "sub": "Degree",
+                        "text": "Degree = Power of highest order derivative after removing radicals and fractions."
+                    }
+                ]
+            },
+            {
+                "id": "de2",
+                "label": "2. Standard Types",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Variables Separable",
+                        "latex": "f(x)\\,dx + g(y)\\,dy = 0"
+                    },
+                    {
+                        "sub": "Homogeneous",
+                        "text": "F(kx,ky) = kⁿ F(x,y) means F is homogeneous of degree n."
+                    }
+                ]
+            },
+            {
+                "id": "de3",
+                "label": "3. Non-Homogeneous Equation",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Form",
+                        "latex": "\\frac{dy}{dx} = \\frac{ax+by+c}{a'x+b'y+c'}"
+                    },
+                    {
+                        "sub": "Case I (a/a'=b/b')",
+                        "text": "Substitute ax+by = t → separable form"
+                    },
+                    {
+                        "sub": "Case III (a/a'≠b/b')",
+                        "text": "Shift: x=X+h, y=Y+k; choose h,k to remove constants; then put Y=VX"
+                    }
+                ]
+            },
+            {
+                "id": "de4",
+                "label": "4. Linear Differential Equation",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Form (in x)",
+                        "latex": "\\frac{dy}{dx}+Py=Q"
+                    },
+                    {
+                        "sub": "Integrating Factor",
+                        "latex": "I.F = e^{\\int P\\,dx}"
+                    },
+                    {
+                        "sub": "Solution",
+                        "latex": "y(I.F) = \\int Q(I.F)\\,dx + C"
+                    },
+                    {
+                        "sub": "Form (in y)",
+                        "latex": "\\frac{dx}{dy}+Px=Q"
+                    },
+                    {
+                        "sub": "I.F (in y)",
+                        "latex": "I.F = e^{\\int P\\,dy}"
+                    },
+                    {
+                        "sub": "Solution (in y)",
+                        "latex": "x(I.F) = \\int Q(I.F)\\,dy + C"
+                    }
+                ]
+            },
+            {
+                "id": "de5",
+                "label": "5. Bernoulli's Equation",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Standard Form",
+                        "latex": "\\frac{dy}{dx}+Py=Qy^n"
+                    },
+                    {
+                        "sub": "Method",
+                        "text": "Divide by yⁿ and reduce to linear form."
+                    }
+                ]
+            },
+            {
+                "id": "de6",
+                "label": "6. Bernoulli Form (in y)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Form",
+                        "latex": "\\frac{dx}{dy}+Px=Qx^n"
+                    },
+                    {
+                        "sub": "Condition",
+                        "text": "P, Q are functions of y."
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -26,6 +26,7 @@ const MyAttempts = lazy(() => import('./MyAttempts'));
 const Support = lazy(() => import('./Support'));
 const Weightage = lazy(() => import('./Weightage'));
 const LiveSessions = lazy(() => import('./LiveSessions'));
+const Formulas = lazy(() => import('./Formulas'));
 
 function AppLayout() {
   const location = useLocation();
@@ -282,6 +283,7 @@ function AppLayout() {
             <Route path="/support" element={<Support />} />
             <Route path="/weightage" element={<Weightage />} />
             <Route path="/live-sessions" element={<LiveSessions />} />
+            <Route path="/formulas" element={<Formulas />} />
           </Routes>
         </Suspense>
 

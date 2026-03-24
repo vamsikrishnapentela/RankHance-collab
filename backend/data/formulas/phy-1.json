@@ -1,0 +1,1618 @@
+[
+  {
+    "chapter": "Units & Measurements",
+    "id": "units",
+    "topics": [
+      {
+        "id": "u01",
+        "label": "Physical Quantities",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Fundamental quantities",
+            "text": "Do not depend on other physical quantities. Eg: length, mass, time, current, temperature"
+          },
+          {
+            "sub": "Derived quantities",
+            "text": "Derived from fundamental quantities. Eg: velocity, force, energy"
+          },
+          {
+            "sub": "Fundamental units",
+            "text": "Units of fundamental quantities. Eg: kg, m, s"
+          },
+          {
+            "sub": "Derived units",
+            "text": "Units of derived quantities. Eg: m/s, m/s², J"
+          },
+          {
+            "sub": "Dimensional formula",
+            "text": "Expression representing a physical quantity as mathematical powers of fundamental quantities"
+          },
+          {
+            "sub": "Dimensional constants",
+            "text": "Constants with dimensional formula. Eg: Planck's constant h, G (gravitational constant)"
+          },
+          {
+            "sub": "Dimensionless quantities",
+            "text": "No dimensional formula. Eg: angle, strain"
+          }
+        ]
+      },
+      {
+        "id": "u02",
+        "label": "Principle of Homogeneity & Uses",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Homogeneity",
+            "text": "Only quantities with same dimensions can be added, subtracted or equated"
+          },
+          {
+            "sub": "Use 1",
+            "text": "Check correctness of an equation"
+          },
+          {
+            "sub": "Use 2",
+            "text": "Convert one system of units to another"
+          },
+          {
+            "sub": "Use 3",
+            "text": "Derive relations among physical quantities"
+          },
+          {
+            "sub": "Limitation 1",
+            "text": "Cannot find dimensionless constants"
+          },
+          {
+            "sub": "Limitation 2",
+            "text": "Limited to power-function relations only"
+          },
+          {
+            "sub": "Limitation 3",
+            "text": "Not suitable for exponential, logarithmic or trigonometric functions"
+          },
+          {
+            "sub": "Numerical value",
+            "latex": "N_1 U_1 = N_2 U_2 \\quad\\text{(N inversely proportional to unit)}"
+          }
+        ]
+      },
+      {
+        "id": "u03",
+        "label": "Errors & Significant Figures",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Error",
+            "text": "Difference between true value and measured value"
+          },
+          {
+            "sub": "Types of errors",
+            "text": "Systematic errors, random errors, gross errors"
+          },
+          {
+            "sub": "True value",
+            "text": "Arithmetic mean of large number of repeated measurements"
+          },
+          {
+            "sub": "Accuracy",
+            "text": "Closeness of measured value to true value"
+          },
+          {
+            "sub": "Precision",
+            "text": "Resolution or limit to which quantity is measured by the instrument"
+          },
+          {
+            "sub": "Significant digits",
+            "text": "All definitely known digits + one estimated digit"
+          },
+          {
+            "sub": "1 a.m.u",
+            "latex": "1\\,\\text{amu} = 1.66\\times10^{-27}\\,\\text{kg}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Motion in a Straight Line",
+    "id": "motion1d",
+    "topics": [
+      {
+        "id": "m01",
+        "label": "Distance, Displacement & Velocity",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Distance",
+            "text": "Total length of path; scalar"
+          },
+          {
+            "sub": "Displacement",
+            "latex": "\\vec{s} = \\text{shortest path with direction; vector; unit: m; } [M^0L^1T^0]"
+          },
+          {
+            "sub": "Speed",
+            "latex": "v = \\dfrac{s}{t} \\quad\\text{(scalar)}"
+          },
+          {
+            "sub": "Velocity",
+            "latex": "\\vec{v} = \\dfrac{\\vec{s}}{t} \\quad\\text{(vector; m/s; }[M^0L^1T^{-1}]\\text{)}"
+          },
+          {
+            "sub": "Average speed",
+            "latex": "v_{avg} = \\dfrac{\\text{total distance}}{\\text{total time}}"
+          },
+          {
+            "sub": "Average velocity (two halves)",
+            "latex": "v_{avg} = \\dfrac{2v_1 v_2}{v_1+v_2}"
+          },
+          {
+            "sub": "Instantaneous velocity",
+            "latex": "v_{inst} = \\dfrac{dS}{dt}"
+          }
+        ]
+      },
+      {
+        "id": "m02",
+        "label": "Acceleration & Equations of Motion",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Acceleration",
+            "latex": "a = \\dfrac{v-u}{t} \\quad [M^0L^1T^{-2}]"
+          },
+          {
+            "sub": "v = u + at",
+            "latex": "v = u + at"
+          },
+          {
+            "sub": "s = ut + ½at²",
+            "latex": "s = ut + \\dfrac{1}{2}at^2"
+          },
+          {
+            "sub": "v² = u² + 2as",
+            "latex": "v^2 = u^2 + 2as"
+          },
+          {
+            "sub": "nth second",
+            "latex": "s_n = u + a\\left(n - \\dfrac{1}{2}\\right)"
+          },
+          {
+            "sub": "Impulse = Δp",
+            "text": "Area under force-time graph gives impulse"
+          }
+        ]
+      },
+      {
+        "id": "m03",
+        "label": "Vertical Motion",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Free fall (u=0)",
+            "latex": "v = gt,\\; s = \\dfrac{1}{2}gt^2,\\; v^2 = 2gs"
+          },
+          {
+            "sub": "Thrown up",
+            "latex": "v = u-gt,\\; h = ut - \\dfrac{1}{2}gt^2,\\; v^2 = u^2 - 2gh"
+          },
+          {
+            "sub": "Max height",
+            "latex": "H = \\dfrac{u^2}{2g}"
+          },
+          {
+            "sub": "Time of ascent",
+            "latex": "t_a = \\dfrac{u}{g}"
+          },
+          {
+            "sub": "Time of descent",
+            "latex": "t_d = \\dfrac{u}{g} = t_a"
+          },
+          {
+            "sub": "Time of flight",
+            "latex": "T = \\dfrac{2u}{g}"
+          },
+          {
+            "sub": "Falls from height h",
+            "latex": "t = \\sqrt{\\dfrac{2h}{g}}, \\quad v = \\sqrt{2gh}"
+          },
+          {
+            "sub": "Relative velocity (angle θ)",
+            "latex": "v_{AB} = \\sqrt{v_A^2 + v_B^2 - 2v_Av_B\\cos\\theta}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Motion in a Plane",
+    "id": "motion2d",
+    "topics": [
+      {
+        "id": "p01",
+        "label": "Vectors — Types & Properties",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Null vector",
+            "text": "Magnitude = 0, direction indeterminate"
+          },
+          {
+            "sub": "Unit vector",
+            "latex": "\\hat{A} = \\dfrac{\\vec{A}}{|A|}; \\quad \\hat{i},\\hat{j},\\hat{k}\\text{ along X,Y,Z}"
+          },
+          {
+            "sub": "Position vector",
+            "latex": "\\vec{r} = x\\hat{i} + y\\hat{j} + z\\hat{k}"
+          },
+          {
+            "sub": "Magnitude",
+            "latex": "|\\vec{A}| = \\sqrt{A_x^2+A_y^2+A_z^2}"
+          },
+          {
+            "sub": "Direction cosines",
+            "latex": "\\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma = 1"
+          }
+        ]
+      },
+      {
+        "id": "p02",
+        "label": "Resolution & Parallelogram Law",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Horizontal component",
+            "latex": "A_x = A\\cos\\theta"
+          },
+          {
+            "sub": "Vertical component",
+            "latex": "A_y = A\\sin\\theta"
+          },
+          {
+            "sub": "Resultant magnitude",
+            "latex": "R = \\sqrt{A^2+B^2+2AB\\cos\\theta}"
+          },
+          {
+            "sub": "Direction of resultant",
+            "latex": "\\tan\\alpha = \\dfrac{B\\sin\\theta}{A+B\\cos\\theta}"
+          },
+          {
+            "sub": "Equal components (θ=45°)",
+            "text": "When Ax = Ay, angle with x-axis is 45°"
+          }
+        ]
+      },
+      {
+        "id": "p03",
+        "label": "Projectile Motion",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Initial components",
+            "latex": "u_x = u\\cos\\theta,\\; u_y = u\\sin\\theta"
+          },
+          {
+            "sub": "Trajectory (parabola)",
+            "latex": "y = x\\tan\\theta - \\dfrac{gx^2}{2u^2\\cos^2\\theta}"
+          },
+          {
+            "sub": "Time of flight",
+            "latex": "T = \\dfrac{2u\\sin\\theta}{g}"
+          },
+          {
+            "sub": "Maximum height",
+            "latex": "H = \\dfrac{u^2\\sin^2\\theta}{2g}"
+          },
+          {
+            "sub": "Horizontal range",
+            "latex": "R = \\dfrac{u^2\\sin 2\\theta}{g}"
+          },
+          {
+            "sub": "Max range (θ=45°)",
+            "latex": "R_{max} = \\dfrac{u^2}{g}"
+          },
+          {
+            "sub": "Same range angles",
+            "text": "θ and (90°−θ) give same range"
+          },
+          {
+            "sub": "Velocity at top",
+            "latex": "v_{min} = u\\cos\\theta \\quad\\text{(only horizontal component)}"
+          },
+          {
+            "sub": "Range = 4H",
+            "latex": "\\tan\\theta = 4 \\Rightarrow \\theta = \\tan^{-1}(4)"
+          }
+        ]
+      },
+      {
+        "id": "p04",
+        "label": "Dot Product & Cross Product",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Dot product",
+            "latex": "\\vec{A}\\cdot\\vec{B} = AB\\cos\\theta \\quad\\text{(scalar)}"
+          },
+          {
+            "sub": "Dot product components",
+            "latex": "\\vec{A}\\cdot\\vec{B} = A_xB_x+A_yB_y+A_zB_z"
+          },
+          {
+            "sub": "Cross product",
+            "latex": "|\\vec{A}\\times\\vec{B}| = AB\\sin\\theta \\quad\\text{(vector ⊥ to both)}"
+          },
+          {
+            "sub": "Cross product = area",
+            "text": "Magnitude = area of parallelogram formed by the two vectors"
+          },
+          {
+            "sub": "Parallel vectors",
+            "latex": "\\vec{A}\\times\\vec{B} = 0"
+          },
+          {
+            "sub": "Equal dot & cross",
+            "text": "If |A·B| = |A×B| then θ = 45°"
+          },
+          {
+            "sub": "Unit vector cross products",
+            "latex": "\\hat{i}\\times\\hat{j}=\\hat{k},\\; \\hat{j}\\times\\hat{k}=\\hat{i},\\; \\hat{k}\\times\\hat{i}=\\hat{j}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Laws of Motion",
+    "id": "laws_motion",
+    "topics": [
+      {
+        "id": "lm01",
+        "label": "Newton's Laws",
+        "type": "list",
+        "items": [
+          {
+            "sub": "1st Law",
+            "text": "A body continues in rest or uniform motion unless acted on by external force. Defines inertia and force."
+          },
+          {
+            "sub": "Inertia of rest",
+            "text": "Inability to change state of rest by itself"
+          },
+          {
+            "sub": "Inertia of motion",
+            "text": "Inability to change state of motion by itself"
+          },
+          {
+            "sub": "Inertia of direction",
+            "text": "Inability to change direction of motion by itself"
+          },
+          {
+            "sub": "2nd Law",
+            "latex": "F = \\dfrac{dp}{dt} = ma \\quad\\text{(direction of net force)}"
+          },
+          {
+            "sub": "Linear momentum",
+            "latex": "p = mv; \\quad 1\\,\\text{N} = 10^5\\,\\text{dyne}"
+          },
+          {
+            "sub": "3rd Law",
+            "text": "Action = −Reaction. Acts on different bodies."
+          }
+        ]
+      },
+      {
+        "id": "lm02",
+        "label": "Impulse & Conservation of Momentum",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Impulse",
+            "latex": "I = F\\times t = \\Delta p = mv - mu"
+          },
+          {
+            "sub": "Impulsive force",
+            "text": "Large force for very short time"
+          },
+          {
+            "sub": "Decrease impulsive force",
+            "text": "Increase time of impulse (Eg: padding, airbags)"
+          },
+          {
+            "sub": "Conservation of momentum",
+            "text": "Total momentum of isolated system is conserved in absence of external force"
+          }
+        ]
+      },
+      {
+        "id": "lm03",
+        "label": "Apparent Weight in Lift",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Lift accelerating up",
+            "latex": "R = m(g+a) \\quad\\text{(apparent weight increases)}"
+          },
+          {
+            "sub": "Lift accelerating down",
+            "latex": "R = m(g-a) \\quad\\text{(apparent weight decreases)}"
+          },
+          {
+            "sub": "Free fall",
+            "latex": "R = 0 \\quad\\text{(weightlessness, a=g)}"
+          },
+          {
+            "sub": "Constant velocity",
+            "latex": "R = mg \\quad\\text{(a=0)}"
+          }
+        ]
+      },
+      {
+        "id": "lm04",
+        "label": "Friction",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Friction law",
+            "latex": "f = \\mu R \\quad\\text{(}\\mu\\text{ = coefficient of friction)}"
+          },
+          {
+            "sub": "Coefficient of static friction",
+            "latex": "\\mu_s = \\dfrac{f_s}{R}"
+          },
+          {
+            "sub": "Coefficient of kinetic friction",
+            "latex": "\\mu_k = \\dfrac{f_k}{R}"
+          },
+          {
+            "sub": "Angle of friction",
+            "latex": "\\mu = \\tan\\theta"
+          },
+          {
+            "sub": "Angle of repose",
+            "text": "Min angle of inclined plane for body to just start sliding. At repose: f = mg sinα = μ mg cosα"
+          },
+          {
+            "sub": "On horizontal surface",
+            "latex": "R = mg"
+          },
+          {
+            "sub": "On inclined surface",
+            "latex": "R = mg\\cos\\theta"
+          },
+          {
+            "sub": "Pulling vs pushing",
+            "text": "Pulling with inclined force is easier than pushing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Work, Energy & Power",
+    "id": "work_energy",
+    "topics": [
+      {
+        "id": "we01",
+        "label": "Work & Power",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Work done",
+            "latex": "W = F\\cdot S = FS\\cos\\theta"
+          },
+          {
+            "sub": "W > 0",
+            "text": "When 0° < θ < 90°"
+          },
+          {
+            "sub": "W = 0",
+            "text": "When θ = 90°, or force = 0, or displacement = 0"
+          },
+          {
+            "sub": "W < 0",
+            "text": "When 90° < θ < 180°"
+          },
+          {
+            "sub": "Power",
+            "latex": "P = \\dfrac{W}{t} = F\\cdot v \\quad\\text{Unit: Watt}"
+          },
+          {
+            "sub": "1 HP",
+            "latex": "1\\,\\text{HP} = 746\\,\\text{W}"
+          },
+          {
+            "sub": "Machine gun power",
+            "latex": "P = \\dfrac{nmv^2}{2t}"
+          }
+        ]
+      },
+      {
+        "id": "we02",
+        "label": "Kinetic & Potential Energy",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Kinetic energy",
+            "latex": "KE = \\dfrac{1}{2}mv^2"
+          },
+          {
+            "sub": "KE & momentum",
+            "latex": "KE = \\dfrac{p^2}{2m} \\quad\\Rightarrow KE \\propto p^2"
+          },
+          {
+            "sub": "PE at height h",
+            "latex": "PE = mgh"
+          },
+          {
+            "sub": "Elastic PE (spring)",
+            "latex": "PE = \\dfrac{1}{2}Kx^2 = \\dfrac{F^2}{2K}"
+          },
+          {
+            "sub": "Work-energy theorem",
+            "latex": "W = \\Delta KE = \\dfrac{1}{2}mv^2 - \\dfrac{1}{2}mu^2"
+          },
+          {
+            "sub": "1 kWh",
+            "latex": "1\\,\\text{kWh} = 3.6\\times10^6\\,\\text{J}"
+          }
+        ]
+      },
+      {
+        "id": "we03",
+        "label": "Conservative Force & Collisions",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Conservative force",
+            "text": "Work done along closed path = 0; depends only on initial & final position. Eg: gravity"
+          },
+          {
+            "sub": "Non-conservative force",
+            "text": "Work done depends on path. Eg: friction"
+          },
+          {
+            "sub": "Elastic collision",
+            "text": "Both momentum AND kinetic energy conserved"
+          },
+          {
+            "sub": "Inelastic collision",
+            "text": "Only momentum conserved; KE not conserved"
+          },
+          {
+            "sub": "Velocities after elastic collision",
+            "latex": "v_1 = \\dfrac{m_1-m_2}{m_1+m_2}u_1 + \\dfrac{2m_2}{m_1+m_2}u_2"
+          },
+          {
+            "sub": "",
+            "latex": "v_2 = \\dfrac{2m_1}{m_1+m_2}u_1 + \\dfrac{m_2-m_1}{m_1+m_2}u_2"
+          },
+          {
+            "sub": "Coefficient of restitution",
+            "latex": "e = \\dfrac{v_2-v_1}{u_1-u_2} \\quad(e=1:\\text{elastic},\\; e=0:\\text{perfectly inelastic})"
+          },
+          {
+            "sub": "Recoil velocity of rifle",
+            "latex": "V = -\\dfrac{mu}{M}"
+          },
+          {
+            "sub": "Ball dropped from h, rebounds",
+            "latex": "e = \\sqrt{\\dfrac{h'}{h}} \\quad\\text{(h' = rebound height)}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "System of Particles & Rotational Motion",
+    "id": "rotation",
+    "topics": [
+      {
+        "id": "r01",
+        "label": "Centre of Mass",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Definition",
+            "text": "Point where entire mass is supposed to be concentrated"
+          },
+          {
+            "sub": "CM coordinates",
+            "latex": "X_{cm} = \\dfrac{\\sum m_i x_i}{\\sum m_i}, \\quad Y_{cm} = \\dfrac{\\sum m_i y_i}{\\sum m_i}"
+          },
+          {
+            "sub": "Two particles",
+            "latex": "m_1 r_1 = m_2 r_2 \\quad\\text{(distances from CM)}"
+          },
+          {
+            "sub": "Velocity of CM",
+            "latex": "V_{cm} = \\dfrac{\\sum m_i v_i}{M}"
+          },
+          {
+            "sub": "Momentum of CM",
+            "latex": "MV_{cm} = \\sum p_i"
+          },
+          {
+            "sub": "No external force",
+            "latex": "a_{cm} = 0 \\Rightarrow V_{cm} = \\text{constant}"
+          }
+        ]
+      },
+      {
+        "id": "r02",
+        "label": "Rotational Kinematics",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Angular velocity",
+            "latex": "\\omega = \\dfrac{d\\theta}{dt} \\quad\\text{Unit: rad/s}"
+          },
+          {
+            "sub": "Linear ↔ angular",
+            "latex": "v = \\omega r"
+          },
+          {
+            "sub": "Angular acceleration",
+            "latex": "\\alpha = \\dfrac{d\\omega}{dt} \\quad\\text{Unit: rad/s²}"
+          },
+          {
+            "sub": "Rotational equations",
+            "latex": "\\omega = \\omega_0 + \\alpha t"
+          },
+          {
+            "sub": "",
+            "latex": "\\theta = \\omega_0 t + \\dfrac{1}{2}\\alpha t^2"
+          },
+          {
+            "sub": "",
+            "latex": "\\omega^2 = \\omega_0^2 + 2\\alpha\\theta"
+          },
+          {
+            "sub": "nth second",
+            "latex": "\\omega_n = \\omega_0 + \\alpha\\left(n-\\dfrac{1}{2}\\right)"
+          }
+        ]
+      },
+      {
+        "id": "r03",
+        "label": "Torque & Angular Momentum",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Torque",
+            "latex": "\\tau = r\\times F = rF\\sin\\theta"
+          },
+          {
+            "sub": "Torque & angular acceleration",
+            "latex": "\\tau = I\\alpha = \\dfrac{dL}{dt}"
+          },
+          {
+            "sub": "Angular momentum",
+            "latex": "L = r\\times p = rp\\sin\\theta = I\\omega"
+          },
+          {
+            "sub": "KE of rotation",
+            "latex": "KE = \\dfrac{L^2}{2I} = \\dfrac{1}{2}I\\omega^2"
+          },
+          {
+            "sub": "Conservation of L",
+            "latex": "\\tau = 0 \\Rightarrow L = I\\omega = \\text{constant}"
+          },
+          {
+            "sub": "",
+            "latex": "I_1\\omega_1 = I_2\\omega_2"
+          },
+          {
+            "sub": "Power by torque",
+            "latex": "P = \\tau\\omega"
+          }
+        ]
+      },
+      {
+        "id": "r04",
+        "label": "Moment of Inertia",
+        "type": "table",
+        "table": {
+          "headers": [
+            "Body",
+            "Axis",
+            "I"
+          ],
+          "rows": [
+            [
+              "Thin circular ring (radius R)",
+              "Perpendicular to plane through centre",
+              "MR²"
+            ],
+            [
+              "Thin circular ring (radius R)",
+              "Diameter",
+              "MR²/2"
+            ],
+            [
+              "Thin rod (length L)",
+              "⊥ to rod through midpoint",
+              "ML²/12"
+            ],
+            [
+              "Circular disc (radius R)",
+              "⊥ to disc through centre",
+              "MR²/2"
+            ],
+            [
+              "Circular disc (radius R)",
+              "Diameter",
+              "MR²/4"
+            ],
+            [
+              "Hollow cylinder (radius R)",
+              "Geometrical axis",
+              "MR²"
+            ],
+            [
+              "Solid cylinder (radius R)",
+              "Geometrical axis",
+              "MR²/2"
+            ],
+            [
+              "Solid sphere (radius R)",
+              "Diameter",
+              "2MR²/5"
+            ],
+            [
+              "Hollow sphere (radius R)",
+              "Diameter",
+              "2MR²/3"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "r05",
+        "label": "Theorems of MI & Rolling",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Perpendicular axes theorem",
+            "latex": "I_z = I_x + I_y \\quad\\text{(plane lamina)}"
+          },
+          {
+            "sub": "Parallel axes theorem",
+            "latex": "I = I_{cm} + Md^2"
+          },
+          {
+            "sub": "Rolling down incline — velocity",
+            "latex": "v = \\sqrt{\\dfrac{2g\\ell\\sin\\theta}{1+k^2/R^2}} \\quad\\text{(h = \\ell sinθ)}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Gravitation",
+    "id": "gravitation",
+    "topics": [
+      {
+        "id": "g01",
+        "label": "Kepler's Laws & Newton's Law",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Law of orbits",
+            "text": "Planets revolve in elliptical orbits with Sun at one focus"
+          },
+          {
+            "sub": "Law of areas",
+            "latex": "\\dfrac{dA}{dt} = \\text{constant} \\quad\\text{(equal areas in equal time)}"
+          },
+          {
+            "sub": "Law of periods",
+            "latex": "T^2 \\propto a^3 \\quad\\text{(a = semi-major axis)}"
+          },
+          {
+            "sub": "Newton's law of gravitation",
+            "latex": "F = \\dfrac{Gm_1m_2}{r^2}"
+          },
+          {
+            "sub": "G",
+            "latex": "G = 6.67\\times10^{-11}\\,\\text{N m}^2\\text{kg}^{-2} \\quad [M^{-1}L^3T^{-2}]"
+          },
+          {
+            "sub": "g at surface",
+            "latex": "g = \\dfrac{GM}{R^2}"
+          }
+        ]
+      },
+      {
+        "id": "g02",
+        "label": "Variation of g",
+        "type": "list",
+        "items": [
+          {
+            "sub": "With altitude h",
+            "latex": "g_h = g\\left(\\dfrac{R}{R+h}\\right)^2 \\approx g\\left(1-\\dfrac{2h}{R}\\right) \\quad\\text{(h<<R)}"
+          },
+          {
+            "sub": "With depth d",
+            "latex": "g_d = g\\left(1-\\dfrac{d}{R}\\right)"
+          },
+          {
+            "sub": "With latitude λ",
+            "latex": "g_\\lambda = g - \\omega^2 R\\cos^2\\lambda"
+          },
+          {
+            "sub": "g at poles > equator",
+            "text": "g is maximum at poles, minimum at equator"
+          }
+        ]
+      },
+      {
+        "id": "g03",
+        "label": "Orbital & Escape Velocity",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Orbital velocity",
+            "latex": "v_o = \\sqrt{\\dfrac{GM}{R+h}} \\approx \\sqrt{gR} \\quad\\text{(h<<R)}"
+          },
+          {
+            "sub": "Escape velocity",
+            "latex": "v_e = \\sqrt{\\dfrac{2GM}{R}} = \\sqrt{2gR}"
+          },
+          {
+            "sub": "Relation",
+            "latex": "v_e = \\sqrt{2}\\, v_o"
+          },
+          {
+            "sub": "Geostationary satellite",
+            "text": "T = 24 h; rotates West→East in equatorial plane; appears stationary"
+          },
+          {
+            "sub": "Gravitational PE",
+            "latex": "U = -\\dfrac{Gm_1m_2}{r}"
+          },
+          {
+            "sub": "Ratio of forces",
+            "latex": "F_g : F_{weak} : F_{em} : F_{strong} = 1 : 10^{25} : 10^{36} : 10^{38}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Mechanical Properties of Solids",
+    "id": "solids",
+    "topics": [
+      {
+        "id": "s01",
+        "label": "Stress, Strain & Hooke's Law",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Stress",
+            "latex": "\\sigma = \\dfrac{F}{A} \\quad\\text{Unit: Pa (N/m²); }[M^1L^{-1}T^{-2}]"
+          },
+          {
+            "sub": "Longitudinal strain",
+            "latex": "\\varepsilon = \\dfrac{\\Delta l}{l}"
+          },
+          {
+            "sub": "Volume (bulk) strain",
+            "latex": "\\varepsilon_V = \\dfrac{\\Delta V}{V}"
+          },
+          {
+            "sub": "Shearing strain",
+            "latex": "\\varepsilon_s = \\dfrac{\\Delta x}{L}"
+          },
+          {
+            "sub": "Hooke's law",
+            "latex": "E = \\dfrac{\\text{stress}}{\\text{strain}} \\quad\\text{(within elastic limit)}"
+          },
+          {
+            "sub": "Elastic limit",
+            "text": "Maximum stress within which body regains original size/shape"
+          }
+        ]
+      },
+      {
+        "id": "s02",
+        "label": "Moduli of Elasticity",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Young's modulus",
+            "latex": "Y = \\dfrac{\\text{longitudinal stress}}{\\text{longitudinal strain}} = \\dfrac{Mgl}{\\pi r^2 e}"
+          },
+          {
+            "sub": "Rigidity modulus",
+            "latex": "\\eta = \\dfrac{\\text{tangential stress}}{\\text{shearing strain}} = \\dfrac{F}{A\\theta}"
+          },
+          {
+            "sub": "Bulk modulus",
+            "latex": "K = -\\dfrac{P}{\\Delta V/V} \\quad\\text{(−ve sign = volume decreases)}"
+          },
+          {
+            "sub": "Compressibility",
+            "latex": "= \\dfrac{1}{K}"
+          },
+          {
+            "sub": "Poisson's ratio",
+            "latex": "\\sigma = \\dfrac{\\text{lateral strain}}{\\text{longitudinal strain}} \\quad\\text{(range: 0 to 0.5)}"
+          },
+          {
+            "sub": "Incompressible body",
+            "latex": "\\sigma = 0.5"
+          }
+        ]
+      },
+      {
+        "id": "s03",
+        "label": "Thermal Stress & Strain Energy",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Thermal force",
+            "latex": "F = AY\\alpha\\Delta T \\quad\\text{(independent of length)}"
+          },
+          {
+            "sub": "Thermal stress",
+            "latex": "= Y\\alpha\\Delta T"
+          },
+          {
+            "sub": "Work done stretching wire",
+            "latex": "W = \\dfrac{1}{2}\\times\\text{stress}\\times\\text{strain}\\times\\text{volume}"
+          },
+          {
+            "sub": "Strain energy density",
+            "latex": "E = \\dfrac{1}{2}Y(\\text{strain})^2 = \\dfrac{(\\text{stress})^2}{2Y}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Mechanical Properties of Fluids",
+    "id": "fluids",
+    "topics": [
+      {
+        "id": "f01",
+        "label": "Pressure & Pascal's Law",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Pressure",
+            "latex": "P = \\dfrac{F}{A} \\quad\\text{Unit: Pa; scalar; }[M^1L^{-1}T^{-2}]"
+          },
+          {
+            "sub": "Gauge pressure",
+            "latex": "P - P_0 = h\\rho g"
+          },
+          {
+            "sub": "Pascal's law",
+            "text": "Pressure change applied to enclosed fluid is transmitted equally in all directions"
+          },
+          {
+            "sub": "Buoyancy (Archimedes)",
+            "text": "Buoyant force = weight of fluid displaced"
+          },
+          {
+            "sub": "Fraction submerged",
+            "latex": "f = \\dfrac{\\rho_{\\text{object}}}{\\rho_{\\text{fluid}}}"
+          }
+        ]
+      },
+      {
+        "id": "f02",
+        "label": "Viscosity & Flow",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Streamline flow",
+            "text": "All particles through same point have constant velocity"
+          },
+          {
+            "sub": "Turbulent flow",
+            "text": "Velocity of particles through same point is different"
+          },
+          {
+            "sub": "Coefficient of viscosity",
+            "latex": "\\eta = \\dfrac{\\text{shearing stress}}{\\text{velocity gradient}} \\quad [M^1L^{-1}T^{-1}]\\text{ Unit: Pa·s}"
+          },
+          {
+            "sub": "Temperature effect",
+            "text": "Viscosity of liquids ↓ with T. Viscosity of gases ↑ with T."
+          },
+          {
+            "sub": "Terminal velocity (Stokes)",
+            "latex": "v_t = \\dfrac{2r^2(\\rho_1-\\rho_2)g}{9\\eta}"
+          },
+          {
+            "sub": "Critical velocity",
+            "latex": "v_c = \\dfrac{R_e \\eta}{\\rho d} \\quad\\text{(Re < 1000: laminar; Re > 2000: turbulent)}"
+          }
+        ]
+      },
+      {
+        "id": "f03",
+        "label": "Continuity & Bernoulli",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Equation of continuity",
+            "latex": "a_1 v_1 = a_2 v_2 = \\text{constant}"
+          },
+          {
+            "sub": "Bernoulli's principle",
+            "latex": "P + \\rho g h + \\dfrac{1}{2}\\rho v^2 = \\text{constant}"
+          },
+          {
+            "sub": "Horizontal pipe",
+            "latex": "P + \\dfrac{1}{2}\\rho v^2 = \\text{constant} \\quad\\Rightarrow P \\propto \\dfrac{1}{v^2}"
+          },
+          {
+            "sub": "Torricelli's theorem",
+            "latex": "v = \\sqrt{2gh} \\quad\\text{(velocity of efflux)}"
+          },
+          {
+            "sub": "Magnus effect",
+            "text": "Spinning + moving ball experiences dynamic lift due to pressure difference"
+          }
+        ]
+      },
+      {
+        "id": "f04",
+        "label": "Surface Tension",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Surface tension",
+            "latex": "T = \\dfrac{F}{l} \\quad\\text{Unit: N/m; }[M^1L^0T^{-2}]"
+          },
+          {
+            "sub": "Surface energy",
+            "latex": "E = T \\times \\Delta A \\quad\\text{(numerically equal to T)}"
+          },
+          {
+            "sub": "Work — liquid drop",
+            "latex": "W = 4\\pi r^2 T"
+          },
+          {
+            "sub": "Work — soap bubble",
+            "latex": "W = 8\\pi r^2 T \\quad\\text{(2 surfaces)}"
+          },
+          {
+            "sub": "Excess pressure — liquid drop",
+            "latex": "\\Delta P = \\dfrac{2T}{r}"
+          },
+          {
+            "sub": "Excess pressure — soap bubble",
+            "latex": "\\Delta P = \\dfrac{4T}{r}"
+          },
+          {
+            "sub": "Capillary rise",
+            "latex": "T = \\dfrac{hr\\rho g}{2\\cos\\theta}"
+          },
+          {
+            "sub": "Angle of contact < 90°",
+            "text": "Liquid wets solid; concave meniscus; capillary rise"
+          },
+          {
+            "sub": "Angle of contact > 90°",
+            "text": "Liquid does not wet solid; convex meniscus; capillary depression"
+          },
+          {
+            "sub": "T decreases with temperature",
+            "text": "Except molten copper and cadmium"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Thermal Properties of Matter",
+    "id": "thermal",
+    "topics": [
+      {
+        "id": "th01",
+        "label": "Temperature Scales & Expansion",
+        "type": "list",
+        "items": [
+          {
+            "sub": "°C to °F",
+            "latex": "F = \\dfrac{9}{5}C + 32"
+          },
+          {
+            "sub": "Scale conversion",
+            "latex": "\\dfrac{S - LFP}{UFP - LFP} = \\text{constant}"
+          },
+          {
+            "sub": "Linear expansion",
+            "latex": "\\alpha = \\dfrac{l_2-l_1}{l_1(t_2-t_1)}"
+          },
+          {
+            "sub": "Area expansion",
+            "latex": "\\beta = \\dfrac{a_2-a_1}{a_1(t_2-t_1)} = 2\\alpha"
+          },
+          {
+            "sub": "Volume expansion",
+            "latex": "\\gamma = \\dfrac{V_2-V_1}{V_1(t_2-t_1)} = 3\\alpha"
+          },
+          {
+            "sub": "Relation",
+            "latex": "\\alpha : \\beta : \\gamma = 1:2:3"
+          },
+          {
+            "sub": "Density variation",
+            "latex": "d_t = d_0(1+\\gamma t)^{-1} \\approx d_0(1-\\gamma t)"
+          },
+          {
+            "sub": "Anomalous expansion",
+            "text": "Water contracts from 0°C to 4°C; maximum density at 4°C (277 K)"
+          }
+        ]
+      },
+      {
+        "id": "th02",
+        "label": "Gas Laws",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Boyle's law",
+            "latex": "PV = k \\quad\\text{(T constant)} \\Rightarrow P_1V_1 = P_2V_2"
+          },
+          {
+            "sub": "Charles' I law",
+            "latex": "\\dfrac{V}{T} = \\text{const} \\quad\\text{(P constant)}"
+          },
+          {
+            "sub": "Charles' II law",
+            "latex": "\\dfrac{P}{T} = \\text{const} \\quad\\text{(V constant)}"
+          },
+          {
+            "sub": "Ideal gas equation",
+            "latex": "PV = nRT \\quad\\text{(R = 8.31 J/mol·K)}"
+          },
+          {
+            "sub": "Boltzmann constant",
+            "latex": "k_B = \\dfrac{R}{N_A} = 1.38\\times10^{-23}\\,\\text{J/K}"
+          },
+          {
+            "sub": "Volume & pressure coefficients",
+            "latex": "\\alpha = \\beta = \\dfrac{1}{273.15}\\,\\text{per °C}"
+          },
+          {
+            "sub": "Specific gas constant",
+            "latex": "r = \\dfrac{R}{M} \\quad [M^0L^2T^{-2}K^{-1}]"
+          }
+        ]
+      },
+      {
+        "id": "th03",
+        "label": "Heat, Specific Heat & Latent Heat",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Heat capacity",
+            "latex": "H = \\dfrac{d\\theta}{dT} \\quad\\text{Unit: J/K}"
+          },
+          {
+            "sub": "Specific heat",
+            "latex": "c = \\dfrac{1}{m}\\dfrac{d\\theta}{dT} \\Rightarrow d\\theta = mcdT"
+          },
+          {
+            "sub": "H = mc",
+            "latex": "\\text{Heat capacity} = mc"
+          },
+          {
+            "sub": "Latent heat",
+            "latex": "Q = mL \\quad\\text{Unit: J/kg}"
+          },
+          {
+            "sub": "Latent heat of ice",
+            "latex": "L_{ice} = 80\\,\\text{cal/g} = 3.36\\times10^5\\,\\text{J/kg}"
+          },
+          {
+            "sub": "Latent heat of steam",
+            "latex": "L_{steam} = 540\\,\\text{cal/g} = 2.268\\times10^6\\,\\text{J/kg}"
+          },
+          {
+            "sub": "Method of mixtures",
+            "latex": "\\theta_{mix} = \\dfrac{m_1c_1\\theta_1+m_2c_2\\theta_2}{m_1c_1+m_2c_2}"
+          }
+        ]
+      },
+      {
+        "id": "th04",
+        "label": "Conduction & Radiation",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Fourier's law (conduction)",
+            "latex": "Q = \\dfrac{KA(\\theta_1-\\theta_2)t}{\\ell}"
+          },
+          {
+            "sub": "Thermal resistance",
+            "latex": "R_{th} = \\dfrac{\\ell}{KA}"
+          },
+          {
+            "sub": "Wien's displacement law",
+            "latex": "\\lambda_{max} T = b = 2.9\\times10^{-3}\\,\\text{m·K}"
+          },
+          {
+            "sub": "Stefan's law",
+            "latex": "E = \\sigma T^4 \\quad\\text{(}\\sigma = 5.67\\times10^{-8}\\,\\text{W/m}^2\\text{K}^4\\text{)}"
+          },
+          {
+            "sub": "Stefan-Boltzmann",
+            "latex": "E = \\sigma A e(T^4 - T_0^4)"
+          },
+          {
+            "sub": "Kirchhoff's law",
+            "latex": "\\dfrac{e_\\lambda}{a_\\lambda} = E_\\lambda = \\text{const} \\quad\\text{(good absorbers = good emitters)}"
+          },
+          {
+            "sub": "Newton's law of cooling",
+            "latex": "\\dfrac{d\\theta}{dt} = K\\left(\\dfrac{\\theta_1+\\theta_2}{2} - \\theta_s\\right)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Thermodynamics",
+    "id": "thermodynamics",
+    "topics": [
+      {
+        "id": "td01",
+        "label": "Zeroth & First Law",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Zeroth law",
+            "text": "If A & B are each in thermal equilibrium with C, then A & B are in equilibrium with each other"
+          },
+          {
+            "sub": "1 calorie",
+            "latex": "1\\,\\text{cal} = 4.2\\,\\text{J}"
+          },
+          {
+            "sub": "First law",
+            "latex": "dQ = dU + dW = dU + PdV"
+          },
+          {
+            "sub": "Internal energy",
+            "latex": "U = PE + KE \\text{ of molecules}"
+          },
+          {
+            "sub": "External work",
+            "latex": "dW = PdV \\quad\\text{(+ve when system expands)}"
+          }
+        ]
+      },
+      {
+        "id": "td02",
+        "label": "Specific Heats of Gases",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Cv (constant volume)",
+            "latex": "C_V = \\dfrac{1}{n}\\dfrac{dQ}{dT} \\Rightarrow dU = nC_V dT"
+          },
+          {
+            "sub": "Cp (constant pressure)",
+            "latex": "C_P = \\dfrac{1}{n}\\dfrac{dQ}{dT}"
+          },
+          {
+            "sub": "Mayer's relation",
+            "latex": "C_P - C_V = R"
+          },
+          {
+            "sub": "Ratio γ",
+            "latex": "\\gamma = \\dfrac{C_P}{C_V}"
+          },
+          {
+            "sub": "Monoatomic γ",
+            "latex": "\\gamma = \\dfrac{5}{3} \\approx 1.67"
+          },
+          {
+            "sub": "Diatomic γ",
+            "latex": "\\gamma = \\dfrac{7}{5} = 1.4"
+          }
+        ]
+      },
+      {
+        "id": "td03",
+        "label": "Thermodynamic Processes",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Isothermal (T=const)",
+            "latex": "PV = \\text{const (Boyle's law); }dU=0"
+          },
+          {
+            "sub": "Isothermal work",
+            "latex": "W = 2.303\\,nRT\\log_{10}\\dfrac{V_2}{V_1} = 2.303\\,nRT\\log_{10}\\dfrac{P_1}{P_2}"
+          },
+          {
+            "sub": "Adiabatic (Q=const)",
+            "latex": "PV^\\gamma = \\text{const (Poisson's law); }dQ=0"
+          },
+          {
+            "sub": "Adiabatic work",
+            "latex": "W = \\dfrac{R(T_1-T_2)}{\\gamma-1} = \\dfrac{P_1V_1-P_2V_2}{\\gamma-1}"
+          },
+          {
+            "sub": "Isobaric (P=const)",
+            "text": "Charles' law; work done W = PΔV = nRΔT"
+          },
+          {
+            "sub": "Isochoric (V=const)",
+            "text": "Gay-Lussac's law; W = 0; all heat goes to internal energy"
+          },
+          {
+            "sub": "Isothermal — slow process",
+            "text": "Molar specific heat C = ∞"
+          },
+          {
+            "sub": "Adiabatic — fast process",
+            "text": "Molar specific heat C = 0"
+          }
+        ]
+      },
+      {
+        "id": "td04",
+        "label": "Second Law & Triple Point",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Clausius statement",
+            "text": "Heat cannot flow by itself from a colder to a hotter body"
+          },
+          {
+            "sub": "Kelvin-Planck statement",
+            "text": "No engine can convert heat entirely into work in a cyclic process"
+          },
+          {
+            "sub": "Triple point of water",
+            "latex": "P = 610.13\\,\\text{Pa},\\; T = 273.16\\,\\text{K}"
+          },
+          {
+            "sub": "Joule's law",
+            "latex": "W = JQ \\quad\\text{(J = mechanical equivalent of heat = 4.2 J/cal)}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Oscillations",
+    "id": "oscillations",
+    "topics": [
+      {
+        "id": "osc01",
+        "label": "SHM Basics",
+        "type": "list",
+        "items": [
+          {
+            "sub": "SHM condition",
+            "latex": "a = -\\omega^2 y \\quad\\text{(acceleration ∝ −displacement)}"
+          },
+          {
+            "sub": "Displacement",
+            "latex": "y = A\\sin(\\omega t \\pm \\phi)"
+          },
+          {
+            "sub": "Velocity",
+            "latex": "v = A\\omega\\cos(\\omega t) = \\omega\\sqrt{A^2-y^2}"
+          },
+          {
+            "sub": "Acceleration",
+            "latex": "a = -A\\omega^2\\sin(\\omega t) = -\\omega^2 y"
+          },
+          {
+            "sub": "At mean position (y=0)",
+            "text": "v = Aω (max), a = 0"
+          },
+          {
+            "sub": "At extreme (y=A)",
+            "text": "v = 0, a = Aω² (max)"
+          },
+          {
+            "sub": "Time period",
+            "latex": "T = 2\\pi\\sqrt{\\dfrac{y}{|a|}} = \\dfrac{2\\pi}{\\omega}"
+          },
+          {
+            "sub": "Frequency",
+            "latex": "f = \\dfrac{1}{T} \\quad\\text{Unit: Hz (s⁻¹)}"
+          }
+        ]
+      },
+      {
+        "id": "osc02",
+        "label": "Simple Pendulum & Spring",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Simple pendulum",
+            "latex": "T = 2\\pi\\sqrt{\\dfrac{l}{g}}"
+          },
+          {
+            "sub": "T ∝ √l, T ∝ 1/√g",
+            "text": "Independent of mass and shape of bob"
+          },
+          {
+            "sub": "At mountain",
+            "text": "g decreases → T increases → clock loses time"
+          },
+          {
+            "sub": "At poles",
+            "text": "g increases → T decreases → clock gains time"
+          },
+          {
+            "sub": "Seconds pendulum",
+            "latex": "T = 2\\,\\text{s},\\; l = 100\\,\\text{cm on Earth}"
+          },
+          {
+            "sub": "Spring constant",
+            "latex": "K = \\dfrac{Mg}{x} \\quad\\text{(x = elongation)}"
+          },
+          {
+            "sub": "Loaded spring",
+            "latex": "T = 2\\pi\\sqrt{\\dfrac{M}{K}} = 2\\pi\\sqrt{\\dfrac{x}{g}}"
+          }
+        ]
+      },
+      {
+        "id": "osc03",
+        "label": "Energy in SHM",
+        "type": "list",
+        "items": [
+          {
+            "sub": "PE",
+            "latex": "PE = \\dfrac{1}{2}m\\omega^2 y^2"
+          },
+          {
+            "sub": "KE",
+            "latex": "KE = \\dfrac{1}{2}m\\omega^2(A^2-y^2)"
+          },
+          {
+            "sub": "Total energy",
+            "latex": "TE = \\dfrac{1}{2}m\\omega^2 A^2 = \\text{constant}"
+          },
+          {
+            "sub": "If amplitude doubled",
+            "text": "Total energy increases 4 times"
+          },
+          {
+            "sub": "Forced oscillations",
+            "text": "Body oscillates under influence of external periodic force"
+          },
+          {
+            "sub": "Damped oscillations",
+            "text": "Amplitude decreases with time due to resistive forces"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Kinetic Theory",
+    "id": "kinetic",
+    "topics": [
+      {
+        "id": "kt01",
+        "label": "Gas Equations",
+        "type": "list",
+        "items": [
+          {
+            "sub": "General gas relation",
+            "latex": "PV = KT \\quad\\text{(K = constant for given sample, T in Kelvin)}"
+          },
+          {
+            "sub": "Perfect gas equation",
+            "latex": "PV = \\mu RT \\quad\\text{where }\\mu = \\dfrac{m}{M_0}\\text{ (number of moles)}"
+          },
+          {
+            "sub": "In terms of density",
+            "latex": "P = \\dfrac{\\rho RT}{M_0} \\quad\\text{(}\\rho\\text{ = density of gas)}"
+          },
+          {
+            "sub": "Ideal gas at high T, low P",
+            "text": "Real gases behave like ideal gas at low pressures and high temperatures"
+          },
+          {
+            "sub": "Dalton's law of partial pressures",
+            "latex": "P = P_1 + P_2 + P_3 + \\cdots"
+          },
+          {
+            "sub": "Dalton's law statement",
+            "text": "Total pressure of a gas mixture = sum of individual pressures each gas would exert alone at same T"
+          }
+        ]
+      },
+      {
+        "id": "kt02",
+        "label": "Kinetic Theory Formulas",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Pressure of ideal gas",
+            "latex": "P = \\dfrac{1}{3}nm\\overline{v^2}"
+          },
+          {
+            "sub": "where",
+            "text": "n = number density of molecules, m = mass of one molecule, \\(\\overline{v^2}\\) = mean squared speed"
+          },
+          {
+            "sub": "RMS speed",
+            "latex": "v_{rms} = \\sqrt{\\overline{v^2}} = \\sqrt{\\dfrac{3k_BT}{m}} = \\sqrt{\\dfrac{3RT}{M_0}}"
+          },
+          {
+            "sub": "Kinetic interpretation of T",
+            "latex": "\\dfrac{1}{2}m\\overline{v^2} = \\dfrac{3}{2}k_B T \\quad\\Rightarrow T \\propto \\overline{v^2}"
+          },
+          {
+            "sub": "Translational KE",
+            "latex": "E = \\dfrac{3}{2}k_B T \\quad\\text{(per molecule)}"
+          },
+          {
+            "sub": "Mean free path",
+            "text": "Average distance covered by a molecule between two successive collisions"
+          },
+          {
+            "sub": "Molecular motion evidence",
+            "text": "Brownian motion and Diffusion provide conclusive evidence of molecular motion"
+          },
+          {
+            "sub": "Pressure & container shape",
+            "text": "Gas pressure is due to molecular collisions on walls → independent of shape of container"
+          }
+        ]
+      },
+      {
+        "id": "kt03",
+        "label": "Degrees of Freedom & Equipartition",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Degrees of freedom",
+            "latex": "f = 3N - K \\quad\\text{(N = particles, K = constraints)}"
+          },
+          {
+            "sub": "Monoatomic gas",
+            "latex": "f = 3 \\quad\\text{(only translational; N=1, K=0)}"
+          },
+          {
+            "sub": "Diatomic gas",
+            "latex": "f = 5 \\quad\\text{(3 translational + 2 rotational; N=2, K=1)}"
+          },
+          {
+            "sub": "Triatomic gas",
+            "latex": "f = 6 \\quad\\text{(3 translational + 3 rotational; N=3, K=3)}"
+          },
+          {
+            "sub": "Equipartition of energy",
+            "latex": "\\text{Energy per degree of freedom} = \\dfrac{1}{2}k_B T"
+          },
+          {
+            "sub": "Total energy per molecule",
+            "latex": "E = \\dfrac{f}{2}k_B T"
+          },
+          {
+            "sub": "Cv from equipartition",
+            "latex": "C_V = \\dfrac{f}{2}R"
+          },
+          {
+            "sub": "Monoatomic: γ",
+            "latex": "\\gamma = \\dfrac{C_P}{C_V} = \\dfrac{5/2\\,R}{3/2\\,R} = \\dfrac{5}{3} \\approx 1.67"
+          },
+          {
+            "sub": "Diatomic: γ",
+            "latex": "\\gamma = \\dfrac{7/2\\,R}{5/2\\,R} = \\dfrac{7}{5} = 1.4"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -31,6 +31,14 @@ export default function Dashboard() {
 
   const cards = [
     {
+      title: 'Formulas',
+      description: 'Quick revision of 1st and 2nd year formulas',
+      icon: <BookOpen className="w-8 h-8 text-orange-500" />,
+      link: '/formulas',
+      active: true,
+      color: 'bg-orange-100'
+    },
+    {
       title: 'Foundation Practice',
       description: 'Build strong basics chapter by chapter',
       icon: <Zap className="w-8 h-8 text-orange-500" />,

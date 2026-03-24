@@ -1,0 +1,1946 @@
+[
+  {
+    "chapter": "Atomic Structure",
+    "id": "atomic",
+    "topics": [
+      {
+        "id": "as01",
+        "label": "Fundamental Particles",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Charge of electron",
+            "latex": "e = -1.6022\\times10^{-19}\\,\\text{C}"
+          },
+          {
+            "sub": "Mass of electron",
+            "latex": "m_e = 9.1094\\times10^{-31}\\,\\text{kg}"
+          },
+          {
+            "sub": "Charge/mass ratio of e⁻",
+            "latex": "e/m = 1.7588\\times10^{11}\\,\\text{C/kg}"
+          },
+          {
+            "sub": "Planck's constant",
+            "latex": "h = 6.625\\times10^{-34}\\,\\text{J·s}"
+          },
+          {
+            "sub": "Planck's quantum",
+            "latex": "E = h\\nu \\quad\\text{(energy of a quantum/photon)}"
+          },
+          {
+            "sub": "Photoelectric effect",
+            "latex": "h\\nu = W_0 + KE \\quad\\text{(W₀ = work function)}"
+          },
+          {
+            "sub": "Heisenberg uncertainty",
+            "latex": "\\Delta x \\cdot \\Delta p \\geq \\dfrac{h}{4\\pi}"
+          }
+        ]
+      },
+      {
+        "id": "as02",
+        "label": "Bohr's Atomic Model",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Angular momentum",
+            "latex": "mvr = \\dfrac{nh}{2\\pi} \\quad\\text{(n = 1,2,3,...)}"
+          },
+          {
+            "sub": "Orbits called",
+            "text": "Energy levels / energy shells — designated K, L, M, N (or 1,2,3,4...)"
+          },
+          {
+            "sub": "Electron in orbit",
+            "text": "Neither gains nor loses energy → called stationary orbits"
+          },
+          {
+            "sub": "Electron jumps up",
+            "text": "Absorbs energy (lower → higher orbit)"
+          },
+          {
+            "sub": "Electron jumps down",
+            "text": "Emits energy (higher → lower orbit)"
+          },
+          {
+            "sub": "Energy to ionize H",
+            "text": "13.6 eV required to remove electron from ground state of hydrogen"
+          }
+        ]
+      },
+      {
+        "id": "as03",
+        "label": "Hydrogen Spectrum — Rydberg Equation",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Wave number",
+            "latex": "\\bar{v} = R\\left(\\dfrac{1}{n_1^2} - \\dfrac{1}{n_2^2}\\right)"
+          },
+          {
+            "sub": "Rydberg constant",
+            "latex": "R = 109677\\,\\text{cm}^{-1}"
+          },
+          {
+            "sub": "Lyman series",
+            "text": "n₁=1, n₂=2,3,4... (UV region)"
+          },
+          {
+            "sub": "Balmer series",
+            "text": "n₁=2, n₂=3,4,5... (visible region)"
+          },
+          {
+            "sub": "Paschen series",
+            "text": "n₁=3, n₂=4,5,6... (IR region)"
+          },
+          {
+            "sub": "Brackett series",
+            "text": "n₁=4, n₂=5,6..."
+          },
+          {
+            "sub": "Pfund series",
+            "text": "n₁=5, n₂=6,7..."
+          },
+          {
+            "sub": "Zeeman effect",
+            "text": "Splitting of spectral line in strong magnetic field"
+          },
+          {
+            "sub": "Stark effect",
+            "text": "Splitting of spectral line in strong electric field"
+          }
+        ]
+      },
+      {
+        "id": "as04",
+        "label": "Quantum Numbers",
+        "type": "table",
+        "table": {
+          "headers": [
+            "Quantum Number",
+            "Symbol",
+            "Values",
+            "Significance"
+          ],
+          "rows": [
+            [
+              "Principal",
+              "n",
+              "1,2,3,4... (K,L,M,N)",
+              "Size & energy of orbit; max e⁻ = 2n²; total orbitals = n²"
+            ],
+            [
+              "Azimuthal",
+              "l",
+              "0 to (n−1); s,p,d,f for 0,1,2,3",
+              "Shape of orbital; no. of subshells = n"
+            ],
+            [
+              "Magnetic",
+              "m",
+              "-l to +l (including 0); total = 2l+1",
+              "Orientation of orbital in space"
+            ],
+            [
+              "Spin",
+              "s",
+              "+½ or −½",
+              "Direction of spin; max 2 e⁻ per orbital"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "as05",
+        "label": "Electronic Configuration Rules",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Aufbau principle",
+            "latex": "1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p < 5s < 4d < 5p\\ldots"
+          },
+          {
+            "sub": "Pauli exclusion",
+            "text": "No two electrons in an atom can have all four quantum numbers same"
+          },
+          {
+            "sub": "Hund's rule",
+            "text": "In degenerate orbitals, pairing occurs only after each orbital is singly occupied"
+          },
+          {
+            "sub": "Anomalous: Cr",
+            "latex": "[Ar]\\,4s^1\\,3d^5 \\quad\\text{(half-filled stability)}"
+          },
+          {
+            "sub": "Anomalous: Cu",
+            "latex": "[Ar]\\,4s^1\\,3d^{10} \\quad\\text{(fully-filled stability)}"
+          },
+          {
+            "sub": "Orbital shapes",
+            "text": "s = spherical, p = dumbbell, d = double dumbbell"
+          }
+        ]
+      },
+      {
+        "id": "as06",
+        "label": "Subshell Electron Capacity",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Orbitals in s,p,d,f",
+            "text": "1, 3, 5, 7 orbitals respectively (= 2l+1)"
+          },
+          {
+            "sub": "Electrons in s,p,d,f",
+            "text": "2, 6, 10, 14 electrons respectively (= 2(2l+1))"
+          },
+          {
+            "sub": "Schrödinger equation",
+            "latex": "\\hat{H}\\psi = E\\psi \\quad\\text{(atomic orbital = region where }\\psi^2\\text{ is maximum)}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Classification of Elements & Periodicity",
+    "id": "periodic",
+    "topics": [
+      {
+        "id": "pe01",
+        "label": "Blocks of Elements",
+        "type": "list",
+        "items": [
+          {
+            "sub": "s-block",
+            "text": "Differentiating e⁻ enters s-orbital. Groups 1 & 2. Config: ns¹⁻²"
+          },
+          {
+            "sub": "p-block",
+            "text": "Differentiating e⁻ enters p-orbital. 6 groups. Config: ns² np¹⁻⁶. Contains all non-metals, metalloids and few metals"
+          },
+          {
+            "sub": "d-block",
+            "text": "Differentiating e⁻ enters (n-1)d sub-shell. 10 groups. Config: (n-1)d¹⁻¹⁰ ns¹⁻²"
+          },
+          {
+            "sub": "f-block",
+            "text": "Differentiating e⁻ enters (n-2)f sub-shell. Config: (n-2)f¹⁻¹⁴(n-1)d⁰⁻¹ ns²"
+          },
+          {
+            "sub": "Transition elements",
+            "text": "Two outermost sub-shells incompletely filled. Zn, Cd, Hg are d-block but NOT transition elements (fully filled d¹⁰)"
+          }
+        ]
+      },
+      {
+        "id": "pe02",
+        "label": "Atomic Radius Trends",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Types",
+            "text": "Covalent radius (non-metals), metallic/crystal radius (metals), van der Waals radius"
+          },
+          {
+            "sub": "Down a group",
+            "text": "Atomic radius increases (new sub-shell added; more screening)"
+          },
+          {
+            "sub": "Across a period",
+            "text": "Atomic radius decreases (same sub-shell, nuclear charge increases)"
+          },
+          {
+            "sub": "Lanthanide contraction",
+            "text": "In lanthanides, 4f electrons have poor shielding → steady decrease in size. Consequences: Zr≈Hf, Nb≈Ta, Mo≈W in size; separation of lanthanides difficult"
+          }
+        ]
+      },
+      {
+        "id": "pe03",
+        "label": "Ionization Enthalpy",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Definition",
+            "text": "Minimum energy to remove most loosely bound electron from neutral gaseous atom. Unit: kJ/mol or eV"
+          },
+          {
+            "sub": "Order",
+            "latex": "IE_1 < IE_2 < IE_3 < \\cdots"
+          },
+          {
+            "sub": "Down a group",
+            "text": "IE decreases (atomic size and screening increase)"
+          },
+          {
+            "sub": "Across a period",
+            "text": "IE generally increases (atomic size decreases, nuclear charge increases)"
+          },
+          {
+            "sub": "Exceptions in 2nd period",
+            "latex": "Li < B < Be < C < O < N < F < Ne"
+          },
+          {
+            "sub": "Exceptions in 3rd period",
+            "latex": "Na < Al < Mg < Si < S < P < Cl < Ar"
+          },
+          {
+            "sub": "Be, N, Mg, P exceptions",
+            "text": "Half-filled (N, P) and completely-filled (Be, Mg) subshells are extra stable → higher IE than expected"
+          },
+          {
+            "sub": "Highest IE element",
+            "text": "Helium. Highest IE group: noble gases (Group 0/18)"
+          },
+          {
+            "sub": "IE₁(Na) < IE₁(Mg)",
+            "text": "Na has 3s¹ — readily loses one electron to get noble gas config"
+          },
+          {
+            "sub": "IE₂(Na) > IE₂(Mg)",
+            "text": "Na⁺ has noble gas config → very hard to remove another electron"
+          }
+        ]
+      },
+      {
+        "id": "pe04",
+        "label": "Electron Gain Enthalpy & Electronegativity",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Electron affinity definition",
+            "text": "Energy released when electron is added to neutral gaseous atom. A(g) + e⁻ → A⁻(g)"
+          },
+          {
+            "sub": "Down a group",
+            "text": "EA decreases (atomic size increases)"
+          },
+          {
+            "sub": "Across a period",
+            "text": "EA increases (atomic size decreases)"
+          },
+          {
+            "sub": "Highest EA element",
+            "text": "Chlorine (not F) — F has small size causing strong inter-electronic repulsion"
+          },
+          {
+            "sub": "Electronegativity",
+            "text": "Relative tendency of bonded atom to attract shared electron pair. No units. F = 4.0 (highest)"
+          },
+          {
+            "sub": "Diagonal relationship",
+            "text": "Li≈Mg, Be≈Al, B≈Si — due to similar atomic size, electronegativity and polarizing power"
+          },
+          {
+            "sub": "Polarizing power",
+            "latex": "= \\dfrac{\\text{ionic charge}}{(\\text{ionic radius})^2}"
+          }
+        ]
+      },
+      {
+        "id": "pe05",
+        "label": "Nature of Oxides Across Period 3",
+        "type": "table",
+        "table": {
+          "headers": [
+            "Element",
+            "Oxide",
+            "Nature"
+          ],
+          "rows": [
+            [
+              "Na",
+              "Na₂O",
+              "Strongly basic"
+            ],
+            [
+              "Mg",
+              "MgO",
+              "Basic"
+            ],
+            [
+              "Al",
+              "Al₂O₃",
+              "Amphoteric"
+            ],
+            [
+              "Si",
+              "SiO₂",
+              "Weakly acidic"
+            ],
+            [
+              "P",
+              "P₄O₁₀",
+              "Acidic"
+            ],
+            [
+              "S",
+              "SO₃",
+              "Strongly acidic"
+            ],
+            [
+              "Cl",
+              "Cl₂O₇",
+              "Strongly acidic"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "chapter": "Chemical Bonding & Molecular Structure",
+    "id": "bonding",
+    "topics": [
+      {
+        "id": "cb01",
+        "label": "Ionic & Covalent Bond Basics",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Octet rule",
+            "text": "Atom with 8 electrons in valence shell is most stable"
+          },
+          {
+            "sub": "Ionic bond",
+            "text": "Strong electrostatic force between oppositely charged ions"
+          },
+          {
+            "sub": "For cation formation",
+            "text": "Large size, low charge, low IP are favourable"
+          },
+          {
+            "sub": "For anion formation",
+            "text": "Small size, low charge, high EA are favourable"
+          },
+          {
+            "sub": "Coordinate covalent bond",
+            "text": "Both electrons in shared pair donated by one atom (donor). Eg: NH₄⁺ formation"
+          },
+          {
+            "sub": "Dipole moment",
+            "latex": "\\mu = q \\times d \\quad\\text{(charge × bond length)}"
+          },
+          {
+            "sub": "% ionic character",
+            "latex": "= \\dfrac{\\mu_{obs}}{\\mu_{calc}} \\times 100"
+          }
+        ]
+      },
+      {
+        "id": "cb02",
+        "label": "Fajan's Rules",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Rule 1",
+            "text": "For given cation: covalent character increases with size of anion. Eg: KI > KF in covalency"
+          },
+          {
+            "sub": "Rule 2",
+            "text": "Covalent character increases with higher charges on cation or anion. Eg: SnCl₄ > SnCl₂"
+          },
+          {
+            "sub": "Rule 3",
+            "text": "For given anion: covalent character increases with decrease in cation size. Eg: LiF > KF"
+          },
+          {
+            "sub": "Rule 4",
+            "text": "Cations with pseudo inert gas config (18e⁻) have more covalent character than inert gas config. Eg: CuCl > NaCl"
+          }
+        ]
+      },
+      {
+        "id": "cb03",
+        "label": "VSEPR Theory",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Proposed by",
+            "text": "Sidgwick & Powell; developed by Nyholm & Gillespie"
+          },
+          {
+            "sub": "Repulsion order",
+            "latex": "lp-lp > lp-bp > bp-bp"
+          },
+          {
+            "sub": "Bond type repulsion",
+            "latex": "\\text{triple} > \\text{double} > \\text{single bond}"
+          },
+          {
+            "sub": "NH₃ bond angle",
+            "text": "107° (reduced from 109°28' due to lp-bp repulsion)"
+          },
+          {
+            "sub": "H₂O bond angle",
+            "text": "104.5° (two lone pairs reduce angle further)"
+          }
+        ]
+      },
+      {
+        "id": "cb04",
+        "label": "VSEPR — Shapes Summary",
+        "type": "table",
+        "table": {
+          "headers": [
+            "Formula",
+            "Bond Pairs",
+            "Lone Pairs",
+            "Shape",
+            "Bond Angle"
+          ],
+          "rows": [
+            [
+              "AB₂ (BeCl₂)",
+              "2",
+              "0",
+              "Linear",
+              "180°"
+            ],
+            [
+              "AB₃ (BCl₃)",
+              "3",
+              "0",
+              "Trigonal planar",
+              "120°"
+            ],
+            [
+              "AB₄ (CH₄)",
+              "4",
+              "0",
+              "Tetrahedral",
+              "109°28'"
+            ],
+            [
+              "AB₅ (PCl₅)",
+              "5",
+              "0",
+              "Trigonal bipyramidal",
+              "90°, 120°"
+            ],
+            [
+              "AB₆ (SF₆)",
+              "6",
+              "0",
+              "Octahedral",
+              "90°, 180°"
+            ],
+            [
+              "AB₃E (NH₃)",
+              "3",
+              "1",
+              "Pyramidal",
+              "107°"
+            ],
+            [
+              "AB₂E₂ (H₂O)",
+              "2",
+              "2",
+              "Angular (bent)",
+              "104.5°"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "cb05",
+        "label": "Hybridisation",
+        "type": "table",
+        "table": {
+          "headers": [
+            "Type",
+            "Orbitals Mixed",
+            "Shape",
+            "Bond Angle",
+            "s%",
+            "Example"
+          ],
+          "rows": [
+            [
+              "sp",
+              "1s + 1p",
+              "Linear",
+              "180°",
+              "50%",
+              "BeCl₂"
+            ],
+            [
+              "sp²",
+              "1s + 2p",
+              "Trigonal planar",
+              "120°",
+              "33.3%",
+              "BCl₃, BF₃"
+            ],
+            [
+              "sp³",
+              "1s + 3p",
+              "Tetrahedral",
+              "109°28'",
+              "25%",
+              "CH₄, NH₃"
+            ],
+            [
+              "sp³d",
+              "1s+3p+1d",
+              "Trigonal bipyramidal",
+              "90°,120°",
+              "20%",
+              "PCl₅"
+            ],
+            [
+              "sp³d²",
+              "1s+3p+2d",
+              "Octahedral",
+              "90°,180°",
+              "16.7%",
+              "SF₆"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "cb06",
+        "label": "Molecular Orbital Theory & Bond Order",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Bond order formula",
+            "latex": "BO = \\dfrac{\\text{bonding e}^- - \\text{antibonding e}^-}{2}"
+          },
+          {
+            "sub": "N₂ electron config",
+            "latex": "\\sigma 1s^2\\,\\sigma^*1s^2\\,\\sigma 2s^2\\,\\sigma^*2s^2\\,(\\pi 2p_x^2=\\pi 2p_y^2)\\,\\sigma 2p_z^2"
+          },
+          {
+            "sub": "N₂ bond order",
+            "latex": "BO = \\dfrac{10-4}{2} = 3 \\quad\\text{(diamagnetic)}"
+          },
+          {
+            "sub": "O₂ electron config",
+            "latex": "\\sigma 1s^2\\,\\sigma^*1s^2\\,\\sigma 2s^2\\,\\sigma^*2s^2\\,\\sigma 2p^2\\,(\\pi 2p^2=\\pi 2p^2)\\,(\\pi^*2p^1,\\pi^*2p^1)"
+          },
+          {
+            "sub": "O₂ bond order",
+            "latex": "BO = \\dfrac{10-6}{2} = 2 \\quad\\text{(paramagnetic — 2 unpaired e⁻)}"
+          }
+        ]
+      },
+      {
+        "id": "cb07",
+        "label": "Hydrogen Bond",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Definition",
+            "text": "Weak electrostatic attraction between partially +ve H and highly electronegative atom (F, O, N)"
+          },
+          {
+            "sub": "Intermolecular H-bond",
+            "text": "Between different molecules. Eg: NH₃, H₂O, HF — raises boiling point"
+          },
+          {
+            "sub": "Intramolecular H-bond",
+            "text": "Within same molecule. Eg: o-nitrophenol, o-hydroxy benzaldehyde — lowers boiling point"
+          },
+          {
+            "sub": "H₂O > HF in H-bonding",
+            "text": "H₂O forms more H-bonds (2 per molecule) than HF (1 per molecule) → higher boiling point"
+          },
+          {
+            "sub": "CO₂ dipole moment",
+            "text": "Zero (linear; bond moments cancel)"
+          },
+          {
+            "sub": "H₂O dipole moment",
+            "text": "Non-zero (angular; bond moments do not cancel)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "States of Matter",
+    "id": "states",
+    "topics": [
+      {
+        "id": "st01",
+        "label": "Gas Laws",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Boyle's law",
+            "latex": "PV = \\text{const} \\quad\\text{(T constant)} \\Rightarrow P_1V_1 = P_2V_2"
+          },
+          {
+            "sub": "Charles' law",
+            "latex": "\\dfrac{V}{T} = \\text{const} \\quad\\text{(P constant)}"
+          },
+          {
+            "sub": "Ideal gas equation",
+            "latex": "PV = nRT \\quad\\text{(R = 8.314 J/K·mol)}"
+          },
+          {
+            "sub": "Kinetic gas equation",
+            "latex": "PV = \\dfrac{1}{3}Mn\\overline{u^2}"
+          },
+          {
+            "sub": "Molar mass & density",
+            "latex": "M_0 \\propto d \\quad\\Rightarrow M_0 = 2 \\times VD"
+          },
+          {
+            "sub": "Vapour density",
+            "latex": "VD = \\dfrac{M_0}{2}"
+          },
+          {
+            "sub": "STP conditions",
+            "latex": "T = 273.15\\,\\text{K},\\; P = 1\\,\\text{atm}"
+          },
+          {
+            "sub": "Gram molar volume",
+            "text": "1 mole of any gas = 22.4 L at STP"
+          },
+          {
+            "sub": "Boltzmann constant",
+            "latex": "k_B = \\dfrac{R}{N_A} = 1.38\\times10^{-23}\\,\\text{J/K·molecule}"
+          },
+          {
+            "sub": "Compressibility factor",
+            "latex": "Z = \\dfrac{PV}{nRT} \\quad\\text{(Z=1 for ideal gas)}"
+          }
+        ]
+      },
+      {
+        "id": "st02",
+        "label": "Molecular Speeds",
+        "type": "list",
+        "items": [
+          {
+            "sub": "RMS speed",
+            "latex": "u_{rms} = \\sqrt{\\dfrac{3RT}{M}} = \\sqrt{\\dfrac{3P}{d}}"
+          },
+          {
+            "sub": "Average speed",
+            "latex": "u_{avg} = \\sqrt{\\dfrac{8RT}{\\pi M}} = \\sqrt{\\dfrac{8P}{\\pi d}}"
+          },
+          {
+            "sub": "Most probable speed",
+            "latex": "u_{mp} = \\sqrt{\\dfrac{2RT}{M}} = \\sqrt{\\dfrac{2P}{d}}"
+          },
+          {
+            "sub": "Speed ratio",
+            "latex": "u_{mp} : u_{avg} : u_{rms} = 1 : 1.128 : 1.224"
+          },
+          {
+            "sub": "KE per molecule",
+            "latex": "KE = \\dfrac{3}{2}k_BT"
+          },
+          {
+            "sub": "KE per mole",
+            "latex": "KE = \\dfrac{3}{2}RT"
+          },
+          {
+            "sub": "KE of n moles",
+            "latex": "KE = \\dfrac{3}{2}nRT"
+          }
+        ]
+      },
+      {
+        "id": "st03",
+        "label": "Graham's Law & Dalton's Law",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Graham's law",
+            "latex": "\\dfrac{r_1}{r_2} = \\sqrt{\\dfrac{M_2}{M_1}} = \\sqrt{\\dfrac{d_2}{d_1}} = \\sqrt{\\dfrac{VD_2}{VD_1}}"
+          },
+          {
+            "sub": "Rate of diffusion",
+            "latex": "r = \\dfrac{V}{t} \\quad\\text{(volume per unit time)}"
+          },
+          {
+            "sub": "Time ratio",
+            "latex": "\\dfrac{t_1}{t_2} = \\sqrt{\\dfrac{M_1}{M_2}}"
+          },
+          {
+            "sub": "Dalton's law",
+            "latex": "P_{total} = P_1 + P_2 + P_3 + \\cdots"
+          },
+          {
+            "sub": "Partial pressure",
+            "latex": "P_i = X_i \\times P_{total} \\quad\\text{(X = mole fraction)}"
+          },
+          {
+            "sub": "Dry gas pressure",
+            "latex": "P_{dry} = P_{total} - \\text{aqueous tension}"
+          },
+          {
+            "sub": "Boyle temperature",
+            "text": "Temperature at which real gas behaves like ideal gas"
+          },
+          {
+            "sub": "Critical temperature (CO₂)",
+            "text": "31.1°C — max temperature at which CO₂ can be liquefied"
+          }
+        ]
+      },
+      {
+        "id": "st04",
+        "label": "Surface Tension & Viscosity",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Surface tension",
+            "latex": "\\gamma = \\dfrac{F}{l} \\quad\\text{Unit: N/m or J/m²}"
+          },
+          {
+            "sub": "Viscosity",
+            "latex": "F = \\eta A \\dfrac{dv}{dz} \\quad\\text{(η = viscosity coefficient)}"
+          },
+          {
+            "sub": "Viscosity SI unit",
+            "text": "N·s·m⁻² (Pa·s); CGS unit: poise. 1 Pa·s = 10 poise"
+          },
+          {
+            "sub": "VdW constant a",
+            "text": "Measures magnitude of attractive forces between molecules"
+          },
+          {
+            "sub": "VdW constant b",
+            "text": "Gives idea about effective size of gas molecule"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Thermodynamics",
+    "id": "thermodynamics",
+    "topics": [
+      {
+        "id": "td01",
+        "label": "Laws of Thermodynamics",
+        "type": "list",
+        "items": [
+          {
+            "sub": "First law",
+            "latex": "\\Delta U = q + w \\quad\\text{(energy conservation)}"
+          },
+          {
+            "sub": "Zeroth law",
+            "text": "If A & B are each in equilibrium with C, then A & B are in equilibrium with each other"
+          },
+          {
+            "sub": "Second law",
+            "text": "All spontaneous processes are irreversible; entropy of system increases in spontaneous processes"
+          },
+          {
+            "sub": "Third law",
+            "text": "Entropy of a pure, perfectly crystalline substance = 0 at absolute zero (0 K)"
+          }
+        ]
+      },
+      {
+        "id": "td02",
+        "label": "Enthalpy & Gibbs Energy",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Gibbs energy",
+            "latex": "G = H - TS \\quad\\Rightarrow \\Delta G = \\Delta H - T\\Delta S"
+          },
+          {
+            "sub": "Spontaneous at all T",
+            "latex": "\\Delta H < 0,\\; \\Delta S > 0 \\Rightarrow \\Delta G < 0 \\text{ always}"
+          },
+          {
+            "sub": "Non-spontaneous at all T",
+            "latex": "\\Delta H > 0,\\; \\Delta S < 0 \\Rightarrow \\Delta G > 0 \\text{ always}"
+          },
+          {
+            "sub": "Spontaneous at high T",
+            "latex": "\\Delta H > 0,\\; \\Delta S > 0 \\Rightarrow \\text{spontaneous when } T\\Delta S > \\Delta H"
+          },
+          {
+            "sub": "Spontaneous at low T",
+            "latex": "\\Delta H < 0,\\; \\Delta S < 0 \\Rightarrow \\text{spontaneous when } |\\Delta H| > T|\\Delta S|"
+          },
+          {
+            "sub": "Entropy change",
+            "latex": "\\Delta S = \\dfrac{q_{rev}}{T} \\quad\\text{Unit: J/mol·K}"
+          },
+          {
+            "sub": "Cp − Cv relationship",
+            "latex": "C_P - C_V = R"
+          }
+        ]
+      },
+      {
+        "id": "td03",
+        "label": "Hess's Law & Enthalpies",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Hess's law",
+            "text": "Total heat change in a reaction is same whether it occurs in one step or several steps"
+          },
+          {
+            "sub": "Isothermal reversible work",
+            "latex": "W_{rev} = -2.303\\,nRT\\log\\dfrac{V_2}{V_1} = -2.303\\,nRT\\log\\dfrac{P_1}{P_2}"
+          },
+          {
+            "sub": "Enthalpy of formation",
+            "text": "Heat absorbed/evolved when 1 mole of substance is formed from constituent elements in standard state"
+          },
+          {
+            "sub": "Enthalpy of combustion",
+            "text": "Heat evolved when 1 mole of substance is completely burnt in excess O₂. Eg: C(s)+O₂(g)→CO₂(g); ΔH = −393.5 kJ"
+          },
+          {
+            "sub": "Enthalpy of sublimation",
+            "text": "Heat to convert 1 mole solid → gas without decomposition. Eg: Na(s)→Na(g); ΔH°=108.4 kJ/mol"
+          },
+          {
+            "sub": "Exothermic",
+            "text": "Heat is liberated; ΔH < 0"
+          },
+          {
+            "sub": "Endothermic",
+            "text": "Heat is absorbed; ΔH > 0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Chemical Equilibrium & Acids-Bases",
+    "id": "equilibrium",
+    "topics": [
+      {
+        "id": "eq01",
+        "label": "Le Chatelier's Principle",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Statement",
+            "text": "If system at equilibrium is subjected to change in concentration, T or P, equilibrium shifts to nullify the effect"
+          },
+          {
+            "sub": "Increase reactants",
+            "text": "Equilibrium shifts forward"
+          },
+          {
+            "sub": "Increase products",
+            "text": "Equilibrium shifts backward"
+          },
+          {
+            "sub": "Increase pressure",
+            "text": "Equilibrium shifts towards side with fewer moles of gas"
+          },
+          {
+            "sub": "Δn = 0",
+            "text": "Pressure has no effect"
+          },
+          {
+            "sub": "Increase temperature",
+            "text": "Favours endothermic reaction"
+          },
+          {
+            "sub": "Decrease temperature",
+            "text": "Favours exothermic reaction"
+          }
+        ]
+      },
+      {
+        "id": "eq02",
+        "label": "Haber's Process — NH₃",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Reaction",
+            "latex": "N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)\\;\\; \\Delta H = -92\\,\\text{kJ}"
+          },
+          {
+            "sub": "Pressure",
+            "text": "200 atm (high pressure — forward reaction has fewer moles)"
+          },
+          {
+            "sub": "Temperature",
+            "text": "725–775 K (optimum — low T favours exothermic, but too slow)"
+          },
+          {
+            "sub": "Catalyst",
+            "text": "Fe (powdered)"
+          },
+          {
+            "sub": "Promoter",
+            "text": "Mo or (K₂O + Al₂O₃)"
+          }
+        ]
+      },
+      {
+        "id": "eq03",
+        "label": "Contact Process — SO₃",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Reaction",
+            "latex": "2SO_2(g) + O_2(g) \\rightleftharpoons 2SO_3(g)\\;\\; \\Delta H = -189\\,\\text{kJ}"
+          },
+          {
+            "sub": "Pressure",
+            "text": "1.5–1.7 atm (high pressure not used — towers corrode)"
+          },
+          {
+            "sub": "Temperature",
+            "text": "673 K (optimum)"
+          },
+          {
+            "sub": "Catalyst",
+            "text": "V₂O₅ or platinised asbestos"
+          }
+        ]
+      },
+      {
+        "id": "eq04",
+        "label": "Acid-Base Theories",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Bronsted-Lowry acid",
+            "text": "Proton donor. Eg: HCl, H₃PO₄, CH₃COOH"
+          },
+          {
+            "sub": "Bronsted-Lowry base",
+            "text": "Proton acceptor. Eg: H₂O, HSO₄⁻, HCO₃⁻"
+          },
+          {
+            "sub": "Conjugate acid-base pair",
+            "text": "Species differing by one proton. HCl/Cl⁻, H₂O/H₃O⁺"
+          },
+          {
+            "sub": "Lewis acid",
+            "text": "Electron pair acceptor. Eg: BF₃, AlCl₃, SiF₄, CO₂, SO₃, simple cations (Ag⁺, Fe³⁺)"
+          },
+          {
+            "sub": "Lewis base",
+            "text": "Electron pair donor. Eg: NH₃, H₂O, OH⁻, CN⁻, F⁻"
+          },
+          {
+            "sub": "Neutralisation (Lewis)",
+            "text": "Formation of coordinate covalent bond between Lewis acid and Lewis base"
+          }
+        ]
+      },
+      {
+        "id": "eq05",
+        "label": "pH, pOH & Buffer Solutions",
+        "type": "list",
+        "items": [
+          {
+            "sub": "pH definition",
+            "latex": "pH = -\\log[H^+]"
+          },
+          {
+            "sub": "pOH definition",
+            "latex": "pOH = -\\log[OH^-]"
+          },
+          {
+            "sub": "At 25°C",
+            "latex": "pH + pOH = 14"
+          },
+          {
+            "sub": "Acidic solution",
+            "latex": "pH < 7,\\; pOH > 7"
+          },
+          {
+            "sub": "Basic solution",
+            "latex": "pH > 7,\\; pOH < 7"
+          },
+          {
+            "sub": "Neutral solution",
+            "latex": "pH = pOH = 7"
+          },
+          {
+            "sub": "Acid buffer",
+            "text": "Weak acid + its salt with strong base. Eg: CH₃COOH + CH₃COONa"
+          },
+          {
+            "sub": "Base buffer",
+            "text": "Weak base + its salt with strong acid. Eg: NH₄OH + NH₄Cl"
+          },
+          {
+            "sub": "Henderson's equation",
+            "latex": "pH = pK_a + \\log\\dfrac{[\\text{salt}]}{[\\text{acid}]}"
+          },
+          {
+            "sub": "Kp & Kc relation",
+            "latex": "K_p = K_c(RT)^{\\Delta n} \\quad\\text{(\\Delta n = moles of gaseous products − reactants)}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Stoichiometry",
+    "id": "stoichiometry",
+    "topics": [
+      {
+        "id": "sto01",
+        "label": "Mole Concept",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Number of moles",
+            "latex": "n = \\dfrac{\\text{mass}}{\\text{molar mass}}"
+          },
+          {
+            "sub": "Mass from moles",
+            "latex": "\\text{mass} = n \\times M"
+          },
+          {
+            "sub": "Molecular formula",
+            "latex": "\\text{MF} = (\\text{EF})_n \\quad\\text{where } n = \\dfrac{M_w}{\\text{EF weight}}"
+          },
+          {
+            "sub": "Molarity",
+            "latex": "M = \\dfrac{W}{GMW} \\times \\dfrac{1000}{V(\\text{mL})}"
+          },
+          {
+            "sub": "Normality",
+            "latex": "N = \\dfrac{W}{GEW} \\times \\dfrac{1000}{V(\\text{mL})}"
+          },
+          {
+            "sub": "GEW (oxalic acid)",
+            "latex": "GEW = \\dfrac{126}{2} = 63\\,\\text{g/equiv}"
+          },
+          {
+            "sub": "Disproportionation",
+            "text": "Same element undergoes both oxidation AND reduction simultaneously (intermediate OS → products with higher and lower OS)"
+          }
+        ]
+      },
+      {
+        "id": "sto02",
+        "label": "Balancing Redox by Ion-Electron Method",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Steps (acidic medium)",
+            "text": "(1) Split into half reactions (2) Balance atoms — add H₂O for O, H⁺ for H (3) Balance charge with e⁻ (4) Multiply to equalize e⁻ (5) Add half reactions"
+          },
+          {
+            "sub": "Steps (basic medium)",
+            "text": "Same as acidic but add OH⁻ and H₂O instead of H⁺"
+          },
+          {
+            "sub": "MnO₄⁻ (acidic)",
+            "latex": "MnO_4^- + 8H^+ + 5e^- \\rightarrow Mn^{2+} + 4H_2O"
+          },
+          {
+            "sub": "Cr₂O₇²⁻ (acidic)",
+            "latex": "Cr_2O_7^{2-} + 14H^+ + 6e^- \\rightarrow 2Cr^{3+} + 7H_2O"
+          },
+          {
+            "sub": "MnO₄⁻ (basic)",
+            "latex": "MnO_4^- + 2H_2O + 3e^- \\rightarrow MnO_2 + 4OH^-"
+          }
+        ]
+      },
+      {
+        "id": "sto03",
+        "label": "Oxidation State Rules",
+        "type": "list",
+        "items": [
+          {
+            "sub": "NaH₂PO₄",
+            "text": "OS of P = +5"
+          },
+          {
+            "sub": "NaHSO₄",
+            "text": "OS of S = +6"
+          },
+          {
+            "sub": "K₂MnO₄",
+            "text": "OS of Mn = +6"
+          },
+          {
+            "sub": "KMnO₄",
+            "text": "OS of Mn = +7"
+          },
+          {
+            "sub": "Na₂S₂O₃",
+            "text": "Average OS of S = +2"
+          },
+          {
+            "sub": "Fe₃O₄",
+            "text": "Average OS of Fe = +8/3 (mix of FeO + Fe₂O₃)"
+          },
+          {
+            "sub": "NaBH₄",
+            "text": "OS of B = +3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Hydrogen & Its Compounds",
+    "id": "hydrogen",
+    "topics": [
+      {
+        "id": "h01",
+        "label": "Preparation of H₂O₂",
+        "type": "list",
+        "items": [
+          {
+            "sub": "From BaO₂",
+            "latex": "BaO_2\\cdot8H_2O + H_2SO_4 \\rightarrow BaSO_4 + H_2O_2 + 8H_2O"
+          },
+          {
+            "sub": "Auto-oxidation method",
+            "text": "2-alkyl anthraquinol oxidised by air → 2-alkyl anthraquinone + H₂O₂"
+          },
+          {
+            "sub": "From peroxodisulphuric acid",
+            "latex": "2H_2SO_4 \\xrightarrow{\\text{electrolysis}} H_2S_2O_8 \\xrightarrow{\\text{hydrolysis}} H_2O_2 + H_2SO_4"
+          }
+        ]
+      },
+      {
+        "id": "h02",
+        "label": "H₂O₂ — Oxidising & Reducing Properties",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Oxidises PbS (black→white)",
+            "latex": "PbS + 4H_2O_2 \\rightarrow PbSO_4 + 4H_2O"
+          },
+          {
+            "sub": "Oxidises Mn²⁺ (alkaline)",
+            "latex": "Mn^{2+} + 2OH^- + H_2O_2 \\rightarrow MnO_2 + 2H_2O"
+          },
+          {
+            "sub": "Reduces HOCl",
+            "latex": "HOCl + H_2O_2 \\rightarrow H_3O^+ + Cl^- + O_2"
+          },
+          {
+            "sub": "Reduces I₂ (basic)",
+            "latex": "I_2 + H_2O_2 + 2OH^- \\rightarrow 2I^- + 2H_2O + O_2"
+          }
+        ]
+      },
+      {
+        "id": "h03",
+        "label": "Hardness Removal",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Calgon method",
+            "text": "Sodium hexametaphosphate (Na₆P₆O₁₈). Ca²⁺ and Mg²⁺ sequestered by forming soluble complex"
+          },
+          {
+            "sub": "Ion exchange (Zeolite)",
+            "latex": "2NaZ + M^{2+} \\rightarrow MZ_2 + 2Na^+ \\quad\\text{(M = Ca, Mg)}"
+          },
+          {
+            "sub": "Regeneration of zeolite",
+            "latex": "MZ_2 + 2NaCl \\rightarrow 2NaZ + MCl_2"
+          },
+          {
+            "sub": "Zeolite/Permutit",
+            "text": "Hydrated sodium aluminium silicate (NaAlSiO₄), written as NaZ"
+          }
+        ]
+      },
+      {
+        "id": "h04",
+        "label": "Hydride Classification",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Ionic/saline hydrides",
+            "text": "Formed by active metals (Group 1 & 2). Eg: NaH, CaH₂"
+          },
+          {
+            "sub": "Covalent/molecular hydrides",
+            "text": "Formed by p-block elements. Eg: CH₄, NH₃, H₂O, HF"
+          },
+          {
+            "sub": "Electron-deficient hydrides",
+            "text": "Too few electrons for Lewis structure. Lewis acids. Eg: B₂H₆ (diborane), Group 13 hydrides"
+          },
+          {
+            "sub": "Electron-precise hydrides",
+            "text": "Exact electrons for Lewis structure. Eg: CH₄, Group 14. Tetrahedral shape."
+          },
+          {
+            "sub": "Electron-rich hydrides",
+            "text": "Excess lone pair electrons. Lewis bases. Eg: NH₃(1 lp), H₂O(2 lp), HF(3 lp)"
+          },
+          {
+            "sub": "Metallic/non-stoichiometric",
+            "text": "Formed by d-block and f-block metals. Variable composition."
+          }
+        ]
+      },
+      {
+        "id": "h05",
+        "label": "Uses of Hydrogen & D₂O",
+        "type": "list",
+        "items": [
+          {
+            "sub": "H₂ as fuel",
+            "text": "Releases large heat; less pollutant than petrol; used in rockets, fuel cells, welding (oxy-H₂ torch)"
+          },
+          {
+            "sub": "D₂O uses",
+            "text": "(1) Moderator in nuclear reactor (2) Exchange reactions to study reaction mechanism"
+          },
+          {
+            "sub": "D₂O₂ preparation",
+            "latex": "K_2S_2O_8 + 2D_2O \\rightarrow D_2O_2 + 2KDSO_4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "S-Block Elements (Groups 1 & 2)",
+    "id": "sblock",
+    "topics": [
+      {
+        "id": "sb01",
+        "label": "Alkali Metals — Key Facts",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Config",
+            "latex": "ns^1 \\quad\\text{(Group 1)}"
+          },
+          {
+            "sub": "Density order of Group 1",
+            "latex": "Li < K < Na < Rb < Cs \\quad\\text{(K anomalous — large atomic size)}"
+          },
+          {
+            "sub": "Not found free",
+            "text": "Highly electropositive; readily lose 1 electron → M⁺ ions"
+          },
+          {
+            "sub": "Solvay process limitation",
+            "text": "Cannot make K₂CO₃ — KHCO₃ is too soluble to be precipitated, unlike NaHCO₃"
+          }
+        ]
+      },
+      {
+        "id": "sb02",
+        "label": "Castner-Kellner Process (NaOH)",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Electrolysis of brine",
+            "text": "Carbon anode, mercury cathode"
+          },
+          {
+            "sub": "At anode",
+            "latex": "2Cl^- \\rightarrow Cl_2 + 2e^-"
+          },
+          {
+            "sub": "At cathode",
+            "latex": "Na^+ + e^- \\xrightarrow{Hg} Na\\text{-}Hg \\text{ (amalgam)}"
+          },
+          {
+            "sub": "Amalgam + H₂O",
+            "latex": "2Na\\text{-}Hg + 2H_2O \\rightarrow 2NaOH + 2Hg + H_2"
+          }
+        ]
+      },
+      {
+        "id": "sb03",
+        "label": "Solvay Process (Na₂CO₃)",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Step 1",
+            "latex": "2NH_3 + H_2O + CO_2 \\rightarrow (NH_4)_2CO_3"
+          },
+          {
+            "sub": "Step 2",
+            "latex": "(NH_4)_2CO_3 + H_2O + CO_2 \\rightarrow 2NH_4HCO_3"
+          },
+          {
+            "sub": "Step 3",
+            "latex": "NH_4HCO_3 + NaCl \\rightarrow NH_4Cl + NaHCO_3\\downarrow"
+          },
+          {
+            "sub": "Step 4",
+            "latex": "2NaHCO_3 \\xrightarrow{\\Delta} Na_2CO_3 + CO_2 + H_2O"
+          },
+          {
+            "sub": "Step 5 (NH₃ recovery)",
+            "latex": "Ca(OH)_2 + 2NH_4Cl \\rightarrow 2NH_3 + 2H_2O + CaCl_2"
+          },
+          {
+            "sub": "Overall",
+            "latex": "2NaCl + CaCO_3 \\rightarrow Na_2CO_3 + CaCl_2"
+          }
+        ]
+      },
+      {
+        "id": "sb04",
+        "label": "Important Compounds",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Plaster of Paris",
+            "latex": "2(CaSO_4\\cdot2H_2O) \\xrightarrow{393K} 2(CaSO_4)\\cdot H_2O + 3H_2O"
+          },
+          {
+            "sub": "Dead burnt plaster",
+            "text": "Anhydrous CaSO₄ formed above 393 K"
+          },
+          {
+            "sub": "Washing soda",
+            "text": "Na₂CO₃·10H₂O. Loses 9H₂O on moderate heating → monohydrate. Loses all H₂O above 373K → soda ash"
+          },
+          {
+            "sub": "Milk of magnesia",
+            "text": "Suspension of Mg(OH)₂ in water — used as antacid"
+          },
+          {
+            "sub": "Quick lime uses",
+            "text": "Manufacture of cement, sodium carbonate, sugar purification, dye stuffs"
+          }
+        ]
+      },
+      {
+        "id": "sb05",
+        "label": "Biological Roles of s-Block Elements",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Na⁺",
+            "text": "Found mainly in blood plasma. Transmits nerve signals; regulates water flow across cell membranes; transports sugars and amino acids into cells"
+          },
+          {
+            "sub": "K⁺",
+            "text": "Found mainly within cell fluids. Activates enzymes; participates in ATP production from glucose; transmits nerve signals"
+          },
+          {
+            "sub": "Mg²⁺",
+            "text": "Cofactor for all enzymes using ATP in phosphate transfer; central atom of chlorophyll (light absorption in plants)"
+          },
+          {
+            "sub": "Ca²⁺",
+            "text": "99% in bones and teeth; neuromuscular function; blood coagulation; regulated at ~100 mg/L in plasma by calcitonin and parathyroid hormone"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "P-Block Elements — Group 13 (Boron Family)",
+    "id": "pblock13",
+    "topics": [
+      {
+        "id": "pb01",
+        "label": "Key Compounds & Facts",
+        "type": "list",
+        "items": [
+          {
+            "sub": "General config",
+            "latex": "ns^2 np^1"
+          },
+          {
+            "sub": "Common OS",
+            "text": "+3 (stability decreases down the group due to inert pair effect)"
+          },
+          {
+            "sub": "Inert pair effect",
+            "text": "Reluctance of ns² electrons to participate in bond formation. Due to this: Tl shows +1, Pb shows +2, Bi shows +3 as stable OS"
+          },
+          {
+            "sub": "Borax",
+            "latex": "Na_2B_4O_7\\cdot10H_2O"
+          },
+          {
+            "sub": "Colemanite",
+            "latex": "Ca_2B_6O_{11}\\cdot5H_2O"
+          },
+          {
+            "sub": "Orthoboric acid",
+            "latex": "H_3BO_3"
+          },
+          {
+            "sub": "Borazole/Borazine",
+            "latex": "B_3N_3H_6 \\quad\\text{(inorganic benzene)}"
+          }
+        ]
+      },
+      {
+        "id": "pb02",
+        "label": "Aluminium — Important Reactions",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Thermite reaction",
+            "latex": "Fe_2O_3 + 2Al \\rightarrow Al_2O_3 + 2Fe + \\text{heat}"
+          },
+          {
+            "sub": "Electron-deficient hydrides",
+            "text": "Group 13 hydrides (Eg: B₂H₆ — diborane) act as Lewis acids due to incomplete octet"
+          },
+          {
+            "sub": "Compounds with empty p-orbital",
+            "text": "BF₃, BCl₃, AlCl₃ — Lewis acids due to incomplete octet"
+          },
+          {
+            "sub": "Compounds with vacant d-orbital",
+            "text": "SiF₄, SnCl₄ — Lewis acids due to expansion of octet"
+          },
+          {
+            "sub": "Al₂O₃ nature",
+            "text": "Amphoteric (reacts with both acids and bases)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Environmental Chemistry",
+    "id": "enviro",
+    "topics": [
+      {
+        "id": "ev01",
+        "label": "Key Terms & Definitions",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Pollutant",
+            "text": "Substance present in nature that causes pollution"
+          },
+          {
+            "sub": "Contaminant",
+            "text": "Substance not found in nature but released by human activity causing pollution"
+          },
+          {
+            "sub": "COD (Chemical Oxygen Demand)",
+            "text": "Amount of O₂ required to oxidise organic substances present in polluted water"
+          },
+          {
+            "sub": "BOD (Biochemical Oxygen Demand)",
+            "text": "Amount of O₂ used by microorganisms in water during 5 days at 20°C"
+          },
+          {
+            "sub": "BOD values",
+            "text": "Clean water ≈ 1 ppm | Municipal sewage ≈ 100–4000 ppm | Polluted water ≈ 17 ppm"
+          },
+          {
+            "sub": "Sink",
+            "text": "Medium that reacts with a pollutant. Eg: Oceans are important sinks for CO₂"
+          },
+          {
+            "sub": "TLV (Threshold Limit Value)",
+            "text": "Permissible level of toxic pollutant in atmosphere that affects a person when exposed for 7–8 hours/day"
+          },
+          {
+            "sub": "Receptor",
+            "text": "Medium affected by a pollutant. Eg: eye irritation caused by smoke"
+          },
+          {
+            "sub": "Speciation",
+            "text": "Detection of different chemical forms of inorganic/organic compounds in the environment causing pollution"
+          }
+        ]
+      },
+      {
+        "id": "ev02",
+        "label": "Greenhouse Effect & Acid Rain",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Greenhouse effect",
+            "text": "Increase in temperature of earth's surface due to CO₂, ozone, CFCs and water vapour in troposphere"
+          },
+          {
+            "sub": "Effects of GH effect",
+            "text": "(1) Melting of polar ice caps and flooding of low-lying areas (2) Increase in infectious diseases like dengue, malaria, yellow fever"
+          },
+          {
+            "sub": "Acid rain cause",
+            "text": "SO₂ and NO₂ after oxidation and reaction with water form oxoacids → acid rain. pH < 5.6"
+          },
+          {
+            "sub": "Effects of acid rain",
+            "text": "(1) Washes away nutrients from soil (2) Respiratory ailments (3) Corrodes water pipes — leaches heavy metals like Fe (4) Damages buildings"
+          }
+        ]
+      },
+      {
+        "id": "ev03",
+        "label": "Smog & Ozone",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Classical smog",
+            "text": "Mixture of smoke, fog and sulphur dioxide"
+          },
+          {
+            "sub": "Photochemical smog components",
+            "text": "Ozone, nitric oxide, acrolein, formaldehyde, peroxyacetyl nitrate (PAN)"
+          },
+          {
+            "sub": "Effects of photochemical smog",
+            "text": "(1) Serious health problems (2) Corrosion of metals, stones, building materials"
+          },
+          {
+            "sub": "PAN",
+            "text": "Peroxyacetyl nitrate — powerful eye irritant"
+          },
+          {
+            "sub": "Ozone hole",
+            "text": "Depletion of ozone layer. Causes skin cancer, cataract, damage to fish production"
+          },
+          {
+            "sub": "Eutrophication",
+            "text": "Excessive growth of algae in water bodies due to over-nutrition from agricultural/industrial waste → leads to drying up of lake"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Organic Chemistry — Basics & Hydrocarbons",
+    "id": "organic",
+    "topics": [
+      {
+        "id": "oc01",
+        "label": "Functional Groups & IUPAC",
+        "type": "table",
+        "table": {
+          "headers": [
+            "Functional Group",
+            "Structure",
+            "Suffix"
+          ],
+          "rows": [
+            [
+              "Alcohol",
+              "-OH",
+              "ol"
+            ],
+            [
+              "Aldehyde",
+              "-CHO",
+              "al"
+            ],
+            [
+              "Ketone",
+              "-CO-",
+              "one"
+            ],
+            [
+              "Carboxylic acid",
+              "-COOH",
+              "oic acid"
+            ],
+            [
+              "Ester",
+              "-COOR",
+              "oate"
+            ],
+            [
+              "Cyanide",
+              "-CN",
+              "nitrile"
+            ],
+            [
+              "Amine",
+              "-NH₂",
+              "amine"
+            ],
+            [
+              "Amide",
+              "-CONH₂",
+              "amide"
+            ],
+            [
+              "Acid halide",
+              "-COX",
+              "oyl halide"
+            ],
+            [
+              "Ether",
+              "R-O-R",
+              "—"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "oc02",
+        "label": "Reaction Intermediates & Effects",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Carbocation stability",
+            "latex": "CH_3^+ < 1° < 2° < 3° \\quad\\text{(3° most stable)}"
+          },
+          {
+            "sub": "Carbocation shape",
+            "text": "Trigonal planar, sp² hybridised"
+          },
+          {
+            "sub": "Heterolytic cleavage",
+            "text": "Forms carbocation (+) and carbanion (−)"
+          },
+          {
+            "sub": "Inductive effect",
+            "text": "Polarisation of σ bond caused by polarisation of adjacent σ bond"
+          },
+          {
+            "sub": "Resonance effect",
+            "text": "Polarity due to interaction of two π bonds or π bond and adjacent lone pair"
+          },
+          {
+            "sub": "Electromeric effect",
+            "text": "Transfer of shared π electrons to one atom of a multiple bond in presence of attacking reagent"
+          },
+          {
+            "sub": "Hyperconjugation",
+            "text": "Delocalisation of σ electrons of C–H bond of alkyl group attached to unsaturated carbon"
+          }
+        ]
+      },
+      {
+        "id": "oc03",
+        "label": "Types of Organic Reactions",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Addition reactions",
+            "text": "Reagent and substrate combine to give a single product"
+          },
+          {
+            "sub": "Substitution reactions",
+            "text": "Atom or group of substrate replaced by another atom/group"
+          },
+          {
+            "sub": "Elimination reactions",
+            "text": "Two or more atoms/groups removed from substrate to form multiple bonds"
+          },
+          {
+            "sub": "Rearrangement reactions",
+            "text": "Less stable species rearranges to more stable species"
+          },
+          {
+            "sub": "Nucleophile",
+            "text": "Reagent with an electron pair (electron-rich species)"
+          },
+          {
+            "sub": "Electrophile",
+            "text": "Electron-seeking reagent (electron-deficient species)"
+          },
+          {
+            "sub": "Lassaigne's test",
+            "text": "Used to detect N, S, halogens, P in organic compounds"
+          },
+          {
+            "sub": "Sodium nitroprusside ionic form",
+            "latex": "[Fe(CN)_5NO]^{2-}"
+          }
+        ]
+      },
+      {
+        "id": "oc04",
+        "label": "Alkanes",
+        "type": "list",
+        "items": [
+          {
+            "sub": "General formula",
+            "latex": "C_nH_{2n+2}"
+          },
+          {
+            "sub": "C–C bond length",
+            "text": "154 pm | C–H bond length: 112 pm"
+          },
+          {
+            "sub": "Sodalime",
+            "text": "NaOH + CaO mixture; used in decarboxylation"
+          },
+          {
+            "sub": "Decarboxylation",
+            "latex": "CH_3CH_2COONa + NaOH \\xrightarrow{CaO,\\Delta} C_2H_6 + Na_2CO_3"
+          },
+          {
+            "sub": "Wurtz reaction",
+            "text": "Alkyl halides + Na in dry ether → higher alkane. Eg: 2CH₃I + 2Na → C₂H₆ + 2NaI"
+          },
+          {
+            "sub": "Pyrolysis",
+            "text": "Decomposition of higher alkanes → lower alkanes + alkenes on strong heating in absence of air"
+          },
+          {
+            "sub": "Aromatization conditions",
+            "text": "773 K, 10–20 atm, Cr₂O₃/V₂O₅/Mo₂O₃ catalyst"
+          },
+          {
+            "sub": "Methane + steam",
+            "latex": "CH_4 + H_2O \\xrightarrow{Ni} CO + 3H_2"
+          }
+        ]
+      },
+      {
+        "id": "oc05",
+        "label": "Alkenes",
+        "type": "list",
+        "items": [
+          {
+            "sub": "General formula",
+            "latex": "C_nH_{2n}"
+          },
+          {
+            "sub": "C=C bond length",
+            "text": "134 pm | Bond enthalpy: 384 kJ/mol"
+          },
+          {
+            "sub": "Hybridisation",
+            "text": "sp² (unsaturated carbon in alkenes)"
+          },
+          {
+            "sub": "Ethanol → ethylene",
+            "latex": "C_2H_5OH \\xrightarrow{\\text{conc. H}_2\\text{SO}_4,\\,170°C} C_2H_4"
+          },
+          {
+            "sub": "Dehydrohalogenation",
+            "text": "Alkyl halide + alcoholic KOH → alkene. Eg: C₂H₅Br + KOH(alc.) → C₂H₄"
+          },
+          {
+            "sub": "Dehalogenation",
+            "text": "Vicinal dihalide + Zn in alcohol → alkene. Eg: CH₂BrCH₂Br + Zn → C₂H₄"
+          },
+          {
+            "sub": "Markovnikov's rule",
+            "text": "In addition of HX to unsymmetrical alkene, H adds to carbon with more H atoms (major product)"
+          },
+          {
+            "sub": "Anti-Markovnikov",
+            "text": "In presence of peroxides, H adds to carbon with fewer H (HBr only)"
+          },
+          {
+            "sub": "Cis alkene from alkyne",
+            "latex": "\\text{Alkyne} + H_2 \\xrightarrow{\\text{Pd-BaSO}_4/\\text{Quinoline}} \\text{cis-alkene (Lindlar's catalyst)}"
+          },
+          {
+            "sub": "Trans alkene from alkyne",
+            "latex": "\\text{Alkyne} + H_2 \\xrightarrow{Na/\\text{liq. NH}_3} \\text{trans-alkene}"
+          },
+          {
+            "sub": "Ozonolysis of ethylene",
+            "latex": "CH_2=CH_2 \\xrightarrow{O_3 \\text{ then } Zn/H_2O} 2HCHO \\text{ (formaldehyde)}"
+          },
+          {
+            "sub": "cis-2-butene dipole moment",
+            "text": "0.33 Debye (non-zero)"
+          },
+          {
+            "sub": "trans-2-butene dipole moment",
+            "text": "Zero (bond moments cancel)"
+          }
+        ]
+      },
+      {
+        "id": "oc06",
+        "label": "Alkynes",
+        "type": "list",
+        "items": [
+          {
+            "sub": "General formula",
+            "latex": "C_nH_{2n-2}"
+          },
+          {
+            "sub": "CaC₂ + H₂O",
+            "latex": "CaC_2 + 2H_2O \\rightarrow Ca(OH)_2 + C_2H_2 \\text{ (acetylene)}"
+          },
+          {
+            "sub": "From 1,2-dibromoethane",
+            "latex": "CH_2Br-CH_2Br \\xrightarrow{\\text{alc. KOH}} C_2H_2 + 2HBr"
+          },
+          {
+            "sub": "From 1,1,2,2-tetrabromoethane",
+            "latex": "CHBr_2-CHBr_2 \\xrightarrow{Zn\\text{ dust}} C_2H_2 + 2ZnBr_2"
+          },
+          {
+            "sub": "Acetylene + HgSO₄",
+            "latex": "C_2H_2 + H_2O \\xrightarrow{1\\%\\,HgSO_4 + 30\\%\\,H_2SO_4,\\,60°C} CH_3CHO \\text{ (acetaldehyde)}"
+          },
+          {
+            "sub": "Acetylene + 2Cl₂",
+            "latex": "C_2H_2 + 2Cl_2 \\rightarrow CHCl_2-CHCl_2 \\text{ (1,1,2,2-tetrachloroethane)}"
+          },
+          {
+            "sub": "Trimerisation",
+            "latex": "3C_2H_2 \\xrightarrow{\\text{red hot Cu tube}} C_6H_6 \\text{ (benzene)}"
+          }
+        ]
+      },
+      {
+        "id": "oc07",
+        "label": "Benzene",
+        "type": "list",
+        "items": [
+          {
+            "sub": "Molecular formula",
+            "latex": "C_6H_6 \\quad\\text{(hybridisation: sp²)}"
+          },
+          {
+            "sub": "From sodium benzoate",
+            "latex": "C_6H_5COONa + NaOH \\xrightarrow{CaO,\\Delta} C_6H_6 + Na_2CO_3"
+          },
+          {
+            "sub": "From phenol",
+            "latex": "C_6H_5OH \\xrightarrow{Zn\\text{ dust}} C_6H_6"
+          },
+          {
+            "sub": "Nitration",
+            "latex": "C_6H_6 + HNO_3 \\xrightarrow{\\text{conc. H}_2SO_4,\\,<60°C} C_6H_5NO_2 \\text{ (nitrobenzene)}"
+          },
+          {
+            "sub": "Nitronium ion",
+            "latex": "NO_2^+ \\quad\\text{(electrophile in nitration)}"
+          },
+          {
+            "sub": "Sulphonation",
+            "latex": "C_6H_6 + \\text{fuming } H_2SO_4 \\rightarrow C_6H_5SO_3H \\text{ (benzene sulphonic acid)}"
+          },
+          {
+            "sub": "Friedel-Crafts alkylation",
+            "latex": "C_6H_6 + RX \\xrightarrow{\\text{anhydrous AlCl}_3} C_6H_5R + HX"
+          },
+          {
+            "sub": "Hydrogenation",
+            "latex": "C_6H_6 + 3H_2 \\xrightarrow{Ni} C_6H_{12} \\text{ (cyclohexane)}"
+          },
+          {
+            "sub": "Addition of Cl₂ (UV light)",
+            "latex": "C_6H_6 + 3Cl_2 \\xrightarrow{UV} C_6H_6Cl_6 \\text{ (BHC / Gammaxane / Lindane)}"
+          },
+          {
+            "sub": "Ozonolysis of benzene",
+            "latex": "C_6H_6 + 3O_3 \\rightarrow \\text{benzene triozonide} \\xrightarrow{Zn/H_2O} \\text{glyoxal}"
+          },
+          {
+            "sub": "Ortho-para directors",
+            "text": "Groups that direct incoming group to ortho & para positions. Eg: -OH, -NH₂, -CH₃, -X"
+          },
+          {
+            "sub": "Meta directors",
+            "text": "Groups that direct incoming group to meta position. Eg: -NO₂, -COOH, -CHO, -CN"
+          }
+        ]
+      }
+    ]
+  }
+]

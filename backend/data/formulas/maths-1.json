@@ -1,0 +1,2120 @@
+[
+    {
+        "chapter": "Functions",
+        "id": "functions",
+        "topics": [
+            {
+                "id": "fn01",
+                "label": "Definitions & Basic Concepts",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Set",
+                        "text": "A well-defined collection of objects."
+                    },
+                    {
+                        "sub": "Function",
+                        "text": "A relation f from A to B associating every element of A to a unique element of B."
+                    },
+                    {
+                        "sub": "Domain & Co-domain",
+                        "text": "For f:A→B, A is the Domain and B is the Co-domain."
+                    },
+                    {
+                        "sub": "Range",
+                        "text": "The set of all images of elements of A in B. Range ⊆ Co-domain."
+                    }
+                ]
+            },
+            {
+                "id": "fn02",
+                "label": "Types of Functions",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "One-One (Injection)",
+                        "latex": "f(a_1)=f(a_2) \\Rightarrow a_1=a_2"
+                    },
+                    {
+                        "sub": "Onto (Surjection)",
+                        "text": "Range = Co-domain"
+                    },
+                    {
+                        "sub": "Bijection",
+                        "text": "A function that is both One-One and Onto."
+                    },
+                    {
+                        "sub": "Inverse Function",
+                        "latex": "f^{-1}(b) = a \\iff f(a) = b"
+                    },
+                    {
+                        "sub": "Even Function",
+                        "latex": "f(-x) = f(x)"
+                    },
+                    {
+                        "sub": "Odd Function",
+                        "latex": "f(-x) = -f(x)"
+                    }
+                ]
+            },
+            {
+                "id": "fn03",
+                "label": "Composition",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Composition (g∘f)",
+                        "latex": "(g \\circ f)(x) = g(f(x))"
+                    },
+                    {
+                        "sub": "Inverse of Comp.",
+                        "latex": "(g \\circ f)^{-1} = f^{-1} \\circ g^{-1}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Mathematical Induction",
+        "id": "math_induction",
+        "topics": [
+            {
+                "id": "mi01",
+                "label": "Standard Summations",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Sum of n terms (Σn)",
+                        "latex": "\\dfrac{n(n+1)}{2}"
+                    },
+                    {
+                        "sub": "Sum of squares (Σn²)",
+                        "latex": "\\dfrac{n(n+1)(2n+1)}{6}"
+                    },
+                    {
+                        "sub": "Sum of cubes (Σn³)",
+                        "latex": "\\left(\\dfrac{n(n+1)}{2}\\right)^2"
+                    }
+                ]
+            },
+            {
+                "id": "mi02",
+                "label": "Progressions",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "AP: nth term & Sum",
+                        "latex": "t_n = a + (n-1)d, \\quad S_n = \\dfrac{n}{2}[2a+(n-1)d]"
+                    },
+                    {
+                        "sub": "GP: nth term & Sum",
+                        "latex": "t_n = ar^{n-1}, \\quad S_n = \\dfrac{a(r^n - 1)}{r - 1}"
+                    },
+                    {
+                        "sub": "GP: Infinite sum",
+                        "latex": "S_\\infty = \\dfrac{a}{1-r} \\quad (|r| < 1)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Matrices & Determinants",
+        "id": "matrices_determinants",
+        "topics": [
+            {
+                "id": "md01",
+                "label": "Basic Definitions",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Order & Trace",
+                        "text": "Order: Matrix with 'm' rows & 'n' cols has order m × n. Trace (Tr): Sum of principal diagonal elements. Tr(A) = a₁₁ + a₂₂ + a₃₃"
+                    }
+                ]
+            },
+            {
+                "id": "md02",
+                "label": "Types of Matrices",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Upper Triangular",
+                        "latex": "a_{ij} = 0 \\text{ for } i > j"
+                    },
+                    {
+                        "sub": "Lower Triangular",
+                        "latex": "a_{ij} = 0 \\text{ for } i < j"
+                    },
+                    {
+                        "sub": "Null / Identity / Diagonal / Scalar",
+                        "text": "All elements 0 (Null), diagonal = 1 (Identity), non-diagonal = 0 (Diagonal), diagonal equal (Scalar)"
+                    }
+                ]
+            },
+            {
+                "id": "md03",
+                "label": "Transpose & Symmetry",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Symmetric",
+                        "latex": "A^T = A"
+                    },
+                    {
+                        "sub": "Skew-Symmetric",
+                        "latex": "A^T = -A"
+                    }
+                ]
+            },
+            {
+                "id": "md04",
+                "label": "Determinants & Adjoint",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Singular Matrix",
+                        "latex": "|A| = 0"
+                    },
+                    {
+                        "sub": "Non-Singular Matrix",
+                        "latex": "|A| \\ne 0"
+                    },
+                    {
+                        "sub": "Inverse",
+                        "latex": "A^{-1} = \\frac{\\text{Adj A}}{|A|} \\quad (|A| \\ne 0)"
+                    },
+                    {
+                        "sub": "Reversal Law",
+                        "latex": "(AB)^{-1} = B^{-1}A^{-1}"
+                    }
+                ]
+            },
+            {
+                "id": "md05",
+                "label": "Rank of a Matrix",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Definition",
+                        "text": "Maximum order of the non-singular square sub-matrices of A."
+                    },
+                    {
+                        "sub": "For 3×3",
+                        "text": "Rank=3 if |A|≠0; Rank=2 if |A|=0 but at least one 2×2 sub-matrix ≠0; Rank=1 if all 2×2 sub-matrices=0; Rank=0 for null matrix."
+                    }
+                ]
+            },
+            {
+                "id": "md06",
+                "label": "System of Linear Equations",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Non-Homogeneous: Unique Solution",
+                        "latex": "\\text{Rank}(A) = \\text{Rank}(AD) = 3"
+                    },
+                    {
+                        "sub": "Non-Homogeneous: Infinite Solutions",
+                        "latex": "\\text{Rank}(A) = \\text{Rank}(AD) < 3"
+                    },
+                    {
+                        "sub": "Non-Homogeneous: No Solution",
+                        "latex": "\\text{Rank}(A) \\ne \\text{Rank}(AD)"
+                    },
+                    {
+                        "sub": "Cramer's Rule",
+                        "latex": "x = \\frac{\\Delta_1}{\\Delta}, \\; y = \\frac{\\Delta_2}{\\Delta}, \\; z = \\frac{\\Delta_3}{\\Delta} \\quad (\\Delta \\ne 0)"
+                    },
+                    {
+                        "sub": "Matrix Inversion Method",
+                        "latex": "X = A^{-1}D"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Addition of Vectors",
+        "id": "vectors_addition",
+        "topics": [
+            {
+                "id": "vec01",
+                "label": "Collinearity & Modulus",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Two Vectors Collinear",
+                        "latex": "\\vec{a} = t\\vec{b} \\quad \\text{or} \\quad \\frac{a_1}{b_1} = \\frac{a_2}{b_2} = \\frac{a_3}{b_3}"
+                    },
+                    {
+                        "sub": "Three Points A,B,C Collinear",
+                        "latex": "\\overrightarrow{AB} = t(\\overrightarrow{AC})"
+                    },
+                    {
+                        "sub": "Modulus",
+                        "latex": "|\\vec{r}| = \\sqrt{x^2 + y^2 + z^2}"
+                    },
+                    {
+                        "sub": "Unit Vector along r",
+                        "latex": "\\hat{r} = \\frac{\\vec{r}}{|\\vec{r}|}"
+                    },
+                    {
+                        "sub": "Unit Vector parallel to r",
+                        "latex": "\\pm \\frac{\\vec{r}}{|\\vec{r}|}"
+                    }
+                ]
+            },
+            {
+                "id": "vec02",
+                "label": "Vector Equations of Lines & Planes",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Line through a, parallel to b",
+                        "latex": "\\vec{r} = \\vec{a} + t\\vec{b}"
+                    },
+                    {
+                        "sub": "Line joining 2 points a, b",
+                        "latex": "\\vec{r} = (1 - t)\\vec{a} + t\\vec{b}"
+                    },
+                    {
+                        "sub": "Plane through 3 points a, b, c",
+                        "latex": "\\vec{r} = (1 - s - t)\\vec{a} + s\\vec{b} + t\\vec{c}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Product of Vectors",
+        "id": "vectors_product",
+        "topics": [
+            {
+                "id": "p01",
+                "label": "Dot (Scalar) Product",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Definition",
+                        "latex": "\\vec{a} \\cdot \\vec{b} = a_1 b_1 + a_2 b_2 + a_3 b_3"
+                    },
+                    {
+                        "sub": "Angle (θ)",
+                        "latex": "\\cos\\theta = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}|\\,|\\vec{b}|}"
+                    },
+                    {
+                        "sub": "Perpendicular Condition",
+                        "latex": "\\vec{a} \\cdot \\vec{b} = 0 \\iff \\vec{a} \\perp \\vec{b}"
+                    },
+                    {
+                        "sub": "Base Vectors",
+                        "latex": "\\hat{i}\\cdot\\hat{i} = 1, \\quad \\hat{i}\\cdot\\hat{j} = 0"
+                    }
+                ]
+            },
+            {
+                "id": "p02",
+                "label": "Cross (Vector) Product",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Definition",
+                        "latex": "\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ a_1 & a_2 & a_3 \\\\ b_1 & b_2 & b_3 \\end{vmatrix}"
+                    },
+                    {
+                        "sub": "Magnitude",
+                        "latex": "|\\vec{a} \\times \\vec{b}| = |\\vec{a}|\\,|\\vec{b}| \\sin\\theta"
+                    },
+                    {
+                        "sub": "Parallel Condition",
+                        "latex": "\\vec{a} \\times \\vec{b} = \\vec{0} \\iff \\vec{a} \\parallel \\vec{b}"
+                    },
+                    {
+                        "sub": "Base Vectors",
+                        "latex": "\\hat{i} \\times \\hat{i} = \\vec{0}, \\quad \\hat{i} \\times \\hat{j} = \\hat{k}, \\quad \\hat{j} \\times \\hat{i} = -\\hat{k}"
+                    }
+                ]
+            },
+            {
+                "id": "p03",
+                "label": "Areas & Unit Normals",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Area of Triangle (adj. sides a, b)",
+                        "latex": "\\frac{1}{2} |\\vec{a} \\times \\vec{b}|"
+                    },
+                    {
+                        "sub": "Area of Triangle (vertices A,B,C)",
+                        "latex": "\\frac{1}{2} |\\overrightarrow{AB} \\times \\overrightarrow{AC}|"
+                    },
+                    {
+                        "sub": "Area of Parallelogram (sides a, b)",
+                        "latex": "|\\vec{a} \\times \\vec{b}|"
+                    },
+                    {
+                        "sub": "Area of Quadrilateral (diagonals d₁, d₂)",
+                        "latex": "\\frac{1}{2} |\\vec{d}_1 \\times \\vec{d}_2|"
+                    },
+                    {
+                        "sub": "Unit Normal to plane PQR",
+                        "latex": "\\pm \\frac{\\overrightarrow{PQ} \\times \\overrightarrow{PR}}{|\\overrightarrow{PQ} \\times \\overrightarrow{PR}|}"
+                    }
+                ]
+            },
+            {
+                "id": "p04",
+                "label": "Triple Products & Volumes",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Scalar Triple Product",
+                        "latex": "[\\vec{a}\\ \\vec{b}\\ \\vec{c}] = \\vec{a} \\cdot (\\vec{b} \\times \\vec{c})"
+                    },
+                    {
+                        "sub": "Coplanar Condition",
+                        "latex": "[\\vec{a}\\ \\vec{b}\\ \\vec{c}] = 0"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Trigonometry (Basics)",
+        "id": "trigonometry_basics",
+        "topics": [
+            {
+                "id": "tr06",
+                "label": "Pythagorean Identities",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Identity 1",
+                        "latex": "\\sin^2\\theta + \\cos^2\\theta = 1"
+                    },
+                    {
+                        "sub": "Identity 2",
+                        "latex": "\\sec^2\\theta - \\tan^2\\theta = 1 \\Rightarrow (\\sec\\theta + \\tan\\theta)(\\sec\\theta - \\tan\\theta)=1"
+                    },
+                    {
+                        "sub": "Identity 3",
+                        "latex": "\\csc^2\\theta - \\cot^2\\theta = 1 \\Rightarrow (\\csc\\theta + \\cot\\theta)(\\csc\\theta - \\cot\\theta)=1"
+                    }
+                ]
+            },
+            {
+                "id": "tr07",
+                "label": "Standard Values Table",
+                "type": "formula",
+                "latex": "\\begin{array}{c|cccccccc} Angle & 0^\\circ & 30^\\circ & 45^\\circ & 60^\\circ & 90^\\circ & 180^\\circ & 270^\\circ & 360^\\circ \\\\ \\hline \\sin & 0 & \\frac{1}{2} & \\frac{1}{\\sqrt{2}} & \\frac{\\sqrt{3}}{2} & 1 & 0 & -1 & 0 \\\\ \\cos & 1 & \\frac{\\sqrt{3}}{2} & \\frac{1}{\\sqrt{2}} & \\frac{1}{2} & 0 & -1 & 0 & 1 \\\\ \\tan & 0 & \\frac{1}{\\sqrt{3}} & 1 & \\sqrt{3} & \\infty & 0 & \\infty & 0 \\end{array}"
+            },
+            {
+                "id": "tr05",
+                "label": "Even & Odd Functions (Negative Angles)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin(-θ)",
+                        "latex": "\\sin(-\\theta) = -\\sin\\theta"
+                    },
+                    {
+                        "sub": "csc(-θ)",
+                        "latex": "\\csc(-\\theta) = -\\csc\\theta"
+                    },
+                    {
+                        "sub": "cos(-θ)",
+                        "latex": "\\cos(-\\theta) = \\cos\\theta"
+                    },
+                    {
+                        "sub": "sec(-θ)",
+                        "latex": "\\sec(-\\theta) = \\sec\\theta"
+                    },
+                    {
+                        "sub": "tan(-θ)",
+                        "latex": "\\tan(-\\theta) = -\\tan\\theta"
+                    },
+                    {
+                        "sub": "cot(-θ)",
+                        "latex": "\\cot(-\\theta) = -\\cot\\theta"
+                    }
+                ]
+            },
+            {
+                "id": "tr04",
+                "label": "Allied Angles (Phase Shifts)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "90° & 270° shifts",
+                        "latex": "90^\\circ \\pm \\theta,\\; 270^\\circ \\pm \\theta \\Rightarrow \\sin \\leftrightarrow \\cos,\\; \\tan \\leftrightarrow \\cot,\\; \\sec \\leftrightarrow \\csc"
+                    },
+                    {
+                        "sub": "180° & 360° shifts",
+                        "text": "180° ± θ, 360° ± θ ⇒ No change in function names"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Periodicity & Extreme Values",
+        "id": "periodicity_extreme",
+        "topics": [
+            {
+                "id": "trpe01",
+                "label": "Periodic Function Definition",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Rule",
+                        "latex": "f(x+k) = f(x) \\Rightarrow f(x) \\text{ is periodic with period } k \\; (k>0, \\text{ least})"
+                    }
+                ]
+            },
+            {
+                "id": "trpe02",
+                "label": "Standard Periods",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin, cos, sec, csc",
+                        "latex": "\\text{Period of } \\sin(ax),\\; \\cos(ax),\\; \\sec(ax),\\; \\csc(ax) = \\frac{2\\pi}{|a|}"
+                    },
+                    {
+                        "sub": "sin x, cos x (basic)",
+                        "latex": "\\text{Period of } \\sin x,\\; \\cos x,\\; \\sec x,\\; \\csc x = 2\\pi"
+                    },
+                    {
+                        "sub": "tan, cot",
+                        "latex": "\\text{Period of } \\tan(ax),\\; \\cot(ax) = \\frac{\\pi}{|a|}"
+                    },
+                    {
+                        "sub": "tan x, cot x (basic)",
+                        "latex": "\\text{Period of } \\tan x,\\; \\cot x = \\pi"
+                    }
+                ]
+            },
+            {
+                "id": "trpe05",
+                "label": "Extreme Values (Max / Min)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Maximum",
+                        "latex": "\\max(a\\cos x + b\\sin x + c) = c + \\sqrt{a^2 + b^2}"
+                    },
+                    {
+                        "sub": "Minimum",
+                        "latex": "\\min(a\\cos x + b\\sin x + c) = c - \\sqrt{a^2 + b^2}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Compound Angles",
+        "id": "compound_angles",
+        "topics": [
+            {
+                "id": "ca01",
+                "label": "Sum & Difference Formulas",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin(A+B)",
+                        "latex": "\\sin(A+B)=\\sin A\\cos B+\\cos A\\sin B"
+                    },
+                    {
+                        "sub": "sin(A-B)",
+                        "latex": "\\sin(A-B)=\\sin A\\cos B-\\cos A\\sin B"
+                    },
+                    {
+                        "sub": "cos(A+B)",
+                        "latex": "\\cos(A+B)=\\cos A\\cos B-\\sin A\\sin B"
+                    },
+                    {
+                        "sub": "cos(A-B)",
+                        "latex": "\\cos(A-B)=\\cos A\\cos B+\\sin A\\sin B"
+                    },
+                    {
+                        "sub": "tan(A+B)",
+                        "latex": "\\tan(A+B)=\\frac{\\tan A+\\tan B}{1-\\tan A\\tan B}"
+                    },
+                    {
+                        "sub": "tan(A-B)",
+                        "latex": "\\tan(A-B)=\\frac{\\tan A-\\tan B}{1+\\tan A\\tan B}"
+                    },
+                    {
+                        "sub": "cot(A+B)",
+                        "latex": "\\cot(A+B)=\\frac{\\cot A\\cot B-1}{\\cot A+\\cot B}"
+                    },
+                    {
+                        "sub": "cot(A-B)",
+                        "latex": "\\cot(A-B)=\\frac{\\cot A\\cot B+1}{\\cot B-\\cot A}"
+                    }
+                ]
+            },
+            {
+                "id": "ca02",
+                "label": "Tangent of 45° ± A",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "tan(π/4 + A)",
+                        "latex": "\\tan\\left(\\frac{\\pi}{4}+A\\right)=\\frac{1+\\tan A}{1-\\tan A}=\\frac{\\cos A+\\sin A}{\\cos A-\\sin A}"
+                    },
+                    {
+                        "sub": "cot(π/4 + A)",
+                        "latex": "\\cot\\left(\\frac{\\pi}{4}+A\\right)=\\frac{\\cot A-1}{\\cot A+1}=\\frac{\\cos A-\\sin A}{\\cos A+\\sin A}"
+                    }
+                ]
+            },
+            {
+                "id": "ca03",
+                "label": "Product of Sum & Difference",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin(A+B)sin(A-B)",
+                        "latex": "\\sin(A+B)\\sin(A-B)=\\sin^2 A-\\sin^2 B=\\cos^2 B-\\cos^2 A"
+                    },
+                    {
+                        "sub": "cos(A+B)cos(A-B)",
+                        "latex": "\\cos(A+B)\\cos(A-B)=\\cos^2 A-\\sin^2 B=\\cos^2 B-\\sin^2 A"
+                    }
+                ]
+            },
+            {
+                "id": "ca04",
+                "label": "Special Values (15° & 75°)",
+                "type": "formula",
+                "latex": "\\begin{array}{c|cc} \\text{Function} & 15^\\circ & 75^\\circ \\\\ \\hline \\sin & \\frac{\\sqrt{3}-1}{2\\sqrt{2}} & \\frac{\\sqrt{3}+1}{2\\sqrt{2}} \\\\ \\cos & \\frac{\\sqrt{3}+1}{2\\sqrt{2}} & \\frac{\\sqrt{3}-1}{2\\sqrt{2}} \\\\ \\tan & 2-\\sqrt{3} & 2+\\sqrt{3} \\\\ \\cot & 2+\\sqrt{3} & 2-\\sqrt{3} \\end{array}"
+            }
+        ]
+    },
+    {
+        "chapter": "Multiple & Submultiple Angles",
+        "id": "multiple_submultiple_angles",
+        "topics": [
+            {
+                "id": "msa01",
+                "label": "Double Angle Formulas",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin 2A",
+                        "latex": "\\sin2A = 2\\sin A \\cos A = \\frac{2\\tan A}{1+\\tan^2 A}"
+                    },
+                    {
+                        "sub": "cos 2A",
+                        "latex": "\\cos2A = \\cos^2 A - \\sin^2 A = 2\\cos^2 A -1 = 1-2\\sin^2 A = \\frac{1-\\tan^2 A}{1+\\tan^2 A}"
+                    },
+                    {
+                        "sub": "tan 2A",
+                        "latex": "\\tan2A = \\frac{2\\tan A}{1-\\tan^2 A}"
+                    },
+                    {
+                        "sub": "cot 2A",
+                        "latex": "\\cot2A = \\frac{\\cot^2 A -1}{2\\cot A}"
+                    }
+                ]
+            },
+            {
+                "id": "msa02",
+                "label": "Half Angle Formulas",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin A (half angle)",
+                        "latex": "\\sin A = 2\\sin\\frac{A}{2}\\cos\\frac{A}{2} = \\frac{2\\tan\\frac{A}{2}}{1+\\tan^2\\frac{A}{2}}"
+                    },
+                    {
+                        "sub": "cos A (half angle)",
+                        "latex": "\\cos A = \\cos^2\\frac{A}{2} - \\sin^2\\frac{A}{2} = 2\\cos^2\\frac{A}{2}-1 = 1-2\\sin^2\\frac{A}{2} = \\frac{1-\\tan^2\\frac{A}{2}}{1+\\tan^2\\frac{A}{2}}"
+                    },
+                    {
+                        "sub": "tan A (half angle)",
+                        "latex": "\\tan A = \\frac{2\\tan\\frac{A}{2}}{1-\\tan^2\\frac{A}{2}}"
+                    },
+                    {
+                        "sub": "cot A (half angle)",
+                        "latex": "\\cot A = \\frac{\\cot^2\\frac{A}{2}-1}{2\\cot\\frac{A}{2}}"
+                    }
+                ]
+            },
+            {
+                "id": "msa03",
+                "label": "Cosine Double & Half Variations",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "1 + cos 2A",
+                        "latex": "1+\\cos2A = 2\\cos^2 A"
+                    },
+                    {
+                        "sub": "1 - cos 2A",
+                        "latex": "1-\\cos2A = 2\\sin^2 A"
+                    },
+                    {
+                        "sub": "1 + cos A",
+                        "latex": "1+\\cos A = 2\\cos^2\\frac{A}{2}"
+                    },
+                    {
+                        "sub": "1 - cos A",
+                        "latex": "1-\\cos A = 2\\sin^2\\frac{A}{2}"
+                    }
+                ]
+            },
+            {
+                "id": "msa04",
+                "label": "Submultiple Angles (via 2A)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin A",
+                        "latex": "\\sin A = \\pm \\sqrt{\\frac{1-\\cos2A}{2}}"
+                    },
+                    {
+                        "sub": "cos A",
+                        "latex": "\\cos A = \\pm \\sqrt{\\frac{1+\\cos2A}{2}}"
+                    },
+                    {
+                        "sub": "tan A",
+                        "latex": "\\tan A = \\pm \\sqrt{\\frac{1-\\cos2A}{1+\\cos2A}}"
+                    }
+                ]
+            },
+            {
+                "id": "msa05",
+                "label": "Submultiple Angles (via A)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin A/2",
+                        "latex": "\\sin\\frac{A}{2} = \\pm \\sqrt{\\frac{1-\\cos A}{2}}"
+                    },
+                    {
+                        "sub": "cos A/2",
+                        "latex": "\\cos\\frac{A}{2} = \\pm \\sqrt{\\frac{1+\\cos A}{2}}"
+                    },
+                    {
+                        "sub": "tan A/2",
+                        "latex": "\\tan\\frac{A}{2} = \\pm \\sqrt{\\frac{1-\\cos A}{1+\\cos A}}"
+                    }
+                ]
+            },
+            {
+                "id": "msa06",
+                "label": "Triple Angle Formulas",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin 3A",
+                        "latex": "\\sin3A = 3\\sin A - 4\\sin^3 A"
+                    },
+                    {
+                        "sub": "cos 3A",
+                        "latex": "\\cos3A = 4\\cos^3 A - 3\\cos A"
+                    },
+                    {
+                        "sub": "tan 3A",
+                        "latex": "\\tan3A = \\frac{3\\tan A - \\tan^3 A}{1-3\\tan^2 A}"
+                    },
+                    {
+                        "sub": "sin A (via A/3)",
+                        "latex": "\\sin A = 3\\sin\\frac{A}{3} - 4\\sin^3\\frac{A}{3}"
+                    },
+                    {
+                        "sub": "cos A (via A/3)",
+                        "latex": "\\cos A = 4\\cos^3\\frac{A}{3} - 3\\cos\\frac{A}{3}"
+                    },
+                    {
+                        "sub": "tan A (via A/3)",
+                        "latex": "\\tan A = \\frac{3\\tan\\frac{A}{3} - \\tan^3\\frac{A}{3}}{1-3\\tan^2\\frac{A}{3}}"
+                    },
+                    {
+                        "sub": "cot A (via A/3)",
+                        "latex": "\\cot A = \\frac{3\\cot\\frac{A}{3} - \\cot^3\\frac{A}{3}}{1-3\\cot^2\\frac{A}{3}}"
+                    }
+                ]
+            },
+            {
+                "id": "msa07",
+                "label": "Componendo – Dividendo Rule",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Rule",
+                        "latex": "\\frac{a}{b} = \\frac{c}{d} \\Rightarrow \\frac{a+b}{a-b} = \\frac{c+d}{c-d}"
+                    }
+                ]
+            },
+            {
+                "id": "msa08",
+                "label": "Special Angles (18°, 36°, 54°, 72°)",
+                "type": "formula",
+                "latex": "\\begin{array}{c|cccc} Angle & 18^\\circ & 36^\\circ & 54^\\circ & 72^\\circ \\\\ \\hline \\sin & \\frac{\\sqrt{5}-1}{4} & \\frac{\\sqrt{10-2\\sqrt{5}}}{4} & \\frac{\\sqrt{5}+1}{4} & \\frac{\\sqrt{10+2\\sqrt{5}}}{4} \\\\ \\cos & \\frac{\\sqrt{10+2\\sqrt{5}}}{4} & \\frac{\\sqrt{5}+1}{4} & \\frac{\\sqrt{10-2\\sqrt{5}}}{4} & \\frac{\\sqrt{5}-1}{4} \\end{array}"
+            }
+        ]
+    },
+    {
+        "chapter": "Transformations (Sum-Product)",
+        "id": "transformations",
+        "topics": [
+            {
+                "id": "trf01",
+                "label": "Product to Sum / Difference",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "2 sinA cosB",
+                        "latex": "2\\sin A\\cos B = \\sin(A+B) + \\sin(A-B)"
+                    },
+                    {
+                        "sub": "2 cosA sinB",
+                        "latex": "2\\cos A\\sin B = \\sin(A+B) - \\sin(A-B)"
+                    },
+                    {
+                        "sub": "2 cosA cosB",
+                        "latex": "2\\cos A\\cos B = \\cos(A+B) + \\cos(A-B)"
+                    },
+                    {
+                        "sub": "2 sinA sinB",
+                        "latex": "2\\sin A\\sin B = \\cos(A-B) - \\cos(A+B)"
+                    },
+                    {
+                        "sub": "-2 sinA sinB",
+                        "latex": "-2\\sin A\\sin B = \\cos(A+B) - \\cos(A-B)"
+                    }
+                ]
+            },
+            {
+                "id": "trf02",
+                "label": "Sum / Difference to Product",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sinC + sinD",
+                        "latex": "\\sin C + \\sin D = 2\\,\\sin\\left(\\frac{C+D}{2}\\right)\\cos\\left(\\frac{C-D}{2}\\right)"
+                    },
+                    {
+                        "sub": "sinC - sinD",
+                        "latex": "\\sin C - \\sin D = 2\\,\\cos\\left(\\frac{C+D}{2}\\right)\\sin\\left(\\frac{C-D}{2}\\right)"
+                    },
+                    {
+                        "sub": "cosC + cosD",
+                        "latex": "\\cos C + \\cos D = 2\\,\\cos\\left(\\frac{C+D}{2}\\right)\\cos\\left(\\frac{C-D}{2}\\right)"
+                    },
+                    {
+                        "sub": "cosC - cosD",
+                        "latex": "\\cos C - \\cos D = -2\\,\\sin\\left(\\frac{C+D}{2}\\right)\\sin\\left(\\frac{C-D}{2}\\right)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Trigonometric Equations",
+        "id": "trigonometric_equations",
+        "topics": [
+            {
+                "id": "te01",
+                "label": "Zero Solutions",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sinθ = 0 and tanθ = 0",
+                        "latex": "\\theta = n\\pi, \\; \\forall n \\in \\mathbb{Z}"
+                    },
+                    {
+                        "sub": "cosθ = 0",
+                        "latex": "\\theta = (2n+1)\\frac{\\pi}{2}, \\; \\forall n \\in \\mathbb{Z}"
+                    }
+                ]
+            },
+            {
+                "id": "te02",
+                "label": "General Solutions",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sinθ = sinα",
+                        "latex": "\\theta = n\\pi + (-1)^n \\alpha, \\; \\forall n \\in \\mathbb{Z}, \\; -\\frac{\\pi}{2} \\leq \\alpha \\leq \\frac{\\pi}{2}"
+                    },
+                    {
+                        "sub": "cosθ = cosα",
+                        "latex": "\\theta = 2n\\pi \\pm \\alpha, \\; \\forall n \\in \\mathbb{Z}, \\; 0 \\leq \\alpha \\leq \\pi"
+                    },
+                    {
+                        "sub": "tanθ = tanα",
+                        "latex": "\\theta = n\\pi + \\alpha, \\; \\forall n \\in \\mathbb{Z}, \\; -\\frac{\\pi}{2} < \\alpha < \\frac{\\pi}{2}"
+                    }
+                ]
+            },
+            {
+                "id": "te03",
+                "label": "Squared Equations",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin²θ = sin²α, cos²θ = cos²α, tan²θ = tan²α",
+                        "latex": "\\theta = n\\pi \\pm \\alpha, \\; \\forall n \\in \\mathbb{Z}"
+                    }
+                ]
+            },
+            {
+                "id": "te04",
+                "label": "Common Solution of Two Equations",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Rule",
+                        "latex": "\\theta = 2n\\pi + \\alpha, \\; 0 \\leq \\alpha < 2\\pi, \\; \\forall n \\in \\mathbb{Z}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Inverse Trigonometric Functions",
+        "id": "inverse_trigonometric_functions",
+        "topics": [
+            {
+                "id": "itf01",
+                "label": "Negative Arguments",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin⁻¹(-x)",
+                        "latex": "\\sin^{-1}(-x) = -\\sin^{-1}(x)"
+                    },
+                    {
+                        "sub": "cos⁻¹(-x)",
+                        "latex": "\\cos^{-1}(-x) = \\pi - \\cos^{-1}(x)"
+                    },
+                    {
+                        "sub": "tan⁻¹(-x)",
+                        "latex": "\\tan^{-1}(-x) = -\\tan^{-1}(x)"
+                    }
+                ]
+            },
+            {
+                "id": "itf02",
+                "label": "Self-Inverse Properties",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin⁻¹(sinθ)",
+                        "latex": "\\sin^{-1}(\\sin\\theta) = \\theta, \\; \\theta \\in \\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]"
+                    },
+                    {
+                        "sub": "cos⁻¹(cosθ)",
+                        "latex": "\\cos^{-1}(\\cos\\theta) = \\theta, \\; \\theta \\in [0, \\pi]"
+                    },
+                    {
+                        "sub": "tan⁻¹(tanθ)",
+                        "latex": "\\tan^{-1}(\\tan\\theta) = \\theta, \\; \\theta \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)"
+                    }
+                ]
+            },
+            {
+                "id": "itf03",
+                "label": "Complementary Angles",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin⁻¹x + cos⁻¹x",
+                        "latex": "\\sin^{-1}x + \\cos^{-1}x = \\frac{\\pi}{2}, \\; x \\in [-1,1]"
+                    },
+                    {
+                        "sub": "tan⁻¹x + cot⁻¹x",
+                        "latex": "\\tan^{-1}x + \\cot^{-1}x = \\frac{\\pi}{2}, \\; x \\in \\mathbb{R}"
+                    }
+                ]
+            },
+            {
+                "id": "itf04",
+                "label": "Addition & Subtraction Formulas",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin⁻¹x ± sin⁻¹y",
+                        "latex": "\\sin^{-1}x \\pm \\sin^{-1}y = \\sin^{-1}\\left[x\\sqrt{1-y^2} \\pm y\\sqrt{1-x^2}\\right]"
+                    },
+                    {
+                        "sub": "cos⁻¹x ± cos⁻¹y",
+                        "latex": "\\cos^{-1}x \\pm \\cos^{-1}y = \\cos^{-1}\\left[xy \\mp \\sqrt{(1-x^2)(1-y^2)}\\right]"
+                    },
+                    {
+                        "sub": "tan⁻¹x + tan⁻¹y (xy < 1)",
+                        "latex": "\\tan^{-1}x + \\tan^{-1}y = \\tan^{-1}\\left(\\frac{x+y}{1-xy}\\right), \\; xy<1"
+                    },
+                    {
+                        "sub": "tan⁻¹x + tan⁻¹y (x>0, y>0, xy>1)",
+                        "latex": "\\tan^{-1}x + \\tan^{-1}y = \\pi + \\tan^{-1}\\left(\\frac{x+y}{1-xy}\\right), \\; x>0, y>0, xy>1"
+                    },
+                    {
+                        "sub": "tan⁻¹x + tan⁻¹y (xy = 1)",
+                        "latex": "\\tan^{-1}x + \\tan^{-1}y = \\frac{\\pi}{2}, \\; xy=1"
+                    },
+                    {
+                        "sub": "tan⁻¹x - tan⁻¹y",
+                        "latex": "\\tan^{-1}x - \\tan^{-1}y = \\tan^{-1}\\left(\\frac{x-y}{1+xy}\\right)"
+                    },
+                    {
+                        "sub": "tan⁻¹x + tan⁻¹y + tan⁻¹z",
+                        "latex": "\\tan^{-1}x + \\tan^{-1}y + \\tan^{-1}z = \\tan^{-1}\\left(\\frac{x+y+z-xyz}{1-xy-yz-zx}\\right)"
+                    }
+                ]
+            },
+            {
+                "id": "itf05",
+                "label": "Multiple Angle Equivalents",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "2 tan⁻¹(x)",
+                        "latex": "2\\tan^{-1}x = \\tan^{-1}\\left(\\frac{2x}{1-x^2}\\right) = \\sin^{-1}\\left(\\frac{2x}{1+x^2}\\right) = \\cos^{-1}\\left(\\frac{1-x^2}{1+x^2}\\right)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Hyperbolic Functions",
+        "id": "hyperbolic_functions",
+        "topics": [
+            {
+                "id": "hf01",
+                "label": "Exponential Definitions",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "e^x series",
+                        "latex": "e^x = 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots"
+                    },
+                    {
+                        "sub": "e^(-x) series",
+                        "latex": "e^{-x} = 1 - x + \\frac{x^2}{2!} - \\frac{x^3}{3!} + \\cdots"
+                    }
+                ]
+            },
+            {
+                "id": "hf02",
+                "label": "Basic Hyperbolic Functions",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sinh x",
+                        "latex": "\\sinh x = \\frac{e^x - e^{-x}}{2}"
+                    },
+                    {
+                        "sub": "cosh x",
+                        "latex": "\\cosh x = \\frac{e^x + e^{-x}}{2}"
+                    },
+                    {
+                        "sub": "tanh x",
+                        "latex": "\\tanh x = \\frac{\\sinh x}{\\cosh x} = \\frac{e^x - e^{-x}}{e^x + e^{-x}}"
+                    },
+                    {
+                        "sub": "coth x",
+                        "latex": "\\coth x = \\frac{\\cosh x}{\\sinh x} = \\frac{e^x + e^{-x}}{e^x - e^{-x}}"
+                    }
+                ]
+            },
+            {
+                "id": "hf03",
+                "label": "Fundamental Identity",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Identity",
+                        "latex": "\\cosh^2 x - \\sinh^2 x = 1"
+                    }
+                ]
+            },
+            {
+                "id": "hf04",
+                "label": "Compound & Double Angles",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sinh(x+y)",
+                        "latex": "\\sinh(x+y) = \\sinh x \\cosh y + \\cosh x \\sinh y"
+                    },
+                    {
+                        "sub": "sinh(x-y)",
+                        "latex": "\\sinh(x-y) = \\sinh x \\cosh y - \\cosh x \\sinh y"
+                    },
+                    {
+                        "sub": "cosh(x+y)",
+                        "latex": "\\cosh(x+y) = \\cosh x \\cosh y + \\sinh x \\sinh y"
+                    },
+                    {
+                        "sub": "cosh(x-y)",
+                        "latex": "\\cosh(x-y) = \\cosh x \\cosh y - \\sinh x \\sinh y"
+                    },
+                    {
+                        "sub": "sinh 2x",
+                        "latex": "\\sinh 2x = 2\\sinh x \\cosh x = \\frac{2\\tanh x}{1-\\tanh^2 x}"
+                    },
+                    {
+                        "sub": "cosh 2x",
+                        "latex": "\\cosh 2x = \\cosh^2 x + \\sinh^2 x = 2\\cosh^2 x -1 = 1+2\\sinh^2 x = \\frac{1+\\tanh^2 x}{1-\\tanh^2 x}"
+                    }
+                ]
+            },
+            {
+                "id": "hf05",
+                "label": "Triple Angle & Tangent Addition",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "tanh(x+y)",
+                        "latex": "\\tanh(x+y) = \\frac{\\tanh x + \\tanh y}{1 + \\tanh x \\tanh y}"
+                    },
+                    {
+                        "sub": "tanh(x-y)",
+                        "latex": "\\tanh(x-y) = \\frac{\\tanh x - \\tanh y}{1 - \\tanh x \\tanh y}"
+                    },
+                    {
+                        "sub": "sinh 3x",
+                        "latex": "\\sinh 3x = 3\\sinh x + 4\\sinh^3 x"
+                    }
+                ]
+            },
+            {
+                "id": "hf06",
+                "label": "Inverse Hyperbolic Functions",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sinh⁻¹ x",
+                        "latex": "\\sinh^{-1}x = \\ln(x + \\sqrt{x^2 + 1})"
+                    },
+                    {
+                        "sub": "tanh⁻¹ x",
+                        "latex": "\\tanh^{-1}x = \\frac{1}{2}\\ln\\left(\\frac{1+x}{1-x}\\right)"
+                    },
+                    {
+                        "sub": "tanh(x/2)",
+                        "latex": "\\tanh\\frac{x}{2} = \\frac{\\cosh x - 1}{\\sinh x + 1}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Properties of Triangles",
+        "id": "properties_of_triangles",
+        "topics": [
+            {
+                "id": "pt01",
+                "label": "Semi-perimeter",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "s",
+                        "latex": "s = \\frac{a+b+c}{2}"
+                    }
+                ]
+            },
+            {
+                "id": "pt02",
+                "label": "Sine Rule",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Sine Rule",
+                        "latex": "\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} = 2R"
+                    },
+                    {
+                        "sub": "Side forms",
+                        "latex": "a = 2R\\sin A, \\; b = 2R\\sin B, \\; c = 2R\\sin C"
+                    }
+                ]
+            },
+            {
+                "id": "pt03",
+                "label": "Cosine Rule",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "cos A",
+                        "latex": "a^2 = b^2 + c^2 - 2bc\\cos A \\Rightarrow \\cos A = \\frac{b^2 + c^2 - a^2}{2bc}"
+                    },
+                    {
+                        "sub": "cos B",
+                        "latex": "b^2 = c^2 + a^2 - 2ac\\cos B \\Rightarrow \\cos B = \\frac{c^2 + a^2 - b^2}{2ac}"
+                    },
+                    {
+                        "sub": "cos C",
+                        "latex": "c^2 = a^2 + b^2 - 2ab\\cos C \\Rightarrow \\cos C = \\frac{a^2 + b^2 - c^2}{2ab}"
+                    }
+                ]
+            },
+            {
+                "id": "pt04",
+                "label": "Tangent Rule (Napier's Analogy)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "tan((A-B)/2)",
+                        "latex": "\\tan\\frac{A-B}{2} = \\frac{a-b}{a+b} \\cot\\frac{C}{2}"
+                    },
+                    {
+                        "sub": "tan((B-C)/2)",
+                        "latex": "\\tan\\frac{B-C}{2} = \\frac{b-c}{b+c} \\cot\\frac{A}{2}"
+                    },
+                    {
+                        "sub": "tan((C-A)/2)",
+                        "latex": "\\tan\\frac{C-A}{2} = \\frac{c-a}{c+a} \\cot\\frac{B}{2}"
+                    }
+                ]
+            },
+            {
+                "id": "pt05",
+                "label": "Area of Triangle",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Basic form",
+                        "latex": "\\Delta = \\frac{1}{2}bc\\sin A = \\frac{1}{2}ca\\sin B = \\frac{1}{2}ab\\sin C = 2R^2 \\sin A \\sin B \\sin C"
+                    },
+                    {
+                        "sub": "Heron's Formula",
+                        "latex": "\\Delta = \\sqrt{s(s-a)(s-b)(s-c)}"
+                    },
+                    {
+                        "sub": "Circumradius form",
+                        "latex": "\\Delta = \\frac{abc}{4R} \\Rightarrow abc = 4R\\Delta"
+                    }
+                ]
+            },
+            {
+                "id": "pt06",
+                "label": "Half Angle Formulae",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "sin A/2, cos A/2",
+                        "latex": "\\sin\\frac{A}{2} = \\sqrt{\\frac{(s-b)(s-c)}{bc}}, \\quad \\cos\\frac{A}{2} = \\sqrt{\\frac{s(s-a)}{bc}}"
+                    },
+                    {
+                        "sub": "sin B/2, cos B/2",
+                        "latex": "\\sin\\frac{B}{2} = \\sqrt{\\frac{(s-c)(s-a)}{ca}}, \\quad \\cos\\frac{B}{2} = \\sqrt{\\frac{s(s-b)}{ca}}"
+                    },
+                    {
+                        "sub": "sin C/2, cos C/2",
+                        "latex": "\\sin\\frac{C}{2} = \\sqrt{\\frac{(s-a)(s-b)}{ab}}, \\quad \\cos\\frac{C}{2} = \\sqrt{\\frac{s(s-c)}{ab}}"
+                    }
+                ]
+            },
+            {
+                "id": "pt07",
+                "label": "Inradius & Exradius",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Inradius r",
+                        "latex": "r = \\frac{\\Delta}{s} = 4R \\sin\\frac{A}{2} \\sin\\frac{B}{2} \\sin\\frac{C}{2}"
+                    },
+                    {
+                        "sub": "Exradii r₁, r₂, r₃",
+                        "latex": "r_1 = \\frac{\\Delta}{s-a}, \\quad r_2 = \\frac{\\Delta}{s-b}, \\quad r_3 = \\frac{\\Delta}{s-c}"
+                    },
+                    {
+                        "sub": "Product of Exradii",
+                        "latex": "r_1 r_2 r_3 = \\Delta^2"
+                    },
+                    {
+                        "sub": "Sum of inverse Exradii",
+                        "latex": "\\frac{1}{r_1} + \\frac{1}{r_2} + \\frac{1}{r_3} = \\frac{1}{r}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Direction Cosines & Ratios",
+        "id": "direction_cosines",
+        "topics": [
+            {
+                "id": "dc01",
+                "label": "Direction Cosines",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Definition",
+                        "text": "If a directed line makes angles α, β, γ with positive axes of x, y and z, then cosα, cosβ, cosγ are called direction cosines (l, m, n)."
+                    },
+                    {
+                        "sub": "Square Sum",
+                        "latex": "l^2 + m^2 + n^2 = 1 \\quad \\Rightarrow \\quad \\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma = 1"
+                    },
+                    {
+                        "sub": "Sine Sum",
+                        "latex": "\\sin^2\\alpha + \\sin^2\\beta + \\sin^2\\gamma = 2"
+                    }
+                ]
+            },
+            {
+                "id": "dc02",
+                "label": "Direction Ratios",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "From 2 Points",
+                        "text": "d.r's of line joining A(x₁,y₁,z₁) & B(x₂,y₂,z₂) are (x₂−x₁, y₂−y₁, z₂−z₁)"
+                    },
+                    {
+                        "sub": "d.r's to d.c's",
+                        "latex": "l = \\frac{\\pm a}{\\sqrt{a^2+b^2+c^2}}, \\; m = \\frac{\\pm b}{\\sqrt{a^2+b^2+c^2}}, \\; n = \\frac{\\pm c}{\\sqrt{a^2+b^2+c^2}}"
+                    }
+                ]
+            },
+            {
+                "id": "dc03",
+                "label": "Angles & Conditions",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Angle (d.c's)",
+                        "latex": "\\cos\\theta = \\pm (l_1l_2 + m_1m_2 + n_1n_2)"
+                    },
+                    {
+                        "sub": "Angle (d.r's)",
+                        "latex": "\\cos\\theta = \\pm \\frac{a_1a_2 + b_1b_2 + c_1c_2}{\\sqrt{a_1^2+b_1^2+c_1^2}\\sqrt{a_2^2+b_2^2+c_2^2}}"
+                    },
+                    {
+                        "sub": "Parallel (d.c's)",
+                        "latex": "\\frac{l_1}{l_2} = \\frac{m_1}{m_2} = \\frac{n_1}{n_2}"
+                    },
+                    {
+                        "sub": "Perpendicular (d.c's)",
+                        "latex": "l_1l_2 + m_1m_2 + n_1n_2 = 0"
+                    },
+                    {
+                        "sub": "Parallel (d.r's)",
+                        "latex": "\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}"
+                    },
+                    {
+                        "sub": "Perpendicular (d.r's)",
+                        "latex": "a_1a_2 + b_1b_2 + c_1c_2 = 0"
+                    }
+                ]
+            },
+            {
+                "id": "dc04",
+                "label": "Projections",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "On xy plane",
+                        "latex": "\\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}"
+                    },
+                    {
+                        "sub": "On yz plane",
+                        "latex": "\\sqrt{(y_2-y_1)^2 + (z_2-z_1)^2}"
+                    },
+                    {
+                        "sub": "On zx plane",
+                        "latex": "\\sqrt{(z_2-z_1)^2 + (x_2-x_1)^2}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "3D Geometry",
+        "id": "geometry_3d",
+        "topics": [
+            {
+                "id": "geo01",
+                "label": "Basic Formulas",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Distance",
+                        "latex": "AB = \\sqrt{(x_1-x_2)^2 + (y_1-y_2)^2 + (z_1-z_2)^2}"
+                    },
+                    {
+                        "sub": "Centroid of Triangle",
+                        "latex": "G = \\left(\\dfrac{x_1+x_2+x_3}{3}, \\dfrac{y_1+y_2+y_3}{3}, \\dfrac{z_1+z_2+z_3}{3}\\right)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Co-ordinate System (2D)",
+        "id": "coordinate_system",
+        "topics": [
+            {
+                "id": "cs01",
+                "label": "Distance Formulas",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Between 2 Points",
+                        "latex": "AB = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}"
+                    },
+                    {
+                        "sub": "From Origin",
+                        "latex": "OP = \\sqrt{x^2 + y^2}"
+                    }
+                ]
+            },
+            {
+                "id": "cs02",
+                "label": "Section Formulas",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Internal Division (m:n)",
+                        "latex": "P = \\left(\\frac{mx_2 + nx_1}{m+n}, \\frac{my_2 + ny_1}{m+n}\\right)"
+                    },
+                    {
+                        "sub": "External Division (m:n)",
+                        "latex": "P = \\left(\\frac{mx_2 - nx_1}{m-n}, \\frac{my_2 - ny_1}{m-n}\\right)"
+                    },
+                    {
+                        "sub": "Mid Point",
+                        "latex": "P = \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)"
+                    }
+                ]
+            },
+            {
+                "id": "cs03",
+                "label": "Area & Collinearity",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Area of Triangle",
+                        "latex": "\\frac{1}{2}|x_1(y_2-y_3) + x_2(y_3-y_1) + x_3(y_1-y_2)|"
+                    },
+                    {
+                        "sub": "Area (matrix form)",
+                        "latex": "\\frac{1}{2}\\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix}"
+                    },
+                    {
+                        "sub": "Triangle with Origin",
+                        "latex": "\\frac{1}{2}|x_1 y_2 - x_2 y_1|"
+                    },
+                    {
+                        "sub": "Area of Quadrilateral",
+                        "latex": "\\frac{1}{2}|x_1y_2 - x_2y_1 + x_2y_3 - x_3y_2 + x_3y_4 - x_4y_3 + x_4y_1 - x_1y_4|"
+                    },
+                    {
+                        "sub": "Collinearity",
+                        "text": "Area of triangle formed by 3 points = 0 ⟹ points are collinear."
+                    }
+                ]
+            },
+            {
+                "id": "cs04",
+                "label": "Triangle Centers",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Centroid (G)",
+                        "latex": "G = \\left(\\frac{x_1+x_2+x_3}{3}, \\frac{y_1+y_2+y_3}{3}\\right)"
+                    },
+                    {
+                        "sub": "Incentre (I)",
+                        "latex": "I = \\left(\\frac{ax_1+bx_2+cx_3}{a+b+c}, \\frac{ay_1+by_2+cy_3}{a+b+c}\\right)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Transformation of Axes",
+        "id": "transformation_of_axes",
+        "topics": [
+            {
+                "id": "toa01",
+                "label": "Translation of Axes",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Shift Relations",
+                        "text": "x = X + h, y = Y + k ⟹ X = x − h, Y = y − k"
+                    },
+                    {
+                        "sub": "Removal of 1st Degree Terms",
+                        "latex": "\\text{Shift origin to } \\left(\\frac{hf-bg}{ab-h^2}, \\frac{gh-af}{ab-h^2}\\right)"
+                    }
+                ]
+            },
+            {
+                "id": "toa02",
+                "label": "Rotation of Axes",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Relations",
+                        "text": "x = Xcosθ − Ysinθ, y = Xsinθ + Ycosθ"
+                    },
+                    {
+                        "sub": "Remove 'xy' term from ax²+2hxy+by²=0",
+                        "latex": "\\theta = \\frac{1}{2}\\tan^{-1}\\left(\\frac{2h}{a-b}\\right) \\; (a \\ne b), \\quad \\theta = \\frac{\\pi}{4} \\; (a=b)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Straight Lines",
+        "id": "straight_lines",
+        "topics": [
+            {
+                "id": "sl01",
+                "label": "Slope",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "From angle",
+                        "latex": "m = \\tan\\theta"
+                    },
+                    {
+                        "sub": "From 2 points",
+                        "latex": "m = \\frac{y_2-y_1}{x_2-x_1}"
+                    },
+                    {
+                        "sub": "From equation ax+by+c=0",
+                        "latex": "m = -\\frac{a}{b}"
+                    },
+                    {
+                        "sub": "Parallel Lines",
+                        "latex": "m_1 = m_2 \\quad \\text{or} \\quad \\frac{a_1}{a_2} = \\frac{b_1}{b_2}"
+                    },
+                    {
+                        "sub": "Perpendicular Lines",
+                        "latex": "m_1 m_2 = -1 \\quad \\text{or} \\quad a_1a_2 + b_1b_2 = 0"
+                    }
+                ]
+            },
+            {
+                "id": "sl02",
+                "label": "Forms of a Straight Line",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Slope-Point Form",
+                        "latex": "y - y_1 = m(x - x_1)"
+                    },
+                    {
+                        "sub": "Two-Point Form",
+                        "latex": "y - y_1 = \\frac{y_2-y_1}{x_2-x_1}(x - x_1)"
+                    },
+                    {
+                        "sub": "Slope-Intercept",
+                        "latex": "y = mx + c"
+                    },
+                    {
+                        "sub": "Intercept Form",
+                        "latex": "\\frac{x}{a} + \\frac{y}{b} = 1"
+                    },
+                    {
+                        "sub": "Normal Form",
+                        "latex": "x\\cos\\alpha + y\\sin\\alpha = p"
+                    },
+                    {
+                        "sub": "Symmetric Form",
+                        "latex": "\\frac{x-x_1}{\\cos\\theta} = \\frac{y-y_1}{\\sin\\theta} = r"
+                    },
+                    {
+                        "sub": "Parametric Form",
+                        "latex": "x = x_1 \\pm r\\cos\\theta, \\quad y = y_1 \\pm r\\sin\\theta"
+                    }
+                ]
+            },
+            {
+                "id": "sl03",
+                "label": "Distances & Areas",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Perp. Distance from Origin",
+                        "latex": "\\frac{|c|}{\\sqrt{a^2+b^2}}"
+                    },
+                    {
+                        "sub": "Perp. Distance from Point (x₁,y₁)",
+                        "latex": "\\frac{|ax_1+by_1+c|}{\\sqrt{a^2+b^2}}"
+                    },
+                    {
+                        "sub": "Distance between Parallel Lines",
+                        "latex": "\\frac{|c_1-c_2|}{\\sqrt{a^2+b^2}}"
+                    },
+                    {
+                        "sub": "Area of Triangle (intercept form)",
+                        "latex": "\\frac{1}{2}|ab|"
+                    },
+                    {
+                        "sub": "Area of Triangle (general form)",
+                        "latex": "\\frac{c^2}{2|ab|}"
+                    }
+                ]
+            },
+            {
+                "id": "sl04",
+                "label": "Angles, Foot, Image & Concurrency",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Angle between lines (slopes)",
+                        "latex": "\\tan\\theta = \\left|\\frac{m_1-m_2}{1+m_1m_2}\\right|"
+                    },
+                    {
+                        "sub": "Angle between lines (equations)",
+                        "latex": "\\cos\\theta = \\frac{|a_1a_2+b_1b_2|}{\\sqrt{a_1^2+b_1^2}\\sqrt{a_2^2+b_2^2}}"
+                    },
+                    {
+                        "sub": "Foot of Perpendicular (h,k)",
+                        "latex": "\\frac{h-x_1}{a} = \\frac{k-y_1}{b} = -\\frac{ax_1+by_1+c}{a^2+b^2}"
+                    },
+                    {
+                        "sub": "Image (h,k)",
+                        "latex": "\\frac{h-x_1}{a} = \\frac{k-y_1}{b} = -\\frac{2(ax_1+by_1+c)}{a^2+b^2}"
+                    },
+                    {
+                        "sub": "Concurrency of 3 lines",
+                        "latex": "\\begin{vmatrix} a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\\\ a_3 & b_3 & c_3 \\end{vmatrix} = 0"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Pair of Straight Lines",
+        "id": "pair_of_straight_lines",
+        "topics": [
+            {
+                "id": "psl01",
+                "label": "Homogeneous Equation (Origin)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Condition for 2 lines",
+                        "latex": "ax^2 + 2hxy + by^2 = 0 \\text{ represents 2 lines if } h^2 \\ge ab"
+                    },
+                    {
+                        "sub": "Sum of slopes",
+                        "latex": "m_1 + m_2 = -\\frac{2h}{b}"
+                    },
+                    {
+                        "sub": "Product of slopes",
+                        "latex": "m_1 m_2 = \\frac{a}{b}"
+                    },
+                    {
+                        "sub": "Angle between lines",
+                        "latex": "\\tan\\theta = \\frac{2\\sqrt{h^2-ab}}{|a+b|}"
+                    },
+                    {
+                        "sub": "Perpendicular condition",
+                        "latex": "a + b = 0"
+                    },
+                    {
+                        "sub": "Coincident condition",
+                        "latex": "h^2 = ab"
+                    },
+                    {
+                        "sub": "Angle Bisectors",
+                        "latex": "h(x^2 - y^2) = (a-b)xy"
+                    }
+                ]
+            },
+            {
+                "id": "psl02",
+                "label": "General Second Degree Equation (S=0)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Condition Δ=0",
+                        "latex": "\\Delta \\equiv abc + 2fgh - af^2 - bg^2 - ch^2 = 0 \\quad (h^2 \\ge ab)"
+                    },
+                    {
+                        "sub": "Intersection Point",
+                        "latex": "\\left(\\frac{hf-bg}{ab-h^2}, \\frac{gh-af}{ab-h^2}\\right)"
+                    },
+                    {
+                        "sub": "Distance between parallel lines",
+                        "latex": "2\\sqrt{\\frac{g^2-ac}{a(a+b)}} \\quad \\text{or} \\quad 2\\sqrt{\\frac{f^2-bc}{b(a+b)}}"
+                    },
+                    {
+                        "sub": "Area of triangle with line lx+my+n=0",
+                        "latex": "\\frac{n^2\\sqrt{h^2-ab}}{|am^2-2hlm+bl^2|}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Limits & Continuity",
+        "id": "limits_continuity",
+        "topics": [
+            {
+                "id": "lc01",
+                "label": "Standard Limits (Algebraic & Trig)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Power Limit",
+                        "latex": "\\lim_{x \\to a} \\frac{x^n - a^n}{x - a} = n a^{n-1}"
+                    },
+                    {
+                        "sub": "Fractional Power",
+                        "latex": "\\lim_{x \\to a} \\frac{x^m - a^m}{x^n - a^n} = \\frac{m}{n} a^{m-n}"
+                    },
+                    {
+                        "sub": "sin x / x",
+                        "latex": "\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1"
+                    },
+                    {
+                        "sub": "tan x / x",
+                        "latex": "\\lim_{x \\to 0} \\frac{\\tan x}{x} = 1"
+                    },
+                    {
+                        "sub": "sin ax / x",
+                        "latex": "\\lim_{x \\to 0} \\frac{\\sin ax}{x} = a"
+                    },
+                    {
+                        "sub": "tan ax / x",
+                        "latex": "\\lim_{x \\to 0} \\frac{\\tan ax}{x} = a"
+                    }
+                ]
+            },
+            {
+                "id": "lc02",
+                "label": "Exponential & Log Limits",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "(eˣ - 1) / x",
+                        "latex": "\\lim_{x \\to 0} \\frac{e^x - 1}{x} = 1"
+                    },
+                    {
+                        "sub": "(aˣ - 1) / x",
+                        "latex": "\\lim_{x \\to 0} \\frac{a^x - 1}{x} = \\log_e a"
+                    },
+                    {
+                        "sub": "log(1+x) / x",
+                        "latex": "\\lim_{x \\to 0} \\frac{\\log_e(1+x)}{x} = 1"
+                    },
+                    {
+                        "sub": "(1+x)^(1/x)",
+                        "latex": "\\lim_{x \\to 0} (1+x)^{1/x} = e"
+                    },
+                    {
+                        "sub": "(1+1/x)^x",
+                        "latex": "\\lim_{x \\to \\infty} \\left(1 + \\frac{1}{x}\\right)^x = e"
+                    }
+                ]
+            },
+            {
+                "id": "lc03",
+                "label": "Continuity",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Condition",
+                        "latex": "\\lim_{x \\to a^-} f(x) = f(a) = \\lim_{x \\to a^+} f(x)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Differentiation",
+        "id": "differentiation",
+        "topics": [
+            {
+                "id": "df01",
+                "label": "Rules & Algebra of Derivatives",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "First Principle",
+                        "latex": "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}"
+                    },
+                    {
+                        "sub": "Sum/Difference",
+                        "latex": "\\frac{d}{dx}(u \\pm v) = \\frac{du}{dx} \\pm \\frac{dv}{dx}"
+                    },
+                    {
+                        "sub": "Product (uv)",
+                        "latex": "\\frac{d}{dx}(uv) = u\\frac{dv}{dx} + v\\frac{du}{dx}"
+                    },
+                    {
+                        "sub": "Triple Product (uvw)",
+                        "latex": "\\frac{d}{dx}(uvw) = uv\\frac{dw}{dx} + vw\\frac{du}{dx} + wu\\frac{dv}{dx}"
+                    },
+                    {
+                        "sub": "Quotient (u/v)",
+                        "latex": "\\frac{d}{dx}\\left(\\frac{u}{v}\\right) = \\frac{v\\frac{du}{dx} - u\\frac{dv}{dx}}{v^2}"
+                    },
+                    {
+                        "sub": "Parametric",
+                        "latex": "x = f(t), \\; y = g(t) \\Rightarrow \\frac{dy}{dx} = \\frac{dy/dt}{dx/dt}"
+                    }
+                ]
+            },
+            {
+                "id": "df02",
+                "label": "Standard Derivatives (Algebraic & Exp)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "d/dx (k)",
+                        "latex": "\\frac{d}{dx}(k) = 0"
+                    },
+                    {
+                        "sub": "d/dx (xⁿ)",
+                        "latex": "\\frac{d}{dx}(x^n) = nx^{n-1}"
+                    },
+                    {
+                        "sub": "d/dx (eˣ)",
+                        "latex": "\\frac{d}{dx}(e^x) = e^x"
+                    },
+                    {
+                        "sub": "d/dx (aˣ)",
+                        "latex": "\\frac{d}{dx}(a^x) = a^x \\log_e a"
+                    },
+                    {
+                        "sub": "d/dx (log x)",
+                        "latex": "\\frac{d}{dx}(\\log x) = \\frac{1}{x}"
+                    },
+                    {
+                        "sub": "d/dx (√x)",
+                        "latex": "\\frac{d}{dx}(\\sqrt{x}) = \\frac{1}{2\\sqrt{x}}"
+                    }
+                ]
+            },
+            {
+                "id": "df03",
+                "label": "Trigonometric Derivatives",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "d/dx (sin x)",
+                        "latex": "\\frac{d}{dx}(\\sin x) = \\cos x"
+                    },
+                    {
+                        "sub": "d/dx (cos x)",
+                        "latex": "\\frac{d}{dx}(\\cos x) = -\\sin x"
+                    },
+                    {
+                        "sub": "d/dx (tan x)",
+                        "latex": "\\frac{d}{dx}(\\tan x) = \\sec^2 x"
+                    },
+                    {
+                        "sub": "d/dx (cot x)",
+                        "latex": "\\frac{d}{dx}(\\cot x) = -\\csc^2 x"
+                    },
+                    {
+                        "sub": "d/dx (sec x)",
+                        "latex": "\\frac{d}{dx}(\\sec x) = \\sec x \\tan x"
+                    },
+                    {
+                        "sub": "d/dx (csc x)",
+                        "latex": "\\frac{d}{dx}(\\csc x) = -\\csc x \\cot x"
+                    }
+                ]
+            },
+            {
+                "id": "df04",
+                "label": "Inverse Trig Derivatives",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "d/dx (sin⁻¹ x)",
+                        "latex": "\\frac{d}{dx}(\\sin^{-1} x) = \\frac{1}{\\sqrt{1-x^2}}"
+                    },
+                    {
+                        "sub": "d/dx (cos⁻¹ x)",
+                        "latex": "\\frac{d}{dx}(\\cos^{-1} x) = -\\frac{1}{\\sqrt{1-x^2}}"
+                    },
+                    {
+                        "sub": "d/dx (tan⁻¹ x)",
+                        "latex": "\\frac{d}{dx}(\\tan^{-1} x) = \\frac{1}{1+x^2}"
+                    },
+                    {
+                        "sub": "d/dx (cot⁻¹ x)",
+                        "latex": "\\frac{d}{dx}(\\cot^{-1} x) = -\\frac{1}{1+x^2}"
+                    },
+                    {
+                        "sub": "d/dx (sec⁻¹ x)",
+                        "latex": "\\frac{d}{dx}(\\sec^{-1} x) = \\frac{1}{|x|\\sqrt{x^2-1}}"
+                    },
+                    {
+                        "sub": "d/dx (csc⁻¹ x)",
+                        "latex": "\\frac{d}{dx}(\\csc^{-1} x) = -\\frac{1}{|x|\\sqrt{x^2-1}}"
+                    }
+                ]
+            },
+            {
+                "id": "df05",
+                "label": "Hyperbolic & Inverse Hyperbolic Derivatives",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "d/dx (sinh x)",
+                        "latex": "\\frac{d}{dx}(\\sinh x) = \\cosh x"
+                    },
+                    {
+                        "sub": "d/dx (cosh x)",
+                        "latex": "\\frac{d}{dx}(\\cosh x) = \\sinh x"
+                    },
+                    {
+                        "sub": "d/dx (tanh x)",
+                        "latex": "\\frac{d}{dx}(\\tanh x) = \\text{sech}^2 x"
+                    },
+                    {
+                        "sub": "d/dx (coth x)",
+                        "latex": "\\frac{d}{dx}(\\coth x) = -\\text{csch}^2 x"
+                    },
+                    {
+                        "sub": "d/dx (sinh⁻¹ x)",
+                        "latex": "\\frac{d}{dx}(\\sinh^{-1} x) = \\frac{1}{\\sqrt{1+x^2}}"
+                    },
+                    {
+                        "sub": "d/dx (cosh⁻¹ x)",
+                        "latex": "\\frac{d}{dx}(\\cosh^{-1} x) = \\frac{1}{\\sqrt{x^2-1}}"
+                    },
+                    {
+                        "sub": "d/dx (tanh⁻¹ x)",
+                        "latex": "\\frac{d}{dx}(\\tanh^{-1} x) = \\frac{1}{1-x^2}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Errors & Approximations",
+        "id": "errors_approximations",
+        "topics": [
+            {
+                "id": "ea01",
+                "label": "Errors & Differentials",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Change (Error) in y",
+                        "latex": "\\Delta y = f(x + \\Delta x) - f(x)"
+                    },
+                    {
+                        "sub": "Differential of y",
+                        "latex": "dy = f'(x)\\Delta x"
+                    },
+                    {
+                        "sub": "Relative Error",
+                        "latex": "\\frac{\\Delta y}{y}"
+                    },
+                    {
+                        "sub": "Percentage Error",
+                        "latex": "\\frac{\\Delta y}{y} \\times 100"
+                    },
+                    {
+                        "sub": "Approximation",
+                        "latex": "f(x + \\Delta x) \\approx f(x) + f'(x)\\Delta x"
+                    }
+                ]
+            },
+            {
+                "id": "ea02",
+                "label": "Standard Mensuration Formulas",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Square Area",
+                        "latex": "A = x^2"
+                    },
+                    {
+                        "sub": "Cube Volume",
+                        "latex": "V = x^3"
+                    },
+                    {
+                        "sub": "Sphere Surface Area",
+                        "latex": "S = 4\\pi r^2"
+                    },
+                    {
+                        "sub": "Sphere Volume",
+                        "latex": "V = \\frac{4}{3}\\pi r^3"
+                    },
+                    {
+                        "sub": "Cone Volume",
+                        "latex": "V = \\frac{1}{3}\\pi r^2 h"
+                    },
+                    {
+                        "sub": "Cylinder Lateral Surface",
+                        "latex": "S = 2\\pi rh"
+                    },
+                    {
+                        "sub": "Cylinder Volume",
+                        "latex": "V = \\pi r^2 h"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Tangents and Normals",
+        "id": "tangents_normals",
+        "topics": [
+            {
+                "id": "tn01",
+                "label": "Equations & Angles",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Slope at (x₁,y₁)",
+                        "latex": "m = \\left(\\frac{dy}{dx}\\right)_{(x_1,y_1)}"
+                    },
+                    {
+                        "sub": "Tangent Equation",
+                        "latex": "y - y_1 = m(x - x_1)"
+                    },
+                    {
+                        "sub": "Normal Equation",
+                        "latex": "y - y_1 = -\\frac{1}{m}(x - x_1)"
+                    },
+                    {
+                        "sub": "Angle between 2 curves",
+                        "latex": "\\tan\\theta = \\left|\\frac{m_1-m_2}{1+m_1m_2}\\right|"
+                    },
+                    {
+                        "sub": "Touch each other",
+                        "latex": "m_1 = m_2"
+                    },
+                    {
+                        "sub": "Cut Orthogonally",
+                        "latex": "m_1 m_2 = -1"
+                    }
+                ]
+            },
+            {
+                "id": "tn02",
+                "label": "Lengths (Tangent, Normal, Subtangent, Subnormal)",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Length of Tangent (PT)",
+                        "latex": "\\left|\\frac{y_1\\sqrt{1+m^2}}{m}\\right|"
+                    },
+                    {
+                        "sub": "Length of Normal (PN)",
+                        "latex": "\\left|y_1\\sqrt{1+m^2}\\right|"
+                    },
+                    {
+                        "sub": "Sub-Tangent (TQ)",
+                        "latex": "\\left|\\frac{y_1}{m}\\right|"
+                    },
+                    {
+                        "sub": "Sub-Normal (QN)",
+                        "latex": "|y_1 m|"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Rate Measure",
+        "id": "rate_measure",
+        "topics": [
+            {
+                "id": "rm01",
+                "label": "Rates, Velocity & Acceleration",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Rate of Change",
+                        "latex": "\\frac{dy}{dx} = \\lim_{\\Delta x \\to 0} \\frac{\\Delta y}{\\Delta x}"
+                    },
+                    {
+                        "sub": "Velocity (v)",
+                        "latex": "v = \\frac{ds}{dt}"
+                    },
+                    {
+                        "sub": "Acceleration (a)",
+                        "latex": "a = \\frac{dv}{dt} = \\frac{d^2s}{dt^2}"
+                    },
+                    {
+                        "sub": "Angular Acceleration (α)",
+                        "latex": "\\alpha = \\frac{d^2\\theta}{dt^2}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Rolle's & Lagrange's MVT",
+        "id": "rolle_lagrange",
+        "topics": [
+            {
+                "id": "rl01",
+                "label": "Mean Value Theorems",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Rolle's Theorem (conditions)",
+                        "text": "f:[a,b]→R is continuous on [a,b], differentiable on (a,b), and f(a)=f(b)"
+                    },
+                    {
+                        "sub": "Rolle's Theorem (conclusion)",
+                        "latex": "\\exists \\; c \\in (a, b) \\text{ such that } f'(c) = 0"
+                    },
+                    {
+                        "sub": "Lagrange's MVT (conditions)",
+                        "text": "f:[a,b]→R is continuous on [a,b] and differentiable on (a,b)"
+                    },
+                    {
+                        "sub": "Lagrange's MVT (conclusion)",
+                        "latex": "\\exists \\; c \\in (a, b) \\text{ such that } f'(c) = \\frac{f(b)-f(a)}{b-a}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "Maxima & Minima",
+        "id": "maxima_minima",
+        "topics": [
+            {
+                "id": "mm01",
+                "label": "Increasing/Decreasing & Turning Points",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Increasing",
+                        "latex": "f'(x) > 0"
+                    },
+                    {
+                        "sub": "Decreasing",
+                        "latex": "f'(x) < 0"
+                    },
+                    {
+                        "sub": "Stationary Point",
+                        "latex": "f'(a) = 0 \\Rightarrow x = a \\text{ is a stationary (turning) point}"
+                    }
+                ]
+            },
+            {
+                "id": "mm02",
+                "label": "Second Derivative Test",
+                "type": "list",
+                "items": [
+                    {
+                        "sub": "Maxima",
+                        "latex": "f'(a) = 0 \\text{ and } f''(a) < 0 \\Rightarrow \\text{local maxima at } x=a"
+                    },
+                    {
+                        "sub": "Minima",
+                        "latex": "f'(a) = 0 \\text{ and } f''(a) > 0 \\Rightarrow \\text{local minima at } x=a"
+                    }
+                ]
+            }
+        ]
+    }
+]

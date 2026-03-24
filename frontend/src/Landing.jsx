@@ -342,6 +342,12 @@ export default function Landing() {
             {[
               {
                 icon: BookOpen,
+                title: "Formulas Revision",
+                desc: "Quick revision of 1st and 2nd year formulas",
+                tag: "Master all key formulas"
+              },
+              {
+                icon: BookOpen,
                 title: "Foundation Practice",
                 desc: "Build strong basics chapter by chapter",
                 tag: "Never get stuck in concepts again"
