@@ -78,7 +78,9 @@ export default function MockAttempt() {
       try {
         setLoading(true);
         const testData = await getMockTest(id);
-        if (testData && testData.questions) {
+        if (testData.error) {
+          setError(`Backend Error: ${testData.error}`);
+        } else if (testData && testData.questions && testData.questions.length > 0) {
           setTest(testData);
           setTimeLeft(prev => (prev !== 10800 ? prev : (testData.duration * 60 || 10800)));
 
@@ -91,8 +93,9 @@ export default function MockAttempt() {
           // Keep original order as delivered by backend (no shuffle)
           setGroupedQuestions(groups);
         }
-      } catch {
-        setError('Failed to load test. Try again.');
+      } catch (err) {
+        console.error('MockTest fetch error:', err);
+        setError('Network error loading test. Check console.');
       } finally {
         setLoading(false);
       }

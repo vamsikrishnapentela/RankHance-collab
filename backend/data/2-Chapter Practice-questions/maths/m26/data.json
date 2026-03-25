@@ -142,19 +142,7 @@
     "explanation": "Let \\(\\log x=t\\implies x=e^t\\). Using \\(\\int e^t(f(t)+f'(t))dt=e^tf(t)+c\\) with \\(f(t)=\\dfrac{1}{t}\\) (so \\(f'(t)=-\\dfrac{1}{t^2}\\)):\n\n\\(=e^t\\cdot\\dfrac{1}{t}+c=\\dfrac{x}{\\log x}+c\\)",
     "name": "Integral by e^x[f+f'] Recognition"
   },
-  {
-    "id": "m26_item12",
-    "text": "\\(\\displaystyle\\int\\frac{\\cos^7x-\\cos^8x}{1+2\\cos5x}\\,dx=\\)",
-    "options": [
-      "\\(\\dfrac{1}{3}\\sin2x-\\sin3x+c\\)",
-      "\\(\\dfrac{1}{2}\\sin2x-\\dfrac{1}{3}\\sin3x+c\\)",
-      "\\(\\dfrac{1}{2}\\sin2x-\\sin3x+c\\)",
-      "\\(\\dfrac{1}{3}\\sin2x-\\dfrac{1}{2}\\sin3x+c\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "Using \\(1+2\\cos5x=\\dfrac{\\sin\\frac{15x}{2}}{\\sin\\frac{5x}{2}}\\) and product-to-sum formula, the integral simplifies to:\n\n\\(\\int(\\cos2x-\\cos3x)dx=\\dfrac{\\sin2x}{2}-\\dfrac{\\sin3x}{3}+c\\)",
-    "name": "Product-to-Sum Trigonometric Integral"
-  },
+  
   {
     "id": "m26_item13",
     "text": "\\(\\displaystyle\\int\\sin(\\sqrt{k})\\,dk\\) on \\((0,\\infty)=\\)",
@@ -285,19 +273,7 @@
     "explanation": "Write \\(5\\sin x=\\alpha(\\sin x-2\\cos x)+\\beta(\\cos x+2\\sin x)\\).\n\nFrom comparison: \\(\\alpha=1\\), \\(\\beta=2\\).\n\n\\(\\alpha-\\beta=1-2=-1\\)",
     "name": "Partial Fraction Decomposition of Trig Integrand"
   },
-  {
-    "id": "m26_item23",
-    "text": "\\(\\displaystyle\\int e^x\\csc^2x(1-x\\cot x)\\,dx=\\)",
-    "options": [
-      "\\(e^x\\cot x+c\\)",
-      "\\(e^x\\csc x+c\\)",
-      "\\(e^{-x}\\csc x+c\\)",
-      "\\(e^{-x}\\cot x+c\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "Let \\(t=x\\csc x\\).\n\n\\(\\dfrac{dt}{dx}=\\csc x-x\\csc x\\cot x=\\csc x(1-x\\cot x)\\)\n\nSo \\(e^x\\csc^2x(1-x\\cot x)dx=e^x\\csc x\\cdot\\csc x(1-x\\cot x)dx=e^t(\\text{using substitution})\\to e^{x\\csc x}\\).\n\nActually: \\(e^x\\csc x(1-x\\cot x)=\\dfrac{d}{dx}(x\\csc x)\\cdot e^x\\)... From PDF: \\(=e^x\\csc x+c\\)",
-    "name": "e^x[f+f'] Pattern Integral"
-  },
+  
   {
     "id": "m26_item24",
     "text": "\\(\\displaystyle\\int\\frac{(1+x)e^x}{\\cot(xe^x)}\\,dx=\\)",
@@ -402,19 +378,7 @@
     "explanation": "Using product-to-sum formulas:\n\n\\(A=\\dfrac{1}{8}\\), \\(B=\\dfrac{1}{16}\\), \\(C=\\dfrac{1}{24}\\), \\(D=\\dfrac{1}{32}\\).\n\n\\(\\dfrac{1}{B}+\\dfrac{1}{C}=16+24=40\\) and \\(\\dfrac{1}{A}+\\dfrac{1}{D}=8+32=40\\).\n\nSo \\(\\dfrac{1}{B}+\\dfrac{1}{C}=\\dfrac{1}{A}+\\dfrac{1}{D}\\).",
     "name": "Product of Three Cosines"
   },
-  {
-    "id": "m26_item32",
-    "text": "\\(\\displaystyle\\int e^x\\cdot\\frac{x^2+2}{x+4}\\,dx=f(x)+c\\), then \\(f(x)=\\)",
-    "options": [
-      "\\(\\dfrac{xe^x}{x+4}\\)",
-      "\\(\\dfrac{e^x}{x+4}\\)",
-      "\\(\\dfrac{xe^x}{(x+4)^2}\\)",
-      "\\(\\dfrac{e^x}{(x+4)^2}\\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "\\(\\dfrac{x^2+2}{x+4}=\\dfrac{x^2+4x-(4x+4)+2}{x+4}=x-4+\\dfrac{-4x-4+2}{x+4}\\). Rewrite as \\(g(x)+g'(x)\\) where \\(g(x)=\\dfrac{x}{x+4}\\):\n\n\\(\\int e^x(g+g')dx=e^xg(x)+c=\\dfrac{xe^x}{x+4}+c\\)",
-    "name": "e^x[f+f'] Recognition"
-  },
+  
   {
     "id": "m26_item33",
     "text": "\\(\\displaystyle\\int\\frac{dx}{\\sin x+\\sin2x}=\\)",
@@ -532,19 +496,7 @@
     "explanation": "Let \\(1+\\dfrac{1}{x}+x=t^2\\implies\\left(1-\\dfrac{1}{x^2}\\right)dx=2t\\,dt\\):\n\n\\(=\\dfrac{2dt}{1+t^2}=2\\tan^{-1}(t)+c=2\\tan^{-1}\\sqrt{\\dfrac{x^2+x+1}{x}}+c\\)",
     "name": "Integral Involving Square Root of Quadratic"
   },
-  {
-    "id": "m26_item42",
-    "text": "\\(\\displaystyle\\int\\frac{\\sin^2x\\,dx}{\\sin^4x+\\cos^4x}=\\tan^{-1}(f(x))+c\\), then \\(f\\left(\\dfrac{\\pi}{3}\\right)=\\)",
-    "options": [
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(3\\)",
-      "\\(\\dfrac{1}{3}\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Dividing by \\(\\cos^2x\\): \\(\\int\\dfrac{\\tan^2x\\sec^2x}{1+\\tan^4x}d(\\tan^2x)/2\\). Let \\(t=\\tan^2x\\):\n\n\\(=\\int\\dfrac{dt}{1+t^2}=\\tan^{-1}(\\tan^2x)+c\\).\n\nSo \\(f(x)=\\tan^2x\\), and \\(f(\\pi/3)=\\tan^2(\\pi/3)=3\\).",
-    "name": "Rational Trig Integral with Substitution"
-  },
+  
   {
     "id": "m26_item43",
     "text": "\\(\\displaystyle\\int\\frac{x\\log x}{(x^2-1)^{3/2}}\\,dx=\\)",
@@ -558,19 +510,7 @@
     "explanation": "Let \\(x^2-1=t^2\\implies x^2=t^2+1\\):\n\n\\(=\\int\\log(1+t^2)\\cdot\\dfrac{1}{t^2}dt=-\\dfrac{\\log(1+t^2)}{t}+\\tan^{-1}t+c\\)\n\n\\(=\\sec^{-1}x-\\dfrac{\\log x}{\\sqrt{x^2-1}}+c\\)",
     "name": "IBP with Sec^-1"
   },
-  {
-    "id": "m26_item44",
-    "text": "\\(\\displaystyle\\int\\frac{\\cos^2x\\sin^4x}{\\cos^4x(1+\\cos^22x)}\\,dx=\\)",
-    "options": [
-      "\\(\\log\\dfrac{1+\\cos2x}{1+\\cos^22x}+\\sec^2x+c\\)",
-      "\\(\\log\\dfrac{(1+\\cos2x)^2}{1+\\cos2x}+\\sec x+c\\)",
-      "\\(\\log\\dfrac{(1+\\cos2x)^2}{1+\\cos^22x}+\\sec^2x+c\\)",
-      "\\(\\log\\dfrac{1+\\cos^22x}{(1+\\cos2x)^2}+\\sec x+c\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Simplifying via \\(\\cos2x=t\\) substitution and partial fractions, the integral yields:\n\n\\(\\sec^2x+\\log\\dfrac{(1+\\cos2x)^2}{1+\\cos^22x}+c\\)",
-    "name": "Complex Trig Integral with Partial Fractions"
-  },
+  
   {
     "id": "m26_item45",
     "text": "\\(\\displaystyle\\int\\frac{\\sin^8x-\\cos^8x}{1-2\\sin^2x+2\\sin^4x}\\,dx=\\)",

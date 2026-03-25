@@ -169,19 +169,6 @@
     "name": "General Solution Parameter"
   },
   {
-    "id": "m13_item14",
-    "text": "The general solution of \\(\\sqrt{3} - 5\\sin x + \\sin^2 x + \\cos x = 0\\) is",
-    "options": [
-      "\\(n\\pi + (-1)^n \\dfrac{\\pi}{6},\\; n \\in \\mathbb{Z}\\)",
-      "\\(2n\\pi \\pm \\dfrac{\\pi}{6},\\; n \\in \\mathbb{Z}\\)",
-      "\\((2n+1)\\pi - \\dfrac{\\pi}{6},\\; n \\in \\mathbb{Z}\\)",
-      "\\(2n\\pi \\pm \\dfrac{5\\pi}{6},\\; n \\in \\mathbb{Z}\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Rearrange: \\(\\sqrt{3} - 5\\sin x + \\sin^2 x = -\\cos x\\).\n\nSquaring both sides:\n\n\\[(\\sqrt{3} - 5\\sin x + \\sin^2 x)^2 = \\cos^2 x = 1 - \\sin^2 x\\]\n\nThis leads after simplification to:\n\n\\[2\\sin^2 x - 5\\sin x + 2 = 0\\]\n\n\\[(2\\sin x - 1)(\\sin x - 2) = 0\\]\n\nSince \\(\\sin x \\in [-1,1]\\), we have \\(\\sin x = \\dfrac{1}{2}\\).\n\nBut we also need \\(\\cos x < 0\\) (since the right side \\(-\\cos x\\) must be positive when \\(\\sin x = \\tfrac{1}{2}\\) to satisfy the original).\n\nSo \\(\\sin x = \\dfrac{1}{2}\\) and \\(\\cos x < 0\\) → \\(x\\) is in the second quadrant: \\(x = \\pi - \\dfrac{\\pi}{6} = \\dfrac{5\\pi}{6}\\).\n\nGeneral solution: \\(x = (2n+1)\\pi - \\dfrac{\\pi}{6},\\; n \\in \\mathbb{Z}\\).",
-    "name": "Equation with Squaring Method"
-  },
-  {
     "id": "m13_item15",
     "text": "The number of solutions of \\(4\\cos 2\\theta \\cdot \\cos 3\\theta = \\sec\\theta\\) for \\(0 < \\theta < \\pi\\) is",
     "options": [

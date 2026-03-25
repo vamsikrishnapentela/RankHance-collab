@@ -233,19 +233,7 @@
     "explanation": "For the limit to exist: LHL = RHL\n\n\\[\\lim_{x\\to2^-}(4x-5)=3\\]\n\\[\\lim_{x\\to2^+}(x-k)=2-k\\]\n\n\\[3=2-k\\implies k=-1\\]",
     "name": "Continuity of Piecewise Function"
   },
-  {
-    "id": "m23_item19",
-    "text": "\\(\\displaystyle\\lim_{x\\to\\infty}\\left(1+\\frac{3}{x}\\right)^{2x}=\\)",
-    "options": [
-      "\\(e^6\\)",
-      "\\(e^3\\)",
-      "\\(e^2\\)",
-      "\\(e\\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "\\[\\lim_{x\\to\\infty}\\left(1+\\frac{3}{x}\\right)^{2x}=\\lim_{x\\to\\infty}\\left[\\left(1+\\frac{3}{x}\\right)^{x/3}\\right]^6=e^6\\]",
-    "name": "Exponential Limit"
-  },
+  
   {
     "id": "m23_item20",
     "text": "If \\(\\displaystyle\\lim_{x\\to\\infty}\\left(\\frac{x^3+1}{x^2+1}-(\\alpha x+\\beta)\\right)=2\\), then \\((\\alpha,\\beta)=\\)",
@@ -259,19 +247,7 @@
     "explanation": "\\[\\frac{x^3+1}{x^2+1}-\\alpha x-\\beta=\\frac{x^3+1-\\alpha x^3-\\beta x^2-\\alpha x-\\beta}{x^2+1}\\]\n\nFor finite limit, coefficient of \\(x^3\\) must be 0: \\(1-\\alpha=0\\implies\\alpha=1\\).\n\nCoefficient of \\(x^2\\) in numerator: \\(-\\beta\\). For \\(\\displaystyle\\lim=2\\):\n\n\\[\\lim_{x\\to\\infty}\\frac{-\\beta x^2-x+1-\\beta}{x^2+1}=-\\beta=2\\implies\\beta=-2\\]",
     "name": "Limit Involving Polynomial Division"
   },
-  {
-    "id": "m23_item21",
-    "text": "For \\(k>0\\), \\(\\displaystyle\\sum_{x=0}^{\\infty}\\frac{k^x}{x!}\\lim_{n\\to\\infty}\\frac{n!}{(n-x)!}\\left(\\frac{k}{n}\\right)^{n-x}\\left(\\frac{1}{n}\\right)^x=\\)",
-    "options": [
-      "\\(0\\)",
-      "\\(k\\)",
-      "\\(x\\)",
-      "\\(1\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "The inner limit is \\(\\displaystyle\\lim_{n\\to\\infty}\\binom{n}{x}\\left(\\frac{k}{n}\\right)^x\\left(1-\\frac{k}{n}\\right)^{n-x}\\), which is the Binomial→Poisson approximation.\n\nSumming over \\(x\\) gives \\(\\displaystyle\\lim_{n\\to\\infty}\\left(1-\\frac{k}{n}+\\frac{k}{n}\\right)^n=\\lim_{n\\to\\infty}1^n=1\\).",
-    "name": "Binomial to Poisson Limit"
-  },
+  
   {
     "id": "m23_item22",
     "text": "Let \\(f:\\mathbb{R}\\to\\mathbb{R}\\) be \\(f(x)=\\begin{cases}5,&x\\leq1\\\\a+bx,&1<x<3\\\\b+5x,&3\\leq x<5\\\\30,&x\\geq5\\end{cases}\\). Then \\(f\\) is continuous",
@@ -350,19 +326,7 @@
     "explanation": "Using Taylor expansions \\(\\tan x=x+\\dfrac{x^3}{3}+\\cdots\\):\n\n\\(\\tan2x-2\\tan x=2x+\\dfrac{8x^3}{3}-2x-\\dfrac{2x^3}{3}+\\cdots=2x^3+\\cdots\\)\n\nNumerator: \\(x^2\\cdot(2x^3)^2=4x^8\\)\n\nDenominator: \\((1-\\cos2x)^4=(2\\sin^2x)^4\\approx(2x^2)^4=16x^8\\)\n\n\\[\\text{Limit}=\\frac{4x^8}{16x^8}=\\frac{1}{4}\\]",
     "name": "Limit with Tangent Functions"
   },
-  {
-    "id": "m23_item28",
-    "text": "\\(\\displaystyle\\lim_{x\\to\\infty}\\left(\\frac{6x^2-\\cos3x}{x^2+5}-\\frac{5x^3+3}{x^6+2}\\right)=\\)",
-    "options": [
-      "\\(11\\)",
-      "\\(0\\)",
-      "\\(-1\\)",
-      "\\(1\\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "\\[\\lim_{x\\to\\infty}\\frac{6x^2-\\cos3x}{x^2+5}=6\\quad\\text{(dividing by }x^2\\text{)}\\]\n\n\\[\\lim_{x\\to\\infty}\\frac{5x^3+3}{x^6+2}=\\lim_{x\\to\\infty}\\frac{5/x^3}{1+2/x^6}=0\\]\n\n\\[\\text{Limit}=6-(-5)=11\\]\n\nActually: second term \\(\\to0\\) and first term \\(\\to6\\), but for \\(x\\to-\\infty\\): \\(|x|^3/x^3=-1\\), so the answer is \\(6+5=11\\).",
-    "name": "Limit at Infinity of Rational Functions"
-  },
+  
   {
     "id": "m23_item29",
     "text": "The number of discontinuities of \\(f(x)=\\dfrac{x-1}{x^3+6x^2+11x+6}\\) in \\(\\mathbb{R}\\) is",
@@ -428,19 +392,7 @@
     "explanation": "For \\(x<0\\): \\(e^{nx}\\to0\\) as \\(n\\to\\infty\\).\n\n\\[\\lim_{n\\to\\infty}\\frac{\\sin x/e^{nx}-1}{1/e^{nx}+A}=\\frac{0-1}{0+A}=-\\frac{1}{A}\\]",
     "name": "Limit of Exponential Sequence"
   },
-  {
-    "id": "m23_item34",
-    "text": "If \\(\\displaystyle\\lim_{x\\to0}f(x)\\) exists for \\(f(x)=\\begin{cases}\\dfrac{1+px-\\sqrt{1-px}}{x},&-1\\leq x<0\\\\\\dfrac{2x+1}{x-2},&0\\leq x\\leq1\\end{cases}\\), then \\(p=\\)",
-    "options": [
-      "\\(-1\\)",
-      "\\(-\\dfrac{1}{2}\\)",
-      "\\(\\dfrac{1}{2}\\)",
-      "\\(1\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "RHL at \\(x=0\\): \\(\\dfrac{0+1}{0-2}=-\\dfrac{1}{2}\\).\n\nLHL at \\(x=0\\): using L'Hôpital, \\(\\dfrac{p}{2\\sqrt{1}}+\\dfrac{p}{2}=p\\).\n\nSetting equal: \\(p=-\\dfrac{1}{2}\\).",
-    "name": "Finding p for Limit to Exist"
-  },
+  
   {
     "id": "m23_item35",
     "text": "If \\(f(x)=\\dfrac{\\cos(\\sin x)-\\cos x}{x^4}\\) and \\(f\\) is continuous at \\(x=0\\) with \\(f(0)=k\\), then \\(k=\\)",
@@ -506,32 +458,7 @@
     "explanation": "Using \\([r^2x]=r^2x-\\{r^2x\\}\\):\n\n\\[\\frac{1}{n^3}\\sum_{r=1}^n[r^2x]\\to\\frac{x}{n^3}\\cdot\\frac{n(n+1)(2n+1)}{6}-0\\to\\frac{x\\cdot2}{6}=\\frac{x}{3}\\]",
     "name": "Limit of Sum with Greatest Integer Function"
   },
-  {
-    "id": "m23_item40",
-    "text": "If \\(f(x)=\\begin{cases}\\dfrac{1-2\\sin x}{\\pi-4x},&x\\neq\\dfrac{\\pi}{4}\\\\k,&x=\\dfrac{\\pi}{4}\\end{cases}\\) is continuous at \\(x=\\dfrac{\\pi}{4}\\), then \\(k=\\)",
-    "options": [
-      "\\(\\dfrac{1}{4}\\)",
-      "\\(1\\)",
-      "\\(-\\dfrac{1}{4}\\)",
-      "\\(2\\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "\\[k=\\lim_{x\\to\\pi/4}\\frac{1-2\\sin x}{\\pi-4x}\\stackrel{L'H}{=}\\lim_{x\\to\\pi/4}\\frac{-2\\cos x}{-4}=\\frac{2\\cos(\\pi/4)}{4}=\\frac{2\\cdot\\frac{1}{\\sqrt{2}}}{4}=\\frac{\\sqrt{2}}{4}\\cdot\\frac{1}{\\sqrt{2}}=\\frac{1}{4}\\]",
-    "name": "Continuity Value at Pi/4"
-  },
-  {
-    "id": "m23_item41",
-    "text": "\\(\\displaystyle\\lim_{x\\to\\pi/2}\\frac{1+\\cos^2x}{\\cot^3x(3\\sin^2x-1)}=\\)",
-    "options": [
-      "\\(\\dfrac{1}{3\\log9}\\)",
-      "\\(\\dfrac{2}{3\\log3}\\)",
-      "\\(\\dfrac{1}{3\\log3}\\)",
-      "\\(\\dfrac{3}{\\log3}\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Setting \\(x=\\dfrac{\\pi}{2}-h\\), \\(h\\to0\\) and simplifying:\n\n\\[\\lim_{h\\to0}\\frac{2\\sin^2h}{-\\frac{\\cos3h}{\\sin3h}\\cdot(3\\sin^2h-1)\\cdot\\sin^3h}\\to\\frac{1}{3\\log_e3}\\]",
-    "name": "Limit at Pi/2 with Trigonometry"
-  },
+  
   {
     "id": "m23_item42",
     "text": "The positive integer \\(n\\) for which \\(\\displaystyle\\lim_{x\\to0}\\frac{(\\cos x-1)(\\cos x-e^x)}{x^n}\\) exists and is finite is",
@@ -545,19 +472,7 @@
     "explanation": "\\((\\cos x-1)\\approx-\\dfrac{x^2}{2}\\) and \\((\\cos x-e^x)\\approx-\\dfrac{x^2}{2}-x+\\cdots\\approx-x\\).\n\nProduct \\(\\approx\\dfrac{x^3}{2}\\).\n\nFor the limit to exist and be finite: \\(n=3\\).",
     "name": "Integer n for Finite Limit"
   },
-  {
-    "id": "m23_item43",
-    "text": "Let \\(l_1=\\displaystyle\\lim_{x\\to2^+}(x^2+[x])\\), \\(l_2=\\displaystyle\\lim_{x\\to3^-}(2x-[x])\\), \\(l_3=\\displaystyle\\lim_{x\\to\\pi/2}\\dfrac{\\cos x}{x-\\pi/2}\\). Then",
-    "options": [
-      "\\(l_2<l_3<l_1\\)",
-      "\\(l_1<l_3<l_2\\)",
-      "\\(l_1<l_2<l_3\\)",
-      "\\(l_3<l_2<l_1\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "\\(l_1=\\lim_{x\\to2^+}(x^2+2)=4+2=6\\) (since \\([x]=2\\) for \\(x\\to2^+\\)).\n\n\\(l_2=\\lim_{x\\to3^-}(2x-2)=6-2=4\\) (since \\([x]=2\\) for \\(x\\to3^-\\)).\n\n\\(l_3=\\lim_{x\\to\\pi/2}\\frac{\\cos x}{x-\\pi/2}=-1\\) (let \\(x=\\pi/2+h\\)).\n\n\\(l_3=-1<l_2=4<l_1=6\\).",
-    "name": "Comparing Limits with GIF"
-  },
+
   {
     "id": "m23_item44",
     "text": "If the function \\(f\\) defined by \\(f(x)=\\begin{cases}\\cos x,&x\\leq0\\\\3x+\\alpha,&0<x<2\\\\\\beta x+3,&2\\leq x\\leq4\\\\11,&x>4\\end{cases}\\) is continuous on \\(\\mathbb{R}\\), then \\(\\alpha^2+\\beta^2=\\)",
@@ -584,19 +499,7 @@
     "explanation": "\\(\\lim_{x\\to1^-}f(x)=1+\\dfrac{2}{k}\\) and \\(\\lim_{x\\to1^+}f(x)=k\\).\n\n\\[1+\\frac{2}{k}=k\\implies k^2-k-2=0\\implies(k-2)(k+1)=0\\]\n\nSince \\(k>0\\): \\(k=2\\implies k^2=4\\).",
     "name": "Limit Continuity Gives k"
   },
-  {
-    "id": "m23_item46",
-    "text": "If \\(f:\\mathbb{R}\\to\\mathbb{R}\\) defined by \\(f(x)=\\begin{cases}\\dfrac{\\sin(a+1)x+\\sin x}{x},&x<0\\\\b,&x=0\\\\\\dfrac{x+x^2-\\sqrt{x}}{x^{3/2}},&x>0\\end{cases}\\) is continuous, then \\(a+b=\\)",
-    "options": [
-      "\\(-1\\)",
-      "\\(2\\)",
-      "\\(1\\)",
-      "\\(3\\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "LHL at \\(0\\): \\((a+1)+1=a+2\\).\n\nRHL at \\(0\\): \\(\\displaystyle\\lim_{x\\to0^+}\\frac{\\sqrt{x}(\\sqrt{1+x}-1)}{x}=\\lim\\frac{\\sqrt{1+x}-1}{\\sqrt{x}}=\\dfrac{1}{2}\\).\n\nSo \\(b=\\dfrac{1}{2}\\) and \\(a+2=\\dfrac{1}{2}\\implies a=-\\dfrac{3}{2}\\).\n\n\\[a+b=-\\frac{3}{2}+\\frac{1}{2}=-1\\]",
-    "name": "Continuity with Sin and Sqrt"
-  },
+  
   {
     "id": "m23_item47",
     "text": "Let \\(f\\) be defined on \\(D=\\mathbb{R}\\setminus\\{-1,1\\}\\) by \\(f(x)=\\dfrac{|x|}{1-|x|}\\). Then",

@@ -90,19 +90,7 @@
     "explanation": "Let \\(y = \\dfrac{x-P}{x^2-3x+2}\\) (where \\(x \\neq 1,2\\)). Then \\(yx^2-(3y+1)x+(2y+P)=0\\). For all real \\(x\\), \\(D \\geq 0\\): \\((3y+1)^2-4y(2y+P) \\geq 0 \\Rightarrow y^2+(6-4P)y+1 \\geq 0\\). For this to hold for all real \\(y\\), its own discriminant must be \\(\\leq 0\\): \\((6-4P)^2-4 \\leq 0 \\Rightarrow (4P-6)^2 \\leq 4 \\Rightarrow (4P-6-2)(4P-6+2) \\leq 0 \\Rightarrow (P-2)(P-1) \\leq 0 \\Rightarrow P \\in [1,2]\\).",
     "name": "Parameter Range for All Real Values"
   },
-  {
-    "id": "m2_item8",
-    "text": "\\(\\left\\{x \\in \\mathbb{R} : \\sqrt{\\dfrac{6+x-x^2}{x+4}} \\geq \\sqrt{\\dfrac{6+x-x^2}{2x+5}}\\right\\} =\\)",
-    "options": [
-      "\\([-2,\\ 3]\\)",
-      "\\((-\\infty,\\ -4] \\cup \\left[-\\dfrac{5}{2},\\ -1\\right]\\)",
-      "\\([-2,\\ -1] \\cup \\{3\\}\\)",
-      "\\((-\\infty,\\ -4] \\cup [-2,\\ -1]\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "The inequality \\(\\sqrt{\\dfrac{6+x-x^2}{x+4}} \\geq \\sqrt{\\dfrac{6+x-x^2}{2x+5}}\\) requires \\(6+x-x^2 \\geq 0\\) for the square roots to exist, giving \\(x \\in [-2, 3]\\). Dividing both sides (for the expression inside): \\((6+x-x^2)\\left(\\dfrac{1}{2x+5}-\\dfrac{1}{x+4}\\right) \\geq 0 \\Rightarrow (6+x-x^2) \\cdot \\dfrac{-(x+1)}{(2x+5)(x+4)} \\geq 0\\). Within \\([-2,3]\\), analysing signs gives \\(x \\in [-2,-1] \\cup \\{3\\}\\).",
-    "name": "Square Root Inequality"
-  },
+  
   {
     "id": "m2_item9",
     "text": "If \\(x \\in \\mathbb{R}\\) and \\(1 \\leq \\dfrac{3x^2-7x+8}{x^2+1} \\leq 2\\), then the minimum and maximum values of \\(x\\) are respectively",
@@ -181,19 +169,7 @@
     "explanation": "From \\(5x-1 < (x+1)^2\\): \\(5x-1 < x^2+2x+1 \\Rightarrow x^2-3x+2 > 0 \\Rightarrow (x-1)(x-2)>0 \\Rightarrow x \\in (-\\infty,1)\\cup(2,\\infty)\\). From \\((x+1)^2 < 7x-3\\): \\(x^2+2x+1 < 7x-3 \\Rightarrow x^2-5x+4 < 0 \\Rightarrow (x-1)(x-4)<0 \\Rightarrow x \\in (1,4)\\). Intersection: \\(x \\in (2,4)\\). The only integer in \\((2,4)\\) is \\(x=3\\). So there is \\(1\\) integral value... wait, the PDF answer is (d) \\(3\\). Re-checking: intersection is \\((2,4)\\), integers are \\(\\{3\\}\\) — only 1. But the question asks for the number, and PDF says \\(x=3\\) and answer \\(d=3\\) means \\(x=3\\) itself (the value), not the count. The answer option \\(d\\) is the value \\(3\\), confirming \\(x=3\\).",
     "name": "Integral Values in Double Inequality"
   },
-  {
-    "id": "m2_item15",
-    "text": "Given that \\(a, b, c\\) are real numbers with \\(b^2=4ac\\) and \\(a>0\\). The maximal set \\(D \\subseteq \\mathbb{R}\\) on which \\(f(x) = \\log\\{ax^3+(a+b)x^2+(b+c)x+c\\}\\) is defined, is",
-    "options": [
-      "\\(\\mathbb{R} - \\left\\{-\\dfrac{b}{2a}\\right\\}\\)",
-      "\\(\\mathbb{R} - \\left\\{-\\dfrac{b}{2a}\\right\\} \\cup (-\\infty,\\ -1)\\)",
-      "\\(\\mathbb{R} - \\left\\{-\\dfrac{b}{2a}\\right\\} \\cup \\{x: x \\geq 1\\}\\)",
-      "\\(\\mathbb{R} - \\left(\\left\\{-\\dfrac{b}{2a}\\right\\} \\cup (-\\infty,\\ -1]\\right)\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "Factorise: \\(ax^3+(a+b)x^2+(b+c)x+c = (ax^2+bx+c)(x+1)\\). Since \\(b^2=4ac\\) and \\(a>0\\), \\(ax^2+bx+c = a\\left(x+\\dfrac{b}{2a}\\right)^2 \\geq 0\\), equaling zero only at \\(x=-\\dfrac{b}{2a}\\). For \\(\\log\\) to be defined, the argument must be \\(> 0\\): need \\((ax^2+bx+c)(x+1)>0\\). Since \\(ax^2+bx+c \\geq 0\\) and equals 0 at \\(x=-\\dfrac{b}{2a}\\), we need \\(x+1>0\\) (i.e. \\(x > -1\\)) and \\(x \\neq -\\dfrac{b}{2a}\\). So \\(D = \\mathbb{R} - \\left(\\left\\{-\\dfrac{b}{2a}\\right\\} \\cup (-\\infty,-1]\\right)\\).",
-    "name": "Domain of Logarithmic Function"
-  },
+  
   {
     "id": "m2_item16",
     "text": "For real number \\(x\\), if the minimum value of \\(f(x) = x^2+2bx+2c^2\\) is greater than the maximum value of \\(g(x) = -x^2-2cx+b^2\\), then",

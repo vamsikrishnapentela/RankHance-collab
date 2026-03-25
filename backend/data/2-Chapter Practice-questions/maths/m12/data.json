@@ -26,19 +26,6 @@
     "name": "Product of Cosines"
   },
   {
-    "id": "m12_item3",
-    "text": "If \\(\\sin\\theta + \\csc\\theta = 2\\), then \\(\\sin^{2020}\\theta + \\csc^{2020}\\theta =\\)",
-    "options": [
-      "\\(2^{2020}\\)",
-      "\\(2020^{2019}\\)",
-      "\\(2^{2019}\\)",
-      "\\(2\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "Given \\(\\sin\\theta + \\csc\\theta = 2\\), i.e., \\(\\sin\\theta + \\dfrac{1}{\\sin\\theta} = 2\\).\n\nThis simplifies to \\(\\sin^2\\theta - 2\\sin\\theta + 1 = 0\\), so \\((\\sin\\theta - 1)^2 = 0\\), giving \\(\\sin\\theta = 1\\).\n\nTherefore \\(\\csc\\theta = 1\\) as well.\n\n\\[\\sin^{2020}\\theta + \\csc^{2020}\\theta = 1^{2020} + 1^{2020} = 2\\]",
-    "name": "Power of Sin and Cosec"
-  },
-  {
     "id": "m12_item4",
     "text": "\\(\\tan 9° - \\tan 27° - \\tan 63° + \\tan 81° =\\)",
     "options": [
@@ -50,32 +37,6 @@
     "correctIndex": 3,
     "explanation": "Regroup: \\((\\tan 81° + \\tan 9°) - (\\tan 63° + \\tan 27°)\\).\n\nSince \\(\\tan 81° = \\cot 9°\\) and \\(\\tan 63° = \\cot 27°\\):\n\n\\[= (\\cot 9° + \\tan 9°) - (\\cot 27° + \\tan 27°)\\]\n\nUsing \\(\\tan\\theta + \\cot\\theta = \\dfrac{2}{\\sin 2\\theta}\\):\n\n\\[= \\frac{2}{\\sin 18°} - \\frac{2}{\\sin 54°} = \\frac{2}{\\sin 18°} - \\frac{2}{\\cos 36°}\\]\n\n\\[= 2\\cdot\\frac{\\cos 36° - \\sin 18°}{\\sin 18°\\cos 36°} = \\frac{4(\\cos 36°\\sin 18°)}{\\cos 36°\\sin 18°} = 4\\]",
     "name": "Tan Sum Expression"
-  },
-  {
-    "id": "m12_item5",
-    "text": "If \\(\\dfrac{1}{2}\\left(\\tan\\dfrac{\\pi}{24} + \\cot\\dfrac{\\pi}{24}\\right) = a^2 + \\sqrt{a} + \\sqrt{a}\\), then \\(a =\\)",
-    "options": [
-      "\\(3\\)",
-      "\\(2\\)",
-      "\\(1\\)",
-      "\\(4\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "We compute \\(\\tan\\dfrac{\\pi}{24} + \\cot\\dfrac{\\pi}{24}\\).\n\nUsing \\(\\tan\\theta + \\cot\\theta = \\dfrac{2}{\\sin 2\\theta}\\), we get \\(\\dfrac{2}{\\sin(\\pi/12)}\\).\n\nSo \\(\\dfrac{1}{2}\\left(\\tan\\dfrac{\\pi}{24}+\\cot\\dfrac{\\pi}{24}\\right) = \\dfrac{1}{\\sin(\\pi/12)}\\).\n\nSince \\(\\sin 15° = \\dfrac{\\sqrt{6}-\\sqrt{2}}{4}\\), we get \\(\\dfrac{4}{\\sqrt{6}-\\sqrt{2}} = \\sqrt{6}+\\sqrt{2}\\).\n\nNow \\(\\sqrt{6}+\\sqrt{2} = 2^2 + \\sqrt{2} + \\sqrt{2}\\), comparing gives \\(a = 2\\).",
-    "name": "Tan and Cot Identity"
-  },
-  {
-    "id": "m12_item6",
-    "text": "If \\(\\sec\\theta = m\\) and \\(\\tan\\theta = n\\), then \\(\\dfrac{1}{m}\\left(m+n\\right) + \\dfrac{1}{m+n} =\\)",
-    "options": [
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(-1\\)",
-      "\\(3\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "Given \\(\\sec\\theta = m\\) and \\(\\tan\\theta = n\\).\n\n\\[\\frac{1}{m}(m+n) + \\frac{1}{m+n} = \\frac{(\\sec\\theta+\\tan\\theta)^2 + 1}{\\sec\\theta(\\sec\\theta+\\tan\\theta)}\\]\n\n\\[= \\frac{\\sec^2\\theta + \\tan^2\\theta + 2\\sec\\theta\\tan\\theta + 1}{\\sec\\theta(\\sec\\theta+\\tan\\theta)}\\]\n\nSince \\(\\sec^2\\theta - \\tan^2\\theta = 1\\), we have \\(\\sec^2\\theta + 1 = 1 + \\sec^2\\theta\\) and:\n\n\\[= \\frac{2\\sec^2\\theta + 2\\sec\\theta\\tan\\theta}{\\sec\\theta(\\sec\\theta+\\tan\\theta)} = \\frac{2\\sec\\theta(\\sec\\theta+\\tan\\theta)}{\\sec\\theta(\\sec\\theta+\\tan\\theta)} = 2\\]",
-    "name": "Sec and Tan Identity"
   },
   {
     "id": "m12_item7",
@@ -428,19 +389,7 @@
     "explanation": "\\[\\cos 66° + \\sin 84° = \\cos 66° + \\cos 6°\\]\n\nUsing sum-to-product: \\(\\cos A + \\cos B = 2\\cos\\dfrac{A+B}{2}\\cos\\dfrac{A-B}{2}\\):\n\n\\[= 2\\cos 36°\\cos 30° = 2\\cdot\\frac{\\sqrt{5}+1}{4}\\cdot\\frac{\\sqrt{3}}{2} = \\frac{\\sqrt{3}(\\sqrt{5}+1)}{4}\\]",
     "name": "Sum of Cos and Sin Special Angles"
   },
-  {
-    "id": "m12_item34",
-    "text": "\\(\\csc 48° + \\csc 96° + \\csc 192° + \\csc 384° =\\)",
-    "options": [
-      "\\(-2\\)",
-      "\\(-1\\)",
-      "\\(0\\)",
-      "\\(\\dfrac{\\sqrt{3}}{2}\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Using allied angles: \\(\\csc 192° = -\\sec 78°\\) and \\(\\csc 384° = \\csc 24°\\).\n\nRearranging:\n\\[\\frac{1}{\\cos 42°} - \\frac{1}{\\cos 78°} + \\frac{1}{\\sin 96°} + \\frac{1}{\\sin 24°}\\]\n\n\\[= \\frac{\\cos 78° - \\cos 42°}{\\cos 42°\\cos 78°} + \\frac{\\sin 24° + \\sin 96°}{\\sin 96°\\sin 24°}\\]\n\nUsing sum-to-product and product formulas: \\(\\cos 78° - \\cos 42° = -2\\sin 60°\\sin 18°\\) and \\(\\cos 42°\\cos 78° = \\cos^2 60° - \\sin^2 18°\\), a careful evaluation yields \\(-2\\sqrt{3} + 2\\sqrt{3} = 0\\).",
-    "name": "Sum of Cosecants"
-  },
+  
   {
     "id": "m12_item35",
     "text": "\\(\\sin^4\\dfrac{\\pi}{8} + \\sin^4\\dfrac{2\\pi}{8} + \\sin^4\\dfrac{3\\pi}{8} + \\sin^4\\dfrac{4\\pi}{8} + \\sin^4\\dfrac{5\\pi}{8} + \\sin^4\\dfrac{6\\pi}{8} + \\sin^4\\dfrac{7\\pi}{8} =\\)",
@@ -454,45 +403,7 @@
     "explanation": "Using the symmetry \\(\\sin\\dfrac{k\\pi}{8} = \\cos\\dfrac{(4-k)\\pi}{8}\\) to pair terms:\n\n\\[\\left(\\sin^4\\frac{\\pi}{8}+\\cos^4\\frac{\\pi}{8}\\right) + \\left(\\sin^4\\frac{3\\pi}{8}+\\cos^4\\frac{3\\pi}{8}\\right) + \\sin^4\\frac{\\pi}{4} + \\sin^4\\frac{\\pi}{2}\\]\n\nFor any angle \\(\\phi\\): \\(\\sin^4\\phi + \\cos^4\\phi = 1 - 2\\sin^2\\phi\\cos^2\\phi = 1 - \\dfrac{\\sin^2 2\\phi}{2}\\).\n\nSubstituting \\(\\phi = \\dfrac{\\pi}{8}\\) and \\(\\phi = \\dfrac{3\\pi}{8}\\) and adding the remaining terms \\(\\left(\\dfrac{1}{2}\\right)^2 + 1\\):\n\nTotal \\(= 3\\).",
     "name": "Sum of Fourth Powers of Sines"
   },
-  {
-    "id": "m12_item36",
-    "text": "If \\(x : y : z = \\tan\\!\\left(\\dfrac{\\pi}{15}+\\alpha\\right) : \\tan\\!\\left(\\dfrac{\\pi}{15}+\\beta\\right) : \\tan\\!\\left(\\dfrac{\\pi}{15}+\\gamma\\right)\\), then \\(\\dfrac{z+x}{z-x}\\sin 2(\\gamma-\\alpha) + \\dfrac{x+y}{x-y}\\sin 2(\\alpha-\\beta) + \\dfrac{y+z}{y-z}\\sin 2(\\beta-\\gamma) =\\)",
-    "options": [
-      "\\(\\sin 2\\theta\\)",
-      "\\(\\cos 2\\theta\\)",
-      "\\(0\\)",
-      "\\(1\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Let \\(x = k\\tan(12°+\\alpha)\\), \\(y = k\\tan(12°+\\beta)\\), \\(z = k\\tan(12°+\\gamma)\\).\n\nUsing the identity: for any \\(p = \\tan A\\), \\(q = \\tan B\\):\n\\[\\frac{p+q}{p-q} = \\frac{\\sin(A+B)}{\\sin(A-B)}\\]\n\nEach term of the sum expands to a product of sines involving differences of squares, which when grouped with their complementary terms cancel each other pairwise.\n\nAfter complete expansion and cancellation of corresponding terms involving \\(\\sin 24°\\) and \\(\\cos 24°\\) factors, the entire expression evaluates to \\(0\\).",
-    "name": "Trig Ratio Identity Sum"
-  },
-  {
-    "id": "m12_item37",
-    "text": "Let \\(x = a\\sin^\\alpha\\theta\\cos^{\\alpha+1}\\theta\\), \\(y = a\\sin^{\\alpha+1}\\theta\\cos^\\alpha\\theta\\). If \\(\\dfrac{(x^2+y^2)^m}{(xy)^n}\\) is independent of \\(\\theta\\), then the relation between \\(\\alpha\\), \\(m\\) and \\(n\\) is",
-    "options": [
-      "\\(2m\\alpha = n(2\\alpha+1)\\)",
-      "\\(m+n = \\alpha\\)",
-      "\\(2m\\alpha = 2n\\alpha + m\\)",
-      "\\(2m = (2n+1)\\alpha\\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "\\[x^2 + y^2 = a^2\\sin^{2\\alpha}\\theta\\cos^{2\\alpha}\\theta(\\sin^2\\theta+\\cos^2\\theta) = a^2\\sin^{2\\alpha}\\theta\\cos^{2\\alpha}\\theta\\]\n\n\\[xy = a^2\\sin^{2\\alpha+1}\\theta\\cos^{2\\alpha+1}\\theta\\]\n\n\\[\\frac{(x^2+y^2)^m}{(xy)^n} = \\frac{a^{2m}(\\sin\\theta\\cos\\theta)^{2\\alpha m}}{a^{2n}(\\sin\\theta\\cos\\theta)^{(2\\alpha+1)n}} = a^{2m-2n}(\\sin\\theta\\cos\\theta)^{2\\alpha m - (2\\alpha+1)n}\\]\n\nFor this to be independent of \\(\\theta\\), the exponent of \\(\\sin\\theta\\cos\\theta\\) must be zero:\n\n\\[2\\alpha m - (2\\alpha+1)n = 0 \\implies 2m\\alpha = n(2\\alpha+1)\\]",
-    "name": "Independence Condition"
-  },
-  {
-    "id": "m12_item38",
-    "text": "If \\(4\\sin^4\\theta + \\sin^2 2\\theta + 4\\cos^2\\!\\left(\\dfrac{\\pi}{4}-\\dfrac{\\theta}{2}\\right) = 2\\), then \\(\\theta\\) lies in",
-    "options": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
-    ],
-    "correctIndex": 2,
-    "explanation": "Simplify the left side:\n\n\\[4\\sin^4\\theta + 4\\sin^2\\theta\\cos^2\\theta + 2\\left(1+\\cos\\!\\left(\\frac{\\pi}{2}-\\theta\\right)\\right)\\]\n\n\\[= 4\\sin^2\\theta(\\sin^2\\theta+\\cos^2\\theta) + 2(1+\\sin\\theta)\\]\n\n\\[= 4\\sin^2\\theta + 2 + 2\\sin\\theta = 2\\]\n\n\\[\\implies 4\\sin^2\\theta + 2\\sin\\theta = 0 \\implies |2\\sin\\theta| + 2\\sin\\theta = 0\\]\n\nThis requires \\(\\sin\\theta \\leq 0\\), so \\(\\theta\\) lies in the **3rd or 4th quadrant**.\n\nThe Assertion (A) is true. The Reason (R) states \\(\\sin^2\\theta = \\sin\\theta\\), which is false in general — it holds only for \\(\\sin\\theta = 0\\) or \\(1\\), not for all third/fourth quadrant angles. So (A) is true but (R) is false.",
-    "name": "Assertion-Reason Trig Equation"
-  },
+  
   {
     "id": "m12_item39",
     "text": "If \\(x = \\dfrac{\\sin^3\\theta}{\\cos^2\\theta}\\) and \\(y = \\dfrac{\\cos^3\\theta}{\\sin^2\\theta}\\), where \\(\\sin\\theta + \\cos\\theta = \\dfrac{1}{2}\\), then \\(x + y =\\)",
@@ -505,32 +416,6 @@
     "correctIndex": 3,
     "explanation": "\\[x + y = \\frac{\\sin^3\\theta}{\\cos^2\\theta} + \\frac{\\cos^3\\theta}{\\sin^2\\theta} = \\frac{\\sin^5\\theta + \\cos^5\\theta}{\\sin^2\\theta\\cos^2\\theta}\\]\n\n\\[= \\frac{(\\sin\\theta+\\cos\\theta)(\\sin^4\\theta - \\sin^3\\theta\\cos\\theta + \\sin^2\\theta\\cos^2\\theta - \\sin\\theta\\cos^3\\theta + \\cos^4\\theta)}{\\sin^2\\theta\\cos^2\\theta}\\]\n\nFrom \\(\\sin\\theta + \\cos\\theta = \\dfrac{1}{2}\\):\n\n\\[1 + 2\\sin\\theta\\cos\\theta = \\frac{1}{4} \\implies \\sin\\theta\\cos\\theta = -\\frac{3}{8}\\]\n\nAfter substituting and simplifying:\n\n\\[x + y = \\frac{1}{2}\\cdot\\frac{1 - \\sin\\theta\\cos\\theta}{(\\sin\\theta\\cos\\theta)^2} - \\frac{1}{2} = \\frac{11}{16}\\div\\frac{9}{64} - \\frac{1}{2} = \\frac{44}{9} - \\frac{1}{2} = \\frac{79}{18}\\]",
     "name": "Sum of Trig Fractions"
-  },
-  {
-    "id": "m12_item40",
-    "text": "Let \\(0 < \\alpha < \\beta < \\gamma < 2\\pi\\). For \\(x \\in \\mathbb{R}\\), if \\(\\cos(x+\\alpha) + \\cos(x+\\beta) + \\cos(x+\\gamma) = 0\\), then \\(\\tan(\\gamma - \\alpha) =\\)",
-    "options": [
-      "\\(-\\sqrt{3}\\)",
-      "\\(0\\)",
-      "\\(1\\)",
-      "\\(\\sqrt{3}\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "Since the equation holds for all \\(x \\in \\mathbb{R}\\), we can choose specific values of \\(x\\).\n\nSetting \\(x = -\\frac{\\pi}{2} - \\beta\\) and using sum-to-product gives \\(\\sin(\\beta - \\alpha) = \\sin(\\gamma - \\beta)\\), so \\(\\beta - \\alpha = \\gamma - \\beta\\), meaning \\(2\\beta = \\alpha + \\gamma\\).\n\nSetting \\(x = -\\alpha - \\beta - \\gamma\\) and applying sum-to-product:\n\n\\[2\\cos\\frac{\\alpha+2\\beta+\\gamma}{2}\\cos\\frac{\\gamma-\\alpha}{2} + \\cos(\\alpha+\\gamma) = 0\\]\n\nSubstituting \\(2\\beta = \\alpha + \\gamma\\) and solving:\n\n\\[\\cos\\frac{\\gamma-\\alpha}{2} = -\\frac{1}{2} \\implies \\frac{\\gamma-\\alpha}{2} = \\frac{2\\pi}{3} \\implies \\gamma - \\alpha = \\frac{4\\pi}{3}\\]\n\n\\[\\tan(\\gamma - \\alpha) = \\tan\\frac{4\\pi}{3} = \\sqrt{3}\\]",
-    "name": "Sum of Cosines Zero Condition"
-  },
-  {
-    "id": "m12_item41",
-    "text": "If \\(ABC\\) is not a right-angled triangle and \\(\\sin\\!\\left(\\dfrac{\\pi}{4}-A\\right)\\sin\\!\\left(\\dfrac{\\pi}{4}-B\\right) = -\\dfrac{1}{2\\sqrt{2}}\\csc\\!\\left(\\dfrac{\\pi}{4}-C\\right)\\), then \\(\\tan A\\tan B + \\tan B\\tan C + \\tan C\\tan A =\\)",
-    "options": [
-      "\\(\\cot A + \\cot B + \\cot C\\)",
-      "\\(\\tan A + \\tan B + \\tan C\\)",
-      "\\(\\dfrac{1}{\\tan A+\\tan B+\\tan C}\\)",
-      "\\(\\dfrac{1}{\\cot A+\\cot B+\\cot C}\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "Given \\(A + B + C = \\pi\\), we know that \\(\\tan A + \\tan B + \\tan C = \\tan A\\tan B\\tan C\\).\n\nThe condition simplifies using \\(A+B+C = \\pi\\) and the given product equation to establish:\n\n\\[(\\cos A - \\sin A)(\\cos B - \\sin B)(\\cos C - \\sin C) = -\\frac{1}{\\sqrt{2}}\\]\n\nExpanding and using \\(\\cos A\\cos B\\cos C(1-\\tan A)(1-\\tan B)(1-\\tan C) = \\cos(A+B+C) = -1\\):\n\n\\[1 - (\\tan A+\\tan B+\\tan C) + (\\tan A\\tan B+\\tan B\\tan C+\\tan C\\tan A) - \\tan A\\tan B\\tan C = -\\frac{1}{\\cos A\\cos B\\cos C}\\]\n\nSince \\(\\tan A+\\tan B+\\tan C = \\tan A\\tan B\\tan C\\), cancellation gives:\n\n\\[\\tan A\\tan B + \\tan B\\tan C + \\tan C\\tan A = \\tan A + \\tan B + \\tan C\\]",
-    "name": "Tan Product Sum in Triangle"
   },
   {
     "id": "m12_item42",

@@ -1,18 +1,5 @@
 [
   {
-    "id": "m28_item1",
-    "text": "The solution of \\((e^y-x)\\,dy=(e^x-e^y)\\,dx\\) is",
-    "options": [
-      "\\(e^{e^y}e^x=e^{xe^x}-e^{e^x}+c\\)",
-      "\\(e^ye^x=e^xe^{e^x}-e^{e^x}+c\\)",
-      "\\(e^ye^{e^x}=e^{e^x}(e^x-1)+c\\)",
-      "\\(e^{e^y}e^x=e^xe^{e^x}-e^{e^x}+c\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Let \\(z=e^y\\). The equation becomes \\(\\dfrac{dz}{dx}+e^xz=e^{2x}\\). IF \\(=e^{e^x}\\).\n\nSolution: \\(ze^{e^x}=\\int e^{2x}e^{e^x}dx+c\\). Let \\(u=e^x\\):\n\n\\(e^ye^{e^x}=e^{e^x}(e^x-1)+c\\)",
-    "name": "First-Order Linear ODE with Substitution"
-  },
-  {
     "id": "m28_item2",
     "text": "The solution of \\(\\left(x\\cos\\dfrac{y}{x}+y\\sin\\dfrac{y}{x}\\right)y\\,dx=\\left(y\\sin\\dfrac{y}{x}-x\\cos\\dfrac{y}{x}\\right)x\\,dy\\) is",
     "options": [
@@ -168,19 +155,7 @@
     "explanation": "\\(y=\\dfrac{e^{x^4}}{4}+C\\). With \\((0,1)\\): \\(C=3/4\\).\n\n\\(4y-3=e^{x^4}\\implies x=(\\log|4y-3|)^{1/4}\\)",
     "name": "Curve from Integral"
   },
-  {
-    "id": "m28_item14",
-    "text": "The sum of order and degree of \\(y=x\\dfrac{dy}{dx}+2\\left(\\dfrac{d^2y}{dx^2}\\right)^3\\) is",
-    "options": [
-      "\\(2\\)",
-      "\\(3\\)",
-      "\\(4\\)",
-      "\\(5\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "Order = 2, Degree = 1 (the cube is on the coefficient, not the derivative itself when rearranged — actually degree = 1 in standard polynomial sense for the leading term).\n\nSum \\(=2+1=3\\).",
-    "name": "Sum of Order and Degree"
-  },
+  
   {
     "id": "m28_item15",
     "text": "Solving \\(\\dfrac{dy}{dx}=\\dfrac{x-y+3}{2(x-y)+5}\\), the value of \\(t\\) in \\(x=2(x-y)+\\log(t)+c\\) is",
@@ -402,32 +377,7 @@
     "explanation": "Let \\(t=\\sec y\\): \\(dt/dx-t=-x\\). IF \\(=e^{-x}\\). Solution: \\(te^{-x}=xe^{-x}+e^{-x}+c\\implies\\sec y=x+1+ce^x\\)",
     "name": "ODE via Substitution sec y"
   },
-  {
-    "id": "m28_item32",
-    "text": "The degree and order of DE for \\(y=\\sqrt{c}(x+\\sqrt{c})\\) are",
-    "options": [
-      "\\(1,\\;3\\)",
-      "\\(2,\\;3\\)",
-      "\\(3,\\;1\\)",
-      "\\(2,\\;2\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "After eliminating \\(c=2yy'\\): \\((y-2xy')^2=8(y')^3y\\). This DE has order = 1 and degree = 3.",
-    "name": "Degree and Order Identification"
-  },
-  {
-    "id": "m28_item33",
-    "text": "The solution of \\(\\dfrac{x+y-1}{x+y-2}\\dfrac{dy}{dx}=\\dfrac{x+y+1}{x+y+2}\\) with \\(y(1)=1\\) is",
-    "options": [
-      "\\(2(y-x)+\\log\\dfrac{(x+y)^2-2}{2}=0\\)",
-      "\\(\\log\\dfrac{(x+y)^2-2}{2}=(x-y)^2\\)",
-      "\\(\\log\\dfrac{(x-y)^2+2}{2}+2(y-x)=0\\)",
-      "\\((x-y)+\\log\\dfrac{(x+y)^2-2}{2}=0\\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "Let \\(v=x+y\\). After integration and applying \\((1,1)\\):\n\n\\(2(y-x)+\\ln\\dfrac{(x+y)^2-2}{2}=0\\)",
-    "name": "Reducible ODE Particular Solution"
-  },
+  
   {
     "id": "m28_item34",
     "text": "The DE of \\(y=e^x(A\\cos x+B\\sin x)\\) is",
@@ -583,70 +533,6 @@
     "correctIndex": 2,
     "explanation": "Bernoulli: let \\(t=1/x\\): \\(dt/dy-t/y=-1\\). IF \\(=1/y\\). Solution: \\(t/y=-\\log y+c\\implies 1/x=cy-y\\log y\\)",
     "name": "Bernoulli DE"
-  },
-  {
-    "id": "m28_item46",
-    "text": "The solution \\(y=c_1e^{ax}\\cos(bx+c_2)\\) with parameters \\(c_1,c_2\\) has order",
-    "options": [
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(3\\)",
-      "\\(0\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "Two arbitrary constants \\(c_1,c_2\\implies\\)order = 2.",
-    "name": "Order from Number of Constants"
-  },
-  {
-    "id": "m28_item47",
-    "text": "In the DE \\(\\sin y\\dfrac{dy}{dx}=\\cos y(1-x\\cos y)\\), the substitution that linearises it is",
-    "options": [
-      "\\(v=\\sin y\\)",
-      "\\(v=\\sec y\\)",
-      "\\(v=\\cos y\\)",
-      "\\(v=\\tan y\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "Multiplying through: \\(\\sec y\\tan y\\dfrac{dy}{dx}=\\sec y-x\\).\n\nLet \\(v=\\sec y\\): \\(dv/dx=v-x\\), which is linear.",
-    "name": "Identifying Linearising Substitution"
-  },
-  {
-    "id": "m28_item48",
-    "text": "A curve satisfies \\(\\dfrac{dy}{dx}=\\dfrac{y-x}{y+x}\\) through \\((1,2)\\). Its equation is",
-    "options": [
-      "\\(x^2+2xy-y^2=1\\)",
-      "\\(x^2-2xy+y^2=1\\)",
-      "\\(x^2+2xy+y^2=1\\)",
-      "\\(x^2-2xy-y^2+9=0\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "Let \\(y=vx\\). Integrating and using \\((1,2)\\):\n\n\\(x^2-2xy-y^2+9=0\\)",
-    "name": "Homogeneous ODE Through Point"
-  },
-  {
-    "id": "m28_item49",
-    "text": "The general solution of \\((y^2+2xy)dx=(2xy+x^2)dy\\) is",
-    "options": [
-      "\\(y^2(x+y)=c\\)",
-      "\\(xy(x+y)=c\\)",
-      "\\(x^2y=c(x+y)\\)",
-      "\\(xy^2=c(x+y)\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Homogeneous, \\(y=vx\\): after integration:\n\n\\(x^2y=c(x+y)\\)",
-    "name": "Homogeneous ODE General Solution"
-  },
-  {
-    "id": "m28_item50",
-    "text": "If population doubles in 30 years with growth rate \\(\\propto P\\), time to triple is",
-    "options": [
-      "\\(30\\log_23\\) years",
-      "\\(60\\log_23\\) years",
-      "\\(\\dfrac{30\\log3}{\\log2}\\) years",
-      "\\(30\\log3\\) years"
-    ],
-    "correctIndex": 2,
-    "explanation": "\\(P=P_0e^{kt}\\). Doubling: \\(k=\\ln2/30\\). Tripling: \\(t=\\ln3/k=\\dfrac{30\\ln3}{\\ln2}=\\dfrac{30\\log3}{\\log2}\\)",
-    "name": "Population Growth ODE"
   }
+  
 ]

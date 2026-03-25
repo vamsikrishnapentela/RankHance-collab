@@ -78,19 +78,6 @@
     "name": "Coplanar Vectors Condition"
   },
   {
-    "id": "m21_item7",
-    "text": "If \\(PO+OQ=QO+OR\\), then",
-    "options": [
-      "\\(Q\\) is the midpoint of \\(PR\\)",
-      "\\(Q\\) divides \\(PR\\) in \\(2:1\\)",
-      "\\(Q\\) divides \\(PR\\) in \\(1:2\\)",
-      "\\(Q\\) divides \\(PR\\) in \\(-1:2\\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "Using triangle law:\n\n\\[PO+OQ=\\overrightarrow{QP}\\quad\\text{and}\\quad QO+OR=\\overrightarrow{QR}\\]\n\nGiven \\(\\overrightarrow{QP}=\\overrightarrow{QR}\\), so \\(|QP|=|QR|\\).\n\nTherefore \\(Q\\) is the midpoint of \\(PR\\).",
-    "name": "Position of Q on Segment PR"
-  },
-  {
     "id": "m21_item8",
     "text": "The unit vectors orthogonal to \\(3\\hat{i}+2\\hat{j}+6\\hat{k}\\) and coplanar with \\(2\\hat{i}+\\hat{j}+\\hat{k}\\) and \\(\\hat{i}-\\hat{j}+\\hat{k}\\) are",
     "options": [
@@ -389,32 +376,8 @@
     "explanation": "\\(\\mathbf{b}+\\mathbf{c}=(2+\\lambda)\\hat{i}+6\\hat{j}-2\\hat{k}\\).\n\n\\[\\mathbf{a}\\cdot\\hat{d}=\\frac{(2+\\lambda)+6-2}{\\sqrt{(2+\\lambda)^2+40}}=1\\]\n\n\\[(2+\\lambda)+4=\\sqrt{(2+\\lambda)^2+40}\\]\n\nSquaring: \\((2+\\lambda)^2+8(2+\\lambda)+16=(2+\\lambda)^2+40\\)\n\n\\[8(2+\\lambda)=24\\implies 2+\\lambda=3\\implies\\lambda=1\\]",
     "name": "Finding Lambda from Scalar Product"
   },
-  {
-    "id": "m21_item31",
-    "text": "If \\(PQRST\\) is a pentagon, the resultant of \\(\\overrightarrow{PQ}+\\overrightarrow{PT}+\\overrightarrow{QR}+\\overrightarrow{SR}+\\overrightarrow{TS}+\\overrightarrow{PS}\\) is",
-    "options": [
-      "\\(3\\overrightarrow{PT}\\)",
-      "\\(3\\overrightarrow{PQ}\\)",
-      "\\(3\\overrightarrow{PS}\\)",
-      "\\(\\mathbf{0}\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Group the vectors:\n\n\\[(\\overrightarrow{PQ}+\\overrightarrow{QR})+(\\overrightarrow{PT}+\\overrightarrow{TS})+(\\overrightarrow{SR}+\\overrightarrow{PS})\\]\n\n\\[=\\overrightarrow{PR}+\\overrightarrow{PS}+\\overrightarrow{SR}+\\overrightarrow{PS}=(\\overrightarrow{PR}+\\overrightarrow{SR})+2\\overrightarrow{PS}\\]\n\n\\[=\\overrightarrow{PS}+2\\overrightarrow{PS}=3\\overrightarrow{PS}\\]",
-    "name": "Pentagon Vector Resultant"
-  },
-  {
-    "id": "m21_item32",
-    "text": "If \\(\\hat{i}\\cdot(\\hat{j}\\times\\hat{k})\\) and the scalar triple products \\(S_i\\) (all permutations of \\(\\mathbf{a},\\mathbf{b},\\mathbf{c}\\)) satisfy \\(x=\\dfrac{S_i}{S_j}+\\dfrac{S_k}{S_l}\\), \\(y=\\dfrac{S_i}{S_j}-\\dfrac{S_k}{S_l}\\), then \\(x^2+y^2=\\)",
-    "options": [
-      "\\(1\\)",
-      "\\(4\\)",
-      "\\(8\\)",
-      "\\(2\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "All six scalar triple products formed by permutations of \\(\\mathbf{a},\\mathbf{b},\\mathbf{c}\\) have equal absolute value \\(=[\\mathbf{a}\\;\\mathbf{b}\\;\\mathbf{c}]\\).\n\nSo \\(\\dfrac{S_i}{S_j}=\\pm1\\) and \\(\\dfrac{S_k}{S_l}=\\pm1\\).\n\n\\[x^2+y^2=\\left(\\frac{S_i}{S_j}+\\frac{S_k}{S_l}\\right)^2+\\left(\\frac{S_i}{S_j}-\\frac{S_k}{S_l}\\right)^2=2\\left(\\frac{S_i^2}{S_j^2}+\\frac{S_k^2}{S_l^2}\\right)=2(1+1)=4\\]",
-    "name": "Scalar Triple Product Ratio Property"
-  },
+  
+  
   {
     "id": "m21_item33",
     "text": "If the position vectors of vertices of \\(\\triangle ABC\\) are \\(\\hat{i}+2\\hat{j}-5\\hat{k}\\), \\(-2\\hat{i}+2\\hat{j}+\\hat{k}\\) and \\(2\\hat{i}+\\hat{j}-\\hat{k}\\), then \\(\\angle B=\\)",
@@ -532,19 +495,7 @@
     "explanation": "Let \\(\\overrightarrow{AB}=\\mathbf{a}\\) and \\(\\overrightarrow{BC}=\\mathbf{b}\\).\n\nIn \\(\\triangle ABC\\): \\(\\overrightarrow{AL}=\\overrightarrow{AB}+\\dfrac{1}{2}\\overrightarrow{BC}=\\mathbf{a}+\\dfrac{\\mathbf{b}}{2}\\)\n\nIn \\(\\triangle ADM\\): \\(\\overrightarrow{AM}=\\overrightarrow{AD}+\\dfrac{1}{2}\\overrightarrow{DC}=\\mathbf{b}+\\dfrac{\\mathbf{a}}{2}\\) (since \\(AD=BC=\\mathbf{b}\\), \\(DC=AB=\\mathbf{a}\\))\n\n\\[\\overrightarrow{AL}+\\overrightarrow{AM}=\\frac{3}{2}(\\mathbf{a}+\\mathbf{b})=\\frac{3}{2}\\overrightarrow{AC}\\]",
     "name": "Midpoint Vectors in Parallelogram"
   },
-  {
-    "id": "m21_item42",
-    "text": "If \\(\\mathbf{a},\\mathbf{b},\\mathbf{c}\\) are non-zero non-collinear and \\(\\mathbf{a}\\times\\mathbf{b}=\\mathbf{b}\\times\\mathbf{c}=\\mathbf{c}\\times\\mathbf{a}\\), then \\(\\mathbf{a}+\\mathbf{b}+\\mathbf{c}=\\)",
-    "options": [
-      "\\(3\\mathbf{a}\\)",
-      "\\(\\mathbf{0}\\)",
-      "\\(3(\\mathbf{a}\\times\\mathbf{b})\\)",
-      "\\(3(\\mathbf{b}\\times\\mathbf{c})\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "Let \\(\\mathbf{k}=\\mathbf{a}+\\mathbf{b}+\\mathbf{c}\\). Then:\n\n\\[\\mathbf{a}\\times\\mathbf{k}=\\mathbf{a}\\times\\mathbf{a}+\\mathbf{a}\\times\\mathbf{b}+\\mathbf{a}\\times\\mathbf{c}=\\mathbf{a}\\times\\mathbf{b}-\\mathbf{c}\\times\\mathbf{a}=\\mathbf{a}\\times\\mathbf{b}-\\mathbf{a}\\times\\mathbf{b}=\\mathbf{0}\\]\n\n\\[\\implies\\mathbf{k}\\parallel\\mathbf{a}\\text{ or }\\mathbf{k}=\\mathbf{0}\\]\n\nSimilarly \\(\\mathbf{k}\\parallel\\mathbf{b}\\). Since \\(\\mathbf{a}\\) and \\(\\mathbf{b}\\) are non-collinear: \\(\\mathbf{k}=\\mathbf{0}\\).",
-    "name": "Sum of Vectors with Equal Cross Products"
-  },
+  
   {
     "id": "m21_item43",
     "text": "If \\(\\mathbf{V}=2\\hat{i}+\\hat{j}-\\hat{k}\\), \\(\\mathbf{W}=\\hat{i}+3\\hat{k}\\) and \\(\\mathbf{U}\\) is a unit vector, then the maximum value of \\([\\mathbf{U}\\;\\mathbf{V}\\;\\mathbf{W}]\\) is",

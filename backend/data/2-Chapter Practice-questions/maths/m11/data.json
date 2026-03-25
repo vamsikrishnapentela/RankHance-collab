@@ -389,19 +389,7 @@
     "explanation": "\\(\\dfrac{(n-1)\\cdot1+(n+1)\\cdot\\tfrac{1}{2}}{2n}=\\dfrac{41}{56}\\Rightarrow\\dfrac{3n-1}{4n}=\\dfrac{41}{56}\\Rightarrow56(3n-1)=164n\\Rightarrow168n-56=164n\\Rightarrow4n=56\\Rightarrow n=14\\). Unfair coins \\(=n-1=13\\).",
     "name": "Unfair Coins in Bag"
   },
-  {
-    "id": "m11_item31",
-    "text": "Bag A: 6 green, 8 red. Bag B: 9 green, 5 red. A card from a deck is drawn — if spade, draw from A; otherwise from B. Two balls drawn are same colour. The probability they came from A is",
-    "options": [
-      "\\(\\dfrac{43}{181}\\)",
-      "\\(\\dfrac{1}{4}\\)",
-      "\\(\\dfrac{48}{131}\\)",
-      "\\(\\dfrac{43}{138}\\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "P(spade)\\(=\\tfrac{1}{4}\\). \\(P(\\text{same}|A)=\\dfrac{{}^6C_2+{}^8C_2}{{}^{14}C_2}=\\dfrac{15+28}{91}=\\dfrac{43}{91}\\). \\(P(\\text{same}|B)=\\dfrac{{}^9C_2+{}^5C_2}{{}^{14}C_2}=\\dfrac{36+10}{91}=\\dfrac{46}{91}\\). \\(P(A|\\text{same})=\\dfrac{\\frac{1}{4}\\cdot\\frac{43}{91}}{\\frac{1}{4}\\cdot\\frac{43}{91}+\\frac{3}{4}\\cdot\\frac{46}{91}}=\\dfrac{43}{43+138}=\\dfrac{43}{181}\\).",
-    "name": "Bayes Theorem — Bag Selection"
-  },
+  
   {
     "id": "m11_item32",
     "text": "A random variable \\(X\\) has PMF \\(P(X=1)=0.2,\\ P(X=2)=0.3,\\ P(X=3)=0.12,\\ P(X=4)=0.1,\\ P(X=5)=0.2,\\ P(X=6)=0.08\\). With \\(A=\\{x\\text{ is prime}\\}\\) and \\(B=\\{x<4\\}\\), \\(P(A\\cup B)=\\)",
@@ -454,19 +442,7 @@
     "explanation": "LONDON has 5 pairs of consecutive letters: (LO,ON,ND,DO,ON) — 'ON' appears 2 times. CLIFTON has 6 pairs: 'ON' appears 1 time. \\(P(\\text{London}|\\text{ON})=\\dfrac{\\frac{1}{2}\\cdot\\frac{2}{5}}{\\frac{1}{2}\\cdot\\frac{2}{5}+\\frac{1}{2}\\cdot\\frac{1}{6}}=\\dfrac{12}{12+5}=\\dfrac{12}{17}\\).",
     "name": "Bayes Theorem — Envelope Word"
   },
-  {
-    "id": "m11_item36",
-    "text": "A PMF is given by \\(P(X=k)=ck^2\\) for \\(k\\in\\{0,1,2,3,4\\}\\). Then \\(\\sigma^2+\\mu^2=\\)",
-    "options": [
-      "\\(3.33\\)",
-      "\\(11.8\\)",
-      "\\(\\dfrac{1}{30}\\)",
-      "\\(354\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "\\(\\sum P(X=k)=c(0+1+4+9+16)=30c=1\\Rightarrow c=\\tfrac{1}{30}\\). \\(\\mu=E(X)=\\tfrac{1}{30}(0+2+12+36+64)=\\tfrac{114}{30}=3.8\\). \\(E(X^2)=\\tfrac{1}{30}(0+1\\cdot1+4\\cdot4+9\\cdot9+16\\cdot16)=\\tfrac{354}{30}=11.8\\). \\(\\sigma^2+\\mu^2=E(X^2)=11.8\\).",
-    "name": "Variance and Mean from PMF"
-  },
+  
   {
     "id": "m11_item37",
     "text": "In a book of 250 pages there are 200 typographical errors. Assuming Poisson distribution, the probability a random sample of 5 pages contains no error is",

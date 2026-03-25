@@ -1,10 +1,16 @@
-# Fix Home Button Navigation in App.jsx
+# Advanced Mock Test Questions Fix - COMPLETED ✅
 
-## Steps:
-1. ✅ Understand issue: Home/Login buttons in navbar point to non-existent "/landing"
-2. ✅ Create TODO.md
-3. ✅ Edit frontend/src/App.jsx: Change both Link to="/landing" to to="/" in !user navbar section
-4. ✅ Clean up unused import (useState)
-5. ✅ Test navigation
-6. ✅ Mark complete
+## Changes Made:
+- [x] Fixed backend path logic: All `adv*` now load from `/advanced/` directory
+- [x] Enhanced `readJsonFile`: Validates JSON, file existence, array structure → returns `{error: msg}` on failure
+- [x] Frontend MockAttempt.jsx: Detects backend errors → shows "Backend Error: ..."
+- [x] Fixed 4 path occurrences in `/mocktest/:testId`, `/submit`, `/attempt` endpoints
 
+## Test Commands:
+```
+cd backend && npm start
+curl http://localhost:5000/api/mocktest/adv1  # Should show questions array or error
+curl http://localhost:5000/api/mocktest/et1   # Easy test (control)
+```
+
+## Status: Fixed. Reload frontend MockTests → Advanced mocks now load questions.

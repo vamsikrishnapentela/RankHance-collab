@@ -38,19 +38,7 @@
     "explanation": "Any function of the form \\(f(x) = kx\\) for \\(k \\in \\mathbb{Z} \\setminus \\{0\\}\\) satisfies the Cauchy functional equation \\(f(x+y)=f(x)+f(y)\\) over \\(\\mathbb{Z}\\) and is a bijection from \\(\\mathbb{Z}\\) to \\(\\mathbb{Z}\\) when \\(k = 1\\) or \\(k = -1\\). Actually both \\(k=1\\) and \\(k=-1\\) give bijections, but the question asks for bijections specifically. For \\(f: \\mathbb{Z} \\to \\mathbb{Z}\\), \\(f(x)=kx\\) is bijective only for \\(k=\\pm1\\), giving 2 bijections. However the PDF answer is infinitely many — noting that \\(f(x)=kx\\) for any integer \\(k\\) satisfies the equation (though not all are bijections from \\(\\mathbb{Z}\\) to \\(\\mathbb{Z}\\)). The PDF solution states \"there are infinitely many bijections\" based on \\(f(x)=kx\\) for any non-zero integer \\(k\\). Answer: Infinitely many.",
     "name": "Bijections Satisfying Cauchy Equation on Z"
   },
-  {
-    "id": "m4_item4",
-    "text": "The function \\(f : \\mathbb{R} \\to \\mathbb{R}\\) defined by \\(f(x) = \\dfrac{x}{1+x^2}\\) is",
-    "options": [
-      "Injective but not surjective",
-      "Surjective but not injective",
-      "Bijective",
-      "Neither injective nor surjective"
-    ],
-    "correctIndex": 0,
-    "explanation": "**Injective:** If \\(f(x_1)=f(x_2)\\), then \\(\\dfrac{x_1}{1+x_1^2}=\\dfrac{x_2}{1+x_2^2}\\), leading to \\(x_1^2=x_2^2\\) and then \\(x_1=x_2\\). So \\(f\\) is injective. **Surjective:** Setting \\(f(x)=y\\) gives \\(yx^2-x+y=0\\). For \\(x\\) to be real, discriminant \\(\\geq 0\\): \\(1-4y^2 \\geq 0 \\Rightarrow |y| \\leq \\tfrac{1}{2}\\). So values outside \\([-\\tfrac{1}{2}, \\tfrac{1}{2}]\\) are not reached — not surjective onto all of \\(\\mathbb{R}\\).",
-    "name": "Injectivity and Surjectivity of f(x)=x/(1+x²)"
-  },
+  
   {
     "id": "m4_item5",
     "text": "How many functions \\(f : \\mathbb{Z} \\to \\mathbb{Z}\\) exist such that \\(f(x+y) = f(x) + f(y)\\) for all \\(x, y \\in \\mathbb{Z}\\)?",
@@ -64,19 +52,7 @@
     "explanation": "Any function \\(f(x) = kx\\) for any integer \\(k\\) satisfies the Cauchy equation over \\(\\mathbb{Z}\\). Since \\(k\\) can be any integer (positive, negative, or zero), there are infinitely many such functions.",
     "name": "Cauchy Functions on Z (not necessarily bijective)"
   },
-  {
-    "id": "m4_item6",
-    "text": "For \\(f(x) = \\dfrac{\\sin\\pi[x]}{1+[x]^2} + \\dfrac{x}{3x}\\) (where \\([x]\\) is the greatest integer function), the domain and range in \\(\\mathbb{R}\\) are respectively",
-    "options": [
-      "\\(\\mathbb{R}-\\left(-1, -\\tfrac{2}{3}\\right)\\) and \\(\\mathbb{R}-\\left\\{\\tfrac{1}{3}\\right\\}\\)",
-      "\\(\\mathbb{R}-\\left(-1,-\\tfrac{2}{3}\\right)\\) and \\([-1,1]\\)",
-      "\\(\\mathbb{R}-[-1,0)\\) and \\(\\mathbb{R}-\\left\\{\\tfrac{1}{3}\\right\\}\\)",
-      "\\(\\mathbb{R}-[-1,0)\\) and \\([-1,1]\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "The first term \\(\\dfrac{\\sin\\pi[x]}{1+[x]^2}\\): since \\([x]\\) is always an integer, \\(\\sin\\pi[x]=0\\) for all integers. The denominator \\(1+[x]^2\\) is never zero. So this term is always 0. The second term \\(\\dfrac{x}{3x}\\) requires \\(x\\neq0\\)... but examining the full expression, the problem simplifies to domain \\(= \\mathbb{R}-[-1,0)\\) because \\([x]=-1\\) (when \\(x\\in[-1,0)\\)) makes \\(1+[x]=0\\) in the denominator of the original expression. Range is \\([-1,1]\\) from the sine component.",
-    "name": "Domain and Range with GIF and Trig"
-  },
+  
   {
     "id": "m4_item7",
     "text": "If \\(f : \\mathbb{R} \\to \\mathbb{R}\\) is defined as \\(f(x+y)=f(x)+f(y)\\), \\(x,y\\in\\mathbb{R}\\) and \\(f(1)=7\\), then \\(\\displaystyle\\sum_{t=1}^{39} f(t) =\\)",
@@ -194,19 +170,7 @@
     "explanation": "Two functions \\(f\\) and \\(g\\) are equal if and only if: their domains are equal, their codomains are compatible, and \\(f(x)=g(x)\\) for every \\(x\\) in the domain. All three listed conditions — equal domains, equal values, and the point being in the domain — are necessary.",
     "name": "Conditions for Equality of Functions"
   },
-  {
-    "id": "m4_item16",
-    "text": "Let \\(f : \\mathbb{N}\\times\\mathbb{N}\\to\\mathbb{N}\\) be defined by \\(f(m+1,n)=f(m,n)+2(m+n)\\) and \\(f(m,n+1)=f(m,n)+2(m+n-1)\\) with \\(f(1,1)=2\\). Then \\(f(2,2) =\\)",
-    "options": [
-      "\\(8\\)",
-      "\\(7\\)",
-      "\\(9\\)",
-      "\\(10\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "Step 1: \\(f(1,2) = f(1,1)+2(1+1-1) = 2+2=4\\). Step 2: \\(f(2,2) = f(1+1,2) = f(1,2)+2(1+2) = 4+6=10\\).",
-    "name": "Recursive Function Evaluation"
-  },
+  
   {
     "id": "m4_item17",
     "text": "For \\(f(x) = \\sin\\!\\left(\\dfrac{1}{|x|\\sqrt{x^2-1}}\\right)\\), the domain and range in \\(\\mathbb{R}\\) are respectively",
@@ -324,19 +288,7 @@
     "explanation": "Compute \\(f(-x)\\): \\(\\dfrac{-x}{e^{-x}-1}+\\dfrac{-x}{2}+2\\cos^3\\!\\dfrac{-x}{2}\\). The term \\(\\dfrac{-x}{e^{-x}-1}=\\dfrac{xe^x}{e^x-1}=\\dfrac{x}{e^x-1}+x\\). So \\(f(-x)=\\dfrac{x}{e^x-1}+x-\\dfrac{x}{2}+2\\cos^3\\!\\dfrac{x}{2}=\\dfrac{x}{e^x-1}+\\dfrac{x}{2}+2\\cos^3\\!\\dfrac{x}{2}=f(x)\\). Hence \\(f\\) is even.",
     "name": "Even Function Verification"
   },
-  {
-    "id": "m4_item26",
-    "text": "Match the functions with their ranges:\\n(A) \\(f(x)=\\dfrac{|x+2|}{x+2},\\ x\\neq-2\\) — (B) \\(g(x)=|[x]|,\\ x\\in\\mathbb{R}\\) — (C) \\(h(x)=|x-[x]|,\\ x\\in\\mathbb{R}\\) — (D) \\(f(x)=\\dfrac{1}{2-\\sin 3x},\\ x\\in\\mathbb{R}\\)",
-    "options": [
-      "A→5, B→3, C→2, D→1",
-      "A→3, B→2, C→4, D→1",
-      "A→5, B→3, C→4, D→1",
-      "A→1, B→2, C→3, D→4"
-    ],
-    "correctIndex": 2,
-    "explanation": "(A) \\(\\dfrac{|x+2|}{x+2}=+1\\) if \\(x>-2\\), \\(-1\\) if \\(x<-2\\) → range \\(=\\{-1,1\\}\\) (List II item 5). (B) \\(|[x]|\\in\\mathbb{W}\\) (whole numbers, since \\([x]\\) is integer and absolute value is non-negative) → range \\(= W\\) (item 3). (C) \\(|x-[x]|=\\{x\\}\\in[0,1)\\) → range \\(=[0,1)\\) (item 4). (D) \\(-1\\leq\\sin3x\\leq1 \\Rightarrow 1\\leq2-\\sin3x\\leq3 \\Rightarrow \\tfrac{1}{3}\\leq\\tfrac{1}{2-\\sin3x}\\leq1\\) → range \\(=[\\tfrac{1}{3},1]\\) (item 1). Correct match: A→5, B→3, C→4, D→1.",
-    "name": "Range Matching of Functions"
-  },
+  
   {
     "id": "m4_item27",
     "text": "If \\(f: \\mathbb{R}-\\left\\{\\tfrac{3}{7}\\right\\} \\to \\mathbb{R}-\\left\\{\\tfrac{3}{7}\\right\\}\\) is given by \\(f(x)=\\dfrac{3x+5}{7x-3}\\), which of the following is NOT true?",
@@ -363,19 +315,7 @@
     "explanation": "If \\(g\\circ f\\) is onto (surjective), then for every \\(c\\in C\\), there exists \\(a\\in A\\) with \\(g(f(a))=c\\). Setting \\(b=f(a)\\in B\\), we have \\(g(b)=c\\). So every element of \\(C\\) is the image of some element in \\(B\\) under \\(g\\), meaning \\(g\\) must be onto. (However, \\(f\\) need not be onto.)",
     "name": "Necessary Condition for Surjective Composition"
   },
-  {
-    "id": "m4_item29",
-    "text": "Let \\(D=\\mathbb{R}-\\{0,1\\}\\) and \\(f(x)=\\dfrac{1}{x}\\), \\(g(x)=1-x\\), \\(h(x)=\\dfrac{1}{1-x}\\) on \\(D\\). If \\(j: D\\to D\\) is such that \\((g\\circ j\\circ f)(x)=f(x)\\) for all \\(x\\in D\\), then \\(j(x) =\\)",
-    "options": [
-      "\\((f\\circ g)(x)\\)",
-      "\\(f(x)\\)",
-      "\\(g(x)\\)",
-      "\\((g\\circ h)(x)\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "\\((g\\circ j\\circ f)(x) = f(x) \\Rightarrow g(j(f(x))) = \\dfrac{1}{x}\\). Since \\(f(x)=\\tfrac{1}{x}\\), let \\(u=f(x)=\\tfrac{1}{x}\\). Then \\(g(j(u))=u \\Rightarrow 1-j(u)=u \\Rightarrow j(u)=1-u=g(u)\\). So \\(j(x)=g(x)=1-x\\).",
-    "name": "Finding Unknown Function in Composition"
-  },
+  
   {
     "id": "m4_item30",
     "text": "If \\(|G|=3\\) and \\(|A|=4\\), match: (I) number of non-bijective functions from \\(G\\times G\\) to \\(G\\) — (II) number of bijective functions from \\(A\\) to \\(A\\) — (III) number of functions from \\(G\\) to \\(G\\times A\\) — (IV) number of surjective functions from \\(A\\) to \\(A\\times A\\)",
@@ -389,19 +329,7 @@
     "explanation": "(I) Total functions from \\(G\\times G\\) (9 elements) to \\(G\\) (3 elements): \\(3^9=19683\\). All of them are non-bijective since \\(|G\\times G|\\neq|G|\\). (II) Bijections from \\(A\\) to \\(A\\): \\(4!=24\\). (III) Functions from \\(G\\) (3 elements) to \\(G\\times A\\) (12 elements): \\(12^3=1728\\). (IV) Surjections from \\(A\\) (4 elements) to \\(A\\times A\\) (16 elements): impossible since domain has fewer elements than codomain → \\(0\\).",
     "name": "Counting Functions"
   },
-  {
-    "id": "m4_item31",
-    "text": "Let \\(A\\) and \\(B\\) be finite sets with \\(|P(B)| - |P(A)| = 112\\). Then the number of injective functions from \\(A\\) to \\(B\\) is",
-    "options": [
-      "\\(224\\)",
-      "\\(56\\)",
-      "\\(120\\)",
-      "\\(840\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "\\(2^n - 2^m = 112\\) where \\(|A|=m,\\ |B|=n\\). Factor: \\(2^m(2^{n-m}-1)=112=16\\times7=2^4\\times7\\). So \\(m=4\\) and \\(2^{n-m}-1=7 \\Rightarrow n-m=3 \\Rightarrow n=7\\). Number of injective functions \\(= P(7,4) = \\dfrac{7!}{3!} = 840\\).",
-    "name": "Counting Injective Functions via Power Sets"
-  },
+  
   {
     "id": "m4_item32",
     "text": "Let \\(D = \\left\\{x\\in\\mathbb{R}: f(x)=\\sqrt{\\dfrac{x-|x|}{x-[x]}}\\text{ is defined}\\right\\}\\) and \\(C\\) be the range of \\(g(x)=\\dfrac{2x}{4+x^2}\\). Then \\(D\\cap C =\\)",
@@ -428,19 +356,7 @@
     "explanation": "First, \\(f\\!\\left(-\\tfrac{7}{2}\\right)\\): since \\(-\\tfrac{7}{2}<5\\), use first case: \\(\\left|\\left[-\\tfrac{7}{2}-5\\right]\\right|=\\left|\\left[-\\tfrac{17}{2}\\right]\\right|=|-9|=9\\). Then \\(f(9)\\): since \\(9\\geq5\\), \\([|9-5|]=[4]=4\\). So \\((f\\circ f)\\!\\left(-\\tfrac{7}{2}\\right)=4\\). Check option (d): \\(f\\!\\left(\\tfrac{9}{2}\\right)\\): since \\(\\tfrac{9}{2}\\geq5\\)? No, \\(\\tfrac{9}{2}=4.5<5\\), so \\(\\left|\\left[4.5-5\\right]\\right|=|[-0.5]|=|-1|=1\\). Then \\(f(1)=|[1-5]|=|-4|=4\\). So \\((f\\circ f)\\!\\left(\\tfrac{9}{2}\\right)=4\\). ✓",
     "name": "Piecewise Function Composition"
   },
-  {
-    "id": "m4_item34",
-    "text": "If \\(f: A\\to B\\) is an onto function such that \\(f(x) = |x| - x + \\dfrac{1}{|x|-x}\\), then \\(A\\) and \\(B\\) are respectively",
-    "options": [
-      "\\((-\\infty,\\infty),\\ (0,\\infty)\\)",
-      "\\((-\\infty, 0),\\ [2, \\infty)\\)",
-      "\\((0,\\infty),\\ (2, \\infty)\\)",
-      "\\((-\\infty, 0],\\ (0,\\infty)\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "\\(f(x)=|x|-x+\\dfrac{1}{|x|-x}\\) requires \\(|x|-x>0\\), so \\(|x|>x\\), meaning \\(x<0\\). Thus \\(A=(-\\infty,0)\\). For \\(x<0\\): \\(|x|=-x\\), so \\(|x|-x=-2x>0\\). By AM-GM: \\(-2x+\\dfrac{1}{-2x}\\geq 2\\sqrt{(-2x)\\cdot\\dfrac{1}{-2x}}=2\\). Equality when \\(-2x=1\\), i.e. \\(x=-\\tfrac{1}{2}\\). Minimum value is 2. So \\(B=[2,\\infty)\\).",
-    "name": "Domain and Range of Reciprocal Sum"
-  },
+  
   {
     "id": "m4_item35",
     "text": "Let \\(f\\) be a function such that \\(f(xy) = \\dfrac{f(x)}{y}\\) for all positive reals \\(x, y\\). If \\(f(20)=15\\), then \\(f(50) =\\)",
@@ -467,32 +383,7 @@
     "explanation": "Domain: \\(x^2+2x=x(x+2)\\neq0 \\Rightarrow x\\neq0,-2\\), so \\(A=\\mathbb{R}-\\{0,-2\\}\\). Setting \\(y=\\dfrac{x^2-x}{x^2+2x}\\) and checking: \\(y=1\\) has no solution (numerator = denominator requires \\(x^2-x=x^2+2x \\Rightarrow x=0\\), excluded), so \\(B=\\mathbb{R}-\\{1\\}\\). The inverse: \\(f^{-1}(x)=-\\dfrac{2x+1}{x-1}\\), and \\((f^{-1})'(x)=\\dfrac{3}{(x-1)^2}>0\\), so \\(f^{-1}\\) is increasing.",
     "name": "Domain, Range and Inverse Analysis"
   },
-  {
-    "id": "m4_item37",
-    "text": "Match the functions with their properties:\\n(A) \\(f:\\mathbb{R}\\to\\mathbb{R}\\), \\(f(x)=px+q\\), \\(p\\neq0\\) — (B) \\(f:\\mathbb{R}\\to\\mathbb{R}^+\\cup\\{0\\}\\), \\(f(x)=x^2\\) — (C) \\(f:\\mathbb{N}\\to\\mathbb{N}\\), \\(f(n)=n^2+2n+3\\) — (D) \\(f:\\mathbb{R}\\to\\mathbb{R}\\), \\(f(x)=2(\\cos^25x+\\sin^25x)\\)",
-    "options": [
-      "A→II, B→IV, C→III, D→I",
-      "A→II, B→I, C→III, D→V",
-      "A→II, B→IV, C→V, D→I",
-      "A→III, B→II, C→I, D→IV"
-    ],
-    "correctIndex": 0,
-    "explanation": "(A) \\(f(x)=px+q\\) is a linear bijection on \\(\\mathbb{R}\\) → both one-one and onto (II). (B) \\(f(x)=x^2\\) on \\(\\mathbb{R}\\): \\(f(-1)=f(1)=1\\), so not one-one; range\\(=[0,\\infty)=\\mathbb{R}^+\\cup\\{0\\}\\), so onto → onto but not one-one (IV). (C) \\(f(n)=n^2+2n+3\\) on \\(\\mathbb{N}\\): one-one (strictly increasing) but minimum value is \\(f(1)=6\\), missing \\(1,2,3,4,5\\in\\mathbb{N}\\) → one-one but not onto (III). (D) \\(f(x)=2\\cdot1=2\\) (constant) → neither one-one nor onto (I).",
-    "name": "Matching Function Properties"
-  },
-  {
-    "id": "m4_item38",
-    "text": "The range of \\(f(x) = \\dfrac{a - |x|}{(a+1) - |x|}\\) where \\(a > 0\\) is",
-    "options": [
-      "\\([0, a]\\)",
-      "\\([0,\\infty) - \\left(-\\dfrac{a}{a+1}, \\dfrac{a}{a+1}\\right)\\)",
-      "\\(\\left[0, \\dfrac{a}{a+1}\\right) \\cup (1, \\infty)\\)",
-      "\\(\\left[0, \\dfrac{a}{a+1}+1\\right]\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Set \\(y=\\dfrac{a-|x|}{(a+1)-|x|}\\). Solving: \\((y-1)|x|=y(a+1)-a\\), so \\(|x|=\\dfrac{y(a+1)-a}{y-1}\\). For \\(|x|\\geq0\\): the sign of numerator and denominator must match. Also \\(f(x)\\geq0\\) since \\(a>0\\) and \\(|x|\\leq a+1\\) (otherwise undefined). Analysis gives \\(y\\in\\left[0,\\dfrac{a}{a+1}\\right)\\cup(1,\\infty)\\).",
-    "name": "Range of Modulus Rational Function"
-  },
+  
   {
     "id": "m4_item39",
     "text": "If \\(f:\\mathbb{R}\\to\\mathbb{R}\\) is defined by \\(f(x)=[2x]-2[x]\\) for \\(x\\in\\mathbb{R}\\) (where \\([x]\\) is the greatest integer not exceeding \\(x\\)), then the range of \\(f\\) is",
@@ -571,19 +462,7 @@
     "explanation": "\\(g(f(x))=4x^2-10x+4\\). If \\(f(x)=ax+b\\): \\((ax+b)^2+(ax+b)-2=4x^2-10x+4\\). Comparing: \\(a^2=4 \\Rightarrow a=\\pm2\\). For \\(a=2\\): \\(2(2b)+2=10 \\Rightarrow... \\) Actually \\(2ab+a=-10 \\Rightarrow 2(2)b+2=-10 \\Rightarrow 4b=-12 \\Rightarrow b=-3\\). Check: \\(b^2+b-2=9-3-2=4\\) ✓. So \\(f(x)=2x-3\\).",
     "name": "Finding f from Composition"
   },
-  {
-    "id": "m4_item45",
-    "text": "If \\(f:\\mathbb{R}\\to A\\) defined by \\(f(x)=\\dfrac{1}{x^2+2x+2}\\) is surjective, then \\(A =\\)",
-    "options": [
-      "\\([1, \\infty]\\)",
-      "\\((1, \\infty)\\)",
-      "\\([0, 1]\\)",
-      "\\((0, 1]\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "\\(x^2+2x+2=(x+1)^2+1\\geq1\\), so \\(\\dfrac{1}{x^2+2x+2}\\leq1\\). Also \\(x^2+2x+2<\\infty\\), so \\(f(x)>0\\). At \\(x=-1\\): \\(f(-1)=1\\). As \\(x\\to\\pm\\infty\\): \\(f(x)\\to0\\) but never reaches 0. So range \\(= (0,1]\\).",
-    "name": "Surjective Function Range"
-  },
+  
   {
     "id": "m4_item46",
     "text": "If \\(f(x)\\) is a polynomial satisfying \\(f(x)\\cdot f\\!\\left(\\dfrac{1}{x}\\right) = f(x) + f\\!\\left(\\dfrac{1}{x}\\right)\\) and \\(f(4)=257\\), then \\(f(3) =\\)",

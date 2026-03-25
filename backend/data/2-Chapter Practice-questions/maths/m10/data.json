@@ -129,19 +129,7 @@
     "explanation": "For a symmetric distribution, mean equals median. For a skewed distribution, they differ. For example, in \\(\\{1,2,3\\}\\) mean \\(=\\) median \\(=2\\), but in \\(\\{1,2,10\\}\\) mean \\(=\\tfrac{13}{3}\\approx4.33\\) while median \\(=2\\). So they are sometimes equal.",
     "name": "Mean vs Median"
   },
-  {
-    "id": "m10_item11",
-    "text": "Find the least positive value of \\(k\\), if the range of \\(15, 14, k, 25, 30, 35\\) is 23.",
-    "options": [
-      "\\(11\\)",
-      "\\(13\\)",
-      "\\(12\\)",
-      "\\(14\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Range \\(=\\max-\\min=23\\). The largest value is \\(35\\). If \\(k\\) is the minimum: \\(35-k=23\\Rightarrow k=12\\). Check: \\(k=12\\) is less than 14, confirming it is the minimum. The least positive \\(k=12\\).",
-    "name": "Finding k from Range"
-  },
+  
   {
     "id": "m10_item12",
     "text": "The range of the observations \\(20, 28, 40, 12, 30, 15, 50\\) is",
@@ -246,19 +234,7 @@
     "explanation": "\\(\\sum z_i=\\sum(x_i-\\bar{x})(y_i-\\bar{y})=\\sum x_iy_i-10\\bar{x}\\bar{y}=c\\). Now \\(\\sigma_{x-y}^2=\\dfrac{1}{10}\\sum(x_i-y_i)^2-(\\bar{x}-\\bar{y})^2=\\sigma_x^2+\\sigma_y^2-\\dfrac{2}{10}(\\sum x_iy_i-10\\bar{x}\\bar{y})=a^2+b^2-\\dfrac{c}{5}\\). So \\(\\sigma_{x-y}=\\sqrt{a^2+b^2-\\dfrac{c}{5}}\\).",
     "name": "SD of Difference of Two Variables"
   },
-  {
-    "id": "m10_item20",
-    "text": "For 100 students, mean \\(x_1=40\\) and \\(\\sigma_1=15\\). Scores 40 and 50 were misread as 30 and 60. After correction, \\(x_2\\) and \\(\\sigma_2\\) satisfy",
-    "options": [
-      "\\(x_1=x_2;\\ \\sigma_1=\\sigma_2\\)",
-      "\\(x_1=x_2;\\ \\sigma_1<\\sigma_2\\)",
-      "\\(x_1=x_2;\\ \\sigma_1>\\sigma_2\\)",
-      "\\(x_1>x_2;\\ \\sigma_1=\\sigma_2\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Corrected \\(\\sum x_i=4000-30-60+40+50=4000\\Rightarrow x_2=40=x_1\\). Corrected \\(\\sum x_i^2=182500-900-3600+1600+2500=182100\\). \\(\\sigma_2^2=\\dfrac{182100}{100}-1600=221\\approx14.86^2 < 225=\\sigma_1^2\\). So \\(x_1=x_2\\) and \\(\\sigma_1>\\sigma_2\\).",
-    "name": "Mean and SD After Correction"
-  },
+  
   {
     "id": "m10_item21",
     "text": "The coefficient of variation of \\(9, 3, 11, 5, 7\\) is",

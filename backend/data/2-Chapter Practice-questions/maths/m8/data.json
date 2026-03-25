@@ -207,19 +207,7 @@
     "explanation": "Number of rectangles \\(= \\left(\\dfrac{n(n+1)}{2}\\right)^2 = 1296\\Rightarrow\\dfrac{n(n+1)}{2}=36\\Rightarrow n(n+1)=72\\Rightarrow n=8\\). Total squares of all sizes \\(=\\displaystyle\\sum_{k=1}^{8}k^2 = \\dfrac{8\\times9\\times17}{6}=204\\).",
     "name": "Squares and Rectangles on Chessboard"
   },
-  {
-    "id": "m8_item17",
-    "text": "If \\(n\\) is a positive integer, then \\(\\displaystyle\\sum_{r=1}^{n} r^2 \\cdot {}^nC_r = (\\ldots)^2\\) where the answer equals",
-    "options": [
-      "\\(n(n-1)\\)",
-      "\\(n\\)",
-      "\\(n(n+1)\\)",
-      "\\(n+1\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Differentiate \\((1+x)^n\\) twice: after first differentiation times \\(x\\), differentiate again to get \\(\\sum r^2{}^nC_rx^{r-1}\\). At \\(x=1\\): \\(\\sum r^2{}^nC_r = n(n+1)2^{n-2}\\cdot... \\) Actually \\(\\sum r^2{}^nC_r = n2^{n-1}+n(n-1)2^{n-2}=n2^{n-2}(2+n-1)=n(n+1)2^{n-2}\\). The square root of this when written as \\((\\ldots)^2\\) — the PDF answer confirms the answer is \\(n(n+1)\\) (when the expression equals \\(n(n+1)\\cdot2^{n-2}\\), the bracket is \\(n(n+1)\\)).",
-    "name": "Sum of r²·C(n,r)"
-  },
+  
   {
     "id": "m8_item18",
     "text": "A number lock has 3 rings and each ring has 8 digits. The total number of different ways in which 3 rings can be rotated is",
@@ -232,19 +220,6 @@
     "correctIndex": 1,
     "explanation": "Each ring can independently show any of 8 digits, regardless of the other rings. So the total number of combinations \\(= 8\\times8\\times8 = 8^3 = 512\\).",
     "name": "Number Lock Combinations"
-  },
-  {
-    "id": "m8_item19",
-    "text": "In how many ways can a committee of 6 members be formed out of 10 members, always including a specified member?",
-    "options": [
-      "\\(\\dfrac{1}{2}{}^9P_5\\)",
-      "\\({}^9P_5\\)",
-      "\\({}^9C_5\\)",
-      "\\(\\dfrac{{}^{19}C_5}{2}\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Since one member is fixed (always included), we need to choose the remaining 5 from the other 9 members. Number of ways \\(= {}^9C_5 = 126\\).",
-    "name": "Committee with Specified Member"
   },
   {
     "id": "m8_item20",
@@ -454,19 +429,7 @@
     "explanation": "**Case I:** E is immediately right of A. E's right can be F or D: 2 choices. Remaining 3 people fill 3 seats: \\(3!=6\\) ways. Total: \\(2\\times6=12\\). **Case II:** F is immediately right of A. F is already placed, so E can be in 3 remaining seats (not left of A since A has F on right) with E's right being F or D; since F is placed, E's right must be D: 3 positions for E (only 1 valid beside D placement), giving \\(3\\times1\\times2=6\\). Total \\(=12+6=18\\).",
     "name": "Circular Arrangement with Adjacency Constraints"
   },
-  {
-    "id": "m8_item36",
-    "text": "The number of ways of forming a committee of 6 members from 5 Indians, 5 Americans and 5 Australians such that there is at least one member from each country is",
-    "options": [
-      "\\(3375\\)",
-      "\\(4375\\)",
-      "\\(3875\\)",
-      "\\(4250\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "We need at least 1 from each of 3 countries summing to 6. Valid distributions (I, Am, Au): (1,1,4),(1,4,1),(4,1,1),(1,2,3),(1,3,2),(2,1,3),(2,3,1),(3,1,2),(3,2,1),(2,2,2). Summing all \\({}^5C_i\\times{}^5C_j\\times{}^5C_k\\): total \\(=125+500+500+125+500+1000+500+500+500+125=4375\\).",
-    "name": "Committee with Multi-Country Representation"
-  },
+  
   {
     "id": "m8_item37",
     "text": "In an exam hall there are \\(mn\\) chairs in \\(m\\) rows and \\(n\\) columns. The number of ways in which \\(m\\) students can be seated such that no row is vacant is",

@@ -90,19 +90,7 @@
     "explanation": "Differentiating \\(\\log(x+y)-2xy=0\\):\n\n\\[\\frac{1+y'}{x+y}-2xy'-2y=0\\]\n\n\\[y'=\\frac{2y(x+y)-1}{1-2x(x+y)}\\]\n\nAt \\(x=0\\), \\(\\log y=0\\implies y=1\\):\n\n\\[y'(0)=\\frac{2(1)(1)-1}{1}=1\\]\n\nActually from PDF: \\(y'(0)=\\dfrac{2y-1/y}{1}=2y^2-1\\).",
     "name": "Implicit Differentiation at Origin"
   },
-  {
-    "id": "m24_item8",
-    "text": "If \\(y=\\sqrt{2x+\\cos^2\\left(2x+\\dfrac{\\pi}{4}\\right)}\\), then \\(\\dfrac{dy}{dx}\\) at \\(x=\\dfrac{\\pi}{4}\\) is",
-    "options": [
-      "\\(\\dfrac{2\\sqrt{2}}{\\pi+1}\\)",
-      "\\(2\\pi+1\\)",
-      "\\(\\dfrac{2}{\\pi+1}\\)",
-      "\\(\\dfrac{2}{\\pi+1}\\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "At \\(x=\\pi/4\\): \\(y^2=\\pi/2+\\cos^2(\\pi)=\\pi/2+1\\), so \\(y=\\sqrt{\\pi/2+1}\\).\n\nDifferentiating \\(y^2=2x+\\cos^2(2x+\\pi/4)\\): \\(2y\\dfrac{dy}{dx}=2-\\sin(4x+\\pi/2)\\).\n\nAt \\(x=\\pi/4\\): \\(2y\\dfrac{dy}{dx}=2-\\sin(\\pi+\\pi/2)=2+1=3\\). Actually PDF gives: \\(\\dfrac{dy}{dx}=\\dfrac{2-(-1)}{2y}=\\dfrac{2\\sqrt{2}}{\\pi+1}\\) (using \\(y=(\\pi+1)/(\\sqrt{2})\\))... gives \\(\\dfrac{2\\sqrt{2}}{\\pi+1}\\).",
-    "name": "Derivative at Specific Point"
-  },
+  
   {
     "id": "m24_item9",
     "text": "If \\(f(x)=x^4-x^3+7x^2+14\\), then \\(f'(5)=\\)",
@@ -142,19 +130,7 @@
     "explanation": "\\(e^{\\ln\\sqrt{1+\\tan^2x}}=\\sqrt{1+\\tan^2x}=\\sqrt{\\sec^2x}=|\\sec x|=\\sec x\\) (for \\(x\\) in appropriate range).\n\n\\[\\frac{d}{dx}(\\sec x)=\\sec x\\tan x\\]",
     "name": "Derivative via Simplification"
   },
-  {
-    "id": "m24_item12",
-    "text": "The derivative of \\(f(x)=\\cos^{-1}\\left(\\sin\\dfrac{1+x}{x}+x^x\\right)\\) with respect to \\(x\\) at \\(x=1\\) is",
-    "options": [
-      "\\(1\\)",
-      "\\(\\dfrac{1}{4}\\)",
-      "\\(\\dfrac{3}{4}\\)",
-      "\\(\\dfrac{2}{3}\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "\\(f(x)=\\dfrac{\\pi}{2}-\\sin^{-1}\\left(\\sin\\dfrac{1+x}{x}+x^x\\right)=\\dfrac{\\pi}{2}-\\dfrac{1+x}{x}-x^x\\) (near \\(x=1\\) where values are small).\n\nWait — simplify: \\(\\sin\\dfrac{1+x}{x}=\\sin(1+1/x)\\). Let me use the derivative directly:\n\n\\(f'(x)=\\dfrac{-1}{2}\\cdot\\dfrac{1}{\\sqrt{1+x}}+x^x(1+\\ln x)\\)... At \\(x=1\\): \\(f'(1)=-\\dfrac{1}{4}+1=\\dfrac{3}{4}\\).",
-    "name": "Derivative of Composite Inverse Trig"
-  },
+  
   {
     "id": "m24_item13",
     "text": "The derivative of \\(y=\\tan^{-1}\\left(\\dfrac{\\sqrt{1+\\sin x}+\\sqrt{1-\\sin x}}{\\sqrt{1+\\sin x}-\\sqrt{1-\\sin x}}\\right)\\) is",
@@ -233,19 +209,7 @@
     "explanation": "\\(f'(x)=4x^3-3x^2+14x\\)\n\n\\(f''(x)=12x^2-6x+14\\)\n\n\\(f''(5)=12(25)-6(5)+14=300-30+14=284\\)",
     "name": "Second Derivative Evaluation"
   },
-  {
-    "id": "m24_item19",
-    "text": "If \\(y=\\sqrt{\\dfrac{1+\\tan x}{1-\\tan x}}\\), then \\(\\dfrac{dy}{dx}=\\)",
-    "options": [
-      "\\(\\dfrac{1}{2}\\cdot\\dfrac{1-\\tan x}{1+\\tan x}\\cdot\\sec^2\\left(\\dfrac{\\pi}{4}+x\\right)\\)",
-      "\\(\\dfrac{1}{2}\\cdot\\dfrac{1-\\tan x}{1+\\tan x}\\cdot\\sec\\left(\\dfrac{\\pi}{4}+x\\right)\\)",
-      "\\(\\dfrac{1-\\tan x}{1+\\tan x}\\cdot\\sec^2\\left(\\dfrac{\\pi}{4}+x\\right)\\)",
-      "\\(\\dfrac{1}{2}\\cdot\\dfrac{1+\\tan x}{1-\\tan x}\\cdot\\sec^2\\left(\\dfrac{\\pi}{4}+x\\right)\\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "Note \\(y=\\sqrt{\\tan(\\pi/4+x)}=\\tan^{1/2}(\\pi/4+x)\\).\n\nUsing chain rule:\n\n\\[\\frac{dy}{dx}=\\frac{1}{2}\\cdot\\tan^{-1/2}\\left(\\frac{\\pi}{4}+x\\right)\\cdot\\sec^2\\left(\\frac{\\pi}{4}+x\\right)\\]\n\n\\[=\\frac{1}{2}\\cdot\\sqrt{\\frac{1-\\tan x}{1+\\tan x}}\\cdot\\sec^2\\left(\\frac{\\pi}{4}+x\\right)\\]",
-    "name": "Derivative of Square Root of Tan"
-  },
+  
   {
     "id": "m24_item20",
     "text": "Find \\(\\dfrac{dy}{dx}\\) if \\(2x^2-3xy+y^2+x+2y-8=0\\).",
@@ -389,19 +353,7 @@
     "explanation": "Using \\(\\tan^{-1}A-\\tan^{-1}B=\\tan^{-1}\\dfrac{A-B}{1+AB}\\):\n\n\\(y=\\tan^{-1}(5x)-\\tan^{-1}(x)+\\tan^{-1}(2/3)+\\tan^{-1}(x)=\\tan^{-1}(5x)+C\\)\n\n\\[\\frac{dy}{dx}=\\frac{5}{1+25x^2}\\]",
     "name": "Sum of Arctan Derivatives"
   },
-  {
-    "id": "m24_item31",
-    "text": "If \\(\\sqrt{1-x^6}+\\sqrt{1-y^6}=a(x^3-y^3)\\), then \\(y^2\\dfrac{dy}{dx}=\\)",
-    "options": [
-      "\\(x^2\\sqrt{\\dfrac{1-y^6}{1-x^6}}\\)",
-      "\\(x\\sqrt{\\dfrac{1-y^6}{1-x^6}}\\)",
-      "\\(x^2\\sqrt{\\dfrac{1-y^6}{1-x^6}}\\)",
-      "\\(\\dfrac{1}{x^2}\\sqrt{\\dfrac{1-x^6}{1-y^6}}\\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "Let \\(x^3=\\sin A\\) and \\(y^3=\\sin B\\). The equation becomes \\(\\cos A+\\cos B=a(\\sin A-\\sin B)\\), so \\(A+B=\\text{const}\\implies 3x^2+3y^2y'=0\\). Actually differentiating the original:\n\n\\[y^2\\frac{dy}{dx}=x^2\\sqrt{\\frac{1-y^6}{1-x^6}}\\]",
-    "name": "Implicit Differentiation with Sixth Powers"
-  },
+  
   {
     "id": "m24_item32",
     "text": "If \\(y=f(x)\\) is twice differentiable with \\(\\dfrac{dy}{dx}=4\\) and \\(\\dfrac{d^2y}{dx^2}=-3\\) at point \\(P\\), then \\(\\dfrac{d^2x}{dy^2}\\bigg|_P=\\)",
@@ -519,19 +471,7 @@
     "explanation": "(A): \\(\\sin^{-1}\\dfrac{2x}{1+x^2}=2\\tan^{-1}x\\), derivative \\(=\\dfrac{2}{1+x^2}\\) → III\n\n(B): \\(\\tan^{-1}\\dfrac{1-x}{1+x}=\\dfrac{\\pi}{4}-\\tan^{-1}x\\), derivative \\(=-\\dfrac{1}{1+x^2}\\) → II\n\n(C): \\(e^{\\log(\\sin x+\\cos x)}=\\sin x+\\cos x\\), derivative \\(=\\cos x-\\sin x\\) → I\n\n(D): \\(\\sqrt{1-\\sin2x}=\\sin x-\\cos x\\) (for \\(0<x<\\pi/4\\)), derivative \\(=\\cos x+\\sin x\\) → IV",
     "name": "Match Derivatives"
   },
-  {
-    "id": "m24_item41",
-    "text": "If \\(f(t)=\\dfrac{1+\\csc t}{1-\\csc t}\\) and \\(f'(t)=f(t)g(t)\\), then \\(g(t)=\\)",
-    "options": [
-      "\\(-4\\csc^2t\\)",
-      "\\(4\\csc^2t\\)",
-      "\\(2\\sin2t\\)",
-      "\\(4\\csc t\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "Differentiating \\(f(t)\\):\n\n\\[f'(t)=\\frac{-2\\csc t\\cot t}{(1-\\csc t)^2}=-\\frac{2\\csc t\\cot t}{(1-\\csc t)^2}\\]\n\n\\[g(t)=\\frac{f'(t)}{f(t)}=\\frac{2\\csc t\\cot t}{\\cot^2t}=\\frac{2\\csc t}{\\cot t}\\cdot\\frac{2}{\\sin t}=\\frac{4\\csc^2t}{...}\\]\n\nFrom PDF: \\(g(t)=4\\csc^2t\\).",
-    "name": "Logarithmic Derivative"
-  },
+  
   {
     "id": "m24_item42",
     "text": "If \\(x=4\\cos^3\\theta\\) and \\(y=3\\sin^2\\theta\\), then \\(\\dfrac{d^2y}{dx^2}\\) at \\(\\theta=\\pi/4\\) is",
@@ -635,18 +575,6 @@
     "correctIndex": 3,
     "explanation": "\\(f'(x)=x^{\\tan^{-1}x}\\left(\\dfrac{\\log x}{1+x^2}+\\dfrac{\\tan^{-1}x}{x}\\right)\\)\n\n\\(g(x)=\\sec^{-1}\\dfrac{1}{2x^2-1}=\\cos^{-1}(2x^2-1)=2\\cos^{-1}x\\)\n\n\\(g'(x)=\\dfrac{-2}{\\sqrt{1-x^2}}\\)\n\n\\[\\frac{df}{dg}=\\frac{f'}{g'}=-\\frac{\\sqrt{1-x^2}}{2}\\cdot x^{\\tan^{-1}x}\\left(\\frac{\\log x}{1+x^2}+\\frac{\\tan^{-1}x}{x}\\right)\\]",
     "name": "Derivative of One Inverse Function w.r.t. Another"
-  },
-  {
-    "id": "m24_item50",
-    "text": "If \\(x=3\\cos t\\) and \\(y=4\\sin t\\), then \\(\\dfrac{d^2y}{dx^2}\\) at \\((x_0,y_0)=\\left(\\dfrac{3}{\\sqrt{2}},2\\sqrt{2}\\right)\\) is",
-    "options": [
-      "\\(\\dfrac{4\\sqrt{2}}{9}\\)",
-      "\\(-\\dfrac{4\\sqrt{2}}{9}\\)",
-      "\\(\\dfrac{8\\sqrt{2}}{9}\\)",
-      "\\(-\\dfrac{8\\sqrt{2}}{9}\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "From \\(\\dfrac{x^2}{9}+\\dfrac{y^2}{16}=1\\), differentiating:\n\n\\(\\dfrac{dy}{dx}=-\\dfrac{16x}{9y}\\)\n\n\\(\\dfrac{d^2y}{dx^2}=-\\dfrac{16}{9}\\cdot\\dfrac{y-x\\cdot dy/dx}{y^2}=-\\dfrac{16}{9}\\cdot\\dfrac{y+\\frac{16x^2}{9y}}{y^2}\\)\n\nAt \\((3/\\sqrt{2}, 2\\sqrt{2})\\):\n\n\\[\\frac{d^2y}{dx^2}=-\\frac{16\\times144}{81\\times(2\\sqrt{2})^3}=-\\frac{8\\sqrt{2}}{9}\\]",
-    "name": "Second Derivative on Ellipse"
   }
+  
 ]

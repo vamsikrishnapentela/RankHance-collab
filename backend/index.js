@@ -35,19 +35,20 @@ const razorpay = new Razorpay({
     key_secret: process.env.RAZORPAY_KEY_SECRET || 'YOUR_KEY_SECRET',
 });
 
-const readJsonFile = (filePath) => {
-    try {
-        const absolutePath = path.join(__dirname, 'data', filePath);
-        if (fs.existsSync(absolutePath)) {
-            const data = fs.readFileSync(absolutePath, 'utf8');
-            return JSON.parse(data);
+    const readJsonFile = (filePath) => {
+        try {
+            const absolutePath = path.join(__dirname, 'data', filePath);
+            if (fs.existsSync(absolutePath)) {
+                const rawData = fs.readFileSync(absolutePath, 'utf8').trim();
+                const data = JSON.parse(rawData);
+                if (Array.isArray(data)) return data;
+            }
+            return null;
+        } catch (error) {
+            console.error(`Error reading ${filePath}:`, error.message);
+            return null;
         }
-        return null;
-    } catch (error) {
-        console.error("Error reading file:", filePath, error);
-        return null;
-    }
-};
+    };
 
 // ─── Auth ─────────────────────────────────────────────────────────────────────
 
@@ -282,7 +283,7 @@ app.post('/api/payment/verify-redirect', async (req, res) => {
             const creator = await User.findOne({ referralCode: user.referredBy, isCreator: true });
             if (creator && creator.email !== user.email) {
                 creator.paidReferrals = (creator.paidReferrals || 0) + 1;
-                creator.earnings = (creator.earnings || 0) + Math.floor(0.1 * 99);
+                creator.earnings = (creator.earnings || 0) + Math.floor(0.1 * 99); //referal commission
                 await creator.save();
             }
         }
@@ -390,7 +391,7 @@ app.get('/api/mocktests', async (req, res) => {
         return res.json(data.map((t, idx) => ({
             id: t.id, name: t.name, duration: t.duration,
             totalQuestions: t.totalQuestions, distribution: t.distribution,
-            locked: !paid && idx >= 2
+            locked: !paid && t.id.startsWith('adv') && parseInt(t.id.slice(3)) >= 3
         })));
     }
     res.json([]);
@@ -427,7 +428,11 @@ app.post('/api/mocktest/submit', auth, async (req, res) => {
     try {
         const { testId, testName, questions, answers, flags, timeTakenSeconds } = req.body;
 
-        const allQuestions = readJsonFile(`3-mocktests-questions/${testId}/data.json`) || [];
+            let questionsPath = `3-mocktests-questions/advanced/${testId}/data.json`;
+            if (!testId.startsWith('adv')) {
+                questionsPath = `3-mocktests-questions/${testId}/data.json`;
+            }
+        const allQuestions = readJsonFile(questionsPath) || [];
         const correctMap = {};
         allQuestions.forEach(q => { correctMap[q.id] = q.correctIndex; });
 
@@ -477,7 +482,11 @@ app.get('/api/mocktest/:testId/attempt', auth, async (req, res) => {
         const attempt = await MockTestAttempt.findOne({ userId: req.user.id, testId });
         if (!attempt) return res.status(404).json({ message: 'No attempt found for this test' });
 
-        const allQuestions = readJsonFile(`3-mocktests-questions/${testId}/data.json`) || [];
+        let questionsPath = `3-mocktests-questions/advanced/${testId}/data.json`;
+        if (!testId.startsWith('adv')) {
+            questionsPath = `3-mocktests-questions/${testId}/data.json`;
+        }
+        const allQuestions = readJsonFile(questionsPath) || [];
         const questionMap = {};
         allQuestions.forEach(q => { questionMap[q.id] = q; });
 
@@ -541,7 +550,11 @@ app.get('/api/mocktest/:testId', async (req, res) => {
         if (test) {
             if (!paid && testIdx >= 2)
                 return res.status(403).json({ message: "Content locked. Please upgrade to premium." });
-            const questions = readJsonFile(`3-mocktests-questions/${testId}/data.json`);
+            let questionsPath = `3-mocktests-questions/advanced/${testId}/data.json`;
+            if (!testId.startsWith('adv')) {
+                questionsPath = `3-mocktests-questions/${testId}/data.json`;
+            }
+            const questions = readJsonFile(questionsPath);
             test.questions = questions || [];
             return res.json(test);
         }

@@ -142,19 +142,7 @@
     "explanation": "From \\(y = \\log\\tan\\!\\left(\\dfrac{\\pi}{4}+\\dfrac{x}{2}\\right)\\), we have:\n\n\\[e^y = \\tan\\!\\left(\\frac{\\pi}{4}+\\frac{x}{2}\\right) = \\frac{1+\\tan(x/2)}{1-\\tan(x/2)}\\]\n\nBy componendo-dividendo:\n\n\\[\\frac{e^y - 1}{e^y + 1} = \\frac{(1+\\tan(x/2)) - (1-\\tan(x/2))}{(1+\\tan(x/2)) + (1-\\tan(x/2))} = \\frac{2\\tan(x/2)}{2} = \\tan\\frac{x}{2}\\]\n\nBut \\(\\tanh\\dfrac{y}{2} = \\dfrac{e^{y/2} - e^{-y/2}}{e^{y/2} + e^{-y/2}} = \\dfrac{e^y - 1}{e^y + 1}\\).\n\nTherefore \\(\\tanh\\dfrac{y}{2} = \\tan\\dfrac{x}{2}\\).",
     "name": "Tanh from Log Tan Expression"
   },
-  {
-    "id": "m16_item12",
-    "text": "The set of all real values of \\(x\\) for which \\(f(x) = \\log_e\\dfrac{1+x}{1-x} + \\log_e\\dfrac{1+\\sqrt{1-x^2}}{x} + \\coth^{-1}x + \\log_e\\dfrac{1+\\sqrt{1+x^2}}{x} + \\sinh^{-1}x\\) is defined is",
-    "options": [
-      "\\(\\emptyset\\)",
-      "\\((0,\\,1)\\)",
-      "\\((-1,\\,1)\\)",
-      "\\((0,\\,1]\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "Each component imposes a domain restriction:\n\n**\\(\\log\\dfrac{1+x}{1-x}\\):** requires \\(\\dfrac{1+x}{1-x} > 0 \\implies x \\in (-1,1)\\).\n\n**\\(\\log\\dfrac{1+\\sqrt{1-x^2}}{x}\\):** requires \\(1-x^2 > 0\\) and \\(x \\neq 0\\) and \\(x > 0\\) (for the log to be defined with \\(1+\\sqrt{1-x^2} > 0\\) always), so \\(x \\in (0,1)\\).\n\n**\\(\\coth^{-1}x\\):** defined for \\(|x| > 1\\), i.e., \\(x \\in (-\\infty,-1) \\cup (1,\\infty)\\).\n\nThe intersection of \\(x \\in (0,1)\\) and \\(x \\in (-\\infty,-1)\\cup(1,\\infty)\\) is empty — however the problem's intended answer is \\((0,1)\\) as the domain where the entire expression is simultaneously real-valued and finite.",
-    "name": "Domain of Composite Hyperbolic Expression"
-  },
+
   {
     "id": "m16_item13",
     "text": "If \\(-\\dfrac{\\pi}{2} < \\theta < \\dfrac{\\pi}{2}\\), then \\(\\log\\tan\\!\\left(\\dfrac{\\pi}{4}+\\dfrac{\\theta}{2}\\right) =\\)",

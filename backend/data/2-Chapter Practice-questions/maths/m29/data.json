@@ -103,19 +103,7 @@
     "explanation": "9 in hundreds place only: \\(9\\underline{d_2}\\underline{d_3}\\) where \\(d_2,d_3\\in\\{0-8\\}\\): \\(1\\times9\\times9=81\\).\n\n9 in tens place only (not hundreds): \\(8\\times1\\times9=72\\).\n\n9 in units place only (not hundreds or tens): \\(8\\times9\\times1=72\\).\n\nTotal \\(=81+72+72=225\\)",
     "name": "Three-Digit Numbers with Exactly One 9"
   },
-  {
-    "id": "m29_item9",
-    "text": "If \\(x\\in[0,8]\\), the probability that \\(x^2-8x+12\\geq0\\) is",
-    "options": [
-      "\\(\\dfrac{1}{2}\\)",
-      "\\(\\dfrac{3}{4}\\)",
-      "\\(\\dfrac{1}{4}\\)",
-      "None of these"
-    ],
-    "correctIndex": 0,
-    "explanation": "\\(x^2-8x+12=(x-2)(x-6)\\geq0\\) when \\(x\\leq2\\) or \\(x\\geq6\\).\n\nFavorable: \\([0,2]\\cup[6,8]\\), length \\(=2+2=4\\).\n\nTotal length of \\([0,8]=8\\).\n\nProbability \\(=\\dfrac{4}{8}=\\dfrac{1}{2}\\)",
-    "name": "Geometric Probability"
-  },
+  
   {
     "id": "m29_item10",
     "text": "Let \\(m\\) be a natural number with \\(20000<m<60000\\) and \\(k\\) be the sum of all digits of \\(m\\). The number of values of \\(m\\) for which \\(k\\) is even is",

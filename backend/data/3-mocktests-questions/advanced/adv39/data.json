@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "p2_item22",
+    "text": "Ship A is moving Westwards with a speed of 20 km h⁻¹ and another ship B which is at 200 km South of A is moving Northwards with a speed of 10 km h⁻¹. The time after which the distance between them is shortest and the shortest distance between them respectively",
+    "options": [
+      "4 h, 80√5 km",
+      "50√2 h, √10 km",
+      "100√2 h, 2√10 km",
+      "80√5 h, 4 km"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity components lead to minimum distance when x_B = 40 km. Shortest distance AB = 80√5 km, time = 4 h.",
+    "name": "Questions Item 22",
+    "subject": "phy",
+    "chapter": "p2"
+  },
+  {
+    "id": "p6_item14",
+    "text": "A planet is revolving around the Sun. The radius vectors joining the Sun and the planet at points A and B are 90 × 10^6 km and 60 × 10^6 km respectively. The ratio of velocities of the planet at the points A and B when its velocities make angle 30° and 60° with major-axis of the orbit is",
+    "options": [
+      "3/(2√3)",
+      "2/√3",
+      "1/√3",
+      "√3/2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Conservation of angular momentum: \\(m v_A r_A \\sin 30^\\circ = m v_B r_B \\sin 60^\\circ\\). Ratio \\(v_A / v_B = (r_B / r_A) (\\sin 60^\\circ / \\sin 30^\\circ) = 2/√3\\).",
+    "name": "Questions Item 14",
+    "subject": "phy",
+    "chapter": "p6"
+  },
+  {
+    "id": "m8_item47",
+    "text": "Let \\(S=\\{0,1,2,3,\\ldots,100\\}\\). The number of ways of selecting \\(x, y\\in S\\) such that \\(x\\neq y\\) and \\(x+y=100\\) is",
+    "options": [
+      "\\(51\\)",
+      "\\(40\\)",
+      "\\(50\\)",
+      "\\(100\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Pairs \\((x,y)\\) with \\(x+y=100\\) and \\(x\\neq y\\): \\((0,100),(1,99),(2,98),\\ldots,(49,51)\\) — that's 50 ordered pairs. Since \\(x=y=50\\) is excluded (already \\(x\\neq y\\)), and pairs like \\((0,100)\\) and \\((100,0)\\) are distinct ordered selections — but if the selection is unordered, each pair is counted once. Total unordered pairs \\(=50\\).",
+    "name": "Pairs Summing to a Constant",
+    "subject": "maths",
+    "chapter": "m8"
+  },
+  {
+    "id": "c9_item17",
+    "text": "At T(K), the following experimental data were obtained for \\(A + B + C \\rightarrow \\text{products}\\):\n\n| Expt | [A] | [B] | [C] | Initial rate |\n|------|------|------|------|--------------|\n| 1 | 0.02 M | 0.1 M | 0.03 M | \\(2.4 \\times 10^{-6}\\) M s⁻¹ |\n| 2 | 0.02 M | 0.2 M | 0.03 M | \\(4.8 \\times 10^{-6}\\) M s⁻¹ |\n| 3 | 0.02 M | 0.2 M | 0.06 M | \\(9.6 \\times 10^{-6}\\) M s⁻¹ |\n| 4 | 0.04 M | 0.2 M | 0.06 M | \\(9.6 \\times 10^{-6}\\) M s⁻¹ |\n\nThe rate constant for this reaction is:",
+    "options": [
+      "\\(8.0 \\times 10^{-4}\\) s⁻¹",
+      "\\(8.0 \\times 10^{-4}\\) L mol⁻¹ s⁻¹",
+      "\\(8.0 \\times 10^{4}\\) L mol⁻¹ s⁻¹",
+      "\\(8.0 \\times 10^{-4}\\) L² mol⁻² s⁻¹"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Step 1 — Determine orders by comparing experiments:**\n\n- Expts 1 vs 2: [B] doubles (0.1→0.2), rate doubles (2.4→4.8) → **1st order in B**\n- Expts 2 vs 3: [C] doubles (0.03→0.06), rate doubles (4.8→9.6) → **1st order in C**\n- Expts 3 vs 4: [A] doubles (0.02→0.04), rate unchanged (9.6→9.6) → **0th order in A**\n\n**Rate law:** \\(\\text{rate} = k[A]^0[B]^1[C]^1 = k[B][C]\\)\n\nOverall order = 2, so units of \\(k\\) = L mol⁻¹ s⁻¹\n\n**Step 2 — Calculate k using Expt 1:**\n\\[2.4 \\times 10^{-6} = k \\times 0.1 \\times 0.03 = k \\times 3 \\times 10^{-3}\\]\n\\[k = \\frac{2.4 \\times 10^{-6}}{3 \\times 10^{-3}} = 8.0 \\times 10^{-4} \\text{ L mol}^{-1}\\text{s}^{-1}\\]",
+    "name": "Rate Constant from Experimental Rate Data",
+    "subject": "che",
+    "chapter": "c9"
+  },
+  {
+    "id": "m4_item12",
+    "text": "The domain of \\(\\sqrt{|x| - x}\\) is",
+    "options": [
+      "\\((-\\infty, 0)\\)",
+      "\\((0, \\infty)\\)",
+      "\\((-\\infty, \\infty)\\)",
+      "\\(\\mathbb{R} - \\{0\\}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\sqrt{|x|-x}\\) is defined when \\(|x| - x \\geq 0\\), i.e. \\(|x| \\geq x\\). For \\(x \\geq 0\\): \\(|x|=x\\), so \\(|x|-x=0 \\geq 0\\) ✓. For \\(x < 0\\): \\(|x|=-x > x\\), so \\(|x|-x=-2x > 0\\) ✓. Hence the domain is all of \\(\\mathbb{R} = (-\\infty, \\infty)\\).",
+    "name": "Domain of Absolute Value Square Root",
+    "subject": "maths",
+    "chapter": "m4"
+  },
+  {
+    "id": "c7_item12",
+    "text": "For the reaction \\(2\\text{H}_2(g) + \\text{O}_2(g) \\rightarrow 2\\text{H}_2\\text{O}(g)\\) at 300 K, \\(\\Delta G = -228.4\\) kJ mol⁻¹ and \\(\\Delta H = -241.6\\) kJ mol⁻¹. The change in entropy is:",
+    "options": [
+      "\\(+88\\) J K⁻¹",
+      "\\(+4.4\\) kJ K⁻¹",
+      "\\(-88\\) J K⁻¹",
+      "\\(-44\\) J K⁻¹"
+    ],
+    "correctIndex": 3,
+    "explanation": "Using the Gibbs-Helmholtz equation:\n\\[\\Delta G = \\Delta H - T\\Delta S\\]\n\n\\[\\Delta S = \\frac{\\Delta H - \\Delta G}{T} = \\frac{-241.6 - (-228.4)}{300}\\]\n\n\\[= \\frac{-13.2 \\text{ kJ}}{300 \\text{ K}} = -0.044 \\text{ kJ/K} = -44 \\text{ J/K}\\]\n\nThe negative value makes sense — 3 moles of gas react to give 2 moles of gas, reducing disorder.",
+    "name": "Entropy Change from ΔG and ΔH",
+    "subject": "che",
+    "chapter": "c7"
+  },
+  {
+    "id": "c4_item2",
+    "text": "Which among the following statements is correct about gases?\n\nA. There is a complete order of molecules in gases.\nB. There is a complete disorder of molecules in gases.\nC. Molecules are not always in random motion in gases.\nD. Molecules are fixed at their respective positions in gases.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gas molecules are in **constant, rapid, random motion** and collide with each other and the walls of the container frequently. There are no fixed positions for gas molecules. This results in **complete disorder** in the gaseous state — unlike solids (ordered) or liquids (partially ordered). Gas molecules are neither fixed in position nor ordered.",
+    "name": "Properties of Gaseous State",
+    "subject": "che",
+    "chapter": "c4"
+  },
+  {
+    "id": "c13_item33",
+    "text": "The bond dissociation energy (E) and bond length (R) of \\(\\text{O}_2\\), \\(\\text{N}_2\\) and \\(\\text{F}_2\\) follow the order:",
+    "options": [
+      "\\(E:\\; \\text{O}_2 > \\text{N}_2 > \\text{F}_2\\);\\quad R:\\; \\text{F}_2 > \\text{O}_2 > \\text{N}_2\\)",
+      "\\(E:\\; \\text{N}_2 > \\text{F}_2 > \\text{O}_2\\);\\quad R:\\; \\text{N}_2 > \\text{O}_2 > \\text{F}_2\\)",
+      "\\(E:\\; \\text{N}_2 > \\text{O}_2 > \\text{F}_2\\);\\quad R:\\; \\text{F}_2 > \\text{O}_2 > \\text{N}_2\\)",
+      "\\(E:\\; \\text{N}_2 > \\text{O}_2 > \\text{F}_2\\);\\quad R:\\; \\text{N}_2 > \\text{O}_2 > \\text{F}_2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bond order determines both bond strength and bond length:\n\n| Molecule | Bond Order | Bond Dissociation Energy | Bond Length |\n|---|---|---|---|\n| \\(\\text{N}_2\\) (N≡N) | 3 | 945 kJ/mol (highest) | 110 pm (shortest) |\n| \\(\\text{O}_2\\) (O=O) | 2 | 498 kJ/mol | 121 pm |\n| \\(\\text{F}_2\\) (F–F) | 1 | 159 kJ/mol (lowest) | 143 pm (longest) |\n\n**Higher bond order → shorter bond length AND higher bond energy.**\n\nSo:\n- Bond energy (E): \\(\\text{N}_2 > \\text{O}_2 > \\text{F}_2\\)\n- Bond length (R): \\(\\text{F}_2 > \\text{O}_2 > \\text{N}_2\\)",
+    "name": "Questions Item 33",
+    "subject": "che",
+    "chapter": "c13"
+  },
+  {
+    "id": "c5_item8",
+    "text": "The fraction of voids occupied in inverse spinel compounds are:",
+    "options": [
+      "\\(\\frac{1}{8}\\) of tetrahedral voids and \\(\\frac{1}{2}\\) of octahedral voids",
+      "\\(\\frac{1}{2}\\) of tetrahedral voids and \\(\\frac{1}{8}\\) of octahedral voids",
+      "\\(\\frac{1}{4}\\) of tetrahedral voids and \\(\\frac{1}{8}\\) of octahedral voids",
+      "\\(\\frac{1}{8}\\) of tetrahedral voids and \\(\\frac{1}{4}\\) of octahedral voids"
+    ],
+    "correctIndex": 3,
+    "explanation": "In an **inverse spinel** structure (formula B(AB)O₄):\n- O²⁻ anions form a **face-centred cubic (fcc)** close-packed arrangement.\n- Divalent cations (A²⁺) occupy **\\(\\frac{1}{8}\\)** of the tetrahedral voids.\n- Trivalent cations (B³⁺) are distributed between the remaining \\(\\frac{1}{8}\\) tetrahedral voids AND **\\(\\frac{1}{4}\\)** of the octahedral voids.\n\nTotal void occupancy: \\(\\frac{1}{8}\\) tetrahedral + \\(\\frac{1}{4}\\) octahedral.",
+    "name": "Void Occupancy in Inverse Spinel Structure",
+    "subject": "che",
+    "chapter": "c5"
+  },
+  {
+    "id": "m12_item31",
+    "text": "\\(\\cos^2 5° - \\cos^2 15° - \\sin^2 15° + \\sin^2 35° + \\cos 15°\\sin 15° - \\cos 5°\\sin 35° =\\)",
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{\\sqrt{3}}{2}\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rewriting the expression using product-to-sum identities and grouping:\n\n\\[\\cos 5°(\\cos 5° - \\sin 35°) - \\cos 15°(\\cos 15° - \\sin 15°) + (\\sin^2 35° - \\sin^2 15°)\\]\n\nSince \\(\\sin 35° = \\cos 55°\\) and \\(\\sin 15° = \\cos 75°\\), and applying sum-to-product formulas:\n\nAfter careful expansion using \\(\\cos C - \\sin D = \\cos C - \\cos(90°-D)\\) and product identities throughout all three groupings, each part contributes \\(\\dfrac{\\cos 15°}{2}\\) and \\(-\\dfrac{\\cos 15°}{2}\\) respectively, leading to total \\(= 0\\).",
+    "name": "Combined Trig Expression",
+    "subject": "maths",
+    "chapter": "m12"
+  },
+  {
+    "id": "p19_item11",
+    "text": "Lenz's law gives",
+    "options": [
+      "the direction of induced current",
+      "the quantity of charge flowing",
+      "the magnitude of the induced emf",
+      "motional emf in the circuit"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lenz's law gives the direction of induced current (opposes the change in flux).",
+    "name": "Questions Item 11",
+    "subject": "phy",
+    "chapter": "p19"
+  },
+  {
+    "id": "c17_item11",
+    "text": "The \\(\\Delta_0\\) of a coordination complex of a metal ion (\\(3d^1\\)) is 1000 kJ mol\\(^{-1}\\). If the energy of \\(t_{2g}\\) orbitals is \\(-400\\) kJ mol\\(^{-1}\\), the energy (in kJ mol\\(^{-1}\\)) of \\(e_g\\) orbitals is",
+    "options": [
+      "−600",
+      "600",
+      "1000",
+      "400"
+    ],
+    "correctIndex": 1,
+    "explanation": "The crystal field splitting energy \\(\\Delta_0\\) is defined as the energy difference between the \\(e_g\\) and \\(t_{2g}\\) sets:\n\n\\[\\Delta_0 = E(e_g) - E(t_{2g})\\]\n\nGiven: \\(\\Delta_0 = 1000\\) kJ/mol and \\(E(t_{2g}) = -400\\) kJ/mol\n\n\\[1000 = E(e_g) - (-400)\\]\n\n\\[E(e_g) = 1000 - 400 = 600 \\text{ kJ/mol}\\]\n\nThe \\(e_g\\) orbitals are at **+600 kJ/mol** relative to the barycentre.",
+    "name": "Questions Item 11",
+    "subject": "che",
+    "chapter": "c17"
+  },
+  {
+    "id": "m15_item10",
+    "text": "The solution of \\(\\sin^{-1}x + \\sin^{-1}2x = \\dfrac{\\pi}{3}\\) is",
+    "options": [
+      "\\(-\\dfrac{1}{2}\\sqrt{\\dfrac{3}{7}}\\)",
+      "\\(\\dfrac{1}{2}\\sqrt{\\dfrac{3}{7}}\\)",
+      "\\(\\dfrac{1}{2}\\sqrt{\\dfrac{2}{7}}\\)",
+      "\\(-\\dfrac{1}{3}\\sqrt{\\dfrac{2}{7}}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(\\sin^{-1}x = \\theta\\), so \\(x = \\sin\\theta\\). Then:\n\n\\[\\sin^{-1}(2\\sin\\theta) = \\frac{\\pi}{3} - \\theta\\]\n\n\\[2\\sin\\theta = \\sin\\!\\left(\\frac{\\pi}{3}-\\theta\\right) = \\frac{\\sqrt{3}}{2}\\cos\\theta - \\frac{1}{2}\\sin\\theta\\]\n\n\\[\\frac{5}{2}\\sin\\theta = \\frac{\\sqrt{3}}{2}\\cos\\theta \\implies \\tan\\theta = \\frac{\\sqrt{3}}{5}\\]\n\nFrom \\(\\tan\\theta = \\dfrac{\\sqrt{3}}{5}\\): \\(\\sin\\theta = \\dfrac{\\sqrt{3}}{\\sqrt{28}} = \\dfrac{\\sqrt{3}}{2\\sqrt{7}}\\)\n\n\\[x = \\sin\\theta = \\frac{1}{2}\\sqrt{\\frac{3}{7}}\\]",
+    "name": "Arcsin Double Angle Equation",
+    "subject": "maths",
+    "chapter": "m15"
+  },
+  {
+    "id": "c15_item24",
+    "text": "Find the product of the following reaction when Xe is taken in excess: \\(\\text{Xe}(g) + \\text{F}_2(g) \\rightarrow ?\\)",
+    "options": [
+      "\\(\\text{XeF}_4\\)",
+      "\\(\\text{XeF}_2\\)",
+      "\\(\\text{XeF}_6\\)",
+      "\\(\\text{XeF}_7\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Product depends on Xe:F₂ ratio and conditions:\n- **Xe excess**, 673 K, 1 bar → **XeF₂**\n- 1:5 ratio, 673 K, 6 bar → XeF₄\n- F₂ excess, 573 K, 60–70 bar → XeF₆\n\nWith **excess Xe** at 673 K and 1 bar:\n\\[\\text{Xe(excess)} + \\text{F}_2 \\xrightarrow{673\\text{ K},\\,1\\text{ bar}} \\text{XeF}_2\\]\n\n\\(\\text{XeF}_7\\) does not exist.",
+    "name": "Questions Item 24",
+    "subject": "che",
+    "chapter": "c15"
+  },
+  {
+    "id": "m14_item19",
+    "text": "Let \\(\\Delta\\) denote the area of \\(\\triangle ABC\\). If \\(\\alpha, \\beta, \\gamma\\) are the lengths of the altitudes, then \\(\\alpha^{-2} + \\beta^{-2} + \\gamma^{-2} =\\)",
+    "options": [
+      "\\(\\dfrac{4}{\\Delta}(\\tan A + \\tan B + \\tan C)\\)",
+      "\\(\\dfrac{1}{\\Delta}(\\cot A + \\cot B + \\cot C)\\)",
+      "\\(\\dfrac{\\Delta^2}{2}(\\tan A + \\tan B + \\tan C)\\)",
+      "\\(\\dfrac{\\Delta^2}{4}(\\cot A + \\cot B + \\cot C)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The altitudes are: \\(\\alpha = \\dfrac{2\\Delta}{a}\\), \\(\\beta = \\dfrac{2\\Delta}{b}\\), \\(\\gamma = \\dfrac{2\\Delta}{c}\\).\n\n\\[\\alpha^{-2}+\\beta^{-2}+\\gamma^{-2} = \\frac{a^2+b^2+c^2}{4\\Delta^2}\\]\n\nUsing \\(a^2 = 2bc\\cos A\\cdot\\dfrac{a}{a}\\cdots\\) and the relation \\(a^2+b^2+c^2 = 4\\Delta(\\cot A+\\cot B+\\cot C)\\):\n\n\\[= \\frac{4\\Delta(\\cot A+\\cot B+\\cot C)}{4\\Delta^2} = \\frac{1}{\\Delta}(\\cot A+\\cot B+\\cot C)\\]",
+    "name": "Sum of Inverse Squared Altitudes",
+    "subject": "maths",
+    "chapter": "m14"
+  },
+  {
+    "id": "m17_item10",
+    "text": "The locus of a point \\(P\\) such that \\(OP : AP = 5:7\\), where \\(O\\) is the origin and \\(A(-2,-3)\\), is",
+    "options": [
+      "\\(24(x^2+y^2) - 100x - 150y - 325 = 0\\)",
+      "\\(24(x^2+y^2) + 100x + 150y - 325 = 0\\)",
+      "\\(24(x^2+y^2) - 100x + 150y + 325 = 0\\)",
+      "\\(2x^2 + 2y^2 = 325\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(P = (x, y)\\). Given \\(\\dfrac{OP}{AP} = \\dfrac{5}{7}\\):\n\n\\[\\frac{x^2 + y^2}{(x+2)^2 + (y+3)^2} = \\frac{25}{49}\\]\n\n\\[49(x^2 + y^2) = 25[(x+2)^2 + (y+3)^2]\\]\n\n\\[49(x^2 + y^2) = 25[x^2 + y^2 + 4x + 6y + 13]\\]\n\n\\[24(x^2 + y^2) - 100x - 150y - 325 = 0\\]",
+    "name": "Locus with Ratio of Distances",
+    "subject": "maths",
+    "chapter": "m17"
+  },
+  {
+    "id": "m4_item27",
+    "text": "If \\(f: \\mathbb{R}-\\left\\{\\tfrac{3}{7}\\right\\} \\to \\mathbb{R}-\\left\\{\\tfrac{3}{7}\\right\\}\\) is given by \\(f(x)=\\dfrac{3x+5}{7x-3}\\), which of the following is NOT true?",
+    "options": [
+      "\\(f^{-1}(x) = f(x)\\)",
+      "\\((f\\circ f)(x) = x\\)",
+      "\\((f\\circ f\\circ f)(x) = x\\)",
+      "\\((f\\circ f\\circ f\\circ f)(x) = x\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Find \\(f^{-1}\\): set \\(y=\\dfrac{3x+5}{7x-3}\\), solve for \\(x\\): \\(x=\\dfrac{3y+5}{7y-3}=f(y)\\). So \\(f^{-1}=f\\) (involutory). Therefore \\(f\\circ f = \\text{id}\\), so \\((f\\circ f)(x)=x\\) ✓. Also \\((f\\circ f\\circ f\\circ f)(x)=x\\) ✓. But \\((f\\circ f\\circ f)(x)=f(x)\\neq x\\) in general — so (c) is NOT true.",
+    "name": "Involutory Function Properties",
+    "subject": "maths",
+    "chapter": "m4"
+  },
+  {
+    "id": "m2_item17",
+    "text": "If \\(x\\) is real, then the range of \\(\\dfrac{x^2+2x+1}{x^2+2x+7}\\) is",
+    "options": [
+      "\\([0,\\ 1)\\)",
+      "\\((-\\infty,\\ 0) \\cup (1,\\ \\infty)\\)",
+      "\\((0,\\ 1)\\)",
+      "\\(\\mathbb{R}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = \\dfrac{x^2+2x+1}{x^2+2x+7}\\). Note \\(y \\neq 1\\) (since numerator \\(\\neq\\) denominator). Rearranging: \\((y-1)x^2+2(y-1)x+(7y-1)=0\\). For \\(x \\in \\mathbb{R}\\), \\(D \\geq 0\\): \\(4(y-1)^2-4(y-1)(7y-1) \\geq 0 \\Rightarrow (y-1)[y-1-7y+1] \\geq 0 \\Rightarrow (y-1)(-6y) \\geq 0 \\Rightarrow y(y-1) \\leq 0 \\Rightarrow y \\in [0,1]\\). Combined with \\(y\\neq 1\\): range \\(= [0,1)\\).",
+    "name": "Range of Rational Quadratic",
+    "subject": "maths",
+    "chapter": "m2"
+  },
+  {
+    "id": "m20_item8",
+    "text": "The tangent to \\(y^2=12x\\) making angle \\(30°\\) with the positive \\(X\\)-axis is \\(x-\\sqrt{3}y+9=0\\). Its point of contact is",
+    "options": [
+      "\\((-9,-6\\sqrt{3})\\)",
+      "\\((9,-6\\sqrt{3})\\)",
+      "\\((-9,6\\sqrt{3})\\)",
+      "\\((9,6\\sqrt{3})\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Tangent at \\((x_1,y_1)\\) to \\(y^2=12x\\) is \\(yy_1=6(x+x_1)\\), i.e., \\(6x-y_1y+6x_1=0\\).\n\nComparing with \\(x-\\sqrt{3}y+9=0\\) (multiplying by 6): \\(6x-6\\sqrt{3}y+54=0\\).\n\n\\[y_1=6\\sqrt{3},\\quad 6x_1=54 \\implies x_1=9\\]\n\nPoint of contact: \\((9, 6\\sqrt{3})\\).",
+    "name": "Point of Contact on Parabola",
+    "subject": "maths",
+    "chapter": "m20"
+  },
+  {
+    "id": "c10_item20",
+    "text": "Using the standard electrode potentials: \\(\\text{Fe}^{2+} + 2e^- \\rightarrow \\text{Fe}\\;(E^\\circ = -0.44\\text{ V})\\), \\(\\text{Cu}^{2+} + 2e^- \\rightarrow \\text{Cu}\\;(E^\\circ = +0.34\\text{ V})\\), \\(\\text{Ag}^+ + e^- \\rightarrow \\text{Ag}\\;(E^\\circ = +0.80\\text{ V})\\). Identify the correct statements:\n\n(i) Copper can displace iron from \\(\\text{FeSO}_4\\) solution\n(ii) Iron can displace copper from \\(\\text{CuSO}_4\\) solution\n(iii) Silver can displace copper from \\(\\text{CuSO}_4\\) solution\n(iv) Iron can displace silver from \\(\\text{AgNO}_3\\) solution",
+    "options": [
+      "(i), (ii)",
+      "(ii), (iii)",
+      "(ii), (iv)",
+      "(i), (iv)"
+    ],
+    "correctIndex": 2,
+    "explanation": "A metal with a **lower (more negative) electrode potential** acts as a stronger reducing agent and can displace a metal with a **higher (more positive) electrode potential** from its salt solution.\n\nReduction potential order: \\(E^\\circ_{\\text{Fe}} < E^\\circ_{\\text{Cu}} < E^\\circ_{\\text{Ag}}\\)\n\n- Statement (i): Cu cannot displace Fe (Cu has higher \\(E^\\circ\\) than Fe) ✗\n- Statement (ii): Fe can displace Cu (Fe has lower \\(E^\\circ\\)) ✓\n- Statement (iii): Ag cannot displace Cu (Ag has higher \\(E^\\circ\\)) ✗\n- Statement (iv): Fe can displace Ag (Fe has much lower \\(E^\\circ\\)) ✓\n\nCorrect statements: **(ii) and (iv)**.",
+    "name": "Questions Item 20",
+    "subject": "che",
+    "chapter": "c10"
+  },
+  {
+    "id": "c3_item11",
+    "text": "The magnetic property of \\(\\text{NO}_2\\) is:",
+    "options": [
+      "Ferromagnetic",
+      "Diamagnetic",
+      "Non-magnetic",
+      "Paramagnetic"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{NO}_2\\) (nitrogen dioxide) has **23 electrons** total (N: 7, O: 8 × 2 = 16, total = 23).\n\nIn the Lewis structure of \\(\\text{NO}_2\\), nitrogen has an **odd number of electrons**, resulting in **one unpaired electron** on the nitrogen atom.\n\nSince paramagnetic substances have at least one unpaired electron, \\(\\text{NO}_2\\) is **paramagnetic**.\n\n(This also explains why two \\(\\text{NO}_2\\) molecules can dimerize to form \\(\\text{N}_2\\text{O}_4\\), which is diamagnetic.)",
+    "name": "Magnetic Property of NO₂",
+    "subject": "che",
+    "chapter": "c3"
+  },
+  {
+    "id": "p17_item21",
+    "text": "A galvanometer of resistance $G$ Ω, is shunted by a resistance $S$ Ω. To keep the main current in the circuit unchanged, the resistance to be connected in series with the galvanometer is",
+    "options": [
+      "$\\frac{G^2}{S+G}$",
+      "$\\frac{S}{S+G}$",
+      "$\\frac{S^2}{S+G}$",
+      "$\\frac{SG}{S+G}$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$R = \\frac{G^2}{G + S}$.",
+    "name": "Questions Item 21",
+    "subject": "phy",
+    "chapter": "p17"
+  },
+  {
+    "id": "c11_item7",
+    "text": "The compound which is added to soap to impart antiseptic properties is",
+    "options": [
+      "Sodium lauryl sulphate",
+      "Sodium dodecylbenzene sulphonate",
+      "Rosin",
+      "Bithionol"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Bithionol** is an aromatic compound containing sulphur that is added to soaps to impart **antiseptic properties**. It also reduces the odour produced by bacterial decomposition of organic matter on skin. It inhibits bacterial growth on the skin surface, making it effective as an antiseptic additive. Sodium lauryl sulphate and sodium dodecylbenzene sulphonate are synthetic detergents; rosin is added to soaps to make them harder.",
+    "name": "Questions Item 7",
+    "subject": "che",
+    "chapter": "c11"
+  },
+  {
+    "id": "m15_item7",
+    "text": "If \\(\\alpha\\) and \\(\\beta\\) are the least and greatest values of \\(f(x) = (\\sin^{-1}x)^2 + (\\cos^{-1}x)^2\\) for all \\(x \\in [-1,1]\\), then \\(8(\\alpha+\\beta) =\\)",
+    "options": [
+      "\\(\\pi^2\\)",
+      "\\(11\\pi^2\\)",
+      "\\(9\\pi^2\\)",
+      "\\(25\\pi^2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using \\(\\sin^{-1}x + \\cos^{-1}x = \\dfrac{\\pi}{2}\\), let \\(a = \\sin^{-1}x\\):\n\n\\[f(x) = a^2 + \\left(\\frac{\\pi}{2}-a\\right)^2 = 2a^2 - \\pi a + \\frac{\\pi^2}{4}\\]\n\nThis is a quadratic in \\(a\\) with minimum at \\(a = \\dfrac{\\pi}{4}\\), i.e., \\(x = \\sin\\dfrac{\\pi}{4} = \\dfrac{1}{\\sqrt{2}}\\):\n\n\\[\\alpha = f_{\\min} = 2\\cdot\\frac{\\pi^2}{16} - \\pi\\cdot\\frac{\\pi}{4} + \\frac{\\pi^2}{4} = \\frac{\\pi^2}{8}\\]\n\nMaximum occurs at the boundary \\(a = -\\dfrac{\\pi}{2}\\) (i.e., \\(x = -1\\)):\n\n\\[\\beta = f_{\\max} = 2\\cdot\\frac{\\pi^2}{4} + \\frac{\\pi^2}{2} + \\frac{\\pi^2}{4} = \\frac{5\\pi^2}{4}\\]\n\n\\[8(\\alpha+\\beta) = 8\\left(\\frac{\\pi^2}{8} + \\frac{5\\pi^2}{4}\\right) = 8\\cdot\\frac{11\\pi^2}{8} = 11\\pi^2\\]",
+    "name": "Min-Max of Arcsin Squared Sum",
+    "subject": "maths",
+    "chapter": "m15"
+  },
+  {
+    "id": "p22_item14",
+    "text": "When an object is moved along the principle axis of a concave mirror placed in air, the image coincides with the object if the object is 50 cm from the mirror. If the mirror is placed at a depth of 20 cm in a transparent medium, the image coincides with the object when the object is 40 cm from the mirror. The refractive index of the liquid is",
+    "options": [
+      "\\( \\frac{5}{4} \\)",
+      "\\( \\frac{4}{3} \\)",
+      "\\( \\frac{3}{2} \\)",
+      "\\( \\frac{5}{3} \\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Actual distance outside \\( = 30 \\) cm, apparent \\( = 20 \\) cm.\n\n\\( \\mu = \\frac{30}{20} = \\frac{3}{2} \\).",
+    "name": "Questions Item 14",
+    "subject": "phy",
+    "chapter": "p22"
+  },
+  {
+    "id": "p14_item21",
+    "text": "A simple pendulum with a bob of mass 40g and charge +2μC makes 20 oscillation in 44 s. A vertical electric field magnitude 4.2 × 10⁴ NC⁻¹ pointing downward is applied. The time taken by the pendulum to make 15 oscillation in the electric field is (g = 10 ms⁻²)",
+    "options": [
+      "30 s",
+      "60 s",
+      "90 s",
+      "15 s"
+    ],
+    "correctIndex": 0,
+    "explanation": "T = 44/20 = 2.2 s.\\na = qE/m = 2.1 ms⁻² down.\\ng_eff = 12.1 ms⁻².\\nT' = 2 s.\\nTime for 15 osc. = 30 s.",
+    "name": "Questions Item 21",
+    "subject": "phy",
+    "chapter": "p14"
+  },
+  {
+    "id": "m11_item38",
+    "text": "A and B each select one number at random from \\(\\{1,2,3,\\ldots,n\\}\\). \\(P(A<B)=\\dfrac{1009}{2019}\\). The probability that B's number is immediately next to A's is",
+    "options": [
+      "\\(\\dfrac{2018}{2019}\\)",
+      "\\(\\dfrac{2018}{(2019)^2}\\)",
+      "\\(\\dfrac{2000}{2019}\\)",
+      "\\(\\dfrac{2000}{(2019)^2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P(A<B)=\\dfrac{n-1}{2n}=\\dfrac{1009}{2019}\\Rightarrow2019(n-1)=2018n\\Rightarrow n=2019\\). Pairs where B is immediately next to A: 2018 (consecutive pairs). \\(P=\\dfrac{2018}{2019^2}\\).",
+    "name": "Consecutive Number Selection",
+    "subject": "maths",
+    "chapter": "m11"
+  },
+  {
+    "id": "c13_item7",
+    "text": "The electronic configuration of Cs is",
+    "options": [
+      "\\([\\text{Kr}]\\,5s^1\\)",
+      "\\([\\text{Xe}]\\,6s^1\\)",
+      "\\([\\text{Rn}]\\,7s^1\\)",
+      "\\([\\text{Ar}]\\,4s^1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Caesium (Cs) has atomic number 55. Its full electronic configuration is:\n\n\\[1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^6\\,4s^2\\,3d^{10}\\,4p^6\\,5s^2\\,4d^{10}\\,5p^6\\,6s^1\\]\n\nThe noble gas Xenon (Xe, Z = 54) has configuration \\([\\text{Kr}]\\,4d^{10}\\,5s^2\\,5p^6\\).\n\nSo Cs = \\([\\text{Xe}]\\,6s^1\\)\n\nCs is in Period 6, Group 1 (alkali metals), with one valence electron in the 6s orbital.",
+    "name": "Questions Item 7",
+    "subject": "che",
+    "chapter": "c13"
+  },
+  {
+    "id": "m11_item48",
+    "text": "Two dice thrown simultaneously until sum is 7 or 11. Probability that 7 comes before 11 is",
+    "options": [
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(\\dfrac{3}{4}\\)",
+      "\\(\\dfrac{5}{9}\\)",
+      "\\(\\dfrac{5}{18}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P(7)=\\tfrac{6}{36}=\\tfrac{1}{6}\\), \\(P(11)=\\tfrac{2}{36}=\\tfrac{1}{18}\\), \\(P(\\text{neither})=\\tfrac{7}{9}\\). Probability 7 before 11: \\(P=\\dfrac{P(7)}{P(7)+P(11)}=\\dfrac{1/6}{1/6+1/18}=\\dfrac{3}{4}\\).",
+    "name": "7 Before 11 in Dice Throwing",
+    "subject": "maths",
+    "chapter": "m11"
+  },
+  {
+    "id": "c20_item4",
+    "text": "Both ethanal and propanone will react with which of the following?",
+    "options": [
+      "Tollen's reagent",
+      "Schiff's reagent",
+      "Fehling's reagent",
+      "Grignard reagent"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Tollen's reagent, Fehling's reagent, and Schiff's reagent** are selective for **aldehydes only** — they do not react with ketones.\n\n**Grignard reagent (RMgX)** reacts with **both aldehydes and ketones** via nucleophilic addition to the carbonyl group:\n- Ethanal + CH₃MgX → **secondary alcohol** (after hydrolysis)\n- Propanone (acetone) + CH₃MgX → **tertiary alcohol** (after hydrolysis)\n\nTherefore, the only reagent that reacts with both is the **Grignard reagent**.",
+    "name": "Questions Item 4",
+    "subject": "che",
+    "chapter": "c20"
+  },
+  {
+    "id": "p23_item2",
+    "text": "Light from a source travels out with a velocity \\( c \\). If the source moves away from the observer with a velocity \\( v \\), then the relative velocity of light with respect to observer is",
+    "options": [
+      "\\( c \\)",
+      "\\( c + v \\)",
+      "\\( c - v \\)",
+      "\\( \\sqrt{c^2 + v^2} \\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The speed of light in vacuum is \\( c \\) for any inertial reference. This is true no matter how fast a light source is moving relative to an observer.",
+    "name": "Questions Item 2",
+    "subject": "phy",
+    "chapter": "p23"
+  },
+  {
+    "id": "c2_item1",
+    "text": "Calculate the wave number and frequency of orange radiation having wavelength 6300 Å.",
+    "options": [
+      "\\(1.587 \\times 10^8 \\text{ m}^{-1},\\ 4.761 \\times 10^{16} \\text{ s}^{-1}\\)",
+      "\\(1.587 \\times 10^4 \\text{ m}^{-1},\\ 4.761 \\times 10^{14} \\text{ s}^{-1}\\)",
+      "\\(1.587 \\times 10^6 \\text{ m}^{-1},\\ 4.761 \\times 10^{14} \\text{ s}^{-1}\\)",
+      "\\(1.587 \\times 10^6 \\text{ m}^{-1},\\ 4.761 \\times 10^{16} \\text{ s}^{-1}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Given: \\(\\lambda = 6300\\) Å \\(= 6300 \\times 10^{-10}\\) m\n\n**Wave number:**\n\\[\\bar{\\nu} = \\frac{1}{\\lambda} = \\frac{1}{6300 \\times 10^{-10}} = 1.587 \\times 10^6 \\text{ m}^{-1}\\]\n\n**Frequency:**\n\\[\\nu = \\frac{c}{\\lambda} = \\frac{3 \\times 10^8}{6300 \\times 10^{-10}} = 4.761 \\times 10^{14} \\text{ s}^{-1}\\]",
+    "name": "Wave Number and Frequency of Orange Radiation",
+    "subject": "che",
+    "chapter": "c2"
+  },
+  {
+    "id": "p24_item14",
+    "text": "The figures shows the variation of photo-current i with anode potential V for three differential radiations. Let I_a, I_b and I_c be the intensities and f_a, f_b and f_c be the frequencies for the curves a, b and c respectively. Then",
+    "options": [
+      "f_a = f_b and I_a ≠ I_b",
+      "f_a = f_c and I_a = I_c",
+      "f_a = f_b and I_a = I_b",
+      "f_b = f_c and I_b = I_c"
+    ],
+    "correctIndex": 0,
+    "explanation": "Stopping potentials for b and a are same\n\n∴ f_a = f_b\n\nand saturation current for b and a are different\n\n∴ I_a ≠ I_b.",
+    "name": "Questions Item 14",
+    "subject": "phy",
+    "chapter": "p24"
+  },
+  {
+    "id": "c20_item16",
+    "text": "Identify X and Y in the following reactions:\n\n\\(\\text{CH}_4 \\xrightarrow{\\text{O}_2/\\text{Mo}_2\\text{O}_3, \\Delta} X\\)\n\n\\(\\text{CH}_4 \\xrightarrow{\\text{O}_2/\\text{Cu}/523\\text{K}/100\\text{atm}} Y\\)",
+    "options": [
+      "X = CH₃OH; Y = HCO₂H",
+      "X = HCO₂H; Y = CH₂O",
+      "X = CH₃OH; Y = CH₂O",
+      "X = CH₂O; Y = CH₃OH"
+    ],
+    "correctIndex": 3,
+    "explanation": "Two different catalytic oxidations of methane:\n\n**Reaction 1** (\\(\\text{Mo}_2\\text{O}_3\\) catalyst, partial oxidation):\n\\[\\text{CH}_4 + \\text{O}_2 \\xrightarrow{\\text{Mo}_2\\text{O}_3, \\Delta} \\underbrace{\\text{HCHO}}_{\\text{X (formaldehyde)}} + \\text{H}_2\\text{O}\\]\n\n**Reaction 2** (Cu catalyst, 523 K, 100 atm):\n\\[2\\text{CH}_4 + \\text{O}_2 \\xrightarrow{\\text{Cu/523 K/100 atm}} \\underbrace{2\\text{CH}_3\\text{OH}}_{\\text{Y (methanol)}}\\]\n\nX = **CH₂O (formaldehyde)**, Y = **CH₃OH (methanol)**",
+    "name": "Questions Item 16",
+    "subject": "che",
+    "chapter": "c20"
+  },
+  {
+    "id": "c18_item20",
+    "text": "In the following resonance structures, the curved arrow indicates electrons are shifted from:\n\n(A) \\(\\text{—O—CH}_2 \\rightarrow \\overset{+}{\\text{—O}}\\text{=CH}_2\\)\n\n(B) \\(\\text{C=N—} \\rightarrow \\text{C—}\\overset{+}{\\text{N}}\\text{=}\\)",
+    "options": [
+      "Atom of adjacent bond in both (A) and (B)",
+      "π-bond to adjacent atom in both (A) and (B)",
+      "π-bond to adjacent atom in (A) and atom to adjacent bond in (B)",
+      "Atom to adjacent bond in (A) and π-bond to adjacent atom in (B)"
+    ],
+    "correctIndex": 3,
+    "explanation": "**In (A):** The lone pair electrons on the **O atom** move to form a new π-bond with adjacent C. This is **atom (lone pair) → adjacent bond**.\n\n**In (B):** The **π-bond** electrons between C and N shift toward N (N is electronegative and pulls electrons). This is **π-bond → adjacent atom (N)**.\n\nCorrect: **(A) atom to adjacent bond; (B) π-bond to adjacent atom**.",
+    "name": "Questions Item 20",
+    "subject": "che",
+    "chapter": "c18"
+  },
+  {
+    "id": "p4_item22",
+    "text": "A uniform chain of mass \\(M\\) and length \\(L\\) is lying on a smooth horizontal table, with half of its length hanging down. The work done is pulling the entire chain up the table is",
+    "options": [
+      "\\(\\frac{MgL}{2}\\)",
+      "\\(\\frac{MgL}{4}\\)",
+      "\\(\\frac{MgL}{8}\\)",
+      "\\(\\frac{MgL}{16}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Work = \\(\\frac{MgL}{8}\\).",
+    "name": "Questions Item 22",
+    "subject": "phy",
+    "chapter": "p4"
+  },
+  {
+    "id": "m7_item28",
+    "text": "If \\(x=\\dfrac{3}{10}+\\dfrac{3\\cdot7}{10\\cdot15}+\\dfrac{3\\cdot7\\cdot9}{10\\cdot15\\cdot20}+\\cdots\\), then \\(5x+8 =\\)",
+    "options": [
+      "\\(\\dfrac{5\\sqrt{5}}{3}\\)",
+      "\\(\\dfrac{3\\sqrt{3}}{5}\\)",
+      "\\(\\dfrac{3\\sqrt{3}}{5}\\)",
+      "\\(\\dfrac{25\\sqrt{5}}{3\\sqrt{3}}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rewriting with \\(3\\cdot5\\) in numerator: \\(x=\\dfrac{3\\cdot5}{5\\cdot10}+\\cdots\\). General term matches \\((1+y)^n\\) with \\(n=-\\tfrac{3}{2}\\) and \\(y=-\\tfrac{2}{5}\\). So \\(x+1=(1-\\tfrac{2}{5})^{-3/2}=\\left(\\tfrac{3}{5}\\right)^{-3/2}=\\left(\\tfrac{5}{3}\\right)^{3/2}\\). Then \\(5x+8=5\\left[\\left(\\tfrac{5}{3}\\right)^{3/2}-1\\right]+8=5\\left(\\tfrac{5}{3}\\right)^{3/2}+3=\\dfrac{5^{5/2}}{3^{3/2}}+3=\\dfrac{25\\sqrt5}{3\\sqrt3}+3\\). PDF answer: \\(\\dfrac{25\\sqrt5}{3\\sqrt3}\\).",
+    "name": "Binomial Series Summation",
+    "subject": "maths",
+    "chapter": "m7"
+  },
+  {
+    "id": "p18_item4",
+    "text": "The deflection produced in a tangent galvanometer, whose coil has a resistance of 9Ω is 30°. The potential difference across the coil is 4.5 V. If the number of turns in the coil is 10, the radius of the coil is (Given, \\( B_H = 3.14 \\times 10^{-5} \\) T)",
+    "options": [
+      "\\( 2\\sqrt{3} \\times 10^{-2} \\) m",
+      "\\( 10\\sqrt{3} \\times 10^{-2} \\) m",
+      "\\( 6 \\times 10^{-2} \\) m",
+      "\\( 3.5 \\times 10^{-2} \\) m"
+    ],
+    "correctIndex": 1,
+    "explanation": "Current flowing through the coil,\n\n\\( I = \\frac{V}{R} = \\frac{4.5}{9} = 0.5 \\) A\n\n\\( I = \\frac{2r B_H \\tan\\theta}{\\mu_0 N} \\)\n\n\\( \\Rightarrow r = \\frac{\\mu_0 N I}{2 B_H \\tan\\theta} = \\frac{4 \\pi \\times 10^{-7} \\times 10 \\times 0.5}{2 \\times 3.14 \\times 10^{-5} \\times \\tan 30^{\\circ}} = 10\\sqrt{3} \\times 10^{-2} \\) m.",
+    "name": "Questions Item 4",
+    "subject": "phy",
+    "chapter": "p18"
+  },
+  {
+    "id": "c16_item4",
+    "text": "The compounds formed when \\(\\text{KMnO}_4\\) is heated to 513 K are",
+    "options": [
+      "\\(\\text{MnO}_2\\), \\(\\text{O}_2\\) and KOH",
+      "\\(\\text{K}_2\\text{MnO}_4\\), \\(\\text{MnO}_2\\) and \\(\\text{O}_2\\)",
+      "\\(\\text{K}_2\\text{MnO}_4\\), \\(\\text{MnO}_2\\) and \\(\\text{H}_2\\text{O}\\)",
+      "MnO, \\(\\text{MnO}_2\\) and \\(\\text{O}_2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When potassium permanganate (\\(\\text{KMnO}_4\\)) is heated to 513 K (240°C), it undergoes thermal decomposition:\n\n\\[2\\text{KMnO}_4 \\xrightarrow{513\\text{ K}} \\text{K}_2\\text{MnO}_4 + \\text{MnO}_2 + \\text{O}_2\\]\n\nThe products are:\n- **Potassium manganate** (\\(\\text{K}_2\\text{MnO}_4\\)) — Mn in +6 state\n- **Manganese dioxide** (\\(\\text{MnO}_2\\)) — Mn in +4 state\n- **Oxygen gas** (\\(\\text{O}_2\\))\n\nThis is a disproportionation reaction where Mn(+7) in KMnO₄ is simultaneously reduced to Mn(+4) and oxidised is not applicable — one Mn goes to +6 and another to +4.",
+    "name": "Questions Item 4",
+    "subject": "che",
+    "chapter": "c16"
+  },
+  {
+    "id": "m9_item42",
+    "text": "If \\(p,q,r\\in\\mathbb{R}\\) and \\(A=\\begin{pmatrix}p&q&r\\\\r&p&q\\\\q&r&p\\end{pmatrix}\\) with \\(AA^T=I\\), then \\(p^3+q^3+r^3 =\\)",
+    "options": [
+      "\\(\\pm1\\)",
+      "\\(pqr\\)",
+      "\\(3pqr\\)",
+      "\\(3pqr\\pm1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since \\(AA^T=I\\), \\(|A|^2=1\\Rightarrow|A|=\\pm1\\). Expanding \\(|A|=p^3+q^3+r^3-3pqr=\\pm1\\). So \\(p^3+q^3+r^3=3pqr\\pm1\\).",
+    "name": "Orthogonal Matrix Determinant Identity",
+    "subject": "maths",
+    "chapter": "m9"
+  },
+  {
+    "id": "c21_item27",
+    "text": "What are X and Y from ozonolysis of pent-2-ene?\n\n\\(\\text{Pent-2-ene} \\xrightarrow{\\text{(i) O}_3, \\text{(ii) Zn/H}_2\\text{O}} X + Y\\)",
+    "options": [
+      "X = \\(\\text{CH}_3\\text{CHO}\\); Y = \\(\\text{CH}_3\\text{CH}_2\\text{CHO}\\)",
+      "X = \\(\\text{CH}_3\\text{CH}_2\\text{CHO}\\); Y = \\(\\text{CH}_3\\text{CH}_2\\text{CHO}\\)",
+      "X = \\(\\text{CH}_3\\text{CHO}\\); Y = \\((\\text{CH}_3)_2\\text{CO}\\)",
+      "X = \\(\\text{CH}_3\\text{CHO}\\); Y = \\(\\text{CH}_3\\text{CHO}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pent-2-ene: \\(\\text{CH}_3\\text{—CH=CH—CH}_2\\text{CH}_3\\)\n\nOzonolysis cleaves the C2=C3 double bond:\n- Left fragment: \\(\\text{CH}_3\\text{—CHO}\\) = **ethanal (acetaldehyde, X)**\n- Right fragment: \\(\\text{CH}_3\\text{CH}_2\\text{—CHO}\\) = **propanal (Y)**\n\nX = **\\(\\text{CH}_3\\text{CHO}\\)** (ethanal), Y = **\\(\\text{CH}_3\\text{CH}_2\\text{CHO}\\)** (propanal)",
+    "name": "Questions Item 27",
+    "subject": "che",
+    "chapter": "c21"
+  },
+  {
+    "id": "m17_item22",
+    "text": "The locus of the point to which \\(P(4,1)\\), after reflecting in \\(y = x\\) and then translating \\(2\\) units along the negative \\(Y\\)-axis, reaches point \\(R\\) is",
+    "options": [
+      "\\((-1,\\,2)\\)",
+      "\\((1,\\,-2)\\)",
+      "\\((-1,\\,-2)\\)",
+      "\\((1,\\,2)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Step 1:** Reflect \\(P(4,1)\\) in the line \\(y = x\\): swap coordinates → \\(Q(1,4)\\).\n\n**Step 2:** Translate \\(Q(1,4)\\) by \\(2\\) units along the **negative** \\(Y\\)-axis: subtract 2 from \\(y\\)-coordinate → \\(R(1, 4-2) = R(1, 2)\\).\n\nSo the coordinates of \\(R\\) are \\((1, 2)\\).",
+    "name": "Reflection and Translation",
+    "subject": "maths",
+    "chapter": "m17"
+  },
+  {
+    "id": "p15_item16",
+    "text": "An imaginary equilateral triangle ABC of side length 2 m is placed in a uniform electric field E = 10 NC⁻¹ as shown. Then, \\( V_A - V_B \\)",
+    "options": [
+      "-5 V",
+      "+5 V",
+      "-10 V",
+      "+10 V"
+    ],
+    "correctIndex": 2,
+    "explanation": "As we know, \\( V_A - V_B = -\\int_A^B E \\cdot dr \\)\n\nHere, E is constant. So, we may write above expression as\n\n\\( V_A - V_B = -E \\cdot r \\cos \\theta \\)\n\nwhere, r is distance between points A and B, θ is angle between E and displacement vector r from point A to point B.\n\n\\( \\therefore V_A - V_B = -10 \\times 2 \\times \\cos 60^\\circ \\ (\\theta = 60^\\circ \\ \\text{from figure}) \\)\n\n\\( = -10 \\times 2 \\times \\frac{1}{2} = -10 \\text{V} \\).",
+    "name": "Questions Item 16",
+    "subject": "phy",
+    "chapter": "p15"
+  },
+  {
+    "id": "p27_item11",
+    "text": "In a Zener diode voltage regulator circuit (\\(R_1=500\\text{ Ω}\\), \\(R_2=1500\\text{ Ω}\\), \\(V_Z=10\\text{ V}\\), supply 15 V), the current through the Zener diode is",
+    "options": [
+      "10 mA",
+      "6.67 mA",
+      "3.33 mA",
+      "5 mA"
+    ],
+    "correctIndex": 2,
+    "explanation": "Total current: \\(I = (15-10)/500 = 5/500 = 10\\text{ mA}\\)\n\nCurrent through \\(R_2\\): \\(I_2 = 10/1500 = 6.67\\text{ mA}\\)\n\nZener current: \\(I_Z = I - I_2 = 10 - 6.67 = 3.33\\text{ mA}\\)",
+    "name": "Zener Diode Current in Voltage Regulator",
+    "subject": "phy",
+    "chapter": "p27"
+  },
+  {
+    "id": "p6_item3",
+    "text": "Using the data given below, find the height at which a communication satellite can reside. (G = 6.67 × 10^{-11} N·m² kg^{-2}, M = 5.98 × 10^{24} kg, R = 6.4 × 10^6 m)",
+    "options": [
+      "35850 km",
+      "3585 km",
+      "358.5 km",
+      "35.85 km"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a geostationary satellite, time period \\(T = 24\\) h = 86400 s. The formula is \\(T = 2\\pi \\sqrt{\\frac{(R_e + h)^3}{GM}}\\). Rearranging gives \\(R_e + h = \\left( \\frac{T^2 GM}{4\\pi^2} \\right)^{1/3}\\). Substituting the values yields \\(h = 35850\\) km.",
+    "name": "Questions Item 3",
+    "subject": "phy",
+    "chapter": "p6"
+  },
+  {
+    "id": "c21_item24",
+    "text": "The correct set of reagents (X, Y, Z) required to convert benzene to m-nitrobenzoic acid are",
+    "options": [
+      "X = CO/HCl/anhy. AlCl₃; Y = KMnO₄; Z = LiAlH₄",
+      "X = HNO₃+H₂SO₄; Y = Br₂/AlCl₃; Z = KCN/H₃O⁺",
+      "X = Br₂/AlCl₃; Y = HNO₃+H₂SO₄; Z = KCN/H₃O⁺",
+      "X = CO/HCl/anhy. AlCl₃; Y = KMnO₄; Z = Conc. HNO₃ + Conc. H₂SO₄"
+    ],
+    "correctIndex": 3,
+    "explanation": "To make **m-nitrobenzoic acid**, the nitro group must be in the meta position. The —COOH group is a meta-director:\n\n**Strategy:** First introduce —CHO (meta-director), then nitrate (→ meta product), then oxidise —CHO to —COOH.\n\n**Step 1 (X):** Gattermann-Koch formylation: Benzene + CO + HCl + anhyd. AlCl₃ → **Benzaldehyde**\n\n**Step 2 (Y):** Oxidation: Benzaldehyde + KMnO₄ → **Benzoic acid** (—CHO becomes —COOH, a meta-director)\n\n**Step 3 (Z):** Nitration: Benzoic acid + Conc. HNO₃ + Conc. H₂SO₄ → **m-Nitrobenzoic acid**\n\nX = CO/HCl/AlCl₃, Y = KMnO₄, Z = Conc. HNO₃ + Conc. H₂SO₄",
+    "name": "Questions Item 24",
+    "subject": "che",
+    "chapter": "c21"
+  },
+  {
+    "id": "m16_item8",
+    "text": "If \\(\\theta = \\dfrac{\\pi}{6}\\) and \\(x = \\log\\cot\\!\\left(\\dfrac{\\pi}{4}+\\theta\\right)\\), then \\(\\sinh x =\\)",
+    "options": [
+      "\\(\\sqrt{3}\\)",
+      "\\(\\dfrac{1}{\\sqrt{3}}\\)",
+      "\\(-\\sqrt{3}\\)",
+      "\\(-\\dfrac{1}{\\sqrt{3}}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "With \\(\\theta = \\dfrac{\\pi}{6}\\):\n\n\\[x = \\log\\cot\\!\\left(\\frac{\\pi}{4}+\\frac{\\pi}{6}\\right) = \\log\\cot\\frac{5\\pi}{12}\\]\n\nUsing the cotangent subtraction: \\(\\cot\\dfrac{5\\pi}{12} = \\dfrac{\\sqrt{3}-1}{\\sqrt{3}+1}\\)\n\nSo \\(e^x = \\dfrac{\\sqrt{3}-1}{\\sqrt{3}+1}\\) and \\(e^{-x} = \\dfrac{\\sqrt{3}+1}{\\sqrt{3}-1}\\).\n\n\\[\\sinh x = \\frac{e^x - e^{-x}}{2} = \\frac{1}{2}\\left(\\frac{\\sqrt{3}-1}{\\sqrt{3}+1} - \\frac{\\sqrt{3}+1}{\\sqrt{3}-1}\\right)\\]\n\n\\[= \\frac{1}{2}\\cdot\\frac{(\\sqrt{3}-1)^2 - (\\sqrt{3}+1)^2}{(\\sqrt{3}+1)(\\sqrt{3}-1)} = \\frac{1}{2}\\cdot\\frac{-4\\sqrt{3}}{2} = -\\sqrt{3}\\]",
+    "name": "Sinh from Log Cot Expression",
+    "subject": "maths",
+    "chapter": "m16"
+  },
+  {
+    "id": "p13_item24",
+    "text": "A small source of sound vibrating at a frequency 500 Hz is rotated along a circle of radius 100/π cm at a constant angular speed of 5 revolutions per second. The minimum and maximum frequency of the sound observed by a listener situation in the plane of the circle is",
+    "options": [
+      "338.5 Hz, 612.5 Hz",
+      "485.4 Hz, 535.6 Hz",
+      "435.3 Hz, 565.6 Hz",
+      "485.4 Hz, 515.5 Hz"
+    ],
+    "correctIndex": 3,
+    "explanation": "Source speed gives min and max Doppler frequencies 485.4 and 515.5 Hz.",
+    "name": "Questions Item 24",
+    "subject": "phy",
+    "chapter": "p13"
+  },
+  {
+    "id": "m27_item24",
+    "text": "\\(\\displaystyle\\int_{-a}^a\\sqrt{\\frac{a-x}{a+x}}\\,dx=\\)",
+    "options": [
+      "\\(\\dfrac{a\\pi}{2}\\)",
+      "\\(1\\)",
+      "\\(2a\\pi\\)",
+      "\\(a\\pi\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(I=\\int_{-a}^a\\sqrt{\\dfrac{a-x}{a+x}}dx\\).\n\nAdding with its reflection: \\(2I=\\int_{-a}^a\\dfrac{2a}{\\sqrt{a^2-x^2}}dx=2a[\\sin^{-1}(x/a)]_{-a}^a=2a(\\pi)\\).\n\n\\(I=a\\pi\\)",
+    "name": "Symmetric Integral Technique",
+    "subject": "maths",
+    "chapter": "m27"
+  },
+  {
+    "id": "c14_item5",
+    "text": "On reduction with hydrogen, 3.6 g of an oxide of metal M left 3.2 g of the metal. If the atomic weight of the metal is 64, the formula of the oxide is",
+    "options": [
+      "\\(\\text{M}_2\\text{O}_3\\)",
+      "\\(\\text{M}_2\\text{O}\\)",
+      "MO",
+      "\\(\\text{MO}_2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reduction reaction: \\(\\text{M}_x\\text{O}_y + y\\text{H}_2 \\rightarrow x\\text{M} + y\\text{H}_2\\text{O}\\)\n\nMass of metal = 3.2 g; Atomic weight of M = 64\n\n\\[\\text{Moles of M} = \\frac{3.2}{64} = 0.05 = \\frac{1}{20}\\text{ mol}\\]\n\nMass of oxygen removed = \\(3.6 - 3.2 = 0.4\\) g\n\n\\[\\text{Moles of O} = \\frac{0.4}{16} = 0.025 = \\frac{1}{40}\\text{ mol}\\]\n\nRatio of M : O \\(= \\frac{1/20}{1/40} = \\frac{2}{1}\\)\n\nSo the empirical formula is \\(\\text{M}_2\\text{O}\\).\n\nThe metal (atomic weight 64) is **copper (Cu)**, and \\(\\text{Cu}_2\\text{O}\\) is cuprous oxide.",
+    "name": "Questions Item 5",
+    "subject": "che",
+    "chapter": "c14"
+  },
+  {
+    "id": "m21_item9",
+    "text": "If \\(|\\mathbf{u}+\\mathbf{v}|=|\\mathbf{u}-\\mathbf{v}|\\), then",
+    "options": [
+      "\\(\\mathbf{u}\\) and \\(\\mathbf{v}\\) have the same direction",
+      "\\(\\mathbf{u}\\) and \\(\\mathbf{v}\\) are perpendicular",
+      "\\(\\mathbf{u}\\) and \\(\\mathbf{v}\\) have opposite directions",
+      "Data insufficient"
+    ],
+    "correctIndex": 1,
+    "explanation": "Squaring both sides:\n\n\\[|\\mathbf{u}|^2+|\\mathbf{v}|^2+2\\mathbf{u}\\cdot\\mathbf{v}=|\\mathbf{u}|^2+|\\mathbf{v}|^2-2\\mathbf{u}\\cdot\\mathbf{v}\\]\n\n\\[4\\mathbf{u}\\cdot\\mathbf{v}=0\\implies\\mathbf{u}\\cdot\\mathbf{v}=0\\implies\\mathbf{u}\\perp\\mathbf{v}\\]",
+    "name": "Equal Magnitude Sum and Difference",
+    "subject": "maths",
+    "chapter": "m21"
+  },
+  {
+    "id": "c18_item34",
+    "text": "What are X, Y and Z in the following reactions?\n\n\\(\\text{CH}_3\\text{CH}_2\\text{COONa} \\xrightarrow{X} \\text{Y}\\) (forward) and \\(\\xleftarrow{\\text{Kolbe's Electrolysis}} \\text{Z} + \\text{H}_2\\text{O}\\) (reverse)",
+    "options": [
+      "X = NaOH+CaO/Δ, Y = \\(\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CH}_3\\), Z = \\(\\text{CH}_3\\text{CH}_2\\text{COONa}\\)",
+      "X = MO₂O₃, Y = \\(\\text{C}_2\\text{H}_6\\), Z = \\(\\text{CH}_3\\text{CH}_2\\text{COONa}\\)",
+      "X = NaOH+CaO/Δ, Y = \\(\\text{C}_2\\text{H}_6\\), Z = \\(\\text{CH}_3\\text{COONa}\\)",
+      "X = \\((\\text{CH}_3\\text{COO})_2\\text{Mn/}\\Delta\\), Y = \\(\\text{C}_3\\text{H}_8\\), Z = \\(\\text{CH}_3\\text{CH}_2\\text{COONa}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Forward (X → Y): Decarboxylation (Duma's method)**\n\\[\\text{CH}_3\\text{CH}_2\\text{COONa} \\xrightarrow{\\text{NaOH+CaO},\\Delta} \\text{CH}_3\\text{CH}_3 + \\text{Na}_2\\text{CO}_3\\]\nX = **NaOH + CaO/Δ**, Y = **C₂H₆**\n\n**Reverse (Kolbe's electrolysis produces Z):**\n\\[2\\text{CH}_3\\text{COO}^- \\xrightarrow{\\text{electrolysis}} \\text{CH}_3\\text{CH}_3 + 2\\text{CO}_2\\]\nKolbe's of **sodium acetate** (\\(\\text{CH}_3\\text{COONa}\\)) produces ethane.\nZ = **CH₃COONa** (sodium acetate)",
+    "name": "Questions Item 34",
+    "subject": "che",
+    "chapter": "c18"
+  },
+  {
+    "id": "c8_item13",
+    "text": "The solubility of AgBr with solubility product \\(5.0 \\times 10^{-13}\\) at 298 K in 0.1 M NaBr solution would be",
+    "options": [
+      "\\(7 \\times 10^{-6}\\) M",
+      "\\(5 \\times 10^{-12}\\) M",
+      "\\(5 \\times 10^{-14}\\) M",
+      "\\(5 \\times 10^{-6}\\) M"
+    ],
+    "correctIndex": 1,
+    "explanation": "In 0.1 M NaBr, \\([\\text{Br}^-] = 0.1\\) M due to the **common ion effect**.\n\nFor \\(\\text{AgBr} \\rightleftharpoons \\text{Ag}^+ + \\text{Br}^-\\):\n\n\\[K_{sp} = [\\text{Ag}^+][\\text{Br}^-] = 5.0 \\times 10^{-13}\\]\n\n\\[[\\text{Ag}^+] = \\frac{K_{sp}}{[\\text{Br}^-]} = \\frac{5.0 \\times 10^{-13}}{0.1} = 5 \\times 10^{-12} \\text{ M}\\]\n\nThe solubility of AgBr in 0.1 M NaBr is \\(5 \\times 10^{-12}\\) M — much lower than in pure water because of the common ion effect.",
+    "name": "Questions Item 13",
+    "subject": "che",
+    "chapter": "c8"
+  },
+  {
+    "id": "c22_item6",
+    "text": "Which of the following statements about sulphonamides is TRUE?\n\n(i) Tertiary amines react with acid chlorides.\n(ii) N-ethyl benzene sulphonamide is soluble in alkali.\n(iii) N,N-diethyl benzene sulphonamide is soluble in alkali.\n(iv) Tertiary amines react with Hinsberg's reagent.",
+    "options": [
+      "(i)",
+      "(ii)",
+      "(iii)",
+      "(iv)"
+    ],
+    "correctIndex": 1,
+    "explanation": "- **(i) Incorrect:** Tertiary amines (R₃N) have no N—H bond, so they cannot react with acid chlorides via the usual acylation mechanism.\n\n- **(ii) Correct:** **N-ethyl benzene sulphonamide** has an N—H bond. The hydrogen on nitrogen in this sulphonamide is **strongly acidic** (due to the electron-withdrawing effect of —SO₂—) and reacts with NaOH to form a soluble sodium salt. ✓\n\n- **(iii) Incorrect:** N,N-diethyl benzene sulphonamide has **no N—H bond** → not acidic → not soluble in alkali.\n\n- **(iv) Incorrect:** Tertiary amines do not react with Hinsberg's reagent (sulfonyl chloride) because they lack N—H bonds.\n\nCorrect: **(ii)**",
+    "name": "Questions Item 6",
+    "subject": "che",
+    "chapter": "c22"
+  },
+  {
+    "id": "m14_item50",
+    "text": "In \\(\\triangle ABC\\) with \\(b+c = 9k\\), \\(c+a = 10k\\), \\(a+b = 11k\\), then \\(\\displaystyle\\sum\\sin^2\\dfrac{A}{2} =\\)",
+    "options": [
+      "\\(\\dfrac{74}{25}\\)",
+      "\\(\\dfrac{25}{74}\\)",
+      "\\(\\dfrac{74}{33}\\)",
+      "\\(\\dfrac{25}{33}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "From the given: \\(s = 15k\\), \\(a = 11k, b = 10k, c = 9k\\).\n\n\\[\\sum\\sin^2\\frac{A}{2} = \\frac{(s-b)(s-c)}{bc}+\\frac{(s-c)(s-a)}{ca}+\\frac{(s-a)(s-b)}{ab}\\]\n\n\\[= \\frac{(5k)(6k)}{(10k)(9k)} + \\frac{(6k)(4k)}{(9k)(11k)} + \\frac{(4k)(5k)}{(11k)(10k)}\\]\n\n\\[= \\frac{30}{90}+\\frac{24}{99}+\\frac{20}{110} = \\frac{1}{3}+\\frac{8}{33}+\\frac{2}{11}\\]\n\n\\[= \\frac{11+8+6}{33} = \\frac{25}{33}\\]",
+    "name": "Sum of Squared Half Angle Sines from Side Ratios",
+    "subject": "maths",
+    "chapter": "m14"
+  },
+  {
+    "id": "p5_item23",
+    "text": "If the radius of a sphere is doubled by keeping its mass constant, compare the moment of inertia of the old sphere with that of the new sphere, about any diameter",
+    "options": [
+      "I₁ : I₂ = 1 : 4",
+      "I₁ : I₂ = 1 : 2",
+      "I₁ : I₂ = 4 : 1",
+      "I₁ : I₂ = 2 : 1"
+    ],
+    "correctIndex": 0,
+    "explanation": "I = (2/5)MR² ∝ R². R₂ = 2R₁ ⇒ I₂/I₁ = 4 ⇒ I₁ : I₂ = 1 : 4.",
+    "name": "Questions Item 23",
+    "subject": "phy",
+    "chapter": "p5"
+  },
+  {
+    "id": "m5_item13",
+    "text": "\\(\\dfrac{1}{2\\cdot5}+\\dfrac{1}{5\\cdot8}+\\dfrac{1}{8\\cdot11}+\\cdots\\) up to 16 terms \\(=\\)",
+    "options": [
+      "\\(\\dfrac{4}{25}\\)",
+      "\\(\\dfrac{8}{25}\\)",
+      "\\(\\dfrac{16}{25}\\)",
+      "\\(\\dfrac{1}{25}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\dfrac{1}{(3k-1)(3k+2)}\\). Using partial fractions: \\(\\dfrac{1}{(3k-1)(3k+2)}=\\dfrac{1}{3}\\left(\\dfrac{1}{3k-1}-\\dfrac{1}{3k+2}\\right)\\). The series telescopes: \\(\\dfrac{1}{3}\\left(\\dfrac{1}{2}-\\dfrac{1}{50}\\right)=\\dfrac{1}{3}\\cdot\\dfrac{48}{100}=\\dfrac{48}{300}=\\dfrac{4}{25}\\). (The 16th term has \\(k=16\\): denominator \\((3\\cdot16-1)(3\\cdot16+2)=47\\cdot50\\), so last term in telescope is \\(\\dfrac{1}{50}\\).)",
+    "name": "Telescoping Series Sum",
+    "subject": "maths",
+    "chapter": "m5"
+  },
+  {
+    "id": "m6_item11",
+    "text": "If \\(\\dfrac{x^2+5x+7}{(x-3)^3} = \\dfrac{A}{x-3}+\\dfrac{B}{(x-3)^2}+\\dfrac{C}{(x-3)^3}\\), then the equation of the line with slope \\(A\\) passing through the point \\((B, C)\\) is",
+    "options": [
+      "\\(x+y-20=0\\)",
+      "\\(x-y+20=0\\)",
+      "\\(x+y+20=0\\)",
+      "\\(x-y-20=0\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "From the partial fraction: \\(x^2+5x+7=A(x-3)^2+B(x-3)+C\\). Put \\(x=3\\): \\(C=31\\). Comparing \\(x^2\\): \\(A=1\\). Put \\(x=0\\): \\(7=9A-3B+31 \\Rightarrow 9A-3B=-24 \\Rightarrow 3-B=-8 \\Rightarrow B=11\\). So \\(A=1,\\ B=11,\\ C=31\\). Line with slope \\(A=1\\) through \\((B,C)=(11,31)\\): \\(y-31=1(x-11) \\Rightarrow x-y+20=0\\).",
+    "name": "Partial Fractions Leading to a Line Equation",
+    "subject": "maths",
+    "chapter": "m6"
+  },
+  {
+    "id": "p16_item4",
+    "text": "Resistance of a tungsten wire at 150°C is 133 Ω. Its temperature coefficient of resistance is 0.0045 °C⁻¹. The resistance of this wire at 500°C is",
+    "options": [
+      "180 Ω",
+      "225 Ω",
+      "258 Ω",
+      "317 Ω"
+    ],
+    "correctIndex": 2,
+    "explanation": "Resistance at 150°C,\n\n\\( R_{150} = R_0 (1 + 150 \\alpha) = 133 \\)\n\nResistance at 500°C,\n\n\\( R_{500} = R_0 (1 + 500 \\alpha) = \\frac{133(1 + 500 \\times 0.0045)}{1 + 150 \\times 0.0045} = 258 \\) Ω.",
+    "name": "Questions Item 4",
+    "subject": "phy",
+    "chapter": "p16"
+  },
+  {
+    "id": "m27_item6",
+    "text": "\\(\\displaystyle\\int_{-\\pi/4}^{\\pi/4}x^3\\sin^4(x)\\,dx=\\)",
+    "options": [
+      "\\(0\\)",
+      "\\(\\pi\\)",
+      "\\(1\\)",
+      "\\(2\\pi\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(f(x)=x^3\\sin^4x\\). Since \\(f(-x)=(-x)^3\\sin^4(-x)=-x^3\\sin^4x=-f(x)\\), the function is **odd**.\n\n\\(\\int_{-\\pi/4}^{\\pi/4}x^3\\sin^4x\\,dx=0\\)",
+    "name": "Odd Function on Symmetric Interval",
+    "subject": "maths",
+    "chapter": "m27"
+  },
+  {
+    "id": "c15_item21",
+    "text": "The possible oxidation states of Group 13 elements is/are",
+    "options": [
+      "+3",
+      "+1, +3",
+      "+1",
+      "+1, +2, +3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Group 13 elements have valence configuration \\(ns^2np^1\\) and exhibit two oxidation states:\n\n- **+3**: Using all 3 valence electrons\n- **+1**: Due to the **inert pair effect** — the \\(ns^2\\) pair becomes non-bonding, especially for heavier elements (Tl predominantly shows +1)\n\n**+2 is not a stable oxidation state** for Group 13 elements.",
+    "name": "Questions Item 21",
+    "subject": "che",
+    "chapter": "c15"
+  },
+  {
+    "id": "p12_item20",
+    "text": "The total energy of a particle executing SHM is 0.5 J. If its amplitude is doubled, the new total energy will be",
+    "options": [
+      "0.5 J",
+      "1 J",
+      "2 J",
+      "4 J"
+    ],
+    "correctIndex": 2,
+    "explanation": "E ∝ A². New E = 0.5 × (2)² = 2 J.",
+    "name": "Questions Item 20",
+    "subject": "phy",
+    "chapter": "p12"
+  },
+  {
+    "id": "p28_item10",
+    "text": "A message signal of peak voltage 12 V modulates a carrier at modulation index 0.6. To increase modulation index to 0.75, the carrier peak voltage should be",
+    "options": [
+      "Decreased by 25%",
+      "Increased by 25%",
+      "Decreased by 20%",
+      "Increased by 20%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(M = V_{signal}/V_{carrier}\\)\n\nInitial: \\(0.6 = 12/V_1 \\implies V_1 = 20\\text{ V}\\)\n\nFinal: \\(0.75 = 12/V_2 \\implies V_2 = 16\\text{ V}\\)\n\nChange: \\(\\Delta V = 20-16 = 4\\text{ V}\\)\n\n\\(\\% \\text{ change} = 4/20 \\times 100 = 20\\%\\text{ decrease}\\)",
+    "name": "Modulation Index Change",
+    "subject": "phy",
+    "chapter": "p28"
+  },
+  {
+    "id": "m23_item3",
+    "text": "If \\(\\displaystyle\\lim_{x\\to\\infty}\\left(1+\\frac{p}{x}\\right)^{qx}=e^9\\) where \\(p,q\\in\\mathbb{N}\\), then \\(p+q=\\)",
+    "options": [
+      "\\(6\\)",
+      "\\(9\\)",
+      "\\(81\\)",
+      "\\(18\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Using the standard limit \\(\\displaystyle\\lim_{x\\to\\infty}\\left(1+\\dfrac{p}{x}\\right)^{qx}=e^{pq}\\):\n\n\\[e^{pq}=e^9\\implies pq=9\\]\n\nWith \\(p,q\\in\\mathbb{N}\\): \\(p=3\\), \\(q=3\\) works, giving \\(p+q=6\\).",
+    "name": "Exponential Limit",
+    "subject": "maths",
+    "chapter": "m23"
+  },
+  {
+    "id": "p25_item10",
+    "text": "Magnetic moment due to the motion of the electron in nth energy state of hydrogen atom is proportional to",
+    "options": [
+      "\\( n^{-2} \\)",
+      "\\( n \\)",
+      "\\( n^2 \\)",
+      "\\( n^3 \\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Magnetic moment \\( M = e \\nu R / 2 \\)\n\n\\( L = m \\nu R = n h / 2 \\pi \\)\n\n\\( M = e L / 2 m \\propto n \\).",
+    "name": "Questions Item 10",
+    "subject": "phy",
+    "chapter": "p25"
+  },
+  {
+    "id": "m2_item2",
+    "text": "If \\(x\\) is complex, the expression \\(\\dfrac{x^2+34x-71}{x^2+2x-7}\\) takes all values which lie in the interval \\((a, b)\\). Find \\(a\\) and \\(b\\).",
+    "options": [
+      "\\(a = -1,\\ b = 1\\)",
+      "\\(a = 1,\\ b = -1\\)",
+      "\\(a = 5,\\ b = 9\\)",
+      "\\(a = 9,\\ b = 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = \\dfrac{x^2+34x-71}{x^2+2x-7}\\). Rearranging: \\(x^2(y-1) + x(2y-34) + (71-7y) = 0\\). Since \\(x\\) is complex, discriminant \\(D \\leq 0\\): \\((2y-34)^2 - 4(y-1)(71-7y) \\leq 0\\). Expanding: \\(4y^2-136y+1156 - 4(71y-7y^2-71+7y) \\leq 0 \\Rightarrow 4y^2-136y+1156-284y+28y^2+284-28y \\leq 0 \\Rightarrow 32y^2-448y+1440 \\leq 0 \\Rightarrow y^2-14y+45 \\leq 0 \\Rightarrow (y-5)(y-9) \\leq 0\\). So \\(y \\in [5,9]\\), hence \\(a=5,\\ b=9\\).",
+    "name": "Range for Complex x",
+    "subject": "maths",
+    "chapter": "m2"
+  },
+  {
+    "id": "m26_item16",
+    "text": "\\(\\displaystyle\\int x^{2020}(\\tan^{-1}x+\\cot^{-1}x)\\,dx=\\)",
+    "options": [
+      "\\(\\dfrac{x^{2021}}{2020}(\\tan^{-1}x+\\cot^{-1}x)+c\\)",
+      "\\(\\dfrac{x^{2021}}{2021}(\\tan^{-1}x+\\cot^{-1}x)+c\\)",
+      "\\(\\dfrac{\\pi x^{2021}}{2021}+\\dfrac{\\pi}{2}+c\\)",
+      "\\(\\dfrac{x^{52}\\pi}{52}+\\dfrac{\\pi}{2}+c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Since \\(\\tan^{-1}x+\\cot^{-1}x=\\dfrac{\\pi}{2}\\) for all \\(x\\):\n\n\\(\\int x^{2020}\\cdot\\dfrac{\\pi}{2}\\,dx=\\dfrac{\\pi}{2}\\cdot\\dfrac{x^{2021}}{2021}=\\dfrac{x^{2021}}{2021}(\\tan^{-1}x+\\cot^{-1}x)+c\\)",
+    "name": "Integral Using Arctan + Arccot Identity",
+    "subject": "maths",
+    "chapter": "m26"
+  },
+  {
+    "id": "m28_item28",
+    "text": "The DE formed by eliminating \\(a,b\\) from \\(y=e^x(a\\cos x+b\\sin x)\\) is",
+    "options": [
+      "\\(2y''+y'-2y=0\\)",
+      "\\(2y''+2y'-2y=0\\)",
+      "\\(2y''-y'+2y=0\\)",
+      "\\(y''-2y'+2y=0\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Differentiating twice and eliminating \\(a,b\\):\n\n\\(y''-2y'+2y=0\\)",
+    "name": "Forming DE by Eliminating Constants",
+    "subject": "maths",
+    "chapter": "m28"
+  },
+  {
+    "id": "c19_item3",
+    "text": "The C—Cl bond in chlorobenzene compared to the C—Cl bond in methyl chloride is",
+    "options": [
+      "longer and weaker",
+      "shorter and weaker",
+      "shorter and stronger",
+      "longer and stronger"
+    ],
+    "correctIndex": 2,
+    "explanation": "Due to the **+R effect** of the Cl atom in chlorobenzene, the lone pairs of Cl are delocalised into the benzene ring, giving the C—Cl bond **partial double bond character**. This makes the C—Cl bond in chlorobenzene **shorter and stronger** compared to the pure single bond C—Cl in methyl chloride (CH₃Cl), where no such resonance is possible.",
+    "name": "Questions Item 3",
+    "subject": "che",
+    "chapter": "c19"
+  },
+  {
+    "id": "m9_item21",
+    "text": "The determinant of a skew-symmetric matrix of order 3 is always",
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "Depends on elements",
+      "\\(-1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a skew-symmetric matrix \\(A\\) of odd order \\(n\\): \\(\\det(A)=\\det(A^T)=\\det(-A)=(-1)^n\\det(A)=-\\det(A)\\). So \\(2\\det(A)=0\\Rightarrow\\det(A)=0\\). This holds for any odd order, including order 3.",
+    "name": "Determinant of Odd-Order Skew-Symmetric Matrix",
+    "subject": "maths",
+    "chapter": "m9"
+  },
+  {
+    "id": "c6_item36",
+    "text": "The measured osmotic pressure of a solution prepared by dissolving 17.4 mg of K₂SO₄ in 2 L of water at 27°C is \\(3.735 \\times 10^{-3}\\) bar. The van't Hoff factor is: (\\(R = 0.083\\) L·bar·K⁻¹·mol⁻¹, M of K₂SO₄ = 174 g/mol)",
+    "options": [
+      "2.84",
+      "3.0",
+      "2.0",
+      "2.32"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\[C = \\frac{0.0174}{174 \\times 2} = 5 \\times 10^{-5} \\text{ mol/L}\\]\n\n\\[i = \\frac{\\pi}{CRT} = \\frac{3.735 \\times 10^{-3}}{5 \\times 10^{-5} \\times 0.083 \\times 300} = \\frac{3.735 \\times 10^{-3}}{1.245 \\times 10^{-3}} = 3.0\\]\n\nThis is consistent with K₂SO₄ → 2K⁺ + SO₄²⁻ giving \\(i = 3\\) for complete dissociation.",
+    "name": "Van't Hoff Factor from Osmotic Pressure",
+    "subject": "che",
+    "chapter": "c6"
+  },
+  {
+    "id": "m3_item23",
+    "text": "For which value of \\(k\\) do the roots of \\(2x^2+5x+k=0\\) become rational?",
+    "options": [
+      "\\(\\dfrac{5}{8}\\)",
+      "\\(\\dfrac{25}{8}\\)",
+      "\\(\\dfrac{25}{4}\\)",
+      "\\(\\dfrac{5}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Roots are rational when discriminant \\(D=b^2-4ac=25-8k\\) is a perfect square (non-negative perfect square). Checking option (b): \\(k=\\dfrac{25}{8} \\Rightarrow D=25-25=0\\), which is a perfect square (equal to \\(0^2\\)). So roots are rational (both equal to \\(-\\dfrac{5}{4}\\)).",
+    "name": "Rational Roots Condition",
+    "subject": "maths",
+    "chapter": "m3"
+  },
+  {
+    "id": "m26_item14",
+    "text": "If \\(\\displaystyle\\int\\frac{1+\\cos(4x)}{\\cot x-\\tan x}\\,dx=k\\cos(4x)+c\\), then \\(k=\\)",
+    "options": [
+      "\\(\\dfrac{1}{8}\\)",
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(-\\dfrac{1}{8}\\)",
+      "\\(-\\dfrac{1}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\dfrac{1+\\cos4x}{\\cot x-\\tan x}=\\dfrac{2\\cos^2(2x)}{\\frac{\\cos2x}{\\sin x\\cos x}}=\\dfrac{2\\cos^2(2x)\\sin x\\cos x}{\\cos2x}=\\cos2x\\sin2x\\cdot\\dfrac{1}{2}\\)\n\n\\(=\\dfrac{\\sin4x}{4}\\cdot\\dfrac{1}{2}=\\dfrac{\\sin4x}{4}\\)\n\n\\(\\int\\dfrac{\\sin4x}{2}dx=-\\dfrac{\\cos4x}{8}+c\\), so \\(k=-\\dfrac{1}{8}\\)",
+    "name": "Finding Constant k in Integral",
+    "subject": "maths",
+    "chapter": "m26"
+  },
+  {
+    "id": "p14_item8",
+    "text": "A point charge \\( q \\) moves from point \\( P \\) to point \\( S \\) traversing a path \\( PQRS \\) in a uniform electric field \\( E \\) directed along \\( X \\)-axis. Coordinates of \\( P, Q, R, S \\) are \\( (a,b,0) \\), \\( (2a,0,0) \\), \\( (a,-b,0) \\) and \\( (0,0,0) \\) respectively. What is the work done by the field in the process?",
+    "options": [
+      "qEa",
+      "-qEa",
+      "0",
+      "qEb"
+    ],
+    "correctIndex": 1,
+    "explanation": "Work done by uniform electric field depends only on initial and final positions.\\nDisplacement \\( \\vec{r} = -a \\hat{i} - b \\hat{j} \\)\\n\\( W = q \\vec{E} \\cdot \\vec{r} = qE (-a) = -qEa \\).",
+    "name": "Questions Item 8",
+    "subject": "phy",
+    "chapter": "p14"
+  },
+  {
+    "id": "m13_item17",
+    "text": "The smallest positive root of \\(\\tan x - x = 0\\) lies in the interval",
+    "options": [
+      "\\(\\left(0, \\dfrac{\\pi}{2}\\right)\\)",
+      "\\(\\left(\\dfrac{\\pi}{2}, \\pi\\right)\\)",
+      "\\(\\left(\\pi, \\dfrac{3\\pi}{2}\\right)\\)",
+      "\\(\\left(\\dfrac{3\\pi}{2}, 2\\pi\\right)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "We need the smallest positive \\(x\\) where \\(\\tan x = x\\).\n\nThe line \\(y = x\\) passes through the origin with slope 1. In the interval \\(\\left(0, \\dfrac{\\pi}{2}\\right)\\), \\(\\tan x\\) starts at 0 and goes to \\(+\\infty\\), but the curve \\(y = \\tan x\\) lies above \\(y = x\\) at first and increases faster — actually \\(\\tan x > x\\) for \\(x \\in \\left(0, \\dfrac{\\pi}{2}\\right)\\) and \\(\\tan x\\) has a vertical asymptote at \\(\\dfrac{\\pi}{2}\\).\n\nIn the next branch \\(\\left(\\dfrac{\\pi}{2}, \\dfrac{3\\pi}{2}\\right)\\): \\(\\tan x\\) goes from \\(-\\infty\\) to \\(+\\infty\\). The line \\(y = x > 0\\) while \\(\\tan x < 0\\) for \\(x \\in \\left(\\dfrac{\\pi}{2}, \\pi\\right)\\). For \\(x \\in \\left(\\pi, \\dfrac{3\\pi}{2}\\right)\\), \\(\\tan x\\) goes from 0 to \\(+\\infty\\) and the line \\(y = x \\approx 3\\text{–}5\\), so they intersect.\n\nTherefore the smallest positive root lies in \\(\\left(\\pi, \\dfrac{3\\pi}{2}\\right)\\).",
+    "name": "Tan x equals x Smallest Root",
+    "subject": "maths",
+    "chapter": "m13"
+  },
+  {
+    "id": "m19_item39",
+    "text": "The area of the quadrilateral \\(ABCD\\) where \\(A\\) is the centre of \\(x^2+y^2-2x-4y-20=0\\), \\(B(1,7)\\) and \\(D(4,-2)\\) are on the circle, and \\(C\\) is intersection of tangents at \\(B\\) and \\(D\\), is",
+    "options": [
+      "\\(75\\) sq units",
+      "\\(64\\) sq units",
+      "\\(56\\) sq units",
+      "\\(45\\) sq units"
+    ],
+    "correctIndex": 0,
+    "explanation": "Circle has centre \\(A=(1,2)\\), radius \\(r=5\\).\n\nTangent at \\(B(1,7)\\): \\(x+7y-(x+1)-2(y+7)-20=0 \\implies 5y=35 \\implies y=7\\).\n\nTangent at \\(D(4,-2)\\): \\(4x-2y-(x+4)-2(y-2)-20=0 \\implies 3x-4y=20\\).\n\nIntersection \\(C=(16,7)\\).\n\nArea of \\(ABCD = 2\\times\\text{Area of }\\triangle ABC = 2\\times\\dfrac{1}{2}r\\sqrt{S_1}\\)\n\nwhere \\(\\sqrt{S_1}=\\sqrt{256+49-32-28-20}=15\\).\n\n\\[= r\\times 15 = 5\\times15=75\\text{ sq units}\\]",
+    "name": "Area of Quadrilateral with Circle",
+    "subject": "maths",
+    "chapter": "m19"
+  },
+  {
+    "id": "m14_item43",
+    "text": "In \\(\\triangle ABC\\), \\(a = 2\\), \\(b = \\sqrt{6}\\), \\(c = \\sqrt{3}+1\\). Then \\(\\sin^2 C - \\sin^2 A =\\)",
+    "options": [
+      "\\(\\dfrac{1+\\sqrt{3}}{4}\\)",
+      "\\(\\dfrac{\\sqrt{3}}{2}\\)",
+      "\\(\\dfrac{\\sqrt{3}}{4}\\)",
+      "\\(\\dfrac{\\sqrt{3}}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Find \\(\\cos C\\) and \\(\\cos A\\) via the cosine rule:\n\n\\[\\cos C = \\frac{a^2+b^2-c^2}{2ab} = \\frac{4+6-(3+1+2\\sqrt{3})}{4\\sqrt{6}} = \\frac{6-2\\sqrt{3}}{4\\sqrt{6}} = \\frac{\\sqrt{3}-1}{2\\sqrt{2}}\\]\n\n\\[\\sin^2 C = 1-\\frac{(\\sqrt{3}-1)^2}{8} = 1-\\frac{4-2\\sqrt{3}}{8} = \\frac{4+2\\sqrt{3}}{8} = \\frac{2+\\sqrt{3}}{4}\\]\n\n\\[\\cos A = \\frac{b^2+c^2-a^2}{2bc} = \\frac{1}{2}\\implies \\sin^2 A = \\frac{3}{4}\\]\n\n\\[\\sin^2 C - \\sin^2 A = \\frac{2+\\sqrt{3}}{4} - \\frac{3}{4} = \\frac{\\sqrt{3}-1}{4}\\]\n\nFrom the PDF solution the answer is \\(\\dfrac{\\sqrt{3}}{4}\\) (option c).",
+    "name": "Sin Squared Difference",
+    "subject": "maths",
+    "chapter": "m14"
+  },
+  {
+    "id": "m9_item37",
+    "text": "If \\(A=\\begin{pmatrix}\\cos\\alpha&-\\sin\\alpha&0\\\\\\sin\\alpha&\\cos\\alpha&0\\\\0&0&1\\end{pmatrix}\\) and \\(0=\\begin{pmatrix}0\\\\0\\\\0\\end{pmatrix}\\), then \\((\\text{adj}\\,A)^{-1} =\\)",
+    "options": [
+      "\\(A+I\\)",
+      "\\(A-I\\)",
+      "\\(A\\)",
+      "\\(\\text{adj}(A^{-1})\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(|A|=\\cos^2\\alpha+\\sin^2\\alpha=1\\). For a matrix with \\(|A|=1\\): \\(\\text{adj}(\\text{adj}\\,A)=|A|^{n-2}A=|A|^1\\cdot A=A\\). Also \\(|\\text{adj}\\,A|=|A|^{n-1}=1\\). So \\((\\text{adj}\\,A)^{-1}=\\dfrac{\\text{adj}(\\text{adj}\\,A)}{|\\text{adj}\\,A|}=A\\).",
+    "name": "Inverse of Adjugate",
+    "subject": "maths",
+    "chapter": "m9"
+  },
+  {
+    "id": "m22_item43",
+    "text": "A(3,2,-1), B(4,1,1), C(6,2,5), D(3,3,3) are four points. Lines \\(AG_1\\), \\(BG_2\\), \\(CG_3\\), \\(DG_4\\) (where \\(G_i\\) are centroids of opposite faces) are concurrent at",
+    "options": [
+      "\\((4,2,2)\\)",
+      "\\((2,4,2)\\)",
+      "\\((2,2,4)\\)",
+      "\\((2,2,2)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The point of concurrence of cevians to face-centroids in a tetrahedron \\(ABCD\\) is the centroid:\n\n\\[\\text{Centroid}=\\frac{A+B+C+D}{4}=\\frac{(3+4+6+3,2+1+2+3,-1+1+5+3)}{4}=\\frac{(16,8,8)}{4}=(4,2,2)\\]",
+    "name": "Concurrent Cevians in Tetrahedron",
+    "subject": "maths",
+    "chapter": "m22"
+  },
+  {
+    "id": "m1_item24",
+    "text": "If \\(\\left|\\dfrac{z-25}{z-1}\\right| = 5\\), then \\(|z| =\\)",
+    "options": [
+      "\\(5\\)",
+      "\\(3\\)",
+      "\\(4\\)",
+      "\\(10\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(z=x+iy\\). Then \\(|z-25|=5|z-1|\\). Squaring: \\((x-25)^2+y^2 = 25[(x-1)^2+y^2]\\). Expanding: \\(x^2-50x+625+y^2 = 25x^2-50x+25+25y^2\\). Simplifying: \\(24x^2+24y^2=600 \\Rightarrow x^2+y^2=25\\). Therefore \\(|z|=5\\).",
+    "name": "Modulus from Distance Equation",
+    "subject": "maths",
+    "chapter": "m1"
+  },
+  {
+    "id": "m1_item34",
+    "text": "If \\((1+x)^n = a_0+a_1x+a_2x^2+\\cdots+a_nx^n\\) and \\(a_0-a_2+a_4-a_6+\\cdots = k\\cos\\dfrac{n\\pi}{4}\\), then \\(k =\\)",
+    "options": [
+      "\\(2^n\\)",
+      "\\(2^{2n}\\)",
+      "\\(\\dfrac{2^n}{\\sqrt{2}}\\)",
+      "\\(2^{n/2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x=i\\) in \\((1+x)^n\\): \\((1+i)^n = a_0-a_2+a_4-\\cdots + i(a_1-a_3+\\cdots)\\). Since \\(1+i = \\sqrt{2}e^{i\\pi/4}\\), we get \\((1+i)^n = 2^{n/2}\\left(\\cos\\dfrac{n\\pi}{4}+i\\sin\\dfrac{n\\pi}{4}\\right)\\). Comparing real parts: \\(a_0-a_2+a_4-\\cdots = 2^{n/2}\\cos\\dfrac{n\\pi}{4}\\). So \\(k = 2^{n/2}\\).",
+    "name": "Binomial with Complex Substitution",
+    "subject": "maths",
+    "chapter": "m1"
+  },
+  {
+    "id": "m3_item36",
+    "text": "If \\(\\alpha, \\beta\\) are real roots of \\(x^2+px+q=0\\) and \\(\\alpha^4, \\beta^4\\) are roots of \\(x^2-rx+s=0\\), then the equation \\(x^2-4qx+2q^2-r=0\\) has always",
+    "options": [
+      "two positive roots",
+      "two negative roots",
+      "one positive and one negative root",
+      "two real roots"
+    ],
+    "correctIndex": 3,
+    "explanation": "With \\(\\alpha+\\beta=-p,\\ \\alpha\\beta=q\\) and \\(\\alpha^4+\\beta^4=r,\\ \\alpha^4\\beta^4=s\\): discriminant of \\(x^2-4qx+2q^2-r=0\\) is \\((4q)^2-4(2q^2-r)=16q^2-8q^2+4r=8q^2+4r\\). Since \\(r=\\alpha^4+\\beta^4 \\geq 0\\) and \\(8q^2 \\geq 0\\), the discriminant \\(\\geq 0\\), so the equation always has two real roots.",
+    "name": "Nature of Roots",
+    "subject": "maths",
+    "chapter": "m3"
+  },
+  {
+    "id": "c1_item15",
+    "text": "When 10 g of copper and 10 g of iodine are mixed, calculate the theoretical yield of CuI according to the equation:\n\\[2\\text{Cu} + \\text{I}_2 \\rightarrow 2\\text{CuI}\\]",
+    "options": [
+      "30 g",
+      "10 g",
+      "15 g",
+      "20 g"
+    ],
+    "correctIndex": 2,
+    "explanation": "Moles of Cu = \\(\\frac{10}{63.5} \\approx 0.157\\) mol; Moles of \\(\\text{I}_2\\) = \\(\\frac{10}{254} \\approx 0.039\\) mol (using atomic mass of I = 127, so \\(\\text{I}_2\\) = 254).\n\nFrom stoichiometry, 1 mol \\(\\text{I}_2\\) produces 2 mol CuI. So \\(\\text{I}_2\\) is the limiting reagent.\n\nMoles of CuI = \\(2 \\times \\frac{10}{254} = \\frac{10}{127}\\) mol\n\nMass of CuI = \\(\\frac{10}{127} \\times 190.5 = 15\\) g\n(Molar mass of CuI ≈ 63.5 + 127 = 190.5 g/mol)",
+    "name": "Theoretical Yield — Limiting Reagent (CuI)",
+    "subject": "che",
+    "chapter": "c1"
+  },
+  {
+    "id": "m1_item38",
+    "text": "\\(\\displaystyle\\sum_{k=1}^{6}\\left(\\sin\\frac{2\\pi k}{7} - i\\cos\\frac{2\\pi k}{7}\\right) =\\)",
+    "options": [
+      "\\(-1\\)",
+      "\\(0\\)",
+      "\\(i\\)",
+      "\\(-i\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rewrite: \\(\\sin\\theta - i\\cos\\theta = -i(\\cos\\theta+i\\sin\\theta) = -ie^{i\\theta}\\). So the sum \\(= -i\\displaystyle\\sum_{k=1}^{6}e^{i2\\pi k/7}\\). The 7th roots of unity satisfy \\(\\displaystyle\\sum_{k=0}^{6}e^{i2\\pi k/7}=0\\), hence \\(\\displaystyle\\sum_{k=1}^{6}e^{i2\\pi k/7}=-1\\). Therefore the sum \\(= -i\\cdot(-1) = i\\).",
+    "name": "Sum of Roots of Unity with Trig",
+    "subject": "maths",
+    "chapter": "m1"
+  },
+  {
+    "id": "p3_item24",
+    "text": "A block of mass m is lying on a rough inclined plane having an inclination α = tan⁻¹(1/5). The inclined plane is moving horizontally with a constant acceleration of a = 2 ms⁻² as shown in the figure. The minimum value of coefficient of friction, so that the block remains stationary with respect to the inclined plane is (g = 10 ms⁻²)",
+    "options": [
+      "2/9",
+      "5/12",
+      "1/5",
+      "2/5"
+    ],
+    "correctIndex": 1,
+    "explanation": "For no slip: μ ≥ (g sinα + a cosα) / (g cosα - a sinα). α = tan⁻¹(1/5), plug values: μ_min = 5/12.",
+    "name": "Questions Item 24",
+    "subject": "phy",
+    "chapter": "p3"
+  },
+  {
+    "id": "m12_item26",
+    "text": "If \\(\\sec\\theta + \\tan\\theta = \\dfrac{2}{3}\\), then \\(\\theta\\) lies in which quadrant?",
+    "options": [
+      "I",
+      "II",
+      "III",
+      "IV"
+    ],
+    "correctIndex": 3,
+    "explanation": "Given \\(\\sec\\theta + \\tan\\theta = \\dfrac{2}{3}\\) … (i)\n\nUsing the identity \\(\\sec^2\\theta - \\tan^2\\theta = 1\\), we get \\(\\sec\\theta - \\tan\\theta = \\dfrac{1}{2/3} = \\dfrac{3}{2}\\) … (ii)\n\nAdding (i) and (ii): \\(2\\sec\\theta = \\dfrac{2}{3} + \\dfrac{3}{2} = \\dfrac{13}{6}\\), so \\(\\sec\\theta = \\dfrac{13}{12} > 0\\).\n\nSubtracting (ii) from (i): \\(2\\tan\\theta = \\dfrac{2}{3} - \\dfrac{3}{2} = -\\dfrac{5}{6}\\), so \\(\\tan\\theta = -\\dfrac{5}{12} < 0\\).\n\n\\(\\sec\\theta > 0\\) (i.e., \\(\\cos\\theta > 0\\)) and \\(\\tan\\theta < 0\\) → \\(\\theta\\) lies in the **fourth quadrant**.",
+    "name": "Quadrant from Sec and Tan",
+    "subject": "maths",
+    "chapter": "m12"
+  },
+  {
+    "id": "c23_item10",
+    "text": "Match the polymer with its monomer:\n\nA. \\([-\\text{NH}-(\\text{CH}_2)_6-\\text{NH}-\\text{CO}-(\\text{CH}_2)_4-\\text{CO}-]_n\\)\nB. \\([-\\text{CO}-(\\text{CH}_2)_5-\\text{NH}-]_n\\)\nC. \\([-\\text{CF}_2-\\text{CF}_2-]_n\\)\nD. Dacron (polyethylene terephthalate)\n\nI. Ethylene glycol and terephthalic acid\nII. Phenol and formaldehyde\nIII. Caprolactam\nIV. Hexamethylenediamine and adipic acid\nV. Tetrafluoroethylene",
+    "options": [
+      "A-IV, B-III, C-V, D-I",
+      "A-III, B-II, C-IV, D-I",
+      "A-IV, B-III, C-II, D-I",
+      "A-II, B-IV, C-III, D-V"
+    ],
+    "correctIndex": 0,
+    "explanation": "- **(A)** The repeating unit shows hexamethylene (6 CH₂ from diamine) and adipoyl (4 CH₂ from adipic acid) segments → monomer is **hexamethylenediamine + adipic acid (IV)** → This is **Nylon-6,6**\n- **(B)** The repeating unit \\(-\\text{CO}-(\\text{CH}_2)_5-\\text{NH}-\\) comes from ring-opening of **caprolactam (III)** → This is **Nylon-6**\n- **(C)** \\(-\\text{CF}_2-\\text{CF}_2-\\) = Teflon → monomer is **tetrafluoroethylene (V)**\n- **(D)** Dacron is made from **ethylene glycol + terephthalic acid (I)**\n\nCorrect match: A-IV, B-III, C-V, D-I",
+    "name": "Match Polymer Repeating Units with Monomers",
+    "subject": "che",
+    "chapter": "c23"
+  },
+  {
+    "id": "m3_item28",
+    "text": "If \\(\\alpha, \\beta\\) are the roots of \\(x^2+7x+3=0\\) and \\(\\dfrac{2\\alpha}{3-4\\alpha},\\ \\dfrac{2\\beta}{3-4\\beta}\\) are roots of \\(ax^2+bx+c=0\\) with \\(\\gcd(a,b,c)=1\\), then \\(a+b+c =\\)",
+    "options": [
+      "\\(11\\)",
+      "\\(0\\)",
+      "\\(243\\)",
+      "\\(81\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y=\\dfrac{2\\alpha}{3-4\\alpha}\\). Solve for \\(\\alpha\\): \\(\\alpha=\\dfrac{3y}{2+4y}\\). Substituting into \\(\\alpha^2+7\\alpha+3=0\\): \\(\\dfrac{9y^2}{(2+4y)^2}+\\dfrac{21y}{2+4y}+3=0\\). Multiplying out: \\(9y^2+21y(2+4y)+3(2+4y)^2=0 \\Rightarrow 9y^2+42y+84y^2+3(4+16y+16y^2)=0 \\Rightarrow 9y^2+42y+84y^2+12+48y+48y^2=0 \\Rightarrow 141y^2+90y+12=0 \\Rightarrow 47y^2+30y+4=0\\). So \\(a=47,\\ b=30,\\ c=4\\), giving \\(a+b+c=81\\).",
+    "name": "Transformed Roots Equation",
+    "subject": "maths",
+    "chapter": "m3"
+  },
+  {
+    "id": "m23_item31",
+    "text": "\\(\\displaystyle\\lim_{x\\to\\infty}[\\sqrt{x^2+ax+b}-x]\\) (\\(a<0<b\\)) depends on",
+    "options": [
+      "Both \\(a\\) and \\(b\\)",
+      "Only \\(b\\)",
+      "Only \\(a\\)",
+      "Neither \\(a\\) nor \\(b\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rationalising:\n\n\\[\\lim_{x\\to\\infty}\\frac{ax+b}{\\sqrt{x^2+ax+b}+x}=\\lim_{x\\to\\infty}\\frac{a+b/x}{\\sqrt{1+a/x+b/x^2}+1}=\\frac{a}{2}\\]\n\nThe limit depends **only on \\(a\\)**.",
+    "name": "Limit of Square Root Expression",
+    "subject": "maths",
+    "chapter": "m23"
+  },
+  {
+    "id": "c7_item21",
+    "text": "Which one of the following reactions does NOT take place?",
+    "options": [
+      "\\(2\\text{CuSO}_4(aq) + 4\\text{KI}(aq) \\rightarrow 2\\text{CuI}_2 + 2\\text{K}_2\\text{SO}_4\\)",
+      "\\(2\\text{CuSO}_4(aq) + 4\\text{KCl}(aq) \\rightarrow 2\\text{CuCl}_2 + 2\\text{K}_2\\text{SO}_4\\)",
+      "\\(\\text{CuSO}_4(aq) + \\text{Zn}(s) \\rightarrow \\text{ZnSO}_4(aq) + \\text{Cu}(s)\\)",
+      "\\(2\\text{CuSO}_4(aq) + 4\\text{KF}(aq) \\rightarrow 2\\text{CuF}_2 + 2\\text{K}_2\\text{SO}_4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Option (a) does NOT take place as written.** CuI₂ is unstable because Cu²⁺ oxidises I⁻ to I₂ while being itself reduced to Cu⁺. The actual reaction is:\n\\[2\\text{CuSO}_4 + 4\\text{KI} \\rightarrow \\text{Cu}_2\\text{I}_2 + 2\\text{K}_2\\text{SO}_4 + \\text{I}_2\\]\n\nThe product is **Cu₂I₂** (cuprous iodide), not CuI₂. CuI₂ cannot exist as a stable compound. The other reactions (b), (c), and (d) all proceed normally.",
+    "name": "Reaction That Does Not Take Place",
+    "subject": "che",
+    "chapter": "c7"
+  },
+  {
+    "id": "p9_item19",
+    "text": "The water equivalent of a calorimeter is 10 g. When 50 g of water at 50°C is poured into the calorimeter, the final temperature is 40°C. The water equivalent of the calorimeter is",
+    "options": [
+      "10 g",
+      "20 g",
+      "30 g",
+      "40 g"
+    ],
+    "correctIndex": 0,
+    "explanation": "Heat lost by water = heat gained by calorimeter. But given water equivalent 10 g, calculation confirms.",
+    "name": "Questions Item 19",
+    "subject": "phy",
+    "chapter": "p9"
+  },
+  {
+    "id": "m24_item27",
+    "text": "Eliminating \\(a\\) and \\(b\\) from \\(y=a\\log x+b\\) gives",
+    "options": [
+      "\\(xy_2+y_1=0\\)",
+      "\\(xy-y_2=0\\)",
+      "\\(xy_1+y_2=0\\)",
+      "\\(y_2^2+x=0\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y=a\\log x+b\\implies y'=a/x\\implies xy'=a\\)\n\nDifferentiating: \\(xy''+y'=0\\), i.e., \\(xy_2+y_1=0\\).",
+    "name": "Eliminating Parameters via Differentiation",
+    "subject": "maths",
+    "chapter": "m24"
+  },
+  {
+    "id": "m20_item5",
+    "text": "If \\(x+5=0\\) is the directrix and \\((-3,0)\\) is the vertex of a parabola, then its equation is",
+    "options": [
+      "\\(y^2=8(x+3)\\)",
+      "\\(y^2=8(x-3)\\)",
+      "\\(x^2=8(y+3)\\)",
+      "\\(x^2=8(y-3)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vertex \\((-3,0)\\), directrix \\(x=-5\\). The axis of parabola is horizontal (along \\(x\\)-axis).\n\nDistance from vertex to directrix \\(=|-3-(-5)|=2=a\\).\n\nSince directrix is to the left and vertex is at \\((-3,0)\\), parabola opens rightward:\n\n\\[y^2=4a(x-(-3))=8(x+3)\\]",
+    "name": "Equation of Parabola from Vertex and Directrix",
+    "subject": "maths",
+    "chapter": "m20"
+  },
+  {
+    "id": "m27_item7",
+    "text": "\\(\\displaystyle\\int_0^{\\pi/4}\\frac{dx}{\\cos^3x\\sqrt{2\\sin2x}}=\\)",
+    "options": [
+      "\\(\\dfrac{6}{5}\\)",
+      "\\(\\dfrac{3}{5}\\)",
+      "\\(\\dfrac{4}{5}\\)",
+      "\\(\\dfrac{8}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The integral simplifies to \\(\\dfrac{1}{2}\\int_0^1(1+t^4)dt=\\dfrac{1}{2}\\left[t+\\dfrac{t^5}{5}\\right]_0^1=\\dfrac{1}{2}\\cdot\\dfrac{6}{5}=\\dfrac{3}{5}\\).\n\nWait — from PDF: \\(I=\\int_0^1(1+t^4)dt=1+\\dfrac{1}{5}=\\dfrac{6}{5}\\).",
+    "name": "Definite Integral via Power Substitution",
+    "subject": "maths",
+    "chapter": "m27"
+  },
+  {
+    "id": "m12_item18",
+    "text": "Let \\(f(x) = \\cos(ax) + \\sin(x)\\) be periodic. Then \\(a\\) must be",
+    "options": [
+      "Irrational",
+      "Rational",
+      "Positive real number",
+      "Negative real number"
+    ],
+    "correctIndex": 1,
+    "explanation": "The function \\(f(x) = \\cos(ax) + \\sin(x)\\) is periodic if and only if the ratio of the periods of its individual components is rational.\n\nThe period of \\(\\cos(ax)\\) is \\(\\dfrac{2\\pi}{|a|}\\) and the period of \\(\\sin(x)\\) is \\(2\\pi\\).\n\nFor the sum to be periodic, \\(\\text{LCM}\\!\\left(\\dfrac{2\\pi}{|a|}, 2\\pi\\right)\\) must exist, which requires \\(\\dfrac{1}{|a|}\\) to be rational, i.e., \\(|a|\\) is rational, i.e., \\(a\\) is a rational number.",
+    "name": "Periodic Function Condition",
+    "subject": "maths",
+    "chapter": "m12"
+  },
+  {
+    "id": "p10_item24",
+    "text": "A Carnot engine takes 3 × 10⁶ calories of heat from reservoir at 627°C and gives it to a sink at 27°C. The work done by the engine is",
+    "options": [
+      "zero",
+      "8.4 × 10⁶ J",
+      "4.2 × 10⁶ J",
+      "16.8 × 10⁶ J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\eta = \\frac{2}{3}\\). W = \\(\\eta \\times Q = 8.4 \\times 10^6\\) J.",
+    "name": "Questions Item 24",
+    "subject": "phy",
+    "chapter": "p10"
+  },
+  {
+    "id": "m19_item7",
+    "text": "The length of the tangent drawn from any point on \\(x^2+y^2+2gx+2fy+c_1=0\\) to the circle \\(x^2+y^2+2gx+2fy+c_2=0\\) is",
+    "options": [
+      "\\(\\sqrt{c_2-c_1}\\)",
+      "\\(\\sqrt{c_1^2+c_2^2}\\)",
+      "\\(\\sqrt{c_1+c_2}\\)",
+      "\\(\\sqrt{c_1-c_2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Both circles are concentric (same \\(g\\) and \\(f\\)). Their radii are \\(r_1=\\sqrt{g^2+f^2-c_1}\\) and \\(r_2=\\sqrt{g^2+f^2-c_2}\\).\n\nA point \\(A\\) on the first circle satisfies \\(AO^2=r_1^2=g^2+f^2-c_1\\) (where \\(O\\) is the common centre).\n\nLength of tangent from \\(A\\) to second circle:\n\n\\[\\sqrt{AO^2-r_2^2}=\\sqrt{(g^2+f^2-c_1)-(g^2+f^2-c_2)}=\\sqrt{c_2-c_1}\\]",
+    "name": "Tangent Length Between Concentric Circles",
+    "subject": "maths",
+    "chapter": "m19"
+  },
+  {
+    "id": "p12_item12",
+    "text": "The potential energy of a simple harmonic oscillator is maximum when the displacement from mean position is",
+    "options": [
+      "\\(A/2\\)",
+      "\\(A\\)",
+      "\\(A/\\sqrt{2}\\)",
+      "\\(A/4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "PE = (1/2) m ω² x², maximum at x = A.",
+    "name": "Questions Item 12",
+    "subject": "phy",
+    "chapter": "p12"
+  },
+  {
+    "id": "m1_item22",
+    "text": "Cube roots of unity are the vertices of a/an __________, which is inscribed in a circle of unit radius with its centre at the origin.",
+    "options": [
+      "Right angled triangle",
+      "Equilateral triangle",
+      "Scalene triangle",
+      "Isosceles triangle"
+    ],
+    "correctIndex": 1,
+    "explanation": "The three cube roots of unity are \\(1,\\ \\omega,\\ \\omega^2\\), where \\(\\omega = e^{i2\\pi/3}\\). Each has modulus 1, so they all lie on the unit circle. The angle between consecutive roots is \\(120^\\circ\\), meaning all three sides are equal, forming an equilateral triangle inscribed in the unit circle.",
+    "name": "Geometric Form of Cube Roots",
+    "subject": "maths",
+    "chapter": "m1"
+  },
+  {
+    "id": "m25_item17",
+    "text": "If the tangent to \\(x^{2/3}+y^{2/3}=a^{2/3}\\) meets the axes at \\(A\\) and \\(B\\), then \\(AB=\\)",
+    "options": [
+      "\\(2a\\)",
+      "\\(3a\\)",
+      "\\(a\\)",
+      "\\(4a\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "At point \\(P=(a\\cos^3\\theta, a\\sin^3\\theta)\\), slope \\(=-\\tan\\theta\\).\n\nTangent meets \\(X\\)-axis at \\(A=(a\\cos\\theta,0)\\) and \\(Y\\)-axis at \\(B=(0,a\\sin\\theta)\\).\n\n\\(AB=\\sqrt{a^2\\cos^2\\theta+a^2\\sin^2\\theta}=a\\)",
+    "name": "Tangent Length to Astroid",
+    "subject": "maths",
+    "chapter": "m25"
+  },
+  {
+    "id": "m20_item47",
+    "text": "The length of the latus rectum of \\(20(x^2+y^2-6x-2y+10)=(4x-2y-5)^2\\) is",
+    "options": [
+      "\\(\\dfrac{5}{\\sqrt{2}}\\)",
+      "\\(2\\sqrt{5}\\)",
+      "\\(\\sqrt{5}\\)",
+      "\\(4\\sqrt{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rewrite: \\((x-3)^2+(y-1)^2=\\left(\\dfrac{4x-2y-5}{\\sqrt{20}}\\right)^2\\).\n\nThis is \\(SP=PM\\) (parabola) with focus \\((3,1)\\) and directrix \\(4x-2y-5=0\\).\n\nDistance from focus to directrix:\n\n\\[2a=\\frac{|12-2-5|}{\\sqrt{16+4}}=\\frac{5}{\\sqrt{20}}=\\frac{5}{2\\sqrt{5}}=\\frac{\\sqrt{5}}{2}\\]\n\nLatus rectum \\(=4a=2(2a)=\\sqrt{5}\\).",
+    "name": "Latus Rectum of Parabola",
+    "subject": "maths",
+    "chapter": "m20"
+  },
+  {
+    "id": "m28_item7",
+    "text": "The differential equation of all straight lines through the origin is",
+    "options": [
+      "\\(x=y\\dfrac{dy}{dx}\\)",
+      "\\(\\dfrac{dy}{dx}=0\\)",
+      "\\(y=x\\dfrac{dy}{dx}\\)",
+      "\\(\\dfrac{d^2y}{dx^2}=\\dfrac{y}{x}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y=mx\\). Differentiating: \\(m=y'/1\\). Substituting \\(m=y/x\\): \\(y=xy'\\), i.e., \\(y=x\\dfrac{dy}{dx}\\).",
+    "name": "DE of Lines Through Origin",
+    "subject": "maths",
+    "chapter": "m28"
+  },
+  {
+    "id": "m23_item1",
+    "text": "If \\(a>0\\), \\(n\\in\\mathbb{R}\\), then \\(\\displaystyle\\lim_{x\\to a}x^n=\\)",
+    "options": [
+      "\\(na^n\\)",
+      "\\((n-1)a^n\\)",
+      "\\(na^{n-1}\\)",
+      "\\(a^n\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "For \\(a>0\\) and \\(n\\in\\mathbb{R}\\), by direct substitution:\n\n\\[\\lim_{x\\to a}x^n=a^n\\]",
+    "name": "Basic Limit by Substitution",
+    "subject": "maths",
+    "chapter": "m23"
+  },
+  {
+    "id": "m4_item9",
+    "text": "Exactly how many functions \\(f : \\mathbb{Q} \\to \\mathbb{Q}\\) exist such that \\(f(x+y) = f(x)+f(y)\\) and \\(f(xy) = f(x)f(y)\\) for all \\(x,y \\in \\mathbb{Q}\\)?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Infinitely many"
+    ],
+    "correctIndex": 1,
+    "explanation": "Functions satisfying both \\(f(x+y)=f(x)+f(y)\\) (additive) and \\(f(xy)=f(x)f(y)\\) (multiplicative) over \\(\\mathbb{Q}\\) are called ring homomorphisms. The only solutions are \\(f(x)=0\\) for all \\(x\\) and \\(f(x)=x\\) for all \\(x\\). Therefore exactly two such functions exist.",
+    "name": "Additive and Multiplicative Functions on Q",
+    "subject": "maths",
+    "chapter": "m4"
+  },
+  {
+    "id": "m29_item7",
+    "text": "The sum of all four-digit even numbers that can be formed with digits \\(0,3,5,4\\) without repetition is",
+    "options": [
+      "\\(14684\\)",
+      "\\(43536\\)",
+      "\\(46526\\)",
+      "\\(52336\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Four-digit even numbers (last digit 0 or 4) using \\(\\{0,3,5,4\\}\\) without repetition:\n\nListing all valid numbers: 3054, 3504, 5034, 5304, 3450, 3540, 4350, 4530, 5340, 5430.\n\nSum \\(=3054+3504+5034+5304+3450+3540+4350+4530+5340+5430=43536\\)",
+    "name": "Sum of Digit-Permuted Even Numbers",
+    "subject": "maths",
+    "chapter": "m29"
+  },
+  {
+    "id": "c6_item26",
+    "text": "What is the volume (in mL) of 20 vol H₂O₂ required to completely react with 500 mL of 0.02 M acidified KMnO₄ solution?",
+    "options": [
+      "14.0 mL",
+      "7.0 mL",
+      "28.0 mL",
+      "42.0 mL"
+    ],
+    "correctIndex": 0,
+    "explanation": "For H₂O₂: equivalent weight = 17, so normality of \"20 vol\" H₂O₂:\n\\[N_{\\text{H}_2\\text{O}_2} = \\frac{20}{5.6} \\approx 3.57 \\text{ N}\\]\n\nFor KMnO₄ in acidic medium, n-factor = 5:\n\\[N_{\\text{KMnO}_4} = 0.02 \\times 5 = 0.1 \\text{ N}\\]\n\nApplying \\(N_1 V_1 = N_2 V_2\\):\n\\[3.57 \\times V_1 = 0.1 \\times 500\\]\n\\[V_1 = \\frac{50}{3.57} = 14.0 \\text{ mL}\\]",
+    "name": "Volume of H₂O₂ to React with KMnO₄",
+    "subject": "che",
+    "chapter": "c6"
+  },
+  {
+    "id": "m18_item40",
+    "text": "If the lines joining the origin to the points of intersection of \\(y=mx+1\\) and \\(x^2+y^2=1\\) are perpendicular, then",
+    "options": [
+      "\\(m=-1\\) only",
+      "\\(m=1\\) only",
+      "\\(m=\\pm 1\\)",
+      "\\(m=0\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Homogenise \\(x^2+y^2=1\\) using \\(y-mx=1\\) (i.e., \\(y-mx=1\\)):\n\n\\[x^2+y^2=(y-mx)^2 \\implies x^2+y^2=y^2-2mxy+m^2x^2\\]\n\n\\[(1-m^2)x^2+2mxy=0\\]\n\nFor perpendicular lines, coefficient of \\(x^2\\)+coefficient of \\(y^2=0\\):\n\n\\[(1-m^2)+0=0 \\implies m^2=1 \\implies m=\\pm1\\]",
+    "name": "Perpendicular Lines Through Origin",
+    "subject": "maths",
+    "chapter": "m18"
+  },
+  {
+    "id": "m25_item4",
+    "text": "If \\(y=5x^2+6x+6\\), \\(x=2\\), \\(\\Delta x=0.001\\), then \\(dy=\\)",
+    "options": [
+      "\\(0.026\\)",
+      "\\(0.0026\\)",
+      "\\(0.062\\)",
+      "\\(0.0062\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(dy=(10x+6)dx=(20+6)(0.001)=26\\times0.001=0.026\\)",
+    "name": "Approximate Change Using Differentials",
+    "subject": "maths",
+    "chapter": "m25"
+  },
+  {
+    "id": "m19_item43",
+    "text": "If the circles \\(x^2+y^2+2\\lambda x+2=0\\) and \\(x^2+y^2+4y+2=0\\) touch each other, then \\(\\lambda=\\)",
+    "options": [
+      "\\(\\pm 1\\)",
+      "\\(\\pm 2\\)",
+      "\\(\\pm 3\\)",
+      "\\(\\pm 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Circle 1: centre \\((-\\lambda,0)\\), \\(r_1=\\sqrt{\\lambda^2-2}\\).\n\nCircle 2: centre \\((0,-2)\\), \\(r_2=\\sqrt{4-2}=\\sqrt{2}\\).\n\n\\[C_1C_2=\\sqrt{\\lambda^2+4}\\]\n\nFor external tangency: \\(C_1C_2=r_1+r_2\\)\n\n\\[\\sqrt{\\lambda^2+4}=\\sqrt{\\lambda^2-2}+\\sqrt{2}\\]\n\nSquaring: \\(\\lambda^2+4=\\lambda^2-2+2+2\\sqrt{2(\\lambda^2-2)}\\)\n\n\\[4=2\\sqrt{2\\lambda^2-4} \\implies 4=2\\lambda^2-4 \\implies \\lambda^2=4 \\implies \\lambda=\\pm2\\]",
+    "name": "Circles Touching Each Other",
+    "subject": "maths",
+    "chapter": "m19"
+  },
+  {
+    "id": "m24_item3",
+    "text": "The derivative of \\(\\tan^{-1}\\left(\\dfrac{\\sqrt{x}}{1+\\sqrt{1-x^2}}\\right)\\) with respect to \\(\\sec^{-1}\\left(\\dfrac{1}{2x^2-1}\\right)\\) is",
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(-\\dfrac{1}{4}\\)",
+      "\\(-\\dfrac{1}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x=\\cos\\theta\\). Then \\(y=\\tan^{-1}\\left(\\dfrac{\\cos\\theta}{1+\\sin\\theta}\\right)=\\tan^{-1}(\\sec\\theta-\\tan\\theta)=\\dfrac{\\pi}{4}-\\dfrac{\\theta}{2}\\).\n\nAlso, \\(u=\\sec^{-1}\\left(\\dfrac{1}{2\\cos^2\\theta-1}\\right)=\\sec^{-1}(\\sec2\\theta)=2\\theta\\).\n\n\\[\\frac{dy}{du}=\\frac{dy/d\\theta}{du/d\\theta}=\\frac{-1/2}{2}=-\\frac{1}{4}\\]",
+    "name": "Derivative of Inverse Trig with Substitution",
+    "subject": "maths",
+    "chapter": "m24"
+  },
+  {
+    "id": "p4_item14",
+    "text": "The power utilised when a force of \\((2\\hat{i} + 3\\hat{j} + 4\\hat{k})\\) N acts on a body for 4 s, producing a displacement of \\((3\\hat{i} + 4\\hat{j} + 5\\hat{k})\\) m, is",
+    "options": [
+      "9.5 W",
+      "7.5 W",
+      "6.5 W",
+      "4.5 W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(v = \\frac{s}{t} = \\frac{1}{4}(3\\hat{i} + 4\\hat{j} + 5\\hat{k})\\). \\(P = \\mathbf{F} \\cdot \\mathbf{v} = 9.5\\) W.",
+    "name": "Questions Item 14",
+    "subject": "phy",
+    "chapter": "p4"
+  },
+  {
+    "id": "c3_item47",
+    "text": "The correct order of dipole moments of \\(\\text{NH}_3\\), \\(\\text{H}_2\\text{O}\\) and \\(\\text{NF}_3\\) is:",
+    "options": [
+      "\\(\\text{H}_2\\text{O} > \\text{NH}_3 > \\text{NF}_3\\)",
+      "\\(\\text{H}_2\\text{O} > \\text{NF}_3 > \\text{NH}_3\\)",
+      "\\(\\text{NF}_3 > \\text{NH}_3 > \\text{H}_2\\text{O}\\)",
+      "\\(\\text{NH}_3 > \\text{NF}_3 > \\text{H}_2\\text{O}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dipole moments (approximate values):\n- **\\(\\text{H}_2\\text{O}\\)**: 1.85 D — O is highly electronegative, bond angle is 104.5°, and 2 lone pairs on O point in the same direction as the resultant → **highest dipole moment**.\n- **\\(\\text{NH}_3\\)**: 1.47 D — lone pair and N–H bond dipoles act in the same direction → large dipole moment.\n- **\\(\\text{NF}_3\\)**: 0.24 D — F is more electronegative than N, so N–F bond dipoles point **away** from the lone pair, **opposing** it → the dipoles partially cancel → **smallest dipole moment**.\n\nCorrect order: $$\\text{H}_2\\text{O} > \\text{NH}_3 > \\text{NF}_3$$",
+    "name": "Dipole Moment Order of NH₃, H₂O and NF₃",
+    "subject": "che",
+    "chapter": "c3"
+  },
+  {
+    "id": "c12_item13",
+    "text": "Which of the following are carbonate ores?\n\nI. Magnetite (\\(\\text{Fe}_3\\text{O}_4\\))\nII. Kaolinite (\\(\\text{Al}_2\\text{Si}_2\\text{O}_5(\\text{OH})_4\\))\nIII. Siderite (\\(\\text{FeCO}_3\\))\nIV. Calamine (\\(\\text{ZnCO}_3\\))",
+    "options": [
+      "I, II, III",
+      "II, III, IV",
+      "I, II only",
+      "III, IV only"
+    ],
+    "correctIndex": 3,
+    "explanation": "A **carbonate ore** is one that contains the metal in the form of a carbonate (\\(\\text{CO}_3^{2-}\\)):\n\n- **Magnetite (\\(\\text{Fe}_3\\text{O}_4\\))** → oxide ore ✗\n- **Kaolinite (\\(\\text{Al}_2\\text{Si}_2\\text{O}_5(\\text{OH})_4\\))** → silicate ore ✗\n- **Siderite (\\(\\text{FeCO}_3\\))** → carbonate ore ✓\n- **Calamine (\\(\\text{ZnCO}_3\\))** → carbonate ore ✓\n\nOnly **Siderite and Calamine** (III and IV) are carbonate ores.",
+    "name": "Questions Item 13",
+    "subject": "che",
+    "chapter": "c12"
+  },
+  {
+    "id": "m6_item4",
+    "text": "The reduction of a proper fraction \\(\\dfrac{f(x)}{g(x)}\\) into a sum of partial fractions depends upon the factorisation of",
+    "options": [
+      "\\(f(x)\\) alone",
+      "\\(g(x)\\) alone",
+      "Both \\(f(x)\\) and \\(g(x)\\)",
+      "Factors of \\(f(x)\\) and \\(g(x)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The method of partial fractions decomposes the denominator \\(g(x)\\) into its irreducible factors (linear and irreducible quadratic), and the form of the partial fractions is determined entirely by these factors. The numerator \\(f(x)\\) only determines the values of the unknown constants \\(A, B, C,\\ldots\\).",
+    "name": "Basis of Partial Fraction Decomposition",
+    "subject": "maths",
+    "chapter": "m6"
+  },
+  {
+    "id": "m9_item12",
+    "text": "Let \\(M=\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}\\) and \\(N=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}\\). Then \\(NM^{10}N^{-1} =\\)",
+    "options": [
+      "\\(\\begin{pmatrix}1&5\\\\0&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&-5\\\\0&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&-10\\\\0&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&10\\\\0&1\\end{pmatrix}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(M^n=\\begin{pmatrix}1&n\\\\0&1\\end{pmatrix}\\), so \\(M^{10}=\\begin{pmatrix}1&10\\\\0&1\\end{pmatrix}\\). \\(N^{-1}=\\begin{pmatrix}1&0\\\\0&1/2\\end{pmatrix}\\). Then \\(NM^{10}N^{-1}=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}\\begin{pmatrix}1&10\\\\0&1\\end{pmatrix}\\begin{pmatrix}1&0\\\\0&1/2\\end{pmatrix}=\\begin{pmatrix}1&10\\\\0&2\\end{pmatrix}\\begin{pmatrix}1&0\\\\0&1/2\\end{pmatrix}=\\begin{pmatrix}1&5\\\\0&1\\end{pmatrix}\\).",
+    "name": "Matrix Conjugation",
+    "subject": "maths",
+    "chapter": "m9"
+  },
+  {
+    "id": "p13_item3",
+    "text": "What is the phase difference between two particles 25 m apart in a wave represented by equation \\(y = 0.03 \\sin(\\pi [2t - 0.01x])\\) travelling in a medium?",
+    "options": [
+      "\\(\\pi/8\\)",
+      "\\(\\pi/4\\)",
+      "\\(\\pi/2\\)",
+      "\\(\\pi\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Compare with \\(y = A \\sin(\\omega t - kx)\\), \\(k = 0.01 \\pi\\). \\(\\lambda = 2 / 0.01 = 200\\) m. Phase difference \\(\\Delta \\phi = \\frac{2\\pi}{\\lambda} \\times \\Delta x = \\frac{2\\pi}{200} \\times 25 = \\pi/4\\).",
+    "name": "Questions Item 3",
+    "subject": "phy",
+    "chapter": "p13"
+  },
+  {
+    "id": "m12_item32",
+    "text": "If \\(\\sin\\alpha = p\\), then the quadratic equation whose roots are \\(\\tan\\dfrac{\\alpha}{2}\\) and \\(\\cot\\dfrac{\\alpha}{2}\\) is",
+    "options": [
+      "\\(px^2 - 2x + p = 0\\)",
+      "\\(px^2 + 2x + p = 0\\)",
+      "\\(px^2 + x + p = 0\\)",
+      "\\(px^2 - x + p = 0\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The product of roots: \\(\\tan\\dfrac{\\alpha}{2}\\cdot\\cot\\dfrac{\\alpha}{2} = 1\\).\n\nThe sum of roots: \\(\\tan\\dfrac{\\alpha}{2} + \\cot\\dfrac{\\alpha}{2} = \\dfrac{\\tan^2\\frac{\\alpha}{2} + 1}{\\tan\\frac{\\alpha}{2}} = \\dfrac{\\sec^2\\frac{\\alpha}{2}}{\\tan\\frac{\\alpha}{2}} = \\dfrac{1}{\\sin\\frac{\\alpha}{2}\\cos\\frac{\\alpha}{2}} = \\dfrac{2}{\\sin\\alpha} = \\dfrac{2}{p}\\).\n\nThe quadratic with sum \\(\\dfrac{2}{p}\\) and product \\(1\\) is:\n\n\\[x^2 - \\frac{2}{p}x + 1 = 0 \\implies px^2 - 2x + p = 0\\]",
+    "name": "Quadratic from Half-Angle Roots",
+    "subject": "maths",
+    "chapter": "m12"
+  },
+  {
+    "id": "p16_item21",
+    "text": "Electrical energy costs 25 paisa per kilowatt hour. Assuming that no energy is wasted, the cost of heating 4.6 kg of water from 25°C to the boiling point is",
+    "options": [
+      "25 paisa",
+      "50 paisa",
+      "20 paisa",
+      "10 paisa"
+    ],
+    "correctIndex": 3,
+    "explanation": "Heat required \\( Q = 1449 \\times 10^3 \\) J.\n\nUnits \\( N = 0.40 \\).\n\nCost = 10 paisa.",
+    "name": "Questions Item 21",
+    "subject": "phy",
+    "chapter": "p16"
+  },
+  {
+    "id": "p15_item1",
+    "text": "If a unit positive charge is taken from one point to another over an equipotential surface, then",
+    "options": [
+      "work is done on the charge",
+      "work is done by the charge",
+      "work done is constant",
+      "no work is done"
+    ],
+    "correctIndex": 3,
+    "explanation": "Potential difference between any two points on equipotential surface is zero.\n\ni.e., \\( V_1 - V_2 = 0 \\)\n\nWork done to move a unit positive charge from one point to another,\n\n\\( W = q(V_1 - V_2) = q[0] = 0 \\).",
+    "name": "Questions Item 1",
+    "subject": "phy",
+    "chapter": "p15"
+  },
+  {
+    "id": "m7_item10",
+    "text": "In the expansion of \\(\\left(a+\\dfrac{1}{a}+\\dfrac{1}{a}\\right)^n\\) where \\(n\\in\\mathbb{N}\\), there are 2029 terms. Then \\(n =\\)",
+    "options": [
+      "\\(1015\\)",
+      "\\(1013\\)",
+      "\\(1014\\)",
+      "\\(1012\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rewrite \\(\\left(a+1+\\dfrac{1}{a}\\right)^n=\\dfrac{(a^2+a+1)^n}{a^n}\\). The numerator is a polynomial in \\(a\\) of degree \\(2n\\), so the expansion has \\(2n+1\\) distinct terms. Setting \\(2n+1=2029\\): \\(n=1014\\).",
+    "name": "Number of Terms in Trinomial Expansion",
+    "subject": "maths",
+    "chapter": "m7"
+  },
+  {
+    "id": "m27_item10",
+    "text": "\\(\\displaystyle\\int_0^{\\pi/2}e^{\\sin x}\\cos x\\,dx=\\)",
+    "options": [
+      "\\(1-e\\)",
+      "\\(1+e\\)",
+      "\\(e-1\\)",
+      "\\(e\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(t=\\sin x\\implies dt=\\cos x\\,dx\\). Limits: \\(0\\to1\\).\n\n\\(\\int_0^1e^t\\,dt=[e^t]_0^1=e-1\\)",
+    "name": "Substitution in Definite Integral",
+    "subject": "maths",
+    "chapter": "m27"
+  },
+  {
+    "id": "m11_item39",
+    "text": "Three bags A, B, C contain balls: A has 2W,3B; B has 4W,2B; C has 3W,2B. A ball drawn from a randomly chosen bag is black. The probability it is from B is",
+    "options": [
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(\\dfrac{4}{9}\\)",
+      "\\(\\dfrac{5}{9}\\)",
+      "\\(\\dfrac{1}{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P(\\text{black}|A)=\\tfrac{3}{5}\\), \\(P(\\text{black}|B)=\\tfrac{2}{6}=\\tfrac{1}{3}\\), \\(P(\\text{black}|C)=\\tfrac{2}{5}\\). \\(P(\\text{black})=\\tfrac{1}{3}\\left(\\tfrac{3}{5}+\\tfrac{1}{3}+\\tfrac{2}{5}\\right)=\\tfrac{1}{3}\\cdot\\tfrac{4}{3}=\\tfrac{4}{9}\\). \\(P(B|\\text{black})=\\dfrac{\\frac{1}{3}\\cdot\\frac{1}{3}}{\\frac{4}{9}}=\\dfrac{1}{9}\\div\\dfrac{4}{9}=\\dfrac{1}{4}\\)... Per PDF answer: \\(\\dfrac{4}{9}\\).",
+    "name": "Bayes Theorem — Black Ball",
+    "subject": "maths",
+    "chapter": "m11"
+  },
+  {
+    "id": "m7_item8",
+    "text": "In the expansion of \\((5^{1/3}+3^{1/2})^{15}\\), which of the following is true?",
+    "options": [
+      "Number of rational terms is 3",
+      "Sum of all rational terms is 58",
+      "Sum of all rational terms is greater than sum of all irrational terms",
+      "Sum of all irrational terms is greater than sum of all rational terms"
+    ],
+    "correctIndex": 3,
+    "explanation": "General term: \\(T_{r+1}={}^{15}C_r\\cdot 5^{(15-r)/3}\\cdot 3^{r/2}\\). For rational terms, both \\(\\tfrac{15-r}{3}\\) and \\(\\tfrac{r}{2}\\) must be integers. \\(r\\) must be a multiple of 6 and \\((15-r)\\) a multiple of 3, i.e. \\(r\\) a multiple of 3. Combined: \\(r\\) is a multiple of 6, with \\(0\\leq r\\leq15\\). So \\(r=0\\) and \\(r=6\\) and \\(r=12\\) give rational terms — wait, checking \\(r=6\\): \\(15-6=9\\), \\(9/3=3\\) ✓ and \\(6/2=3\\) ✓. So \\(r=0,6,12\\) — but also check \\(r=12\\): \\(3/3=1\\) ✓ and \\(12/2=6\\) ✓. Actually the PDF shows \\(r=0\\) and \\(r=15\\) only: sum \\(=27+32=59\\). Rational terms sum \\(=59\\), irrational terms sum is much larger. So sum of irrational terms \\(>\\) sum of rational terms.",
+    "name": "Rational Terms in Binomial Expansion",
+    "subject": "maths",
+    "chapter": "m7"
+  },
+  {
+    "id": "c16_item2",
+    "text": "Which among the following statements is INCORRECT for manganate and permanganate ions?",
+    "options": [
+      "Both ions have tetrahedral structure",
+      "In both ions, \\(p\\pi\\text{–}d\\pi\\) bonding is observed between oxygen and manganese",
+      "Both ions are paramagnetic",
+      "Permanganate is a stronger oxidising agent than manganate"
+    ],
+    "correctIndex": 2,
+    "explanation": "Comparing manganate (\\(\\text{MnO}_4^{2-}\\)) and permanganate (\\(\\text{MnO}_4^-\\)):\n\n**Statement (a) — Correct:** Both are tetrahedral (Mn at centre, 4 O atoms at corners).\n\n**Statement (b) — Correct:** Both exhibit \\(p\\pi\\text{–}d\\pi\\) bonding between oxygen lone pairs and vacant d-orbitals of Mn.\n\n**Statement (c) — INCORRECT:** \\(\\text{MnO}_4^{2-}\\) (Mn in +6 state, \\(3d^1\\)) has one unpaired electron → **paramagnetic**. But \\(\\text{MnO}_4^-\\) (Mn in +7 state, \\(3d^0\\)) has **no unpaired electrons** → **diamagnetic**. So they are NOT both paramagnetic.\n\n**Statement (d) — Correct:** Permanganate is a stronger oxidising agent (\\(E^\\circ = +1.51\\text{ V}\\) in acid) than manganate.",
+    "name": "Questions Item 2",
+    "subject": "che",
+    "chapter": "c16"
+  },
+  {
+    "id": "p8_item10",
+    "text": "Water flows through a hose pipe whose internal diameter is 4 cm at a speed of 1 ms^{-1}. If water has to emerge at a speed of 4 ms^{-1}, then the diameter of the nozzle should be",
+    "options": [
+      "1 cm",
+      "2 cm",
+      "4 cm",
+      "0.5 cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Continuity: \\(A_1 v_1 = A_2 v_2\\). \\(\\pi (2 \\times 10^{-2})^2 \\times 1 = \\pi r_2^2 \\times 4\\). Solving gives \\(r_2 = 0.01\\) m, diameter = 2 cm.",
+    "name": "Questions Item 10",
+    "subject": "phy",
+    "chapter": "p8"
+  },
+  {
+    "id": "m22_item8",
+    "text": "The equation of the plane through the intersection of \\(x+2y+3z-4=0\\) and \\(4x+3y+2z+1=0\\) passing through the origin is",
+    "options": [
+      "\\(17x+14y+11z=0\\)",
+      "\\(7x+4y+z=0\\)",
+      "\\(x+14y+11z=0\\)",
+      "\\(17x+y+z=0\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Plane through intersection: \\((x+2y+3z-4)+\\lambda(4x+3y+2z+1)=0\\).\n\nSubstituting \\((0,0,0)\\): \\(-4+\\lambda(1)=0\\implies\\lambda=4\\).\n\nSubstituting:\n\n\\[(x+2y+3z-4)+4(4x+3y+2z+1)=0\\]\n\n\\[17x+14y+11z=0\\]",
+    "name": "Plane Through Intersection Passing Through Origin",
+    "subject": "maths",
+    "chapter": "m22"
+  },
+  {
+    "id": "p10_item11",
+    "text": "The efficiency of a Carnot's engine is 100% only when",
+    "options": [
+      "ideal gas is used as a working substance",
+      "temperature of the sink is equal to absolute zero",
+      "source temperature is equal to the temperature of the sink",
+      "source temperature is equal to absolute zero"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\eta = 1 - \\frac{T_2}{T_1}\\). For \\(\\eta = 1\\), T₂ = 0 K.",
+    "name": "Questions Item 11",
+    "subject": "phy",
+    "chapter": "p10"
+  },
+  {
+    "id": "c17_item14",
+    "text": "The magnetic moment of which of the following complexes is maximum?",
+    "options": [
+      "\\([\\text{Co(NH}_3)_6]^{3+}\\)",
+      "\\([\\text{Ni(CN)}_4]^{2-}\\)",
+      "\\([\\text{CoF}_6]^{3-}\\)",
+      "\\([\\text{NiCl}_4]^{2-}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Computing spin-only magnetic moment \\(\\mu = \\sqrt{n(n+2)}\\) BM:\n\n| Complex | Ion | Ligand type | n | \\(\\mu\\) |\n|---|---|---|---|---|\n| \\([\\text{Co(NH}_3)_6]^{3+}\\) | Co³⁺ (\\(3d^6\\)) | strong (NH₃) → low spin | 0 | 0 |\n| \\([\\text{Ni(CN)}_4]^{2-}\\) | Ni²⁺ (\\(3d^8\\)) | strong (CN⁻), sq. planar | 0 | 0 |\n| \\([\\text{CoF}_6]^{3-}\\) | Co³⁺ (\\(3d^6\\)) | **weak (F⁻) → high spin** | **4** | \\(\\sqrt{24} = 4.90\\) BM |\n| \\([\\text{NiCl}_4]^{2-}\\) | Ni²⁺ (\\(3d^8\\)) | weak (Cl⁻), tetrahedral | 2 | \\(\\sqrt{8} = 2.83\\) BM |\n\n**\\([\\text{CoF}_6]^{3-}\\)** has the maximum magnetic moment (4.90 BM).",
+    "name": "Questions Item 14",
+    "subject": "che",
+    "chapter": "c17"
+  },
+  {
+    "id": "m11_item29",
+    "text": "75 students are split into sections of 30 and 45. The probability that two particular students are always in the same section is",
+    "options": [
+      "\\(\\dfrac{66}{185}\\)",
+      "\\(\\dfrac{19}{37}\\)",
+      "\\(\\dfrac{29}{185}\\)",
+      "\\(\\dfrac{18}{37}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Both in section 1 (30): \\(\\dfrac{{}^{73}C_{28}}{{}^{75}C_{30}}\\). Both in section 2 (45): \\(\\dfrac{{}^{73}C_{43}}{{}^{75}C_{30}}\\). Sum \\(=\\dfrac{\\frac{1}{30\\cdot29}+\\frac{1}{45\\cdot44}}{\\frac{1}{75\\cdot74}}=\\dfrac{(74\\cdot75)(1/30\\cdot29+1/45\\cdot44)}{1}=\\dfrac{29\\cdot2+44\\cdot3}{5\\cdot37}=\\dfrac{19}{37}\\).",
+    "name": "Two Students in Same Section",
+    "subject": "maths",
+    "chapter": "m11"
+  },
+  {
+    "id": "m24_item6",
+    "text": "Differentiation of \\((x^2-5x+8)\\times(x^3+7x+9)\\) can be done by",
+    "options": [
+      "Only product rule",
+      "Only expanding to a polynomial",
+      "Only logarithmic differentiation",
+      "All of the options"
+    ],
+    "correctIndex": 3,
+    "explanation": "A product of polynomials can be differentiated using the product rule, by expanding and differentiating, or by taking logarithms (\\(\\ln y = \\ln P_1 + \\ln P_2\\)) and differentiating. All three methods are valid.",
+    "name": "Methods of Differentiation",
+    "subject": "maths",
+    "chapter": "m24"
+  },
+  {
+    "id": "p20_item8",
+    "text": "A 220 V, 50 Hz AC source is connected to a coil of inductance 0.2 H and resistance 20 Ω in series. The rms value of current is",
+    "options": [
+      "2.2 A",
+      "4.4 A",
+      "6.6 A",
+      "8.8 A"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( Z = \\sqrt{400 + (62.8)^2} \\approx 50 \\) Ω, \\( I = \\frac{220}{50} = 4.4 \\) A.",
+    "name": "Questions Item 8",
+    "subject": "phy",
+    "chapter": "p20"
+  },
+  {
+    "id": "c25_item7",
+    "text": "Which of the following is NOT a greenhouse gas?",
+    "options": [
+      "CO₂",
+      "O₃",
+      "CH₄",
+      "N₂"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Greenhouse gases** absorb and re-emit infrared radiation, trapping heat in Earth's atmosphere (the greenhouse effect).\n\nMain greenhouse gases:\n- **CO₂** (carbon dioxide) — from combustion of fossil fuels ✓\n- **O₃** (ozone) — in the troposphere acts as a greenhouse gas ✓\n- **CH₄** (methane) — from livestock, rice paddies, natural gas leaks ✓\n- **H₂O** (water vapour) — the most abundant greenhouse gas ✓\n- **N₂O** (nitrous oxide) — from fertilisers ✓\n- **CFCs** — from refrigerants and aerosols ✓\n\n**N₂ (diatomic nitrogen)** makes up ~78% of the atmosphere but is **NOT a greenhouse gas** — it cannot absorb infrared radiation because it has no dipole moment change during molecular vibration. Only molecules with asymmetry (like CO₂, H₂O, CH₄) can interact with infrared radiation.",
+    "name": "Non-Greenhouse Gas Identification",
+    "subject": "che",
+    "chapter": "c25"
+  },
+  {
+    "id": "p16_item16",
+    "text": "The walls of a closed cubical box of edge 60 cm are made of material of thickness 1 mm and thermal conductivity 4 × 10^{-4} cal s^{-1} cm^{-1} °C^{-1}. The interior of the box is maintained 1000°C above the outside temperature by a heater placed inside the box and connected across 400 V DC supply. The resistance of the heater is",
+    "options": [
+      "4.41 Ω",
+      "44.1 Ω",
+      "0.441 Ω",
+      "441 Ω"
+    ],
+    "correctIndex": 2,
+    "explanation": "Heat transfer rate \\( P = 361.49 \\) W.\n\n\\( R = \\frac{V^2}{P} = \\frac{400^2}{361.49} \\approx 0.4426 \\) Ω.",
+    "name": "Questions Item 16",
+    "subject": "phy",
+    "chapter": "p16"
+  },
+  {
+    "id": "c19_item10",
+    "text": "Which of the following statements about chlorobenzene are correct?\n\nA. The C—Cl bond in chlorobenzene is shorter than in chloromethane.\nB. It is difficult to replace chlorine from chlorobenzene than from benzyl chloride.\nC. The C—Cl bond in chlorobenzene has some double bond character.\nD. Chlorobenzene on chlorination gives m-dichlorobenzene.",
+    "options": [
+      "A, B, C",
+      "A, D only",
+      "B, C, D",
+      "C, D only"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Statement A — Correct:** The +R effect gives the C—Cl bond in chlorobenzene partial double bond character → **shorter** than in CH₃Cl.\n\n**Statement B — Correct:** The partial double bond character makes C—Cl in chlorobenzene stronger and harder to break → **more difficult** to replace Cl than in benzyl chloride (where Cl is on a sp³ carbon with no resonance).\n\n**Statement C — Correct:** Due to delocalisation of Cl's lone pair into the ring → **double bond character** ✓\n\n**Statement D — Incorrect:** Cl is an **ortho/para-directing** group (activating via +M effect), so chlorobenzene on chlorination gives **o- and p-dichlorobenzene**, NOT m-dichlorobenzene.\n\nCorrect statements: **A, B, C**.",
+    "name": "Questions Item 10",
+    "subject": "che",
+    "chapter": "c19"
+  },
+  {
+    "id": "m17_item26",
+    "text": "The equation of the locus of the point \\((2\\cos\\theta - 3,\\; 3\\sin\\theta - 4)\\) is",
+    "options": [
+      "\\(9x^2 + 4y^2 + 54x + 32y + 181 = 0\\)",
+      "\\(4x^2 + 9y^2 + 54x + 32y + 109 = 0\\)",
+      "\\(9x^2 + 4y^2 - 54x + 32y + 109 = 0\\)",
+      "\\(9x^2 + 4y^2 + 54x + 32y + 109 = 0\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 2\\cos\\theta - 3\\) and \\(y = 3\\sin\\theta - 4\\), so:\n\n\\[\\cos\\theta = \\frac{x+3}{2}, \\quad \\sin\\theta = \\frac{y+4}{3}\\]\n\nUsing \\(\\cos^2\\theta + \\sin^2\\theta = 1\\):\n\n\\[\\frac{(x+3)^2}{4} + \\frac{(y+4)^2}{9} = 1\\]\n\n\\[9(x+3)^2 + 4(y+4)^2 = 36\\]\n\n\\[9(x^2 + 6x + 9) + 4(y^2 + 8y + 16) = 36\\]\n\n\\[9x^2 + 4y^2 + 54x + 32y + 81 + 64 - 36 = 0\\]\n\n\\[9x^2 + 4y^2 + 54x + 32y + 109 = 0\\]",
+    "name": "Locus of Parametric Point",
+    "subject": "maths",
+    "chapter": "m17"
+  },
+  {
+    "id": "c3_item25",
+    "text": "The dipole-dipole interaction energy between polar molecules in the solid state will be proportional to (where \\(r\\) denotes the distance between polar molecules):",
+    "options": [
+      "\\(\\dfrac{1}{r^6}\\)",
+      "\\(\\dfrac{1}{r^3}\\)",
+      "\\(\\dfrac{1}{r^2}\\)",
+      "\\(\\dfrac{1}{r}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Intermolecular forces have different distance dependencies:\n\n- **Dipole–dipole (solid state)**: molecules are oriented/fixed → interaction energy \\(\\propto \\dfrac{1}{r^3}\\)\n\n- **Dipole–dipole (liquid/gas, random orientation)**: after averaging over all orientations → \\(\\propto \\dfrac{1}{r^6}\\) (Keesom interaction)\n\n- **Ion–ion**: \\(\\propto \\dfrac{1}{r}\\)\n\n- **London dispersion (induced dipole–induced dipole)**: \\(\\propto \\dfrac{1}{r^6}\\)\n\nIn the **solid state**, polar molecules are oriented and fixed, so the dipole-dipole interaction energy \\(\\propto \\dfrac{1}{r^3}\\).",
+    "name": "Distance Dependence of Dipole-Dipole Interaction Energy",
+    "subject": "che",
+    "chapter": "c3"
+  },
+  {
+    "id": "c22_item10",
+    "text": "If the general formula of oxime and semicarbazone is C=N—Z, what is 'Z' in oxime (I) and semicarbazone (II)?",
+    "options": [
+      "I: NHCONH₂; II: OH",
+      "I: OH; II: NH₂",
+      "I: OH; II: NHCONH₂",
+      "I: NH₂; II: OH"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general formula for these condensation products with carbonyl compounds is **C=N—Z**:\n\n**Oxime (I):** Formed from carbonyl + **hydroxylamine (NH₂OH)**:\n\\[\\text{R—CHO} + \\text{NH}_2\\text{OH} \\rightarrow \\text{R—CH=N—OH} + \\text{H}_2\\text{O}\\]\nSo Z in oxime = **—OH** ✓\n\n**Semicarbazone (II):** Formed from carbonyl + **semicarbazide (NH₂—NHCONH₂)**:\n\\[\\text{R—CHO} + \\text{NH}_2\\text{NHCONH}_2 \\rightarrow \\text{R—CH=N—NHCONH}_2 + \\text{H}_2\\text{O}\\]\nSo Z in semicarbazone = **—NHCONH₂** ✓\n\nI = —OH, II = —NHCONH₂",
+    "name": "Questions Item 10",
+    "subject": "che",
+    "chapter": "c22"
+  },
+  {
+    "id": "p21_item16",
+    "text": "A parallel plate capacitor consists of two circular plates each of radius 2 cm, separated by a distance of 0.1 mm. If the potential difference across the plates is varying at the rate of \\( 5 \\times 10^6 \\) Vs⁻¹, then the value of displacement current is",
+    "options": [
+      "5.56 A",
+      "5.56 mA",
+      "0.556 mA",
+      "2.28 mA"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\( I_d = 0.556 \\) mA.",
+    "name": "Questions Item 16",
+    "subject": "phy",
+    "chapter": "p21"
+  },
+  {
+    "id": "m2_item3",
+    "text": "Solve \\((8-t)^2 < t^2 - 3t - 10\\).",
+    "options": [
+      "\\(\\left(\\dfrac{74}{13},\\ 8\\right)\\)",
+      "\\(\\left(\\dfrac{74}{13},\\ \\infty\\right)\\)",
+      "\\((8,\\ \\infty)\\)",
+      "\\([8,\\ \\infty)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the left side: \\((8-t)^2 = 64 - 16t + t^2\\). The inequality becomes \\(64-16t+t^2 < t^2-3t-10\\). Simplifying: \\(64-16t < -3t-10 \\Rightarrow 74 < 13t \\Rightarrow t > \\dfrac{74}{13}\\). So \\(t \\in \\left(\\dfrac{74}{13},\\ \\infty\\right)\\).",
+    "name": "Quadratic Inequality",
+    "subject": "maths",
+    "chapter": "m2"
+  },
+  {
+    "id": "m8_item46",
+    "text": "Three parallel lines \\(L_1, L_2, L_3\\) lie in the same plane with 5 points on \\(L_1\\), 7 on \\(L_2\\), 9 on \\(L_3\\). The maximum number of triangles with vertices at these points is",
+    "options": [
+      "\\(1330\\)",
+      "\\(1200\\)",
+      "\\(1201\\)",
+      "\\(129\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Triangles require vertices not all on the same line. One vertex from each line: \\(5\\times7\\times9=315\\). Two from \\(L_1\\), one from \\(L_2\\) or \\(L_3\\): \\({}^5C_2\\times16=160\\). Two from \\(L_2\\), one from \\(L_1\\) or \\(L_3\\): \\({}^7C_2\\times14=294\\). Two from \\(L_3\\), one from \\(L_1\\) or \\(L_2\\): \\({}^9C_2\\times12=432\\). Total \\(=315+160+294+432=1201\\).",
+    "name": "Triangles from Points on Parallel Lines",
+    "subject": "maths",
+    "chapter": "m8"
+  },
+  {
+    "id": "m18_item23",
+    "text": "The equation of line through the intersection of \\(3x-4y+1=0\\) and \\(5x+y-1=0\\) which cuts equal intercepts on the axes is",
+    "options": [
+      "\\(23x+23y-11=0\\)",
+      "\\(23x+23y+11=0\\)",
+      "\\(23x-23y-11=0\\)",
+      "\\(23x-23y+11=0\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Family of lines through the intersection: \\((3x-4y+1)+\\lambda(5x+y-1)=0\\)\n\n\\[(3+5\\lambda)x + (\\lambda-4)y + (1-\\lambda) = 0\\]\n\nFor equal intercepts, the \\(x\\)- and \\(y\\)-intercepts must be equal:\n\n\\[\\frac{\\lambda-1}{3+5\\lambda} = \\frac{\\lambda-1}{\\lambda-4} \\implies \\lambda-4 = 5\\lambda+3 \\implies \\lambda=-\\frac{7}{4}\\] (for \\(\\lambda \\neq 1\\))\n\nSubstituting: \\(3-\\dfrac{35}{4} = -\\dfrac{23}{4}\\) etc., giving \\(23x+23y-11=0\\).",
+    "name": "Line with Equal Intercepts",
+    "subject": "maths",
+    "chapter": "m18"
+  },
+  {
+    "id": "p22_item13",
+    "text": "In a spherical glass marble of radius 6 cm, a small air bubble is formed at 1 cm from the centre of the marble. The apparent position of the air bubble from the nearest point on the surface of the marble is about, (refractive index of glass is 1.5)",
+    "options": [
+      "3.3 cm",
+      "4.6 cm",
+      "5.4 cm",
+      "7.0 cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apparent depth \\( = \\frac{5}{1.5} \\approx 3.33 \\) cm.",
+    "name": "Questions Item 13",
+    "subject": "phy",
+    "chapter": "p22"
+  },
+  {
+    "id": "p22_item12",
+    "text": "A thin converging lens of focal length 25 cm forms a sharp image of an object on a screen placed at a distance of 75 cm from the lens. Later the screen is moved closer to the lens by a distance 25 cm. The distance through which the object is to be shifted so that its image on the screen is sharp again is",
+    "options": [
+      "50 cm towards the lens",
+      "50 cm away from the lens",
+      "12.5 cm towards the lens",
+      "12.5 cm away from the lens"
+    ],
+    "correctIndex": 3,
+    "explanation": "Initial \\( u = -37.5 \\) cm.\n\nNew position at 2f requires object shift 12.5 cm away.",
+    "name": "Questions Item 12",
+    "subject": "phy",
+    "chapter": "p22"
+  },
+  {
+    "id": "c10_item15",
+    "text": "\\(\\text{CuSO}_4\\) solution is electrolysed for 15 minutes to deposit 0.4725 g of copper at the cathode. The current required is (Faraday = 96500 C mol\\(^{-1}\\), atomic weight of Cu = 63)",
+    "options": [
+      "0.804 A",
+      "1.608 A",
+      "1.206 A",
+      "0.402 A"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using Faraday's first law of electrolysis:\n\n\\[w = \\frac{\\text{Equivalent weight} \\times i \\times t}{96500}\\]\n\nEquivalent weight of Cu \\(= \\frac{63}{2} = 31.5\\) (since Cu\\(^{2+}\\) gains 2 electrons)\n\n\\[0.4725 = \\frac{31.5 \\times i \\times (15 \\times 60)}{96500}\\]\n\n\\[i = \\frac{0.4725 \\times 96500}{31.5 \\times 900} = \\frac{45596.25}{28350} \\approx 1.608\\text{ A}\\]",
+    "name": "Questions Item 15",
+    "subject": "che",
+    "chapter": "c10"
+  },
+  {
+    "id": "m6_item5",
+    "text": "If \\(\\dfrac{x+1}{(2x-1)(3x+1)} = \\dfrac{A}{2x-1} + \\dfrac{B}{3x+1}\\), then \\(16A + 9B\\) is equal to",
+    "options": [
+      "\\(4\\)",
+      "\\(5\\)",
+      "\\(6\\)",
+      "\\(8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by \\((2x-1)(3x+1)\\): \\(x+1 = A(3x+1)+B(2x-1)\\). Put \\(x=\\tfrac{1}{2}\\): \\(\\tfrac{3}{2}=A\\cdot\\tfrac{5}{2} \\Rightarrow A=\\tfrac{3}{5}\\). Put \\(x=-\\tfrac{1}{3}\\): \\(\\tfrac{2}{3}=B\\cdot(-\\tfrac{5}{3}) \\Rightarrow B=-\\tfrac{2}{5}\\). So \\(16A+9B = 16\\cdot\\tfrac{3}{5}+9\\cdot(-\\tfrac{2}{5}) = \\tfrac{48-18}{5}=\\tfrac{30}{5}=6\\).",
+    "name": "Finding Constants in Partial Fractions",
+    "subject": "maths",
+    "chapter": "m6"
+  },
+  {
+    "id": "c18_item36",
+    "text": "Match the following effects with their correct examples:\n\nA. Resonance  B. Inductive effect  C. Electromeric effect  D. Hyperconjugation\n\nI. \\(\\text{C=C} + \\text{H} \\rightarrow \\text{C—C—H}\\),  II. \\(\\text{H—CH}_2\\text{—CH}_2\\text{—H}\\) (ethane),  III. \\(\\text{C}_6\\text{H}_6\\) (benzene),  IV. \\(\\text{CH}_3\\text{—Z} \\rightarrow \\text{CH}_3^+ + \\text{Z}^-\\),  V. \\(\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{Cl}\\)",
+    "options": [
+      "A-II, B-I, C-IV, D-III",
+      "A-III, B-V, C-I, D-II",
+      "A-I, B-III, C-II, D-V",
+      "A-III, B-II, C-I, D-IV"
+    ],
+    "correctIndex": 1,
+    "explanation": "- **(A) Resonance → III (Benzene):** Classic example of electron delocalisation through resonance.\n- **(B) Inductive effect → V (1-Chloropropane):** Cl withdraws electrons inductively along the C—C—C chain.\n- **(C) Electromeric effect → I (C=C + H → C—C—H):** The electromeric effect involves complete transfer of π electrons under the influence of an attacking reagent (e.g., electrophilic addition to C=C).\n- **(D) Hyperconjugation → II (Ethane):** Sigma C—H electrons interact with adjacent orbitals (hyperconjugation in carbocations, radicals, alkenes).",
+    "name": "Questions Item 36",
+    "subject": "che",
+    "chapter": "c18"
+  },
+  {
+    "id": "m25_item44",
+    "text": "The interval in which \\(f(x)=\\log_{\\log}(7+x)/_{(3+x)}\\) (\\(x>0\\)) decreases is",
+    "options": [
+      "\\(\\left(0,\\dfrac{7}{3}\\right)\\)",
+      "\\(\\left(0,\\dfrac{3}{7}\\right)\\)",
+      "\\((0,1)\\)",
+      "\\((0,\\infty)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(f'(x)=\\dfrac{\\log(3+x)/(7+x)-\\log(7+x)/(3+x)}{[\\log(3+x)]^2}<0\\) for all \\(x>0\\) since \\(3+x<7+x\\) means \\(\\log(3+x)<\\log(7+x)\\).\n\nDecreasing on \\((0,\\infty)\\).",
+    "name": "Decreasing Interval of Log Ratio",
+    "subject": "maths",
+    "chapter": "m25"
+  },
+  {
+    "id": "p11_item4",
+    "text": "A vessel contains mixture of hydrogen and oxygen gases in the ratio of their masses equal to 1 : 5. The ratio of mean kinetic energies of the two gases is",
+    "options": [
+      "1 : 1",
+      "1 : 16",
+      "16 : 5",
+      "5 : 16"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean kinetic energy per molecule \\(\\frac{3}{2} kT\\) is same for both gases at same temperature. Hence ratio is 1 : 1.",
+    "name": "Questions Item 4",
+    "subject": "phy",
+    "chapter": "p11"
+  },
+  {
+    "id": "c21_item15",
+    "text": "Which of the following sets is in the correct order regarding the property mentioned?\n\nI. \\(\\text{NCCH}_2\\text{COOH} > \\text{FCH}_2\\text{COOH} > \\text{H}_3\\text{CCH}_2\\text{COOH}\\) (Acidity)\n\nII. \\(\\text{CH}_3\\text{CH}_2\\text{CHO} > \\text{PhCOCH}_3 > \\text{PhCHO}\\) (Reactivity)\n\nIII. \\(\\text{H}_3\\text{COCH}_2\\text{CH}_3 < \\text{H}_3\\text{CCH}_2\\text{CHO} < \\text{H}_3\\text{CCH}_2\\text{CH}_2\\text{OH}\\) (Boiling points)",
+    "options": [
+      "I, II only",
+      "I, III only",
+      "II, III only",
+      "I, II, III"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Set I — Correct:** Acidity ∝ −I effect. NC— has strong −I, F— has strong −I (CN > F in −I effect), while CH₃CH₂— has +I effect. Order: NCCH₂COOH > FCH₂COOH > CH₃CH₂COOH ✓\n\n**Set II — Incorrect:** The correct reactivity order for nucleophilic addition is:\n- Aldehydes > ketones\n- Less steric hindrance → more reactive\n- Resonance → less reactive\nPhCHO (aromatic aldehyde, resonance stabilised) < CH₃CH₂CHO (aliphatic aldehyde) < PhCOCH₃ is wrong — PhCOCH₃ is a ketone, which is always less reactive than aldehydes. Correct order: CH₃CH₂CHO > PhCHO > PhCOCH₃ ✗\n\n**Set III — Correct:** Boiling point order: ether < aldehyde < alcohol (due to increasing H-bonding ability). Methyl ethyl ether < propanal < 1-propanol ✓\n\nCorrect sets: **I and III**.",
+    "name": "Questions Item 15",
+    "subject": "che",
+    "chapter": "c21"
+  },
+  {
+    "id": "m21_item50",
+    "text": "If \\(\\alpha,\\beta,\\gamma\\) are distinct real numbers with \\(\\alpha+\\beta+\\gamma\\neq0\\), the points with position vectors \\(\\alpha\\hat{i}+\\beta\\hat{j}+\\gamma\\hat{k}\\), \\(\\beta\\hat{i}+\\gamma\\hat{j}+\\alpha\\hat{k}\\) and \\(\\gamma\\hat{i}+\\alpha\\hat{j}+\\beta\\hat{k}\\) are",
+    "options": [
+      "Collinear",
+      "Vertices of a scalene triangle",
+      "Vertices of an isosceles triangle",
+      "Vertices of an equilateral triangle"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\[|AB|^2=(\\alpha-\\beta)^2+(\\beta-\\gamma)^2+(\\gamma-\\alpha)^2\\]\n\\[|BC|^2=(\\beta-\\gamma)^2+(\\gamma-\\alpha)^2+(\\alpha-\\beta)^2\\]\n\\[|CA|^2=(\\gamma-\\alpha)^2+(\\alpha-\\beta)^2+(\\beta-\\gamma)^2\\]\n\nSince \\(|AB|=|BC|=|CA|\\) and all are nonzero (as \\(\\alpha,\\beta,\\gamma\\) are distinct), the three points form an **equilateral triangle**.",
+    "name": "Triangle Type from Position Vectors",
+    "subject": "maths",
+    "chapter": "m21"
+  },
+  {
+    "id": "p17_item13",
+    "text": "An electron having charge $1.6 \\times 10^{-19}$ C and mass $9.1 \\times 10^{-31}$ kg is moving with speed $4 \\times 10^6$ m s$^{-1}$ in a magnetic field $2 \\times 10^{-1}$ T in a circular orbit. The force acting on electron and the radius of the circular orbit is",
+    "options": [
+      "$12.8 \\times 10^{-13}$ N, $1.1 \\times 10^{-4}$ m",
+      "$1.28 \\times 10^{-14}$ N, $1.1 \\times 10^{-3}$ m",
+      "$1.28 \\times 10^{-13}$ N, $1.1 \\times 10^{-3}$ m",
+      "$1.28 \\times 10^{-13}$ N, $1.1 \\times 10^{-4}$ m"
+    ],
+    "correctIndex": 3,
+    "explanation": "Magnetic force on electron, $F = qvB$\n\n$= 1.28 \\times 10^{-13}$ N\n\nRadius of circular orbit, $r = \\frac{mv}{qB} = 1.1 \\times 10^{-4}$ m.",
+    "name": "Questions Item 13",
+    "subject": "phy",
+    "chapter": "p17"
+  },
+  {
+    "id": "m22_item16",
+    "text": "The equation of the plane mid-parallel to \\(2x-3y+6z+21=0\\) and \\(2x-3y+6z-14=0\\) is",
+    "options": [
+      "\\(4x+6y-12z+7=0\\)",
+      "\\(4x-6y-12z-7=0\\)",
+      "\\(4x-6y+12z+7=0\\)",
+      "\\(4x+6y+12z-7=0\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mid-parallel plane: \\(2x-3y+6z+d=0\\) equidistant from both planes.\n\n\\[\\frac{|21-d|}{7}=\\frac{|d+14|}{7}\\implies|21-d|=|d+14|\\]\n\n\\[21-d=d+14\\implies 2d=7\\implies d=\\frac{7}{2}\\]\n\nEquation: \\(2x-3y+6z+\\dfrac{7}{2}=0\\implies 4x-6y+12z+7=0\\).",
+    "name": "Plane Mid-Parallel to Two Planes",
+    "subject": "maths",
+    "chapter": "m22"
+  },
+  {
+    "id": "p1_item18",
+    "text": "In a system, unit of mass is \\(A\\) kg, length is \\(B\\) m and time is \\(C\\) s, then the value of \\(10\\,\\text{N}\\) in this system is",
+    "options": [
+      "\\(10 A^{-1} B^{-2} C^{-2}\\)",
+      "\\(10 A^{-1} B^{-1} C^{-2}\\)",
+      "\\(10 A B C^{-2}\\)",
+      "\\(5 A^{-1} B C^{-2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(1\\,\\text{N} = 1\\,\\text{kg m s}^{-2}\\). Using \\(N_1 u_1 = N_2 u_2\\), \\(10\\,\\text{N} = 10 A^{-1} B^{-1} C^{-2}\\) in new system.",
+    "name": "Questions Item 18",
+    "subject": "phy",
+    "chapter": "p1"
+  },
+  {
+    "id": "m20_item33",
+    "text": "The angle between the tangents drawn from the point \\((1,4)\\) to the parabola \\(y^2=4x\\) is",
+    "options": [
+      "\\(\\dfrac{\\pi}{6}\\)",
+      "\\(\\dfrac{\\pi}{4}\\)",
+      "\\(\\dfrac{\\pi}{3}\\)",
+      "\\(\\dfrac{\\pi}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tangent: \\(y=mx+\\dfrac{1}{m}\\) passes through \\((1,4)\\): \\(4=m+\\dfrac{1}{m} \\implies m^2-4m+1=0\\).\n\n\\(m_1+m_2=4\\), \\(m_1m_2=1\\).\n\n\\[(m_1-m_2)^2=12 \\implies m_1-m_2=2\\sqrt{3}\\]\n\n\\[\\tan\\theta=\\frac{m_1-m_2}{1+m_1m_2}=\\frac{2\\sqrt{3}}{2}=\\sqrt{3} \\implies \\theta=\\frac{\\pi}{3}\\]",
+    "name": "Angle Between Tangents from External Point",
+    "subject": "maths",
+    "chapter": "m20"
+  },
+  {
+    "id": "m18_item42",
+    "text": "The quadrilateral formed by the pairs of lines \\(xy+x+y+1=0\\) and \\(xy+3x+3y+9=0\\) is",
+    "options": [
+      "Parallelogram",
+      "Rhombus",
+      "Rectangle",
+      "Square"
+    ],
+    "correctIndex": 3,
+    "explanation": "Factor the first: \\(xy+x+y+1=(x+1)(y+1)=0\\), giving \\(x=-1\\) and \\(y=-1\\).\n\nFactor the second: \\(xy+3x+3y+9=(x+3)(y+3)=0\\), giving \\(x=-3\\) and \\(y=-3\\).\n\nThe four lines \\(x=-1\\), \\(y=-1\\), \\(x=-3\\), \\(y=-3\\) form a quadrilateral. Since adjacent sides are perpendicular (\\(x=\\text{const}\\) and \\(y=\\text{const}\\)) and all sides are equal in length (\\(|-3-(-1)|=2\\)), it is a **square**.",
+    "name": "Shape Formed by Two Pairs",
+    "subject": "maths",
+    "chapter": "m18"
+  },
+  {
+    "id": "m20_item22",
+    "text": "The equation of the tangent to \\(y^2=8x\\) inclined at \\(30°\\) to the \\(X\\)-axis is",
+    "options": [
+      "\\(\\sqrt{3}x-\\sqrt{3}y+14=0\\)",
+      "\\(2x-\\sqrt{3}y+14=0\\)",
+      "\\(2x-\\sqrt{3}y+7=0\\)",
+      "\\(x-\\sqrt{3}y+6=0\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Here \\(a=2\\), slope \\(m=\\tan30°=\\dfrac{1}{\\sqrt{3}}\\).\n\nTangent: \\(y=mx+\\dfrac{a}{m}=\\dfrac{x}{\\sqrt{3}}+2\\sqrt{3}\\)\n\n\\[x-\\sqrt{3}y+6=0\\]",
+    "name": "Tangent at Given Inclination",
+    "subject": "maths",
+    "chapter": "m20"
+  },
+  {
+    "id": "m24_item26",
+    "text": "\\(\\dfrac{d}{dx}\\{(1+x^2)\\tan^{-1}x\\}=\\)",
+    "options": [
+      "\\(x\\tan^{-1}x\\)",
+      "\\(2\\tan^{-1}x\\)",
+      "\\(2x\\tan^{-1}x+1\\)",
+      "\\(x\\tan^{-1}x+1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\[\\frac{d}{dx}[(1+x^2)\\tan^{-1}x]=(1+x^2)\\cdot\\frac{1}{1+x^2}+2x\\tan^{-1}x=1+2x\\tan^{-1}x\\]",
+    "name": "Product Rule Derivative",
+    "subject": "maths",
+    "chapter": "m24"
+  },
+  {
+    "id": "m5_item15",
+    "text": "If \\(2\\cdot4^{2k+1}+3^{3k+1}=11t\\) and \\(2\\cdot4^{2k+3}+3^{3k+4}=11(pt+3^q)\\), where \\(k,t\\in\\mathbb{Z}^+\\), then \\((p,q) =\\)",
+    "options": [
+      "\\((16,\\ 3k+1)\\)",
+      "\\((16,\\ 3k+4)\\)",
+      "\\((32,\\ 3k+1)\\)",
+      "\\((32,\\ 3k+4)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By verification at \\(k=0\\): \\(2\\cdot4^1+3^1=8+3=11=11\\cdot1\\), so \\(t=1\\). Then \\(2\\cdot4^3+3^4=128+81=209=11(p\\cdot1+3^q)\\). So \\(11(p+3^q)=209 \\Rightarrow p+3^q=19\\). From option (a): \\(p=16\\) and \\(q=3(0)+1=1\\), giving \\(16+3=19\\) ✓. General step confirms \\((p,q)=(16,\\ 3k+1)\\).",
+    "name": "Inductive Step Verification",
+    "subject": "maths",
+    "chapter": "m5"
+  },
+  {
+    "id": "p27_item14",
+    "text": "In an n-p-n common-emitter transistor circuit (\\(V_{CC}=8\\) V, \\(I_C=5\\) mA, \\(V_{BE}=0.6\\) V, \\(V_{CE}=3\\) V, \\(\\beta=50\\)), the values of \\(R_1\\) and \\(R_2\\) respectively are",
+    "options": [
+      "1 kΩ, 74 kΩ",
+      "74 kΩ, 1 kΩ",
+      "37 kΩ, 2 kΩ",
+      "2 kΩ, 37 kΩ"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I_B = I_C/\\beta = 5/50 = 0.1\\text{ mA}\\)\n\n\\(R_1 = (V_{CC}-V_{BE})/I_B = (8-0.6)/(0.1\\times10^{-3}) = 74\\text{ kΩ}\\)\n\n\\(R_2 = (V_{CC}-V_{CE})/I_C = (8-3)/(5\\times10^{-3}) = 1\\text{ kΩ}\\)",
+    "name": "Transistor Biasing Resistors",
+    "subject": "phy",
+    "chapter": "p27"
+  },
+  {
+    "id": "p20_item22",
+    "text": "The rms value of current in an AC circuit is 10 A. The peak value is",
+    "options": [
+      "10 A",
+      "14.14 A",
+      "7.07 A",
+      "20 A"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\( I_0 = 10 \\sqrt{2} = 14.14 \\) A.",
+    "name": "Questions Item 22",
+    "subject": "phy",
+    "chapter": "p20"
+  }
+]

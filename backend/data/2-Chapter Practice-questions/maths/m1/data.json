@@ -38,32 +38,7 @@
     "explanation": "Rationalise: \\(\\dfrac{i}{1-i} = \\dfrac{i(1+i)}{(1-i)(1+i)} = \\dfrac{i + i^2}{1+1} = \\dfrac{-1+i}{2} = -\\dfrac{1}{2} + \\dfrac{1}{2}i\\). Comparing with \\(a + bi\\), we get \\(a = -\\dfrac{1}{2}\\) and \\(b = \\dfrac{1}{2}\\).",
     "name": "Complex Number Standard Form"
   },
-  {
-    "id": "m1_item4",
-    "text": "Let \\(z_1, z_2\\) be two complex numbers such that \\(z_1 - iz_2 = 0\\) and \\(\\arg(z_1 z_2) = \\dfrac{3\\pi}{4}\\). Then \\(\\arg(z_1) =\\)",
-    "options": [
-      "\\(\\dfrac{\\pi}{4}\\)",
-      "\\(-\\dfrac{\\pi}{8}\\)",
-      "\\(\\dfrac{\\pi}{8}\\)",
-      "\\(\\dfrac{\\pi}{3}\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "From \\(z_1 - iz_2 = 0 \\Rightarrow z_1 = iz_2\\). This means \\(\\arg(z_1) = \\arg(z_2) + \\dfrac{\\pi}{2}\\), i.e., \\(\\arg(z_2) = \\arg(z_1) - \\dfrac{\\pi}{2}\\). Let \\(\\arg(z_1) = \\theta\\). Then \\(\\arg(z_1 z_2) = \\arg(z_1) + \\arg(z_2) = \\theta + \\theta - \\dfrac{\\pi}{2} = 2\\theta - \\dfrac{\\pi}{2} = \\dfrac{3\\pi}{4}\\). Solving: \\(2\\theta = \\dfrac{3\\pi}{4} + \\dfrac{\\pi}{2} = \\dfrac{5\\pi}{4}\\), so \\(\\theta = \\dfrac{\\pi}{8}\\).",
-    "name": "Argument of Complex Number"
-  },
-  {
-    "id": "m1_item5",
-    "text": "If \\(x + iy = \\dfrac{(3+2i)(4-7i)(12+13i)}{(13-12i)(2-3i)(11+3i)}\\), then \\(x^2 + y^2 =\\)",
-    "options": [
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(\\dfrac{1}{2}\\)",
-      "\\(3\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Use the modulus property \\(|z| = \\dfrac{|3+2i|\\cdot|4-7i|\\cdot|12+13i|}{|13-12i|\\cdot|2-3i|\\cdot|11+3i|}\\). Compute each: \\(|3+2i|=\\sqrt{13}\\), \\(|4-7i|=\\sqrt{65}\\), \\(|12+13i|=\\sqrt{313}\\), \\(|13-12i|=\\sqrt{313}\\), \\(|2-3i|=\\sqrt{13}\\), \\(|11+3i|=\\sqrt{130}\\). So \\(|z|^2 = \\dfrac{13 \\cdot 65 \\cdot 313}{313 \\cdot 13 \\cdot 130} = \\dfrac{65}{130} = \\dfrac{1}{2}\\). Hence \\(x^2 + y^2 = \\dfrac{1}{2}\\).",
-    "name": "Modulus of Complex Fraction"
-  },
+  
   {
     "id": "m1_item6",
     "text": "What is the modulus of the complex number \\((1+2i)(-2+i)\\)?",
@@ -116,19 +91,7 @@
     "explanation": "Start with the general circle in Cartesian form: \\(x^2+y^2+2gx+2fy+c=0\\). Let \\(z = x+iy\\), so \\(z\\bar{z} = x^2+y^2\\), \\(z+\\bar{z}=2x\\), \\(z-\\bar{z}=2iy\\). Substituting: \\(z\\bar{z} + g(z+\\bar{z}) + if(z-\\bar{z}) + c = 0 \\Rightarrow z\\bar{z} + (g-if)\\bar{z} + (g+if)z + c = 0\\). Setting \\(b = g+if\\), this becomes \\(z\\bar{z} + b\\bar{z} + \\bar{b}z + c = 0\\), which is the standard complex form of a circle.",
     "name": "Circle in Complex Plane"
   },
-  {
-    "id": "m1_item10",
-    "text": "Let \\(z = x + yi\\), where \\(x, y\\) are integers. The area of the rectangle whose vertices are the roots of the equation \\(z\\bar{z}^3 + \\bar{z}z^3 = 350\\) is",
-    "options": [
-      "\\(32\\)",
-      "\\(40\\)",
-      "\\(48\\)",
-      "\\(80\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Rewrite: \\(z\\bar{z}^3 + \\bar{z}z^3 = z\\bar{z}(\\bar{z}^2 + z^2) = |z|^2 \\cdot 2(x^2 - y^2) = 350\\), so \\((x^2+y^2)(x^2-y^2)=175\\). Since \\(x,y\\) are integers, try \\(x^2+y^2=25\\) and \\(x^2-y^2=7\\), giving \\(x^2=16, y^2=9\\), i.e. \\(x=\\pm4, y=\\pm3\\). The vertices are \\((\\pm4, \\pm3)\\), forming a rectangle of width \\(2\\times4=8\\) and height \\(2\\times3=6\\). Area \\(= 8\\times6=48\\).",
-    "name": "Rectangle from Complex Equation Roots"
-  },
+  
   {
     "id": "m1_item11",
     "text": "If \\(m\\) and \\(n\\) are the least and greatest values of \\(|z|\\) respectively, given \\(|z - 4 + 3i| \\leq 1\\), and \\(k\\) is the least value of \\(\\dfrac{x^4+x^2+4}{x}\\) on \\((0,\\infty)\\), then \\(k =\\)",
@@ -350,32 +313,7 @@
     "explanation": "Write \\(\\dfrac{2z-3}{z+4i} = \\dfrac{(2x-3)+2iy}{x+i(y+4)}\\). Rationalising and separating real and imaginary parts, \\(\\arg = \\dfrac{\\pi}{4}\\) means \\(\\text{Im}/\\text{Re} = 1\\), i.e. the imaginary part equals the real part. Setting them equal and simplifying gives \\(2x^2+2y^2+5x+5y-12=0\\).",
     "name": "Locus from Argument Condition"
   },
-  {
-    "id": "m1_item28",
-    "text": "If \\(z = x+iy\\), \\(x,y \\in \\mathbb{R}\\), and the imaginary part of \\(\\dfrac{z-1}{z-i}\\) is \\(1\\), then the locus of \\(z\\) is",
-    "options": [
-      "\\(x+y+1=0\\)",
-      "\\(x+y+1=0,\\ (x,y)\\neq(0,-1)\\)",
-      "\\(x^2+y^2-x+3y+2=0\\)",
-      "\\(x^2+y^2-x+3y+2=0,\\ (x,y)\\neq(0,-1)\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "Let \\(z=x+iy\\). Then \\(\\dfrac{z-1}{z-i} = \\dfrac{(x-1)+iy}{x+i(y-1)}\\). Rationalising: the imaginary part \\(= \\dfrac{(y-1)(x-1)-xy}{x^2+(y-1)^2} = \\dfrac{x-y-1}{x^2+(y-1)^2}\\). Setting this equal to 1 gives \\(x-y-1 = x^2+y^2-2y+1 \\Rightarrow x^2+y^2-x+3y+2=0\\), with the exclusion \\((x,y)\\neq(0,-1)\\) since that makes the original expression undefined.",
-    "name": "Imaginary Part Locus"
-  },
-  {
-    "id": "m1_item29",
-    "text": "If \\(\\omega\\) represents a complex cube root of unity, then \\(\\displaystyle\\sum_{r=1}^{n}\\left(r+\\frac{1}{\\omega}\\right)\\!\\left(r+\\frac{1}{\\omega^2}\\right) =\\)",
-    "options": [
-      "\\(\\dfrac{n(n^2+1)}{3}\\)",
-      "\\(\\dfrac{n(n^2+2)}{3}\\)",
-      "\\(\\dfrac{n(n^2-2)}{3}\\)",
-      "\\(\\dfrac{n^2(n-1)}{6}\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "Since \\(\\omega^3=1\\) and \\(1+\\omega+\\omega^2=0\\), we get \\(\\dfrac{1}{\\omega}=\\omega^2\\) and \\(\\dfrac{1}{\\omega^2}=\\omega\\). Each term: \\((r+\\omega^2)(r+\\omega) = r^2 + r(\\omega+\\omega^2)+\\omega^3 = r^2 + r(-1)+1 = r^2-r+1\\). Sum: \\(\\displaystyle\\sum_{r=1}^{n}(r^2-r+1) = \\dfrac{n(n+1)(2n+1)}{6} - \\dfrac{n(n+1)}{2} + n = \\dfrac{n(n+1)(2n+1)-3n(n+1)+6n}{6} = \\dfrac{n(n^2+2)}{3}\\).",
-    "name": "Sum with Cube Roots of Unity"
-  },
+  
   {
     "id": "m1_item30",
     "text": "If \\(\\omega\\) is a complex cube root of unity, then \\(\\displaystyle\\sum_{r=1}^{9} r(r+1-\\omega)(r+1-\\omega^2) =\\)",
@@ -441,19 +379,7 @@
     "explanation": "Substitute \\(x=i\\) in \\((1+x)^n\\): \\((1+i)^n = a_0-a_2+a_4-\\cdots + i(a_1-a_3+\\cdots)\\). Since \\(1+i = \\sqrt{2}e^{i\\pi/4}\\), we get \\((1+i)^n = 2^{n/2}\\left(\\cos\\dfrac{n\\pi}{4}+i\\sin\\dfrac{n\\pi}{4}\\right)\\). Comparing real parts: \\(a_0-a_2+a_4-\\cdots = 2^{n/2}\\cos\\dfrac{n\\pi}{4}\\). So \\(k = 2^{n/2}\\).",
     "name": "Binomial with Complex Substitution"
   },
-  {
-    "id": "m1_item35",
-    "text": "If \\(z = x-iy\\) and \\(z^{1/3} = a+ib\\), then \\(\\dfrac{x}{a}+\\dfrac{y}{b} =\\) (given \\(a^2+b^2\\neq 0\\))",
-    "options": [
-      "\\(-2\\)",
-      "\\(-1\\)",
-      "\\(1\\)",
-      "\\(2\\)"
-    ],
-    "correctIndex": 0,
-    "explanation": "Cube both sides: \\(z = (a+ib)^3 = a^3-3ab^2 + i(3a^2b-b^3)\\). Since \\(z=x-iy\\), comparing: \\(x=a^3-3ab^2=a(a^2-3b^2)\\) and \\(-y=3a^2b-b^3=b(3a^2-b^2)\\), so \\(y=b(b^2-3a^2)\\). Then \\(\\dfrac{x}{a}+\\dfrac{y}{b} = (a^2-3b^2)+(b^2-3a^2) = -2a^2-2b^2 = -2(a^2+b^2)\\). Divide by \\(a^2+b^2\\)... actually the expression is \\(\\dfrac{x/a + y/b}{1}\\) and we get \\(-2(a^2+b^2)/(a^2+b^2)... \\) wait: the question asks for \\(\\dfrac{x}{a}+\\dfrac{y}{b}\\) directly: \\(= (a^2-3b^2)+(b^2-3a^2) = -2(a^2+b^2)\\). But looking at the answer choices and the PDF solution: \\(\\dfrac{x}{a}+\\dfrac{y}{b} = -2\\). The factor \\(a^2+b^2\\) cancels because the expression equals \\(-2(a^2+b^2)/(a^2+b^2)\\times(a^2+b^2)\\)... Per the PDF solution the direct value is \\(-2\\).",
-    "name": "Cube Root of Complex Number"
-  },
+  
   {
     "id": "m1_item36",
     "text": "The equation whose solutions are the non-zero solutions of \\(z = iz^2\\) is",
@@ -532,19 +458,7 @@
     "explanation": "For \\(C_1\\): \\(\\dfrac{2z+i}{z-2}\\) purely imaginary means \\(\\text{Re}\\!\\left(\\dfrac{2z+i}{z-2}\\right)=0\\). With \\(z=x+iy\\): \\(2x(x-2)+y(2y+1)=0 \\Rightarrow 2x^2+2y^2-4x+y=0\\) ...(i). For \\(C_2\\): \\(\\arg\\!\\left(\\dfrac{z+i}{z+1}\\right)=\\dfrac{\\pi}{2}\\) means \\(\\text{Re}\\!\\left(\\dfrac{z+i}{z+1}\\right)=0 \\Rightarrow x^2+y^2+x+y=0\\) ...(ii). Subtracting (ii) from (i): \\(x^2+y^2-5x=0\\)... The common chord of the two circles is \\(S_1-S_2=0 \\Rightarrow y+6x=0\\). Solving with circle (ii): \\(37x^2-5x=0 \\Rightarrow x=0\\) or \\(x=\\dfrac{5}{37}\\), giving \\(y=-\\dfrac{30}{37}\\). The non-origin intersection is \\(\\left(\\dfrac{5}{37},\\ -\\dfrac{30}{37}\\right)\\).",
     "name": "Intersection of Complex Loci"
   },
-  {
-    "id": "m1_item42",
-    "text": "If \\(z = \\cos 6^\\circ + i\\sin 6^\\circ\\), then \\(\\displaystyle\\sum_{n=1}^{20} \\operatorname{Im}(z^{2n-1}) =\\)",
-    "options": [
-      "\\(0\\)",
-      "\\(-1\\)",
-      "\\(-\\dfrac{3}{4\\sin 6^\\circ}\\)",
-      "\\(\\dfrac{3}{4\\sin 6^\\circ}\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "We need \\(\\operatorname{Im}(z+z^3+z^5+\\cdots+z^{39})\\). Since \\(z=e^{i6^\\circ}\\), this is a geometric series: sum \\(=e^{i6^\\circ}\\cdot\\dfrac{1-e^{i240^\\circ}}{1-e^{i12^\\circ}}\\). Computing the imaginary part of this sum simplifies (using \\(e^{i240^\\circ}-1 = -\\dfrac{3}{2}-\\dfrac{\\sqrt{3}}{2}i\\)) to \\(\\dfrac{3}{4\\sin 6^\\circ}\\).",
-    "name": "Imaginary Part Geometric Series"
-  },
+  
   {
     "id": "m1_item43",
     "text": "If \\(z=x+iy\\), \\(x,y\\in\\mathbb{R}\\), and the point \\(P\\) in the Argand plane represents \\(z\\), then the locus of \\(P\\) satisfying \\(\\arg\\!\\left(\\dfrac{z-1}{z-3i}\\right)=\\dfrac{\\pi}{2}\\) is",
@@ -571,19 +485,7 @@
     "explanation": "\\(|PQ| = |ze^{i\\pi/3}-z| = |z||e^{i\\pi/3}-1|\\). Computing: \\(e^{i\\pi/3}-1 = \\cos 60^\\circ-1+i\\sin 60^\\circ = -\\dfrac{1}{2}+i\\dfrac{\\sqrt{3}}{2}\\), so \\(|e^{i\\pi/3}-1|=1\\). Hence \\(|PQ|=|z|\\). Similarly \\(|QR|=|z|\\) and \\(|PR|=|z|\\), so \\(\\triangle PQR\\) is equilateral with side \\(|z|\\). Area of equilateral triangle \\(=\\dfrac{\\sqrt{3}}{4}|z|^2\\).",
     "name": "Area of Triangle in Argand Plane"
   },
-  {
-    "id": "m1_item45",
-    "text": "\\(A(z_1)\\) and \\(B(z_2)\\) are two points in the Argand plane. The locus of \\(z\\) satisfying \\(\\arg\\!\\left(\\dfrac{z-z_1}{z-z_2}\\right)=0\\) or \\(\\pi\\) is",
-    "options": [
-      "the circle with \\(AB\\) as diameter",
-      "the ellipse with \\(A,B\\) as foci",
-      "the perpendicular bisector of \\(AB\\)",
-      "the straight line through \\(A\\) and \\(B\\)"
-    ],
-    "correctIndex": 3,
-    "explanation": "\\(\\arg\\!\\left(\\dfrac{z-z_1}{z-z_2}\\right)=0\\) means \\(z-z_1\\) and \\(z-z_2\\) are in the same direction (z is on the ray from \\(z_2\\) through \\(z_1\\)). \\(\\arg = \\pi\\) means opposite directions (z is on the extension). Together, both conditions mean \\(z\\), \\(z_1\\), \\(z_2\\) are collinear, i.e. \\(z\\) lies on the straight line passing through both \\(A\\) and \\(B\\).",
-    "name": "Collinearity Condition"
-  },
+  
   {
     "id": "m1_item46",
     "text": "If \\(x\\) is a cube root of unity other than 1, then \\(\\left(x+\\dfrac{1}{x}\\right)^2 + \\left(x^2+\\dfrac{1}{x^2}\\right)^2 + \\cdots + \\left(x^{12}+\\dfrac{1}{x^{12}}\\right)^2 =\\)",
@@ -610,19 +512,7 @@
     "explanation": "By the reverse triangle inequality: \\(\\left||z|-\\dfrac{6}{|z|}\\right| \\leq \\left|z-\\dfrac{6}{z}\\right|=5\\). Let \\(r=|z|\\). Then \\(-5 \\leq r-\\dfrac{6}{r} \\leq 5\\). From \\(r-\\dfrac{6}{r}\\leq 5\\): \\(r^2-5r-6\\leq 0 \\Rightarrow (r-6)(r+1)\\leq 0 \\Rightarrow r\\leq 6\\). From \\(r-\\dfrac{6}{r}\\geq -5\\): \\(r^2+5r-6\\geq 0 \\Rightarrow (r+6)(r-1)\\geq 0 \\Rightarrow r\\geq 1\\). So \\(1\\leq|z|\\leq 6\\), maximum is \\(6\\).",
     "name": "Maximum Modulus"
   },
-  {
-    "id": "m1_item48",
-    "text": "If \\(a=3+4i\\), \\(|z_1|=3\\) and \\(|z_2-a|=2\\), then the maximum value of \\(|z_1-z_2|\\) is",
-    "options": [
-      "\\(5\\)",
-      "\\(10\\)",
-      "\\(15\\)",
-      "\\(20\\)"
-    ],
-    "correctIndex": 1,
-    "explanation": "\\(|z_1|=3\\) is a circle of radius 3 about the origin. \\(|z_2-a|=2\\) with \\(a=3+4i\\) is a circle of radius 2 centred at \\((3,4)\\), which has distance \\(|a|=5\\) from the origin. Maximum \\(|z_1-z_2| \\leq |z_1|+|z_2|\\leq 3+(|a|+2)=3+5+2=10\\).",
-    "name": "Maximum Distance Between Complex Points"
-  },
+  
   {
     "id": "m1_item49",
     "text": "If \\(\\alpha\\) is the real root and \\(\\beta, \\gamma\\) are complex roots of \\(x^3+3x^2+3x+28=0\\), then \\(2\\alpha+3\\beta+3\\gamma =\\)",
@@ -635,18 +525,5 @@
     "correctIndex": 0,
     "explanation": "Rewrite: \\(x^3+3x^2+3x+28 = (x+1)^3+27=0 \\Rightarrow (x+1+3)((x+1)^2-3(x+1)+9)=0 \\Rightarrow (x+4)(x^2-x+7)=0\\). Real root: \\(\\alpha=-4\\). By Vieta's: \\(\\alpha+\\beta+\\gamma=-3 \\Rightarrow \\beta+\\gamma=-3-(-4)=1\\). So \\(2\\alpha+3(\\beta+\\gamma)=2(-4)+3(1)=-8+3=-5\\).",
     "name": "Real and Complex Roots of Cubic"
-  },
-  {
-    "id": "m1_item50",
-    "text": "For a complex number \\(Z=a+ib\\), define \\(\\hat{Z}=b+ia\\). If \\(Z_1, Z_2\\) are two such complex numbers, then \\(\\widehat{Z_1 Z_2} =\\)",
-    "options": [
-      "\\(\\hat{Z}_1\\hat{Z}_2\\)",
-      "\\(\\hat{Z}_1 Z_2\\)",
-      "\\(Z_1\\hat{Z}_2\\)",
-      "\\(\\overline{Z_1}\\hat{Z}_2\\)"
-    ],
-    "correctIndex": 2,
-    "explanation": "Let \\(Z_1=a+ib\\) and \\(Z_2=c+id\\). Then \\(Z_1Z_2=(ac-bd)+i(ad+bc)\\), so \\(\\widehat{Z_1Z_2} = (ad+bc)+i(ac-bd)\\). Now compute \\(Z_1\\hat{Z}_2 = (a+ib)(d+ic) = (ad-bc\\cdot i^2)+i(ac+bd)\\)... let's try \\(\\hat{Z}_1 Z_2 = (b+ia)(c+id) = bc+bdi+iac+i^2ad = (bc-ad)+i(ac+bd)\\). Actually \\(Z_1\\hat{Z}_2 = (a+ib)(d+ic)=(ad+ibc+ibc... = ad-bc+i(ac+bd)\\). The correct match: \\(\\widehat{Z_1Z_2}=(ad+bc)+i(ac-bd)\\). Check \\(Z_1\\hat{Z}_2=(a+ib)(d+ic)=(ad-b\\cdot c \\cdot i^2\\cdot0)\\)... Substituting directly: \\(Z_1\\hat{Z}_2=(a+ib)(d+ic)=ad+iac+ibd+i^2bc=(ad-bc)+i(ac+bd)\\neq\\). The PDF solution confirms \\(\\widehat{Z_1Z_2}=Z_1\\hat{Z}_2\\).",
-    "name": "Hat Operation on Complex Numbers"
   }
 ]
