@@ -11,14 +11,6 @@ export default function CreatorDashboard() {
 
   const [data, setData] = useState(null);
 
-  useEffect(() => {
-    if (!user) return;
-    if (!user.isCreator) {
-      navigate("/");
-    }
-    fetchData();
-  }, [user]);
-
   const fetchData = async () => {
     try {
       const res = await getCreatorDashboard();
@@ -27,6 +19,15 @@ export default function CreatorDashboard() {
       console.error(err);
     }
   };
+
+  useEffect(() => {
+    if (!user) return;
+    if (!user.isCreator) {
+      navigate("/");
+      return;
+    }
+    fetchData();
+  }, [user, navigate]);
 
   if (!data) return <div className="pt-28 text-center">Loading...</div>;
 
@@ -62,13 +63,20 @@ export default function CreatorDashboard() {
 
           <div className="bg-white p-6 rounded-2xl shadow text-center">
             <p className="text-gray-500 text-sm">Total Referrals</p>
-            <h2 className="text-3xl font-bold">{data.totalReferrals}</h2>
+            <h2 className="text-3xl font-bold">{data.referralCount}</h2>
           </div>
 
           <div className="bg-white p-6 rounded-2xl shadow text-center">
             <p className="text-gray-500 text-sm">Paid Referrals</p>
             <h2 className="text-3xl font-bold">{data.paidReferrals}</h2>
           </div>
+          <div className="bg-white p-6 rounded-2xl shadow text-center">
+            <p className="text-gray-500 text-sm">Total Earnings</p>
+            <h2 className="text-3xl font-bold text-green-600 animate-pulse ">
+              ₹{data.earnings}
+            </h2>
+          </div>
+
 
         </div>
 

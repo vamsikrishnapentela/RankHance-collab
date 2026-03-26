@@ -247,7 +247,8 @@ app.post('/api/payment/verify', auth, async (req, res) => {
             const creator = await User.findOne({ referralCode: user.referredBy, isCreator: true });
             if (creator && creator.email !== user.email) {
                 creator.paidReferrals = (creator.paidReferrals || 0) + 1;
-                creator.earnings = (creator.earnings || 0) + Math.floor(0.1 * 99);
+                const commission=creator.commissionRate || 0.1; // default to 10% if not set
+                creator.earnings = (creator.earnings || 0) + Math.floor(commission * 99);
                 await creator.save();
             }
         }
@@ -574,7 +575,7 @@ app.get('/api/creator/dashboard', auth, async (req, res) => {
 
         res.json({
             referralCode: user.referralCode,
-            totalReferrals: referrals.length,
+            referralCount: referrals.length,
             paidReferrals: referrals.filter(u => u.isPaid).length,
             earnings: user.earnings || 0,
             referrals,

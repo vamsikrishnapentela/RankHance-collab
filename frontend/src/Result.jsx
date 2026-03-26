@@ -214,7 +214,7 @@ const Result = () => {
         <Button
           variant="secondary"
           leftIcon={<ArrowLeft className="w-5 h-5" />}
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(`/mock/${testId}`)}
           className="mb-6"
         >
           Back

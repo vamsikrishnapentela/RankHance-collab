@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema({
   isCreator: { type: Boolean, default: false },
   referralCount: { type: Number, default: 0 },    // all signups
   earnings: { type: Number, default: 0 },
-
+  
   paidReferrals: { type: Number, default: 0 },    // paid users
   earnings: { type: Number, default: 0 },
   //admin fields
