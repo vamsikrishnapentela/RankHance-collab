@@ -71,10 +71,9 @@ const Review = () => {
         }
 
         const data = await res.json();
-
+        
         setAttemptMeta({
           testName:         data.testName,
-          score:            data.score,
           totalQuestions:   data.totalQuestions,
           timeTakenSeconds: data.timeTakenSeconds,
           submittedAt:      data.submittedAt,
@@ -93,9 +92,9 @@ const Review = () => {
   }, [testIdFromState]);
 
   // ── Filter logic ──────────────────────────────────────────────────────────
-  const filteredQuestions = questions.filter(q => {
+    const filteredQuestions = questions.filter(q => {
     const sel     = q.selectedOption;   // null = unattempted
-    const correct = sel === q.correctIndex;
+    const correct = String(sel) === String(q.correctIndex);
     if (filter === 'correct')     return sel !== null && correct;
     if (filter === 'wrong')       return sel !== null && !correct;
     if (filter === 'unattempted') return sel === null;
@@ -166,6 +165,9 @@ const Review = () => {
     flagged:     questions.filter(q => q.isFlagged).length,
   };
 
+  const calculatedScore = counts.correct; // Calculate score based on correct answers
+
+
   // ── Render ────────────────────────────────────────────────────────────────
   return (
     <div className="flex-1 w-full bg-gray-50 min-h-[calc(100dvh-64px)] p-6">
@@ -190,7 +192,7 @@ const Review = () => {
             </div>
             <div>
               <div className="text-xs text-gray-400 font-semibold uppercase tracking-wide">Score</div>
-              <div className="font-bold text-[var(--color-primary)] text-2xl">{attemptMeta.score}</div>
+              <div className="font-bold text-[var(--color-primary)] text-2xl">{calculatedScore}/{counts.all}</div>
             </div>
             <div>
               <div className="text-xs text-gray-400 font-semibold uppercase tracking-wide">Correct</div>

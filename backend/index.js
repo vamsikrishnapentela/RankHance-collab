@@ -450,7 +450,7 @@ app.post('/api/mocktest/submit', auth, async (req, res) => {
         let score = 0;
         answerDocs.forEach(a => {
             if (a.selectedOption === null) return;
-            a.selectedOption === correctMap[a.questionId] ? score += 4 : score -= 1;
+            if (a.selectedOption === correctMap[a.questionId]) { score += 1 };
         });
 
         await MockTestAttempt.findOneAndUpdate(
@@ -576,6 +576,7 @@ app.get('/api/creator/dashboard', auth, async (req, res) => {
         res.json({
             referralCode: user.referralCode,
             referralCount: referrals.length,
+            commissionRate: user.commissionRate || 0.1,
             paidReferrals: referrals.filter(u => u.isPaid).length,
             earnings: user.earnings || 0,
             referrals,

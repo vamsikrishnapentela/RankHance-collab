@@ -125,10 +125,13 @@ const Result = () => {
 
     questions.forEach((q) => {
       const userAns   = answers[q.globalIdx];
-      const isCorrect = userAns === q.correctIndex;
+      const isCorrect = String(userAns) === String(q.correctIndex);
 
-      if (userAns !== undefined) { isCorrect ? correct++ : wrong++; }
-      else { unattempted++; }
+      if (userAns === undefined || userAns === null) {
+         unattempted++;
+       } else if (String(userAns) === String(q.correctIndex)) {
+          correct++; }
+      else { wrong++; }
 
       // Subject stats
       const subjectFull = q.subject === 'maths' ? 'maths' : q.subject === 'phy' ? 'physics' : 'chemistry';
@@ -172,7 +175,7 @@ const Result = () => {
     });
 
     const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
-    const score    = Math.round((correct / total) * 100);
+    const score    = correct ;
 
     setStats({ total, correct, wrong, unattempted, score, accuracy, attempted: correct + wrong });
     setSubjectStats(subjStats);
@@ -223,7 +226,7 @@ const Result = () => {
         {/* ── Summary Card ──────────────────────────────────────────────────── */}
         <Card className="mb-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent mb-4">
-            {stats.score}%
+            {stats.score} / {stats.total}
           </h1>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
             <div>

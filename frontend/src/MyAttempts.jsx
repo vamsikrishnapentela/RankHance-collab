@@ -47,7 +47,7 @@ export default function MyAttempts() {
   // Score colour helper
   const scoreColor = (score, total) => {
     if (!total) return 'text-gray-500';
-    const pct = (score / (total * 4)) * 100;
+    const pct = (score / total) * 100;
     if (pct >= 70) return 'text-green-600';
     if (pct >= 40) return 'text-yellow-500';
     return 'text-red-500';
@@ -94,6 +94,7 @@ export default function MyAttempts() {
     );
   }
 
+
   // ── List ───────────────────────────────────────────────────────────────────
   return (
     <div className="flex-1 w-full bg-gray-50 min-h-[calc(100dvh-64px)] py-10">
@@ -107,8 +108,9 @@ export default function MyAttempts() {
         {/* Cards */}
         <div className="space-y-4">
           {attempts.map((a, i) => {
-            const maxScore  = (a.totalQuestions || 0) * 4;
-            const pct       = maxScore > 0 ? Math.round((a.score / maxScore) * 100) : 0;
+            const score= a.correct ?? a.score ?? 0; // Use correct answers as score, default to 0 if not present
+            const maxScore  = a.totalQuestions || 0;
+            const pct       = maxScore > 0 ? Math.round((score / maxScore) * 100) : 0;
 
             return (
               <div
@@ -141,8 +143,8 @@ export default function MyAttempts() {
                 {/* Score */}
                 <div className="flex items-center gap-6 shrink-0">
                   <div className="text-center">
-                    <div className={`text-2xl font-extrabold ${scoreColor(a.score, a.totalQuestions)}`}>
-                      {a.score}
+                    <div className={`text-2xl font-extrabold ${scoreColor(score, a.totalQuestions)}`}>
+                      {score}/{a.totalQuestions}
                     </div>
                     <div className="text-xs text-gray-400 font-medium">Score</div>
                   </div>
