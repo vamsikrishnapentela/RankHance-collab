@@ -230,7 +230,7 @@ app.post('/api/payment/verify', auth, async (req, res) => {
         const user = await User.findById(req.user.id);
         if (!user || user.razorpayOrderId !== razorpay_order_id)
             return res.status(400).json({ message: "Invalid order ID or session mismatch" });
-        if (user.isPaid) return res.json({ success: true, message: "Already verified" });
+        console.log(`Payment verification attempt for user: ${user.email}, isPaid: ${user.isPaid}`);
 
         const generatedSignature = crypto
             .createHmac("sha256", process.env.RAZORPAY_KEY_SECRET || "YOUR_KEY_SECRET")
@@ -254,6 +254,7 @@ app.post('/api/payment/verify', auth, async (req, res) => {
         }
 
         await user.save();
+        console.log(`Payment SUCCESSFULLY verified for user: ${user.email}`);
         res.json({ success: true });
     } catch (err) {
         console.error("Verification error:", err);

@@ -35,12 +35,15 @@ const PaymentModal = ({ isOpen, onClose }) => {
         handler: async (response) => {
           try {
             await verifyPayment(response);
-            alert('Payment Successful! Content Unlocked.');
+            console.log('Payment verified successfully');
+            alert('Payment Successful! Reloading...');
             await refreshUser();
+            window.location.reload(); // Force full refresh
             onClose();
             setIsProcessing(false);
           } catch (err) {
-            alert('Payment verification failed.');
+            console.error('Verify error:', err);
+            alert(`Payment verification failed: ${err.message || err}`);
             setIsProcessing(false);
           }
         },

@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
       const data = await getCurrentUser();
       setUser(data);
     } catch (err) {
-      console.error("Failed to fetch user", err);
+      console.error("Failed to fetch user:", err.response?.data || err.message);
       localStorage.removeItem('rankhance_token');
       setUser(null);
     } finally {
