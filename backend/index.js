@@ -86,7 +86,13 @@ app.post('/api/auth/login', async (req, res) => {
     const { email, password } = req.body;
     try {
         const user = await User.findOne({ email });
-        if (!user || !user.password) return res.status(400).json({ message: 'Invalid credentials' });
+        if (!user) return res.status(400).json({ message: 'Invalid credentials' });
+        
+        if (!user.password && user.googleId) {
+            return res.status(400).json({ message: 'This email is registered via Google. Please use Continue with Google.' });
+        }
+        
+        if (!user.password) return res.status(400).json({ message: 'Invalid credentials' });
 
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) return res.status(400).json({ message: 'Invalid credentials' });
@@ -247,7 +253,7 @@ app.post('/api/payment/verify', auth, async (req, res) => {
             const creator = await User.findOne({ referralCode: user.referredBy, isCreator: true });
             if (creator && creator.email !== user.email) {
                 creator.paidReferrals = (creator.paidReferrals || 0) + 1;
-                const commission=creator.commissionRate || 0.1; // default to 10% if not set
+                const commission = creator.commissionRate || 0; // fetched strictly from MongoDB
                 creator.earnings = (creator.earnings || 0) + Math.floor(commission * 99);
                 await creator.save();
             }
@@ -285,7 +291,8 @@ app.post('/api/payment/verify-redirect', async (req, res) => {
             const creator = await User.findOne({ referralCode: user.referredBy, isCreator: true });
             if (creator && creator.email !== user.email) {
                 creator.paidReferrals = (creator.paidReferrals || 0) + 1;
-                creator.earnings = (creator.earnings || 0) + Math.floor(0.1 * 99); //referal commission
+                const commission = creator.commissionRate || 0; // fetched strictly from MongoDB
+                creator.earnings = (creator.earnings || 0) + Math.floor(commission * 99); // referal commission
                 await creator.save();
             }
         }
@@ -577,7 +584,7 @@ app.get('/api/creator/dashboard', auth, async (req, res) => {
         res.json({
             referralCode: user.referralCode,
             referralCount: referrals.length,
-            commissionRate: user.commissionRate || 0.1,
+            commissionRate: user.commissionRate || 0, // removed hardcoded default
             paidReferrals: referrals.filter(u => u.isPaid).length,
             earnings: user.earnings || 0,
             referrals,

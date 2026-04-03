@@ -22,40 +22,34 @@ export default function Landing() {
 
 
   useEffect(() => {
-    getMockTest(1)
-      .then(data => {
-        setQuestions(data.questions || []);
-      })
-      .catch(() => {
-        console.log("Using fallback mock data for demo");
-        setQuestions([
-          {
-            question: "If sin²θ + cos²θ = ?",
-            options: ["1", "0", "2", "None"],
-            answer: "1"
-          },
-          {
-            question: "Value of tan 45°?",
-            options: ["0", "1", "2", "Undefined"],
-            answer: "1"
-          },
-          {
-            question: "Derivative of x²?",
-            options: ["x", "2x", "x²", "1"],
-            answer: "2x"
-          },
-          {
-            question: "Unit of force?",
-            options: ["Joule", "Pascal", "Newton", "Watt"],
-            answer: "Newton"
-          },
-          {
-            question: "Speed of light?",
-            options: ["3×10^8 m/s", "1×10^6", "9.8", "None"],
-            answer: "3×10^8 m/s"
-          }
-        ]);
-      });
+    // Using hardcoded demo questions to ensure a quick mini-quiz on the landing page without 404 errors.
+    setQuestions([
+      {
+        question: "If sin²θ + cos²θ = ?",
+        options: ["1", "0", "2", "None"],
+        answer: "1"
+      },
+      {
+        question: "Value of tan 45°?",
+        options: ["0", "1", "2", "Undefined"],
+        answer: "1"
+      },
+      {
+        question: "Derivative of x²?",
+        options: ["x", "2x", "x²", "1"],
+        answer: "2x"
+      },
+      {
+        question: "Unit of force?",
+        options: ["Joule", "Pascal", "Newton", "Watt"],
+        answer: "Newton"
+      },
+      {
+        question: "Speed of light?",
+        options: ["3×10^8 m/s", "1×10^6", "9.8", "None"],
+        answer: "3×10^8 m/s"
+      }
+    ]);
   }, []);
 
   useEffect(() => {

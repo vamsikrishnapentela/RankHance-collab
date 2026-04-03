@@ -118,6 +118,7 @@ function AppLayout() {
                     </Link> */}
 
                     {/* ── My Attempts button ─────────────────────────────── */}
+                    {!(user?.isAdmin || user?.isCreator) && (
                     <Link
                       to="/my-attempts"
                       className={`text-[13px] sm:text-sm font-bold px-2 sm:px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap ${location.pathname === '/my-attempts'
@@ -127,6 +128,7 @@ function AppLayout() {
                     >
                       My Attempts
                     </Link>
+                    )}
 
                     {/* ── Profile dropdown ───────────────────────────────── */}
                     <div className="relative" ref={profileRef}>
@@ -168,12 +170,14 @@ function AppLayout() {
                           {/* Actions */}
                           <div className="mt-4 space-y-3">
                             {/* My Attempts inside dropdown too */}
+                            {!(user?.isAdmin || user?.isCreator) && (
                             <button
                               onClick={() => { setShowProfile(false); navigate('/my-attempts'); }}
                               className="w-full bg-gray-50 text-gray-800 py-2.5 rounded-xl font-semibold hover:bg-gray-100 transition font-heading text-left px-4 flex items-center gap-2"
                             >
                               📋 My Attempts
                             </button>
+                            )}
 
                             {!isPaid && (
                               <button

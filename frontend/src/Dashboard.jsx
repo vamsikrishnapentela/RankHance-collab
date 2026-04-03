@@ -1,14 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import PaymentModal from './components/PaymentModal';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from './hooks/useAuth';
 import { BookOpen, Zap, Lock, Edit3, ChevronRight, MessageSquare, PieChart, Video, Building } from 'lucide-react';
 import Card from './components/Card';
 
 
 export default function Dashboard() {
-  const { isPaid } = useAuth();
+  const { isPaid, user } = useAuth();
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (user?.isAdmin) {
+      navigate('/admin', { replace: true });
+    } else if (user?.isCreator) {
+      navigate('/creator', { replace: true });
+    }
+  }, [user, navigate]);
 
   useEffect(() => {
     const shouldShowPayment = localStorage.getItem("showPayment");
@@ -99,7 +108,17 @@ export default function Dashboard() {
   }
   return (
     <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100dvh-64px)] overflow-y-auto">
-      <div className="w-full max-w-5xl mx-auto py-8">
+      <div className="w-full max-w-5xl mx-auto py-4 md:py-8">
+        
+        <div className="mb-4 flex items-center">
+          <button 
+            onClick={() => navigate('/')}
+            className="inline-flex items-center text-sm font-semibold text-gray-500 hover:text-orange-500 bg-white border shadow-sm px-3 py-1.5 rounded-lg transition-all"
+          >
+            ← Back
+          </button>
+        </div>
+
         <h1 className="text-3xl font-extrabold text-gray-900 mb-8 w-full text-center tracking-tight">
           Welcome! What do you want to practice today?
         </h1>

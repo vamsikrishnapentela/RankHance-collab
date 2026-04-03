@@ -14,6 +14,7 @@ const userSchema = new mongoose.Schema({
   referralCount: { type: Number, default: 0 },    // all signups
   paidReferrals: { type: Number, default: 0 },    // paid users
   earnings: { type: Number, default: 0 },
+  commissionRate: { type: Number },
   //admin fields
   isAdmin: { type: Boolean, default: false },
 
