@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { ArrowLeft, Star, Clock } from 'lucide-react';
 import Button from './components/Button';
 import { getMockTest } from './api';
@@ -9,6 +9,8 @@ import { API_BASE_URL } from './api';
 export default function MockAttempt() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
+  const isModelMock = new URLSearchParams(location.search).get('type') === 'model-mock';
   const persistenceKey = `mockattempt-${id}`;
   const [test, setTest] = useState(null);
   const [groupedQuestions, setGroupedQuestions] = useState({ maths: [], physics: [], chemistry: [] });
@@ -150,7 +152,9 @@ export default function MockAttempt() {
 
     try {
       const token = localStorage.getItem('rankhance_token') || localStorage.getItem('token');
-      const res = await fetch(`${API_BASE_URL}/api/mocktest/submit`, {
+      const targetEndpoint = isModelMock ? '/api/model-mock/submit' : '/api/mocktest/submit';
+      
+      const res = await fetch(`${API_BASE_URL}${targetEndpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -186,9 +190,10 @@ export default function MockAttempt() {
         score: serverScore,
         timeTakenSeconds,
         testId: id,
+        isModelMock
       },
     });
-  }, [id, navigate]);
+  }, [id, navigate, isModelMock]);
 
   // Timer
   useEffect(() => {

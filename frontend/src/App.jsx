@@ -27,6 +27,8 @@ const Support = lazy(() => import('./Support'));
 const Weightage = lazy(() => import('./Weightage'));
 const LiveSessions = lazy(() => import('./LiveSessions'));
 const Formulas = lazy(() => import('./Formulas'));
+const ModelMock = lazy(() => import('./ModelMock'));
+const ModelMockUpsell = lazy(() => import('./ModelMockUpsell'));
 
 function AppLayout() {
   const location = useLocation();
@@ -278,6 +280,8 @@ function AppLayout() {
             <Route path="/result" element={<Result />} />
             <Route path="/review" element={<Review />} />
             <Route path="/my-attempts" element={<MyAttempts />} />
+            <Route path="/model-mock" element={<ModelMock />} />
+            <Route path="/model-mock-upsell" element={<ModelMockUpsell />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/refund" element={<Refund />} />

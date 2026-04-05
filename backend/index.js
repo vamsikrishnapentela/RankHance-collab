@@ -11,6 +11,7 @@ const jwt = require('jsonwebtoken');
 const { OAuth2Client } = require('google-auth-library');
 const User = require('./models/User');
 const MockTestAttempt = require('./models/MockTestAttempt');
+const ModelMockAttempt = require('./models/ModelMockAttempt');
 const Ticket = require('./models/Ticket');
 const auth = require('./middleware/auth');
 const nodemailer = require('nodemailer');
@@ -539,6 +540,16 @@ app.get('/api/user/attempts', auth, async (req, res) => {
     }
 });
 
+// ─── Model Mock Test Config ───────────────────────────────────────────────────
+const CURRENT_BATCH = {
+    batchId: 1,
+    testId: 'adv21',
+    testName: 'EAMCET Model Mock Test - Batch 1',
+    startDate: new Date('2026-04-01T00:00:00.000Z'),
+    endDate: new Date('2026-04-30T23:59:59.000Z'),
+    isActive: true
+};
+
 // GET /api/mocktest/:testId  ← MUST be LAST among mocktest routes
 app.get('/api/mocktest/:testId', async (req, res) => {
     const { testId } = req.params;
@@ -557,7 +568,8 @@ app.get('/api/mocktest/:testId', async (req, res) => {
         const testIdx = data.findIndex(t => t.id === testId);
         const test = data[testIdx];
         if (test) {
-            if (!paid && testIdx >= 2)
+            const isModelMockFree = CURRENT_BATCH && CURRENT_BATCH.isActive && testId === CURRENT_BATCH.testId;
+            if (!paid && testIdx >= 2 && !isModelMockFree)
                 return res.status(403).json({ message: "Content locked. Please upgrade to premium." });
             let questionsPath = `3-mocktests-questions/advanced/${testId}/data.json`;
             if (!testId.startsWith('adv')) {
@@ -569,6 +581,146 @@ app.get('/api/mocktest/:testId', async (req, res) => {
         }
     }
     res.status(404).json({ message: "Mock test not found" });
+});
+
+// ─── Model Mock Test ──────────────────────────────────────────────────────────
+
+app.get('/api/model-mock/status', async (req, res) => {
+    try {
+        res.json(CURRENT_BATCH);
+    } catch (err) {
+        res.status(500).json({ message: 'Server error' });
+    }
+});
+
+app.post('/api/model-mock/submit', auth, async (req, res) => {
+    try {
+        const { testId, testName, questions, answers, flags, timeTakenSeconds } = req.body;
+        const batchId = CURRENT_BATCH.batchId;
+
+        if (!CURRENT_BATCH.isActive) {
+            return res.status(403).json({ message: 'No active batch available' });
+        }
+
+        const existingAttempt = await ModelMockAttempt.findOne({ userId: req.user.id, batchId });
+        if (existingAttempt) {
+            return res.status(403).json({ message: 'You have already attempted the current model mock test. Multiple attempts are not allowed.' });
+        }
+
+        let questionsPath = `3-mocktests-questions/advanced/${testId}/data.json`;
+        if (!testId.startsWith('adv')) {
+            questionsPath = `3-mocktests-questions/${testId}/data.json`;
+        }
+        const allQuestions = readJsonFile(questionsPath) || [];
+        const correctMap = {};
+        allQuestions.forEach(q => { correctMap[q.id] = q.correctIndex; });
+
+        const flagSet = new Set(flags || []);
+        const answerDocs = (questions || []).map(q => ({
+            questionId: q.questionId,
+            globalIdx: q.globalIdx,
+            subject: q.subject,
+            selectedOption: (answers[q.globalIdx] !== undefined && answers[q.globalIdx] !== null)
+                ? answers[q.globalIdx] : null,
+            isFlagged: flagSet.has(q.globalIdx),
+        }));
+
+        let score = 0;
+        answerDocs.forEach(a => {
+            if (a.selectedOption === null) return;
+            if (a.selectedOption === correctMap[a.questionId]) { score += 1 };
+        });
+
+        const attempt = await ModelMockAttempt.findOneAndUpdate(
+            { userId: req.user.id, batchId },
+            {
+                userId: req.user.id, testId, batchId,
+                testName: testName || testId,
+                questions: questions || [],
+                answers: answerDocs,
+                score,
+                totalQuestions: (questions || []).length,
+                timeTakenSeconds: timeTakenSeconds || 0,
+                submittedAt: new Date(),
+            },
+            { upsert: true, new: true }
+        );
+
+        res.json({ success: true, score });
+    } catch (err) {
+        console.error('Submit model mock attempt error:', err);
+        res.status(500).json({ message: 'Failed to save model mock attempt' });
+    }
+});
+
+app.get('/api/model-mock/attempt', auth, async (req, res) => {
+    try {
+        const batchId = CURRENT_BATCH.batchId;
+        const attempt = await ModelMockAttempt.findOne({ userId: req.user.id, batchId });
+        
+        if (!attempt) return res.json({ hasAttempted: false });
+
+        let questionsPath = `3-mocktests-questions/advanced/${attempt.testId}/data.json`;
+        if (!attempt.testId.startsWith('adv')) {
+            questionsPath = `3-mocktests-questions/${attempt.testId}/data.json`;
+        }
+        const allQuestions = readJsonFile(questionsPath) || [];
+        const questionMap = {};
+        allQuestions.forEach(q => { questionMap[q.id] = q; });
+
+        const enrichedQuestions = attempt.questions.map(savedQ => {
+            const full = questionMap[savedQ.questionId] || {};
+            const ans = attempt.answers.find(a => a.globalIdx === savedQ.globalIdx);
+            return {
+                ...full,
+                globalIdx: savedQ.globalIdx,
+                subject: savedQ.subject,
+                selectedOption: (ans && ans.selectedOption !== undefined) ? ans.selectedOption : null,
+                isFlagged: ans ? ans.isFlagged : false,
+            };
+        });
+
+        res.json({
+            hasAttempted: true,
+            attempt: {
+                testId: attempt.testId,
+                testName: attempt.testName,
+                score: attempt.score,
+                totalQuestions: attempt.totalQuestions,
+                timeTakenSeconds: attempt.timeTakenSeconds,
+                submittedAt: attempt.submittedAt,
+                questions: enrichedQuestions,
+            }
+        });
+    } catch (err) {
+        console.error('Fetch model mock attempt error:', err);
+        res.status(500).json({ message: 'Failed to fetch model mock attempt' });
+    }
+});
+
+app.get('/api/model-mock/leaderboard', async (req, res) => {
+    try {
+        const batchId = CURRENT_BATCH.batchId;
+        // Find top 100
+        const topAttempts = await ModelMockAttempt.find({ batchId })
+            .sort({ score: -1, timeTakenSeconds: 1 })
+            .limit(100)
+            .populate('userId', 'name')
+            .lean();
+            
+        const leaderboard = topAttempts.map((attempt, index) => ({
+            rank: index + 1,
+            name: attempt.userId ? attempt.userId.name : 'Unknown User',
+            score: attempt.score,
+            timeTakenSeconds: attempt.timeTakenSeconds,
+            submittedAt: attempt.submittedAt
+        }));
+
+        res.json(leaderboard);
+    } catch (err) {
+        console.error('Leaderboard error:', err);
+        res.status(500).json({ message: 'Failed to fetch leaderboard' });
+    }
 });
 
 // ─── Creator Dashboard ────────────────────────────────────────────────────────

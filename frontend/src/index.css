@@ -62,3 +62,27 @@ h6 {
 .animate-popup-in {
   animation: popup-in 0.4s ease-out;
 }
+@keyframes rotate-spark {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spark-border {
+  position: relative;
+}
+
+.spark-border::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  padding: 1.5px;
+  border : none;
+  border-radius: inherit;
+  background: conic-gradient(from 0deg, transparent 75%, rgba(255, 255, 255, 1), transparent 90%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: rotate-spark 12s linear infinite;
+  pointer-events: none;
+  opacity: 0.2;
+}

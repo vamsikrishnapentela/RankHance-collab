@@ -240,15 +240,18 @@ export default function Landing() {
               Start Practicing →
             </Link>
 
-            {/* <button
-              onClick={() => {
-                document.getElementById("features")?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="px-8 py-4 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-all font-semibold text-gray-700 hover:scale-105"
-            >
-              Explore Features
-            </button> */}
+          </div>
 
+          <div className="flex justify-center mt-6">
+            <Link
+              to="/model-mock"
+              className="group relative px-6 py-4 md:px-10 md:py-5 bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-600 text-white rounded-3xl shadow-[0_8px_30px_rgba(249,115,22,0.3)] hover:shadow-[0_15px_40px_rgba(249,115,22,0.5)] transition-all flex flex-col items-center justify-center border border-orange-200/50 hover:scale-[1.03] spark-border"
+            >
+              <span className="text-xl md:text-2xl font-semibold tracking-tight mb-1 drop-shadow-sm">Attend EAMCET 2026 Model Mock Test</span>
+              <span className="inline-block bg-white text-orange-600 px-4 py-1 rounded-full text-sm md:text-base font-black shadow-sm uppercase tracking-wider">🔥 FREE!</span>
+              
+              <div className="absolute inset-0 rounded-3xl bg-white opacity-0 group-hover:opacity-10 transition-opacity"></div>
+            </Link>
           </div>
 
           {/* 📊 TRUST STATS */}

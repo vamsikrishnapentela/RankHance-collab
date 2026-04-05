@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Trophy } from 'lucide-react';
 import Card from './components/Card';
 import Button from './components/Button';
 import Container from './components/Container';
@@ -10,7 +10,10 @@ const Result = () => {
   const navigate  = useNavigate();
 
   // testId is now included in state (set by MockAttempt.jsx after submit)
-  const { test, questions, answers, flags, testId } = location.state || {};
+  const { test, questions, answers, flags, testId, isModelMock } = location.state || {};
+
+  // robust check in case of stale state
+  const isModelMockRefined = isModelMock || testId === 'adv21' || (test?.name?.includes('Model Mock'));
 
   const [stats, setStats] = useState({
     total: 0, correct: 0, wrong: 0, unattempted: 0, score: 0, accuracy: 0, attempted: 0
@@ -199,16 +202,20 @@ const Result = () => {
 
   // ── Helpers ──────────────────────────────────────────────────────────────
   const handleReview = () => {
-    navigate('/review', {
-      state: {
-        // legacy fields (kept in case Review ever falls back to them)
-        questions,
-        answers,
-        flags,
-        // ✅ THIS is what Review.jsx uses to fetch from the DB
-        testId,
-      },
-    });
+    if (isModelMockRefined) {
+      navigate('/model-mock-upsell', { state: location.state });
+    } else {
+      navigate('/review', {
+        state: {
+          // legacy fields (kept in case Review ever falls back to them)
+          questions,
+          answers,
+          flags,
+          // ✅ THIS is what Review.jsx uses to fetch from the DB
+          testId,
+        },
+      });
+    }
   };
 
   return (
@@ -217,7 +224,7 @@ const Result = () => {
         <Button
           variant="secondary"
           leftIcon={<ArrowLeft className="w-5 h-5" />}
-          onClick={() => navigate(`/mock/${testId}`)}
+          onClick={() => isModelMockRefined ? navigate('/model-mock', { state: { tab: 'overview' } }) : navigate(`/mock/${testId}`)}
           className="mb-6"
         >
           Back
@@ -282,10 +289,11 @@ const Result = () => {
           <Button
             variant="secondary"
             size="lg"
-            onClick={() => navigate('/dashboard')}
+            leftIcon={isModelMockRefined ? <Trophy className="w-5 h-5" /> : null}
+            onClick={() => isModelMockRefined ? navigate('/model-mock', { state: { tab: 'leaderboard' } }) : navigate('/dashboard')}
             className="flex-1"
           >
-            Back to Dashboard
+            {isModelMockRefined ? 'View Leaderboard' : 'Back to Dashboard'}
           </Button>
         </div>
 

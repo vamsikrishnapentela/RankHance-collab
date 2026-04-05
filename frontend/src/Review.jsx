@@ -5,6 +5,7 @@ import Card from './components/Card';
 import Button from './components/Button';
 import MathRenderer from './components/MathRenderer';
 import Container from './components/Container';
+import PaymentModal from './components/PaymentModal';
 import { API_BASE_URL } from './api';
 
 // ─── Single option row ────────────────────────────────────────────────────────
@@ -49,6 +50,7 @@ const Review = () => {
   const [currentIdx,  setCurrentIdx]  = useState(0);
   const [loading,     setLoading]     = useState(true);
   const [fetchError,  setFetchError]  = useState('');
+  const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
 
   // ── Fetch saved attempt from backend ─────────────────────────────────────
   useEffect(() => {
@@ -61,7 +63,9 @@ const Review = () => {
 
       try {
         const token = localStorage.getItem('rankhance_token') || localStorage.getItem('token');
-        const res = await fetch(`${API_BASE_URL}/api/mocktest/${testIdFromState}/attempt`, {
+        const targetEndpoint = `${API_BASE_URL}/api/mocktest/${testIdFromState}/attempt`;
+
+        const res = await fetch(targetEndpoint, {
           headers: { 'x-auth-token': token },
         });
 

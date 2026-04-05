@@ -22,16 +22,15 @@ export default function Login() {
 
   useEffect(() => {
     if (user) {
-      if(user.isAdmin){
+      if (user.isAdmin) {
         navigate('/admin', { replace: true });
-      }
-      else if (user.isCreator) {
+      } else if (user.isCreator) {
         navigate('/creator', { replace: true });
       } else {
-        navigate('/dashboard', { replace: true });
+        navigate(from, { replace: true });
       }
     }
-  }, [user, navigate]);
+  }, [user, navigate, from]);
 
   useEffect(() => {
     /* global google */
@@ -70,7 +69,7 @@ export default function Login() {
           } else if (userData.isCreator) {
             navigate('/creator');
           } else {
-            navigate('/dashboard');
+            navigate(from);
           }
 
     } catch (err) {
@@ -92,12 +91,12 @@ export default function Login() {
         throw new Error("user data not received")
       }
       
-      if(res.isAdmin){
+      if (res.isAdmin) {
         navigate('/admin');
       } else if (res.isCreator) {
         navigate('/creator');
       } else {
-        navigate('/dashboard');
+        navigate(from);
       }
     } catch (err) {
       console.log("LOGIN ERROR:", err.response?.data || err);
