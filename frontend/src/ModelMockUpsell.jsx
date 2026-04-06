@@ -3,9 +3,11 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Star } from 'lucide-react';
 import Button from './components/Button';
 import Container from './components/Container';
+import { useAuth } from './hooks/useAuth';
 import PaymentModal from './components/PaymentModal';
 
 export default function ModelMockUpsell() {
+  const { isPaid } = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
@@ -46,12 +48,12 @@ export default function ModelMockUpsell() {
 
             <div className="pt-4 flex flex-col space-y-4 max-w-sm mx-auto">
               <Button 
-                variant="primary" 
+                variant={isPaid ? "secondary" : "primary"}
                 size="lg" 
-                onClick={() => setIsPaymentModalOpen(true)}
-                className="shadow-xl shadow-orange-500/20 hover:scale-[1.03] transition-transform text-white bg-gradient-to-r from-orange-500 to-orange-600 border-0 py-4 font-bold text-lg"
+                onClick={() => isPaid ? alert("You already have Premium access!") : setIsPaymentModalOpen(true)}
+                className={`shadow-xl transition-transform py-4 font-bold text-lg ${isPaid ? 'bg-green-100 text-green-700 border-green-200 cursor-default' : 'shadow-orange-500/20 hover:scale-[1.03] text-white bg-gradient-to-r from-orange-500 to-orange-600 border-0'}`}
               >
-                Buy Premium
+                {isPaid ? "Premium Unlocked" : "Buy Premium"}
               </Button>
               <Button
                 variant="secondary"

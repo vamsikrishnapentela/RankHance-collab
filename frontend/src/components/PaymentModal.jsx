@@ -97,47 +97,65 @@ const PaymentModal = ({ isOpen, onClose }) => {
           </div>
 
           <div className="space-y-2">
-            <h2 className="text-2xl font-bold text-gray-900">Unlock Premium Access</h2>
-            <p className="text-gray-600">Get unlimited access to all chapters, mock tests, and performance analysis.</p>
+            <h2 className="text-2xl font-bold text-gray-900">{user?.isPaid ? "Premium Unlocked!" : "Unlock Premium Access"}</h2>
+            <p className="text-gray-600">
+              {user?.isPaid 
+                ? "You already have full access to all RankHance Premium features. Happy learning!" 
+                : "Get unlimited access to all chapters, mock tests, and performance analysis."}
+            </p>
           </div>
 
-          <div className="bg-gray-50 rounded-2xl p-6 space-y-3 text-left">
-            <div className="flex items-start gap-3">
-              <span className="text-orange-500 font-bold">✔</span>
-              <span className="text-sm font-semibold text-gray-700">Full-Length Mock Tests (160 Questions)</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="text-orange-500 font-bold">✔</span>
-              <span className="text-sm font-semibold text-gray-700">Performance Tracking & Detailed Analysis</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="text-orange-500 font-bold">✔</span>
-              <span className="text-sm font-semibold text-gray-700">Weightage-Based Exam Insights</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="text-orange-500 font-bold">✔</span>
-              <span className="text-sm font-semibold text-gray-700">Chapter-Wise Structured Practice</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="text-orange-500 font-bold">✔</span>
-              <span className="text-sm font-semibold text-gray-700">2 Special Live Guidance Sessions</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="text-orange-500 font-bold">✔</span>
-              <span className="text-sm font-semibold text-gray-700">Complete AP & TS Syllabus Coverage</span>
-            </div>
-          </div>
+          {!user?.isPaid ? (
+            <>
+              <div className="bg-gray-50 rounded-2xl p-6 space-y-3 text-left">
+                <div className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold">✔</span>
+                  <span className="text-sm font-semibold text-gray-700">Full-Length Mock Tests (160 Questions)</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold">✔</span>
+                  <span className="text-sm font-semibold text-gray-700">Performance Tracking & Detailed Analysis</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold">✔</span>
+                  <span className="text-sm font-semibold text-gray-700">Weightage-Based Exam Insights</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold">✔</span>
+                  <span className="text-sm font-semibold text-gray-700">Chapter-Wise Structured Practice</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold">✔</span>
+                  <span className="text-sm font-semibold text-gray-700">2 Special Live Guidance Sessions</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold">✔</span>
+                  <span className="text-sm font-semibold text-gray-700">Complete AP & TS Syllabus Coverage</span>
+                </div>
+              </div>
 
-          <div className="space-y-4">
-            <div className="flex items-center justify-center gap-2">
-              <span className="text-gray-400 line-through text-lg">₹999</span>
-              <span className="text-4xl font-extrabold text-gray-900">₹99</span>
+              <div className="space-y-4">
+                <div className="flex items-center justify-center gap-2">
+                  <span className="text-gray-400 line-through text-lg">₹999</span>
+                  <span className="text-4xl font-extrabold text-gray-900">₹99</span>
+                </div>
+                <Button variant="primary" className="w-full h-12 md:h-14 text-base md:text-lg" onClick={handlePayment} disabled={isProcessing}>
+                  {isProcessing ? 'Processing...' : 'Pay Now & Unlock'}
+                </Button>
+                <p className="text-xs text-gray-400">One-time payment • Access up to your college joining date</p>
+              </div>
+            </>
+          ) : (
+            <div className="py-8">
+              <div className="bg-green-50 text-green-700 p-4 rounded-2xl border border-green-200 font-semibold mb-6">
+                <ShieldCheck className="w-6 h-6 inline-block mr-2" />
+                Your Premium subscription is active!
+              </div>
+              <Button variant="secondary" className="w-full" onClick={onClose}>
+                Back to Dashboard
+              </Button>
             </div>
-            <Button variant="primary" className="w-full h-12 md:h-14 text-base md:text-lg" onClick={handlePayment} disabled={isProcessing}>
-              {isProcessing ? 'Processing...' : 'Pay Now & Unlock'}
-            </Button>
-            <p className="text-xs text-gray-400">One-time payment • Access up to your college joining date</p>
-          </div>
+          )}
         </div>
       </div>
     </div>

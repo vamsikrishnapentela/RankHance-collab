@@ -100,7 +100,8 @@ export default function Login() {
       }
     } catch (err) {
       console.log("LOGIN ERROR:", err.response?.data || err);
-      setError(err.response?.data?.message || 'Invalid email or password');
+      const backendMsg = err.response?.data?.message || "Invalid credentials";
+      setError(`${backendMsg}. If you haven't created an account, please create one first!`);
     } finally {
       setIsSubmitting(false);
     }
@@ -173,8 +174,14 @@ export default function Login() {
             </div>
 
             {error && (
-              <div className="bg-red-50 text-red-600 p-4 rounded-xl text-sm font-semibold border border-red-100 animate-in shake-1 duration-300">
-                {error}
+              <div className="bg-red-50 text-red-600 p-5 rounded-2xl text-sm font-semibold border border-red-100 animate-in shake-1 duration-300 space-y-2">
+                <div className="flex items-center gap-2">
+                  <span>❌</span>
+                  <span>{error}</span>
+                </div>
+                <div className="pt-2 border-t border-red-200/50 text-red-700">
+                  Don't have an account? <Link to="/signup" className="underline font-extrabold hover:text-red-800 transition-colors">Create account first</Link>
+                </div>
               </div>
             )}
 

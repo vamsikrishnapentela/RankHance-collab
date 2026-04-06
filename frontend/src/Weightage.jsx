@@ -3,7 +3,7 @@ import { useAuth } from './hooks/useAuth';
 import { useNavigate, Link } from 'react-router-dom';
 import Container from './components/Container';
 import PaymentModal from './components/PaymentModal';
-import { ArrowLeft, ExternalLink, Calculator, Atom, FlaskConical } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Calculator, Atom, FlaskConical, Star } from 'lucide-react';
 
 export default function Weightage() {
   const { user, logout, isPaid } = useAuth();
@@ -80,6 +80,16 @@ export default function Weightage() {
             <div>
               <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">Weightage Analysis</h1>
               <p className="text-gray-500 mt-1">Select a subject to view its important chapters and exam weightage.</p>
+              
+              {/* AP/TG Clarification Note */}
+              <div className="mt-4 p-4 bg-orange-50 border border-orange-200 rounded-2xl flex items-start gap-3 shadow-sm">
+                <div className="bg-orange-500 p-1.5 rounded-full mt-0.5">
+                  <Star className="w-3.5 h-3.5 text-white fill-white" />
+                </div>
+                <p className="text-sm text-orange-900 font-medium leading-relaxed">
+                  <span className="font-bold">Important Notice:</span> The documents given below are for both <span className="font-bold">AP and TG EAPCET</span> students. In some documents, it might be printed as "AP" by mistake, but students from both states should consider and use them as they are applicable for both.
+                </p>
+              </div>
             </div>
           </div>
 

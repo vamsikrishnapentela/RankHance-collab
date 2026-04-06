@@ -13,7 +13,7 @@ export default function AdminDashboard() {
   const navigate = useNavigate();
 
   const [data, setData] = useState(null);
-  const [view, setView] = useState("users"); // toggle
+  const [view, setView] = useState("stats"); // toggle: stats | users | creators | tickets | modelmock
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("all"); // all | paid | free
 
@@ -93,38 +93,60 @@ export default function AdminDashboard() {
       <Container className="max-w-6xl space-y-8">
 
         {/* 🔁 TOGGLE */}
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-3 md:gap-4 overflow-x-auto pb-2 scrollbar-hide">
           <button
-            onClick={() => setView("users")}
-            className={`px-5 py-2 rounded-xl font-semibold ${
-              view === "users"
+            onClick={() => setView("stats")}
+            className={`px-5 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm ${
+              view === "stats"
                 ? "bg-orange-500 text-white"
-                : "bg-white border"
+                : "bg-white border hover:bg-gray-50"
             }`}
           >
-            Users
+            📊 Overview
+          </button>
+
+          <button
+            onClick={() => setView("users")}
+            className={`px-5 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm ${
+              view === "users"
+                ? "bg-orange-500 text-white"
+                : "bg-white border hover:bg-gray-50"
+            }`}
+          >
+            👥 Users
           </button>
 
           <button
             onClick={() => setView("creators")}
-            className={`px-5 py-2 rounded-xl font-semibold ${
+            className={`px-5 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm ${
               view === "creators"
                 ? "bg-orange-500 text-white"
-                : "bg-white border"
+                : "bg-white border hover:bg-gray-50"
             }`}
           >
-            Creators
+            🎨 Creators
           </button>
 
           <button
             onClick={() => setView("tickets")}
-            className={`px-5 py-2 rounded-xl font-semibold ${
+            className={`px-5 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm ${
               view === "tickets"
                 ? "bg-orange-500 text-white"
-                : "bg-white border"
+                : "bg-white border hover:bg-gray-50"
             }`}
           >
-            Support Tickets
+            🎫 Tickets
+          </button>
+
+          <button
+            onClick={() => setView("modelmock")}
+            className={`px-5 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm ${
+              view === "modelmock"
+                ? "bg-orange-500 text-white"
+                : "bg-white border hover:bg-gray-50"
+            }`}
+          >
+            🏆 Model Mock
           </button>
         </div>
 
@@ -154,51 +176,69 @@ export default function AdminDashboard() {
 
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
-          <div className="bg-white p-4 rounded-xl shadow text-center">
-            <p className="text-sm text-gray-500">Users</p>
-            <h2 className="text-2xl font-bold">{data.usersStats.totalUsers}</h2>
-          </div>
 
-          <div className="bg-white p-4 rounded-xl shadow text-center">
-            <p className="text-sm text-gray-500">Paid</p>
-            <h2 className="text-2xl font-bold text-green-600">
-              {data.usersStats.paidUsers}
-            </h2>
-          </div>
+        {/* 📊 STATS OVERVIEW VIEW */}
+        {view === "stats" && (
+          <>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+              <div className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                <p className="text-sm font-bold text-gray-500 mb-1">Total Users</p>
+                <h2 className="text-3xl font-black text-gray-900">{data.usersStats.totalUsers}</h2>
+              </div>
 
-          <div className="bg-white p-4 rounded-xl shadow text-center">
-            <p className="text-sm text-gray-500">Revenue</p>
-            <h2 className="text-2xl font-bold text-green-600">
-              ₹{data.usersStats.totalRevenue}
-            </h2>
-          </div>
+              <div className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                <p className="text-sm font-bold text-gray-500 mb-1">Paid Users</p>
+                <h2 className="text-3xl font-black text-green-600">
+                  {data.usersStats.paidUsers}
+                </h2>
+              </div>
 
-          <div className="bg-white p-4 rounded-xl shadow text-center">
-            <p className="text-sm text-gray-500">Commission</p>
-            <h2 className="text-2xl font-bold text-purple-600">
-              ₹{data.creatorStats.totalCommission}
-            </h2>
-          </div>
+              <div className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                <p className="text-sm font-bold text-gray-500 mb-1">Total Revenue</p>
+                <h2 className="text-3xl font-black text-green-600">
+                  ₹{data.usersStats.totalRevenue}
+                </h2>
+              </div>
 
-        </div>
-        <div className="bg-white p-6 rounded-2xl shadow">
-          <h2 className="text-lg font-bold mb-4">Analytics</h2>
-          <ResponsiveContainer width="100%" height={300}>
-            <BarChart
-              data={[
-                { name: "Users", value: data.usersStats.totalUsers },
-                { name: "Paid", value: data.usersStats.paidUsers },
-                { name: "Free", value: data.usersStats.freeUsers }
-              ]}
-            >
-              <XAxis dataKey="name" />
-              <YAxis />
-              <Tooltip />
-              <Bar dataKey="value" />
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
+              <div className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                <p className="text-sm font-bold text-gray-500 mb-1">Total Commission</p>
+                <h2 className="text-3xl font-black text-purple-600">
+                  ₹{data.creatorStats.totalCommission}
+                </h2>
+              </div>
+            </div>
+
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+              <div className="flex items-center justify-between mb-8">
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900 tracking-tight">Growth Analytics</h2>
+                  <p className="text-gray-500 text-sm font-medium">User demographic distribution</p>
+                </div>
+                <div className="flex gap-2">
+                   <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                   <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Live stats</span>
+                </div>
+              </div>
+              <ResponsiveContainer width="100%" height={350}>
+                <BarChart
+                  data={[
+                    { name: "Total Users", value: data.usersStats.totalUsers },
+                    { name: "Paid Premium", value: data.usersStats.paidUsers },
+                    { name: "Free Trial", value: data.usersStats.freeUsers }
+                  ]}
+                >
+                  <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fill: '#9CA3AF', fontWeight: 'bold'}} />
+                  <YAxis axisLine={false} tickLine={false} tick={{fill: '#9CA3AF', fontWeight: 'bold'}} />
+                  <Tooltip 
+                    cursor={{fill: '#F9FAFB'}} 
+                    contentStyle={{borderRadius: '16px', border: 'none', boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1)', padding: '12px'}}
+                  />
+                  <Bar dataKey="value" fill="#F97316" radius={[12, 12, 0, 0]} barSize={60} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </>
+        )}
 
 
         {/* 👥 USERS TABLE */}
@@ -373,6 +413,89 @@ export default function AdminDashboard() {
                   )}
                 </div>
               )}
+            </div>
+          </div>
+        )}
+
+        {/* 🏆 MODEL MOCK VIEW */}
+        {view === "modelmock" && (
+          <div className="bg-white p-6 rounded-2xl shadow border border-gray-100">
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 pb-6 border-b gap-4">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center text-2xl">
+                  🏆
+                </div>
+                <div>
+                   <h2 className="text-2xl font-bold text-gray-900 tracking-tight">Model Mock Results</h2>
+                   <p className="text-gray-500 text-sm font-medium">Real-time Batch Leaderboard</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 bg-orange-50 px-5 py-2.5 rounded-2xl border border-orange-100">
+                <span className="text-orange-600 font-bold font-heading">Total Attempts:</span>
+                <span className="text-orange-700 font-black text-xl">{data.modelMockLeaderboard?.length || 0}</span>
+              </div>
+            </div>
+
+            <div className="overflow-x-auto -mx-6 px-6">
+              <table className="w-full text-left border-collapse min-w-[800px]">
+                <thead>
+                  <tr className="bg-gray-50/50 text-gray-400 text-[10px] uppercase font-black tracking-widest border-b">
+                    <th className="p-4 w-20 text-center">Rank</th>
+                    <th className="p-4">Student Name</th>
+                    <th className="p-4">Email Address</th>
+                    <th className="p-4">Phone Number</th>
+                    <th className="p-4 text-center">Score</th>
+                    <th className="p-4 text-center">Time Taken</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100">
+                  {data.modelMockLeaderboard
+                    ?.filter((attempt) => {
+                       const name = attempt.userName?.toLowerCase() || "";
+                       const email = attempt.userEmail?.toLowerCase() || "";
+                       return name.includes(search.toLowerCase()) || email.includes(search.toLowerCase());
+                    })
+                    .map((attempt, idx) => (
+                    <tr key={idx} className={`group hover:bg-orange-50/30 transition-all duration-200 ${idx < 5 ? 'bg-orange-50/10' : ''}`}>
+                      <td className="p-4 text-center">
+                        {idx === 0 ? <span className="text-2xl">🥇</span> : 
+                         idx === 1 ? <span className="text-2xl">🥈</span> : 
+                         idx === 2 ? <span className="text-2xl">🥉</span> : 
+                         <span className="font-bold text-gray-400">#{idx + 1}</span>}
+                      </td>
+                      <td className="p-4 font-bold text-gray-900 group-hover:text-orange-600 transition-colors">{attempt.userName}</td>
+                      <td className="p-4 text-gray-600 font-medium text-sm">{attempt.userEmail}</td>
+                      <td className="p-4">
+                        <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-lg text-xs font-bold font-mono">
+                          {attempt.userPhone || '—'}
+                        </span>
+                      </td>
+                      <td className="p-4 text-center">
+                        <div className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl font-black text-lg ${idx < 5 ? 'bg-orange-500 text-white shadow-lg shadow-orange-200' : 'bg-gray-100 text-gray-700'}`}>
+                          {attempt.score}
+                        </div>
+                      </td>
+                      <td className="p-4 text-center">
+                        <div className="text-sm font-bold text-gray-900">
+                          {Math.floor(attempt.timeTakenSeconds / 60)}m {attempt.timeTakenSeconds % 60}s
+                        </div>
+                        <div className="text-[10px] text-gray-400 font-bold uppercase tracking-tighter">Duration</div>
+                      </td>
+                    </tr>
+                  ))}
+                  {(!data.modelMockLeaderboard || data.modelMockLeaderboard.length === 0) && (
+                    <tr>
+                      <td colSpan="6" className="p-20 text-center">
+                        <div className="bg-gray-50 rounded-3xl p-10 max-w-xs mx-auto text-gray-400">
+                          <p className="text-4xl mb-4 animate-bounce">🧊</p>
+                          <p className="font-bold">No attempts found yet.</p>
+                          <p className="text-xs mt-1">Data will appear here once students submit tests.</p>
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
             </div>
           </div>
         )}

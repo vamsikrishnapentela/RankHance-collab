@@ -25,6 +25,9 @@ const modelMockAttemptSchema = new mongoose.Schema({
   score: { type: Number, default: 0 },
   totalQuestions: { type: Number },
   timeTakenSeconds: { type: Number },
+  userName: { type: String },
+  userEmail: { type: String },
+  userPhone: { type: String },
   submittedAt: { type: Date, default: Date.now },
 });
 

@@ -631,11 +631,15 @@ app.post('/api/model-mock/submit', auth, async (req, res) => {
             if (a.selectedOption === correctMap[a.questionId]) { score += 1 };
         });
 
+        const user = await User.findById(req.user.id);
         const attempt = await ModelMockAttempt.findOneAndUpdate(
             { userId: req.user.id, batchId },
             {
                 userId: req.user.id, testId, batchId,
                 testName: testName || testId,
+                userName: user?.name || 'Unknown',
+                userEmail: user?.email || '',
+                userPhone: user?.phone || '',
                 questions: questions || [],
                 answers: answerDocs,
                 score,
@@ -765,15 +769,21 @@ app.get('/api/admin/dashboard', auth, async (req, res) => {
         const totalReferrals = creators.reduce((sum, c) => sum + (c.referralCount || 0), 0);
         const totalPaidReferrals = creators.reduce((sum, c) => sum + (c.paidReferrals || 0), 0);
 
-        const users = await User.find().select('name email isPaid referredBy createdAt');
+        const Users = await User.find().select('name email isPaid referredBy createdAt');
         const creatorList = await User.find({ isCreator: true })
             .select('name email referralCode earnings referralCount paidReferrals');
+
+        const modelMockLeaderboard = await ModelMockAttempt.find({ batchId: CURRENT_BATCH.batchId })
+            .sort({ score: -1, timeTakenSeconds: 1 })
+            .limit(100)
+            .lean();
 
         res.json({
             usersStats: { totalUsers, paidUsers, freeUsers, totalRevenue },
             creatorStats: { totalCreators, totalCommission, totalReferrals, totalPaidReferrals },
-            users,
+            users: Users,
             creators: creatorList,
+            modelMockLeaderboard,
         });
     } catch (err) {
         console.error(err);

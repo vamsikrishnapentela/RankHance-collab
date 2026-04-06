@@ -8,7 +8,7 @@ import { Trophy, Clock, Target, CheckCircle, ArrowRight } from 'lucide-react';
 import { API_BASE_URL } from './api';
 
 export default function ModelMock() {
-  const { user } = useAuth();
+  const { user, isPaid } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
   
@@ -191,20 +191,43 @@ export default function ModelMock() {
                   This test is curated specifically for the upcoming EAMCET 2026. It mimics the exact difficulty, weightage, and pattern of the real exam. Participate in this active batch to measure where you stand relative to typical exam difficulty and other competing aspirants.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="p-4 bg-gray-50 rounded-2xl flex items-start gap-4">
+                  <div className="p-4 bg-gray-50 rounded-2xl flex items-start gap-4 text-left">
                     <Target className="w-8 h-8 text-orange-500 shrink-0" />
                     <div>
                       <h4 className="font-bold text-gray-900">160 Questions</h4>
                       <p className="text-sm text-gray-500">Maths (80), Physics (40), Chemistry (40)</p>
                     </div>
                   </div>
-                  <div className="p-4 bg-gray-50 rounded-2xl flex items-start gap-4">
+                  <div className="p-4 bg-gray-50 rounded-2xl flex items-start gap-4 text-left">
                      <Clock className="w-8 h-8 text-blue-500 shrink-0" />
                     <div>
                       <h4 className="font-bold text-gray-900">180 Minutes</h4>
                       <p className="text-sm text-gray-500">Time management simulation</p>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              {/* Batch Timing Notice */}
+              <div className="bg-orange-50 p-8 rounded-3xl border border-orange-200 shadow-sm">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
+                    <Clock className="w-6 h-6 text-orange-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900">Batch 1 Timeline</h3>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between p-3 bg-white/50 rounded-xl border border-orange-100">
+                    <span className="text-gray-700 font-medium font-bold">Batch 1 Ends</span>
+                    <span className="text-orange-700 font-bold">April 12th, 11:00 AM</span>
+                  </div>
+                  <div className="flex items-center justify-between p-3 bg-white/50 rounded-xl border border-orange-100">
+                    <span className="text-gray-700 font-medium font-bold">Result Mails (Top 5)</span>
+                    <span className="text-orange-700 font-bold">2:00 PM</span>
+                  </div>
+                  <p className="text-sm text-orange-800 bg-orange-100/50 p-3 rounded-lg border border-orange-200 font-medium">
+                    ⚠️ We send mails to top 5 students at 2:00 PM. Please be active to check your mails!
+                  </p>
                 </div>
               </div>
             </div>
@@ -320,10 +343,10 @@ export default function ModelMock() {
               Unlock the RankHance Premium Plan to get access to over 40+ full-length EAMCET mock tests, detailed chapter-wise analysis, formulas, and more!
             </p>
             <Button
-              className="px-8 py-4 bg-gray-900 hover:bg-gray-800 text-white rounded-2xl shadow-xl hover:shadow-2xl font-semibold text-lg"
-              onClick={() => setIsPaymentModalOpen(true)}
+              className={`px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl font-semibold text-lg ${isPaid ? 'bg-green-600 hover:bg-green-700 cursor-default' : 'bg-gray-900 hover:bg-gray-800'}`}
+              onClick={() => isPaid ? alert("You have already unlocked RankHance Premium!") : setIsPaymentModalOpen(true)}
             >
-              Unlock Premium Features
+              {isPaid ? "Premium Unlocked" : "Unlock Premium Features"}
             </Button>
           </div>
         </div>
