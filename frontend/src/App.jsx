@@ -30,6 +30,8 @@ const Formulas = lazy(() => import('./Formulas'));
 const ModelMock = lazy(() => import('./ModelMock'));
 const ModelMockUpsell = lazy(() => import('./ModelMockUpsell'));
 const OurTeam = lazy(() => import('./OurTeam'));
+const Invoice = lazy(() => import('./Invoice'));
+const ModelMockResults = lazy(() => import('./ModelMockResults'));
 
 function AppLayout() {
   const location = useLocation();
@@ -60,7 +62,7 @@ function AppLayout() {
   }, []);
 
   useEffect(() => {
-    const publicPaths = ['/', '/login', '/signup', '/forgot-password', '/features', '/pricing', '/terms', '/privacy', '/contact', '/refund', '/team'];
+    const publicPaths = ['/', '/login', '/signup', '/forgot-password', '/features', '/pricing', '/terms', '/privacy', '/contact', '/refund', '/team', '/invoice'];
     const isMockAttemptPage = location.pathname.startsWith('/mock-attempt/');
     const testIdMatch = location.pathname.match(/\/mock-attempt\/([^/]+)/);
     const testId = testIdMatch ? testIdMatch[1] : null;
@@ -283,6 +285,7 @@ function AppLayout() {
             <Route path="/my-attempts" element={<MyAttempts />} />
             <Route path="/model-mock" element={<ModelMock />} />
             <Route path="/model-mock-upsell" element={<ModelMockUpsell />} />
+            <Route path="/model-mock-results" element={<ModelMockResults />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/refund" element={<Refund />} />
@@ -294,6 +297,7 @@ function AppLayout() {
             <Route path="/live-sessions" element={<LiveSessions />} />
             <Route path="/formulas" element={<Formulas />} />
             <Route path="/team" element={<OurTeam />} />
+            <Route path="/invoice" element={<Invoice />} />
           </Routes>
         </Suspense>
 

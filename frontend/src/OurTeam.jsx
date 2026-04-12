@@ -12,7 +12,7 @@ const teamData = {
     { id: 3, name: 'Sandeep', role: 'Software Developer', image: '/assets/team/sandeep.webp' },
     { id: 4, name: 'Karthik', role: 'Software Developer', image: '/assets/team/karthik.webp' },
     { id: 5, name: 'Venkata Sai', role: 'Software Developer', image: '/assets/team/venkatasai.webp' },
-    { id: 6, name: 'Lakshmi', role: 'Software Developer', image: '/assets/team/lakshmi.webp' }
+    { id: 6, name: 'Devi', role: 'Software Developer', image: '/assets/team/Devi.webp' }
   ],
   media: [
     { id: 7, name: 'Saif & Team', role: 'Media Partner (Vaasmedia)', image: '/assets/team/saif.webp' }
@@ -26,10 +26,10 @@ const teamData = {
   ],
   ops: [
     { id: 11, name: 'Hemanth', role: 'Operations Executive', image: '/assets/team/hemanth.webp' },
-    { id: 12, name: 'Devi', role: 'Operations Executive', image: '/assets/team/devi.webp' },
-    { id: 14, name: 'Vasu', role: 'Operations Executive', image: '/assets/team/vasu.webp' },
+    { id: 12, name: 'Lakshmi', role: 'Operations Executive', image: '/assets/team/Lakshmi.webp' },
+    { id: 14, name: 'Ravi', role: 'Operations Executive', image: '/assets/team/vasu.webp' },
     { id: 15, name: 'Krishna', role: 'Operations Executive', image: '/assets/team/krishna.webp' },
-    { id: 16, name: 'Nikhil', role: 'Operations Executive', image: '/assets/team/nikhil.webp' }
+    { id: 16, name: 'Raju', role: 'Operations Executive', image: '/assets/team/nikhil.webp' }
   ],
   architect: { id: 13, name: 'Vamsi Krishna', role: 'Product Architect', image: '/assets/team/vamsikrishna.webp' }
 };
@@ -47,9 +47,9 @@ const SectionHeader = ({ icon: Icon, title, subtitle }) => (
 const TeamCard = ({ member, delay = "", isMedia = false }) => (
   <div className={`bg-white p-5 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group animate-in fade-in slide-in-from-bottom-6 ${delay}`}>
     <div className="relative mb-4 overflow-hidden rounded-2xl aspect-square">
-      <img 
-        src={member.image} 
-        alt={member.name} 
+      <img
+        src={member.image}
+        alt={member.name}
         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         onError={(e) => {
           e.target.src = `https://ui-avatars.com/api/?name=${member.name}&background=fff7ed&color=f97316&bold=true`;
@@ -106,9 +106,9 @@ export default function OurTeam() {
 
         {/* 💻 Development Team */}
         <section>
-          <SectionHeader 
-            icon={Code} 
-            title="Development Team" 
+          <SectionHeader
+            icon={Code}
+            title="Development Team"
             subtitle="The architects of our digital platform"
           />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -120,9 +120,9 @@ export default function OurTeam() {
 
         {/* 🎨 Design Team */}
         <section>
-          <SectionHeader 
-            icon={Palette} 
-            title="Design Team" 
+          <SectionHeader
+            icon={Palette}
+            title="Design Team"
             subtitle="Crafting beautiful user experiences"
           />
           <div className="grid grid-cols-2 max-w-2xl mx-auto gap-8">
@@ -134,9 +134,9 @@ export default function OurTeam() {
 
         {/* 🎥 Media Partner */}
         <section>
-          <SectionHeader 
-            icon={Video} 
-            title="Media Partner" 
+          <SectionHeader
+            icon={Video}
+            title="Media Partner"
             subtitle="Creative storytelling & digital presence"
           />
           <div className="max-w-xs mx-auto">
@@ -146,9 +146,9 @@ export default function OurTeam() {
 
         {/* 🧠 Brand Naming */}
         <section>
-          <SectionHeader 
-            icon={Brain} 
-            title="Brand Strategy" 
+          <SectionHeader
+            icon={Brain}
+            title="Brand Strategy"
             subtitle="Defining the identity of RankHance"
           />
           <div className="max-w-xs mx-auto">
@@ -158,9 +158,9 @@ export default function OurTeam() {
 
         {/* 🤝 Operations Team */}
         <section>
-          <SectionHeader 
-            icon={Settings} 
-            title="Operations Team" 
+          <SectionHeader
+            icon={Settings}
+            title="Operations Team"
             subtitle="Ensuring smooth daily platform activities"
           />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -173,43 +173,43 @@ export default function OurTeam() {
         {/* 🎯 Product Architect - AT THE END */}
         <section className="relative">
           <div className="absolute inset-0 bg-orange-600/5 -skew-y-3 rounded-[40px] -z-10 scale-110"></div>
-          <SectionHeader 
-            icon={Sparkles} 
-            title="Product Architect" 
+          <SectionHeader
+            icon={Sparkles}
+            title="Product Architect"
             subtitle="Vision behind the RankHance platform"
           />
           <div className="max-w-md mx-auto">
-             <div className="bg-white p-8 rounded-[40px] shadow-2xl border border-orange-100 flex flex-col md:flex-row items-center gap-8 group animate-in zoom-in-95 duration-1000">
-                <div className="w-40 h-40 rounded-3xl overflow-hidden shrink-0 shadow-lg group-hover:scale-105 transition-transform duration-500">
-                   <img 
-                    src={teamData.architect.image} 
-                    alt={teamData.architect.name} 
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.target.src = `https://ui-avatars.com/api/?name=${teamData.architect.name}&background=f97316&color=fff&bold=true`;
-                    }}
-                   />
+            <div className="bg-white p-8 rounded-[40px] shadow-2xl border border-orange-100 flex flex-col md:flex-row items-center gap-8 group animate-in zoom-in-95 duration-1000">
+              <div className="w-40 h-40 rounded-3xl overflow-hidden shrink-0 shadow-lg group-hover:scale-105 transition-transform duration-500">
+                <img
+                  src={teamData.architect.image}
+                  alt={teamData.architect.name}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.src = `https://ui-avatars.com/api/?name=${teamData.architect.name}&background=f97316&color=fff&bold=true`;
+                  }}
+                />
+              </div>
+              <div className="text-center md:text-left">
+                <h3 className="text-3xl font-black text-gray-900 tracking-tight mb-2 uppercase">{teamData.architect.name}</h3>
+                <div className="inline-block px-4 py-1.5 bg-orange-100 text-orange-600 rounded-full text-sm font-black mb-4 uppercase tracking-wider">
+                  {teamData.architect.role}
                 </div>
-                <div className="text-center md:text-left">
-                   <h3 className="text-3xl font-black text-gray-900 tracking-tight mb-2 uppercase">{teamData.architect.name}</h3>
-                   <div className="inline-block px-4 py-1.5 bg-orange-100 text-orange-600 rounded-full text-sm font-black mb-4 uppercase tracking-wider">
-                      {teamData.architect.role}
-                   </div>
-                   <p className="text-gray-500 text-sm font-medium leading-relaxed italic">
-                      "Building tools that empower students to unlock their full potential and achieve their academic dreams."
-                   </p>
-                </div>
-             </div>
+                <p className="text-gray-500 text-sm font-medium leading-relaxed italic">
+                  "Building tools that empower students to unlock their full potential and achieve their academic dreams."
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </Container>
 
       {/* 🚀 Footer Quote */}
       <Container className="mt-32 text-center">
-         <div className="max-w-2xl mx-auto p-12 bg-gray-900 rounded-[40px] text-white space-y-4 animate-in fade-in duration-1000">
-            <h2 className="text-2xl font-bold italic">"Alone we can do so little; together we can do so much."</h2>
-            <p className="text-gray-400 font-medium">— RankHance Team</p>
-         </div>
+        <div className="max-w-2xl mx-auto p-12 bg-gray-900 rounded-[40px] text-white space-y-4 animate-in fade-in duration-1000">
+          <h2 className="text-2xl font-bold italic">"Alone we can do so little; together we can do so much."</h2>
+          <p className="text-gray-400 font-medium">— RankHance Team</p>
+        </div>
       </Container>
     </div>
   );
