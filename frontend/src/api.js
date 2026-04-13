@@ -131,6 +131,12 @@ export const getManagerDashboard = async () => {
   return data;
 };
 
+// GET /api/creator/dashboard
+export const getCreatorDashboard = async () => {
+  const { data } = await api.get('/creator/dashboard');
+  return data;
+};
+
 // --- Super Admin API ---
 export const superAdminUserSearch = async (email) => {
   const { data } = await api.get(`/superadmin/user-search?email=${email}`);
