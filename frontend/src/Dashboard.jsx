@@ -12,8 +12,10 @@ export default function Dashboard() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (user?.isAdmin) {
-      navigate('/admin', { replace: true });
+    if (user?.isSuperAdmin) {
+      navigate('/admin999k', { replace: true });
+    } else if (user?.isManager) {
+      navigate('/manager999k', { replace: true });
     } else if (user?.isCreator) {
       navigate('/creator', { replace: true });
     }

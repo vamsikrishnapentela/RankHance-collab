@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useAuth } from './hooks/useAuth';
 import Container from './components/Container';
+import AnnouncementPopup from './components/AnnouncementPopup';
 import { getMockTest } from './api';
 import { BookOpen, Target, CheckCircle, Smartphone, Star, Users, TrendingUp, PieChart, Video, Building } from 'lucide-react';
 
@@ -1024,6 +1025,7 @@ export default function Landing() {
         </span>
       </a>
 
+      <AnnouncementPopup />
     </div>
   );
 }

@@ -21,6 +21,7 @@ const Privacy = lazy(() => import('./Privacy'));
 const Refund = lazy(() => import('./Refund'));
 const Contact = lazy(() => import('./Contact'));
 const CreatorDashboard = lazy(() => import('./CreatorDashboard'));
+const ManagerDashboard = lazy(() => import('./ManagerDashboard'));
 const AdminDashboard = lazy(() => import('./AdminDashboard'));
 const MyAttempts = lazy(() => import('./MyAttempts'));
 const Support = lazy(() => import('./Support'));
@@ -122,8 +123,45 @@ function AppLayout() {
                       Dashboard
                     </Link> */}
 
+                    {/* ── Dashboard button ─────────────────────────────── */}
+                    {(user?.isManager || user?.isSuperAdmin) && (
+                    <Link
+                      to="/manager999k"
+                      className={`text-[13px] sm:text-sm font-bold px-2 sm:px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap ${location.pathname === '/manager999k'
+                        ? 'bg-[var(--color-primary)]/10 text-[var(--color-primary)]'
+                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                        }`}
+                    >
+                      Manager Panel
+                    </Link>
+                    )}
+
+                    {user?.isSuperAdmin && (
+                    <Link
+                      to="/admin999k"
+                      className={`text-[13px] sm:text-sm font-bold px-2 sm:px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap ${location.pathname === '/admin999k'
+                        ? 'bg-[var(--color-primary)]/10 text-[var(--color-primary)]'
+                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                        }`}
+                    >
+                      Admin Panel
+                    </Link>
+                    )}
+
+                    {user?.isCreator && (
+                    <Link
+                      to="/creator"
+                      className={`text-[13px] sm:text-sm font-bold px-2 sm:px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap ${location.pathname === '/creator'
+                        ? 'bg-[var(--color-primary)]/10 text-[var(--color-primary)]'
+                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                        }`}
+                    >
+                      Creator Panel
+                    </Link>
+                    )}
+
                     {/* ── My Attempts button ─────────────────────────────── */}
-                    {!(user?.isAdmin || user?.isCreator) && (
+                    {!(user?.isManager || user?.isSuperAdmin || user?.isCreator) && (
                     <Link
                       to="/my-attempts"
                       className={`text-[13px] sm:text-sm font-bold px-2 sm:px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap ${location.pathname === '/my-attempts'
@@ -174,8 +212,35 @@ function AppLayout() {
 
                           {/* Actions */}
                           <div className="mt-4 space-y-3">
+                            {user?.isSuperAdmin && (
+                            <button
+                               onClick={() => { setShowProfile(false); navigate('/admin999k'); }}
+                               className="w-full bg-orange-100 text-orange-700 py-2.5 rounded-xl font-semibold hover:bg-orange-200 transition font-heading text-left px-4 flex items-center gap-2"
+                             >
+                               🛡️ Super Admin
+                             </button>
+                            )}
+
+                            {(user?.isManager || user?.isSuperAdmin) && (
+                            <button
+                               onClick={() => { setShowProfile(false); navigate('/manager999k'); }}
+                               className="w-full bg-gray-50 text-gray-800 py-2.5 rounded-xl font-semibold hover:bg-gray-100 transition font-heading text-left px-4 flex items-center gap-2"
+                             >
+                               ⚙️ Manager Panel
+                             </button>
+                            )}
+
+                            {user?.isCreator && (
+                            <button
+                               onClick={() => { setShowProfile(false); navigate('/creator'); }}
+                               className="w-full bg-orange-50 text-orange-800 py-2.5 rounded-xl font-semibold hover:bg-orange-100 transition font-heading text-left px-4 flex items-center gap-2"
+                             >
+                               🎨 Creator Panel
+                             </button>
+                            )}
+
                             {/* My Attempts inside dropdown too */}
-                            {!(user?.isAdmin || user?.isCreator) && (
+                            {!(user?.isManager || user?.isSuperAdmin || user?.isCreator) && (
                             <button
                               onClick={() => { setShowProfile(false); navigate('/my-attempts'); }}
                               className="w-full bg-gray-50 text-gray-800 py-2.5 rounded-xl font-semibold hover:bg-gray-100 transition font-heading text-left px-4 flex items-center gap-2"
@@ -291,7 +356,8 @@ function AppLayout() {
             <Route path="/refund" element={<Refund />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/creator" element={<CreatorDashboard />} />
-            <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/manager999k" element={<ManagerDashboard />} />
+            <Route path="/admin999k" element={<AdminDashboard />} />
             <Route path="/support" element={<Support />} />
             <Route path="/weightage" element={<Weightage />} />
             <Route path="/live-sessions" element={<LiveSessions />} />

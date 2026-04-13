@@ -25,14 +25,20 @@ export default function Signup() {
     /* global google */
     const initGoogleSignIn = () => {
       if (window.google) {
-        google.accounts.id.initialize({
-          client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID',
-          callback: handleGoogleCallback,
-        });
-        google.accounts.id.renderButton(
-          document.getElementById("googleSignUpDiv"),
-          { theme: "outline", size: "large", width: "100%", text: "signup_with" }
-        );
+        // Prevent multiple initializations to stop console warnings
+        try {
+          google.accounts.id.initialize({
+            client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID',
+            callback: handleGoogleCallback,
+            auto_select: false,
+          });
+          google.accounts.id.renderButton(
+            document.getElementById("googleSignUpDiv"),
+            { theme: "outline", size: "large", width: "100%", text: "signup_with" }
+          );
+        } catch (e) {
+          console.warn("Google Auth already initialized or failed:", e);
+        }
       }
     };
 
@@ -67,13 +73,15 @@ export default function Signup() {
     try {
       const userData = await register({ name, email, phone, password });
 
-        if(userData.isAdmin){
-        navigate('/admin');
+      if (userData.isSuperAdmin) {
+        navigate('/admin999k');
+      } else if (userData.isManager) {
+        navigate('/manager999k');
       } else if (userData.isCreator) {
         navigate('/creator');
-        } else {
-          navigate('/dashboard');
-        }
+      } else {
+        navigate('/dashboard');
+      }
     } catch (err) {
       setError(err.response?.data?.message || 'Registration failed. Please try again.');
     } finally {

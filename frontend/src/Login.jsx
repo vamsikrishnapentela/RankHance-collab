@@ -22,8 +22,10 @@ export default function Login() {
 
   useEffect(() => {
     if (user) {
-      if (user.isAdmin) {
-        navigate('/admin', { replace: true });
+      if (user.isSuperAdmin) {
+        navigate('/admin999k', { replace: true });
+      } else if (user.isManager) {
+        navigate('/manager999k', { replace: true });
       } else if (user.isCreator) {
         navigate('/creator', { replace: true });
       } else {
@@ -36,14 +38,20 @@ export default function Login() {
     /* global google */
     const initGoogleSignIn = () => {
       if (window.google) {
-        google.accounts.id.initialize({
-          client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID',
-          callback: handleGoogleCallback,
-        });
-        google.accounts.id.renderButton(
-          document.getElementById("googleSignInDiv"),
-          { theme: "outline", size: "large", text: "continue_with" }
-        );
+        // Prevent multiple initializations to stop console warnings
+        try {
+          google.accounts.id.initialize({
+            client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID',
+            callback: handleGoogleCallback,
+            auto_select: false, // Prevents unintended auto-prompts that can trigger multiple calls
+          });
+          google.accounts.id.renderButton(
+            document.getElementById("googleSignInDiv"),
+            { theme: "outline", size: "large", text: "continue_with" }
+          );
+        } catch (e) {
+          console.warn("Google Auth already initialized or failed:", e);
+        }
       }
     };
 
@@ -64,8 +72,10 @@ export default function Login() {
     try {
       setIsSubmitting(true);
        const userData = await googleLogin(response.credential);
-          if (userData.isAdmin) {
-            navigate('/admin');
+          if (userData.isSuperAdmin) {
+            navigate('/admin999k');
+          } else if (userData.isManager) {
+            navigate('/manager999k');
           } else if (userData.isCreator) {
             navigate('/creator');
           } else {
@@ -91,8 +101,10 @@ export default function Login() {
         throw new Error("user data not received")
       }
       
-      if (res.isAdmin) {
-        navigate('/admin');
+      if (res.isSuperAdmin) {
+        navigate('/admin999k');
+      } else if (res.isManager) {
+        navigate('/manager999k');
       } else if (res.isCreator) {
         navigate('/creator');
       } else {

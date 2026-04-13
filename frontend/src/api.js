@@ -125,15 +125,50 @@ export const getFormulas = async (subject, year) => {
   return data;
 };
 
-// GET /api/creator/dashboard
-export const getCreatorDashboard = async () => {
-  const { data } = await api.get('/creator/dashboard');
+// GET /api/manager/dashboard
+export const getManagerDashboard = async () => {
+  const { data } = await api.get('/manager/dashboard');
   return data;
 };
 
-//admin apis
-export const getAdminDashboard = async () => {
-  const { data } = await api.get('/admin/dashboard');
+// --- Super Admin API ---
+export const superAdminUserSearch = async (email) => {
+  const { data } = await api.get(`/superadmin/user-search?email=${email}`);
+  return data;
+};
+
+export const superAdminUpdateUser = async (email, updates, key) => {
+  const { data } = await api.post('/superadmin/update-user', { email, updates, key });
+  return data;
+};
+
+export const superAdminReferralReport = async () => {
+  const { data } = await api.get('/superadmin/referral-report');
+  return data;
+};
+
+export const superAdminGetAnalytics = async () => {
+  const { data } = await api.get('/superadmin/analytics');
+  return data;
+};
+
+export const superAdminExportUsers = async (type) => {
+  const { data } = await api.get(`/superadmin/export-users?type=${type}`);
+  return data;
+};
+
+export const getPublicAnnouncement = async () => {
+  const { data } = await api.get('/public/announcement');
+  return data;
+};
+
+export const superAdminUpdateAnnouncement = async (announcementData) => {
+  const { data } = await api.post('/superadmin/announcement', announcementData);
+  return data;
+};
+
+export const superAdminBatchVerify = async (emails) => {
+  const { data } = await api.post('/superadmin/batch-verify', { emails });
   return data;
 };
 

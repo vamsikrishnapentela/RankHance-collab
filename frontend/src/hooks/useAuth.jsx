@@ -55,7 +55,7 @@ export const AuthProvider = ({ children }) => {
 
     console.log("Sending referral (Google):", referral);
 
-    const { token, user: userData } = await apiGoogleLogin(tokenId,);
+    const { token, user: userData } = await apiGoogleLogin(tokenId);
 
     localStorage.setItem('rankhance_token', token);
     setUser(userData);
@@ -83,4 +83,10 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
-export const useAuth = () => useContext(AuthContext);
+export const useAuth = () => {
+  const context = useContext(AuthContext);
+  if (context === undefined) {
+    throw new Error('useAuth must be used within an AuthProvider');
+  }
+  return context;
+};

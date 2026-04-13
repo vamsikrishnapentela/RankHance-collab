@@ -12,6 +12,7 @@ const { OAuth2Client } = require('google-auth-library');
 const User = require('./models/User');
 const MockTestAttempt = require('./models/MockTestAttempt');
 const ModelMockAttempt = require('./models/ModelMockAttempt');
+const Config = require('./models/Config');
 const Ticket = require('./models/Ticket');
 const auth = require('./middleware/auth');
 const nodemailer = require('nodemailer');
@@ -79,7 +80,7 @@ app.post('/api/payment/webhook', express.raw({ type: 'application/json' }), asyn
                     console.log(`User ${user.email} was already marked as PAID.`);
                 }
             } else {
-                console.log(`No user found with razorpayOrderId: ${order_id}`);
+                console.warn(`[WEBHOOK WARNING] No user found with razorpayOrderId: ${order_id}. This might happen if manual verification cleared it already, or if the order was never saved.`);
             }
         }
     } catch (err) {
@@ -145,7 +146,7 @@ app.post('/api/auth/register', async (req, res) => {
         }
 
         const token = jwt.sign({ user: { id: user.id } }, process.env.JWT_SECRET || 'YOUR_JWT_SECRET', { expiresIn: '7d' });
-        res.json({ token, user: { id: user.id, name: user.name, email: user.email, isPaid: user.isPaid, isCreator: user.isCreator || false, isAdmin: user.isAdmin || false, referralCode: user.referralCode || null } });
+        res.json({ token, user: { id: user.id, name: user.name, email: user.email, isPaid: user.isPaid, isCreator: user.isCreator || false, isManager: user.isManager || false, isSuperAdmin: user.isSuperAdmin || false, referralCode: user.referralCode || null } });
     } catch (err) {
         res.status(500).json({ message: 'Server error' });
     }
@@ -167,7 +168,7 @@ app.post('/api/auth/login', async (req, res) => {
         if (!isMatch) return res.status(400).json({ message: 'Invalid credentials' });
 
         const token = jwt.sign({ user: { id: user.id } }, process.env.JWT_SECRET || 'YOUR_JWT_SECRET', { expiresIn: '7d' });
-        res.json({ token, user: { id: user.id, name: user.name, email: user.email, isPaid: user.isPaid, isCreator: user.isCreator || false, isAdmin: user.isAdmin || false, referralCode: user.referralCode || null } });
+        res.json({ token, user: { id: user.id, name: user.name, email: user.email, isPaid: user.isPaid, isCreator: user.isCreator || false, isManager: user.isManager || false, isSuperAdmin: user.isSuperAdmin || false, referralCode: user.referralCode || null } });
     } catch (err) {
         res.status(500).json({ message: 'Server error' });
     }
@@ -205,7 +206,7 @@ app.post('/api/auth/google', async (req, res) => {
         }
 
         const token = jwt.sign({ user: { id: user.id } }, process.env.JWT_SECRET || 'YOUR_JWT_SECRET', { expiresIn: '7d' });
-        res.json({ token, user: { id: user.id, name: user.name, email: user.email, isPaid: user.isPaid, isCreator: user.isCreator || false, isAdmin: user.isAdmin || false, referralCode: user.referralCode || null } });
+        res.json({ token, user: { id: user.id, name: user.name, email: user.email, isPaid: user.isPaid, isCreator: user.isCreator || false, isManager: user.isManager || false, isSuperAdmin: user.isSuperAdmin || false, referralCode: user.referralCode || null } });
     } catch (err) {
         console.error(err);
         res.status(400).json({ message: 'Google authentication failed' });
@@ -289,12 +290,28 @@ app.post('/api/auth/reset-password', async (req, res) => {
 
 app.post('/api/payment/create-order', auth, async (req, res) => {
     try {
+        console.log(`[PAYMENT] Creating order for UserID: ${req.user.id}`);
         const options = { amount: 9900, currency: "INR", receipt: "receipt_" + req.user.id };
         const order = await razorpay.orders.create(options);
-        await User.findByIdAndUpdate(req.user.id, { razorpayOrderId: order.id });
+        
+        console.log(`[PAYMENT] Razorpay Order Created: ${order.id}. Saving to DB...`);
+        
+        // Ensure the ID is saved before we respond
+        const updatedUser = await User.findByIdAndUpdate(
+            req.user.id, 
+            { razorpayOrderId: order.id },
+            { new: true }
+        );
+
+        if (!updatedUser) {
+            console.error(`[PAYMENT ERROR] Failed to find user ${req.user.id} to save orderId`);
+            return res.status(500).json({ message: "User not found" });
+        }
+
+        console.log(`[PAYMENT SUCCESS] orderId ${order.id} saved to user ${updatedUser.email}`);
         res.json(order);
     } catch (err) {
-        console.error("Order creation error:", err);
+        console.error("[PAYMENT ERROR] Order creation failed:", err);
         res.status(500).json({ message: "Failed to create order" });
     }
 });
@@ -819,12 +836,130 @@ app.get('/api/creator/dashboard', auth, async (req, res) => {
     }
 });
 
-// ─── Admin Dashboard ──────────────────────────────────────────────────────────
-
-app.get('/api/admin/dashboard', auth, async (req, res) => {
+// ─── Super Admin Dashboard ───────────────────────────────────────────────────
+app.get('/api/superadmin/user-search', auth, async (req, res) => {
     try {
         const admin = await User.findById(req.user.id);
-        if (!admin || !admin.isAdmin) return res.status(403).json({ message: "Access denied" });
+        if (!admin || !admin.isSuperAdmin) return res.status(403).json({ message: "Access denied" });
+
+        const { email } = req.query;
+        if (!email) return res.status(400).json({ message: "Email required" });
+
+        const targetUser = await User.findOne({ email });
+        if (!targetUser) return res.status(404).json({ message: "User not found" });
+
+        res.json(targetUser); // Returns full document including googleId, phone, etc.
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
+app.post('/api/superadmin/update-user', auth, async (req, res) => {
+    try {
+        const admin = await User.findById(req.user.id);
+        if (!admin || !admin.isSuperAdmin) return res.status(403).json({ message: "Access denied" });
+
+        const { email, updates, key } = req.body;
+        if (key !== 'mamatha') return res.status(403).json({ message: "Invalid action key. Security verification failed." });
+
+        // Allowed updates: isPaid, isCreator, commissionRate, referralCode, isManager, isSuperAdmin
+        const allowedUpdates = ['isPaid', 'isCreator', 'commissionRate', 'referralCode', 'isManager'];
+        const finalUpdates = {};
+        
+        Object.keys(updates).forEach(k => {
+            if (allowedUpdates.includes(k)) {
+                finalUpdates[k] = updates[k];
+            }
+        });
+
+        const user = await User.findOneAndUpdate({ email }, { $set: finalUpdates }, { new: true });
+        if (!user) return res.status(404).json({ message: "User not found" });
+
+        res.json({ message: "User updated successfully", user });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
+app.get('/api/superadmin/analytics', auth, async (req, res) => {
+    try {
+        const admin = await User.findById(req.user.id);
+        if (!admin || !admin.isSuperAdmin) return res.status(403).json({ message: "Access denied" });
+
+        // Daily Registrations (last 30 days)
+        const daily = await User.aggregate([
+            { $match: { createdAt: { $gte: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000) } } },
+            { $group: { _id: { $dateToString: { format: "%Y-%m-%d", date: "$createdAt" } }, count: { $sum: 1 } } },
+            { $sort: { _id: 1 } }
+        ]);
+
+        // Monthly Registrations (last 12 months)
+        const monthly = await User.aggregate([
+            { $match: { createdAt: { $gte: new Date(Date.now() - 365 * 24 * 60 * 60 * 1000) } } },
+            { $group: { _id: { $dateToString: { format: "%Y-%m", date: "$createdAt" } }, count: { $sum: 1 } } },
+            { $sort: { _id: 1 } }
+        ]);
+
+        // Yearly
+        const yearly = await User.aggregate([
+            { $group: { _id: { $dateToString: { format: "%Y", date: "$createdAt" } }, count: { $sum: 1 } } },
+            { $sort: { _id: 1 } }
+        ]);
+
+        res.json({ daily, monthly, yearly });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
+app.get('/api/superadmin/export-users', auth, async (req, res) => {
+    try {
+        const admin = await User.findById(req.user.id);
+        if (!admin || !admin.isSuperAdmin) return res.status(403).json({ message: "Access denied" });
+
+        const { type } = req.query; // all | paid | free
+        let query = {};
+        if (type === 'paid') query = { isPaid: true };
+        if (type === 'free') query = { isPaid: false };
+
+        const users = await User.find(query).select('name email phone isPaid createdAt');
+        res.json(users);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
+app.get('/api/superadmin/referral-report', auth, async (req, res) => {
+    try {
+        const admin = await User.findById(req.user.id);
+        if (!admin || !admin.isSuperAdmin) return res.status(403).json({ message: "Access denied" });
+
+        const creators = await User.find({ isCreator: true }).select('name email referralCode referralCount paidReferrals earnings');
+        const report = await Promise.all(creators.map(async (c) => {
+            const referredUsers = await User.find({ referredBy: c.referralCode }).select('name email isPaid createdAt');
+            return {
+                ...c.toObject(),
+                referredUsers
+            };
+        }));
+
+        res.json(report);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
+// ─── Manager Dashboard ──────────────────────────────────────────────────────────
+// Formerly Admin Dashboard
+app.get('/api/manager/dashboard', auth, async (req, res) => {
+    try {
+        const admin = await User.findById(req.user.id);
+        if (!admin || (!admin.isManager && !admin.isSuperAdmin)) return res.status(403).json({ message: "Access denied" });
 
         const totalUsers = await User.countDocuments();
         const paidUsers = await User.countDocuments({ isPaid: true });
@@ -907,7 +1042,7 @@ app.get('/api/support/user-tickets', auth, async (req, res) => {
 app.get('/api/support/admin-tickets', auth, async (req, res) => {
     try {
         const admin = await User.findById(req.user.id);
-        if (!admin || !admin.isAdmin) return res.status(403).json({ message: "Access denied" });
+        if (!admin || (!admin.isManager && !admin.isSuperAdmin)) return res.status(403).json({ message: "Access denied" });
 
         const tickets = await Ticket.find().populate('userId', 'name email').sort({ updatedAt: -1 });
         res.json(tickets);
@@ -919,7 +1054,7 @@ app.get('/api/support/admin-tickets', auth, async (req, res) => {
 app.post('/api/support/admin-reply', auth, async (req, res) => {
     try {
         const admin = await User.findById(req.user.id);
-        if (!admin || !admin.isAdmin) return res.status(403).json({ message: "Access denied" });
+        if (!admin || (!admin.isManager && !admin.isSuperAdmin)) return res.status(403).json({ message: "Access denied" });
 
         const { ticketId, message, status } = req.body;
         const ticket = await Ticket.findById(ticketId);
@@ -938,6 +1073,70 @@ app.post('/api/support/admin-reply', auth, async (req, res) => {
         res.json(ticket);
     } catch (err) {
         console.error("Admin reply error:", err);
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
+app.get('/api/public/announcement', async (req, res) => {
+    try {
+        const config = await Config.findOne({ key: 'announcement' });
+        res.json(config || { title: "", content: "", isActive: false, buttonText: "", buttonLink: "", displayDate: "" });
+    } catch (err) {
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
+app.post('/api/superadmin/announcement', auth, async (req, res) => {
+    try {
+        const admin = await User.findById(req.user.id);
+        if (!admin || !admin.isSuperAdmin) return res.status(403).json({ message: "Access denied" });
+
+        const { title, content, isActive, buttonText, buttonLink, displayDate, key: securityKey } = req.body;
+        if (securityKey !== 'mamatha') return res.status(403).json({ message: "Invalid action key" });
+
+        const config = await Config.findOneAndUpdate(
+            { key: 'announcement' },
+            { $set: { title, content, isActive, buttonText, buttonLink, displayDate, updatedAt: Date.now() } },
+            { upsert: true, new: true }
+        );
+
+        res.json(config);
+    } catch (err) {
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
+app.post('/api/superadmin/batch-verify', auth, async (req, res) => {
+    try {
+        const admin = await User.findById(req.user.id);
+        if (!admin || !admin.isSuperAdmin) return res.status(403).json({ message: "Access denied" });
+
+        const { emails } = req.body; // Array of strings (emails)
+        if (!Array.isArray(emails)) return res.status(400).json({ message: "Invalid input" });
+
+        const cleanEmails = emails.map(e => e.toLowerCase().trim());
+
+        // 1. Matches for the provided input
+        const results = await Promise.all(cleanEmails.map(async (email) => {
+            const found = await User.findOne({ email });
+            return {
+                inputEmail: email,
+                dbUser: found ? {
+                    name: found.name,
+                    email: found.email,
+                    phone: found.phone,
+                    isPaid: found.isPaid
+                } : null
+            };
+        }));
+
+        // 2. Inverse check: Find Paid users NOT in the input list
+        const allPaidUsers = await User.find({ isPaid: true }).select('name email phone');
+        const missingFromInput = allPaidUsers.filter(u => !cleanEmails.includes(u.email.toLowerCase()));
+
+        res.json({ results, missingFromInput });
+    } catch (err) {
+        console.error(err);
         res.status(500).json({ message: "Server error" });
     }
 });

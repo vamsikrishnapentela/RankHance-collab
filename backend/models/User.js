@@ -16,7 +16,8 @@ const userSchema = new mongoose.Schema({
   earnings: { type: Number, default: 0 },
   commissionRate: { type: Number },
   //admin fields
-  isAdmin: { type: Boolean, default: false },
+  isManager: { type: Boolean, default: false },
+  isSuperAdmin: { type: Boolean, default: false },
 
   razorpayOrderId: { type: String },
   razorpayPaymentId: { type: String },
