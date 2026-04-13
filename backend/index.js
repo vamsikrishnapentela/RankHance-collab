@@ -23,6 +23,10 @@ const googleClient = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 app.use(cors());
 
 // Razorpay Webhook - MUST be before express.json() to get raw body
+app.get('/api/payment/webhook', (req, res) => {
+    res.status(200).send('Razorpay Webhook endpoint is active. Use POST for actual webhooks.');
+});
+
 app.post('/api/payment/webhook', express.raw({ type: 'application/json' }), async (req, res) => {
     const signature = req.headers['x-razorpay-signature'];
     const secret = process.env.RAZORPAY_WEBHOOK_SECRET;
