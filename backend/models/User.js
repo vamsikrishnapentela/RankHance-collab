@@ -19,6 +19,7 @@ const userSchema = new mongoose.Schema({
   isAdmin: { type: Boolean, default: false },
 
   razorpayOrderId: { type: String },
+  razorpayPaymentId: { type: String },
   resetPasswordOTP: { type: String },
   resetPasswordOTPExpires: { type: Date },
   lastOTPSentAt: { type: Date },

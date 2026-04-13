@@ -21,6 +21,70 @@ const PORT = process.env.PORT || 5000;
 const googleClient = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 app.use(cors());
+
+// Razorpay Webhook - MUST be before express.json() to get raw body
+app.post('/api/payment/webhook', express.raw({ type: 'application/json' }), async (req, res) => {
+    const signature = req.headers['x-razorpay-signature'];
+    const secret = process.env.RAZORPAY_WEBHOOK_SECRET;
+    
+    console.log('--- Razorpay Webhook Received ---');
+    
+    try {
+        const generatedSignature = crypto
+            .createHmac('sha256', secret)
+            .update(req.body)
+            .digest('hex');
+
+        if (generatedSignature !== signature) {
+            console.error('Webhook signature verification failed');
+            return res.status(200).json({ status: 'ok' });
+        }
+
+        const data = JSON.parse(req.body.toString());
+        console.log('Webhook Event:', data.event);
+
+        if (data.event === 'payment.captured') {
+            const payment = data.payload.payment.entity;
+            const order_id = payment.order_id;
+            const payment_id = payment.id;
+
+            console.log(`Captured payment ${payment_id} for order ${order_id}`);
+
+            const user = await User.findOne({ razorpayOrderId: order_id });
+            if (user) {
+                console.log(`Matching user found: ${user.email}`);
+                if (!user.isPaid) {
+                    user.isPaid = true;
+                    user.razorpayPaymentId = payment_id;
+                    
+                    // Referral Commission Logic (Consistent with /verify routes)
+                    if (user.referredBy) {
+                        const creator = await User.findOne({ referralCode: user.referredBy, isCreator: true });
+                        if (creator && creator.email !== user.email) {
+                            creator.paidReferrals = (creator.paidReferrals || 0) + 1;
+                            const commission = creator.commissionRate || 0;
+                            creator.earnings = (creator.earnings || 0) + Math.floor(commission * 99);
+                            await creator.save();
+                            console.log(`Referral commission updated for creator: ${creator.email}`);
+                        }
+                    }
+
+                    await user.save();
+                    console.log(`User ${user.email} updated to PAID status.`);
+                } else {
+                    console.log(`User ${user.email} was already marked as PAID.`);
+                }
+            } else {
+                console.log(`No user found with razorpayOrderId: ${order_id}`);
+            }
+        }
+    } catch (err) {
+        console.error('Webhook processing error:', err.message);
+    }
+
+    res.status(200).json({ status: 'ok' });
+});
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -36,20 +100,20 @@ const razorpay = new Razorpay({
     key_secret: process.env.RAZORPAY_KEY_SECRET || 'YOUR_KEY_SECRET',
 });
 
-    const readJsonFile = (filePath) => {
-        try {
-            const absolutePath = path.join(__dirname, 'data', filePath);
-            if (fs.existsSync(absolutePath)) {
-                const rawData = fs.readFileSync(absolutePath, 'utf8').trim();
-                const data = JSON.parse(rawData);
-                if (Array.isArray(data)) return data;
-            }
-            return null;
-        } catch (error) {
-            console.error(`Error reading ${filePath}:`, error.message);
-            return null;
+const readJsonFile = (filePath) => {
+    try {
+        const absolutePath = path.join(__dirname, 'data', filePath);
+        if (fs.existsSync(absolutePath)) {
+            const rawData = fs.readFileSync(absolutePath, 'utf8').trim();
+            const data = JSON.parse(rawData);
+            if (Array.isArray(data)) return data;
         }
-    };
+        return null;
+    } catch (error) {
+        console.error(`Error reading ${filePath}:`, error.message);
+        return null;
+    }
+};
 
 // ─── Auth ─────────────────────────────────────────────────────────────────────
 
@@ -88,11 +152,11 @@ app.post('/api/auth/login', async (req, res) => {
     try {
         const user = await User.findOne({ email });
         if (!user) return res.status(400).json({ message: 'Invalid credentials' });
-        
+
         if (!user.password && user.googleId) {
             return res.status(400).json({ message: 'This email is registered via Google. Please use Continue with Google.' });
         }
-        
+
         if (!user.password) return res.status(400).json({ message: 'Invalid credentials' });
 
         const isMatch = await bcrypt.compare(password, user.password);
@@ -438,10 +502,10 @@ app.post('/api/mocktest/submit', auth, async (req, res) => {
     try {
         const { testId, testName, questions, answers, flags, timeTakenSeconds } = req.body;
 
-            let questionsPath = `3-mocktests-questions/advanced/${testId}/data.json`;
-            if (!testId.startsWith('adv')) {
-                questionsPath = `3-mocktests-questions/${testId}/data.json`;
-            }
+        let questionsPath = `3-mocktests-questions/advanced/${testId}/data.json`;
+        if (!testId.startsWith('adv')) {
+            questionsPath = `3-mocktests-questions/${testId}/data.json`;
+        }
         const allQuestions = readJsonFile(questionsPath) || [];
         const correctMap = {};
         allQuestions.forEach(q => { correctMap[q.id] = q.correctIndex; });
@@ -661,7 +725,7 @@ app.get('/api/model-mock/attempt', auth, async (req, res) => {
     try {
         const batchId = CURRENT_BATCH.batchId;
         const attempt = await ModelMockAttempt.findOne({ userId: req.user.id, batchId });
-        
+
         if (!attempt) return res.json({ hasAttempted: false });
 
         let questionsPath = `3-mocktests-questions/advanced/${attempt.testId}/data.json`;
@@ -711,7 +775,7 @@ app.get('/api/model-mock/leaderboard', async (req, res) => {
             .limit(100)
             .populate('userId', 'name')
             .lean();
-            
+
         const leaderboard = topAttempts.map((attempt, index) => ({
             rank: index + 1,
             name: attempt.userId ? attempt.userId.name : 'Unknown User',
