@@ -23,8 +23,8 @@ export default function LiveSessions() {
         "Live Q&A with Toppers & Content Creators"
       ],
       presenters: "EAMCET Toppers & Content Creators",
-      date: "Will be announced soon",
-      time: "Will be announced soon",
+      date: "26th April, Sunday",
+      time: "07:30 PM",
       meetLink: "#", // Update Google Meet link here later
       bgClass: "bg-orange-50/50",
       borderClass: "border-orange-100",
@@ -61,7 +61,7 @@ export default function LiveSessions() {
           </Link>
           <div className="flex items-center gap-4">
             <Link to="/dashboard" className="text-gray-600 font-bold hover:text-gray-900 transition-colors">Dashboard</Link>
-            <button 
+            <button
               onClick={logout}
               className="px-5 py-2.5 rounded-xl bg-gray-100 text-gray-700 font-semibold font-heading text-sm hover:bg-gray-200 transition-colors"
             >
@@ -73,10 +73,10 @@ export default function LiveSessions() {
 
       <div className="pt-24 pb-12 flex-1 w-full bg-gray-50 px-6 min-h-screen">
         <Container className="max-w-5xl mx-auto">
-          
+
           {/* Header */}
           <div className="mb-10 flex items-center gap-4">
-            <button 
+            <button
               onClick={() => navigate('/dashboard')}
               className="p-2 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors flex items-center justify-center shadow-sm"
             >
@@ -94,7 +94,7 @@ export default function LiveSessions() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {sessions.map((session) => (
               <div key={session.id} className={`flex flex-col bg-white rounded-3xl border shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden ${session.borderClass}`}>
-                
+
                 {/* Card Header area */}
                 <div className={`p-6 md:p-8 ${session.bgClass} border-b ${session.borderClass}`}>
                   <div className="flex justify-between items-start mb-4">
@@ -110,7 +110,7 @@ export default function LiveSessions() {
 
                 {/* Card Body */}
                 <div className="p-6 md:p-8 flex-1 flex flex-col space-y-6">
-                  
+
                   {/* Meta Details */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="flex items-center gap-3 text-sm text-gray-600">
@@ -153,20 +153,27 @@ export default function LiveSessions() {
                   </div>
 
                   {/* Action Link */}
-                  <a 
-                    href={session.meetLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    onClick={(e) => {
-                      if (!isPaid) {
-                        e.preventDefault();
-                        setIsPaymentModalOpen(true);
-                      }
-                    }}
-                    className={`mt-auto w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-white shadow-lg transition-transform hover:-translate-y-0.5 ${session.btnClass}`}
-                  >
-                    <Video className="w-5 h-5" /> {isPaid ? 'Join Live Meet' : 'Unlock to Join 🔒'}
-                  </a>
+                  <div className="mt-auto space-y-2">
+                    <a
+                      href={session.meetLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => {
+                        if (!isPaid) {
+                          e.preventDefault();
+                          setIsPaymentModalOpen(true);
+                        }
+                      }}
+                      className={`w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-white shadow-lg transition-transform hover:-translate-y-0.5 ${session.btnClass}`}
+                    >
+                      <Video className="w-5 h-5" /> {isPaid ? 'Join Live Meet' : 'Unlock to Join 🔒'}
+                    </a>
+                    {session.id === 1 && isPaid && (
+                      <p className="text-center text-[10px] text-gray-500 font-medium italic">
+                        * Link will be available on the day of the session
+                      </p>
+                    )}
+                  </div>
 
                 </div>
               </div>

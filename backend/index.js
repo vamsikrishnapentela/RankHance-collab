@@ -31,9 +31,9 @@ app.get('/api/payment/webhook', (req, res) => {
 app.post('/api/payment/webhook', express.raw({ type: 'application/json' }), async (req, res) => {
     const signature = req.headers['x-razorpay-signature'];
     const secret = process.env.RAZORPAY_WEBHOOK_SECRET;
-    
+
     console.log('--- Razorpay Webhook Received ---');
-    
+
     try {
         const generatedSignature = crypto
             .createHmac('sha256', secret)
@@ -61,7 +61,7 @@ app.post('/api/payment/webhook', express.raw({ type: 'application/json' }), asyn
                 if (!user.isPaid) {
                     user.isPaid = true;
                     user.razorpayPaymentId = payment_id;
-                    
+
                     // Referral Commission Logic (Consistent with /verify routes)
                     if (user.referredBy) {
                         const creator = await User.findOne({ referralCode: user.referredBy, isCreator: true });
@@ -293,12 +293,12 @@ app.post('/api/payment/create-order', auth, async (req, res) => {
         console.log(`[PAYMENT] Creating order for UserID: ${req.user.id}`);
         const options = { amount: 9900, currency: "INR", receipt: "receipt_" + req.user.id };
         const order = await razorpay.orders.create(options);
-        
+
         console.log(`[PAYMENT] Razorpay Order Created: ${order.id}. Saving to DB...`);
-        
+
         // Ensure the ID is saved before we respond
         const updatedUser = await User.findByIdAndUpdate(
-            req.user.id, 
+            req.user.id,
             { razorpayOrderId: order.id },
             { new: true }
         );
@@ -866,7 +866,7 @@ app.post('/api/superadmin/update-user', auth, async (req, res) => {
         // Allowed updates: isPaid, isCreator, commissionRate, referralCode, isManager, isSuperAdmin
         const allowedUpdates = ['isPaid', 'isCreator', 'commissionRate', 'referralCode', 'isManager'];
         const finalUpdates = {};
-        
+
         Object.keys(updates).forEach(k => {
             if (allowedUpdates.includes(k)) {
                 finalUpdates[k] = updates[k];

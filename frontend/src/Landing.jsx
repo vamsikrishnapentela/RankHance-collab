@@ -15,6 +15,16 @@ export default function Landing() {
   const { user } = useAuth();
   const navigate = useNavigate();
 
+  const handleUnlockPremium = () => {
+    const token = localStorage.getItem("rankhance_token");
+    localStorage.setItem("showPayment", "true");
+    if (!token) {
+      navigate("/login");
+    } else {
+      navigate("/dashboard");
+    }
+  };
+
   // Mini quiz states
   const [timeLeft, setTimeLeft] = useState(120); // 2 mins
   const [quizStarted, setQuizStarted] = useState(false);
@@ -241,6 +251,13 @@ export default function Landing() {
               Start Practicing →
             </Link>
 
+            <button
+              onClick={handleUnlockPremium}
+              className="px-6 py-3 md:px-8 md:py-4 bg-white border-2 border-orange-500 text-orange-600 rounded-2xl shadow-lg hover:shadow-xl transition-all font-bold text-base md:text-lg flex items-center justify-center gap-2 hover:scale-105"
+            >
+              Update to Premium 👑
+            </button>
+
           </div>
 
           <div className="flex justify-center mt-6">
@@ -250,7 +267,7 @@ export default function Landing() {
             >
               <span className="text-xl md:text-2xl font-semibold tracking-tight mb-1 drop-shadow-sm">Attend EAMCET 2026 Model Mock Test</span>
               <span className="inline-block bg-white text-orange-600 px-4 py-1 rounded-full text-sm md:text-base font-black shadow-sm uppercase tracking-wider">🔥 FREE!</span>
-              
+
               <div className="absolute inset-0 rounded-3xl bg-white opacity-0 group-hover:opacity-10 transition-opacity"></div>
             </Link>
           </div>
@@ -699,17 +716,7 @@ export default function Landing() {
 
               {/* 🚀 CTA */}
               <button
-                onClick={() => {
-                  const token = localStorage.getItem("rankhance_token");
-
-                  if (!token) {
-                    localStorage.setItem("showPayment", "true");
-                    navigate("/login");
-                  } else {
-                    localStorage.setItem("showPayment", "true");
-                    navigate("/dashboard");
-                  }
-                }}
+                onClick={handleUnlockPremium}
                 className="relative z-10 mt-6 w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 md:py-4 rounded-xl font-semibold text-base md:text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
               >
                 Unlock Premium Now →
@@ -834,32 +841,32 @@ export default function Landing() {
 
           {/* 👥 TEAM SPOTLIGHT */}
           <div className="mt-24 mb-6 animate-in fade-in slide-in-from-bottom-10 duration-1000">
-             <div className="relative group cursor-pointer" onClick={() => navigate('/team')}>
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-400 rounded-[32px] blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
-                <div className="relative bg-white border border-orange-100 p-8 md:p-12 rounded-[32px] shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col md:flex-row items-center justify-between gap-8 overflow-hidden">
-                   {/* Decorative decoration */}
-                   <div className="absolute top-0 right-0 w-32 h-32 bg-orange-50 rounded-full translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-700"></div>
-                   
-                   <div className="text-center md:text-left space-y-3 z-10">
-                      <h3 className="text-2xl md:text-3xl font-black text-gray-900 tracking-tight flex items-center justify-center md:justify-start gap-3">
-                         Minds Behind RankHance 2026 <span className="text-3xl">👥</span>
-                      </h3>
-                      <p className="text-gray-500 font-medium max-w-md">
-                         From expert developers to strategic advisors, meet the team working 24/7 to help you crack EAPCET 2026.
-                      </p>
-                   </div>
-                   
-                   <div className="flex flex-col items-center md:items-end gap-4 z-10 w-full md:w-auto">
-                      <Link 
-                        to="/team" 
-                        className="px-8 py-4 bg-gray-900 text-white rounded-2xl font-black hover:bg-black transition-all hover:scale-105 active:scale-95 shadow-lg shadow-gray-200 flex items-center gap-2"
-                      >
-                         Meet Our Team <span className="text-xl">🚀</span>
-                      </Link>
-                      <span className="text-xs text-orange-500 font-bold uppercase tracking-widest">Built with passion ❤️</span>
-                   </div>
+            <div className="relative group cursor-pointer" onClick={() => navigate('/team')}>
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-400 rounded-[32px] blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
+              <div className="relative bg-white border border-orange-100 p-8 md:p-12 rounded-[32px] shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col md:flex-row items-center justify-between gap-8 overflow-hidden">
+                {/* Decorative decoration */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-orange-50 rounded-full translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-700"></div>
+
+                <div className="text-center md:text-left space-y-3 z-10">
+                  <h3 className="text-2xl md:text-3xl font-black text-gray-900 tracking-tight flex items-center justify-center md:justify-start gap-3">
+                    Minds Behind RankHance 2026 <span className="text-3xl">👥</span>
+                  </h3>
+                  <p className="text-gray-500 font-medium max-w-md">
+                    From expert developers to strategic advisors, meet the team working 24/7 to help you crack EAPCET 2026.
+                  </p>
                 </div>
-             </div>
+
+                <div className="flex flex-col items-center md:items-end gap-4 z-10 w-full md:w-auto">
+                  <Link
+                    to="/team"
+                    className="px-8 py-4 bg-gray-900 text-white rounded-2xl font-black hover:bg-black transition-all hover:scale-105 active:scale-95 shadow-lg shadow-gray-200 flex items-center gap-2"
+                  >
+                    Meet Our Team <span className="text-xl">🚀</span>
+                  </Link>
+                  <span className="text-xs text-orange-500 font-bold uppercase tracking-widest">Built with passion ❤️</span>
+                </div>
+              </div>
+            </div>
           </div>
 
         </Container>
