@@ -25,7 +25,7 @@ export default function LiveSessions() {
       presenters: "EAMCET Toppers & Content Creators",
       date: "26th April, Sunday",
       time: "07:30 PM",
-      meetLink: "#", // Update Google Meet link here later
+      meetLink: "https://meet.google.com/vzo-twor-bzj", // Updated Live Link
       bgClass: "bg-orange-50/50",
       borderClass: "border-orange-100",
       btnClass: "bg-orange-500 hover:bg-orange-600 shadow-orange-500/20"
@@ -168,11 +168,6 @@ export default function LiveSessions() {
                     >
                       <Video className="w-5 h-5" /> {isPaid ? 'Join Live Meet' : 'Unlock to Join 🔒'}
                     </a>
-                    {session.id === 1 && isPaid && (
-                      <p className="text-center text-[10px] text-gray-500 font-medium italic">
-                        * Link will be available on the day of the session
-                      </p>
-                    )}
                   </div>
 
                 </div>
