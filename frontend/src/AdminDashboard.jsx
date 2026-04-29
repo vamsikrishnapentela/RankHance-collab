@@ -835,25 +835,3 @@ export default function AdminDashboard() {
     </div>
   );
 }
-
-        <div className="space-y-2">
-          <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest px-1">Google Meet Link</label>
-          <input 
-            type="text"
-            value={local.buttonLink}
-            onChange={(e) => setLocal({ ...local, buttonLink: e.target.value })}
-            className="w-full p-4 bg-gray-50 rounded-2xl border-none focus:ring-2 focus:ring-orange-500 font-medium text-blue-600"
-          />
-        </div>
-
-        <button 
-          onClick={handleSave}
-          disabled={isSaving}
-          className="w-full py-4 bg-orange-500 text-white rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-orange-600 transition-all shadow-lg shadow-orange-200 active:scale-95 disabled:opacity-50"
-        >
-          {isSaving ? 'Applying Changes...' : showSuccess ? 'Success!' : 'Save Changes'}
-        </button>
-      </div >
-    </div >
-  );
-};
