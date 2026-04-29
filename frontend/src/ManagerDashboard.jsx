@@ -17,7 +17,7 @@ export default function ManagerDashboard() {
   const [view, setView] = useState("stats"); // toggle: stats | users | creators | tickets | modelmock
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("all"); // all | paid | free
-  
+
   const [showPrivacy, setShowPrivacy] = useState(false);
 
   const [tickets, setTickets] = useState([]);
@@ -77,7 +77,7 @@ export default function ManagerDashboard() {
 
     fetchData();
   }, [user, navigate]);
-  
+
   const fetchData = async () => {
     try {
       const res = await getManagerDashboard();
@@ -94,7 +94,7 @@ export default function ManagerDashboard() {
     doc.text(`RankHance ${type.toUpperCase()} Users List`, 14, 20);
     doc.setFontSize(10);
     doc.text(`Generated on: ${new Date().toLocaleString()}`, 14, 30);
-    
+
     let y = 40;
     doc.setFont(undefined, 'bold');
     doc.text("S.No", 14, y);
@@ -124,7 +124,7 @@ export default function ManagerDashboard() {
       .filter(u => type === 'all' || (type === 'paid' ? u.isPaid : !u.isPaid))
       .map(u => u.email)
       .join(", ");
-    
+
     navigator.clipboard.writeText(emails);
     alert(`Copied ${type} user emails to clipboard for BCC!`);
   };
@@ -146,53 +146,48 @@ export default function ManagerDashboard() {
           <div className="flex flex-row overflow-x-auto pb-2 sm:pb-0 scrollbar-hide gap-2 sm:gap-3">
             <button
               onClick={() => setView("stats")}
-              className={`px-4 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm whitespace-nowrap text-xs sm:text-sm ${
-                view === "stats" ? "bg-orange-500 text-white" : "bg-white border hover:bg-gray-50 text-gray-600"
-              }`}
+              className={`px-4 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm whitespace-nowrap text-xs sm:text-sm ${view === "stats" ? "bg-orange-500 text-white" : "bg-white border hover:bg-gray-50 text-gray-600"
+                }`}
             >
               <LayoutDashboard size={16} /> <span>Overview</span>
             </button>
             <button
               onClick={() => setView("users")}
-              className={`px-4 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm whitespace-nowrap text-xs sm:text-sm ${
-                view === "users" ? "bg-orange-500 text-white" : "bg-white border hover:bg-gray-50 text-gray-600"
-              }`}
+              className={`px-4 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm whitespace-nowrap text-xs sm:text-sm ${view === "users" ? "bg-orange-500 text-white" : "bg-white border hover:bg-gray-50 text-gray-600"
+                }`}
             >
               <Users size={16} /> <span>Users</span>
             </button>
             <button
               onClick={() => setView("creators")}
-              className={`px-4 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm whitespace-nowrap text-xs sm:text-sm ${
-                view === "creators" ? "bg-orange-500 text-white" : "bg-white border hover:bg-gray-50 text-gray-600"
-              }`}
+              className={`px-4 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm whitespace-nowrap text-xs sm:text-sm ${view === "creators" ? "bg-orange-500 text-white" : "bg-white border hover:bg-gray-50 text-gray-600"
+                }`}
             >
               <UserPlus size={16} /> <span>Creators</span>
             </button>
             <button
               onClick={() => setView("tickets")}
-              className={`px-4 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm whitespace-nowrap text-xs sm:text-sm ${
-                view === "tickets" ? "bg-orange-500 text-white" : "bg-white border hover:bg-gray-50 text-gray-600"
-              }`}
+              className={`px-4 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm whitespace-nowrap text-xs sm:text-sm ${view === "tickets" ? "bg-orange-500 text-white" : "bg-white border hover:bg-gray-50 text-gray-600"
+                }`}
             >
               <MessageCircle size={16} /> <span>Tickets</span>
             </button>
             <button
               onClick={() => setView("modelmock")}
-              className={`px-4 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm whitespace-nowrap text-xs sm:text-sm ${
-                view === "modelmock" ? "bg-orange-500 text-white" : "bg-white border hover:bg-gray-50 text-gray-600"
-              }`}
+              className={`px-4 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm whitespace-nowrap text-xs sm:text-sm ${view === "modelmock" ? "bg-orange-500 text-white" : "bg-white border hover:bg-gray-50 text-gray-600"
+                }`}
             >
               <Trophy size={16} /> <span>Mock</span>
             </button>
           </div>
 
           <div className="flex bg-white p-1.5 rounded-2xl shadow-sm border border-gray-100 gap-2">
-             <button 
-               onClick={() => setShowPrivacy(!showPrivacy)}
-               className={`p-2 rounded-xl transition-all ${showPrivacy ? 'bg-orange-50 text-orange-600' : 'text-gray-400 hover:bg-gray-50'}`}
-             >
-                {showPrivacy ? <EyeOff size={20} /> : <Eye size={20} />}
-             </button>
+            <button
+              onClick={() => setShowPrivacy(!showPrivacy)}
+              className={`p-2 rounded-xl transition-all ${showPrivacy ? 'bg-orange-50 text-orange-600' : 'text-gray-400 hover:bg-gray-50'}`}
+            >
+              {showPrivacy ? <EyeOff size={20} /> : <Eye size={20} />}
+            </button>
           </div>
         </div>
 
@@ -216,15 +211,15 @@ export default function ManagerDashboard() {
                 <option value="paid">Paid only</option>
                 <option value="free">Free only</option>
               </select>
-              
-              <button 
+
+              <button
                 onClick={() => handleDownloadPDF(filter)}
                 className="px-4 py-3 bg-white border rounded-2xl shadow-sm hover:bg-gray-50 transition-colors flex items-center gap-2 text-xs font-bold text-gray-600 whitespace-nowrap"
               >
                 <FileText size={16} className="text-red-500" /> PDF
               </button>
 
-              <button 
+              <button
                 onClick={() => handleCopyBCC(filter)}
                 className="px-4 py-3 bg-white border rounded-2xl shadow-sm hover:bg-gray-50 transition-colors flex items-center gap-2 text-xs font-bold text-gray-600 whitespace-nowrap"
               >
@@ -270,11 +265,11 @@ export default function ManagerDashboard() {
                       { name: "Free", value: data.usersStats.freeUsers }
                     ]}
                   >
-                    <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fill: '#9CA3AF', fontWeight: 'bold', fontSize: 10}} />
-                    <YAxis axisLine={false} tickLine={false} tick={{fill: '#9CA3AF', fontWeight: 'bold', fontSize: 10}} />
-                    <Tooltip 
-                      cursor={{fill: '#F9FAFB'}} 
-                      contentStyle={{borderRadius: '16px', border: 'none', boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1)', fontSize: '10px'}}
+                    <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fill: '#9CA3AF', fontWeight: 'bold', fontSize: 10 }} />
+                    <YAxis axisLine={false} tickLine={false} tick={{ fill: '#9CA3AF', fontWeight: 'bold', fontSize: 10 }} />
+                    <Tooltip
+                      cursor={{ fill: '#F9FAFB' }}
+                      contentStyle={{ borderRadius: '16px', border: 'none', boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1)', fontSize: '10px' }}
                     />
                     <Bar dataKey="value" fill="#F97316" radius={[8, 8, 0, 0]} barSize={40} />
                   </BarChart>
@@ -289,45 +284,45 @@ export default function ManagerDashboard() {
         {view === "users" && (
           <div className="bg-white p-2 sm:p-4 rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
             <div className="overflow-x-auto scrollbar-hide">
-               <table className="w-full text-left min-w-[600px]">
-                  <thead>
-                     <tr className="text-gray-400 text-[10px] font-black uppercase tracking-widest border-b border-gray-50">
-                        <th className="p-4">Student Info</th>
-                        <th className="p-4 text-center">Status</th>
-                        <th className="p-4">Referred By</th>
-                        <th className="p-4 text-right">Joined</th>
-                     </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-50 text-xs sm:text-sm">
-                    {data.users
-                      .filter((u) => {
-                        const name = u.name?.toLowerCase() || "";
-                        const email = u.email?.toLowerCase() || "";
-                        const matchSearch = name.includes(search.toLowerCase()) || email.includes(search.toLowerCase());
-                        const matchFilter = filter === "all" || (filter === "paid" && u.isPaid) || (filter === "free" && !u.isPaid);
-                        return matchSearch && matchFilter;
-                      })
-                      .map((u, i) => (
+              <table className="w-full text-left min-w-[600px]">
+                <thead>
+                  <tr className="text-gray-400 text-[10px] font-black uppercase tracking-widest border-b border-gray-50">
+                    <th className="p-4">Student Info</th>
+                    <th className="p-4 text-center">Status</th>
+                    <th className="p-4">Referred By</th>
+                    <th className="p-4 text-right">Joined</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-50 text-xs sm:text-sm">
+                  {data.users
+                    .filter((u) => {
+                      const name = u.name?.toLowerCase() || "";
+                      const email = u.email?.toLowerCase() || "";
+                      const matchSearch = name.includes(search.toLowerCase()) || email.includes(search.toLowerCase());
+                      const matchFilter = filter === "all" || (filter === "paid" && u.isPaid) || (filter === "free" && !u.isPaid);
+                      return matchSearch && matchFilter;
+                    })
+                    .map((u, i) => (
                       <tr key={i} className="hover:bg-gray-50/50 transition-colors">
                         <td className="p-4">
-                           <p className="font-bold text-gray-900">{u.name}</p>
-                           <p className="text-[10px] sm:text-xs text-gray-500 truncate max-w-[150px]">{u.email}</p>
+                          <p className="font-bold text-gray-900">{u.name}</p>
+                          <p className="text-[10px] sm:text-xs text-gray-500 truncate max-w-[150px]">{u.email}</p>
                         </td>
                         <td className="p-4 text-center">
-                           <span className={`px-2 py-0.5 sm:px-3 sm:py-1 text-[8px] sm:text-[10px] font-black rounded-full ${u.isPaid ? "bg-green-100 text-green-600" : "bg-orange-100 text-orange-500"}`}>
-                             {u.isPaid ? "PAID" : "FREE"}
-                           </span>
+                          <span className={`px-2 py-0.5 sm:px-3 sm:py-1 text-[8px] sm:text-[10px] font-black rounded-full ${u.isPaid ? "bg-green-100 text-green-600" : "bg-orange-100 text-orange-500"}`}>
+                            {u.isPaid ? "PAID" : "FREE"}
+                          </span>
                         </td>
                         <td className="p-4">
-                           <span className="text-[10px] sm:text-xs font-bold text-gray-400">{u.referredBy || "Direct"}</span>
+                          <span className="text-[10px] sm:text-xs font-bold text-gray-400">{u.referredBy || "Direct"}</span>
                         </td>
                         <td className="p-4 text-right text-[10px] sm:text-xs font-bold text-gray-400">
-                           {new Date(u.createdAt).toLocaleDateString()}
+                          {new Date(u.createdAt).toLocaleDateString()}
                         </td>
                       </tr>
                     ))}
-                  </tbody>
-               </table>
+                </tbody>
+              </table>
             </div>
           </div>
         )}
@@ -354,32 +349,32 @@ export default function ManagerDashboard() {
                       return name.includes(search.toLowerCase()) || email.includes(search.toLowerCase()) || code.includes(search.toLowerCase());
                     })
                     .map((c, i) => (
-                    <tr key={i} className="hover:bg-gray-50/50 transition-colors">
-                      <td className="p-4">
-                        <p className="font-bold text-gray-900">{c.name}</p>
-                        <p className="text-[10px] sm:text-xs text-gray-500">{c.email}</p>
-                      </td>
-                      <td className="p-4 text-center">
-                         <div className="flex items-center justify-center gap-2">
+                      <tr key={i} className="hover:bg-gray-50/50 transition-colors">
+                        <td className="p-4">
+                          <p className="font-bold text-gray-900">{c.name}</p>
+                          <p className="text-[10px] sm:text-xs text-gray-500">{c.email}</p>
+                        </td>
+                        <td className="p-4 text-center">
+                          <div className="flex items-center justify-center gap-2">
                             <span className="px-2 py-0.5 sm:py-1 bg-orange-100 text-orange-600 rounded-lg text-[10px] sm:text-xs font-black">{c.referralCode}</span>
-                            <button 
+                            <button
                               onClick={() => copyReferralLink(c.referralCode)}
                               className="p-1 hover:bg-orange-50 text-orange-400 hover:text-orange-600 rounded-lg transition-colors"
                               title="Copy Full Link"
                             >
-                               <Copy size={14} />
+                              <Copy size={14} />
                             </button>
-                         </div>
-                      </td>
-                      <td className="p-4 text-center text-xs">
-                        <span className="font-bold text-gray-900">{c.referralCount || 0}</span>
-                        <span className="text-green-600 font-bold"> ({c.paidReferrals || 0})</span>
-                      </td>
-                      <td className="p-4 text-right">
-                         <p className="font-black text-gray-900">₹{c.earnings || 0}</p>
-                      </td>
-                    </tr>
-                  ))}
+                          </div>
+                        </td>
+                        <td className="p-4 text-center text-xs">
+                          <span className="font-bold text-gray-900">{c.referralCount || 0}</span>
+                          <span className="text-green-600 font-bold"> ({c.paidReferrals || 0})</span>
+                        </td>
+                        <td className="p-4 text-right">
+                          <p className="font-black text-gray-900">₹{c.earnings || 0}</p>
+                        </td>
+                      </tr>
+                    ))}
                 </tbody>
               </table>
             </div>
@@ -394,13 +389,13 @@ export default function ManagerDashboard() {
               <h2 className="text-lg sm:text-xl font-bold p-4 sm:p-0 sm:mb-6 text-gray-900">Support Hub</h2>
               <div className="flex-1 overflow-y-auto space-y-2 sm:space-y-3 p-4 sm:p-0 pb-4">
                 {tickets.map(t => (
-                  <div 
-                    key={t._id} 
+                  <div
+                    key={t._id}
                     onClick={() => setActiveTicket(t)}
                     className={`p-3 sm:p-4 rounded-2xl cursor-pointer transition-all border ${activeTicket?._id === t._id ? 'border-orange-500 bg-orange-50 shadow-sm' : 'border-gray-100 hover:bg-gray-50'}`}
                   >
                     <div className="flex justify-between items-start mb-2">
-                       <span className={`text-[8px] sm:text-[10px] uppercase font-black px-2 py-0.5 rounded-full ${t.status === 'Closed' ? 'bg-gray-200 text-gray-600' : t.status === 'Open' ? 'bg-orange-100 text-orange-600' : 'bg-green-100 text-green-600'}`}>
+                      <span className={`text-[8px] sm:text-[10px] uppercase font-black px-2 py-0.5 rounded-full ${t.status === 'Closed' ? 'bg-gray-200 text-gray-600' : t.status === 'Open' ? 'bg-orange-100 text-orange-600' : 'bg-green-100 text-green-600'}`}>
                         {t.status}
                       </span>
                       <span className="text-[8px] sm:text-[10px] text-gray-400 font-bold">{new Date(t.createdAt).toLocaleDateString()}</span>
@@ -427,7 +422,7 @@ export default function ManagerDashboard() {
                       <p className="text-[10px] sm:text-sm text-gray-500 font-medium truncate">{activeTicket.userId?.name} ({activeTicket.userId?.email})</p>
                     </div>
                     <div className="flex gap-2 shrink-0">
-                       <button onClick={() => setActiveTicket(null)} className="md:hidden px-3 py-1.5 bg-gray-100 text-gray-600 rounded-xl text-[10px] font-bold">Back</button>
+                      <button onClick={() => setActiveTicket(null)} className="md:hidden px-3 py-1.5 bg-gray-100 text-gray-600 rounded-xl text-[10px] font-bold">Back</button>
                     </div>
                   </div>
 
@@ -447,7 +442,7 @@ export default function ManagerDashboard() {
 
                   {activeTicket.status !== 'Closed' ? (
                     <form onSubmit={(e) => handleReplyTicket(e, false)} className="p-3 sm:p-0 sm:pt-6 border-t flex gap-2">
-                      <input 
+                      <input
                         value={replyMessage}
                         onChange={e => setReplyMessage(e.target.value)}
                         placeholder="Response..."
@@ -475,8 +470,8 @@ export default function ManagerDashboard() {
                   🏆
                 </div>
                 <div>
-                   <h2 className="text-lg sm:text-2xl font-black text-gray-900 tracking-tight">Leaderboard</h2>
-                   <p className="text-gray-400 text-[10px] sm:text-sm font-bold uppercase tracking-widest">Active Batch Results</p>
+                  <h2 className="text-lg sm:text-2xl font-black text-gray-900 tracking-tight">Leaderboard</h2>
+                  <p className="text-gray-400 text-[10px] sm:text-sm font-bold uppercase tracking-widest">Active Batch Results</p>
                 </div>
               </div>
               <div className="flex items-center justify-between sm:justify-end gap-4 bg-gray-50 px-4 py-2 sm:px-6 sm:py-4 rounded-2xl sm:rounded-3xl border border-gray-100">
@@ -499,39 +494,39 @@ export default function ManagerDashboard() {
                 <tbody className="divide-y divide-gray-50">
                   {data.modelMockLeaderboard
                     ?.filter((attempt) => {
-                       const name = attempt.userName?.toLowerCase() || "";
-                       const email = attempt.userEmail?.toLowerCase() || "";
-                       return name.includes(search.toLowerCase()) || email.includes(search.toLowerCase());
+                      const name = attempt.userName?.toLowerCase() || "";
+                      const email = attempt.userEmail?.toLowerCase() || "";
+                      return name.includes(search.toLowerCase()) || email.includes(search.toLowerCase());
                     })
                     .map((attempt, idx) => (
-                    <tr key={idx} className={`group hover:bg-orange-50/30 transition-all ${idx < 3 ? 'bg-orange-50/10' : ''}`}>
-                      <td className="p-4 text-center">
-                        {idx === 0 ? <span className="text-xl sm:text-2xl drop-shadow-sm">🥇</span> : 
-                         idx === 1 ? <span className="text-xl sm:text-2xl drop-shadow-sm">🥈</span> : 
-                         idx === 2 ? <span className="text-xl sm:text-2xl drop-shadow-sm">🥉</span> : 
-                         <span className="font-black text-gray-300 text-[10px] sm:text-xs">#{idx + 1}</span>}
-                      </td>
-                      <td className="p-4">
-                         <p className="font-black text-gray-900 group-hover:text-orange-600 transition-colors uppercase text-xs sm:text-sm tracking-tight">{attempt.userName}</p>
-                         <p className="text-[8px] sm:text-[10px] text-gray-400 font-bold truncate max-w-[120px]">{attempt.userEmail}</p>
-                      </td>
-                      <td className="p-4">
-                        <span className="px-2 py-0.5 sm:px-3 sm:py-1 bg-white border border-gray-100 text-gray-500 rounded-lg text-[10px] sm:text-xs font-bold font-mono">
-                          {attempt.userPhone || '—'}
-                        </span>
-                      </td>
-                      <td className="p-4 text-center">
-                        <div className={`inline-flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl font-black text-sm sm:text-lg ${idx < 3 ? 'bg-orange-500 text-white shadow-lg' : 'bg-gray-100 text-gray-600'}`}>
-                          {attempt.score}
-                        </div>
-                      </td>
-                      <td className="p-4 text-right">
-                        <div className="text-[10px] sm:text-sm font-black text-gray-900">
-                          {Math.floor(attempt.timeTakenSeconds / 60)}m {attempt.timeTakenSeconds % 60}s
-                        </div>
-                      </td>
-                    </tr>
-                  ))}
+                      <tr key={idx} className={`group hover:bg-orange-50/30 transition-all ${idx < 3 ? 'bg-orange-50/10' : ''}`}>
+                        <td className="p-4 text-center">
+                          {idx === 0 ? <span className="text-xl sm:text-2xl drop-shadow-sm">🥇</span> :
+                            idx === 1 ? <span className="text-xl sm:text-2xl drop-shadow-sm">🥈</span> :
+                              idx === 2 ? <span className="text-xl sm:text-2xl drop-shadow-sm">🥉</span> :
+                                <span className="font-black text-gray-300 text-[10px] sm:text-xs">#{idx + 1}</span>}
+                        </td>
+                        <td className="p-4">
+                          <p className="font-black text-gray-900 group-hover:text-orange-600 transition-colors uppercase text-xs sm:text-sm tracking-tight">{attempt.userName}</p>
+                          <p className="text-[8px] sm:text-[10px] text-gray-400 font-bold truncate max-w-[120px]">{attempt.userEmail}</p>
+                        </td>
+                        <td className="p-4">
+                          <span className="px-2 py-0.5 sm:px-3 sm:py-1 bg-white border border-gray-100 text-gray-500 rounded-lg text-[10px] sm:text-xs font-bold font-mono">
+                            {attempt.userPhone || '—'}
+                          </span>
+                        </td>
+                        <td className="p-4 text-center">
+                          <div className={`inline-flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl font-black text-sm sm:text-lg ${idx < 3 ? 'bg-orange-500 text-white shadow-lg' : 'bg-gray-100 text-gray-600'}`}>
+                            {attempt.score}
+                          </div>
+                        </td>
+                        <td className="p-4 text-right">
+                          <div className="text-[10px] sm:text-sm font-black text-gray-900">
+                            {Math.floor(attempt.timeTakenSeconds / 60)}m {attempt.timeTakenSeconds % 60}s
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
                 </tbody>
               </table>
             </div>
@@ -541,4 +536,33 @@ export default function ManagerDashboard() {
       </Container>
     </div>
   );
-}
+} type = "text"
+value = { local.content || '' }
+onChange = {(e) => setLocal({ ...local, content: e.target.value })}
+placeholder = "e.g. 07:30 PM"
+className = "w-full p-4 bg-gray-50 rounded-2xl border-none focus:ring-2 focus:ring-orange-500 font-bold"
+  />
+          </div >
+        </div >
+
+        <div className="space-y-2">
+          <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest px-1">Google Meet Link</label>
+          <input 
+            type="text"
+            value={local.buttonLink || ''}
+            onChange={(e) => setLocal({ ...local, buttonLink: e.target.value })}
+            className="w-full p-4 bg-gray-50 rounded-2xl border-none focus:ring-2 focus:ring-orange-500 font-medium text-blue-600"
+          />
+        </div>
+
+        <button 
+          onClick={handleSave}
+          disabled={isSaving}
+          className="w-full py-4 bg-orange-500 text-white rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-orange-600 transition-all shadow-lg shadow-orange-200 active:scale-95 disabled:opacity-50"
+        >
+          {isSaving ? 'Applying Changes...' : showSuccess ? 'Success!' : 'Save Changes'}
+        </button>
+      </div >
+    </div >
+  );
+};

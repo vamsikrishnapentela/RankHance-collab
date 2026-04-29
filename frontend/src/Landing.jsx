@@ -17,7 +17,6 @@ export default function Landing() {
 
   const handleUnlockPremium = () => {
     const token = localStorage.getItem("rankhance_token");
-    localStorage.setItem("showPayment", "true");
     if (!token) {
       navigate("/login");
     } else {
@@ -135,13 +134,13 @@ export default function Landing() {
       setPopupMsg(`${name} from ${city} ${action}`);
       setPopupVisible(true);
 
-      setTimeout(() => setPopupVisible(false), 4000);
+      setTimeout(() => setPopupVisible(false), 3000);
     };
 
     // First popup delay (natural feel)
     const firstTimeout = setTimeout(() => {
       showPopup();
-    }, 4000);
+    }, 40000);
 
     // Random interval (not fixed → feels real)
     const interval = setInterval(() => {

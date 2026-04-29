@@ -14,8 +14,8 @@ export default function LiveSessions() {
     {
       id: 1,
       title: "Session 1: Before Exam Mentorship",
-      status: "Upcoming",
-      icon: <Target className="w-8 h-8 text-orange-500" />,
+      status: "Completed",
+      icon: <Target className="w-8 h-8 text-gray-400" />,
       topics: [
         "How to prepare well for EAMCET",
         "Smart strategies to enhance your marks easily",
@@ -25,10 +25,11 @@ export default function LiveSessions() {
       presenters: "EAMCET Toppers & Content Creators",
       date: "26th April, Sunday",
       time: "07:30 PM",
-      meetLink: "https://meet.google.com/vzo-twor-bzj", // Updated Live Link
-      bgClass: "bg-orange-50/50",
-      borderClass: "border-orange-100",
-      btnClass: "bg-orange-500 hover:bg-orange-600 shadow-orange-500/20"
+      meetLink: "#", 
+      bgClass: "bg-white",
+      borderClass: "border-gray-200 opacity-80",
+      btnClass: "bg-gray-300 text-gray-500 shadow-none pointer-events-none",
+      themeColor: "text-gray-400"
     },
     {
       id: 2,
@@ -47,7 +48,8 @@ export default function LiveSessions() {
       meetLink: "#", // Update Google Meet link here later
       bgClass: "bg-blue-50/50",
       borderClass: "border-blue-100",
-      btnClass: "bg-blue-500 hover:bg-blue-600 shadow-blue-500/20"
+      btnClass: "bg-blue-500 hover:bg-blue-600 shadow-blue-500/20",
+      themeColor: "text-blue-500"
     }
   ];
 
@@ -140,12 +142,12 @@ export default function LiveSessions() {
                   {/* Topics Covered */}
                   <div className="flex-1 bg-gray-50 rounded-2xl p-5 border border-gray-100">
                     <h3 className="font-bold text-gray-900 mb-3 text-sm flex items-center gap-2">
-                      <BookOpen className="w-4 h-4 text-orange-500" /> What we will cover:
+                      <BookOpen className={`w-4 h-4 ${session.themeColor}`} /> What we will cover:
                     </h3>
                     <ul className="space-y-2">
                       {session.topics.map((topic, index) => (
                         <li key={index} className="flex gap-2 text-sm text-gray-600">
-                          <span className="text-orange-500 font-bold">•</span>
+                          <span className={`${session.themeColor} font-bold`}>•</span>
                           {topic}
                         </li>
                       ))}
@@ -166,7 +168,7 @@ export default function LiveSessions() {
                       }}
                       className={`w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-white shadow-lg transition-transform hover:-translate-y-0.5 ${session.btnClass}`}
                     >
-                      <Video className="w-5 h-5" /> {isPaid ? 'Join Live Meet' : 'Unlock to Join 🔒'}
+                      <Video className="w-5 h-5" /> {session.status === 'Completed' ? 'Session Completed' : (isPaid ? 'Join Live Meet' : 'Unlock to Join 🔒')}
                     </a>
                   </div>
 

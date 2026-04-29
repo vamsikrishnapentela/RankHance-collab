@@ -111,9 +111,9 @@ export default function Dashboard() {
   return (
     <div className="flex-1 w-full bg-gray-50 flex flex-col p-6 min-h-[calc(100dvh-64px)] overflow-y-auto">
       <div className="w-full max-w-5xl mx-auto py-4 md:py-8">
-        
+
         <div className="mb-4 flex items-center">
-          <button 
+          <button
             onClick={() => navigate('/')}
             className="inline-flex items-center text-sm font-semibold text-gray-500 hover:text-orange-500 bg-white border shadow-sm px-3 py-1.5 rounded-lg transition-all"
           >
