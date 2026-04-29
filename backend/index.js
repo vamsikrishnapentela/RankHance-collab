@@ -55,7 +55,13 @@ app.post('/api/payment/webhook', express.raw({ type: 'application/json' }), asyn
 
             console.log(`Captured payment ${payment_id} for order ${order_id}`);
 
-            const user = await User.findOne({ razorpayOrderId: order_id });
+            let user = await User.findOne({ razorpayOrderId: order_id });
+            
+            if (!user && payment.notes && payment.notes.userId) {
+                console.log(`User not found by orderId, trying notes.userId: ${payment.notes.userId}`);
+                user = await User.findById(payment.notes.userId);
+            }
+
             if (user) {
                 console.log(`Matching user found: ${user.email}`);
                 if (!user.isPaid) {
@@ -291,7 +297,7 @@ app.post('/api/auth/reset-password', async (req, res) => {
 app.post('/api/payment/create-order', auth, async (req, res) => {
     try {
         console.log(`[PAYMENT] Creating order for UserID: ${req.user.id}`);
-        const options = { amount: 9900, currency: "INR", receipt: "receipt_" + req.user.id };
+        const options = { amount: 9900, currency: "INR", receipt: "receipt_" + req.user.id, notes: { userId: req.user.id.toString() } };
         const order = await razorpay.orders.create(options);
 
         console.log(`[PAYMENT] Razorpay Order Created: ${order.id}. Saving to DB...`);
@@ -320,8 +326,22 @@ app.post('/api/payment/verify', auth, async (req, res) => {
     const { razorpay_order_id, razorpay_payment_id, razorpay_signature } = req.body;
     try {
         const user = await User.findById(req.user.id);
-        if (!user || user.razorpayOrderId !== razorpay_order_id)
-            return res.status(400).json({ message: "Invalid order ID or session mismatch" });
+        if (!user) return res.status(400).json({ message: "User not found" });
+
+        if (user.isPaid) {
+            return res.json({ success: true, message: "Already paid" });
+        }
+
+        if (user.razorpayOrderId !== razorpay_order_id) {
+            try {
+                const order = await razorpay.orders.fetch(razorpay_order_id);
+                if (!order || !order.notes || order.notes.userId !== req.user.id) {
+                    return res.status(400).json({ message: "Invalid order ID or session mismatch" });
+                }
+            } catch (err) {
+                return res.status(400).json({ message: "Invalid order ID or session mismatch" });
+            }
+        }
         console.log(`Payment verification attempt for user: ${user.email}, isPaid: ${user.isPaid}`);
 
         const generatedSignature = crypto
@@ -358,7 +378,19 @@ app.post('/api/payment/verify-redirect', async (req, res) => {
     const { razorpay_order_id, razorpay_payment_id, razorpay_signature } = req.body;
     const frontend = req.query.frontend || 'https://rankhance.in';
     try {
-        const user = await User.findOne({ razorpayOrderId: razorpay_order_id });
+        let user = await User.findOne({ razorpayOrderId: razorpay_order_id });
+        
+        if (!user) {
+            try {
+                const order = await razorpay.orders.fetch(razorpay_order_id);
+                if (order && order.notes && order.notes.userId) {
+                    user = await User.findById(order.notes.userId);
+                }
+            } catch (err) {
+                console.error("Failed to fetch order in redirect", err);
+            }
+        }
+
         if (!user) return res.redirect(`${frontend}/dashboard?payment=failed`);
         if (user.isPaid) return res.redirect(`${frontend}/dashboard?payment=success`);
 
