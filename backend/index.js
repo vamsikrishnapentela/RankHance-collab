@@ -17,11 +17,15 @@ const Ticket = require('./models/Ticket');
 const auth = require('./middleware/auth');
 const nodemailer = require('nodemailer');
 
+const collegePredictorRoutes = require('./routes/collegePredictorRoutes');
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 const googleClient = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 app.use(cors());
+
+
 
 // Razorpay Webhook - MUST be before express.json() to get raw body
 app.get('/api/payment/webhook', (req, res) => {
@@ -56,7 +60,7 @@ app.post('/api/payment/webhook', express.raw({ type: 'application/json' }), asyn
             console.log(`Captured payment ${payment_id} for order ${order_id}`);
 
             let user = await User.findOne({ razorpayOrderId: order_id });
-            
+
             if (!user && payment.notes && payment.notes.userId) {
                 console.log(`User not found by orderId, trying notes.userId: ${payment.notes.userId}`);
                 user = await User.findById(payment.notes.userId);
@@ -98,6 +102,9 @@ app.post('/api/payment/webhook', express.raw({ type: 'application/json' }), asyn
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Mount College Predictor routes
+app.use('/api/college-predictor', collegePredictorRoutes);
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/rankhance', {
     serverSelectionTimeoutMS: 5000,
@@ -379,7 +386,7 @@ app.post('/api/payment/verify-redirect', async (req, res) => {
     const frontend = req.query.frontend || 'https://rankhance.in';
     try {
         let user = await User.findOne({ razorpayOrderId: razorpay_order_id });
-        
+
         if (!user) {
             try {
                 const order = await razorpay.orders.fetch(razorpay_order_id);

@@ -199,6 +199,15 @@ export const replyToTicketAdmin = async (replyData) => {
   return data;
 };
 
+// --- College Predictor API ---
+export const getPredictorOptions = async (state) => {
+  const { data } = await api.get(`/college-predictor/${state}/options`);
+  return data;
+};
+
+export const predictColleges = async (state, params) => {
+  const { data } = await api.post(`/college-predictor/${state}`, params);
+  return data;
+};
+
 export default api;
-
-
