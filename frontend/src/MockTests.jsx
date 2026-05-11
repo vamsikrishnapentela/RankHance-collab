@@ -137,6 +137,23 @@ export default function MockTests() {
           </button>
         </div>
 
+        {/* Disclaimer Info Box */}
+        <div className="mb-8 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r-xl shadow-sm animate-in fade-in slide-in-from-left-2 duration-500">
+           <div className="flex items-start gap-3">
+              <div className="mt-0.5 text-blue-500">
+                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                 </svg>
+              </div>
+              <div>
+                 <p className="text-sm font-bold text-blue-900 leading-relaxed uppercase tracking-tight">Important Note:</p>
+                 <p className="text-[13px] font-semibold text-blue-700 leading-relaxed italic">
+                    Easy Mock Tests are only for basic warmup and foundation building. For real EAPCET pattern models, you must attempt <span className="font-bold underline">Advanced Tests</span>.
+                 </p>
+              </div>
+           </div>
+        </div>
+
         {error ? (
           <div className="text-center text-red-500 font-bold py-20 bg-red-50 rounded-xl px-6">
             {error}

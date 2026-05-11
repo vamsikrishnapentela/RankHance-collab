@@ -158,6 +158,76 @@ router.get('/:state/options', auth, async (req, res) => {
     }
 });
 
+router.get('/:state/search', auth, async (req, res) => {
+    try {
+        const { state } = req.params;
+        const { q } = req.query;
+        if (!['ap', 'tg'].includes(state)) {
+            return res.status(400).json({ msg: 'Invalid state' });
+        }
+        if (!q || q.length < 1) {
+            return res.json([]);
+        }
+        
+        const data = loadData(state);
+        const query = q.toLowerCase();
+        
+        const colleges = [];
+        const seenCodes = new Set();
+        
+        data.forEach(item => {
+            const code = item.inst_code || item.institute_code;
+            if (!code) return;
+            const name = item.institute_name || "";
+            
+            if (seenCodes.has(code)) return;
+            
+            if (name.toLowerCase().includes(query) || code.toLowerCase().includes(query)) {
+                colleges.push({
+                    code,
+                    name,
+                    place: item.place,
+                    dist: item.dist || item.dist_code,
+                    type: item.type || item.institute_type
+                });
+                seenCodes.add(code);
+            }
+        });
+        
+        res.json(colleges.slice(0, 15));
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ msg: 'Server Error' });
+    }
+});
+
+router.get('/:state/college/:code', auth, async (req, res) => {
+    try {
+        const { state, code } = req.params;
+        if (!['ap', 'tg'].includes(state)) {
+            return res.status(400).json({ msg: 'Invalid state' });
+        }
+        
+        const data = loadData(state);
+        const details = data.filter(item => (item.inst_code || item.institute_code) === code);
+        
+        if (details.length === 0) {
+            return res.status(404).json({ msg: 'College not found' });
+        }
+        
+        // Enrich branch names
+        const enriched = details.map(d => ({
+            ...d,
+            branch_name: BRANCH_NAMES[d.branch_code.toUpperCase()] || d.branch_name || d.branch_code
+        }));
+
+        res.json(enriched);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ msg: 'Server Error' });
+    }
+});
+
 router.post('/:state', auth, async (req, res) => {
     try {
         const { state } = req.params;
@@ -174,9 +244,9 @@ router.post('/:state', auth, async (req, res) => {
             return res.status(400).json({ msg: 'Invalid rank' });
         }
 
-        // Show colleges from 10k before user rank to 20k after user rank
-        const lowerBound = Math.max(1, userRank - 10000);
-        const upperBound = userRank + 20000;
+        // Show colleges from 2k before user rank to 10k after user rank
+        const lowerBound = Math.max(1, userRank - 2000);
+        const upperBound = userRank + 10000;
 
         let catKey = `${category.toLowerCase()}_${gender.toLowerCase()}`;
         

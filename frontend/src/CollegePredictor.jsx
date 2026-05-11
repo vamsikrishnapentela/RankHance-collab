@@ -170,7 +170,7 @@ export default function CollegePredictor() {
         const finalY = doc.lastAutoTable.finalY + 15;
         doc.setFontSize(9);
         doc.setTextColor(100, 100, 100);
-        const disclaimer = `Note: Please take this report for reference only. We show colleges within a range of 10,000 ranks before to 20,000 ranks after your provided rank to give you a broad perspective of both better and safer colleges. We have calculated these results based on previous year cutoff data. Actual admission may slightly vary from year to year depending on current counseling rules and competition. Rank: ${formData.rank} | Category: ${formData.category}`;
+        const disclaimer = `Note: Please take this report for reference only. We show colleges within a range of 2,000 ranks before to 10,000 ranks after your provided rank to give you a broad perspective of both better and safer colleges. We have calculated these results based on previous year data. Actual admission may slightly vary from year to year. Rank: ${formData.rank} | Category: ${formData.category}`;
         const splitDisclaimer = doc.splitTextToSize(disclaimer, pageWidth - 28);
         doc.text(splitDisclaimer, 14, finalY);
 
@@ -381,7 +381,7 @@ export default function CollegePredictor() {
                           Please take this for reference only.
                         </p>
                         <p className="text-[10px] text-blue-700 font-medium leading-relaxed opacity-90">
-                           We show colleges with cutoffs ranging from 10k before to 20k after your rank ({formData.rank}) to give you a broad perspective of both better and safer colleges.
+                           We show colleges with cutoffs ranging from 2k before to 10k after your rank ({formData.rank}) to give you a broad perspective of both better and safer colleges.
                         </p>
                         <p className="text-[10px] text-blue-700 font-medium leading-relaxed opacity-90">
                           We have calculated these results based on previous year cutoff data. Actual admission may slightly vary from year to year depending on current counseling rules and competition.

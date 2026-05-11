@@ -205,8 +205,18 @@ export const getPredictorOptions = async (state) => {
   return data;
 };
 
+export const searchCollege = async (state, query) => {
+  const { data } = await api.get(`/college-predictor/${state}/search?q=${query}`);
+  return data;
+};
+
 export const predictColleges = async (state, params) => {
   const { data } = await api.post(`/college-predictor/${state}`, params);
+  return data;
+};
+
+export const getCollegeDetails = async (state, code) => {
+  const { data } = await api.get(`/college-predictor/${state}/college/${code}`);
   return data;
 };
 

@@ -794,40 +794,57 @@ export default function Landing() {
             ].map((t, i) => (
               <div
                 key={i}
-                className="group relative p-6 rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+                className="group relative p-4 rounded-2xl bg-white/70 backdrop-blur-xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
-                {/* ⭐ Stars */}
-                <div className="flex gap-1 mb-3 text-yellow-400">
-                  {"★★★★★"}
-                </div>
-
-                {/* TEXT */}
-                <p className="text-gray-700 text-sm leading-relaxed mb-5">
-                  “{t.text}”
-                </p>
-
-                {/* RESULT BADGE */}
-                <div className="inline-block mb-4 px-3 py-1 rounded-full bg-green-50 text-green-600 text-xs font-semibold">
-                  {t.result}
-                </div>
-
-                {/* USER */}
-                <div className="flex items-center gap-3">
-                  {/* Avatar */}
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 text-white flex items-center justify-center font-bold">
+                <div className="flex flex-row md:flex-col gap-3 items-start relative z-10 h-full">
+                  {/* Avatar (Compact on Mobile) */}
+                  <div className="w-10 h-10 md:hidden rounded-full bg-gradient-to-br from-orange-400 to-orange-600 text-white flex items-center justify-center font-bold shrink-0 shadow-sm text-sm">
                     {t.name.charAt(0)}
                   </div>
 
-                  <div>
-                    <p className="font-semibold text-gray-900 text-sm">
-                      {t.name}
-                    </p>
-                    <p className="text-xs text-gray-500">{t.role}</p>
+                  <div className="flex-1 flex flex-col justify-between">
+                    <div>
+                      <div className="flex items-center justify-between mb-1">
+                        {/* ⭐ Stars */}
+                        <div className="flex gap-0.5 text-yellow-400 text-[10px]">
+                          {"★★★★★"}
+                        </div>
+                        {/* RESULT BADGE (Compact & Moved to top-right on mobile) */}
+                        <div className="md:hidden px-2 py-0.5 rounded-full bg-green-50 text-green-600 text-[9px] font-black uppercase tracking-tight">
+                          {t.result}
+                        </div>
+                      </div>
+
+                      {/* TEXT */}
+                      <p className="text-gray-700 text-[12px] sm:text-sm leading-snug mb-2 italic">
+                        “{t.text}”
+                      </p>
+                      
+                      {/* Desktop Result Badge */}
+                      <div className="hidden md:inline-block mb-4 px-2.5 py-1 rounded-full bg-green-50 text-green-600 text-[10px] font-bold uppercase tracking-tight">
+                        {t.result}
+                      </div>
+                    </div>
+
+                    {/* USER */}
+                    <div className="flex items-center gap-2">
+                      {/* Desktop Avatar */}
+                      <div className="hidden md:flex w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 text-white items-center justify-center font-bold">
+                        {t.name.charAt(0)}
+                      </div>
+
+                      <div className="leading-tight">
+                        <p className="font-bold text-gray-900 text-[12px] sm:text-sm">
+                          {t.name}
+                        </p>
+                        <p className="text-[10px] text-gray-400 font-medium">{t.role}</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 {/* Glow effect */}
-                <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition pointer-events-none bg-gradient-to-r from-orange-200/20 to-orange-400/20 blur-xl"></div>
+                <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition pointer-events-none bg-gradient-to-r from-orange-200/20 to-orange-400/20 blur-lg"></div>
               </div>
             ))}
 

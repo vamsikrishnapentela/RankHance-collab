@@ -35,6 +35,7 @@ const Invoice = lazy(() => import('./Invoice'));
 const ModelMockResults = lazy(() => import('./ModelMockResults'));
 const CollegePredictorSelect = lazy(() => import('./CollegePredictorSelect'));
 const CollegePredictor = lazy(() => import('./CollegePredictor'));
+const CollegeSearch = lazy(() => import('./CollegeSearch'));
 
 function AppLayout() {
   const location = useLocation();
@@ -368,6 +369,7 @@ function AppLayout() {
             <Route path="/invoice" element={<Invoice />} />
             <Route path="/college-predictor" element={<CollegePredictorSelect />} />
             <Route path="/college-predictor/:state" element={<CollegePredictor />} />
+            <Route path="/college-predictor/search" element={<CollegeSearch />} />
           </Routes>
         </Suspense>
 
