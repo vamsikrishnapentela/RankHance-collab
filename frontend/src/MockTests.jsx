@@ -165,10 +165,13 @@ export default function MockTests() {
         ) : (
           <div>
             <h2 className="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b border-gray-200">
-              {activeTab === 'easy' ? 'Easy Tests' : 'Advanced Practice Tests'} <span className="text-sm text-gray-400 font-normal">({currentTests.length})</span>
+              {activeTab === 'easy' ? 'Easy Practice Tests' : 'Full Mock Tests (EAPCET Pattern)'} <span className="text-sm text-gray-400 font-normal">({currentTests.length})</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {currentTests.map((test, idx) => renderTestCard(test, idx))}
+              {currentTests.map((test) => {
+                const displayName = test.name.replace('Advanced Practice Mock Test', 'Mock Test');
+                return renderTestCard({ ...test, name: displayName });
+              })}
             </div>
           </div>
         )}
