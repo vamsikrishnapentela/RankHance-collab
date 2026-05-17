@@ -24,6 +24,15 @@ export default function Landing() {
     }
   };
 
+  const handleCollegePredictorClick = () => {
+    const token = localStorage.getItem("rankhance_token");
+    if (!token) {
+      navigate("/login", { state: { from: { pathname: "/college-predictor" } } });
+    } else {
+      navigate("/college-predictor");
+    }
+  };
+
   // Mini quiz states
   const [timeLeft, setTimeLeft] = useState(120); // 2 mins
   const [quizStarted, setQuizStarted] = useState(false);
@@ -257,6 +266,15 @@ export default function Landing() {
               Update to Premium 👑
             </button>
 
+          </div>
+
+          <div className="flex justify-center pt-2">
+            <button
+              onClick={handleCollegePredictorClick}
+              className="px-6 py-3 md:px-8 md:py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl shadow-xl hover:shadow-2xl transition-all font-semibold text-base md:text-lg flex items-center justify-center gap-2 hover:scale-105 w-full sm:w-auto"
+            >
+              <GraduationCap className="w-5 h-5 md:w-6 md:h-6" /> AP & TS College Predictor 🎯
+            </button>
           </div>
 
           {/* 
