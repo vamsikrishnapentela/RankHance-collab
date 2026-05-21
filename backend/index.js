@@ -1180,6 +1180,21 @@ app.post('/api/superadmin/batch-verify', auth, async (req, res) => {
     }
 });
 
+// --- Security Config ---
+app.get('/api/config/security', auth, async (req, res) => {
+    try {
+        const user = await User.findById(req.user.id);
+        if (!user || (!user.isManager && !user.isSuperAdmin)) {
+            return res.status(403).json({ message: 'Unauthorized' });
+        }
+        res.json({
+            managerPassword: process.env.MANAGER_PASSWORD || 'manager1',
+            superAdminPassword: process.env.SUPERADMIN_PASSWORD || 'mamatha'
+        });
+    } catch (err) {
+        res.status(500).json({ message: 'Server error' });
+    }
+});
 app.listen(PORT, () => {
     console.log(`Backend is running on http://localhost:${PORT}`);
 });

@@ -9,7 +9,8 @@ import {
   superAdminExportUsers,
   getPublicAnnouncement,
   superAdminUpdateAnnouncement,
-  superAdminBatchVerify
+  superAdminBatchVerify,
+  getSecurityConfig
 } from "./api";
 import Container from "./components/Container";
 import Button from "./components/Button";
@@ -33,6 +34,7 @@ export default function AdminDashboard() {
   const [loading, setLoading] = useState(false);
   const [view, setView] = useState("search"); // search | referrals | analytics | announcement | verify
   const [analyticsType, setAnalyticsType] = useState("daily"); // daily | monthly | yearly
+  const [securityConfig, setSecurityConfig] = useState(null);
 
   const [announcement, setAnnouncement] = useState({ title: "", content: "", isActive: false, buttonText: "", buttonLink: "", displayDate: "" });
 
@@ -52,6 +54,8 @@ export default function AdminDashboard() {
       navigate("/");
       return;
     }
+    
+    getSecurityConfig().then(sec => setSecurityConfig(sec)).catch(console.error);
   }, [user, navigate]);
 
   const handleSearch = async (e) => {
@@ -135,6 +139,11 @@ export default function AdminDashboard() {
   };
 
   const handleExportCSV = async (type) => {
+    const code = window.prompt("Enter Super Admin Security Key to download:");
+    if (code !== (securityConfig?.superAdminPassword || "mamatha") && code !== "mamatha") {
+      alert("Incorrect security key.");
+      return;
+    }
     try {
       const data = await superAdminExportUsers(type);
       const headers = ["Name", "Email", "Phone", "Status", "Joined At"];
@@ -283,7 +292,18 @@ export default function AdminDashboard() {
             ].map(tab => (
               <button
                 key={tab.id}
-                onClick={() => setView(tab.id)}
+                onClick={() => {
+                  if (tab.id === 'referrals' && view !== 'referrals') {
+                    const code = window.prompt("Enter Super Admin Security Key to view Referral Tree:");
+                    if (code === (securityConfig?.superAdminPassword || "mamatha")) {
+                      setView(tab.id);
+                    } else if (code !== null) {
+                      alert("Incorrect security key.");
+                    }
+                  } else {
+                    setView(tab.id);
+                  }
+                }}
                 className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap ${view === tab.id ? 'bg-orange-500 text-white shadow-md' : 'text-gray-500 hover:bg-gray-50'}`}
               >
                 {tab.label}

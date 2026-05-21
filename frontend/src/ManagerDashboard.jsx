@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "./hooks/useAuth";
 import { useNavigate } from "react-router-dom";
-import { getManagerDashboard, getAdminTickets, replyToTicketAdmin } from "./api";
+import { getManagerDashboard, getAdminTickets, replyToTicketAdmin, getSecurityConfig } from "./api";
 import Container from "./components/Container";
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer
@@ -14,6 +14,7 @@ export default function ManagerDashboard() {
   const navigate = useNavigate();
 
   const [data, setData] = useState(null);
+  const [securityConfig, setSecurityConfig] = useState(null);
   const [view, setView] = useState("stats"); // toggle: stats | users | creators | tickets | modelmock
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("all"); // all | paid | free
@@ -82,6 +83,8 @@ export default function ManagerDashboard() {
     try {
       const res = await getManagerDashboard();
       setData(res);
+      const sec = await getSecurityConfig();
+      setSecurityConfig(sec);
     } catch (err) {
       console.error(err);
     }
@@ -152,14 +155,32 @@ export default function ManagerDashboard() {
               <LayoutDashboard size={16} /> <span>Overview</span>
             </button>
             <button
-              onClick={() => setView("users")}
+              onClick={() => {
+                if (view !== "users") {
+                  const code = window.prompt("Enter security code to view users:");
+                  if (code === (securityConfig?.managerPassword || "manager1")) {
+                    setView("users");
+                  } else if (code !== null) {
+                    alert("Incorrect security code.");
+                  }
+                }
+              }}
               className={`px-4 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm whitespace-nowrap text-xs sm:text-sm ${view === "users" ? "bg-orange-500 text-white" : "bg-white border hover:bg-gray-50 text-gray-600"
                 }`}
             >
               <Users size={16} /> <span>Users</span>
             </button>
             <button
-              onClick={() => setView("creators")}
+              onClick={() => {
+                if (view !== "creators") {
+                  const code = window.prompt("Enter security code to view creators:");
+                  if (code === (securityConfig?.managerPassword || "manager1")) {
+                    setView("creators");
+                  } else if (code !== null) {
+                    alert("Incorrect security code.");
+                  }
+                }
+              }}
               className={`px-4 py-2.5 rounded-2xl font-bold flex items-center gap-2 transition-all shadow-sm whitespace-nowrap text-xs sm:text-sm ${view === "creators" ? "bg-orange-500 text-white" : "bg-white border hover:bg-gray-50 text-gray-600"
                 }`}
             >
@@ -183,7 +204,18 @@ export default function ManagerDashboard() {
 
           <div className="flex bg-white p-1.5 rounded-2xl shadow-sm border border-gray-100 gap-2">
             <button
-              onClick={() => setShowPrivacy(!showPrivacy)}
+              onClick={() => {
+                if (!showPrivacy) {
+                  const code = window.prompt("Enter security code to view data:");
+                  if (code === (securityConfig?.managerPassword || "manager1")) {
+                    setShowPrivacy(true);
+                  } else if (code !== null) {
+                    alert("Incorrect security code.");
+                  }
+                } else {
+                  setShowPrivacy(false);
+                }
+              }}
               className={`p-2 rounded-xl transition-all ${showPrivacy ? 'bg-orange-50 text-orange-600' : 'text-gray-400 hover:bg-gray-50'}`}
             >
               {showPrivacy ? <EyeOff size={20} /> : <Eye size={20} />}
@@ -249,6 +281,7 @@ export default function ManagerDashboard() {
               ))}
             </div>
 
+            {/*
             <div className="bg-white p-4 sm:p-8 rounded-3xl shadow-sm border border-gray-100">
               <div className="flex items-center justify-between mb-8">
                 <div>
@@ -276,6 +309,7 @@ export default function ManagerDashboard() {
                 </ResponsiveContainer>
               </div>
             </div>
+            */}
           </>
         )}
 

@@ -178,6 +178,12 @@ export const superAdminBatchVerify = async (emails) => {
   return data;
 };
 
+// --- Config API ---
+export const getSecurityConfig = async () => {
+  const { data } = await api.get('/config/security');
+  return data;
+};
+
 // --- Support API ---
 export const createTicket = async (ticketData) => {
   const { data } = await api.post('/support/ticket', ticketData);
