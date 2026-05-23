@@ -140,7 +140,7 @@ export default function AdminDashboard() {
 
   const handleExportCSV = async (type) => {
     const code = window.prompt("Enter Super Admin Security Key to download:");
-    if (code !== (securityConfig?.superAdminPassword || "mamatha") && code !== "mamatha") {
+    if (!securityConfig?.superAdminPassword || code !== securityConfig?.superAdminPassword) {
       alert("Incorrect security key.");
       return;
     }
@@ -295,7 +295,7 @@ export default function AdminDashboard() {
                 onClick={() => {
                   if (tab.id === 'referrals' && view !== 'referrals') {
                     const code = window.prompt("Enter Super Admin Security Key to view Referral Tree:");
-                    if (code === (securityConfig?.superAdminPassword || "mamatha")) {
+                    if (code && code === securityConfig?.superAdminPassword) {
                       setView(tab.id);
                     } else if (code !== null) {
                       alert("Incorrect security key.");

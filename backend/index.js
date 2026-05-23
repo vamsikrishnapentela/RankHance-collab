@@ -900,7 +900,7 @@ app.post('/api/superadmin/update-user', auth, async (req, res) => {
         if (!admin || !admin.isSuperAdmin) return res.status(403).json({ message: "Access denied" });
 
         const { email, updates, key } = req.body;
-        if (key !== 'mamatha') return res.status(403).json({ message: "Invalid action key. Security verification failed." });
+        if (!process.env.SUPERADMIN_PASSWORD || key !== process.env.SUPERADMIN_PASSWORD) return res.status(403).json({ message: "Invalid action key. Security verification failed." });
 
         // Allowed updates: isPaid, isCreator, commissionRate, referralCode, isManager, isSuperAdmin
         const allowedUpdates = ['isPaid', 'isCreator', 'commissionRate', 'referralCode', 'isManager'];
@@ -1131,7 +1131,7 @@ app.post('/api/superadmin/announcement', auth, async (req, res) => {
         if (!admin || !admin.isSuperAdmin) return res.status(403).json({ message: "Access denied" });
 
         const { title, content, isActive, buttonText, buttonLink, displayDate, key: securityKey } = req.body;
-        if (securityKey !== 'mamatha') return res.status(403).json({ message: "Invalid action key" });
+        if (!process.env.SUPERADMIN_PASSWORD || securityKey !== process.env.SUPERADMIN_PASSWORD) return res.status(403).json({ message: "Invalid action key" });
 
         const config = await Config.findOneAndUpdate(
             { key: 'announcement' },
@@ -1188,8 +1188,8 @@ app.get('/api/config/security', auth, async (req, res) => {
             return res.status(403).json({ message: 'Unauthorized' });
         }
         res.json({
-            managerPassword: process.env.MANAGER_PASSWORD || 'manager1',
-            superAdminPassword: process.env.SUPERADMIN_PASSWORD || 'mamatha'
+            managerPassword: process.env.MANAGER_PASSWORD,
+            superAdminPassword: process.env.SUPERADMIN_PASSWORD
         });
     } catch (err) {
         res.status(500).json({ message: 'Server error' });

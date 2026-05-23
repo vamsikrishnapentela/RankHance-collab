@@ -158,7 +158,7 @@ export default function ManagerDashboard() {
               onClick={() => {
                 if (view !== "users") {
                   const code = window.prompt("Enter security code to view users:");
-                  if (code === (securityConfig?.managerPassword || "manager1")) {
+                  if (code && code === securityConfig?.managerPassword) {
                     setView("users");
                   } else if (code !== null) {
                     alert("Incorrect security code.");
@@ -174,7 +174,7 @@ export default function ManagerDashboard() {
               onClick={() => {
                 if (view !== "creators") {
                   const code = window.prompt("Enter security code to view creators:");
-                  if (code === (securityConfig?.managerPassword || "manager1")) {
+                  if (code && code === securityConfig?.managerPassword) {
                     setView("creators");
                   } else if (code !== null) {
                     alert("Incorrect security code.");
@@ -207,7 +207,7 @@ export default function ManagerDashboard() {
               onClick={() => {
                 if (!showPrivacy) {
                   const code = window.prompt("Enter security code to view data:");
-                  if (code === (securityConfig?.managerPassword || "manager1")) {
+                  if (code && code === securityConfig?.managerPassword) {
                     setShowPrivacy(true);
                   } else if (code !== null) {
                     alert("Incorrect security code.");
