@@ -80,7 +80,7 @@ function AppLayout() {
 
     // Redirect if not authenticated and not on public page
     if (!user && !publicPaths.includes(location.pathname)) {
-      navigate('/login');
+      navigate('/login', { state: { from: location } });
     }
   }, [user, loading, location.pathname, navigate]);
 

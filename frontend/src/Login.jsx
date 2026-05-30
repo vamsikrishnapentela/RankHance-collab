@@ -264,7 +264,7 @@ export default function Login() {
 
             <p className="text-center text-gray-500 font-medium pt-4">
               Don't have an account?{' '}
-              <Link to="/signup" className="text-orange-500 font-bold hover:text-orange-600 underline underline-offset-4">
+              <Link to="/signup" state={location.state} className="text-orange-500 font-bold hover:text-orange-600 underline underline-offset-4">
                 Create Account
               </Link>
             </p>

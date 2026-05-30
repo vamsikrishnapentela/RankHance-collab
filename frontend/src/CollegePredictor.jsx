@@ -32,6 +32,8 @@ export default function CollegePredictor() {
   const [predicting, setPredicting] = useState(false);
   const [options, setOptions] = useState({ districts: [], branches: [] });
   const [results, setResults] = useState(null);
+  const [showBranchModal, setShowBranchModal] = useState(false);
+  const [showDistrictModal, setShowDistrictModal] = useState(false);
   
   const [formData, setFormData] = useState({
     rank: '',
@@ -191,8 +193,62 @@ export default function CollegePredictor() {
 
   const isAP = state?.toLowerCase() === 'ap';
 
+  const SelectionModal = ({ isOpen, onClose, title, items, type }) => {
+    if (!isOpen) return null;
+    return (
+      <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-gray-900/60 backdrop-blur-sm animate-in fade-in duration-200">
+        <div className="bg-white rounded-[2rem] shadow-2xl w-full max-w-md max-h-[85vh] flex flex-col overflow-hidden animate-in zoom-in-95 duration-200">
+          <div className="p-5 border-b border-gray-100 flex items-center justify-between bg-white shrink-0">
+            <div>
+              <h3 className="font-extrabold text-gray-900 text-xl tracking-tight">{title}</h3>
+              <p className="text-xs font-medium text-gray-500 mt-0.5">Select multiple options below</p>
+            </div>
+            <button onClick={onClose} className="p-2.5 bg-gray-50 hover:bg-gray-100 hover:text-orange-500 rounded-xl transition-all text-gray-500">
+              <X className="w-5 h-5" />
+            </button>
+          </div>
+          <div className="p-3 overflow-y-auto flex-1 scrollbar-thin scrollbar-thumb-orange-200 bg-gray-50 space-y-2">
+            {items.map(item => (
+              <label key={item.code} className="flex items-center gap-4 p-4 rounded-2xl hover:bg-orange-50/50 cursor-pointer transition-all group border border-transparent hover:border-orange-100 shadow-sm bg-white">
+                <input
+                  type="checkbox"
+                  checked={type === 'branches' ? formData.selectedBranches.includes(item.code) : formData.selectedDistricts.includes(item.code)}
+                  onChange={() => toggleSelection(type, item.code)}
+                  className="w-5 h-5 rounded-md border-gray-300 text-orange-500 focus:ring-orange-500 cursor-pointer transition-all"
+                />
+                <div className="flex-1">
+                  <p className="text-sm font-bold text-gray-800 group-hover:text-gray-900 leading-tight">{item.name}</p>
+                  {type === 'branches' && <p className="text-[10px] text-orange-500 font-bold uppercase mt-1 tracking-wider bg-orange-50 inline-block px-2 py-0.5 rounded-md">{item.code}</p>}
+                </div>
+              </label>
+            ))}
+          </div>
+          <div className="p-5 border-t border-gray-100 bg-white shrink-0">
+            <Button onClick={onClose} className="w-full rounded-2xl h-14 shadow-lg shadow-orange-500/20 text-lg font-bold">
+              Done
+            </Button>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="flex-1 w-full bg-gray-50 flex flex-col p-4 md:p-6 min-h-screen pt-24 pb-20 overflow-x-hidden">
+      <SelectionModal 
+        isOpen={showBranchModal} 
+        onClose={() => setShowBranchModal(false)} 
+        title="Select Branches" 
+        items={options.branches} 
+        type="branches" 
+      />
+      <SelectionModal 
+        isOpen={showDistrictModal} 
+        onClose={() => setShowDistrictModal(false)} 
+        title="Select Districts" 
+        items={options.districts} 
+        type="districts" 
+      />
       <Container className="max-w-7xl mx-auto space-y-8">
         
         {/* Header */}
@@ -258,7 +314,7 @@ export default function CollegePredictor() {
                   </div>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-2">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col">
                       <label className="text-[10px] font-bold text-gray-400 uppercase tracking-widest px-1">Branches (Optional)</label>
@@ -274,25 +330,19 @@ export default function CollegePredictor() {
                       </button>
                     )}
                   </div>
-                  <div className="max-h-48 overflow-y-auto pr-2 space-y-2 scrollbar-thin scrollbar-thumb-orange-200">
-                    {options.branches.map(branch => (
-                      <label key={branch.code} className="flex items-center gap-3 p-3.5 rounded-2xl hover:bg-orange-50 cursor-pointer transition-all group border border-transparent hover:border-orange-100 shadow-sm bg-white">
-                        <input
-                          type="checkbox"
-                          checked={formData.selectedBranches.includes(branch.code)}
-                          onChange={() => toggleSelection('branches', branch.code)}
-                          className="w-4 h-4 rounded border-gray-200 text-orange-500 focus:ring-orange-500 cursor-pointer"
-                        />
-                        <div className="flex-1">
-                          <p className="text-[10px] font-bold text-gray-700 group-hover:text-gray-900 leading-tight">{branch.name}</p>
-                          <p className="text-[9px] text-orange-400 font-bold uppercase">{branch.code}</p>
-                        </div>
-                      </label>
-                    ))}
-                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setShowBranchModal(true)}
+                    className="w-full p-4 bg-gray-50 hover:bg-orange-50 text-left rounded-2xl border-none focus:ring-2 focus:ring-orange-400 font-bold text-sm transition-colors text-gray-700 flex justify-between items-center"
+                  >
+                    {formData.selectedBranches.length > 0 
+                      ? `${formData.selectedBranches.length} Branch(es) Selected` 
+                      : 'Select Branches'}
+                    <ChevronRight className="w-4 h-4 text-gray-400" />
+                  </button>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-2">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col">
                       <label className="text-[10px] font-bold text-gray-400 uppercase tracking-widest px-1">Districts (Optional)</label>
@@ -308,19 +358,16 @@ export default function CollegePredictor() {
                       </button>
                     )}
                   </div>
-                  <div className="max-h-48 overflow-y-auto pr-2 space-y-2 scrollbar-thin scrollbar-thumb-orange-200">
-                    {options.districts.map(dist => (
-                      <label key={dist.code} className="flex items-center gap-3 p-3.5 rounded-2xl hover:bg-orange-50 cursor-pointer transition-all group border border-transparent hover:border-orange-100 shadow-sm bg-white">
-                        <input
-                          type="checkbox"
-                          checked={formData.selectedDistricts.includes(dist.code)}
-                          onChange={() => toggleSelection('districts', dist.code)}
-                          className="w-4 h-4 rounded border-gray-200 text-orange-500 focus:ring-orange-500 cursor-pointer"
-                        />
-                        <span className="text-[10px] font-bold text-gray-700 group-hover:text-gray-900">{dist.name}</span>
-                      </label>
-                    ))}
-                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setShowDistrictModal(true)}
+                    className="w-full p-4 bg-gray-50 hover:bg-orange-50 text-left rounded-2xl border-none focus:ring-2 focus:ring-orange-400 font-bold text-sm transition-colors text-gray-700 flex justify-between items-center"
+                  >
+                    {formData.selectedDistricts.length > 0 
+                      ? `${formData.selectedDistricts.length} District(s) Selected` 
+                      : 'Select Districts'}
+                    <ChevronRight className="w-4 h-4 text-gray-400" />
+                  </button>
                 </div>
               </div>
 

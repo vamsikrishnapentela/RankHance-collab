@@ -17,9 +17,24 @@ export default function Signup() {
   const { register, googleLogin, user, logout } = useAuth();
   const navigate = useNavigate();
 
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const redirectPath = searchParams.get('redirect');
+  const from = redirectPath || location.state?.from?.pathname || '/dashboard';
+
   useEffect(() => {
-    if (user) navigate('/dashboard');
-  }, [user, navigate]);
+    if (user) {
+      if (user.isSuperAdmin) {
+        navigate('/admin999k', { replace: true });
+      } else if (user.isManager) {
+        navigate('/manager999k', { replace: true });
+      } else if (user.isCreator) {
+        navigate('/creator', { replace: true });
+      } else {
+        navigate(from, { replace: true });
+      }
+    }
+  }, [user, navigate, from]);
 
   useEffect(() => {
     /* global google */
@@ -58,7 +73,16 @@ export default function Signup() {
   const handleGoogleCallback = async (response) => {
     try {
       setIsSubmitting(true);
-      await googleLogin(response.credential);
+      const userData = await googleLogin(response.credential);
+      if (userData.isSuperAdmin) {
+        navigate('/admin999k');
+      } else if (userData.isManager) {
+        navigate('/manager999k');
+      } else if (userData.isCreator) {
+        navigate('/creator');
+      } else {
+        navigate(from);
+      }
     } catch (err) {
       setError('Google Sign-In failed. Please try again.');
     } finally {
@@ -80,7 +104,7 @@ export default function Signup() {
       } else if (userData.isCreator) {
         navigate('/creator');
       } else {
-        navigate('/dashboard');
+        navigate(from);
       }
     } catch (err) {
       setError(err.response?.data?.message || 'Registration failed. Please try again.');
