@@ -248,7 +248,8 @@ router.post('/:state', auth, async (req, res) => {
         const lowerBound = Math.max(1, userRank - 2000);
         const upperBound = userRank + 10000;
 
-        let catKey = `${category.toLowerCase()}_${gender.toLowerCase()}`;
+        const formattedCategory = category.toLowerCase().replace('_', '');
+        let catKey = `${formattedCategory}_${gender.toLowerCase()}`;
         
         if (category.toLowerCase() === 'ews') {
             if (state === 'ap') {
