@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getPredictorOptions, predictColleges } from './api';
 import Container from './components/Container';
@@ -24,9 +24,50 @@ import {
   Zap
 } from 'lucide-react';
 
+const SelectionModal = ({ isOpen, onClose, title, items, type, selectedItems, onToggle }) => {
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-gray-900/60 backdrop-blur-sm animate-in fade-in duration-200">
+      <div className="bg-white rounded-[2rem] shadow-2xl w-full max-w-md max-h-[85vh] flex flex-col overflow-hidden animate-in zoom-in-95 duration-200">
+        <div className="p-5 border-b border-gray-100 flex items-center justify-between bg-white shrink-0">
+          <div>
+            <h3 className="font-extrabold text-gray-900 text-xl tracking-tight">{title}</h3>
+            <p className="text-xs font-medium text-gray-500 mt-0.5">Select multiple options below</p>
+          </div>
+          <button onClick={onClose} className="p-2.5 bg-gray-50 hover:bg-gray-100 hover:text-orange-500 rounded-xl transition-all text-gray-500">
+            <X className="w-5 h-5" />
+          </button>
+        </div>
+        <div className="p-3 overflow-y-auto flex-1 scrollbar-thin scrollbar-thumb-orange-200 bg-gray-50 space-y-2">
+          {items.map(item => (
+            <label key={item.code} className="flex items-center gap-4 p-4 rounded-2xl hover:bg-orange-50/50 cursor-pointer transition-all group border border-transparent hover:border-orange-100 shadow-sm bg-white">
+              <input
+                type="checkbox"
+                checked={selectedItems.includes(item.code)}
+                onChange={() => onToggle(type, item.code)}
+                className="w-5 h-5 rounded-md border-gray-300 text-orange-500 focus:ring-orange-500 cursor-pointer transition-all"
+              />
+              <div className="flex-1">
+                <p className="text-sm font-bold text-gray-800 group-hover:text-gray-900 leading-tight">{item.name}</p>
+                {type === 'branches' && <p className="text-[10px] text-orange-500 font-bold uppercase mt-1 tracking-wider bg-orange-50 inline-block px-2 py-0.5 rounded-md">{item.code}</p>}
+              </div>
+            </label>
+          ))}
+        </div>
+        <div className="p-5 border-t border-gray-100 bg-white shrink-0">
+          <Button onClick={onClose} className="w-full rounded-2xl h-14 shadow-lg shadow-orange-500/20 text-lg font-bold">
+            Done
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export default function CollegePredictor() {
   const { state } = useParams();
   const navigate = useNavigate();
+  const resultsRef = useRef(null);
   
   const [loading, setLoading] = useState(true);
   const [predicting, setPredicting] = useState(false);
@@ -79,6 +120,9 @@ export default function CollegePredictor() {
         branches: formData.selectedBranches
       });
       setResults(data);
+      setTimeout(() => {
+        resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
     } catch (err) {
       console.error("Prediction failed:", err);
       alert("Something went wrong. Please try again.");
@@ -193,46 +237,6 @@ export default function CollegePredictor() {
 
   const isAP = state?.toLowerCase() === 'ap';
 
-  const SelectionModal = ({ isOpen, onClose, title, items, type }) => {
-    if (!isOpen) return null;
-    return (
-      <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-gray-900/60 backdrop-blur-sm animate-in fade-in duration-200">
-        <div className="bg-white rounded-[2rem] shadow-2xl w-full max-w-md max-h-[85vh] flex flex-col overflow-hidden animate-in zoom-in-95 duration-200">
-          <div className="p-5 border-b border-gray-100 flex items-center justify-between bg-white shrink-0">
-            <div>
-              <h3 className="font-extrabold text-gray-900 text-xl tracking-tight">{title}</h3>
-              <p className="text-xs font-medium text-gray-500 mt-0.5">Select multiple options below</p>
-            </div>
-            <button onClick={onClose} className="p-2.5 bg-gray-50 hover:bg-gray-100 hover:text-orange-500 rounded-xl transition-all text-gray-500">
-              <X className="w-5 h-5" />
-            </button>
-          </div>
-          <div className="p-3 overflow-y-auto flex-1 scrollbar-thin scrollbar-thumb-orange-200 bg-gray-50 space-y-2">
-            {items.map(item => (
-              <label key={item.code} className="flex items-center gap-4 p-4 rounded-2xl hover:bg-orange-50/50 cursor-pointer transition-all group border border-transparent hover:border-orange-100 shadow-sm bg-white">
-                <input
-                  type="checkbox"
-                  checked={type === 'branches' ? formData.selectedBranches.includes(item.code) : formData.selectedDistricts.includes(item.code)}
-                  onChange={() => toggleSelection(type, item.code)}
-                  className="w-5 h-5 rounded-md border-gray-300 text-orange-500 focus:ring-orange-500 cursor-pointer transition-all"
-                />
-                <div className="flex-1">
-                  <p className="text-sm font-bold text-gray-800 group-hover:text-gray-900 leading-tight">{item.name}</p>
-                  {type === 'branches' && <p className="text-[10px] text-orange-500 font-bold uppercase mt-1 tracking-wider bg-orange-50 inline-block px-2 py-0.5 rounded-md">{item.code}</p>}
-                </div>
-              </label>
-            ))}
-          </div>
-          <div className="p-5 border-t border-gray-100 bg-white shrink-0">
-            <Button onClick={onClose} className="w-full rounded-2xl h-14 shadow-lg shadow-orange-500/20 text-lg font-bold">
-              Done
-            </Button>
-          </div>
-        </div>
-      </div>
-    );
-  };
-
   return (
     <div className="flex-1 w-full bg-gray-50 flex flex-col p-4 md:p-6 min-h-screen pt-24 pb-20 overflow-x-hidden">
       <SelectionModal 
@@ -240,14 +244,18 @@ export default function CollegePredictor() {
         onClose={() => setShowBranchModal(false)} 
         title="Select Branches" 
         items={options.branches} 
-        type="branches" 
+        type="branches"
+        selectedItems={formData.selectedBranches}
+        onToggle={toggleSelection}
       />
       <SelectionModal 
         isOpen={showDistrictModal} 
         onClose={() => setShowDistrictModal(false)} 
         title="Select Districts" 
         items={options.districts} 
-        type="districts" 
+        type="districts"
+        selectedItems={formData.selectedDistricts}
+        onToggle={toggleSelection}
       />
       <Container className="max-w-7xl mx-auto space-y-8">
         
@@ -384,7 +392,7 @@ export default function CollegePredictor() {
           </div>
 
           {/* Results Side */}
-          <div className="lg:col-span-8">
+          <div className="lg:col-span-8" ref={resultsRef}>
             {!results ? (
               <div className="bg-white rounded-[2.5rem] p-12 text-center border-2 border-dashed border-gray-100 flex flex-col items-center justify-center min-h-[450px]">
                 <div className="w-20 h-20 bg-orange-50 rounded-3xl flex items-center justify-center mb-6 text-orange-400">
