@@ -43,9 +43,9 @@ export default function LiveSessions() {
         "Live Q&A with Toppers & Content Creators"
       ],
       presenters: "EAMCET Toppers & Content Creators",
-      date: "Will be announced soon",
-      time: "Will be announced soon",
-      meetLink: "#", // Update Google Meet link here later
+      date: "7th June, Sunday",
+      time: "11:00 AM",
+      meetLink: "https://meet.google.com/aqa-wjdk-yms", // Update Google Meet link here later
       bgClass: "bg-blue-50/50",
       borderClass: "border-blue-100",
       btnClass: "bg-blue-500 hover:bg-blue-600 shadow-blue-500/20",
