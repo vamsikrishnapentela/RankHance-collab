@@ -12,26 +12,6 @@ export default function LiveSessions() {
 
   const sessions = [
     {
-      id: 1,
-      title: "Session 1: Before Exam Mentorship",
-      status: "Completed",
-      icon: <Target className="w-8 h-8 text-gray-400" />,
-      topics: [
-        "How to prepare well for EAMCET",
-        "Smart strategies to enhance your marks easily",
-        "Time management during the final days",
-        "Live Q&A with Toppers & Content Creators"
-      ],
-      presenters: "EAMCET Toppers & Content Creators",
-      date: "26th April, Sunday",
-      time: "07:30 PM",
-      meetLink: "#", 
-      bgClass: "bg-white",
-      borderClass: "border-gray-200 opacity-80",
-      btnClass: "bg-gray-300 text-gray-500 shadow-none pointer-events-none",
-      themeColor: "text-gray-400"
-    },
-    {
       id: 2,
       title: "Session 2: Post-Exam Counselling Guide",
       status: "Upcoming",
@@ -50,6 +30,26 @@ export default function LiveSessions() {
       borderClass: "border-blue-100",
       btnClass: "bg-blue-500 hover:bg-blue-600 shadow-blue-500/20",
       themeColor: "text-blue-500"
+    },
+    {
+      id: 1,
+      title: "Session 1: Before Exam Mentorship",
+      status: "Completed",
+      icon: <Target className="w-8 h-8 text-gray-400" />,
+      topics: [
+        "How to prepare well for EAMCET",
+        "Smart strategies to enhance your marks easily",
+        "Time management during the final days",
+        "Live Q&A with Toppers & Content Creators"
+      ],
+      presenters: "EAMCET Toppers & Content Creators",
+      date: "26th April, Sunday",
+      time: "07:30 PM",
+      meetLink: "#", 
+      bgClass: "bg-white",
+      borderClass: "border-gray-200 opacity-80",
+      btnClass: "bg-gray-300 text-gray-500 shadow-none pointer-events-none",
+      themeColor: "text-gray-400"
     }
   ];
 
